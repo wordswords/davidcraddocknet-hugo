@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Siri on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/category/siri/</link>
+    <description>Recent content in Siri on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 15 Oct 2015 15:28:52 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/category/siri/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Next Big Thing: Voice Control for Home Automation</title>
+      <link>https://davidcraddock.net/2015/10/15/voice-control-for-home-automation-having-a-virtual-assitant-in-your-living-room/</link>
+      <pubDate>Thu, 15 Oct 2015 15:28:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/2015/10/15/voice-control-for-home-automation-having-a-virtual-assitant-in-your-living-room/</guid>
+      <description>So, I have totally bought in to the home automation craze that is currently &amp;rsquo;the next big thing&amp;rsquo; in the technology world in 2015. Apple has released iOS 9 with their HomeKit home automation framework, Google have the Nest series of smart devices, and there are numerous emerging competitors and hundreds of devices out there right now that will network together in your home.
+For the uninitiated, a &amp;lsquo;virtual assistant&amp;rsquo; is a cloud-connected voice processing system which you can &amp;rsquo;talk&amp;rsquo; to.</description>
+    </item>
+    <item>
+      <title>Use Siri, Apple Earphones and Apple Music Together</title>
+      <link>https://davidcraddock.net/2015/08/15/use-siri-apple-earphones-and-apple-music-together/</link>
+      <pubDate>Sat, 15 Aug 2015 20:46:21 +0000</pubDate>
+      <guid>https://davidcraddock.net/2015/08/15/use-siri-apple-earphones-and-apple-music-together/</guid>
+      <description>This requires you to have a subscription to Apple Music and a 3G/4G/wireless data connection, but it is so useful! Using this tip, you can be walking along with your iPhone in your pocket and your Apple earphones in, and then change music just by pressing a button on the earphones remote control and saying &amp;lsquo;Play (your favourite band)&amp;rsquo;.
+1. Activate Siri and subscribe to Apple Music. I used to subscribe to Spotify so I switched to Apple Music when I realised the advantages of the integration on my phone, and the wider selection of music.</description>
+    </item>
+  </channel>
+</rss>

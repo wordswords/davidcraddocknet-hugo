@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Site-News on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/category/site-news/</link>
+    <description>Recent content in Site-News on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 14 Jan 2010 07:58:03 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/category/site-news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Site Redesign</title>
+      <link>https://davidcraddock.net/2010/01/14/site-redesign/</link>
+      <pubDate>Thu, 14 Jan 2010 07:58:03 +0000</pubDate>
+      <guid>https://davidcraddock.net/2010/01/14/site-redesign/</guid>
+      <description>I&amp;rsquo;ve just updated the design of this blog, re-enabled comments and added a contact tab. I&amp;rsquo;ve installed a strong anti-spam comment filter, but you should now be able to comment on entries. I&amp;rsquo;ve also changed the layout of things slightly, and made it easier to read.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Solutions-to-a-Specific-Problem | DavidCraddock.net</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="https://davidcraddock.net/category/solutions-to-a-specific-problem/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://davidcraddock.net/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://davidcraddock.net/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://davidcraddock.net/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://davidcraddock.net/apple-touch-icon.png">
+<link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/category/solutions-to-a-specific-problem/feed.xml">
+<link rel="alternate" hreflang="en" href="https://davidcraddock.net/category/solutions-to-a-specific-problem/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+
+  
+
+<meta property="og:title" content="Solutions-to-a-Specific-Problem" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://davidcraddock.net/category/solutions-to-a-specific-problem/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Solutions-to-a-Specific-Problem"/>
+<meta name="twitter:description" content=""/>
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://davidcraddock.net/">Home</a>&nbsp;»&nbsp;<a href="https://davidcraddock.net/category/">Category</a></div>
+  <h1>
+    Solutions-to-a-Specific-Problem
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Finding files in Linux modified between two dates
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>You use the ’touch’ command to create two blank files, with a last modified date that you specify - one with a date of the start of the range you want to specify, and the second with a date at the end of the range you want to specify. Then you reference to those two files in your find command:
+touch /tmp/temp -t 200604141130 touch /tmp/ntemp -t 200604261630 find /data/ -cnewer /tmp/temp -and !...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-02-16 12:33:44 +0000 GMT'>February 16, 2011</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Finding files in Linux modified between two dates" href="https://davidcraddock.net/2011/02/16/finding-files-in-linux-modified-between-two-dates/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Writing simple email alerts in PHP with MagpieRSS
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I wrote an email alerter that sends me an email whenever the upcoming temperature may dip below freezing. It uses the Magpie RSS reader to pull down a 3 day weather forecast that is provided for my area in RSS form by the BBC weather site. It then parses this forecast and determines if either today’s or tomorrow’s weather may dip below freezing. If it might, it sends an email to my email address to warn me....</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-02-12 20:01:13 +0000 GMT'>February 12, 2011</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Writing simple email alerts in PHP with MagpieRSS" href="https://davidcraddock.net/2011/02/12/writing-simple-email-alerts-in-php-with-magpierss/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Converting week numbers to dates
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Here is some python code I adapted from this stackoverflow post to get the first day of a week specificed by a week number. This method includes leap year and summer time differences.
+import time def weeknum(num,year): instr = str(year)&#43;&#34; &#34;&#43;str(num-1)&#43;&#34; 1&#34; print time.asctime(time.strptime(instr,&#39;%Y %W %w&#39;)) Here is me exectuting the code in Python’s IDLE shell:
+See that the first week of 2009 actually started in 2008, but by the end of that week we are in 2009....</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-11-24 13:50:44 +0000 GMT'>November 24, 2010</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Converting week numbers to dates" href="https://davidcraddock.net/2010/11/24/converting-week-numbers-to-dates/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Mac BBC Radio Player
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Quite cool little app that allows you to listen to different BBC Radio programmes from within a standalone application, instead of iPlayer:
+http://whomwah.github.com/radioaunty/</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-11-16 18:42:27 +0000 GMT'>November 16, 2010</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Mac BBC Radio Player" href="https://davidcraddock.net/2010/11/16/mac-bbc-radio-player/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">MediaMonkey allows you to transfer music from any computer onto your guest iPhone
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>MediaMonkey is a popular free media player for Windows. It has a great feature that allows you to transfer to and from an iPhone that is not registered with your computer. Normally only one iTunes install can be associated with your iPhone, but MediaMonkey allows you another way to transfer music and audio files with a ‘guest’ iPhone. Check it out, it works:
+MediaMonkey</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-11-14 16:54:08 +0000 GMT'>November 14, 2010</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to MediaMonkey allows you to transfer music from any computer onto your guest iPhone" href="https://davidcraddock.net/2010/11/14/mediamonkey-allows-you-to-transfer-music-from-any-computer-onto-your-guest-iphone/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Recording Game Videos on Windows 7
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This is just a quick note to remind myself how I did this.
+Hypercam2 is a good, free, video recorder that can cope with recording game videos. It’s freely available from http://www.hyperionics.com/hc/downloads.asp - just make sure when you install it you don’t tick on the spyware toolbar installation options.
+My motherboard has a 5.1 digital soundcard built in. However the only way I can record off the soundcard is to plug in a standard audio cable from the speaker out (green) to the microphone in (orange)....</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-07-18 23:55:33 +0000 +0000'>July 18, 2010</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Recording Game Videos on Windows 7" href="https://davidcraddock.net/2010/07/18/798/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Changing the default &#34;From:&#34; email address for emails sent via PHP on Linux
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’ve had to solve this problem a couple of times at least, and it’s quite a common task, so I thought I’d document it here.
+When you send emails to users of your site through using the PHP mail() function, they will sometimes turn up in the mailbox of customers of your site with the following from address:
+From: Root &lt;root@apache.ecommercecompany.com&gt; This makes absolutely no sense to your customers, and often they will think it is spam and delete it....</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-03-10 06:36:26 +0000 GMT'>March 10, 2010</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Changing the default &#34;From:&#34; email address for emails sent via PHP on Linux" href="https://davidcraddock.net/2010/03/10/changing-the-default-from-email-address-for-php/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">PHP Sample - HTML Page Fetcher and Parser
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Back in 2008, I wrote a PHP class that fetched an arbitary URL, parsed it, and coverted it into an PHP object with different attributes for the different elements of the page. I recently updated it and sent it along to a company that wanted a programming example to show I could code in PHP.
+I thought someone may well find a use for it - I’ve used the class in several different web scraping applications, and I found it handy....</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-01-14 05:53:47 +0000 GMT'>January 14, 2010</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to PHP Sample - HTML Page Fetcher and Parser" href="https://davidcraddock.net/2010/01/14/php-sample-html-page-fetcher-and-parser/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Config files for the Windows version of VIM
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Today I encountered problems configuring the windows version of the popular text editor VIM, so I thought I’d write up a quick post talk about configuration files under the Windows version, if anyone becomes stuck like I did. I use Linux, OSX and Windows on a day-to-day basis, and VIM as a text editor for a lot of quick edits on all three platforms. Here’s a quick comparison:
+Linux Linux is easy because that’s what most people who use VIM run, and so it is very well tested....</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-01-10 23:06:06 +0000 GMT'>January 10, 2010</span>&nbsp;·&nbsp;5 min</footer>
+  <a class="entry-link" aria-label="post link to Config files for the Windows version of VIM" href="https://davidcraddock.net/2010/01/10/config-files-for-the-windows-version-of-vim/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Bacula Scheduling
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Bacula is a great open-source distributed backup program for Linux/UNIX systems. It is separated into three main components:
+One ‘Director’ - which sends messages to the other components and co-ordinates the backup One or more ‘File Demons’ - which ‘pull’ the data from the host they are installed from. One or more ‘Storage Demons’ - which ‘push’ the data taken from the file demons into a type of archival storage, IE: backup tapes, a backup hard disc, etc I found it extremely versatile yet very complicated to configure....</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-10-29 20:24:31 +0000 GMT'>October 29, 2008</span>&nbsp;·&nbsp;4 min</footer>
+  <a class="entry-link" aria-label="post link to Bacula Scheduling" href="https://davidcraddock.net/2008/10/29/linux-backups-using-bacula/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://davidcraddock.net/category/solutions-to-a-specific-problem/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="https://davidcraddock.net/category/solutions-to-a-specific-problem/page/3/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+</body>
+
+</html>

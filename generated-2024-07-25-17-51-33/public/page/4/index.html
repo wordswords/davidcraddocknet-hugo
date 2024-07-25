@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.129.0"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>DavidCraddock.net</title>
+
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="https://davidcraddock.net/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://davidcraddock.net/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://davidcraddock.net/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://davidcraddock.net/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://davidcraddock.net/apple-touch-icon.png">
+<link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/feed.xml">
+<link rel="alternate" type="application/json" href="https://davidcraddock.net/index.json">
+<link rel="alternate" hreflang="en" href="https://davidcraddock.net/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+
+  
+
+<meta property="og:title" content="DavidCraddock.net" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://davidcraddock.net/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="DavidCraddock.net"/>
+<meta name="twitter:description" content=""/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "DavidCraddock.net",
+  "url": "https://davidcraddock.net/",
+  "description": "",
+  "thumbnailUrl": "https://davidcraddock.net/favicon.ico",
+  "sameAs": [
+      
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Setting up Enlightenment window manager on Ubuntu 21.10
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Enlightenment is a very underrated window manager choice, in my opinion. It still looks very pretty and is very configurable. There is a packaging bug with the latest version of Enlightement in the 21.10 repo which means it doesn’t work correctly. The fix is to set the suid bit on the ’enlightenment_system’ binary. So:
+sudo apt install enlightenment sudo find /usr/lib -type f -name enlightenment_system -exec sudo chmod 4755 {} \; Log out of Ubuntu Click the settings cog in the bottom right to change your Window manager to enlightenment Log on and the settings wizard will help you configure Enlightenment </p>
+  </div>
+  <footer class="entry-footer"><span title='2021-11-18 08:54:42 +0000 GMT'>November 18, 2021</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Setting up Enlightenment window manager on Ubuntu 21.10" href="https://davidcraddock.net/2021/11/18/setting-up-enlightenment-window-manager-on-ubuntu-21-10/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">My Simple Commandline Git Workflow
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This is a simple description of how I work 99% of the time, as I am a simpleton. Origin/main is the new origin/master for future repositories, I just note both here for completeness because I use origin master for a lot of current repos.
+I first make sure I am uptodate on origin/master or origin/main by git pulling. git checkout origin master git pull origin master I start making changes to the local copy on my local machine....</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-10-21 16:44:09 +0000 +0000'>October 21, 2021</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to My Simple Commandline Git Workflow" href="https://davidcraddock.net/2021/10/21/my-simple-commandline-git-workflow/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How to fix Plex Media Servers &#39;Various Artists&#39; problem using Beets.io and other tools
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem As of the day of posting, Plex Media Server has a suboptimal handling of Various Artists compilations. Unless you follow BOTH of these rules, described clearly on the Plex support here under ‘Various Artists’, then they won’t appear collected under a particular album, they will be spread out filed under the different artists that created them. I think it should only require one of these rules, but it is not up to me....</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-09-21 22:22:47 +0000 +0000'>September 21, 2021</span>&nbsp;·&nbsp;4 min</footer>
+  <a class="entry-link" aria-label="post link to How to fix Plex Media Servers &#39;Various Artists&#39; problem using Beets.io and other tools" href="https://davidcraddock.net/2021/09/21/how-to-fix-plex-media-servers-various-artists-problem-using-beets-io-and-other-tools/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">My PSP Entertainment System for 2021!
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I have recently been in hospital and been diagnosed with a condition that might mean I need to return quite a bit, at least in the short term. When I was in hospital I was struck by the fact that there were very long periods of waiting and it was easy to get very bored and quite dejected just sitting in a hospital bed.
+Also there is not a lot of room for laptops, tablets and other things – you really don’t get a lot of space by your bed usually to store large items and they are not practical most of the time....</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-08-07 19:57:27 +0000 +0000'>August 7, 2021</span>&nbsp;·&nbsp;4 min</footer>
+  <a class="entry-link" aria-label="post link to My PSP Entertainment System for 2021!" href="https://davidcraddock.net/2021/08/07/my-psp-entertainment-system-for-2021/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Making Twitch DJ Promo Mix Videos
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Sometimes as a DJ you may want to reconstruct the Twitch stream you have streamed into a video format to send to other people, for promotional purposes, or just to have a record of what you’ve done. Twitch makes this difficult though, as it mutes copyrighted music in the video it records for your Twitch stream. Also, when you download this video, it does not include the chat log, so any attempts at reconstruction are without the chat, so it looks like the DJ is just talking to him/herself....</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-06-13 20:54:40 +0000 +0000'>June 13, 2021</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to Making Twitch DJ Promo Mix Videos" href="https://davidcraddock.net/2021/06/13/making-twitch-dj-promo-mix-videos/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Using Navidrome on a RPI3 to host my music collection for DJing so I can listen between sets
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>As a DJ it is important to listen to the music in your collection so you get an idea of what would work in particular sets, and you have a memory of how the tracks progress. So I decided to host a Spotify like service in my house so I could listen to my 500GB&#43; DJ music library. Navidrome (free open source software from https://navidrome.org) is running on the Raspberry Pi 3 which is under my desk via a wired connection with it’s own http://navidrome....</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-06-09 14:29:14 +0000 +0000'>June 9, 2021</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to Using Navidrome on a RPI3 to host my music collection for DJing so I can listen between sets" href="https://davidcraddock.net/2021/06/09/using-navidrome-on-a-rpi3-to-host-my-music-collection-for-djing-so-i-can-listen-between-sets/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Proper Care and Operation of Vinyl Turntables for DJs
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Setup your new Turntable Follow this and only this guide. This is the best vinyl setup video on the internet as of 2021:
+[youtube https://www.youtube.com/watch?v=WM-aIDwfrhc&amp;w=560&amp;h=315]
+A lot of DJ turntables are based on Technics OEM clones, and so you will need to set the tonearm height, which is the only thing not covered by the above video:
+[youtube https://www.youtube.com/watch?v=SYScinvkrrM]
+The Basics Once you’ve setup your turntable:
+Should go without saying that I always use a velvet dust brush on my records just before I play them....</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-05-31 23:53:14 +0000 +0000'>May 31, 2021</span>&nbsp;·&nbsp;6 min</footer>
+  <a class="entry-link" aria-label="post link to Proper Care and Operation of Vinyl Turntables for DJs" href="https://davidcraddock.net/2021/06/01/2552/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Lighting and Camera Setup
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Light Sources: Phillips Hue Colour Lamp (top right) Phillips Hue Colour Lamp (Middle) Phillips Hue Colour Lamp (Bottom) Phillips Hue Lightstrip “DJ David Craddock” white illuminated sign “Live on Air” blue sign Laser (green or red laser wash) Revolving disco balls Dark Music Lighting Settings For Phillips Hue sources I use Hue Sync on my broadcast PC which syncs the lights in time with the music. I will use different palletes depending on the event....</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-05-11 03:20:16 +0000 +0000'>May 11, 2021</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Lighting and Camera Setup" href="https://davidcraddock.net/2021/05/11/lighting-and-camera-setup/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Organising Huge Music Libraries for use with Serato DJ Pro
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Updated: 25-11-22
+My music library is around 24k files, mostly FLAC and some 320kbps MP3s. I use the following tools to organise my music library:
+Acquisition: dbPoweramp CD Ripper - https://www.dbpoweramp.com/cd-ripper.htm Bandcamp Collection Downloader - https://github.com/Ezwen/bandcamp-collection-downloader Soulseek - http://www.slsknet.org Tagging and Metadata: Beets - https://beets.io Mixed In Key - https://mixedinkey.com Lexicon https://www.lexicondj.com/ Backup and sync: Robocopy - comes free with Windows 10. Documentation: https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy Google Drive Rsync
+Searching: Everything Search - https://voidtools....</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-05-05 21:06:13 +0000 +0000'>May 5, 2021</span>&nbsp;·&nbsp;7 min</footer>
+  <a class="entry-link" aria-label="post link to Organising Huge Music Libraries for use with Serato DJ Pro" href="https://davidcraddock.net/2021/05/05/organising-huge-music-libraries-with-serato/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Resolume MIDI Control in my Twitch DJing Setup
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I have retired the Novation SL Zero Mk1 MIDI controller that was causing me a lot of grief when I was running Resolume and Ableton Live at the same time, as its Automap functionality was locking on to the Ableton Live mixer in session view now and then, and so, sometimes, when I thought I was controlling Resolumes visual FX, I was actually changing the volume faders in my DJ mix....</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-04-26 18:26:14 +0000 +0000'>April 26, 2021</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Resolume MIDI Control in my Twitch DJing Setup" href="https://davidcraddock.net/2021/04/26/resolume-midi-control-in-my-twitch-djing-setup/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://davidcraddock.net/page/3/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="https://davidcraddock.net/page/5/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+</body>
+
+</html>

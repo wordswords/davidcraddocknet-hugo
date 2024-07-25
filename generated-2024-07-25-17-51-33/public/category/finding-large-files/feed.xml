@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Finding-Large-Files on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/category/finding-large-files/</link>
+    <description>Recent content in Finding-Large-Files on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 22 Feb 2011 00:16:12 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/category/finding-large-files/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Find large files by using the OSX commandline</title>
+      <link>https://davidcraddock.net/2011/02/22/find-large-files-by-using-the-osx-commandline/</link>
+      <pubDate>Tue, 22 Feb 2011 00:16:12 +0000</pubDate>
+      <guid>https://davidcraddock.net/2011/02/22/find-large-files-by-using-the-osx-commandline/</guid>
+      <description>To quickly find large files to delete if you have filled your startup disk, enter this command on the OSX terminal:
+sudo find / -size +500000 -print This will find and print out file paths to files over 500MB. You can then go through them and delete them individually by typing rm &amp;ldquo;&amp;rdquo;, although there is no undelete so make sure you know you won&amp;rsquo;t miss them.</description>
+    </item>
+  </channel>
+</rss>

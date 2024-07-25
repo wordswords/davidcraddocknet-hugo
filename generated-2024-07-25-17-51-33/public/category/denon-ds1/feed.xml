@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Denon-Ds1 on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/category/denon-ds1/</link>
+    <description>Recent content in Denon-Ds1 on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 08 Apr 2021 03:49:31 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/category/denon-ds1/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hybrid Serato DJ Pro DVS/Ableton Live DJ setup (21/4/21)</title>
+      <link>https://davidcraddock.net/2021/04/08/dj-setup-8-4-21/</link>
+      <pubDate>Thu, 08 Apr 2021 03:49:31 +0000</pubDate>
+      <guid>https://davidcraddock.net/2021/04/08/dj-setup-8-4-21/</guid>
+      <description>I recently found a good price on a Vestax VCM-600 controller. It is a specially made MIDI controller for Ableton Live, with the same build quality as a DJ mixer. It allows for control over 6 channels in the Ableton Live &amp;lsquo;session&amp;rsquo; view, which is arranged similarly to a mixing console. It also adds dozens of MIDI mappable DJ controls such as the traditional Hi, Mid and Lo EQs, a crossfader, a filter control, control over a lot of Ableton FX, and more.</description>
+    </item>
+  </channel>
+</rss>

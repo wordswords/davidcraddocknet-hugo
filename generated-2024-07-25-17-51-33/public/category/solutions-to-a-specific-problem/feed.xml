@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Solutions-to-a-Specific-Problem on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/category/solutions-to-a-specific-problem/</link>
+    <description>Recent content in Solutions-to-a-Specific-Problem on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 14 May 2022 23:15:20 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/category/solutions-to-a-specific-problem/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Home Network Design</title>
+      <link>https://davidcraddock.net/2022/05/15/home-network-design/</link>
+      <pubDate>Sat, 14 May 2022 23:15:20 +0000</pubDate>
+      <guid>https://davidcraddock.net/2022/05/15/home-network-design/</guid>
+      <description>Did some network design for my home network. This will ensure that my new Virgin Media 1100mbps/50mps speed is fully utilised without any bottlenecks and will futureproof things up to at least 2.5Gbs/speed connections.
+I should be able to load balance both internet connections to utilise them both simultaniously in the future, but for now I want to be able to get greater than 1000mbit/s speed on a single device otherwise there is not much point in speed increases past 1000mbits.</description>
+    </item>
+    <item>
+      <title>The Persuit of Happiness and the Hill-Climbing Problem</title>
+      <link>https://davidcraddock.net/2022/01/07/the-persuit-of-happiness-and-the-hill-climbing-problem/</link>
+      <pubDate>Fri, 07 Jan 2022 05:50:39 +0000</pubDate>
+      <guid>https://davidcraddock.net/2022/01/07/the-persuit-of-happiness-and-the-hill-climbing-problem/</guid>
+      <description>It seems that for a lot of people, perhaps the vast majority, they cannot expect to be 100% happy all the time. Even those incredibly successful celebrities and incredibly rich CEOs and politicians are not happy 100% of the time.
+So is it a good idea to seek 100% happiness right away? Or should we always try and select the &amp;rsquo;least worst&amp;rsquo; situation? If we keep making progress and optimse our happiness levels through constantly selecting the &amp;rsquo;least worst&amp;rsquo; situation whenever we have a descision then it seems to me we will maximise our happiness potential in the long run.</description>
+    </item>
+    <item>
+      <title>How to fix Plex Media Servers &#39;Various Artists&#39; problem using Beets.io and other tools</title>
+      <link>https://davidcraddock.net/2021/09/21/how-to-fix-plex-media-servers-various-artists-problem-using-beets-io-and-other-tools/</link>
+      <pubDate>Tue, 21 Sep 2021 22:22:47 +0000</pubDate>
+      <guid>https://davidcraddock.net/2021/09/21/how-to-fix-plex-media-servers-various-artists-problem-using-beets-io-and-other-tools/</guid>
+      <description>The Problem As of the day of posting, Plex Media Server has a suboptimal handling of Various Artists compilations. Unless you follow BOTH of these rules, described clearly on the Plex support here under &amp;lsquo;Various Artists&amp;rsquo;, then they won&amp;rsquo;t appear collected under a particular album, they will be spread out filed under the different artists that created them. I think it should only require one of these rules, but it is not up to me.</description>
+    </item>
+    <item>
+      <title>Node.js HTTPS server with self-signed certificate creation on openssl 0.9.8zh with node.js 7.10.0</title>
+      <link>https://davidcraddock.net/2017/05/10/node-js-https-server-with-self-signed-certificate-creation-on-openssl-0-9-8zh-with-node-js-7-10-0/</link>
+      <pubDate>Wed, 10 May 2017 13:59:18 +0000</pubDate>
+      <guid>https://davidcraddock.net/2017/05/10/node-js-https-server-with-self-signed-certificate-creation-on-openssl-0-9-8zh-with-node-js-7-10-0/</guid>
+      <description>I couldn&amp;rsquo;t find a concise guide to setting this up quickly so thought it was worth a post. To quickly get something working and create a https server using the above versions of openssl and node.js, do the following:
+Generate self-signed server certificate with no password sudo openssl req -x509 -newkey rsa:2048 -keyout ./csr.pem -out server.crt -days 3001 -nodes Use this node.js code to setup a server quickly const https = require(&#39;https&#39;); const fs = require(&#39;fs&#39;); const options = { key: fs.</description>
+    </item>
+    <item>
+      <title>Get rid of the &#39;most visited sites&#39; Grid on Chrome</title>
+      <link>https://davidcraddock.net/2015/06/21/get-rid-of-the-most-visited-sites-grid-on-chrome/</link>
+      <pubDate>Sun, 21 Jun 2015 17:49:00 +0000</pubDate>
+      <guid>https://davidcraddock.net/2015/06/21/get-rid-of-the-most-visited-sites-grid-on-chrome/</guid>
+      <description>Not that I particularly look at anything weird, but when I&amp;rsquo;m showing someone my computer I don&amp;rsquo;t want to have my &amp;lsquo;most visited sites&amp;rsquo; pop up when I fire up Chrome. The following Chrome extension will get rid of the default loading page, and just display a blank page:
+https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbekmfgabipmfilij</description>
+    </item>
+    <item>
+      <title>A* Algorithm implementation in Python</title>
+      <link>https://davidcraddock.net/2014/06/12/a-algorithm-implementation-in-python/</link>
+      <pubDate>Thu, 12 Jun 2014 00:24:34 +0000</pubDate>
+      <guid>https://davidcraddock.net/2014/06/12/a-algorithm-implementation-in-python/</guid>
+      <description>Lately I&amp;rsquo;ve had the idea of creating a text-based Roguelike in C++. This lead me on to think about the game AI experiments that I worked during my degree in Computer Science and A.I.. Essential to game AI is the notion of pathfinding, or finding a path from &amp;lsquo;A&amp;rsquo; to &amp;lsquo;B&amp;rsquo;, past any obstacles that get in the way. One way to do this is to use the A* algorithm.</description>
+    </item>
+    <item>
+      <title>Converting a single M2V frame into JPEG under OSX</title>
+      <link>https://davidcraddock.net/2012/04/12/converting-a-single-m2v-frame-into-jpeg/</link>
+      <pubDate>Thu, 12 Apr 2012 15:20:23 +0000</pubDate>
+      <guid>https://davidcraddock.net/2012/04/12/converting-a-single-m2v-frame-into-jpeg/</guid>
+      <description>I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame.</description>
+    </item>
+    <item>
+      <title>Disabling Control-Enter and Control-B shortcut keys in Outlook 2003</title>
+      <link>https://davidcraddock.net/2011/07/13/disabling-control-enter-and-control-b-shortcut-keys-in-outlook-2003/</link>
+      <pubDate>Wed, 13 Jul 2011 16:34:39 +0000</pubDate>
+      <guid>https://davidcraddock.net/2011/07/13/disabling-control-enter-and-control-b-shortcut-keys-in-outlook-2003/</guid>
+      <description>At work, I still have to use Windows XP and Outlook 2003. I don&amp;rsquo;t particually mind this, except when I draft an email to someone and accidently I press Control-B instead of Control-V. Control-B will go ahead and send your partially composed email, resulting in some embarassment as you have to tell everyone to disregard it.
+So I wanted to remove the &amp;lsquo;send email&amp;rsquo; shortcut keys in Outlook 2003. There are two ways of doing this, one involves editing your group policy, which is something only my IT administration team can do, and I didn&amp;rsquo;t want to have to involve them.</description>
+    </item>
+    <item>
+      <title>Directory names not visable under ls? Change your colours.</title>
+      <link>https://davidcraddock.net/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</link>
+      <pubDate>Wed, 04 May 2011 16:03:55 +0000</pubDate>
+      <guid>https://davidcraddock.net/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</guid>
+      <description>There is a problem I frequently encouter on Redhat/Fedora/CentOS systems with the output of the ls command. Under those distributions, the default setup is to display directories in a very dark colour. If you usually use a white foreground and a black background on your terminal client (such as Putty) then you will struggle to read the names of the directories under Redhat-based distributions.
+There are two soloutions that I have used:</description>
+    </item>
+    <item>
+      <title>Find large files by using the OSX commandline</title>
+      <link>https://davidcraddock.net/2011/02/22/find-large-files-by-using-the-osx-commandline/</link>
+      <pubDate>Tue, 22 Feb 2011 00:16:12 +0000</pubDate>
+      <guid>https://davidcraddock.net/2011/02/22/find-large-files-by-using-the-osx-commandline/</guid>
+      <description>To quickly find large files to delete if you have filled your startup disk, enter this command on the OSX terminal:
+sudo find / -size +500000 -print This will find and print out file paths to files over 500MB. You can then go through them and delete them individually by typing rm &amp;ldquo;&amp;rdquo;, although there is no undelete so make sure you know you won&amp;rsquo;t miss them.</description>
+    </item>
+    <item>
+      <title>Finding files in Linux modified between two dates</title>
+      <link>https://davidcraddock.net/2011/02/16/finding-files-in-linux-modified-between-two-dates/</link>
+      <pubDate>Wed, 16 Feb 2011 12:33:44 +0000</pubDate>
+      <guid>https://davidcraddock.net/2011/02/16/finding-files-in-linux-modified-between-two-dates/</guid>
+      <description>You use the &amp;rsquo;touch&amp;rsquo; command to create two blank files, with a last modified date that you specify - one with a date of the start of the range you want to specify, and the second with a date at the end of the range you want to specify. Then you reference to those two files in your find command:
+touch /tmp/temp -t 200604141130 touch /tmp/ntemp -t 200604261630 find /data/ -cnewer /tmp/temp -and !</description>
+    </item>
+    <item>
+      <title>Writing simple email alerts in PHP with MagpieRSS</title>
+      <link>https://davidcraddock.net/2011/02/12/writing-simple-email-alerts-in-php-with-magpierss/</link>
+      <pubDate>Sat, 12 Feb 2011 20:01:13 +0000</pubDate>
+      <guid>https://davidcraddock.net/2011/02/12/writing-simple-email-alerts-in-php-with-magpierss/</guid>
+      <description>I wrote an email alerter that sends me an email whenever the upcoming temperature may dip below freezing. It uses the Magpie RSS reader to pull down a 3 day weather forecast that is provided for my area in RSS form by the BBC weather site. It then parses this forecast and determines if either today&amp;rsquo;s or tomorrow&amp;rsquo;s weather may dip below freezing. If it might, it sends an email to my email address to warn me.</description>
+    </item>
+    <item>
+      <title>Converting week numbers to dates</title>
+      <link>https://davidcraddock.net/2010/11/24/converting-week-numbers-to-dates/</link>
+      <pubDate>Wed, 24 Nov 2010 13:50:44 +0000</pubDate>
+      <guid>https://davidcraddock.net/2010/11/24/converting-week-numbers-to-dates/</guid>
+      <description>Here is some python code I adapted from this stackoverflow post to get the first day of a week specificed by a week number. This method includes leap year and summer time differences.
+import time def weeknum(num,year): instr = str(year)+&amp;#34; &amp;#34;+str(num-1)+&amp;#34; 1&amp;#34; print time.asctime(time.strptime(instr,&amp;#39;%Y %W %w&amp;#39;)) Here is me exectuting the code in Python&amp;rsquo;s IDLE shell:
+See that the first week of 2009 actually started in 2008, but by the end of that week we are in 2009.</description>
+    </item>
+    <item>
+      <title>Mac BBC Radio Player</title>
+      <link>https://davidcraddock.net/2010/11/16/mac-bbc-radio-player/</link>
+      <pubDate>Tue, 16 Nov 2010 18:42:27 +0000</pubDate>
+      <guid>https://davidcraddock.net/2010/11/16/mac-bbc-radio-player/</guid>
+      <description>Quite cool little app that allows you to listen to different BBC Radio programmes from within a standalone application, instead of iPlayer:
+http://whomwah.github.com/radioaunty/</description>
+    </item>
+    <item>
+      <title>MediaMonkey allows you to transfer music from any computer onto your guest iPhone</title>
+      <link>https://davidcraddock.net/2010/11/14/mediamonkey-allows-you-to-transfer-music-from-any-computer-onto-your-guest-iphone/</link>
+      <pubDate>Sun, 14 Nov 2010 16:54:08 +0000</pubDate>
+      <guid>https://davidcraddock.net/2010/11/14/mediamonkey-allows-you-to-transfer-music-from-any-computer-onto-your-guest-iphone/</guid>
+      <description>MediaMonkey is a popular free media player for Windows. It has a great feature that allows you to transfer to and from an iPhone that is not registered with your computer. Normally only one iTunes install can be associated with your iPhone, but MediaMonkey allows you another way to transfer music and audio files with a &amp;lsquo;guest&amp;rsquo; iPhone. Check it out, it works:
+MediaMonkey</description>
+    </item>
+    <item>
+      <title>Recording Game Videos on Windows 7</title>
+      <link>https://davidcraddock.net/2010/07/18/798/</link>
+      <pubDate>Sun, 18 Jul 2010 23:55:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/2010/07/18/798/</guid>
+      <description>This is just a quick note to remind myself how I did this.
+Hypercam2 is a good, free, video recorder that can cope with recording game videos. It&amp;rsquo;s freely available from http://www.hyperionics.com/hc/downloads.asp - just make sure when you install it you don&amp;rsquo;t tick on the spyware toolbar installation options.
+My motherboard has a 5.1 digital soundcard built in. However the only way I can record off the soundcard is to plug in a standard audio cable from the speaker out (green) to the microphone in (orange).</description>
+    </item>
+    <item>
+      <title>Changing the default &#34;From:&#34; email address for emails sent via PHP on Linux</title>
+      <link>https://davidcraddock.net/2010/03/10/changing-the-default-from-email-address-for-php/</link>
+      <pubDate>Wed, 10 Mar 2010 06:36:26 +0000</pubDate>
+      <guid>https://davidcraddock.net/2010/03/10/changing-the-default-from-email-address-for-php/</guid>
+      <description>I&amp;rsquo;ve had to solve this problem a couple of times at least, and it&amp;rsquo;s quite a common task, so I thought I&amp;rsquo;d document it here.
+When you send emails to users of your site through using the PHP mail() function, they will sometimes turn up in the mailbox of customers of your site with the following from address:
+From: Root &amp;lt;root@apache.ecommercecompany.com&amp;gt; This makes absolutely no sense to your customers, and often they will think it is spam and delete it.</description>
+    </item>
+    <item>
+      <title>PHP Sample - HTML Page Fetcher and Parser</title>
+      <link>https://davidcraddock.net/2010/01/14/php-sample-html-page-fetcher-and-parser/</link>
+      <pubDate>Thu, 14 Jan 2010 05:53:47 +0000</pubDate>
+      <guid>https://davidcraddock.net/2010/01/14/php-sample-html-page-fetcher-and-parser/</guid>
+      <description>Back in 2008, I wrote a PHP class that fetched an arbitary URL, parsed it, and coverted it into an PHP object with different attributes for the different elements of the page. I recently updated it and sent it along to a company that wanted a programming example to show I could code in PHP.
+I thought someone may well find a use for it - I&amp;rsquo;ve used the class in several different web scraping applications, and I found it handy.</description>
+    </item>
+    <item>
+      <title>Config files for the Windows version of VIM</title>
+      <link>https://davidcraddock.net/2010/01/10/config-files-for-the-windows-version-of-vim/</link>
+      <pubDate>Sun, 10 Jan 2010 23:06:06 +0000</pubDate>
+      <guid>https://davidcraddock.net/2010/01/10/config-files-for-the-windows-version-of-vim/</guid>
+      <description>Today I encountered problems configuring the windows version of the popular text editor VIM, so I thought I&amp;rsquo;d write up a quick post talk about configuration files under the Windows version, if anyone becomes stuck like I did. I use Linux, OSX and Windows on a day-to-day basis, and VIM as a text editor for a lot of quick edits on all three platforms. Here&amp;rsquo;s a quick comparison:
+Linux Linux is easy because that&amp;rsquo;s what most people who use VIM run, and so it is very well tested.</description>
+    </item>
+    <item>
+      <title>Bacula Scheduling</title>
+      <link>https://davidcraddock.net/2008/10/29/linux-backups-using-bacula/</link>
+      <pubDate>Wed, 29 Oct 2008 20:24:31 +0000</pubDate>
+      <guid>https://davidcraddock.net/2008/10/29/linux-backups-using-bacula/</guid>
+      <description>Bacula is a great open-source distributed backup program for Linux/UNIX systems. It is separated into three main components:
+One &amp;lsquo;Director&amp;rsquo; - which sends messages to the other components and co-ordinates the backup One or more &amp;lsquo;File Demons&amp;rsquo; - which &amp;lsquo;pull&amp;rsquo; the data from the host they are installed from. One or more &amp;lsquo;Storage Demons&amp;rsquo; - which &amp;lsquo;push&amp;rsquo; the data taken from the file demons into a type of archival storage, IE: backup tapes, a backup hard disc, etc I found it extremely versatile yet very complicated to configure.</description>
+    </item>
+    <item>
+      <title>Automated Emails on Commiting to a Subversion Repository Using Python</title>
+      <link>https://davidcraddock.net/2008/09/22/automated-emails-on-commiting-to-a-subversion-repository/</link>
+      <pubDate>Mon, 22 Sep 2008 23:22:54 +0000</pubDate>
+      <guid>https://davidcraddock.net/2008/09/22/automated-emails-on-commiting-to-a-subversion-repository/</guid>
+      <description>At work I&amp;rsquo;ve written a couple of scripts that send out emails to the appropriate project team when someone checks in a commit to the project subversion repository. Here are the details.
+Firstly, you will need a subversion hook setup on post-commit. The post-commit hook needs to be located in SVNROOT/YOURPROJECT/hooks where YOURPROJECT is your svn project name, and SVNROOT is the root directory where you are storing the data files for your subversion repository.</description>
+    </item>
+    <item>
+      <title>Character encoding fix with PHP, MySQL 5 and ubuntu-server</title>
+      <link>https://davidcraddock.net/2008/07/06/character-encoding-fix-with-php-mysql-5-and-ubuntu-server/</link>
+      <pubDate>Sun, 06 Jul 2008 23:34:50 +0000</pubDate>
+      <guid>https://davidcraddock.net/2008/07/06/character-encoding-fix-with-php-mysql-5-and-ubuntu-server/</guid>
+      <description>For some reason, under ubuntu-server, my default MySQL 5 character encoding was latin1. This caused no end of problems with grabbing data from the web, which was not necessarily in latin1 characterset.
+If you are ever in this situation, I suggest you handle everything as UTF-8. That means setting the following lines in my.cnf:
+[mysqld] .. default-character-set=utf8 skip-character-set-client-handshake If you already have tables in your database that you have created, and they have defaulted to the latin1 charset, you&amp;rsquo;ll be able to tell by looking at the mysqldump SQL:</description>
+    </item>
+    <item>
+      <title>NVIDIA GeForce4 MX 420 under Ubuntu Dapper Drake</title>
+      <link>https://davidcraddock.net/2007/04/09/nvidia-geforce4-mx-420-under-ubuntu-dapper-drake/</link>
+      <pubDate>Mon, 09 Apr 2007 18:26:36 +0000</pubDate>
+      <guid>https://davidcraddock.net/2007/04/09/nvidia-geforce4-mx-420-under-ubuntu-dapper-drake/</guid>
+      <description>My GeForce4 MX 420 didn&amp;rsquo;t work properly with OpenGL under a fresh install of Dapper Drake. Fixing it, however, proved to be really easy:
+Install the nvidia package: $ apt-get install nvidia
+Edit /etc/X11/xorg.conf and replace the &amp;lsquo;driver&amp;rsquo; where it says &amp;rsquo;nv&amp;rsquo; with &amp;ldquo;nvidia&amp;rdquo;: Section &amp;ldquo;Device&amp;rdquo; Identifier &amp;ldquo;NVIDIA Corporation NV17 [GeForce4 MX 420]&amp;rdquo; #Driver &amp;ldquo;nv&amp;rdquo; Driver &amp;ldquo;nvidia&amp;rdquo; BusID &amp;ldquo;PCI:1:0:0&amp;rdquo; EndSection
+Kill X with control-alt-backspace
+Login again and test if it works by running glxgears and glxinfo on the console</description>
+    </item>
+  </channel>
+</rss>

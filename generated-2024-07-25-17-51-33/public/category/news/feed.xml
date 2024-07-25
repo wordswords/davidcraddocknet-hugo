@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>News on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/category/news/</link>
+    <description>Recent content in News on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Feb 2012 14:42:50 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/category/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Driven Systems Development with Nagios</title>
+      <link>https://davidcraddock.net/2012/02/07/test-driven-systems-development-with-nagios/</link>
+      <pubDate>Tue, 07 Feb 2012 14:42:50 +0000</pubDate>
+      <guid>https://davidcraddock.net/2012/02/07/test-driven-systems-development-with-nagios/</guid>
+      <description>Nagios can be seen as a automated test tool for systems, just as you would have automated tests for software projects. In test driven development (TDD), you write the tests first, and then use those tests to build up a software project that you can have confidence that it works. We can use this method to build up systems, or networks of systems. Plan out which services and processes should be running on your new systems, and then implement Nagios tests for every one.</description>
+    </item>
+    <item>
+      <title>Passed the W3Schools PHP Certification</title>
+      <link>https://davidcraddock.net/2010/01/14/passed-the-w3schools-php-certification/</link>
+      <pubDate>Thu, 14 Jan 2010 01:19:57 +0000</pubDate>
+      <guid>https://davidcraddock.net/2010/01/14/passed-the-w3schools-php-certification/</guid>
+      <description>As a break from my contract work, I took the W3Schools PHP Certification. I didn&amp;rsquo;t do any revision, which probably wasn&amp;rsquo;t wise. It was a bit more difficult than I thought, but I passed still.</description>
+    </item>
+    <item>
+      <title>Heart rate monitor now available for the XO Laptop</title>
+      <link>https://davidcraddock.net/2009/04/07/heart-rate-monitor-now-available-for-the-xo-laptop/</link>
+      <pubDate>Tue, 07 Apr 2009 17:17:31 +0000</pubDate>
+      <guid>https://davidcraddock.net/2009/04/07/heart-rate-monitor-now-available-for-the-xo-laptop/</guid>
+      <description>Volunteers on the OLPC project have developed a low-cost heart rate monitor that can be plugged into the XO laptop, making steps towards an affordable monitoring system for hospitals in developing countries.
+For more information on the development, see the: OLPC Goldenstate project. People in the US can currently buy the sensor here; unfortunately there is no international shipping yet in place.</description>
+    </item>
+    <item>
+      <title>Google Sync for Mobile</title>
+      <link>https://davidcraddock.net/2009/03/11/google-sync-for-mobile/</link>
+      <pubDate>Wed, 11 Mar 2009 08:19:15 +0000</pubDate>
+      <guid>https://davidcraddock.net/2009/03/11/google-sync-for-mobile/</guid>
+      <description>If you use Google calendar, and you&amp;rsquo;ve got an iPhone, or Windows Mobile phone like me, then you&amp;rsquo;ll be pleased to hear about the new Google Sync for Mobile tool just brought out into beta by Google. There were various ways to sync Google Calender events to Windows Mobile devices before, but nothing officially supported. Google uses an ActiveSync server to push the events to your phone, making things a lot easier.</description>
+    </item>
+    <item>
+      <title>One Laptop Per Child - My XO Laptop</title>
+      <link>https://davidcraddock.net/2008/12/09/one-laptop-per-child-my-xo-laptop/</link>
+      <pubDate>Tue, 09 Dec 2008 01:31:12 +0000</pubDate>
+      <guid>https://davidcraddock.net/2008/12/09/one-laptop-per-child-my-xo-laptop/</guid>
+      <description>I did something out of the ordinary this Christmas. I bought an &amp;ldquo;XO&amp;rdquo; laptop for a child in a third world country. I also bought an XO laptop for myself, so I can develop software designed to be distributed to the 1 million+ XO laptops out there in the third world.
+The laptop runs a Linux operating system, with an special interface programmed almost exclusively in Python. Most apps, called &amp;lsquo;activities&amp;rsquo;, run as python programs.</description>
+    </item>
+    <item>
+      <title>The Blog Factory</title>
+      <link>https://davidcraddock.net/2008/12/03/the-blog-factory/</link>
+      <pubDate>Wed, 03 Dec 2008 22:11:19 +0000</pubDate>
+      <guid>https://davidcraddock.net/2008/12/03/the-blog-factory/</guid>
+      <description>I&amp;rsquo;ve started my own blog consulting business, helping people setup their own blogs, either for their company or for personal use. It&amp;rsquo;s called The Blog Factory, see the site for more information on what we do. In a nutshell, we can:
+Setup and customise WordPress blogs. Design custom WordPress themes. Develop tailored WordPress plugins. Host the blogs on our servers. Use our SEO expertise to improve traffic to the blog. </description>
+    </item>
+    <item>
+      <title>FREE Cloud Computing testbed for Python Apps</title>
+      <link>https://davidcraddock.net/2008/11/22/free-cloud-computing-testbed-for-python-apps/</link>
+      <pubDate>Sat, 22 Nov 2008 05:11:37 +0000</pubDate>
+      <guid>https://davidcraddock.net/2008/11/22/free-cloud-computing-testbed-for-python-apps/</guid>
+      <description>This is so cool.. Google are beta-testing a totally free hosting and cloud-computing resource called Google App Engine. The caveat is that your hosted app must be written in Python. Python is amazing anyway, and if you don&amp;rsquo;t know it, now is the perfect time to learn. Check this out for more information about Google App Engine:
+http://code.google.com/appengine/docs/whatisgoogleappengine.html
+They&amp;rsquo;re giving away a very generous 500MB disk space and enough processing power to serve 5 million pages a month.</description>
+    </item>
+    <item>
+      <title>Stanford Engineering for Everyone</title>
+      <link>https://davidcraddock.net/2008/09/22/stanford-engineering-for-everyone/</link>
+      <pubDate>Mon, 22 Sep 2008 23:53:54 +0000</pubDate>
+      <guid>https://davidcraddock.net/2008/09/22/stanford-engineering-for-everyone/</guid>
+      <description>The Stanford engineering department, often regarded as the best in the world for computer science education, has made its core CS curriculum free for anyone with an internet connection. There are some catches, ie: you don&amp;rsquo;t get your assignments marked, you have no contact with the lecturer, but all the same, it is really a great resource. The material is very high-quality, professionally filmed lectures and a full compliment of handouts and course notes.</description>
+    </item>
+    <item>
+      <title>adExcellence Exam passed</title>
+      <link>https://davidcraddock.net/2008/03/21/adexcellence-exam-passed/</link>
+      <pubDate>Fri, 21 Mar 2008 07:52:24 +0000</pubDate>
+      <guid>https://davidcraddock.net/2008/03/21/adexcellence-exam-passed/</guid>
+      <description>I passed the adExcellence exam first time.. woo! It wasn&amp;rsquo;t that difficult really.
+&amp;ldquo;David Craddock of iCrossing is accredited as an official Microsoft adExcellence Member. A Microsoft adExcellence Member has completed comprehensive online training on managing Microsoft adCenter search engine marketing campaigns and has demonstrated expert knowledge by passing the Microsoft adExcellence accreditation exam.&amp;rdquo;
+As of 21/3/08, I&amp;rsquo;m somehow also now #1 on Google.co.uk for the keyword &amp;ldquo;adExcellence exam&amp;rdquo;.. if that&amp;rsquo;s what you googled for, you probably want the adExcellence main site instead.</description>
+    </item>
+    <item>
+      <title>Yahoo! Pipes</title>
+      <link>https://davidcraddock.net/2008/03/17/yahoo-pipes/</link>
+      <pubDate>Mon, 17 Mar 2008 06:44:04 +0000</pubDate>
+      <guid>https://davidcraddock.net/2008/03/17/yahoo-pipes/</guid>
+      <description>I have just seen Yahoo! Pipes, and am convinced this is going to change the web. For real.
+Data source sites will become &amp;lsquo;content providers&amp;rsquo;, data will be aggregated and filtered from multiple content providers, either by the user or by &amp;lsquo;intermediary&amp;rsquo; sites. The user will be able to choose his &amp;lsquo;data view&amp;rsquo; of the content on the internet, just as Google is currently doing.
+This is fascinating stuff if you&amp;rsquo;re involved in the web industry.</description>
+    </item>
+    <item>
+      <title>BrightonSound.com</title>
+      <link>https://davidcraddock.net/2008/03/15/brightonsoundcom/</link>
+      <pubDate>Sat, 15 Mar 2008 21:16:07 +0000</pubDate>
+      <guid>https://davidcraddock.net/2008/03/15/brightonsoundcom/</guid>
+      <description>We&amp;rsquo;ve been working on a Brighton music events Google maps mashup project: www.BrightonSound.com
+It&amp;rsquo;s still developing, but it looks quite good, and we&amp;rsquo;re ready to start showing it off to people. So check it out!
+UPDATE: This project is now defunct after running for several years, and is no longer hosted. But thanks for the interest!
+.</description>
+    </item>
+    <item>
+      <title>Brighton Barcamp2</title>
+      <link>https://davidcraddock.net/2008/02/22/brighton-barcamp2/</link>
+      <pubDate>Fri, 22 Feb 2008 02:06:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/2008/02/22/brighton-barcamp2/</guid>
+      <description>I will be attending Brighton Barcamp 2 on the weekend of the 14th March, and presenting on a new web project I&amp;rsquo;ve been working on.
+See: http://barcamp.pbwiki.com/BarCampBrighton2 and http://www.barcampbrighton.org/ for more info.
+Update: Brighton Barcamp 2 is now over.
+This was really interesting, and I learned a huge amount in a very short amount of time. Thanks to everyone who talked to me. I&amp;rsquo;ll definitely be attending future Barcamps.</description>
+    </item>
+    <item>
+      <title>OpenSocial</title>
+      <link>https://davidcraddock.net/2007/11/24/opensocial/</link>
+      <pubDate>Sat, 24 Nov 2007 04:25:29 +0000</pubDate>
+      <guid>https://davidcraddock.net/2007/11/24/opensocial/</guid>
+      <description>This is going to be absolutely huge:
+[youtube https://www.youtube.com/watch?v=RytmNqEHYiE&amp;amp;rel=1]</description>
+    </item>
+    <item>
+      <title>An interesting blog written by a friend of mine</title>
+      <link>https://davidcraddock.net/2007/11/12/an-interesting-blog-written-by-a-friend-of-mine/</link>
+      <pubDate>Mon, 12 Nov 2007 20:03:00 +0000</pubDate>
+      <guid>https://davidcraddock.net/2007/11/12/an-interesting-blog-written-by-a-friend-of-mine/</guid>
+      <description>My friend Adam has a blog featuring interesting internet finds. Check it out:
+One Idea</description>
+    </item>
+    <item>
+      <title>A bit of theory..</title>
+      <link>https://davidcraddock.net/2007/06/02/a-bit-of-theory/</link>
+      <pubDate>Sat, 02 Jun 2007 14:14:15 +0000</pubDate>
+      <guid>https://davidcraddock.net/2007/06/02/a-bit-of-theory/</guid>
+      <description>I&amp;rsquo;ve been trying to learn a lot about search engines lately, as I&amp;rsquo;ve been starting at an internet marketing firm. I found this excellent list of online materials for university courses related to search engines:
+http://clair.si.umich.edu:8080/wordpress/?p=11
+In particular, these seem especially relevant:
+The Structure of Information Networks - http://www.cs.cornell.edu/Courses/cs685/2002fa/ (a good introduction) Search Engine Technology - http://www1.cs.columbia.edu/~radev/SET07.htm (a great course) Information Retreival and Web Search - http://www.cs.utexas.edu/~mooney/ir-course/ (less math than the columbia course, and thus somewhat easier follow) Networked Life - http://www.</description>
+    </item>
+    <item>
+      <title>Craiglist opens a Brighton, UK section</title>
+      <link>https://davidcraddock.net/2007/05/17/craiglist-opens-a-brighton-uk-section/</link>
+      <pubDate>Thu, 17 May 2007 02:14:01 +0000</pubDate>
+      <guid>https://davidcraddock.net/2007/05/17/craiglist-opens-a-brighton-uk-section/</guid>
+      <description>I just noticed that US bulletinboard giant Craigslist.com has opened a Brighton UK section of their website! There are a few posts already. At the moment, Gumtree&amp;rsquo;s Brighton Section is massively popular here. I&amp;rsquo;ve recurited several flatmates using Gumtree, and am basing my local housing search around it.
+It will be interesting to see how Gumtree.com fares now that Craigslist.com has competition in the Brighton local area.</description>
+    </item>
+    <item>
+      <title>The topic of this blog</title>
+      <link>https://davidcraddock.net/2007/04/02/hello-world/</link>
+      <pubDate>Mon, 02 Apr 2007 18:16:45 +0000</pubDate>
+      <guid>https://davidcraddock.net/2007/04/02/hello-world/</guid>
+      <description>This blog will be about my perspective on technology. Anything that catches my interest will be fair game, but mainly it will revolve around internet technology and the development of such.
+It will allow me to create an online presence, and to improve my writing skills.
+I hope you will find the time to check back on this blog and watch it progress.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Udev on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/tag/udev/</link>
+    <description>Recent content in Udev on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 10 Feb 2014 15:28:45 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/tag/udev/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting up Kindlefire HDX for Development under Ubuntu 12.04</title>
+      <link>https://davidcraddock.net/2014/02/10/kindlefire-hdx-under-ubuntu-12-04/</link>
+      <pubDate>Mon, 10 Feb 2014 15:28:45 +0000</pubDate>
+      <guid>https://davidcraddock.net/2014/02/10/kindlefire-hdx-under-ubuntu-12-04/</guid>
+      <description>I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.
+First I needed to setup the udev rules:
+1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):
+SUBSYSTEM==&amp;#34;usb&amp;#34;, ATTRS{idVendor}==&amp;#34;1949&amp;#34;, MODE=&amp;#34;0666&amp;#34; 2. Change the permission of this file by executing the following command as root:
+chmod a+r /etc/udev/rules.d/51-android.rules 3. Reload the rules by executing the following command as root:</description>
+    </item>
+  </channel>
+</rss>

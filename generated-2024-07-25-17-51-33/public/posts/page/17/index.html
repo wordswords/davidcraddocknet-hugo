@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Posts | DavidCraddock.net</title>
+<meta name="keywords" content="">
+<meta name="description" content="Posts - DavidCraddock.net">
+<meta name="author" content="">
+<link rel="canonical" href="https://davidcraddock.net/posts/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://davidcraddock.net/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://davidcraddock.net/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://davidcraddock.net/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://davidcraddock.net/apple-touch-icon.png">
+<link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/posts/feed.xml">
+<link rel="alternate" hreflang="en" href="https://davidcraddock.net/posts/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+
+  
+
+<meta property="og:title" content="Posts" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://davidcraddock.net/posts/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Posts"/>
+<meta name="twitter:description" content=""/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://davidcraddock.net/posts/"
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://davidcraddock.net/">Home</a></div>
+  <h1>
+    Posts
+  </h1>
+</header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Scraping Wikipedia Information for music artists, Part 2
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’ve abandoned the previous Wikipedia scraping approach for Brightonsound.com, as it was unreliable and didn’t pinpoint the right Wikipedia entry - ie: a band called ‘Horses’ would pull up a Wikipedia bio on the animal - which doesn’t look very professional. So instead, I have used the Musicbrainz API to retrieve some information on the artist; the homepage URL, the correct Wikipedia entry, and any genres/terms the artist has been tagged with....</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-09-22 23:04:45 +0000 +0000'>September 22, 2008</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to Scraping Wikipedia Information for music artists, Part 2" href="https://davidcraddock.net/2008/09/22/scraping-wikipedia-information-for-music-artists-part-2/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Character encoding fix with PHP, MySQL 5 and ubuntu-server
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>For some reason, under ubuntu-server, my default MySQL 5 character encoding was latin1. This caused no end of problems with grabbing data from the web, which was not necessarily in latin1 characterset.
+If you are ever in this situation, I suggest you handle everything as UTF-8. That means setting the following lines in my.cnf:
+[mysqld] .. default-character-set=utf8 skip-character-set-client-handshake If you already have tables in your database that you have created, and they have defaulted to the latin1 charset, you’ll be able to tell by looking at the mysqldump SQL:...</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-07-06 23:34:50 +0000 +0000'>July 6, 2008</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Character encoding fix with PHP, MySQL 5 and ubuntu-server" href="https://davidcraddock.net/2008/07/06/character-encoding-fix-with-php-mysql-5-and-ubuntu-server/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Scraping artists bios off of Wikipedia
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’ve been hacking away at BrightonSound.com and I’ve been looking for a way of automatically sourcing biographical information from artists, so that visitors are presented with more information on the event.
+The Songbird media player plugin ‘mashTape’ draws upon a number of web services to grab artist bio, event listings, youtube vidoes and flickr pictures of the currently playing artist. I was reading through the mashTape code, and then found this posting by its developer, which helpfully provided the exact method I needed....</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-06-18 17:43:19 +0000 +0000'>June 18, 2008</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Scraping artists bios off of Wikipedia" href="https://davidcraddock.net/2008/06/18/scraping-artists-bios-off-of-wikipedia/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">adExcellence Exam passed
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I passed the adExcellence exam first time.. woo! It wasn’t that difficult really.
+“David Craddock of iCrossing is accredited as an official Microsoft adExcellence Member. A Microsoft adExcellence Member has completed comprehensive online training on managing Microsoft adCenter search engine marketing campaigns and has demonstrated expert knowledge by passing the Microsoft adExcellence accreditation exam.”
+As of 21/3/08, I’m somehow also now #1 on Google.co.uk for the keyword “adExcellence exam”.. if that’s what you googled for, you probably want the adExcellence main site instead....</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-03-21 07:52:24 +0000 GMT'>March 21, 2008</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to adExcellence Exam passed" href="https://davidcraddock.net/2008/03/21/adexcellence-exam-passed/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Yahoo! Pipes
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I have just seen Yahoo! Pipes, and am convinced this is going to change the web. For real.
+Data source sites will become ‘content providers’, data will be aggregated and filtered from multiple content providers, either by the user or by ‘intermediary’ sites. The user will be able to choose his ‘data view’ of the content on the internet, just as Google is currently doing.
+This is fascinating stuff if you’re involved in the web industry....</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-03-17 06:44:04 +0000 GMT'>March 17, 2008</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Yahoo! Pipes" href="https://davidcraddock.net/2008/03/17/yahoo-pipes/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">BrightonSound.com
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>We’ve been working on a Brighton music events Google maps mashup project: www.BrightonSound.com
+It’s still developing, but it looks quite good, and we’re ready to start showing it off to people. So check it out!
+UPDATE: This project is now defunct after running for several years, and is no longer hosted. But thanks for the interest!
+.</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-03-15 21:16:07 +0000 GMT'>March 15, 2008</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to BrightonSound.com" href="https://davidcraddock.net/2008/03/15/brightonsoundcom/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">A poor man&#39;s VMWare Workstation: VMWare Server under Ubuntu 7.10 &#43; VMWare Player under Windows XP
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I finally setup my Dell Lattitude D630 laptop the way I wanted it last night, and thought I’d do a quick writeup about it. Here is the parttition table:
+A 40GB Windows XP partition, with VMWare Player installed, which I will be using for Windows applications that don’t play well in virtualised mode (eg media applications). I will also be using it as the main platform for running VMs. A basic 5GB root &#43; 1....</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-02-28 23:56:17 +0000 GMT'>February 28, 2008</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to A poor man&#39;s VMWare Workstation: VMWare Server under Ubuntu 7.10 &#43; VMWare Player under Windows XP" href="https://davidcraddock.net/2008/02/28/a-poor-mans-vmware-workstation-vmware-server-under-ubuntu-710-vmware-player-under-windows-xp/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Brighton Barcamp2
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I will be attending Brighton Barcamp 2 on the weekend of the 14th March, and presenting on a new web project I’ve been working on.
+See: http://barcamp.pbwiki.com/BarCampBrighton2 and http://www.barcampbrighton.org/ for more info.
+Update: Brighton Barcamp 2 is now over.
+This was really interesting, and I learned a huge amount in a very short amount of time. Thanks to everyone who talked to me. I’ll definitely be attending future Barcamps.</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-02-22 02:06:33 +0000 GMT'>February 22, 2008</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Brighton Barcamp2" href="https://davidcraddock.net/2008/02/22/brighton-barcamp2/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">OpenSocial
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This is going to be absolutely huge:
+[youtube https://www.youtube.com/watch?v=RytmNqEHYiE&amp;rel=1]</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-11-24 04:25:29 +0000 GMT'>November 24, 2007</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to OpenSocial" href="https://davidcraddock.net/2007/11/24/opensocial/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">An interesting blog written by a friend of mine
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>My friend Adam has a blog featuring interesting internet finds. Check it out:
+One Idea</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-11-12 20:03:00 +0000 GMT'>November 12, 2007</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to An interesting blog written by a friend of mine" href="https://davidcraddock.net/2007/11/12/an-interesting-blog-written-by-a-friend-of-mine/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://davidcraddock.net/posts/page/16/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="https://davidcraddock.net/posts/page/18/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+</body>
+
+</html>

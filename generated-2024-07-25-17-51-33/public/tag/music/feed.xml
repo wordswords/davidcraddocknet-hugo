@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Music on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/tag/music/</link>
+    <description>Recent content in Music on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 10 Aug 2014 21:53:19 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/tag/music/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Synthesiser Additions: Microbrute, Nord Drum and Access Virus A</title>
+      <link>https://davidcraddock.net/2014/08/10/new-synthesiser-additions-microbrute-nord-drum-and-access-virus-a/</link>
+      <pubDate>Sun, 10 Aug 2014 21:53:19 +0000</pubDate>
+      <guid>https://davidcraddock.net/2014/08/10/new-synthesiser-additions-microbrute-nord-drum-and-access-virus-a/</guid>
+      <description>I bought some new synths.
+Access Virus A This is the original 1998 Access Virus A. It, it was a staple synth for trance and electronic music in general for the early 00s. I am very happy that I managed to get this secondhand for less than a MicroKORG. It cost over £800 when it came out in 1998. Old digital synths seem to be unpopular at the moment, I&amp;rsquo;ve heard comments along the lines of &amp;lsquo;if it&amp;rsquo;s digital then I might as well use a plugin in my DAW&amp;rsquo;.</description>
+    </item>
+    <item>
+      <title>MicroKORG &#43; Python = MIDI fun!</title>
+      <link>https://davidcraddock.net/2009/03/30/microkorg-python-midi-fun/</link>
+      <pubDate>Mon, 30 Mar 2009 00:14:10 +0000</pubDate>
+      <guid>https://davidcraddock.net/2009/03/30/microkorg-python-midi-fun/</guid>
+      <description>So, about a month ago I got a second-hand microKORG from Ebay. Fiddling around with the preset patches, and creating new patches is great fun, even though I only know a few chords. Recently I plugged it in to my PC via my M-Audio Uno USB-&amp;gt;MIDI interface, and soon was using Ableton Live to program drums in time with the microKORG&amp;rsquo;s arp.
+I thought I&amp;rsquo;d experiment the music libraries available in python, and see if I could send notes to the synth via MIDI.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Php-Scraper on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/tag/php-scraper/</link>
+    <description>Recent content in Php-Scraper on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 14 Jan 2010 05:53:47 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/tag/php-scraper/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PHP Sample - HTML Page Fetcher and Parser</title>
+      <link>https://davidcraddock.net/2010/01/14/php-sample-html-page-fetcher-and-parser/</link>
+      <pubDate>Thu, 14 Jan 2010 05:53:47 +0000</pubDate>
+      <guid>https://davidcraddock.net/2010/01/14/php-sample-html-page-fetcher-and-parser/</guid>
+      <description>Back in 2008, I wrote a PHP class that fetched an arbitary URL, parsed it, and coverted it into an PHP object with different attributes for the different elements of the page. I recently updated it and sent it along to a company that wanted a programming example to show I could code in PHP.
+I thought someone may well find a use for it - I&amp;rsquo;ve used the class in several different web scraping applications, and I found it handy.</description>
+    </item>
+  </channel>
+</rss>

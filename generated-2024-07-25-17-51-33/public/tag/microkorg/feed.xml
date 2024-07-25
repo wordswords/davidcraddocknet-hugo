@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Microkorg on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/tag/microkorg/</link>
+    <description>Recent content in Microkorg on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 31 Oct 2014 20:16:56 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/tag/microkorg/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>microKORG Original &#43; Novation Impulse 61</title>
+      <link>https://davidcraddock.net/2014/10/31/microkorg-original-novation-impulse-61/</link>
+      <pubDate>Fri, 31 Oct 2014 20:16:56 +0000</pubDate>
+      <guid>https://davidcraddock.net/2014/10/31/microkorg-original-novation-impulse-61/</guid>
+      <description>I picked up a rather ugly (but very cheap!) customised microKORG, and also the excellent Novation Impulse 61 USB/Midi keyboard controller.
+The microKORG I like a lot. It was my first synth, and at first I couldn&amp;rsquo;t make any sense of it. I do agree with the Reddit /r/synthesizers view that it is not the best synth to learn on. Their view is that the best synth to learn on is one with a one-to-one mapping between controls and sound engine parameters.</description>
+    </item>
+    <item>
+      <title>MicroKORG &#43; Python = MIDI fun!</title>
+      <link>https://davidcraddock.net/2009/03/30/microkorg-python-midi-fun/</link>
+      <pubDate>Mon, 30 Mar 2009 00:14:10 +0000</pubDate>
+      <guid>https://davidcraddock.net/2009/03/30/microkorg-python-midi-fun/</guid>
+      <description>So, about a month ago I got a second-hand microKORG from Ebay. Fiddling around with the preset patches, and creating new patches is great fun, even though I only know a few chords. Recently I plugged it in to my PC via my M-Audio Uno USB-&amp;gt;MIDI interface, and soon was using Ableton Live to program drums in time with the microKORG&amp;rsquo;s arp.
+I thought I&amp;rsquo;d experiment the music libraries available in python, and see if I could send notes to the synth via MIDI.</description>
+    </item>
+  </channel>
+</rss>

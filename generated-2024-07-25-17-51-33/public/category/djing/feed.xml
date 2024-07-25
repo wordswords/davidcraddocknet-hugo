@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Djing on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/category/djing/</link>
+    <description>Recent content in Djing on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 27 Sep 2022 02:56:21 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/category/djing/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Current Twitch DJ Setup</title>
+      <link>https://davidcraddock.net/2022/09/27/current-dj-setup/</link>
+      <pubDate>Tue, 27 Sep 2022 02:56:21 +0000</pubDate>
+      <guid>https://davidcraddock.net/2022/09/27/current-dj-setup/</guid>
+      <description> Click to view full diagram
+Hardware 2 x Reloop 8000mk2 turntables Roland 707m Mixer and DJ Controller 2015 Macbook Pro (DJ Laptop) SoundSwitch USB -&amp;gt; DMX interface, attached to broadcast PC Beatstep MIDI Controller mapped for controlling SoundSwitch, attached to broadcast PC Vestax VCM-600 MIDI Controller used for controlling Resolume, attached to broadcast PC AKAI LPD8 MIDI Controller used for controlling Serato&amp;rsquo;s FX, attached to DJ laptop Rode Soundcaster Pro microphone used as a DJ mic 4 x Phillips Hue Colour Bulbs in lamps Phillips Hue Lightstrip Behringer UMC1820 Sound Interface connected to broadcast PC, attached to broadcast PC 2 x Logitech C920 Cameras used for capturing video for streaming, attached to broadcast PC Software SoundSwitch lighting software running on broadcast PC Resolume Avenue running on broadcast PC Streamlabs OBS running on broadcast PC Serato DJ Pro software running on DJ laptop </description>
+    </item>
+    <item>
+      <title>DJ Books: Reviewed</title>
+      <link>https://davidcraddock.net/2021/02/18/dj-books-reviewed/</link>
+      <pubDate>Thu, 18 Feb 2021 16:56:59 +0000</pubDate>
+      <guid>https://davidcraddock.net/2021/02/18/dj-books-reviewed/</guid>
+      <description>The classic!
+Yes! Some people actually write and read BOOKS on DJing. As if YouTube wasn&amp;rsquo;t enough. Well it can be enough.. but YouTube is also a cess pit of rubbish information, and at least a book has a better chance of being properly edited and reviewed. Also reading a book makes you more intellectual. Which is utterly true.
+So. I have been reading through these DJing books to see if they could teach me something I didn&amp;rsquo;t know about DJing after over 10 years doing it.</description>
+    </item>
+    <item>
+      <title>Twitch Streaming Technical Setup</title>
+      <link>https://davidcraddock.net/2021/02/14/twitch-dj-streaming-technical-setup/</link>
+      <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
+      <guid>https://davidcraddock.net/2021/02/14/twitch-dj-streaming-technical-setup/</guid>
+      <description>I thought I’d write a bit here about my Twitch DJing setup and some of the hardware and software I’m using. Twitch streaming has become very popular over the lockdown period, and I think people might be interested in how I have configured my stream. Something that seperates my stream from anyone else I&amp;rsquo;ve seen on Twitch is that is that I do live vinyl DJing AND live VJing at the same time on my stream.</description>
+    </item>
+  </channel>
+</rss>

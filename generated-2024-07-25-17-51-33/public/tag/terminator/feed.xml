@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Terminator on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/tag/terminator/</link>
+    <description>Recent content in Terminator on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 20 Jun 2013 22:15:52 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/tag/terminator/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>256 Color VIM on Crunchbang Waldorf</title>
+      <link>https://davidcraddock.net/2013/06/20/256-color-vim-on-crunchbang-waldorf/</link>
+      <pubDate>Thu, 20 Jun 2013 22:15:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/2013/06/20/256-color-vim-on-crunchbang-waldorf/</guid>
+      <description>To get 256 colors working within terminator in Crunchbang Waldorf, I had to do the following:
+Add to ~/.bashrc
+export TERM=xterm-256color Install a 256 color VIM colorcheme, see desert256 for example.
+Add the following to ~/.vimrc:
+set t_Co=256 set t_AB=^[[48;5;%dm set t_AF=^[[38;5;%dm &amp;rsquo;t_Co&amp;rsquo; specifies exactly how many colours VIM can use. The other two lines seem to be Debian-specific color code escape sequences.
+If you want 256 color VIM for your root user when you sudo edit, then edit /usr/share/vim/vimrc and copy across your settings from your local ~/.</description>
+    </item>
+  </channel>
+</rss>

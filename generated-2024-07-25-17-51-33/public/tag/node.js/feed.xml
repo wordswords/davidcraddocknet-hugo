@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Node.js on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/tag/node.js/</link>
+    <description>Recent content in Node.js on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 10 May 2017 13:59:18 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/tag/node.js/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Node.js HTTPS server with self-signed certificate creation on openssl 0.9.8zh with node.js 7.10.0</title>
+      <link>https://davidcraddock.net/2017/05/10/node-js-https-server-with-self-signed-certificate-creation-on-openssl-0-9-8zh-with-node-js-7-10-0/</link>
+      <pubDate>Wed, 10 May 2017 13:59:18 +0000</pubDate>
+      <guid>https://davidcraddock.net/2017/05/10/node-js-https-server-with-self-signed-certificate-creation-on-openssl-0-9-8zh-with-node-js-7-10-0/</guid>
+      <description>I couldn&amp;rsquo;t find a concise guide to setting this up quickly so thought it was worth a post. To quickly get something working and create a https server using the above versions of openssl and node.js, do the following:
+Generate self-signed server certificate with no password sudo openssl req -x509 -newkey rsa:2048 -keyout ./csr.pem -out server.crt -days 3001 -nodes Use this node.js code to setup a server quickly const https = require(&#39;https&#39;); const fs = require(&#39;fs&#39;); const options = { key: fs.</description>
+    </item>
+    <item>
+      <title>The Haiku Machine</title>
+      <link>https://davidcraddock.net/2013/07/27/thehaiku-machine/</link>
+      <pubDate>Sat, 27 Jul 2013 02:29:10 +0000</pubDate>
+      <guid>https://davidcraddock.net/2013/07/27/thehaiku-machine/</guid>
+      <description>I found this awesome cut-up poetry generator, which takes the text of famous poets and builds structured poetry out of it. The guy that made it even developed the underlying algorithm as a research project. I have put a version of a free Amazon EC2 instance, wrote a little twitter bot in node.js, and wired the poetry generator with the twitter bot, and now I have this: https://twitter.com/haikumachine - a twitter bot that posts a haiku every five minutes, derived from Dylan Thomas&amp;rsquo;s poetry.</description>
+    </item>
+  </channel>
+</rss>

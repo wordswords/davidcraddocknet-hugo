@@ -1,0 +1,2427 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Category on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/category/</link>
+    <description>Recent content in Category on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 25 Apr 2024 04:55:52 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/category/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Uncategorized</title>
+      <link>https://davidcraddock.net/category/uncategorized/</link>
+      <pubDate>Thu, 25 Apr 2024 04:55:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/uncategorized/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tips</title>
+      <link>https://davidcraddock.net/category/tips/</link>
+      <pubDate>Tue, 23 Apr 2024 22:54:59 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/tips/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorials</title>
+      <link>https://davidcraddock.net/category/tutorials/</link>
+      <pubDate>Thu, 19 Jan 2023 09:12:32 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/tutorials/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Retrospectives</title>
+      <link>https://davidcraddock.net/category/retrospectives/</link>
+      <pubDate>Fri, 23 Dec 2022 23:26:12 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/retrospectives/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Politics</title>
+      <link>https://davidcraddock.net/category/politics/</link>
+      <pubDate>Thu, 29 Sep 2022 04:07:41 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/politics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Grub</title>
+      <link>https://davidcraddock.net/category/grub/</link>
+      <pubDate>Thu, 29 Sep 2022 00:00:36 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/grub/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>New</title>
+      <link>https://davidcraddock.net/category/new/</link>
+      <pubDate>Thu, 29 Sep 2022 00:00:36 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/new/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Poweroff</title>
+      <link>https://davidcraddock.net/category/poweroff/</link>
+      <pubDate>Thu, 29 Sep 2022 00:00:36 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/poweroff/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reboot</title>
+      <link>https://davidcraddock.net/category/reboot/</link>
+      <pubDate>Thu, 29 Sep 2022 00:00:36 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/reboot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ubuntu</title>
+      <link>https://davidcraddock.net/category/ubuntu/</link>
+      <pubDate>Thu, 29 Sep 2022 00:00:36 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/ubuntu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>/Home</title>
+      <link>https://davidcraddock.net/category/home/</link>
+      <pubDate>Tue, 27 Sep 2022 02:56:21 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/home/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Broadcast-Studio</title>
+      <link>https://davidcraddock.net/category/broadcast-studio/</link>
+      <pubDate>Tue, 27 Sep 2022 02:56:21 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/broadcast-studio/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Djing</title>
+      <link>https://davidcraddock.net/category/djing/</link>
+      <pubDate>Tue, 27 Sep 2022 02:56:21 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/djing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dmx</title>
+      <link>https://davidcraddock.net/category/dmx/</link>
+      <pubDate>Tue, 27 Sep 2022 02:56:21 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/dmx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Serato</title>
+      <link>https://davidcraddock.net/category/serato/</link>
+      <pubDate>Tue, 27 Sep 2022 02:56:21 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/serato/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Duplicati</title>
+      <link>https://davidcraddock.net/category/duplicati/</link>
+      <pubDate>Sat, 24 Sep 2022 17:39:06 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/duplicati/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Google-Drive</title>
+      <link>https://davidcraddock.net/category/google-drive/</link>
+      <pubDate>Sat, 24 Sep 2022 17:39:06 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/google-drive/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://davidcraddock.net/category/linux/</link>
+      <pubDate>Sat, 24 Sep 2022 17:39:06 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rclone</title>
+      <link>https://davidcraddock.net/category/rclone/</link>
+      <pubDate>Sat, 24 Sep 2022 17:39:06 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/rclone/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Health</title>
+      <link>https://davidcraddock.net/category/health/</link>
+      <pubDate>Thu, 18 Aug 2022 19:58:57 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/health/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sleep</title>
+      <link>https://davidcraddock.net/category/sleep/</link>
+      <pubDate>Thu, 18 Aug 2022 19:58:57 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/sleep/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sleep-Tracker</title>
+      <link>https://davidcraddock.net/category/sleep-tracker/</link>
+      <pubDate>Thu, 18 Aug 2022 19:58:57 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/sleep-tracker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Withings</title>
+      <link>https://davidcraddock.net/category/withings/</link>
+      <pubDate>Thu, 18 Aug 2022 19:58:57 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/withings/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Collecting</title>
+      <link>https://davidcraddock.net/category/collecting/</link>
+      <pubDate>Tue, 09 Aug 2022 02:53:48 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/collecting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gaming</title>
+      <link>https://davidcraddock.net/category/gaming/</link>
+      <pubDate>Tue, 09 Aug 2022 02:53:48 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/gaming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Playnite</title>
+      <link>https://davidcraddock.net/category/playnite/</link>
+      <pubDate>Tue, 09 Aug 2022 02:53:48 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/playnite/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Solutions-to-a-Specific-Problem</title>
+      <link>https://davidcraddock.net/category/solutions-to-a-specific-problem/</link>
+      <pubDate>Sat, 14 May 2022 23:15:20 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/solutions-to-a-specific-problem/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ripping</title>
+      <link>https://davidcraddock.net/category/ripping/</link>
+      <pubDate>Wed, 16 Mar 2022 17:58:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/ripping/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ripping-Blurays</title>
+      <link>https://davidcraddock.net/category/ripping-blurays/</link>
+      <pubDate>Wed, 16 Mar 2022 17:58:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/ripping-blurays/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>https://davidcraddock.net/category/tutorial/</link>
+      <pubDate>Wed, 16 Mar 2022 17:58:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/tutorial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Video-Tools</title>
+      <link>https://davidcraddock.net/category/video-tools/</link>
+      <pubDate>Wed, 16 Mar 2022 17:58:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/video-tools/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jenkinsfile</title>
+      <link>https://davidcraddock.net/category/jenkinsfile/</link>
+      <pubDate>Sat, 19 Feb 2022 05:51:56 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/jenkinsfile/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lint</title>
+      <link>https://davidcraddock.net/category/lint/</link>
+      <pubDate>Sat, 19 Feb 2022 05:51:56 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/lint/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vim</title>
+      <link>https://davidcraddock.net/category/vim/</link>
+      <pubDate>Sat, 19 Feb 2022 05:51:56 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/vim/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chmod</title>
+      <link>https://davidcraddock.net/category/chmod/</link>
+      <pubDate>Thu, 18 Nov 2021 08:54:42 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/chmod/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Enlightement</title>
+      <link>https://davidcraddock.net/category/enlightement/</link>
+      <pubDate>Thu, 18 Nov 2021 08:54:42 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/enlightement/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Enlightement_system</title>
+      <link>https://davidcraddock.net/category/enlightement_system/</link>
+      <pubDate>Thu, 18 Nov 2021 08:54:42 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/enlightement_system/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Suit</title>
+      <link>https://davidcraddock.net/category/suit/</link>
+      <pubDate>Thu, 18 Nov 2021 08:54:42 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/suit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Video-Games</title>
+      <link>https://davidcraddock.net/category/video-games/</link>
+      <pubDate>Sat, 07 Aug 2021 19:57:27 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/video-games/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Music</title>
+      <link>https://davidcraddock.net/category/music/</link>
+      <pubDate>Sun, 13 Jun 2021 20:54:40 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/music/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cd-Ripping</title>
+      <link>https://davidcraddock.net/category/cd-ripping/</link>
+      <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/cd-ripping/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dbpoweramp</title>
+      <link>https://davidcraddock.net/category/dbpoweramp/</link>
+      <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/dbpoweramp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flac</title>
+      <link>https://davidcraddock.net/category/flac/</link>
+      <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/flac/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Large-Library</title>
+      <link>https://davidcraddock.net/category/large-library/</link>
+      <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/large-library/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Metadata</title>
+      <link>https://davidcraddock.net/category/metadata/</link>
+      <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/metadata/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mixed-in-Key</title>
+      <link>https://davidcraddock.net/category/mixed-in-key/</link>
+      <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/mixed-in-key/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Musicbrainz</title>
+      <link>https://davidcraddock.net/category/musicbrainz/</link>
+      <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/musicbrainz/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Picard</title>
+      <link>https://davidcraddock.net/category/picard/</link>
+      <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/picard/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Serato-Dj-Pro</title>
+      <link>https://davidcraddock.net/category/serato-dj-pro/</link>
+      <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/serato-dj-pro/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tagging</title>
+      <link>https://davidcraddock.net/category/tagging/</link>
+      <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/tagging/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ableton-Live</title>
+      <link>https://davidcraddock.net/category/ableton-live/</link>
+      <pubDate>Thu, 08 Apr 2021 03:49:31 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/ableton-live/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Denon-Ds1</title>
+      <link>https://davidcraddock.net/category/denon-ds1/</link>
+      <pubDate>Thu, 08 Apr 2021 03:49:31 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/denon-ds1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reloop-8000mk2</title>
+      <link>https://davidcraddock.net/category/reloop-8000mk2/</link>
+      <pubDate>Thu, 08 Apr 2021 03:49:31 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/reloop-8000mk2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Book-Reviews</title>
+      <link>https://davidcraddock.net/category/book-reviews/</link>
+      <pubDate>Thu, 18 Feb 2021 16:56:59 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/book-reviews/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dj-Books</title>
+      <link>https://davidcraddock.net/category/dj-books/</link>
+      <pubDate>Thu, 18 Feb 2021 16:56:59 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/dj-books/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Configuration</title>
+      <link>https://davidcraddock.net/category/configuration/</link>
+      <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/configuration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Help</title>
+      <link>https://davidcraddock.net/category/help/</link>
+      <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/help/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microphone</title>
+      <link>https://davidcraddock.net/category/microphone/</link>
+      <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/microphone/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Obs</title>
+      <link>https://davidcraddock.net/category/obs/</link>
+      <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/obs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Professional</title>
+      <link>https://davidcraddock.net/category/professional/</link>
+      <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/professional/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Resolume-Avenue</title>
+      <link>https://davidcraddock.net/category/resolume-avenue/</link>
+      <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/resolume-avenue/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Streaming</title>
+      <link>https://davidcraddock.net/category/streaming/</link>
+      <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/streaming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Streamlabs-Obs</title>
+      <link>https://davidcraddock.net/category/streamlabs-obs/</link>
+      <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/streamlabs-obs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technical-Setup</title>
+      <link>https://davidcraddock.net/category/technical-setup/</link>
+      <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/technical-setup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Twitch</title>
+      <link>https://davidcraddock.net/category/twitch/</link>
+      <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/twitch/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vjing</title>
+      <link>https://davidcraddock.net/category/vjing/</link>
+      <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/vjing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>3440x1440</title>
+      <link>https://davidcraddock.net/category/3440x1440/</link>
+      <pubDate>Sun, 20 May 2018 11:40:51 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/3440x1440/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>4k-Video</title>
+      <link>https://davidcraddock.net/category/4k-video/</link>
+      <pubDate>Sun, 20 May 2018 11:40:51 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/4k-video/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>4k-Video-Downloader</title>
+      <link>https://davidcraddock.net/category/4k-video-downloader/</link>
+      <pubDate>Sun, 20 May 2018 11:40:51 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/4k-video-downloader/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Benq-Ex3501r</title>
+      <link>https://davidcraddock.net/category/benq-ex3501r/</link>
+      <pubDate>Sun, 20 May 2018 11:40:51 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/benq-ex3501r/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dynamic-Lighting-for-Home-Cinema</title>
+      <link>https://davidcraddock.net/category/dynamic-lighting-for-home-cinema/</link>
+      <pubDate>Sun, 20 May 2018 11:40:51 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/dynamic-lighting-for-home-cinema/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Home-Cinema</title>
+      <link>https://davidcraddock.net/category/home-cinema/</link>
+      <pubDate>Sun, 20 May 2018 11:40:51 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/home-cinema/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Huedynamic</title>
+      <link>https://davidcraddock.net/category/huedynamic/</link>
+      <pubDate>Sun, 20 May 2018 11:40:51 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/huedynamic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Logitech-Z906-5.1</title>
+      <link>https://davidcraddock.net/category/logitech-z906-5.1/</link>
+      <pubDate>Sun, 20 May 2018 11:40:51 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/logitech-z906-5.1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Surround-Sound</title>
+      <link>https://davidcraddock.net/category/surround-sound/</link>
+      <pubDate>Sun, 20 May 2018 11:40:51 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/surround-sound/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Node</title>
+      <link>https://davidcraddock.net/category/node/</link>
+      <pubDate>Wed, 10 May 2017 13:59:18 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/node/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Node.js</title>
+      <link>https://davidcraddock.net/category/node.js/</link>
+      <pubDate>Wed, 10 May 2017 13:59:18 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/node.js/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Node.js-7.10.0</title>
+      <link>https://davidcraddock.net/category/node.js-7.10.0/</link>
+      <pubDate>Wed, 10 May 2017 13:59:18 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/node.js-7.10.0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Node.js-Https-Server</title>
+      <link>https://davidcraddock.net/category/node.js-https-server/</link>
+      <pubDate>Wed, 10 May 2017 13:59:18 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/node.js-https-server/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Openssl</title>
+      <link>https://davidcraddock.net/category/openssl/</link>
+      <pubDate>Wed, 10 May 2017 13:59:18 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/openssl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Openssl-0.9.8</title>
+      <link>https://davidcraddock.net/category/openssl-0.9.8/</link>
+      <pubDate>Wed, 10 May 2017 13:59:18 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/openssl-0.9.8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Self-Signed</title>
+      <link>https://davidcraddock.net/category/self-signed/</link>
+      <pubDate>Wed, 10 May 2017 13:59:18 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/self-signed/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fish-Shell</title>
+      <link>https://davidcraddock.net/category/fish-shell/</link>
+      <pubDate>Mon, 04 Apr 2016 11:50:31 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/fish-shell/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Google-Chrome</title>
+      <link>https://davidcraddock.net/category/google-chrome/</link>
+      <pubDate>Mon, 04 Apr 2016 11:50:31 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/google-chrome/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Osx</title>
+      <link>https://davidcraddock.net/category/osx/</link>
+      <pubDate>Mon, 04 Apr 2016 11:50:31 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/osx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Assets</title>
+      <link>https://davidcraddock.net/category/assets/</link>
+      <pubDate>Tue, 08 Mar 2016 17:22:37 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/assets/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Audio-Testing</title>
+      <link>https://davidcraddock.net/category/audio-testing/</link>
+      <pubDate>Tue, 08 Mar 2016 17:22:37 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/audio-testing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Commandline</title>
+      <link>https://davidcraddock.net/category/commandline/</link>
+      <pubDate>Tue, 08 Mar 2016 17:22:37 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/commandline/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dash</title>
+      <link>https://davidcraddock.net/category/dash/</link>
+      <pubDate>Tue, 08 Mar 2016 17:22:37 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/dash/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ffmpeg</title>
+      <link>https://davidcraddock.net/category/ffmpeg/</link>
+      <pubDate>Tue, 08 Mar 2016 17:22:37 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/ffmpeg/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Generator</title>
+      <link>https://davidcraddock.net/category/generator/</link>
+      <pubDate>Tue, 08 Mar 2016 17:22:37 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/generator/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sox</title>
+      <link>https://davidcraddock.net/category/sox/</link>
+      <pubDate>Tue, 08 Mar 2016 17:22:37 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/sox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Audio-Routing</title>
+      <link>https://davidcraddock.net/category/audio-routing/</link>
+      <pubDate>Sat, 06 Feb 2016 08:40:22 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/audio-routing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dual-Soundcard</title>
+      <link>https://davidcraddock.net/category/dual-soundcard/</link>
+      <pubDate>Sat, 06 Feb 2016 08:40:22 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/dual-soundcard/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pc</title>
+      <link>https://davidcraddock.net/category/pc/</link>
+      <pubDate>Sat, 06 Feb 2016 08:40:22 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/pc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>~-Backup</title>
+      <link>https://davidcraddock.net/category/~-backup/</link>
+      <pubDate>Tue, 02 Feb 2016 17:28:39 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/~-backup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bitbucket</title>
+      <link>https://davidcraddock.net/category/bitbucket/</link>
+      <pubDate>Tue, 02 Feb 2016 17:28:39 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/bitbucket/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Du</title>
+      <link>https://davidcraddock.net/category/du/</link>
+      <pubDate>Tue, 02 Feb 2016 17:28:39 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/du/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Git</title>
+      <link>https://davidcraddock.net/category/git/</link>
+      <pubDate>Tue, 02 Feb 2016 17:28:39 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shell-Scripting</title>
+      <link>https://davidcraddock.net/category/shell-scripting/</link>
+      <pubDate>Tue, 02 Feb 2016 17:28:39 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/shell-scripting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Adat</title>
+      <link>https://davidcraddock.net/category/adat/</link>
+      <pubDate>Mon, 25 Jan 2016 21:10:44 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/adat/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Avid</title>
+      <link>https://davidcraddock.net/category/avid/</link>
+      <pubDate>Mon, 25 Jan 2016 21:10:44 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/avid/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Console</title>
+      <link>https://davidcraddock.net/category/console/</link>
+      <pubDate>Mon, 25 Jan 2016 21:10:44 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/console/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Digi-002</title>
+      <link>https://davidcraddock.net/category/digi-002/</link>
+      <pubDate>Mon, 25 Jan 2016 21:10:44 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/digi-002/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Focusrite-Sapphire-Pro-24</title>
+      <link>https://davidcraddock.net/category/focusrite-sapphire-pro-24/</link>
+      <pubDate>Mon, 25 Jan 2016 21:10:44 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/focusrite-sapphire-pro-24/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mixer</title>
+      <link>https://davidcraddock.net/category/mixer/</link>
+      <pubDate>Mon, 25 Jan 2016 21:10:44 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/mixer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Optical</title>
+      <link>https://davidcraddock.net/category/optical/</link>
+      <pubDate>Mon, 25 Jan 2016 21:10:44 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/optical/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ergonomic-Mouse</title>
+      <link>https://davidcraddock.net/category/ergonomic-mouse/</link>
+      <pubDate>Mon, 21 Dec 2015 08:37:03 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/ergonomic-mouse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Graphics-Card</title>
+      <link>https://davidcraddock.net/category/graphics-card/</link>
+      <pubDate>Mon, 21 Dec 2015 08:37:03 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/graphics-card/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Monitor</title>
+      <link>https://davidcraddock.net/category/monitor/</link>
+      <pubDate>Mon, 21 Dec 2015 08:37:03 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/monitor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pc-Upgrade</title>
+      <link>https://davidcraddock.net/category/pc-upgrade/</link>
+      <pubDate>Mon, 21 Dec 2015 08:37:03 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/pc-upgrade/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Recommended-Pc-Upgrades</title>
+      <link>https://davidcraddock.net/category/recommended-pc-upgrades/</link>
+      <pubDate>Mon, 21 Dec 2015 08:37:03 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/recommended-pc-upgrades/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Recommended-Upgrades</title>
+      <link>https://davidcraddock.net/category/recommended-upgrades/</link>
+      <pubDate>Mon, 21 Dec 2015 08:37:03 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/recommended-upgrades/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ssd</title>
+      <link>https://davidcraddock.net/category/ssd/</link>
+      <pubDate>Mon, 21 Dec 2015 08:37:03 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/ssd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mouse-Wheel</title>
+      <link>https://davidcraddock.net/category/mouse-wheel/</link>
+      <pubDate>Sat, 05 Dec 2015 17:32:40 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/mouse-wheel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rsi</title>
+      <link>https://davidcraddock.net/category/rsi/</link>
+      <pubDate>Sat, 05 Dec 2015 17:32:40 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/rsi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scrolling</title>
+      <link>https://davidcraddock.net/category/scrolling/</link>
+      <pubDate>Sat, 05 Dec 2015 17:32:40 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/scrolling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scrolling-Page</title>
+      <link>https://davidcraddock.net/category/scrolling-page/</link>
+      <pubDate>Sat, 05 Dec 2015 17:32:40 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/scrolling-page/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web-Browsing</title>
+      <link>https://davidcraddock.net/category/web-browsing/</link>
+      <pubDate>Sat, 05 Dec 2015 17:32:40 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/web-browsing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Awful</title>
+      <link>https://davidcraddock.net/category/awful/</link>
+      <pubDate>Sun, 08 Nov 2015 19:22:50 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/awful/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Backlight</title>
+      <link>https://davidcraddock.net/category/backlight/</link>
+      <pubDate>Sun, 08 Nov 2015 19:22:50 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/backlight/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dissapointment</title>
+      <link>https://davidcraddock.net/category/dissapointment/</link>
+      <pubDate>Sun, 08 Nov 2015 19:22:50 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/dissapointment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lightpack.tv</title>
+      <link>https://davidcraddock.net/category/lightpack.tv/</link>
+      <pubDate>Sun, 08 Nov 2015 19:22:50 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/lightpack.tv/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Razer-Tiamat</title>
+      <link>https://davidcraddock.net/category/razer-tiamat/</link>
+      <pubDate>Sun, 08 Nov 2015 19:22:50 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/razer-tiamat/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Surround-Sound-7.1-Headsets</title>
+      <link>https://davidcraddock.net/category/surround-sound-7.1-headsets/</link>
+      <pubDate>Sun, 08 Nov 2015 19:22:50 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/surround-sound-7.1-headsets/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Alfred</title>
+      <link>https://davidcraddock.net/category/alfred/</link>
+      <pubDate>Sat, 07 Nov 2015 12:51:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/alfred/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Best-Apps</title>
+      <link>https://davidcraddock.net/category/best-apps/</link>
+      <pubDate>Sat, 07 Nov 2015 12:51:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/best-apps/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Droplr</title>
+      <link>https://davidcraddock.net/category/droplr/</link>
+      <pubDate>Sat, 07 Nov 2015 12:51:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/droplr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Evernote</title>
+      <link>https://davidcraddock.net/category/evernote/</link>
+      <pubDate>Sat, 07 Nov 2015 12:51:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/evernote/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Itunes</title>
+      <link>https://davidcraddock.net/category/itunes/</link>
+      <pubDate>Sat, 07 Nov 2015 12:51:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/itunes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Osx-El-Capitan</title>
+      <link>https://davidcraddock.net/category/osx-el-capitan/</link>
+      <pubDate>Sat, 07 Nov 2015 12:51:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/osx-el-capitan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Productivity</title>
+      <link>https://davidcraddock.net/category/productivity/</link>
+      <pubDate>Sat, 07 Nov 2015 12:51:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/productivity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Top-Apps</title>
+      <link>https://davidcraddock.net/category/top-apps/</link>
+      <pubDate>Sat, 07 Nov 2015 12:51:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/top-apps/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Amazon-Echo</title>
+      <link>https://davidcraddock.net/category/amazon-echo/</link>
+      <pubDate>Thu, 15 Oct 2015 15:28:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/amazon-echo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Google-Now</title>
+      <link>https://davidcraddock.net/category/google-now/</link>
+      <pubDate>Thu, 15 Oct 2015 15:28:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/google-now/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Home-Automation-Market</title>
+      <link>https://davidcraddock.net/category/home-automation-market/</link>
+      <pubDate>Thu, 15 Oct 2015 15:28:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/home-automation-market/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nest</title>
+      <link>https://davidcraddock.net/category/nest/</link>
+      <pubDate>Thu, 15 Oct 2015 15:28:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/nest/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Siri</title>
+      <link>https://davidcraddock.net/category/siri/</link>
+      <pubDate>Thu, 15 Oct 2015 15:28:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/siri/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Voice-Assitant</title>
+      <link>https://davidcraddock.net/category/voice-assitant/</link>
+      <pubDate>Thu, 15 Oct 2015 15:28:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/voice-assitant/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ifttt.com</title>
+      <link>https://davidcraddock.net/category/ifttt.com/</link>
+      <pubDate>Thu, 15 Oct 2015 10:17:28 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/ifttt.com/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Recommendation</title>
+      <link>https://davidcraddock.net/category/recommendation/</link>
+      <pubDate>Thu, 15 Oct 2015 10:17:28 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/recommendation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://davidcraddock.net/category/javascript/</link>
+      <pubDate>Mon, 28 Sep 2015 17:32:15 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scope</title>
+      <link>https://davidcraddock.net/category/scope/</link>
+      <pubDate>Mon, 28 Sep 2015 17:32:15 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/scope/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Collaboration</title>
+      <link>https://davidcraddock.net/category/collaboration/</link>
+      <pubDate>Mon, 28 Sep 2015 16:22:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/collaboration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Extreme-Programming</title>
+      <link>https://davidcraddock.net/category/extreme-programming/</link>
+      <pubDate>Mon, 28 Sep 2015 16:22:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/extreme-programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Extroversion</title>
+      <link>https://davidcraddock.net/category/extroversion/</link>
+      <pubDate>Mon, 28 Sep 2015 16:22:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/extroversion/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introversion</title>
+      <link>https://davidcraddock.net/category/introversion/</link>
+      <pubDate>Mon, 28 Sep 2015 16:22:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/introversion/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introvert</title>
+      <link>https://davidcraddock.net/category/introvert/</link>
+      <pubDate>Mon, 28 Sep 2015 16:22:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/introvert/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pair-Programming</title>
+      <link>https://davidcraddock.net/category/pair-programming/</link>
+      <pubDate>Mon, 28 Sep 2015 16:22:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/pair-programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Personality-of-Software-Engineers</title>
+      <link>https://davidcraddock.net/category/personality-of-software-engineers/</link>
+      <pubDate>Mon, 28 Sep 2015 16:22:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/personality-of-software-engineers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Software-Engineer</title>
+      <link>https://davidcraddock.net/category/software-engineer/</link>
+      <pubDate>Mon, 28 Sep 2015 16:22:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/software-engineer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apple-Earphones</title>
+      <link>https://davidcraddock.net/category/apple-earphones/</link>
+      <pubDate>Sat, 15 Aug 2015 20:46:21 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/apple-earphones/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apple-Music</title>
+      <link>https://davidcraddock.net/category/apple-music/</link>
+      <pubDate>Sat, 15 Aug 2015 20:46:21 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/apple-music/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Iphone</title>
+      <link>https://davidcraddock.net/category/iphone/</link>
+      <pubDate>Sat, 15 Aug 2015 20:46:21 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/iphone/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Budget</title>
+      <link>https://davidcraddock.net/category/budget/</link>
+      <pubDate>Tue, 21 Jul 2015 19:42:04 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/budget/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Doepfer</title>
+      <link>https://davidcraddock.net/category/doepfer/</link>
+      <pubDate>Tue, 21 Jul 2015 19:42:04 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/doepfer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Eurorack</title>
+      <link>https://davidcraddock.net/category/eurorack/</link>
+      <pubDate>Tue, 21 Jul 2015 19:42:04 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/eurorack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Low-Cost</title>
+      <link>https://davidcraddock.net/category/low-cost/</link>
+      <pubDate>Tue, 21 Jul 2015 19:42:04 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/low-cost/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Modular</title>
+      <link>https://davidcraddock.net/category/modular/</link>
+      <pubDate>Tue, 21 Jul 2015 19:42:04 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/modular/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Output</title>
+      <link>https://davidcraddock.net/category/output/</link>
+      <pubDate>Sun, 21 Jun 2015 17:55:50 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/output/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sound</title>
+      <link>https://davidcraddock.net/category/sound/</link>
+      <pubDate>Sun, 21 Jun 2015 17:55:50 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/sound/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chrome</title>
+      <link>https://davidcraddock.net/category/chrome/</link>
+      <pubDate>Sun, 21 Jun 2015 17:49:00 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/chrome/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Most-Visited</title>
+      <link>https://davidcraddock.net/category/most-visited/</link>
+      <pubDate>Sun, 21 Jun 2015 17:49:00 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/most-visited/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Remove</title>
+      <link>https://davidcraddock.net/category/remove/</link>
+      <pubDate>Sun, 21 Jun 2015 17:49:00 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/remove/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Personal</title>
+      <link>https://davidcraddock.net/category/personal/</link>
+      <pubDate>Sat, 17 Jan 2015 23:36:45 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/personal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microkorg</title>
+      <link>https://davidcraddock.net/category/microkorg/</link>
+      <pubDate>Fri, 31 Oct 2014 20:16:56 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/microkorg/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ms2000</title>
+      <link>https://davidcraddock.net/category/ms2000/</link>
+      <pubDate>Fri, 31 Oct 2014 20:16:56 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/ms2000/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Novation-Impulse-61</title>
+      <link>https://davidcraddock.net/category/novation-impulse-61/</link>
+      <pubDate>Fri, 31 Oct 2014 20:16:56 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/novation-impulse-61/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ddj-Sr</title>
+      <link>https://davidcraddock.net/category/ddj-sr/</link>
+      <pubDate>Wed, 03 Sep 2014 00:17:23 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/ddj-sr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pioneer</title>
+      <link>https://davidcraddock.net/category/pioneer/</link>
+      <pubDate>Wed, 03 Sep 2014 00:17:23 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/pioneer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Access-Virus-A</title>
+      <link>https://davidcraddock.net/category/access-virus-a/</link>
+      <pubDate>Sun, 10 Aug 2014 21:53:19 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/access-virus-a/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microbrute</title>
+      <link>https://davidcraddock.net/category/microbrute/</link>
+      <pubDate>Sun, 10 Aug 2014 21:53:19 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/microbrute/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A-Star</title>
+      <link>https://davidcraddock.net/category/a-star/</link>
+      <pubDate>Thu, 12 Jun 2014 00:24:34 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/a-star/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Artificial-Intelligence</title>
+      <link>https://davidcraddock.net/category/artificial-intelligence/</link>
+      <pubDate>Thu, 12 Jun 2014 00:24:34 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/artificial-intelligence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Game-A.i</title>
+      <link>https://davidcraddock.net/category/game-a.i/</link>
+      <pubDate>Thu, 12 Jun 2014 00:24:34 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/game-a.i/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://davidcraddock.net/category/python/</link>
+      <pubDate>Thu, 12 Jun 2014 00:24:34 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ableton-Live-Intro</title>
+      <link>https://davidcraddock.net/category/ableton-live-intro/</link>
+      <pubDate>Mon, 05 May 2014 16:20:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/ableton-live-intro/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Electribe-R1</title>
+      <link>https://davidcraddock.net/category/electribe-r1/</link>
+      <pubDate>Mon, 05 May 2014 16:20:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/electribe-r1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Korg</title>
+      <link>https://davidcraddock.net/category/korg/</link>
+      <pubDate>Mon, 05 May 2014 16:20:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/korg/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Monotribe</title>
+      <link>https://davidcraddock.net/category/monotribe/</link>
+      <pubDate>Mon, 05 May 2014 16:20:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/monotribe/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Yamaha-P35</title>
+      <link>https://davidcraddock.net/category/yamaha-p35/</link>
+      <pubDate>Mon, 05 May 2014 16:20:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/yamaha-p35/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Adb</title>
+      <link>https://davidcraddock.net/category/adb/</link>
+      <pubDate>Mon, 10 Feb 2014 15:28:45 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/adb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Adb-Devices</title>
+      <link>https://davidcraddock.net/category/adb-devices/</link>
+      <pubDate>Mon, 10 Feb 2014 15:28:45 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/adb-devices/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Android</title>
+      <link>https://davidcraddock.net/category/android/</link>
+      <pubDate>Mon, 10 Feb 2014 15:28:45 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/android/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Android-Development</title>
+      <link>https://davidcraddock.net/category/android-development/</link>
+      <pubDate>Mon, 10 Feb 2014 15:28:45 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/android-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kindlefire-Hdx</title>
+      <link>https://davidcraddock.net/category/kindlefire-hdx/</link>
+      <pubDate>Mon, 10 Feb 2014 15:28:45 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/kindlefire-hdx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Benq-Bl3200pt</title>
+      <link>https://davidcraddock.net/category/benq-bl3200pt/</link>
+      <pubDate>Wed, 29 Jan 2014 00:13:12 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/benq-bl3200pt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gigabyte-Z77x-D3h-1155</title>
+      <link>https://davidcraddock.net/category/gigabyte-z77x-d3h-1155/</link>
+      <pubDate>Wed, 29 Jan 2014 00:13:12 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/gigabyte-z77x-d3h-1155/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Intel-Core-I7-(3770)-3.4ghz</title>
+      <link>https://davidcraddock.net/category/intel-core-i7-3770-3.4ghz/</link>
+      <pubDate>Wed, 29 Jan 2014 00:13:12 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/intel-core-i7-3770-3.4ghz/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Krk-Rokit-G2-5</title>
+      <link>https://davidcraddock.net/category/krk-rokit-g2-5/</link>
+      <pubDate>Wed, 29 Jan 2014 00:13:12 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/krk-rokit-g2-5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nvidea-Strix-Gtx-980</title>
+      <link>https://davidcraddock.net/category/nvidea-strix-gtx-980/</link>
+      <pubDate>Wed, 29 Jan 2014 00:13:12 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/nvidea-strix-gtx-980/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sennheiser-Hd-25-1-Iis</title>
+      <link>https://davidcraddock.net/category/sennheiser-hd-25-1-iis/</link>
+      <pubDate>Wed, 29 Jan 2014 00:13:12 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/sennheiser-hd-25-1-iis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Thermaltake-Level-10-Gt-Full-Tower</title>
+      <link>https://davidcraddock.net/category/thermaltake-level-10-gt-full-tower/</link>
+      <pubDate>Wed, 29 Jan 2014 00:13:12 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/thermaltake-level-10-gt-full-tower/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Aeron-Chair</title>
+      <link>https://davidcraddock.net/category/aeron-chair/</link>
+      <pubDate>Tue, 24 Dec 2013 14:08:48 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/aeron-chair/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Best-Chair-for-Programmers</title>
+      <link>https://davidcraddock.net/category/best-chair-for-programmers/</link>
+      <pubDate>Tue, 24 Dec 2013 14:08:48 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/best-chair-for-programmers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chair</title>
+      <link>https://davidcraddock.net/category/chair/</link>
+      <pubDate>Tue, 24 Dec 2013 14:08:48 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/chair/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computer-Chair</title>
+      <link>https://davidcraddock.net/category/computer-chair/</link>
+      <pubDate>Tue, 24 Dec 2013 14:08:48 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/computer-chair/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Desk-Chair</title>
+      <link>https://davidcraddock.net/category/desk-chair/</link>
+      <pubDate>Tue, 24 Dec 2013 14:08:48 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/desk-chair/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Work-Chair</title>
+      <link>https://davidcraddock.net/category/work-chair/</link>
+      <pubDate>Tue, 24 Dec 2013 14:08:48 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/work-chair/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bbc</title>
+      <link>https://davidcraddock.net/category/bbc/</link>
+      <pubDate>Sun, 17 Nov 2013 03:40:14 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/bbc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Career</title>
+      <link>https://davidcraddock.net/category/career/</link>
+      <pubDate>Sun, 17 Nov 2013 03:40:14 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/career/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Connected-Red-Button</title>
+      <link>https://davidcraddock.net/category/connected-red-button/</link>
+      <pubDate>Sun, 17 Nov 2013 03:40:14 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/connected-red-button/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>David-Craddock</title>
+      <link>https://davidcraddock.net/category/david-craddock/</link>
+      <pubDate>Sun, 17 Nov 2013 03:40:14 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/david-craddock/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Device-Hive</title>
+      <link>https://davidcraddock.net/category/device-hive/</link>
+      <pubDate>Sun, 17 Nov 2013 03:40:14 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/device-hive/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smartbridge</title>
+      <link>https://davidcraddock.net/category/smartbridge/</link>
+      <pubDate>Sun, 17 Nov 2013 03:40:14 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/smartbridge/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Adt</title>
+      <link>https://davidcraddock.net/category/adt/</link>
+      <pubDate>Sun, 17 Nov 2013 02:21:34 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/adt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Android-Developer-Tools</title>
+      <link>https://davidcraddock.net/category/android-developer-tools/</link>
+      <pubDate>Sun, 17 Nov 2013 02:21:34 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/android-developer-tools/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Detect</title>
+      <link>https://davidcraddock.net/category/detect/</link>
+      <pubDate>Sun, 17 Nov 2013 02:21:34 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/detect/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Emulator</title>
+      <link>https://davidcraddock.net/category/emulator/</link>
+      <pubDate>Sun, 17 Nov 2013 02:21:34 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/emulator/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stability</title>
+      <link>https://davidcraddock.net/category/stability/</link>
+      <pubDate>Sun, 17 Nov 2013 02:21:34 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/stability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dylan-Thomas</title>
+      <link>https://davidcraddock.net/category/dylan-thomas/</link>
+      <pubDate>Sat, 27 Jul 2013 02:29:10 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/dylan-thomas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ec2</title>
+      <link>https://davidcraddock.net/category/ec2/</link>
+      <pubDate>Sat, 27 Jul 2013 02:29:10 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/ec2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Haiku</title>
+      <link>https://davidcraddock.net/category/haiku/</link>
+      <pubDate>Sat, 27 Jul 2013 02:29:10 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/haiku/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Haikumachine</title>
+      <link>https://davidcraddock.net/category/haikumachine/</link>
+      <pubDate>Sat, 27 Jul 2013 02:29:10 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/haikumachine/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>.Vimrc</title>
+      <link>https://davidcraddock.net/category/.vimrc/</link>
+      <pubDate>Thu, 20 Jun 2013 22:15:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/.vimrc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>256-Colors</title>
+      <link>https://davidcraddock.net/category/256-colors/</link>
+      <pubDate>Thu, 20 Jun 2013 22:15:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/256-colors/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Crunchbang.-Waldorf</title>
+      <link>https://davidcraddock.net/category/crunchbang.-waldorf/</link>
+      <pubDate>Thu, 20 Jun 2013 22:15:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/crunchbang.-waldorf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Escape-Sequence</title>
+      <link>https://davidcraddock.net/category/escape-sequence/</link>
+      <pubDate>Thu, 20 Jun 2013 22:15:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/escape-sequence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Terminator</title>
+      <link>https://davidcraddock.net/category/terminator/</link>
+      <pubDate>Thu, 20 Jun 2013 22:15:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/terminator/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Crunchbang</title>
+      <link>https://davidcraddock.net/category/crunchbang/</link>
+      <pubDate>Sun, 16 Jun 2013 03:43:49 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/crunchbang/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smart-Svn</title>
+      <link>https://davidcraddock.net/category/smart-svn/</link>
+      <pubDate>Sun, 16 Jun 2013 03:43:49 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/smart-svn/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Subversion-1.7</title>
+      <link>https://davidcraddock.net/category/subversion-1.7/</link>
+      <pubDate>Sun, 16 Jun 2013 03:43:49 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/subversion-1.7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Svn</title>
+      <link>https://davidcraddock.net/category/svn/</link>
+      <pubDate>Sun, 16 Jun 2013 03:43:49 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/svn/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Waldorf</title>
+      <link>https://davidcraddock.net/category/waldorf/</link>
+      <pubDate>Sun, 16 Jun 2013 03:43:49 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/waldorf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>256</title>
+      <link>https://davidcraddock.net/category/256/</link>
+      <pubDate>Tue, 11 Jun 2013 16:08:16 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/256/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bash</title>
+      <link>https://davidcraddock.net/category/bash/</link>
+      <pubDate>Tue, 11 Jun 2013 16:08:16 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/bash/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Colours</title>
+      <link>https://davidcraddock.net/category/colours/</link>
+      <pubDate>Tue, 11 Jun 2013 16:08:16 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/colours/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cucumber</title>
+      <link>https://davidcraddock.net/category/cucumber/</link>
+      <pubDate>Tue, 11 Jun 2013 16:08:16 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/cucumber/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Iterm</title>
+      <link>https://davidcraddock.net/category/iterm/</link>
+      <pubDate>Tue, 11 Jun 2013 16:08:16 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/iterm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Syntax-Highlighting</title>
+      <link>https://davidcraddock.net/category/syntax-highlighting/</link>
+      <pubDate>Tue, 11 Jun 2013 16:08:16 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/syntax-highlighting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Terminal</title>
+      <link>https://davidcraddock.net/category/terminal/</link>
+      <pubDate>Tue, 11 Jun 2013 16:08:16 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/terminal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Background</title>
+      <link>https://davidcraddock.net/category/background/</link>
+      <pubDate>Tue, 11 Jun 2013 15:55:04 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/background/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Foreground</title>
+      <link>https://davidcraddock.net/category/foreground/</link>
+      <pubDate>Tue, 11 Jun 2013 15:55:04 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/foreground/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Log</title>
+      <link>https://davidcraddock.net/category/log/</link>
+      <pubDate>Tue, 11 Jun 2013 15:55:04 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/log/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Logs</title>
+      <link>https://davidcraddock.net/category/logs/</link>
+      <pubDate>Tue, 11 Jun 2013 15:55:04 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/logs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tail</title>
+      <link>https://davidcraddock.net/category/tail/</link>
+      <pubDate>Tue, 11 Jun 2013 15:55:04 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/tail/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Analysis</title>
+      <link>https://davidcraddock.net/category/analysis/</link>
+      <pubDate>Fri, 01 Mar 2013 01:28:54 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Connection</title>
+      <link>https://davidcraddock.net/category/connection/</link>
+      <pubDate>Fri, 01 Mar 2013 01:28:54 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/connection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Internet</title>
+      <link>https://davidcraddock.net/category/internet/</link>
+      <pubDate>Fri, 01 Mar 2013 01:28:54 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/internet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ping</title>
+      <link>https://davidcraddock.net/category/ping/</link>
+      <pubDate>Fri, 01 Mar 2013 01:28:54 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/ping/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Psof</title>
+      <link>https://davidcraddock.net/category/psof/</link>
+      <pubDate>Fri, 01 Mar 2013 01:28:54 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/psof/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Slow</title>
+      <link>https://davidcraddock.net/category/slow/</link>
+      <pubDate>Fri, 01 Mar 2013 01:28:54 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/slow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tcpdump</title>
+      <link>https://davidcraddock.net/category/tcpdump/</link>
+      <pubDate>Fri, 01 Mar 2013 01:28:54 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/tcpdump/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Man-Up</title>
+      <link>https://davidcraddock.net/category/man-up/</link>
+      <pubDate>Fri, 01 Mar 2013 00:44:50 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/man-up/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Manchester-Ulltimate-Programming</title>
+      <link>https://davidcraddock.net/category/manchester-ulltimate-programming/</link>
+      <pubDate>Fri, 01 Mar 2013 00:44:50 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/manchester-ulltimate-programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Manchester-University</title>
+      <link>https://davidcraddock.net/category/manchester-university/</link>
+      <pubDate>Fri, 01 Mar 2013 00:44:50 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/manchester-university/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Presentation</title>
+      <link>https://davidcraddock.net/category/presentation/</link>
+      <pubDate>Fri, 01 Mar 2013 00:44:50 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/presentation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Converting-Frame-to-Jpeg</title>
+      <link>https://davidcraddock.net/category/converting-frame-to-jpeg/</link>
+      <pubDate>Thu, 12 Apr 2012 15:20:23 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/converting-frame-to-jpeg/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>M2v</title>
+      <link>https://davidcraddock.net/category/m2v/</link>
+      <pubDate>Thu, 12 Apr 2012 15:20:23 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/m2v/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Macports</title>
+      <link>https://davidcraddock.net/category/macports/</link>
+      <pubDate>Thu, 12 Apr 2012 15:20:23 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/macports/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Java</title>
+      <link>https://davidcraddock.net/category/java/</link>
+      <pubDate>Sat, 11 Feb 2012 01:36:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/java/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Java-1.6</title>
+      <link>https://davidcraddock.net/category/java-1.6/</link>
+      <pubDate>Sat, 11 Feb 2012 01:36:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/java-1.6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Redhat-Enterprise-Linux</title>
+      <link>https://davidcraddock.net/category/redhat-enterprise-linux/</link>
+      <pubDate>Sat, 11 Feb 2012 01:36:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/redhat-enterprise-linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rhel</title>
+      <link>https://davidcraddock.net/category/rhel/</link>
+      <pubDate>Sat, 11 Feb 2012 01:36:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/rhel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rhel4</title>
+      <link>https://davidcraddock.net/category/rhel4/</link>
+      <pubDate>Sat, 11 Feb 2012 01:36:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/rhel4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sun</title>
+      <link>https://davidcraddock.net/category/sun/</link>
+      <pubDate>Sat, 11 Feb 2012 01:36:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/sun/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>News</title>
+      <link>https://davidcraddock.net/category/news/</link>
+      <pubDate>Tue, 07 Feb 2012 14:42:50 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/news/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Beautifulsoup</title>
+      <link>https://davidcraddock.net/category/beautifulsoup/</link>
+      <pubDate>Wed, 07 Sep 2011 18:35:17 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/beautifulsoup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jsoup</title>
+      <link>https://davidcraddock.net/category/jsoup/</link>
+      <pubDate>Wed, 07 Sep 2011 18:35:17 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/jsoup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scraper</title>
+      <link>https://davidcraddock.net/category/scraper/</link>
+      <pubDate>Wed, 07 Sep 2011 18:35:17 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/scraper/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scraping-Webpages</title>
+      <link>https://davidcraddock.net/category/scraping-webpages/</link>
+      <pubDate>Wed, 07 Sep 2011 18:35:17 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/scraping-webpages/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Screen-Scrape</title>
+      <link>https://davidcraddock.net/category/screen-scrape/</link>
+      <pubDate>Wed, 07 Sep 2011 18:35:17 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/screen-scrape/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web-Scraping</title>
+      <link>https://davidcraddock.net/category/web-scraping/</link>
+      <pubDate>Wed, 07 Sep 2011 18:35:17 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/web-scraping/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Disabling-Shortcut</title>
+      <link>https://davidcraddock.net/category/disabling-shortcut/</link>
+      <pubDate>Wed, 13 Jul 2011 16:34:39 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/disabling-shortcut/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Outlook-2003</title>
+      <link>https://davidcraddock.net/category/outlook-2003/</link>
+      <pubDate>Wed, 13 Jul 2011 16:34:39 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/outlook-2003/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Regedit</title>
+      <link>https://davidcraddock.net/category/regedit/</link>
+      <pubDate>Wed, 13 Jul 2011 16:34:39 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/regedit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Centos</title>
+      <link>https://davidcraddock.net/category/centos/</link>
+      <pubDate>Wed, 04 May 2011 16:03:55 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/centos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Directory-Name-Not-Visable</title>
+      <link>https://davidcraddock.net/category/directory-name-not-visable/</link>
+      <pubDate>Wed, 04 May 2011 16:03:55 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/directory-name-not-visable/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fedora</title>
+      <link>https://davidcraddock.net/category/fedora/</link>
+      <pubDate>Wed, 04 May 2011 16:03:55 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/fedora/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ls</title>
+      <link>https://davidcraddock.net/category/ls/</link>
+      <pubDate>Wed, 04 May 2011 16:03:55 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/ls/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ls_colors</title>
+      <link>https://davidcraddock.net/category/ls_colors/</link>
+      <pubDate>Wed, 04 May 2011 16:03:55 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/ls_colors/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Putty</title>
+      <link>https://davidcraddock.net/category/putty/</link>
+      <pubDate>Wed, 04 May 2011 16:03:55 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/putty/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Redhat</title>
+      <link>https://davidcraddock.net/category/redhat/</link>
+      <pubDate>Wed, 04 May 2011 16:03:55 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/redhat/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Property-Adverts</title>
+      <link>https://davidcraddock.net/category/property-adverts/</link>
+      <pubDate>Sun, 01 May 2011 14:07:02 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/property-adverts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scraping</title>
+      <link>https://davidcraddock.net/category/scraping/</link>
+      <pubDate>Sun, 01 May 2011 14:07:02 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/scraping/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scraping-Gumtree</title>
+      <link>https://davidcraddock.net/category/scraping-gumtree/</link>
+      <pubDate>Sun, 01 May 2011 14:07:02 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/scraping-gumtree/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bbc-Weather-Feed</title>
+      <link>https://davidcraddock.net/category/bbc-weather-feed/</link>
+      <pubDate>Thu, 24 Feb 2011 19:31:48 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/bbc-weather-feed/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ical-Service</title>
+      <link>https://davidcraddock.net/category/ical-service/</link>
+      <pubDate>Thu, 24 Feb 2011 19:31:48 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/ical-service/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Php</title>
+      <link>https://davidcraddock.net/category/php/</link>
+      <pubDate>Thu, 24 Feb 2011 19:31:48 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/php/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Weather-Forecast</title>
+      <link>https://davidcraddock.net/category/weather-forecast/</link>
+      <pubDate>Thu, 24 Feb 2011 19:31:48 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/weather-forecast/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Command-Line</title>
+      <link>https://davidcraddock.net/category/command-line/</link>
+      <pubDate>Tue, 22 Feb 2011 00:16:12 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/command-line/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Finding-Large-Files</title>
+      <link>https://davidcraddock.net/category/finding-large-files/</link>
+      <pubDate>Tue, 22 Feb 2011 00:16:12 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/finding-large-files/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Indie-Label</title>
+      <link>https://davidcraddock.net/category/indie-label/</link>
+      <pubDate>Fri, 16 Jul 2010 00:52:05 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/indie-label/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Music-Business</title>
+      <link>https://davidcraddock.net/category/music-business/</link>
+      <pubDate>Fri, 16 Jul 2010 00:52:05 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/music-business/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Master-Boot-Record</title>
+      <link>https://davidcraddock.net/category/master-boot-record/</link>
+      <pubDate>Tue, 13 Jul 2010 13:02:51 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/master-boot-record/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Repair-Mbr</title>
+      <link>https://davidcraddock.net/category/repair-mbr/</link>
+      <pubDate>Tue, 13 Jul 2010 13:02:51 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/repair-mbr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ubuntu-10.4</title>
+      <link>https://davidcraddock.net/category/ubuntu-10.4/</link>
+      <pubDate>Tue, 13 Jul 2010 13:02:51 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/ubuntu-10.4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bootcamp</title>
+      <link>https://davidcraddock.net/category/bootcamp/</link>
+      <pubDate>Thu, 01 Jul 2010 22:50:25 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/bootcamp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dual-Boot</title>
+      <link>https://davidcraddock.net/category/dual-boot/</link>
+      <pubDate>Thu, 01 Jul 2010 22:50:25 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/dual-boot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Macbook-White</title>
+      <link>https://davidcraddock.net/category/macbook-white/</link>
+      <pubDate>Thu, 01 Jul 2010 22:50:25 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/macbook-white/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows-7</title>
+      <link>https://davidcraddock.net/category/windows-7/</link>
+      <pubDate>Thu, 01 Jul 2010 22:50:25 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/windows-7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Handbrake</title>
+      <link>https://davidcraddock.net/category/handbrake/</link>
+      <pubDate>Mon, 17 May 2010 03:15:00 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/handbrake/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ripit</title>
+      <link>https://davidcraddock.net/category/ripit/</link>
+      <pubDate>Mon, 17 May 2010 03:15:00 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/ripit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Br</title>
+      <link>https://davidcraddock.net/category/br/</link>
+      <pubDate>Wed, 28 Apr 2010 20:44:39 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/br/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bug</title>
+      <link>https://davidcraddock.net/category/bug/</link>
+      <pubDate>Wed, 28 Apr 2010 20:44:39 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/bug/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Html-Edit</title>
+      <link>https://davidcraddock.net/category/html-edit/</link>
+      <pubDate>Wed, 28 Apr 2010 20:44:39 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/html-edit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wordpress-2.9.2</title>
+      <link>https://davidcraddock.net/category/wordpress-2.9.2/</link>
+      <pubDate>Wed, 28 Apr 2010 20:44:39 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/wordpress-2.9.2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Denial-of-Service</title>
+      <link>https://davidcraddock.net/category/denial-of-service/</link>
+      <pubDate>Fri, 02 Apr 2010 03:50:37 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/denial-of-service/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Forkbomb</title>
+      <link>https://davidcraddock.net/category/forkbomb/</link>
+      <pubDate>Fri, 02 Apr 2010 03:50:37 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/forkbomb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ubuntu-9.10</title>
+      <link>https://davidcraddock.net/category/ubuntu-9.10/</link>
+      <pubDate>Fri, 02 Apr 2010 03:50:37 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/ubuntu-9.10/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nano-Backup-Files</title>
+      <link>https://davidcraddock.net/category/nano-backup-files/</link>
+      <pubDate>Mon, 22 Mar 2010 20:49:20 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/nano-backup-files/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vim-Backup-Files</title>
+      <link>https://davidcraddock.net/category/vim-backup-files/</link>
+      <pubDate>Mon, 22 Mar 2010 20:49:20 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/vim-backup-files/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cp</title>
+      <link>https://davidcraddock.net/category/cp/</link>
+      <pubDate>Sat, 20 Mar 2010 22:44:06 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/cp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Du--M</title>
+      <link>https://davidcraddock.net/category/du--m/</link>
+      <pubDate>Sat, 20 Mar 2010 22:44:06 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/du--m/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Monitoring-Cp</title>
+      <link>https://davidcraddock.net/category/monitoring-cp/</link>
+      <pubDate>Sat, 20 Mar 2010 22:44:06 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/monitoring-cp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Watch</title>
+      <link>https://davidcraddock.net/category/watch/</link>
+      <pubDate>Sat, 20 Mar 2010 22:44:06 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/watch/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>/Dev</title>
+      <link>https://davidcraddock.net/category/dev/</link>
+      <pubDate>Sat, 20 Mar 2010 15:19:46 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/dev/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>/Etc</title>
+      <link>https://davidcraddock.net/category/etc/</link>
+      <pubDate>Sat, 20 Mar 2010 15:19:46 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/etc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>/Proc</title>
+      <link>https://davidcraddock.net/category/proc/</link>
+      <pubDate>Sat, 20 Mar 2010 15:19:46 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/proc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>/Root</title>
+      <link>https://davidcraddock.net/category/root/</link>
+      <pubDate>Sat, 20 Mar 2010 15:19:46 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/root/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>/Sys</title>
+      <link>https://davidcraddock.net/category/sys/</link>
+      <pubDate>Sat, 20 Mar 2010 15:19:46 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/sys/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Explained</title>
+      <link>https://davidcraddock.net/category/explained/</link>
+      <pubDate>Sat, 20 Mar 2010 15:19:46 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/explained/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux-Root-Directory</title>
+      <link>https://davidcraddock.net/category/linux-root-directory/</link>
+      <pubDate>Sat, 20 Mar 2010 15:19:46 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/linux-root-directory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Root-Directory-Tutorial</title>
+      <link>https://davidcraddock.net/category/root-directory-tutorial/</link>
+      <pubDate>Sat, 20 Mar 2010 15:19:46 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/root-directory-tutorial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Osx-Commands</title>
+      <link>https://davidcraddock.net/category/osx-commands/</link>
+      <pubDate>Fri, 19 Mar 2010 23:03:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/osx-commands/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Osx-Differences</title>
+      <link>https://davidcraddock.net/category/osx-differences/</link>
+      <pubDate>Fri, 19 Mar 2010 23:03:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/osx-differences/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Osx-Differences-From-Linux</title>
+      <link>https://davidcraddock.net/category/osx-differences-from-linux/</link>
+      <pubDate>Fri, 19 Mar 2010 23:03:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/osx-differences-from-linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Osx-Terminal-Commands</title>
+      <link>https://davidcraddock.net/category/osx-terminal-commands/</link>
+      <pubDate>Fri, 19 Mar 2010 23:03:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/osx-terminal-commands/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>.Bash_history</title>
+      <link>https://davidcraddock.net/category/.bash_history/</link>
+      <pubDate>Thu, 18 Mar 2010 19:55:51 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/.bash_history/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bash-Shell</title>
+      <link>https://davidcraddock.net/category/bash-shell/</link>
+      <pubDate>Thu, 18 Mar 2010 19:55:51 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/bash-shell/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bash-Shell-Customisation</title>
+      <link>https://davidcraddock.net/category/bash-shell-customisation/</link>
+      <pubDate>Thu, 18 Mar 2010 19:55:51 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/bash-shell-customisation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>History</title>
+      <link>https://davidcraddock.net/category/history/</link>
+      <pubDate>Thu, 18 Mar 2010 19:55:51 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/history/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>History-Command</title>
+      <link>https://davidcraddock.net/category/history-command/</link>
+      <pubDate>Thu, 18 Mar 2010 19:55:51 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/history-command/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Minimal-.Vimrc</title>
+      <link>https://davidcraddock.net/category/minimal-.vimrc/</link>
+      <pubDate>Thu, 18 Mar 2010 19:23:07 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/minimal-.vimrc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vi-Improved</title>
+      <link>https://davidcraddock.net/category/vi-improved/</link>
+      <pubDate>Thu, 18 Mar 2010 19:23:07 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/vi-improved/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cron-Job</title>
+      <link>https://davidcraddock.net/category/cron-job/</link>
+      <pubDate>Sat, 13 Mar 2010 16:02:42 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/cron-job/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Real-Time-Who</title>
+      <link>https://davidcraddock.net/category/real-time-who/</link>
+      <pubDate>Sat, 13 Mar 2010 16:02:42 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/real-time-who/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Testing-Cron-Jobs</title>
+      <link>https://davidcraddock.net/category/testing-cron-jobs/</link>
+      <pubDate>Sat, 13 Mar 2010 16:02:42 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/testing-cron-jobs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apache-Default-From-Address</title>
+      <link>https://davidcraddock.net/category/apache-default-from-address/</link>
+      <pubDate>Wed, 10 Mar 2010 06:36:26 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/apache-default-from-address/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Default-From-Address</title>
+      <link>https://davidcraddock.net/category/default-from-address/</link>
+      <pubDate>Wed, 10 Mar 2010 06:36:26 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/default-from-address/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Default-Sender-Address</title>
+      <link>https://davidcraddock.net/category/default-sender-address/</link>
+      <pubDate>Wed, 10 Mar 2010 06:36:26 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/default-sender-address/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Php-Default-Sender-Address</title>
+      <link>https://davidcraddock.net/category/php-default-sender-address/</link>
+      <pubDate>Wed, 10 Mar 2010 06:36:26 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/php-default-sender-address/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Converting-Linux-Text-File-to-Windows-Text-File</title>
+      <link>https://davidcraddock.net/category/converting-linux-text-file-to-windows-text-file/</link>
+      <pubDate>Tue, 09 Mar 2010 00:04:40 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/converting-linux-text-file-to-windows-text-file/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Converting-Text-Files</title>
+      <link>https://davidcraddock.net/category/converting-text-files/</link>
+      <pubDate>Tue, 09 Mar 2010 00:04:40 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/converting-text-files/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Converting-Windows-Text-File-to-Linux-Text-File</title>
+      <link>https://davidcraddock.net/category/converting-windows-text-file-to-linux-text-file/</link>
+      <pubDate>Tue, 09 Mar 2010 00:04:40 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/converting-windows-text-file-to-linux-text-file/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unix-Text-File-Format</title>
+      <link>https://davidcraddock.net/category/unix-text-file-format/</link>
+      <pubDate>Tue, 09 Mar 2010 00:04:40 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/unix-text-file-format/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Redesign</title>
+      <link>https://davidcraddock.net/category/redesign/</link>
+      <pubDate>Thu, 14 Jan 2010 07:58:03 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/redesign/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Site-News</title>
+      <link>https://davidcraddock.net/category/site-news/</link>
+      <pubDate>Thu, 14 Jan 2010 07:58:03 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/site-news/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Php-Page-Scraper</title>
+      <link>https://davidcraddock.net/category/php-page-scraper/</link>
+      <pubDate>Thu, 14 Jan 2010 05:53:47 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/php-page-scraper/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Php-Page-Scraper-Class</title>
+      <link>https://davidcraddock.net/category/php-page-scraper-class/</link>
+      <pubDate>Thu, 14 Jan 2010 05:53:47 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/php-page-scraper-class/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Php-Scraper</title>
+      <link>https://davidcraddock.net/category/php-scraper/</link>
+      <pubDate>Thu, 14 Jan 2010 05:53:47 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/php-scraper/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apache</title>
+      <link>https://davidcraddock.net/category/apache/</link>
+      <pubDate>Mon, 30 Mar 2009 22:45:50 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/apache/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lamp</title>
+      <link>https://davidcraddock.net/category/lamp/</link>
+      <pubDate>Mon, 30 Mar 2009 22:45:50 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/lamp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agile</title>
+      <link>https://davidcraddock.net/category/agile/</link>
+      <pubDate>Fri, 27 Mar 2009 23:47:59 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/agile/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Eclipse</title>
+      <link>https://davidcraddock.net/category/eclipse/</link>
+      <pubDate>Fri, 27 Mar 2009 23:47:59 +0000</pubDate>
+      <guid>https://davidcraddock.net/category/eclipse/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

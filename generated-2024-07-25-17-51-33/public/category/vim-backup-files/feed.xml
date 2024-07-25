@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Vim-Backup-Files on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/category/vim-backup-files/</link>
+    <description>Recent content in Vim-Backup-Files on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 22 Mar 2010 20:49:20 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/category/vim-backup-files/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to remove nano, vim and other editors&#39; backup files out of a directory tree</title>
+      <link>https://davidcraddock.net/2010/03/22/how-to-remove-nano-vim-and-other-editors-backup-files-out-of-a-directory-tree/</link>
+      <pubDate>Mon, 22 Mar 2010 20:49:20 +0000</pubDate>
+      <guid>https://davidcraddock.net/2010/03/22/how-to-remove-nano-vim-and-other-editors-backup-files-out-of-a-directory-tree/</guid>
+      <description>Linux command-line editors such as nano and vim often, by default, create backup files with the prefix of &amp;ldquo;&amp;rdquo;. I.e, if I created a file called /home/david/myfile, then nano would create a backup in /home/david/myfile. Sometimes it doesn&amp;rsquo;t delete them either, so you&amp;rsquo;re left with a bunch of backup files all over the place, especially if you&amp;rsquo;re editing a lot on a directory tree full of source code.
+Those stray backup files make directory listings confusing, and also add unnecessary weight to the commits on source control systems such as svn, cvs, git.</description>
+    </item>
+  </channel>
+</rss>

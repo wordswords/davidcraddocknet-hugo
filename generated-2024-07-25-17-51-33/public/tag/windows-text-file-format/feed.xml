@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Windows-Text-File-Format on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/tag/windows-text-file-format/</link>
+    <description>Recent content in Windows-Text-File-Format on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Mar 2010 00:04:40 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/tag/windows-text-file-format/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shell scripts for converting between Unix and Windows text file formats</title>
+      <link>https://davidcraddock.net/2010/03/09/shell-scripts-for-converting-between-unix-and-windows-text-file-formats/</link>
+      <pubDate>Tue, 09 Mar 2010 00:04:40 +0000</pubDate>
+      <guid>https://davidcraddock.net/2010/03/09/shell-scripts-for-converting-between-unix-and-windows-text-file-formats/</guid>
+      <description>I&amp;rsquo;ve been using these shell scripts I wrote to convert between unix and windows text file formats. They seem to work well without any problems. If you put them in the /usr/sbin/ directory, they will be accessible on the path of the linux admin account root.
+/usr/sbin/unix2win `#!/bin/bash
+Converts a unix text file to a windows text file. usage: unix2win requirements: sed version 4.2 or later, check with sed &amp;ndash;version sed -i -e &amp;rsquo;s/$/r/&amp;rsquo; $1 `</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Modular on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/tag/modular/</link>
+    <description>Recent content in Modular on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 21 Jul 2015 19:42:04 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/tag/modular/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Modular Progress</title>
+      <link>https://davidcraddock.net/2015/07/21/modular-progress/</link>
+      <pubDate>Tue, 21 Jul 2015 19:42:04 +0000</pubDate>
+      <guid>https://davidcraddock.net/2015/07/21/modular-progress/</guid>
+      <description>My Eurorack modular has been progressing. I&amp;rsquo;ve added several low-cost modules, a Doepfer A-138b audio mixer module so I can mix the audio outputs of the oscilators, the noise output, and my Doepfer Dark Energy modules. I found this so useful with the Dark Energys that I have ordered another mixer. This I can use to mix audio before sending it to the filter, for example, or mix audio before sending it to a VCA to be amplified.</description>
+    </item>
+  </channel>
+</rss>

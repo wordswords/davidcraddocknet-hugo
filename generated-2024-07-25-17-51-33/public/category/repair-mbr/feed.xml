@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Repair-Mbr on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/category/repair-mbr/</link>
+    <description>Recent content in Repair-Mbr on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 13 Jul 2010 13:02:51 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/category/repair-mbr/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Restoring Ubuntu 10.4&#39;s Bootloader, after a Windows 7 Install</title>
+      <link>https://davidcraddock.net/2010/07/13/restoring-ubuntu-10-4s-bootloader-after-a-windows-7-install/</link>
+      <pubDate>Tue, 13 Jul 2010 13:02:51 +0000</pubDate>
+      <guid>https://davidcraddock.net/2010/07/13/restoring-ubuntu-10-4s-bootloader-after-a-windows-7-install/</guid>
+      <description>I installed Windows 7 after I had installed Ubuntu 10.4. Windows 7 overwrote the Linux bootloader &amp;ldquo;grub&amp;rdquo; on my master boot record. Therefore I had to restore it.
+I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under the LiveCD, I then restored the Grub bootloader by chrooting into my old install, using the linux command line. This is a fairly complex thing to do, and so I recommend you use this approach only if you&amp;rsquo;re are confident with the linux command line:</description>
+    </item>
+  </channel>
+</rss>

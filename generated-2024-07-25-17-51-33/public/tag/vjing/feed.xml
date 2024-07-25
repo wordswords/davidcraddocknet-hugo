@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Vjing on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/tag/vjing/</link>
+    <description>Recent content in Vjing on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 14 Feb 2021 23:57:54 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/tag/vjing/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Twitch Streaming Technical Setup</title>
+      <link>https://davidcraddock.net/2021/02/14/twitch-dj-streaming-technical-setup/</link>
+      <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
+      <guid>https://davidcraddock.net/2021/02/14/twitch-dj-streaming-technical-setup/</guid>
+      <description>I thought I’d write a bit here about my Twitch DJing setup and some of the hardware and software I’m using. Twitch streaming has become very popular over the lockdown period, and I think people might be interested in how I have configured my stream. Something that seperates my stream from anyone else I&amp;rsquo;ve seen on Twitch is that is that I do live vinyl DJing AND live VJing at the same time on my stream.</description>
+    </item>
+  </channel>
+</rss>

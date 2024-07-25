@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>History-Command on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/category/history-command/</link>
+    <description>Recent content in History-Command on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 18 Mar 2010 19:55:51 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/category/history-command/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Long Bash History Files are Great.</title>
+      <link>https://davidcraddock.net/2010/03/18/long-bash-history-files-are-great/</link>
+      <pubDate>Thu, 18 Mar 2010 19:55:51 +0000</pubDate>
+      <guid>https://davidcraddock.net/2010/03/18/long-bash-history-files-are-great/</guid>
+      <description>When I&amp;rsquo;m installing software, or doing some complicated stuff on the linux command line, which nowadays is pretty much all the time, I will sometimes want to remember exactly what I typed.
+Now the normal /home/david/.bash_history file is usually fine for that. Run this command, for example, and you will see the commands you typed in before you logged out of the server last time you used it:
+cat ~/.bash_history You can also find out what you typed in this session, ie: since you logged in, by typing this:</description>
+    </item>
+  </channel>
+</rss>

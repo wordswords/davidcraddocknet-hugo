@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ubuntu on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/category/ubuntu/</link>
+    <description>Recent content in Ubuntu on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 29 Sep 2022 00:00:36 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/category/ubuntu/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tips for new Ubuntu Users</title>
+      <link>https://davidcraddock.net/2022/09/29/tips-for-new-ubuntu-users/</link>
+      <pubDate>Thu, 29 Sep 2022 00:00:36 +0000</pubDate>
+      <guid>https://davidcraddock.net/2022/09/29/tips-for-new-ubuntu-users/</guid>
+      <description>Here are some extra tips if you&amp;rsquo;re just getting started out on Ubuntu.
+You don&amp;rsquo;t have to go through the UI to shut down or reboot your computer. You can do it from the command line. The commands are:
+sudo reboot # to reboot sudo poweroff # to shut down and power off the computer You can get a lot more information on your computers startup and shutdown sequences by removing the default Ubuntu splash screen that obscures this.</description>
+    </item>
+    <item>
+      <title>Google Drive Backup using Rclone</title>
+      <link>https://davidcraddock.net/2022/09/24/google-drive-backup-using-rclone/</link>
+      <pubDate>Sat, 24 Sep 2022 17:39:06 +0000</pubDate>
+      <guid>https://davidcraddock.net/2022/09/24/google-drive-backup-using-rclone/</guid>
+      <description>For 8 TB of data storage on Google Drive, plus my own Google organization, I am paying £30/month, which is a pretty good deal.
+I wanted to use this space for backing up my NAS, but it was proving difficult. The program I was recommended for Linux backup, Duplicati, was not the best for this purpose. My backup runs would not complete, they would be slow, and full of syncing errors.</description>
+    </item>
+    <item>
+      <title>Setting up Kindlefire HDX for Development under Ubuntu 12.04</title>
+      <link>https://davidcraddock.net/2014/02/10/kindlefire-hdx-under-ubuntu-12-04/</link>
+      <pubDate>Mon, 10 Feb 2014 15:28:45 +0000</pubDate>
+      <guid>https://davidcraddock.net/2014/02/10/kindlefire-hdx-under-ubuntu-12-04/</guid>
+      <description>I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.
+First I needed to setup the udev rules:
+1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):
+SUBSYSTEM==&amp;#34;usb&amp;#34;, ATTRS{idVendor}==&amp;#34;1949&amp;#34;, MODE=&amp;#34;0666&amp;#34; 2. Change the permission of this file by executing the following command as root:
+chmod a+r /etc/udev/rules.d/51-android.rules 3. Reload the rules by executing the following command as root:</description>
+    </item>
+    <item>
+      <title>VirutalHosts on CentOS</title>
+      <link>https://davidcraddock.net/2009/03/30/virutalhosts-on-centos/</link>
+      <pubDate>Mon, 30 Mar 2009 22:45:50 +0000</pubDate>
+      <guid>https://davidcraddock.net/2009/03/30/virutalhosts-on-centos/</guid>
+      <description>A common task when setting up an Apache webserver under Linux, is writing a httpd.conf file. The httpd.conf file is the main configuration file for Apache. One of the main reasons to edit the httpd.conf file is to setup virtual hosts In Apache. A Virtual host configuration allows several different domains to be run off a single instance of Apache, on a single IP. Each host is a &amp;lsquo;Virtual host&amp;rsquo;, and typically has a different web root, log file, and any number of subdomains aliased to it.</description>
+    </item>
+  </channel>
+</rss>

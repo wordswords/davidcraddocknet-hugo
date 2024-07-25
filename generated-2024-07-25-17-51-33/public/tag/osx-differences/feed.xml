@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Osx-Differences on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/tag/osx-differences/</link>
+    <description>Recent content in Osx-Differences on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 19 Mar 2010 23:03:33 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/tag/osx-differences/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Useful OSX commands for Linux users</title>
+      <link>https://davidcraddock.net/2010/03/19/useful-osx-command-line-commands/</link>
+      <pubDate>Fri, 19 Mar 2010 23:03:33 +0000</pubDate>
+      <guid>https://davidcraddock.net/2010/03/19/useful-osx-command-line-commands/</guid>
+      <description>I wrote this list to remind me, as a newcomer to OSX, how the command line differed from the Linux commandline. I thought I&amp;rsquo;d expand on it, and share it:
+To mount any iso:
+hdiutil mount sample.iso To download a file as you would using wget:
+curl http://ftp.heanet.ie/pub/linuxmint.com/stable/8/LinuxMint-8.iso -o linuxmint.iso -C - the -o specifies the output file (required) the -C - specifies automatically resuming if possible.
+To burn a bootable iso to CD, DVD or USB key: use the &amp;ldquo;diskutil&amp;rdquo; program as described in: http://forums.</description>
+    </item>
+  </channel>
+</rss>

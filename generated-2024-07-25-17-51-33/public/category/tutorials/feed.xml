@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tutorials on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/category/tutorials/</link>
+    <description>Recent content in Tutorials on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 19 Jan 2023 09:12:32 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/category/tutorials/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Books that have changed the way I see the practice of Software Engineering</title>
+      <link>https://davidcraddock.net/2023/01/19/books-that-have-changed-the-way-i-see-the-practice-of-software-engineering/</link>
+      <pubDate>Thu, 19 Jan 2023 09:12:32 +0000</pubDate>
+      <guid>https://davidcraddock.net/2023/01/19/books-that-have-changed-the-way-i-see-the-practice-of-software-engineering/</guid>
+      <description>The Mythical Man Month and other Essays - Fred Brooks - Read it as part of my university degree. A lot of good sense. I can&amp;rsquo;t believe there are people out there in charge of software projects that haven&amp;rsquo;t read this book, or think it somehow doesn&amp;rsquo;t apply anymore, but unfortunately, it seems quite common. -
+[Read reviews on Good Reads] The Cathedral and the Bazaar - Eric S Raymound - One of the first books I read on software development process.</description>
+    </item>
+    <item>
+      <title>Using VIM as a Word Processor</title>
+      <link>https://davidcraddock.net/2022/03/08/using-vim-as-a-word-processor/</link>
+      <pubDate>Tue, 08 Mar 2022 19:43:00 +0000</pubDate>
+      <guid>https://davidcraddock.net/2022/03/08/using-vim-as-a-word-processor/</guid>
+      <description>It may surprise some people to learn that I don&amp;rsquo;t use a word processor to write pure text any more, and haven&amp;rsquo;t for several months. I still have a subscription to Microsoft Office 365, and probably will as long as recruiters and offices around the world still pay the MS tax.
+I have created my own custom writing environment in my favourite text editor, VIM. This may sound like an absolutely foolish thing to do to anyone who knows VIM.</description>
+    </item>
+    <item>
+      <title>Use Siri, Apple Earphones and Apple Music Together</title>
+      <link>https://davidcraddock.net/2015/08/15/use-siri-apple-earphones-and-apple-music-together/</link>
+      <pubDate>Sat, 15 Aug 2015 20:46:21 +0000</pubDate>
+      <guid>https://davidcraddock.net/2015/08/15/use-siri-apple-earphones-and-apple-music-together/</guid>
+      <description>This requires you to have a subscription to Apple Music and a 3G/4G/wireless data connection, but it is so useful! Using this tip, you can be walking along with your iPhone in your pocket and your Apple earphones in, and then change music just by pressing a button on the earphones remote control and saying &amp;lsquo;Play (your favourite band)&amp;rsquo;.
+1. Activate Siri and subscribe to Apple Music. I used to subscribe to Spotify so I switched to Apple Music when I realised the advantages of the integration on my phone, and the wider selection of music.</description>
+    </item>
+    <item>
+      <title>RESTful Web Services</title>
+      <link>https://davidcraddock.net/2011/03/02/restful-web-services/</link>
+      <pubDate>Wed, 02 Mar 2011 14:21:23 +0000</pubDate>
+      <guid>https://davidcraddock.net/2011/03/02/restful-web-services/</guid>
+      <description>REST (Representational State Transfer) is a way of delivering web services. When a web service conforms to REST, it is known as RESTful. The largest RESTful web service is the Hypertext Transfer Protocol (HTTP) which you use every day to send and receive information from web servers while browsing the internet.
+To implement RESTful web services, you should implement four methods: GET, PUT, POST and DELETE. Resources on RESTful web services are typically defined as collections of elements.</description>
+    </item>
+    <item>
+      <title>Ripping Movies onto the iPhone</title>
+      <link>https://davidcraddock.net/2010/05/17/ripping-movies-onto-the-iphone/</link>
+      <pubDate>Mon, 17 May 2010 03:15:00 +0000</pubDate>
+      <guid>https://davidcraddock.net/2010/05/17/ripping-movies-onto-the-iphone/</guid>
+      <description>I&amp;rsquo;m currently watching Persepolis, the 2008 animated film about a tomboy anarchist growing up in Iran. I&amp;rsquo;m watching this on my new iPhone 3GS, and the picture and audio quality is very good.
+Here&amp;rsquo;s what I used to convert my newly bought Persepolis DVD, for watching on the iPhone.
+1x Macbook (but you can use any intel mac) 1x iTunes 1x RipIt - Commercial Mac DVD Ripper (rips up to 10 DVDs on the free trial, $20 after) 1x Handbrake 32 - Freely available transcoder 1x VLC 32 - Freely available media player 1x DVD</description>
+    </item>
+    <item>
+      <title>The Linux Root Directory, Explained</title>
+      <link>https://davidcraddock.net/2010/03/20/the-linux-file-structure/</link>
+      <pubDate>Sat, 20 Mar 2010 15:19:46 +0000</pubDate>
+      <guid>https://davidcraddock.net/2010/03/20/the-linux-file-structure/</guid>
+      <description>It&amp;rsquo;s helpful to know the basic filesystem on a Linux machine, to better understand where everything is supposed to go, and where you should start looking if you want to find a certain file.
+Everything in Linux is stored in the &amp;ldquo;root directory&amp;rdquo;. On a windows machine, that would be equivalent to C:. C: is the main folder where everything is stored. On Linux we call this the &amp;ldquo;root directory&amp;rdquo;, or simply &amp;ldquo;/&amp;rdquo;.</description>
+    </item>
+    <item>
+      <title>Regex in VIM.. simple</title>
+      <link>https://davidcraddock.net/2009/10/07/regex-in-vim-simple/</link>
+      <pubDate>Wed, 07 Oct 2009 06:40:02 +0000</pubDate>
+      <guid>https://davidcraddock.net/2009/10/07/regex-in-vim-simple/</guid>
+      <description>There are more than a gazillion ways to use regexs. I am sure they are each very useful for their own subset of problems. The sheer variety can be highly confusing and scary for a lot of people though, and you only need to use a few approaches to accomplish most text-editing tasks.
+Here is a simple method for using regex in the powerful text editor VIM that will work well for common use.</description>
+    </item>
+    <item>
+      <title>Scraping Wikipedia Information for music artists, Part 2</title>
+      <link>https://davidcraddock.net/2008/09/22/scraping-wikipedia-information-for-music-artists-part-2/</link>
+      <pubDate>Mon, 22 Sep 2008 23:04:45 +0000</pubDate>
+      <guid>https://davidcraddock.net/2008/09/22/scraping-wikipedia-information-for-music-artists-part-2/</guid>
+      <description>I&amp;rsquo;ve abandoned the previous Wikipedia scraping approach for Brightonsound.com, as it was unreliable and didn&amp;rsquo;t pinpoint the right Wikipedia entry - ie: a band called &amp;lsquo;Horses&amp;rsquo; would pull up a Wikipedia bio on the animal - which doesn&amp;rsquo;t look very professional. So instead, I have used the Musicbrainz API to retrieve some information on the artist; the homepage URL, the correct Wikipedia entry, and any genres/terms the artist has been tagged with.</description>
+    </item>
+    <item>
+      <title>Scraping artists bios off of Wikipedia</title>
+      <link>https://davidcraddock.net/2008/06/18/scraping-artists-bios-off-of-wikipedia/</link>
+      <pubDate>Wed, 18 Jun 2008 17:43:19 +0000</pubDate>
+      <guid>https://davidcraddock.net/2008/06/18/scraping-artists-bios-off-of-wikipedia/</guid>
+      <description>I&amp;rsquo;ve been hacking away at BrightonSound.com and I&amp;rsquo;ve been looking for a way of automatically sourcing biographical information from artists, so that visitors are presented with more information on the event.
+The Songbird media player plugin &amp;lsquo;mashTape&amp;rsquo; draws upon a number of web services to grab artist bio, event listings, youtube vidoes and flickr pictures of the currently playing artist. I was reading through the mashTape code, and then found this posting by its developer, which helpfully provided the exact method I needed.</description>
+    </item>
+    <item>
+      <title>A poor man&#39;s VMWare Workstation: VMWare Server under Ubuntu 7.10 &#43; VMWare Player under Windows XP</title>
+      <link>https://davidcraddock.net/2008/02/28/a-poor-mans-vmware-workstation-vmware-server-under-ubuntu-710-vmware-player-under-windows-xp/</link>
+      <pubDate>Thu, 28 Feb 2008 23:56:17 +0000</pubDate>
+      <guid>https://davidcraddock.net/2008/02/28/a-poor-mans-vmware-workstation-vmware-server-under-ubuntu-710-vmware-player-under-windows-xp/</guid>
+      <description>I finally setup my Dell Lattitude D630 laptop the way I wanted it last night, and thought I&amp;rsquo;d do a quick writeup about it. Here is the parttition table:
+A 40GB Windows XP partition, with VMWare Player installed, which I will be using for Windows applications that don&amp;rsquo;t play well in virtualised mode (eg media applications). I will also be using it as the main platform for running VMs. A basic 5GB root + 1.</description>
+    </item>
+    <item>
+      <title>My Nabaztag</title>
+      <link>https://davidcraddock.net/2007/05/08/my-nabaztag/</link>
+      <pubDate>Tue, 08 May 2007 04:01:16 +0000</pubDate>
+      <guid>https://davidcraddock.net/2007/05/08/my-nabaztag/</guid>
+      <description>Nabaztag (Armenian for &amp;ldquo;rabbit&amp;rdquo;) is a Wi-Fi enabled rabbit, manufactured by Violet. The Nabaztag is a &amp;ldquo;smart object&amp;rdquo;; it can connect to the Internet (for example to download weather forecasts, read its owner&amp;rsquo;s email, etc). It is also fully customizable and programmable. - Wikipedia.org
+Here is our Nabaztag - Francois Xavier:
+Of course, I&amp;rsquo;ve been messing around with poor old Francois&amp;rsquo;s programming..
+With the help of OpenNab, a proxy server that masquerades as an official Nabaztag server, you can make your Nabaztag do all kinds of tricks.</description>
+    </item>
+  </channel>
+</rss>

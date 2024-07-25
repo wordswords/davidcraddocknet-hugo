@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Music on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/category/music/</link>
+    <description>Recent content in Music on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 13 Jun 2021 20:54:40 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/category/music/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making Twitch DJ Promo Mix Videos</title>
+      <link>https://davidcraddock.net/2021/06/13/making-twitch-dj-promo-mix-videos/</link>
+      <pubDate>Sun, 13 Jun 2021 20:54:40 +0000</pubDate>
+      <guid>https://davidcraddock.net/2021/06/13/making-twitch-dj-promo-mix-videos/</guid>
+      <description>Sometimes as a DJ you may want to reconstruct the Twitch stream you have streamed into a video format to send to other people, for promotional purposes, or just to have a record of what you&amp;rsquo;ve done. Twitch makes this difficult though, as it mutes copyrighted music in the video it records for your Twitch stream. Also, when you download this video, it does not include the chat log, so any attempts at reconstruction are without the chat, so it looks like the DJ is just talking to him/herself.</description>
+    </item>
+    <item>
+      <title>Using Navidrome on a RPI3 to host my music collection for DJing so I can listen between sets</title>
+      <link>https://davidcraddock.net/2021/06/09/using-navidrome-on-a-rpi3-to-host-my-music-collection-for-djing-so-i-can-listen-between-sets/</link>
+      <pubDate>Wed, 09 Jun 2021 14:29:14 +0000</pubDate>
+      <guid>https://davidcraddock.net/2021/06/09/using-navidrome-on-a-rpi3-to-host-my-music-collection-for-djing-so-i-can-listen-between-sets/</guid>
+      <description>As a DJ it is important to listen to the music in your collection so you get an idea of what would work in particular sets, and you have a memory of how the tracks progress. So I decided to host a Spotify like service in my house so I could listen to my 500GB+ DJ music library. Navidrome (free open source software from https://navidrome.org) is running on the Raspberry Pi 3 which is under my desk via a wired connection with it&amp;rsquo;s own http://navidrome.</description>
+    </item>
+    <item>
+      <title>Proper Care and Operation of Vinyl Turntables for DJs</title>
+      <link>https://davidcraddock.net/2021/06/01/2552/</link>
+      <pubDate>Mon, 31 May 2021 23:53:14 +0000</pubDate>
+      <guid>https://davidcraddock.net/2021/06/01/2552/</guid>
+      <description>Setup your new Turntable Follow this and only this guide. This is the best vinyl setup video on the internet as of 2021:
+[youtube https://www.youtube.com/watch?v=WM-aIDwfrhc&amp;amp;w=560&amp;amp;h=315]
+A lot of DJ turntables are based on Technics OEM clones, and so you will need to set the tonearm height, which is the only thing not covered by the above video:
+[youtube https://www.youtube.com/watch?v=SYScinvkrrM]
+The Basics Once you&amp;rsquo;ve setup your turntable:
+Should go without saying that I always use a velvet dust brush on my records just before I play them.</description>
+    </item>
+    <item>
+      <title>Lighting and Camera Setup</title>
+      <link>https://davidcraddock.net/2021/05/11/lighting-and-camera-setup/</link>
+      <pubDate>Tue, 11 May 2021 03:20:16 +0000</pubDate>
+      <guid>https://davidcraddock.net/2021/05/11/lighting-and-camera-setup/</guid>
+      <description>Light Sources: Phillips Hue Colour Lamp (top right) Phillips Hue Colour Lamp (Middle) Phillips Hue Colour Lamp (Bottom) Phillips Hue Lightstrip &amp;ldquo;DJ David Craddock&amp;rdquo; white illuminated sign &amp;ldquo;Live on Air&amp;rdquo; blue sign Laser (green or red laser wash) Revolving disco balls Dark Music Lighting Settings For Phillips Hue sources I use Hue Sync on my broadcast PC which syncs the lights in time with the music. I will use different palletes depending on the event.</description>
+    </item>
+    <item>
+      <title>Resolume MIDI Control in my Twitch DJing Setup</title>
+      <link>https://davidcraddock.net/2021/04/26/resolume-midi-control-in-my-twitch-djing-setup/</link>
+      <pubDate>Mon, 26 Apr 2021 18:26:14 +0000</pubDate>
+      <guid>https://davidcraddock.net/2021/04/26/resolume-midi-control-in-my-twitch-djing-setup/</guid>
+      <description>I have retired the Novation SL Zero Mk1 MIDI controller that was causing me a lot of grief when I was running Resolume and Ableton Live at the same time, as its Automap functionality was locking on to the Ableton Live mixer in session view now and then, and so, sometimes, when I thought I was controlling Resolumes visual FX, I was actually changing the volume faders in my DJ mix.</description>
+    </item>
+    <item>
+      <title>A Basic Eurorack Technique</title>
+      <link>https://davidcraddock.net/2016/01/24/my-basic-eurorack-technique/</link>
+      <pubDate>Sun, 24 Jan 2016 05:37:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/2016/01/24/my-basic-eurorack-technique/</guid>
+      <description>I thought it might be of some interest to describe how I use my Eurorack, at lot of the time, in making tracks. I have a 3 oscilator - 3 VCA - 3 filter Eurorack which I use primarily so that the oscilators initially work in unison mode with some slight detuning. I typically use a single loop, arpeggio or pattern that I repeat over the song. Then, partway through a track, I will transpose the octaves of the oscilators and vary the sustain of the envelopes, along with the filters and pulse-width modulation amount, to make a morphing yet harmonious sound texture progression.</description>
+    </item>
+    <item>
+      <title>Modular Progress</title>
+      <link>https://davidcraddock.net/2015/07/21/modular-progress/</link>
+      <pubDate>Tue, 21 Jul 2015 19:42:04 +0000</pubDate>
+      <guid>https://davidcraddock.net/2015/07/21/modular-progress/</guid>
+      <description>My Eurorack modular has been progressing. I&amp;rsquo;ve added several low-cost modules, a Doepfer A-138b audio mixer module so I can mix the audio outputs of the oscilators, the noise output, and my Doepfer Dark Energy modules. I found this so useful with the Dark Energys that I have ordered another mixer. This I can use to mix audio before sending it to the filter, for example, or mix audio before sending it to a VCA to be amplified.</description>
+    </item>
+    <item>
+      <title>New Synthesiser Additions: Microbrute, Nord Drum and Access Virus A</title>
+      <link>https://davidcraddock.net/2014/08/10/new-synthesiser-additions-microbrute-nord-drum-and-access-virus-a/</link>
+      <pubDate>Sun, 10 Aug 2014 21:53:19 +0000</pubDate>
+      <guid>https://davidcraddock.net/2014/08/10/new-synthesiser-additions-microbrute-nord-drum-and-access-virus-a/</guid>
+      <description>I bought some new synths.
+Access Virus A This is the original 1998 Access Virus A. It, it was a staple synth for trance and electronic music in general for the early 00s. I am very happy that I managed to get this secondhand for less than a MicroKORG. It cost over £800 when it came out in 1998. Old digital synths seem to be unpopular at the moment, I&amp;rsquo;ve heard comments along the lines of &amp;lsquo;if it&amp;rsquo;s digital then I might as well use a plugin in my DAW&amp;rsquo;.</description>
+    </item>
+    <item>
+      <title>MicroKORG &#43; Python = MIDI fun!</title>
+      <link>https://davidcraddock.net/2009/03/30/microkorg-python-midi-fun/</link>
+      <pubDate>Mon, 30 Mar 2009 00:14:10 +0000</pubDate>
+      <guid>https://davidcraddock.net/2009/03/30/microkorg-python-midi-fun/</guid>
+      <description>So, about a month ago I got a second-hand microKORG from Ebay. Fiddling around with the preset patches, and creating new patches is great fun, even though I only know a few chords. Recently I plugged it in to my PC via my M-Audio Uno USB-&amp;gt;MIDI interface, and soon was using Ableton Live to program drums in time with the microKORG&amp;rsquo;s arp.
+I thought I&amp;rsquo;d experiment the music libraries available in python, and see if I could send notes to the synth via MIDI.</description>
+    </item>
+  </channel>
+</rss>

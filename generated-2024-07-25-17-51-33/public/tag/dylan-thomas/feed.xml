@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Dylan-Thomas on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/tag/dylan-thomas/</link>
+    <description>Recent content in Dylan-Thomas on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 27 Jul 2013 02:29:10 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/tag/dylan-thomas/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Haiku Machine</title>
+      <link>https://davidcraddock.net/2013/07/27/thehaiku-machine/</link>
+      <pubDate>Sat, 27 Jul 2013 02:29:10 +0000</pubDate>
+      <guid>https://davidcraddock.net/2013/07/27/thehaiku-machine/</guid>
+      <description>I found this awesome cut-up poetry generator, which takes the text of famous poets and builds structured poetry out of it. The guy that made it even developed the underlying algorithm as a research project. I have put a version of a free Amazon EC2 instance, wrote a little twitter bot in node.js, and wired the poetry generator with the twitter bot, and now I have this: https://twitter.com/haikumachine - a twitter bot that posts a haiku every five minutes, derived from Dylan Thomas&amp;rsquo;s poetry.</description>
+    </item>
+  </channel>
+</rss>

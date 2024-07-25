@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>/Home on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/category/home/</link>
+    <description>Recent content in /Home on DavidCraddock.net</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 27 Sep 2022 02:56:21 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/category/home/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Current Twitch DJ Setup</title>
+      <link>https://davidcraddock.net/2022/09/27/current-dj-setup/</link>
+      <pubDate>Tue, 27 Sep 2022 02:56:21 +0000</pubDate>
+      <guid>https://davidcraddock.net/2022/09/27/current-dj-setup/</guid>
+      <description> Click to view full diagram
+Hardware 2 x Reloop 8000mk2 turntables Roland 707m Mixer and DJ Controller 2015 Macbook Pro (DJ Laptop) SoundSwitch USB -&amp;gt; DMX interface, attached to broadcast PC Beatstep MIDI Controller mapped for controlling SoundSwitch, attached to broadcast PC Vestax VCM-600 MIDI Controller used for controlling Resolume, attached to broadcast PC AKAI LPD8 MIDI Controller used for controlling Serato&amp;rsquo;s FX, attached to DJ laptop Rode Soundcaster Pro microphone used as a DJ mic 4 x Phillips Hue Colour Bulbs in lamps Phillips Hue Lightstrip Behringer UMC1820 Sound Interface connected to broadcast PC, attached to broadcast PC 2 x Logitech C920 Cameras used for capturing video for streaming, attached to broadcast PC Software SoundSwitch lighting software running on broadcast PC Resolume Avenue running on broadcast PC Streamlabs OBS running on broadcast PC Serato DJ Pro software running on DJ laptop </description>
+    </item>
+    <item>
+      <title>The Linux Root Directory, Explained</title>
+      <link>https://davidcraddock.net/2010/03/20/the-linux-file-structure/</link>
+      <pubDate>Sat, 20 Mar 2010 15:19:46 +0000</pubDate>
+      <guid>https://davidcraddock.net/2010/03/20/the-linux-file-structure/</guid>
+      <description>It&amp;rsquo;s helpful to know the basic filesystem on a Linux machine, to better understand where everything is supposed to go, and where you should start looking if you want to find a certain file.
+Everything in Linux is stored in the &amp;ldquo;root directory&amp;rdquo;. On a windows machine, that would be equivalent to C:. C: is the main folder where everything is stored. On Linux we call this the &amp;ldquo;root directory&amp;rdquo;, or simply &amp;ldquo;/&amp;rdquo;.</description>
+    </item>
+  </channel>
+</rss>
