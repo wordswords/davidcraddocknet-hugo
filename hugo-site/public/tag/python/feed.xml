@@ -2,41 +2,470 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Python on DavidCraddock.net</title>
-    <link>https://davidcraddock.net/tag/python/</link>
+    <link>http://192.168.1.50:9796/tag/python/</link>
     <description>Recent content in Python on DavidCraddock.net</description>
-    <generator>Hugo -- 0.129.0</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Jun 2014 00:24:34 +0000</lastBuildDate>
-    <atom:link href="https://davidcraddock.net/tag/python/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Jun 2014 00:24:34 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/tag/python/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A* Algorithm implementation in Python</title>
-      <link>https://davidcraddock.net/2014/06/12/a-algorithm-implementation-in-python/</link>
+      <link>http://192.168.1.50:9796/2014/06/12/a-algorithm-implementation-in-python/</link>
       <pubDate>Thu, 12 Jun 2014 00:24:34 +0000</pubDate>
-      <guid>https://davidcraddock.net/2014/06/12/a-algorithm-implementation-in-python/</guid>
+      
+      <guid>http://192.168.1.50:9796/2014/06/12/a-algorithm-implementation-in-python/</guid>
       <description>Lately I&amp;rsquo;ve had the idea of creating a text-based Roguelike in C++. This lead me on to think about the game AI experiments that I worked during my degree in Computer Science and A.I.. Essential to game AI is the notion of pathfinding, or finding a path from &amp;lsquo;A&amp;rsquo; to &amp;lsquo;B&amp;rsquo;, past any obstacles that get in the way. One way to do this is to use the A* algorithm.</description>
+      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2014/06/pathfinding.jpg"><img loading="lazy" src="/wp-content/uploads/2014/06/pathfinding.jpg" type="" alt="pathfinding"  /></a></p>
+<p>Lately I&rsquo;ve had the idea of creating a text-based <a href="http://en.wikipedia.org/wiki/Roguelike">Roguelike</a> in C++. This lead me on to think about the game AI experiments that I worked during my degree in <a href="http://www.sussex.ac.uk/informatics/">Computer Science and A.I.</a>. Essential to game AI is the notion of pathfinding, or finding a path from &lsquo;A&rsquo; to &lsquo;B&rsquo;, past any obstacles that get in the way. One way to do this is to use the A* algorithm. I decided to implement an A* pathfinding algorithm for possible use in a Roguelike later, and chose <a href="http://en.wikipedia.org/wiki/A*_search_algorithm">the pseudocode from the Wikipedia example</a> to implement.</p>
+<p>The program finds a path from the top right hand corner to the top left, avoiding impassable &lsquo;7&rsquo; obstacles. The &lsquo;*&rsquo; are the steps along the path. The algorithm is guaranteed to find the shortest path between the goal and the start, which means it can optimally solve any solvable maze, given time.</p>
+<p>This is a sample board with obstacles setup:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000007777000000000000000
+</span></span><span style="display:flex;"><span>00000000000000077777777777777777700000000000000000
+</span></span><span style="display:flex;"><span>00000000077777777777777777777777700000000000000000
+</span></span><span style="display:flex;"><span>00000077777777777700000000000000000000000000000000
+</span></span><span style="display:flex;"><span>77777777777000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>77777777000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>77777777777777777707777777777777777777777777777777
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>70777777777777777777777777777777777777777777777777
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>77777777777777777777700000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000777777777777777777777707777777
+</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
+</span></span></code></pre></div><p>This is the path found (the &lsquo;*&rsquo;s):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>**000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>0***********************************00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000007777*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000077777777777777777700*00000000000000
+</span></span><span style="display:flex;"><span>00000000077777777777777777777777700*00000000000000
+</span></span><span style="display:flex;"><span>00000077777777777700000000000000000*00000000000000
+</span></span><span style="display:flex;"><span>77777777777000000000000000000000000*00000000000000
+</span></span><span style="display:flex;"><span>77777777000000000000000000000000000*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000*00000000000000
+</span></span><span style="display:flex;"><span>000000000000000000******************00000000000000
+</span></span><span style="display:flex;"><span>777777777777777777*7777777777777777777777777777777
+</span></span><span style="display:flex;"><span>000000000000000000*0000000000000000000000000000000
+</span></span><span style="display:flex;"><span>0******************0000000000000000000000000000000
+</span></span><span style="display:flex;"><span>7*777777777777777777777777777777777777777777777777
+</span></span><span style="display:flex;"><span>0*****************************00000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000**0000000000000000000
+</span></span><span style="display:flex;"><span>000000000000000000000000000000**000000000000000000
+</span></span><span style="display:flex;"><span>0000000000000000000000000000000*000000000000000000
+</span></span><span style="display:flex;"><span>0000000000000000000000000000000***0000000000000000
+</span></span><span style="display:flex;"><span>000000000000000000000000000000000*0000000000000000
+</span></span><span style="display:flex;"><span>000000000000000000000000000000000**000000000000000
+</span></span><span style="display:flex;"><span>0000000000000000000000000000000000**00000000000000
+</span></span><span style="display:flex;"><span>77777777777777777777700000000000000***000000000000
+</span></span><span style="display:flex;"><span>0000000000000000000000000000000000000**00000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000*00000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000**0000000000
+</span></span><span style="display:flex;"><span>000000000000000000000000000000000000000****0000000
+</span></span><span style="display:flex;"><span>000000000000000000007777777777777777777777*7777777
+</span></span><span style="display:flex;"><span>000000000000000000007000000000000000000000**000000
+</span></span><span style="display:flex;"><span>0000000000000000000070000000000000000000000*000000
+</span></span><span style="display:flex;"><span>0000000000000000000070000000000000000000000***0000
+</span></span><span style="display:flex;"><span>000000000000000000007000000000000000000000000**000
+</span></span><span style="display:flex;"><span>0000000000000000000070000000000000000000000000*000
+</span></span><span style="display:flex;"><span>0000000000000000000070000000000000000000000000***0
+</span></span><span style="display:flex;"><span>000000000000000000007000000000000000000000000000*0
+</span></span><span style="display:flex;"><span>000000000000000000007000000000000000000000000000**
+</span></span></code></pre></div><p>Here is <a href="https://github.com/wordswords/astarpython">source code</a></p>
+<p>Amit&rsquo;s <a href="http://theory.stanford.edu/~amitp/GameProgramming/">A* pages</a> were incredibly useful in developing this.</p>
+<p>(Perhaps one day I will do a flashy JavaScript version!)</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Scraping Gumtree Property Adverts with Python and BeautifulSoup</title>
-      <link>https://davidcraddock.net/2011/05/01/scraping-gumtree-property-adverts-with-python-and-beautifulsoup/</link>
+      <link>http://192.168.1.50:9796/2011/05/01/scraping-gumtree-property-adverts-with-python-and-beautifulsoup/</link>
       <pubDate>Sun, 01 May 2011 14:07:02 +0000</pubDate>
-      <guid>https://davidcraddock.net/2011/05/01/scraping-gumtree-property-adverts-with-python-and-beautifulsoup/</guid>
+      
+      <guid>http://192.168.1.50:9796/2011/05/01/scraping-gumtree-property-adverts-with-python-and-beautifulsoup/</guid>
       <description>I am moving to Manchester soon, and so I thought I&amp;rsquo;d get an idea of the housing market there by scraping all the Manchester Gumtree property adverts into a MySQL database. Once in the database, I could do things like find the average monthly price for a 2 bedroom flat in an area, and spot bargains through using standard deviation from the mean on the price through using simple SQL queries via phpMyAdmin.</description>
+      <content:encoded><![CDATA[<p>I am moving to Manchester soon, and so I thought I&rsquo;d get an idea of the housing market there by scraping all the Manchester Gumtree property adverts into a MySQL database. Once in the database, I could do things like find the average monthly price for a 2 bedroom flat in an area, and spot bargains through using standard deviation from the mean on the price through using simple SQL queries via <a href="http://www.phpmyadmin.net/home_page/index.php">phpMyAdmin</a>.</p>
+<p>I really like the Python library <a href="http://www.crummy.com/software/BeautifulSoup/">BeautifulSoup</a> for writing scrapers, there is also a Java version called <a href="http://jsoup.org/">JSoup</a>. BeautifulSoup does a really good job of tolerating markup mistakes in the input data, and transforms a page into a tree structure that is easy to work with.</p>
+<p>I chose the following layout for the program:</p>
+<p><strong>advert.py</strong> - Stores all information about each property advert, with a &lsquo;save&rsquo; method that inserts the data into the mysql database
+<strong>listing.py</strong> - Stores all the information on each listing page, which is broken down into links for specific adverts, and also the link to the next listing page in the sequence (ie: the &rsquo;next page&rsquo; link)
+<strong>scrapeAdvert.py</strong> - When given an advert URL, this creates and populates an advert object
+<strong>scrapeListing.py</strong> - When given a listing URL, this creates and populates a listing object
+<strong>scrapeSequence.py</strong> - This walks through a series of listings, calling scrapeListing and scrapeAdvert for all of them, and finishes when there are no more listings in the sequence to scrape</p>
+<p>Here is the MySQL table I created for this project (which you will have to setup if you want to run the scraper):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mysql" data-lang="mysql"><span style="display:flex;"><span><span style="color:#75715e">--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">-- Database: `manchester`
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">-- --------------------------------------------------------
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">-- Table structure for table `adverts`
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">CREATE TABLE IF NOT EXISTS `adverts` (
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#f92672">`</span>url<span style="color:#f92672">`</span> <span style="color:#66d9ef">varchar</span>(<span style="color:#ae81ff">255</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">`</span>title<span style="color:#f92672">`</span> <span style="color:#66d9ef">text</span> <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">`</span>pricePW<span style="color:#f92672">`</span> <span style="color:#66d9ef">int</span>(<span style="color:#ae81ff">10</span>) <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">`</span>pricePCM<span style="color:#f92672">`</span> <span style="color:#66d9ef">int</span>(<span style="color:#ae81ff">11</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">`</span>location<span style="color:#f92672">`</span> <span style="color:#66d9ef">text</span> <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">`</span>dateAvailable<span style="color:#f92672">`</span> <span style="color:#66d9ef">date</span> <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">`</span>propertyType<span style="color:#f92672">`</span> <span style="color:#66d9ef">text</span> <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">`</span>bedroomNumber<span style="color:#f92672">`</span> <span style="color:#66d9ef">int</span>(<span style="color:#ae81ff">11</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">`</span>description<span style="color:#f92672">`</span> <span style="color:#66d9ef">text</span> <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span> (<span style="color:#f92672">`</span>url<span style="color:#f92672">`</span>)
+</span></span><span style="display:flex;"><span>) <span style="color:#66d9ef">ENGINE</span><span style="color:#f92672">=</span>MyISAM <span style="color:#66d9ef">DEFAULT</span> <span style="color:#66d9ef">CHARSET</span><span style="color:#f92672">=</span>latin1;
+</span></span></code></pre></div><p>PricePCM is price per calendar month, PricePW is price per week. Usually each advert with have one or the other specified.</p>
+<p><strong>advert.py:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>import MySQLdb
+</span></span><span style="display:flex;"><span>import chardet
+</span></span><span style="display:flex;"><span>import sys
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>class advert:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        url = &#34;&#34;
+</span></span><span style="display:flex;"><span>        title = &#34;&#34;
+</span></span><span style="display:flex;"><span>        pricePW = 0
+</span></span><span style="display:flex;"><span>        pricePCM = 0
+</span></span><span style="display:flex;"><span>        location = &#34;&#34;
+</span></span><span style="display:flex;"><span>        dateAvailable = &#34;&#34;
+</span></span><span style="display:flex;"><span>        propertyType = &#34;&#34;
+</span></span><span style="display:flex;"><span>        bedroomNumber = 0
+</span></span><span style="display:flex;"><span>        description = &#34;&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        def save(self):
+</span></span><span style="display:flex;"><span>                # you will need to change the following to match your mysql credentials:
+</span></span><span style="display:flex;"><span>                db=MySQLdb.connect(&#34;localhost&#34;,&#34;root&#34;,&#34;secret&#34;,&#34;manchester&#34;)
+</span></span><span style="display:flex;"><span>                c=db.cursor()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                self.description = unicode(self.description, errors=&#39;replace&#39;)
+</span></span><span style="display:flex;"><span>                self.description = self.description.encode(&#39;ascii&#39;,&#39;ignore&#39;)
+</span></span><span style="display:flex;"><span>                # TODO: might need to convert the other strings in the advert if there are any unicode conversetion errors
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                sql = &#34;INSERT INTO adverts (url,title,pricePCM,pricePW,location,dateAvailable,propertyType,bedroomNumber,description) VALUES(&#39;&#34;+self.url+&#34;&#39;,&#39;&#34;+self.title+&#34;&#39;,&#34;+str(self.pricePCM)+&#34;,&#34;+str(self.pricePW)+&#34;,&#39;&#34;+self.location+&#34;&#39;,&#39;&#34;+self.dateAvailable+&#34;&#39;,&#39;&#34;+self.propertyType+&#34;&#39;,&#34;+str(self.bedroomNumber)+&#34;,&#39;&#34;+self.description+&#34;&#39; )&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                c.execute(sql)
+</span></span></code></pre></div><p>In advert.py we convert the unicode output that BeautifulSoup gives us into plain ASCII so that we can put it in the MySQL database without any problems. I could have used Unicode in the database as well, but the chances of really needing Unicode for representing Gumtree ads is quite slim. If you intend to use this code then you will also want to enter the MySQL credentials for your database.</p>
+<p><strong>listing.py:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>class listing:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        url=&#34;&#34;
+</span></span><span style="display:flex;"><span>        adverturls=[]
+</span></span><span style="display:flex;"><span>        nextLink=&#34;&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        def addAdvertURL(self,url):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                self.adverturls.append(url)
+</span></span></code></pre></div><p><strong>scrapeAdvert.py:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>from BeautifulSoup import BeautifulSoup          # For processing HTML
+</span></span><span style="display:flex;"><span>import urllib2
+</span></span><span style="display:flex;"><span>from advert import advert
+</span></span><span style="display:flex;"><span>import time
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>class scrapeAdvert:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        page = &#34;&#34;
+</span></span><span style="display:flex;"><span>        soup = &#34;&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        def scrape(self,advertURL):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                # give it a bit of time so gumtree doesn&#39;t
+</span></span><span style="display:flex;"><span>                # ban us
+</span></span><span style="display:flex;"><span>                time.sleep(2)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                url = advertURL
+</span></span><span style="display:flex;"><span>                # print &#34;-- scraping &#34;+url+&#34; --&#34;
+</span></span><span style="display:flex;"><span>                page = urllib2.urlopen(url)
+</span></span><span style="display:flex;"><span>                self.soup = BeautifulSoup(page)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                self.anAd = advert()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                self.anAd.url = url
+</span></span><span style="display:flex;"><span>                self.anAd.title = self.extractTitle()
+</span></span><span style="display:flex;"><span>                self.anAd.pricePW = self.extractPricePW()
+</span></span><span style="display:flex;"><span>                self.anAd.pricePCM = self.extractPricePCM()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                self.anAd.location = self.extractLocation()
+</span></span><span style="display:flex;"><span>                self.anAd.dateAvailable = self.extractDateAvailable()
+</span></span><span style="display:flex;"><span>                self.anAd.propertyType = self.extractPropertyType()
+</span></span><span style="display:flex;"><span>                self.anAd.bedroomNumber = self.extractBedroomNumber()
+</span></span><span style="display:flex;"><span>                self.anAd.description = self.extractDescription()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        def extractTitle(self):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                location = self.soup.find(&#39;h1&#39;)
+</span></span><span style="display:flex;"><span>                string = location.contents[0]
+</span></span><span style="display:flex;"><span>                stripped = &#39; &#39;.join(string.split())
+</span></span><span style="display:flex;"><span>                stripped = stripped.replace(&#34;&#39;&#34;,&#39;&#34;&#39;)
+</span></span><span style="display:flex;"><span>                # print &#39;|&#39; + stripped + &#39;|&#39;
+</span></span><span style="display:flex;"><span>                return stripped
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        def extractPricePCM(self):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                location = self.soup.find(&#39;span&#39;,attrs={&#34;class&#34; : &#34;price&#34;})
+</span></span><span style="display:flex;"><span>                try:
+</span></span><span style="display:flex;"><span>                        string = location.contents[0]
+</span></span><span style="display:flex;"><span>                        string.index(&#39;pcm&#39;)
+</span></span><span style="display:flex;"><span>                except AttributeError: # for ads with no prices set
+</span></span><span style="display:flex;"><span>                        return 0
+</span></span><span style="display:flex;"><span>                except ValueError: # for ads with pw specified
+</span></span><span style="display:flex;"><span>                        return 0
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                stripped = string.replace(&#39;£&#39;,&#39;&#39;)
+</span></span><span style="display:flex;"><span>                stripped = stripped.replace(&#39;pcm&#39;,&#39;&#39;)
+</span></span><span style="display:flex;"><span>                stripped = stripped.replace(&#39;,&#39;,&#39;&#39;)
+</span></span><span style="display:flex;"><span>                stripped = stripped.replace(&#34;&#39;&#34;,&#39;&#34;&#39;)
+</span></span><span style="display:flex;"><span>                stripped = &#39; &#39;.join(stripped.split())
+</span></span><span style="display:flex;"><span>                # print &#39;|&#39; + stripped + &#39;|&#39;
+</span></span><span style="display:flex;"><span>                return int(stripped)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        def extractPricePW(self):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                location = self.soup.find(&#39;span&#39;,attrs={&#34;class&#34; : &#34;price&#34;})
+</span></span><span style="display:flex;"><span>                try:
+</span></span><span style="display:flex;"><span>                        string = location.contents[0]
+</span></span><span style="display:flex;"><span>                        string.index(&#39;pw&#39;)
+</span></span><span style="display:flex;"><span>                except AttributeError: # for ads with no prices set
+</span></span><span style="display:flex;"><span>                        return 0
+</span></span><span style="display:flex;"><span>                except ValueError: # for ads with pcm specified
+</span></span><span style="display:flex;"><span>                        return 0
+</span></span><span style="display:flex;"><span>                stripped = string.replace(&#39;£&#39;,&#39;&#39;)
+</span></span><span style="display:flex;"><span>                stripped = stripped.replace(&#39;pw&#39;,&#39;&#39;)
+</span></span><span style="display:flex;"><span>                stripped = stripped.replace(&#39;,&#39;,&#39;&#39;)
+</span></span><span style="display:flex;"><span>                stripped = stripped.replace(&#34;&#39;&#34;,&#39;&#34;&#39;)
+</span></span><span style="display:flex;"><span>                stripped = &#39; &#39;.join(stripped.split())
+</span></span><span style="display:flex;"><span>                # print &#39;|&#39; + stripped + &#39;|&#39;
+</span></span><span style="display:flex;"><span>                return int(stripped)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        def extractLocation(self):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                location = self.soup.find(&#39;span&#39;,attrs={&#34;class&#34; : &#34;location&#34;})
+</span></span><span style="display:flex;"><span>                string = location.contents[0]
+</span></span><span style="display:flex;"><span>                stripped = &#39; &#39;.join(string.split())
+</span></span><span style="display:flex;"><span>                stripped = stripped.replace(&#34;&#39;&#34;,&#39;&#34;&#39;)
+</span></span><span style="display:flex;"><span>                # print &#39;|&#39; + stripped + &#39;|&#39;
+</span></span><span style="display:flex;"><span>                return stripped
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        def extractDateAvailable(self):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                current_year = &#39;2011&#39;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                ul = self.soup.find(&#39;ul&#39;,attrs={&#34;id&#34; : &#34;ad-details&#34;})
+</span></span><span style="display:flex;"><span>                firstP = ul.findAll(&#39;p&#39;)[0]
+</span></span><span style="display:flex;"><span>                string = firstP.contents[0]
+</span></span><span style="display:flex;"><span>                stripped = &#39; &#39;.join(string.split())
+</span></span><span style="display:flex;"><span>                date_to_convert = stripped + &#39;/&#39;+current_year
+</span></span><span style="display:flex;"><span>                try:
+</span></span><span style="display:flex;"><span>                        date_object = time.strptime(date_to_convert, &#34;%d/%m/%Y&#34;)
+</span></span><span style="display:flex;"><span>                except ValueError: # for adverts with no date available
+</span></span><span style="display:flex;"><span>                        return &#34;&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                full_date = time.strftime(&#39;%Y-%m-%d %H:%M:%S&#39;, date_object)
+</span></span><span style="display:flex;"><span>                # print &#39;|&#39; + full_date + &#39;|&#39;
+</span></span><span style="display:flex;"><span>                return full_date
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        def extractPropertyType(self):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                ul = self.soup.find(&#39;ul&#39;,attrs={&#34;id&#34; : &#34;ad-details&#34;})
+</span></span><span style="display:flex;"><span>                try:
+</span></span><span style="display:flex;"><span>                        secondP = ul.findAll(&#39;p&#39;)[1]
+</span></span><span style="display:flex;"><span>                except IndexError: # for properties with no type
+</span></span><span style="display:flex;"><span>                        return &#34;&#34;
+</span></span><span style="display:flex;"><span>                string = secondP.contents[0]
+</span></span><span style="display:flex;"><span>                stripped = &#39; &#39;.join(string.split())
+</span></span><span style="display:flex;"><span>                stripped = stripped.replace(&#34;&#39;&#34;,&#39;&#34;&#39;)
+</span></span><span style="display:flex;"><span>                # print &#39;|&#39; + stripped + &#39;|&#39;
+</span></span><span style="display:flex;"><span>                return stripped
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        def extractBedroomNumber(self):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                ul = self.soup.find(&#39;ul&#39;,attrs={&#34;id&#34; : &#34;ad-details&#34;})
+</span></span><span style="display:flex;"><span>                try:
+</span></span><span style="display:flex;"><span>                        thirdP = ul.findAll(&#39;p&#39;)[2]
+</span></span><span style="display:flex;"><span>                except IndexError: # for properties with no bedroom number
+</span></span><span style="display:flex;"><span>                        return 0
+</span></span><span style="display:flex;"><span>                string = thirdP.contents[0]
+</span></span><span style="display:flex;"><span>                stripped = &#39; &#39;.join(string.split())
+</span></span><span style="display:flex;"><span>                stripped = stripped.replace(&#34;&#39;&#34;,&#39;&#34;&#39;)
+</span></span><span style="display:flex;"><span>                # print &#39;|&#39; + stripped + &#39;|&#39;
+</span></span><span style="display:flex;"><span>                return stripped
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        def extractDescription(self):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                div = self.soup.find(&#39;div&#39;,attrs={&#34;id&#34; : &#34;description&#34;})
+</span></span><span style="display:flex;"><span>                description = div.find(&#39;p&#39;)
+</span></span><span style="display:flex;"><span>                contents = description.renderContents()
+</span></span><span style="display:flex;"><span>                contents = contents.replace(&#34;&#39;&#34;,&#39;&#34;&#39;)
+</span></span><span style="display:flex;"><span>                # print &#39;|&#39; + contents + &#39;|&#39;
+</span></span><span style="display:flex;"><span>                return contents
+</span></span></code></pre></div><p>In scrapeAdvert.py there are a lot of string manipulation statements to pull out any unwanted characters, such as the &lsquo;pw&rsquo; characters (short for per week) found in the price string, which we need to remove in order to store the property price per week as an integer.</p>
+<p>Using BeautifulSoup to pull out elements is quite easy, for example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ul = self.soup.find(&#39;ul&#39;,attrs={&#34;id&#34; : &#34;ad-details&#34;})
+</span></span></code></pre></div><p>That finds all the HTML elements under the tag id=&ldquo;ad-details&rdquo;, so all the list elements in that list. More detail can be found in the <a href="http://www.crummy.com/software/BeautifulSoup/documentation.html">Beautiful Soup documentation</a> which is very good.</p>
+<p><strong>scrapeListing.py:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>from BeautifulSoup import BeautifulSoup          # For processing HTML
+</span></span><span style="display:flex;"><span>import urllib2
+</span></span><span style="display:flex;"><span>from listing import listing
+</span></span><span style="display:flex;"><span>import time
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>class scrapeListing:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        soup = &#34;&#34;
+</span></span><span style="display:flex;"><span>        url = &#34;&#34;
+</span></span><span style="display:flex;"><span>        aListing = &#34;&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        def scrape(self,url):
+</span></span><span style="display:flex;"><span>                # give it a bit of time so gumtree doesn&#39;t
+</span></span><span style="display:flex;"><span>                # ban us
+</span></span><span style="display:flex;"><span>                time.sleep(3)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                print &#34;scraping url = &#34;+str(url)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                page = urllib2.urlopen(url)
+</span></span><span style="display:flex;"><span>                self.soup = BeautifulSoup(page)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                self.aListing = listing()
+</span></span><span style="display:flex;"><span>                self.aListing.url = url
+</span></span><span style="display:flex;"><span>                self.aListing.adverturls = self.extractAdvertURLs()
+</span></span><span style="display:flex;"><span>                self.aListing.nextLink = self.extractNextLink()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        def extractAdvertURLs(self):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                toReturn = []
+</span></span><span style="display:flex;"><span>                h3s = self.soup.findAll(&#34;h3&#34;)
+</span></span><span style="display:flex;"><span>                for h3 in h3s:
+</span></span><span style="display:flex;"><span>                        links = h3.findAll(&#39;a&#39;,{&#34;class&#34;:&#34;summary&#34;})
+</span></span><span style="display:flex;"><span>                        for link in links:
+</span></span><span style="display:flex;"><span>                                print &#34;|&#34;+link[&#39;href&#39;]+&#34;|&#34;
+</span></span><span style="display:flex;"><span>                                toReturn.append(link[&#39;href&#39;])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                return toReturn
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        def extractNextLink(self):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                links = self.soup.findAll(&#34;a&#34;,{&#34;class&#34;:&#34;next&#34;})
+</span></span><span style="display:flex;"><span>                try:
+</span></span><span style="display:flex;"><span>                        print &#34;&gt;&#34;+links[0][&#39;href&#39;]+&#34;&gt;&#34;
+</span></span><span style="display:flex;"><span>                except IndexError: # if there is no &#39;next&#39; link found..
+</span></span><span style="display:flex;"><span>                        return &#34;&#34;
+</span></span><span style="display:flex;"><span>                return links[0][&#39;href&#39;]
+</span></span></code></pre></div><p>The extractNextLink method here extracts the pagination &rsquo;next&rsquo; link which will bring up the next listing page from the selection of listing pages to browse. We use it to step through the pagination &lsquo;sequence&rsquo; of resultant listing pages.</p>
+<p><strong>scrapeSequence.py:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>from scrapeListing import scrapeListing
+</span></span><span style="display:flex;"><span>from scrapeAdvert import scrapeAdvert
+</span></span><span style="display:flex;"><span>from listing import listing
+</span></span><span style="display:flex;"><span>from advert import advert
+</span></span><span style="display:flex;"><span>import MySQLdb
+</span></span><span style="display:flex;"><span>import _mysql_exceptions
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># change this to the gumtree page you want to start scraping from
+</span></span><span style="display:flex;"><span>url = &#34;http://www.gumtree.com/flats-and-houses-for-rent/salford-quays&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>while url != None:
+</span></span><span style="display:flex;"><span>        print &#34;scraping URL = &#34;+url
+</span></span><span style="display:flex;"><span>        sl = &#34;&#34;
+</span></span><span style="display:flex;"><span>        sl = scrapeListing()
+</span></span><span style="display:flex;"><span>        sl.scrape(url)
+</span></span><span style="display:flex;"><span>        for advertURL in sl.aListing.adverturls:
+</span></span><span style="display:flex;"><span>                sa = &#34;&#34;
+</span></span><span style="display:flex;"><span>                sa = scrapeAdvert()
+</span></span><span style="display:flex;"><span>                sa.scrape(advertURL)
+</span></span><span style="display:flex;"><span>                try:
+</span></span><span style="display:flex;"><span>                        sa.anAd.save()
+</span></span><span style="display:flex;"><span>                except _mysql_exceptions.IntegrityError:
+</span></span><span style="display:flex;"><span>                        print &#34;** Advert &#34; + sa.anAd.url + &#34; already saved **&#34;
+</span></span><span style="display:flex;"><span>                sa.onAd = &#34;&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        url = &#34;&#34;
+</span></span><span style="display:flex;"><span>        if sl.aListing.nextLink:
+</span></span><span style="display:flex;"><span>                print &#34;nextLink = &#34;+sl.aListing.nextLink
+</span></span><span style="display:flex;"><span>                url = sl.aListing.nextLink
+</span></span><span style="display:flex;"><span>        else:
+</span></span><span style="display:flex;"><span>                print &#39;all done.&#39;
+</span></span><span style="display:flex;"><span>                break
+</span></span></code></pre></div><p>This is the file you run to kick off the scrape. It uses an MySQL IntegrityError try/except block to pick out when an advert has already been entered into the database, this will throw an error because the URL of the advert is the primary key in the database. So no two records can have the same primary key.</p>
+<p>The URL you provide it above gives you the starting page from which to scrape from.</p>
+<p>The above code worked well for scraping several hundred Manchester Gumtree ads into a database, from which point I was able to use a combination of phpMyAdmin and OpenOffice Spreadsheet to analyse the data and find out useful statistics about the property market in said area.</p>
+<p><a href="http://www.davidcraddock.net/uploads/gumtree-scraper.tgz">Download the scraper source code in a tar.gz archive</a></p>
+<p>Note: Due to the nature of web scraping, if - or more accurately, when - Gumtree changes its user interface, the scraper I have written will need to be tweaked accordingly to find the right data. This is meant to be an informative tutorial, not a finished product.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>MicroKORG &#43; Python = MIDI fun!</title>
-      <link>https://davidcraddock.net/2009/03/30/microkorg-python-midi-fun/</link>
+      <link>http://192.168.1.50:9796/2009/03/30/microkorg-python-midi-fun/</link>
       <pubDate>Mon, 30 Mar 2009 00:14:10 +0000</pubDate>
-      <guid>https://davidcraddock.net/2009/03/30/microkorg-python-midi-fun/</guid>
+      
+      <guid>http://192.168.1.50:9796/2009/03/30/microkorg-python-midi-fun/</guid>
       <description>So, about a month ago I got a second-hand microKORG from Ebay. Fiddling around with the preset patches, and creating new patches is great fun, even though I only know a few chords. Recently I plugged it in to my PC via my M-Audio Uno USB-&amp;gt;MIDI interface, and soon was using Ableton Live to program drums in time with the microKORG&amp;rsquo;s arp.
 I thought I&amp;rsquo;d experiment the music libraries available in python, and see if I could send notes to the synth via MIDI.</description>
+      <content:encoded><![CDATA[<p>So, about a month ago I got a second-hand <a href="http://en.wikipedia.org/wiki/MicroKORG">microKORG</a> from Ebay. Fiddling around with the preset patches, and creating new patches is great fun, even though I only know a few chords. Recently I plugged it in to my PC via my <a href="http://www.dolphinmusic.co.uk/product/1773-m-audio-uno-usb.html">M-Audio Uno USB-&gt;MIDI interface</a>, and soon was using Ableton Live to program drums in time with the microKORG&rsquo;s arp.</p>
+<p>I thought I&rsquo;d experiment the music libraries available in python, and see if I could send notes to the synth via MIDI. Turns out that the M-Audio Uno is supported under Ubuntu, all you have to do is install the <code>midisport-firmware</code> package. With the help of <a href="http://trac2.assembla.com/pkaudio/wiki/pyrtmidi">pyrtmidi</a>, a set of python wrappers around the C++ audio library rtmidi I was able to recieve MIDI signals in realtime from the microKORG, and send them in realtime also. With the help of <a href="http://www.davidcraddock.net/images/midilib.py">this</a> old midi file reader/writer library that I found posted to a python mailing list, I&rsquo;ve made some progress in writing a simple MIDI file player that sends notes to the &lsquo;KORG.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Eclipse 3.4.2 &#43; Pydev &#43; Eclim = win</title>
-      <link>https://davidcraddock.net/2009/03/27/eclipse-342-pydev-eclim-win/</link>
+      <link>http://192.168.1.50:9796/2009/03/27/eclipse-342-pydev-eclim-win/</link>
       <pubDate>Fri, 27 Mar 2009 23:47:59 +0000</pubDate>
-      <guid>https://davidcraddock.net/2009/03/27/eclipse-342-pydev-eclim-win/</guid>
+      
+      <guid>http://192.168.1.50:9796/2009/03/27/eclipse-342-pydev-eclim-win/</guid>
       <description>So, after saying all that stuff about how vimplugin and EasyEclipse was great, I actually started to use the setup heavily, and it started to annoy me.
 For one, EE is not a recent build of eclipse, nor does it come with a full set of recent plugins. This makes it annoyingly difficult to use when you want to use more than the set of plugins it packages for you. As far as vimplugin goes, it does not provide the vim integration I thought it might from embedded vim.</description>
+      <content:encoded><![CDATA[<p>So, after saying all that stuff about how vimplugin and EasyEclipse was great, I actually started to use the setup heavily, and it started to annoy me.</p>
+<p>For one, EE is not a recent build of eclipse, nor does it come with a full set of recent plugins. This makes it annoyingly difficult to use when you want to use more than the set of plugins it packages for you. As far as vimplugin goes, it does not provide the vim integration I thought it might from embedded vim. Not really even close.</p>
+<p>What I use now, after lots of trial and error, and at least 4 reinstalls of Eclipse, is a combination of Eclipse 3.4.2, <a href="http://eclim.sourceforge.net/">Eclim</a>, (which is the most mature of the free vi-binding plugins around, and actually includes an improved version of the vimplugin previously mentioned), and the latest pydev, Mylyn and Subeclipse.</p>
+<p>I&rsquo;m using it now to refactor a largeish python project, and I&rsquo;m really appreciating the help it gives me. Definitely worth trying an Eclipse setup similar to this if you&rsquo;re writing any python apps that are more than small-scale.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

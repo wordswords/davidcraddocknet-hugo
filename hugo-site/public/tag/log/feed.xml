@@ -2,21 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Log on DavidCraddock.net</title>
-    <link>https://davidcraddock.net/tag/log/</link>
+    <link>http://192.168.1.50:9796/tag/log/</link>
     <description>Recent content in Log on DavidCraddock.net</description>
-    <generator>Hugo -- 0.129.0</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Jun 2013 15:55:04 +0000</lastBuildDate>
-    <atom:link href="https://davidcraddock.net/tag/log/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jun 2013 15:55:04 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/tag/log/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tailing a log file and Running an Application at the Same Time</title>
-      <link>https://davidcraddock.net/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/</link>
+      <link>http://192.168.1.50:9796/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/</link>
       <pubDate>Tue, 11 Jun 2013 15:55:04 +0000</pubDate>
-      <guid>https://davidcraddock.net/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/</guid>
+      
+      <guid>http://192.168.1.50:9796/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/</guid>
       <description>A quick tip this, but a useful one. You can tail a log file in the background while running a script in the foreground. So for example, I frequently execute the following commands:
 1.
 tail -f /var/log/httpd.log &amp;amp; /etc/init.d/apache restart 2. (The log file will spool onto the terminal as Apache is restarted.)
 3. Once you are finished viewing the log file, foreground the log file process and kill it:</description>
+      <content:encoded><![CDATA[<p>A quick tip this, but a useful one. You can tail a log file in the background while running a script in the foreground. So for example, I frequently execute the following commands:</p>
+<p>1.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>tail <span style="color:#f92672">-</span>f <span style="color:#f92672">/</span><span style="color:#66d9ef">var</span><span style="color:#f92672">/</span>log<span style="color:#f92672">/</span>httpd<span style="color:#f92672">.</span>log <span style="color:#f92672">&amp;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">/</span>etc<span style="color:#f92672">/</span>init<span style="color:#f92672">.</span>d<span style="color:#f92672">/</span>apache restart
+</span></span></code></pre></div><p>2. (The log file will spool onto the terminal as Apache is restarted.)</p>
+<p>3. Once you are finished viewing the log file, foreground the log file process and kill it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>fg
+</span></span></code></pre></div><p>Then terminate the foregrounded log tail with a control-c.</p>
+<p>With this technique you can run as many commands as you want, and see the real-time effects on your log file, without having to open a new terminal. You will also see your program output interspersed with your log file output, which can be helpful when tracing down particular problems.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

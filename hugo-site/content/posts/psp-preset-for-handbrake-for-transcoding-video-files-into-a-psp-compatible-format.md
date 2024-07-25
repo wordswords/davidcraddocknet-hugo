@@ -11,4 +11,4 @@ This is based off of the 2021 Reddit post here: [https://www.reddit.com/r/PSP/co
 
 I am using it with Handbrake 1.5.1. You can import it into your Handbrake via "Preset -> File Import".
 
-[Download PSP Handbrake Preset](/2022/10/16/psp-preset-for-handbrake-for-transcoding-video-files-into-a-psp-compatible-format/psp-2/).
+[Download PSP Handbrake Preset](/psp.zip).

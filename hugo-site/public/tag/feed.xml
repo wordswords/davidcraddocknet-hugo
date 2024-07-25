@@ -2,2594 +2,3700 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tag on DavidCraddock.net</title>
-    <link>https://davidcraddock.net/tag/</link>
+    <link>http://192.168.1.50:9796/tag/</link>
     <description>Recent content in Tag on DavidCraddock.net</description>
-    <generator>Hugo -- 0.129.0</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Sep 2022 04:07:41 +0000</lastBuildDate>
-    <atom:link href="https://davidcraddock.net/tag/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Sep 2022 04:07:41 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/tag/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Politics</title>
-      <link>https://davidcraddock.net/tag/politics/</link>
+      <link>http://192.168.1.50:9796/tag/politics/</link>
       <pubDate>Thu, 29 Sep 2022 04:07:41 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/politics/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/politics/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Grub</title>
-      <link>https://davidcraddock.net/tag/grub/</link>
+      <link>http://192.168.1.50:9796/tag/grub/</link>
       <pubDate>Thu, 29 Sep 2022 00:00:36 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/grub/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/grub/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>New</title>
-      <link>https://davidcraddock.net/tag/new/</link>
+      <link>http://192.168.1.50:9796/tag/new/</link>
       <pubDate>Thu, 29 Sep 2022 00:00:36 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/new/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/new/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Poweroff</title>
-      <link>https://davidcraddock.net/tag/poweroff/</link>
+      <link>http://192.168.1.50:9796/tag/poweroff/</link>
       <pubDate>Thu, 29 Sep 2022 00:00:36 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/poweroff/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/poweroff/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Reboot</title>
-      <link>https://davidcraddock.net/tag/reboot/</link>
+      <link>http://192.168.1.50:9796/tag/reboot/</link>
       <pubDate>Thu, 29 Sep 2022 00:00:36 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/reboot/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/reboot/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Ubuntu</title>
-      <link>https://davidcraddock.net/tag/ubuntu/</link>
+      <link>http://192.168.1.50:9796/tag/ubuntu/</link>
       <pubDate>Thu, 29 Sep 2022 00:00:36 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/ubuntu/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/ubuntu/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>/Home</title>
-      <link>https://davidcraddock.net/tag/home/</link>
+      <link>http://192.168.1.50:9796/tag/home/</link>
       <pubDate>Tue, 27 Sep 2022 02:56:21 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/home/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/home/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Broadcast-Studio</title>
-      <link>https://davidcraddock.net/tag/broadcast-studio/</link>
+      <link>http://192.168.1.50:9796/tag/broadcast-studio/</link>
       <pubDate>Tue, 27 Sep 2022 02:56:21 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/broadcast-studio/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/broadcast-studio/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Djing</title>
-      <link>https://davidcraddock.net/tag/djing/</link>
+      <link>http://192.168.1.50:9796/tag/djing/</link>
       <pubDate>Tue, 27 Sep 2022 02:56:21 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/djing/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/djing/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Dmx</title>
-      <link>https://davidcraddock.net/tag/dmx/</link>
+      <link>http://192.168.1.50:9796/tag/dmx/</link>
       <pubDate>Tue, 27 Sep 2022 02:56:21 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/dmx/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/dmx/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Serato</title>
-      <link>https://davidcraddock.net/tag/serato/</link>
+      <link>http://192.168.1.50:9796/tag/serato/</link>
       <pubDate>Tue, 27 Sep 2022 02:56:21 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/serato/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/serato/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Twitch</title>
-      <link>https://davidcraddock.net/tag/twitch/</link>
+      <link>http://192.168.1.50:9796/tag/twitch/</link>
       <pubDate>Tue, 27 Sep 2022 02:56:21 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/twitch/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/twitch/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Duplicati</title>
-      <link>https://davidcraddock.net/tag/duplicati/</link>
+      <link>http://192.168.1.50:9796/tag/duplicati/</link>
       <pubDate>Sat, 24 Sep 2022 17:39:06 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/duplicati/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/duplicati/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Google-Drive</title>
-      <link>https://davidcraddock.net/tag/google-drive/</link>
+      <link>http://192.168.1.50:9796/tag/google-drive/</link>
       <pubDate>Sat, 24 Sep 2022 17:39:06 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/google-drive/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/google-drive/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Linux</title>
-      <link>https://davidcraddock.net/tag/linux/</link>
+      <link>http://192.168.1.50:9796/tag/linux/</link>
       <pubDate>Sat, 24 Sep 2022 17:39:06 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/linux/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/linux/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Rclone</title>
-      <link>https://davidcraddock.net/tag/rclone/</link>
+      <link>http://192.168.1.50:9796/tag/rclone/</link>
       <pubDate>Sat, 24 Sep 2022 17:39:06 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/rclone/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/rclone/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Health</title>
-      <link>https://davidcraddock.net/tag/health/</link>
+      <link>http://192.168.1.50:9796/tag/health/</link>
       <pubDate>Thu, 18 Aug 2022 19:58:57 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/health/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/health/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Sleep</title>
-      <link>https://davidcraddock.net/tag/sleep/</link>
+      <link>http://192.168.1.50:9796/tag/sleep/</link>
       <pubDate>Thu, 18 Aug 2022 19:58:57 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/sleep/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/sleep/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Sleep-Tracker</title>
-      <link>https://davidcraddock.net/tag/sleep-tracker/</link>
+      <link>http://192.168.1.50:9796/tag/sleep-tracker/</link>
       <pubDate>Thu, 18 Aug 2022 19:58:57 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/sleep-tracker/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/sleep-tracker/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Withings</title>
-      <link>https://davidcraddock.net/tag/withings/</link>
+      <link>http://192.168.1.50:9796/tag/withings/</link>
       <pubDate>Thu, 18 Aug 2022 19:58:57 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/withings/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/withings/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Collecting</title>
-      <link>https://davidcraddock.net/tag/collecting/</link>
+      <link>http://192.168.1.50:9796/tag/collecting/</link>
       <pubDate>Tue, 09 Aug 2022 02:53:48 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/collecting/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/collecting/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Gaming</title>
-      <link>https://davidcraddock.net/tag/gaming/</link>
+      <link>http://192.168.1.50:9796/tag/gaming/</link>
       <pubDate>Tue, 09 Aug 2022 02:53:48 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/gaming/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/gaming/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Playnite</title>
-      <link>https://davidcraddock.net/tag/playnite/</link>
+      <link>http://192.168.1.50:9796/tag/playnite/</link>
       <pubDate>Tue, 09 Aug 2022 02:53:48 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/playnite/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/playnite/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Steam</title>
-      <link>https://davidcraddock.net/tag/steam/</link>
+      <link>http://192.168.1.50:9796/tag/steam/</link>
       <pubDate>Tue, 09 Aug 2022 02:53:48 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/steam/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/steam/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Ripping</title>
-      <link>https://davidcraddock.net/tag/ripping/</link>
+      <link>http://192.168.1.50:9796/tag/ripping/</link>
       <pubDate>Wed, 16 Mar 2022 17:58:33 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/ripping/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/ripping/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Ripping-Blurays</title>
-      <link>https://davidcraddock.net/tag/ripping-blurays/</link>
+      <link>http://192.168.1.50:9796/tag/ripping-blurays/</link>
       <pubDate>Wed, 16 Mar 2022 17:58:33 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/ripping-blurays/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/ripping-blurays/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Tutorial</title>
-      <link>https://davidcraddock.net/tag/tutorial/</link>
+      <link>http://192.168.1.50:9796/tag/tutorial/</link>
       <pubDate>Wed, 16 Mar 2022 17:58:33 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/tutorial/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/tutorial/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Video-Tools</title>
-      <link>https://davidcraddock.net/tag/video-tools/</link>
+      <link>http://192.168.1.50:9796/tag/video-tools/</link>
       <pubDate>Wed, 16 Mar 2022 17:58:33 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/video-tools/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/video-tools/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Jenkinsfile</title>
-      <link>https://davidcraddock.net/tag/jenkinsfile/</link>
+      <link>http://192.168.1.50:9796/tag/jenkinsfile/</link>
       <pubDate>Sat, 19 Feb 2022 05:51:56 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/jenkinsfile/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/jenkinsfile/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Lint</title>
-      <link>https://davidcraddock.net/tag/lint/</link>
+      <link>http://192.168.1.50:9796/tag/lint/</link>
       <pubDate>Sat, 19 Feb 2022 05:51:56 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/lint/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/lint/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Vim</title>
-      <link>https://davidcraddock.net/tag/vim/</link>
+      <link>http://192.168.1.50:9796/tag/vim/</link>
       <pubDate>Sat, 19 Feb 2022 05:51:56 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/vim/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/vim/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Chmod</title>
-      <link>https://davidcraddock.net/tag/chmod/</link>
+      <link>http://192.168.1.50:9796/tag/chmod/</link>
       <pubDate>Thu, 18 Nov 2021 08:54:42 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/chmod/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/chmod/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Enlightement</title>
-      <link>https://davidcraddock.net/tag/enlightement/</link>
+      <link>http://192.168.1.50:9796/tag/enlightement/</link>
       <pubDate>Thu, 18 Nov 2021 08:54:42 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/enlightement/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/enlightement/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Enlightement_system</title>
-      <link>https://davidcraddock.net/tag/enlightement_system/</link>
+      <link>http://192.168.1.50:9796/tag/enlightement_system/</link>
       <pubDate>Thu, 18 Nov 2021 08:54:42 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/enlightement_system/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/enlightement_system/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Suit</title>
-      <link>https://davidcraddock.net/tag/suit/</link>
+      <link>http://192.168.1.50:9796/tag/suit/</link>
       <pubDate>Thu, 18 Nov 2021 08:54:42 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/suit/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/suit/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Ubutu-21.10</title>
-      <link>https://davidcraddock.net/tag/ubutu-21.10/</link>
+      <link>http://192.168.1.50:9796/tag/ubutu-21.10/</link>
       <pubDate>Thu, 18 Nov 2021 08:54:42 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/ubutu-21.10/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/ubutu-21.10/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Window-Manager</title>
-      <link>https://davidcraddock.net/tag/window-manager/</link>
+      <link>http://192.168.1.50:9796/tag/window-manager/</link>
       <pubDate>Thu, 18 Nov 2021 08:54:42 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/window-manager/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/window-manager/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Cd-Ripping</title>
-      <link>https://davidcraddock.net/tag/cd-ripping/</link>
+      <link>http://192.168.1.50:9796/tag/cd-ripping/</link>
       <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/cd-ripping/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/cd-ripping/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Dbpoweramp</title>
-      <link>https://davidcraddock.net/tag/dbpoweramp/</link>
+      <link>http://192.168.1.50:9796/tag/dbpoweramp/</link>
       <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/dbpoweramp/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/dbpoweramp/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Flac</title>
-      <link>https://davidcraddock.net/tag/flac/</link>
+      <link>http://192.168.1.50:9796/tag/flac/</link>
       <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/flac/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/flac/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Large-Library</title>
-      <link>https://davidcraddock.net/tag/large-library/</link>
+      <link>http://192.168.1.50:9796/tag/large-library/</link>
       <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/large-library/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/large-library/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Metadata</title>
-      <link>https://davidcraddock.net/tag/metadata/</link>
+      <link>http://192.168.1.50:9796/tag/metadata/</link>
       <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/metadata/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/metadata/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Mixed-in-Key</title>
-      <link>https://davidcraddock.net/tag/mixed-in-key/</link>
+      <link>http://192.168.1.50:9796/tag/mixed-in-key/</link>
       <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/mixed-in-key/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/mixed-in-key/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Musicbrainz</title>
-      <link>https://davidcraddock.net/tag/musicbrainz/</link>
+      <link>http://192.168.1.50:9796/tag/musicbrainz/</link>
       <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/musicbrainz/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/musicbrainz/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Picard</title>
-      <link>https://davidcraddock.net/tag/picard/</link>
+      <link>http://192.168.1.50:9796/tag/picard/</link>
       <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/picard/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/picard/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Serato-Dj-Pro</title>
-      <link>https://davidcraddock.net/tag/serato-dj-pro/</link>
+      <link>http://192.168.1.50:9796/tag/serato-dj-pro/</link>
       <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/serato-dj-pro/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/serato-dj-pro/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Tagging</title>
-      <link>https://davidcraddock.net/tag/tagging/</link>
+      <link>http://192.168.1.50:9796/tag/tagging/</link>
       <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/tagging/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/tagging/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Ableton-Live</title>
-      <link>https://davidcraddock.net/tag/ableton-live/</link>
+      <link>http://192.168.1.50:9796/tag/ableton-live/</link>
       <pubDate>Thu, 08 Apr 2021 03:49:31 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/ableton-live/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/ableton-live/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Denon-Ds1</title>
-      <link>https://davidcraddock.net/tag/denon-ds1/</link>
+      <link>http://192.168.1.50:9796/tag/denon-ds1/</link>
       <pubDate>Thu, 08 Apr 2021 03:49:31 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/denon-ds1/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/denon-ds1/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Reloop-8000mk2</title>
-      <link>https://davidcraddock.net/tag/reloop-8000mk2/</link>
+      <link>http://192.168.1.50:9796/tag/reloop-8000mk2/</link>
       <pubDate>Thu, 08 Apr 2021 03:49:31 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/reloop-8000mk2/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/reloop-8000mk2/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Serato-Dvs</title>
-      <link>https://davidcraddock.net/tag/serato-dvs/</link>
+      <link>http://192.168.1.50:9796/tag/serato-dvs/</link>
       <pubDate>Thu, 08 Apr 2021 03:49:31 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/serato-dvs/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/serato-dvs/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Vestax-Vcm-600</title>
-      <link>https://davidcraddock.net/tag/vestax-vcm-600/</link>
+      <link>http://192.168.1.50:9796/tag/vestax-vcm-600/</link>
       <pubDate>Thu, 08 Apr 2021 03:49:31 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/vestax-vcm-600/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/vestax-vcm-600/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Book-Reviews</title>
-      <link>https://davidcraddock.net/tag/book-reviews/</link>
+      <link>http://192.168.1.50:9796/tag/book-reviews/</link>
       <pubDate>Thu, 18 Feb 2021 16:56:59 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/book-reviews/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/book-reviews/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Dj-Books</title>
-      <link>https://davidcraddock.net/tag/dj-books/</link>
+      <link>http://192.168.1.50:9796/tag/dj-books/</link>
       <pubDate>Thu, 18 Feb 2021 16:56:59 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/dj-books/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/dj-books/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Configuration</title>
-      <link>https://davidcraddock.net/tag/configuration/</link>
+      <link>http://192.168.1.50:9796/tag/configuration/</link>
       <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/configuration/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/configuration/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Help</title>
-      <link>https://davidcraddock.net/tag/help/</link>
+      <link>http://192.168.1.50:9796/tag/help/</link>
       <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/help/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/help/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Microphone</title>
-      <link>https://davidcraddock.net/tag/microphone/</link>
+      <link>http://192.168.1.50:9796/tag/microphone/</link>
       <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/microphone/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/microphone/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Obs</title>
-      <link>https://davidcraddock.net/tag/obs/</link>
+      <link>http://192.168.1.50:9796/tag/obs/</link>
       <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/obs/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/obs/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Professional</title>
-      <link>https://davidcraddock.net/tag/professional/</link>
+      <link>http://192.168.1.50:9796/tag/professional/</link>
       <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/professional/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/professional/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Resolume-Avenue</title>
-      <link>https://davidcraddock.net/tag/resolume-avenue/</link>
+      <link>http://192.168.1.50:9796/tag/resolume-avenue/</link>
       <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/resolume-avenue/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/resolume-avenue/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Streaming</title>
-      <link>https://davidcraddock.net/tag/streaming/</link>
+      <link>http://192.168.1.50:9796/tag/streaming/</link>
       <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/streaming/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/streaming/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Streamlabs-Obs</title>
-      <link>https://davidcraddock.net/tag/streamlabs-obs/</link>
+      <link>http://192.168.1.50:9796/tag/streamlabs-obs/</link>
       <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/streamlabs-obs/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/streamlabs-obs/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Technical-Setup</title>
-      <link>https://davidcraddock.net/tag/technical-setup/</link>
+      <link>http://192.168.1.50:9796/tag/technical-setup/</link>
       <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/technical-setup/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/technical-setup/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Vjing</title>
-      <link>https://davidcraddock.net/tag/vjing/</link>
+      <link>http://192.168.1.50:9796/tag/vjing/</link>
       <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/vjing/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/vjing/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>3440x1440</title>
-      <link>https://davidcraddock.net/tag/3440x1440/</link>
+      <link>http://192.168.1.50:9796/tag/3440x1440/</link>
       <pubDate>Sun, 20 May 2018 11:40:51 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/3440x1440/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/3440x1440/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>4k-Video</title>
-      <link>https://davidcraddock.net/tag/4k-video/</link>
+      <link>http://192.168.1.50:9796/tag/4k-video/</link>
       <pubDate>Sun, 20 May 2018 11:40:51 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/4k-video/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/4k-video/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>4k-Video-Downloader</title>
-      <link>https://davidcraddock.net/tag/4k-video-downloader/</link>
+      <link>http://192.168.1.50:9796/tag/4k-video-downloader/</link>
       <pubDate>Sun, 20 May 2018 11:40:51 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/4k-video-downloader/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/4k-video-downloader/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Benq-Ex3501r</title>
-      <link>https://davidcraddock.net/tag/benq-ex3501r/</link>
+      <link>http://192.168.1.50:9796/tag/benq-ex3501r/</link>
       <pubDate>Sun, 20 May 2018 11:40:51 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/benq-ex3501r/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/benq-ex3501r/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Dynamic-Lighting-for-Home-Cinema</title>
-      <link>https://davidcraddock.net/tag/dynamic-lighting-for-home-cinema/</link>
+      <link>http://192.168.1.50:9796/tag/dynamic-lighting-for-home-cinema/</link>
       <pubDate>Sun, 20 May 2018 11:40:51 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/dynamic-lighting-for-home-cinema/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/dynamic-lighting-for-home-cinema/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Home-Cinema</title>
-      <link>https://davidcraddock.net/tag/home-cinema/</link>
+      <link>http://192.168.1.50:9796/tag/home-cinema/</link>
       <pubDate>Sun, 20 May 2018 11:40:51 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/home-cinema/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/home-cinema/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Huedynamic</title>
-      <link>https://davidcraddock.net/tag/huedynamic/</link>
+      <link>http://192.168.1.50:9796/tag/huedynamic/</link>
       <pubDate>Sun, 20 May 2018 11:40:51 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/huedynamic/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/huedynamic/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Logitech-Z906-5.1</title>
-      <link>https://davidcraddock.net/tag/logitech-z906-5.1/</link>
+      <link>http://192.168.1.50:9796/tag/logitech-z906-5.1/</link>
       <pubDate>Sun, 20 May 2018 11:40:51 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/logitech-z906-5.1/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/logitech-z906-5.1/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Surround-Sound</title>
-      <link>https://davidcraddock.net/tag/surround-sound/</link>
+      <link>http://192.168.1.50:9796/tag/surround-sound/</link>
       <pubDate>Sun, 20 May 2018 11:40:51 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/surround-sound/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/surround-sound/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Vlc</title>
-      <link>https://davidcraddock.net/tag/vlc/</link>
+      <link>http://192.168.1.50:9796/tag/vlc/</link>
       <pubDate>Sun, 20 May 2018 11:40:51 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/vlc/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/vlc/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Node</title>
-      <link>https://davidcraddock.net/tag/node/</link>
+      <link>http://192.168.1.50:9796/tag/node/</link>
       <pubDate>Wed, 10 May 2017 13:59:18 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/node/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/node/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Node.js</title>
-      <link>https://davidcraddock.net/tag/node.js/</link>
+      <link>http://192.168.1.50:9796/tag/node.js/</link>
       <pubDate>Wed, 10 May 2017 13:59:18 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/node.js/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/node.js/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Node.js-7.10.0</title>
-      <link>https://davidcraddock.net/tag/node.js-7.10.0/</link>
+      <link>http://192.168.1.50:9796/tag/node.js-7.10.0/</link>
       <pubDate>Wed, 10 May 2017 13:59:18 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/node.js-7.10.0/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/node.js-7.10.0/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Node.js-Https-Server</title>
-      <link>https://davidcraddock.net/tag/node.js-https-server/</link>
+      <link>http://192.168.1.50:9796/tag/node.js-https-server/</link>
       <pubDate>Wed, 10 May 2017 13:59:18 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/node.js-https-server/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/node.js-https-server/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Openssl</title>
-      <link>https://davidcraddock.net/tag/openssl/</link>
+      <link>http://192.168.1.50:9796/tag/openssl/</link>
       <pubDate>Wed, 10 May 2017 13:59:18 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/openssl/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/openssl/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Openssl-0.9.8</title>
-      <link>https://davidcraddock.net/tag/openssl-0.9.8/</link>
+      <link>http://192.168.1.50:9796/tag/openssl-0.9.8/</link>
       <pubDate>Wed, 10 May 2017 13:59:18 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/openssl-0.9.8/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/openssl-0.9.8/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Self-Signed</title>
-      <link>https://davidcraddock.net/tag/self-signed/</link>
+      <link>http://192.168.1.50:9796/tag/self-signed/</link>
       <pubDate>Wed, 10 May 2017 13:59:18 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/self-signed/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/self-signed/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Fish-Shell</title>
-      <link>https://davidcraddock.net/tag/fish-shell/</link>
+      <link>http://192.168.1.50:9796/tag/fish-shell/</link>
       <pubDate>Mon, 04 Apr 2016 11:50:31 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/fish-shell/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/fish-shell/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Google-Chrome</title>
-      <link>https://davidcraddock.net/tag/google-chrome/</link>
+      <link>http://192.168.1.50:9796/tag/google-chrome/</link>
       <pubDate>Mon, 04 Apr 2016 11:50:31 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/google-chrome/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/google-chrome/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Osx</title>
-      <link>https://davidcraddock.net/tag/osx/</link>
+      <link>http://192.168.1.50:9796/tag/osx/</link>
       <pubDate>Mon, 04 Apr 2016 11:50:31 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/osx/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/osx/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Assets</title>
-      <link>https://davidcraddock.net/tag/assets/</link>
+      <link>http://192.168.1.50:9796/tag/assets/</link>
       <pubDate>Tue, 08 Mar 2016 17:22:37 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/assets/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/assets/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Audio-Testing</title>
-      <link>https://davidcraddock.net/tag/audio-testing/</link>
+      <link>http://192.168.1.50:9796/tag/audio-testing/</link>
       <pubDate>Tue, 08 Mar 2016 17:22:37 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/audio-testing/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/audio-testing/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Commandline</title>
-      <link>https://davidcraddock.net/tag/commandline/</link>
+      <link>http://192.168.1.50:9796/tag/commandline/</link>
       <pubDate>Tue, 08 Mar 2016 17:22:37 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/commandline/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/commandline/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Dash</title>
-      <link>https://davidcraddock.net/tag/dash/</link>
+      <link>http://192.168.1.50:9796/tag/dash/</link>
       <pubDate>Tue, 08 Mar 2016 17:22:37 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/dash/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/dash/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Ffmpeg</title>
-      <link>https://davidcraddock.net/tag/ffmpeg/</link>
+      <link>http://192.168.1.50:9796/tag/ffmpeg/</link>
       <pubDate>Tue, 08 Mar 2016 17:22:37 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/ffmpeg/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/ffmpeg/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Generator</title>
-      <link>https://davidcraddock.net/tag/generator/</link>
+      <link>http://192.168.1.50:9796/tag/generator/</link>
       <pubDate>Tue, 08 Mar 2016 17:22:37 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/generator/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/generator/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Sox</title>
-      <link>https://davidcraddock.net/tag/sox/</link>
+      <link>http://192.168.1.50:9796/tag/sox/</link>
       <pubDate>Tue, 08 Mar 2016 17:22:37 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/sox/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/sox/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Audio-Routing</title>
-      <link>https://davidcraddock.net/tag/audio-routing/</link>
+      <link>http://192.168.1.50:9796/tag/audio-routing/</link>
       <pubDate>Sat, 06 Feb 2016 08:40:22 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/audio-routing/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/audio-routing/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Dual-Soundcard</title>
-      <link>https://davidcraddock.net/tag/dual-soundcard/</link>
+      <link>http://192.168.1.50:9796/tag/dual-soundcard/</link>
       <pubDate>Sat, 06 Feb 2016 08:40:22 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/dual-soundcard/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/dual-soundcard/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Pc</title>
-      <link>https://davidcraddock.net/tag/pc/</link>
+      <link>http://192.168.1.50:9796/tag/pc/</link>
       <pubDate>Sat, 06 Feb 2016 08:40:22 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/pc/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/pc/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Studio-Setup</title>
-      <link>https://davidcraddock.net/tag/studio-setup/</link>
+      <link>http://192.168.1.50:9796/tag/studio-setup/</link>
       <pubDate>Sat, 06 Feb 2016 08:40:22 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/studio-setup/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/studio-setup/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>~-Backup</title>
-      <link>https://davidcraddock.net/tag/~-backup/</link>
+      <link>http://192.168.1.50:9796/tag/~-backup/</link>
       <pubDate>Tue, 02 Feb 2016 17:28:39 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/~-backup/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/~-backup/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Bitbucket</title>
-      <link>https://davidcraddock.net/tag/bitbucket/</link>
+      <link>http://192.168.1.50:9796/tag/bitbucket/</link>
       <pubDate>Tue, 02 Feb 2016 17:28:39 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/bitbucket/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/bitbucket/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Du</title>
-      <link>https://davidcraddock.net/tag/du/</link>
+      <link>http://192.168.1.50:9796/tag/du/</link>
       <pubDate>Tue, 02 Feb 2016 17:28:39 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/du/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/du/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Git</title>
-      <link>https://davidcraddock.net/tag/git/</link>
+      <link>http://192.168.1.50:9796/tag/git/</link>
       <pubDate>Tue, 02 Feb 2016 17:28:39 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/git/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/git/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Shell-Scripting</title>
-      <link>https://davidcraddock.net/tag/shell-scripting/</link>
+      <link>http://192.168.1.50:9796/tag/shell-scripting/</link>
       <pubDate>Tue, 02 Feb 2016 17:28:39 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/shell-scripting/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/shell-scripting/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Adat</title>
-      <link>https://davidcraddock.net/tag/adat/</link>
+      <link>http://192.168.1.50:9796/tag/adat/</link>
       <pubDate>Mon, 25 Jan 2016 21:10:44 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/adat/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/adat/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Avid</title>
-      <link>https://davidcraddock.net/tag/avid/</link>
+      <link>http://192.168.1.50:9796/tag/avid/</link>
       <pubDate>Mon, 25 Jan 2016 21:10:44 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/avid/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/avid/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Console</title>
-      <link>https://davidcraddock.net/tag/console/</link>
+      <link>http://192.168.1.50:9796/tag/console/</link>
       <pubDate>Mon, 25 Jan 2016 21:10:44 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/console/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/console/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Digi-002</title>
-      <link>https://davidcraddock.net/tag/digi-002/</link>
+      <link>http://192.168.1.50:9796/tag/digi-002/</link>
       <pubDate>Mon, 25 Jan 2016 21:10:44 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/digi-002/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/digi-002/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Focusrite-Sapphire-Pro-24</title>
-      <link>https://davidcraddock.net/tag/focusrite-sapphire-pro-24/</link>
+      <link>http://192.168.1.50:9796/tag/focusrite-sapphire-pro-24/</link>
       <pubDate>Mon, 25 Jan 2016 21:10:44 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/focusrite-sapphire-pro-24/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/focusrite-sapphire-pro-24/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Mixer</title>
-      <link>https://davidcraddock.net/tag/mixer/</link>
+      <link>http://192.168.1.50:9796/tag/mixer/</link>
       <pubDate>Mon, 25 Jan 2016 21:10:44 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/mixer/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/mixer/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Optical</title>
-      <link>https://davidcraddock.net/tag/optical/</link>
+      <link>http://192.168.1.50:9796/tag/optical/</link>
       <pubDate>Mon, 25 Jan 2016 21:10:44 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/optical/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/optical/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Pro-Tools</title>
-      <link>https://davidcraddock.net/tag/pro-tools/</link>
+      <link>http://192.168.1.50:9796/tag/pro-tools/</link>
       <pubDate>Mon, 25 Jan 2016 21:10:44 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/pro-tools/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/pro-tools/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Recording-Interface</title>
-      <link>https://davidcraddock.net/tag/recording-interface/</link>
+      <link>http://192.168.1.50:9796/tag/recording-interface/</link>
       <pubDate>Mon, 25 Jan 2016 21:10:44 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/recording-interface/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/recording-interface/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Souncard</title>
-      <link>https://davidcraddock.net/tag/souncard/</link>
+      <link>http://192.168.1.50:9796/tag/souncard/</link>
       <pubDate>Mon, 25 Jan 2016 21:10:44 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/souncard/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/souncard/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Ergonomic-Mouse</title>
-      <link>https://davidcraddock.net/tag/ergonomic-mouse/</link>
+      <link>http://192.168.1.50:9796/tag/ergonomic-mouse/</link>
       <pubDate>Mon, 21 Dec 2015 08:37:03 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/ergonomic-mouse/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/ergonomic-mouse/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Graphics-Card</title>
-      <link>https://davidcraddock.net/tag/graphics-card/</link>
+      <link>http://192.168.1.50:9796/tag/graphics-card/</link>
       <pubDate>Mon, 21 Dec 2015 08:37:03 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/graphics-card/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/graphics-card/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Monitor</title>
-      <link>https://davidcraddock.net/tag/monitor/</link>
+      <link>http://192.168.1.50:9796/tag/monitor/</link>
       <pubDate>Mon, 21 Dec 2015 08:37:03 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/monitor/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/monitor/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Pc-Upgrade</title>
-      <link>https://davidcraddock.net/tag/pc-upgrade/</link>
+      <link>http://192.168.1.50:9796/tag/pc-upgrade/</link>
       <pubDate>Mon, 21 Dec 2015 08:37:03 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/pc-upgrade/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/pc-upgrade/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Recommended-Pc-Upgrades</title>
-      <link>https://davidcraddock.net/tag/recommended-pc-upgrades/</link>
+      <link>http://192.168.1.50:9796/tag/recommended-pc-upgrades/</link>
       <pubDate>Mon, 21 Dec 2015 08:37:03 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/recommended-pc-upgrades/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/recommended-pc-upgrades/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Recommended-Upgrades</title>
-      <link>https://davidcraddock.net/tag/recommended-upgrades/</link>
+      <link>http://192.168.1.50:9796/tag/recommended-upgrades/</link>
       <pubDate>Mon, 21 Dec 2015 08:37:03 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/recommended-upgrades/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/recommended-upgrades/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Ssd</title>
-      <link>https://davidcraddock.net/tag/ssd/</link>
+      <link>http://192.168.1.50:9796/tag/ssd/</link>
       <pubDate>Mon, 21 Dec 2015 08:37:03 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/ssd/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/ssd/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Mouse-Wheel</title>
-      <link>https://davidcraddock.net/tag/mouse-wheel/</link>
+      <link>http://192.168.1.50:9796/tag/mouse-wheel/</link>
       <pubDate>Sat, 05 Dec 2015 17:32:40 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/mouse-wheel/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/mouse-wheel/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Rsi</title>
-      <link>https://davidcraddock.net/tag/rsi/</link>
+      <link>http://192.168.1.50:9796/tag/rsi/</link>
       <pubDate>Sat, 05 Dec 2015 17:32:40 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/rsi/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/rsi/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Scrolling</title>
-      <link>https://davidcraddock.net/tag/scrolling/</link>
+      <link>http://192.168.1.50:9796/tag/scrolling/</link>
       <pubDate>Sat, 05 Dec 2015 17:32:40 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/scrolling/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/scrolling/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Scrolling-Page</title>
-      <link>https://davidcraddock.net/tag/scrolling-page/</link>
+      <link>http://192.168.1.50:9796/tag/scrolling-page/</link>
       <pubDate>Sat, 05 Dec 2015 17:32:40 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/scrolling-page/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/scrolling-page/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Web-Browsing</title>
-      <link>https://davidcraddock.net/tag/web-browsing/</link>
+      <link>http://192.168.1.50:9796/tag/web-browsing/</link>
       <pubDate>Sat, 05 Dec 2015 17:32:40 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/web-browsing/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/web-browsing/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>X-Repetitive-Strain-Injury</title>
-      <link>https://davidcraddock.net/tag/x-repetitive-strain-injury/</link>
+      <link>http://192.168.1.50:9796/tag/x-repetitive-strain-injury/</link>
       <pubDate>Sat, 05 Dec 2015 17:32:40 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/x-repetitive-strain-injury/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/x-repetitive-strain-injury/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Awful</title>
-      <link>https://davidcraddock.net/tag/awful/</link>
+      <link>http://192.168.1.50:9796/tag/awful/</link>
       <pubDate>Sun, 08 Nov 2015 19:22:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/awful/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/awful/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Backlight</title>
-      <link>https://davidcraddock.net/tag/backlight/</link>
+      <link>http://192.168.1.50:9796/tag/backlight/</link>
       <pubDate>Sun, 08 Nov 2015 19:22:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/backlight/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/backlight/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Dissapointment</title>
-      <link>https://davidcraddock.net/tag/dissapointment/</link>
+      <link>http://192.168.1.50:9796/tag/dissapointment/</link>
       <pubDate>Sun, 08 Nov 2015 19:22:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/dissapointment/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/dissapointment/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Lightpack.tv</title>
-      <link>https://davidcraddock.net/tag/lightpack.tv/</link>
+      <link>http://192.168.1.50:9796/tag/lightpack.tv/</link>
       <pubDate>Sun, 08 Nov 2015 19:22:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/lightpack.tv/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/lightpack.tv/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Razer-Tiamat</title>
-      <link>https://davidcraddock.net/tag/razer-tiamat/</link>
+      <link>http://192.168.1.50:9796/tag/razer-tiamat/</link>
       <pubDate>Sun, 08 Nov 2015 19:22:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/razer-tiamat/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/razer-tiamat/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Surround-Sound-7.1-Headsets</title>
-      <link>https://davidcraddock.net/tag/surround-sound-7.1-headsets/</link>
+      <link>http://192.168.1.50:9796/tag/surround-sound-7.1-headsets/</link>
       <pubDate>Sun, 08 Nov 2015 19:22:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/surround-sound-7.1-headsets/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/surround-sound-7.1-headsets/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Alfred</title>
-      <link>https://davidcraddock.net/tag/alfred/</link>
+      <link>http://192.168.1.50:9796/tag/alfred/</link>
       <pubDate>Sat, 07 Nov 2015 12:51:33 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/alfred/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/alfred/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Best-Apps</title>
-      <link>https://davidcraddock.net/tag/best-apps/</link>
+      <link>http://192.168.1.50:9796/tag/best-apps/</link>
       <pubDate>Sat, 07 Nov 2015 12:51:33 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/best-apps/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/best-apps/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Droplr</title>
-      <link>https://davidcraddock.net/tag/droplr/</link>
+      <link>http://192.168.1.50:9796/tag/droplr/</link>
       <pubDate>Sat, 07 Nov 2015 12:51:33 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/droplr/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/droplr/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Evernote</title>
-      <link>https://davidcraddock.net/tag/evernote/</link>
+      <link>http://192.168.1.50:9796/tag/evernote/</link>
       <pubDate>Sat, 07 Nov 2015 12:51:33 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/evernote/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/evernote/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Itunes</title>
-      <link>https://davidcraddock.net/tag/itunes/</link>
+      <link>http://192.168.1.50:9796/tag/itunes/</link>
       <pubDate>Sat, 07 Nov 2015 12:51:33 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/itunes/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/itunes/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Osx-El-Capitan</title>
-      <link>https://davidcraddock.net/tag/osx-el-capitan/</link>
+      <link>http://192.168.1.50:9796/tag/osx-el-capitan/</link>
       <pubDate>Sat, 07 Nov 2015 12:51:33 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/osx-el-capitan/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/osx-el-capitan/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Productivity</title>
-      <link>https://davidcraddock.net/tag/productivity/</link>
+      <link>http://192.168.1.50:9796/tag/productivity/</link>
       <pubDate>Sat, 07 Nov 2015 12:51:33 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/productivity/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/productivity/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Top-Apps</title>
-      <link>https://davidcraddock.net/tag/top-apps/</link>
+      <link>http://192.168.1.50:9796/tag/top-apps/</link>
       <pubDate>Sat, 07 Nov 2015 12:51:33 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/top-apps/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/top-apps/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Amazon-Echo</title>
-      <link>https://davidcraddock.net/tag/amazon-echo/</link>
+      <link>http://192.168.1.50:9796/tag/amazon-echo/</link>
       <pubDate>Thu, 15 Oct 2015 15:28:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/amazon-echo/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/amazon-echo/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Google-Now</title>
-      <link>https://davidcraddock.net/tag/google-now/</link>
+      <link>http://192.168.1.50:9796/tag/google-now/</link>
       <pubDate>Thu, 15 Oct 2015 15:28:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/google-now/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/google-now/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Home-Automation-Market</title>
-      <link>https://davidcraddock.net/tag/home-automation-market/</link>
+      <link>http://192.168.1.50:9796/tag/home-automation-market/</link>
       <pubDate>Thu, 15 Oct 2015 15:28:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/home-automation-market/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/home-automation-market/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Nest</title>
-      <link>https://davidcraddock.net/tag/nest/</link>
+      <link>http://192.168.1.50:9796/tag/nest/</link>
       <pubDate>Thu, 15 Oct 2015 15:28:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/nest/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/nest/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Siri</title>
-      <link>https://davidcraddock.net/tag/siri/</link>
+      <link>http://192.168.1.50:9796/tag/siri/</link>
       <pubDate>Thu, 15 Oct 2015 15:28:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/siri/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/siri/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Voice-Assitant</title>
-      <link>https://davidcraddock.net/tag/voice-assitant/</link>
+      <link>http://192.168.1.50:9796/tag/voice-assitant/</link>
       <pubDate>Thu, 15 Oct 2015 15:28:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/voice-assitant/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/voice-assitant/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Voice-Control</title>
-      <link>https://davidcraddock.net/tag/voice-control/</link>
+      <link>http://192.168.1.50:9796/tag/voice-control/</link>
       <pubDate>Thu, 15 Oct 2015 15:28:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/voice-control/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/voice-control/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Ifttt.com</title>
-      <link>https://davidcraddock.net/tag/ifttt.com/</link>
+      <link>http://192.168.1.50:9796/tag/ifttt.com/</link>
       <pubDate>Thu, 15 Oct 2015 10:17:28 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/ifttt.com/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/ifttt.com/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Recommendation</title>
-      <link>https://davidcraddock.net/tag/recommendation/</link>
+      <link>http://192.168.1.50:9796/tag/recommendation/</link>
       <pubDate>Thu, 15 Oct 2015 10:17:28 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/recommendation/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/recommendation/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Javascript</title>
-      <link>https://davidcraddock.net/tag/javascript/</link>
+      <link>http://192.168.1.50:9796/tag/javascript/</link>
       <pubDate>Mon, 28 Sep 2015 17:32:15 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/javascript/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/javascript/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Scope</title>
-      <link>https://davidcraddock.net/tag/scope/</link>
+      <link>http://192.168.1.50:9796/tag/scope/</link>
       <pubDate>Mon, 28 Sep 2015 17:32:15 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/scope/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/scope/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Collaboration</title>
-      <link>https://davidcraddock.net/tag/collaboration/</link>
+      <link>http://192.168.1.50:9796/tag/collaboration/</link>
       <pubDate>Mon, 28 Sep 2015 16:22:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/collaboration/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/collaboration/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Extreme-Programming</title>
-      <link>https://davidcraddock.net/tag/extreme-programming/</link>
+      <link>http://192.168.1.50:9796/tag/extreme-programming/</link>
       <pubDate>Mon, 28 Sep 2015 16:22:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/extreme-programming/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/extreme-programming/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Extroversion</title>
-      <link>https://davidcraddock.net/tag/extroversion/</link>
+      <link>http://192.168.1.50:9796/tag/extroversion/</link>
       <pubDate>Mon, 28 Sep 2015 16:22:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/extroversion/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/extroversion/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Introversion</title>
-      <link>https://davidcraddock.net/tag/introversion/</link>
+      <link>http://192.168.1.50:9796/tag/introversion/</link>
       <pubDate>Mon, 28 Sep 2015 16:22:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/introversion/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/introversion/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Introvert</title>
-      <link>https://davidcraddock.net/tag/introvert/</link>
+      <link>http://192.168.1.50:9796/tag/introvert/</link>
       <pubDate>Mon, 28 Sep 2015 16:22:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/introvert/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/introvert/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Pair-Programming</title>
-      <link>https://davidcraddock.net/tag/pair-programming/</link>
+      <link>http://192.168.1.50:9796/tag/pair-programming/</link>
       <pubDate>Mon, 28 Sep 2015 16:22:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/pair-programming/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/pair-programming/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Personality-of-Software-Engineers</title>
-      <link>https://davidcraddock.net/tag/personality-of-software-engineers/</link>
+      <link>http://192.168.1.50:9796/tag/personality-of-software-engineers/</link>
       <pubDate>Mon, 28 Sep 2015 16:22:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/personality-of-software-engineers/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/personality-of-software-engineers/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Software-Engineer</title>
-      <link>https://davidcraddock.net/tag/software-engineer/</link>
+      <link>http://192.168.1.50:9796/tag/software-engineer/</link>
       <pubDate>Mon, 28 Sep 2015 16:22:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/software-engineer/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/software-engineer/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Apple-Earphones</title>
-      <link>https://davidcraddock.net/tag/apple-earphones/</link>
+      <link>http://192.168.1.50:9796/tag/apple-earphones/</link>
       <pubDate>Sat, 15 Aug 2015 20:46:21 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/apple-earphones/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/apple-earphones/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Apple-Music</title>
-      <link>https://davidcraddock.net/tag/apple-music/</link>
+      <link>http://192.168.1.50:9796/tag/apple-music/</link>
       <pubDate>Sat, 15 Aug 2015 20:46:21 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/apple-music/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/apple-music/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Iphone</title>
-      <link>https://davidcraddock.net/tag/iphone/</link>
+      <link>http://192.168.1.50:9796/tag/iphone/</link>
       <pubDate>Sat, 15 Aug 2015 20:46:21 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/iphone/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/iphone/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Budget</title>
-      <link>https://davidcraddock.net/tag/budget/</link>
+      <link>http://192.168.1.50:9796/tag/budget/</link>
       <pubDate>Tue, 21 Jul 2015 19:42:04 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/budget/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/budget/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Doepfer</title>
-      <link>https://davidcraddock.net/tag/doepfer/</link>
+      <link>http://192.168.1.50:9796/tag/doepfer/</link>
       <pubDate>Tue, 21 Jul 2015 19:42:04 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/doepfer/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/doepfer/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Eurorack</title>
-      <link>https://davidcraddock.net/tag/eurorack/</link>
+      <link>http://192.168.1.50:9796/tag/eurorack/</link>
       <pubDate>Tue, 21 Jul 2015 19:42:04 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/eurorack/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/eurorack/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Low-Cost</title>
-      <link>https://davidcraddock.net/tag/low-cost/</link>
+      <link>http://192.168.1.50:9796/tag/low-cost/</link>
       <pubDate>Tue, 21 Jul 2015 19:42:04 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/low-cost/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/low-cost/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Modular</title>
-      <link>https://davidcraddock.net/tag/modular/</link>
+      <link>http://192.168.1.50:9796/tag/modular/</link>
       <pubDate>Tue, 21 Jul 2015 19:42:04 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/modular/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/modular/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Output</title>
-      <link>https://davidcraddock.net/tag/output/</link>
+      <link>http://192.168.1.50:9796/tag/output/</link>
       <pubDate>Sun, 21 Jun 2015 17:55:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/output/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/output/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Sound</title>
-      <link>https://davidcraddock.net/tag/sound/</link>
+      <link>http://192.168.1.50:9796/tag/sound/</link>
       <pubDate>Sun, 21 Jun 2015 17:55:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/sound/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/sound/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Switch-Between</title>
-      <link>https://davidcraddock.net/tag/switch-between/</link>
+      <link>http://192.168.1.50:9796/tag/switch-between/</link>
       <pubDate>Sun, 21 Jun 2015 17:55:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/switch-between/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/switch-between/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Windows-10</title>
-      <link>https://davidcraddock.net/tag/windows-10/</link>
+      <link>http://192.168.1.50:9796/tag/windows-10/</link>
       <pubDate>Sun, 21 Jun 2015 17:55:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/windows-10/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/windows-10/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Windows-7</title>
-      <link>https://davidcraddock.net/tag/windows-7/</link>
+      <link>http://192.168.1.50:9796/tag/windows-7/</link>
       <pubDate>Sun, 21 Jun 2015 17:55:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/windows-7/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/windows-7/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Windows-8</title>
-      <link>https://davidcraddock.net/tag/windows-8/</link>
+      <link>http://192.168.1.50:9796/tag/windows-8/</link>
       <pubDate>Sun, 21 Jun 2015 17:55:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/windows-8/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/windows-8/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Chrome</title>
-      <link>https://davidcraddock.net/tag/chrome/</link>
+      <link>http://192.168.1.50:9796/tag/chrome/</link>
       <pubDate>Sun, 21 Jun 2015 17:49:00 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/chrome/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/chrome/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Most-Visited</title>
-      <link>https://davidcraddock.net/tag/most-visited/</link>
+      <link>http://192.168.1.50:9796/tag/most-visited/</link>
       <pubDate>Sun, 21 Jun 2015 17:49:00 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/most-visited/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/most-visited/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Remove</title>
-      <link>https://davidcraddock.net/tag/remove/</link>
+      <link>http://192.168.1.50:9796/tag/remove/</link>
       <pubDate>Sun, 21 Jun 2015 17:49:00 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/remove/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/remove/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Microkorg</title>
-      <link>https://davidcraddock.net/tag/microkorg/</link>
+      <link>http://192.168.1.50:9796/tag/microkorg/</link>
       <pubDate>Fri, 31 Oct 2014 20:16:56 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/microkorg/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/microkorg/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Ms2000</title>
-      <link>https://davidcraddock.net/tag/ms2000/</link>
+      <link>http://192.168.1.50:9796/tag/ms2000/</link>
       <pubDate>Fri, 31 Oct 2014 20:16:56 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/ms2000/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/ms2000/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Novation-Impulse-61</title>
-      <link>https://davidcraddock.net/tag/novation-impulse-61/</link>
+      <link>http://192.168.1.50:9796/tag/novation-impulse-61/</link>
       <pubDate>Fri, 31 Oct 2014 20:16:56 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/novation-impulse-61/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/novation-impulse-61/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Ddj-Sr</title>
-      <link>https://davidcraddock.net/tag/ddj-sr/</link>
+      <link>http://192.168.1.50:9796/tag/ddj-sr/</link>
       <pubDate>Wed, 03 Sep 2014 00:17:23 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/ddj-sr/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/ddj-sr/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Pioneer</title>
-      <link>https://davidcraddock.net/tag/pioneer/</link>
+      <link>http://192.168.1.50:9796/tag/pioneer/</link>
       <pubDate>Wed, 03 Sep 2014 00:17:23 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/pioneer/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/pioneer/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Review</title>
-      <link>https://davidcraddock.net/tag/review/</link>
+      <link>http://192.168.1.50:9796/tag/review/</link>
       <pubDate>Wed, 03 Sep 2014 00:17:23 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/review/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/review/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Access-Virus-A</title>
-      <link>https://davidcraddock.net/tag/access-virus-a/</link>
+      <link>http://192.168.1.50:9796/tag/access-virus-a/</link>
       <pubDate>Sun, 10 Aug 2014 21:53:19 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/access-virus-a/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/access-virus-a/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Microbrute</title>
-      <link>https://davidcraddock.net/tag/microbrute/</link>
+      <link>http://192.168.1.50:9796/tag/microbrute/</link>
       <pubDate>Sun, 10 Aug 2014 21:53:19 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/microbrute/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/microbrute/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Music</title>
-      <link>https://davidcraddock.net/tag/music/</link>
+      <link>http://192.168.1.50:9796/tag/music/</link>
       <pubDate>Sun, 10 Aug 2014 21:53:19 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/music/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/music/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Nord-Drum</title>
-      <link>https://davidcraddock.net/tag/nord-drum/</link>
+      <link>http://192.168.1.50:9796/tag/nord-drum/</link>
       <pubDate>Sun, 10 Aug 2014 21:53:19 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/nord-drum/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/nord-drum/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>A-Star</title>
-      <link>https://davidcraddock.net/tag/a-star/</link>
+      <link>http://192.168.1.50:9796/tag/a-star/</link>
       <pubDate>Thu, 12 Jun 2014 00:24:34 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/a-star/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/a-star/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Artificial-Intelligence</title>
-      <link>https://davidcraddock.net/tag/artificial-intelligence/</link>
+      <link>http://192.168.1.50:9796/tag/artificial-intelligence/</link>
       <pubDate>Thu, 12 Jun 2014 00:24:34 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/artificial-intelligence/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/artificial-intelligence/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Game-A.i</title>
-      <link>https://davidcraddock.net/tag/game-a.i/</link>
+      <link>http://192.168.1.50:9796/tag/game-a.i/</link>
       <pubDate>Thu, 12 Jun 2014 00:24:34 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/game-a.i/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/game-a.i/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Python</title>
-      <link>https://davidcraddock.net/tag/python/</link>
+      <link>http://192.168.1.50:9796/tag/python/</link>
       <pubDate>Thu, 12 Jun 2014 00:24:34 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/python/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/python/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Ableton-Live-Intro</title>
-      <link>https://davidcraddock.net/tag/ableton-live-intro/</link>
+      <link>http://192.168.1.50:9796/tag/ableton-live-intro/</link>
       <pubDate>Mon, 05 May 2014 16:20:33 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/ableton-live-intro/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/ableton-live-intro/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Electribe-R1</title>
-      <link>https://davidcraddock.net/tag/electribe-r1/</link>
+      <link>http://192.168.1.50:9796/tag/electribe-r1/</link>
       <pubDate>Mon, 05 May 2014 16:20:33 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/electribe-r1/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/electribe-r1/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Korg</title>
-      <link>https://davidcraddock.net/tag/korg/</link>
+      <link>http://192.168.1.50:9796/tag/korg/</link>
       <pubDate>Mon, 05 May 2014 16:20:33 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/korg/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/korg/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Monotribe</title>
-      <link>https://davidcraddock.net/tag/monotribe/</link>
+      <link>http://192.168.1.50:9796/tag/monotribe/</link>
       <pubDate>Mon, 05 May 2014 16:20:33 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/monotribe/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/monotribe/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Yamaha-P35</title>
-      <link>https://davidcraddock.net/tag/yamaha-p35/</link>
+      <link>http://192.168.1.50:9796/tag/yamaha-p35/</link>
       <pubDate>Mon, 05 May 2014 16:20:33 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/yamaha-p35/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/yamaha-p35/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Adb</title>
-      <link>https://davidcraddock.net/tag/adb/</link>
+      <link>http://192.168.1.50:9796/tag/adb/</link>
       <pubDate>Mon, 10 Feb 2014 15:28:45 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/adb/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/adb/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Adb-Devices</title>
-      <link>https://davidcraddock.net/tag/adb-devices/</link>
+      <link>http://192.168.1.50:9796/tag/adb-devices/</link>
       <pubDate>Mon, 10 Feb 2014 15:28:45 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/adb-devices/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/adb-devices/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Android</title>
-      <link>https://davidcraddock.net/tag/android/</link>
+      <link>http://192.168.1.50:9796/tag/android/</link>
       <pubDate>Mon, 10 Feb 2014 15:28:45 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/android/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/android/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Android-Development</title>
-      <link>https://davidcraddock.net/tag/android-development/</link>
+      <link>http://192.168.1.50:9796/tag/android-development/</link>
       <pubDate>Mon, 10 Feb 2014 15:28:45 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/android-development/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/android-development/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Kindlefire-Hdx</title>
-      <link>https://davidcraddock.net/tag/kindlefire-hdx/</link>
+      <link>http://192.168.1.50:9796/tag/kindlefire-hdx/</link>
       <pubDate>Mon, 10 Feb 2014 15:28:45 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/kindlefire-hdx/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/kindlefire-hdx/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Ubuntu-12.04</title>
-      <link>https://davidcraddock.net/tag/ubuntu-12.04/</link>
+      <link>http://192.168.1.50:9796/tag/ubuntu-12.04/</link>
       <pubDate>Mon, 10 Feb 2014 15:28:45 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/ubuntu-12.04/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/ubuntu-12.04/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Udev</title>
-      <link>https://davidcraddock.net/tag/udev/</link>
+      <link>http://192.168.1.50:9796/tag/udev/</link>
       <pubDate>Mon, 10 Feb 2014 15:28:45 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/udev/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/udev/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Benq-Bl3200pt</title>
-      <link>https://davidcraddock.net/tag/benq-bl3200pt/</link>
+      <link>http://192.168.1.50:9796/tag/benq-bl3200pt/</link>
       <pubDate>Wed, 29 Jan 2014 00:13:12 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/benq-bl3200pt/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/benq-bl3200pt/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Gigabyte-Z77x-D3h-1155</title>
-      <link>https://davidcraddock.net/tag/gigabyte-z77x-d3h-1155/</link>
+      <link>http://192.168.1.50:9796/tag/gigabyte-z77x-d3h-1155/</link>
       <pubDate>Wed, 29 Jan 2014 00:13:12 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/gigabyte-z77x-d3h-1155/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/gigabyte-z77x-d3h-1155/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Intel-Core-I7-(3770)-3.4ghz</title>
-      <link>https://davidcraddock.net/tag/intel-core-i7-3770-3.4ghz/</link>
+      <link>http://192.168.1.50:9796/tag/intel-core-i7-3770-3.4ghz/</link>
       <pubDate>Wed, 29 Jan 2014 00:13:12 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/intel-core-i7-3770-3.4ghz/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/intel-core-i7-3770-3.4ghz/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Krk-Rokit-G2-5</title>
-      <link>https://davidcraddock.net/tag/krk-rokit-g2-5/</link>
+      <link>http://192.168.1.50:9796/tag/krk-rokit-g2-5/</link>
       <pubDate>Wed, 29 Jan 2014 00:13:12 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/krk-rokit-g2-5/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/krk-rokit-g2-5/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Nvidea-Strix-Gtx-980</title>
-      <link>https://davidcraddock.net/tag/nvidea-strix-gtx-980/</link>
+      <link>http://192.168.1.50:9796/tag/nvidea-strix-gtx-980/</link>
       <pubDate>Wed, 29 Jan 2014 00:13:12 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/nvidea-strix-gtx-980/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/nvidea-strix-gtx-980/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Sennheiser-Hd-25-1-Iis</title>
-      <link>https://davidcraddock.net/tag/sennheiser-hd-25-1-iis/</link>
+      <link>http://192.168.1.50:9796/tag/sennheiser-hd-25-1-iis/</link>
       <pubDate>Wed, 29 Jan 2014 00:13:12 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/sennheiser-hd-25-1-iis/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/sennheiser-hd-25-1-iis/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Thermaltake-Level-10-Gt-Full-Tower</title>
-      <link>https://davidcraddock.net/tag/thermaltake-level-10-gt-full-tower/</link>
+      <link>http://192.168.1.50:9796/tag/thermaltake-level-10-gt-full-tower/</link>
       <pubDate>Wed, 29 Jan 2014 00:13:12 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/thermaltake-level-10-gt-full-tower/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/thermaltake-level-10-gt-full-tower/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Aeron-Chair</title>
-      <link>https://davidcraddock.net/tag/aeron-chair/</link>
+      <link>http://192.168.1.50:9796/tag/aeron-chair/</link>
       <pubDate>Tue, 24 Dec 2013 14:08:48 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/aeron-chair/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/aeron-chair/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Best-Chair-for-Programmers</title>
-      <link>https://davidcraddock.net/tag/best-chair-for-programmers/</link>
+      <link>http://192.168.1.50:9796/tag/best-chair-for-programmers/</link>
       <pubDate>Tue, 24 Dec 2013 14:08:48 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/best-chair-for-programmers/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/best-chair-for-programmers/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Chair</title>
-      <link>https://davidcraddock.net/tag/chair/</link>
+      <link>http://192.168.1.50:9796/tag/chair/</link>
       <pubDate>Tue, 24 Dec 2013 14:08:48 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/chair/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/chair/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Computer-Chair</title>
-      <link>https://davidcraddock.net/tag/computer-chair/</link>
+      <link>http://192.168.1.50:9796/tag/computer-chair/</link>
       <pubDate>Tue, 24 Dec 2013 14:08:48 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/computer-chair/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/computer-chair/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Desk-Chair</title>
-      <link>https://davidcraddock.net/tag/desk-chair/</link>
+      <link>http://192.168.1.50:9796/tag/desk-chair/</link>
       <pubDate>Tue, 24 Dec 2013 14:08:48 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/desk-chair/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/desk-chair/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Work-Chair</title>
-      <link>https://davidcraddock.net/tag/work-chair/</link>
+      <link>http://192.168.1.50:9796/tag/work-chair/</link>
       <pubDate>Tue, 24 Dec 2013 14:08:48 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/work-chair/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/work-chair/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Bbc</title>
-      <link>https://davidcraddock.net/tag/bbc/</link>
+      <link>http://192.168.1.50:9796/tag/bbc/</link>
       <pubDate>Sun, 17 Nov 2013 03:40:14 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/bbc/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/bbc/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Career</title>
-      <link>https://davidcraddock.net/tag/career/</link>
+      <link>http://192.168.1.50:9796/tag/career/</link>
       <pubDate>Sun, 17 Nov 2013 03:40:14 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/career/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/career/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Connected-Red-Button</title>
-      <link>https://davidcraddock.net/tag/connected-red-button/</link>
+      <link>http://192.168.1.50:9796/tag/connected-red-button/</link>
       <pubDate>Sun, 17 Nov 2013 03:40:14 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/connected-red-button/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/connected-red-button/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>David-Craddock</title>
-      <link>https://davidcraddock.net/tag/david-craddock/</link>
+      <link>http://192.168.1.50:9796/tag/david-craddock/</link>
       <pubDate>Sun, 17 Nov 2013 03:40:14 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/david-craddock/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/david-craddock/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Device-Hive</title>
-      <link>https://davidcraddock.net/tag/device-hive/</link>
+      <link>http://192.168.1.50:9796/tag/device-hive/</link>
       <pubDate>Sun, 17 Nov 2013 03:40:14 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/device-hive/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/device-hive/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Smartbridge</title>
-      <link>https://davidcraddock.net/tag/smartbridge/</link>
+      <link>http://192.168.1.50:9796/tag/smartbridge/</link>
       <pubDate>Sun, 17 Nov 2013 03:40:14 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/smartbridge/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/smartbridge/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Adt</title>
-      <link>https://davidcraddock.net/tag/adt/</link>
+      <link>http://192.168.1.50:9796/tag/adt/</link>
       <pubDate>Sun, 17 Nov 2013 02:21:34 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/adt/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/adt/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Android-Developer-Tools</title>
-      <link>https://davidcraddock.net/tag/android-developer-tools/</link>
+      <link>http://192.168.1.50:9796/tag/android-developer-tools/</link>
       <pubDate>Sun, 17 Nov 2013 02:21:34 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/android-developer-tools/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/android-developer-tools/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Detect</title>
-      <link>https://davidcraddock.net/tag/detect/</link>
+      <link>http://192.168.1.50:9796/tag/detect/</link>
       <pubDate>Sun, 17 Nov 2013 02:21:34 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/detect/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/detect/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Emulator</title>
-      <link>https://davidcraddock.net/tag/emulator/</link>
+      <link>http://192.168.1.50:9796/tag/emulator/</link>
       <pubDate>Sun, 17 Nov 2013 02:21:34 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/emulator/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/emulator/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Stability</title>
-      <link>https://davidcraddock.net/tag/stability/</link>
+      <link>http://192.168.1.50:9796/tag/stability/</link>
       <pubDate>Sun, 17 Nov 2013 02:21:34 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/stability/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/stability/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Dylan-Thomas</title>
-      <link>https://davidcraddock.net/tag/dylan-thomas/</link>
+      <link>http://192.168.1.50:9796/tag/dylan-thomas/</link>
       <pubDate>Sat, 27 Jul 2013 02:29:10 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/dylan-thomas/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/dylan-thomas/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Ec2</title>
-      <link>https://davidcraddock.net/tag/ec2/</link>
+      <link>http://192.168.1.50:9796/tag/ec2/</link>
       <pubDate>Sat, 27 Jul 2013 02:29:10 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/ec2/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/ec2/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Haiku</title>
-      <link>https://davidcraddock.net/tag/haiku/</link>
+      <link>http://192.168.1.50:9796/tag/haiku/</link>
       <pubDate>Sat, 27 Jul 2013 02:29:10 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/haiku/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/haiku/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Haikumachine</title>
-      <link>https://davidcraddock.net/tag/haikumachine/</link>
+      <link>http://192.168.1.50:9796/tag/haikumachine/</link>
       <pubDate>Sat, 27 Jul 2013 02:29:10 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/haikumachine/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/haikumachine/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Prosaic</title>
-      <link>https://davidcraddock.net/tag/prosaic/</link>
+      <link>http://192.168.1.50:9796/tag/prosaic/</link>
       <pubDate>Sat, 27 Jul 2013 02:29:10 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/prosaic/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/prosaic/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Twitter</title>
-      <link>https://davidcraddock.net/tag/twitter/</link>
+      <link>http://192.168.1.50:9796/tag/twitter/</link>
       <pubDate>Sat, 27 Jul 2013 02:29:10 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/twitter/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/twitter/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>.Vimrc</title>
-      <link>https://davidcraddock.net/tag/.vimrc/</link>
+      <link>http://192.168.1.50:9796/tag/.vimrc/</link>
       <pubDate>Thu, 20 Jun 2013 22:15:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/.vimrc/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/.vimrc/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>256-Colors</title>
-      <link>https://davidcraddock.net/tag/256-colors/</link>
+      <link>http://192.168.1.50:9796/tag/256-colors/</link>
       <pubDate>Thu, 20 Jun 2013 22:15:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/256-colors/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/256-colors/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Crunchbang.-Waldorf</title>
-      <link>https://davidcraddock.net/tag/crunchbang.-waldorf/</link>
+      <link>http://192.168.1.50:9796/tag/crunchbang.-waldorf/</link>
       <pubDate>Thu, 20 Jun 2013 22:15:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/crunchbang.-waldorf/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/crunchbang.-waldorf/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Escape-Sequence</title>
-      <link>https://davidcraddock.net/tag/escape-sequence/</link>
+      <link>http://192.168.1.50:9796/tag/escape-sequence/</link>
       <pubDate>Thu, 20 Jun 2013 22:15:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/escape-sequence/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/escape-sequence/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Terminator</title>
-      <link>https://davidcraddock.net/tag/terminator/</link>
+      <link>http://192.168.1.50:9796/tag/terminator/</link>
       <pubDate>Thu, 20 Jun 2013 22:15:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/terminator/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/terminator/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Crunchbang</title>
-      <link>https://davidcraddock.net/tag/crunchbang/</link>
+      <link>http://192.168.1.50:9796/tag/crunchbang/</link>
       <pubDate>Sun, 16 Jun 2013 03:43:49 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/crunchbang/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/crunchbang/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Smart-Svn</title>
-      <link>https://davidcraddock.net/tag/smart-svn/</link>
+      <link>http://192.168.1.50:9796/tag/smart-svn/</link>
       <pubDate>Sun, 16 Jun 2013 03:43:49 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/smart-svn/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/smart-svn/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Subversion-1.7</title>
-      <link>https://davidcraddock.net/tag/subversion-1.7/</link>
+      <link>http://192.168.1.50:9796/tag/subversion-1.7/</link>
       <pubDate>Sun, 16 Jun 2013 03:43:49 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/subversion-1.7/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/subversion-1.7/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Svn</title>
-      <link>https://davidcraddock.net/tag/svn/</link>
+      <link>http://192.168.1.50:9796/tag/svn/</link>
       <pubDate>Sun, 16 Jun 2013 03:43:49 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/svn/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/svn/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Waldorf</title>
-      <link>https://davidcraddock.net/tag/waldorf/</link>
+      <link>http://192.168.1.50:9796/tag/waldorf/</link>
       <pubDate>Sun, 16 Jun 2013 03:43:49 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/waldorf/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/waldorf/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Wandisco</title>
-      <link>https://davidcraddock.net/tag/wandisco/</link>
+      <link>http://192.168.1.50:9796/tag/wandisco/</link>
       <pubDate>Sun, 16 Jun 2013 03:43:49 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/wandisco/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/wandisco/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Wheezy</title>
-      <link>https://davidcraddock.net/tag/wheezy/</link>
+      <link>http://192.168.1.50:9796/tag/wheezy/</link>
       <pubDate>Sun, 16 Jun 2013 03:43:49 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/wheezy/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/wheezy/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>256</title>
-      <link>https://davidcraddock.net/tag/256/</link>
+      <link>http://192.168.1.50:9796/tag/256/</link>
       <pubDate>Tue, 11 Jun 2013 16:08:16 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/256/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/256/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Bash</title>
-      <link>https://davidcraddock.net/tag/bash/</link>
+      <link>http://192.168.1.50:9796/tag/bash/</link>
       <pubDate>Tue, 11 Jun 2013 16:08:16 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/bash/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/bash/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Colours</title>
-      <link>https://davidcraddock.net/tag/colours/</link>
+      <link>http://192.168.1.50:9796/tag/colours/</link>
       <pubDate>Tue, 11 Jun 2013 16:08:16 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/colours/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/colours/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Cucumber</title>
-      <link>https://davidcraddock.net/tag/cucumber/</link>
+      <link>http://192.168.1.50:9796/tag/cucumber/</link>
       <pubDate>Tue, 11 Jun 2013 16:08:16 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/cucumber/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/cucumber/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Iterm</title>
-      <link>https://davidcraddock.net/tag/iterm/</link>
+      <link>http://192.168.1.50:9796/tag/iterm/</link>
       <pubDate>Tue, 11 Jun 2013 16:08:16 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/iterm/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/iterm/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Syntax-Highlighting</title>
-      <link>https://davidcraddock.net/tag/syntax-highlighting/</link>
+      <link>http://192.168.1.50:9796/tag/syntax-highlighting/</link>
       <pubDate>Tue, 11 Jun 2013 16:08:16 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/syntax-highlighting/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/syntax-highlighting/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Terminal</title>
-      <link>https://davidcraddock.net/tag/terminal/</link>
+      <link>http://192.168.1.50:9796/tag/terminal/</link>
       <pubDate>Tue, 11 Jun 2013 16:08:16 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/terminal/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/terminal/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Background</title>
-      <link>https://davidcraddock.net/tag/background/</link>
+      <link>http://192.168.1.50:9796/tag/background/</link>
       <pubDate>Tue, 11 Jun 2013 15:55:04 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/background/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/background/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Foreground</title>
-      <link>https://davidcraddock.net/tag/foreground/</link>
+      <link>http://192.168.1.50:9796/tag/foreground/</link>
       <pubDate>Tue, 11 Jun 2013 15:55:04 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/foreground/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/foreground/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Log</title>
-      <link>https://davidcraddock.net/tag/log/</link>
+      <link>http://192.168.1.50:9796/tag/log/</link>
       <pubDate>Tue, 11 Jun 2013 15:55:04 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/log/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/log/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Logs</title>
-      <link>https://davidcraddock.net/tag/logs/</link>
+      <link>http://192.168.1.50:9796/tag/logs/</link>
       <pubDate>Tue, 11 Jun 2013 15:55:04 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/logs/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/logs/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Tail</title>
-      <link>https://davidcraddock.net/tag/tail/</link>
+      <link>http://192.168.1.50:9796/tag/tail/</link>
       <pubDate>Tue, 11 Jun 2013 15:55:04 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/tail/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/tail/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Analysis</title>
-      <link>https://davidcraddock.net/tag/analysis/</link>
+      <link>http://192.168.1.50:9796/tag/analysis/</link>
       <pubDate>Fri, 01 Mar 2013 01:28:54 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/analysis/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/analysis/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Connection</title>
-      <link>https://davidcraddock.net/tag/connection/</link>
+      <link>http://192.168.1.50:9796/tag/connection/</link>
       <pubDate>Fri, 01 Mar 2013 01:28:54 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/connection/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/connection/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Internet</title>
-      <link>https://davidcraddock.net/tag/internet/</link>
+      <link>http://192.168.1.50:9796/tag/internet/</link>
       <pubDate>Fri, 01 Mar 2013 01:28:54 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/internet/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/internet/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Ping</title>
-      <link>https://davidcraddock.net/tag/ping/</link>
+      <link>http://192.168.1.50:9796/tag/ping/</link>
       <pubDate>Fri, 01 Mar 2013 01:28:54 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/ping/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/ping/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Psof</title>
-      <link>https://davidcraddock.net/tag/psof/</link>
+      <link>http://192.168.1.50:9796/tag/psof/</link>
       <pubDate>Fri, 01 Mar 2013 01:28:54 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/psof/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/psof/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Slow</title>
-      <link>https://davidcraddock.net/tag/slow/</link>
+      <link>http://192.168.1.50:9796/tag/slow/</link>
       <pubDate>Fri, 01 Mar 2013 01:28:54 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/slow/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/slow/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Tcpdump</title>
-      <link>https://davidcraddock.net/tag/tcpdump/</link>
+      <link>http://192.168.1.50:9796/tag/tcpdump/</link>
       <pubDate>Fri, 01 Mar 2013 01:28:54 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/tcpdump/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/tcpdump/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Man-Up</title>
-      <link>https://davidcraddock.net/tag/man-up/</link>
+      <link>http://192.168.1.50:9796/tag/man-up/</link>
       <pubDate>Fri, 01 Mar 2013 00:44:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/man-up/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/man-up/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Manchester-Ulltimate-Programming</title>
-      <link>https://davidcraddock.net/tag/manchester-ulltimate-programming/</link>
+      <link>http://192.168.1.50:9796/tag/manchester-ulltimate-programming/</link>
       <pubDate>Fri, 01 Mar 2013 00:44:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/manchester-ulltimate-programming/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/manchester-ulltimate-programming/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Manchester-University</title>
-      <link>https://davidcraddock.net/tag/manchester-university/</link>
+      <link>http://192.168.1.50:9796/tag/manchester-university/</link>
       <pubDate>Fri, 01 Mar 2013 00:44:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/manchester-university/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/manchester-university/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Presentation</title>
-      <link>https://davidcraddock.net/tag/presentation/</link>
+      <link>http://192.168.1.50:9796/tag/presentation/</link>
       <pubDate>Fri, 01 Mar 2013 00:44:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/presentation/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/presentation/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Session</title>
-      <link>https://davidcraddock.net/tag/session/</link>
+      <link>http://192.168.1.50:9796/tag/session/</link>
       <pubDate>Fri, 01 Mar 2013 00:44:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/session/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/session/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Talk</title>
-      <link>https://davidcraddock.net/tag/talk/</link>
+      <link>http://192.168.1.50:9796/tag/talk/</link>
       <pubDate>Fri, 01 Mar 2013 00:44:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/talk/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/talk/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Tdd</title>
-      <link>https://davidcraddock.net/tag/tdd/</link>
+      <link>http://192.168.1.50:9796/tag/tdd/</link>
       <pubDate>Fri, 01 Mar 2013 00:44:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/tdd/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/tdd/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Test-Driven-Development</title>
-      <link>https://davidcraddock.net/tag/test-driven-development/</link>
+      <link>http://192.168.1.50:9796/tag/test-driven-development/</link>
       <pubDate>Fri, 01 Mar 2013 00:44:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/test-driven-development/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/test-driven-development/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Converting-Frame-to-Jpeg</title>
-      <link>https://davidcraddock.net/tag/converting-frame-to-jpeg/</link>
+      <link>http://192.168.1.50:9796/tag/converting-frame-to-jpeg/</link>
       <pubDate>Thu, 12 Apr 2012 15:20:23 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/converting-frame-to-jpeg/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/converting-frame-to-jpeg/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>M2v</title>
-      <link>https://davidcraddock.net/tag/m2v/</link>
+      <link>http://192.168.1.50:9796/tag/m2v/</link>
       <pubDate>Thu, 12 Apr 2012 15:20:23 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/m2v/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/m2v/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Macports</title>
-      <link>https://davidcraddock.net/tag/macports/</link>
+      <link>http://192.168.1.50:9796/tag/macports/</link>
       <pubDate>Thu, 12 Apr 2012 15:20:23 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/macports/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/macports/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Java</title>
-      <link>https://davidcraddock.net/tag/java/</link>
+      <link>http://192.168.1.50:9796/tag/java/</link>
       <pubDate>Sat, 11 Feb 2012 01:36:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/java/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/java/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Java-1.6</title>
-      <link>https://davidcraddock.net/tag/java-1.6/</link>
+      <link>http://192.168.1.50:9796/tag/java-1.6/</link>
       <pubDate>Sat, 11 Feb 2012 01:36:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/java-1.6/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/java-1.6/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Redhat-Enterprise-Linux</title>
-      <link>https://davidcraddock.net/tag/redhat-enterprise-linux/</link>
+      <link>http://192.168.1.50:9796/tag/redhat-enterprise-linux/</link>
       <pubDate>Sat, 11 Feb 2012 01:36:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/redhat-enterprise-linux/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/redhat-enterprise-linux/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Rhel</title>
-      <link>https://davidcraddock.net/tag/rhel/</link>
+      <link>http://192.168.1.50:9796/tag/rhel/</link>
       <pubDate>Sat, 11 Feb 2012 01:36:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/rhel/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/rhel/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Rhel4</title>
-      <link>https://davidcraddock.net/tag/rhel4/</link>
+      <link>http://192.168.1.50:9796/tag/rhel4/</link>
       <pubDate>Sat, 11 Feb 2012 01:36:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/rhel4/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/rhel4/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Sun</title>
-      <link>https://davidcraddock.net/tag/sun/</link>
+      <link>http://192.168.1.50:9796/tag/sun/</link>
       <pubDate>Sat, 11 Feb 2012 01:36:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/sun/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/sun/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Beautifulsoup</title>
-      <link>https://davidcraddock.net/tag/beautifulsoup/</link>
+      <link>http://192.168.1.50:9796/tag/beautifulsoup/</link>
       <pubDate>Wed, 07 Sep 2011 18:35:17 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/beautifulsoup/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/beautifulsoup/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Jsoup</title>
-      <link>https://davidcraddock.net/tag/jsoup/</link>
+      <link>http://192.168.1.50:9796/tag/jsoup/</link>
       <pubDate>Wed, 07 Sep 2011 18:35:17 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/jsoup/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/jsoup/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Scraper</title>
-      <link>https://davidcraddock.net/tag/scraper/</link>
+      <link>http://192.168.1.50:9796/tag/scraper/</link>
       <pubDate>Wed, 07 Sep 2011 18:35:17 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/scraper/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/scraper/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Scraping-Webpages</title>
-      <link>https://davidcraddock.net/tag/scraping-webpages/</link>
+      <link>http://192.168.1.50:9796/tag/scraping-webpages/</link>
       <pubDate>Wed, 07 Sep 2011 18:35:17 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/scraping-webpages/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/scraping-webpages/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Screen-Scrape</title>
-      <link>https://davidcraddock.net/tag/screen-scrape/</link>
+      <link>http://192.168.1.50:9796/tag/screen-scrape/</link>
       <pubDate>Wed, 07 Sep 2011 18:35:17 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/screen-scrape/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/screen-scrape/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Web-Scraping</title>
-      <link>https://davidcraddock.net/tag/web-scraping/</link>
+      <link>http://192.168.1.50:9796/tag/web-scraping/</link>
       <pubDate>Wed, 07 Sep 2011 18:35:17 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/web-scraping/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/web-scraping/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Disabling-Shortcut</title>
-      <link>https://davidcraddock.net/tag/disabling-shortcut/</link>
+      <link>http://192.168.1.50:9796/tag/disabling-shortcut/</link>
       <pubDate>Wed, 13 Jul 2011 16:34:39 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/disabling-shortcut/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/disabling-shortcut/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Outlook-2003</title>
-      <link>https://davidcraddock.net/tag/outlook-2003/</link>
+      <link>http://192.168.1.50:9796/tag/outlook-2003/</link>
       <pubDate>Wed, 13 Jul 2011 16:34:39 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/outlook-2003/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/outlook-2003/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Regedit</title>
-      <link>https://davidcraddock.net/tag/regedit/</link>
+      <link>http://192.168.1.50:9796/tag/regedit/</link>
       <pubDate>Wed, 13 Jul 2011 16:34:39 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/regedit/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/regedit/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Centos</title>
-      <link>https://davidcraddock.net/tag/centos/</link>
+      <link>http://192.168.1.50:9796/tag/centos/</link>
       <pubDate>Wed, 04 May 2011 16:03:55 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/centos/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/centos/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Directory-Name-Not-Visable</title>
-      <link>https://davidcraddock.net/tag/directory-name-not-visable/</link>
+      <link>http://192.168.1.50:9796/tag/directory-name-not-visable/</link>
       <pubDate>Wed, 04 May 2011 16:03:55 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/directory-name-not-visable/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/directory-name-not-visable/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Fedora</title>
-      <link>https://davidcraddock.net/tag/fedora/</link>
+      <link>http://192.168.1.50:9796/tag/fedora/</link>
       <pubDate>Wed, 04 May 2011 16:03:55 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/fedora/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/fedora/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Ls</title>
-      <link>https://davidcraddock.net/tag/ls/</link>
+      <link>http://192.168.1.50:9796/tag/ls/</link>
       <pubDate>Wed, 04 May 2011 16:03:55 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/ls/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/ls/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Ls_colors</title>
-      <link>https://davidcraddock.net/tag/ls_colors/</link>
+      <link>http://192.168.1.50:9796/tag/ls_colors/</link>
       <pubDate>Wed, 04 May 2011 16:03:55 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/ls_colors/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/ls_colors/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Putty</title>
-      <link>https://davidcraddock.net/tag/putty/</link>
+      <link>http://192.168.1.50:9796/tag/putty/</link>
       <pubDate>Wed, 04 May 2011 16:03:55 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/putty/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/putty/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Redhat</title>
-      <link>https://davidcraddock.net/tag/redhat/</link>
+      <link>http://192.168.1.50:9796/tag/redhat/</link>
       <pubDate>Wed, 04 May 2011 16:03:55 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/redhat/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/redhat/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Property-Adverts</title>
-      <link>https://davidcraddock.net/tag/property-adverts/</link>
+      <link>http://192.168.1.50:9796/tag/property-adverts/</link>
       <pubDate>Sun, 01 May 2011 14:07:02 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/property-adverts/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/property-adverts/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Scraping</title>
-      <link>https://davidcraddock.net/tag/scraping/</link>
+      <link>http://192.168.1.50:9796/tag/scraping/</link>
       <pubDate>Sun, 01 May 2011 14:07:02 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/scraping/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/scraping/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Scraping-Gumtree</title>
-      <link>https://davidcraddock.net/tag/scraping-gumtree/</link>
+      <link>http://192.168.1.50:9796/tag/scraping-gumtree/</link>
       <pubDate>Sun, 01 May 2011 14:07:02 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/scraping-gumtree/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/scraping-gumtree/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Bbc-Weather-Feed</title>
-      <link>https://davidcraddock.net/tag/bbc-weather-feed/</link>
+      <link>http://192.168.1.50:9796/tag/bbc-weather-feed/</link>
       <pubDate>Thu, 24 Feb 2011 19:31:48 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/bbc-weather-feed/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/bbc-weather-feed/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Ical-Service</title>
-      <link>https://davidcraddock.net/tag/ical-service/</link>
+      <link>http://192.168.1.50:9796/tag/ical-service/</link>
       <pubDate>Thu, 24 Feb 2011 19:31:48 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/ical-service/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/ical-service/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Php</title>
-      <link>https://davidcraddock.net/tag/php/</link>
+      <link>http://192.168.1.50:9796/tag/php/</link>
       <pubDate>Thu, 24 Feb 2011 19:31:48 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/php/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/php/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Weather-Forecast</title>
-      <link>https://davidcraddock.net/tag/weather-forecast/</link>
+      <link>http://192.168.1.50:9796/tag/weather-forecast/</link>
       <pubDate>Thu, 24 Feb 2011 19:31:48 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/weather-forecast/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/weather-forecast/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Web-Services</title>
-      <link>https://davidcraddock.net/tag/web-services/</link>
+      <link>http://192.168.1.50:9796/tag/web-services/</link>
       <pubDate>Thu, 24 Feb 2011 19:31:48 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/web-services/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/web-services/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Command-Line</title>
-      <link>https://davidcraddock.net/tag/command-line/</link>
+      <link>http://192.168.1.50:9796/tag/command-line/</link>
       <pubDate>Tue, 22 Feb 2011 00:16:12 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/command-line/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/command-line/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Finding-Large-Files</title>
-      <link>https://davidcraddock.net/tag/finding-large-files/</link>
+      <link>http://192.168.1.50:9796/tag/finding-large-files/</link>
       <pubDate>Tue, 22 Feb 2011 00:16:12 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/finding-large-files/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/finding-large-files/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Indie-Label</title>
-      <link>https://davidcraddock.net/tag/indie-label/</link>
+      <link>http://192.168.1.50:9796/tag/indie-label/</link>
       <pubDate>Fri, 16 Jul 2010 00:52:05 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/indie-label/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/indie-label/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Music-Business</title>
-      <link>https://davidcraddock.net/tag/music-business/</link>
+      <link>http://192.168.1.50:9796/tag/music-business/</link>
       <pubDate>Fri, 16 Jul 2010 00:52:05 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/music-business/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/music-business/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Music-Pricing</title>
-      <link>https://davidcraddock.net/tag/music-pricing/</link>
+      <link>http://192.168.1.50:9796/tag/music-pricing/</link>
       <pubDate>Fri, 16 Jul 2010 00:52:05 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/music-pricing/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/music-pricing/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Master-Boot-Record</title>
-      <link>https://davidcraddock.net/tag/master-boot-record/</link>
+      <link>http://192.168.1.50:9796/tag/master-boot-record/</link>
       <pubDate>Tue, 13 Jul 2010 13:02:51 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/master-boot-record/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/master-boot-record/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Repair-Mbr</title>
-      <link>https://davidcraddock.net/tag/repair-mbr/</link>
+      <link>http://192.168.1.50:9796/tag/repair-mbr/</link>
       <pubDate>Tue, 13 Jul 2010 13:02:51 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/repair-mbr/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/repair-mbr/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Ubuntu-10.4</title>
-      <link>https://davidcraddock.net/tag/ubuntu-10.4/</link>
+      <link>http://192.168.1.50:9796/tag/ubuntu-10.4/</link>
       <pubDate>Tue, 13 Jul 2010 13:02:51 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/ubuntu-10.4/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/ubuntu-10.4/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Bootcamp</title>
-      <link>https://davidcraddock.net/tag/bootcamp/</link>
+      <link>http://192.168.1.50:9796/tag/bootcamp/</link>
       <pubDate>Thu, 01 Jul 2010 22:50:25 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/bootcamp/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/bootcamp/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Dual-Boot</title>
-      <link>https://davidcraddock.net/tag/dual-boot/</link>
+      <link>http://192.168.1.50:9796/tag/dual-boot/</link>
       <pubDate>Thu, 01 Jul 2010 22:50:25 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/dual-boot/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/dual-boot/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Macbook-White</title>
-      <link>https://davidcraddock.net/tag/macbook-white/</link>
+      <link>http://192.168.1.50:9796/tag/macbook-white/</link>
       <pubDate>Thu, 01 Jul 2010 22:50:25 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/macbook-white/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/macbook-white/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Handbrake</title>
-      <link>https://davidcraddock.net/tag/handbrake/</link>
+      <link>http://192.168.1.50:9796/tag/handbrake/</link>
       <pubDate>Mon, 17 May 2010 03:15:00 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/handbrake/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/handbrake/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Ripit</title>
-      <link>https://davidcraddock.net/tag/ripit/</link>
+      <link>http://192.168.1.50:9796/tag/ripit/</link>
       <pubDate>Mon, 17 May 2010 03:15:00 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/ripit/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/ripit/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Br</title>
-      <link>https://davidcraddock.net/tag/br/</link>
+      <link>http://192.168.1.50:9796/tag/br/</link>
       <pubDate>Wed, 28 Apr 2010 20:44:39 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/br/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/br/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Bug</title>
-      <link>https://davidcraddock.net/tag/bug/</link>
+      <link>http://192.168.1.50:9796/tag/bug/</link>
       <pubDate>Wed, 28 Apr 2010 20:44:39 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/bug/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/bug/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Html-Edit</title>
-      <link>https://davidcraddock.net/tag/html-edit/</link>
+      <link>http://192.168.1.50:9796/tag/html-edit/</link>
       <pubDate>Wed, 28 Apr 2010 20:44:39 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/html-edit/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/html-edit/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Wordpress-2.9.2</title>
-      <link>https://davidcraddock.net/tag/wordpress-2.9.2/</link>
+      <link>http://192.168.1.50:9796/tag/wordpress-2.9.2/</link>
       <pubDate>Wed, 28 Apr 2010 20:44:39 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/wordpress-2.9.2/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/wordpress-2.9.2/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Denial-of-Service</title>
-      <link>https://davidcraddock.net/tag/denial-of-service/</link>
+      <link>http://192.168.1.50:9796/tag/denial-of-service/</link>
       <pubDate>Fri, 02 Apr 2010 03:50:37 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/denial-of-service/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/denial-of-service/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Forkbomb</title>
-      <link>https://davidcraddock.net/tag/forkbomb/</link>
+      <link>http://192.168.1.50:9796/tag/forkbomb/</link>
       <pubDate>Fri, 02 Apr 2010 03:50:37 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/forkbomb/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/forkbomb/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Ubuntu-9.10</title>
-      <link>https://davidcraddock.net/tag/ubuntu-9.10/</link>
+      <link>http://192.168.1.50:9796/tag/ubuntu-9.10/</link>
       <pubDate>Fri, 02 Apr 2010 03:50:37 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/ubuntu-9.10/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/ubuntu-9.10/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Nano-Backup-Files</title>
-      <link>https://davidcraddock.net/tag/nano-backup-files/</link>
+      <link>http://192.168.1.50:9796/tag/nano-backup-files/</link>
       <pubDate>Mon, 22 Mar 2010 20:49:20 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/nano-backup-files/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/nano-backup-files/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Vim-Backup-Files</title>
-      <link>https://davidcraddock.net/tag/vim-backup-files/</link>
+      <link>http://192.168.1.50:9796/tag/vim-backup-files/</link>
       <pubDate>Mon, 22 Mar 2010 20:49:20 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/vim-backup-files/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/vim-backup-files/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Cp</title>
-      <link>https://davidcraddock.net/tag/cp/</link>
+      <link>http://192.168.1.50:9796/tag/cp/</link>
       <pubDate>Sat, 20 Mar 2010 22:44:06 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/cp/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/cp/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Du--M</title>
-      <link>https://davidcraddock.net/tag/du--m/</link>
+      <link>http://192.168.1.50:9796/tag/du--m/</link>
       <pubDate>Sat, 20 Mar 2010 22:44:06 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/du--m/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/du--m/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Monitoring-Cp</title>
-      <link>https://davidcraddock.net/tag/monitoring-cp/</link>
+      <link>http://192.168.1.50:9796/tag/monitoring-cp/</link>
       <pubDate>Sat, 20 Mar 2010 22:44:06 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/monitoring-cp/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/monitoring-cp/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Watch</title>
-      <link>https://davidcraddock.net/tag/watch/</link>
+      <link>http://192.168.1.50:9796/tag/watch/</link>
       <pubDate>Sat, 20 Mar 2010 22:44:06 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/watch/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/watch/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Watch-Du</title>
-      <link>https://davidcraddock.net/tag/watch-du/</link>
+      <link>http://192.168.1.50:9796/tag/watch-du/</link>
       <pubDate>Sat, 20 Mar 2010 22:44:06 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/watch-du/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/watch-du/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>/Dev</title>
-      <link>https://davidcraddock.net/tag/dev/</link>
+      <link>http://192.168.1.50:9796/tag/dev/</link>
       <pubDate>Sat, 20 Mar 2010 15:19:46 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/dev/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/dev/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>/Etc</title>
-      <link>https://davidcraddock.net/tag/etc/</link>
+      <link>http://192.168.1.50:9796/tag/etc/</link>
       <pubDate>Sat, 20 Mar 2010 15:19:46 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/etc/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/etc/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>/Proc</title>
-      <link>https://davidcraddock.net/tag/proc/</link>
+      <link>http://192.168.1.50:9796/tag/proc/</link>
       <pubDate>Sat, 20 Mar 2010 15:19:46 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/proc/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/proc/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>/Root</title>
-      <link>https://davidcraddock.net/tag/root/</link>
+      <link>http://192.168.1.50:9796/tag/root/</link>
       <pubDate>Sat, 20 Mar 2010 15:19:46 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/root/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/root/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>/Sys</title>
-      <link>https://davidcraddock.net/tag/sys/</link>
+      <link>http://192.168.1.50:9796/tag/sys/</link>
       <pubDate>Sat, 20 Mar 2010 15:19:46 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/sys/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/sys/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Explained</title>
-      <link>https://davidcraddock.net/tag/explained/</link>
+      <link>http://192.168.1.50:9796/tag/explained/</link>
       <pubDate>Sat, 20 Mar 2010 15:19:46 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/explained/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/explained/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Linux-Root-Directory</title>
-      <link>https://davidcraddock.net/tag/linux-root-directory/</link>
+      <link>http://192.168.1.50:9796/tag/linux-root-directory/</link>
       <pubDate>Sat, 20 Mar 2010 15:19:46 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/linux-root-directory/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/linux-root-directory/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Root-Directory-Tutorial</title>
-      <link>https://davidcraddock.net/tag/root-directory-tutorial/</link>
+      <link>http://192.168.1.50:9796/tag/root-directory-tutorial/</link>
       <pubDate>Sat, 20 Mar 2010 15:19:46 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/root-directory-tutorial/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/root-directory-tutorial/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Osx-Commands</title>
-      <link>https://davidcraddock.net/tag/osx-commands/</link>
+      <link>http://192.168.1.50:9796/tag/osx-commands/</link>
       <pubDate>Fri, 19 Mar 2010 23:03:33 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/osx-commands/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/osx-commands/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Osx-Differences</title>
-      <link>https://davidcraddock.net/tag/osx-differences/</link>
+      <link>http://192.168.1.50:9796/tag/osx-differences/</link>
       <pubDate>Fri, 19 Mar 2010 23:03:33 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/osx-differences/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/osx-differences/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Osx-Differences-From-Linux</title>
-      <link>https://davidcraddock.net/tag/osx-differences-from-linux/</link>
+      <link>http://192.168.1.50:9796/tag/osx-differences-from-linux/</link>
       <pubDate>Fri, 19 Mar 2010 23:03:33 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/osx-differences-from-linux/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/osx-differences-from-linux/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Osx-Terminal-Commands</title>
-      <link>https://davidcraddock.net/tag/osx-terminal-commands/</link>
+      <link>http://192.168.1.50:9796/tag/osx-terminal-commands/</link>
       <pubDate>Fri, 19 Mar 2010 23:03:33 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/osx-terminal-commands/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/osx-terminal-commands/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>.Bash_history</title>
-      <link>https://davidcraddock.net/tag/.bash_history/</link>
+      <link>http://192.168.1.50:9796/tag/.bash_history/</link>
       <pubDate>Thu, 18 Mar 2010 19:55:51 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/.bash_history/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/.bash_history/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Bash-Shell</title>
-      <link>https://davidcraddock.net/tag/bash-shell/</link>
+      <link>http://192.168.1.50:9796/tag/bash-shell/</link>
       <pubDate>Thu, 18 Mar 2010 19:55:51 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/bash-shell/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/bash-shell/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Bash-Shell-Customisation</title>
-      <link>https://davidcraddock.net/tag/bash-shell-customisation/</link>
+      <link>http://192.168.1.50:9796/tag/bash-shell-customisation/</link>
       <pubDate>Thu, 18 Mar 2010 19:55:51 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/bash-shell-customisation/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/bash-shell-customisation/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>History</title>
-      <link>https://davidcraddock.net/tag/history/</link>
+      <link>http://192.168.1.50:9796/tag/history/</link>
       <pubDate>Thu, 18 Mar 2010 19:55:51 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/history/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/history/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>History-Command</title>
-      <link>https://davidcraddock.net/tag/history-command/</link>
+      <link>http://192.168.1.50:9796/tag/history-command/</link>
       <pubDate>Thu, 18 Mar 2010 19:55:51 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/history-command/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/history-command/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Minimal-.Vimrc</title>
-      <link>https://davidcraddock.net/tag/minimal-.vimrc/</link>
+      <link>http://192.168.1.50:9796/tag/minimal-.vimrc/</link>
       <pubDate>Thu, 18 Mar 2010 19:23:07 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/minimal-.vimrc/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/minimal-.vimrc/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Vi-Improved</title>
-      <link>https://davidcraddock.net/tag/vi-improved/</link>
+      <link>http://192.168.1.50:9796/tag/vi-improved/</link>
       <pubDate>Thu, 18 Mar 2010 19:23:07 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/vi-improved/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/vi-improved/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Cron-Job</title>
-      <link>https://davidcraddock.net/tag/cron-job/</link>
+      <link>http://192.168.1.50:9796/tag/cron-job/</link>
       <pubDate>Sat, 13 Mar 2010 16:02:42 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/cron-job/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/cron-job/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Real-Time-Who</title>
-      <link>https://davidcraddock.net/tag/real-time-who/</link>
+      <link>http://192.168.1.50:9796/tag/real-time-who/</link>
       <pubDate>Sat, 13 Mar 2010 16:02:42 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/real-time-who/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/real-time-who/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Testing-Cron-Jobs</title>
-      <link>https://davidcraddock.net/tag/testing-cron-jobs/</link>
+      <link>http://192.168.1.50:9796/tag/testing-cron-jobs/</link>
       <pubDate>Sat, 13 Mar 2010 16:02:42 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/testing-cron-jobs/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/testing-cron-jobs/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Who</title>
-      <link>https://davidcraddock.net/tag/who/</link>
+      <link>http://192.168.1.50:9796/tag/who/</link>
       <pubDate>Sat, 13 Mar 2010 16:02:42 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/who/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/who/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Apache-Default-From-Address</title>
-      <link>https://davidcraddock.net/tag/apache-default-from-address/</link>
+      <link>http://192.168.1.50:9796/tag/apache-default-from-address/</link>
       <pubDate>Wed, 10 Mar 2010 06:36:26 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/apache-default-from-address/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/apache-default-from-address/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Default-From-Address</title>
-      <link>https://davidcraddock.net/tag/default-from-address/</link>
+      <link>http://192.168.1.50:9796/tag/default-from-address/</link>
       <pubDate>Wed, 10 Mar 2010 06:36:26 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/default-from-address/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/default-from-address/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Default-Sender-Address</title>
-      <link>https://davidcraddock.net/tag/default-sender-address/</link>
+      <link>http://192.168.1.50:9796/tag/default-sender-address/</link>
       <pubDate>Wed, 10 Mar 2010 06:36:26 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/default-sender-address/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/default-sender-address/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Php-Default-Sender-Address</title>
-      <link>https://davidcraddock.net/tag/php-default-sender-address/</link>
+      <link>http://192.168.1.50:9796/tag/php-default-sender-address/</link>
       <pubDate>Wed, 10 Mar 2010 06:36:26 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/php-default-sender-address/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/php-default-sender-address/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Converting-Linux-Text-File-to-Windows-Text-File</title>
-      <link>https://davidcraddock.net/tag/converting-linux-text-file-to-windows-text-file/</link>
+      <link>http://192.168.1.50:9796/tag/converting-linux-text-file-to-windows-text-file/</link>
       <pubDate>Tue, 09 Mar 2010 00:04:40 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/converting-linux-text-file-to-windows-text-file/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/converting-linux-text-file-to-windows-text-file/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Converting-Text-Files</title>
-      <link>https://davidcraddock.net/tag/converting-text-files/</link>
+      <link>http://192.168.1.50:9796/tag/converting-text-files/</link>
       <pubDate>Tue, 09 Mar 2010 00:04:40 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/converting-text-files/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/converting-text-files/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Converting-Windows-Text-File-to-Linux-Text-File</title>
-      <link>https://davidcraddock.net/tag/converting-windows-text-file-to-linux-text-file/</link>
+      <link>http://192.168.1.50:9796/tag/converting-windows-text-file-to-linux-text-file/</link>
       <pubDate>Tue, 09 Mar 2010 00:04:40 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/converting-windows-text-file-to-linux-text-file/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/converting-windows-text-file-to-linux-text-file/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Unix-Text-File-Format</title>
-      <link>https://davidcraddock.net/tag/unix-text-file-format/</link>
+      <link>http://192.168.1.50:9796/tag/unix-text-file-format/</link>
       <pubDate>Tue, 09 Mar 2010 00:04:40 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/unix-text-file-format/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/unix-text-file-format/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Windows-Text-File-Format</title>
-      <link>https://davidcraddock.net/tag/windows-text-file-format/</link>
+      <link>http://192.168.1.50:9796/tag/windows-text-file-format/</link>
       <pubDate>Tue, 09 Mar 2010 00:04:40 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/windows-text-file-format/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/windows-text-file-format/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Redesign</title>
-      <link>https://davidcraddock.net/tag/redesign/</link>
+      <link>http://192.168.1.50:9796/tag/redesign/</link>
       <pubDate>Thu, 14 Jan 2010 07:58:03 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/redesign/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/redesign/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Php-Page-Scraper</title>
-      <link>https://davidcraddock.net/tag/php-page-scraper/</link>
+      <link>http://192.168.1.50:9796/tag/php-page-scraper/</link>
       <pubDate>Thu, 14 Jan 2010 05:53:47 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/php-page-scraper/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/php-page-scraper/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Php-Page-Scraper-Class</title>
-      <link>https://davidcraddock.net/tag/php-page-scraper-class/</link>
+      <link>http://192.168.1.50:9796/tag/php-page-scraper-class/</link>
       <pubDate>Thu, 14 Jan 2010 05:53:47 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/php-page-scraper-class/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/php-page-scraper-class/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Php-Scraper</title>
-      <link>https://davidcraddock.net/tag/php-scraper/</link>
+      <link>http://192.168.1.50:9796/tag/php-scraper/</link>
       <pubDate>Thu, 14 Jan 2010 05:53:47 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/php-scraper/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/php-scraper/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Apache</title>
-      <link>https://davidcraddock.net/tag/apache/</link>
+      <link>http://192.168.1.50:9796/tag/apache/</link>
       <pubDate>Mon, 30 Mar 2009 22:45:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/apache/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/apache/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Lamp</title>
-      <link>https://davidcraddock.net/tag/lamp/</link>
+      <link>http://192.168.1.50:9796/tag/lamp/</link>
       <pubDate>Mon, 30 Mar 2009 22:45:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/lamp/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/lamp/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Virutal-Hosts</title>
-      <link>https://davidcraddock.net/tag/virutal-hosts/</link>
+      <link>http://192.168.1.50:9796/tag/virutal-hosts/</link>
       <pubDate>Mon, 30 Mar 2009 22:45:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/virutal-hosts/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/virutal-hosts/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Agile</title>
-      <link>https://davidcraddock.net/tag/agile/</link>
+      <link>http://192.168.1.50:9796/tag/agile/</link>
       <pubDate>Fri, 27 Mar 2009 23:47:59 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/agile/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/agile/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>Eclipse</title>
-      <link>https://davidcraddock.net/tag/eclipse/</link>
+      <link>http://192.168.1.50:9796/tag/eclipse/</link>
       <pubDate>Fri, 27 Mar 2009 23:47:59 +0000</pubDate>
-      <guid>https://davidcraddock.net/tag/eclipse/</guid>
+      
+      <guid>http://192.168.1.50:9796/tag/eclipse/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

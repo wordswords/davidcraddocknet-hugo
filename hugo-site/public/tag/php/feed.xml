@@ -2,21 +2,167 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Php on DavidCraddock.net</title>
-    <link>https://davidcraddock.net/tag/php/</link>
+    <link>http://192.168.1.50:9796/tag/php/</link>
     <description>Recent content in Php on DavidCraddock.net</description>
-    <generator>Hugo -- 0.129.0</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 24 Feb 2011 19:31:48 +0000</lastBuildDate>
-    <atom:link href="https://davidcraddock.net/tag/php/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Feb 2011 19:31:48 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/tag/php/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>&#39;Weather Forecast&#39; Calendar Service in PHP</title>
-      <link>https://davidcraddock.net/2011/02/24/a-3-day-weather-forecast-calendar-service/</link>
+      <link>http://192.168.1.50:9796/2011/02/24/a-3-day-weather-forecast-calendar-service/</link>
       <pubDate>Thu, 24 Feb 2011 19:31:48 +0000</pubDate>
-      <guid>https://davidcraddock.net/2011/02/24/a-3-day-weather-forecast-calendar-service/</guid>
+      
+      <guid>http://192.168.1.50:9796/2011/02/24/a-3-day-weather-forecast-calendar-service/</guid>
       <description>The BBC provide 3 day weather RSS feeds for most locations in the UK. I thought it would be interesting to create a web service to turn the weather feed into calendar feed format, so I could have a constantly updated forecast of the next 3 days of weather mapped on to my iPhone’s calendar. Here it is on my iPhone:
 Overview
 The service is separated into five files:
 ical.php – this contains the class ical which corresponds to a single calendar feed.</description>
+      <content:encoded><![CDATA[<p>The BBC provide 3 day weather RSS feeds for most locations in the UK. I thought it would be interesting to create a web service to turn the weather feed into calendar feed format, so I could have a constantly updated forecast of the next 3 days of weather mapped on to my iPhone’s calendar. Here it is on my iPhone:</p>
+<p><strong>Overview</strong></p>
+<p>The service is separated into five files:</p>
+<ul>
+<li><strong>ical.php</strong> – this contains the class ical which corresponds to a single calendar feed. A method called ‘addevent’ allows you to add new events to the calendar, and a method called ‘returncal’ redirects the resulting calendar file to the browser so people can subscribe to it using their calendar application.</li>
+<li><strong>forecast.php</strong> – this file contains the class forecast, which has properties for all aspects that we want to record for each day’s forecast, ie: Wind Speed and Humidity. It also contains the forecast set, which is a collection of forecast objects. The set class is serializable, which means each forecast object can be stored in a text file, including the Wind Speed, Humidity and all other things we want to record for each day.</li>
+<li><strong>scrape-weather.php</strong> – this file contains code that scrapes the weather feed, populates the forecast set with all the weather information for the next 3 days, and stores the result in a file called forecasts.ser.</li>
+<li><strong>forecasts.ser</strong> – this is all the data for the three day weather forecast, in serialized format. It is automatically deleted and recreated when the scrape-weather.php script is run.</li>
+<li><strong>reader.php</strong> – this file converts the forecasts.ser file into an iCal calendar, and outputs the iCal formatted result to the calendar application that accesses reader.php page.</li>
+</ul>
+<p>It uses two external libraries:</p>
+<ul>
+<li><strong>MagpieRSS 0.72</strong> – this popular library is used for reading the calendar RSS feed and converting it into a PHP object that is easier to manipulate by scrape-weather.php.</li>
+<li><strong>iCalcreator 2.8</strong> – this is used for creating the output iCal format of the calendar in ical.php and outputting it to the browser in reader.php.</li>
+</ul>
+<p><strong>Files</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>init();
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	function init(){
+</span></span><span style="display:flex;"><span>		$config = array( &#39;unique_id&#39; =&gt; &#39;weather.davidcraddock.net&#39; );
+</span></span><span style="display:flex;"><span>		  // set Your unique id
+</span></span><span style="display:flex;"><span>		$this-&gt;v = new vcalendar( $config );
+</span></span><span style="display:flex;"><span>		  // create a new calendar instance
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		$this-&gt;v-&gt;setProperty( &#39;method&#39;, &#39;PUBLISH&#39; );
+</span></span><span style="display:flex;"><span>		  // required of some calendar software
+</span></span><span style="display:flex;"><span>		$this-&gt;v-&gt;setProperty( &#34;x-wr-calname&#34;, &#34;Calendar Sample&#34; );
+</span></span><span style="display:flex;"><span>		  // required of some calendar software
+</span></span><span style="display:flex;"><span>		$this-&gt;v-&gt;setProperty( &#34;X-WR-CALDESC&#34;, &#34;Calendar Description&#34; );
+</span></span><span style="display:flex;"><span>		  // required of some calendar software
+</span></span><span style="display:flex;"><span>		$this-&gt;v-&gt;setProperty( &#34;X-WR-TIMEZONE&#34;, &#34;Europe/London&#34; );
+</span></span><span style="display:flex;"><span>		  // required of some calendar software
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	function addevent($start_year,$start_month,$start_day,$start_hour,$start_min,
+</span></span><span style="display:flex;"><span>		  $finish_year,$finish_month,$finish_day,$finish_hour,$finish_min,
+</span></span><span style="display:flex;"><span>		  $summary,$description,$comment
+</span></span><span style="display:flex;"><span>	){
+</span></span><span style="display:flex;"><span>		$vevent = &amp; $this-&gt;v-&gt;newComponent( &#39;vevent&#39; );
+</span></span><span style="display:flex;"><span>		  // create an event calendar component
+</span></span><span style="display:flex;"><span>		$start = array( &#39;year&#39;=&gt;$start_year, &#39;month&#39;=&gt;$start_month, &#39;day&#39;=&gt;$start_day, &#39;hour&#39;=&gt;$start_hour, &#39;min&#39;=&gt;$start_min, &#39;sec&#39;=&gt;0 );
+</span></span><span style="display:flex;"><span>		$vevent-&gt;setProperty( &#39;dtstart&#39;, $start );
+</span></span><span style="display:flex;"><span>		$end = array( &#39;year&#39;=&gt;$finish_year, &#39;month&#39;=&gt;$finish_month, &#39;day&#39;=&gt;$finish_day, &#39;hour&#39;=&gt;$finish_hour, &#39;min&#39;=&gt;$finish_min, &#39;sec&#39;=&gt;0 );
+</span></span><span style="display:flex;"><span>		$vevent-&gt;setProperty( &#39;dtend&#39;, $end );
+</span></span><span style="display:flex;"><span>		$vevent-&gt;setProperty( &#39;LOCATION&#39;, &#39;&#39; );
+</span></span><span style="display:flex;"><span>		  // property name - case independent
+</span></span><span style="display:flex;"><span>		$vevent-&gt;setProperty( &#39;summary&#39;, $summary );
+</span></span><span style="display:flex;"><span>		$vevent-&gt;setProperty( &#39;description&#39;,$description );
+</span></span><span style="display:flex;"><span>		$vevent-&gt;setProperty( &#39;comment&#39;, $comment );
+</span></span><span style="display:flex;"><span>		$vevent-&gt;setProperty( &#39;attendee&#39;, &#39;contact@davidcraddock.net&#39; );
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	function returncal(){
+</span></span><span style="display:flex;"><span>		// redirect calendar file to browser
+</span></span><span style="display:flex;"><span>		$this-&gt;v-&gt;returnCalendar();
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>?&gt;
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>forecasts = new ArrayObject();
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>scrapecurrent();
+</span></span><span style="display:flex;"><span>		$this-&gt;store();
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	function store(){
+</span></span><span style="display:flex;"><span>		$store_path = $this-&gt;store_path;
+</span></span><span style="display:flex;"><span>		unlink($store_path);
+</span></span><span style="display:flex;"><span>		file_put_contents($store_path, serialize($this-&gt;set));
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	function scrapecurrent(){
+</span></span><span style="display:flex;"><span>		$url = $this-&gt;feed_url;
+</span></span><span style="display:flex;"><span>		$rss = fetch_rss( $url );
+</span></span><span style="display:flex;"><span>		$message = &#34;&#34;;
+</span></span><span style="display:flex;"><span>		if(sizeof($rss-&gt;items) != 3){
+</span></span><span style="display:flex;"><span>			die(&#34;Problem with BBC weather feed.. dying&#34;);
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>		$i=0;
+</span></span><span style="display:flex;"><span>		$set = new forecast_set();
+</span></span><span style="display:flex;"><span>		$curdate = date(&#34;Y-m-d&#34;);
+</span></span><span style="display:flex;"><span>		echo $curdate;
+</span></span><span style="display:flex;"><span>		foreach ($rss-&gt;items as $item) {
+</span></span><span style="display:flex;"><span>			$href = $item[&#39;link&#39;];
+</span></span><span style="display:flex;"><span>			$title = $item[&#39;title&#39;];
+</span></span><span style="display:flex;"><span>			$description = $item[&#39;description&#39;];
+</span></span><span style="display:flex;"><span>			print_r($item);
+</span></span><span style="display:flex;"><span>			$curyear = date(&#39;Y&#39;,strtotime(date(&#34;Y-m-d&#34;, strtotime($curdate)) . &#34; +1 day&#34;));
+</span></span><span style="display:flex;"><span>			$curmonth = date(&#39;m&#39;,strtotime(date(&#34;Y-m-d&#34;, strtotime($curdate)) . &#34; +1 day&#34;));
+</span></span><span style="display:flex;"><span>			$curday = date(&#39;d&#39;,strtotime(date(&#34;Y-m-d&#34;, strtotime($curdate)) . &#34; +1 day&#34;));
+</span></span><span style="display:flex;"><span>			preg_match(&#39;/:.+?,/&#39;,$title,$summary);
+</span></span><span style="display:flex;"><span>			preg_match(&#39;/Min Temp:.+?-*d*/&#39;,$title,$mintemp);
+</span></span><span style="display:flex;"><span>			preg_match(&#39;/Max Temp:.+?-*d*/&#39;,$title,$maxtemp);
+</span></span><span style="display:flex;"><span>			preg_match(&#39;/Wind Speed:.+?-*d*/&#39;,$description,$windspeed);
+</span></span><span style="display:flex;"><span>			preg_match(&#39;/Humidity:.+?-*d*/&#39;,$description,$humidity);
+</span></span><span style="display:flex;"><span>			$summary[0] = str_replace(&#39;: &#39;,&#39;&#39;,$summary[0]);
+</span></span><span style="display:flex;"><span>			$summary[0] = str_replace(&#39;,&#39;,&#39;&#39;,$summary[0]);
+</span></span><span style="display:flex;"><span>			$mintemp[0] = str_replace(&#39;Min Temp: &#39;,&#39;&#39;,$mintemp[0]);
+</span></span><span style="display:flex;"><span>			$maxtemp[0] = str_replace(&#39;Max Temp: &#39;,&#39;&#39;,$maxtemp[0]);
+</span></span><span style="display:flex;"><span>			$windspeed[0] = str_replace(&#39;Wind Speed: &#39;,&#39;&#39;,$windspeed[0]);
+</span></span><span style="display:flex;"><span>			$humidity[0] = str_replace(&#39;Humidity: &#39;,&#39;&#39;,$humidity[0]);
+</span></span><span style="display:flex;"><span>			$mins[$i] = (int)$mintemp[0];
+</span></span><span style="display:flex;"><span>			$maxs[$i] = (int)$maxtemp[0];
+</span></span><span style="display:flex;"><span>			$forecast = new forecast();
+</span></span><span style="display:flex;"><span>			$forecast-&gt;low = (int)$mintemp[0];
+</span></span><span style="display:flex;"><span>			$forecast-&gt;high = (int)$maxtemp[0];
+</span></span><span style="display:flex;"><span>			$forecast-&gt;year = (int)$curyear;
+</span></span><span style="display:flex;"><span>			$forecast-&gt;month = (int)$curmonth;
+</span></span><span style="display:flex;"><span>			$forecast-&gt;day = (int)$curday;
+</span></span><span style="display:flex;"><span>			$forecast-&gt;windspeed = $windspeed[0];
+</span></span><span style="display:flex;"><span>			$forecast-&gt;humidity = $humidity[0];
+</span></span><span style="display:flex;"><span>			$forecast-&gt;summary = ucwords($summary[0]);
+</span></span><span style="display:flex;"><span>			$set-&gt;forecasts-&gt;append($forecast);
+</span></span><span style="display:flex;"><span>			$i++;
+</span></span><span style="display:flex;"><span>			$curdate = date(&#39;Y-m-d&#39;,strtotime(date(&#34;Y-m-d&#34;, strtotime($curdate)) . &#34; +1 day&#34;));
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>		print_r($set);
+</span></span><span style="display:flex;"><span>		$this-&gt;set = $set;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>$s = new scrape3day();
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>&lt;?php
+</span></span><span style="display:flex;"><span>require_once(&#39;ical.php&#39;);
+</span></span><span style="display:flex;"><span>require_once(&#39;forecast.php&#39;);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$c = new ical();
+</span></span><span style="display:flex;"><span>$f = unserialize(file_get_contents(&#39;forecasts.ser&#39;));
+</span></span><span style="display:flex;"><span>for($i=0;$iforecasts[$i];
+</span></span><span style="display:flex;"><span>	$weather_digest = &#34;Max: &#34;.$curforecast-&gt;high.&#34; Min: &#34;.$curforecast-&gt;low.&#34; Humidity: &#34;.$curforecast-&gt;humidity.&#34;% Wind Speed: &#34;.$curforecast-&gt;windspeed.&#34;mph.&#34;;
+</span></span><span style="display:flex;"><span>	$c-&gt;addevent($curforecast-&gt;year,$curforecast-&gt;month,$curforecast-&gt;day,7,0,$curforecast-&gt;year,$curforecast-&gt;month,$curforecast-&gt;day,7,30,$curforecast-&gt;summary,$weather_digest,$weather_digest);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>$c-&gt;returncal();
+</span></span><span style="display:flex;"><span>?&gt;
+</span></span></code></pre></div><p><strong>SVN Version</strong></p>
+<p>If you have subversion, you can check out the project from: <a href="http://svn.davidcraddock.net/weather-services/">http://svn.davidcraddock.net/weather-services/</a>. There are a couple extra files in that directory for my automated freezing weather alerts, but you can safely ignore those.</p>
+<p><strong>Installation</strong></p>
+<p>You will have to add this entry to your crontab to run once per day. You could set the script to run at midnight through adding the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>0 0 * * *
+</span></span></code></pre></div><p>For example, in my case:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>0 0 * * * /usr/local/bin/php /home/david_craddock/work.davidcraddock.net/weather/scrape-weather.php
+</span></span></code></pre></div><p>You will then need to edit the contents of the $store_path and $feed_url variables in scrape-weather.php. Store_path should refer to a file path that the web server can create and edit files in, and feed_url should refer to the RSS feed of your local area that you have copied and pasted from the <a href="http://news.bbc.co.uk/weather/">http://news.bbc.co.uk/weather/</a> site, don&rsquo;t use mine because your area is likely different. After that, you&rsquo;re set to go.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

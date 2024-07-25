@@ -2,19 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Playnite on DavidCraddock.net</title>
-    <link>https://davidcraddock.net/tag/playnite/</link>
+    <link>http://192.168.1.50:9796/tag/playnite/</link>
     <description>Recent content in Playnite on DavidCraddock.net</description>
-    <generator>Hugo -- 0.129.0</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Aug 2022 02:53:48 +0000</lastBuildDate>
-    <atom:link href="https://davidcraddock.net/tag/playnite/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Aug 2022 02:53:48 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/tag/playnite/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Digital Game Collecting</title>
-      <link>https://davidcraddock.net/2022/08/09/digital-game-collecting/</link>
+      <link>http://192.168.1.50:9796/2022/08/09/digital-game-collecting/</link>
       <pubDate>Tue, 09 Aug 2022 02:53:48 +0000</pubDate>
-      <guid>https://davidcraddock.net/2022/08/09/digital-game-collecting/</guid>
+      
+      <guid>http://192.168.1.50:9796/2022/08/09/digital-game-collecting/</guid>
       <description>I have a relatively obscure hobby - I collect digital video games. Quite a few people collect physical games, but I like the advantages of having a large library of gaming options which are just a download away.
 Like a lot of collectors, I have more games than I have actually played, or probably will do in my lifetime. I mostly get them via discounted bundles such as HumbleBundle.com, so I rarely play full price for them.</description>
+      <content:encoded><![CDATA[<p>I have a relatively obscure hobby - I collect digital video games. Quite a few
+people collect physical games, but I like the advantages of having a large
+library of gaming options which are just a download away.</p>
+<p>Like a lot of collectors, I have more games than I have actually played, or
+probably will do in my lifetime. I mostly get them via discounted bundles such
+as <a href="https://www.humblebundle.com">HumbleBundle.com</a>, so I rarely play full price for them.</p>
+<p>I use the excellent games launcher <a href="https://playnite.link">Playnite</a> to organize
+and consolidate all my games from the various proprietary launchers, such as
+Origin and GOG Galaxy. It also downloads a lot of metadata for each game,
+including gameplay video trailers, and provides a customizable interface for
+everything.</p>
+<p>I&rsquo;ve dipped into emulation for some games that I used to own. But I try and keep
+that minimal because of the legal grey area it is under. I have ripped ISOs of
+the console games I used to have, before I gave them away to a charity shop.</p>
+<p>Some people worry that with digital collections the proprietary launcher company
+will go bust, and you will lose access to all your games. To be honest I&rsquo;m not worried
+about this as I&rsquo;m fairly sure under that situation they would provide an option
+to transfer to a different launcher, or allow downloads of your entire account.
+I also use 2-factor authentication on everything, and keep a close eye on
+security alerts.</p>
+<p>I have been collecting games on Steam since 2004 or so, so I have a large
+collection. It is interesting going through the various games and finding out
+more about them. I definitely don&rsquo;t play everything, and most games for not very
+long, but it is a good distraction from the worries of life.</p>
+<p>Here are my statistics from Playnite:</p>
+<p><img loading="lazy" src="/wp-content/uploads/2022/08/stats.png" type="" alt=""  /></p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

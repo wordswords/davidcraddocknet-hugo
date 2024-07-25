@@ -2,22 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ripping-Blurays on DavidCraddock.net</title>
-    <link>https://davidcraddock.net/category/ripping-blurays/</link>
+    <link>http://192.168.1.50:9796/category/ripping-blurays/</link>
     <description>Recent content in Ripping-Blurays on DavidCraddock.net</description>
-    <generator>Hugo -- 0.129.0</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Mar 2022 17:58:33 +0000</lastBuildDate>
-    <atom:link href="https://davidcraddock.net/category/ripping-blurays/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Mar 2022 17:58:33 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/category/ripping-blurays/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Video Tools I use for my Media Collection</title>
-      <link>https://davidcraddock.net/2022/03/16/video-tools-i-use-for-my-media-collection/</link>
+      <link>http://192.168.1.50:9796/2022/03/16/video-tools-i-use-for-my-media-collection/</link>
       <pubDate>Wed, 16 Mar 2022 17:58:33 +0000</pubDate>
-      <guid>https://davidcraddock.net/2022/03/16/video-tools-i-use-for-my-media-collection/</guid>
+      
+      <guid>http://192.168.1.50:9796/2022/03/16/video-tools-i-use-for-my-media-collection/</guid>
       <description>I use and recommend the following software for Windows. They&amp;rsquo;re all quite easy to use. The paid software all have lifetime subscriptions, which are worth it because you need the latest updates in this area.
 Aiseesoft Blu-ray Player: (for playing Blu-Rays) (paid) https://www.aiseesoft.com/blu-ray-player/
 Easyfab Lossless Copy: (for ripping Blu-Rays, also works for DVDs) (paid) https://www.easefab.com/losslesscopy/
 VLC: (for playing ripped copies) (free) https://www.videolan.org/
 Handbrake: (for converting between different video formats and compressing video) (free) https://handbrake.</description>
+      <content:encoded><![CDATA[<p>I use and recommend the following software for Windows. They&rsquo;re all quite easy to use. The paid software all have lifetime subscriptions, which are worth it because you need the latest updates in this area.</p>
+<p>Aiseesoft Blu-ray Player: (for playing Blu-Rays) (paid)
+<a href="https://www.aiseesoft.com/blu-ray-player/">https://www.aiseesoft.com/blu-ray-player/</a></p>
+<p>Easyfab Lossless Copy: (for ripping Blu-Rays, also works for DVDs) (paid)
+<a href="https://www.easefab.com/losslesscopy/">https://www.easefab.com/losslesscopy/</a></p>
+<p>VLC: (for playing ripped copies) (free)
+<a href="https://www.videolan.org/">https://www.videolan.org/</a></p>
+<p>Handbrake: (for converting between different video formats and compressing video) (free)
+<a href="https://handbrake.fr/">https://handbrake.fr/</a></p>
+<p>Plex Media Server: (for hosting video files on your network and playing them) (free)
+<a href="https://www.plex.tv/media-server-downloads/">https://www.plex.tv/media-server-downloads/</a></p>
+<p>Movavi Video Editor Plus: (for editing video files, similar interface to iMovie) (paid)
+<a href="https://www.movavi.com/videoeditor/">https://www.movavi.com/videoeditor/</a></p>
+<p>FFMPEG: (for splitting ripped video files, for TV series episodes) (free)
+<a href="https://www.gyan.dev/ffmpeg/builds/">https://www.gyan.dev/ffmpeg/builds/</a></p>
+<p>For using FFMPEG to split a ripped bluray track into episode segments, I look up the series on <a href="https://thetvdb.com">https://thetvdb.com</a> which has fairly accurate epsiode runtimes, and then for example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span> ffmpeg.exe -i &#39;.\Samurai Jack Season 1_001.mp4&#39; -acodec copy -vcodec copy -ss 01:11:43 -t 00:23:00 samurai_jack_s01e04.mp4
+</span></span></code></pre></div><ul>
+<li>.\Samurai Jack Season 1_001.mp4 is the source file</li>
+<li>01:11:43 is the start time</li>
+<li>00:23:00 is the duration</li>
+<li>samurai_jack_s01e04.mp4 - is the destination file. I use Plex Media Server prefered titling for TV series, e.g. this is Series 1 Episode 4. This makes it easy to import with Plex.</li>
+</ul>
+<p>I then test the episode in VLC by looking at the start and end of the file to make sure the split is correct, and adjusting the start/end times and re-running as appropriate.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

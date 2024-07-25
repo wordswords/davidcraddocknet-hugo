@@ -2,27 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>~-Backup on DavidCraddock.net</title>
-    <link>https://davidcraddock.net/tag/~-backup/</link>
+    <link>http://192.168.1.50:9796/tag/~-backup/</link>
     <description>Recent content in ~-Backup on DavidCraddock.net</description>
-    <generator>Hugo -- 0.129.0</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Feb 2016 17:28:39 +0000</lastBuildDate>
-    <atom:link href="https://davidcraddock.net/tag/~-backup/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Feb 2016 17:28:39 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/tag/~-backup/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fish Shell Scripting</title>
-      <link>https://davidcraddock.net/2016/02/02/fish-shell-scripting/</link>
+      <link>http://192.168.1.50:9796/2016/02/02/fish-shell-scripting/</link>
       <pubDate>Tue, 02 Feb 2016 17:28:39 +0000</pubDate>
-      <guid>https://davidcraddock.net/2016/02/02/fish-shell-scripting/</guid>
+      
+      <guid>http://192.168.1.50:9796/2016/02/02/fish-shell-scripting/</guid>
       <description>A few months ago I switched across from Bash onto the Fish shell, on my main development machine. I can&amp;rsquo;t get enough of its fast autosuggestions and its sane scripting language. Compared to Bash it is very fun to use.
 Today I wrote a script to automate the backup of my development workspace onto a private bitbucket account. Bitbucket is good because it allows unlimited private repositories, but it caps the size of these repos at 2GB max, with some features disabled after 1GB.</description>
+      <content:encoded><![CDATA[<p>
+  <img loading="lazy" src="http://i.telegraph.co.uk/multimedia/archive/01396/fish_1396516c.jpg" alt=""  /></p>
+<p>A few months ago I switched across from Bash onto the <a href="http://fishshell.com/">Fish shell</a>, on my main development machine. I can&rsquo;t get enough of its fast autosuggestions and its sane scripting language. Compared to Bash it is very fun to use.</p>
+<p>Today I wrote a script to automate the backup of my development workspace onto a private bitbucket account. Bitbucket is good because it allows unlimited private repositories, but it caps the size of these repos at 2GB max, with some features disabled after 1GB. This means that I want to find out the size of my repo before automatically backing it up. This script does this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>#!/usr/bin/env fish
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>set size (du -sm . | awk &#39;{print $1}&#39;)
+</span></span><span style="display:flex;"><span>echo &#34;Workspace is $size MB&#34;
+</span></span><span style="display:flex;"><span>if math &#34;$size &gt; 1000&#34;
+</span></span><span style="display:flex;"><span>  echo &#34;Workspace too big to commit!&#34;
+</span></span><span style="display:flex;"><span>  exit
+</span></span><span style="display:flex;"><span>else
+</span></span><span style="display:flex;"><span>  echo &#34;Workspace is under 1GB, OK to commit&#34;
+</span></span><span style="display:flex;"><span>end
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m &#34;Automated backup&#34;
+</span></span><span style="display:flex;"><span>git push origin master
+</span></span></code></pre></div><p>Each individual directory additionally usually has its own git config which is synced to the separate repos for the code I&rsquo;m actually working on. But if my development machine is stolen or somehow destroyed, or I want to quickly replicate my environment on another machine with access to the original repos, then I can regenerate the associations between the different directories. It also makes me mindful of not committing images or other video assets.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>How to remove nano, vim and other editors&#39; backup files out of a directory tree</title>
-      <link>https://davidcraddock.net/2010/03/22/how-to-remove-nano-vim-and-other-editors-backup-files-out-of-a-directory-tree/</link>
+      <link>http://192.168.1.50:9796/2010/03/22/how-to-remove-nano-vim-and-other-editors-backup-files-out-of-a-directory-tree/</link>
       <pubDate>Mon, 22 Mar 2010 20:49:20 +0000</pubDate>
-      <guid>https://davidcraddock.net/2010/03/22/how-to-remove-nano-vim-and-other-editors-backup-files-out-of-a-directory-tree/</guid>
+      
+      <guid>http://192.168.1.50:9796/2010/03/22/how-to-remove-nano-vim-and-other-editors-backup-files-out-of-a-directory-tree/</guid>
       <description>Linux command-line editors such as nano and vim often, by default, create backup files with the prefix of &amp;ldquo;&amp;rdquo;. I.e, if I created a file called /home/david/myfile, then nano would create a backup in /home/david/myfile. Sometimes it doesn&amp;rsquo;t delete them either, so you&amp;rsquo;re left with a bunch of backup files all over the place, especially if you&amp;rsquo;re editing a lot on a directory tree full of source code.
 Those stray backup files make directory listings confusing, and also add unnecessary weight to the commits on source control systems such as svn, cvs, git.</description>
+      <content:encoded><![CDATA[<p>Linux command-line editors such as nano and vim often, by default, create backup files with the prefix of &ldquo;<del>&rdquo;. I.e, if I created a file called /home/david/myfile, then nano would create a backup in /home/david/myfile</del>. Sometimes it doesn&rsquo;t delete them either, so you&rsquo;re left with a bunch of backup files all over the place, especially if you&rsquo;re editing a lot on a directory tree full of source code.</p>
+<p>Those stray backup files make directory listings confusing, and also add unnecessary weight to the commits on source control systems such as svn, cvs, git.. etc. If you&rsquo;re working on a programming team with other people, then it causes further problems and confusion, because person A&rsquo;s editor can accidentally load person B&rsquo;s backup file.. etc etc. Nightmare.</p>
+<p>So instruct your editor, or the programming team you&rsquo;re working with, not to drop these backup files. You can configure most editors to change the place where the editor drops its backup files, so you could store all your backup files in a subdirectory of your home directory, for example, if needed. However I always set my editors not to leave backup files about.</p>
+<p>Once you know that new backup files will not be created, view the current list of backup files, along with the user that created them.. so you know who&rsquo;s been creating the backup files and when, etc:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>find . -name &#39;*~&#39; -type f -exec ls -al {}  ;
+</span></span></code></pre></div><p>Then archive the stray backup files, with this command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>find . -name &#39;*~&#39; -type f -exec mv -i {} ./archived-backups ;
+</span></span></code></pre></div><p>That will find all backup files in the current directory and below, and move them all to a subdirectory in the current directory called &lsquo;archived-backups&rsquo;. This is a fairly safe find/exec command, because with the -i switch, mv will not &lsquo;clobber&rsquo;. This means If you have two backup files, one in /opt/code/index~ and one in /opt/code/bla/bla/index~, they will not &lsquo;clobber&rsquo;, or overwrite each other automatically when moved into the new directory. You will be informed of any conflicts present so you can resolve them yourself.</p>
+<p>However in practice I usually omit the &lsquo;-i&rsquo; switch and let them clobber each other, because I usually end up deleting the ./archived-backups/ directory very quickly after that anyway.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

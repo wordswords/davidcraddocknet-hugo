@@ -2,19 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Outlook-2003 on DavidCraddock.net</title>
-    <link>https://davidcraddock.net/category/outlook-2003/</link>
+    <link>http://192.168.1.50:9796/category/outlook-2003/</link>
     <description>Recent content in Outlook-2003 on DavidCraddock.net</description>
-    <generator>Hugo -- 0.129.0</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 13 Jul 2011 16:34:39 +0000</lastBuildDate>
-    <atom:link href="https://davidcraddock.net/category/outlook-2003/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Jul 2011 16:34:39 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/category/outlook-2003/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Disabling Control-Enter and Control-B shortcut keys in Outlook 2003</title>
-      <link>https://davidcraddock.net/2011/07/13/disabling-control-enter-and-control-b-shortcut-keys-in-outlook-2003/</link>
+      <link>http://192.168.1.50:9796/2011/07/13/disabling-control-enter-and-control-b-shortcut-keys-in-outlook-2003/</link>
       <pubDate>Wed, 13 Jul 2011 16:34:39 +0000</pubDate>
-      <guid>https://davidcraddock.net/2011/07/13/disabling-control-enter-and-control-b-shortcut-keys-in-outlook-2003/</guid>
+      
+      <guid>http://192.168.1.50:9796/2011/07/13/disabling-control-enter-and-control-b-shortcut-keys-in-outlook-2003/</guid>
       <description>At work, I still have to use Windows XP and Outlook 2003. I don&amp;rsquo;t particually mind this, except when I draft an email to someone and accidently I press Control-B instead of Control-V. Control-B will go ahead and send your partially composed email, resulting in some embarassment as you have to tell everyone to disregard it.
 So I wanted to remove the &amp;lsquo;send email&amp;rsquo; shortcut keys in Outlook 2003. There are two ways of doing this, one involves editing your group policy, which is something only my IT administration team can do, and I didn&amp;rsquo;t want to have to involve them.</description>
+      <content:encoded><![CDATA[<p>At work, I still have to use Windows XP and Outlook 2003. I don&rsquo;t particually mind this, except when I draft an email to someone and accidently I press Control-B instead of Control-V. Control-B will go ahead and send your partially composed email, resulting in some embarassment as you have to tell everyone to disregard it.</p>
+<p>So I wanted to remove the &lsquo;send email&rsquo; shortcut keys in Outlook 2003. There are two ways of doing this, one involves editing your group policy, which is something only my IT administration team can do, and I didn&rsquo;t want to have to involve them. The other way is by making a change to your registry, which I will describe here.</p>
+<ol>
+<li>
+<p>Open up regedit, and browse to the following registry key: HKEY_CURRENT_USER -&gt; Software -&gt; Policies -&gt; Microsoft -&gt; office -&gt; 11.0 -&gt; outlook</p>
+</li>
+<li>
+<p>Then create a new key called: &ldquo;DisabledShortcutKeysCheckBoxes&rdquo;.</p>
+</li>
+<li>
+<p>Under that key, create two new String Values:
+Name: CtrlB Data: 66,8
+Name: CtrlEnter Data: 13,8</p>
+</li>
+<li>
+<p>Then restart Outlook and those keys will be disabled.</p>
+</li>
+</ol>
+<p>Click on the thumbnail below to see what the finished edit should look like:</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

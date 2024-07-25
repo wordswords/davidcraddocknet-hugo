@@ -2,19 +2,121 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Screen-Scrape on DavidCraddock.net</title>
-    <link>https://davidcraddock.net/tag/screen-scrape/</link>
+    <link>http://192.168.1.50:9796/tag/screen-scrape/</link>
     <description>Recent content in Screen-Scrape on DavidCraddock.net</description>
-    <generator>Hugo -- 0.129.0</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 07 Sep 2011 18:35:17 +0000</lastBuildDate>
-    <atom:link href="https://davidcraddock.net/tag/screen-scrape/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Sep 2011 18:35:17 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/tag/screen-scrape/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JSoup Method for Page Scraping</title>
-      <link>https://davidcraddock.net/2011/09/07/jsoup-method-for-page-scraping/</link>
+      <link>http://192.168.1.50:9796/2011/09/07/jsoup-method-for-page-scraping/</link>
       <pubDate>Wed, 07 Sep 2011 18:35:17 +0000</pubDate>
-      <guid>https://davidcraddock.net/2011/09/07/jsoup-method-for-page-scraping/</guid>
+      
+      <guid>http://192.168.1.50:9796/2011/09/07/jsoup-method-for-page-scraping/</guid>
       <description>I&amp;rsquo;m currently in the process of writing a web scraper for the forums on Gaia Online. Previously, I used to use Python to develop web scrapers, with the very handy Python library BeautifulSoup. Java has an equivalent called JSoup.
 Here I have written a class which is extended by each class in my project that wants to scrape HTML. This &amp;lsquo;Scraper&amp;rsquo; class deals with the fetching of the HTML and converting it into a JSoup tree to be navigated and have the data picked out of.</description>
+      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2011/09/soup.jpg"><img loading="lazy" src="/wp-content/uploads/2011/09/soup.jpg" type="" alt="Soup bowl"  /></a></p>
+<p>I&rsquo;m currently in the process of writing a web scraper for the forums on <a href="http://www.gaiaonline.com/forum" title="Gaia Online">Gaia Online</a>. Previously, I used to use Python to develop web scrapers, with the very handy Python library <a href="http://www.crummy.com/software/BeautifulSoup/" title="BeautifulSoup">BeautifulSoup</a>. Java has an equivalent called JSoup.</p>
+<p>Here I have written a class which is extended by each class in my project that wants to scrape HTML. This &lsquo;Scraper&rsquo; class deals with the fetching of the HTML and converting it into a JSoup tree to be navigated and have the data picked out of. It advertises itself as a &lsquo;web spider&rsquo; type of web agent and also adds a 0-7 second random wait before fetching the page to make sure it isn&rsquo;t used to overload a web server. It also converts the entire page to ASCII, which may not be the best thing to do for multi-language web pages, but certainly has made the scraping of the English language site Gaia Online much easier.</p>
+<p>Here it is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>import java.io.IOException;
+</span></span><span style="display:flex;"><span>import java.io.InputStream;
+</span></span><span style="display:flex;"><span>import java.io.StringWriter;
+</span></span><span style="display:flex;"><span>import java.text.Normalizer;
+</span></span><span style="display:flex;"><span>import java.util.Random;
+</span></span><span style="display:flex;"><span>import org.apache.commons.io.IOUtils;
+</span></span><span style="display:flex;"><span>import org.apache.http.HttpEntity;
+</span></span><span style="display:flex;"><span>import org.apache.http.HttpResponse;
+</span></span><span style="display:flex;"><span>import org.apache.http.client.HttpClient;
+</span></span><span style="display:flex;"><span>import org.apache.http.client.methods.HttpGet;
+</span></span><span style="display:flex;"><span>import org.apache.http.impl.client.DefaultHttpClient;
+</span></span><span style="display:flex;"><span>import org.jsoup.Jsoup;
+</span></span><span style="display:flex;"><span>import org.jsoup.nodes.Document;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>/**
+</span></span><span style="display:flex;"><span>* Generic scraper object that contains the basic methods required to fetch
+</span></span><span style="display:flex;"><span>* and parse HTML content. Extended by other classes that need to scrape.
+</span></span><span style="display:flex;"><span>*
+</span></span><span style="display:flex;"><span>* @author David
+</span></span><span style="display:flex;"><span>*/
+</span></span><span style="display:flex;"><span>public class Scraper {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        public String pageHTML = &#34;&#34;; // the HTML for the page
+</span></span><span style="display:flex;"><span>        public Document pageSoup; // the JSoup scraped hierachy for the page
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        public String fetchPageHTML(String URL) throws IOException{
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            // this makes sure we don&#39;t scrape the same page twice
+</span></span><span style="display:flex;"><span>            if(this.pageHTML != &#34;&#34;){
+</span></span><span style="display:flex;"><span>                return this.pageHTML;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            System.getProperties().setProperty(&#34;httpclient.useragent&#34;, &#34;spider&#34;);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            Random randomGenerator = new Random();
+</span></span><span style="display:flex;"><span>            int sleepTime = randomGenerator.nextInt(7000);
+</span></span><span style="display:flex;"><span>            try{
+</span></span><span style="display:flex;"><span>                Thread.sleep(sleepTime); //sleep for x milliseconds
+</span></span><span style="display:flex;"><span>            }catch(Exception e){
+</span></span><span style="display:flex;"><span>                // only fires if topic is interruped by another process, should never happen
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            String pageHTML = &#34;&#34;;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            HttpClient httpclient = new DefaultHttpClient();
+</span></span><span style="display:flex;"><span>            HttpGet httpget = new HttpGet(URL);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                HttpResponse response = httpclient.execute(httpget);
+</span></span><span style="display:flex;"><span>                HttpEntity entity = response.getEntity();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                if (entity != null) {
+</span></span><span style="display:flex;"><span>                    InputStream instream = entity.getContent();
+</span></span><span style="display:flex;"><span>                    String encoding = &#34;UTF-8&#34;;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    StringWriter writer = new StringWriter();
+</span></span><span style="display:flex;"><span>                    IOUtils.copy(instream, writer, encoding);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    pageHTML = writer.toString();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    // convert entire page scrape to ASCII-safe string
+</span></span><span style="display:flex;"><span>                    pageHTML = Normalizer.normalize(pageHTML, Normalizer.Form.NFD).replaceAll(&#34;[^\p{ASCII}]&#34;, &#34;&#34;);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                return pageHTML;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        public Document fetchPageSoup(String pageHTML) throws FetchSoupException{
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            // this makes sure we don&#39;t soupify the same page twice
+</span></span><span style="display:flex;"><span>            if(this.pageSoup != null){
+</span></span><span style="display:flex;"><span>                return this.pageSoup;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            if(pageHTML.equalsIgnoreCase(&#34;&#34;)){
+</span></span><span style="display:flex;"><span>                throw new FetchSoupException(&#34;We have no supplied HTML to soupify.&#34;);
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            Document pageSoup = Jsoup.parse(pageHTML);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            return pageSoup;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Then each class subclasses this scraper class, and adds the actual drilling down through the JSoup hierachy tree to get what is required:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>this.pageHTML = this.fetchPageHTML(this.rootURL);
+</span></span><span style="display:flex;"><span>this.pageSoup = this.fetchPageSoup(this.pageHTML);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// get the first
+</span></span><span style="display:flex;"><span>.. section on the page
+</span></span><span style="display:flex;"><span>Element forumPageLinkSection = this.pageSoup.getElementsByAttributeValue(&#34;id&#34;,&#34;forum_hd_topic_pagelinks&#34;).first();
+</span></span><span style="display:flex;"><span>// get all the links in the above
+</span></span><span style="display:flex;"><span> section
+</span></span><span style="display:flex;"><span>Elements forumPageLinks = forumPageLinkSection.getElementsByAttribute(&#34;href&#34;);
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><p>I&rsquo;ve found that this method provides a simple and effective way of scraping pages and using the resultant JSoup tree to pick out important data.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

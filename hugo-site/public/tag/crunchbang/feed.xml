@@ -2,19 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Crunchbang on DavidCraddock.net</title>
-    <link>https://davidcraddock.net/tag/crunchbang/</link>
+    <link>http://192.168.1.50:9796/tag/crunchbang/</link>
     <description>Recent content in Crunchbang on DavidCraddock.net</description>
-    <generator>Hugo -- 0.129.0</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Jun 2013 03:43:49 +0000</lastBuildDate>
-    <atom:link href="https://davidcraddock.net/tag/crunchbang/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Jun 2013 03:43:49 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/tag/crunchbang/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Subversion 1.7 on Crunchbang Waldorf</title>
-      <link>https://davidcraddock.net/2013/06/16/subversion-1-7-on-crunchbang-waldorf/</link>
+      <link>http://192.168.1.50:9796/2013/06/16/subversion-1-7-on-crunchbang-waldorf/</link>
       <pubDate>Sun, 16 Jun 2013 03:43:49 +0000</pubDate>
-      <guid>https://davidcraddock.net/2013/06/16/subversion-1-7-on-crunchbang-waldorf/</guid>
+      
+      <guid>http://192.168.1.50:9796/2013/06/16/subversion-1-7-on-crunchbang-waldorf/</guid>
       <description>I use the excellent http://www.smartsvn.com/ client from WANdisco. WANdisco have been releasing new open-source versions of SVN to the public with new improved reliability, and the client uses one of these versions, 1.7, to offer better performance.
 Unfortunately if you choose to upgrade your entire repository to 1.7, this breaks compatibility with the default commandline SVN client on Waldorf which I like to use as well as Smart SVN, for quick &amp;lsquo;svn up&amp;rsquo;s and other commandline magic.</description>
+      <content:encoded><![CDATA[<p>I use the excellent <a href="http://www.smartsvn.com/" title="Smart SVN">http://www.smartsvn.com/</a> client from WANdisco. WANdisco have been releasing new open-source versions of SVN to the public with new improved reliability, and the client uses one of these versions, 1.7, to offer better performance.</p>
+<p>Unfortunately if you choose to upgrade your entire repository to 1.7, this breaks compatibility with the default commandline SVN client on Waldorf which I like to use as well as Smart SVN, for quick &lsquo;svn up&rsquo;s and other commandline magic.</p>
+<p>This means I have to download the latest commandline SVN client, the 1.7 version of subversion for Linux, available for free on the WANdisco site.</p>
+<p>Unfortunately, you can&rsquo;t install this version on the version of Debian that Crunchbang Waldorf is based on. There are broken dependencies on an old version of libsvn1, which is a requirement for another package that is part of the Debian base install.</p>
+<p>Eventually I found this really helpful page, the instructions which will work 100% on Waldorf:</p>
+<p><a href="http://ymartin59.free.fr/wordpress/index.php/2012/11/25/how-to-install-subversion-1-7-from-wandisco-repository-on-debian-wheezy/" title="http://ymartin59.free.fr/wordpress/index.php/2012/11/25/how-to-install-subversion-1-7-from-wandisco-repository-on-debian-wheezy/">http://ymartin59.free.fr/wordpress/index.php/2012/11/25/how-to-install-subversion-1-7-from-wandisco-repository-on-debian-wheezy/</a></p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

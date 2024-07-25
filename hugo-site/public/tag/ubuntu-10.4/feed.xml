@@ -2,19 +2,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ubuntu-10.4 on DavidCraddock.net</title>
-    <link>https://davidcraddock.net/tag/ubuntu-10.4/</link>
+    <link>http://192.168.1.50:9796/tag/ubuntu-10.4/</link>
     <description>Recent content in Ubuntu-10.4 on DavidCraddock.net</description>
-    <generator>Hugo -- 0.129.0</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Jul 2010 13:02:51 +0000</lastBuildDate>
-    <atom:link href="https://davidcraddock.net/tag/ubuntu-10.4/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Jul 2010 13:02:51 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/tag/ubuntu-10.4/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Restoring Ubuntu 10.4&#39;s Bootloader, after a Windows 7 Install</title>
-      <link>https://davidcraddock.net/2010/07/13/restoring-ubuntu-10-4s-bootloader-after-a-windows-7-install/</link>
+      <link>http://192.168.1.50:9796/2010/07/13/restoring-ubuntu-10-4s-bootloader-after-a-windows-7-install/</link>
       <pubDate>Tue, 13 Jul 2010 13:02:51 +0000</pubDate>
-      <guid>https://davidcraddock.net/2010/07/13/restoring-ubuntu-10-4s-bootloader-after-a-windows-7-install/</guid>
+      
+      <guid>http://192.168.1.50:9796/2010/07/13/restoring-ubuntu-10-4s-bootloader-after-a-windows-7-install/</guid>
       <description>I installed Windows 7 after I had installed Ubuntu 10.4. Windows 7 overwrote the Linux bootloader &amp;ldquo;grub&amp;rdquo; on my master boot record. Therefore I had to restore it.
 I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under the LiveCD, I then restored the Grub bootloader by chrooting into my old install, using the linux command line. This is a fairly complex thing to do, and so I recommend you use this approach only if you&amp;rsquo;re are confident with the linux command line:</description>
+      <content:encoded><![CDATA[<p>I installed Windows 7 after I had installed Ubuntu 10.4. Windows 7 overwrote the Linux bootloader &ldquo;grub&rdquo; on my master boot record. Therefore I had to restore it.</p>
+<p>I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under the LiveCD, I then restored the Grub bootloader by chrooting into my old install, using the linux command line. This is a fairly complex thing to do, and so I recommend you use this approach only if you&rsquo;re are confident with the linux command line:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#75715e"># (as root under Ubuntu&#39;s LiveCD)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># prepare chroot directory</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mkdir <span style="color:#f92672">/</span>chroot
+</span></span><span style="display:flex;"><span>d<span style="color:#f92672">=/</span>chroot
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># mount my linux partition</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mount <span style="color:#f92672">/</span>dev<span style="color:#f92672">/</span>sda1 <span style="color:#f92672">$</span>d   <span style="color:#75715e"># my linux partition was installed on my first SATA hard disk, on the first parition (hence sdA1).</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># mount system directories inside the new chroot directory</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mount <span style="color:#f92672">-</span>o bind <span style="color:#f92672">/</span>dev <span style="color:#f92672">$</span>d<span style="color:#f92672">/</span>dev
+</span></span><span style="display:flex;"><span>mount <span style="color:#f92672">-</span>o bind <span style="color:#f92672">/</span>sys <span style="color:#f92672">$</span>d<span style="color:#f92672">/</span>sys
+</span></span><span style="display:flex;"><span>mount <span style="color:#f92672">-</span>o bind <span style="color:#f92672">/</span>dev<span style="color:#f92672">/</span>shm <span style="color:#f92672">$</span>d<span style="color:#f92672">/</span>dev<span style="color:#f92672">/</span>shm
+</span></span><span style="display:flex;"><span>mount <span style="color:#f92672">-</span>o bind <span style="color:#f92672">/</span>proc <span style="color:#f92672">$</span>d<span style="color:#f92672">/</span>proc
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># accomplish the chroot</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>chroot <span style="color:#f92672">$</span>d
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># proceed to update the grub config file to include the option to boot into my new windows 7 install</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>update<span style="color:#f92672">-</span>grub
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># install grub with the new configuration options from the config file, to the master boot record on my first hard disk</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>grub<span style="color:#f92672">-</span>install <span style="color:#f92672">/</span>dev<span style="color:#f92672">/</span>sda
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># close down the liveCD instance of linux, and boot from the newly restored grub bootloader</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>reboot
+</span></span></code></pre></div>]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

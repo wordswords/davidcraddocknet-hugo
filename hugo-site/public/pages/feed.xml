@@ -2,84 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Pages on DavidCraddock.net</title>
-    <link>https://davidcraddock.net/pages/</link>
+    <link>http://192.168.1.50:9796/pages/</link>
     <description>Recent content in Pages on DavidCraddock.net</description>
-    <generator>Hugo -- 0.129.0</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 09 Jun 2024 22:34:52 +0000</lastBuildDate>
-    <atom:link href="https://davidcraddock.net/pages/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>My Bike</title>
-      <link>https://davidcraddock.net/my-bike/</link>
-      <pubDate>Sun, 09 Jun 2024 22:34:52 +0000</pubDate>
-      <guid>https://davidcraddock.net/my-bike/</guid>
-      <description> Decided not to mention the security aspects of my setup on a public page, but trust me, there are many!
-Himiway Zebra Electric Mountainbike 2024 Version Spare official battery and battery charger Two spare tires Spare inner tube Electric fat tire pump Metal tire levers Small first aid kit Compass Himiway fold-out cycle toolkit Energy bars + nuts 2x cycle frame bags Himiway official cargo bag with foldout panniers 2x Rockbros waterproof pannier bags Rockbros Handlebar bag RAM quick release handlebar mount for mobile phone Electric bike horn Bike bell Himiway cycle helmet with front light 4x vaccum thermos 750ml flasks for water All-weather MTB grips for handlebar Fingerless MTB gloves for warmer weather Electric heated motorbike/cycle gloves for colder weather Wraparound anti-glare sun glasses for protection against surface dirt etc Light backpack suitable for cycling </description>
-    </item>
-    <item>
-      <title>My Mobile Laptop Setup</title>
-      <link>https://davidcraddock.net/my-mobile-laptop-setup/</link>
-      <pubDate>Sun, 04 Feb 2024 02:48:13 +0000</pubDate>
-      <guid>https://davidcraddock.net/my-mobile-laptop-setup/</guid>
-      <description>I use this setup to work from co-working spaces such as libraries and cafes.
-I combine working in co-working spaces with getting out of the house and exercising, so I have a setup I can walk long distances with.
-It does kind of turn heads, and I&amp;rsquo;m aware it may look a little &amp;lsquo;over the top&amp;rsquo; - but it&amp;rsquo;s a very useful setup for me, keeps me healthy, and fits all my requirements.</description>
-    </item>
-    <item>
-      <title>My Homelab</title>
-      <link>https://davidcraddock.net/my-home-network/</link>
-      <pubDate>Sun, 17 Dec 2023 02:13:39 +0000</pubDate>
-      <guid>https://davidcraddock.net/my-home-network/</guid>
-      <description>My home network routes at around 2-4gbit/sec between 10gbit/sec DAC fibre connected hosts, and around 2gbit/sec via CAT8 for Thunderbolt 2.5Ggbit/sec laptop network interfaces. We two Ubiquiti wireless APs in a mesh configuration, with seperate SSIDs for 2Ghz, 5Ghz, guest and IOT networks. The guest and IOT networks are isolated from everything else. I use a Mikrotik router which hosts an iperf3 docker container for network testing I have a home server running Ubuntu Linux that hosts a bunch of services via docker containers, including Pi-Hole for DNS and a Ubiquiti Network Controller.</description>
-    </item>
-    <item>
-      <title>My Media and Gaming Setup</title>
-      <link>https://davidcraddock.net/my-gaming-setup/</link>
-      <pubDate>Mon, 26 Jun 2023 19:52:05 +0000</pubDate>
-      <guid>https://davidcraddock.net/my-gaming-setup/</guid>
-      <description>[youtube https://www.youtube.com/watch?v=w-QOfONKTWs?si=oJ2ojPGFUt02r4UJ&amp;amp;w=560&amp;amp;h=315] Media PC I use this mainly as a general purpose PC, and for streaming on Twitch. I also use it for video editing, adding animations, animated gifs, anything visual etc and audio editing for processing mixcloud uploads. I also use it to rip Blu-rays for my Plex server, and to watch movies and listen to music on as it has my studio EQ calibrated Sonorworks SoundID Reference profiles.</description>
-    </item>
-    <item>
-      <title>My Work Computer</title>
-      <link>https://davidcraddock.net/my-work-computer/</link>
-      <pubDate>Fri, 16 Dec 2022 23:06:40 +0000</pubDate>
-      <guid>https://davidcraddock.net/my-work-computer/</guid>
-      <description>This is my work from home setup. I work from home every work day. I use the following equipment:
-HDMI, network cables and and USB hookups for 2 additional laptops if needed HDMI Switcher USB Switcher IKEA Motorized Standing Desk Benq 32&amp;quot; 2560x1440 graphic designers monitor on Amazon Basics extendable desk mount arm Pro-Ject Record Player Honeywell desk fan Logitech 5.1 surround sound system with 5 speakers and subwoofer Sony WH-1000XM3 Apt-X HD Noise cancelling headphones with an Avantree Oasis Plus Apt-X HD bluetooth transmitter, so I can listen to any of the music devices on noise cancelling headphones Ergonomic book stand for textbooks ThinkStation Xeon workstation/server running the latest Ubuntu Fibreoptic 10Gb/sec DAC cable routed from my ThinkStation server to my personal computer downstairs for fast data transfer 1GB/sec ethernet cable and gigabit switch running downstairs for general internet KVM switch and full hookup for work laptop Drinks holder Groot from Guardians of the Galaxy Phone holder Johnny Silverhand Plushie from Cyberpunk 2077 Pomodoro timer Standing desk mat for easing long standing experiences XL rocker style wooden balance board XL 360 style wooden balance board Fast Anker USB charger Logi USB headset with noise cancelling microphone Kinesis Freestyle 2 ergonomic keyboard Anker vertical mouse Apple Magic Pad 2 that I&amp;rsquo;ve made work with Ubuntu - I use this in preference to the vertical mouse as I&amp;rsquo;ve found it much more comfortable in most cases.</description>
-    </item>
-    <item>
-      <title>Tutoring</title>
-      <link>https://davidcraddock.net/tutoring/</link>
-      <pubDate>Mon, 12 Oct 2020 22:42:40 +0000</pubDate>
-      <guid>https://davidcraddock.net/tutoring/</guid>
-      <description>Please see my David Craddock - Tutor website for more details of tutoring options I can offer.</description>
-    </item>
-    <item>
-      <title>Contact</title>
-      <link>https://davidcraddock.net/contact/</link>
-      <pubDate>Sun, 29 Jan 2017 17:33:01 +0000</pubDate>
-      <guid>https://davidcraddock.net/contact/</guid>
-      <description>[contact-form][contact-field label=&amp;ldquo;Name&amp;rdquo; type=&amp;ldquo;name&amp;rdquo; required=&amp;ldquo;1&amp;rdquo;/][contact-field label=&amp;ldquo;Email&amp;rdquo; type=&amp;ldquo;email&amp;rdquo; required=&amp;ldquo;1&amp;rdquo;/][contact-field label=&amp;ldquo;Website&amp;rdquo; type=&amp;ldquo;url&amp;rdquo;/][contact-field label=&amp;ldquo;Comment&amp;rdquo; type=&amp;ldquo;textarea&amp;rdquo; required=&amp;ldquo;1&amp;rdquo;/][/contact-form]</description>
-    </item>
-    <item>
-      <title>Music</title>
-      <link>https://davidcraddock.net/music/</link>
-      <pubDate>Sun, 21 Jun 2015 16:46:15 +0000</pubDate>
-      <guid>https://davidcraddock.net/music/</guid>
-      <description>I create music and DJ in my free time. I have various music projects on the go at any one time.
-My &amp;lsquo;Socialist Synthesis&amp;rsquo; project is an experimental/electronica/ambient/soundscape project:
-Summer Sun Highway by Socialist Synthesis
-Sound Escapes by Socialist Synthesis
-I have released an EP under the &amp;lsquo;Machines Move Mountains&amp;rsquo; project with Ellis Breen. It is experimental/electronica/downtempo:
-Unfinished Dreams by Machines Move Mountains
-I have released some music under the &amp;lsquo;Concrete Spectre&amp;rsquo; project.</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://davidcraddock.net/about-2/</link>
-      <pubDate>Mon, 02 Apr 2007 18:16:45 +0000</pubDate>
-      <guid>https://davidcraddock.net/about-2/</guid>
-      <description>Hello! I&amp;rsquo;m David Craddock, I live in Manchester, and have worked in IT for the past 15 years, currently as a Senior Software Engineer.</description>
-    </item>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="http://192.168.1.50:9796/pages/feed.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,18 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Streamlabs-Obs on DavidCraddock.net</title>
-    <link>https://davidcraddock.net/tag/streamlabs-obs/</link>
+    <link>http://192.168.1.50:9796/tag/streamlabs-obs/</link>
     <description>Recent content in Streamlabs-Obs on DavidCraddock.net</description>
-    <generator>Hugo -- 0.129.0</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 14 Feb 2021 23:57:54 +0000</lastBuildDate>
-    <atom:link href="https://davidcraddock.net/tag/streamlabs-obs/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Feb 2021 23:57:54 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/tag/streamlabs-obs/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Twitch Streaming Technical Setup</title>
-      <link>https://davidcraddock.net/2021/02/14/twitch-dj-streaming-technical-setup/</link>
+      <link>http://192.168.1.50:9796/2021/02/14/twitch-dj-streaming-technical-setup/</link>
       <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
-      <guid>https://davidcraddock.net/2021/02/14/twitch-dj-streaming-technical-setup/</guid>
+      
+      <guid>http://192.168.1.50:9796/2021/02/14/twitch-dj-streaming-technical-setup/</guid>
       <description>I thought I’d write a bit here about my Twitch DJing setup and some of the hardware and software I’m using. Twitch streaming has become very popular over the lockdown period, and I think people might be interested in how I have configured my stream. Something that seperates my stream from anyone else I&amp;rsquo;ve seen on Twitch is that is that I do live vinyl DJing AND live VJing at the same time on my stream.</description>
+      <content:encoded><![CDATA[<ul>
+<li><img loading="lazy" src="/wp-content/uploads/2021/02/setupthree.jpg" type="" alt=""  /></li>
+<li><img loading="lazy" src="/wp-content/uploads/2021/02/setuptwo.jpg" type="" alt=""  /></li>
+<li><img loading="lazy" src="/wp-content/uploads/2021/02/setupone.jpg" type="" alt=""  /></li>
+</ul>
+<p>I thought I’d write a bit here about my Twitch DJing setup and some of the hardware and software I’m using. Twitch streaming has become very popular over the lockdown period, and I think people might be interested in how I have configured my stream. Something that seperates my stream from anyone else I&rsquo;ve seen on Twitch is that is that I do live vinyl DJing AND live VJing at the same time on my stream. This is how I achieve it.</p>
+<p><strong>Broadcast PC</strong></p>
+<p>This is my main desktop PC that I use for personal use as well as streaming. It has a Nvidia 1080 graphics card which is very useful with Resolume Avenue, the VJing software I use. I have one main big monitor and one smaller second monitor which I have attached to a long HDMI cable and placed next to my DJing desk along with a second mouse and keyboard which goes into a USB 3.0 hub and a long USB 3.0 extension cable. When I go to DJ I set the Windows graphical settings to duplicate my screen on both screens, so I can control the broadcast computer from where I am standing next to my DJ equipment. I have a Behringer UMC1820 sound interface which has 8 balanced phono inputs. Inputs 5&amp;6 are permanently connected to my DJ mixer, and I use Input 1 for my microphone.</p>
+<p><strong>Broadcasting Software</strong></p>
+<p>I use Streamlabs OBS on my broadcast PC. I did initially subscribe so they let me download one of their custom themes, which I have heavily edited but still remains integral to my setup. For some reason even though my subscription has lapsed that has not made any difference to whether I can continue using this theme and the app, although it has turned my follow/subscription/bit notifications back to the plain old free ones. I prefer it over free OBS for three features at least.</p>
+<p>Firstly, the studio mode – I am not sure if OBS free has this (maybe it does?) but it is useful when fixing things live to have two scenes active, one which is being broadcast and one which is only visible to me. Secondly, the way you can order the layers on the scene, this is very intuitive to me and was more intuitive than the layering (front to back) on OBS free. Thirdly, the remote control element.. I have a remote control app for my Android tablet and phone which allows me to quickly cycle through scenes – no need to shell out for fancy scene controllers.</p>
+<p>I use the free NDI tools for NDI streams to Streamlabs OBS for the external video elements on my screen – one from Resolume Avenue on my broadcast PC and the second from my Macbook Pro which is running Serato Video. I also use streamelements and Moobot to enable kappagen effects, and to moderate the chat and provide information to chatters.</p>
+<p><strong>Cameras</strong></p>
+<p>2x Logitech C920 web cams on tripods. I bought them because I saw them used at the BBC where I used to work. I think if I had more USB3 ports on my computer the bandwidth for these cameras would be increased and the resolution would be wider, but as they are, they are really solid. I’ve only had occasional problems with the auto-focus when there is a lot of lighting strobing going on.</p>
+<p><strong>DJing Equipment</strong></p>
+<p>I have a pair of Reloop 8000mk2 turntables with a Pioneer DJM-S3 Serato mixer. Both integrate really well with Serato and offer additional performance features. I use Serato on my aging Macbook Pro 2015 and have actually got it to reliably output Serato Video using NDI capture tool and send it over the network to my broadcasting computer without the fan having to spin up. I only use Serato on my Macbook because I don’t want to burden it – it is doing enough as it is! I have a 2TB external HD where I put all my digital music files and have it mounted as a network share so I can transfer files over the network from my main PC. I use Mixed in Key to add Serato cue points to music I use, and the free MusicBrainz Picard to correctly tag files and organise my music collection.</p>
+<p><strong>Lighting</strong></p>
+<p>I use Phillips Hue lightsources and the hyeDynamic Windows 10 app. It connects to the Hue hub strobes the lights in time with an audio input. I have a Hue Lightstrip and 4x Hue Colour bulbs and they all sync together. I also have a small laser unit that syncs in time with the beat and is useful as added background lighting.</p>
+<p><strong>VJing</strong></p>
+<p>I use Resolume Avenue with a number of clips I have commercially bought. I have it running mostly in autopilot mode with all the clips synced to the beat. The beat is provided by a free app called ‘AudioBoxBaby’ which I am really looking to replace, but there is simply nothing else out there on the market. It detects the approximate BPM of any audio coming in on my sound interface from my DJ mixer, and translates it into a single repeating midi note. This midi note I have mapped to the tap tempo button in Resolume so it is like a human tapping the tempo along with the music in theory. Serato DJ Pro supports Ableton Link, and so does Resolume Avenue, but I have found that syncing via Ableton Link to be very problematic when using Serato, and of course it doesn’t work when not using Serato, for example with all vinyl sets.</p>
+<p>I also have a Novation Zero SL controller which I have had for over 10 years and still works perfectly, so I really recommend it! It is attached via a USB extension cable to my broadcasting PC and I use it to control some basic VJing effects that I put over the audiopilot clips to create buildups and visual changes in time with the music. It has 8 sliders and I move them in time with the beat or to create buildups/variations etc.</p>
+<p><strong>Microphone/Voice</strong></p>
+<p>I have a Rode Procaster mic with a Rode microphone boom, shock cage and pop shield, which is attached to my audio interface for my broadcasting PC with a long cable. I have it wired so that when I press a piano sustain pedal on the floor under my microphone, vocal ducking happens – e.g. the music fades down slightly and the microphone volume fades up so you can hear me talking over the music. In order to accomplish that I use two commercial apps, the first called ‘Auto-Duck in Real Time’ which allows me to configure the vocal ducking linked to a keyboard keypress, and ‘Bome’s MIDI Translator Classic’ which when the MIDI signal that is generated when I press the sustain pedal connected to my Novation Zero SL controller, the MIDI translator converts it into a keypress that is picked up by the ‘Auto-Duck in Real Time’ app to trigger vocal ducking.  I have it configured so while I am holding down the sustain pedal, it ducks the music playing and when I release it, the music goes back to normal.</p>
+<p><strong>Internet Connection</strong></p>
+<p>I have a fast Virgin Media internet connection with 30mbits/second upload. I think my Twitch stream and everything else in my home requires about 5mbits/sec upload! I also have a backup internet fibre DSL connection that thankfully I have never had to use when I’m streaming, but it also has around 15mbits/second upload and I should be able to switch between both relatively quickly if I needed to.</p>
+<p>Phew! That’s all! :) I realise it is technically involved compared to a lot of peoples setups, but I have always been really interested in the technical side and have been lucky enough to be able to create exactly the setup that I really wanted for my stream. If you&rsquo;re interested in checking it out, my regular stream is from 4PM UK time/UTC every Sunday and I play for at least 4 hours. Follow me on Twitch at: <a href="http://twitch.tv/djdavidcraddock">http://twitch.tv/djdavidcraddock</a></p>
+<blockquote>
+<p>Struggling with the technical side? If you are interested in hiring me to help develop your own streaming setup, I have worked before in this capacity and can supply excellent references. The work can be done online, as with your permission I can remote control your computer and configure things. Please <a href="/contact/">send me a message if you are interested via the contact form</a> on this website.</p>
+</blockquote>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

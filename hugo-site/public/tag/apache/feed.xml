@@ -2,18 +2,85 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Apache on DavidCraddock.net</title>
-    <link>https://davidcraddock.net/tag/apache/</link>
+    <link>http://192.168.1.50:9796/tag/apache/</link>
     <description>Recent content in Apache on DavidCraddock.net</description>
-    <generator>Hugo -- 0.129.0</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 30 Mar 2009 22:45:50 +0000</lastBuildDate>
-    <atom:link href="https://davidcraddock.net/tag/apache/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Mar 2009 22:45:50 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/tag/apache/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VirutalHosts on CentOS</title>
-      <link>https://davidcraddock.net/2009/03/30/virutalhosts-on-centos/</link>
+      <link>http://192.168.1.50:9796/2009/03/30/virutalhosts-on-centos/</link>
       <pubDate>Mon, 30 Mar 2009 22:45:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/2009/03/30/virutalhosts-on-centos/</guid>
+      
+      <guid>http://192.168.1.50:9796/2009/03/30/virutalhosts-on-centos/</guid>
       <description>A common task when setting up an Apache webserver under Linux, is writing a httpd.conf file. The httpd.conf file is the main configuration file for Apache. One of the main reasons to edit the httpd.conf file is to setup virtual hosts In Apache. A Virtual host configuration allows several different domains to be run off a single instance of Apache, on a single IP. Each host is a &amp;lsquo;Virtual host&amp;rsquo;, and typically has a different web root, log file, and any number of subdomains aliased to it.</description>
+      <content:encoded><![CDATA[<p>A common task when setting up an <a href="http://en.wikipedia.org/wiki/Apache_HTTP_Server">Apache</a> webserver under Linux, is writing a httpd.conf file. The httpd.conf file is the main configuration file for Apache. One of the main reasons to edit the httpd.conf file is to setup virtual hosts In Apache. A Virtual host configuration allows several different domains to be run off a single instance of Apache, on a single IP. Each host is a &lsquo;Virtual host&rsquo;, and typically has a different web root, log file, and any number of subdomains aliased to it. The virtualhosts are configured in parts of the httpd.conf file that look like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    ServerName myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ServerAlias www<span style="color:#f92672">.</span>myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ServerAdmin me<span style="color:#960050;background-color:#1e0010">@</span>myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    DocumentRoot <span style="color:#f92672">/</span><span style="color:#66d9ef">var</span><span style="color:#f92672">/</span>www<span style="color:#f92672">/</span>html<span style="color:#f92672">/</span>myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ErrorLog logs<span style="color:#f92672">/</span>myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk<span style="color:#f92672">-</span>error_log
+</span></span><span style="display:flex;"><span>    CustomLog logs<span style="color:#f92672">/</span>myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk<span style="color:#f92672">-</span>access_log common
+</span></span></code></pre></div><p>Now on <a href="http://en.wikipedia.org/wiki/Ubuntu_server">Ubuntu</a>, virutalhosts are made easy. The httpd.conf is split into several files. Each virutalhost has a different file in <code>/etc/apache2/sites-available</code>. When you want to activate a particular vitualhost, you create a symbolic link from <code>/etc/apache2/sites-enabled/mysite</code> to <code>/etc/apache2/sites-available/mysite</code> (if you wanted to call your site configuration file &lsquo;mysite&rsquo;). When apache boots up, it loads all the files it can find in <code>/etc/apache2/sites-available/*</code> and that determines which virutalhosts it loads. If there is not a link from <code>/etc/apache2/sites-available/</code> to your virutalhost file, it won&rsquo;t load it. So you can easily remove the links in /etc/apache2/sites-available without deleting the actual virutalhost file. Therefore you can easily toggle which virtualhosts get loaded.</p>
+<p><a href="http://en.wikipedia.org/wiki/Centos">CentOS</a> uses a different structure. Everything is lumped into <code>/etc/apache/httpd.conf</code>. So there is no way to easily toggle virutalhosts on/off, and everything is a bit more chaotic. I&rsquo;ve just had to setup a new CentOS webserver, and I struggled for a bit after being used to ubuntu-server. Here&rsquo;s a format you can use if you&rsquo;re in the same boat, and you have to setup httpd.conf files for CentOS:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>NameVirtualHost <span style="color:#f92672">*</span>:<span style="color:#ae81ff">80</span> <span style="color:#75715e"># this is eseential for for name-based switching</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># an example of a simple VirtualHost that serves data from</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># /var/www/html/myserver.co.uk to anyone who types in</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># www.myserver.co.uk to the browser</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  ServerName myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ServerAlias www<span style="color:#f92672">.</span>myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ServerAdmin me<span style="color:#960050;background-color:#1e0010">@</span>myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    DocumentRoot <span style="color:#f92672">/</span><span style="color:#66d9ef">var</span><span style="color:#f92672">/</span>www<span style="color:#f92672">/</span>html<span style="color:#f92672">/</span>myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ErrorLog logs<span style="color:#f92672">/</span>myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk<span style="color:#f92672">-</span>error_log
+</span></span><span style="display:flex;"><span>    CustomLog logs<span style="color:#f92672">/</span>myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk<span style="color:#f92672">-</span>access_log common
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># an example of a VirutalHost with apache overrides allowed, this means you can use</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># .htaccess files in the servers web root to change your config dynamically</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    ServerName bobserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ServerAlias www<span style="color:#f92672">.</span>bobserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ServerAdmin me<span style="color:#960050;background-color:#1e0010">@</span>bobserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    DocumentRoot <span style="color:#f92672">/</span><span style="color:#66d9ef">var</span><span style="color:#f92672">/</span>www<span style="color:#f92672">/</span>html<span style="color:#f92672">/</span>bobserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ErrorLog logs<span style="color:#f92672">/</span>bobserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk<span style="color:#f92672">-</span>error_log
+</span></span><span style="display:flex;"><span>    CustomLog logs<span style="color:#f92672">/</span>bobserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk<span style="color:#f92672">-</span>access_log common
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      AllowOverride All
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      AllowOverride AuthConfig
+</span></span><span style="display:flex;"><span>      Order Allow,Deny
+</span></span><span style="display:flex;"><span>      Allow from All
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># an example of a VirutalHost with apache overrides allowed, and two subdomains</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># (mail and www) that both point to the same web root</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  ServerName fredserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ServerAlias www<span style="color:#f92672">.</span>fredserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ServerAlias mail<span style="color:#f92672">.</span>fredserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ServerAdmin me<span style="color:#960050;background-color:#1e0010">@</span>fredserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    DocumentRoot <span style="color:#f92672">/</span><span style="color:#66d9ef">var</span><span style="color:#f92672">/</span>www<span style="color:#f92672">/</span>html<span style="color:#f92672">/</span>fredserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ErrorLog logs<span style="color:#f92672">/</span>fedserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk<span style="color:#f92672">-</span>error_log
+</span></span><span style="display:flex;"><span>    CustomLog logs<span style="color:#f92672">/</span>fredserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk<span style="color:#f92672">-</span>access_log common
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      AllowOverride All
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      AllowOverride AuthConfig
+</span></span><span style="display:flex;"><span>      Order Allow,Deny
+</span></span><span style="display:flex;"><span>      Allow from All
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># .. etc</span>
+</span></span></code></pre></div><p>With the above structure, you can add as many VirutalHosts to your configuration as you have memory to support (typically dozens). Apache will decide on which to choose based on the &lsquo;ServerName&rsquo; specified in each VirtualHost section. Just remember to add that all-important <code>NameVirtualHost: *:80</code> in the beginning.</p>
+<p>Once you&rsquo;ve got your httpd.conf file the way you like it, be sure to test it before you restart apache. If you restart apache and your httpd.conf file has errors in it, Apache will abort the load process. This means that all the websites on your webserver will fail to load. I always use <code>apachectl -t</code> or <code>apache2ctl -t</code> before I restart. That will parse the httpd.conf file and check the syntax. Once that&rsquo;s OK, then you can issue a <code>/etc/init.d/httpd restart</code> to restart Apache.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

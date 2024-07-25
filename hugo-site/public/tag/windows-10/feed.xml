@@ -2,19 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Windows-10 on DavidCraddock.net</title>
-    <link>https://davidcraddock.net/tag/windows-10/</link>
+    <link>http://192.168.1.50:9796/tag/windows-10/</link>
     <description>Recent content in Windows-10 on DavidCraddock.net</description>
-    <generator>Hugo -- 0.129.0</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 21 Jun 2015 17:55:50 +0000</lastBuildDate>
-    <atom:link href="https://davidcraddock.net/tag/windows-10/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Jun 2015 17:55:50 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/tag/windows-10/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Switching Audio between two Soundcards</title>
-      <link>https://davidcraddock.net/2015/06/21/switching-audio-between-two-soundcards/</link>
+      <link>http://192.168.1.50:9796/2015/06/21/switching-audio-between-two-soundcards/</link>
       <pubDate>Sun, 21 Jun 2015 17:55:50 +0000</pubDate>
-      <guid>https://davidcraddock.net/2015/06/21/switching-audio-between-two-soundcards/</guid>
+      
+      <guid>http://192.168.1.50:9796/2015/06/21/switching-audio-between-two-soundcards/</guid>
       <description>If you have two soundcards - maybe a normal soundcard for your speakers and maybe a headset with its own audio interface - you will want some way of switching all audio between the two. This is an great little open-source tool to do just that. It works on Mac, and Windows 7 up to 10:
 https://soundswitch.codeplex.com/</description>
+      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2015/06/headphones_accept.png"><img loading="lazy" src="/wp-content/uploads/2015/06/headphones_accept.png" type="" alt="headphones_accept"  /></a></p>
+<p>If you have two soundcards - maybe a normal soundcard for your speakers and maybe a headset with its own audio interface - you will want some way of switching all audio between the two. This is an great little open-source tool to do just that. It works on Mac, and Windows 7 up to 10:</p>
+<p><a href="https://soundswitch.codeplex.com/">https://soundswitch.codeplex.com/</a></p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

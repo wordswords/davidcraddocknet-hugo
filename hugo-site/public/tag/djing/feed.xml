@@ -2,35 +2,110 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Djing on DavidCraddock.net</title>
-    <link>https://davidcraddock.net/tag/djing/</link>
+    <link>http://192.168.1.50:9796/tag/djing/</link>
     <description>Recent content in Djing on DavidCraddock.net</description>
-    <generator>Hugo -- 0.129.0</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 27 Sep 2022 02:56:21 +0000</lastBuildDate>
-    <atom:link href="https://davidcraddock.net/tag/djing/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Sep 2022 02:56:21 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/tag/djing/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Current Twitch DJ Setup</title>
-      <link>https://davidcraddock.net/2022/09/27/current-dj-setup/</link>
+      <link>http://192.168.1.50:9796/2022/09/27/current-dj-setup/</link>
       <pubDate>Tue, 27 Sep 2022 02:56:21 +0000</pubDate>
-      <guid>https://davidcraddock.net/2022/09/27/current-dj-setup/</guid>
-      <description> Click to view full diagram
+      
+      <guid>http://192.168.1.50:9796/2022/09/27/current-dj-setup/</guid>
+      <description>Click to view full diagram
 Hardware 2 x Reloop 8000mk2 turntables Roland 707m Mixer and DJ Controller 2015 Macbook Pro (DJ Laptop) SoundSwitch USB -&amp;gt; DMX interface, attached to broadcast PC Beatstep MIDI Controller mapped for controlling SoundSwitch, attached to broadcast PC Vestax VCM-600 MIDI Controller used for controlling Resolume, attached to broadcast PC AKAI LPD8 MIDI Controller used for controlling Serato&amp;rsquo;s FX, attached to DJ laptop Rode Soundcaster Pro microphone used as a DJ mic 4 x Phillips Hue Colour Bulbs in lamps Phillips Hue Lightstrip Behringer UMC1820 Sound Interface connected to broadcast PC, attached to broadcast PC 2 x Logitech C920 Cameras used for capturing video for streaming, attached to broadcast PC Software SoundSwitch lighting software running on broadcast PC Resolume Avenue running on broadcast PC Streamlabs OBS running on broadcast PC Serato DJ Pro software running on DJ laptop </description>
+      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2022/09/wiring-diagram-for-studio.drawio2.png"><img loading="lazy" src="/wp-content/uploads/2022/09/wiring-diagram-for-studio.drawio2.png" type="" alt=""  /></a><a href="/wp-content/uploads/2022/09/wiring-diagram-for-studio.drawio2.png">Click to view full diagram</a></p>
+<h2 id="hardware">Hardware</h2>
+<ul>
+<li>2 x Reloop 8000mk2 turntables</li>
+<li>Roland 707m Mixer and DJ Controller</li>
+<li>2015 Macbook Pro (DJ Laptop)</li>
+<li>SoundSwitch USB -&gt; DMX interface, attached to broadcast PC</li>
+<li>Beatstep MIDI Controller mapped for controlling SoundSwitch, attached to broadcast PC</li>
+<li>Vestax VCM-600 MIDI Controller used for controlling Resolume, attached to broadcast PC</li>
+<li>AKAI LPD8 MIDI Controller used for controlling Serato&rsquo;s FX, attached to DJ laptop</li>
+<li>Rode Soundcaster Pro microphone used as a DJ mic</li>
+<li>4 x Phillips Hue Colour Bulbs in lamps</li>
+<li>Phillips Hue Lightstrip</li>
+<li>Behringer UMC1820 Sound Interface connected to broadcast PC, attached to broadcast PC</li>
+<li>2 x Logitech C920 Cameras used for capturing video for streaming, attached to broadcast PC</li>
+</ul>
+<h2 id="software">Software</h2>
+<ul>
+<li>SoundSwitch lighting software running on broadcast PC</li>
+<li>Resolume Avenue running on broadcast PC</li>
+<li>Streamlabs OBS running on broadcast PC</li>
+<li>Serato DJ Pro software running on DJ laptop</li>
+</ul>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>DJ Books: Reviewed</title>
-      <link>https://davidcraddock.net/2021/02/18/dj-books-reviewed/</link>
+      <link>http://192.168.1.50:9796/2021/02/18/dj-books-reviewed/</link>
       <pubDate>Thu, 18 Feb 2021 16:56:59 +0000</pubDate>
-      <guid>https://davidcraddock.net/2021/02/18/dj-books-reviewed/</guid>
+      
+      <guid>http://192.168.1.50:9796/2021/02/18/dj-books-reviewed/</guid>
       <description>The classic!
 Yes! Some people actually write and read BOOKS on DJing. As if YouTube wasn&amp;rsquo;t enough. Well it can be enough.. but YouTube is also a cess pit of rubbish information, and at least a book has a better chance of being properly edited and reviewed. Also reading a book makes you more intellectual. Which is utterly true.
 So. I have been reading through these DJing books to see if they could teach me something I didn&amp;rsquo;t know about DJing after over 10 years doing it.</description>
+      <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2021/02/frank.jpg" type="" alt=""  />The classic!</p>
+<p>Yes! Some people actually write and read BOOKS on DJing. As if YouTube wasn&rsquo;t enough. Well it can be enough.. but YouTube is also a cess pit of rubbish information, and at least a book has a better chance of being properly edited and reviewed. Also reading a book makes you more intellectual. Which is utterly true.</p>
+<p>So. I have been reading through these DJing books to see if they could teach me something I didn&rsquo;t know about DJing after over 10 years doing it. And there were quite a few interesting techniques and tricks that I learned from these.</p>
+<p><strong>How to DJ (Properly) – Frank Broughton, Bill Brewster (2003)</strong></p>
+<p>This is a great old book that I first bought when I was getting into DJing back around 2000. It covers so much technical and non-technical information that is still highly relevant today, but some parts are laughably out of date. I really wish they would update this book and put out a new version. A lot of the non-technical stuff you won’t find elsewhere and is really useful still. Definitely worth a read but don’t expect a modern take on things.</p>
+<p><a href="https://www.goodreads.com/book/show/1889346.How_To_DJ_Properly_">https://www.goodreads.com/book/show/1889346.How_To_DJ_Properly_</a></p>
+<p><strong>FutureDJs: How to DJ - Austen Smart, Scott Smart, Tom Dent</strong> <strong>(2019)</strong></p>
+<p>This is the book you want if you want a modern and uptodate introduction to DJing. It was designed as a textbook to help train high school music teachers so they could include DJing tuition in their classrooms. It’s amazing – really great – and contains lots of diagrams which help the explanation. If you want to get just one book on DJing buy this.</p>
+<p><a href="https://futuredjs.org/book/">https://futuredjs.org/book/</a></p>
+<p><strong>Rock The Dancefloor: The proven five-step formula for total DJing success - Phil Morse (2016)</strong></p>
+<p>I have to say straight away that I am quite biased as I don’t actually like Phil Morse of DigitalDJTips.com fame. I don’t find his reviews to be that accurate and often seem a bit like advertisements of products. I have learned some things from his website but not a huge amount. However this book has got lots of great reviews so I thought I’d mention it. I do have a copy but I found it a bit difficult to get through as it is all written in Phil’s quite conversational prose, with no diagrams or pictures or anything really to break it up. It may well be worth checking out to see if you can get anything from it though. I will probably try and get through it myself and give it a proper review, but just so you know it’s out there.</p>
+<p><a href="https://www.goodreads.com/book/show/31545542-rock-the-dancefloor">https://www.goodreads.com/book/show/31545542-rock-the-dancefloor</a></p>
+<p><strong>Beyond Beatmatching: Take Your DJ Career to the Next Level - Yakov Vorobyev, Eric Coomes, Bill Murphy (2012)</strong></p>
+<p>This is quite an interesting and quite advanced book by the developers of Mixed in Key. In it, they talk about using MIK’s features to detect musical key and energy level, and how you can use those features to plan your set around harmonic mixes and energy level arcs. It is quite advanced and very interesting. MIK is a pretty good piece of software, I have had it crash a few times when analysing very big libraries but generally it is pretty solid. I recommend checking this out, because although the basics of harmonic mixing are probably talked about in any recent DJing book, this goes into greater depth.</p>
+<p><a href="https://www.goodreads.com/en/book/show/19218202-beyond-beatmatching">https://www.goodreads.com/en/book/show/19218202-beyond-beatmatching</a></p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Twitch Streaming Technical Setup</title>
-      <link>https://davidcraddock.net/2021/02/14/twitch-dj-streaming-technical-setup/</link>
+      <link>http://192.168.1.50:9796/2021/02/14/twitch-dj-streaming-technical-setup/</link>
       <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
-      <guid>https://davidcraddock.net/2021/02/14/twitch-dj-streaming-technical-setup/</guid>
+      
+      <guid>http://192.168.1.50:9796/2021/02/14/twitch-dj-streaming-technical-setup/</guid>
       <description>I thought I’d write a bit here about my Twitch DJing setup and some of the hardware and software I’m using. Twitch streaming has become very popular over the lockdown period, and I think people might be interested in how I have configured my stream. Something that seperates my stream from anyone else I&amp;rsquo;ve seen on Twitch is that is that I do live vinyl DJing AND live VJing at the same time on my stream.</description>
+      <content:encoded><![CDATA[<ul>
+<li><img loading="lazy" src="/wp-content/uploads/2021/02/setupthree.jpg" type="" alt=""  /></li>
+<li><img loading="lazy" src="/wp-content/uploads/2021/02/setuptwo.jpg" type="" alt=""  /></li>
+<li><img loading="lazy" src="/wp-content/uploads/2021/02/setupone.jpg" type="" alt=""  /></li>
+</ul>
+<p>I thought I’d write a bit here about my Twitch DJing setup and some of the hardware and software I’m using. Twitch streaming has become very popular over the lockdown period, and I think people might be interested in how I have configured my stream. Something that seperates my stream from anyone else I&rsquo;ve seen on Twitch is that is that I do live vinyl DJing AND live VJing at the same time on my stream. This is how I achieve it.</p>
+<p><strong>Broadcast PC</strong></p>
+<p>This is my main desktop PC that I use for personal use as well as streaming. It has a Nvidia 1080 graphics card which is very useful with Resolume Avenue, the VJing software I use. I have one main big monitor and one smaller second monitor which I have attached to a long HDMI cable and placed next to my DJing desk along with a second mouse and keyboard which goes into a USB 3.0 hub and a long USB 3.0 extension cable. When I go to DJ I set the Windows graphical settings to duplicate my screen on both screens, so I can control the broadcast computer from where I am standing next to my DJ equipment. I have a Behringer UMC1820 sound interface which has 8 balanced phono inputs. Inputs 5&amp;6 are permanently connected to my DJ mixer, and I use Input 1 for my microphone.</p>
+<p><strong>Broadcasting Software</strong></p>
+<p>I use Streamlabs OBS on my broadcast PC. I did initially subscribe so they let me download one of their custom themes, which I have heavily edited but still remains integral to my setup. For some reason even though my subscription has lapsed that has not made any difference to whether I can continue using this theme and the app, although it has turned my follow/subscription/bit notifications back to the plain old free ones. I prefer it over free OBS for three features at least.</p>
+<p>Firstly, the studio mode – I am not sure if OBS free has this (maybe it does?) but it is useful when fixing things live to have two scenes active, one which is being broadcast and one which is only visible to me. Secondly, the way you can order the layers on the scene, this is very intuitive to me and was more intuitive than the layering (front to back) on OBS free. Thirdly, the remote control element.. I have a remote control app for my Android tablet and phone which allows me to quickly cycle through scenes – no need to shell out for fancy scene controllers.</p>
+<p>I use the free NDI tools for NDI streams to Streamlabs OBS for the external video elements on my screen – one from Resolume Avenue on my broadcast PC and the second from my Macbook Pro which is running Serato Video. I also use streamelements and Moobot to enable kappagen effects, and to moderate the chat and provide information to chatters.</p>
+<p><strong>Cameras</strong></p>
+<p>2x Logitech C920 web cams on tripods. I bought them because I saw them used at the BBC where I used to work. I think if I had more USB3 ports on my computer the bandwidth for these cameras would be increased and the resolution would be wider, but as they are, they are really solid. I’ve only had occasional problems with the auto-focus when there is a lot of lighting strobing going on.</p>
+<p><strong>DJing Equipment</strong></p>
+<p>I have a pair of Reloop 8000mk2 turntables with a Pioneer DJM-S3 Serato mixer. Both integrate really well with Serato and offer additional performance features. I use Serato on my aging Macbook Pro 2015 and have actually got it to reliably output Serato Video using NDI capture tool and send it over the network to my broadcasting computer without the fan having to spin up. I only use Serato on my Macbook because I don’t want to burden it – it is doing enough as it is! I have a 2TB external HD where I put all my digital music files and have it mounted as a network share so I can transfer files over the network from my main PC. I use Mixed in Key to add Serato cue points to music I use, and the free MusicBrainz Picard to correctly tag files and organise my music collection.</p>
+<p><strong>Lighting</strong></p>
+<p>I use Phillips Hue lightsources and the hyeDynamic Windows 10 app. It connects to the Hue hub strobes the lights in time with an audio input. I have a Hue Lightstrip and 4x Hue Colour bulbs and they all sync together. I also have a small laser unit that syncs in time with the beat and is useful as added background lighting.</p>
+<p><strong>VJing</strong></p>
+<p>I use Resolume Avenue with a number of clips I have commercially bought. I have it running mostly in autopilot mode with all the clips synced to the beat. The beat is provided by a free app called ‘AudioBoxBaby’ which I am really looking to replace, but there is simply nothing else out there on the market. It detects the approximate BPM of any audio coming in on my sound interface from my DJ mixer, and translates it into a single repeating midi note. This midi note I have mapped to the tap tempo button in Resolume so it is like a human tapping the tempo along with the music in theory. Serato DJ Pro supports Ableton Link, and so does Resolume Avenue, but I have found that syncing via Ableton Link to be very problematic when using Serato, and of course it doesn’t work when not using Serato, for example with all vinyl sets.</p>
+<p>I also have a Novation Zero SL controller which I have had for over 10 years and still works perfectly, so I really recommend it! It is attached via a USB extension cable to my broadcasting PC and I use it to control some basic VJing effects that I put over the audiopilot clips to create buildups and visual changes in time with the music. It has 8 sliders and I move them in time with the beat or to create buildups/variations etc.</p>
+<p><strong>Microphone/Voice</strong></p>
+<p>I have a Rode Procaster mic with a Rode microphone boom, shock cage and pop shield, which is attached to my audio interface for my broadcasting PC with a long cable. I have it wired so that when I press a piano sustain pedal on the floor under my microphone, vocal ducking happens – e.g. the music fades down slightly and the microphone volume fades up so you can hear me talking over the music. In order to accomplish that I use two commercial apps, the first called ‘Auto-Duck in Real Time’ which allows me to configure the vocal ducking linked to a keyboard keypress, and ‘Bome’s MIDI Translator Classic’ which when the MIDI signal that is generated when I press the sustain pedal connected to my Novation Zero SL controller, the MIDI translator converts it into a keypress that is picked up by the ‘Auto-Duck in Real Time’ app to trigger vocal ducking.  I have it configured so while I am holding down the sustain pedal, it ducks the music playing and when I release it, the music goes back to normal.</p>
+<p><strong>Internet Connection</strong></p>
+<p>I have a fast Virgin Media internet connection with 30mbits/second upload. I think my Twitch stream and everything else in my home requires about 5mbits/sec upload! I also have a backup internet fibre DSL connection that thankfully I have never had to use when I’m streaming, but it also has around 15mbits/second upload and I should be able to switch between both relatively quickly if I needed to.</p>
+<p>Phew! That’s all! :) I realise it is technically involved compared to a lot of peoples setups, but I have always been really interested in the technical side and have been lucky enough to be able to create exactly the setup that I really wanted for my stream. If you&rsquo;re interested in checking it out, my regular stream is from 4PM UK time/UTC every Sunday and I play for at least 4 hours. Follow me on Twitch at: <a href="http://twitch.tv/djdavidcraddock">http://twitch.tv/djdavidcraddock</a></p>
+<blockquote>
+<p>Struggling with the technical side? If you are interested in hiring me to help develop your own streaming setup, I have worked before in this capacity and can supply excellent references. The work can be done online, as with your permission I can remote control your computer and configure things. Please <a href="/contact/">send me a message if you are interested via the contact form</a> on this website.</p>
+</blockquote>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

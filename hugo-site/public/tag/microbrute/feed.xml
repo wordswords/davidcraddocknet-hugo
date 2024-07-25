@@ -2,19 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Microbrute on DavidCraddock.net</title>
-    <link>https://davidcraddock.net/tag/microbrute/</link>
+    <link>http://192.168.1.50:9796/tag/microbrute/</link>
     <description>Recent content in Microbrute on DavidCraddock.net</description>
-    <generator>Hugo -- 0.129.0</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 Aug 2014 21:53:19 +0000</lastBuildDate>
-    <atom:link href="https://davidcraddock.net/tag/microbrute/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Aug 2014 21:53:19 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/tag/microbrute/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New Synthesiser Additions: Microbrute, Nord Drum and Access Virus A</title>
-      <link>https://davidcraddock.net/2014/08/10/new-synthesiser-additions-microbrute-nord-drum-and-access-virus-a/</link>
+      <link>http://192.168.1.50:9796/2014/08/10/new-synthesiser-additions-microbrute-nord-drum-and-access-virus-a/</link>
       <pubDate>Sun, 10 Aug 2014 21:53:19 +0000</pubDate>
-      <guid>https://davidcraddock.net/2014/08/10/new-synthesiser-additions-microbrute-nord-drum-and-access-virus-a/</guid>
+      
+      <guid>http://192.168.1.50:9796/2014/08/10/new-synthesiser-additions-microbrute-nord-drum-and-access-virus-a/</guid>
       <description>I bought some new synths.
 Access Virus A This is the original 1998 Access Virus A. It, it was a staple synth for trance and electronic music in general for the early 00s. I am very happy that I managed to get this secondhand for less than a MicroKORG. It cost over £800 when it came out in 1998. Old digital synths seem to be unpopular at the moment, I&amp;rsquo;ve heard comments along the lines of &amp;lsquo;if it&amp;rsquo;s digital then I might as well use a plugin in my DAW&amp;rsquo;.</description>
+      <content:encoded><![CDATA[<p>I bought some new synths.</p>
+<h3 id="access-virus-a">Access Virus A</h3>
+<p>This is the original <a href="http://www.vintagesynth.com/misc/virusa.php">1998 Access Virus A</a>. It, it was a staple synth for trance and electronic music in general for the early 00s. I am very happy that I managed to get this secondhand for less than a MicroKORG. It cost over £800 when it came out in 1998. Old digital synths seem to be unpopular at the moment, I&rsquo;ve heard comments along the lines of &lsquo;if it&rsquo;s digital then I might as well use a plugin in my DAW&rsquo;. But I think this is ignoring the tactile control surface that you get, and how it gets your head outside the computer and playing an actual physical instrument. The presets are really inspiring, several sounds that you will recognise if you were into electronic music in the 00s. VNV Nation, one of my favourite bands, produced their <a href="http://www.youtube.com/watch?v=vDPwv0n8LzY">entire &lsquo;Empires&rsquo; album</a> with just the Access Virus A and a couple of samplers.</p>
+<p>It has two oscillators which have extra functionality, as you can choose the waveform from a large selection of presampled waveforms, in addition to the usual sawtooth, sine, square. There is also a suboscilator, two filters, each with a ASDTR configurable envelope, the usual ASDTR for the amplifier, and three LFOs. You can choose to map the LFOs to almost anything, allowing a great amount of flexibility. It also has effects - delay and unison, as well as multiple timbers, meaning that you can have up to 12 different patches playing at the same time, each controlled with different MIDI channels. The whole thing is extensively controllable via MIDI also. It is my first polyphonic hardware synthesier, and so has opened up a whole range of new composition possibilities around chords.</p>
+<h3 id="microbrute">Microbrute</h3>
+<p>The Microbrute is fully analogue, and it can produce a good number of sounds through its one oscilator, by allowing you to blend in different quantities of sawtooth, sine and square, along with some extensive extras, such as a metalizer. It has a Steiner Parker filter, a LFO and a step sequencer. You can get more technical details about the Microbrute in Marc Doty&rsquo;s <a href="https://www.youtube.com/watch?v=3R_b2f74uZE&amp;list=RD3R_b2f74uZE#t=41">great series of videos</a>.</p>
+<p>It has a hard aggressive character to the sound, especially when used with the &lsquo;brute factor&rsquo;. I like its sound, but sometimes wish for a little bit more warmth. However you can make all sorts of sounds with it, and I particularly like making chiptune arpeggio with the square wave, <a href="https://soundcloud.com/cachebuster/blue-sky">such as in my track &lsquo;Blue Sky&rsquo;</a>.</p>
+<p>It also has a mod matrix that I haven&rsquo;t fully explored yet, but is very powerful, especially if you want to link it up to other CV capable synths.</p>
+<h3 id="nord-drum">Nord Drum</h3>
+<p>This is an analgoue modelling drum synthesiser. It is the first Nord Drum so it only has four channels, but the presets sound great in the mix. I haven&rsquo;t even looked at the synthesis options on this yet, as I&rsquo;ve been really happy with the presets, but there is a whole range of options that you can shape and edit for your own sound.</p>
+<h3 id="my-synth-shelf">My synth &lsquo;shelf&rsquo;</h3>
+<p>I have swapped out the older synths that I don&rsquo;t use anymore. Currently I&rsquo;m using the three synths above. The keyboard at the top is my Alesis Q25 MIDI controller, there is a ZED 10 mixer on the middle shelf which I use as a recording device, as well as a gold EMU Orbit which I don&rsquo;t have plugged in at the moment.</p>
+<p><a href="/wp-content/uploads/2014/08/synths.jpg"><img loading="lazy" src="/wp-content/uploads/2014/08/synths.jpg" type="" alt="My Synth Shelf"  /></a></p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

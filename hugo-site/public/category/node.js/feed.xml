@@ -2,26 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Node.js on DavidCraddock.net</title>
-    <link>https://davidcraddock.net/category/node.js/</link>
+    <link>http://192.168.1.50:9796/category/node.js/</link>
     <description>Recent content in Node.js on DavidCraddock.net</description>
-    <generator>Hugo -- 0.129.0</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 10 May 2017 13:59:18 +0000</lastBuildDate>
-    <atom:link href="https://davidcraddock.net/category/node.js/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 May 2017 13:59:18 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/category/node.js/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Node.js HTTPS server with self-signed certificate creation on openssl 0.9.8zh with node.js 7.10.0</title>
-      <link>https://davidcraddock.net/2017/05/10/node-js-https-server-with-self-signed-certificate-creation-on-openssl-0-9-8zh-with-node-js-7-10-0/</link>
+      <link>http://192.168.1.50:9796/2017/05/10/node-js-https-server-with-self-signed-certificate-creation-on-openssl-0-9-8zh-with-node-js-7-10-0/</link>
       <pubDate>Wed, 10 May 2017 13:59:18 +0000</pubDate>
-      <guid>https://davidcraddock.net/2017/05/10/node-js-https-server-with-self-signed-certificate-creation-on-openssl-0-9-8zh-with-node-js-7-10-0/</guid>
+      
+      <guid>http://192.168.1.50:9796/2017/05/10/node-js-https-server-with-self-signed-certificate-creation-on-openssl-0-9-8zh-with-node-js-7-10-0/</guid>
       <description>I couldn&amp;rsquo;t find a concise guide to setting this up quickly so thought it was worth a post. To quickly get something working and create a https server using the above versions of openssl and node.js, do the following:
 Generate self-signed server certificate with no password sudo openssl req -x509 -newkey rsa:2048 -keyout ./csr.pem -out server.crt -days 3001 -nodes Use this node.js code to setup a server quickly const https = require(&#39;https&#39;); const fs = require(&#39;fs&#39;); const options = { key: fs.</description>
+      <content:encoded><![CDATA[<p>I couldn&rsquo;t find a concise guide to setting this up quickly so thought it was worth a post. To quickly get something working and create a https server using the above versions of openssl and node.js, do the following:</p>
+<p> <strong>Generate self-signed server certificate with no password</strong> <code>sudo openssl req -x509 -newkey rsa:2048 -keyout ./csr.pem -out server.crt -days 3001 -nodes</code> <strong>Use this node.js code to setup a server quickly</strong> <code>const https = require('https'); const fs = require('fs'); const options = { key: fs.readFileSync('csr.pem'), cert: fs.readFileSync('server.crt') }; https.createServer(options, (req, res) =&gt; { res.writeHead(200); res.end('hello world\n'); }).listen(8000);</code> <strong>Go to https://localhost:8000 and accept the certificate, you should see &lsquo;hello world&rsquo;</strong></p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>The Haiku Machine</title>
-      <link>https://davidcraddock.net/2013/07/27/thehaiku-machine/</link>
+      <link>http://192.168.1.50:9796/2013/07/27/thehaiku-machine/</link>
       <pubDate>Sat, 27 Jul 2013 02:29:10 +0000</pubDate>
-      <guid>https://davidcraddock.net/2013/07/27/thehaiku-machine/</guid>
+      
+      <guid>http://192.168.1.50:9796/2013/07/27/thehaiku-machine/</guid>
       <description>I found this awesome cut-up poetry generator, which takes the text of famous poets and builds structured poetry out of it. The guy that made it even developed the underlying algorithm as a research project. I have put a version of a free Amazon EC2 instance, wrote a little twitter bot in node.js, and wired the poetry generator with the twitter bot, and now I have this: https://twitter.com/haikumachine - a twitter bot that posts a haiku every five minutes, derived from Dylan Thomas&amp;rsquo;s poetry.</description>
+      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2013/07/550px-write-a-haiku-poem-intro.jpg"><img loading="lazy" src="/wp-content/uploads/2013/07/550px-write-a-haiku-poem-intro.jpg" type="" alt="550px-Write-a-Haiku-Poem-Intro"  /></a></p>
+<p>I found this <a href="https://github.com/nathanielksmith/prosaic">awesome cut-up poetry generator</a>, which takes the text of famous poets and builds structured poetry out of it. The guy that made it even developed the underlying algorithm as a research project. I have put a version of a free Amazon EC2 instance, wrote a little twitter bot in node.js, and wired the poetry generator with the twitter bot, and now I have this: <a href="https://twitter.com/haikumachine">https://twitter.com/haikumachine</a> - a twitter bot that posts a haiku every five minutes, derived from Dylan Thomas&rsquo;s poetry.</p>
+<p>It could be improved, and there are sometimes erroneous tweets where the syllables aren&rsquo;t counted quite right, or some of the punctuation doesn&rsquo;t make sense once cut up, but damnit, it&rsquo;s a bot that writes Haikus.</p>
+<blockquote>
+<p>&ldquo;The grains beyond age / Oh miracle of fishes / in the lamb white days&rdquo;</p>
+<p>— I am a Haiku Machine (@haikumachine) <a href="https://twitter.com/haikumachine/statuses/360829607177502721">July 26, 2013</a></p>
+</blockquote>
+<p><a href="//platform.twitter.com/widgets.js">//platform.twitter.com/widgets.js</a></p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>
