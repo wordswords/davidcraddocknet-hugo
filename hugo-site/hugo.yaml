@@ -1,24 +1,26 @@
 baseURL: https://davidcraddock.net
 languageCode: en
 title: DavidCraddock.net
-theme: PaperMod
+theme: PaperModX
 taxonomies:
+  pages: page
   category: category
   tag: tag
 params:
-  description: ""
+  description: "The personal blog of David Craddock, a software engineer based in Manchester, UK."
   defaultTheme: auto
   disableThemeToggle: true
   showShareButtons: true
   showReadingTime: true
-  showToc: false
+  showToc: true
+  TocSide: 'left'
   showBreadCrumbs: true
   showCodeCopyButtons: true
   comments: true
-  hideFooter: true
   assets:
     favicon: /favicon.ico
     disableHLJS: true
+  EnableInstantClick: true
 markup:
   highlight:
     codeFences: true
