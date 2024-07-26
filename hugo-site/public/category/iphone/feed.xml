@@ -1,71 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Iphone on DavidCraddock.net</title>
-    <link>http://192.168.1.50:9796/category/iphone/</link>
+    <link>http://davidcraddock.net:9796/category/iphone/</link>
     <description>Recent content in Iphone on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Aug 2015 20:46:21 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/category/iphone/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Aug 2015 20:46:21 +0000</lastBuildDate>
+    <atom:link href="http://davidcraddock.net:9796/category/iphone/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Use Siri, Apple Earphones and Apple Music Together</title>
-      <link>http://192.168.1.50:9796/2015/08/15/use-siri-apple-earphones-and-apple-music-together/</link>
+      <link>http://davidcraddock.net:9796/2015/08/15/use-siri-apple-earphones-and-apple-music-together/</link>
       <pubDate>Sat, 15 Aug 2015 20:46:21 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2015/08/15/use-siri-apple-earphones-and-apple-music-together/</guid>
-      <description>This requires you to have a subscription to Apple Music and a 3G/4G/wireless data connection, but it is so useful! Using this tip, you can be walking along with your iPhone in your pocket and your Apple earphones in, and then change music just by pressing a button on the earphones remote control and saying &amp;lsquo;Play (your favourite band)&amp;rsquo;.
-1. Activate Siri and subscribe to Apple Music. I used to subscribe to Spotify so I switched to Apple Music when I realised the advantages of the integration on my phone, and the wider selection of music.</description>
-      <content:encoded><![CDATA[<p>This requires you to have a subscription to Apple Music and a 3G/4G/wireless data connection, but it is so useful! Using this tip, you can be walking along with your iPhone in your pocket and your Apple earphones in, and then change music just by pressing a button on the earphones remote control and saying &lsquo;Play (your favourite band)&rsquo;.</p>
-<p><a href="/wp-content/uploads/2015/08/blog-post-image.png"><img loading="lazy" src="/wp-content/uploads/2015/08/blog-post-image.png" type="" alt="blog post image"  /></a></p>
-<p>1. Activate Siri and subscribe to Apple Music. I used to subscribe to Spotify so I switched to Apple Music when I realised the advantages of the integration on my phone, and the wider selection of music. You will also need to set Siri to stream music over your cellular network, this can be done in the &lsquo;Music&rsquo; section of iOS settings.</p>
-<p>2. Put the iPhone in your pocket with the standard Apple Earphones plugged in. With the standard Apple Earphones, there is a remote control on the cable with one button on it. To activate Siri, hold that button down for a couple of seconds until you hear the &lsquo;Siri&rsquo; &lsquo;bleep&rsquo;.</p>
-<p>3. Say &lsquo;Play The Prodigy&rsquo; if you want to listen to The Prodigy, for example. This may require a couple of tries occasionally, but usually it just works.</p>
-<p>4. Siri should look up The Prodigy on Apple Music, find their most popular songs, put them in a playlist, start streaming them and playing them through your earphones. To skip a song, press the remote control button twice in quick succession. To adjust the volume, press the edges of your remote control, the top edge to increase volume, the bottom edge to decrease. To pause all music playback, just press the remote control button once. To resume playback, press the remote control button once again.</p>
-<p>A limitation of this is that you have to be in an area with good reception, enough to stream your tracks from Apple Music. You shouldn&rsquo;t have a problem if you live in a city like Manchester, I usually get 4G across the whole city.</p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2015/08/15/use-siri-apple-earphones-and-apple-music-together/</guid>
+      <description>This requires you to have a subscription to Apple Music and a 3G/4G/wireless data connection, but it is so useful! Using this tip, you can be walking along with your iPhone in your pocket and your Apple earphones in, and then change music just by pressing a button on the earphones remote control and saying &amp;lsquo;Play (your favourite band)&amp;rsquo;.&#xA;1. Activate Siri and subscribe to Apple Music. I used to subscribe to Spotify so I switched to Apple Music when I realised the advantages of the integration on my phone, and the wider selection of music.</description>
     </item>
-    
     <item>
       <title>Ripping Movies onto the iPhone</title>
-      <link>http://192.168.1.50:9796/2010/05/17/ripping-movies-onto-the-iphone/</link>
+      <link>http://davidcraddock.net:9796/2010/05/17/ripping-movies-onto-the-iphone/</link>
       <pubDate>Mon, 17 May 2010 03:15:00 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2010/05/17/ripping-movies-onto-the-iphone/</guid>
-      <description>I&amp;rsquo;m currently watching Persepolis, the 2008 animated film about a tomboy anarchist growing up in Iran. I&amp;rsquo;m watching this on my new iPhone 3GS, and the picture and audio quality is very good.
-Here&amp;rsquo;s what I used to convert my newly bought Persepolis DVD, for watching on the iPhone.
-1x Macbook (but you can use any intel mac) 1x iTunes 1x RipIt - Commercial Mac DVD Ripper (rips up to 10 DVDs on the free trial, $20 after) 1x Handbrake 32 - Freely available transcoder 1x VLC 32 - Freely available media player 1x DVD</description>
-      <content:encoded><![CDATA[<p>I&rsquo;m currently watching Persepolis, the 2008 animated film about a tomboy anarchist growing up in Iran. I&rsquo;m watching this on my new iPhone 3GS, and the picture and audio quality is very good.</p>
-<p>Here&rsquo;s what I used to convert my newly bought Persepolis DVD, for watching on the iPhone.</p>
-<p>1x Macbook (but you can use any intel mac)
-1x iTunes
-1x RipIt - Commercial Mac DVD Ripper (rips up to 10 DVDs on the free trial, $20 after)
-1x Handbrake 32 - Freely available transcoder
-1x VLC 32 - Freely available media player
-1x DVD</p>
-<p>\* Ripit - rips the video and audio from the DVD, onto your computer
-\* Handbrake 32 - &rsquo;transcodes&rsquo; the ripped video and audio, meaning - it converts it into an iPhone compatible video file.
-\* VLC 32 - is used by Handbrake 32 to get past any problems with converting the media.</p>
-<p>Go to the following sites to fetch the software:</p>
-<p>1. Ripit - <a href="http://thelittleappfactory.com/ripit/">http://thelittleappfactory.com/ripit/</a>
-2. Handbrake 32 - <a href="http://handbrake.fr/downloads.php">http://handbrake.fr/downloads.php</a> (get the 32 bit version)
-3. VLC 32 - <a href="http://www.videolan.org/vlc/download-macosx.html">http://www.videolan.org/vlc/download-macosx.html</a> (be sure to get the 32 bit version)</p>
-<p>There&rsquo;s currently a difficulty in getting the VLC 64 bit software for the Mac, and so although the 64 bit version is faster to use, you&rsquo;re probably better off with 32 bit versions of both for now.</p>
-<p>The Process</p>
-<ol>
-<li>Rip the DVD.</li>
-</ol>
-<p>Start RipIt. It will ask for a DVD, insert the DVD.. and point the resultant save location to the desktop. The ripping process takes about 40 minutes on my Macbook, you can check the progress by looking at the icon in the dock - it will be updated with the percentage of progress until completion. You can do other things on your mac while it&rsquo;s ripping, even though the DVD drive will be occupied. Wait until it&rsquo;s completed before continuing.</p>
-<ol start="2">
-<li>Transcode (convert) the ripped video file for use on the iPhone.</li>
-</ol>
-<p>Start Handbrake. There are a bunch of transcoding settings called presets - those tell Handbrake what type of media player you want the converted video to work on. In handbrake on the right section of the window, select the iPhone preset. Then go to the file menu, select &lsquo;Open&rsquo;, and then select the video file that RipIt saved onto your desktop. Then select the destination for the converted video file. Then select the Start (green) button on Handbrake window, and it will start. You can now minimise handbrake and do other things. The transcoding process depends on the film, but takes about an hour on my Macbook. You can check on progress by maximizing the Handbrake window, and checking on the progress bar.</p>
-<ol start="3">
-<li>Move the converted video file onto your iPhone.</li>
-</ol>
-<p>Once that&rsquo;s done, you will have another media file on your desktop - this is the end result, a video file that will play on your iPhone. Simply connect your iPhone to your Mac, start up iTunes, and drag that file from your desktop into the iPhone icon on your iTunes window. It will take a couple of minutes to transfer, then eject the iPhone as normal</p>
-<p>Now you can watch this new movie on your iPhone by going to the &lsquo;Videos&rsquo; tab of your iPod app.</p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2010/05/17/ripping-movies-onto-the-iphone/</guid>
+      <description>I&amp;rsquo;m currently watching Persepolis, the 2008 animated film about a tomboy anarchist growing up in Iran. I&amp;rsquo;m watching this on my new iPhone 3GS, and the picture and audio quality is very good.&#xA;Here&amp;rsquo;s what I used to convert my newly bought Persepolis DVD, for watching on the iPhone.&#xA;1x Macbook (but you can use any intel mac) 1x iTunes 1x RipIt - Commercial Mac DVD Ripper (rips up to 10 DVDs on the free trial, $20 after) 1x Handbrake 32 - Freely available transcoder 1x VLC 32 - Freely available media player 1x DVD</description>
     </item>
-    
   </channel>
 </rss>

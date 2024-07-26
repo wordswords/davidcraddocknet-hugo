@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Apple-Music on DavidCraddock.net</title>
-    <link>http://192.168.1.50:9796/category/apple-music/</link>
+    <link>http://davidcraddock.net:9796/category/apple-music/</link>
     <description>Recent content in Apple-Music on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Aug 2015 20:46:21 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/category/apple-music/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Aug 2015 20:46:21 +0000</lastBuildDate>
+    <atom:link href="http://davidcraddock.net:9796/category/apple-music/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Use Siri, Apple Earphones and Apple Music Together</title>
-      <link>http://192.168.1.50:9796/2015/08/15/use-siri-apple-earphones-and-apple-music-together/</link>
+      <link>http://davidcraddock.net:9796/2015/08/15/use-siri-apple-earphones-and-apple-music-together/</link>
       <pubDate>Sat, 15 Aug 2015 20:46:21 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2015/08/15/use-siri-apple-earphones-and-apple-music-together/</guid>
-      <description>This requires you to have a subscription to Apple Music and a 3G/4G/wireless data connection, but it is so useful! Using this tip, you can be walking along with your iPhone in your pocket and your Apple earphones in, and then change music just by pressing a button on the earphones remote control and saying &amp;lsquo;Play (your favourite band)&amp;rsquo;.
-1. Activate Siri and subscribe to Apple Music. I used to subscribe to Spotify so I switched to Apple Music when I realised the advantages of the integration on my phone, and the wider selection of music.</description>
-      <content:encoded><![CDATA[<p>This requires you to have a subscription to Apple Music and a 3G/4G/wireless data connection, but it is so useful! Using this tip, you can be walking along with your iPhone in your pocket and your Apple earphones in, and then change music just by pressing a button on the earphones remote control and saying &lsquo;Play (your favourite band)&rsquo;.</p>
-<p><a href="/wp-content/uploads/2015/08/blog-post-image.png"><img loading="lazy" src="/wp-content/uploads/2015/08/blog-post-image.png" type="" alt="blog post image"  /></a></p>
-<p>1. Activate Siri and subscribe to Apple Music. I used to subscribe to Spotify so I switched to Apple Music when I realised the advantages of the integration on my phone, and the wider selection of music. You will also need to set Siri to stream music over your cellular network, this can be done in the &lsquo;Music&rsquo; section of iOS settings.</p>
-<p>2. Put the iPhone in your pocket with the standard Apple Earphones plugged in. With the standard Apple Earphones, there is a remote control on the cable with one button on it. To activate Siri, hold that button down for a couple of seconds until you hear the &lsquo;Siri&rsquo; &lsquo;bleep&rsquo;.</p>
-<p>3. Say &lsquo;Play The Prodigy&rsquo; if you want to listen to The Prodigy, for example. This may require a couple of tries occasionally, but usually it just works.</p>
-<p>4. Siri should look up The Prodigy on Apple Music, find their most popular songs, put them in a playlist, start streaming them and playing them through your earphones. To skip a song, press the remote control button twice in quick succession. To adjust the volume, press the edges of your remote control, the top edge to increase volume, the bottom edge to decrease. To pause all music playback, just press the remote control button once. To resume playback, press the remote control button once again.</p>
-<p>A limitation of this is that you have to be in an area with good reception, enough to stream your tracks from Apple Music. You shouldn&rsquo;t have a problem if you live in a city like Manchester, I usually get 4G across the whole city.</p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2015/08/15/use-siri-apple-earphones-and-apple-music-together/</guid>
+      <description>This requires you to have a subscription to Apple Music and a 3G/4G/wireless data connection, but it is so useful! Using this tip, you can be walking along with your iPhone in your pocket and your Apple earphones in, and then change music just by pressing a button on the earphones remote control and saying &amp;lsquo;Play (your favourite band)&amp;rsquo;.&#xA;1. Activate Siri and subscribe to Apple Music. I used to subscribe to Spotify so I switched to Apple Music when I realised the advantages of the integration on my phone, and the wider selection of music.</description>
     </item>
-    
   </channel>
 </rss>

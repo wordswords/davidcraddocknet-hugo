@@ -1,38 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Book-Reviews on DavidCraddock.net</title>
-    <link>http://192.168.1.50:9796/tag/book-reviews/</link>
+    <link>http://davidcraddock.net:9796/tag/book-reviews/</link>
     <description>Recent content in Book-Reviews on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 18 Feb 2021 16:56:59 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/tag/book-reviews/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Feb 2021 16:56:59 +0000</lastBuildDate>
+    <atom:link href="http://davidcraddock.net:9796/tag/book-reviews/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DJ Books: Reviewed</title>
-      <link>http://192.168.1.50:9796/2021/02/18/dj-books-reviewed/</link>
+      <link>http://davidcraddock.net:9796/2021/02/18/dj-books-reviewed/</link>
       <pubDate>Thu, 18 Feb 2021 16:56:59 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2021/02/18/dj-books-reviewed/</guid>
-      <description>The classic!
-Yes! Some people actually write and read BOOKS on DJing. As if YouTube wasn&amp;rsquo;t enough. Well it can be enough.. but YouTube is also a cess pit of rubbish information, and at least a book has a better chance of being properly edited and reviewed. Also reading a book makes you more intellectual. Which is utterly true.
-So. I have been reading through these DJing books to see if they could teach me something I didn&amp;rsquo;t know about DJing after over 10 years doing it.</description>
-      <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2021/02/frank.jpg" type="" alt=""  />The classic!</p>
-<p>Yes! Some people actually write and read BOOKS on DJing. As if YouTube wasn&rsquo;t enough. Well it can be enough.. but YouTube is also a cess pit of rubbish information, and at least a book has a better chance of being properly edited and reviewed. Also reading a book makes you more intellectual. Which is utterly true.</p>
-<p>So. I have been reading through these DJing books to see if they could teach me something I didn&rsquo;t know about DJing after over 10 years doing it. And there were quite a few interesting techniques and tricks that I learned from these.</p>
-<p><strong>How to DJ (Properly) – Frank Broughton, Bill Brewster (2003)</strong></p>
-<p>This is a great old book that I first bought when I was getting into DJing back around 2000. It covers so much technical and non-technical information that is still highly relevant today, but some parts are laughably out of date. I really wish they would update this book and put out a new version. A lot of the non-technical stuff you won’t find elsewhere and is really useful still. Definitely worth a read but don’t expect a modern take on things.</p>
-<p><a href="https://www.goodreads.com/book/show/1889346.How_To_DJ_Properly_">https://www.goodreads.com/book/show/1889346.How_To_DJ_Properly_</a></p>
-<p><strong>FutureDJs: How to DJ - Austen Smart, Scott Smart, Tom Dent</strong> <strong>(2019)</strong></p>
-<p>This is the book you want if you want a modern and uptodate introduction to DJing. It was designed as a textbook to help train high school music teachers so they could include DJing tuition in their classrooms. It’s amazing – really great – and contains lots of diagrams which help the explanation. If you want to get just one book on DJing buy this.</p>
-<p><a href="https://futuredjs.org/book/">https://futuredjs.org/book/</a></p>
-<p><strong>Rock The Dancefloor: The proven five-step formula for total DJing success - Phil Morse (2016)</strong></p>
-<p>I have to say straight away that I am quite biased as I don’t actually like Phil Morse of DigitalDJTips.com fame. I don’t find his reviews to be that accurate and often seem a bit like advertisements of products. I have learned some things from his website but not a huge amount. However this book has got lots of great reviews so I thought I’d mention it. I do have a copy but I found it a bit difficult to get through as it is all written in Phil’s quite conversational prose, with no diagrams or pictures or anything really to break it up. It may well be worth checking out to see if you can get anything from it though. I will probably try and get through it myself and give it a proper review, but just so you know it’s out there.</p>
-<p><a href="https://www.goodreads.com/book/show/31545542-rock-the-dancefloor">https://www.goodreads.com/book/show/31545542-rock-the-dancefloor</a></p>
-<p><strong>Beyond Beatmatching: Take Your DJ Career to the Next Level - Yakov Vorobyev, Eric Coomes, Bill Murphy (2012)</strong></p>
-<p>This is quite an interesting and quite advanced book by the developers of Mixed in Key. In it, they talk about using MIK’s features to detect musical key and energy level, and how you can use those features to plan your set around harmonic mixes and energy level arcs. It is quite advanced and very interesting. MIK is a pretty good piece of software, I have had it crash a few times when analysing very big libraries but generally it is pretty solid. I recommend checking this out, because although the basics of harmonic mixing are probably talked about in any recent DJing book, this goes into greater depth.</p>
-<p><a href="https://www.goodreads.com/en/book/show/19218202-beyond-beatmatching">https://www.goodreads.com/en/book/show/19218202-beyond-beatmatching</a></p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2021/02/18/dj-books-reviewed/</guid>
+      <description>The classic!&#xA;Yes! Some people actually write and read BOOKS on DJing. As if YouTube wasn&amp;rsquo;t enough. Well it can be enough.. but YouTube is also a cess pit of rubbish information, and at least a book has a better chance of being properly edited and reviewed. Also reading a book makes you more intellectual. Which is utterly true.&#xA;So. I have been reading through these DJing books to see if they could teach me something I didn&amp;rsquo;t know about DJing after over 10 years doing it.</description>
     </item>
-    
   </channel>
 </rss>

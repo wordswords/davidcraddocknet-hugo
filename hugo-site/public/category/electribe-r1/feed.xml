@@ -1,39 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Electribe-R1 on DavidCraddock.net</title>
-    <link>http://192.168.1.50:9796/category/electribe-r1/</link>
+    <link>http://davidcraddock.net:9796/category/electribe-r1/</link>
     <description>Recent content in Electribe-R1 on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 05 May 2014 16:20:33 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/category/electribe-r1/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 May 2014 16:20:33 +0000</lastBuildDate>
+    <atom:link href="http://davidcraddock.net:9796/category/electribe-r1/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Current Music Setup</title>
-      <link>http://192.168.1.50:9796/2014/05/05/music-setup/</link>
+      <link>http://davidcraddock.net:9796/2014/05/05/music-setup/</link>
       <pubDate>Mon, 05 May 2014 16:20:33 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2014/05/05/music-setup/</guid>
-      <description>I like to dabble in making and playing music. Here is the equipment and setup that I use.
-Ableton Live Intro
-This is the DAW I use. I have been using Ableton Live for several years now, and I know my way around it. I have tried others but they never really felt as comfortable. Live comes in three flavours, &amp;lsquo;Intro&amp;rsquo; is the most basic paid-for version. I was surprised how cheap the &amp;lsquo;Intro&amp;rsquo; version was, and how little I find myself needing the features of the more expensive versions.</description>
-      <content:encoded><![CDATA[<p>I like to dabble in making and playing music. Here is the equipment and setup that I use.</p>
-<p><strong>Ableton Live Intro</strong></p>
-<p>This is the DAW I use. I have been using Ableton Live for several years now, and I know my way around it. I have tried others but they never really felt as comfortable. <a href="https://www.ableton.com/en/live/feature-comparison/">Live comes in three flavours</a>, &lsquo;Intro&rsquo; is the most basic paid-for version. I was surprised how cheap the &lsquo;Intro&rsquo; version was, and how little I find myself needing the features of the more expensive versions. I only have one paid-for VST plugin, and that is the KORG Legacy Cell MS-20, which I use on almost all the music I&rsquo;ve made.</p>
-<p><strong>KORG Electribe R-1 MK2 Analog Modelling Drum Synthesiser</strong></p>
-<p>This is what serves as my drum machine. I picked it up on the cheap, but I&rsquo;m really happy with it. I really like the built in step sequencer, and the drum synth itself. The sounds you can make from it are quite varied, and I really like the way you can put together live compositions on the fly. I&rsquo;d be interested in getting some more KORG boxes, such as the <a href="http://www.soundonsound.com/sos/nov03/articles/korgemx1.htm">EMX Electribes</a> or the Volcas.</p>
-<p><a href="/wp-content/uploads/2014/05/korg-electribe-er1-mk2.jpg"><img loading="lazy" src="/wp-content/uploads/2014/05/korg-electribe-er1-mk2.jpg" type="" alt="korg-electribe-er1-mk2"  /></a><strong>Waldorf Rocket Monophonic Analogue Sythnesiser module</strong></p>
-<p>This is my analogue synthesiser, which I use mainly for leads. In practice I find it quite annoying not being able to play real chords, and the lack of a sequencer is difficult because it means I can&rsquo;t put together patterns away from the PC, or even really play it without a keyboard. I do like the sound, and the filter is great. The &lsquo;fake chords&rsquo; option is great fun I just wish you could more easily change between the chords on the fly. The arp is pretty cool also. I think this will become a lot more awesome when I get a hardware sequencer, I already have my eye on the cheap <a href="http://www.arturia.com/evolution/en/products/BeatStep/intro.html">BeatStep</a> to pick up when it is released.</p>
-<p><a href="/wp-content/uploads/2014/05/waldorfrocket-1.jpg"><img loading="lazy" src="/wp-content/uploads/2014/05/waldorfrocket-1.jpg" type="" alt="WALDORF&#43;ROCKET-1"  /></a><strong>KORG Monotribe Analogue Sythesiser and Drum Machine</strong></p>
-<p>I don&rsquo;t really use this for anything, unfortunately. It was my first synthesiser and although I liked it at the time, nowadays I find the lack of MIDI and the ribbon keyboard a major problem. I might either sell it or get a MIDI mod and install it. I find it quite noisey when recording anyway, so maybe I&rsquo;ll just try and sell it. It does has some nice acid style sounds though. A shame.</p>
-<p><a href="/wp-content/uploads/2014/05/monotribe.jpg"><img loading="lazy" src="/wp-content/uploads/2014/05/monotribe.jpg" type="" alt="monotribe"  /></a><strong>Yamaha P35 Digital Piano</strong></p>
-<p>I was looking for a decent MIDI out keyboard that would allow me to put together more complex melodies and learn how to play keyboards for possibly joining a band in the future. The Yamaha NP31, which was my original choice, was out of stock and so it got me looking at others. I thought it would be interesting to learn to play the piano, as we had one growing up but I never really learned before. In the store I really liked the feel of the P35&rsquo;s hammer action keys, so decided to buy it. I can play some simple tunes with it but want to get piano lessons so I can improve. This will also function as my main MIDI controller for my other hardware.</p>
-<p><a href="/wp-content/uploads/2014/05/717azc6biwl-_sl1500_.jpg"><img loading="lazy" src="/wp-content/uploads/2014/05/717azc6biwl-_sl1500_.jpg" type="" alt="717aZc6BIwL.&lt;em&gt;SL1500&lt;/em&gt;"  /></a><strong>Line 6 Mobile Keys 25 USB Keyboard Controller</strong></p>
-<p>This is a nice little keyboard controller that I use with Ableton. Unfortunately it does not have MIDI out, only MIDI via USB, but I can run it through the MIDISport to control audio hardware. The keyboard action is very nice, much better than the M-Audio Keystation 49 which I had before and would not recommend.</p>
-<p><a href="/wp-content/uploads/2014/05/controller.jpeg"><img loading="lazy" src="/wp-content/uploads/2014/05/controller.jpeg" type="" alt="controller"  /></a><strong>M-Audio MIDISport Anniversary Edition 2x2 MIDI/USB Interface</strong></p>
-<p>This is a <a href="http://www.amazon.co.uk/M-Audio-Midisport-2x2-Anniversary-Edition/dp/B001D5D454/">fairly standard cheap MIDI to USB interface</a>. I used to use the M-Audio Uno, but that has only one input/output and it has problems with some audio hardware.</p>
-<p><a href="/wp-content/uploads/2014/05/midisport.jpg"><img loading="lazy" src="/wp-content/uploads/2014/05/midisport.jpg" type="" alt="midisport"  /></a></p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2014/05/05/music-setup/</guid>
+      <description>I like to dabble in making and playing music. Here is the equipment and setup that I use.&#xA;Ableton Live Intro&#xA;This is the DAW I use. I have been using Ableton Live for several years now, and I know my way around it. I have tried others but they never really felt as comfortable. Live comes in three flavours, &amp;lsquo;Intro&amp;rsquo; is the most basic paid-for version. I was surprised how cheap the &amp;lsquo;Intro&amp;rsquo; version was, and how little I find myself needing the features of the more expensive versions.</description>
     </item>
-    
   </channel>
 </rss>

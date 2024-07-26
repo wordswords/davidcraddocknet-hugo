@@ -1,45 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Top-Apps on DavidCraddock.net</title>
-    <link>http://192.168.1.50:9796/category/top-apps/</link>
+    <link>http://davidcraddock.net:9796/category/top-apps/</link>
     <description>Recent content in Top-Apps on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 07 Nov 2015 12:51:33 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/category/top-apps/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Nov 2015 12:51:33 +0000</lastBuildDate>
+    <atom:link href="http://davidcraddock.net:9796/category/top-apps/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Favourite OSX Apps for Development</title>
-      <link>http://192.168.1.50:9796/2015/11/07/favourite-osx-apps-for-development/</link>
+      <link>http://davidcraddock.net:9796/2015/11/07/favourite-osx-apps-for-development/</link>
       <pubDate>Sat, 07 Nov 2015 12:51:33 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2015/11/07/favourite-osx-apps-for-development/</guid>
-      <description>I&amp;rsquo;ve just recently bought a Macbook Pro for myself, after having used a MBP at work for 4 years. I find it to be a really powerful development environment for the development I do, in languages such as Java, PHP, Ruby, Python and JS. Here is what I use day-to-day:
-OSX El Capitan I haven&amp;rsquo;t found anything not to like about this upgrade. I don&amp;rsquo;t use a lot of external devices, for which Bruce has found problems with El Capitan&amp;rsquo;s new restricted driver management for Arduinos and others.</description>
-      <content:encoded><![CDATA[<p>I&rsquo;ve just recently bought a Macbook Pro for myself, after having used a MBP at work for 4 years. I find it to be a really powerful development environment for the development I do, in languages such as Java, PHP, Ruby, Python and JS. Here is what I use day-to-day:</p>
-<h3 id="osx-el-capitan">OSX El Capitan</h3>
-<p>I haven&rsquo;t found anything not to like about this upgrade. I don&rsquo;t use a lot of external devices, for which <a href="https://twitter.com/custardcat">Bruce</a> has found problems with El Capitan&rsquo;s new restricted driver management for Arduinos and others. I like the fact I can use split screen functionality to side-by-side two windows easily, a feature that I very much like in Windows 10 too.</p>
-<h3 id="iterm-2httpswwwiterm2com"><a href="https://www.iterm2.com/">iTerm 2</a></h3>
-<p>This is an awesome terminal, better than OSX&rsquo;s terminal. Nothing much more to say about it.</p>
-<h3 id="fish-shellhttpfishshellcom"><a href="http://fishshell.com/">Fish Shell</a></h3>
-<p>This shell has fast and smart command-line completion which is very handy and I&rsquo;d highly recommend it if you use the commandline a lot and are not totally won over by Bash. It looks nice too.</p>
-<h3 id="homebrewhttpbrewsh"><a href="http://brew.sh/">Homebrew</a></h3>
-<p>This is pretty much essential for command line OSX. It is a package manager which downloads and compiles the latest version of open source packages on your Mac. If you don&rsquo;t use it already, get used to it.</p>
-<h3 id="intellij-webstormhttpswwwjetbrainscomwebstorm"><a href="https://www.jetbrains.com/webstorm/">IntelliJ WebStorm</a></h3>
-<p>WebStorm is great for debugging JavaScript applications, which I seem to be doing a lot of lately. I recommend the IntelliJ IDEA family of IDEs, once you get use to them, they are a great help in productive development. There are also vim and Emacs keybindings.</p>
-<h3 id="vim">vim</h3>
-<p>If you are a fan of vim you will know what I mean when I say I can&rsquo;t be without it. My <a href="https://github.com/wordswords/-">Dotfiles</a> show my .vimrc and plugin configuration.</p>
-<h3 id="git">git</h3>
-<p>Thankfully the BBC has moved over to Github, meaning all my coding uses Git. It is so useful, and not just for storing code, you can store anything.</p>
-<h3 id="itunes">iTunes</h3>
-<p>I use Apple Music, and iTunes Match, so iTunes is a must. It annoys me at times, but I just have to live with it.</p>
-<h3 id="alfredhttpswwwalfredappcom"><a href="https://www.alfredapp.com/">Alfred</a></h3>
-<p>Alfred is a replacement for Spotlight search in OSX. It has a lot of functionality that I&rsquo;m still getting my head around, but it speeds up my OSX workflow a lot when undertaking frequent tasks such as Google searching.</p>
-<h3 id="evernotehttpevernotecom"><a href="http://evernote.com">Evernote</a></h3>
-<p>Evernote is so useful for making and sharing notes on my phone, mac, work computer.. anywhere</p>
-<h3 id="droplrhttpdroplrcom"><a href="http://droplr.com">Droplr</a></h3>
-<p>This is something someone only recently recommended to me. It seems very useful from what I&rsquo;ve seen, great way to share images files, screenshots, webcasts.. anything. Also it has as expiry policy for media, like Snapchat, so it doesn&rsquo;t exist on the internet for generations to come.</p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2015/11/07/favourite-osx-apps-for-development/</guid>
+      <description>I&amp;rsquo;ve just recently bought a Macbook Pro for myself, after having used a MBP at work for 4 years. I find it to be a really powerful development environment for the development I do, in languages such as Java, PHP, Ruby, Python and JS. Here is what I use day-to-day:&#xA;OSX El Capitan I haven&amp;rsquo;t found anything not to like about this upgrade. I don&amp;rsquo;t use a lot of external devices, for which Bruce has found problems with El Capitan&amp;rsquo;s new restricted driver management for Arduinos and others.</description>
     </item>
-    
   </channel>
 </rss>

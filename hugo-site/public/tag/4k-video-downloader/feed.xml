@@ -1,36 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>4k-Video-Downloader on DavidCraddock.net</title>
-    <link>http://192.168.1.50:9796/tag/4k-video-downloader/</link>
+    <link>http://davidcraddock.net:9796/tag/4k-video-downloader/</link>
     <description>Recent content in 4k-Video-Downloader on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 20 May 2018 11:40:51 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/tag/4k-video-downloader/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 May 2018 11:40:51 +0000</lastBuildDate>
+    <atom:link href="http://davidcraddock.net:9796/tag/4k-video-downloader/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Home Cinema Setup</title>
-      <link>http://192.168.1.50:9796/2018/05/20/home-cinema-setup/</link>
+      <link>http://davidcraddock.net:9796/2018/05/20/home-cinema-setup/</link>
       <pubDate>Sun, 20 May 2018 11:40:51 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2018/05/20/home-cinema-setup/</guid>
-      <description>I have been gradually adding parts to my PC so that it functions better for watching movies and gaming. Here are the components that I have used:
-Monitor – BenQ EX3501R 35″ Ultra WQHD Curved Monitor This monitor is great for watching movies and gaming as it is ultra-wide at an aspect radio of 21:9, 3440x1440, a VA panel with high contrast, and the monitor is slightly curved so that you get a cinematic experience.</description>
-      <content:encoded><![CDATA[<p>I have been gradually adding parts to my PC so that it functions better for watching movies and gaming. Here are the components that I have used:</p>
-<h3 id="monitor--benq-ex3501r-35httpswwwbenqcomenmonitorvideo-enjoymentex3501rhtml-ultra-wqhd-curved-monitor">Monitor – <a href="https://www.benq.com/en/monitor/video-enjoyment/ex3501r.html">BenQ EX3501R 35″</a> Ultra WQHD Curved Monitor</h3>
-<p>This monitor is great for watching movies and gaming as it is ultra-wide at an aspect radio of 21:9, 3440x1440, a VA panel with high contrast, and the monitor is slightly curved so that you get a cinematic experience.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2018/05/monitor.jpg" type="" alt=""  /></p>
-<h3 id="surround-sound-speakers--logitech-z906-51-speakershttpswwwlogitechcomen-gbproductspeaker-system-z906">Surround Sound Speakers – <a href="https://www.logitech.com/en-gb/product/speaker-system-z906">Logitech Z906 5.1 Speakers</a></h3>
-<p>This is a good set of 5.1 surround sound speakers with a separate subwoofer. I connect it from my motherboard’s optical out via ADAT for the best connection. I have the rear speakers mounted on the wall behind me, and the front speakers on the desk in front of me angled towards my seat.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2018/05/speakers.jpg" type="" alt=""  /></p>
-<h3 id="phillips-hue-bulbs-and-dynamic-lighting">Phillips Hue Bulbs and Dynamic Lighting</h3>
-<p>I have three <a href="https://www.philips.co.uk/c-m-li/hue">Phillips Hue</a> bulbs near the monitor which I have added to a ‘ <a href="https://www2.meethue.com/en-gb/support/entertainment">Hue Entertainment Group</a>’ which means their colours can be rapidly changed with applications that use the Phillips Hue Entertainment API. One such application is ‘ <a href="https://www.huedynamic.com/">hueDynamic for Hue</a>’ which is a Windows 10 application that monitors the colours on the pixels at the edges of the monitor, and changes the lights next to each edge according to the colours on that edge. This means I can have some dynamic lighting when watching movies.</p>
-<h3 id="source-of-4k-video">Source of 4K Video</h3>
-<p>Even though my monitor doesn’t quite support 4K, using <a href="https://www.videolan.org/vlc/download-windows.en-GB.html">VLC</a> means I can adjust the aspect ratio so that it will re scale the 4K video onto the monitor’s 3440x1440 dimensions, making 4K the best fit for my monitor. However my wireless connection is not currently fast enough to stream 4K video, so I use the ‘ <a href="https://www.4kdownload.com/products/product-videodownloader">4K Video Downloade</a> r’ app to download free 4K videos from YouTube so I can play them on VLC.</p>
-<h3 id="putting-it-all-together">Putting It All Together</h3>
-<p><strong>(Click on diagram to enlarge)</strong> <a href="/wp-content/uploads/2018/05/untitled-diagram-1.png"><img loading="lazy" src="/wp-content/uploads/2018/05/untitled-diagram-1.png" type="" alt=""  /></a></p>
-<p>So, I download 4K videos from Youtube, play them on VLC which adjusts the 4K content to fit my monitor. The audio goes to my surround sound setup which creates a virtualised surround sound output to my speakers, and the hueDynamic app running in the background on my PC samples the colours are the left and right areas of my monitor, and dynamically changes the colour of the Hue bulbs as the video plays. This creates an immersive &lsquo;Home Cinema&rsquo; experience.</p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2018/05/20/home-cinema-setup/</guid>
+      <description>I have been gradually adding parts to my PC so that it functions better for watching movies and gaming. Here are the components that I have used:&#xA;Monitor – BenQ EX3501R 35″ Ultra WQHD Curved Monitor This monitor is great for watching movies and gaming as it is ultra-wide at an aspect radio of 21:9, 3440x1440, a VA panel with high contrast, and the monitor is slightly curved so that you get a cinematic experience.</description>
     </item>
-    
   </channel>
 </rss>

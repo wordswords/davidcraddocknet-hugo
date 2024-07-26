@@ -1,37 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Health on DavidCraddock.net</title>
-    <link>http://192.168.1.50:9796/tag/health/</link>
+    <link>http://davidcraddock.net:9796/tag/health/</link>
     <description>Recent content in Health on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 18 Aug 2022 19:58:57 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/tag/health/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Aug 2022 19:58:57 +0000</lastBuildDate>
+    <atom:link href="http://davidcraddock.net:9796/tag/health/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sleep Tracking</title>
-      <link>http://192.168.1.50:9796/2022/08/18/sleep-tracking/</link>
+      <link>http://davidcraddock.net:9796/2022/08/18/sleep-tracking/</link>
       <pubDate>Thu, 18 Aug 2022 19:58:57 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2022/08/18/sleep-tracking/</guid>
-      <description>I really like my Withings Mattress-Based Sleep Tracker.
-I keep unusual sleeping hours a lot of the time, as I&amp;rsquo;m undergoing treatment, and a lot of the medication I&amp;rsquo;m taking effect my sleep. Even when I&amp;rsquo;m relatively healthy, some of the medication I&amp;rsquo;m on for a long-term condition also affects my sleep.
-What&amp;rsquo;s more, I enjoy a non-standard sleeping schedule. I find I get more work done in the early morning or late at night.</description>
-      <content:encoded><![CDATA[<p>I really like my <a href="https://www.withings.com/it/en/sleep-analyzer">Withings Mattress-Based Sleep Tracker</a>.</p>
-<p>I keep unusual sleeping hours a lot of the time, as I&rsquo;m undergoing treatment, and a lot of the medication I&rsquo;m taking effect my sleep. Even when I&rsquo;m relatively healthy, some of the medication I&rsquo;m on for a long-term condition also affects my sleep.</p>
-<p>What&rsquo;s more, I enjoy a non-standard sleeping schedule. I find I get more work done in the early morning or late at night. As I work from home 100% this is not as problematic as it used to be.</p>
-<p>It is still good to monitor your sleep though, when you are ill or like me, when you have odd sleeping hours.</p>
-<p>Like a lot of these smart health things, it is not perfect. Sometimes it will create erroneous data, and then correct itself a few days later, such as when I was in hospital, and it registered someone sleeping in my bed :D My wife was quite surprised when I told her. Thankfully for both of us it corrected itself a day later.</p>
-<p>Also it comes up with all this wake-up time and time spend in bed not sleeping, data which I don&rsquo;t really trust. I don&rsquo;t think it&rsquo;s reliable enough. The core metric, amount of time asleep, is fairly accurate though, within a few hours. When averaged over 1-2 weeks it does give you a good general idea of how much sleep you&rsquo;re getting.</p>
-<p>Sleep is so important for recovery and feeling well. You can compare the statistics of two fortnights, one when I was being pumped full of steroids and hardly sleeping at all, and one when I was relatively medication free and relaxed:</p>
-<h3 id="not-relaxed">Not Relaxed:</h3>
-<p><img loading="lazy" src="/wp-content/uploads/2022/08/sleep-then.png" type="" alt=""  /></p>
-<p>As you can see, I was getting max about 3 hours a night.</p>
-<h3 id="relaxed">Relaxed:</h3>
-<p><img loading="lazy" src="/wp-content/uploads/2022/08/latest-sleep.png" type="" alt=""  /></p>
-<p>Although the latest week is not full, it&rsquo;s a much more healthy 6 hours or so on average.</p>
-<p>I find if I am logging 2-3 hours a night sleep for more than a couple of weeks, something is seriously wrong, however I might feel at the time, and I should see a medical professional about it. It is easy to forget this when you might be energised and &ldquo;doing all the things&rdquo; but there is a danger that you might be manic or hyperactive and that really isn&rsquo;t good long term. So this is why I recommend the sleep tracker.</p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2022/08/18/sleep-tracking/</guid>
+      <description>I really like my Withings Mattress-Based Sleep Tracker.&#xA;I keep unusual sleeping hours a lot of the time, as I&amp;rsquo;m undergoing treatment, and a lot of the medication I&amp;rsquo;m taking effect my sleep. Even when I&amp;rsquo;m relatively healthy, some of the medication I&amp;rsquo;m on for a long-term condition also affects my sleep.&#xA;What&amp;rsquo;s more, I enjoy a non-standard sleeping schedule. I find I get more work done in the early morning or late at night.</description>
     </item>
-    
   </channel>
 </rss>

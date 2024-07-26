@@ -1,32 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bootcamp on DavidCraddock.net</title>
-    <link>http://192.168.1.50:9796/category/bootcamp/</link>
+    <link>http://davidcraddock.net:9796/category/bootcamp/</link>
     <description>Recent content in Bootcamp on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 01 Jul 2010 22:50:25 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/category/bootcamp/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Jul 2010 22:50:25 +0000</lastBuildDate>
+    <atom:link href="http://davidcraddock.net:9796/category/bootcamp/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows 7 Gaming on my Macbook</title>
-      <link>http://192.168.1.50:9796/2010/07/01/running-windows-7-on-my-macbook/</link>
+      <link>http://davidcraddock.net:9796/2010/07/01/running-windows-7-on-my-macbook/</link>
       <pubDate>Thu, 01 Jul 2010 22:50:25 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2010/07/01/running-windows-7-on-my-macbook/</guid>
-      <description>I have a 2006/2007 Core 2 Duo 2.6ghz white macbook, that I use regularly for internet, music, watching films, itunes and integration with my iPhone.
-I wanted to turn my desktop PC into a &amp;lsquo;work only&amp;rsquo; Ubuntu Linux machine, so that I don&amp;rsquo;t get distracted when I&amp;rsquo;m supposed to be doing something else.
-But I still have a lot of PC games that I wanted to play on the Macbook, so I decided to try and setup a windows environment to play games on using Bootcamp 2.</description>
-      <content:encoded><![CDATA[<p>I have a 2006/2007 Core 2 Duo 2.6ghz white macbook, that I use regularly for internet, music, watching films, itunes and integration with my iPhone.</p>
-<p>I wanted to turn my desktop PC into a &lsquo;work only&rsquo; Ubuntu Linux machine, so that I don&rsquo;t get distracted when I&rsquo;m supposed to be doing something else.</p>
-<p>But I still have a lot of PC games that I wanted to play on the Macbook, so I decided to try and setup a windows environment to play games on using Bootcamp 2.0 to create a dual-boot OSX/Windows 7 configuration.</p>
-<p>It turns out it works really well. The Macbook runs Windows 7 64-bit edition fine, and although the integrated graphics card isn&rsquo;t designed to run modern games very well, you can get a good gaming experience from small indie games and the older type of PC RPGs that I tend to play. My macbook got a 3.5 rating on the windows experience index for graphics, which is sufficient for many PC games.</p>
-<p>First you need to partition your macbook&rsquo;s HD using the Bootcamp assistant, in the OSX utilities section. Make sure you have your first OSX installation DVD to hand, the one that came with your Macbook. I chose to split the hard drive into two equally sized partitions. Then just place your W7 DVD in the drive, and Bootcamp takes care of the rest.</p>
-<p>Once W7 is installed, you can access the Bootcamp menu on startup by holding down the option key. This brings up a menu where you can select to boot into OSX or Windows.</p>
-<p>When you start W7 for the first time, you can install the windows driver set for your Macbook that Bootcamp provides you. Insert your OSX installation DVD 1, and run the setup.exe that is located in the Bootcamp folder. This will install native windows drivers for your Macbook hardware.</p>
-<p>The only change I needed to make for my macbook, was to install the latest 64bit Realtek drivers for Vista/Windows 7, which are located <a href="http://www.realtek.com/downloads/downloadsCheck.aspx?Langid=1&amp;PNid=24&amp;PFid=24&amp;Level=4&amp;Conn=3&amp;DownTypeID=3&amp;GetDown=false">on the Realtek website</a>. This will fix any sound problems you might have while playing games.</p>
-<p>Now don&rsquo;t expect to run the latest 3D games, but if you&rsquo;re happy enough with slightly older, classic, indie or retro games, you can get a good gaming experience on Windows 7 from your macbook. It does well with plenty of the indie games available on Value&rsquo;s Steam distribution network.</p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2010/07/01/running-windows-7-on-my-macbook/</guid>
+      <description>I have a 2006/2007 Core 2 Duo 2.6ghz white macbook, that I use regularly for internet, music, watching films, itunes and integration with my iPhone.&#xA;I wanted to turn my desktop PC into a &amp;lsquo;work only&amp;rsquo; Ubuntu Linux machine, so that I don&amp;rsquo;t get distracted when I&amp;rsquo;m supposed to be doing something else.&#xA;But I still have a lot of PC games that I wanted to play on the Macbook, so I decided to try and setup a windows environment to play games on using Bootcamp 2.</description>
     </item>
-    
   </channel>
 </rss>

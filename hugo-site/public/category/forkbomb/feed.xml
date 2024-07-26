@@ -1,44 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Forkbomb on DavidCraddock.net</title>
-    <link>http://192.168.1.50:9796/category/forkbomb/</link>
+    <link>http://davidcraddock.net:9796/category/forkbomb/</link>
     <description>Recent content in Forkbomb on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 02 Apr 2010 03:50:37 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/category/forkbomb/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Apr 2010 03:50:37 +0000</lastBuildDate>
+    <atom:link href="http://davidcraddock.net:9796/category/forkbomb/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Forkbombs and How to Prevent Them</title>
-      <link>http://192.168.1.50:9796/2010/04/02/forkbombs-and-how-to-prevent-them/</link>
+      <link>http://davidcraddock.net:9796/2010/04/02/forkbombs-and-how-to-prevent-them/</link>
       <pubDate>Fri, 02 Apr 2010 03:50:37 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2010/04/02/forkbombs-and-how-to-prevent-them/</guid>
-      <description>A forkbomb is a program or script that continually creates new copies of itself, that create new copies of themselves. It&amp;rsquo;s usually a function that calls itself, and each time that function is called, it creates a new process to run the same function.
-You end up with thousands of processes, all creating processes themselves, with an exponential growth. Soon it takes up all the resources of your server, and prevents anything else running on it.</description>
-      <content:encoded><![CDATA[<p>A forkbomb is a program or script that continually creates new copies of itself, that create new copies of themselves. It&rsquo;s usually a function that calls itself, and each time that function is called, it creates a new process to run the same function.</p>
-<p>You end up with thousands of processes, all creating processes themselves, with an exponential growth. Soon it takes up all the resources of your server, and prevents anything else running on it.</p>
-<p>Forkbombs are an example of a denial of service attack, because it completely locks up the server it&rsquo;s run on.</p>
-<p>More worryingly, on a lot of Linux distributions, you can run a forkbomb as any user that has an account on that server. So for example, if you give your friend an account on your server, he can crash it/lock it up whenever he wants to, with the following shell script forkbomb:</p>
-<p><code>:(){ :|:&amp; };: </code></p>
-<p>Bad, huh?</p>
-<p>Ubuntu server 9.10 is vulnerable to this shell script forkbomb. Run it on your linux server as any user, and it will lock it up.</p>
-<p>This is something I wanted to fix right away on all my linux servers. Linux is meant to be multiuser, and it has a secure and structured permissions system allowing dozens of users to log in and do their work, at the same time. However when any one user can lock up the entire server, this is not good for a multiuser environment.</p>
-<p>Fortunately, fixing this on ubuntu server 9.10 is quite simple. You limit the maximum number of running processes that any user can create. So the fork bomb runs, but hits this ceiling, and eventually stops without the administrator having to do anything.</p>
-<p>As root, edit this file, and add the following line:</p>
-<p>/etc/security/limits.conf</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>...
-</span></span><span style="display:flex;"><span>...
-</span></span><span style="display:flex;"><span>*               soft    nproc   35
-</span></span></code></pre></div><p>This sets the maximum process cap for all users, to be 35. The root user isn&rsquo;t affected by this limit. This limit of 35 should be fine for remote servers that are not offering users gnome, kde, or any other graphical X interface. If you are expecting your users to be able to run applications like that, you may want to increase the limit to 50, and although this will increase the time forkbombs will take to exit, they should still exit without locking up your server.</p>
-<p>Alternatively, you can setup an &lsquo;untrusted&rsquo; and &rsquo;trusted&rsquo; user groups, and assign that 35 limit to the untrusted users, giving trusted users access to the trusted group, which does not have that limit. Use these lines:</p>
-<p>/etc/security/limits.conf</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>...
-</span></span><span style="display:flex;"><span>...
-</span></span><span style="display:flex;"><span>@untrusted               soft    nproc   35
-</span></span><span style="display:flex;"><span>@trusted               soft    nproc   50
-</span></span></code></pre></div><p>I&rsquo;ve tested these nproc limits on 8.10 and 9.10 ubuntu-server installs, but you should really test your own servers install, if possible, by forkbombing it yourself as a standard user, using the bash forkbomb above, once you&rsquo;ve applied the fix. The fix is effective as soon as you&rsquo;ve edited that file, but please note that you have to logout, and log back in again as a standard user before the new process cap is applied to your user account.</p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2010/04/02/forkbombs-and-how-to-prevent-them/</guid>
+      <description>A forkbomb is a program or script that continually creates new copies of itself, that create new copies of themselves. It&amp;rsquo;s usually a function that calls itself, and each time that function is called, it creates a new process to run the same function.&#xA;You end up with thousands of processes, all creating processes themselves, with an exponential growth. Soon it takes up all the resources of your server, and prevents anything else running on it.</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,53 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ripit on DavidCraddock.net</title>
-    <link>http://192.168.1.50:9796/tag/ripit/</link>
+    <link>http://davidcraddock.net:9796/tag/ripit/</link>
     <description>Recent content in Ripit on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 17 May 2010 03:15:00 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/tag/ripit/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 May 2010 03:15:00 +0000</lastBuildDate>
+    <atom:link href="http://davidcraddock.net:9796/tag/ripit/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ripping Movies onto the iPhone</title>
-      <link>http://192.168.1.50:9796/2010/05/17/ripping-movies-onto-the-iphone/</link>
+      <link>http://davidcraddock.net:9796/2010/05/17/ripping-movies-onto-the-iphone/</link>
       <pubDate>Mon, 17 May 2010 03:15:00 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2010/05/17/ripping-movies-onto-the-iphone/</guid>
-      <description>I&amp;rsquo;m currently watching Persepolis, the 2008 animated film about a tomboy anarchist growing up in Iran. I&amp;rsquo;m watching this on my new iPhone 3GS, and the picture and audio quality is very good.
-Here&amp;rsquo;s what I used to convert my newly bought Persepolis DVD, for watching on the iPhone.
-1x Macbook (but you can use any intel mac) 1x iTunes 1x RipIt - Commercial Mac DVD Ripper (rips up to 10 DVDs on the free trial, $20 after) 1x Handbrake 32 - Freely available transcoder 1x VLC 32 - Freely available media player 1x DVD</description>
-      <content:encoded><![CDATA[<p>I&rsquo;m currently watching Persepolis, the 2008 animated film about a tomboy anarchist growing up in Iran. I&rsquo;m watching this on my new iPhone 3GS, and the picture and audio quality is very good.</p>
-<p>Here&rsquo;s what I used to convert my newly bought Persepolis DVD, for watching on the iPhone.</p>
-<p>1x Macbook (but you can use any intel mac)
-1x iTunes
-1x RipIt - Commercial Mac DVD Ripper (rips up to 10 DVDs on the free trial, $20 after)
-1x Handbrake 32 - Freely available transcoder
-1x VLC 32 - Freely available media player
-1x DVD</p>
-<p>\* Ripit - rips the video and audio from the DVD, onto your computer
-\* Handbrake 32 - &rsquo;transcodes&rsquo; the ripped video and audio, meaning - it converts it into an iPhone compatible video file.
-\* VLC 32 - is used by Handbrake 32 to get past any problems with converting the media.</p>
-<p>Go to the following sites to fetch the software:</p>
-<p>1. Ripit - <a href="http://thelittleappfactory.com/ripit/">http://thelittleappfactory.com/ripit/</a>
-2. Handbrake 32 - <a href="http://handbrake.fr/downloads.php">http://handbrake.fr/downloads.php</a> (get the 32 bit version)
-3. VLC 32 - <a href="http://www.videolan.org/vlc/download-macosx.html">http://www.videolan.org/vlc/download-macosx.html</a> (be sure to get the 32 bit version)</p>
-<p>There&rsquo;s currently a difficulty in getting the VLC 64 bit software for the Mac, and so although the 64 bit version is faster to use, you&rsquo;re probably better off with 32 bit versions of both for now.</p>
-<p>The Process</p>
-<ol>
-<li>Rip the DVD.</li>
-</ol>
-<p>Start RipIt. It will ask for a DVD, insert the DVD.. and point the resultant save location to the desktop. The ripping process takes about 40 minutes on my Macbook, you can check the progress by looking at the icon in the dock - it will be updated with the percentage of progress until completion. You can do other things on your mac while it&rsquo;s ripping, even though the DVD drive will be occupied. Wait until it&rsquo;s completed before continuing.</p>
-<ol start="2">
-<li>Transcode (convert) the ripped video file for use on the iPhone.</li>
-</ol>
-<p>Start Handbrake. There are a bunch of transcoding settings called presets - those tell Handbrake what type of media player you want the converted video to work on. In handbrake on the right section of the window, select the iPhone preset. Then go to the file menu, select &lsquo;Open&rsquo;, and then select the video file that RipIt saved onto your desktop. Then select the destination for the converted video file. Then select the Start (green) button on Handbrake window, and it will start. You can now minimise handbrake and do other things. The transcoding process depends on the film, but takes about an hour on my Macbook. You can check on progress by maximizing the Handbrake window, and checking on the progress bar.</p>
-<ol start="3">
-<li>Move the converted video file onto your iPhone.</li>
-</ol>
-<p>Once that&rsquo;s done, you will have another media file on your desktop - this is the end result, a video file that will play on your iPhone. Simply connect your iPhone to your Mac, start up iTunes, and drag that file from your desktop into the iPhone icon on your iTunes window. It will take a couple of minutes to transfer, then eject the iPhone as normal</p>
-<p>Now you can watch this new movie on your iPhone by going to the &lsquo;Videos&rsquo; tab of your iPod app.</p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2010/05/17/ripping-movies-onto-the-iphone/</guid>
+      <description>I&amp;rsquo;m currently watching Persepolis, the 2008 animated film about a tomboy anarchist growing up in Iran. I&amp;rsquo;m watching this on my new iPhone 3GS, and the picture and audio quality is very good.&#xA;Here&amp;rsquo;s what I used to convert my newly bought Persepolis DVD, for watching on the iPhone.&#xA;1x Macbook (but you can use any intel mac) 1x iTunes 1x RipIt - Commercial Mac DVD Ripper (rips up to 10 DVDs on the free trial, $20 after) 1x Handbrake 32 - Freely available transcoder 1x VLC 32 - Freely available media player 1x DVD</description>
     </item>
-    
   </channel>
 </rss>

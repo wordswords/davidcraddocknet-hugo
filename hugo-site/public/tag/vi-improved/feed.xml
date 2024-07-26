@@ -1,35 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vi-Improved on DavidCraddock.net</title>
-    <link>http://192.168.1.50:9796/tag/vi-improved/</link>
+    <link>http://davidcraddock.net:9796/tag/vi-improved/</link>
     <description>Recent content in Vi-Improved on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 18 Mar 2010 19:23:07 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/tag/vi-improved/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Mar 2010 19:23:07 +0000</lastBuildDate>
+    <atom:link href="http://davidcraddock.net:9796/tag/vi-improved/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My minimal VIM config</title>
-      <link>http://192.168.1.50:9796/2010/03/18/my-minimal-vim-config/</link>
+      <link>http://davidcraddock.net:9796/2010/03/18/my-minimal-vim-config/</link>
       <pubDate>Thu, 18 Mar 2010 19:23:07 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2010/03/18/my-minimal-vim-config/</guid>
-      <description>This is the absolute minimum I do when I have to log onto a new server or shell account that I haven&amp;rsquo;t used before, that I will need to edit text files with.
-First I figure out whether VIM is really installed. A lot of installs, especially those based on ubuntu, ship with VI aliased to VIM, but the VIM install is usually not really VIM at all, and behaves exactly like VI but with some minor bugs fixed.</description>
-      <content:encoded><![CDATA[<p>This is the absolute minimum I do when I have to log onto a new server or shell account that I haven&rsquo;t used before, that I will need to edit text files with.</p>
-<p>First I figure out whether VIM is really installed. A lot of installs, especially those based on ubuntu, ship with VI aliased to VIM, but the VIM install is usually not really VIM at all, and behaves exactly like VI but with some minor bugs fixed. This is not what I want.</p>
-<p>So first I figure out what distribution of linux I&rsquo;m using through executing the following command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>cat /etc/issue
-</span></span></code></pre></div><p>Then if it&rsquo;s ubuntu, which doesn&rsquo;t ship with the full VIM package on a lot of default installs, then I usually do this, presuming I have admin access. In practice I usually have admin access because people are generous with this when they want you to fix their server =) Anyway, if I have admin access, I install ubuntu&rsquo;s &lsquo;vim full&rsquo; package, which is aliased as &lsquo;vim&rsquo;:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo apt-get install vim
-</span></span></code></pre></div><p>Now I can move onto my config. Occasionally there will be a global system config, but I probably want to override that anyway. So I create a vim configuration file specific to me in my home directory:</p>
-<p>/home/david/.vimrc
-<code>set bg=dark set backspace=2 </code></p>
-<p>The first line sets the background to be dark, so I can see what is going on when I use a dark terminal program, such as putty, mac osx&rsquo;s terminal.. in fact nearly all terminal programs use a dark background, so this setting is almost compulsory.</p>
-<p>The second line configures the behaviour of the backspace key, so when I go the the start of a line, and press backspace, it adopts the wordprocessor conventional behaviour of skipping to the above line. Otherwise it uses the default VI behaviour, which is probably not intuitive at all to anyone who didn&rsquo;t grow up on UNIX mainframes and such.</p>
-<p>The very existence of a user-supplied configuration file will also jolt the VIM editor into &rsquo;non compatible mode&rsquo;, where it figures out automatically that it should be doing all the advanced VIM things, instead of just acting as a VI replacement. This should mean that if you create a config file, syntax highlighting is already turned on, another must for me. Otherwise you can explicitly set it with the line &lsquo;syntax on&rsquo;, but I never have to do this anymore.</p>
-<p>And that&rsquo;s it.</p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2010/03/18/my-minimal-vim-config/</guid>
+      <description>This is the absolute minimum I do when I have to log onto a new server or shell account that I haven&amp;rsquo;t used before, that I will need to edit text files with.&#xA;First I figure out whether VIM is really installed. A lot of installs, especially those based on ubuntu, ship with VI aliased to VIM, but the VIM install is usually not really VIM at all, and behaves exactly like VI but with some minor bugs fixed.</description>
     </item>
-    
   </channel>
 </rss>

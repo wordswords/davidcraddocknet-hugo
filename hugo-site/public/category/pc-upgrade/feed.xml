@@ -1,31 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pc-Upgrade on DavidCraddock.net</title>
-    <link>http://192.168.1.50:9796/category/pc-upgrade/</link>
+    <link>http://davidcraddock.net:9796/category/pc-upgrade/</link>
     <description>Recent content in Pc-Upgrade on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 21 Dec 2015 08:37:03 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/category/pc-upgrade/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Dec 2015 08:37:03 +0000</lastBuildDate>
+    <atom:link href="http://davidcraddock.net:9796/category/pc-upgrade/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Top 5 Recommended Upgrades for your PC</title>
-      <link>http://192.168.1.50:9796/2015/12/21/top-5-recommended-upgrades-for-your-pc/</link>
+      <link>http://davidcraddock.net:9796/2015/12/21/top-5-recommended-upgrades-for-your-pc/</link>
       <pubDate>Mon, 21 Dec 2015 08:37:03 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2015/12/21/top-5-recommended-upgrades-for-your-pc/</guid>
-      <description>I have made a lot of different upgrades and modifications to my PC, as you can see here. Some of the upgrades have made more of a difference than others though. Here is what I think you should be concentrating on, if you&amp;rsquo;re looking to upgrade.
-Solid State Hardisk (SSD) - Solid State hard drives use flash memory instead of the moving disk platters of traditional hard disks. It is the same type of storage as your USB stick.</description>
-      <content:encoded><![CDATA[<p>I have made a lot of different upgrades and modifications to my PC, <a href="http://www.davidcraddock.net/my-computer-setup/">as you can see here</a>. Some of the upgrades have made more of a difference than others though. Here is what I think you should be concentrating on, if you&rsquo;re looking to upgrade.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2015/12/upgrades.jpg" type="" alt="upgrades"  /></p>
-<ul>
-<li><strong>Solid State Hardisk (SSD)</strong> - Solid State hard drives use flash memory instead of the moving disk platters of traditional hard disks. It is the same type of storage as your USB stick. This type of storage is a lot faster to access compared to magnetic storage. Upgrading will result in a huge performance increase for most systems if you are changing from a traditional hard disk. Get as big a size as you can afford. If you play computer games or do a lot of media production work, then the added space will be useful. They have reduced in price over the years, the first SSD I bought was £120 for 120GB SSD back in 2012, in 2015 I just bought a 250GB SSD for £50. So it&rsquo;s definitely affordable now.</li>
-<li><strong>Large Monitor</strong> - If you can get a 27&quot;-32&quot; monitor then do so. It has made so much difference to the day to day usage of my PC. I would recommend 1440p if you can. 1440p is half the resolution of 4K. I wouldn&rsquo;t recommend a 4K monitor yet in 2015 as I don&rsquo;t think they have enough software support, and the cost is considerable for a decent screen. If you&rsquo;re a gamer, then you might want to aim for a higher refresh speed, but I&rsquo;d say this should be a secondary consideration to the screen space. Look on <a href="http://www.tftcentral.co.uk/">TFTCentral</a> for reviews and guides to the different screen types available.</li>
-<li><strong>Good Soundcard and Surround Sound Speaker System</strong> - Headphones are OK, but even a basic surround sound soundcard and speaker system is going to be so much better. I have a <a href="http://www.amazon.co.uk/dp/B00CRRVL4S/">Asus Xonar Phoebus Solo</a> which I recommend, it&rsquo;s a 7.1 surround sound card. I have a cheap £60 set of surround sound speakers, <a href="http://www.amazon.co.uk/gp/product/B003WJR482">Logitech Z506 Surround Sound Speakers</a>. Surround sound really makes a difference in gaming and movies. I think it&rsquo;s the seperate subwoofer that has the most effect, so if you are not that convinced by surround sound, you could get a 2.1 (two speakers and a subwoofer) setup for a bit less.</li>
-<li><strong>Ergonomic Mouse and good mousemat</strong> - Chances are, most of the time you&rsquo;re at your PC, you will be using the mouse. It is therefore really important you have a good mouse that won&rsquo;t damange your hand after a few years use and is comfortable to use. Modern mice use laser scanners to track the position of the mouse on a flat surface. A higher resolution laser (measured in DPI - dots per inch) means that you can get more accurate tracking. Therefore look for high DPI mice for gaming or fine detail work as well as an ergonomic fit and lots of buttons. I recommend Logitech mice, after having had several Razer mice that didn&rsquo;t last very long. I would also pick up a steel mousemat, as they never get tangled up in your mouse like the fibre mousemats do.</li>
-<li><strong>Recent Graphics Card</strong> - If you are into gaming or 3D modelling work, you would often prioritise this over any other upgrade. A new graphics card means that your existing games will run faster on higher detail settings, and you can play new games on higher settings with better framerate. I don&rsquo;t think it matters too much whether you go for Nvidea or AMD as long as you can run the games you want to run. If you are not interested in running the latest games, then perhaps you don&rsquo;t need this, but you may be missing out in the future.</li>
-</ul>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2015/12/21/top-5-recommended-upgrades-for-your-pc/</guid>
+      <description>I have made a lot of different upgrades and modifications to my PC, as you can see here. Some of the upgrades have made more of a difference than others though. Here is what I think you should be concentrating on, if you&amp;rsquo;re looking to upgrade.&#xA;Solid State Hardisk (SSD) - Solid State hard drives use flash memory instead of the moving disk platters of traditional hard disks. It is the same type of storage as your USB stick.</description>
     </item>
-    
   </channel>
 </rss>

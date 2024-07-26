@@ -1,996 +1,173 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Solutions-to-a-Specific-Problem on DavidCraddock.net</title>
-    <link>http://192.168.1.50:9796/category/solutions-to-a-specific-problem/</link>
+    <link>http://davidcraddock.net:9796/category/solutions-to-a-specific-problem/</link>
     <description>Recent content in Solutions-to-a-Specific-Problem on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 May 2022 23:15:20 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/category/solutions-to-a-specific-problem/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 May 2022 23:15:20 +0000</lastBuildDate>
+    <atom:link href="http://davidcraddock.net:9796/category/solutions-to-a-specific-problem/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Home Network Design</title>
-      <link>http://192.168.1.50:9796/2022/05/15/home-network-design/</link>
+      <link>http://davidcraddock.net:9796/2022/05/15/home-network-design/</link>
       <pubDate>Sat, 14 May 2022 23:15:20 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2022/05/15/home-network-design/</guid>
-      <description>Did some network design for my home network. This will ensure that my new Virgin Media 1100mbps/50mps speed is fully utilised without any bottlenecks and will futureproof things up to at least 2.5Gbs/speed connections.
-I should be able to load balance both internet connections to utilise them both simultaniously in the future, but for now I want to be able to get greater than 1000mbit/s speed on a single device otherwise there is not much point in speed increases past 1000mbits.</description>
-      <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2022/05/screenshot-2022-05-15-at-00-10-35-linkedin-2.png" type="" alt=""  /></p>
-<p>Did some network design for my home network. This will ensure that my new Virgin Media 1100mbps/50mps speed is fully utilised without any bottlenecks and will futureproof things up to at least 2.5Gbs/speed connections.</p>
-<p>I should be able to load balance both internet connections to utilise them both simultaniously in the future, but for now I want to be able to get greater than 1000mbit/s speed on a single device otherwise there is not much point in speed increases past 1000mbits. Also there is a 200-300mbits speed increase possible from my existing VM hardware that is not utilised in the current network.</p>
-<p>I will be using this method to extract the full speed from the VM hub: <a href="https://tech.msh100.uk/virgin/networking/2020/10/17/virgin-media-greater-than-gbit/">https://tech.msh100.uk/virgin/networking/2020/10/17/virgin-media-greater-than-gbit/</a></p>
-<p>Since I have drawn up the diagram, there have been a few improvements suggested - using fibre and fibre modules instead of CAT 7 and more expensive modules to convert to CAT 7.</p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2022/05/15/home-network-design/</guid>
+      <description>Did some network design for my home network. This will ensure that my new Virgin Media 1100mbps/50mps speed is fully utilised without any bottlenecks and will futureproof things up to at least 2.5Gbs/speed connections.&#xA;I should be able to load balance both internet connections to utilise them both simultaniously in the future, but for now I want to be able to get greater than 1000mbit/s speed on a single device otherwise there is not much point in speed increases past 1000mbits.</description>
     </item>
-    
     <item>
       <title>The Persuit of Happiness and the Hill-Climbing Problem</title>
-      <link>http://192.168.1.50:9796/2022/01/07/the-persuit-of-happiness-and-the-hill-climbing-problem/</link>
+      <link>http://davidcraddock.net:9796/2022/01/07/the-persuit-of-happiness-and-the-hill-climbing-problem/</link>
       <pubDate>Fri, 07 Jan 2022 05:50:39 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2022/01/07/the-persuit-of-happiness-and-the-hill-climbing-problem/</guid>
-      <description>It seems that for a lot of people, perhaps the vast majority, they cannot expect to be 100% happy all the time. Even those incredibly successful celebrities and incredibly rich CEOs and politicians are not happy 100% of the time.
-So is it a good idea to seek 100% happiness right away? Or should we always try and select the &amp;rsquo;least worst&amp;rsquo; situation? If we keep making progress and optimse our happiness levels through constantly selecting the &amp;rsquo;least worst&amp;rsquo; situation whenever we have a descision then it seems to me we will maximise our happiness potential in the long run.</description>
-      <content:encoded><![CDATA[<p>It seems that for a lot of people, perhaps the vast majority, they cannot expect to be 100% happy all the time. Even those incredibly successful celebrities and incredibly rich CEOs and politicians are not happy 100% of the time.</p>
-<p>So is it a good idea to seek 100% happiness right away? Or should we always try and select the &rsquo;least worst&rsquo; situation? If we keep making progress and optimse our happiness levels through constantly selecting the &rsquo;least worst&rsquo; situation whenever we have a descision then it seems to me we will maximise our happiness potential in the long run.</p>
-<p>Once we have reached the plateau of happiness for our chosen path though, and we are not getting any happier or there is no way to continue improving our happiness, then the only way of potentially improving our happiness is to do something radical and leap to another approach.</p>
-<p>For those with training in A.I. or optimisation algorithms, I see this conceptually as see this as a hill-climbing local optimsation plateau problem. You can optimise locally your happiness level, but you need to take a risk when you have plateau&rsquo;d in your happiness along your current path, to do something completely different and jump to another hill which might offer a higher level of happiness in the long run, although it may not. The amount of risk you take is dependant on the knowledge you have (the heuristics) that the next &lsquo;hill&rsquo; or path you take will lead to a better outcome. But.. if it won&rsquo;t, and all the paths available to you have been analysed, and you will not make yourself happier, you have won at the happiness problem. You are the happiest you can make yourself and no amount of seeking happiness improvements in your life will help.</p>
-<p>This can be extended to job hopping, relationships.. of course there is an amount of risk as we never have a perfect heuristic but the concept is the same. Through constantly hopping hills and constantly seeking 100% happiness you can make yourself less happy than you thought. Maybe you were never born to be 100% happy? Maybe none of us ever were, we can just do the best with the oppertunities we were given.</p>
-<p>I don&rsquo;t know if I explained it well but this does a better job:</p>
-<p><a href="https://en.wikipedia.org/wiki/Hill_climbing">https://en.wikipedia.org/wiki/Hill_climbing</a></p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2022/01/07/the-persuit-of-happiness-and-the-hill-climbing-problem/</guid>
+      <description>It seems that for a lot of people, perhaps the vast majority, they cannot expect to be 100% happy all the time. Even those incredibly successful celebrities and incredibly rich CEOs and politicians are not happy 100% of the time.&#xA;So is it a good idea to seek 100% happiness right away? Or should we always try and select the &amp;rsquo;least worst&amp;rsquo; situation? If we keep making progress and optimse our happiness levels through constantly selecting the &amp;rsquo;least worst&amp;rsquo; situation whenever we have a descision then it seems to me we will maximise our happiness potential in the long run.</description>
     </item>
-    
     <item>
       <title>How to fix Plex Media Servers &#39;Various Artists&#39; problem using Beets.io and other tools</title>
-      <link>http://192.168.1.50:9796/2021/09/21/how-to-fix-plex-media-servers-various-artists-problem-using-beets-io-and-other-tools/</link>
+      <link>http://davidcraddock.net:9796/2021/09/21/how-to-fix-plex-media-servers-various-artists-problem-using-beets-io-and-other-tools/</link>
       <pubDate>Tue, 21 Sep 2021 22:22:47 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2021/09/21/how-to-fix-plex-media-servers-various-artists-problem-using-beets-io-and-other-tools/</guid>
+      <guid>http://davidcraddock.net:9796/2021/09/21/how-to-fix-plex-media-servers-various-artists-problem-using-beets-io-and-other-tools/</guid>
       <description>The Problem As of the day of posting, Plex Media Server has a suboptimal handling of Various Artists compilations. Unless you follow BOTH of these rules, described clearly on the Plex support here under &amp;lsquo;Various Artists&amp;rsquo;, then they won&amp;rsquo;t appear collected under a particular album, they will be spread out filed under the different artists that created them. I think it should only require one of these rules, but it is not up to me.</description>
-      <content:encoded><![CDATA[<h2 id="the-problem">The Problem</h2>
-<p>As of the day of posting, Plex Media Server has a suboptimal handling of Various Artists compilations. Unless you follow BOTH of these rules, <a href="https://support.plex.tv/articles/200265296-adding-music-media-from-folders/">described clearly on the Plex support here under &lsquo;Various Artists&rsquo;,</a> then they won&rsquo;t appear collected under a particular album, they will be spread out filed under the different artists that created them. I think it should only require one of these rules, but it is not up to me. The problem is that release metadata available from the online metadata databases, often doesn&rsquo;t follow these rules - lots of DJ mix compilations for example, do not set albumartist tag to Various Artists from the online metadata databases.</p>
-<p>Also you may want to adopt a different file structure for your music than what is recommended and essential for Plex. I would agree that ONE of these measures should be required, and I would argue that setting album artist would be enough for Plex to figure out this problem, but you also need to structure your music also under the way they suggest, you won&rsquo;t get the desired result of compilations being collected as a single album and in order.</p>
-<h2 id="my-solution">My Solution</h2>
-<p>Firstly, you&rsquo;re going to have to manually add the &lsquo;Various Artists&rsquo; content to the &lsquo;albumartist&rsquo; tag for all tracks in a compilation that doesn&rsquo;t have them. Currently I&rsquo;ve only found a way to do this by hand, would be very interested in any automated approaches, or if someone wants to write a beets.io plugin that would be amazing. You can do this with any tag editor, but I wrote my own solution which is faster for what I want to do and easy to use on my existing Beets.io setup and database which has a lot of these problem compilations already. Because I am using Windows I wrote a batch file which uses several third party tools to fix the metadata fast. You will have to download and setup the tools seperately, <a href="https://github.com/wordswords/music-organisation-windows-scripts/blob/main/tag-various-artists.bat">details are in the batch file comments</a>.</p>
-<p>Secondly, you&rsquo;re going to have to make sure that Beets.io moves your files into the way that Plex Media Server recommends. <a href="https://github.com/wordswords/music-organisation-windows-scripts/blob/main/config.yaml">This is my current Beets.io config file</a>, the important bits here are the file rename and move structure, <a href="https://support.plex.tv/articles/200265296-adding-music-media-from-folders/">as per the support page</a>, it has to be something along the lines of:</p>
-<p><code>$albumartist/$album/$artist - $title</code></p>
-<h2 id="my-process">My Process</h2>
-<ol>
-<li>&lsquo;beet ls <!-- raw HTML omitted --> to identify tracks that need fixing. &lsquo;beet ls fabric&rsquo; for example, got almost all of my dozens of Fabric mix CD tracks, which sped up the renaming significantly than using a GUI editor to go in and manually change each album. You have to make sure that the query string selects only the tracks you want to modify, unless you want to go back and edit those few tracks that got caught in the process later.</li>
-<li>I send that query string to my batch file which goes through the &lsquo;beets ls -p &rsquo; full path results iteratively and runs a couple of command line tag editors on them, the first works for all MP3s and the second for all FLACs, e.g. &lsquo;.\tag-various-artists.bat fabric&rsquo;</li>
-<li>&lsquo;beet update&rsquo; to update my Beets.io database with the new metadata I&rsquo;ve changed with the batch script.</li>
-<li>&lsquo;beet dup -d&rsquo; to delete any duplicates that have arisen.</li>
-<li>&lsquo;beet move -p&rsquo; to preview the file moves into the new directory structure that is required by Plex.</li>
-<li>When I&rsquo;ve scanned through and am happy with the file moves - &lsquo;beet move&rsquo; to do the moving.</li>
-<li>I then backup my files through robocopying to an external drive, but this is not essential.</li>
-<li>Make sure you have checked &lsquo;prefer existing metadata&rsquo; in the Plex options for your music library.</li>
-<li>Set Plex to rescan your libraries metadata.</li>
-</ol>
-<h2 id="tools">Tools</h2>
-<p><a href="https://github.com/wordswords/music-organisation-windows-scripts/">The batch file I use, my beets.io config and other tools I use to organise my music collection on Windows 10.</a></p>
-<h2 id="the-results">The Results</h2>
-<p>All my Fabric mix CDs are now properly collected under one ordered album each on Plex: <img loading="lazy" src="/wp-content/uploads/2021/09/fabric.png" type="" alt=""  /></p>
-]]></content:encoded>
     </item>
-    
     <item>
       <title>Node.js HTTPS server with self-signed certificate creation on openssl 0.9.8zh with node.js 7.10.0</title>
-      <link>http://192.168.1.50:9796/2017/05/10/node-js-https-server-with-self-signed-certificate-creation-on-openssl-0-9-8zh-with-node-js-7-10-0/</link>
+      <link>http://davidcraddock.net:9796/2017/05/10/node-js-https-server-with-self-signed-certificate-creation-on-openssl-0-9-8zh-with-node-js-7-10-0/</link>
       <pubDate>Wed, 10 May 2017 13:59:18 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2017/05/10/node-js-https-server-with-self-signed-certificate-creation-on-openssl-0-9-8zh-with-node-js-7-10-0/</guid>
-      <description>I couldn&amp;rsquo;t find a concise guide to setting this up quickly so thought it was worth a post. To quickly get something working and create a https server using the above versions of openssl and node.js, do the following:
-Generate self-signed server certificate with no password sudo openssl req -x509 -newkey rsa:2048 -keyout ./csr.pem -out server.crt -days 3001 -nodes Use this node.js code to setup a server quickly const https = require(&#39;https&#39;); const fs = require(&#39;fs&#39;); const options = { key: fs.</description>
-      <content:encoded><![CDATA[<p>I couldn&rsquo;t find a concise guide to setting this up quickly so thought it was worth a post. To quickly get something working and create a https server using the above versions of openssl and node.js, do the following:</p>
-<p> <strong>Generate self-signed server certificate with no password</strong> <code>sudo openssl req -x509 -newkey rsa:2048 -keyout ./csr.pem -out server.crt -days 3001 -nodes</code> <strong>Use this node.js code to setup a server quickly</strong> <code>const https = require('https'); const fs = require('fs'); const options = { key: fs.readFileSync('csr.pem'), cert: fs.readFileSync('server.crt') }; https.createServer(options, (req, res) =&gt; { res.writeHead(200); res.end('hello world\n'); }).listen(8000);</code> <strong>Go to https://localhost:8000 and accept the certificate, you should see &lsquo;hello world&rsquo;</strong></p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2017/05/10/node-js-https-server-with-self-signed-certificate-creation-on-openssl-0-9-8zh-with-node-js-7-10-0/</guid>
+      <description>I couldn&amp;rsquo;t find a concise guide to setting this up quickly so thought it was worth a post. To quickly get something working and create a https server using the above versions of openssl and node.js, do the following:&#xA;Generate self-signed server certificate with no password sudo openssl req -x509 -newkey rsa:2048 -keyout ./csr.pem -out server.crt -days 3001 -nodes Use this node.js code to setup a server quickly const https = require(&#39;https&#39;); const fs = require(&#39;fs&#39;); const options = { key: fs.</description>
     </item>
-    
     <item>
       <title>Get rid of the &#39;most visited sites&#39; Grid on Chrome</title>
-      <link>http://192.168.1.50:9796/2015/06/21/get-rid-of-the-most-visited-sites-grid-on-chrome/</link>
+      <link>http://davidcraddock.net:9796/2015/06/21/get-rid-of-the-most-visited-sites-grid-on-chrome/</link>
       <pubDate>Sun, 21 Jun 2015 17:49:00 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2015/06/21/get-rid-of-the-most-visited-sites-grid-on-chrome/</guid>
-      <description>Not that I particularly look at anything weird, but when I&amp;rsquo;m showing someone my computer I don&amp;rsquo;t want to have my &amp;lsquo;most visited sites&amp;rsquo; pop up when I fire up Chrome. The following Chrome extension will get rid of the default loading page, and just display a blank page:
-https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbekmfgabipmfilij</description>
-      <content:encoded><![CDATA[<p>Not that I particularly look at anything weird, but when I&rsquo;m showing someone my computer I don&rsquo;t want to have my &lsquo;most visited sites&rsquo; pop up when I fire up Chrome. The following Chrome extension will get rid of the default loading page, and just display a blank page:</p>
-<p><a href="https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbekmfgabipmfilij">https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbekmfgabipmfilij</a></p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2015/06/21/get-rid-of-the-most-visited-sites-grid-on-chrome/</guid>
+      <description>Not that I particularly look at anything weird, but when I&amp;rsquo;m showing someone my computer I don&amp;rsquo;t want to have my &amp;lsquo;most visited sites&amp;rsquo; pop up when I fire up Chrome. The following Chrome extension will get rid of the default loading page, and just display a blank page:&#xA;https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbekmfgabipmfilij</description>
     </item>
-    
     <item>
       <title>A* Algorithm implementation in Python</title>
-      <link>http://192.168.1.50:9796/2014/06/12/a-algorithm-implementation-in-python/</link>
+      <link>http://davidcraddock.net:9796/2014/06/12/a-algorithm-implementation-in-python/</link>
       <pubDate>Thu, 12 Jun 2014 00:24:34 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2014/06/12/a-algorithm-implementation-in-python/</guid>
+      <guid>http://davidcraddock.net:9796/2014/06/12/a-algorithm-implementation-in-python/</guid>
       <description>Lately I&amp;rsquo;ve had the idea of creating a text-based Roguelike in C++. This lead me on to think about the game AI experiments that I worked during my degree in Computer Science and A.I.. Essential to game AI is the notion of pathfinding, or finding a path from &amp;lsquo;A&amp;rsquo; to &amp;lsquo;B&amp;rsquo;, past any obstacles that get in the way. One way to do this is to use the A* algorithm.</description>
-      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2014/06/pathfinding.jpg"><img loading="lazy" src="/wp-content/uploads/2014/06/pathfinding.jpg" type="" alt="pathfinding"  /></a></p>
-<p>Lately I&rsquo;ve had the idea of creating a text-based <a href="http://en.wikipedia.org/wiki/Roguelike">Roguelike</a> in C++. This lead me on to think about the game AI experiments that I worked during my degree in <a href="http://www.sussex.ac.uk/informatics/">Computer Science and A.I.</a>. Essential to game AI is the notion of pathfinding, or finding a path from &lsquo;A&rsquo; to &lsquo;B&rsquo;, past any obstacles that get in the way. One way to do this is to use the A* algorithm. I decided to implement an A* pathfinding algorithm for possible use in a Roguelike later, and chose <a href="http://en.wikipedia.org/wiki/A*_search_algorithm">the pseudocode from the Wikipedia example</a> to implement.</p>
-<p>The program finds a path from the top right hand corner to the top left, avoiding impassable &lsquo;7&rsquo; obstacles. The &lsquo;*&rsquo; are the steps along the path. The algorithm is guaranteed to find the shortest path between the goal and the start, which means it can optimally solve any solvable maze, given time.</p>
-<p>This is a sample board with obstacles setup:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000007777000000000000000
-</span></span><span style="display:flex;"><span>00000000000000077777777777777777700000000000000000
-</span></span><span style="display:flex;"><span>00000000077777777777777777777777700000000000000000
-</span></span><span style="display:flex;"><span>00000077777777777700000000000000000000000000000000
-</span></span><span style="display:flex;"><span>77777777777000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>77777777000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>77777777777777777707777777777777777777777777777777
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>70777777777777777777777777777777777777777777777777
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>77777777777777777777700000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000777777777777777777777707777777
-</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
-</span></span></code></pre></div><p>This is the path found (the &lsquo;*&rsquo;s):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>**000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>0***********************************00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000007777*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000077777777777777777700*00000000000000
-</span></span><span style="display:flex;"><span>00000000077777777777777777777777700*00000000000000
-</span></span><span style="display:flex;"><span>00000077777777777700000000000000000*00000000000000
-</span></span><span style="display:flex;"><span>77777777777000000000000000000000000*00000000000000
-</span></span><span style="display:flex;"><span>77777777000000000000000000000000000*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000*00000000000000
-</span></span><span style="display:flex;"><span>000000000000000000******************00000000000000
-</span></span><span style="display:flex;"><span>777777777777777777*7777777777777777777777777777777
-</span></span><span style="display:flex;"><span>000000000000000000*0000000000000000000000000000000
-</span></span><span style="display:flex;"><span>0******************0000000000000000000000000000000
-</span></span><span style="display:flex;"><span>7*777777777777777777777777777777777777777777777777
-</span></span><span style="display:flex;"><span>0*****************************00000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000**0000000000000000000
-</span></span><span style="display:flex;"><span>000000000000000000000000000000**000000000000000000
-</span></span><span style="display:flex;"><span>0000000000000000000000000000000*000000000000000000
-</span></span><span style="display:flex;"><span>0000000000000000000000000000000***0000000000000000
-</span></span><span style="display:flex;"><span>000000000000000000000000000000000*0000000000000000
-</span></span><span style="display:flex;"><span>000000000000000000000000000000000**000000000000000
-</span></span><span style="display:flex;"><span>0000000000000000000000000000000000**00000000000000
-</span></span><span style="display:flex;"><span>77777777777777777777700000000000000***000000000000
-</span></span><span style="display:flex;"><span>0000000000000000000000000000000000000**00000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000*00000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000**0000000000
-</span></span><span style="display:flex;"><span>000000000000000000000000000000000000000****0000000
-</span></span><span style="display:flex;"><span>000000000000000000007777777777777777777777*7777777
-</span></span><span style="display:flex;"><span>000000000000000000007000000000000000000000**000000
-</span></span><span style="display:flex;"><span>0000000000000000000070000000000000000000000*000000
-</span></span><span style="display:flex;"><span>0000000000000000000070000000000000000000000***0000
-</span></span><span style="display:flex;"><span>000000000000000000007000000000000000000000000**000
-</span></span><span style="display:flex;"><span>0000000000000000000070000000000000000000000000*000
-</span></span><span style="display:flex;"><span>0000000000000000000070000000000000000000000000***0
-</span></span><span style="display:flex;"><span>000000000000000000007000000000000000000000000000*0
-</span></span><span style="display:flex;"><span>000000000000000000007000000000000000000000000000**
-</span></span></code></pre></div><p>Here is <a href="https://github.com/wordswords/astarpython">source code</a></p>
-<p>Amit&rsquo;s <a href="http://theory.stanford.edu/~amitp/GameProgramming/">A* pages</a> were incredibly useful in developing this.</p>
-<p>(Perhaps one day I will do a flashy JavaScript version!)</p>
-]]></content:encoded>
     </item>
-    
     <item>
       <title>Converting a single M2V frame into JPEG under OSX</title>
-      <link>http://192.168.1.50:9796/2012/04/12/converting-a-single-m2v-frame-into-jpeg/</link>
+      <link>http://davidcraddock.net:9796/2012/04/12/converting-a-single-m2v-frame-into-jpeg/</link>
       <pubDate>Thu, 12 Apr 2012 15:20:23 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2012/04/12/converting-a-single-m2v-frame-into-jpeg/</guid>
+      <guid>http://davidcraddock.net:9796/2012/04/12/converting-a-single-m2v-frame-into-jpeg/</guid>
       <description>I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame.</description>
-      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg"><img loading="lazy" src="/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg" type="" alt=""  /></a></p>
-<p>I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame. I couldn&rsquo;t find a video player that would open the single frame. So I resorted to the command line version of ffmpeg, which I installed via macports, to convert this single frame to a jpg file to view as normal. This line worked a treat:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ffmpeg -i north.mpg -ss 00:00:00 -t 00:00:1 -s 1024x768 -r 1 -f mjpeg north.jpg
-</span></span></code></pre></div><p>Where &rsquo;north.mpg&rsquo; was the m2v file, and &rsquo;north.jpg&rsquo; was the output jpeg.</p>
-<p>And this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>find -name *.mpg -exec ffmpeg -i {} -ss 00:00:00 -t 00:00:1 -s 1024x768 -r 1 -f mjpeg {}.jpg ;
-</span></span></code></pre></div><p>Will go through all the mpg files in the current directory and below, and create their jpeg single frame equivalents, ie: for north.mpg it will create north.mpg.jpg.</p>
-]]></content:encoded>
     </item>
-    
     <item>
       <title>Disabling Control-Enter and Control-B shortcut keys in Outlook 2003</title>
-      <link>http://192.168.1.50:9796/2011/07/13/disabling-control-enter-and-control-b-shortcut-keys-in-outlook-2003/</link>
+      <link>http://davidcraddock.net:9796/2011/07/13/disabling-control-enter-and-control-b-shortcut-keys-in-outlook-2003/</link>
       <pubDate>Wed, 13 Jul 2011 16:34:39 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2011/07/13/disabling-control-enter-and-control-b-shortcut-keys-in-outlook-2003/</guid>
-      <description>At work, I still have to use Windows XP and Outlook 2003. I don&amp;rsquo;t particually mind this, except when I draft an email to someone and accidently I press Control-B instead of Control-V. Control-B will go ahead and send your partially composed email, resulting in some embarassment as you have to tell everyone to disregard it.
-So I wanted to remove the &amp;lsquo;send email&amp;rsquo; shortcut keys in Outlook 2003. There are two ways of doing this, one involves editing your group policy, which is something only my IT administration team can do, and I didn&amp;rsquo;t want to have to involve them.</description>
-      <content:encoded><![CDATA[<p>At work, I still have to use Windows XP and Outlook 2003. I don&rsquo;t particually mind this, except when I draft an email to someone and accidently I press Control-B instead of Control-V. Control-B will go ahead and send your partially composed email, resulting in some embarassment as you have to tell everyone to disregard it.</p>
-<p>So I wanted to remove the &lsquo;send email&rsquo; shortcut keys in Outlook 2003. There are two ways of doing this, one involves editing your group policy, which is something only my IT administration team can do, and I didn&rsquo;t want to have to involve them. The other way is by making a change to your registry, which I will describe here.</p>
-<ol>
-<li>
-<p>Open up regedit, and browse to the following registry key: HKEY_CURRENT_USER -&gt; Software -&gt; Policies -&gt; Microsoft -&gt; office -&gt; 11.0 -&gt; outlook</p>
-</li>
-<li>
-<p>Then create a new key called: &ldquo;DisabledShortcutKeysCheckBoxes&rdquo;.</p>
-</li>
-<li>
-<p>Under that key, create two new String Values:
-Name: CtrlB Data: 66,8
-Name: CtrlEnter Data: 13,8</p>
-</li>
-<li>
-<p>Then restart Outlook and those keys will be disabled.</p>
-</li>
-</ol>
-<p>Click on the thumbnail below to see what the finished edit should look like:</p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2011/07/13/disabling-control-enter-and-control-b-shortcut-keys-in-outlook-2003/</guid>
+      <description>At work, I still have to use Windows XP and Outlook 2003. I don&amp;rsquo;t particually mind this, except when I draft an email to someone and accidently I press Control-B instead of Control-V. Control-B will go ahead and send your partially composed email, resulting in some embarassment as you have to tell everyone to disregard it.&#xA;So I wanted to remove the &amp;lsquo;send email&amp;rsquo; shortcut keys in Outlook 2003. There are two ways of doing this, one involves editing your group policy, which is something only my IT administration team can do, and I didn&amp;rsquo;t want to have to involve them.</description>
     </item>
-    
     <item>
       <title>Directory names not visable under ls? Change your colours.</title>
-      <link>http://192.168.1.50:9796/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</link>
+      <link>http://davidcraddock.net:9796/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</link>
       <pubDate>Wed, 04 May 2011 16:03:55 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</guid>
-      <description>There is a problem I frequently encouter on Redhat/Fedora/CentOS systems with the output of the ls command. Under those distributions, the default setup is to display directories in a very dark colour. If you usually use a white foreground and a black background on your terminal client (such as Putty) then you will struggle to read the names of the directories under Redhat-based distributions.
-There are two soloutions that I have used:</description>
-      <content:encoded><![CDATA[<p>There is a problem I frequently encouter on Redhat/Fedora/CentOS systems with the output of the <strong>ls</strong> command. Under those distributions, the default setup is to display directories in a very dark colour. If you usually use a white foreground and a black background on your terminal client (such as Putty) then you will struggle to read the names of the directories under Redhat-based distributions.</p>
-<p>There are two soloutions that I have used:</p>
-<p><strong>1. Change the colour settings in Putty</strong></p>
-<p>If you use Putty, ticking &lsquo;Use System Colours&rsquo; here changes the &ldquo;white foreground, black background&rdquo; default into a &ldquo;white background, black foreground&rdquo;. This way you can at least read the console properly, good for a quick fix. You can also save these settings in putty to be the default for the host that you are connecting to, or even all hosts.</p>
-<p><strong>2. Change the LS_COLORS directive temporarily in the shell.</strong></p>
-<p>Alternatively, you can ask the <strong>ls</strong> command to display directories and other entries in colours that you specify. You could add these lines to the bottom of your .bashrc to make these changes permanent, or if you are using a shared machine, just copy and paste the following lines into the terminal and they will change the colours to a reddish more visable set, until you logout. :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>alias ls<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ls --color&#39;</span> <span style="color:#75715e"># just to make sure we are using coloured ls</span>
-</span></span><span style="display:flex;"><span>LS_COLORS<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;di=94:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> LS_COLORS
-</span></span></code></pre></div><p>(Original source for this particular LS_COLORS combo: <a href="http://linux-sxs.org/housekeeping/lscolors.html">http://linux-sxs.org/housekeeping/lscolors.html</a>)</p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</guid>
+      <description>There is a problem I frequently encouter on Redhat/Fedora/CentOS systems with the output of the ls command. Under those distributions, the default setup is to display directories in a very dark colour. If you usually use a white foreground and a black background on your terminal client (such as Putty) then you will struggle to read the names of the directories under Redhat-based distributions.&#xA;There are two soloutions that I have used:</description>
     </item>
-    
     <item>
       <title>Find large files by using the OSX commandline</title>
-      <link>http://192.168.1.50:9796/2011/02/22/find-large-files-by-using-the-osx-commandline/</link>
+      <link>http://davidcraddock.net:9796/2011/02/22/find-large-files-by-using-the-osx-commandline/</link>
       <pubDate>Tue, 22 Feb 2011 00:16:12 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2011/02/22/find-large-files-by-using-the-osx-commandline/</guid>
-      <description>To quickly find large files to delete if you have filled your startup disk, enter this command on the OSX terminal:
-sudo find / -size +500000 -print This will find and print out file paths to files over 500MB. You can then go through them and delete them individually by typing rm &amp;ldquo;&amp;rdquo;, although there is no undelete so make sure you know you won&amp;rsquo;t miss them.</description>
-      <content:encoded><![CDATA[<p>To quickly find large files to delete if you have filled your startup disk, enter this command on the OSX terminal:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo find / -size +500000 -print
-</span></span></code></pre></div><p>This will find and print out file paths to files over 500MB. You can then go through them and delete them individually by typing <strong>rm &ldquo;<!-- raw HTML omitted -->&rdquo;</strong>, although there is no undelete so make sure you know you won&rsquo;t miss them.</p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2011/02/22/find-large-files-by-using-the-osx-commandline/</guid>
+      <description>To quickly find large files to delete if you have filled your startup disk, enter this command on the OSX terminal:&#xA;sudo find / -size +500000 -print This will find and print out file paths to files over 500MB. You can then go through them and delete them individually by typing rm &amp;ldquo;&amp;rdquo;, although there is no undelete so make sure you know you won&amp;rsquo;t miss them.</description>
     </item>
-    
     <item>
       <title>Finding files in Linux modified between two dates</title>
-      <link>http://192.168.1.50:9796/2011/02/16/finding-files-in-linux-modified-between-two-dates/</link>
+      <link>http://davidcraddock.net:9796/2011/02/16/finding-files-in-linux-modified-between-two-dates/</link>
       <pubDate>Wed, 16 Feb 2011 12:33:44 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2011/02/16/finding-files-in-linux-modified-between-two-dates/</guid>
-      <description>You use the &amp;rsquo;touch&amp;rsquo; command to create two blank files, with a last modified date that you specify - one with a date of the start of the range you want to specify, and the second with a date at the end of the range you want to specify. Then you reference to those two files in your find command:
-touch /tmp/temp -t 200604141130 touch /tmp/ntemp -t 200604261630 find /data/ -cnewer /tmp/temp -and !</description>
-      <content:encoded><![CDATA[<p>You use the &rsquo;touch&rsquo; command to create two blank files, with a last modified date that you specify - one with a date of the start of the range you want to specify, and the second with a date at the end of the range you want to specify. Then you reference to those two files in your find command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>touch /tmp/temp -t 200604141130
-</span></span><span style="display:flex;"><span>touch /tmp/ntemp -t 200604261630
-</span></span><span style="display:flex;"><span>find /data/ -cnewer /tmp/temp -and ! -cnewer /tmp/ntemp
-</span></span></code></pre></div>]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2011/02/16/finding-files-in-linux-modified-between-two-dates/</guid>
+      <description>You use the &amp;rsquo;touch&amp;rsquo; command to create two blank files, with a last modified date that you specify - one with a date of the start of the range you want to specify, and the second with a date at the end of the range you want to specify. Then you reference to those two files in your find command:&#xA;touch /tmp/temp -t 200604141130 touch /tmp/ntemp -t 200604261630 find /data/ -cnewer /tmp/temp -and !</description>
     </item>
-    
     <item>
       <title>Writing simple email alerts in PHP with MagpieRSS</title>
-      <link>http://192.168.1.50:9796/2011/02/12/writing-simple-email-alerts-in-php-with-magpierss/</link>
+      <link>http://davidcraddock.net:9796/2011/02/12/writing-simple-email-alerts-in-php-with-magpierss/</link>
       <pubDate>Sat, 12 Feb 2011 20:01:13 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2011/02/12/writing-simple-email-alerts-in-php-with-magpierss/</guid>
+      <guid>http://davidcraddock.net:9796/2011/02/12/writing-simple-email-alerts-in-php-with-magpierss/</guid>
       <description>I wrote an email alerter that sends me an email whenever the upcoming temperature may dip below freezing. It uses the Magpie RSS reader to pull down a 3 day weather forecast that is provided for my area in RSS form by the BBC weather site. It then parses this forecast and determines if either today&amp;rsquo;s or tomorrow&amp;rsquo;s weather may dip below freezing. If it might, it sends an email to my email address to warn me.</description>
-      <content:encoded><![CDATA[<p>I wrote an email alerter that sends me an email whenever the upcoming temperature may dip below freezing. It uses the <a href="http://magpierss.sourceforge.net/">Magpie RSS reader</a> to pull down a 3 day weather forecast that is provided for my area in RSS form by the BBC weather site. It then parses this forecast and determines if either today&rsquo;s or tomorrow&rsquo;s weather may dip below freezing. If it might, it sends an email to my email address to warn me.</p>
-<p>I scheduled this script to run every day by adding it as a <a href="http://en.wikipedia.org/wiki/Cron">daily cron job</a> on my web host. You can set this up for any web hosts that support cron jobs.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>items) != 3){
-</span></span><span style="display:flex;"><span>                $message .= &#39;Error: problem parsing BBC weather feed&#39;;
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        $i=0;
-</span></span><span style="display:flex;"><span>        foreach ($rss-&gt;items as $item) {
-</span></span><span style="display:flex;"><span>                $href = $item[&#39;link&#39;];
-</span></span><span style="display:flex;"><span>                $title = $item[&#39;title&#39;];
-</span></span><span style="display:flex;"><span>                preg_match(&#39;/Min Temp:.+?-*d*/&#39;,$title,$mintemp);
-</span></span><span style="display:flex;"><span>                preg_match(&#39;/Max Temp:.+?-*d*/&#39;,$title,$maxtemp);
-</span></span><span style="display:flex;"><span>                $mintemp[0] = str_replace(&#39;Min Temp: &#39;,&#39;&#39;,$mintemp[0]);
-</span></span><span style="display:flex;"><span>                $maxtemp[0] = str_replace(&#39;Max Temp: &#39;,&#39;&#39;,$maxtemp[0]);
-</span></span><span style="display:flex;"><span>                $mins[$i] = (int)$mintemp[0];
-</span></span><span style="display:flex;"><span>                $maxs[$i] = (int)$maxtemp[0];
-</span></span><span style="display:flex;"><span>                $i++;
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        // freezing warnings
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        if($mins[0] &lt; 0){
-</span></span><span style="display:flex;"><span>                $message .= &#34;Today&#39;s temperature in W3 may go below freezing, anything down to &#34;.$mins[0];
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        if($mins[1]
-</span></span></code></pre></div><p>You can right click on this link and &lsquo;save as&rsquo; to <a href="http://svn.davidcraddock.net/weather-services/freezing.php">download the script</a>.</p>
-]]></content:encoded>
     </item>
-    
     <item>
       <title>Converting week numbers to dates</title>
-      <link>http://192.168.1.50:9796/2010/11/24/converting-week-numbers-to-dates/</link>
+      <link>http://davidcraddock.net:9796/2010/11/24/converting-week-numbers-to-dates/</link>
       <pubDate>Wed, 24 Nov 2010 13:50:44 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2010/11/24/converting-week-numbers-to-dates/</guid>
-      <description>Here is some python code I adapted from this stackoverflow post to get the first day of a week specificed by a week number. This method includes leap year and summer time differences.
-import time def weeknum(num,year): instr = str(year)+&amp;#34; &amp;#34;+str(num-1)+&amp;#34; 1&amp;#34; print time.asctime(time.strptime(instr,&amp;#39;%Y %W %w&amp;#39;)) Here is me exectuting the code in Python&amp;rsquo;s IDLE shell:
-See that the first week of 2009 actually started in 2008, but by the end of that week we are in 2009.</description>
-      <content:encoded><![CDATA[<p>Here is some python code I adapted from <a href="http://stackoverflow.com/questions/396913/in-python-how-do-i-find-the-date-of-the-first-monday-of-a-given-week">this stackoverflow post</a> to get the first day of a week specificed by a week number. This method includes leap year and summer time differences.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>import time
-</span></span><span style="display:flex;"><span>def weeknum(num,year):
-</span></span><span style="display:flex;"><span>	instr = str(year)+&#34; &#34;+str(num-1)+&#34; 1&#34;
-</span></span><span style="display:flex;"><span>	print time.asctime(time.strptime(instr,&#39;%Y %W %w&#39;))
-</span></span></code></pre></div><p>Here is me exectuting the code in Python&rsquo;s IDLE shell:</p>
-<p>See that the first week of 2009 actually started in 2008, but by the end of that week we are in 2009.</p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2010/11/24/converting-week-numbers-to-dates/</guid>
+      <description>Here is some python code I adapted from this stackoverflow post to get the first day of a week specificed by a week number. This method includes leap year and summer time differences.&#xA;import time def weeknum(num,year): instr = str(year)+&amp;#34; &amp;#34;+str(num-1)+&amp;#34; 1&amp;#34; print time.asctime(time.strptime(instr,&amp;#39;%Y %W %w&amp;#39;)) Here is me exectuting the code in Python&amp;rsquo;s IDLE shell:&#xA;See that the first week of 2009 actually started in 2008, but by the end of that week we are in 2009.</description>
     </item>
-    
     <item>
       <title>Mac BBC Radio Player</title>
-      <link>http://192.168.1.50:9796/2010/11/16/mac-bbc-radio-player/</link>
+      <link>http://davidcraddock.net:9796/2010/11/16/mac-bbc-radio-player/</link>
       <pubDate>Tue, 16 Nov 2010 18:42:27 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2010/11/16/mac-bbc-radio-player/</guid>
-      <description>Quite cool little app that allows you to listen to different BBC Radio programmes from within a standalone application, instead of iPlayer:
-http://whomwah.github.com/radioaunty/</description>
-      <content:encoded><![CDATA[<p>Quite cool little app that allows you to listen to different BBC Radio programmes from within a standalone application, instead of iPlayer:</p>
-<p><a href="http://whomwah.github.com/radioaunty/">http://whomwah.github.com/radioaunty/</a></p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2010/11/16/mac-bbc-radio-player/</guid>
+      <description>Quite cool little app that allows you to listen to different BBC Radio programmes from within a standalone application, instead of iPlayer:&#xA;http://whomwah.github.com/radioaunty/</description>
     </item>
-    
     <item>
       <title>MediaMonkey allows you to transfer music from any computer onto your guest iPhone</title>
-      <link>http://192.168.1.50:9796/2010/11/14/mediamonkey-allows-you-to-transfer-music-from-any-computer-onto-your-guest-iphone/</link>
+      <link>http://davidcraddock.net:9796/2010/11/14/mediamonkey-allows-you-to-transfer-music-from-any-computer-onto-your-guest-iphone/</link>
       <pubDate>Sun, 14 Nov 2010 16:54:08 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2010/11/14/mediamonkey-allows-you-to-transfer-music-from-any-computer-onto-your-guest-iphone/</guid>
-      <description>MediaMonkey is a popular free media player for Windows. It has a great feature that allows you to transfer to and from an iPhone that is not registered with your computer. Normally only one iTunes install can be associated with your iPhone, but MediaMonkey allows you another way to transfer music and audio files with a &amp;lsquo;guest&amp;rsquo; iPhone. Check it out, it works:
-MediaMonkey</description>
-      <content:encoded><![CDATA[<p>MediaMonkey is a popular free media player for Windows. It has a great feature that allows you to transfer to and from an iPhone that is not registered with your computer. Normally only one iTunes install can be associated with your iPhone, but MediaMonkey allows you another way to transfer music and audio files with a &lsquo;guest&rsquo; iPhone. Check it out, it works:</p>
-<p><a href="http://www.mediamonkey.com/">MediaMonkey</a></p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2010/11/14/mediamonkey-allows-you-to-transfer-music-from-any-computer-onto-your-guest-iphone/</guid>
+      <description>MediaMonkey is a popular free media player for Windows. It has a great feature that allows you to transfer to and from an iPhone that is not registered with your computer. Normally only one iTunes install can be associated with your iPhone, but MediaMonkey allows you another way to transfer music and audio files with a &amp;lsquo;guest&amp;rsquo; iPhone. Check it out, it works:&#xA;MediaMonkey</description>
     </item>
-    
     <item>
       <title>Recording Game Videos on Windows 7</title>
-      <link>http://192.168.1.50:9796/2010/07/18/798/</link>
+      <link>http://davidcraddock.net:9796/2010/07/18/798/</link>
       <pubDate>Sun, 18 Jul 2010 23:55:33 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2010/07/18/798/</guid>
-      <description>This is just a quick note to remind myself how I did this.
-Hypercam2 is a good, free, video recorder that can cope with recording game videos. It&amp;rsquo;s freely available from http://www.hyperionics.com/hc/downloads.asp - just make sure when you install it you don&amp;rsquo;t tick on the spyware toolbar installation options.
-My motherboard has a 5.1 digital soundcard built in. However the only way I can record off the soundcard is to plug in a standard audio cable from the speaker out (green) to the microphone in (orange).</description>
-      <content:encoded><![CDATA[<p>This is just a quick note to remind myself how I did this.</p>
-<ul>
-<li>
-<p>Hypercam2 is a good, free, video recorder that can cope with recording game videos. It&rsquo;s freely available from <a href="http://www.hyperionics.com/hc/downloads.asp">http://www.hyperionics.com/hc/downloads.asp</a> - just make sure when you install it you don&rsquo;t tick on the spyware toolbar installation options.</p>
-</li>
-<li>
-<p>My motherboard has a 5.1 digital soundcard built in. However the only way I can record off the soundcard is to plug in a standard audio cable from the speaker out (green) to the microphone in (orange).</p>
-</li>
-<li>
-<p>The soundcard switches off the headphone output when it detects a speaker attached to the speaker out, so you have to go to the recording options in Windows 7 and right click on the microphone in. It will give you an option to &lsquo;Monitor this input using the headphones&rsquo; - which will allow you to listen to anything coming into the microphone socket through the headphone socket on the front on my PC.</p>
-</li>
-<li>
-<p>In hypercam, set the sound to record from the default input device, set the frame rate to 10/10</p>
-</li>
-<li>
-<p>Record using the &lsquo;select window to record from&rsquo; option, select the game window, and use the F2 button to start and stop the recording.</p>
-</li>
-<li>
-<p>The video will be output in AVI format, but you can transcode or convert it into a quicktime MOV file for editing in iMovie, or you can use windows movie editor, which is free and quite good.</p>
-</li>
-</ul>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2010/07/18/798/</guid>
+      <description>This is just a quick note to remind myself how I did this.&#xA;Hypercam2 is a good, free, video recorder that can cope with recording game videos. It&amp;rsquo;s freely available from http://www.hyperionics.com/hc/downloads.asp - just make sure when you install it you don&amp;rsquo;t tick on the spyware toolbar installation options.&#xA;My motherboard has a 5.1 digital soundcard built in. However the only way I can record off the soundcard is to plug in a standard audio cable from the speaker out (green) to the microphone in (orange).</description>
     </item>
-    
     <item>
       <title>Changing the default &#34;From:&#34; email address for emails sent via PHP on Linux</title>
-      <link>http://192.168.1.50:9796/2010/03/10/changing-the-default-from-email-address-for-php/</link>
+      <link>http://davidcraddock.net:9796/2010/03/10/changing-the-default-from-email-address-for-php/</link>
       <pubDate>Wed, 10 Mar 2010 06:36:26 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2010/03/10/changing-the-default-from-email-address-for-php/</guid>
-      <description>I&amp;rsquo;ve had to solve this problem a couple of times at least, and it&amp;rsquo;s quite a common task, so I thought I&amp;rsquo;d document it here.
-When you send emails to users of your site through using the PHP mail() function, they will sometimes turn up in the mailbox of customers of your site with the following from address:
-From: Root &amp;lt;root@apache.ecommercecompany.com&amp;gt; This makes absolutely no sense to your customers, and often they will think it is spam and delete it.</description>
-      <content:encoded><![CDATA[<p>I&rsquo;ve had to solve this problem a couple of times at least, and it&rsquo;s quite a common task, so I thought I&rsquo;d document it here.</p>
-<p>When you send emails to users of your site through using the PHP mail() function, they will sometimes turn up in the mailbox of customers of your site with the following from address:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>From: Root &lt;root@apache.ecommercecompany.com&gt;
-</span></span></code></pre></div><p>This makes absolutely no sense to your customers, and often they will think it is spam and delete it. Often, the decision will be made for them by their web mail host, such as hotmail.com or googlemail.com, and they will never even see the email. You don&rsquo;t want this to happen.</p>
-<p>Writing email templates that appear &ldquo;trustworthy&rdquo; and have a low chance of being mislabled as spam by the webmail companies, is quite a difficult task, and there&rsquo;s quite a bit to know about it. However it is quite easy to change the default &ldquo;From:&rdquo; email address that PHP sends your emails on as, and that will definitely help.</p>
-<p>Assuming you&rsquo;re running a linux server using sendmail, all you have to do is this.</p>
-<p>First create an email address that you would want the customers to see, through editing the /etc/aliases files and running the command newaliases. I created an email address called <strong><a href="mailto:customer-emails@ecommercecompany.com">customer-emails@ecommercecompany.com</a></strong>.</p>
-<p>Then change the following sendmail_path line in your php.ini file to something like this:</p>
-<p>/etc/php.ini
-<code>... sendmail_path = /usr/sbin/sendmail -t -i -F 'customer-emails' -f 'Customer Emails &lt;customer-emails@ecommercecompany.com&gt;' ... </code></p>
-<p>Broken down, those extra options are:
-<code>-F 'customer-emails' # the name of the sender -f 'Customer Emails &lt;customer-emails@ecommercecompany.com&gt;' # the email From header, which should have the name matching the email address, and it should be the same email address as above </code></p>
-<p>Then restart apache, and it should load the php.ini file changes. Test it by sending a couple of emails to your email address, and you should see emails sent out like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>From: Customer Emails &lt;customer-emails@ecommercecompany.com&gt;
-</span></span></code></pre></div>]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2010/03/10/changing-the-default-from-email-address-for-php/</guid>
+      <description>I&amp;rsquo;ve had to solve this problem a couple of times at least, and it&amp;rsquo;s quite a common task, so I thought I&amp;rsquo;d document it here.&#xA;When you send emails to users of your site through using the PHP mail() function, they will sometimes turn up in the mailbox of customers of your site with the following from address:&#xA;From: Root &amp;lt;root@apache.ecommercecompany.com&amp;gt; This makes absolutely no sense to your customers, and often they will think it is spam and delete it.</description>
     </item>
-    
     <item>
       <title>PHP Sample - HTML Page Fetcher and Parser</title>
-      <link>http://192.168.1.50:9796/2010/01/14/php-sample-html-page-fetcher-and-parser/</link>
+      <link>http://davidcraddock.net:9796/2010/01/14/php-sample-html-page-fetcher-and-parser/</link>
       <pubDate>Thu, 14 Jan 2010 05:53:47 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2010/01/14/php-sample-html-page-fetcher-and-parser/</guid>
-      <description>Back in 2008, I wrote a PHP class that fetched an arbitary URL, parsed it, and coverted it into an PHP object with different attributes for the different elements of the page. I recently updated it and sent it along to a company that wanted a programming example to show I could code in PHP.
-I thought someone may well find a use for it - I&amp;rsquo;ve used the class in several different web scraping applications, and I found it handy.</description>
-      <content:encoded><![CDATA[<p>Back in 2008, I wrote a PHP class that fetched an arbitary URL, parsed it, and coverted it into an PHP object with different attributes for the different elements of the page. I recently updated it and sent it along to a company that wanted a programming example to show I could code in PHP.</p>
-<p>I thought someone may well find a use for it - I&rsquo;ve used the class in several different web scraping applications, and I found it handy. From the readme:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>This is a class I wrote back in 2008 to help me pull down and parse HTML pages I updated it on
-</span></span><span style="display:flex;"><span>14/01/10 to print the results in a nicer way to the commandline.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>- David Craddock (contact@davidcraddock.net)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>/// WHAT IT DOES
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>It uses CURL to pull down a page from a URL, and sorts it into a &#39;Page&#39; object
-</span></span><span style="display:flex;"><span>which has different attributes for the different HTML properties of the page
-</span></span><span style="display:flex;"><span>structure. By default it will also print the page object&#39;s properties neatly
-</span></span><span style="display:flex;"><span>onto the commandline as part of its unit test.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>/// FILES
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>* README.txt - this file
-</span></span><span style="display:flex;"><span>* page.php - The PHP Class
-</span></span><span style="display:flex;"><span>* LIB_http.php - a lightweight external library that I used. It is just a very light wrapper around CURL&#39;s HTTP functions.
-</span></span><span style="display:flex;"><span>* expected-result.txt - output of the unit tests on my development machine
-</span></span><span style="display:flex;"><span>* curl-cookie-jar.txt - this file will be created when you run the page.php&#39;s unit test
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>/// SETUP
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>You will need CURL installed, PHP&#39;s DOMXPATH functions available, and the PHP
-</span></span><span style="display:flex;"><span>command line interface. It was tested on PHP5 on OSX.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>/// RUNNING
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Use the php commandline executable to run the page.php unit tests. IE:
-</span></span><span style="display:flex;"><span>$ php page.php
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>You should see a bunch of information being printed out, you can use:
-</span></span><span style="display:flex;"><span>$ php page.php &gt; result.txt
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>That will output the info to result.txt so you can read it at will.
-</span></span></code></pre></div><p>Here&rsquo;s an example of one of the unit tests, which fetches this frontpage and parses it:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#f92672">**++++</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">***</span> Page Print of http:<span style="color:#f92672">//</span>www<span style="color:#f92672">.</span>davidcraddock<span style="color:#f92672">.</span>net <span style="color:#f92672">***</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">**++++</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">**</span> Transfer Status
-</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> URL Retrieved:
-</span></span><span style="display:flex;"><span>http:<span style="color:#f92672">//</span>www<span style="color:#f92672">.</span>davidcraddock<span style="color:#f92672">.</span>net
-</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> CURL Fetch Status:
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Array</span>
-</span></span><span style="display:flex;"><span>(
-</span></span><span style="display:flex;"><span>    [url] <span style="color:#f92672">=&gt;</span> http:<span style="color:#f92672">//</span>www<span style="color:#f92672">.</span>davidcraddock<span style="color:#f92672">.</span>net
-</span></span><span style="display:flex;"><span>    [content_type] <span style="color:#f92672">=&gt;</span> text<span style="color:#f92672">/</span>html; charset<span style="color:#f92672">=</span>UTF<span style="color:#f92672">-</span><span style="color:#ae81ff">8</span>
-</span></span><span style="display:flex;"><span>    [http_code] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">200</span>
-</span></span><span style="display:flex;"><span>    [header_size] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">237</span>
-</span></span><span style="display:flex;"><span>    [request_size] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">175</span>
-</span></span><span style="display:flex;"><span>    [filetime] <span style="color:#f92672">=&gt;</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>    [ssl_verify_result] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>    [redirect_count] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>    [total_time] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">1.490972</span>
-</span></span><span style="display:flex;"><span>    [namelookup_time] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">5.3E-5</span>
-</span></span><span style="display:flex;"><span>    [connect_time] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">0.175803</span>
-</span></span><span style="display:flex;"><span>    [pretransfer_time] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">0.175812</span>
-</span></span><span style="display:flex;"><span>    [size_upload] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>    [size_download] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">30416</span>
-</span></span><span style="display:flex;"><span>    [speed_download] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">20400</span>
-</span></span><span style="display:flex;"><span>    [speed_upload] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>    [download_content_length] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">30416</span>
-</span></span><span style="display:flex;"><span>    [upload_content_length] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>    [starttransfer_time] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">0.714943</span>
-</span></span><span style="display:flex;"><span>    [redirect_time] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">**</span> Header
-</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> Title: Random Eye Movement
-</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> Meta Desc:
-</span></span><span style="display:flex;"><span>Not Set
-</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> Meta Keywords:
-</span></span><span style="display:flex;"><span>Not Set
-</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> Meta Robots:
-</span></span><span style="display:flex;"><span>Not Set
-</span></span><span style="display:flex;"><span><span style="color:#f92672">**</span> Flags
-</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> Has Frames<span style="color:#960050;background-color:#1e0010">?</span>:
-</span></span><span style="display:flex;"><span>FALSE
-</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> Has body content been parsed<span style="color:#960050;background-color:#1e0010">?</span>:
-</span></span><span style="display:flex;"><span>TRUE
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">**</span> Non Html Tags
-</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> Tags scanned <span style="color:#66d9ef">for</span>:
-</span></span><span style="display:flex;"><span>Tag Type: script tags processed: <span style="color:#ae81ff">4</span>
-</span></span><span style="display:flex;"><span>Tag Type: embed tags processed: <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>Tag Type: style tags processed: <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> Tag contents:
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Array</span>
-</span></span><span style="display:flex;"><span>(
-</span></span><span style="display:flex;"><span>    [ script ] <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">Array</span>
-</span></span><span style="display:flex;"><span>        (
-</span></span><span style="display:flex;"><span>            [<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">Array</span>
-</span></span><span style="display:flex;"><span>                (
-</span></span><span style="display:flex;"><span>                    [src] <span style="color:#f92672">=&gt;</span> http:<span style="color:#f92672">//</span>www<span style="color:#f92672">.</span>davidcraddock<span style="color:#f92672">.</span>net<span style="color:#f92672">/</span>wp<span style="color:#f92672">-</span>content<span style="color:#f92672">/</span>themes<span style="color:#f92672">/</span>this<span style="color:#f92672">-</span>just<span style="color:#f92672">-</span><span style="color:#f92672">in</span><span style="color:#f92672">/</span>js<span style="color:#f92672">/</span>ThemeJS<span style="color:#f92672">.</span>js
-</span></span><span style="display:flex;"><span>                    [type] <span style="color:#f92672">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [isinline] <span style="color:#f92672">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [content] <span style="color:#f92672">=&gt;</span>
-</span></span><span style="display:flex;"><span>                )
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            [<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">Array</span>
-</span></span><span style="display:flex;"><span>                (
-</span></span><span style="display:flex;"><span>                    [src] <span style="color:#f92672">=&gt;</span> http:<span style="color:#f92672">//</span>www<span style="color:#f92672">.</span>davidcraddock<span style="color:#f92672">.</span>net<span style="color:#f92672">/</span>wp<span style="color:#f92672">-</span>content<span style="color:#f92672">/</span>plugins<span style="color:#f92672">/</span>lifestream<span style="color:#f92672">/</span>lifestream<span style="color:#f92672">.</span>js
-</span></span><span style="display:flex;"><span>                    [type] <span style="color:#f92672">=&gt;</span> text<span style="color:#f92672">/</span>javascript
-</span></span><span style="display:flex;"><span>                    [isinline] <span style="color:#f92672">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [content] <span style="color:#f92672">=&gt;</span>
-</span></span><span style="display:flex;"><span>                )
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            [<span style="color:#ae81ff">2</span>] <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">Array</span>
-</span></span><span style="display:flex;"><span>                (
-</span></span><span style="display:flex;"><span>                    [src] <span style="color:#f92672">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [type] <span style="color:#f92672">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [isinline] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>                    [content] <span style="color:#f92672">=&gt;</span>
-</span></span><span style="display:flex;"><span>                 <span style="color:#66d9ef">var</span> odesk_widgets_width <span style="color:#f92672">=</span> <span style="color:#ae81ff">340</span>;
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">var</span> odesk_widgets_height <span style="color:#f92672">=</span> <span style="color:#ae81ff">230</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>                )
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            [<span style="color:#ae81ff">3</span>] <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">Array</span>
-</span></span><span style="display:flex;"><span>                (
-</span></span><span style="display:flex;"><span>                    [src] <span style="color:#f92672">=&gt;</span> http:<span style="color:#f92672">//</span>www<span style="color:#f92672">.</span>odesk<span style="color:#f92672">.</span>com<span style="color:#f92672">/</span>widgets<span style="color:#f92672">/</span>v1<span style="color:#f92672">/</span>providers<span style="color:#f92672">/</span>large<span style="color:#f92672">/~~</span><span style="color:#ae81ff">8</span>f250a5e32c8d3fa<span style="color:#f92672">.</span>js
-</span></span><span style="display:flex;"><span>                    [type] <span style="color:#f92672">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [isinline] <span style="color:#f92672">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [content] <span style="color:#f92672">=&gt;</span>
-</span></span><span style="display:flex;"><span>                )
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            [count] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">4</span>
-</span></span><span style="display:flex;"><span>        )
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    [ embed ] <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">Array</span>
-</span></span><span style="display:flex;"><span>        (
-</span></span><span style="display:flex;"><span>            [<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">Array</span>
-</span></span><span style="display:flex;"><span>                (
-</span></span><span style="display:flex;"><span>                    [src] <span style="color:#f92672">=&gt;</span> http:<span style="color:#f92672">//</span>www<span style="color:#f92672">.</span>youtube<span style="color:#f92672">-</span>nocookie<span style="color:#f92672">.</span>com<span style="color:#f92672">/</span>v<span style="color:#f92672">/</span>Fpm0m6bVfrM<span style="color:#f92672">&amp;</span>hl<span style="color:#f92672">=</span>en<span style="color:#f92672">&amp;</span>fs<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#f92672">&amp;</span>rel<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>                    [type] <span style="color:#f92672">=&gt;</span> application<span style="color:#f92672">/</span>x<span style="color:#f92672">-</span>shockwave<span style="color:#f92672">-</span>flash
-</span></span><span style="display:flex;"><span>                    [isinline] <span style="color:#f92672">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [content] <span style="color:#f92672">=&gt;</span>
-</span></span><span style="display:flex;"><span>                )
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            [count] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>        )
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    [ style ] <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">Array</span>
-</span></span><span style="display:flex;"><span>        (
-</span></span><span style="display:flex;"><span>            [count] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>        )
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">**----</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">***</span> Page Print of http:<span style="color:#f92672">//</span>www<span style="color:#f92672">.</span>davidcraddock<span style="color:#f92672">.</span>net Finished <span style="color:#f92672">***</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">**----</span>
-</span></span></code></pre></div><p>If you want to download a copy, the file is below. If you find it useful for you, a pingback would be appreciated.
-<a href="http://www.davidcraddock.net/uploads/code-sample.tar.gz">code-sample.tar.gz</a></p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2010/01/14/php-sample-html-page-fetcher-and-parser/</guid>
+      <description>Back in 2008, I wrote a PHP class that fetched an arbitary URL, parsed it, and coverted it into an PHP object with different attributes for the different elements of the page. I recently updated it and sent it along to a company that wanted a programming example to show I could code in PHP.&#xA;I thought someone may well find a use for it - I&amp;rsquo;ve used the class in several different web scraping applications, and I found it handy.</description>
     </item>
-    
     <item>
       <title>Config files for the Windows version of VIM</title>
-      <link>http://192.168.1.50:9796/2010/01/10/config-files-for-the-windows-version-of-vim/</link>
+      <link>http://davidcraddock.net:9796/2010/01/10/config-files-for-the-windows-version-of-vim/</link>
       <pubDate>Sun, 10 Jan 2010 23:06:06 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2010/01/10/config-files-for-the-windows-version-of-vim/</guid>
-      <description>Today I encountered problems configuring the windows version of the popular text editor VIM, so I thought I&amp;rsquo;d write up a quick post talk about configuration files under the Windows version, if anyone becomes stuck like I did. I use Linux, OSX and Windows on a day-to-day basis, and VIM as a text editor for a lot of quick edits on all three platforms. Here&amp;rsquo;s a quick comparison:
-Linux Linux is easy because that&amp;rsquo;s what most people who use VIM run, and so it is very well tested.</description>
-      <content:encoded><![CDATA[<p>Today I encountered problems configuring the windows version of the popular text editor <a href="http://www.vim.org">VIM</a>, so I thought I&rsquo;d write up a quick post talk about configuration files under the Windows version, if anyone becomes stuck like I did. I use Linux, OSX and Windows on a day-to-day basis, and VIM as a text editor for a lot of quick edits on all three platforms. Here&rsquo;s a quick comparison:</p>
-<h3 id="linux">Linux</h3>
-<p>Linux is easy because that&rsquo;s what most people who use VIM run, and so it is very well tested.</p>
-<p><strong>~/.vimrc</strong> - Configuration file for command line vim.
-<strong>~/.gvimrc</strong> - Configuration file for gui vim.</p>
-<h3 id="osx">OSX</h3>
-<p>OSX is simple also, as it&rsquo;s based on unix:</p>
-<p><strong>~/.vimrc</strong> - Configuration file for command line vim.
-<strong>~/.gvimrc</strong> - Configuration file for gui vim.</p>
-<h3 id="windows">Windows</h3>
-<p>Windows is not easy at all.. it doesn&rsquo;t have a unix file structure, and doesn&rsquo;t have support for the unix hidden file names, that start with a &lsquo;.&rsquo;, ie: &lsquo;.vimrc&rsquo;, &lsquo;.bashrc&rsquo;, and so on. Most open-source programs like VIM that require these hidden configuration files, and have been ported over to windows, seem to adopt this naming convention: &lsquo;_vimrc&rsquo;, &lsquo;_bashrc&rsquo;.. and so forth. So:</p>
-<p><strong>_vimrc</strong> - Configuration file for command line vim.
-<strong>_gvimrc</strong> - Configuration file for gui vim.</p>
-<p>Renaming configuration files from &ldquo;.&rdquo; to &ldquo;_&rdquo; wouldn&rsquo;t make much difference on its own. You&rsquo;d have to rename your files, but.. big deal. It&rsquo;s not much of a problem.</p>
-<p>Another, more tricky, problem you may encounter however, is that there&rsquo;s no clear <strong>home</strong> directory on windows systems. Each major incarnation of windows seems to have a slightly different way of dealing with user&rsquo;s files.. from 2000 to XP, a change, from XP to Vista, there is a change. I haven&rsquo;t tried VIM on W7 yet, but it seems similar to Vista in structure, so this information may actually be consistent to W7.</p>
-<p>The Vista 64 version of VIM I have, looks in another place for configuration files. For a global configuration file, it looks in &ldquo;C:Program Files&rdquo;. Yes.. &ldquo;C:Program Files&rdquo;. According to Vista 64&rsquo;s version of VIM.. that&rsquo;s the exact directory where I installed VIM. This is clearly not right. What&rsquo;s happening is that the file system on windows is different to the unix-type file systems, and the VIM port is having problems adapting. The real VIM install directory is <strong>C:Program Filesvim72</strong>. Because VIM is looking for a global configuration file in &ldquo;C:Program Files_vimrc&rdquo;, it&rsquo;ll never find it.</p>
-<p>Now you could override this with a batch file that sets the right environmental variables on startup, or you could change the environmental variables exported in windows, but I prefer to have a user-specified configuration file in my personal files directory, as it&rsquo;s easier to backup and manage. If you wanted to specify the environmental variables yourself, which I&rsquo;m guessing many will, the two environmental variables to override are:</p>
-<p>$VIM = the VIM install directory, not always set properly, as I mentioned.
-$HOME = the logged in user&rsquo;s documents and settings directory, in windows speak this is also where the &lsquo;user profile&rsquo; is stored, which is a collection of settings and configurations for the user. The exact directory will depend on which version of Windows you&rsquo;re running, and if you override the HOME folder, you may have problems with other programs that rely on it being static.</p>
-<p>On my Windows Vista 64 install:</p>
-<p><strong>$VIM = &ldquo;C:Program Files&rdquo;</strong> <strong>$HOME = &ldquo;C:UsersDave&rdquo;</strong></p>
-<p>You can see what files VIM includes by running the handy command</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>vim -V
-</span></span></code></pre></div><p>at a command prompt; it will go through the different settings and output something similar to this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Searching for &#34;C:UsersDave/vimfilesfiletype.vim&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;C:Program Files/vimfilesfiletype.vim&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;C:Program Filesvim72filetype.vim&#34;
-</span></span><span style="display:flex;"><span>line 49: sourcing &#34;C:Program Filesvim72filetype.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72filetype.vim
-</span></span><span style="display:flex;"><span>continuing in C:UsersDave_vimrc
-</span></span><span style="display:flex;"><span>Searching for &#34;C:Program Files/vimfiles/afterfiletype.vim&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;C:UsersDave/vimfiles/afterfiletype.vim&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;ftplugin.vim&#34; in &#34;C:UsersDave/vimfiles,C:Program Files/vimfiles,C:Program Filesvim72,C:Program Files/vimfiles/after,C:UsersDave/vimfiles/after&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;C:UsersDave/vimfilesftplugin.vim&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;C:Program Files/vimfilesftplugin.vim&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;C:Program Filesvim72ftplugin.vim&#34;
-</span></span><span style="display:flex;"><span>line 49: sourcing &#34;C:Program Filesvim72ftplugin.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72ftplugin.vim
-</span></span><span style="display:flex;"><span>continuing in C:UsersDave_vimrc
-</span></span><span style="display:flex;"><span>Searching for &#34;C:Program Files/vimfiles/afterftplugin.vim&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;C:UsersDave/vimfiles/afterftplugin.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing $HOME_vimrc
-</span></span><span style="display:flex;"><span>Searching for &#34;plugin/**/*.vim&#34; in &#34;C:UsersDave/vimfiles,C:Program Files/vimfiles,C:Program Filesvim72,C:Program Files/vimfiles/after,C:UsersDave/vimfiles/after&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;C:UsersDave/vimfilesplugin/**/*.vim&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;C:Program Files/vimfilesplugin/**/*.vim&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;C:Program Filesvim72plugin/**/*.vim&#34;
-</span></span><span style="display:flex;"><span>sourcing &#34;C:Program Filesvim72plugingetscriptPlugin.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72plugingetscriptPlugin.vim
-</span></span><span style="display:flex;"><span>sourcing &#34;C:Program Filesvim72plugingzip.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72plugingzip.vim
-</span></span><span style="display:flex;"><span>sourcing &#34;C:Program Filesvim72pluginmatchparen.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72pluginmatchparen.vim
-</span></span><span style="display:flex;"><span>sourcing &#34;C:Program Filesvim72pluginnetrwPlugin.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72pluginnetrwPlugin.vim
-</span></span><span style="display:flex;"><span>sourcing &#34;C:Program Filesvim72pluginrrhelper.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72pluginrrhelper.vim
-</span></span><span style="display:flex;"><span>sourcing &#34;C:Program Filesvim72pluginspellfile.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72pluginspellfile.vim
-</span></span><span style="display:flex;"><span>sourcing &#34;C:Program Filesvim72plugintarPlugin.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72plugintarPlugin.vim
-</span></span><span style="display:flex;"><span>sourcing &#34;C:Program Filesvim72plugintohtml.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72plugintohtml.vim
-</span></span><span style="display:flex;"><span>sourcing &#34;C:Program Filesvim72pluginvimballPlugin.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72pluginvimballPlugin.vim
-</span></span><span style="display:flex;"><span>sourcing &#34;C:Program Filesvim72pluginzipPlugin.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72pluginzipPlugin.vim
-</span></span><span style="display:flex;"><span>Searching for &#34;C:Program Files/vimfiles/afterplugin/**/*.vim&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;C:UsersDave/vimfiles/afterplugin/**/*.vim&#34;
-</span></span><span style="display:flex;"><span>Reading viminfo file &#34;C:UsersDave_viminfo&#34; info
-</span></span><span style="display:flex;"><span>Press ENTER or type command to continue
-</span></span></code></pre></div><p>Notice how it does pull in all the syntax highlighting macros and other extension files correctly, which are specified in the <strong>.vim</strong> files above.. but it doesn&rsquo;t pull in the global configuration files that I&rsquo;ve copied also to <strong>C:Program Filesvim72_gvimrc</strong> and <strong>C:Program Filesvim72_vimrc</strong>. However, it does pickup the files I copied to <strong>C:UsersDave</strong>.. both the <strong>C:UsersDave_vimrc</strong> and <strong>C:UsersDave_gvimrc</strong> are picked up, although VIM will normally read &lsquo;_gvimrc&rsquo; when the gui version of VIM is run (called gvim).</p>
-<p>To see exactly what those environmental variables are being set to, when you&rsquo;re inside the editor, issue these two commands, and their values will be show in the editor:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:echo $HOME
-</span></span><span style="display:flex;"><span>:echo $VIM
-</span></span></code></pre></div><p>It seems to make sense for me - and perhaps you, if you&rsquo;re working with VIM on windows - to place my _vimrc and _gvimrc files configuration files in $HOME in Vista. They are then picked up without having to worry about explicitly defining any environmental variables, creating a batch file, or any other hassle.</p>
-<p>You can do this easily by the following two commands:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:ed $HOME_vimrc
-</span></span><span style="display:flex;"><span>:sp $HOME_gvimrc
-</span></span></code></pre></div><p>That will open the two new configuration files, side by side, and you can paste in your existing configuration that you&rsquo;ve used in Linux, and windows will pick them up the next time you start VIM.</p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2010/01/10/config-files-for-the-windows-version-of-vim/</guid>
+      <description>Today I encountered problems configuring the windows version of the popular text editor VIM, so I thought I&amp;rsquo;d write up a quick post talk about configuration files under the Windows version, if anyone becomes stuck like I did. I use Linux, OSX and Windows on a day-to-day basis, and VIM as a text editor for a lot of quick edits on all three platforms. Here&amp;rsquo;s a quick comparison:&#xA;Linux Linux is easy because that&amp;rsquo;s what most people who use VIM run, and so it is very well tested.</description>
     </item>
-    
     <item>
       <title>Bacula Scheduling</title>
-      <link>http://192.168.1.50:9796/2008/10/29/linux-backups-using-bacula/</link>
+      <link>http://davidcraddock.net:9796/2008/10/29/linux-backups-using-bacula/</link>
       <pubDate>Wed, 29 Oct 2008 20:24:31 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2008/10/29/linux-backups-using-bacula/</guid>
-      <description>Bacula is a great open-source distributed backup program for Linux/UNIX systems. It is separated into three main components:
-One &amp;lsquo;Director&amp;rsquo; - which sends messages to the other components and co-ordinates the backup One or more &amp;lsquo;File Demons&amp;rsquo; - which &amp;lsquo;pull&amp;rsquo; the data from the host they are installed from. One or more &amp;lsquo;Storage Demons&amp;rsquo; - which &amp;lsquo;push&amp;rsquo; the data taken from the file demons into a type of archival storage, IE: backup tapes, a backup hard disc, etc I found it extremely versatile yet very complicated to configure.</description>
-      <content:encoded><![CDATA[<p>Bacula is a great open-source distributed backup program for Linux/UNIX systems. It is separated into three main components:</p>
-<ul>
-<li>One &lsquo;Director&rsquo; - which sends messages to the other components and co-ordinates the backup</li>
-<li>One or more &lsquo;File Demons&rsquo; - which &lsquo;pull&rsquo; the data from the host they are installed from.</li>
-<li>One or more &lsquo;Storage Demons&rsquo; - which &lsquo;push&rsquo; the data taken from the file demons into a type of archival storage, IE: backup tapes, a backup hard disc, etc</li>
-</ul>
-<p>I found it extremely versatile yet very complicated to configure. Before you configure it you have to decide on a backup strategy; what you want to backup, why you want to back it up, how often you want to back it up, and how you are going to off-site/preserve the backups.</p>
-<p>I can&rsquo;t cover everything about Bacula here, so I thought I&rsquo;d concentrate on scheduling. You will need to understand quite a lot about the basics of Bacula before you&rsquo;ll be able to understand scheduling, so I recommend reading up on the basics first.</p>
-<p>I had the most problems with the scheduling. In the end I chose to adopt this schedule:</p>
-<ul>
-<li>Monthly Full backup, with a retention period of 6 months, and a maximum number of backup volumes of 6.</li>
-<li>Weekly Differential backup against the monthly full backup, with a retention period of 1 month, and a maximum number of backup volumes of 4.</li>
-<li>Daily Incremental backup against the differential backup, with a retention period of 2 weeks, and a maximum number of backup volumes of 14.</li>
-</ul>
-<p>This means that there will always be 2 weeks of incremental backups to fall back on which depend on a weekly differential which depends on a monthly full. This strategy aims to save as much space as possible - there is no redundancy. This means that if a backup fails, especially a monthly or weekly, it will have to be re-run immediately.</p>
-<p>The backup volumes will cycle using this method; they will be reused once the maxium volume limits are hit. Also, if you run a backup job from the console, it will revert to the &lsquo;Default&rsquo; pool, so you will have to explicitly define either the daily incremental, weekly differential or the monthly full pools.</p>
-<p>Here is my director configuration:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>Job {
-</span></span><span style="display:flex;"><span>  Name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Backup def&#34;</span>
-</span></span><span style="display:flex;"><span>  Type <span style="color:#f92672">=</span> Backup
-</span></span><span style="display:flex;"><span>  Client <span style="color:#f92672">=</span> localhost<span style="color:#f92672">-</span>fd
-</span></span><span style="display:flex;"><span>  FileSet <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Full Set&#34;</span>
-</span></span><span style="display:flex;"><span>  Storage <span style="color:#f92672">=</span> localhost<span style="color:#f92672">-</span>sd
-</span></span><span style="display:flex;"><span>  Schedule <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;BackupCycle&#34;</span>
-</span></span><span style="display:flex;"><span>  Messages <span style="color:#f92672">=</span> Standard
-</span></span><span style="display:flex;"><span>  Pool <span style="color:#f92672">=</span> Default
-</span></span><span style="display:flex;"><span>  Full Backup Pool <span style="color:#f92672">=</span> Full<span style="color:#f92672">-</span>Pool
-</span></span><span style="display:flex;"><span>  Incremental Backup Pool <span style="color:#f92672">=</span> Inc<span style="color:#f92672">-</span>Pool
-</span></span><span style="display:flex;"><span>  Differential Backup Pool <span style="color:#f92672">=</span> Diff<span style="color:#f92672">-</span>Pool
-</span></span><span style="display:flex;"><span>  Write Bootstrap <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/var/bacula/working/Client1.bsr&#34;</span>
-</span></span><span style="display:flex;"><span>  Priority <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Schedule {
-</span></span><span style="display:flex;"><span>  Name = &#34;BackupCycle&#34;
-</span></span><span style="display:flex;"><span>  Run = Level=Full Pool=Full-Pool 1st mon at 1:05
-</span></span><span style="display:flex;"><span>  Run = Level=Differential Pool=Diff-Pool mon at 1:05
-</span></span><span style="display:flex;"><span>  Run = Level=Incremental Pool=Inc-Pool mon-sun at 1:05
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># This is the default backup stanza, which always gets overridden by one of the other Pools, except when a manual backup is performed via the console.
-</span></span><span style="display:flex;"><span>Pool {
-</span></span><span style="display:flex;"><span>  Name = Default
-</span></span><span style="display:flex;"><span>  Pool Type = Backup
-</span></span><span style="display:flex;"><span>  Recycle = yes                     # Bacula can automatically recycle Volumes
-</span></span><span style="display:flex;"><span>  AutoPrune = yes                   # Prune expired volumes
-</span></span><span style="display:flex;"><span>  Volume Retention = 1 week         # one week
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>Pool {
-</span></span><span style="display:flex;"><span>  Name = Full-Pool
-</span></span><span style="display:flex;"><span>  Pool Type = Backup
-</span></span><span style="display:flex;"><span>  Recycle = yes           # automatically recycle Volumes
-</span></span><span style="display:flex;"><span>  AutoPrune = yes         # Prune expired volumes
-</span></span><span style="display:flex;"><span>  Volume Retention = 6 months
-</span></span><span style="display:flex;"><span>  Maximum Volume Jobs = 1
-</span></span><span style="display:flex;"><span>  Label Format = &#34;Monthly-Full-${Year}-${Month:p/2/0/r}-${Day:p/2/0/r}-${Hour:p/2/0/r}-${Minute:p/2/0/r}&#34;
-</span></span><span style="display:flex;"><span>  Maximum Volumes = 6
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>Pool {
-</span></span><span style="display:flex;"><span>  Name = Inc-Pool
-</span></span><span style="display:flex;"><span>  Pool Type = Backup
-</span></span><span style="display:flex;"><span>  Recycle = yes           # automatically recycle Volumes
-</span></span><span style="display:flex;"><span>  AutoPrune = yes         # Prune expired volumes
-</span></span><span style="display:flex;"><span>  Volume Retention = 1 month
-</span></span><span style="display:flex;"><span>  Maximum Volume Jobs = 1
-</span></span><span style="display:flex;"><span>  Label Format = &#34;Weekly-Inc-${Year}-${Month:p/2/0/r}-${Day:p/2/0/r}-${Hour:p/2/0/r}-${Minute:p/2/0/r}&#34;
-</span></span><span style="display:flex;"><span>  Maximum Volumes = 4
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>Pool {
-</span></span><span style="display:flex;"><span>  Name = Diff-Pool
-</span></span><span style="display:flex;"><span>  Pool Type = Backup
-</span></span><span style="display:flex;"><span>  Recycle = yes
-</span></span><span style="display:flex;"><span>  AutoPrune = yes
-</span></span><span style="display:flex;"><span>  Volume Retention = 14 days
-</span></span><span style="display:flex;"><span>  Maximum Volume Jobs = 1
-</span></span><span style="display:flex;"><span>  Label Format = &#34;Daily-Diff-${Year}-${Month:p/2/0/r}-${Day:p/2/0/r}-${Hour:p/2/0/r}-${Minute:p/2/0/r}&#34;
-</span></span><span style="display:flex;"><span>  Maximum Volumes = 7
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>I also recommend the excellent O&rsquo;Reilly book - &ldquo;Backup and Recovery&rdquo; which comprehensively covers backups, and has a chapter on Bacula.</p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2008/10/29/linux-backups-using-bacula/</guid>
+      <description>Bacula is a great open-source distributed backup program for Linux/UNIX systems. It is separated into three main components:&#xA;One &amp;lsquo;Director&amp;rsquo; - which sends messages to the other components and co-ordinates the backup One or more &amp;lsquo;File Demons&amp;rsquo; - which &amp;lsquo;pull&amp;rsquo; the data from the host they are installed from. One or more &amp;lsquo;Storage Demons&amp;rsquo; - which &amp;lsquo;push&amp;rsquo; the data taken from the file demons into a type of archival storage, IE: backup tapes, a backup hard disc, etc I found it extremely versatile yet very complicated to configure.</description>
     </item>
-    
     <item>
       <title>Automated Emails on Commiting to a Subversion Repository Using Python</title>
-      <link>http://192.168.1.50:9796/2008/09/22/automated-emails-on-commiting-to-a-subversion-repository/</link>
+      <link>http://davidcraddock.net:9796/2008/09/22/automated-emails-on-commiting-to-a-subversion-repository/</link>
       <pubDate>Mon, 22 Sep 2008 23:22:54 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2008/09/22/automated-emails-on-commiting-to-a-subversion-repository/</guid>
-      <description>At work I&amp;rsquo;ve written a couple of scripts that send out emails to the appropriate project team when someone checks in a commit to the project subversion repository. Here are the details.
-Firstly, you will need a subversion hook setup on post-commit. The post-commit hook needs to be located in SVNROOT/YOURPROJECT/hooks where YOURPROJECT is your svn project name, and SVNROOT is the root directory where you are storing the data files for your subversion repository.</description>
-      <content:encoded><![CDATA[<p>At work I&rsquo;ve written a couple of scripts that send out emails to the appropriate project team when someone checks in a commit to the project subversion repository. Here are the details.</p>
-<p>Firstly, you will need a subversion hook setup on post-commit. The post-commit hook needs to be located in SVNROOT/YOURPROJECT/hooks where YOURPROJECT is your svn project name, and SVNROOT is the root directory where you are storing the data files for your subversion repository.</p>
-<p>Substitute projectmember1,projectmember2 etc.. in the post-commit script below for the email addresses of the people to be notified when someone commits a change to the project.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/sh
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># POST-COMMIT HOOK</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># The post-commit hook is invoked after a commit.  Subversion runs</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># this hook by invoking a program (script, executable, binary, etc.)</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># named &#39;post-commit&#39; (for which this file is a template) with the</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># following ordered arguments:</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#   [1] REPOS-PATH   (the path to this repository)</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#   [2] REV          (the number of the revision just committed)</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># The default working directory for the invocation is undefined, so</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># the program should set one explicitly if it cares.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Because the commit has already completed and cannot be undone,</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># the exit code of the hook program is ignored.  The hook program</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># can use the &#39;svnlook&#39; utility to help it examine the</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># newly-committed tree.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># On a Unix system, the normal procedure is to have &#39;post-commit&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># invoke other programs to do the real work, though it may do the</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># work itself too.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Note that &#39;post-commit&#39; must be executable by the user(s) who will</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># invoke it (typically the user httpd runs as), and that user must</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># have filesystem-level permission to access the repository.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># On a Windows system, you should name the hook program</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># &#39;post-commit.bat&#39; or &#39;post-commit.exe&#39;,</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># but the basic idea is the same.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># The hook program typically does not inherit the environment of</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># its parent process.  For example, a common problem is for the</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># PATH environment variable to not be set to its usual value, so</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># that subprograms fail to launch unless invoked via absolute path.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># If you&#39;re having unexpected problems with a hook program, the</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># culprit may be unusual (or missing) environment variables.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Here is an example hook script, for a Unix /bin/sh interpreter.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># For more examples and pre-written hooks, see those in</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># the Subversion repository at</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># http://svn.collab.net/repos/svn/trunk/tools/hook-scripts/ and</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># http://svn.collab.net/repos/svn/trunk/contrib/hook-scripts/</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>REPOS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>REV<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$2<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>EMAILS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;projectmember1email,projectmember2email,projectmember3email,projectmember4email&#34;</span>
-</span></span><span style="display:flex;"><span>LOG<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;svnlook log </span>$REPOS<span style="color:#e6db74"> -r</span>$REV<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>/usr/bin/python /usr/local/scripts/svncommitemail.py $EMAILS $REPOS <span style="color:#e6db74">`</span>whoami<span style="color:#e6db74">`</span> $REV <span style="color:#e6db74">&#34;`</span>$LOG<span style="color:#e6db74">`&#34;</span> &gt; /tmp/svncommitemail.log
-</span></span></code></pre></div><p>Secondly you will need this python script:</p>
-<p>Edit the &lsquo;fromaddr&rsquo; variable to equal your configuration manager&rsquo;s email address (probably your own!).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>#!/usr/bin/env python
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>import smtplib
-</span></span><span style="display:flex;"><span>import sys
-</span></span><span style="display:flex;"><span>import getopt
-</span></span><span style="display:flex;"><span>import time
-</span></span><span style="display:flex;"><span>import datetime
-</span></span><span style="display:flex;"><span>import string
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>def sendMail(subject, body, TO, FROM):
-</span></span><span style="display:flex;"><span>    HOST = &#34;localhost&#34;
-</span></span><span style="display:flex;"><span>    BODY = string.join((
-</span></span><span style="display:flex;"><span>        &#34;From: %s&#34; % FROM,
-</span></span><span style="display:flex;"><span>        &#34;To: %s&#34; % TO,
-</span></span><span style="display:flex;"><span>        &#34;Subject: %s&#34; % subject,
-</span></span><span style="display:flex;"><span>        &#34;&#34;,
-</span></span><span style="display:flex;"><span>        body
-</span></span><span style="display:flex;"><span>        ), &#34;rn&#34;)
-</span></span><span style="display:flex;"><span>    server = smtplib.SMTP(HOST)
-</span></span><span style="display:flex;"><span>    server.set_debuglevel(1)
-</span></span><span style="display:flex;"><span>    server.sendmail(FROM, [TO], BODY)
-</span></span><span style="display:flex;"><span>    server.quit()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>def send(alias,rev,username,repo,changelog):
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        today = datetime.date.today()
-</span></span><span style="display:flex;"><span>        fromaddr = &#39;Configuration.Management@YOURCOMPANY.COM&#39;
-</span></span><span style="display:flex;"><span>        subject = &#34;&#34;&#34;Subversion repository &#34;&#34;&#34;+repo+&#34;&#34;&#34; changed by &#34;&#34;&#34;+username+&#34;&#34;&#34; on &#34;&#34;&#34;+str(today)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        aliases = alias.split(&#39;,&#39;)
-</span></span><span style="display:flex;"><span>        for alias in aliases:
-</span></span><span style="display:flex;"><span>                body = &#34;&#34;&#34;
-</span></span><span style="display:flex;"><span>Hello,
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        This is an automated email to let you know that subversion user: &#39;&#34;&#34;&#34;+username+&#34;&#34;&#34;&#39; has updated repository &#34;&#34;&#34;+repo+&#34;&#34;&#34; to version &#34;&#34;&#34;+rev+&#34;&#34;&#34;. The changelog (might be empty) is recorded as:
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>&#34;&#34;&#34;+changelog+&#34;&#34;&#34;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Please contact subversion user: &#39;&#34;&#34;&#34;+username+&#34;&#34;&#34;&#39; in the first instance if you have any questions about this commit.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Thanks,
-</span></span><span style="display:flex;"><span>Configuration Management
-</span></span><span style="display:flex;"><span>        &#34;&#34;&#34;
-</span></span><span style="display:flex;"><span>                sendMail(subject,body,alias,fromaddr)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>argv = sys.argv
-</span></span><span style="display:flex;"><span>argc = len(sys.argv)
-</span></span><span style="display:flex;"><span>if argc == 6:
-</span></span><span style="display:flex;"><span>        alias = argv[1]
-</span></span><span style="display:flex;"><span>        repo = argv[2]
-</span></span><span style="display:flex;"><span>        username = argv[3]
-</span></span><span style="display:flex;"><span>        rev = argv[4]
-</span></span><span style="display:flex;"><span>        changelog = argv[5]
-</span></span><span style="display:flex;"><span>        send(alias,rev,username,repo,changelog)
-</span></span><span style="display:flex;"><span>else:
-</span></span><span style="display:flex;"><span>        print &#34;Usage: &#34;+argv[0]+&#34;     &#34;
-</span></span></code></pre></div><p>Now once you have this all in place, test it by creating a a test file in the repository, and commiting it. If you issue a &ldquo;tail -f /tmp/svncommitemail.log&rdquo; on the box where your subversion project repository is located, you should be able to see what happens when people commit to the project repository.</p>
-<p>If it is setup correctly, you will see emails being fired off to all interested parties with information about the svn commit.</p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2008/09/22/automated-emails-on-commiting-to-a-subversion-repository/</guid>
+      <description>At work I&amp;rsquo;ve written a couple of scripts that send out emails to the appropriate project team when someone checks in a commit to the project subversion repository. Here are the details.&#xA;Firstly, you will need a subversion hook setup on post-commit. The post-commit hook needs to be located in SVNROOT/YOURPROJECT/hooks where YOURPROJECT is your svn project name, and SVNROOT is the root directory where you are storing the data files for your subversion repository.</description>
     </item>
-    
     <item>
       <title>Character encoding fix with PHP, MySQL 5 and ubuntu-server</title>
-      <link>http://192.168.1.50:9796/2008/07/06/character-encoding-fix-with-php-mysql-5-and-ubuntu-server/</link>
+      <link>http://davidcraddock.net:9796/2008/07/06/character-encoding-fix-with-php-mysql-5-and-ubuntu-server/</link>
       <pubDate>Sun, 06 Jul 2008 23:34:50 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2008/07/06/character-encoding-fix-with-php-mysql-5-and-ubuntu-server/</guid>
-      <description>For some reason, under ubuntu-server, my default MySQL 5 character encoding was latin1. This caused no end of problems with grabbing data from the web, which was not necessarily in latin1 characterset.
-If you are ever in this situation, I suggest you handle everything as UTF-8. That means setting the following lines in my.cnf:
-[mysqld] .. default-character-set=utf8 skip-character-set-client-handshake If you already have tables in your database that you have created, and they have defaulted to the latin1 charset, you&amp;rsquo;ll be able to tell by looking at the mysqldump SQL:</description>
-      <content:encoded><![CDATA[<p>For some reason, under ubuntu-server, my default MySQL 5 character encoding was latin1. This caused no end of problems with grabbing data from the web, which was not necessarily in latin1 characterset.</p>
-<p>If you are ever in this situation, I suggest you handle everything as UTF-8. That means setting the following lines in my.cnf:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>[mysqld]
-</span></span><span style="display:flex;"><span>..
-</span></span><span style="display:flex;"><span>default-character-set=utf8
-</span></span><span style="display:flex;"><span>skip-character-set-client-handshake
-</span></span></code></pre></div><p>If you already have tables in your database that you have created, and they have defaulted to the latin1 charset, you&rsquo;ll be able to tell by looking at the mysqldump SQL:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mysql" data-lang="mysql"><span style="display:flex;"><span><span style="color:#66d9ef">DROP</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">IF</span> <span style="color:#66d9ef">EXISTS</span> <span style="color:#f92672">`</span>ARTISTS<span style="color:#f92672">`</span>;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#f92672">`</span>ARTISTS<span style="color:#f92672">`</span> (
-</span></span><span style="display:flex;"><span>.. some col declarations..
-</span></span><span style="display:flex;"><span>) <span style="color:#66d9ef">ENGINE</span><span style="color:#f92672">=</span>MyISAM <span style="color:#66d9ef">AUTO_INCREMENT</span><span style="color:#f92672">=</span><span style="color:#ae81ff">4519</span> <span style="color:#66d9ef">DEFAULT</span> <span style="color:#66d9ef">CHARSET</span><span style="color:#f92672">=</span>latin1;
-</span></span></code></pre></div><p>See here this artists table has been set to default charset of latin1 by mysql. This is bad. So what I recommend is:</p>
-<p>1. Dump the full database structure + data to a file using mysqldump
-2. Substitute &rsquo;latin1&rsquo; for &lsquo;utf8&rsquo; universally on that file using your favourite text editor
-3. Import the resultant file into mysql using the mysql -uroot -p -Dyourdb &lt; dump.sql method</p>
-<p>Then everything will be in utf8, and your character encoding issues will be solved :)</p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2008/07/06/character-encoding-fix-with-php-mysql-5-and-ubuntu-server/</guid>
+      <description>For some reason, under ubuntu-server, my default MySQL 5 character encoding was latin1. This caused no end of problems with grabbing data from the web, which was not necessarily in latin1 characterset.&#xA;If you are ever in this situation, I suggest you handle everything as UTF-8. That means setting the following lines in my.cnf:&#xA;[mysqld] .. default-character-set=utf8 skip-character-set-client-handshake If you already have tables in your database that you have created, and they have defaulted to the latin1 charset, you&amp;rsquo;ll be able to tell by looking at the mysqldump SQL:</description>
     </item>
-    
     <item>
       <title>NVIDIA GeForce4 MX 420 under Ubuntu Dapper Drake</title>
-      <link>http://192.168.1.50:9796/2007/04/09/nvidia-geforce4-mx-420-under-ubuntu-dapper-drake/</link>
+      <link>http://davidcraddock.net:9796/2007/04/09/nvidia-geforce4-mx-420-under-ubuntu-dapper-drake/</link>
       <pubDate>Mon, 09 Apr 2007 18:26:36 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2007/04/09/nvidia-geforce4-mx-420-under-ubuntu-dapper-drake/</guid>
-      <description>My GeForce4 MX 420 didn&amp;rsquo;t work properly with OpenGL under a fresh install of Dapper Drake. Fixing it, however, proved to be really easy:
-Install the nvidia package: $ apt-get install nvidia
-Edit /etc/X11/xorg.conf and replace the &amp;lsquo;driver&amp;rsquo; where it says &amp;rsquo;nv&amp;rsquo; with &amp;ldquo;nvidia&amp;rdquo;: Section &amp;ldquo;Device&amp;rdquo; Identifier &amp;ldquo;NVIDIA Corporation NV17 [GeForce4 MX 420]&amp;rdquo; #Driver &amp;ldquo;nv&amp;rdquo; Driver &amp;ldquo;nvidia&amp;rdquo; BusID &amp;ldquo;PCI:1:0:0&amp;rdquo; EndSection
-Kill X with control-alt-backspace
-Login again and test if it works by running glxgears and glxinfo on the console</description>
-      <content:encoded><![CDATA[<p>My GeForce4 MX 420 didn&rsquo;t work properly with OpenGL under a fresh install of Dapper Drake. Fixing it, however, proved to be really easy:</p>
-<ol>
-<li>Install the nvidia package:</li>
-</ol>
-<blockquote>
-<p>$ apt-get install nvidia</p>
-</blockquote>
-<ol start="2">
-<li>Edit /etc/X11/xorg.conf and replace the &lsquo;driver&rsquo; where it says &rsquo;nv&rsquo; with &ldquo;nvidia&rdquo;:</li>
-</ol>
-<blockquote>
-<p>Section &ldquo;Device&rdquo;
-Identifier &ldquo;NVIDIA Corporation NV17 [GeForce4 MX 420]&rdquo;
-#Driver &ldquo;nv&rdquo;
-Driver &ldquo;nvidia&rdquo;
-BusID &ldquo;PCI:1:0:0&rdquo;
-EndSection</p>
-</blockquote>
-<ol start="3">
-<li>
-<p>Kill X with control-alt-backspace</p>
-</li>
-<li>
-<p>Login again and test if it works by running glxgears and glxinfo on the console</p>
-</li>
-</ol>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2007/04/09/nvidia-geforce4-mx-420-under-ubuntu-dapper-drake/</guid>
+      <description>My GeForce4 MX 420 didn&amp;rsquo;t work properly with OpenGL under a fresh install of Dapper Drake. Fixing it, however, proved to be really easy:&#xA;Install the nvidia package: $ apt-get install nvidia&#xA;Edit /etc/X11/xorg.conf and replace the &amp;lsquo;driver&amp;rsquo; where it says &amp;rsquo;nv&amp;rsquo; with &amp;ldquo;nvidia&amp;rdquo;: Section &amp;ldquo;Device&amp;rdquo; Identifier &amp;ldquo;NVIDIA Corporation NV17 [GeForce4 MX 420]&amp;rdquo; #Driver &amp;ldquo;nv&amp;rdquo; Driver &amp;ldquo;nvidia&amp;rdquo; BusID &amp;ldquo;PCI:1:0:0&amp;rdquo; EndSection&#xA;Kill X with control-alt-backspace&#xA;Login again and test if it works by running glxgears and glxinfo on the console</description>
     </item>
-    
   </channel>
 </rss>

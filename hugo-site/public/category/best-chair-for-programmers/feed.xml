@@ -1,46 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Best-Chair-for-Programmers on DavidCraddock.net</title>
-    <link>http://192.168.1.50:9796/category/best-chair-for-programmers/</link>
+    <link>http://davidcraddock.net:9796/category/best-chair-for-programmers/</link>
     <description>Recent content in Best-Chair-for-Programmers on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Dec 2013 14:08:48 +0000</lastBuildDate><atom:link href="http://192.168.1.50:9796/category/best-chair-for-programmers/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Dec 2013 14:08:48 +0000</lastBuildDate>
+    <atom:link href="http://davidcraddock.net:9796/category/best-chair-for-programmers/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Aeron Chair</title>
-      <link>http://192.168.1.50:9796/2013/12/24/aeron-chair/</link>
+      <link>http://davidcraddock.net:9796/2013/12/24/aeron-chair/</link>
       <pubDate>Tue, 24 Dec 2013 14:08:48 +0000</pubDate>
-      
-      <guid>http://192.168.1.50:9796/2013/12/24/aeron-chair/</guid>
-      <description>A good ergonomic chair is a wise investment if you&amp;rsquo;re going to spend a lot of time at your computer. One of the better known ergonomic models is the Herman Miller Aeron Task Chair.
-What Other People Say About the Aeron Jeff Atwood (from Coding Horror) says:
-In fact, after browsing chairs for the last few years of my career, I&amp;rsquo;ve come to one conclusion: you can&amp;rsquo;t expect to get a decent chair for less than $500.</description>
-      <content:encoded><![CDATA[<p>A good ergonomic chair is a wise investment if you&rsquo;re going to spend a lot of time at your computer. One of the better known ergonomic models is the <a href="http://www.hermanmiller.com/products/seating/performance-work-chairs/aeron-chairs.html">Herman Miller Aeron Task Chair</a>.</p>
-<p><a href="/wp-content/uploads/2013/12/hero_aeron_work_1.jpg"><img loading="lazy" src="/wp-content/uploads/2013/12/hero_aeron_work_1.jpg" type="" alt="Picture of Aeron Chair"  /></a></p>
-<h3 id="what-other-people-say-about-the-aeron">What Other People Say About the Aeron</h3>
-<p><a href="http://www.codinghorror.com/blog/2008/07/investing-in-a-quality-programming-chair.html">Jeff Atwood</a> (from Coding Horror) says:</p>
-<blockquote>
-<p>In fact, after browsing chairs for the last few years of my career, I&rsquo;ve come to one conclusion: you can&rsquo;t expect to get a decent chair for less than $500. If you are spending less than that on seating – unless you are getting the deal of the century on dot-bomb bankruptcy auctions – you&rsquo;re probably making a mistake.</p>
-<p>I still believe this to be true, and I urge any programmers reading this to seriously consider the value of what you&rsquo;re sitting in while you&rsquo;re on the job. In our profession, seating matters:</p>
-<p>Chairs are a primary part of the programming experience. Eight hours a day, every day, for the rest of your working life – you&rsquo;re sitting in one. Like it or not, whatever you&rsquo;re sitting in has a measurable impact on your work experience.</p>
-<p>Cheap chairs suck. Maybe I&rsquo;ve become spoiled, but I have yet to sit in a single good, cheap chair. In my experience, the difference between the really great chairs and the cheap stuff is enormous. A quality chair is so comfortable and accommodating it effortlessly melts into the background, so you can focus on your work. A cheesy, cheap chair constantly reminds you how many hours of work you have left.</p>
-<p>Chairs last. As I write this, I&rsquo;m still sitting my original Aeron chair, which I purchased in 1998. I can&rsquo;t think of any other piece of equipment I use in my job that has lasted me ten full years and beyond. While the initial sticker shock of a quality chair may turn you off, try to mentally amortize that cost across the next ten years or more.</p>
-</blockquote>
-<p><a href="http://www.joelonsoftware.com/articles/FieldGuidetoDevelopers.html">Joel Spolsky</a> (from Joel On Software) says:</p>
-<blockquote>
-<p>Let me, for a moment, talk about the famous Aeron chair, made by Herman Miller. They cost about $900. This is about $800 more than a cheap office chair from OfficeDepot or Staples.</p>
-<p>They are much more comfortable than cheap chairs. If you get the right size and adjust it properly, most people can sit in them all day long without feeling uncomfortable. The back and seat are made out of a kind of mesh that lets air flow so you don’t get sweaty. The ergonomics, especially of the newer models with lumbar support, are excellent.</p>
-<p>They last longer than cheap chairs. We’ve been in business for six years and every Aeron is literally in mint condition: I challenge anyone to see the difference between the chairs we bought in 2000 and the chairs we bought three months ago. They easily last for ten years. The cheap chairs literally start falling apart after a matter of months. You’ll need at least four $100 chairs to last as long as an Aeron.</p>
-</blockquote>
-<p>There was <a href="https://news.ycombinator.com/item?id=585693">a post with a large set of comments</a> on Hacker News about chairs and cheap alternatives to Aeron Chairs, with a lot of people saying that there is no cheap alternative to a good chair.</p>
-<h3 id="what-i-say-about-the-aeron">What I Say About the Aeron</h3>
-<p>I just got a refurbished Aeron chair for Christmas. I am really pleased with it. It comes in three base sizes, being larger than normal I went for the Size C. Once it arrived it was a good fit, but it was easily configurable to make it into an excellent fit. I prefer my chair not to recline, so I can&rsquo;t comment on whether it is not a good chair for reclining, as Jeff Atwood says, but I will say it felt comfortable and stable reclining.</p>
-<p>The real benefit so far has been on my posture; I did not know how much back pain I was having before with my really cheap office chair. Only when I got up from a 4 hour session on my Aeron chair did I notice how much better my back was feeling. It moulds your back into a good position, and I have noticed my back clicking and popping into its proper shape, after using the chair for a couple of days.</p>
-<p>I ordered my chair from <a href="http://simplyaeron.co.uk">simplyaeron.co.uk</a>, who I am very happy with, as they provided an MK2 Size C chair with lumbar support for less than £400, which is an absolute bargain compared to the retail price of a new chair. This also included delivery! It seems like new - there are no scuff marks and everything works perfectly.</p>
-<p>I highly recommend getting an Aeron chair or an equivalent ergonomic chair recommended in the above resources, as I have really noticed a significant difference.</p>
-]]></content:encoded>
+      <guid>http://davidcraddock.net:9796/2013/12/24/aeron-chair/</guid>
+      <description>A good ergonomic chair is a wise investment if you&amp;rsquo;re going to spend a lot of time at your computer. One of the better known ergonomic models is the Herman Miller Aeron Task Chair.&#xA;What Other People Say About the Aeron Jeff Atwood (from Coding Horror) says:&#xA;In fact, after browsing chairs for the last few years of my career, I&amp;rsquo;ve come to one conclusion: you can&amp;rsquo;t expect to get a decent chair for less than $500.</description>
     </item>
-    
   </channel>
 </rss>
