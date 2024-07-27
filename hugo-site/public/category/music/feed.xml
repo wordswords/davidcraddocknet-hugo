@@ -1,75 +1,250 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Music on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/category/music/</link>
+    <link>http://davidcraddock.net/category/music/</link>
     <description>Recent content in Music on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 13 Jun 2021 20:54:40 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/category/music/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Jun 2021 20:54:40 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/music/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Making Twitch DJ Promo Mix Videos</title>
-      <link>http://davidcraddock.net:9796/2021/06/13/making-twitch-dj-promo-mix-videos/</link>
+      <link>http://davidcraddock.net/2021/06/13/making-twitch-dj-promo-mix-videos/</link>
       <pubDate>Sun, 13 Jun 2021 20:54:40 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2021/06/13/making-twitch-dj-promo-mix-videos/</guid>
+      
+      <guid>http://davidcraddock.net/2021/06/13/making-twitch-dj-promo-mix-videos/</guid>
       <description>Sometimes as a DJ you may want to reconstruct the Twitch stream you have streamed into a video format to send to other people, for promotional purposes, or just to have a record of what you&amp;rsquo;ve done. Twitch makes this difficult though, as it mutes copyrighted music in the video it records for your Twitch stream. Also, when you download this video, it does not include the chat log, so any attempts at reconstruction are without the chat, so it looks like the DJ is just talking to him/herself.</description>
+      <content:encoded><![CDATA[<p>Sometimes as a DJ you may want to reconstruct the Twitch stream you have streamed into a video format to send to other people, for promotional purposes, or just to have a record of what you&rsquo;ve done. Twitch makes this difficult though, as it mutes copyrighted music in the video it records for your Twitch stream. Also, when you download this video, it does not include the chat log, so any attempts at reconstruction are without the chat, so it looks like the DJ is just talking to him/herself. Not good. However you can get past this. This is how I reconstruct a video set to create a promo DJ video mix for my stream. You will need:</p>
+<ol>
+<li>Twitch.tv VOD recording of your stream</li>
+<li>A full audio capture unmuted. I use mixcloud.com for this as I find it very convinent. It is a paid service but it&rsquo;s cheap, and you can just set it as a stream endpoint on Streamlabs OBS and forget about it - it will record all the audio from your streams. Currently there is not an option to download the audio, but you can get past that, see below.</li>
+<li><a href="https://github.com/lay295/TwitchDownloader">https://github.com/lay295/TwitchDownloader</a> - The Twitch Downloader tool that allows you to download chat logs from the Twitch VOD and reconstruct them into a twitch chat pane video</li>
+<li>A video editor and some basic video editing skills. iMovie for OSX is good, I use the free Video Editor for Windows 10</li>
+</ol>
+<h3 id="downloading-the-video-from-twitch">Downloading the video from Twitch</h3>
+<p>Just browse to your video section of the creator dashboard and you will have an oppertunity to download the video of your Twitch stream.</p>
+<h3 id="downloading-the-audio-from-mixcloud">Downloading the audio from Mixcloud</h3>
+<p>Make sure your audio recording is published on your Mixcloud and just use the site <a href="https://www.dlmixcloud.com">https://www.dlmixcloud.com</a> to download a m4a copy of your audio stream.</p>
+<h3 id="downloading-and-rendering-the-chat-playback-using-twitch-downloader">Downloading and rendering the chat playback using Twitch Downloader</h3>
+<p>This is a great program but is a bit technical. There are two steps you need to do - 1) download the chat logs from a VOD and then 2) Render them into a video. So for example:</p>
+<ol>
+<li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#f92672">.</span>\TwitchDownloaderCLI<span style="color:#f92672">.</span>exe <span style="color:#f92672">-</span>m ChatDownload <span style="color:#f92672">-</span>u <span style="color:#ae81ff">1055017670</span> <span style="color:#f92672">-</span>o bla<span style="color:#f92672">.</span>json
+</span></span></code></pre></div><p>- where 1055017670 is your VOD ID (find this by browsing to your video on Twitch. the VOD ID will be displayed in the URL)</p>
+</li>
+<li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#f92672">.</span>\TwitchDownloaderCLI <span style="color:#f92672">-</span>m ChatRender <span style="color:#f92672">-</span>i bla<span style="color:#f92672">.</span>json <span style="color:#f92672">-</span>h <span style="color:#ae81ff">540</span> <span style="color:#f92672">-</span>w <span style="color:#ae81ff">212</span> <span style="color:#f92672">--</span>framerate <span style="color:#ae81ff">30</span> <span style="color:#f92672">--</span>update<span style="color:#f92672">-</span>rate <span style="color:#ae81ff">0</span> <span style="color:#f92672">--</span>font<span style="color:#f92672">-</span>size <span style="color:#ae81ff">11</span> <span style="color:#f92672">-</span>o chat<span style="color:#f92672">.</span>mp4
+</span></span></code></pre></div><p>- this will render your chat playback in a video file with the dimensions 540x212px and the font-size of 11. This is what I use, you can edit this to suit your tastes.</p>
+</li>
+</ol>
+<p>Once you have these three elements, you can use any good video editor to sync the audio with the video, and overlay the chat video onto the video of your stream. Add some titles and there you have a promo video.</p>
+<h3 id="distributing-your-promo-dj-mix-video">Distributing your promo DJ mix video</h3>
+<p>You may run into problems distributing your video as services like YouTube will flag up that you are using copyrighted music. However you can use the fantastic Handbrake tool to compress your video file into a small filesize, and then upload the resulting video to Google Drive. Then you can set Google Drive to &lsquo;share via link&rsquo; and distribute that link to people you want to watch your video. They will sometimes be offered a live stream option but for best results they need to download the whole video file (so make it small!) and watch in a video player like Windows Media Player.</p>
+<h3 id="a-basic-example---heres-one-i-made-earlier">A Basic Example - Here&rsquo;s one I made earlier</h3>
+<p>Remember to download the whole file for best results: <a href="https://drive.google.com/file/d/1qezKXSAvBK29hUCcuRNx1i3-fnodVss9/view">https://drive.google.com/file/d/1qezKXSAvBK29hUCcuRNx1i3-fnodVss9/view</a>
+You should (maybe) also be able to preview it here:</p>
+<p>[googleapps domain=&ldquo;drive&rdquo; dir=&ldquo;file/d/1qezKXSAvBK29hUCcuRNx1i3-fnodVss9/preview&rdquo; query=&quot;&quot; width=&ldquo;640&rdquo; height=&ldquo;480&rdquo; /]</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Using Navidrome on a RPI3 to host my music collection for DJing so I can listen between sets</title>
-      <link>http://davidcraddock.net:9796/2021/06/09/using-navidrome-on-a-rpi3-to-host-my-music-collection-for-djing-so-i-can-listen-between-sets/</link>
+      <link>http://davidcraddock.net/2021/06/09/using-navidrome-on-a-rpi3-to-host-my-music-collection-for-djing-so-i-can-listen-between-sets/</link>
       <pubDate>Wed, 09 Jun 2021 14:29:14 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2021/06/09/using-navidrome-on-a-rpi3-to-host-my-music-collection-for-djing-so-i-can-listen-between-sets/</guid>
+      
+      <guid>http://davidcraddock.net/2021/06/09/using-navidrome-on-a-rpi3-to-host-my-music-collection-for-djing-so-i-can-listen-between-sets/</guid>
       <description>As a DJ it is important to listen to the music in your collection so you get an idea of what would work in particular sets, and you have a memory of how the tracks progress. So I decided to host a Spotify like service in my house so I could listen to my 500GB+ DJ music library. Navidrome (free open source software from https://navidrome.org) is running on the Raspberry Pi 3 which is under my desk via a wired connection with it&amp;rsquo;s own http://navidrome.</description>
+      <content:encoded><![CDATA[<p>As a DJ it is important to listen to the music in your collection so you get an idea of what would work in particular sets, and you have a memory of how the tracks progress. So I decided to host a Spotify like service in my house so I could listen to my 500GB+ DJ music library. Navidrome (free open source software from <a href="https://navidrome.org">https://navidrome.org</a>) is running on the Raspberry Pi 3 which is under my desk via a wired connection with it&rsquo;s own <a href="http://navidrome.local">http://navidrome.local</a> custom domain name. This is what it looks like:</p>
+<p><img loading="lazy" src="/wp-content/uploads/2021/06/navidrome.jpg" type="" alt=""  /></p>
+<p>It remotely mounts the music share on my main Windows PC which is almost always on, and quickly indexes and serves up the content in a Spotify type way.</p>
+<p>I have setup an iptables port redirect so that any web traffic to port 80 or port 443 will be redirected to the correct navidrome app port so I don&rsquo;t have to remember the obscure port number just the domain name above. I have also setup AutoFS to automatically detect when my main PC is running and mount the windows share automatically, so everything just works whenever my main PC is switched on and off, and docker-compose automatically loads the container whenever it goes down and the setup persists between reboots of the RPI and the windows PC. I have also installed Plex on the same RPI, using AutoFS so that it mounts and unmounts the video share on my other PC when it is switched on. I have ripped a bunch of comedy videos from my DVDs and BluRays using Handbrake.</p>
+<p>Navidrome implements the Subsonic API, so it is compatible with a lot of different applications, including the excellent <a href="https://play.google.com/store/apps/details?id=github.daneren2005.dsub&amp;hl=en_GB&amp;gl=US">DSub</a> application for Android which offers a more mobile-friendly streamlined player that connects to my Navidrome server and allows caching and pre-downloading, and a bunch of other cool features.</p>
+<p>It provides an easy way for me to browse and play any music from my music collection from anywhere on my network, and it has full metadata added as part of my DJ music metadata workflow (see: /2021/05/05/organising-huge-music-libraries-with-serato/ for more info). I have also setup my RPI3 as a ZeroTier bridge to my local network, meaning I can create a P2P VPN from my phone to stream music via DSub when I am outside the house too, or to access Plex on the RPI from my phone while I&rsquo;m on the move.</p>
+<p>Another useful feature is that I can save playlists using Navidrome and download all the files that make up the playlist via the web interface. This is useful for preparing a set and moving all teh files onto my DJing laptop so that I can analyse them in Serato and play them in a Serato crate.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Proper Care and Operation of Vinyl Turntables for DJs</title>
-      <link>http://davidcraddock.net:9796/2021/06/01/2552/</link>
+      <link>http://davidcraddock.net/2021/06/01/2552/</link>
       <pubDate>Mon, 31 May 2021 23:53:14 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2021/06/01/2552/</guid>
-      <description>Setup your new Turntable Follow this and only this guide. This is the best vinyl setup video on the internet as of 2021:&#xA;[youtube https://www.youtube.com/watch?v=WM-aIDwfrhc&amp;amp;w=560&amp;amp;h=315]&#xA;A lot of DJ turntables are based on Technics OEM clones, and so you will need to set the tonearm height, which is the only thing not covered by the above video:&#xA;[youtube https://www.youtube.com/watch?v=SYScinvkrrM]&#xA;The Basics Once you&amp;rsquo;ve setup your turntable:&#xA;Should go without saying that I always use a velvet dust brush on my records just before I play them.</description>
+      
+      <guid>http://davidcraddock.net/2021/06/01/2552/</guid>
+      <description>Setup your new Turntable Follow this and only this guide. This is the best vinyl setup video on the internet as of 2021:
+[youtube https://www.youtube.com/watch?v=WM-aIDwfrhc&amp;amp;w=560&amp;amp;h=315]
+A lot of DJ turntables are based on Technics OEM clones, and so you will need to set the tonearm height, which is the only thing not covered by the above video:
+[youtube https://www.youtube.com/watch?v=SYScinvkrrM]
+The Basics Once you&amp;rsquo;ve setup your turntable:
+Should go without saying that I always use a velvet dust brush on my records just before I play them.</description>
+      <content:encoded><![CDATA[<h2 id="setup-your-new-turntable">Setup your new Turntable</h2>
+<p>Follow this and only this guide. This is the best vinyl setup video on the internet as of 2021:</p>
+<p>[youtube <a href="https://www.youtube.com/watch?v=WM-aIDwfrhc&amp;w=560&amp;h=315">https://www.youtube.com/watch?v=WM-aIDwfrhc&amp;w=560&amp;h=315</a>]</p>
+<p>A lot of DJ turntables are based on Technics OEM clones, and so you will need to set the tonearm height, which is the only thing not covered by the above video:</p>
+<p>[youtube <a href="https://www.youtube.com/watch?v=SYScinvkrrM">https://www.youtube.com/watch?v=SYScinvkrrM</a>]</p>
+<h2 id="the-basics">The Basics</h2>
+<p>Once you&rsquo;ve setup your turntable:</p>
+<ol start="0">
+<li>
+<p>Should go without saying that I always use a velvet dust brush on my records just before I play them. Only takes a couple of seconds when you&rsquo;re used to doing it.</p>
+</li>
+<li>
+<p>I always use a stylus guard or record player dust cover when not using my decks.</p>
+</li>
+<li>
+<p>I regularly clean my stylus/needle either by blowing or (how you&rsquo;re supposed to do it) with a stylus cleaning brush.</p>
+</li>
+<li>
+<p>I highly recommend you get one of these tracking weight scales: <a href="https://www.amazon.co.uk/Precise-Digital-Turntable-Backlight-Cartridge/dp/B08DKR87ZC/">https://www.amazon.co.uk/Precise-Digital-Turntable-Backlight-Cartridge/dp/B08DKR87ZC/</a>
+and a small 10cm or so spirit level.</p>
+</li>
+<li>
+<p>If you are dealing with expensive records, records you care about, or records that you think one day might become expensive, I do think it is a worthwhile investment to get a set of good outer covers for the vinyl jackets and some good quality inner sleeves to replace the inner sleeves (often printed paper) that come with the record. You typically put the old sleeves next to the record in the outer sleeve so they don&rsquo;t get worn down by use. This will cut down the amount of dust and static that accumalates also. Take the digital download cards out of the records when you open them - if you leave them sealed with your record for years they can cause compression marks on the vinyl. I usually redeem them online once I buy the record and then rip up the digital download card.</p>
+</li>
+<li>
+<p>Vinyl is an analogue medium. Occassionally things are going to go wrong - you&rsquo;re going to get some fluff on your stylus and the record will stop tracking properly, or the record is going to skip, or there will be crackling from surface noise, dust, dirt, whatever. You will have to take action, usually involing lifting the needle from the record, often in the middle of your set. Be prepared, but you can always remind the audience jokingly that you are actually playing real records - they will (hopefully) understand it&rsquo;s not like pressing a button.</p>
+</li>
+<li>
+<p>Needle drops. I do not recommend beginner DJs start dropping the needle manually onto their records. On every record deck there will be a lever that gently lowers the needle into position on the record, and raises it when reversed. It IS possible to bypass this and drop the needle manually and gently on the record without using the lever, and lots of very experienced DJs can do it so well that there is no long-term damage to the needle and they are faster and often more accurate than using the lever, but doing it this way there is much more of a risk when starting out that you will scratch your records. Scratch DJs and old timer vinyl DJs drop the needle all the time, and good for them. Until you are more used to everything I recommend you use the lever.</p>
+</li>
+<li>
+<p>Flight cases. You can get cheap second hand flightcases that have lasted decades and probably will last decades more. You&rsquo;re looking for something sturdy and mostly metal but as light as possible. Make sure there are no dents and the catches operate like they should, and your decks and mixer snugly fit in without any movement. Coffin style flightcases are a popular option for vinyl DJs as they reduce setup time, but they are pretty heavy. Remember to check with the venue how much space you will have and will they have a table or booth you can put your entire setup on. A lot of venues are used to much smaller controller setups so check first.</p>
+</li>
+<li>
+<p>Record boxes/bags. There are lots of different options here. I would recommend a secondhand metal flightcase style record box which is as light as possible, opens up at the front so you have plenty of space to shuffle through the records, and has wheels and a handle so you can pull it around like a suitcase. A full record box can be VERY VERY heavy! Only take the ones you know are going to go down well. There is a lot less manouvering space in your set for real vinyl DJing as opposed to just turning up with a controller and 20k songs to choose from, so you have to plan things more. Get a good idea what type of music you are booked for, and what people are likely to like. Make sure the records you have are good quality and will not skip or cause you problems. Remember to keep records away from direct sunlight - they will warp. A good habit is to put them back in the box once you&rsquo;ve played them. They should always be kept standing up vertically, never stack them horizontally as the weight can cause problems for the bottom records. You may opt to leave behind all the outer sleeves and inlays etc and put each record in your record box only in a paper inner sleeve where you can write the artist, the track, the position on the record, and the BPM, and anything else you want to make selection easier. Colour coded stickers can be useful. Don&rsquo;t assume you will have light in a darkened environment to read your inner sleeves, and I wouldn&rsquo;t rely on your mobile phone torch - it uses up battery and you might need it for other things. You can get clip-on battery powered lights or keyring pencil torches that last for ages on a single battery.</p>
+</li>
+</ol>
+<h2 id="monthly-maintenance">Monthly Maintenance</h2>
+<p>Once every month or so, I do this:</p>
+<p>A) Check the spirit level on the platter of your turntable without a record, to make sure that from top to bottom, from left to right, and from the center to the outside of the platter, everything is stable. If anything is off, use the adjustable feet on your decks to make sure everything is level, or put some cut up cardboard under one of the legs to lift it, if you don&rsquo;t have adjustable feet.</p>
+<p>B) Use the scale recommended above to check the tracking weight, again without a record on. Make sure it is within your cartridge acceptable weight range, but relatively low within that range unless you&rsquo;re doing a lot of scratching. Higher tracking weight = quicker burnout of needle and record, but closer tracking when you scratch.</p>
+<p>C) If you are using DVS, use some vinyl record cleaner to clean the DVS timecode records you&rsquo;re using, and wipe them clean.</p>
+<p>D) If you are using DVS, recalibrate the decks using the DVS software so that it uses the right sensitivity after any adjustments you have made.</p>
+<p>E) Check all the connections on the back of your turntables, make sure they are tightly plugged in, occasionally they become loose over time and with knocks, and that can cause problems.</p>
+<p>F) Check the speed of your platter is stable and spot on at different speeds - most OEM Technics style clones have a small strobe light and a number of dots. Learn how to use those to quickly check that all is in order.</p>
+<p>That&rsquo;s it. That&rsquo;s all you need to do to make sure your equipment is reliable and lasts a long time.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Lighting and Camera Setup</title>
-      <link>http://davidcraddock.net:9796/2021/05/11/lighting-and-camera-setup/</link>
+      <link>http://davidcraddock.net/2021/05/11/lighting-and-camera-setup/</link>
       <pubDate>Tue, 11 May 2021 03:20:16 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2021/05/11/lighting-and-camera-setup/</guid>
+      
+      <guid>http://davidcraddock.net/2021/05/11/lighting-and-camera-setup/</guid>
       <description>Light Sources: Phillips Hue Colour Lamp (top right) Phillips Hue Colour Lamp (Middle) Phillips Hue Colour Lamp (Bottom) Phillips Hue Lightstrip &amp;ldquo;DJ David Craddock&amp;rdquo; white illuminated sign &amp;ldquo;Live on Air&amp;rdquo; blue sign Laser (green or red laser wash) Revolving disco balls Dark Music Lighting Settings For Phillips Hue sources I use Hue Sync on my broadcast PC which syncs the lights in time with the music. I will use different palletes depending on the event.</description>
+      <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2021/05/studio-lighting-diagram.png" type="" alt=""  /></p>
+<h2 id="light-sources">Light Sources:</h2>
+<ul>
+<li>Phillips Hue Colour Lamp (top right)</li>
+<li>Phillips Hue Colour Lamp (Middle)</li>
+<li>Phillips Hue Colour Lamp (Bottom)</li>
+<li>Phillips Hue Lightstrip</li>
+<li>&ldquo;DJ David Craddock&rdquo; white illuminated sign</li>
+<li>&ldquo;Live on Air&rdquo; blue sign</li>
+<li>Laser (green or red laser wash)</li>
+<li>Revolving disco balls</li>
+</ul>
+<h2 id="dark-music-lighting-settings">Dark Music Lighting Settings</h2>
+<p>For Phillips Hue sources I use Hue Sync on my broadcast PC which syncs the lights in time with the music. I will use different palletes depending on the event. For darkwave/dark music style events I will use this pallette:
+<img loading="lazy" src="/wp-content/uploads/2021/05/huelightsync.png" type="" alt=""  /></p>
+<p>I will have the &lsquo;Live on Air&rsquo; sign on, but not the disco balls or the laser.</p>
+<h2 id="generic-discoparty-settings">Generic Disco/Party Settings</h2>
+<p>For lighter/retro music settings such as my bi-weekly &lsquo;DJ&rsquo;s Choice&rsquo; I will use the following settings:
+<img loading="lazy" src="/wp-content/uploads/2021/05/huelightsyncdisco.png" type="" alt=""  /></p>
+<p>I will have the &lsquo;Live on Air&rsquo; sign on, and the disco balls and laser.</p>
+<h2 id="cameras">Cameras</h2>
+<p>All cameras are mounted on tripods and require a USB port. Most have USB extension cables.</p>
+<ul>
+<li>Spedal Wide Angle camera - this will be used as the DJ CAM as the wide angle will cover the entire room</li>
+<li>Logitech C920 A - this will be used as the Decks Cam Right</li>
+<li>Logitech C920 B - this will be used as the Decks Cam Left</li>
+</ul>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Resolume MIDI Control in my Twitch DJing Setup</title>
-      <link>http://davidcraddock.net:9796/2021/04/26/resolume-midi-control-in-my-twitch-djing-setup/</link>
+      <link>http://davidcraddock.net/2021/04/26/resolume-midi-control-in-my-twitch-djing-setup/</link>
       <pubDate>Mon, 26 Apr 2021 18:26:14 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2021/04/26/resolume-midi-control-in-my-twitch-djing-setup/</guid>
+      
+      <guid>http://davidcraddock.net/2021/04/26/resolume-midi-control-in-my-twitch-djing-setup/</guid>
       <description>I have retired the Novation SL Zero Mk1 MIDI controller that was causing me a lot of grief when I was running Resolume and Ableton Live at the same time, as its Automap functionality was locking on to the Ableton Live mixer in session view now and then, and so, sometimes, when I thought I was controlling Resolumes visual FX, I was actually changing the volume faders in my DJ mix.</description>
+      <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2021/04/img_20210426_191312.jpg" type="" alt=""  /></p>
+<p>I have retired the Novation SL Zero Mk1 MIDI controller that was causing me a lot of grief when I was running Resolume and Ableton Live at the same time, as its Automap functionality was locking on to the Ableton Live mixer in session view now and then, and so, sometimes, when I thought I was controlling Resolumes visual FX, I was actually changing the volume faders in my DJ mix. Which was bad.</p>
+<p>I have replaced it with the even older but classic Behringer BCF2000. I use the sliders to control the 8 dashboard visual FX controls on Resolume. I also have attached two pedals to the BCF2000. The first one, the sustain on/off switch pedal, I have mapped to control whether Resolume is running in autopilot mode or just looping the current visual. This will allow me to set it on autopilot through most of the set and then focus on one visual when I want to do some more involved stuff. The expression pedal, I have set to control the opacity of the top layer. I run Resolume with two layers, the main layer which is usually a background of an animation, and then the &rsquo;extra lines and bars and stuff on top&rsquo; layer. So when I gradually depress and release the expression pedal, I fade in and fade out the &rsquo;extra stuff&rsquo; layer from the scene.</p>
+<p>I have additionally mapped four buttons on the Behringer BCF2000 to manually skip forward and backwards each layer through the prepared layer list. So if one layer is boring or I want to select something specific I have some control over that without having to open the Resolume window on the PC.</p>
+<p>So far I&rsquo;m happy with the autopilot setup I&rsquo;ve got. I want to spend more time on Resolume and the VJing side of my stream, but for now this will do and will offer sufficient variety.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2021/04/resolume.png" type="" alt=""  /></p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>A Basic Eurorack Technique</title>
-      <link>http://davidcraddock.net:9796/2016/01/24/my-basic-eurorack-technique/</link>
+      <link>http://davidcraddock.net/2016/01/24/my-basic-eurorack-technique/</link>
       <pubDate>Sun, 24 Jan 2016 05:37:52 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2016/01/24/my-basic-eurorack-technique/</guid>
+      
+      <guid>http://davidcraddock.net/2016/01/24/my-basic-eurorack-technique/</guid>
       <description>I thought it might be of some interest to describe how I use my Eurorack, at lot of the time, in making tracks. I have a 3 oscilator - 3 VCA - 3 filter Eurorack which I use primarily so that the oscilators initially work in unison mode with some slight detuning. I typically use a single loop, arpeggio or pattern that I repeat over the song. Then, partway through a track, I will transpose the octaves of the oscilators and vary the sustain of the envelopes, along with the filters and pulse-width modulation amount, to make a morphing yet harmonious sound texture progression.</description>
+      <content:encoded><![CDATA[<p>I thought it might be of some interest to describe how I use my Eurorack, at lot of the time, in making tracks. I have a 3 oscilator - 3 VCA - 3 filter Eurorack which I use primarily so that the oscilators initially work in unison mode with some slight detuning. I typically use a single loop, arpeggio or pattern that I repeat over the song. Then, partway through a track, I will transpose the octaves of the oscilators and vary the sustain of the envelopes, along with the filters and pulse-width modulation amount, to make a morphing yet harmonious sound texture progression.</p>
+<p>Here is my Doepfer Eurorack, which has 2 oscilators, the third is provided by a Doepfer Dark Energy MK1 semi-modular synthesiser that is wired into the Eurorack.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2016/01/eurorack.png" type="" alt="eurorack"  /></p>
+<p>Here is the patch I almost always use:</p>
+<p><img loading="lazy" src="/wp-content/uploads/2016/01/untitled-diagram.png" type="" alt="Eurorack Patch Diagram"  /></p>
+<p>Here are some examples of where this same basic technique has been used:</p>
+<p>[soundcloud url=&ldquo;<a href="https://api.soundcloud.com/tracks/238832020%22">https://api.soundcloud.com/tracks/238832020&quot;</a> params=&ldquo;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true&rdquo; width=&ldquo;100%&rdquo; height=&ldquo;300&rdquo; iframe=&ldquo;true&rdquo; /]</p>
+<p>[soundcloud url=&ldquo;<a href="https://api.soundcloud.com/tracks/216449918%22">https://api.soundcloud.com/tracks/216449918&quot;</a> params=&ldquo;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true&rdquo; width=&ldquo;100%&rdquo; height=&ldquo;300&rdquo; iframe=&ldquo;true&rdquo; /]</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Modular Progress</title>
-      <link>http://davidcraddock.net:9796/2015/07/21/modular-progress/</link>
+      <link>http://davidcraddock.net/2015/07/21/modular-progress/</link>
       <pubDate>Tue, 21 Jul 2015 19:42:04 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2015/07/21/modular-progress/</guid>
+      
+      <guid>http://davidcraddock.net/2015/07/21/modular-progress/</guid>
       <description>My Eurorack modular has been progressing. I&amp;rsquo;ve added several low-cost modules, a Doepfer A-138b audio mixer module so I can mix the audio outputs of the oscilators, the noise output, and my Doepfer Dark Energy modules. I found this so useful with the Dark Energys that I have ordered another mixer. This I can use to mix audio before sending it to the filter, for example, or mix audio before sending it to a VCA to be amplified.</description>
+      <content:encoded><![CDATA[<p>My Eurorack modular has been progressing. I&rsquo;ve added several low-cost modules, a Doepfer A-138b audio mixer module so I can mix the audio outputs of the oscilators, the noise output, and my Doepfer Dark Energy modules. I found this so useful with the Dark Energys that I have ordered another mixer. This I can use to mix audio before sending it to the filter, for example, or mix audio before sending it to a VCA to be amplified. I also added another envelope generator, Doepfer A-140, a sturdy workhorse and also useful for triggering the filter independently of the VCA envelope. Then I added a syncable LFO.. I already have 4 LFOs from the quad-LFO module in the top right, but I wanted a LFO with a reset option that I can use for MIDI syncing. On order is also a A-148 S&amp;H (sample and hold) module which I will use for generating interesting random tones once I have expanded the &lsquo;generative music&rsquo; theme of my setup a bit more.</p>
+<p>I also added a secondhand Kenton Pro Solo, a small midi-to-cv converter which has a lot of features, including clock sync output as well as CV and gate.</p>
+<p>Next purchases may include (all Doepfer) a ring-mod, small essential module that it is. I also want a clock divider and clock sequencer, allowing me to take the midi clock output of my Kenton Pro Solo and link it up to activate timed triggers. I eventually want to get a Make Noise &lsquo;Maths&rsquo; module as the highlight of my small modular, but the budget does not permit that right now.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>New Synthesiser Additions: Microbrute, Nord Drum and Access Virus A</title>
-      <link>http://davidcraddock.net:9796/2014/08/10/new-synthesiser-additions-microbrute-nord-drum-and-access-virus-a/</link>
+      <link>http://davidcraddock.net/2014/08/10/new-synthesiser-additions-microbrute-nord-drum-and-access-virus-a/</link>
       <pubDate>Sun, 10 Aug 2014 21:53:19 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2014/08/10/new-synthesiser-additions-microbrute-nord-drum-and-access-virus-a/</guid>
-      <description>I bought some new synths.&#xA;Access Virus A This is the original 1998 Access Virus A. It, it was a staple synth for trance and electronic music in general for the early 00s. I am very happy that I managed to get this secondhand for less than a MicroKORG. It cost over £800 when it came out in 1998. Old digital synths seem to be unpopular at the moment, I&amp;rsquo;ve heard comments along the lines of &amp;lsquo;if it&amp;rsquo;s digital then I might as well use a plugin in my DAW&amp;rsquo;.</description>
+      
+      <guid>http://davidcraddock.net/2014/08/10/new-synthesiser-additions-microbrute-nord-drum-and-access-virus-a/</guid>
+      <description>I bought some new synths.
+Access Virus A This is the original 1998 Access Virus A. It, it was a staple synth for trance and electronic music in general for the early 00s. I am very happy that I managed to get this secondhand for less than a MicroKORG. It cost over £800 when it came out in 1998. Old digital synths seem to be unpopular at the moment, I&amp;rsquo;ve heard comments along the lines of &amp;lsquo;if it&amp;rsquo;s digital then I might as well use a plugin in my DAW&amp;rsquo;.</description>
+      <content:encoded><![CDATA[<p>I bought some new synths.</p>
+<h3 id="access-virus-a">Access Virus A</h3>
+<p>This is the original <a href="http://www.vintagesynth.com/misc/virusa.php">1998 Access Virus A</a>. It, it was a staple synth for trance and electronic music in general for the early 00s. I am very happy that I managed to get this secondhand for less than a MicroKORG. It cost over £800 when it came out in 1998. Old digital synths seem to be unpopular at the moment, I&rsquo;ve heard comments along the lines of &lsquo;if it&rsquo;s digital then I might as well use a plugin in my DAW&rsquo;. But I think this is ignoring the tactile control surface that you get, and how it gets your head outside the computer and playing an actual physical instrument. The presets are really inspiring, several sounds that you will recognise if you were into electronic music in the 00s. VNV Nation, one of my favourite bands, produced their <a href="http://www.youtube.com/watch?v=vDPwv0n8LzY">entire &lsquo;Empires&rsquo; album</a> with just the Access Virus A and a couple of samplers.</p>
+<p>It has two oscillators which have extra functionality, as you can choose the waveform from a large selection of presampled waveforms, in addition to the usual sawtooth, sine, square. There is also a suboscilator, two filters, each with a ASDTR configurable envelope, the usual ASDTR for the amplifier, and three LFOs. You can choose to map the LFOs to almost anything, allowing a great amount of flexibility. It also has effects - delay and unison, as well as multiple timbers, meaning that you can have up to 12 different patches playing at the same time, each controlled with different MIDI channels. The whole thing is extensively controllable via MIDI also. It is my first polyphonic hardware synthesier, and so has opened up a whole range of new composition possibilities around chords.</p>
+<h3 id="microbrute">Microbrute</h3>
+<p>The Microbrute is fully analogue, and it can produce a good number of sounds through its one oscilator, by allowing you to blend in different quantities of sawtooth, sine and square, along with some extensive extras, such as a metalizer. It has a Steiner Parker filter, a LFO and a step sequencer. You can get more technical details about the Microbrute in Marc Doty&rsquo;s <a href="https://www.youtube.com/watch?v=3R_b2f74uZE&amp;list=RD3R_b2f74uZE#t=41">great series of videos</a>.</p>
+<p>It has a hard aggressive character to the sound, especially when used with the &lsquo;brute factor&rsquo;. I like its sound, but sometimes wish for a little bit more warmth. However you can make all sorts of sounds with it, and I particularly like making chiptune arpeggio with the square wave, <a href="https://soundcloud.com/cachebuster/blue-sky">such as in my track &lsquo;Blue Sky&rsquo;</a>.</p>
+<p>It also has a mod matrix that I haven&rsquo;t fully explored yet, but is very powerful, especially if you want to link it up to other CV capable synths.</p>
+<h3 id="nord-drum">Nord Drum</h3>
+<p>This is an analgoue modelling drum synthesiser. It is the first Nord Drum so it only has four channels, but the presets sound great in the mix. I haven&rsquo;t even looked at the synthesis options on this yet, as I&rsquo;ve been really happy with the presets, but there is a whole range of options that you can shape and edit for your own sound.</p>
+<h3 id="my-synth-shelf">My synth &lsquo;shelf&rsquo;</h3>
+<p>I have swapped out the older synths that I don&rsquo;t use anymore. Currently I&rsquo;m using the three synths above. The keyboard at the top is my Alesis Q25 MIDI controller, there is a ZED 10 mixer on the middle shelf which I use as a recording device, as well as a gold EMU Orbit which I don&rsquo;t have plugged in at the moment.</p>
+<p><a href="/wp-content/uploads/2014/08/synths.jpg"><img loading="lazy" src="/wp-content/uploads/2014/08/synths.jpg" type="" alt="My Synth Shelf"  /></a></p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>MicroKORG &#43; Python = MIDI fun!</title>
-      <link>http://davidcraddock.net:9796/2009/03/30/microkorg-python-midi-fun/</link>
+      <link>http://davidcraddock.net/2009/03/30/microkorg-python-midi-fun/</link>
       <pubDate>Mon, 30 Mar 2009 00:14:10 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2009/03/30/microkorg-python-midi-fun/</guid>
-      <description>So, about a month ago I got a second-hand microKORG from Ebay. Fiddling around with the preset patches, and creating new patches is great fun, even though I only know a few chords. Recently I plugged it in to my PC via my M-Audio Uno USB-&amp;gt;MIDI interface, and soon was using Ableton Live to program drums in time with the microKORG&amp;rsquo;s arp.&#xA;I thought I&amp;rsquo;d experiment the music libraries available in python, and see if I could send notes to the synth via MIDI.</description>
+      
+      <guid>http://davidcraddock.net/2009/03/30/microkorg-python-midi-fun/</guid>
+      <description>So, about a month ago I got a second-hand microKORG from Ebay. Fiddling around with the preset patches, and creating new patches is great fun, even though I only know a few chords. Recently I plugged it in to my PC via my M-Audio Uno USB-&amp;gt;MIDI interface, and soon was using Ableton Live to program drums in time with the microKORG&amp;rsquo;s arp.
+I thought I&amp;rsquo;d experiment the music libraries available in python, and see if I could send notes to the synth via MIDI.</description>
+      <content:encoded><![CDATA[<p>So, about a month ago I got a second-hand <a href="http://en.wikipedia.org/wiki/MicroKORG">microKORG</a> from Ebay. Fiddling around with the preset patches, and creating new patches is great fun, even though I only know a few chords. Recently I plugged it in to my PC via my <a href="http://www.dolphinmusic.co.uk/product/1773-m-audio-uno-usb.html">M-Audio Uno USB-&gt;MIDI interface</a>, and soon was using Ableton Live to program drums in time with the microKORG&rsquo;s arp.</p>
+<p>I thought I&rsquo;d experiment the music libraries available in python, and see if I could send notes to the synth via MIDI. Turns out that the M-Audio Uno is supported under Ubuntu, all you have to do is install the <code>midisport-firmware</code> package. With the help of <a href="http://trac2.assembla.com/pkaudio/wiki/pyrtmidi">pyrtmidi</a>, a set of python wrappers around the C++ audio library rtmidi I was able to recieve MIDI signals in realtime from the microKORG, and send them in realtime also. With the help of <a href="http://www.davidcraddock.net/images/midilib.py">this</a> old midi file reader/writer library that I found posted to a python mailing list, I&rsquo;ve made some progress in writing a simple MIDI file player that sends notes to the &lsquo;KORG.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

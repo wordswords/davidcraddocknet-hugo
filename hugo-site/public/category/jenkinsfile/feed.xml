@@ -1,19 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Jenkinsfile on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/category/jenkinsfile/</link>
+    <link>http://davidcraddock.net/category/jenkinsfile/</link>
     <description>Recent content in Jenkinsfile on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 19 Feb 2022 05:51:56 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/category/jenkinsfile/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Feb 2022 05:51:56 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/jenkinsfile/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Working with Jenkinsfiles in VIM</title>
-      <link>http://davidcraddock.net:9796/2022/02/19/working-with-jenkinsfiles-in-vim/</link>
+      <link>http://davidcraddock.net/2022/02/19/working-with-jenkinsfiles-in-vim/</link>
       <pubDate>Sat, 19 Feb 2022 05:51:56 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2022/02/19/working-with-jenkinsfiles-in-vim/</guid>
-      <description>Using Jenkinsfiles in repositories for declarative pipelines, which is an example as infrastructure as code, is absolutely the right thing to do, in my opinion.&#xA;However the tooling for debugging and error checking Jenkinsfiles is currently quite difficult.&#xA;Setup Jenkinsfile linter First of all you need to make sure to be able to access the Jenkinsfile linter. This linter is processed on the Jenkins server itself, unusually. There is a configuration option that requires adminstrator access to the Jenkins server.</description>
+      
+      <guid>http://davidcraddock.net/2022/02/19/working-with-jenkinsfiles-in-vim/</guid>
+      <description>Using Jenkinsfiles in repositories for declarative pipelines, which is an example as infrastructure as code, is absolutely the right thing to do, in my opinion.
+However the tooling for debugging and error checking Jenkinsfiles is currently quite difficult.
+Setup Jenkinsfile linter First of all you need to make sure to be able to access the Jenkinsfile linter. This linter is processed on the Jenkins server itself, unusually. There is a configuration option that requires adminstrator access to the Jenkins server.</description>
+      <content:encoded><![CDATA[<p>Using Jenkinsfiles in repositories for declarative pipelines, which is an example as infrastructure as code, is absolutely the right thing to do, in my opinion.</p>
+<p>However the tooling for debugging and error checking Jenkinsfiles is currently quite difficult.</p>
+<h2 id="setup-jenkinsfile-linter">Setup Jenkinsfile linter</h2>
+<p>First of all you need to make sure to be able to access the Jenkinsfile linter. This linter is processed on the Jenkins server itself, unusually. There is a configuration option that requires adminstrator access to the Jenkins server.</p>
+<p>There are a number of options to access the linter, but Jenkins officially recommends the ssh server option with preshared ssh public keys as outlined here:</p>
+<p><a href="https://www.jenkins.io/doc/book/pipeline/development/">https://www.jenkins.io/doc/book/pipeline/development/</a></p>
+<p>Once you have set it up, you can pipe Jenkinsfiles through ssh to the linter and it will lint the Jenkinsfile for you:</p>
+<p><code>ssh jenkins.dev.mycompany.co.uk -p1337 declarative-linter &lt; Jenkinsfile</code></p>
+<p>(change jenkins.dev.mycompany.co.uk and the port number to match your configuration of course)</p>
+<p>And it will output the errors in the file.</p>
+<h2 id="jenkinsfile-syntax-highlighting-in-vim">Jenkinsfile syntax highlighting in VIM</h2>
+<p>VIM won&rsquo;t automatically syntax highlight Jenkinsfiles because they don&rsquo;t have an extension that it recognises. This is easily fixed with the following autocommand added to your .vimrc though:</p>
+<p><code>autocmd BufRead,BufNewFile Jenkinsfile set filetype=groovy</code></p>
+<p>This will ensure that Jenkinsfiles have some measure of syntax highlighting when loaded, as they are valid Groovy files.</p>
+<h2 id="jenkinsfile-linting-on-save-in-vim">Jenkinsfile linting on save in VIM</h2>
+<p>Once you have the linter running on a ssh port (see above) you can add this line to your .vimrc to have the linter run whenever a Jenkinsfile is saved, allowing you to debug your changes when you save them:</p>
+<p><code>autocmd BufWritePost Jenkinsfile !ssh jenkins.dev.myompany.co.uk -p1337 declarative-linter &lt; %</code></p>
+<p>(change jenkins.dev.mycompany.co.uk and the port number to match your configuration of course)</p>
+<p>This setup should make it significantly easier to spot and fix errors in your Jenkinsfile before it gets to the git commit stage.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

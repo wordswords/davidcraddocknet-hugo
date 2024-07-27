@@ -1,19 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Personal on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/category/personal/</link>
+    <link>http://davidcraddock.net/category/personal/</link>
     <description>Recent content in Personal on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 17 Jan 2015 23:36:45 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/category/personal/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Jan 2015 23:36:45 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/personal/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Goals for the Year 2015</title>
-      <link>http://davidcraddock.net:9796/2015/01/17/goals-for-the-year-2015/</link>
+      <link>http://davidcraddock.net/2015/01/17/goals-for-the-year-2015/</link>
       <pubDate>Sat, 17 Jan 2015 23:36:45 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2015/01/17/goals-for-the-year-2015/</guid>
-      <description>NOTE: I have an update on my progress as of 9/1/2015 here&#xA;Motivated by my good friend CheerUpLove.com&amp;rsquo;s reflective style of blogging, and Ian Forrester&amp;rsquo;s many interesting posts, I thought it would be interesting to post something a bit more personal and less technical on this blog.&#xA;Now that 2015 is upon us, I am going to take some time to publicly outline my goals for the year, so I can hold myself more accountable to them, and so I can look back on them this time next year.</description>
+      
+      <guid>http://davidcraddock.net/2015/01/17/goals-for-the-year-2015/</guid>
+      <description>NOTE: I have an update on my progress as of 9/1/2015 here
+Motivated by my good friend CheerUpLove.com&amp;rsquo;s reflective style of blogging, and Ian Forrester&amp;rsquo;s many interesting posts, I thought it would be interesting to post something a bit more personal and less technical on this blog.
+Now that 2015 is upon us, I am going to take some time to publicly outline my goals for the year, so I can hold myself more accountable to them, and so I can look back on them this time next year.</description>
+      <content:encoded><![CDATA[<p>NOTE: <a href="http://www.davidcraddock.net/2015/09/01/goals-for-the-year-2015-midway-update/">I have an update on my progress as of 9/1/2015 here</a></p>
+<p>Motivated by my good friend <a href="http://cheeruplove.com/">CheerUpLove.com</a>&rsquo;s reflective style of blogging, and <a href="http://cubicgarden.com">Ian Forrester</a>&rsquo;s many interesting posts, I thought it would be interesting to post something a bit more personal and less technical on this blog.</p>
+<p>Now that 2015 is upon us, I am going to take some time to publicly outline my goals for the year, so I can hold myself more accountable to them, and so I can look back on them this time next year.</p>
+<h3 id="career-goals">Career Goals</h3>
+<p>One of my most important goals at the moment is to settle into my new role at the BBC as Test Manager. It is a step up for me, and I want to prove my stripes. I also will be pushing for a place to be opened up with Platform Test to employ someone from the <a href="http://www.bbc.co.uk/careers/trainee-schemes-and-apprenticeships/extend/extend" title="Extend Scheme">Extend Scheme</a>.
+<strong>What Success Will Look Like :</strong> Growing my team, Extendee placement, good performance reviews.</p>
+<h3 id="creative-goals">Creative Goals</h3>
+<p>I have been improving my music production skills a great deal over the past year, a pastime that I find very rewarding. I have also started piano lessons, which I aim to continue with. I aim to continue getting better, and maybe to look into another evening music course - perhaps the Game Audio course at Futureworks Manchester.
+<strong>What Success Will Look Like :</strong> Improved music posted to Soundcloud, collaborations with other musicians, better ability at piano</p>
+<h3 id="social-goals">Social Goals</h3>
+<p>Getting married is going to be the main point of the year for me, with the wedding coming in September. Lots of preparing to do. I also want to keep the good friendships that I have at the moment, but perhaps make some new friends, particularly those who are into the same interests as me
+<strong>What Success Will Look Like :</strong> Becoming Mr. Lewin, making friends with more people that are interested in the same things as I am</p>
+<h3 id="financial-goals">Financial Goals</h3>
+<p>I need to be saving more over the course of the year. I also want to join the BBC pension scheme, as I don&rsquo;t really have a pension yet
+<strong>What Success Will Look Like :</strong> Significant savings at the end of the year, joining the pension scheme</p>
+<h3 id="health-goals">Health Goals</h3>
+<p>My fitness is something I need to become more serious about. I enjoy long-distance indoor rowing for stamina and fitness. I would like to do more of this, and there is a gym just down my road, so there isn&rsquo;t much excuse for me not to.
+<strong>What Success Will Look Like :</strong> Adopt a regular form of keeping fit</p>
+<p>So.. I will look back on this post through the year and hopefully it will motivate me to achieve these goals. Currently I think these goals are achievable, and I think 2015 will be a great year.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

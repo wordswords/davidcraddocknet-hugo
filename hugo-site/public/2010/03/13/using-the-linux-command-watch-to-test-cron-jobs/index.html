@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=9796&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Using the Linux command &#39;Watch&#39; to test Cron jobs and more | DavidCraddock.net</title>
 <meta name="keywords" content="">
 <meta name="description" content="OK, so you have added a cron job that you want to perform a routine task every day at 6am. How do you test it?
 You probably don&rsquo;t want to spend all night waiting for it to execute, and there&rsquo;s every chance that when it does execute, you won&rsquo;t be able to find out whether it is executing properly - the task might take 30 minutes to run, for example. So every time you debug it and want to test it again, you have to wait until 6am the following day.">
 <meta name="author" content="">
-<link rel="canonical" href="http://192.168.1.50:9796/2010/03/13/using-the-linux-command-watch-to-test-cron-jobs/">
+<link rel="canonical" href="http://davidcraddock.net/2010/03/13/using-the-linux-command-watch-to-test-cron-jobs/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.7da7716a1f2d0725f74c6ae7f8d6adafc43aabe2b366b65bfbf433448e2a2001.css" integrity="sha256-fadxah8tByX3TGrn&#43;Natr8Q6q&#43;KzZrZb&#43;/QzRI4qIAE=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://192.168.1.50:9796/favicon.ico">
-<link rel="apple-touch-icon" href="http://192.168.1.50:9796/apple-touch-icon.png">
-<link rel="alternate" hreflang="en" href="http://192.168.1.50:9796/2010/03/13/using-the-linux-command-watch-to-test-cron-jobs/">
+<link rel="icon" href="http://davidcraddock.net/favicon.ico">
+<link rel="apple-touch-icon" href="http://davidcraddock.net/apple-touch-icon.png">
+<link rel="alternate" hreflang="en" href="http://davidcraddock.net/2010/03/13/using-the-linux-command-watch-to-test-cron-jobs/">
 
 <meta name="twitter:title" content="Using the Linux command &#39;Watch&#39; to test Cron jobs and more | DavidCraddock.net" />
 <meta name="twitter:description" content="OK, so you have added a cron job that you want to perform a routine task every day at 6am. How do you test it?
@@ -23,7 +23,7 @@ You probably don&rsquo;t want to spend all night waiting for it to execute, and 
 <meta property="og:description" content="OK, so you have added a cron job that you want to perform a routine task every day at 6am. How do you test it?
 You probably don&rsquo;t want to spend all night waiting for it to execute, and there&rsquo;s every chance that when it does execute, you won&rsquo;t be able to find out whether it is executing properly - the task might take 30 minutes to run, for example. So every time you debug it and want to test it again, you have to wait until 6am the following day." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://192.168.1.50:9796/2010/03/13/using-the-linux-command-watch-to-test-cron-jobs/" />
+<meta property="og:url" content="http://davidcraddock.net/2010/03/13/using-the-linux-command-watch-to-test-cron-jobs/" />
 <meta property="article:section" content="posts" />
   <meta property="article:published_time" content="2010-03-13T16:02:42&#43;00:00" />
   <meta property="article:modified_time" content="2010-03-13T16:02:42&#43;00:00" />
@@ -38,13 +38,13 @@ You probably don&rsquo;t want to spend all night waiting for it to execute, and 
       "@type": "ListItem",
       "position":  1 ,
       "name": "Posts",
-      "item": "http://192.168.1.50:9796/posts/"
+      "item": "http://davidcraddock.net/posts/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "Using the Linux command 'Watch' to test Cron jobs and more",
-      "item": "http://192.168.1.50:9796/2010/03/13/using-the-linux-command-watch-to-test-cron-jobs/"
+      "item": "http://davidcraddock.net/2010/03/13/using-the-linux-command-watch-to-test-cron-jobs/"
     }
   ]
 }
@@ -65,14 +65,14 @@ You probably don&rsquo;t want to spend all night waiting for it to execute, and 
   "dateModified": "2010-03-13T16:02:42Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://192.168.1.50:9796/2010/03/13/using-the-linux-command-watch-to-test-cron-jobs/"
+    "@id": "http://davidcraddock.net/2010/03/13/using-the-linux-command-watch-to-test-cron-jobs/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "DavidCraddock.net",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://192.168.1.50:9796/favicon.ico"
+      "url": "http://davidcraddock.net/favicon.ico"
     }
   }
 }
@@ -188,7 +188,7 @@ function toggleThemeListener() {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://192.168.1.50:9796/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
+            <a href="http://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <span class="logo-switches">
             </span>
         </div>
@@ -200,7 +200,7 @@ function toggleThemeListener() {
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://192.168.1.50:9796/">Home</a>&nbsp;»&nbsp;<a href="http://192.168.1.50:9796/posts/">Posts</a></div><h1 class="post-title">Using the Linux command &#39;Watch&#39; to test Cron jobs and more</h1>
+    <div class="breadcrumbs"><a href="http://davidcraddock.net/">Home</a>&nbsp;»&nbsp;<a href="http://davidcraddock.net/posts/">Posts</a></div><h1 class="post-title">Using the Linux command &#39;Watch&#39; to test Cron jobs and more</h1>
     <div class="post-meta"><span class="meta-item">
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
   <span>March 13, 2010</span></span><span class="meta-item">
@@ -212,6 +212,17 @@ function toggleThemeListener() {
     </div>
   </header> 
 
+
+<div>
+    <ul>
+        <li><a href="/">Blog Posts</a></li>
+        <li><a href="/music">My Music</a></li>
+        <li><a href="/my-home-network">My Home Network</a></li>
+        <li><a href="/my-gaming-setup">My Gaming Setup</a></li>
+        <li><a href="/my-mobile-laptop-setup">My Mobile Laptop Setup</a></li>
+        <li><a href="/my-work-computer">My Work Computer</a></li>
+    </ul>
+</div>
   <div class="post-content"><p>OK, so you have added a cron job that you want to perform a routine task every day at 6am. How do you test it?</p>
 <p>You probably don&rsquo;t want to spend all night waiting for it to execute, and there&rsquo;s every chance that when it does execute, you won&rsquo;t be able to find out whether it is executing properly - the task might take 30 minutes to run, for example. So every time you debug it and want to test it again, you have to wait until 6am the following day.</p>
 <p>So instead, configure that cron job to run a bit earlier than that, say in 10 minutes, and monitor the execution with a &lsquo;watch&rsquo; command, so you can see if it&rsquo;s doing what you want it to.</p>
@@ -269,7 +280,7 @@ function toggleThemeListener() {
     </main>
     
 <footer class="footer">
-  <span>&copy; 2024 <a href="http://192.168.1.50:9796/">DavidCraddock.net</a></span><span style="display: inline-block; margin-left: 1em;">
+  <span>&copy; 2024 <a href="http://davidcraddock.net/">DavidCraddock.net</a></span><span style="display: inline-block; margin-left: 1em;">
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>
   </span>
   <span style="display: inline-block; margin-left: 1em;">
@@ -480,7 +491,7 @@ function toggleThemeListener() {
   })();
   </script>
 
-<script src="/js/instantclick.js" data-no-instant
+<script src="/js/instantclick.min.js" data-no-instant
 ></script>
 <script data-no-instant>
   

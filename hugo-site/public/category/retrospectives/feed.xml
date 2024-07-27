@@ -1,47 +1,215 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Retrospectives on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/category/retrospectives/</link>
+    <link>http://davidcraddock.net/category/retrospectives/</link>
     <description>Recent content in Retrospectives on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 23 Dec 2022 23:26:12 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/category/retrospectives/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Dec 2022 23:26:12 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/retrospectives/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Personal Retrospective on 2022</title>
-      <link>http://davidcraddock.net:9796/2022/12/23/my-personal-retrospective-on-2022/</link>
+      <link>http://davidcraddock.net/2022/12/23/my-personal-retrospective-on-2022/</link>
       <pubDate>Fri, 23 Dec 2022 23:26:12 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2022/12/23/my-personal-retrospective-on-2022/</guid>
-      <description>Every year (when I remember) I do an end-of-year summary to outline what has been going on in my life. I’ve been doing this for a few years now, and it’s a great way to look back on the year and see has happened.&#xA;The Bad: The main bad news of the year is that, contrary to expectations, my Hodgkins Lymphoma cancer was detected again around April after the initial chemotherapy.</description>
+      
+      <guid>http://davidcraddock.net/2022/12/23/my-personal-retrospective-on-2022/</guid>
+      <description>Every year (when I remember) I do an end-of-year summary to outline what has been going on in my life. I’ve been doing this for a few years now, and it’s a great way to look back on the year and see has happened.
+The Bad: The main bad news of the year is that, contrary to expectations, my Hodgkins Lymphoma cancer was detected again around April after the initial chemotherapy.</description>
+      <content:encoded><![CDATA[<p>Every year (when I remember) I do an end-of-year summary to outline what has been going on in my life. I’ve been doing this for a few years now, and it’s a great way to look back on the year and see has happened.</p>
+<h3 id="the-bad">The Bad:</h3>
+<ul>
+<li>The main bad news of the year is that, contrary to expectations, my Hodgkins Lymphoma cancer was detected again around April after the initial chemotherapy. So it had come back.</li>
+<li>The rest of the year has mostly revolved around subsequent treatments to try and reach a long term remission, e.g. cure. I&rsquo;m not there yet, but there are a lot of treatments still available, and I have hope that my current immunotherapy treatment might be the one that works.</li>
+<li>It wasn&rsquo;t just me that was affected, my wife suffered quite a bit on hearing the news, and has only just really taken it all in and come to terms with it.</li>
+<li>I&rsquo;m pretty sure that I will be cured eventually, at least for a good 10-20 years or so, it just is a pain having to take time off work and go through sometimes intensive treatment sessions.</li>
+<li>The economy has not had the greatest of years either, and the cost of living crisis affecting the UK has had an effect on us, and my parents who are the main financial support we have while I am unable to work.</li>
+</ul>
+<h3 id="the-good">The Good:</h3>
+<ul>
+<li>I have found a renewed interest in my career, in software development, and I have spent a lot of my spare time, and part of my downtime for treatment, learning new technical things and just generally finding the enjoyment in technology that I thought I&rsquo;d permanently lost for so many years.</li>
+<li>The career opportunities around working from home have been very good considering my illness. There is still, despite a downturn, more than enough work around, and a lot of it is 100% work from home work. I&rsquo;m no longer worried about being unemployed for any great length of time, presuming I am healthy enough to work from home.</li>
+<li>I&rsquo;ve been developing my writing and social media skills, which have been a welcome distraction from the bad stuff going on. I&rsquo;ve always enjoyed writing, but I would say my writing has particularly improved over the past year.</li>
+</ul>
+<h4 id="work-on-the-house">Work on the house</h4>
+<p>We have spent a lot of time, effort and money on working on the house this year. Conny has put in a great deal of amazing work, in particular.</p>
+<h5 id="the-back-garden">The Back Garden</h5>
+<p>This has been transformed, from a jungle into a really nice space to relax. It is very relaxing to sit under the gazebo and get my 15-30 minutes of sun per day when I am working from home. There are always birds throughout the year around the garden, and the sound of birds tweeting away is great to listen to when you&rsquo;re stressed.</p>
+<h5 id="the-music-studio--games-room">The Music Studio / Games room</h5>
+<p>We have done a lot to the Music Studio, including:</p>
+<ul>
+<li>
+<p>Putting in a huge 5x5 IKEA KALLAX to store all the records and books.</p>
+</li>
+<li>
+<p>Replacing the old 1970s desk I had from when I was 18, with a more comfortable large IKEA desk.</p>
+</li>
+<li>
+<p>Lots of updates to the DJ setup, including using my Vestax VCM-600 as a Resolume controller, and putting up a DJ screen around the DJ booth. Also, I got a new top-down high quality camera for the decks, which is very useful.</p>
+</li>
+<li>
+<p>We have a mini table in the studio which is big enough to share a meal together and sit and have a drink together, as we did at Xmas and new years. We are going to try and eat together at this table every Sunday, in the German tradition.</p>
+</li>
+</ul>
+<h5 id="the-study">The Study</h5>
+<ul>
+<li>
+<p>This has been completely changed, with an IKEA motorized standing desk and tons of new stuff. I have built the ideal setup for me for working from home. We also have sorted out bookshelves for books and CDs, and organized them all. Conny also has a little desk and area for her gaming PC, so we can game together / hang out together.</p>
+</li>
+<li>
+<p>We have a standing electric clothes dryer, which has been very useful as it can dry an entire washing machines load in 4 hours.</p>
+</li>
+<li>
+<p>To keep an eye on the air quality because of the new dryer, we have an air filter in the study, and an air quality sensor.</p>
+</li>
+</ul>
+<h5 id="the-home-network-and-thinkstation-server">The Home Network and ThinkStation Server</h5>
+<p>This has been completely redone.</p>
+<ul>
+<li>
+<p>Currently we have not one but TWO gigabit internet connections, and a static IP address.</p>
+</li>
+<li>
+<p>I have a small fibre optic 10Gb/sec network between the ThinkStation server and my music studio computer. I hope to also add a 2.5Gb/sec link to my DJing laptop soon, so I can shunt files around superfast.</p>
+</li>
+<li>
+<p>The ThinkStation server now runs Ubuntu instead of Windows, and serves up my Ebook collection, my music, TV and movies collection, and stores my console games too, which are accessed by my studio PC. It has about 10 TB of space which I am backing up fully to my Google Drive with Borg backup and rclone.</p>
+</li>
+<li>
+<p>My Ubuntu ThinkStation and Linux development environment has seen a LOT of work. I have everything running very much to my liking.</p>
+</li>
+<li>
+<p>We have mounted all network equipment possible on the walls, and used cable ties a lot to minimise mess.</p>
+</li>
+</ul>
+<h5 id="the-kitchen">The Kitchen</h5>
+<p>We have a small counter-top dishwasher now, which works very well, and is very helpful in reducing the amount of housework necessary.</p>
+<h3 id="the-ugly">The Ugly:</h3>
+<ul>
+<li>No ugly things have really happened, touch wood!</li>
+</ul>
+<p>&ndash;</p>
+<p>I hope everyone has a good Xmas involving a lot of mince pies, liquid refreshments, and good times.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>My Story in Tech</title>
-      <link>http://davidcraddock.net:9796/2022/02/13/my-story-in-tech/</link>
+      <link>http://davidcraddock.net/2022/02/13/my-story-in-tech/</link>
       <pubDate>Sun, 13 Feb 2022 08:59:05 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2022/02/13/my-story-in-tech/</guid>
-      <description>I thought I&amp;rsquo;d write here a bit about how I got into technology and how my career has progressed for those people wanting to get into technology.&#xA;I was lucky enough to be born in a supportive home to good parents. My father was an early entrant into the world of computing, and my birth certificate records his profession as a &amp;lsquo;Computer Science Lecturer&amp;rsquo;, which was very rare at the time.</description>
+      
+      <guid>http://davidcraddock.net/2022/02/13/my-story-in-tech/</guid>
+      <description>I thought I&amp;rsquo;d write here a bit about how I got into technology and how my career has progressed for those people wanting to get into technology.
+I was lucky enough to be born in a supportive home to good parents. My father was an early entrant into the world of computing, and my birth certificate records his profession as a &amp;lsquo;Computer Science Lecturer&amp;rsquo;, which was very rare at the time.</description>
+      <content:encoded><![CDATA[<p>I thought I&rsquo;d write here a bit about how I got into technology and how my career has progressed for those people wanting to get into technology.</p>
+<p>I was lucky enough to be born in a supportive home to good parents. My father was an early entrant into the world of computing, and my birth certificate records his profession as a &lsquo;Computer Science Lecturer&rsquo;, which was very rare at the time. In actuality, I&rsquo;m fairly sure he taught only at local higher education colleges, but technically that still made him a lecturer. At any rate, he definitely worked in computing at a time when few others did (1982).</p>
+<p>I was always interested in computers as a child. From an early age I was often seen next to the family computers, which were supplied at a regular basis from my dad&rsquo;s workplace as he took home computers to get more familiar with them. I mostly used them for games. I spent a lot of time reading as a lot of people did before the internet. When I was 11 I borrowed a programming book from the library for the BBC Microcomputer and painfully typed in lines and lines of BASIC code from this book for a simple game. It didn&rsquo;t work. Frustrated, I left my programming ambitions there.</p>
+<p>When I was 11 (1993) I got my first IBM compatible PC for my &lsquo;schoolwork&rsquo;. This sat in my room at a desk. This was a huge thing for me and I spent most of my spare time next to that thing, mostly playing games.</p>
+<p>When I was 13 or 14 I first got online. My mum had an AOL account that she was meant to use for her teaching, and I was able to use it a few hours per week. That was a huge thing for me. I became really interested in hacking and computer security. I spent about an equal time playing online games, chatting online and trying to be a hacker. It opened up a huge new world for me because we lived in a rather sleepy countryside town and had very little access to the bigger world.</p>
+<p>My parents in vain tried to restrict me from going online. I took extraordinary measures to get online because there was so much more for me there than old library books and right-wing country viewpoints. Some of these involved staying up until late and taking the modem out of my dad&rsquo;s PC at night and putting it in my computer and surfing the internet all night. Later I got my own phone line extension to my room, briefly. I was allowed a set number of hours per week online and no more. My parents were worried I would spend too much time on the internet and not enough on my studies or the &lsquo;great outside&rsquo;. They were right.</p>
+<p>I found ways to repeatedly break their restrictions including programming my Linux PC to repeatedly redial a number infinitely to trigger the relay in the phone socket lock they had put on the master phone socket downstairs. Eventually it ran out of power, and I was able to use the internet when I liked. My dad eventually had enough and disconnected my phone line extension to my room. But by that point the school had internet, and I was able to use it at lunchtimes and in my free time.</p>
+<p>I was 16 (1998) and I started Computing A-level classes which involved a lot of practical programming. With my head start in computing I found learning to program easy and fun. I hadn&rsquo;t really excelled in much else at the grammar school I was in so that was a big deal for me. We used Visual Basic 5 and I spent a huge amount of time programming, getting into trouble for hacking the school IT network, and learning about programming.</p>
+<p>I ended up repeating the second year of sixth form because of health reasons, so I actually had three years of Computing A-Level. I spent the third year mostly working on a programming project that my dad had arranged with his IT support technician team he managed at the local college he worked in. The project was building a hardware stock management database in MS Access and Visual Basic. It was quite a huge project and I spent a lot of time on it, and also got hired for a month as a summer job continuing to work on it after I had finished it.</p>
+<p>I got fairly good A-Level grades for the time and got a place at Sussex University studying Artificial Intelligence with North American Studies. I only took the NA minor because it promised a year in America. Soon however I found I wasn&rsquo;t very good at North American studies, and the tutors took a dim view on my use of Chomsky in my papers around 9/11 and the far left American viewpoints I was into. So I changed my degree to Computer Science with Artificial Intelligence after the first year.</p>
+<p>University was a time of great social adjustment and life experiences for me, and I had some quite serious mental health problems at university. This caused me to take a year out. I spent that year mostly geeking out and expanding my computing knowledge. A succession of summer jobs followed including some web development, QA testing for computer games, and finally working for a web start-up as a PHP developer.</p>
+<p>I struggled at university mainly because I didn&rsquo;t have the maths background for my degree. The courses assumed knowledge of A-Level maths, but I had never taken A-Level maths, and it was never asked for. So I found it very difficult studying advanced neural network algorithms, for example. Most of the degree though I found very interesting, and I got a lot out from it. My dissertation was another software project arranged with a local company, and I got a 2:1 for it, although the company was not interested in hiring me after I graduated.</p>
+<p>It was 2005 when I graduated, and got a job at £13,500 per year as a junior developer working on MS Access/Visual Basic database front ends for a telemarketing company. The development team were impressed with my degree as none of them had degrees. I really didn&rsquo;t like working there though, and only stuck it out for 6 months before moving on.</p>
+<p>I worked a number of short term IT and software jobs, only sticking in one role for over a year. Various titles included PHP Developer, IT manager, SEO Analyst and Configuration and Support Administrator. I didn&rsquo;t like the people I worked with, and I didn&rsquo;t like the environments. The training and support was more or less non-existent which was a problem for me, as I didn&rsquo;t really know what I was doing.</p>
+<p>I was also DJing a lot in my spare time, and partying. Brighton is famous for its hedonism and I totally got caught up in that, and had a great time (mostly). At one point I was DJing in clubs two nights mid-week, not getting home till 2am or 3am on those nights, and having to start work the next day at 9am! Needless to say, even with the energy of being young, it took a toll on my work life.</p>
+<p>This and the suboptimal career I had, culminated in me burning out quite heavily in 2008/2009. This coincided with the Great Recession in the UK, so jobs were difficult to find. I ended up moving from Brighton to my parents and spent around a year getting better and fitter, cycling every day for hours, and taking on some part-time tech work, but nothing full-time.</p>
+<p>In 2010 my parents had had enough of me lounging around the house, so it was time for my next steps. I applied to an MSc course at Kent University, I applied to a tech job in Kent and I applied to the BBC in London. I got accepted by all three, which was nice. In the end, I chose to go with the BBC and moved to London, staying in an incredibly small and expensive flatshare in East Acton and cycling to White City every day.</p>
+<p>After a year the BBC moved our department to Manchester, and I was asked if I wanted to go, which I definitely did. I had visited Manchester before in 2009 for a cycling trip while I was unemployed, staying in hostels to minimize cost, and was amazed with the amount of space there was compared to the South East. And the prices too for a big city.</p>
+<p>So I ended up moving (2011) to the BBC offices in Media:City UK in Salford Manchester with my girlfriend at the time. Manchester was so cheap back then that we were able to rent a large flat in NumberOne, which was actually attached to the building I was working in! This was very convenient for me, and it was a luxury arrangement compared to life in London.</p>
+<p>I spent 7 years at the BBC and learned and a lot about technology and Agile software development. There was a huge investment in learning in our teams, and there was the BBC Academy which ran some good courses on software development. We also got sent to conferences and had coaches come in to give us lessons during our work day. It was a good place to learn.</p>
+<p>After a while I realized that it was not a good place for senior engineers and I had watched the budgets steadily been cut back and back over the years. My wage hadn&rsquo;t really moved for years and I thought it was time for a change.</p>
+<p>I moved to Arm (2017) which really was a huge change in a number of ways! It was focused on C++ and embedded software development whereas the BBC was much more about web development. Arm also hadn&rsquo;t adopted Agile at all, and was not really a collaborative place: it was a place for geniuses who liked to work on their own.</p>
+<p>While I definitely liked to work on my own, and I learned a lot while at Arm through their excruciatingly accurate code reviews, the environment was definitely not right for me. I left after two years there.</p>
+<p>Fast-forward to today (2022) where I have worked for a couple more organizations and seem to have found a niche as a &lsquo;software automation engineer&rsquo;: which is a combination of DevOps, QA tester, and developer. I have several years experience covering each, so it is a good role for me, and is in demand.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Retrospective on 2021</title>
-      <link>http://davidcraddock.net:9796/2022/01/01/retrospective-on-2021/</link>
+      <link>http://davidcraddock.net/2022/01/01/retrospective-on-2021/</link>
       <pubDate>Sat, 01 Jan 2022 15:58:05 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2022/01/01/retrospective-on-2021/</guid>
-      <description>Well, 2021 has been a bit of a downer in a number of ways. There has been some upsides though.&#xA;I spent the first part of 2021 burned out, as in - totally burned out - of my career and really needing a break. This affected my work. It turns out that unknown to me at the time, I had cancer, Hodgkins Lymophoma, and a lot of my lack of energy and generally feeling awful was down to a large tumor that had been growing my chest for some time and was pressing down on my heart and lungs.</description>
+      
+      <guid>http://davidcraddock.net/2022/01/01/retrospective-on-2021/</guid>
+      <description>Well, 2021 has been a bit of a downer in a number of ways. There has been some upsides though.
+I spent the first part of 2021 burned out, as in - totally burned out - of my career and really needing a break. This affected my work. It turns out that unknown to me at the time, I had cancer, Hodgkins Lymophoma, and a lot of my lack of energy and generally feeling awful was down to a large tumor that had been growing my chest for some time and was pressing down on my heart and lungs.</description>
+      <content:encoded><![CDATA[<p>Well, 2021 has been a bit of a downer in a number of ways. There has been some upsides though.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2022/01/eurorack.jpg" type="" alt=""  /></p>
+<ul>
+<li>I spent the first part of 2021 burned out, as in - totally burned out - of my career and really needing a break. This affected my work. It turns out that unknown to me at the time, I had cancer, Hodgkins Lymophoma, and a lot of my lack of energy and generally feeling awful was down to a large tumor that had been growing my chest for some time and was pressing down on my heart and lungs. In June I was admitted to hospital and they diagnosed the cancer. In July I started chemotherapy. Now the good news is that Hodgkins Lymphoma is one of the best cancers to get if you were able to choose, as it has a very high cure rate and very low fatality rate. The chemo as of November&rsquo;s scan seems to be working even better than expected and they were expecting a good outcome. So that is positive. I should hopefully be done with chemo by March 2022.</li>
+<li>One of the good things about 2021 has been the job that I found in the music industry. It is still doing software engineering, what my career has been based around, but they seem like a very nice bunch of people, and were prepared to support me and keep me on around chemotherapy. I am still employed part-time and that has been a HUGE help financially as you really don&rsquo;t get a lot of money in benefits from the government, even when you have cancer it seems, and my family have had to help me out quite a bit. I have also had some success in the work that I&rsquo;ve been doing - it seems very appreciated which is something I&rsquo;m not really used to!</li>
+<li>I have continued DJing on Twitch which has been great. I still do my regular Sunday show for 4 hours most Sundays, and it is a lot of fun and I have a bunch of regulars who pop in. I enjoy it a lot. I reached 500 followers and raised a LOT of money via charity streams with other DJs, both as a DJ and also helping as an organiser.</li>
+<li>In December Conny and I caught the omicron varient of COVID-19 and that was a huge worry at the time because of my low immune system due to chemo and cancer. However we both have beaten it now, I had a short stay in hospital but it wasn&rsquo;t that bad. NHS staff were very helpful and I think it really helped that I had 3 vaccinations in my system at the time of catching it.</li>
+<li>In Jan 2021 I took the third of the 10 week university level courses at Point Blank Music School as part of my study of Electronic Music Production. This course was on mixing and mastering. I have learned a lot from it already, although I still haven&rsquo;t finished it as I was quite busy most of the year.</li>
+<li>I single-handedly raised £270 from friends and family for a cancer charity for my mother (who also has cancer) during a 12 hour DJ stream on my birthday in 2021. Ironically I had no idea I had cancer myself at the time.</li>
+<li>I ripped all of CDs to FLAC. Hundreds of CDs. Ripped hundreds of DVDs, PS2 and PS1 games too. Hosted them all on a Plex media server and gave the majority of discs away to charity.</li>
+<li>I sorted all my physical books, split into different subject bookshelves, alphabeticalised and catalogued in GoodReads.com.</li>
+<li>I have read more books this year than several previous years. I still have a huge backlog to go through though.</li>
+<li>I played quite a few more computer games than I have for a while, including beating Cyberpunk 2077 in a no-sleep 28 hour marathon after it was released. (Although that was technically in December 2020 I am going to include it anyway). It was such a great game in my view, amazing storyline and setting.</li>
+</ul>
+<p>Here&rsquo;s to 2022!</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>2020 Retrospective – Wow, what a year!</title>
-      <link>http://davidcraddock.net:9796/2021/03/04/2020-retrospective-wow-what-a-year/</link>
+      <link>http://davidcraddock.net/2021/03/04/2020-retrospective-wow-what-a-year/</link>
       <pubDate>Thu, 04 Mar 2021 19:02:19 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2021/03/04/2020-retrospective-wow-what-a-year/</guid>
-      <description>I think, for obvious reasons, 2020 has been a year that no-one could really have expected. With COVID-19 and lockdown, a lot of things have changed, both in my life, in everyone&amp;rsquo;s lives, and in the workplace.&#xA;My online DJing setup&#xA;Things that went well I changed medication around March 2020 which has resulted in significant weight loss, as expected. The previous medication was making me put on and retain weight even when I was eating very very little.</description>
+      
+      <guid>http://davidcraddock.net/2021/03/04/2020-retrospective-wow-what-a-year/</guid>
+      <description>I think, for obvious reasons, 2020 has been a year that no-one could really have expected. With COVID-19 and lockdown, a lot of things have changed, both in my life, in everyone&amp;rsquo;s lives, and in the workplace.
+My online DJing setup
+Things that went well I changed medication around March 2020 which has resulted in significant weight loss, as expected. The previous medication was making me put on and retain weight even when I was eating very very little.</description>
+      <content:encoded><![CDATA[<p>I think, for obvious reasons, 2020 has been a year that no-one could really have expected. With COVID-19 and lockdown, a lot of things have changed, both in my life, in everyone&rsquo;s lives, and in the workplace.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2021/03/background.jpg" type="" alt=""  />My online DJing setup</p>
+<h2 id="things-that-went-well">Things that went well</h2>
+<ul>
+<li>I changed medication around March 2020 which has resulted in significant weight loss, as expected. The previous medication was making me put on and retain weight even when I was eating very very little. In March 2020 my weight was nearly 136KG and now it has gone down to 125KG in March 2021. I have not been doing more exercise, indeed quite a bit less, as I have been staying indoors most of the time. The weight loss has had a very good effect on my general health and my sleep.</li>
+<li>I am much happier than this time last year. Working corporate jobs I found very very stressful and apart from being financially rewarding, I wasn’t getting much else out of it. My mental and physical health was suffering. My relationship with my wife and friends are much better now because I am less miserable all the time.</li>
+<li>I have taken up DJing over the internet and have turned this into a part-time income. It is so much fun. I used to DJ in clubs in my 20s regularly and I didn’t realise how much I had missed it. It is great to have a way to connect socially with people in lockdown and people really appreciate my DJ sets, which is great.</li>
+<li>Working from home has been a great change for me. Before the pandemic I wanted to work from home 100% anyway, because I was ending up spending at least 2 hours commuting to and from work, it was costing a lot (because I can’t drive) and it was taking up a lot of time and energy.</li>
+</ul>
+<p><img loading="lazy" src="/wp-content/uploads/2021/03/wfh.jpg" type="" alt=""  />My work from home setup</p>
+<h2 id="things-that-didnt-go-so-well">Things that didn’t go so well</h2>
+<ul>
+<li>I found that when I am working 100% from home, it is difficult to do work that I am not motivated to do. It is much easier to get things done that you really don’t enjoy when you are in the office. I have noticed a productivity decline in things I don’t really want to do, but I don’t think this is necessarily a problem with working from home, simply it is something I need to address by finding work I am more motivated to do.</li>
+<li>My financial situation is a bit unsteady at the moment. I have got used to living on much less, and my costs are minimal. However I am struggling to find a job I am motivated to stick with. I think this simply requires me to explore careers and jobs outside of what I have done before.</li>
+</ul>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>A Retrospective for Years 2016-19</title>
-      <link>http://davidcraddock.net:9796/2019/03/30/a-retrospective-for-years-2016-19/</link>
+      <link>http://davidcraddock.net/2019/03/30/a-retrospective-for-years-2016-19/</link>
       <pubDate>Sat, 30 Mar 2019 23:09:23 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2019/03/30/a-retrospective-for-years-2016-19/</guid>
-      <description>I thought I&amp;rsquo;d update my blog to reflect recent changes in my life, and review what was good and bad about them, as I was doing before.&#xA;The &amp;ldquo;Not Awesome&amp;rdquo;&#xA;My overall health level has got a bit worse over the years. I have had limited success in losing weight. I was going for regular walks nearly every week with a friend of mine, but that has stopped lately. I find it difficult exercising while living in a city, as my favourite activity for excercising is walking, and there are not a huge amount of pleasent walking oppertunities around my area.</description>
+      
+      <guid>http://davidcraddock.net/2019/03/30/a-retrospective-for-years-2016-19/</guid>
+      <description>I thought I&amp;rsquo;d update my blog to reflect recent changes in my life, and review what was good and bad about them, as I was doing before.
+The &amp;ldquo;Not Awesome&amp;rdquo;
+My overall health level has got a bit worse over the years. I have had limited success in losing weight. I was going for regular walks nearly every week with a friend of mine, but that has stopped lately. I find it difficult exercising while living in a city, as my favourite activity for excercising is walking, and there are not a huge amount of pleasent walking oppertunities around my area.</description>
+      <content:encoded><![CDATA[<p>I thought I&rsquo;d update my blog to reflect recent changes in my life, and review what was good and bad about them, as I was doing before.</p>
+<p><strong>The &ldquo;Not Awesome&rdquo;</strong></p>
+<ol>
+<li>My overall health level has got a bit worse over the years. I have had limited success in losing weight. I was going for regular walks nearly every week with a friend of mine, but that has stopped lately. I find it difficult exercising while living in a city, as my favourite activity for excercising is walking, and there are not a huge amount of pleasent walking oppertunities around my area. I have been getting Ubers to parks and walking there. A posssible solution that I am actually considering is moving outside of the city, where there are a lot more pleasent walking oppertunities on my doorstep, and which would hopefully lead to a much more active lifestyle.</li>
+</ol>
+<p><strong>The &ldquo;Awesome&rdquo;</strong></p>
+<ol>
+<li>Conny and I got married! We have also adopted two cats, so we have a little family now :)</li>
+<li>Brexit is not going to affect Conny&rsquo;s ability to live and work in the UK after all, which is a great relief.</li>
+<li>I am doing well in my job, having achieved a &ldquo;High Performing&rdquo; overall performance rating at work for this year. This has taken a huge amount of personal effort.</li>
+<li>I have cutout meat from my diet for health reasons, although I&rsquo;m still eating fish. I have also started getting prepared healthy dinner meals from this site online. The meals are a lot more healthy than what I was eating before, plus it saves Conny from having to cook for me in the evening, which is good as she is currently working two jobs.</li>
+<li>Conny has started work and is really enjoying it.</li>
+<li>Our finances are looking much more healthy than in previous years, with Conny starting working and due to bonuses in my current job. I have increased contributions for my pension, and we are doing very well with budgeting and financial planning.</li>
+<li>I&rsquo;ve managed to build up my music studio and gaming PC setup quite a bit, which was always something I wanted to do after taking on a more stressful (and rewarding) job.</li>
+<li>Our house price has gone up a lot.</li>
+<li>I&rsquo;ve developed a much healthier attitude to my professional skills and development, after reading the &lsquo;Passionate Programmer&rsquo; <a href="https://www.goodreads.com/book/show/6399113-the-passionate-programmer">https://www.goodreads.com/book/show/6399113-the-passionate-programmer</a>. I have been putting in extra time after work to read a number of books and developing my technical skills.</li>
+<li>I have started learning maths in my spare time through enlisting one of Conny&rsquo;s friends who is also math tutor. Building up my math skills will unlock a lot of interesting paths for my software development skills, such as audio DSP, graphics programming, and data science.</li>
+<li>I have taken up record and CD collecting, and have quite a large collection of electronic music on vinyl and CD now. I bought a Rega Planar 1 turntable and two CDJ1000s with a pioneer mixer for DJing. I can connect the setup to Serato on my laptop for digital DJing too.</li>
+</ol>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

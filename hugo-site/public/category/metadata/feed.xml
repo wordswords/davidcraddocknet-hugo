@@ -1,19 +1,202 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Metadata on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/category/metadata/</link>
+    <link>http://davidcraddock.net/category/metadata/</link>
     <description>Recent content in Metadata on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 05 May 2021 21:06:13 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/category/metadata/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 May 2021 21:06:13 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/metadata/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Organising Huge Music Libraries for use with Serato DJ Pro</title>
-      <link>http://davidcraddock.net:9796/2021/05/05/organising-huge-music-libraries-with-serato/</link>
+      <link>http://davidcraddock.net/2021/05/05/organising-huge-music-libraries-with-serato/</link>
       <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2021/05/05/organising-huge-music-libraries-with-serato/</guid>
-      <description>Updated: 25-11-22&#xA;My music library is around 24k files, mostly FLAC and some 320kbps MP3s. I use the following tools to organise my music library:&#xA;Acquisition: dbPoweramp CD Ripper - https://www.dbpoweramp.com/cd-ripper.htm Bandcamp Collection Downloader - https://github.com/Ezwen/bandcamp-collection-downloader Soulseek - http://www.slsknet.org Tagging and Metadata: Beets - https://beets.io Mixed In Key - https://mixedinkey.com Lexicon https://www.lexicondj.com/ Backup and sync: Robocopy - comes free with Windows 10. Documentation: https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy Google Drive Rsync&#xA;Searching: Everything Search - https://voidtools.</description>
+      
+      <guid>http://davidcraddock.net/2021/05/05/organising-huge-music-libraries-with-serato/</guid>
+      <description>Updated: 25-11-22
+My music library is around 24k files, mostly FLAC and some 320kbps MP3s. I use the following tools to organise my music library:
+Acquisition: dbPoweramp CD Ripper - https://www.dbpoweramp.com/cd-ripper.htm Bandcamp Collection Downloader - https://github.com/Ezwen/bandcamp-collection-downloader Soulseek - http://www.slsknet.org Tagging and Metadata: Beets - https://beets.io Mixed In Key - https://mixedinkey.com Lexicon https://www.lexicondj.com/ Backup and sync: Robocopy - comes free with Windows 10. Documentation: https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy Google Drive Rsync
+Searching: Everything Search - https://voidtools.</description>
+      <content:encoded><![CDATA[<p><strong>Updated: 25-11-22</strong></p>
+<p>My music library is around 24k files, mostly FLAC and some 320kbps MP3s. I use the following tools to organise my music library:</p>
+<p><strong>Acquisition:</strong>
+dbPoweramp CD Ripper - <a href="https://www.dbpoweramp.com/cd-ripper.htm">https://www.dbpoweramp.com/cd-ripper.htm</a>
+Bandcamp Collection Downloader - <a href="https://github.com/Ezwen/bandcamp-collection-downloader">https://github.com/Ezwen/bandcamp-collection-downloader</a>
+Soulseek - <a href="http://www.slsknet.org">http://www.slsknet.org</a> <strong>Tagging and Metadata:</strong>
+Beets - <a href="https://beets.io">https://beets.io</a>
+Mixed In Key - <a href="https://mixedinkey.com">https://mixedinkey.com</a>
+Lexicon <a href="https://www.lexicondj.com/">https://www.lexicondj.com/</a> <strong>Backup and sync:</strong>
+Robocopy - comes free with Windows 10. Documentation: <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy">https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy</a>
+Google Drive
+Rsync</p>
+<p><strong>Searching:</strong>
+Everything Search - <a href="https://voidtools.com/">https://voidtools.com/</a> <strong>Playing:</strong>
+Winamp
+Serato DJ Pro - <a href="https://serato.com/dj/pro">https://serato.com/dj/pro</a>
+Plex Media Server - <a href="https://www.plex.tv/">https://www.plex.tv/</a> <strong>dbPoweramp CD Ripper</strong></p>
+<p>I have found this to be the fastest and most reliable CD ripper. It is commercial but is a very small cost and contains access to a lot of metadata services. I rip all my CDs to FLAC.</p>
+<p><strong>Bandcamp Collection Downloader</strong></p>
+<p>This is so useful. It required a few tweaks to get to work reliably under Windows, and if you haven&rsquo;t got any scripting skills then it will be a pain, but it has been hugely useful in syncing my Bandcamp purchases, of which I have over 200. It checks whether it has downloaded a purchase before as well, so you don&rsquo;t need to re-download everything, just what has been added recently to your collection. I use the following settings in a batch file which works reliably. If you want to use it you will have to replace &lsquo;socialistsynthesis&rsquo; to be your bandcamp username. Remember to download the latest JDK NOT just the latest JRE otherwise it won&rsquo;t work.</p>
+<p><code>java -jar bandcamp-collection-downloader.jar -f=flac -j=1 -r=3 socialistsynthesis</code> <strong>Soulseek</strong></p>
+<p>I make a genuinely huge attempt to purchase all the music I play for my stream. I have spent SO much money on digital and physical copies of music over the years. When something is not available for purchase, or I have an old MP3 rip from a CD and I want a FLAC, then I use Soulseek. Whether you do is up to you, just know that it is there.</p>
+<p><strong>Beets.IO</strong></p>
+<p>I use Beets.io to manage all tagging. It is extremely powerful if you are comfortable with the commandline. This is my current config:</p>
+<p><code> plugins: duplicates replaygain the ftintitle discogs bandcamp badfiles embedart fetchart directory: /mnt2/music/</code> ``</p>
+<p>import:
+copy: no
+replaygain:
+command: /usr/bin/mp3gain
+targetlevel: 92
+overwrite: no
+auto: yes
+backend: command
+threads: 20
+parallel_on_import: no
+per_disc: no
+peak: &rsquo;true&rsquo;
+r128: [Opus]
+r128_targetlevel: 84
+noclip: yes</p>
+<p>``</p>
+<p>paths:
+default: &lsquo;%the{$albumartist}/$album/$artist - $title $bpm&rsquo;
+singleton: &lsquo;%the{$albumartist}/$artist - $title $bpm&rsquo;
+comp: &lsquo;%the{$albumartist}/artist - $title $bpm&rsquo;
+the:
+the: yes
+a: yes
+format: &lsquo;{0}, {1}&rsquo;
+strip: no
+patterns: []
+discogs:
+apikey: REDACTED
+apisecret: REDACTED
+tokenfile: discogs_token.json
+source_weight: 0.5
+user_token: REDACTED
+separator: &lsquo;, '
+index_tracks: no
+ftintitle:
+auto: yes
+drop: no
+format: feat. {0}
+duplicates:
+album: no
+checksum: &rsquo;&rsquo;
+copy: &rsquo;'
+count: no
+delete: no
+format: &rsquo;'
+full: no
+keys: []
+merge: no
+move: &rsquo;'
+path: no
+tiebreak: {}
+strict: no
+tag: &rsquo;'
+badfiles:
+check_on_import: yes
+commands:
+flac: flac &ndash;test &ndash;warnings-as-errors &ndash;silent
+va_name: Various Artists
+fetchart:
+cautious: yes
+cover_names: front back
+auto: yes
+minwidth: 0
+maxwidth: 0
+quality: 0
+max_filesize: 0
+enforce_ratio: no
+sources:
+- filesystem
+- coverart
+- itunes
+- amazon
+- albumart
+google_key: REDACTED
+google_engine: 001442825323518660753:hrh5ch1gjzm
+fanarttv_key: REDACTED
+lastfm_key: REDACTED
+store_source: no
+high_resolution: no
+deinterlace: no
+cover_format:
+embedart:
+maxwidth: 0
+auto: yes
+compare_threshold: 0
+ifempty: no
+remove_art_file: no
+quality: 0</p>
+<p>`</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mysql" data-lang="mysql"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>I <span style="color:#66d9ef">use</span> the following plugins:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>_duplicates_ <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">-</span> <span style="color:#66d9ef">for</span> removing duplicates
+</span></span><span style="display:flex;"><span>_replaygain_ <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">-</span> <span style="color:#66d9ef">for</span> setting the gain level <span style="color:#66d9ef">for</span> the track intelligently <span style="color:#66d9ef">in</span> the file <span style="color:#66d9ef">as</span> analysed <span style="color:#66d9ef">by</span> mp3gain.exe
+</span></span><span style="display:flex;"><span>_the_ <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">-</span> <span style="color:#66d9ef">For</span> organising artists which contain the word <span style="color:#e6db74">&#39;The&#39;</span>. <span style="color:#66d9ef">For</span> example <span style="color:#e6db74">&#39;The Chemical Brothers&#39;</span> becomes <span style="color:#e6db74">&#39;Chemical Brothers, The&#39;</span> <span style="color:#66d9ef">on</span> the top level directory.
+</span></span><span style="display:flex;"><span>_discogs_ <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">-</span> Provide metadata <span style="color:#66d9ef">from</span> Discogs.
+</span></span><span style="display:flex;"><span>_bandcamp_ <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">-</span> Provide metadata <span style="color:#66d9ef">from</span> Bandcamp.
+</span></span><span style="display:flex;"><span>_ftintitle_ <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">-</span> This moves <span style="color:#66d9ef">all</span> the <span style="color:#e6db74">&#39;featured artists&#39;</span> <span style="color:#66d9ef">in</span> song names <span style="color:#66d9ef">and</span> albums <span style="color:#66d9ef">into</span> the title of the song.
+</span></span><span style="display:flex;"><span>_badfiles_ <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">-</span> Run file integrity checkers <span style="color:#66d9ef">on</span> imported files <span style="color:#66d9ef">to</span> get rid of corrupt files
+</span></span><span style="display:flex;"><span>_fetchart_ <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">-</span> <span style="color:#66d9ef">Fetch</span> artwork <span style="color:#66d9ef">for</span> <span style="color:#66d9ef">each</span> track
+</span></span><span style="display:flex;"><span>_embedart_ <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">-</span> <span style="color:#66d9ef">And</span> embed it <span style="color:#66d9ef">into</span> the file
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>I structure the music <span style="color:#66d9ef">in</span> my library <span style="color:#66d9ef">like</span> so:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">`</span>S:<span style="color:#960050;background-color:#1e0010">\</span>audio<span style="color:#960050;background-color:#1e0010">\</span>music<span style="color:#960050;background-color:#1e0010">\</span>Chemical Brothers, The<span style="color:#960050;background-color:#1e0010">\</span>Surrender<span style="color:#960050;background-color:#1e0010">\</span>The Chemical Brothers <span style="color:#f92672">-</span> Under The Influence <span style="color:#ae81ff">135</span>.mp3<span style="color:#f92672">`</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#f92672">`</span>S:<span style="color:#960050;background-color:#1e0010">\</span>audio<span style="color:#960050;background-color:#1e0010">\</span>music<span style="color:#f92672">`</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">-</span> my music collection top level folder.
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#f92672">`</span>Chemical Brothers, The<span style="color:#f92672">`</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">-</span> the artist <span style="color:#66d9ef">with</span> <span style="color:#e6db74">&#39;The&#39;</span> moved <span style="color:#66d9ef">to</span> the end <span style="color:#66d9ef">for</span> easy scanning through the artists list.
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#f92672">`</span>Surrender<span style="color:#f92672">`</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">-</span> the album.
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#f92672">`</span>The Chemical Brothers<span style="color:#f92672">`</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">-</span> the full name of the artist.
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#f92672">`</span>Under The Influence<span style="color:#f92672">`</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">-</span> the full name of the track.
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">135</span><span style="color:#f92672">`</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">-</span> the BPM of the track.
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#f92672">`</span>.mp3<span style="color:#f92672">`</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">-</span> the file extension <span style="color:#f92672">-</span> usually either flac <span style="color:#66d9ef">or</span> mp3.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>My Beets.io workflow:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span>. I put <span style="color:#66d9ef">all</span> new music file <span style="color:#66d9ef">to</span> be processed <span style="color:#66d9ef">in</span> a samba share <span style="color:#66d9ef">on</span> my Linux server called <span style="color:#e6db74">&#39;musicincoming&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2</span>. I run <span style="color:#f92672">`</span>beet import <span style="color:#f92672">-</span>AmPsq .<span style="color:#f92672">`</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3</span>. This processes the unorganised files <span style="color:#66d9ef">and</span> moves them over <span style="color:#66d9ef">to</span> my samba share <span style="color:#66d9ef">on</span> my Linux server called <span style="color:#e6db74">&#39;music&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">4</span>. I <span style="color:#66d9ef">then</span> run <span style="color:#f92672">`</span>beet dup <span style="color:#f92672">-</span>d<span style="color:#f92672">`</span> <span style="color:#66d9ef">to</span> <span style="color:#66d9ef">delete</span> any duplicates that have arisen.
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span>. I mirror my entire collection over <span style="color:#66d9ef">to</span> my DJing laptop external DJing hard drive over the network <span style="color:#66d9ef">with</span> rsync <span style="color:#66d9ef">or</span> robocopy.
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">6</span>. I <span style="color:#66d9ef">then</span> drag my macbook external hardrive icon within Serato DJ Pro<span style="color:#e6db74">&#39;s &#39;</span>Files<span style="color:#e6db74">&#39; tab onto the &#39;</span><span style="color:#66d9ef">All</span> audio<span style="color:#e6db74">&#39; section in Serato DJ Pro and it will import my files for me.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">7. I disconnect my Serato interface, access the &#39;</span>Preperation<span style="color:#e6db74">&#39; tab and click Analyse all files to enable the beatgrid, BPM detect and song key detection for Serato DJ Pro.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">**Mixed in Key**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">This has the best key detection and mood detection algorithms at the moment. I use it to analyse small sets of files for more planned sets
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">**Lexicon**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">This has so much potential but I haven&#39;</span>t dug <span style="color:#66d9ef">into</span> it yet properly. My subscription expired so now I have <span style="color:#66d9ef">to</span> wait until I have enough money <span style="color:#66d9ef">to</span> get another one. You can perform a lot of useful tricks <span style="color:#66d9ef">using</span> your libraries metadata.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">**</span>Everything Search<span style="color:#f92672">**</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>This <span style="color:#66d9ef">is</span> a free Windows<span style="color:#f92672">-</span>only program that searches <span style="color:#66d9ef">for</span> files extremely quickly. It <span style="color:#66d9ef">is</span> so fast that I can get results <span style="color:#66d9ef">from</span> <span style="color:#66d9ef">all</span> my media files <span style="color:#66d9ef">in</span> a couple of seconds <span style="color:#66d9ef">when</span> I am searching <span style="color:#66d9ef">for</span> something <span style="color:#66d9ef">while</span> I am DJing <span style="color:#66d9ef">on</span> Twitch.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">**</span>Backup Software<span style="color:#f92672">**</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>I <span style="color:#66d9ef">use</span> rclone <span style="color:#66d9ef">on</span> my Linux server <span style="color:#66d9ef">to</span> backup my music <span style="color:#66d9ef">to</span> Google Drive, <span style="color:#66d9ef">where</span> I have <span style="color:#ae81ff">8</span>TB of storage.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">**</span>Winamp<span style="color:#f92672">**</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Now that Winamp <span style="color:#66d9ef">is</span> updated <span style="color:#66d9ef">for</span> Windows <span style="color:#ae81ff">11</span> <span style="color:#66d9ef">and</span> <span style="color:#66d9ef">is</span> being actively maintained, I <span style="color:#66d9ef">use</span> it <span style="color:#66d9ef">as</span> a <span style="color:#66d9ef">primary</span> music player whenever I<span style="color:#e6db74">&#39;m not use Plex Music Player.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">**Serato DJ Pro**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">This is what I use for my DJing when playing live. I analyze all my files to set the beatgrid, BPM and key. I have a 2TB external USB 2.0 hard disk so analyzing my entire library takes a couple of days of leaving my Macbook Pro on. But for new smaller additions it is much faster.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">I use Serato autocrates a lot to mine the large amount of metadata I&#39;</span>ve added <span style="color:#66d9ef">as</span> part of my process. I have seperate autocrates <span style="color:#66d9ef">for</span> <span style="color:#66d9ef">each</span> <span style="color:#ae81ff">10</span> BPM division, e.g. <span style="color:#ae81ff">71</span><span style="color:#f92672">-</span><span style="color:#ae81ff">80</span> BPM, <span style="color:#ae81ff">81</span><span style="color:#f92672">-</span><span style="color:#ae81ff">90</span> BPM etc. I also have autocrates <span style="color:#66d9ef">set</span> <span style="color:#66d9ef">by</span> <span style="color:#66d9ef">release</span> <span style="color:#66d9ef">date</span> <span style="color:#f92672">-</span> I have music released <span style="color:#66d9ef">in</span> the <span style="color:#ae81ff">80</span>s, music released <span style="color:#66d9ef">in</span> the <span style="color:#ae81ff">90</span>s, music released <span style="color:#66d9ef">in</span> the <span style="color:#ae81ff">00</span>s...etc. There <span style="color:#66d9ef">is</span> so much you can do <span style="color:#66d9ef">with</span> autocrates <span style="color:#66d9ef">if</span> you have properly <span style="color:#66d9ef">set</span> metadata.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">**</span>Plex Media Server<span style="color:#f92672">**</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>I subscribe <span style="color:#66d9ef">to</span> Plex Media Server which <span style="color:#66d9ef">is</span> <span style="color:#66d9ef">where</span> I put <span style="color:#66d9ef">all</span> my music <span style="color:#66d9ef">and</span> video files <span style="color:#66d9ef">for</span> non<span style="color:#f92672">-</span>DJing playback. Because I <span style="color:#a6e22e">subscribe</span> (you can get the basic server <span style="color:#66d9ef">and</span> almost <span style="color:#66d9ef">all</span> functionality <span style="color:#66d9ef">for</span> free) I get access <span style="color:#66d9ef">to</span> the wonderful PlexAmp player which <span style="color:#66d9ef">is</span> a really great service. I have it <span style="color:#66d9ef">on</span> <span style="color:#66d9ef">all</span> my mobile devices <span style="color:#66d9ef">and</span> computers. Plex Media Server<span style="color:#e6db74">&#39;s handling of &#39;</span>Various Artists<span style="color:#e6db74">&#39; compilations is problematic and I have written about it [on this blog](/2021/09/21/how-to-fix-plex-media-servers-various-artists-problem-using-beets-io-and-other-tools/). I use a script I put together to fix problems when I encounter them. With the latest version of Beets.io you can get very specific with the &#39;</span>beets ls<span style="color:#e6db74">&#39; query language so this script works very accuratedly.
+</span></span></span></code></pre></div>]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

@@ -1,19 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Audio-Routing on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/category/audio-routing/</link>
+    <link>http://davidcraddock.net/category/audio-routing/</link>
     <description>Recent content in Audio-Routing on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 06 Feb 2016 08:40:22 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/category/audio-routing/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Feb 2016 08:40:22 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/audio-routing/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Audio Routing for my PC</title>
-      <link>http://davidcraddock.net:9796/2016/02/06/audio-routing-for-my-pc/</link>
+      <link>http://davidcraddock.net/2016/02/06/audio-routing-for-my-pc/</link>
       <pubDate>Sat, 06 Feb 2016 08:40:22 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2016/02/06/audio-routing-for-my-pc/</guid>
+      
+      <guid>http://davidcraddock.net/2016/02/06/audio-routing-for-my-pc/</guid>
       <description>For my own benefit as much as anyone elses, I thought I&amp;rsquo;d document my PC audio setup. I have two soundcards and two sets of speakers, one surround soundcard and speaker set for gaming and watching surround sound movies, and one audio interface linked up to my studio monitor speakers for music production. I also have a Digi 002 mixer which I use to mix in the outputs from my synthesisers to my recording interface.</description>
+      <content:encoded><![CDATA[<p>For my own benefit as much as anyone elses, I thought I&rsquo;d document my PC audio setup. I have two soundcards and two sets of speakers, one surround soundcard and speaker set for gaming and watching surround sound movies, and one audio interface linked up to my studio monitor speakers for music production. I also have a Digi 002 mixer which I use to mix in the outputs from my synthesisers to my recording interface. When I want to record, I usually record one track at a time from a synthesier to the audio input of the audio interface, via the Digi 002 mixer:</p>
+<p><img loading="lazy" src="/wp-content/uploads/2016/02/untitled-diagram.png" type="" alt="Untitled Diagram"  /></p>
+<p>These are the audio cables needed for this setup, some of which I will need to order in shorter sizes than the 3m ones I already have, to reduce cable clutter:</p>
+<p>single phono to phono
+2x phono to 2x phono
+single phono to phono
+single 3.5mm jack to phono
+single 3.5mm jack to phono
+2x phono to 2x phono
+2x phono to 2x phono
+2x phono to 2x phono
+2x phono to 2x phono
+2x phono to 2x phono
+2x phono to 2x phono</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

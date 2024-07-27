@@ -1,26 +1,57 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Adb-Devices on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/tag/adb-devices/</link>
+    <link>http://davidcraddock.net/tag/adb-devices/</link>
     <description>Recent content in Adb-Devices on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 10 Feb 2014 15:28:45 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/tag/adb-devices/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Feb 2014 15:28:45 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/tag/adb-devices/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setting up Kindlefire HDX for Development under Ubuntu 12.04</title>
-      <link>http://davidcraddock.net:9796/2014/02/10/kindlefire-hdx-under-ubuntu-12-04/</link>
+      <link>http://davidcraddock.net/2014/02/10/kindlefire-hdx-under-ubuntu-12-04/</link>
       <pubDate>Mon, 10 Feb 2014 15:28:45 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2014/02/10/kindlefire-hdx-under-ubuntu-12-04/</guid>
-      <description>I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.&#xA;First I needed to setup the udev rules:&#xA;1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):&#xA;SUBSYSTEM==&amp;#34;usb&amp;#34;, ATTRS{idVendor}==&amp;#34;1949&amp;#34;, MODE=&amp;#34;0666&amp;#34; 2. Change the permission of this file by executing the following command as root:&#xA;chmod a+r /etc/udev/rules.d/51-android.rules 3. Reload the rules by executing the following command as root:</description>
+      
+      <guid>http://davidcraddock.net/2014/02/10/kindlefire-hdx-under-ubuntu-12-04/</guid>
+      <description>I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.
+First I needed to setup the udev rules:
+1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):
+SUBSYSTEM==&amp;#34;usb&amp;#34;, ATTRS{idVendor}==&amp;#34;1949&amp;#34;, MODE=&amp;#34;0666&amp;#34; 2. Change the permission of this file by executing the following command as root:
+chmod a+r /etc/udev/rules.d/51-android.rules 3. Reload the rules by executing the following command as root:</description>
+      <content:encoded><![CDATA[<p>I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.</p>
+<p>First I needed to setup the udev rules:</p>
+<p>1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>SUBSYSTEM==&#34;usb&#34;, ATTRS{idVendor}==&#34;1949&#34;, MODE=&#34;0666&#34;
+</span></span></code></pre></div><p>2. Change the permission of this file by executing the following command as root:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>chmod a+r /etc/udev/rules.d/51-android.rules
+</span></span></code></pre></div><p>3. Reload the rules by executing the following command as root:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>udevadm control <span style="color:#f92672">--</span>reload<span style="color:#f92672">-</span>rules
+</span></span></code></pre></div><p>4. Run these commands to restart adb:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>adb kill-server
+</span></span><span style="display:flex;"><span>adb start-server
+</span></span></code></pre></div><p>5. Now when I run</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>lsusb
+</span></span></code></pre></div><p>I can see the device listed.</p>
+<p>6. Next I needed to enable adb access on the Kindlefire HDX device itself by going to <strong>Settings -&gt; Device -&gt; Enable ADB</strong>.</p>
+<p>7. Finally I could run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>adb devices
+</span></span></code></pre></div><p>within Ubuntu and have it recognise the Kindlefire HDX.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Android Debug Bridge failing to detect emulators under OSX</title>
-      <link>http://davidcraddock.net:9796/2013/11/17/android-debug-bridge-failing-to-detect-emulators-under-osx/</link>
+      <link>http://davidcraddock.net/2013/11/17/android-debug-bridge-failing-to-detect-emulators-under-osx/</link>
       <pubDate>Sun, 17 Nov 2013 02:21:34 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2013/11/17/android-debug-bridge-failing-to-detect-emulators-under-osx/</guid>
+      
+      <guid>http://davidcraddock.net/2013/11/17/android-debug-bridge-failing-to-detect-emulators-under-osx/</guid>
       <description>I&amp;rsquo;ve been working on a project at the BBC where we are using the Android command-line tools from the Android Developer Tools, to spin up and terminate series of emulators. I noticed a big problem under OSX where &amp;lsquo;adb devices&amp;rsquo; was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb.</description>
+      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2013/11/android.png"><img loading="lazy" src="/wp-content/uploads/2013/11/android.png" type="" alt="Android"  /></a></p>
+<p>I&rsquo;ve been working on a project at the BBC where we are using the Android command-line tools from the <a href="http://developer.android.com/tools/index.html">Android Developer Tools</a>, to spin up and terminate series of emulators. I noticed a big problem under OSX where &lsquo;adb devices&rsquo; was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb.</p>
+<p>We switched to using adb with emulators in an Ubuntu 12.04 VM running under OSX, and we had no further problems with our setup. Emulators will now be programatically launched and torn down by our monitoring application. We now have an array of emulators which we can deploy to at will, which is very useful.</p>
+<p>I don&rsquo;t know what has caused this problem, my only hunch is that the Android toolkit was probably developed in a very Linux-heavy environment, and so adb on Linux was probably their first testing platform. All I can say is that Linux is much more stable than OSX, even as a VM, for Android emulation.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

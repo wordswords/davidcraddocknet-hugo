@@ -1,26 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Microkorg on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/tag/microkorg/</link>
+    <link>http://davidcraddock.net/tag/microkorg/</link>
     <description>Recent content in Microkorg on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 31 Oct 2014 20:16:56 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/tag/microkorg/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Oct 2014 20:16:56 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/tag/microkorg/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>microKORG Original &#43; Novation Impulse 61</title>
-      <link>http://davidcraddock.net:9796/2014/10/31/microkorg-original-novation-impulse-61/</link>
+      <link>http://davidcraddock.net/2014/10/31/microkorg-original-novation-impulse-61/</link>
       <pubDate>Fri, 31 Oct 2014 20:16:56 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2014/10/31/microkorg-original-novation-impulse-61/</guid>
-      <description>I picked up a rather ugly (but very cheap!) customised microKORG, and also the excellent Novation Impulse 61 USB/Midi keyboard controller.&#xA;The microKORG I like a lot. It was my first synth, and at first I couldn&amp;rsquo;t make any sense of it. I do agree with the Reddit /r/synthesizers view that it is not the best synth to learn on. Their view is that the best synth to learn on is one with a one-to-one mapping between controls and sound engine parameters.</description>
+      
+      <guid>http://davidcraddock.net/2014/10/31/microkorg-original-novation-impulse-61/</guid>
+      <description>I picked up a rather ugly (but very cheap!) customised microKORG, and also the excellent Novation Impulse 61 USB/Midi keyboard controller.
+The microKORG I like a lot. It was my first synth, and at first I couldn&amp;rsquo;t make any sense of it. I do agree with the Reddit /r/synthesizers view that it is not the best synth to learn on. Their view is that the best synth to learn on is one with a one-to-one mapping between controls and sound engine parameters.</description>
+      <content:encoded><![CDATA[<p>I picked up a rather ugly (but very cheap!) customised microKORG, and also the excellent Novation Impulse 61 USB/Midi keyboard controller.</p>
+<p>The <a href="http://www.vintagesynth.com/korg/microkorg.php" title="microKORG">microKORG</a> I like a lot. It was my first synth, and at first I couldn&rsquo;t make any sense of it. I do agree with the <a href="http://www.reddit.com/r/synthesizers/">Reddit /r/synthesizers</a> view that it is not the best synth to learn on. Their view is that the best synth to learn on is one with a one-to-one mapping between controls and sound engine parameters. To put another way, the best beginners synth is one which has lots of knobs and buttons on it that you can tweak and hear actual results in the sound. It makes it more difficult if the sound engine is hidden away behind a large menu system with lots of daunting menus, like the microKORG has.</p>
+<p>However, now I know the basics of synthesis, I&rsquo;m finding it much easier to get the most out of the microKORG. You can also map a midi controller to a lot of the parameters, turning it into a poor man&rsquo;s <a href="http://www.vintagesynth.com/korg/ms2000.php" title="MS2000">MS2000</a>. The older MS2000 shares the same engine as the MK.</p>
+<p>The Novation Impulse 61 is great, although it does take up a lot of desk space. The keybed is much better than any controller I&rsquo;ve tried before, and even though it&rsquo;s not weighted like my digital piano, it is very playable. The aftertouch and the velocity sensitivity are settings I will no doubt appreciate more in the future, for now I just turn them off. The arpegiator with the step sequencer is amazing! It turns the arpegiator into a little groovebox. It is quite similar to the arp sequencer on the microKORG, where you can hit the pads to change the notes on the fly. However the Impulse pads are a lot more sturdy, and responsive.</p>
+<p>There is a lot about the Novation Automap functionality that I haven&rsquo;t explored. I want to wire up my old <a href="http://www.soundonsound.com/sos/nov06/articles/remotezero.htm" title="Novation Remote SL">Remote Zero SL</a> unit as a controller for the microKORG, so I have more of a one-to-one mapping between knobs and the MS2000 parameter functionality exposed via MIDI on the microKORG.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>MicroKORG &#43; Python = MIDI fun!</title>
-      <link>http://davidcraddock.net:9796/2009/03/30/microkorg-python-midi-fun/</link>
+      <link>http://davidcraddock.net/2009/03/30/microkorg-python-midi-fun/</link>
       <pubDate>Mon, 30 Mar 2009 00:14:10 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2009/03/30/microkorg-python-midi-fun/</guid>
-      <description>So, about a month ago I got a second-hand microKORG from Ebay. Fiddling around with the preset patches, and creating new patches is great fun, even though I only know a few chords. Recently I plugged it in to my PC via my M-Audio Uno USB-&amp;gt;MIDI interface, and soon was using Ableton Live to program drums in time with the microKORG&amp;rsquo;s arp.&#xA;I thought I&amp;rsquo;d experiment the music libraries available in python, and see if I could send notes to the synth via MIDI.</description>
+      
+      <guid>http://davidcraddock.net/2009/03/30/microkorg-python-midi-fun/</guid>
+      <description>So, about a month ago I got a second-hand microKORG from Ebay. Fiddling around with the preset patches, and creating new patches is great fun, even though I only know a few chords. Recently I plugged it in to my PC via my M-Audio Uno USB-&amp;gt;MIDI interface, and soon was using Ableton Live to program drums in time with the microKORG&amp;rsquo;s arp.
+I thought I&amp;rsquo;d experiment the music libraries available in python, and see if I could send notes to the synth via MIDI.</description>
+      <content:encoded><![CDATA[<p>So, about a month ago I got a second-hand <a href="http://en.wikipedia.org/wiki/MicroKORG">microKORG</a> from Ebay. Fiddling around with the preset patches, and creating new patches is great fun, even though I only know a few chords. Recently I plugged it in to my PC via my <a href="http://www.dolphinmusic.co.uk/product/1773-m-audio-uno-usb.html">M-Audio Uno USB-&gt;MIDI interface</a>, and soon was using Ableton Live to program drums in time with the microKORG&rsquo;s arp.</p>
+<p>I thought I&rsquo;d experiment the music libraries available in python, and see if I could send notes to the synth via MIDI. Turns out that the M-Audio Uno is supported under Ubuntu, all you have to do is install the <code>midisport-firmware</code> package. With the help of <a href="http://trac2.assembla.com/pkaudio/wiki/pyrtmidi">pyrtmidi</a>, a set of python wrappers around the C++ audio library rtmidi I was able to recieve MIDI signals in realtime from the microKORG, and send them in realtime also. With the help of <a href="http://www.davidcraddock.net/images/midilib.py">this</a> old midi file reader/writer library that I found posted to a python mailing list, I&rsquo;ve made some progress in writing a simple MIDI file player that sends notes to the &lsquo;KORG.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

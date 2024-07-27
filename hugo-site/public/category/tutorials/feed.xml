@@ -1,89 +1,560 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tutorials on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/category/tutorials/</link>
+    <link>http://davidcraddock.net/category/tutorials/</link>
     <description>Recent content in Tutorials on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 19 Jan 2023 09:12:32 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/category/tutorials/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Jan 2023 09:12:32 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/tutorials/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Books that have changed the way I see the practice of Software Engineering</title>
-      <link>http://davidcraddock.net:9796/2023/01/19/books-that-have-changed-the-way-i-see-the-practice-of-software-engineering/</link>
+      <link>http://davidcraddock.net/2023/01/19/books-that-have-changed-the-way-i-see-the-practice-of-software-engineering/</link>
       <pubDate>Thu, 19 Jan 2023 09:12:32 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2023/01/19/books-that-have-changed-the-way-i-see-the-practice-of-software-engineering/</guid>
-      <description>The Mythical Man Month and other Essays - Fred Brooks - Read it as part of my university degree. A lot of good sense. I can&amp;rsquo;t believe there are people out there in charge of software projects that haven&amp;rsquo;t read this book, or think it somehow doesn&amp;rsquo;t apply anymore, but unfortunately, it seems quite common. -&#xA;[Read reviews on Good Reads] The Cathedral and the Bazaar - Eric S Raymound - One of the first books I read on software development process.</description>
+      
+      <guid>http://davidcraddock.net/2023/01/19/books-that-have-changed-the-way-i-see-the-practice-of-software-engineering/</guid>
+      <description>The Mythical Man Month and other Essays - Fred Brooks - Read it as part of my university degree. A lot of good sense. I can&amp;rsquo;t believe there are people out there in charge of software projects that haven&amp;rsquo;t read this book, or think it somehow doesn&amp;rsquo;t apply anymore, but unfortunately, it seems quite common. -
+[Read reviews on Good Reads] The Cathedral and the Bazaar - Eric S Raymound - One of the first books I read on software development process.</description>
+      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2023/01/screenshot-2023-01-19-at-08-57-07-mythical-man-month-the-essays-on-software-engineering-anniversary-edition-amazon.co_.uk-brooks-jr.-frederick-8580001065793-books.png"><img loading="lazy" src="/wp-content/uploads/2023/01/screenshot-2023-01-19-at-08-57-07-mythical-man-month-the-essays-on-software-engineering-anniversary-edition-amazon.co_.uk-brooks-jr.-frederick-8580001065793-books.png" type="" alt=""  /></a><strong>The Mythical Man Month and other Essays</strong> - <em>Fred Brooks</em> - Read it as part of my university degree. A lot of good sense. I can&rsquo;t believe there are people out there in charge of software projects that haven&rsquo;t read this book, or think it somehow doesn&rsquo;t apply anymore, but unfortunately, it seems quite common. -</p>
+<p><a href="https://www.goodreads.com/book/show/1904149.The_Mythical_Man_Month_and_Other_Essays_on_Software_Engineering">[Read reviews on Good Reads]</a> <a href="/wp-content/uploads/2023/01/screenshot-2023-01-19-at-08-58-31-the-cathedral-the-bazaar-amazon.co_.uk-raymond-eric-9780596001087-books.png"><img loading="lazy" src="/wp-content/uploads/2023/01/screenshot-2023-01-19-at-08-58-31-the-cathedral-the-bazaar-amazon.co_.uk-raymond-eric-9780596001087-books.png" type="" alt=""  /></a> <strong>The Cathedral and the Bazaar</strong> - <em>Eric S Raymound</em> - One of the first books I read on software development process. Really blew my mind. -</p>
+<p><a href="https://www.goodreads.com/book/show/134825.The_Cathedral_the_Bazaar">[Read reviews on Good Reads]</a> <a href="/wp-content/uploads/2023/01/prag.jpeg"><img loading="lazy" src="/wp-content/uploads/2023/01/prag.jpeg" type="" alt=""  /></a> <strong>The Pragmatic Programmer</strong> - Such an eye-opener. Such an awesome book. So many good points, even today. -</p>
+<p><a href="https://www.goodreads.com/book/show/45280024-the-pragmatic-programmer">[Read reviews on Good Reads]</a> <a href="/wp-content/uploads/2023/01/phoenix-1.jpg"><img loading="lazy" src="/wp-content/uploads/2023/01/phoenix-1.jpg" type="" alt=""  /></a> <strong>The Phoenix Project</strong> - A really inspiring story. Made me think that organisational positive change to a more healthy collaborative style of working is both possible and achievable. Even though I&rsquo;ve never personally witnessed a change of any remotely similar magnitude happen at an organisation I&rsquo;ve ever worked at -</p>
+<p><a href="https://www.goodreads.com/book/show/17255186-the-phoenix-project">[Read reviews on Good Reads]</a> <a href="/wp-content/uploads/2023/01/cleancode.jpeg"><img loading="lazy" src="/wp-content/uploads/2023/01/cleancode.jpeg" type="" alt=""  /></a> <strong>Clean Code</strong> - <em>Robert C Martin</em> - A very important book that changed the industry, and still has a large effect today. -</p>
+<p><a href="https://www.goodreads.com/book/show/3735293-clean-code">[Read reviews on Good Reads]</a> <a href="/wp-content/uploads/2023/01/cleancoder.jpg"><img loading="lazy" src="/wp-content/uploads/2023/01/cleancoder.jpg" type="" alt=""  /></a> <strong>Clean Coder</strong> - <em>Robert C Martin</em> - A book that made me take my profession more seriously, and try and become more of a responsible professional that deeply cares about software development, instead of just a fly-by-night money maker. -</p>
+<p><a href="https://www.goodreads.com/book/show/10284614-the-clean-coder">[Read reviews on Good Reads]</a> <a href="/wp-content/uploads/2023/01/craft.jpeg"><img loading="lazy" src="/wp-content/uploads/2023/01/craft.jpeg" type="" alt=""  /></a> <strong>The Software Craftsman: Professionalism, Pragmatism, Pride</strong> by <em>Sandro Mancuso</em> - key to putting exactly into words my nagging doubt around Agile project management that I couldn&rsquo;t quite put my finger on before. -</p>
+<p><a href="https://www.goodreads.com/book/show/23215733-the-software-craftsman">[Read reviews on Good Reads]</a> <a href="/wp-content/uploads/2023/01/cleanagile.jpeg"><img loading="lazy" src="/wp-content/uploads/2023/01/cleanagile.jpeg" type="" alt=""  /></a> <strong>Clean Agile</strong> - <em>Robert C Martin</em> - shows how very far away from the original intention of the Agile manifesto 99% of companies implementation of Agile really is, almost to a farcical level. Even though I don&rsquo;t agree with some of its points, such as the emphasis on story points, I don&rsquo;t have a problem with a lot of the original intentions behind the idea. Just the overwhelmingly poor examples of its implementation that I&rsquo;ve experienced. -</p>
+<p><a href="https://www.goodreads.com/book/show/45280021-clean-agile">[Read reviews on Good Reads]</a> <a href="/wp-content/uploads/2023/01/agiletesting.jpg"><img loading="lazy" src="/wp-content/uploads/2023/01/agiletesting.jpg" type="" alt=""  /></a> <strong>Agile Testing Condensed</strong> - answers the question so many people were asking me when I worked in QA engineering, namely, &ldquo;in a continuous integration world, where do test specialists fit in?&rdquo;. Well, suffice to say, they never bothered to read this book.</p>
+<p><a href="https://www.goodreads.com/en/book/show/48516589">[Read reviews on Good Reads]</a> <a href="/wp-content/uploads/2023/01/phil.jpeg"><img loading="lazy" src="/wp-content/uploads/2023/01/phil.jpeg" type="" alt=""  /></a> <strong>A Philosophy of Software Design</strong> - key to putting my finger on and voicing some of the concerns I had over the years in organisations that were implementing Clean Code concepts well, but still were very lacking in their code and engineering quality. Also the most well-written technical book I&rsquo;ve ever read. -</p>
+<p><a href="https://www.goodreads.com/en/book/show/39996759">[Read reviews on Good Reads]</a></p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Using VIM as a Word Processor</title>
-      <link>http://davidcraddock.net:9796/2022/03/08/using-vim-as-a-word-processor/</link>
+      <link>http://davidcraddock.net/2022/03/08/using-vim-as-a-word-processor/</link>
       <pubDate>Tue, 08 Mar 2022 19:43:00 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2022/03/08/using-vim-as-a-word-processor/</guid>
-      <description>It may surprise some people to learn that I don&amp;rsquo;t use a word processor to write pure text any more, and haven&amp;rsquo;t for several months. I still have a subscription to Microsoft Office 365, and probably will as long as recruiters and offices around the world still pay the MS tax.&#xA;I have created my own custom writing environment in my favourite text editor, VIM. This may sound like an absolutely foolish thing to do to anyone who knows VIM.</description>
+      
+      <guid>http://davidcraddock.net/2022/03/08/using-vim-as-a-word-processor/</guid>
+      <description>It may surprise some people to learn that I don&amp;rsquo;t use a word processor to write pure text any more, and haven&amp;rsquo;t for several months. I still have a subscription to Microsoft Office 365, and probably will as long as recruiters and offices around the world still pay the MS tax.
+I have created my own custom writing environment in my favourite text editor, VIM. This may sound like an absolutely foolish thing to do to anyone who knows VIM.</description>
+      <content:encoded><![CDATA[<p>It may surprise some people to learn that I don&rsquo;t use a word processor to write pure text any more, and haven&rsquo;t for several months. I still have a subscription to Microsoft Office 365, and probably will as long as recruiters and offices around the world still pay the MS tax.</p>
+<p>I have created my own custom writing environment in my favourite text editor, VIM. This may sound like an absolutely foolish thing to do to anyone who knows VIM. By default, it is not setup at all to be an effective word processor. It is a programmers text editor, and a very complex and difficult to learn one at that.</p>
+<p>Over the past 12 years or so, I have been slowly customizing it to exactly my needs. The great thing about VIM is that it is highly customizable, and you can change almost every major element of it to suit your tastes.</p>
+<p>I use the following plugins when writing text or markdown files.</p>
+<h2 id="vim-pencil">Vim Pencil</h2>
+<p>This changes the wrapping mode and a number of other VIM options to make VIM suitable as a word processor instead of just a programmers code editor.</p>
+<p><a href="https://github.com/preservim/vim-pencil">https://github.com/preservim/vim-pencil</a></p>
+<h2 id="goyo">GOYO</h2>
+<p>This is a distraction free way of writing. Because of the way I have set it up, there is a lot going on in the default interface of VIM. This strips everything away to just what you see in this screenshot:</p>
+<p><img loading="lazy" src="/wp-content/uploads/2022/03/goyo.png" type="" alt=""  /><a href="https://github.com/junegunn/goyo.vim">https://github.com/junegunn/goyo.vim</a></p>
+<p>I toggle the &lsquo;GOYO&rsquo; mode by pressing <!-- raw HTML omitted -->.</p>
+<h2 id="spell">Spell</h2>
+<p>VIM&rsquo;s default spellchecker. I use it in British English mode (of course). As soon as I type a misspelled word, it highlights it. Then I can use the arrow keys to skip between each misspelling and fix it with some keyboard shortcuts.</p>
+<h2 id="wordy">Wordy</h2>
+<p>This picks up words which are not helpful. For example, I have a bad habit of using the word &lsquo;actually&rsquo; too many times. Wordy will highlight this. It has a number of dictionaries of &lsquo;useless&rsquo; words which it will check for. It is opinionated, but I find it does help improve the quality of my writing.</p>
+<p><a href="https://github.com/reedes/vim-wordy">https://github.com/reedes/vim-wordy</a></p>
+<h2 id="languagetool-checker">LanguageTool Checker</h2>
+<p>This is a Java-based command-line open-source grammar and spell checker. It is very thorough and picks up a lot of things. I don&rsquo;t know how it compares to MS Word&rsquo;s checking, but I find it more useful than I remember Word&rsquo;s grammar checker being.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2022/03/languagetoolchecker.png" type="" alt=""  /><a href="https://github.com/dpelle/vim-LanguageTool">https://github.com/dpelle/vim-LanguageTool</a></p>
+<p>&ndash;</p>
+<p>For more information on my VIM setup, check out my dotfiles repository at <a href="https://github.com/wordswords/dotfiles">https://github.com/wordswords/dotfiles</a>.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Use Siri, Apple Earphones and Apple Music Together</title>
-      <link>http://davidcraddock.net:9796/2015/08/15/use-siri-apple-earphones-and-apple-music-together/</link>
+      <link>http://davidcraddock.net/2015/08/15/use-siri-apple-earphones-and-apple-music-together/</link>
       <pubDate>Sat, 15 Aug 2015 20:46:21 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2015/08/15/use-siri-apple-earphones-and-apple-music-together/</guid>
-      <description>This requires you to have a subscription to Apple Music and a 3G/4G/wireless data connection, but it is so useful! Using this tip, you can be walking along with your iPhone in your pocket and your Apple earphones in, and then change music just by pressing a button on the earphones remote control and saying &amp;lsquo;Play (your favourite band)&amp;rsquo;.&#xA;1. Activate Siri and subscribe to Apple Music. I used to subscribe to Spotify so I switched to Apple Music when I realised the advantages of the integration on my phone, and the wider selection of music.</description>
+      
+      <guid>http://davidcraddock.net/2015/08/15/use-siri-apple-earphones-and-apple-music-together/</guid>
+      <description>This requires you to have a subscription to Apple Music and a 3G/4G/wireless data connection, but it is so useful! Using this tip, you can be walking along with your iPhone in your pocket and your Apple earphones in, and then change music just by pressing a button on the earphones remote control and saying &amp;lsquo;Play (your favourite band)&amp;rsquo;.
+1. Activate Siri and subscribe to Apple Music. I used to subscribe to Spotify so I switched to Apple Music when I realised the advantages of the integration on my phone, and the wider selection of music.</description>
+      <content:encoded><![CDATA[<p>This requires you to have a subscription to Apple Music and a 3G/4G/wireless data connection, but it is so useful! Using this tip, you can be walking along with your iPhone in your pocket and your Apple earphones in, and then change music just by pressing a button on the earphones remote control and saying &lsquo;Play (your favourite band)&rsquo;.</p>
+<p><a href="/wp-content/uploads/2015/08/blog-post-image.png"><img loading="lazy" src="/wp-content/uploads/2015/08/blog-post-image.png" type="" alt="blog post image"  /></a></p>
+<p>1. Activate Siri and subscribe to Apple Music. I used to subscribe to Spotify so I switched to Apple Music when I realised the advantages of the integration on my phone, and the wider selection of music. You will also need to set Siri to stream music over your cellular network, this can be done in the &lsquo;Music&rsquo; section of iOS settings.</p>
+<p>2. Put the iPhone in your pocket with the standard Apple Earphones plugged in. With the standard Apple Earphones, there is a remote control on the cable with one button on it. To activate Siri, hold that button down for a couple of seconds until you hear the &lsquo;Siri&rsquo; &lsquo;bleep&rsquo;.</p>
+<p>3. Say &lsquo;Play The Prodigy&rsquo; if you want to listen to The Prodigy, for example. This may require a couple of tries occasionally, but usually it just works.</p>
+<p>4. Siri should look up The Prodigy on Apple Music, find their most popular songs, put them in a playlist, start streaming them and playing them through your earphones. To skip a song, press the remote control button twice in quick succession. To adjust the volume, press the edges of your remote control, the top edge to increase volume, the bottom edge to decrease. To pause all music playback, just press the remote control button once. To resume playback, press the remote control button once again.</p>
+<p>A limitation of this is that you have to be in an area with good reception, enough to stream your tracks from Apple Music. You shouldn&rsquo;t have a problem if you live in a city like Manchester, I usually get 4G across the whole city.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>RESTful Web Services</title>
-      <link>http://davidcraddock.net:9796/2011/03/02/restful-web-services/</link>
+      <link>http://davidcraddock.net/2011/03/02/restful-web-services/</link>
       <pubDate>Wed, 02 Mar 2011 14:21:23 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2011/03/02/restful-web-services/</guid>
-      <description>REST (Representational State Transfer) is a way of delivering web services. When a web service conforms to REST, it is known as RESTful. The largest RESTful web service is the Hypertext Transfer Protocol (HTTP) which you use every day to send and receive information from web servers while browsing the internet.&#xA;To implement RESTful web services, you should implement four methods: GET, PUT, POST and DELETE. Resources on RESTful web services are typically defined as collections of elements.</description>
+      
+      <guid>http://davidcraddock.net/2011/03/02/restful-web-services/</guid>
+      <description>REST (Representational State Transfer) is a way of delivering web services. When a web service conforms to REST, it is known as RESTful. The largest RESTful web service is the Hypertext Transfer Protocol (HTTP) which you use every day to send and receive information from web servers while browsing the internet.
+To implement RESTful web services, you should implement four methods: GET, PUT, POST and DELETE. Resources on RESTful web services are typically defined as collections of elements.</description>
+      <content:encoded><![CDATA[<p>REST (Representational State Transfer) is a way of delivering web services. When a web service conforms to REST, it is known as RESTful. The largest RESTful web service is the Hypertext Transfer Protocol (HTTP) which you use every day to send and receive information from web servers while browsing the internet.</p>
+<p>To implement RESTful web services, you should implement four methods: GET, PUT, POST and DELETE. Resources on RESTful web services are typically defined as collections of elements. The REST methods can either act on a whole collection, or a specific element in a collection.</p>
+<p>A collection is usually logically defined as a hierarchy on the URL, for example take this fictitious layout:</p>
+<p><strong>Collection:</strong> <a href="https://www.bbc.co.uk/iplayer/programmes/">www.bbc.co.uk/iplayer/programmes/</a>
+<strong>Element:</strong> <a href="https://www.bbc.co.uk/iplayer/programmes/24">www.bbc.co.uk/iplayer/programmes/24</a>
+<strong>Element:</strong> <a href="https://www.bbc.co.uk/iplayer/programmes/25">www.bbc.co.uk/iplayer/programmes/25</a>
+<strong>Element:</strong> <a href="https://www.bbc.co.uk/iplayer/programmes/26">www.bbc.co.uk/iplayer/programmes/26</a></p>
+<p>The REST methods you use do different things depending on whether you are interacting with a Collection resource or an Element resource. See below:</p>
+<p><strong>On a Collection: ie: <a href="https://www.bbc.co.uk/iplayer/programmes/">www.bbc.co.uk/iplayer/programmes/</a></strong></p>
+<p>GET – Lists the URLs of the collection’s members.
+PUT – Replace the entire collection with another collection.
+POST – Create a new element in a collection, returning the new element’s URL.
+DELETE – Deletes the entire collection.</p>
+<p><strong>On an Element: ie: <a href="https://www.bbc.co.uk/iplayer/programmes/24">www.bbc.co.uk/iplayer/programmes/24</a></strong></p>
+<p>GET – Retrieve the addressed element in the appropriate internet media type, ie: music file or image
+PUT – Replace the addressed element of the collection, or if it doesn’t exist, create it in the parent collection.
+POST – Treat the addressed element of the collection as a new collection, and add an element into it.
+DELETE – Delete the addressed element of the collection.</p>
+<p>REST is a simple and clear way of implementing the basic methods of data storage; CRUD (Create, Read, Update and Delete), see: <a href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete">http://en.wikipedia.org/wiki/Create,_read,_update_and_delete</a></p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Ripping Movies onto the iPhone</title>
-      <link>http://davidcraddock.net:9796/2010/05/17/ripping-movies-onto-the-iphone/</link>
+      <link>http://davidcraddock.net/2010/05/17/ripping-movies-onto-the-iphone/</link>
       <pubDate>Mon, 17 May 2010 03:15:00 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2010/05/17/ripping-movies-onto-the-iphone/</guid>
-      <description>I&amp;rsquo;m currently watching Persepolis, the 2008 animated film about a tomboy anarchist growing up in Iran. I&amp;rsquo;m watching this on my new iPhone 3GS, and the picture and audio quality is very good.&#xA;Here&amp;rsquo;s what I used to convert my newly bought Persepolis DVD, for watching on the iPhone.&#xA;1x Macbook (but you can use any intel mac) 1x iTunes 1x RipIt - Commercial Mac DVD Ripper (rips up to 10 DVDs on the free trial, $20 after) 1x Handbrake 32 - Freely available transcoder 1x VLC 32 - Freely available media player 1x DVD</description>
+      
+      <guid>http://davidcraddock.net/2010/05/17/ripping-movies-onto-the-iphone/</guid>
+      <description>I&amp;rsquo;m currently watching Persepolis, the 2008 animated film about a tomboy anarchist growing up in Iran. I&amp;rsquo;m watching this on my new iPhone 3GS, and the picture and audio quality is very good.
+Here&amp;rsquo;s what I used to convert my newly bought Persepolis DVD, for watching on the iPhone.
+1x Macbook (but you can use any intel mac) 1x iTunes 1x RipIt - Commercial Mac DVD Ripper (rips up to 10 DVDs on the free trial, $20 after) 1x Handbrake 32 - Freely available transcoder 1x VLC 32 - Freely available media player 1x DVD</description>
+      <content:encoded><![CDATA[<p>I&rsquo;m currently watching Persepolis, the 2008 animated film about a tomboy anarchist growing up in Iran. I&rsquo;m watching this on my new iPhone 3GS, and the picture and audio quality is very good.</p>
+<p>Here&rsquo;s what I used to convert my newly bought Persepolis DVD, for watching on the iPhone.</p>
+<p>1x Macbook (but you can use any intel mac)
+1x iTunes
+1x RipIt - Commercial Mac DVD Ripper (rips up to 10 DVDs on the free trial, $20 after)
+1x Handbrake 32 - Freely available transcoder
+1x VLC 32 - Freely available media player
+1x DVD</p>
+<p>\* Ripit - rips the video and audio from the DVD, onto your computer
+\* Handbrake 32 - &rsquo;transcodes&rsquo; the ripped video and audio, meaning - it converts it into an iPhone compatible video file.
+\* VLC 32 - is used by Handbrake 32 to get past any problems with converting the media.</p>
+<p>Go to the following sites to fetch the software:</p>
+<p>1. Ripit - <a href="http://thelittleappfactory.com/ripit/">http://thelittleappfactory.com/ripit/</a>
+2. Handbrake 32 - <a href="http://handbrake.fr/downloads.php">http://handbrake.fr/downloads.php</a> (get the 32 bit version)
+3. VLC 32 - <a href="http://www.videolan.org/vlc/download-macosx.html">http://www.videolan.org/vlc/download-macosx.html</a> (be sure to get the 32 bit version)</p>
+<p>There&rsquo;s currently a difficulty in getting the VLC 64 bit software for the Mac, and so although the 64 bit version is faster to use, you&rsquo;re probably better off with 32 bit versions of both for now.</p>
+<p>The Process</p>
+<ol>
+<li>Rip the DVD.</li>
+</ol>
+<p>Start RipIt. It will ask for a DVD, insert the DVD.. and point the resultant save location to the desktop. The ripping process takes about 40 minutes on my Macbook, you can check the progress by looking at the icon in the dock - it will be updated with the percentage of progress until completion. You can do other things on your mac while it&rsquo;s ripping, even though the DVD drive will be occupied. Wait until it&rsquo;s completed before continuing.</p>
+<ol start="2">
+<li>Transcode (convert) the ripped video file for use on the iPhone.</li>
+</ol>
+<p>Start Handbrake. There are a bunch of transcoding settings called presets - those tell Handbrake what type of media player you want the converted video to work on. In handbrake on the right section of the window, select the iPhone preset. Then go to the file menu, select &lsquo;Open&rsquo;, and then select the video file that RipIt saved onto your desktop. Then select the destination for the converted video file. Then select the Start (green) button on Handbrake window, and it will start. You can now minimise handbrake and do other things. The transcoding process depends on the film, but takes about an hour on my Macbook. You can check on progress by maximizing the Handbrake window, and checking on the progress bar.</p>
+<ol start="3">
+<li>Move the converted video file onto your iPhone.</li>
+</ol>
+<p>Once that&rsquo;s done, you will have another media file on your desktop - this is the end result, a video file that will play on your iPhone. Simply connect your iPhone to your Mac, start up iTunes, and drag that file from your desktop into the iPhone icon on your iTunes window. It will take a couple of minutes to transfer, then eject the iPhone as normal</p>
+<p>Now you can watch this new movie on your iPhone by going to the &lsquo;Videos&rsquo; tab of your iPod app.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>The Linux Root Directory, Explained</title>
-      <link>http://davidcraddock.net:9796/2010/03/20/the-linux-file-structure/</link>
+      <link>http://davidcraddock.net/2010/03/20/the-linux-file-structure/</link>
       <pubDate>Sat, 20 Mar 2010 15:19:46 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2010/03/20/the-linux-file-structure/</guid>
-      <description>It&amp;rsquo;s helpful to know the basic filesystem on a Linux machine, to better understand where everything is supposed to go, and where you should start looking if you want to find a certain file.&#xA;Everything in Linux is stored in the &amp;ldquo;root directory&amp;rdquo;. On a windows machine, that would be equivalent to C:. C: is the main folder where everything is stored. On Linux we call this the &amp;ldquo;root directory&amp;rdquo;, or simply &amp;ldquo;/&amp;rdquo;.</description>
+      
+      <guid>http://davidcraddock.net/2010/03/20/the-linux-file-structure/</guid>
+      <description>It&amp;rsquo;s helpful to know the basic filesystem on a Linux machine, to better understand where everything is supposed to go, and where you should start looking if you want to find a certain file.
+Everything in Linux is stored in the &amp;ldquo;root directory&amp;rdquo;. On a windows machine, that would be equivalent to C:. C: is the main folder where everything is stored. On Linux we call this the &amp;ldquo;root directory&amp;rdquo;, or simply &amp;ldquo;/&amp;rdquo;.</description>
+      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2010/03/got-root.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/got-root.jpg" type="" alt=""  /></a> It&rsquo;s helpful to know the basic filesystem on a Linux machine, to better understand where everything is supposed to go, and where you should start looking if you want to find a certain file.</p>
+<p>Everything in Linux is stored in the &ldquo;root directory&rdquo;. On a windows machine, that would be equivalent to C:. C: is the main folder where everything is stored. On Linux we call this the &ldquo;root directory&rdquo;, or simply &ldquo;/&rdquo;. To go up to this root directory, type:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>cd /
+</span></span></code></pre></div><p>To list all the folders and files in the root directory, type this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ls /
+</span></span></code></pre></div><p>Alternatively, if you want to see the folders and files exactly the way I see them below for easy comparison, type this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ls -lhaFtr --color /
+</span></span></code></pre></div><p>Once you&rsquo;ve typed in one of the &rsquo;ls&rsquo; commands above, you&rsquo;ll see some information similar to that on the screenshot below.. (please scroll down)..</p>
+<p><strong>Ubuntu Linux</strong> <a href="/wp-content/uploads/2010/03/1348573631.png"><img loading="lazy" src="/wp-content/uploads/2010/03/1348573631.png" type="" alt=""  /></a></p>
+<p>Above you can see the files and folders in the root directory of my ubuntu linux server, after I&rsquo;ve typed &rsquo;ls /&rsquo;. Ignore everything but the coloured names on the right, those coloured names are the names of the files and folders in this directory. Don&rsquo;t worry about the shades of different colours either. It&rsquo;s not really important to explain how they are coloured right now, just to explain the purpose behind each file or folder shown.</p>
+<p>So let me explain the purpose behind each of these, in turn. I&rsquo;ll include the same screenshot multiple times, so you can reference the explanations against it as you scroll down.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>selinux/
+</span></span></code></pre></div><p>- Directory for linux security features, rarely visited by normal users like you or me.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>mnt/
+</span></span></code></pre></div><p>- Traditional directory for the files from removable media, ie USB keys, external hard drives. Not used anymore, it only exists for historical purposes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>lost+found/
+</span></span></code></pre></div><p>- Directory where files and directories end up when they&rsquo;ve been recovered from a hard disc repair.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span> cdrom -&gt; media/cdrom/
+</span></span></code></pre></div><p>- Link the files currently in your CDROM or DVDROM drive.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>media/
+</span></span></code></pre></div><p>- New style directory for the files from removable media such as USB keys, external hard drives, etc. This is the new convention, and so you should always use media/ instead of mnt/, above.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>vmlinuz.old -&gt; boot/vmlinuz-2.6.31-17-generic
+</span></span></code></pre></div><p>- A backup of your most recent old Linux operating system kernel, ie: your operating system. Don&rsquo;t delete this =)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>initrd.img.old -&gt; boot/initrd.img-2.6.31-17-generic
+</span></span></code></pre></div><p>- Another part of the backup for your most recent old Linux kernel.</p>
+<p><a href="/wp-content/uploads/2010/03/1348573631.png"><img loading="lazy" src="/wp-content/uploads/2010/03/1348573631.png" type="" alt=""  /></a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>opt/
+</span></span></code></pre></div><p>- An empty directory reserved for you to put third-party programs and software in.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>lib/
+</span></span></code></pre></div><p>- Operating system drivers and kernel modules live here. Also contains all system libraries, so when you compile a new program from the source code, it will use the existing code libraries stored here.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>bin/
+</span></span></code></pre></div><p>- Basic commands that everyone uses, like &ldquo;ls&rdquo; and &ldquo;cd&rdquo;, live here.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>usr/
+</span></span></code></pre></div><p>- This is where all user-supplied software should go; ie: software that you install that doesn&rsquo;t normally come with the operating system. Put all programs here.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sbin/
+</span></span></code></pre></div><p>- Basic but essential system administration commands that the admin user only uses, ie: reboot, poweroff, etc.</p>
+<p><a href="/wp-content/uploads/2010/03/1348573631.png"><img loading="lazy" src="/wp-content/uploads/2010/03/1348573631.png" type="" alt=""  /></a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>vmlinuz -&gt; boot/vmlinuz-2.6.31-20-generic
+</span></span></code></pre></div><p>- Your actual operating system kernel, ie: the one that is running right now. Don&rsquo;t delete this.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>initrd.img -&gt; boot/initrd.img-2.6.31-20-generic
+</span></span></code></pre></div><p>- Another part of the kernel that is running right now.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>boot/
+</span></span></code></pre></div><p>- Reserved for Linux kernel files, and other things that need to be loaded on bootup. Don&rsquo;t touch these.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>proc/
+</span></span></code></pre></div><p>- Proc is a handy way of accessing critical operating system information, through a bunch of files. Ie: try typing &lsquo;cat /proc/cpuinfo&rsquo;. That queries the current kernel for the information on your processors (CPUs), and returns the info for you in a text file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sys/
+</span></span></code></pre></div><p>- Like proc/, this is another bunch of files that aren&rsquo;t files at all, but &lsquo;fake&rsquo; files. When you access them, the operating system goes away and finds out information, and offers that information up as a text file to you.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>dev/
+</span></span></code></pre></div><p>- Device files. In here live the device files for your hard drives, your CD/DVD drives, your soundcard, your network card.. in fact anything you have installed that Linux uses, it has a counterpart in here that is automatically added and removed by the OS. Don&rsquo;t ever delete, move or rename any of the files here.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>home/
+</span></span></code></pre></div><p>- The directory that you&rsquo;ll use the most. Every user on your Linux machine, except the system administrator, has a folder here. This is where each user is meant to store all their documents. Think of it as the Linux &lsquo;My Documents&rsquo; folder.</p>
+<p><a href="/wp-content/uploads/2010/03/1348573631.png"><img loading="lazy" src="/wp-content/uploads/2010/03/1348573631.png" type="" alt=""  /></a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#66d9ef">var</span><span style="color:#f92672">/</span>
+</span></span></code></pre></div><p>- This is a catch-all directory for &lsquo;variables&rsquo;, ie things that the OS has to write to, and vary, as part of its operation. Examples include: email inboxes for all users, cache files, the lock files that are generated and removed as part of normal program execution, and also the /var/www directory. /var/www is a directory you will probably see and use a lot, as it is where all the websites are stored that your linux machine serves when operating as a web server. /var/log is also a very important directory, and contains &rsquo;log&rsquo; files which is a kind of &ldquo;diary&rdquo; that the linux OS uses to explain exactly what it&rsquo;s done, as it happens, so you can easily find out what&rsquo;s been going on by viewing the right log file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>tmp/
+</span></span></code></pre></div><p>- The space for any and all temporary files. Store files here that you want to throw away quite quickly. Depending on your configuration, all files and folders in the /tmp directory may be deleted on system reboot, or more frequently, perhaps every day.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>root/
+</span></span></code></pre></div><p>- This is the system administrators &lsquo;my documents&rsquo; folder. Anything that the sysadmin stores, for example: programs that he downloads, are put here. Not accessible to anyone else but the system administrator.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>etc/
+</span></span></code></pre></div><p>- Configuration files. Any and all program configuration files or information belong here. Think of it like the windows registry, except every registry entry is a text file that you can open up and edit, and also copy, move around, and save. You will typically have to create configuration files yourself sometimes, and put them in this directory. They are almost always simple text files.</p>
+<p><a href="/wp-content/uploads/2010/03/1348573631.png"><img loading="lazy" src="/wp-content/uploads/2010/03/1348573631.png" type="" alt=""  /></a></p>
+<p>And that&rsquo;s a basic overview of the files and folders in the root directory of your linux machine.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Regex in VIM.. simple</title>
-      <link>http://davidcraddock.net:9796/2009/10/07/regex-in-vim-simple/</link>
+      <link>http://davidcraddock.net/2009/10/07/regex-in-vim-simple/</link>
       <pubDate>Wed, 07 Oct 2009 06:40:02 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2009/10/07/regex-in-vim-simple/</guid>
-      <description>There are more than a gazillion ways to use regexs. I am sure they are each very useful for their own subset of problems. The sheer variety can be highly confusing and scary for a lot of people though, and you only need to use a few approaches to accomplish most text-editing tasks.&#xA;Here is a simple method for using regex in the powerful text editor VIM that will work well for common use.</description>
+      
+      <guid>http://davidcraddock.net/2009/10/07/regex-in-vim-simple/</guid>
+      <description>There are more than a gazillion ways to use regexs. I am sure they are each very useful for their own subset of problems. The sheer variety can be highly confusing and scary for a lot of people though, and you only need to use a few approaches to accomplish most text-editing tasks.
+Here is a simple method for using regex in the powerful text editor VIM that will work well for common use.</description>
+      <content:encoded><![CDATA[<p>There are <a href="http://www.geocities.com/volontir/">more than a gazillion ways</a> to use regexs. I am sure they are each very useful for their own subset of problems. The sheer variety can be highly confusing and scary for <a href="http://www.google.co.uk/search?q=regex+difficult">a lot of people</a> though, and you only need to use a few approaches to accomplish most text-editing tasks.</p>
+<p>Here is a simple method for using regex in the powerful text editor <a href="http://www.vim.org">VIM</a> that will work well for common use.</p>
+<h2 id="method">Method</h2>
+<p>We are going to take the &ldquo;search and delete a word&rdquo; problem for an example. We want to delete all instances of the singular noun &ldquo;needle&rdquo; in a text file. Let&rsquo;s assume there are no instances of the pluralisation &ldquo;needles&rdquo; in our document.</p>
+<ol>
+<li>
+<p><strong><em>Debug on</em></strong>.. turn some VIM options on
+<code>:set hlsearch :set wrapscan </code> - this will make all regex expressions possible to debug by visually showing what they match in your document (first line) and make all searches wrap around instead of just search forward from your current position, which is the default. (second line)</p>
+</li>
+<li>
+<p><strong><em>Develop and Test</em></strong>.. your regex attempts by using a simple search. Here we see three attempts at solving the problem: <code>:/needl :/needle :/&lt;needle&gt;</code> - our third try is correct, and highlights all words that spell &ldquo;needle&rdquo;. The <strong>&lt;</strong> and <strong>&gt;</strong> markers allow you to specify the beginning and the end of a word. Play with different regexs using the simple search and watching what is highlighted, until you discover one that works for you.</p>
+</li>
+<li>
+<p><strong><em>Run</em></strong>&hellip; your regex <code>:%s/&lt;needle&gt;//g</code> - once you&rsquo;ve figured out a regex, run the regex on your document. This example will execute a search for the word &ldquo;needle&rdquo; and delete every one. If you wanted to substitute needle for another word, you would put the word in between the <strong>/</strong> <strong>/</strong> marks. As we can see, there is nothing between the marks in this example, so it will replace instances of &ldquo;needle&rdquo; with nothing. This means it will serve to delete every instance of the word &ldquo;needle&rdquo;.</p>
+</li>
+<li>
+<p><strong><em>Check things are OK</em></strong>&hellip; with your document <code>:/&lt;needle&gt; :/needle :/needl</code> - has the regex done what you want? Use the search function to see if regex has done what you wanted it to do. The above examples show different searches through the document to see if different variations remain. Any matches of these searches will highlight any problems. You can use the lower-case <strong>N</strong>(next search result) and lower-case <strong>P</strong>(previous search result) commands to navigate through any found search results. You must remember to manually look through the document and see what the regex has changed, make sure there aren&rsquo;t any unwanted surprises!</p>
+</li>
+<li>
+<p><strong><em>Recover</em></strong>&hellip; from any mistakes <code>u</code> - just press the <strong>U</strong> key (with no capslock or shift). This will undo the very last last change made to the document.</p>
+</li>
+<li>
+<p><strong><em>Redo</em></strong>&hellip; any work that you need to <code>&lt;ctrl&gt;-r</code> - use the redo fuction; press the <strong>CONTROL</strong> and <strong>R</strong> keys together (with no capslock or shift). This will redo the last change made to the document.</p>
+</li>
+<li>
+<p><strong><em>Finish up and Write</em></strong>&hellip; to file <code>:w</code> - write your work on the document to file. Even after you have written out to file, you can probably still use the undo function to get back to where you were, but it&rsquo;s best practice to not rely on this, and only write once you&rsquo;re done.</p>
+</li>
+<li>
+<p><strong><em>Debug off</em></strong>.. turn some options off
+<code>:set nohlsearch :set nowrapscan </code> - turn off the regular expression highlighting (line 1). turn off the wraparound searching (line 2). You can leave either or both options on if you want, they&rsquo;re often useful. Up to you.</p>
+</li>
+</ol>
+<p>Use a combination of these wonderful commands to test and improve your regex development skills in VIM.</p>
+<h2 id="examples">Examples</h2>
+<p>Here I use the shorthand &quot; <strong>#&hellip;</strong>&quot; to denote comments on what I&rsquo;m doing&hellip; if you want to copy and paste the example as written, then you will have to remove those comments.</p>
+<p>1. Remove ancient uppercase <!-- raw HTML omitted --> tags from a document.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:set wrapscan # debug on
+</span></span><span style="display:flex;"><span>:set hlsearch # debug on
+</span></span><span style="display:flex;"><span>:/&lt;BLINK&gt; # try 1.. bingo! first time.. selected all tags I want
+</span></span><span style="display:flex;"><span>:%s/&lt;BLINK&gt;//g # lets execute my regex remove
+</span></span><span style="display:flex;"><span>:/BLINK # check 1.. testing things are OK in my file by searching through..
+</span></span><span style="display:flex;"><span>:/blinked # check 2.. yep thats ok..
+</span></span><span style="display:flex;"><span>:/&lt;BLINK&gt; # check 3.. yep looks ok... the problem tags are gone
+</span></span><span style="display:flex;"><span># ...manual scroll through the document.. looks good!
+</span></span><span style="display:flex;"><span>:w # write out to file
+</span></span><span style="display:flex;"><span>:set nohlsearch # debug off
+</span></span><span style="display:flex;"><span>:set nowrapscan # debug off
+</span></span></code></pre></div><p>2. Oh no! We missed some lower and mixedcase <!-- raw HTML omitted --> tags that some sneaky person slipped in. Let&rsquo;s take them out.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:set wrapscan # debug on
+</span></span><span style="display:flex;"><span>:set hlsearch # debug on
+</span></span><span style="display:flex;"><span>:/&lt;blink&gt; # try 1.. hm.. worked for many, but didnt match BlInK or blINK mixedcase
+</span></span><span style="display:flex;"><span>:/&lt;blink&gt;/i # try 2.. much better.. seems to have worked!
+</span></span><span style="display:flex;"><span>:%s/&lt;blink&gt;//i # lets execute my regex remove
+</span></span><span style="display:flex;"><span>:/BLINK # check 1.. testing things are OK in my file by searching through..
+</span></span><span style="display:flex;"><span>:/blinked # check 2.. yep thats ok..
+</span></span><span style="display:flex;"><span>:/&lt;blink&gt; # check 3.. yep thats fine.
+</span></span><span style="display:flex;"><span>:/&lt;blink&gt;/i # check 4.. looks good... problem solved
+</span></span><span style="display:flex;"><span># ...manual scroll through the document.. looks much better!
+</span></span><span style="display:flex;"><span>:w # write out to file
+</span></span><span style="display:flex;"><span>:set nohlsearch # debug off
+</span></span><span style="display:flex;"><span>:set nowrapscan # debug off
+</span></span></code></pre></div><p>3. Replacing uppercase or mixedcase <!-- raw HTML omitted --> tags with the more modern <!-- raw HTML omitted -->.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:set wrapscan # debug on
+</span></span><span style="display:flex;"><span>:set hlsearch # debug on
+</span></span><span style="display:flex;"><span>:/&lt;BR&gt; # try 1.. hmm.. just uppercase.. not gonna work..
+</span></span><span style="display:flex;"><span>:/&lt;br&gt; # try 2.. hmm.. just lowercase..
+</span></span><span style="display:flex;"><span>:/&lt;BR&gt;/i # try 3.. ahh.. that&#39;ll be it then
+</span></span><span style="display:flex;"><span>:%s/&lt;BR&gt;/&lt;br&gt;/gi # lets execute my regex substitution
+</span></span><span style="display:flex;"><span>:/BR # check 1.. testing things are OK in my file by searching through..
+</span></span><span style="display:flex;"><span>:/br # check 2.. yep thats ok..
+</span></span><span style="display:flex;"><span>/bR # check 3 ..yup..
+</span></span><span style="display:flex;"><span>:/&lt;BR&gt;/i # check 4.. yep looks ok... the problem tags seem to be gone
+</span></span><span style="display:flex;"><span># ...manual scroll through the document.. looks good!
+</span></span><span style="display:flex;"><span>:w # write out to file
+</span></span><span style="display:flex;"><span>:set nohlsearch # debug off
+</span></span><span style="display:flex;"><span>:set nowrapscan # debug off
+</span></span></code></pre></div><h2 id="for-more">For More..</h2>
+<p>Regexs are the gift that just keeps on giving. Here are some good resources on regexs in general, and regexs in VIM.</p>
+<ul>
+<li><a href="http://www.gskinner.com/RegExr/">A great modern way to learn regexs.. try them online! interactive flash awesomeness.</a></li>
+<li><a href="http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html">A neat graphical VI/VIM cheat-sheet</a>.</li>
+<li><a href="http://www.geocities.com/volontir/">An advanced VIM/regex tutorial.</a>.</li>
+<li><a href="http://briancarper.net/blog/vim-regexes-are-awesome">More VIM/regex ninja skills.</a></li>
+<li><a href="http://stackoverflow.com/questions/825764/vim-regex-search-csv-string-and-paste-matches">Stackoverflow is a good place to find practical ways to solve regex problems with VIM.</a></li>
+<li><a href="http://www.regular-expressions.info/">Probably the most definitive regex site on the &rsquo;net</a></li>
+</ul>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Scraping Wikipedia Information for music artists, Part 2</title>
-      <link>http://davidcraddock.net:9796/2008/09/22/scraping-wikipedia-information-for-music-artists-part-2/</link>
+      <link>http://davidcraddock.net/2008/09/22/scraping-wikipedia-information-for-music-artists-part-2/</link>
       <pubDate>Mon, 22 Sep 2008 23:04:45 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2008/09/22/scraping-wikipedia-information-for-music-artists-part-2/</guid>
+      
+      <guid>http://davidcraddock.net/2008/09/22/scraping-wikipedia-information-for-music-artists-part-2/</guid>
       <description>I&amp;rsquo;ve abandoned the previous Wikipedia scraping approach for Brightonsound.com, as it was unreliable and didn&amp;rsquo;t pinpoint the right Wikipedia entry - ie: a band called &amp;lsquo;Horses&amp;rsquo; would pull up a Wikipedia bio on the animal - which doesn&amp;rsquo;t look very professional. So instead, I have used the Musicbrainz API to retrieve some information on the artist; the homepage URL, the correct Wikipedia entry, and any genres/terms the artist has been tagged with.</description>
+      <content:encoded><![CDATA[<p>I&rsquo;ve abandoned the previous Wikipedia scraping approach for Brightonsound.com, as it was unreliable and didn&rsquo;t pinpoint the right Wikipedia entry - ie: a band called &lsquo;Horses&rsquo; would pull up a Wikipedia bio on the animal - which doesn&rsquo;t look very professional. So instead, I have used the Musicbrainz API to retrieve some information on the artist; the homepage URL, the correct Wikipedia entry, and any genres/terms the artist has been tagged with.</p>
+<p>It would be simple to extend this to fetch the actual bio from a site like DBpedia.org (which provides XML-tagged Wikipedia data), now that you always have the correct Wikipedia page reference to fetch the data from.</p>
+<p>(You will need to download the Musicbrainz python library to use this code):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zed" data-lang="zed"><span style="display:flex;"><span>import time
+</span></span><span style="display:flex;"><span>import sys
+</span></span><span style="display:flex;"><span>import logging
+</span></span><span style="display:flex;"><span>from musicbrainz2.webservice import Query, ArtistFilter, WebServiceError
+</span></span><span style="display:flex;"><span>import musicbrainz2.webservice as ws
+</span></span><span style="display:flex;"><span>import musicbrainz2.model as m
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>class scrapewiki2(object)<span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  def __init__(self)<span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    pass
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  def getbio(self,artist)<span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    time.sleep(<span style="color:#960050;background-color:#1e0010">2</span>)
+</span></span><span style="display:flex;"><span>    art <span style="color:#f92672">=</span> artist
+</span></span><span style="display:flex;"><span>    logging.basicConfig()
+</span></span><span style="display:flex;"><span>    logger <span style="color:#f92672">=</span> logging.getLogger()
+</span></span><span style="display:flex;"><span>    logger.setLevel(logging.DEBUG)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    q <span style="color:#f92672">=</span> Query()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    try<span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#960050;background-color:#1e0010">#</span> Search for all artists matching the given name. Limit the results
+</span></span><span style="display:flex;"><span>      <span style="color:#960050;background-color:#1e0010">#</span> to the <span style="color:#960050;background-color:#1e0010">5</span> best matches. The offset parameter could be used to page
+</span></span><span style="display:flex;"><span>      <span style="color:#960050;background-color:#1e0010">#</span> through the results.
+</span></span><span style="display:flex;"><span>      <span style="color:#960050;background-color:#1e0010">#</span>
+</span></span><span style="display:flex;"><span>      f <span style="color:#f92672">=</span> ArtistFilter(name<span style="color:#f92672">=</span>art, limit<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">1</span>)
+</span></span><span style="display:flex;"><span>      artistResults <span style="color:#f92672">=</span> q.getArtists(f)
+</span></span><span style="display:flex;"><span>    except WebServiceError, e<span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      print <span style="color:#960050;background-color:#1e0010">&#39;</span>Error<span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">&#39;</span>, e
+</span></span><span style="display:flex;"><span>      sys.exit(<span style="color:#960050;background-color:#1e0010">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span> No error occurred, so display the results of the search. It consists of
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span> ArtistResult objects, where each contains an artist.
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    if not artistResults<span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      print <span style="color:#960050;background-color:#1e0010">&#34;</span>WIKI SCRAPE <span style="color:#f92672">-</span> Couldn<span style="color:#960050;background-color:#1e0010">&#39;</span>t find a single match<span style="color:#f92672">!</span><span style="color:#960050;background-color:#1e0010">&#34;</span>
+</span></span><span style="display:flex;"><span>      return <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    for result in artistResults<span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      artist <span style="color:#f92672">=</span> result.artist
+</span></span><span style="display:flex;"><span>      print <span style="color:#960050;background-color:#1e0010">&#34;</span>Score     <span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">&#34;</span>, result.score
+</span></span><span style="display:flex;"><span>      print <span style="color:#960050;background-color:#1e0010">&#34;</span>Id        <span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">&#34;</span>, artist.id
+</span></span><span style="display:flex;"><span>      try<span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>        print <span style="color:#960050;background-color:#1e0010">&#34;</span>Name      <span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">&#34;</span>, artist.name.encode(<span style="color:#960050;background-color:#1e0010">&#39;</span>ascii<span style="color:#960050;background-color:#1e0010">&#39;</span>)
+</span></span><span style="display:flex;"><span>      except Exception, e<span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      print <span style="color:#960050;background-color:#1e0010">&#39;</span>Error<span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">&#39;</span>, e
+</span></span><span style="display:flex;"><span>      sys.exit(<span style="color:#960050;background-color:#1e0010">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    print <span style="color:#960050;background-color:#1e0010">&#34;</span>Id         <span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">&#34;</span>, artist.id
+</span></span><span style="display:flex;"><span>    print <span style="color:#960050;background-color:#1e0010">&#34;</span>Name       <span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">&#34;</span>, artist.name
+</span></span><span style="display:flex;"><span>    print
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span> Get the artist<span style="color:#960050;background-color:#1e0010">&#39;</span>s relations to URLs (m.Relation.TO_URL) having the <span style="color:#f92672">relation</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span> type <span style="color:#960050;background-color:#1e0010">&#39;</span>http<span style="color:#f92672">:</span><span style="color:#75715e">//musicbrainz.org/ns/rel-1.0#Wikipedia&#39;. Note that there could
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#960050;background-color:#1e0010">#</span> be more than one <span style="color:#f92672">relation</span> per type. We just print the first one.
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span>
+</span></span><span style="display:flex;"><span>    wiki <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>    urls <span style="color:#f92672">=</span> artist.getRelationTargets(m.Relation.TO_URL, m.NS_REL_1<span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">&#39;</span>Wikipedia<span style="color:#960050;background-color:#1e0010">&#39;</span>)
+</span></span><span style="display:flex;"><span>    if len(urls) <span style="color:#f92672">&gt;</span> <span style="color:#960050;background-color:#1e0010">0</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      print <span style="color:#960050;background-color:#1e0010">&#39;</span>Wikipedia<span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">&#39;</span>, urls[<span style="color:#960050;background-color:#1e0010">0</span>]
+</span></span><span style="display:flex;"><span>      wiki <span style="color:#f92672">=</span> urls[<span style="color:#960050;background-color:#1e0010">0</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span> List discography pages for an artist.
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span>
+</span></span><span style="display:flex;"><span>    disco <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>    for rel in artist.getRelations(m.Relation.TO_URL, m.NS_REL_1<span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">&#39;</span>Discography<span style="color:#960050;background-color:#1e0010">&#39;</span>)<span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      disco <span style="color:#f92672">=</span> rel.targetId
+</span></span><span style="display:flex;"><span>      print disco
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    try<span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#960050;background-color:#1e0010">#</span> The result should include all official albums.
+</span></span><span style="display:flex;"><span>      <span style="color:#960050;background-color:#1e0010">#</span>
+</span></span><span style="display:flex;"><span>      inc <span style="color:#f92672">=</span> ws.ArtistIncludes(
+</span></span><span style="display:flex;"><span>        releases<span style="color:#f92672">=</span>(m.Release.TYPE_OFFICIAL, m.Release.TYPE_ALBUM),
+</span></span><span style="display:flex;"><span>        tags<span style="color:#f92672">=</span>True)
+</span></span><span style="display:flex;"><span>      artist <span style="color:#f92672">=</span> q.getArtistById(artist.id, inc)
+</span></span><span style="display:flex;"><span>    except ws.WebServiceError, e<span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      print <span style="color:#960050;background-color:#1e0010">&#39;</span>Error<span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">&#39;</span>, e
+</span></span><span style="display:flex;"><span>      sys.exit(<span style="color:#960050;background-color:#1e0010">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    tags <span style="color:#f92672">=</span> artist.tags
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    toret <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>    if(wiki)<span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      toret <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span><span style="color:#f92672">+</span>art<span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">&#39;</span> Wikipedia Articlen<span style="color:#960050;background-color:#1e0010">&#39;</span>
+</span></span><span style="display:flex;"><span>    if(disco)<span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      toret <span style="color:#f92672">=</span> toret <span style="color:#f92672">+</span> <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span><span style="color:#f92672">+</span>art<span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">&#39;</span> Main Siten<span style="color:#960050;background-color:#1e0010">&#39;</span>
+</span></span><span style="display:flex;"><span>    if(tags)<span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      toret <span style="color:#f92672">=</span> toret <span style="color:#f92672">+</span> <span style="color:#960050;background-color:#1e0010">&#39;</span>
+</span></span><span style="display:flex;"><span>Tags<span style="color:#f92672">:</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">+</span>(<span style="color:#960050;background-color:#1e0010">&#39;</span>,<span style="color:#960050;background-color:#1e0010">&#39;</span>.join(t.value for t in tags))<span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">&#39;</span>n<span style="color:#960050;background-color:#1e0010">&#39;</span>
+</span></span><span style="display:flex;"><span>    return toret
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sw2 <span style="color:#f92672">=</span> scrapewiki2()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span> unit test
+</span></span><span style="display:flex;"><span>print sw2.getbio(<span style="color:#960050;background-color:#1e0010">&#39;</span>Blur<span style="color:#960050;background-color:#1e0010">&#39;</span>)
+</span></span><span style="display:flex;"><span>print sw2.getbio(<span style="color:#960050;background-color:#1e0010">&#39;</span>fatboy slim<span style="color:#960050;background-color:#1e0010">&#39;</span>)
+</span></span></code></pre></div><p>PS:
+Apologies to the person that left several comments on the previous wikipedia scraping post, I have disabled comments temporarily for now due to heavy amounts of spam, but you can contact me using the following address: david@paul@craddock@googlemail.com (subsitute first two @s for &lsquo;.&rsquo;s ). I also hope this post answers your question.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Scraping artists bios off of Wikipedia</title>
-      <link>http://davidcraddock.net:9796/2008/06/18/scraping-artists-bios-off-of-wikipedia/</link>
+      <link>http://davidcraddock.net/2008/06/18/scraping-artists-bios-off-of-wikipedia/</link>
       <pubDate>Wed, 18 Jun 2008 17:43:19 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2008/06/18/scraping-artists-bios-off-of-wikipedia/</guid>
-      <description>I&amp;rsquo;ve been hacking away at BrightonSound.com and I&amp;rsquo;ve been looking for a way of automatically sourcing biographical information from artists, so that visitors are presented with more information on the event.&#xA;The Songbird media player plugin &amp;lsquo;mashTape&amp;rsquo; draws upon a number of web services to grab artist bio, event listings, youtube vidoes and flickr pictures of the currently playing artist. I was reading through the mashTape code, and then found this posting by its developer, which helpfully provided the exact method I needed.</description>
+      
+      <guid>http://davidcraddock.net/2008/06/18/scraping-artists-bios-off-of-wikipedia/</guid>
+      <description>I&amp;rsquo;ve been hacking away at BrightonSound.com and I&amp;rsquo;ve been looking for a way of automatically sourcing biographical information from artists, so that visitors are presented with more information on the event.
+The Songbird media player plugin &amp;lsquo;mashTape&amp;rsquo; draws upon a number of web services to grab artist bio, event listings, youtube vidoes and flickr pictures of the currently playing artist. I was reading through the mashTape code, and then found this posting by its developer, which helpfully provided the exact method I needed.</description>
+      <content:encoded><![CDATA[<p>I&rsquo;ve been hacking away at <a href="http://www.brightonsound.com">BrightonSound.com</a> and I&rsquo;ve been looking for a way of automatically sourcing biographical information from artists, so that visitors are presented with more information on the event.</p>
+<p>The Songbird media player plugin &lsquo;mashTape&rsquo; draws upon a number of web services to grab artist bio, event listings, youtube vidoes and flickr pictures of the currently playing artist. I was reading through the mashTape code, and then found <a href="http://whacked.net/2008/03/30/mashtape-and-apis/">this posting</a> by its developer, which helpfully provided the exact method I needed.</p>
+<p>I then hacked up two versions of the code, a PHP version using simpleXML:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Result-&gt;Url);
+</span></span><span style="display:flex;"><span>    if($ar[2] == &#39;en.wikipedia.org&#39;){
+</span></span><span style="display:flex;"><span>      $wikikey = $ar[4]; // more than likely to be the wikipedia page
+</span></span><span style="display:flex;"><span>    }else{
+</span></span><span style="display:flex;"><span>      return &#34;&#34;; // nothing on wikipediea
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    $url = &#34;http://dbpedia.org/data/$wikikey&#34;;
+</span></span><span style="display:flex;"><span>    $x = file_get_contents($url);
+</span></span><span style="display:flex;"><span>    $s = new SimpleXMLElement($x);
+</span></span><span style="display:flex;"><span>    $b = $s-&gt;xpath(&#34;//p:abstract[@xml:lang=&#39;en&#39;]&#34;);
+</span></span><span style="display:flex;"><span>     return $b[0];
+</span></span><span style="display:flex;"><span> }
+</span></span><span style="display:flex;"><span>?&gt;
+</span></span></code></pre></div><p>and a pythonic version using the amara XML library (has to be installed seperately):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>import amara
+</span></span><span style="display:flex;"><span>import urllib2
+</span></span><span style="display:flex;"><span>from urllib import urlencode
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getwikikey</span>(band):
+</span></span><span style="display:flex;"><span>  url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;http://api.search.yahoo.com/WebSearchService/V1/webSearch?appid=YahooDemo&amp;query=%22&#34;</span><span style="color:#f92672">+</span>band<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;%22&amp;site=wikipedia.org&#34;</span>;
+</span></span><span style="display:flex;"><span>  print url
+</span></span><span style="display:flex;"><span>  c<span style="color:#f92672">=</span>urllib2<span style="color:#f92672">.</span>urlopen(url)
+</span></span><span style="display:flex;"><span>  f<span style="color:#f92672">=</span>c<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span>  doc <span style="color:#f92672">=</span> amara<span style="color:#f92672">.</span>parse(f)
+</span></span><span style="display:flex;"><span>  url <span style="color:#f92672">=</span> str(doc<span style="color:#f92672">.</span>ResultSet<span style="color:#f92672">.</span>Result[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>Url)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> url<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;/&#39;</span>)[<span style="color:#ae81ff">4</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">uurlencode</span>(text):
+</span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;&#34;&#34;single URL-encode a given &#39;text&#39;.  Do not return the &#39;variablename=&#39; portion.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>   blah <span style="color:#f92672">=</span> urlencode({<span style="color:#e6db74">&#39;u&#39;</span>:text})
+</span></span><span style="display:flex;"><span>   blah <span style="color:#f92672">=</span> blah[<span style="color:#ae81ff">2</span>:]
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">return</span> blah
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getwikibio</span>(key):
+</span></span><span style="display:flex;"><span>  url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;http://dbpedia.org/data/&#34;</span><span style="color:#f92672">+</span>str(key);
+</span></span><span style="display:flex;"><span>  print url
+</span></span><span style="display:flex;"><span>  try:
+</span></span><span style="display:flex;"><span>    c<span style="color:#f92672">=</span>urllib2<span style="color:#f92672">.</span>urlopen(url)
+</span></span><span style="display:flex;"><span>    f<span style="color:#f92672">=</span>c<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span>  except Exception, e:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>  doc <span style="color:#f92672">=</span> amara<span style="color:#f92672">.</span>parse(f)
+</span></span><span style="display:flex;"><span>  b <span style="color:#f92672">=</span> doc<span style="color:#f92672">.</span>xml_xpath(<span style="color:#e6db74">&#34;//p:abstract[@xml:lang=&#39;en&#39;]&#34;</span>)
+</span></span><span style="display:flex;"><span>  try:
+</span></span><span style="display:flex;"><span>    r <span style="color:#f92672">=</span> str(b[<span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>  except Exception, e:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> r
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">scrapewiki</span>(band):
+</span></span><span style="display:flex;"><span>  try:
+</span></span><span style="display:flex;"><span>    key <span style="color:#f92672">=</span> getwikikey(uurlencode(band))
+</span></span><span style="display:flex;"><span>  except Exception, e:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> getwikibio(key)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#unit test</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#print scrapewiki(&#39;guns n bombs&#39;)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#print scrapewiki(&#39;diana ross&#39;)</span>
+</span></span></code></pre></div><p>There we go, artist bio scraping from wikipedia.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>A poor man&#39;s VMWare Workstation: VMWare Server under Ubuntu 7.10 &#43; VMWare Player under Windows XP</title>
-      <link>http://davidcraddock.net:9796/2008/02/28/a-poor-mans-vmware-workstation-vmware-server-under-ubuntu-710-vmware-player-under-windows-xp/</link>
+      <link>http://davidcraddock.net/2008/02/28/a-poor-mans-vmware-workstation-vmware-server-under-ubuntu-710-vmware-player-under-windows-xp/</link>
       <pubDate>Thu, 28 Feb 2008 23:56:17 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2008/02/28/a-poor-mans-vmware-workstation-vmware-server-under-ubuntu-710-vmware-player-under-windows-xp/</guid>
-      <description>I finally setup my Dell Lattitude D630 laptop the way I wanted it last night, and thought I&amp;rsquo;d do a quick writeup about it. Here is the parttition table:&#xA;A 40GB Windows XP partition, with VMWare Player installed, which I will be using for Windows applications that don&amp;rsquo;t play well in virtualised mode (eg media applications). I will also be using it as the main platform for running VMs. A basic 5GB root + 1.</description>
+      
+      <guid>http://davidcraddock.net/2008/02/28/a-poor-mans-vmware-workstation-vmware-server-under-ubuntu-710-vmware-player-under-windows-xp/</guid>
+      <description>I finally setup my Dell Lattitude D630 laptop the way I wanted it last night, and thought I&amp;rsquo;d do a quick writeup about it. Here is the parttition table:
+A 40GB Windows XP partition, with VMWare Player installed, which I will be using for Windows applications that don&amp;rsquo;t play well in virtualised mode (eg media applications). I will also be using it as the main platform for running VMs. A basic 5GB root + 1.</description>
+      <content:encoded><![CDATA[<p>I finally setup my Dell Lattitude D630 laptop the way I wanted it last night, and thought I&rsquo;d do a quick writeup about it. Here is the parttition table:</p>
+<ol>
+<li>A 40GB Windows XP partition, with VMWare Player installed, which I will be using for Windows applications that don&rsquo;t play well in virtualised mode (eg media applications). I will also be using it as the main platform for running VMs.</li>
+<li>A basic 5GB root + 1.4GB swap 7.10 Ubuntu server partition, with VMWare Server installed (for creating, advanced editing and performing network testing on VMs). I used these <a href="http://x86virtualization.com/virtualizationnews/howto-install-vmware-server-on-ubuntu-710-part-1.html">VMWare server on Ubuntu 7.10</a> <a href="http://x86virtualization.com/virtualizationnews/howto-install-vmware-server-on-ubuntu-710-part-2.html">tutorials</a>.</li>
+<li>A 36GB NTFS partition for storing VMs</li>
+<li>A 26GB NTFS media partition for media I want to share between VMs and the two operating systems on the disc.</li>
+</ol>
+<p>We use VMWare servers at work to host our infrastructure, so this setup will be very useful for me. I can now:</p>
+<ol>
+<li>Take images off the servers at work and bring them up, edit them and test their network interactions under my local VMWare Server running on my Linux install.</li>
+<li>From within my windows install, I can bring up a Linux VM and use Windows and Linux side by side.</li>
+</ol>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>My Nabaztag</title>
-      <link>http://davidcraddock.net:9796/2007/05/08/my-nabaztag/</link>
+      <link>http://davidcraddock.net/2007/05/08/my-nabaztag/</link>
       <pubDate>Tue, 08 May 2007 04:01:16 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2007/05/08/my-nabaztag/</guid>
-      <description>Nabaztag (Armenian for &amp;ldquo;rabbit&amp;rdquo;) is a Wi-Fi enabled rabbit, manufactured by Violet. The Nabaztag is a &amp;ldquo;smart object&amp;rdquo;; it can connect to the Internet (for example to download weather forecasts, read its owner&amp;rsquo;s email, etc). It is also fully customizable and programmable. - Wikipedia.org&#xA;Here is our Nabaztag - Francois Xavier:&#xA;Of course, I&amp;rsquo;ve been messing around with poor old Francois&amp;rsquo;s programming..&#xA;With the help of OpenNab, a proxy server that masquerades as an official Nabaztag server, you can make your Nabaztag do all kinds of tricks.</description>
+      
+      <guid>http://davidcraddock.net/2007/05/08/my-nabaztag/</guid>
+      <description>Nabaztag (Armenian for &amp;ldquo;rabbit&amp;rdquo;) is a Wi-Fi enabled rabbit, manufactured by Violet. The Nabaztag is a &amp;ldquo;smart object&amp;rdquo;; it can connect to the Internet (for example to download weather forecasts, read its owner&amp;rsquo;s email, etc). It is also fully customizable and programmable. - Wikipedia.org
+Here is our Nabaztag - Francois Xavier:
+Of course, I&amp;rsquo;ve been messing around with poor old Francois&amp;rsquo;s programming..
+With the help of OpenNab, a proxy server that masquerades as an official Nabaztag server, you can make your Nabaztag do all kinds of tricks.</description>
+      <content:encoded><![CDATA[<p><em>Nabaztag (Armenian for &ldquo;rabbit&rdquo;) is a Wi-Fi enabled rabbit, manufactured by Violet. The Nabaztag is a &ldquo;smart object&rdquo;; it can connect to the Internet (for example to download weather forecasts, read its owner&rsquo;s email, etc). It is also fully customizable and programmable.</em> - <a href="http://en.wikipedia.org/wiki/Nabaztag">Wikipedia.org</a></p>
+<p>Here is our Nabaztag - Francois Xavier:</p>
+<p>Of course, I&rsquo;ve been messing around with poor old Francois&rsquo;s programming..</p>
+<p>With the help of <a href="http://sourceforge.net/projects/opennab/">OpenNab</a>, a proxy server that masquerades as an official Nabaztag server, you can make your Nabaztag do all kinds of tricks. At the moment I&rsquo;m getting him to read out what&rsquo;s currently showing on TV when someone presses his button.</p>
+<p>Here&rsquo;s the technical details:</p>
+<p>Whenever the button is pressed on Francois, he sends a message destined for the official Nabaztag server, that is caught by the proxy server. The proxy server then executes a PHP script. This PHP script grabs the current TV listings from a RSS feed, composes them into a readable list, and then sends the list to the official Nabaztag server, which converts the list (using a text-to-speech synthesis program) into audio files, and streams those audio files to Francois.</p>
+<p>The result is a rabbit that reads the TV listings. A useful addition to our TV room.</p>
+<p><strong>Coming soon:</strong> More technical information on how you can do this yourself.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

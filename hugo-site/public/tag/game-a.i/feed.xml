@@ -1,19 +1,129 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Game-A.i on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/tag/game-a.i/</link>
+    <link>http://davidcraddock.net/tag/game-a.i/</link>
     <description>Recent content in Game-A.i on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Jun 2014 00:24:34 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/tag/game-a.i/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Jun 2014 00:24:34 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/tag/game-a.i/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A* Algorithm implementation in Python</title>
-      <link>http://davidcraddock.net:9796/2014/06/12/a-algorithm-implementation-in-python/</link>
+      <link>http://davidcraddock.net/2014/06/12/a-algorithm-implementation-in-python/</link>
       <pubDate>Thu, 12 Jun 2014 00:24:34 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2014/06/12/a-algorithm-implementation-in-python/</guid>
+      
+      <guid>http://davidcraddock.net/2014/06/12/a-algorithm-implementation-in-python/</guid>
       <description>Lately I&amp;rsquo;ve had the idea of creating a text-based Roguelike in C++. This lead me on to think about the game AI experiments that I worked during my degree in Computer Science and A.I.. Essential to game AI is the notion of pathfinding, or finding a path from &amp;lsquo;A&amp;rsquo; to &amp;lsquo;B&amp;rsquo;, past any obstacles that get in the way. One way to do this is to use the A* algorithm.</description>
+      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2014/06/pathfinding.jpg"><img loading="lazy" src="/wp-content/uploads/2014/06/pathfinding.jpg" type="" alt="pathfinding"  /></a></p>
+<p>Lately I&rsquo;ve had the idea of creating a text-based <a href="http://en.wikipedia.org/wiki/Roguelike">Roguelike</a> in C++. This lead me on to think about the game AI experiments that I worked during my degree in <a href="http://www.sussex.ac.uk/informatics/">Computer Science and A.I.</a>. Essential to game AI is the notion of pathfinding, or finding a path from &lsquo;A&rsquo; to &lsquo;B&rsquo;, past any obstacles that get in the way. One way to do this is to use the A* algorithm. I decided to implement an A* pathfinding algorithm for possible use in a Roguelike later, and chose <a href="http://en.wikipedia.org/wiki/A*_search_algorithm">the pseudocode from the Wikipedia example</a> to implement.</p>
+<p>The program finds a path from the top right hand corner to the top left, avoiding impassable &lsquo;7&rsquo; obstacles. The &lsquo;*&rsquo; are the steps along the path. The algorithm is guaranteed to find the shortest path between the goal and the start, which means it can optimally solve any solvable maze, given time.</p>
+<p>This is a sample board with obstacles setup:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000007777000000000000000
+</span></span><span style="display:flex;"><span>00000000000000077777777777777777700000000000000000
+</span></span><span style="display:flex;"><span>00000000077777777777777777777777700000000000000000
+</span></span><span style="display:flex;"><span>00000077777777777700000000000000000000000000000000
+</span></span><span style="display:flex;"><span>77777777777000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>77777777000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>77777777777777777707777777777777777777777777777777
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>70777777777777777777777777777777777777777777777777
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>77777777777777777777700000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000777777777777777777777707777777
+</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
+</span></span></code></pre></div><p>This is the path found (the &lsquo;*&rsquo;s):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>**000000000000000000000000000000000000000000000000
+</span></span><span style="display:flex;"><span>0***********************************00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000007777*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000077777777777777777700*00000000000000
+</span></span><span style="display:flex;"><span>00000000077777777777777777777777700*00000000000000
+</span></span><span style="display:flex;"><span>00000077777777777700000000000000000*00000000000000
+</span></span><span style="display:flex;"><span>77777777777000000000000000000000000*00000000000000
+</span></span><span style="display:flex;"><span>77777777000000000000000000000000000*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000*00000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000*00000000000000
+</span></span><span style="display:flex;"><span>000000000000000000******************00000000000000
+</span></span><span style="display:flex;"><span>777777777777777777*7777777777777777777777777777777
+</span></span><span style="display:flex;"><span>000000000000000000*0000000000000000000000000000000
+</span></span><span style="display:flex;"><span>0******************0000000000000000000000000000000
+</span></span><span style="display:flex;"><span>7*777777777777777777777777777777777777777777777777
+</span></span><span style="display:flex;"><span>0*****************************00000000000000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000**0000000000000000000
+</span></span><span style="display:flex;"><span>000000000000000000000000000000**000000000000000000
+</span></span><span style="display:flex;"><span>0000000000000000000000000000000*000000000000000000
+</span></span><span style="display:flex;"><span>0000000000000000000000000000000***0000000000000000
+</span></span><span style="display:flex;"><span>000000000000000000000000000000000*0000000000000000
+</span></span><span style="display:flex;"><span>000000000000000000000000000000000**000000000000000
+</span></span><span style="display:flex;"><span>0000000000000000000000000000000000**00000000000000
+</span></span><span style="display:flex;"><span>77777777777777777777700000000000000***000000000000
+</span></span><span style="display:flex;"><span>0000000000000000000000000000000000000**00000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000*00000000000
+</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000**0000000000
+</span></span><span style="display:flex;"><span>000000000000000000000000000000000000000****0000000
+</span></span><span style="display:flex;"><span>000000000000000000007777777777777777777777*7777777
+</span></span><span style="display:flex;"><span>000000000000000000007000000000000000000000**000000
+</span></span><span style="display:flex;"><span>0000000000000000000070000000000000000000000*000000
+</span></span><span style="display:flex;"><span>0000000000000000000070000000000000000000000***0000
+</span></span><span style="display:flex;"><span>000000000000000000007000000000000000000000000**000
+</span></span><span style="display:flex;"><span>0000000000000000000070000000000000000000000000*000
+</span></span><span style="display:flex;"><span>0000000000000000000070000000000000000000000000***0
+</span></span><span style="display:flex;"><span>000000000000000000007000000000000000000000000000*0
+</span></span><span style="display:flex;"><span>000000000000000000007000000000000000000000000000**
+</span></span></code></pre></div><p>Here is <a href="https://github.com/wordswords/astarpython">source code</a></p>
+<p>Amit&rsquo;s <a href="http://theory.stanford.edu/~amitp/GameProgramming/">A* pages</a> were incredibly useful in developing this.</p>
+<p>(Perhaps one day I will do a flashy JavaScript version!)</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

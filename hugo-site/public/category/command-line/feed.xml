@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Command-Line on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/category/command-line/</link>
+    <link>http://davidcraddock.net/category/command-line/</link>
     <description>Recent content in Command-Line on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 22 Feb 2011 00:16:12 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/category/command-line/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Feb 2011 00:16:12 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/command-line/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Find large files by using the OSX commandline</title>
-      <link>http://davidcraddock.net:9796/2011/02/22/find-large-files-by-using-the-osx-commandline/</link>
+      <link>http://davidcraddock.net/2011/02/22/find-large-files-by-using-the-osx-commandline/</link>
       <pubDate>Tue, 22 Feb 2011 00:16:12 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2011/02/22/find-large-files-by-using-the-osx-commandline/</guid>
-      <description>To quickly find large files to delete if you have filled your startup disk, enter this command on the OSX terminal:&#xA;sudo find / -size +500000 -print This will find and print out file paths to files over 500MB. You can then go through them and delete them individually by typing rm &amp;ldquo;&amp;rdquo;, although there is no undelete so make sure you know you won&amp;rsquo;t miss them.</description>
+      
+      <guid>http://davidcraddock.net/2011/02/22/find-large-files-by-using-the-osx-commandline/</guid>
+      <description>To quickly find large files to delete if you have filled your startup disk, enter this command on the OSX terminal:
+sudo find / -size +500000 -print This will find and print out file paths to files over 500MB. You can then go through them and delete them individually by typing rm &amp;ldquo;&amp;rdquo;, although there is no undelete so make sure you know you won&amp;rsquo;t miss them.</description>
+      <content:encoded><![CDATA[<p>To quickly find large files to delete if you have filled your startup disk, enter this command on the OSX terminal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo find / -size +500000 -print
+</span></span></code></pre></div><p>This will find and print out file paths to files over 500MB. You can then go through them and delete them individually by typing <strong>rm &ldquo;<!-- raw HTML omitted -->&rdquo;</strong>, although there is no undelete so make sure you know you won&rsquo;t miss them.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

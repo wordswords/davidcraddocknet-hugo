@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Low-Cost on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/tag/low-cost/</link>
+    <link>http://davidcraddock.net/tag/low-cost/</link>
     <description>Recent content in Low-Cost on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 21 Jul 2015 19:42:04 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/tag/low-cost/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Jul 2015 19:42:04 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/tag/low-cost/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Modular Progress</title>
-      <link>http://davidcraddock.net:9796/2015/07/21/modular-progress/</link>
+      <link>http://davidcraddock.net/2015/07/21/modular-progress/</link>
       <pubDate>Tue, 21 Jul 2015 19:42:04 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2015/07/21/modular-progress/</guid>
+      
+      <guid>http://davidcraddock.net/2015/07/21/modular-progress/</guid>
       <description>My Eurorack modular has been progressing. I&amp;rsquo;ve added several low-cost modules, a Doepfer A-138b audio mixer module so I can mix the audio outputs of the oscilators, the noise output, and my Doepfer Dark Energy modules. I found this so useful with the Dark Energys that I have ordered another mixer. This I can use to mix audio before sending it to the filter, for example, or mix audio before sending it to a VCA to be amplified.</description>
+      <content:encoded><![CDATA[<p>My Eurorack modular has been progressing. I&rsquo;ve added several low-cost modules, a Doepfer A-138b audio mixer module so I can mix the audio outputs of the oscilators, the noise output, and my Doepfer Dark Energy modules. I found this so useful with the Dark Energys that I have ordered another mixer. This I can use to mix audio before sending it to the filter, for example, or mix audio before sending it to a VCA to be amplified. I also added another envelope generator, Doepfer A-140, a sturdy workhorse and also useful for triggering the filter independently of the VCA envelope. Then I added a syncable LFO.. I already have 4 LFOs from the quad-LFO module in the top right, but I wanted a LFO with a reset option that I can use for MIDI syncing. On order is also a A-148 S&amp;H (sample and hold) module which I will use for generating interesting random tones once I have expanded the &lsquo;generative music&rsquo; theme of my setup a bit more.</p>
+<p>I also added a secondhand Kenton Pro Solo, a small midi-to-cv converter which has a lot of features, including clock sync output as well as CV and gate.</p>
+<p>Next purchases may include (all Doepfer) a ring-mod, small essential module that it is. I also want a clock divider and clock sequencer, allowing me to take the midi clock output of my Kenton Pro Solo and link it up to activate timed triggers. I eventually want to get a Make Noise &lsquo;Maths&rsquo; module as the highlight of my small modular, but the budget does not permit that right now.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

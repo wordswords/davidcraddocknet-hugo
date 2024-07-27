@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Rsi on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/category/rsi/</link>
+    <link>http://davidcraddock.net/category/rsi/</link>
     <description>Recent content in Rsi on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 05 Dec 2015 17:32:40 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/category/rsi/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Dec 2015 17:32:40 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/rsi/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Too much Scrolling! - Tips for Dealing with Mouse-Wheel Finger Repetitive Strain Injury</title>
-      <link>http://davidcraddock.net:9796/2015/12/05/too-much-scrolling-tips-for-dealing-with-mouse-wheel-finger-repetitive-strain-injury/</link>
+      <link>http://davidcraddock.net/2015/12/05/too-much-scrolling-tips-for-dealing-with-mouse-wheel-finger-repetitive-strain-injury/</link>
       <pubDate>Sat, 05 Dec 2015 17:32:40 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2015/12/05/too-much-scrolling-tips-for-dealing-with-mouse-wheel-finger-repetitive-strain-injury/</guid>
-      <description>Recently I had noticed I&amp;rsquo;d been having quite bad problems with my fingers based on the fact that I had been scrolling the mouse wheel too much when scrolling through web pages. Here are a number of options you can take if you are in a similar situation as me:&#xA;Change OS&amp;rsquo;s scrolling speed to its maximum This is the easiest change on most modern OSs, and will result in less scroll movements made by your fingers, because each scroll movement will move the screen down by a full screen height, (equivalent to a page down).</description>
+      
+      <guid>http://davidcraddock.net/2015/12/05/too-much-scrolling-tips-for-dealing-with-mouse-wheel-finger-repetitive-strain-injury/</guid>
+      <description>Recently I had noticed I&amp;rsquo;d been having quite bad problems with my fingers based on the fact that I had been scrolling the mouse wheel too much when scrolling through web pages. Here are a number of options you can take if you are in a similar situation as me:
+Change OS&amp;rsquo;s scrolling speed to its maximum This is the easiest change on most modern OSs, and will result in less scroll movements made by your fingers, because each scroll movement will move the screen down by a full screen height, (equivalent to a page down).</description>
+      <content:encoded><![CDATA[<p>Recently I had noticed I&rsquo;d been having quite bad problems with my fingers based on the fact that I had been scrolling the mouse wheel too much when scrolling through web pages. Here are a number of options you can take if you are in a similar situation as me:</p>
+<h3 id="change-oss-scrolling-speed-to-its-maximum">Change OS&rsquo;s scrolling speed to its maximum</h3>
+<p>This is the easiest change on most modern OSs, and will result in less scroll movements made by your fingers, because each scroll movement will move the screen down by a full screen height, (equivalent to a page down). This can be a bit annoying though as you lose accuracy when you want to just scroll down a small amount, it takes a bit of getting used to. Also you are still using the same muscles, just not as often.</p>
+<h3 id="use-keyboard-shortcuts-for-scrolling">Use keyboard shortcuts for scrolling</h3>
+<p>Space and shift-space should perform scrolling up and down in Firefox and Chrome on OSX and Windows. The more you avoid using the mouse and use the keyboard, the less you will use the same muscle in your fingers each time. Of course you may develop keyboard-related RSI, but so far I haven&rsquo;t been affected by this.</p>
+<h3 id="change-to-an-ergonomic-mouse">Change to an Ergonomic Mouse</h3>
+<p>At work I now use an ergonomic Logitch mouse which has a responsive scroll wheel, and an option to &lsquo;unlock&rsquo; the movement of the scroll wheel, allowing it to freely spin which results in greater comfort. Before I was using a work mouse which had a scroll wheel which you had to press down very hard to get it to do anything.</p>
+<h3 id="use-a-touchpad">Use a Touchpad</h3>
+<p>You can get freestanding touchpads for Windows and OSX, which operate like a laptop&rsquo;s touchpad. This has the advantage that you can also use trackpad gestures - Windows 8 onwards and modern versions of OSX have their own sets of handy gestures for speeding up use. I recommend the <a href="http://www.amazon.co.uk/gp/product/B00969DLL6">Logitech T650 Wireless Touchpad</a> for Windows 8 onwards, and the - expensive but very impressive - <a href="http://www.apple.com/uk/shop/product/MJ2R2Z/A/magic-trackpad-2">Apple Magic Pad 2 for OSX</a>. You can also get the Apple Magic Pad 1 which is half the price, but the feedback and gesture support isn&rsquo;t quite as good. A trackpad is not much use for gaming but for normal browsing and office use it&rsquo;s fine.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

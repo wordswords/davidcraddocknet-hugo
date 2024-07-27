@@ -1,19 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Fedora on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/tag/fedora/</link>
+    <link>http://davidcraddock.net/tag/fedora/</link>
     <description>Recent content in Fedora on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 04 May 2011 16:03:55 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/tag/fedora/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 May 2011 16:03:55 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/tag/fedora/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Directory names not visable under ls? Change your colours.</title>
-      <link>http://davidcraddock.net:9796/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</link>
+      <link>http://davidcraddock.net/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</link>
       <pubDate>Wed, 04 May 2011 16:03:55 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</guid>
-      <description>There is a problem I frequently encouter on Redhat/Fedora/CentOS systems with the output of the ls command. Under those distributions, the default setup is to display directories in a very dark colour. If you usually use a white foreground and a black background on your terminal client (such as Putty) then you will struggle to read the names of the directories under Redhat-based distributions.&#xA;There are two soloutions that I have used:</description>
+      
+      <guid>http://davidcraddock.net/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</guid>
+      <description>There is a problem I frequently encouter on Redhat/Fedora/CentOS systems with the output of the ls command. Under those distributions, the default setup is to display directories in a very dark colour. If you usually use a white foreground and a black background on your terminal client (such as Putty) then you will struggle to read the names of the directories under Redhat-based distributions.
+There are two soloutions that I have used:</description>
+      <content:encoded><![CDATA[<p>There is a problem I frequently encouter on Redhat/Fedora/CentOS systems with the output of the <strong>ls</strong> command. Under those distributions, the default setup is to display directories in a very dark colour. If you usually use a white foreground and a black background on your terminal client (such as Putty) then you will struggle to read the names of the directories under Redhat-based distributions.</p>
+<p>There are two soloutions that I have used:</p>
+<p><strong>1. Change the colour settings in Putty</strong></p>
+<p>If you use Putty, ticking &lsquo;Use System Colours&rsquo; here changes the &ldquo;white foreground, black background&rdquo; default into a &ldquo;white background, black foreground&rdquo;. This way you can at least read the console properly, good for a quick fix. You can also save these settings in putty to be the default for the host that you are connecting to, or even all hosts.</p>
+<p><strong>2. Change the LS_COLORS directive temporarily in the shell.</strong></p>
+<p>Alternatively, you can ask the <strong>ls</strong> command to display directories and other entries in colours that you specify. You could add these lines to the bottom of your .bashrc to make these changes permanent, or if you are using a shared machine, just copy and paste the following lines into the terminal and they will change the colours to a reddish more visable set, until you logout. :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>alias ls<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ls --color&#39;</span> <span style="color:#75715e"># just to make sure we are using coloured ls</span>
+</span></span><span style="display:flex;"><span>LS_COLORS<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;di=94:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> LS_COLORS
+</span></span></code></pre></div><p>(Original source for this particular LS_COLORS combo: <a href="http://linux-sxs.org/housekeeping/lscolors.html">http://linux-sxs.org/housekeeping/lscolors.html</a>)</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

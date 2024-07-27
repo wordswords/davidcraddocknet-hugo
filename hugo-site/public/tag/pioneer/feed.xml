@@ -1,19 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Pioneer on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/tag/pioneer/</link>
+    <link>http://davidcraddock.net/tag/pioneer/</link>
     <description>Recent content in Pioneer on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 03 Sep 2014 00:17:23 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/tag/pioneer/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Sep 2014 00:17:23 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/tag/pioneer/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pioneer DDJ-SR Serato Controller Review</title>
-      <link>http://davidcraddock.net:9796/2014/09/03/pioneer-ddj-sr-serato-controller-review/</link>
+      <link>http://davidcraddock.net/2014/09/03/pioneer-ddj-sr-serato-controller-review/</link>
       <pubDate>Wed, 03 Sep 2014 00:17:23 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2014/09/03/pioneer-ddj-sr-serato-controller-review/</guid>
-      <description>I decided to buy the DDJ-SR controller because it was cheaper than even the cheapest pair of Pioneer CDJs. I’m no stranger to using a laptop and controller, before the DDJ-SR I used my trusty Faderfox DJ2 controller, which is a basic no-frills ‘play buttons, 3 EQs, crossfader and volume faders’ unit.&#xA;I was considering getting the Native Instruments Traktor S4 DJ controller, which is one of the most popular full-size controllers for Traktor.</description>
+      
+      <guid>http://davidcraddock.net/2014/09/03/pioneer-ddj-sr-serato-controller-review/</guid>
+      <description>I decided to buy the DDJ-SR controller because it was cheaper than even the cheapest pair of Pioneer CDJs. I’m no stranger to using a laptop and controller, before the DDJ-SR I used my trusty Faderfox DJ2 controller, which is a basic no-frills ‘play buttons, 3 EQs, crossfader and volume faders’ unit.
+I was considering getting the Native Instruments Traktor S4 DJ controller, which is one of the most popular full-size controllers for Traktor.</description>
+      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2014/09/dj-controller.jpg"><img loading="lazy" src="/wp-content/uploads/2014/09/dj-controller.jpg" type="" alt="dj controller"  /></a></p>
+<p>I decided to buy the DDJ-SR controller because it was cheaper than even the cheapest pair of Pioneer CDJs. I’m no stranger to using a laptop and controller, before the DDJ-SR I used my trusty Faderfox DJ2 controller, which is a basic no-frills ‘play buttons, 3 EQs, crossfader and volume faders’ unit.</p>
+<p>I was considering getting the Native Instruments Traktor S4 DJ controller, which is one of the most popular full-size controllers for Traktor. However, after borrowing one from a friend, I compared the build quality of the DDJ-SR versus the S4, and there was no contest! The Pioneer DDJ-SR has the same buttons and jog wheel as the Pioneer CDJ units, which are rock solid and industry standard. For anyone wanting to use CDJs in the club after using the DDJ-SR at home, you will find the feel very familiar.</p>
+<p>I looked at the DDJ-SR’s big brother, the DDJ-SX1. The SX is much bigger in size, and not as portable as the SR. This was a major factor for me, as it’s often difficult enough to find space in the DJ booth, even for a small controller. The DDJ-SX1 (not the newest model which may be out by now) has a pretty similar feature set to the DDJ-SR. There is only one main difference that is significant to me. That being the fact that the SX is a full 4-channel mixer, which can operate without being connected to a computer. But it wasn’t enough to justify the larger footprint and the much increased cost. So I decided to opt for the more portable DDJ-SR.</p>
+<p>I tried out the controller at my local music shop, <a href="http://www.dawsons.co.uk/stores/music-shop-manchester">Dawsons (Manchester)</a> . I recommend trying out the controller and also buying locally if you can, because it’s much easier to return a controller to the shop than it is to send it back to an online store, if you are not happy with it. I also believe in supporting your local music stores.</p>
+<p>Being used to Traktor, and having used it since 2006, I was initially a bit cautious over switching to Serato. After I played around with it, and for my typical use, there was not a lot in Traktor that I didn’t find equivalents for, in Serato. One thing that was very nice is seeing the waveforms from each deck, and how you can visually ‘sync up’ the starting track with the beats of the one that is already playing. I have been surprised about how useful this is, it really makes beatmatching so easy when you don’t want to use the sync button, which I often don’t.</p>
+<p>The DDJ-SR comes with 8 pads under each jog wheel. They are very responsive, every bit as responsive as Akai drum pads used for music production. The pad FX definitely expand the creative potential of laptop DJing. The ‘slicer’ is my favourite so far, it cuts the upcoming music into 8 slices. You can choose to play a slice (or beat) out of time with the progression of the track, for example, instead of 1-2-3-4-5-6-7-8 you can opt for 1-2-2-4-5-6-6-8. You can play combination you like, assuming you hit the right pads in time!</p>
+<p>The ‘slip’ feature is very nice. When toggled on, the track plays on as you trigger samples and loops. It is as if the track is kept playing in the background while you pick out sections earlier in the track and play samples over the top, and when you have finished, the track snaps back, not to where you left it, but to where it has progressed to. You can use this feature to replace whole loops with other loops in the track and keep the rhythm of the track going. It is really powerful.</p>
+<p>There is a four knob ‘FX’ section above each jog wheel. This is used to add FX such as delay, reverb, flanger, and so on. I don’t find myself using this much for my style of DJing. I do wonder how much of the FX and pad hammering you can actually do to a track before you start to annoy your crowd. They are great to use occasionally though.</p>
+<p>Overall, I am very happy with my purchase. I had a pair of Pioneer CDJ400s and mixer back in 2009 which had a lot less features and cost over twice the price as this unit, and yet had the same build quality. Even if you ignore the ‘which is better’ argument of digital DJing versus CDJs, if you already have a laptop, this is a great setup for the money.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

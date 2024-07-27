@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Recommendation on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/category/recommendation/</link>
+    <link>http://davidcraddock.net/category/recommendation/</link>
     <description>Recent content in Recommendation on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Oct 2015 10:17:28 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/category/recommendation/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Oct 2015 10:17:28 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/recommendation/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IFTTT.com - Program your Life</title>
-      <link>http://davidcraddock.net:9796/2015/10/15/ifttt-com-program-your-life/</link>
+      <link>http://davidcraddock.net/2015/10/15/ifttt-com-program-your-life/</link>
       <pubDate>Thu, 15 Oct 2015 10:17:28 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2015/10/15/ifttt-com-program-your-life/</guid>
+      
+      <guid>http://davidcraddock.net/2015/10/15/ifttt-com-program-your-life/</guid>
       <description>If you haven&amp;rsquo;t seen If This Then That.com then I encourage you to check it out. It has a number of ways of automating your life, and can do things like text message you when you get mentioned on Twitter, up to deactivate your smart alarm when you&amp;rsquo;re nearing your house. This message will (hopefully) be posted on my Facebook page and my Twitter account, all thanks to IFTTT.com.</description>
+      <content:encoded><![CDATA[<p>If you haven&rsquo;t seen <a href="http://www.ifttt.com">If This Then That.com</a> then I encourage you to check it out. It has a number of ways of automating your life, and can do things like text message you when you get mentioned on Twitter, up to deactivate your smart alarm when you&rsquo;re nearing your house. This message will (hopefully) be posted on my Facebook page and my Twitter account, all thanks to IFTTT.com.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

@@ -1,54 +1,200 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ubuntu on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/tag/ubuntu/</link>
+    <link>http://davidcraddock.net/tag/ubuntu/</link>
     <description>Recent content in Ubuntu on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Sep 2022 00:00:36 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/tag/ubuntu/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Sep 2022 00:00:36 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/tag/ubuntu/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tips for new Ubuntu Users</title>
-      <link>http://davidcraddock.net:9796/2022/09/29/tips-for-new-ubuntu-users/</link>
+      <link>http://davidcraddock.net/2022/09/29/tips-for-new-ubuntu-users/</link>
       <pubDate>Thu, 29 Sep 2022 00:00:36 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2022/09/29/tips-for-new-ubuntu-users/</guid>
-      <description>Here are some extra tips if you&amp;rsquo;re just getting started out on Ubuntu.&#xA;You don&amp;rsquo;t have to go through the UI to shut down or reboot your computer. You can do it from the command line. The commands are:&#xA;sudo reboot # to reboot sudo poweroff # to shut down and power off the computer You can get a lot more information on your computers startup and shutdown sequences by removing the default Ubuntu splash screen that obscures this.</description>
+      
+      <guid>http://davidcraddock.net/2022/09/29/tips-for-new-ubuntu-users/</guid>
+      <description>Here are some extra tips if you&amp;rsquo;re just getting started out on Ubuntu.
+You don&amp;rsquo;t have to go through the UI to shut down or reboot your computer. You can do it from the command line. The commands are:
+sudo reboot # to reboot sudo poweroff # to shut down and power off the computer You can get a lot more information on your computers startup and shutdown sequences by removing the default Ubuntu splash screen that obscures this.</description>
+      <content:encoded><![CDATA[<p>Here are some extra tips if you&rsquo;re just getting started out on Ubuntu.</p>
+<ol>
+<li>
+<p>You don&rsquo;t have to go through the UI to shut down or reboot your computer. You can do it from the command line. The commands are:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo reboot # to reboot
+</span></span><span style="display:flex;"><span>sudo poweroff # to shut down and power off the computer
+</span></span></code></pre></div></li>
+<li>
+<p>You can get a lot more information on your computers startup and shutdown sequences by removing the default Ubuntu splash screen that obscures this. You should definitely do this if you want to learn more about what your system is
+actually doing under the hood, especially if you need to troubleshoot what it&rsquo;s doing. To do this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>sudo nano <span style="color:#f92672">/</span>etc<span style="color:#f92672">/</span>grub<span style="color:#f92672">/</span>default<span style="color:#f92672">/</span>grub
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># find the line where it says GRUB_CMDLINE_LINUX_DEFAULT and remove &#39;quiet splash&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># from this variable. If that leaves the variable empty make sure it is</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># still set as an empty variable, e.g. GRUB_CMDLINE_LINUX_DEFAULT=&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>sudo update<span style="color:#f92672">-</span>grub
+</span></span><span style="display:flex;"><span>sudo reboot
+</span></span></code></pre></div><p>Now you will see everything that is happening when your system starts up and
+shuts down, or reboots.</p>
+</li>
+</ol>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Google Drive Backup using Rclone</title>
-      <link>http://davidcraddock.net:9796/2022/09/24/google-drive-backup-using-rclone/</link>
+      <link>http://davidcraddock.net/2022/09/24/google-drive-backup-using-rclone/</link>
       <pubDate>Sat, 24 Sep 2022 17:39:06 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2022/09/24/google-drive-backup-using-rclone/</guid>
-      <description>For 8 TB of data storage on Google Drive, plus my own Google organization, I am paying £30/month, which is a pretty good deal.&#xA;I wanted to use this space for backing up my NAS, but it was proving difficult. The program I was recommended for Linux backup, Duplicati, was not the best for this purpose. My backup runs would not complete, they would be slow, and full of syncing errors.</description>
+      
+      <guid>http://davidcraddock.net/2022/09/24/google-drive-backup-using-rclone/</guid>
+      <description>For 8 TB of data storage on Google Drive, plus my own Google organization, I am paying £30/month, which is a pretty good deal.
+I wanted to use this space for backing up my NAS, but it was proving difficult. The program I was recommended for Linux backup, Duplicati, was not the best for this purpose. My backup runs would not complete, they would be slow, and full of syncing errors.</description>
+      <content:encoded><![CDATA[<p>For 8 TB of data storage on Google Drive, plus my own Google organization, I am paying £30/month, which is a pretty good deal.</p>
+<p>I wanted to use this space for backing up my NAS, but it was proving difficult. The program I was recommended for Linux backup, Duplicati, was not the best for this purpose. My backup runs would not complete, they would be slow, and full of syncing errors.</p>
+<p>Until I discovered rclone.</p>
+<p>rclone was much better than Duplicati at backing up my NAS to Google Drive.</p>
+<p>This is the script I use to sync the NAS content to Google Drive: <a href="https://github.com/wordswords/dotfiles/blob/568a8768154de8609a01b26560373ec5ca0eab85/bin/rclone-backup.sh">https://github.com/wordswords/dotfiles/blob/568a8768154de8609a01b26560373ec5ca0eab85/bin/rclone-backup.sh</a></p>
+<p>It works just like rsync, but with a progress indicator. I&rsquo;ve added it to my crontab and it syncs everything up weekly.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Setting up Enlightenment window manager on Ubuntu 21.10</title>
-      <link>http://davidcraddock.net:9796/2021/11/18/setting-up-enlightenment-window-manager-on-ubuntu-21-10/</link>
+      <link>http://davidcraddock.net/2021/11/18/setting-up-enlightenment-window-manager-on-ubuntu-21-10/</link>
       <pubDate>Thu, 18 Nov 2021 08:54:42 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2021/11/18/setting-up-enlightenment-window-manager-on-ubuntu-21-10/</guid>
-      <description>Enlightenment is a very underrated window manager choice, in my opinion. It still looks very pretty and is very configurable. There is a packaging bug with the latest version of Enlightement in the 21.10 repo which means it doesn&amp;rsquo;t work correctly. The fix is to set the suid bit on the &amp;rsquo;enlightenment_system&amp;rsquo; binary. So:&#xA;sudo apt install enlightenment sudo find /usr/lib -type f -name enlightenment_system -exec sudo chmod 4755 {} \; Log out of Ubuntu Click the settings cog in the bottom right to change your Window manager to enlightenment Log on and the settings wizard will help you configure Enlightenment </description>
+      
+      <guid>http://davidcraddock.net/2021/11/18/setting-up-enlightenment-window-manager-on-ubuntu-21-10/</guid>
+      <description>Enlightenment is a very underrated window manager choice, in my opinion. It still looks very pretty and is very configurable. There is a packaging bug with the latest version of Enlightement in the 21.10 repo which means it doesn&amp;rsquo;t work correctly. The fix is to set the suid bit on the &amp;rsquo;enlightenment_system&amp;rsquo; binary. So:
+sudo apt install enlightenment sudo find /usr/lib -type f -name enlightenment_system -exec sudo chmod 4755 {} \; Log out of Ubuntu Click the settings cog in the bottom right to change your Window manager to enlightenment Log on and the settings wizard will help you configure Enlightenment </description>
+      <content:encoded><![CDATA[<p><a href="https://www.enlightenment.org">Enlightenment</a> is a very underrated window manager choice, in my opinion. It still looks very pretty and is very configurable. There is a packaging bug with the latest version of Enlightement in the 21.10 repo which means it doesn&rsquo;t work correctly. The fix is to set the suid bit on the &rsquo;enlightenment_system&rsquo; binary. So:</p>
+<ol>
+<li><code>sudo apt install enlightenment</code></li>
+<li><code>sudo find /usr/lib -type f -name enlightenment_system -exec sudo chmod 4755 {} \;</code></li>
+<li>Log out of Ubuntu</li>
+<li>Click the settings cog in the bottom right to change your Window manager to enlightenment</li>
+<li>Log on and the settings wizard will help you configure Enlightenment</li>
+</ol>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Setting up Kindlefire HDX for Development under Ubuntu 12.04</title>
-      <link>http://davidcraddock.net:9796/2014/02/10/kindlefire-hdx-under-ubuntu-12-04/</link>
+      <link>http://davidcraddock.net/2014/02/10/kindlefire-hdx-under-ubuntu-12-04/</link>
       <pubDate>Mon, 10 Feb 2014 15:28:45 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2014/02/10/kindlefire-hdx-under-ubuntu-12-04/</guid>
-      <description>I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.&#xA;First I needed to setup the udev rules:&#xA;1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):&#xA;SUBSYSTEM==&amp;#34;usb&amp;#34;, ATTRS{idVendor}==&amp;#34;1949&amp;#34;, MODE=&amp;#34;0666&amp;#34; 2. Change the permission of this file by executing the following command as root:&#xA;chmod a+r /etc/udev/rules.d/51-android.rules 3. Reload the rules by executing the following command as root:</description>
+      
+      <guid>http://davidcraddock.net/2014/02/10/kindlefire-hdx-under-ubuntu-12-04/</guid>
+      <description>I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.
+First I needed to setup the udev rules:
+1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):
+SUBSYSTEM==&amp;#34;usb&amp;#34;, ATTRS{idVendor}==&amp;#34;1949&amp;#34;, MODE=&amp;#34;0666&amp;#34; 2. Change the permission of this file by executing the following command as root:
+chmod a+r /etc/udev/rules.d/51-android.rules 3. Reload the rules by executing the following command as root:</description>
+      <content:encoded><![CDATA[<p>I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.</p>
+<p>First I needed to setup the udev rules:</p>
+<p>1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>SUBSYSTEM==&#34;usb&#34;, ATTRS{idVendor}==&#34;1949&#34;, MODE=&#34;0666&#34;
+</span></span></code></pre></div><p>2. Change the permission of this file by executing the following command as root:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>chmod a+r /etc/udev/rules.d/51-android.rules
+</span></span></code></pre></div><p>3. Reload the rules by executing the following command as root:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>udevadm control <span style="color:#f92672">--</span>reload<span style="color:#f92672">-</span>rules
+</span></span></code></pre></div><p>4. Run these commands to restart adb:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>adb kill-server
+</span></span><span style="display:flex;"><span>adb start-server
+</span></span></code></pre></div><p>5. Now when I run</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>lsusb
+</span></span></code></pre></div><p>I can see the device listed.</p>
+<p>6. Next I needed to enable adb access on the Kindlefire HDX device itself by going to <strong>Settings -&gt; Device -&gt; Enable ADB</strong>.</p>
+<p>7. Finally I could run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>adb devices
+</span></span></code></pre></div><p>within Ubuntu and have it recognise the Kindlefire HDX.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Android Debug Bridge failing to detect emulators under OSX</title>
-      <link>http://davidcraddock.net:9796/2013/11/17/android-debug-bridge-failing-to-detect-emulators-under-osx/</link>
+      <link>http://davidcraddock.net/2013/11/17/android-debug-bridge-failing-to-detect-emulators-under-osx/</link>
       <pubDate>Sun, 17 Nov 2013 02:21:34 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2013/11/17/android-debug-bridge-failing-to-detect-emulators-under-osx/</guid>
+      
+      <guid>http://davidcraddock.net/2013/11/17/android-debug-bridge-failing-to-detect-emulators-under-osx/</guid>
       <description>I&amp;rsquo;ve been working on a project at the BBC where we are using the Android command-line tools from the Android Developer Tools, to spin up and terminate series of emulators. I noticed a big problem under OSX where &amp;lsquo;adb devices&amp;rsquo; was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb.</description>
+      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2013/11/android.png"><img loading="lazy" src="/wp-content/uploads/2013/11/android.png" type="" alt="Android"  /></a></p>
+<p>I&rsquo;ve been working on a project at the BBC where we are using the Android command-line tools from the <a href="http://developer.android.com/tools/index.html">Android Developer Tools</a>, to spin up and terminate series of emulators. I noticed a big problem under OSX where &lsquo;adb devices&rsquo; was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb.</p>
+<p>We switched to using adb with emulators in an Ubuntu 12.04 VM running under OSX, and we had no further problems with our setup. Emulators will now be programatically launched and torn down by our monitoring application. We now have an array of emulators which we can deploy to at will, which is very useful.</p>
+<p>I don&rsquo;t know what has caused this problem, my only hunch is that the Android toolkit was probably developed in a very Linux-heavy environment, and so adb on Linux was probably their first testing platform. All I can say is that Linux is much more stable than OSX, even as a VM, for Android emulation.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>VirutalHosts on CentOS</title>
-      <link>http://davidcraddock.net:9796/2009/03/30/virutalhosts-on-centos/</link>
+      <link>http://davidcraddock.net/2009/03/30/virutalhosts-on-centos/</link>
       <pubDate>Mon, 30 Mar 2009 22:45:50 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2009/03/30/virutalhosts-on-centos/</guid>
+      
+      <guid>http://davidcraddock.net/2009/03/30/virutalhosts-on-centos/</guid>
       <description>A common task when setting up an Apache webserver under Linux, is writing a httpd.conf file. The httpd.conf file is the main configuration file for Apache. One of the main reasons to edit the httpd.conf file is to setup virtual hosts In Apache. A Virtual host configuration allows several different domains to be run off a single instance of Apache, on a single IP. Each host is a &amp;lsquo;Virtual host&amp;rsquo;, and typically has a different web root, log file, and any number of subdomains aliased to it.</description>
+      <content:encoded><![CDATA[<p>A common task when setting up an <a href="http://en.wikipedia.org/wiki/Apache_HTTP_Server">Apache</a> webserver under Linux, is writing a httpd.conf file. The httpd.conf file is the main configuration file for Apache. One of the main reasons to edit the httpd.conf file is to setup virtual hosts In Apache. A Virtual host configuration allows several different domains to be run off a single instance of Apache, on a single IP. Each host is a &lsquo;Virtual host&rsquo;, and typically has a different web root, log file, and any number of subdomains aliased to it. The virtualhosts are configured in parts of the httpd.conf file that look like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    ServerName myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ServerAlias www<span style="color:#f92672">.</span>myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ServerAdmin me<span style="color:#960050;background-color:#1e0010">@</span>myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    DocumentRoot <span style="color:#f92672">/</span><span style="color:#66d9ef">var</span><span style="color:#f92672">/</span>www<span style="color:#f92672">/</span>html<span style="color:#f92672">/</span>myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ErrorLog logs<span style="color:#f92672">/</span>myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk<span style="color:#f92672">-</span>error_log
+</span></span><span style="display:flex;"><span>    CustomLog logs<span style="color:#f92672">/</span>myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk<span style="color:#f92672">-</span>access_log common
+</span></span></code></pre></div><p>Now on <a href="http://en.wikipedia.org/wiki/Ubuntu_server">Ubuntu</a>, virutalhosts are made easy. The httpd.conf is split into several files. Each virutalhost has a different file in <code>/etc/apache2/sites-available</code>. When you want to activate a particular vitualhost, you create a symbolic link from <code>/etc/apache2/sites-enabled/mysite</code> to <code>/etc/apache2/sites-available/mysite</code> (if you wanted to call your site configuration file &lsquo;mysite&rsquo;). When apache boots up, it loads all the files it can find in <code>/etc/apache2/sites-available/*</code> and that determines which virutalhosts it loads. If there is not a link from <code>/etc/apache2/sites-available/</code> to your virutalhost file, it won&rsquo;t load it. So you can easily remove the links in /etc/apache2/sites-available without deleting the actual virutalhost file. Therefore you can easily toggle which virtualhosts get loaded.</p>
+<p><a href="http://en.wikipedia.org/wiki/Centos">CentOS</a> uses a different structure. Everything is lumped into <code>/etc/apache/httpd.conf</code>. So there is no way to easily toggle virutalhosts on/off, and everything is a bit more chaotic. I&rsquo;ve just had to setup a new CentOS webserver, and I struggled for a bit after being used to ubuntu-server. Here&rsquo;s a format you can use if you&rsquo;re in the same boat, and you have to setup httpd.conf files for CentOS:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>NameVirtualHost <span style="color:#f92672">*</span>:<span style="color:#ae81ff">80</span> <span style="color:#75715e"># this is eseential for for name-based switching</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># an example of a simple VirtualHost that serves data from</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># /var/www/html/myserver.co.uk to anyone who types in</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># www.myserver.co.uk to the browser</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  ServerName myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ServerAlias www<span style="color:#f92672">.</span>myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ServerAdmin me<span style="color:#960050;background-color:#1e0010">@</span>myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    DocumentRoot <span style="color:#f92672">/</span><span style="color:#66d9ef">var</span><span style="color:#f92672">/</span>www<span style="color:#f92672">/</span>html<span style="color:#f92672">/</span>myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ErrorLog logs<span style="color:#f92672">/</span>myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk<span style="color:#f92672">-</span>error_log
+</span></span><span style="display:flex;"><span>    CustomLog logs<span style="color:#f92672">/</span>myserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk<span style="color:#f92672">-</span>access_log common
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># an example of a VirutalHost with apache overrides allowed, this means you can use</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># .htaccess files in the servers web root to change your config dynamically</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    ServerName bobserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ServerAlias www<span style="color:#f92672">.</span>bobserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ServerAdmin me<span style="color:#960050;background-color:#1e0010">@</span>bobserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    DocumentRoot <span style="color:#f92672">/</span><span style="color:#66d9ef">var</span><span style="color:#f92672">/</span>www<span style="color:#f92672">/</span>html<span style="color:#f92672">/</span>bobserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ErrorLog logs<span style="color:#f92672">/</span>bobserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk<span style="color:#f92672">-</span>error_log
+</span></span><span style="display:flex;"><span>    CustomLog logs<span style="color:#f92672">/</span>bobserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk<span style="color:#f92672">-</span>access_log common
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      AllowOverride All
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      AllowOverride AuthConfig
+</span></span><span style="display:flex;"><span>      Order Allow,Deny
+</span></span><span style="display:flex;"><span>      Allow from All
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># an example of a VirutalHost with apache overrides allowed, and two subdomains</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># (mail and www) that both point to the same web root</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  ServerName fredserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ServerAlias www<span style="color:#f92672">.</span>fredserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ServerAlias mail<span style="color:#f92672">.</span>fredserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ServerAdmin me<span style="color:#960050;background-color:#1e0010">@</span>fredserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    DocumentRoot <span style="color:#f92672">/</span><span style="color:#66d9ef">var</span><span style="color:#f92672">/</span>www<span style="color:#f92672">/</span>html<span style="color:#f92672">/</span>fredserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk
+</span></span><span style="display:flex;"><span>    ErrorLog logs<span style="color:#f92672">/</span>fedserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk<span style="color:#f92672">-</span>error_log
+</span></span><span style="display:flex;"><span>    CustomLog logs<span style="color:#f92672">/</span>fredserver<span style="color:#f92672">.</span>co<span style="color:#f92672">.</span>uk<span style="color:#f92672">-</span>access_log common
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      AllowOverride All
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      AllowOverride AuthConfig
+</span></span><span style="display:flex;"><span>      Order Allow,Deny
+</span></span><span style="display:flex;"><span>      Allow from All
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># .. etc</span>
+</span></span></code></pre></div><p>With the above structure, you can add as many VirutalHosts to your configuration as you have memory to support (typically dozens). Apache will decide on which to choose based on the &lsquo;ServerName&rsquo; specified in each VirtualHost section. Just remember to add that all-important <code>NameVirtualHost: *:80</code> in the beginning.</p>
+<p>Once you&rsquo;ve got your httpd.conf file the way you like it, be sure to test it before you restart apache. If you restart apache and your httpd.conf file has errors in it, Apache will abort the load process. This means that all the websites on your webserver will fail to load. I always use <code>apachectl -t</code> or <code>apache2ctl -t</code> before I restart. That will parse the httpd.conf file and check the syntax. Once that&rsquo;s OK, then you can issue a <code>/etc/init.d/httpd restart</code> to restart Apache.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

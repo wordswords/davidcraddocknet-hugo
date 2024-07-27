@@ -1,19 +1,175 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Sennheiser-Hd-25-1-Iis on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/tag/sennheiser-hd-25-1-iis/</link>
+    <link>http://davidcraddock.net/tag/sennheiser-hd-25-1-iis/</link>
     <description>Recent content in Sennheiser-Hd-25-1-Iis on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 29 Jan 2014 00:13:12 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/tag/sennheiser-hd-25-1-iis/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Jan 2014 00:13:12 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/tag/sennheiser-hd-25-1-iis/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Computer Build</title>
-      <link>http://davidcraddock.net:9796/2014/01/29/my-computer-build/</link>
+      <link>http://davidcraddock.net/2014/01/29/my-computer-build/</link>
       <pubDate>Wed, 29 Jan 2014 00:13:12 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2014/01/29/my-computer-build/</guid>
-      <description>Updated: Reorganised, replaced Tiamat headset for KAVE.&#xA;I use my computer a lot, for work (software development), gaming and music production. I wanted to build a high-end computer setup, as I&amp;rsquo;ve always lagged behind with upgrades before. So I gradually have been accumulating and swapping bits around to make the setup above.&#xA;Internals&#xA;Case Motherboard CPU CPU Cooler RAM Wireless Card Optical Drive PSU Visual&#xA;Monitor Backlight GPU Audio&#xA;Headphones Soundcard Headset Speakers Speaker Stands Mixer Desktop Microphone Peripherals</description>
+      
+      <guid>http://davidcraddock.net/2014/01/29/my-computer-build/</guid>
+      <description>Updated: Reorganised, replaced Tiamat headset for KAVE.
+I use my computer a lot, for work (software development), gaming and music production. I wanted to build a high-end computer setup, as I&amp;rsquo;ve always lagged behind with upgrades before. So I gradually have been accumulating and swapping bits around to make the setup above.
+Internals
+Case Motherboard CPU CPU Cooler RAM Wireless Card Optical Drive PSU Visual
+Monitor Backlight GPU Audio
+Headphones Soundcard Headset Speakers Speaker Stands Mixer Desktop Microphone Peripherals</description>
+      <content:encoded><![CDATA[<p><strong>Updated:</strong> Reorganised, replaced Tiamat headset for KAVE.</p>
+<p>I use my computer a lot, for work (software development), gaming and music production. I wanted to build a high-end computer setup, as I&rsquo;ve always lagged behind with upgrades before. So I gradually have been accumulating and swapping bits around to make the setup above.</p>
+<p>Internals</p>
+<ul>
+<li><a href="#case">Case</a></li>
+<li><a href="#motherboard">Motherboard</a></li>
+<li><a href="#cpu">CPU</a></li>
+<li><a href="#cpucooler">CPU Cooler</a></li>
+<li><a href="#ram">RAM</a></li>
+<li><a href="#wifi">Wireless Card</a></li>
+<li><a href="#optical">Optical Drive</a></li>
+<li><a href="#psu">PSU</a></li>
+</ul>
+<p>Visual</p>
+<ul>
+<li><a href="#monitor">Monitor</a></li>
+<li><a href="#backlight">Backlight</a></li>
+<li><a href="#gpu">GPU</a></li>
+</ul>
+<p>Audio</p>
+<ul>
+<li><a href="#headphones">Headphones</a></li>
+<li><a href="#soundcard">Soundcard</a></li>
+<li><a href="#headset">Headset</a></li>
+<li><a href="#speakers">Speakers</a></li>
+<li><a href="#speakerstands">Speaker Stands</a></li>
+<li><a href="#mixer">Mixer</a></li>
+<li><a href="#microphone">Desktop Microphone</a></li>
+</ul>
+<p>Peripherals</p>
+<ul>
+<li><a href="#webcam">Webcam</a></li>
+<li><a href="#keyboard">Keyboard</a></li>
+<li><a href="#keypad">Gaming Keypad</a></li>
+<li><a href="#mouse">Mouse</a></li>
+</ul>
+<hr>
+<hr>
+<h3 id="internals">Internals</h3>
+<hr>
+<h4 id="case---thermaltake-level-10-gt-full-tower">Case - Thermaltake Level 10 GT Full Tower</h4>
+<p><a href="http://www.amazon.co.uk/Thermaltake-Level-Full-Tower-Gaming/dp/B004MQBQ1A">[Link to Amazon]</a> <a href="/wp-content/uploads/2014/01/case.jpg"><img loading="lazy" src="/wp-content/uploads/2014/01/case.jpg" type="" alt="case"  /></a></p>
+<p>This was an expensive case, but I wanted to spend some money to get a quality case that I could use for future builds. It has many fans, most of which I don&rsquo;t need, but they are very quiet and they make the CPU temperate a very cool 30-40 degrees, under regular load, even in the current heatwave we&rsquo;re having. The case has 5 hotswappable hard drive caddies which is very nice and allows me to easily install and remove hard drives without having to take apart the computer. It also has a lock, USB3 ports and enough clearance for graphic cards and space for lots of upgrades.</p>
+<hr>
+<h4 id="motherboard---gigabyte-z77x-d3h-1155">Motherboard - Gigabyte Z77X-D3H 1155</h4>
+<p><a href="http://www.amazon.co.uk/Gigabyte-GA-Z77X-D3H-SKT-1155-Z77X-D3H-Motherboard/dp/B007KZQFEI">[Link to Amazon]</a> <a href="/wp-content/uploads/2014/01/mobo.jpg"><img loading="lazy" src="/wp-content/uploads/2014/01/mobo.jpg" type="" alt="mobo"  /></a></p>
+<p>This was bought because it was a cheapish seat for the Ivy Bridge processor and the 16GB RAM. It has some niceish features, such as the fancy 3D BIOS which you can navigate with a mouse, and the onboard graphics which is enough to get into the BIOS when your graphics card isn&rsquo;t working. The onboard sound is best avoided.</p>
+<hr>
+<h4 id="cpu---intel-core-i7-3770-34ghz-quad-core">CPU - Intel Core i7 (3770) 3.4GHz Quad Core</h4>
+<p><a href="http://www.amazon.co.uk/Intel-3-4GHz-Processor-Cache-Speed/dp/B007RMH1WY">[Link to Amazon]</a></p>
+<p>This was the processor that was the top of the mainstream mid-high end CPUs when I was purchasing. It differs from the 3770k as you can&rsquo;t overclock it, but it has decent support for hardware virtualisation, which I wanted and is not available in the 3770k. I figured I wouldn&rsquo;t miss the chance to overclock this for a good while, as CPUs of this type already are vastly overpowered for the applications that I use. CPU utilisation for typical use (not including games) rarely rises above 10%.</p>
+<hr>
+<h4 id="cpu-cooler---arctic-cooling-freezer-13-pro">CPU Cooler - Arctic Cooling Freezer 13 Pro</h4>
+<p><a href="http://www.amazon.co.uk/Arctic-Cooling-Freezer-Pro-Cooler/dp/B0047V8E1K">[Link to Amazon]</a></p>
+<p>This is a bit overspecced since I am not planning to overclock, but I don&rsquo;t like stock heatsinks and so bought this. It is a huge heatsink and probably wouldn&rsquo;t fit in many other types of cases, but as I have a full tower it&rsquo;s fine.</p>
+<hr>
+<h4 id="ram---16gb-ddr3-ram-ballistix-ddr3-pc3-17000">RAM - 16GB DDR3 RAM Ballistix DDR3 PC3-17000</h4>
+<p><a href="http://www.crucial.com/eu/store/mpartspecs.aspx?mtbpoid=4F7BBB48A5CA7304">[Link to Crucial]</a></p>
+<p>This is fast RAM for gaming. 16GB is a bit overspecced for my current needs, but it&rsquo;s the maximum my board will take, and means I won&rsquo;t have to upgrade for a long while.</p>
+<hr>
+<h4 id="wireless-card---tp-link-tl-wdn4800-n900-wireless-dual-band-pci-express-adapter">Wireless Card - TP-LINK TL-WDN4800 N900 Wireless Dual Band PCI Express Adapter</h4>
+<p><a href="http://www.amazon.co.uk/TP-LINK-TL-WDN4800-Wireless-Express-Adapter/dp/B006PMX964">[Link to Amazon]</a></p>
+<p>This wireless card is good because it has dual-band, meaning faster, interference free 5GHz spectrum access to my dual-band wireless router, and because it has three external ariels which you can replace. I have got a large indoor antenna replacement which allows me to double my wireless range, meaning I can pick up local wifi hotspots if needed.</p>
+<hr>
+<h4 id="optical-drive---pioneer-bdr-207dbk-12x-internal-bd-rw-burner">Optical Drive - Pioneer BDR-207DBK 12x Internal BD-RW Burner</h4>
+<p><a href="http://www.amazon.co.uk/Pioneer-BDR-207DBK-Internal-BD-RW-Burner/dp/B0075WEPJI">[Link to Amazon]</a></p>
+<p>I didn&rsquo;t really need a Blu-Ray burner, but it&rsquo;s useful for backups and I thought I could write some discs to be played in my PS3. It has a very fast read speed for reading Blu-Rays and burning DVDs. To be honest I could have gone for a Blu-ray reader and DVD writer combo and not really noticed the difference.</p>
+<hr>
+<h4 id="psu---850w-evga-super-nova-gold-modular">PSU - 850W EVGA Super NOVA Gold Modular</h4>
+<p><a href="http://www.amazon.co.uk/EVGA-Super-NOVA-Power-Supply/dp/B00J299ALA">[Link to Amazon]</a></p>
+<p>850W allows a lot of headroom for graphics cards&rsquo; power requirements, and extra components in the future. It is a good quality PSU and is fully modular which is a lot nicer to work with.</p>
+<hr>
+<h4 id="3x-hard-drives-----1x-crucial-ct256m4ssd2baa-256gb-ssd-1x-unknown-model-crucial-120gb-ssd-1x-seagate-3tb-35-inch-7200rpm-64mb-cache-sata3-hard-drive">3x Hard Drives -   1x Crucial CT256M4SSD2BAA 256GB SSD 1x Unknown model Crucial 120GB SSD 1x Seagate 3TB 3.5 inch 7200RPM 64MB Cache SATA3 Hard Drive</h4>
+<p>The 256GB SSD is my system drive, the older 120GB SSD is for games, and the 3TB HD is for storage: my music collection, video files collection, backup images and virtual machines. Being SSDs, the 256GB and 120GB drives are totally silent, making the 3TB HD sound really loud when it spins up. However, the 3TB drive has enough space to store full Blu-Ray ripped files.. not that I would do that, of course :)</p>
+<hr>
+<p><strong><a href="#top">Back to Top of Post</a></strong></p>
+<hr>
+<hr>
+<h3 id="visual">Visual</h3>
+<hr>
+<h4 id="monitor---benq-bl3200pt-amva-1440p-32-widescreen">Monitor - BenQ BL3200PT AMVA+ 1440p 32&quot; Widescreen</h4>
+<p><a href="http://www.amazon.co.uk/gp/product/B00JIWLNHU">[Link to Amazon]</a></p>
+<p>This is a high-end 1440p 32&quot; monitor. It has made such a big difference to using the PC, more screen space, more pixels and better clarity. I was considering a 4K monitor, but don&rsquo;t think the technology is quite cheap enough yet, and the software and games support is severely lacking. It&rsquo;s 60HZ refresh rate, but that is enough for me. I have heard that the higher refresh rate monitors are better for gaming, but a 144HZ 1440p 32&quot; monitor would be way out of my budget, not to mention the graphics processing power it would require to run.</p>
+<hr>
+<h4 id="graphics-card--asus-strix-gtx-980-4gb-gddr5">Graphics Card – Asus STRIX GTX 980 4GB GDDR5</h4>
+<p><a href="http://www.amazon.co.uk/STRIX-GTX980-DC2OC-4GD5-Nvidia-Graphics-GDDR5-Express/dp/B00O11Z0H2">[Link to Amazon]</a> <a href="/wp-content/uploads/2014/01/gpu.jpg"><img loading="lazy" src="/wp-content/uploads/2014/01/gpu.jpg" type="" alt="gpu"  /></a></p>
+<p>I had to upgrade my old Nvidea GTX 660TI, and just went for the absolute maximum I could afford. The STRIX 980 is an amazing card and comes slightly overclocked compared to the reference model. It plays all current games on maximum settings on 1440p at over 30FPS, which is no a mean feat, on my resolution there is more than a million pixels being drawn to the screen on each frame.</p>
+<hr>
+<h4 id="monitor-backlight---lightpack">Monitor Backlight - Lightpack</h4>
+<p><a href="http://www.lightpack.tv">www.lightpack.tv</a></p>
+<p>This is a monitor or TV backlighting kit that changes the colour of the light projected behind your screen to match the colours on the edges of your display. This provides a more immersive experience when playing games with the lights down, and you can also set it to become a graphic equaliser where the lights flash in time with the music. I bought this on a whim and I&rsquo;ve been quite impressed with it so far. It definitely adds to immersion and the graphic equaliser mode is rather trippy when writing or playing music.</p>
+<hr>
+<p><strong><a href="#top">Back to Top of Post</a></strong></p>
+<hr>
+<hr>
+<h3 id="audio">Audio</h3>
+<hr>
+<h4 id="headphones---sennheiser-hd-25-1-iis">Headphones - Sennheiser HD 25-1 IIs</h4>
+<p><a href="http://www.amazon.com/Sennheiser-HD25-1-II-Closed-Back-Headphones/dp/B000TDZOXG">[Link to Amazon]</a> <a href="/wp-content/uploads/2014/01/headphones.jpg"><img loading="lazy" src="/wp-content/uploads/2014/01/headphones.jpg" type="" alt="headphones"  /></a></p>
+<p>These are what I use when I can&rsquo;t use my speakers. I bought them for DJing and audio work. They have great sound isolation (these are used by sports commentators you see on TV, because when you&rsquo;ve got them on, you literally can only hear what&rsquo;s coming through the headphones) and great sound quality (a favourite for top DJs and sound engineers). They don&rsquo;t look that great though, and aren&rsquo;t the most comfortable, but whatever. One nice feature is that they are designed for heavy use and are almost indestructable. If someone steps on the headphone lead, they won&rsquo;t break, the cables will just pop out of the cans. If the headset breaks, well you can remove the cans and just buy a new headset. They have high &lsquo;sound pressure&rsquo; which means the ratio of sound that enters your ear versus the amount of sound that comes out of the cans, is quite high due to their closed nature and sound isolating design. This, combined with high frequency range and a large volume range, means it&rsquo;s quite easy to cause yourself hearing damage if you have them on too loud usually, or if you have a temporary high volume &lsquo;spike&rsquo;.</p>
+<hr>
+<h4 id="soundcard--asus-rog-xonar-phoebus-solo">Soundcard – Asus ROG Xonar Phoebus Solo</h4>
+<p><a href="http://www.amazon.co.uk/gp/product/B00CRRVL4S">[Link to Amazon]</a> <a href="/wp-content/uploads/2014/01/soundcard.jpg"><img loading="lazy" src="/wp-content/uploads/2014/01/soundcard.jpg" type="" alt="soundcard"  /></a></p>
+<p>Good 7.1 surround sound card, with headphone amplifier.</p>
+<hr>
+<h4 id="gaming-headset--roccat-kave-xtd-51-analogue">Gaming Headset – ROCCAT Kave XTD 5.1 Analogue</h4>
+<p><a href="http://www.amazon.co.uk/gp/product/B00UHRXTM2">[Link to Amazon]</a> <a href="/wp-content/uploads/2014/01/headset1.jpg"><img loading="lazy" src="/wp-content/uploads/2014/01/headset1.jpg" type="" alt="headset"  /></a></p>
+<p>It is quite difficult to find surround sound headsets with analogue inputs, most headsets are USB only, and contain their own soundcard. This is not ideal when you have a really good soundcard already that you want to use, such as my Xonar Phoebus Solo. Previously I was using the Razer Tiamat, which was terrible. It had a consistant high-pitched electrical whine when you were wearing the headset, and you couldn&rsquo;t get rid of it. The Kave is much better in this regard, and is more comfortable too. It is &lsquo;only&rsquo; 5.1 compared to the Tiamat&rsquo;s 7.1, but really, 7.1 surround sound in a headset is just a marketing tactic anyway, you are never going to be able to appreciate the extra two channels when the speakers are that close together.</p>
+<hr>
+<h4 id="speakers--krk-rokit-g2-5">Speakers – KRK Rokit G2 5</h4>
+<p><a href="http://www.amazon.co.uk/KRK-Rokit-Monitor-Speakers-Pair/dp/B003SQ49YQ">[Link to Amazon]</a> <a href="/wp-content/uploads/2014/01/speakers.jpg"><img loading="lazy" src="/wp-content/uploads/2014/01/speakers.jpg" type="" alt="speakers"  /></a></p>
+<p>These are great monitors, which I use for music production, and make for great speakers for general use as well. They are a little large for my desk and have a maximum volume which is far too loud for my flat, but I wouldn&rsquo;t be without them.</p>
+<hr>
+<h4 id="speaker-stands---isoacoustics-l8r155-speaker-stands">Speaker Stands - IsoAcoustics L8R155 Speaker Stands</h4>
+<p><a href="http://www.amazon.co.uk/IsoAcoustics-L8R155-Speaker-Stands-pair/dp/B008GOP79G">[Link to Amazon]</a></p>
+<p>These are sound-isolating speaker stands, which I have setup to raise the speakers to ear height. I have to say, they&rsquo;ve made the speakers sound so much better, and they look good too.</p>
+<hr>
+<h4 id="mixer---allen--heath-zed-10">Mixer - Allen &amp; Heath ZED 10</h4>
+<p><a href="http://www.amazon.co.uk/Allen-amp-Heath-ZED-10-Mixer/dp/B003U747Z4">[Link to Amazon]</a></p>
+<p>This is a good recording mixer which also doubles as a great USB soundcard. It has 4x mono RCA inputs and 2x stereo RCA inputs, which is enough to wire all my synths up, as well as feed the Rokit 5s.</p>
+<hr>
+<h4 id="desktop-microphone---pulse-50s-retro-chrome-style-microphone">Desktop Microphone - Pulse 50&rsquo;s Retro Chrome Style Microphone</h4>
+<p><a href="http://www.amazon.co.uk/gp/product/B0013NCY3Y">[Link to Amazon]</a></p>
+<p>This is a 50&rsquo;s style microphone that I liked the look of. I got it because I wanted a microphone that plugged into my mixing desk, which would allow me to talk hands-free on Skype. Also it is good for streaming games, as I can mix my voice in the microphone with the output the computer game sounds, and send both mixed to skype or Twitch.TV or wherever. It is also moderately useful for recording voices for music production and for routing via my FX pedal for some novelty vocal effects on Skype, such as delay, echo and reverb.</p>
+<hr>
+<p><strong><a href="#top">Back to Top of Post</a></strong></p>
+<hr>
+<hr>
+<h3 id="peripherals">Peripherals</h3>
+<hr>
+<h4 id="webcam---logitech-c920-hd-webcam">Webcam - Logitech C920 HD Webcam</h4>
+<p><a href="http://www.amazon.co.uk/Logitech-960-000767-C920-HD-Webcam/dp/B006A2Q81M">[Link to Amazon]</a></p>
+<p>I use a webcam for Skype often, and I want to get more into recording for YouTube, so I bought a good quality HD webcam.</p>
+<hr>
+<h4 id="keyboard---das-keyboard-ultimate-silent-eu">Keyboard - Das Keyboard Ultimate Silent EU</h4>
+<p><a href="http://www.amazon.co.uk/Das-Keyboard-Model-Ultimate-EU/dp/B0038N1H1C">[Link to Amazon]</a> <a href="/wp-content/uploads/2014/01/keyboard.jpg"><img loading="lazy" src="/wp-content/uploads/2014/01/keyboard.jpg" type="" alt="keyboard"  /></a></p>
+<p>This is the model with the quieter Cherry MX Brown key switches. It is a good mechanical keyboard for all purposes, looks good, and will encourage me to type more accurately. I grew annoyed at missing keys on the blank keycaps, so I added my own coloured keycaps for high visibility (see picture at top).</p>
+<hr>
+<h4 id="gaming-keypad---razer-orbweaver-stealth">Gaming Keypad - Razer Orbweaver Stealth</h4>
+<p><a href="http://www.razerzone.com/eu-en/gaming-keyboards-keypads/razer-orbweaver-stealth/">[Link to Razer Site]</a></p>
+<p>This is the &lsquo;Stealth&rsquo; model with the Cherry MX Brown key switches. I was initially doubtful whether it was worth getting a gaming keypad, but so many people have recommended it, that I had to try it out. I actually have found it very useful, much more comfortable and accurate than using a normal keyboard for gaming. It also forces you to get into the habit of remapping keys for your own preference.</p>
+<hr>
+<h4 id="mouse---logitech-g9x">Mouse - Logitech G9X</h4>
+<p><a href="http://www.amazon.co.uk/gp/product/B001NTFATI">[Link to Amazon]</a> <a href="/wp-content/uploads/2014/01/g9x.jpg"><img loading="lazy" src="/wp-content/uploads/2014/01/g9x.jpg" type="" alt="g9x"  /></a></p>
+<p>I upgraded from my G500 mouse to this, smaller, G9X. I have started to adopt <a href="http://www.razerzone.com/mouseguide/ergonomic/clawgrip">the claw grip</a> for gaming and generally using my mouse. This makes the larger G500 difficult to use, as the larger size means that the mouse buttons don&rsquo;t click properly when you have your fingers higher up on the mouse. So far, I am very happy with the G9X, the higher DPI scanning, and the easier to grip &lsquo;precicse grip&rsquo; material means that it is better for other reasons for me.</p>
+<p>I use the <a href="http://www.amazon.co.uk/gp/product/B00BF9MZZI/ref=oh_details_o02_s00_i01?ie=UTF8&amp;psc=1#productDetails">Corsair Vengeance</a> mouse matt, it is made of metal unlike my previous Razor Golliathus cloth one, which I didn&rsquo;t like because the edge of the matt would get stuck in the mouse when you moved it too far.</p>
+<hr>
+<p><strong><a href="#top">Back to Top of Post</a></strong></p>
+<hr>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

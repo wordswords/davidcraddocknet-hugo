@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Rhel on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/tag/rhel/</link>
+    <link>http://davidcraddock.net/tag/rhel/</link>
     <description>Recent content in Rhel on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 11 Feb 2012 01:36:52 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/tag/rhel/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Feb 2012 01:36:52 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/tag/rhel/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java 1.6 on RHEL4</title>
-      <link>http://davidcraddock.net:9796/2012/02/11/java-1-6-on-rhel4/</link>
+      <link>http://davidcraddock.net/2012/02/11/java-1-6-on-rhel4/</link>
       <pubDate>Sat, 11 Feb 2012 01:36:52 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2012/02/11/java-1-6-on-rhel4/</guid>
-      <description>After I wrote a Java application in JDK 1.6, I was stuck for a while when I realised that the target deployment machine was Red Hat Enterprise Linux 4. RHEL4 does not support Java 1.6 in its default configuration.&#xA;Luckily I found this article on the CentOS wiki which included instructions on how to install Java 1.6 on CentOS 4. Remembering that RHEL4 and CentOS 4 are almost identical, I tried the method supplied, and it worked.</description>
+      
+      <guid>http://davidcraddock.net/2012/02/11/java-1-6-on-rhel4/</guid>
+      <description>After I wrote a Java application in JDK 1.6, I was stuck for a while when I realised that the target deployment machine was Red Hat Enterprise Linux 4. RHEL4 does not support Java 1.6 in its default configuration.
+Luckily I found this article on the CentOS wiki which included instructions on how to install Java 1.6 on CentOS 4. Remembering that RHEL4 and CentOS 4 are almost identical, I tried the method supplied, and it worked.</description>
+      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2012/02/red-hat-theme-party.jpg"><img loading="lazy" src="/wp-content/uploads/2012/02/red-hat-theme-party.jpg" type="" alt=""  /></a></p>
+<p>After I wrote a Java application in JDK 1.6, I was stuck for a while when I realised that the target deployment machine was Red Hat Enterprise Linux 4. RHEL4 does not support Java 1.6 in its default configuration.</p>
+<p>Luckily I found this article on the CentOS wiki which included instructions on how to install Java 1.6 on CentOS 4. Remembering that RHEL4 and CentOS 4 are almost identical, I tried the method supplied, and it worked. This is the page with the method:</p>
+<p><a href="http://wiki.centos.org/HowTos/JavaOnCentOS">http://wiki.centos.org/HowTos/JavaOnCentOS</a></p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

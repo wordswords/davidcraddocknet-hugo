@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Google-Drive on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/tag/google-drive/</link>
+    <link>http://davidcraddock.net/tag/google-drive/</link>
     <description>Recent content in Google-Drive on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 24 Sep 2022 17:39:06 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/tag/google-drive/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Sep 2022 17:39:06 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/tag/google-drive/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google Drive Backup using Rclone</title>
-      <link>http://davidcraddock.net:9796/2022/09/24/google-drive-backup-using-rclone/</link>
+      <link>http://davidcraddock.net/2022/09/24/google-drive-backup-using-rclone/</link>
       <pubDate>Sat, 24 Sep 2022 17:39:06 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2022/09/24/google-drive-backup-using-rclone/</guid>
-      <description>For 8 TB of data storage on Google Drive, plus my own Google organization, I am paying £30/month, which is a pretty good deal.&#xA;I wanted to use this space for backing up my NAS, but it was proving difficult. The program I was recommended for Linux backup, Duplicati, was not the best for this purpose. My backup runs would not complete, they would be slow, and full of syncing errors.</description>
+      
+      <guid>http://davidcraddock.net/2022/09/24/google-drive-backup-using-rclone/</guid>
+      <description>For 8 TB of data storage on Google Drive, plus my own Google organization, I am paying £30/month, which is a pretty good deal.
+I wanted to use this space for backing up my NAS, but it was proving difficult. The program I was recommended for Linux backup, Duplicati, was not the best for this purpose. My backup runs would not complete, they would be slow, and full of syncing errors.</description>
+      <content:encoded><![CDATA[<p>For 8 TB of data storage on Google Drive, plus my own Google organization, I am paying £30/month, which is a pretty good deal.</p>
+<p>I wanted to use this space for backing up my NAS, but it was proving difficult. The program I was recommended for Linux backup, Duplicati, was not the best for this purpose. My backup runs would not complete, they would be slow, and full of syncing errors.</p>
+<p>Until I discovered rclone.</p>
+<p>rclone was much better than Duplicati at backing up my NAS to Google Drive.</p>
+<p>This is the script I use to sync the NAS content to Google Drive: <a href="https://github.com/wordswords/dotfiles/blob/568a8768154de8609a01b26560373ec5ca0eab85/bin/rclone-backup.sh">https://github.com/wordswords/dotfiles/blob/568a8768154de8609a01b26560373ec5ca0eab85/bin/rclone-backup.sh</a></p>
+<p>It works just like rsync, but with a progress indicator. I&rsquo;ve added it to my crontab and it syncs everything up weekly.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

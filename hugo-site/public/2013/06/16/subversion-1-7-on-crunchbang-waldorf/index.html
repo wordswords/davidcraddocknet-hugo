@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=9796&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Subversion 1.7 on Crunchbang Waldorf | DavidCraddock.net</title>
 <meta name="keywords" content="">
 <meta name="description" content="I use the excellent http://www.smartsvn.com/ client from WANdisco. WANdisco have been releasing new open-source versions of SVN to the public with new improved reliability, and the client uses one of these versions, 1.7, to offer better performance.
 Unfortunately if you choose to upgrade your entire repository to 1.7, this breaks compatibility with the default commandline SVN client on Waldorf which I like to use as well as Smart SVN, for quick &lsquo;svn up&rsquo;s and other commandline magic.">
 <meta name="author" content="">
-<link rel="canonical" href="http://192.168.1.50:9796/2013/06/16/subversion-1-7-on-crunchbang-waldorf/">
+<link rel="canonical" href="http://davidcraddock.net/2013/06/16/subversion-1-7-on-crunchbang-waldorf/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.7da7716a1f2d0725f74c6ae7f8d6adafc43aabe2b366b65bfbf433448e2a2001.css" integrity="sha256-fadxah8tByX3TGrn&#43;Natr8Q6q&#43;KzZrZb&#43;/QzRI4qIAE=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://192.168.1.50:9796/favicon.ico">
-<link rel="apple-touch-icon" href="http://192.168.1.50:9796/apple-touch-icon.png">
-<link rel="alternate" hreflang="en" href="http://192.168.1.50:9796/2013/06/16/subversion-1-7-on-crunchbang-waldorf/">
+<link rel="icon" href="http://davidcraddock.net/favicon.ico">
+<link rel="apple-touch-icon" href="http://davidcraddock.net/apple-touch-icon.png">
+<link rel="alternate" hreflang="en" href="http://davidcraddock.net/2013/06/16/subversion-1-7-on-crunchbang-waldorf/">
 
 <meta name="twitter:title" content="Subversion 1.7 on Crunchbang Waldorf | DavidCraddock.net" />
 <meta name="twitter:description" content="I use the excellent http://www.smartsvn.com/ client from WANdisco. WANdisco have been releasing new open-source versions of SVN to the public with new improved reliability, and the client uses one of these versions, 1.7, to offer better performance.
@@ -23,7 +23,7 @@ Unfortunately if you choose to upgrade your entire repository to 1.7, this break
 <meta property="og:description" content="I use the excellent http://www.smartsvn.com/ client from WANdisco. WANdisco have been releasing new open-source versions of SVN to the public with new improved reliability, and the client uses one of these versions, 1.7, to offer better performance.
 Unfortunately if you choose to upgrade your entire repository to 1.7, this breaks compatibility with the default commandline SVN client on Waldorf which I like to use as well as Smart SVN, for quick &lsquo;svn up&rsquo;s and other commandline magic." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://192.168.1.50:9796/2013/06/16/subversion-1-7-on-crunchbang-waldorf/" />
+<meta property="og:url" content="http://davidcraddock.net/2013/06/16/subversion-1-7-on-crunchbang-waldorf/" />
 <meta property="article:section" content="posts" />
   <meta property="article:published_time" content="2013-06-16T03:43:49&#43;00:00" />
   <meta property="article:modified_time" content="2013-06-16T03:43:49&#43;00:00" />
@@ -38,13 +38,13 @@ Unfortunately if you choose to upgrade your entire repository to 1.7, this break
       "@type": "ListItem",
       "position":  1 ,
       "name": "Posts",
-      "item": "http://192.168.1.50:9796/posts/"
+      "item": "http://davidcraddock.net/posts/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "Subversion 1.7 on Crunchbang Waldorf",
-      "item": "http://192.168.1.50:9796/2013/06/16/subversion-1-7-on-crunchbang-waldorf/"
+      "item": "http://davidcraddock.net/2013/06/16/subversion-1-7-on-crunchbang-waldorf/"
     }
   ]
 }
@@ -65,14 +65,14 @@ Unfortunately if you choose to upgrade your entire repository to 1.7, this break
   "dateModified": "2013-06-16T03:43:49Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://192.168.1.50:9796/2013/06/16/subversion-1-7-on-crunchbang-waldorf/"
+    "@id": "http://davidcraddock.net/2013/06/16/subversion-1-7-on-crunchbang-waldorf/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "DavidCraddock.net",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://192.168.1.50:9796/favicon.ico"
+      "url": "http://davidcraddock.net/favicon.ico"
     }
   }
 }
@@ -188,7 +188,7 @@ function toggleThemeListener() {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://192.168.1.50:9796/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
+            <a href="http://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <span class="logo-switches">
             </span>
         </div>
@@ -200,7 +200,7 @@ function toggleThemeListener() {
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://192.168.1.50:9796/">Home</a>&nbsp;»&nbsp;<a href="http://192.168.1.50:9796/posts/">Posts</a></div><h1 class="post-title">Subversion 1.7 on Crunchbang Waldorf</h1>
+    <div class="breadcrumbs"><a href="http://davidcraddock.net/">Home</a>&nbsp;»&nbsp;<a href="http://davidcraddock.net/posts/">Posts</a></div><h1 class="post-title">Subversion 1.7 on Crunchbang Waldorf</h1>
     <div class="post-meta"><span class="meta-item">
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
   <span>June 16, 2013</span></span><span class="meta-item">
@@ -212,6 +212,17 @@ function toggleThemeListener() {
     </div>
   </header> 
 
+
+<div>
+    <ul>
+        <li><a href="/">Blog Posts</a></li>
+        <li><a href="/music">My Music</a></li>
+        <li><a href="/my-home-network">My Home Network</a></li>
+        <li><a href="/my-gaming-setup">My Gaming Setup</a></li>
+        <li><a href="/my-mobile-laptop-setup">My Mobile Laptop Setup</a></li>
+        <li><a href="/my-work-computer">My Work Computer</a></li>
+    </ul>
+</div>
   <div class="post-content"><p>I use the excellent <a href="http://www.smartsvn.com/" title="Smart SVN">http://www.smartsvn.com/</a> client from WANdisco. WANdisco have been releasing new open-source versions of SVN to the public with new improved reliability, and the client uses one of these versions, 1.7, to offer better performance.</p>
 <p>Unfortunately if you choose to upgrade your entire repository to 1.7, this breaks compatibility with the default commandline SVN client on Waldorf which I like to use as well as Smart SVN, for quick &lsquo;svn up&rsquo;s and other commandline magic.</p>
 <p>This means I have to download the latest commandline SVN client, the 1.7 version of subversion for Linux, available for free on the WANdisco site.</p>
@@ -229,7 +240,7 @@ function toggleThemeListener() {
     </main>
     
 <footer class="footer">
-  <span>&copy; 2024 <a href="http://192.168.1.50:9796/">DavidCraddock.net</a></span><span style="display: inline-block; margin-left: 1em;">
+  <span>&copy; 2024 <a href="http://davidcraddock.net/">DavidCraddock.net</a></span><span style="display: inline-block; margin-left: 1em;">
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>
   </span>
   <span style="display: inline-block; margin-left: 1em;">
@@ -440,7 +451,7 @@ function toggleThemeListener() {
   })();
   </script>
 
-<script src="/js/instantclick.js" data-no-instant
+<script src="/js/instantclick.min.js" data-no-instant
 ></script>
 <script data-no-instant>
   

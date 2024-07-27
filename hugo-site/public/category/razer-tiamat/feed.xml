@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Razer-Tiamat on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/category/razer-tiamat/</link>
+    <link>http://davidcraddock.net/category/razer-tiamat/</link>
     <description>Recent content in Razer-Tiamat on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 08 Nov 2015 19:22:50 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/category/razer-tiamat/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Nov 2015 19:22:50 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/razer-tiamat/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Biggest Disappointment Purchases for PC - Razer Tiamat &#43; Lightpack</title>
-      <link>http://davidcraddock.net:9796/2015/11/08/biggest-disappointment-purchases-for-pc-razer-tiamat-lightpack/</link>
+      <link>http://davidcraddock.net/2015/11/08/biggest-disappointment-purchases-for-pc-razer-tiamat-lightpack/</link>
       <pubDate>Sun, 08 Nov 2015 19:22:50 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2015/11/08/biggest-disappointment-purchases-for-pc-razer-tiamat-lightpack/</guid>
-      <description>As you can see, I buy a lot of bits and pieces for my PC. Occasionally though, I buy something that I feel was a disappointment, or not worth the investment. This post is meant to caution against other people making the same mistake.&#xA;Razer Tiamat - 7.1 Surround Sound Gaming Headset, with microphone (http://www.razerzone.com) This was a big dissapointment in a couple of ways. The first, and most obvious in hindsight now I&amp;rsquo;m actually working on spatial audio for a living at BBC R&amp;amp;D, is that 7.</description>
+      
+      <guid>http://davidcraddock.net/2015/11/08/biggest-disappointment-purchases-for-pc-razer-tiamat-lightpack/</guid>
+      <description>As you can see, I buy a lot of bits and pieces for my PC. Occasionally though, I buy something that I feel was a disappointment, or not worth the investment. This post is meant to caution against other people making the same mistake.
+Razer Tiamat - 7.1 Surround Sound Gaming Headset, with microphone (http://www.razerzone.com) This was a big dissapointment in a couple of ways. The first, and most obvious in hindsight now I&amp;rsquo;m actually working on spatial audio for a living at BBC R&amp;amp;D, is that 7.</description>
+      <content:encoded><![CDATA[<p><a href="http://www.davidcraddock.net/my-computer-setup/">As you can see</a>, I buy a lot of bits and pieces for my PC. Occasionally though, I buy something that I feel was a disappointment, or not worth the investment. This post is meant to caution against other people making the same mistake.</p>
+<h3 id="razer-tiamat---71-surround-sound-gaming-headset-with-microphone-httpwwwrazerzonecomhttpwwwrazerzonecom">Razer Tiamat - 7.1 Surround Sound Gaming Headset, with microphone <a href="http://www.razerzone.com">(http://www.razerzone.com)</a></h3>
+<p>This was a big dissapointment in a couple of ways. The first, and most obvious in hindsight now I&rsquo;m actually working on spatial audio for a living at BBC R&amp;D, is that 7.1 surround sound headsets are a joke. There is no way you can get enough seperation between the different speaker drivers when your ears are so close to the speakers. If you have a soundcard or motherboard that supports surround sound, do yourself a favour and get a surround sound speaker set.</p>
+<p>The second problem is that the Razer Tiamat has issues with electrical hum from the unshielded cables it uses. I replaced it with the <a href="http://www.roccat.org/en-GB/Products/Gaming-Sound/Kave-Series/Kave-XTD-5-1-Analog/">ROCCAT Kave XTD 5.1 Analog surround sound</a> headset which is better, although still not anything like the surround sound speaker setup which I now have.</p>
+<h3 id="lightpack---backlight-kit-with-adaptive-lighting-for-games-wwwlightpacktvhttpwwwlightpacktv">Lightpack - Backlight kit with adaptive lighting for games <a href="http://www.lightpack.tv">(www.lightpack.tv)</a></h3>
+<p>I took a risk on this, it was a kickstarter idea which offered the promise of an &lsquo;intelligent&rsquo; backlight which changed colours depending on what was on the screen. And it did work pretty well.. back when I was running Windows 7. Since upgrading to Windows 10, I haven&rsquo;t been able to get it to work properly when playing games with Playclaw, which is my main use for it. I even had to purchase Playclaw, as the software which comes with Lightpack doesn&rsquo;t work well. It still has limited use for me in terms of a colour spectrum effect for music when I throw a party, through using third-party software such as Ambibox. But the company really should improve its software to work with Windows 10 gaming. It didn&rsquo;t even work well for me under Windows 8.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

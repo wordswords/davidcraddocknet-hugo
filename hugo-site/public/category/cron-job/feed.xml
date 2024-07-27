@@ -1,19 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Cron-Job on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/category/cron-job/</link>
+    <link>http://davidcraddock.net/category/cron-job/</link>
     <description>Recent content in Cron-Job on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Mar 2010 16:02:42 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/category/cron-job/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Mar 2010 16:02:42 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/cron-job/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using the Linux command &#39;Watch&#39; to test Cron jobs and more</title>
-      <link>http://davidcraddock.net:9796/2010/03/13/using-the-linux-command-watch-to-test-cron-jobs/</link>
+      <link>http://davidcraddock.net/2010/03/13/using-the-linux-command-watch-to-test-cron-jobs/</link>
       <pubDate>Sat, 13 Mar 2010 16:02:42 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2010/03/13/using-the-linux-command-watch-to-test-cron-jobs/</guid>
-      <description>OK, so you have added a cron job that you want to perform a routine task every day at 6am. How do you test it?&#xA;You probably don&amp;rsquo;t want to spend all night waiting for it to execute, and there&amp;rsquo;s every chance that when it does execute, you won&amp;rsquo;t be able to find out whether it is executing properly - the task might take 30 minutes to run, for example. So every time you debug it and want to test it again, you have to wait until 6am the following day.</description>
+      
+      <guid>http://davidcraddock.net/2010/03/13/using-the-linux-command-watch-to-test-cron-jobs/</guid>
+      <description>OK, so you have added a cron job that you want to perform a routine task every day at 6am. How do you test it?
+You probably don&amp;rsquo;t want to spend all night waiting for it to execute, and there&amp;rsquo;s every chance that when it does execute, you won&amp;rsquo;t be able to find out whether it is executing properly - the task might take 30 minutes to run, for example. So every time you debug it and want to test it again, you have to wait until 6am the following day.</description>
+      <content:encoded><![CDATA[<p>OK, so you have added a cron job that you want to perform a routine task every day at 6am. How do you test it?</p>
+<p>You probably don&rsquo;t want to spend all night waiting for it to execute, and there&rsquo;s every chance that when it does execute, you won&rsquo;t be able to find out whether it is executing properly - the task might take 30 minutes to run, for example. So every time you debug it and want to test it again, you have to wait until 6am the following day.</p>
+<p>So instead, configure that cron job to run a bit earlier than that, say in 10 minutes, and monitor the execution with a &lsquo;watch&rsquo; command, so you can see if it&rsquo;s doing what you want it to.</p>
+<p>&lsquo;watch&rsquo; is a great command that will run a command at frequent intervals, by default, every 2 seconds. It&rsquo;s very useful when chained with the &lsquo;ps&rsquo; command, like the following:</p>
+<p><code>watch 'ps aux | grep bash'</code></p>
+<p>What that command will do, is continually monitor your server, and maintain an updated list that changes every 2 seconds, of every instance of the bash shell. When someone logs in and spawns a new bash shell, you&rsquo;ll know about it. When a cron&rsquo;d command runs that invokes a bash shell before executing a shellscript, you&rsquo;ll know about it. When someone writes a badly written shell script, and runs it invoking about 100 bash shells by accident, flooding your servers memory, you&rsquo;ll know about it.</p>
+<p>OK so back to the cron example. Suppose I&rsquo;m testing a cronjob that should invoke a shell script that runs an rsync command. I just set the cron job to run in 5 minutes, then run this command:</p>
+<p><code>watch 'ps aux | grep rsync'</code></p>
+<p>Here is the result.. every single rsync command that is running on my server is displayed, and the list is updated every 2 seconds:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Every 2.0s: ps aux | grep rsync                                              Sat Mar 13 15:59:35 2010
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>root     16026  0.0  0.0   1752   480 ?        Ss   15:28   0:00 /bin/sh -c /opt/remote/rsync-matt/cr
+</span></span><span style="display:flex;"><span>root     16027  0.0  0.0   1752   488 ?        S    15:28   0:00 /bin/sh /opt/remote/rsync-matt/crond
+</span></span><span style="display:flex;"><span>root     16032  0.0  0.1   3632  1176 ?        S    15:28   0:00 rsync -avvz --remove-source-files -P
+</span></span><span style="display:flex;"><span>root     16033  0.5  0.4   7308  4436 ?        R    15:28   0:09 ssh -l david someotherhost rsync --se
+</span></span><span style="display:flex;"><span>root     16045  0.4  0.1   4152  1244 ?        S    15:28   0:07 rsync -avvz --remove-source-files -P
+</span></span><span style="display:flex;"><span>root     18184  0.0  0.1   3176  1000 pts/2    R+   15:59   0:00 watch ps aux | grep rsync
+</span></span><span style="display:flex;"><span>root     18197  0.0  0.0   3176   296 pts/2    S+   15:59   0:00 watch ps aux | grep rsync
+</span></span><span style="display:flex;"><span>root     18198  0.0  0.0   1752   484 pts/2    S+   15:59   0:00 sh -c ps aux | grep rsync
+</span></span></code></pre></div><p>Now I can see the time ticking away, and when the cron job is run, I can watch in real-time as it invokes rsync, and I can keep monitoring it to make sure all is running smoothly. This proves to be very useful when troubleshooting cron jobs.</p>
+<p>You can also run two commands at the same time. You can actually tail a log file and combine it with the process monitoring like so:</p>
+<p><code>watch 'tail /var/log/messages &amp;&amp; ps aux | grep rsync'</code></p>
+<p>Try this yourself. It constantly prints out the last ten lines of the standard messages log file every two seconds, while monitoring the number of rsync processes running, and the commands used to invoke them. Tailor it to the cron&rsquo;d job you wish to test.</p>
+<p>Watch can be used to keep an eye on other things also. If you&rsquo;re running a multi-user server and you want to see who&rsquo;s logged on at any one time, you can run this command:</p>
+<p><code>watch 'echo CURRENT: &amp;&amp; who &amp;&amp; echo LASTLOGIN: &amp;&amp; lastlog | grep -v Never'</code></p>
+<p>This chains 5 commands together. It will keep you updated with the current list of users logged in to your system, and it will also give you a constantly updated list of those users who have ever logged in before, with their last login time.</p>
+<p>The following shows the output of that command above on a multi-user server I administrate, and will refresh with current information every 2 seconds until I exit it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Every 2.0s: echo CURRENT: &amp;&amp; who &amp;&amp; echo LASTLOGIN: &amp;&amp; lastlog | grep -v Never                                                             Sat Mar 13 07:48:32 2010
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>CURRENT:
+</span></span><span style="display:flex;"><span>mark     tty1         2010-02-23 11:08
+</span></span><span style="display:flex;"><span>david    pts/2        2010-03-13 07:48 (wherever)
+</span></span><span style="display:flex;"><span>mike     pts/4        2010-02-26 07:53 (wherever)
+</span></span><span style="display:flex;"><span>mike     pts/5        2010-02-26 07:53 (wherever)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>LASTLOGIN:
+</span></span><span style="display:flex;"><span>Username         Port     From           Latest
+</span></span><span style="display:flex;"><span>mark               pts/6    wherever      Thu Mar 11 23:24:36 -0800 2010
+</span></span><span style="display:flex;"><span>mike               pts/0    wherever      Sat Mar 13 03:54:28 -0800 2010
+</span></span><span style="display:flex;"><span>dan                pts/4    wherever      Fri Jan  1 08:46:29 -0800 2010
+</span></span><span style="display:flex;"><span>sam                pts/1    wherever      Sat Jan 30 08:06:01 -0800 2010
+</span></span><span style="display:flex;"><span>rei                pts/2    wherever      Thu Dec 10 11:45:39 -0800 2009
+</span></span><span style="display:flex;"><span>david              pts/2    wherever      Sat Mar 13 07:48:05 -0800 2010
+</span></span></code></pre></div><p>This shows that mark, david and mike are currently logged on. Mark is logged in on the server&rsquo;s physical monitor and keyboard(tty1). Everyone else is logged in remotely. Mike currently has two connections, or sessions, on the server. We can also see the list of users that have logged in before - ie: are active users, and when they last logged on. I immediately notice, for example, that rei hasn&rsquo;t logged in for 4 months and probably isn&rsquo;t using her account.</p>
+<p>(Normally this command will also provide IP addresses and hostnames of where the users have logged on from, but I&rsquo;ve replaced those with &lsquo;wherever&rsquo; for privacy reasons)</p>
+<p>So.. you can see that the &lsquo;watch&rsquo; command can be a useful window into what is happening, in real-time, on your servers.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

@@ -1,26 +1,75 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Git on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/tag/git/</link>
+    <link>http://davidcraddock.net/tag/git/</link>
     <description>Recent content in Git on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Feb 2016 17:28:39 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/tag/git/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Feb 2016 17:28:39 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/tag/git/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fish Shell Scripting</title>
-      <link>http://davidcraddock.net:9796/2016/02/02/fish-shell-scripting/</link>
+      <link>http://davidcraddock.net/2016/02/02/fish-shell-scripting/</link>
       <pubDate>Tue, 02 Feb 2016 17:28:39 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2016/02/02/fish-shell-scripting/</guid>
-      <description>A few months ago I switched across from Bash onto the Fish shell, on my main development machine. I can&amp;rsquo;t get enough of its fast autosuggestions and its sane scripting language. Compared to Bash it is very fun to use.&#xA;Today I wrote a script to automate the backup of my development workspace onto a private bitbucket account. Bitbucket is good because it allows unlimited private repositories, but it caps the size of these repos at 2GB max, with some features disabled after 1GB.</description>
+      
+      <guid>http://davidcraddock.net/2016/02/02/fish-shell-scripting/</guid>
+      <description>A few months ago I switched across from Bash onto the Fish shell, on my main development machine. I can&amp;rsquo;t get enough of its fast autosuggestions and its sane scripting language. Compared to Bash it is very fun to use.
+Today I wrote a script to automate the backup of my development workspace onto a private bitbucket account. Bitbucket is good because it allows unlimited private repositories, but it caps the size of these repos at 2GB max, with some features disabled after 1GB.</description>
+      <content:encoded><![CDATA[<p>
+  <img loading="lazy" src="http://i.telegraph.co.uk/multimedia/archive/01396/fish_1396516c.jpg" alt=""  /></p>
+<p>A few months ago I switched across from Bash onto the <a href="http://fishshell.com/">Fish shell</a>, on my main development machine. I can&rsquo;t get enough of its fast autosuggestions and its sane scripting language. Compared to Bash it is very fun to use.</p>
+<p>Today I wrote a script to automate the backup of my development workspace onto a private bitbucket account. Bitbucket is good because it allows unlimited private repositories, but it caps the size of these repos at 2GB max, with some features disabled after 1GB. This means that I want to find out the size of my repo before automatically backing it up. This script does this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>#!/usr/bin/env fish
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>set size (du -sm . | awk &#39;{print $1}&#39;)
+</span></span><span style="display:flex;"><span>echo &#34;Workspace is $size MB&#34;
+</span></span><span style="display:flex;"><span>if math &#34;$size &gt; 1000&#34;
+</span></span><span style="display:flex;"><span>  echo &#34;Workspace too big to commit!&#34;
+</span></span><span style="display:flex;"><span>  exit
+</span></span><span style="display:flex;"><span>else
+</span></span><span style="display:flex;"><span>  echo &#34;Workspace is under 1GB, OK to commit&#34;
+</span></span><span style="display:flex;"><span>end
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m &#34;Automated backup&#34;
+</span></span><span style="display:flex;"><span>git push origin master
+</span></span></code></pre></div><p>Each individual directory additionally usually has its own git config which is synced to the separate repos for the code I&rsquo;m actually working on. But if my development machine is stolen or somehow destroyed, or I want to quickly replicate my environment on another machine with access to the original repos, then I can regenerate the associations between the different directories. It also makes me mindful of not committing images or other video assets.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>My Favourite OSX Apps for Development</title>
-      <link>http://davidcraddock.net:9796/2015/11/07/favourite-osx-apps-for-development/</link>
+      <link>http://davidcraddock.net/2015/11/07/favourite-osx-apps-for-development/</link>
       <pubDate>Sat, 07 Nov 2015 12:51:33 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2015/11/07/favourite-osx-apps-for-development/</guid>
-      <description>I&amp;rsquo;ve just recently bought a Macbook Pro for myself, after having used a MBP at work for 4 years. I find it to be a really powerful development environment for the development I do, in languages such as Java, PHP, Ruby, Python and JS. Here is what I use day-to-day:&#xA;OSX El Capitan I haven&amp;rsquo;t found anything not to like about this upgrade. I don&amp;rsquo;t use a lot of external devices, for which Bruce has found problems with El Capitan&amp;rsquo;s new restricted driver management for Arduinos and others.</description>
+      
+      <guid>http://davidcraddock.net/2015/11/07/favourite-osx-apps-for-development/</guid>
+      <description>I&amp;rsquo;ve just recently bought a Macbook Pro for myself, after having used a MBP at work for 4 years. I find it to be a really powerful development environment for the development I do, in languages such as Java, PHP, Ruby, Python and JS. Here is what I use day-to-day:
+OSX El Capitan I haven&amp;rsquo;t found anything not to like about this upgrade. I don&amp;rsquo;t use a lot of external devices, for which Bruce has found problems with El Capitan&amp;rsquo;s new restricted driver management for Arduinos and others.</description>
+      <content:encoded><![CDATA[<p>I&rsquo;ve just recently bought a Macbook Pro for myself, after having used a MBP at work for 4 years. I find it to be a really powerful development environment for the development I do, in languages such as Java, PHP, Ruby, Python and JS. Here is what I use day-to-day:</p>
+<h3 id="osx-el-capitan">OSX El Capitan</h3>
+<p>I haven&rsquo;t found anything not to like about this upgrade. I don&rsquo;t use a lot of external devices, for which <a href="https://twitter.com/custardcat">Bruce</a> has found problems with El Capitan&rsquo;s new restricted driver management for Arduinos and others. I like the fact I can use split screen functionality to side-by-side two windows easily, a feature that I very much like in Windows 10 too.</p>
+<h3 id="iterm-2httpswwwiterm2com"><a href="https://www.iterm2.com/">iTerm 2</a></h3>
+<p>This is an awesome terminal, better than OSX&rsquo;s terminal. Nothing much more to say about it.</p>
+<h3 id="fish-shellhttpfishshellcom"><a href="http://fishshell.com/">Fish Shell</a></h3>
+<p>This shell has fast and smart command-line completion which is very handy and I&rsquo;d highly recommend it if you use the commandline a lot and are not totally won over by Bash. It looks nice too.</p>
+<h3 id="homebrewhttpbrewsh"><a href="http://brew.sh/">Homebrew</a></h3>
+<p>This is pretty much essential for command line OSX. It is a package manager which downloads and compiles the latest version of open source packages on your Mac. If you don&rsquo;t use it already, get used to it.</p>
+<h3 id="intellij-webstormhttpswwwjetbrainscomwebstorm"><a href="https://www.jetbrains.com/webstorm/">IntelliJ WebStorm</a></h3>
+<p>WebStorm is great for debugging JavaScript applications, which I seem to be doing a lot of lately. I recommend the IntelliJ IDEA family of IDEs, once you get use to them, they are a great help in productive development. There are also vim and Emacs keybindings.</p>
+<h3 id="vim">vim</h3>
+<p>If you are a fan of vim you will know what I mean when I say I can&rsquo;t be without it. My <a href="https://github.com/wordswords/-">Dotfiles</a> show my .vimrc and plugin configuration.</p>
+<h3 id="git">git</h3>
+<p>Thankfully the BBC has moved over to Github, meaning all my coding uses Git. It is so useful, and not just for storing code, you can store anything.</p>
+<h3 id="itunes">iTunes</h3>
+<p>I use Apple Music, and iTunes Match, so iTunes is a must. It annoys me at times, but I just have to live with it.</p>
+<h3 id="alfredhttpswwwalfredappcom"><a href="https://www.alfredapp.com/">Alfred</a></h3>
+<p>Alfred is a replacement for Spotlight search in OSX. It has a lot of functionality that I&rsquo;m still getting my head around, but it speeds up my OSX workflow a lot when undertaking frequent tasks such as Google searching.</p>
+<h3 id="evernotehttpevernotecom"><a href="http://evernote.com">Evernote</a></h3>
+<p>Evernote is so useful for making and sharing notes on my phone, mac, work computer.. anywhere</p>
+<h3 id="droplrhttpdroplrcom"><a href="http://droplr.com">Droplr</a></h3>
+<p>This is something someone only recently recommended to me. It seems very useful from what I&rsquo;ve seen, great way to share images files, screenshots, webcasts.. anything. Also it has as expiry policy for media, like Snapchat, so it doesn&rsquo;t exist on the internet for generations to come.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

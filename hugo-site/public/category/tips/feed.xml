@@ -1,138 +1,424 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tips on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/category/tips/</link>
+    <link>http://davidcraddock.net/category/tips/</link>
     <description>Recent content in Tips on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 23 Apr 2024 22:54:59 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/category/tips/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Apr 2024 22:54:59 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/tips/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Advice to young people in the UK wanting a career in Tech</title>
-      <link>http://davidcraddock.net:9796/2024/04/23/4683/</link>
+      <link>http://davidcraddock.net/2024/04/23/4683/</link>
       <pubDate>Tue, 23 Apr 2024 22:54:59 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2024/04/23/4683/</guid>
-      <description>If you&amp;rsquo;re currently in high school in the UK and want to be a GOOD and EMPLOYED software engineer.. this is my advice.&#xA;Start programming on personal projects right away, and keep it up during your entire working career. Always have something going on in the background. Get into a RUSSELL GROUP university in the UK and take a technical, demanding degree in a computing-related discipline, for example, Physics, Electronic Engineering, Maths, Computer Science, Artificial Intelligence.</description>
+      
+      <guid>http://davidcraddock.net/2024/04/23/4683/</guid>
+      <description>If you&amp;rsquo;re currently in high school in the UK and want to be a GOOD and EMPLOYED software engineer.. this is my advice.
+Start programming on personal projects right away, and keep it up during your entire working career. Always have something going on in the background. Get into a RUSSELL GROUP university in the UK and take a technical, demanding degree in a computing-related discipline, for example, Physics, Electronic Engineering, Maths, Computer Science, Artificial Intelligence.</description>
+      <content:encoded><![CDATA[<p>If you&rsquo;re currently in high school in the UK and want to be a GOOD and EMPLOYED software engineer.. this is my advice.</p>
+<ol>
+<li>Start programming on personal projects right away, and keep it up during your entire working career. Always have something going on in the background.</li>
+<li>Get into a <a href="https://russellgroup.ac.uk/about/our-universities/">RUSSELL GROUP</a> university in the UK and take a technical, demanding degree in a computing-related discipline, for example, Physics, Electronic Engineering, Maths, Computer Science, Artificial Intelligence. If you can&rsquo;t get into a university and course that isn&rsquo;t in the top 25% of courses for your subject in the UK, and someone isn&rsquo;t paying all your bills (e.g rich parents), don&rsquo;t bother going to university, It&rsquo;s not worth the loan. Find another way. Look into apprenticeships.</li>
+<li>Try to not be a total &rsquo;tech head&rsquo; and develop some creative and artistic side to you, taking up writing is a really good idea as it improves your thinking and communication skills. Ideally learn to write humanities essays to the standard of the first year humanities majors at your university.</li>
+<li>Try and get onto as many technical internships and technical work experience as possible throughout your degree.</li>
+<li>Once you have graduated, and found that the Junior tech worker job market is depressingly non-existant, move back in with your parents and start your informal and free &lsquo;post-graduate&rsquo; learning. Take AT LEAST <a href="https://missing.csail.mit.edu/">this free course</a> but also certifications such as AWS certs, and anything that you have researched on Reddit etc that you can do cheaply and is sought after by your chosen target job (as evidenced by being mentioned on job descriptions of jobs you&rsquo;d like to apply for). Increase your work on your personal projects and move to open source them and build up a following from them, and possibly a side-income. Keep in contact with your old uni friends, especially the ones that have got jobs.</li>
+<li>Read <a href="https://www.goodreads.com/book/show/13525945-so-good-they-can-t-ignore-you">&lsquo;So Good They Can&rsquo;t Ignore You&rsquo; by Cal Newport</a>, learn to market yourself, build your LinkedIn presence, network like crazy, and hopefully you will get your foot in the door with that &lsquo;all important&rsquo; first job that you can launch a career off of. You&rsquo;ll certainly deserve it.</li>
+</ol>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Tips for Working from Home</title>
-      <link>http://davidcraddock.net:9796/2022/10/18/tips-for-working-from-home/</link>
+      <link>http://davidcraddock.net/2022/10/18/tips-for-working-from-home/</link>
       <pubDate>Tue, 18 Oct 2022 17:29:44 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2022/10/18/tips-for-working-from-home/</guid>
-      <description>I have been working from home, the majority of the time, for over 5 years. It took a lot of adjustment, and I&amp;rsquo;m still not 100% adjusted, but if you want to undertake this, then these are my tips.&#xA;Note that a big part of the benefit from working from home is the total flexibility in work environment, so these are only tips that work for me - they might not work for you!</description>
+      
+      <guid>http://davidcraddock.net/2022/10/18/tips-for-working-from-home/</guid>
+      <description>I have been working from home, the majority of the time, for over 5 years. It took a lot of adjustment, and I&amp;rsquo;m still not 100% adjusted, but if you want to undertake this, then these are my tips.
+Note that a big part of the benefit from working from home is the total flexibility in work environment, so these are only tips that work for me - they might not work for you!</description>
+      <content:encoded><![CDATA[<p>I have been working from home, the majority of the time, for over 5 years. It took a lot of adjustment, and I&rsquo;m still not 100% adjusted, but if you want to undertake this, then these are my tips.</p>
+<p>Note that a big part of the benefit from working from home is the total flexibility in work environment, so these are only tips that work for me - they might not work for you! However, I think there is probably quite a bit of commonality.</p>
+<p><strong>1) Find some way of exercising</strong>.</p>
+<p>I&rsquo;m incredibly bad at this usually, but not due to lack of understanding! Lately my under-desk bike that allows me to work while cycling away, has been very beneficial. I also don&rsquo;t own a car, so this increases the amount of walking I do (if I don&rsquo;t get an Uber, that is).</p>
+<p>Realistically, you probably want to adopt some kind of regular exercise routine that is out of the home, in order to get yourself out of the home and also exercising regularly. This is even more important now you work from home.</p>
+<p><strong>2) Have a room for your study.</strong></p>
+<p>I know this is difficult in a lot of situations, but really, if you are going to be working from home regularly over your career, you really need your own study area with a door that shuts. It doesn&rsquo;t have to be a big room, just enough for your desk. It should of course have a window, my study has a south facing window which is great because I always get a window seat!</p>
+<p><strong>3) Make your own lunch.</strong></p>
+<p>There is still the temptation to get your own sandwiches delivered if you live in a big city like I do, but really you want to make the most of the huge savings you can make on your lunch every day, and make your own sandwiches.</p>
+<p><strong>4) Get enough sunlight.</strong></p>
+<p>I am lucky enough to have a garden, but when you are working at home and living at home, you will almost definitely spend less time in the sunshine. I make an effort to spend 15 minutes in direct sunlight every day, to help vitamin D absorption and to combat the winter blues. You probably additionally want to be taking vitamin D supplements during the winter months as the NHS recommends for everyone.</p>
+<p><strong>5) Make use of your freedom.</strong></p>
+<p>Most employers I&rsquo;ve had will not care if you take a 30-minute nap during the day, as long as you don&rsquo;t miss any meetings. This gives you a huge advantage over keeping fresh and alert and doing your best work over office workers. They might be tired during the day, if you&rsquo;re tired, you can take a power nap. Make sure you don&rsquo;t abuse this privilege, and it will help you, and your employer, as the work you do will be of higher quality.</p>
+<p><strong>6) Don&rsquo;t use your work computer for personal things.</strong></p>
+<p>Not only is it unprofessional, and traceable by your employer, but you can easily keep a computing device near to you when you work from home to do all your personal stuff on.</p>
+<p><strong>7) Customize your desk environment.</strong></p>
+<p>I have a standing desk with a CD player, record player, a surround sound system, a personal computer, a fan, an ergonomic chair, and under desk bike, and a foot cushion to put my feet up when I want. I recommend NOT relying on your workplace to give you any money for your working from home environment, spend your own money, and don&rsquo;t skimp, see it as a long term investment. I also recommend getting an ergonomic keyboard and mouse, and a BIG screen - mine is a 32&quot; graphic designers monitor. Why not make your work environment as nice as possible, now you can?</p>
+<p><strong>8) Have other places you occasionally work from.</strong></p>
+<p>I can work from my garden during the summer months, I have a sheltered gazebo, an external waterproof plug socket, and an external network cable. Have other places you can work from, even if it means a coffee shop. That will improve your productivity if you feel yourself stuck in a rut.</p>
+<p><strong>9) Don&rsquo;t get distracted.</strong></p>
+<p>Remember you still have to DO the work! Actually you may have to work slightly harder in fact, because statistically remote workers are more judged on their productivity level than in the office. Things like pomodoro timers may help. I have a pomodoro timer, and also use my Amazon Echo Dot to set arbitrary quick alarms, so I can impose deadlines on myself to get things done. I also have a TODO list, that helps.</p>
+<p><strong>10) Make sure you have friends to talk to.</strong></p>
+<p>Working from home 100% can be a bit isolating, so I have friends external to work that I message during the day, some of whom also fully work from home. Do talk to your colleagues as well of course, but also have people you can call or message from time to time, just as you would have the odd quick chat in an office to your friends.</p>
+<p>Also remember that pets are a lot more of a viable commitment now you work from home. Dogs can be very useful in particular, as they combine getting out of the house with companionship.</p>
+<p>&ndash;</p>
+<p>I hope these tips have helped you. I really couldn&rsquo;t go back to working in an office. Working from home full time is one of the best things that has happened to my career.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>OSX Fish Functions to open Chrome from the Shell</title>
-      <link>http://davidcraddock.net:9796/2016/04/04/osx-fish-functions-to-open-chrome-from-the-shell/</link>
+      <link>http://davidcraddock.net/2016/04/04/osx-fish-functions-to-open-chrome-from-the-shell/</link>
       <pubDate>Mon, 04 Apr 2016 11:50:31 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2016/04/04/osx-fish-functions-to-open-chrome-from-the-shell/</guid>
-      <description>These functions are quite handy, and allow you to do things such as copy and paste errors and google for them without having to manually open a browser. You have to enclose arguments to both functions in single quotes, e.g. &amp;lsquo;chrome &amp;lsquo;http://www.google.co.uk&amp;rsquo; and google &amp;lsquo;one two three four&amp;rsquo;. You should add these to your config file at ~/.config/fish/config.fish and make sure Google Chrome is already installed.&#xA;[code language=&amp;ldquo;bash&amp;rdquo;] function chrome /usr/bin/open -a &amp;lsquo;/Applications/Google Chrome.</description>
+      
+      <guid>http://davidcraddock.net/2016/04/04/osx-fish-functions-to-open-chrome-from-the-shell/</guid>
+      <description>These functions are quite handy, and allow you to do things such as copy and paste errors and google for them without having to manually open a browser. You have to enclose arguments to both functions in single quotes, e.g. &amp;lsquo;chrome &amp;lsquo;http://www.google.co.uk&amp;rsquo; and google &amp;lsquo;one two three four&amp;rsquo;. You should add these to your config file at ~/.config/fish/config.fish and make sure Google Chrome is already installed.
+[code language=&amp;ldquo;bash&amp;rdquo;] function chrome /usr/bin/open -a &amp;lsquo;/Applications/Google Chrome.</description>
+      <content:encoded><![CDATA[<p>These functions are quite handy, and allow you to do things such as copy and paste errors and google for them without having to manually open a browser. You have to enclose arguments to both functions in single quotes, e.g. &lsquo;chrome &lsquo;<a href="http://www.google.co.uk">http://www.google.co.uk</a>&rsquo; and google &lsquo;one two three four&rsquo;. You should add these to your config file at ~/.config/fish/config.fish and make sure Google Chrome is already installed.</p>
+<p>[code language=&ldquo;bash&rdquo;]
+function chrome
+/usr/bin/open -a &lsquo;/Applications/Google Chrome.app&rsquo; $argv[1:]
+end
+function google
+/usr/bin/open -a &lsquo;/Applications/Google Chrome.app&rsquo; &ldquo;<a href="https://www.google.co.uk/search?q=$argv">https://www.google.co.uk/search?q=$argv</a>[1]&rdquo;
+end
+[/code]</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Working with Fish Shell, ffmpeg, MP4Box and sox to generate audio files</title>
-      <link>http://davidcraddock.net:9796/2016/03/08/working-with-fish-shell-ffmpeg-mp4box-and-sox-to-generate-audio-files/</link>
+      <link>http://davidcraddock.net/2016/03/08/working-with-fish-shell-ffmpeg-mp4box-and-sox-to-generate-audio-files/</link>
       <pubDate>Tue, 08 Mar 2016 17:22:37 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2016/03/08/working-with-fish-shell-ffmpeg-mp4box-and-sox-to-generate-audio-files/</guid>
-      <description>More adventures with Fish shell. I have scripted the generation of a bunch of test asset audio files in mp4 format suitable for dash streaming. I have used the audio file commandline tools ffmepg MP4Box and sox in this script, they are pretty powerful and worth installing via homebrew on OSX.&#xA;Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I&amp;rsquo;m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy.</description>
+      
+      <guid>http://davidcraddock.net/2016/03/08/working-with-fish-shell-ffmpeg-mp4box-and-sox-to-generate-audio-files/</guid>
+      <description>More adventures with Fish shell. I have scripted the generation of a bunch of test asset audio files in mp4 format suitable for dash streaming. I have used the audio file commandline tools ffmepg MP4Box and sox in this script, they are pretty powerful and worth installing via homebrew on OSX.
+Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I&amp;rsquo;m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy.</description>
+      <content:encoded><![CDATA[<p>More adventures with Fish shell. I have scripted the generation of a bunch of test asset audio files in mp4 format suitable for dash streaming. I have used the audio file commandline tools ffmepg MP4Box and sox in this script, they are pretty powerful and worth installing via homebrew on OSX.</p>
+<p>Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I&rsquo;m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy.
+[code lang=&ldquo;bash&rdquo;]
+#!/usr/bin/env fish
+# move to the asset output directory..
+cd ..</p>
+<p># Generate .m4a file for file, and all the associated .mp4 dash assets
+function generateDash
+set bitrate $argv[1]
+set input_filename $argv[2]
+set output_filename &ldquo;$input_filename&rdquo;-&quot;$bitrate&quot;.m4a
+ffmpeg -i &ldquo;$input_filename&rdquo; -ab &ldquo;$bitrate&quot;k &ldquo;$output_filename&rdquo;
+MP4Box -dash 10000 &ldquo;$output_filename&rdquo;
+end</p>
+<p># Generate 3 second sine wave in a specified bitrate at a specified frequency
+function generateWav
+set bitrate $argv[1]
+set filename $argv[2]
+set frequency $argv[3]
+set wavfilename &ldquo;$filename&rdquo;-&quot;$bitrate&rdquo;.wav
+sox -n &ndash;norm=-3 -b &ldquo;$bitrate&rdquo; &ldquo;$wavfilename&rdquo; synth 3 sine &ldquo;$frequency&rdquo;
+echo $wavfilename
+end</p>
+<p># Main loop, generate 128,192 and 320 bitrate dashed .mp4s for 16bit and 32bit 3 second sine waves
+for i in (seq 24)
+set freq (math &ldquo;$i * 64.5&rdquo;)
+set wavfilename (generateWav 16 &ldquo;output$i&rdquo; &ldquo;$freq&rdquo;)
+generateDash 128 &ldquo;$wavfilename&rdquo;
+generateDash 192 &ldquo;$wavfilename&rdquo;
+generateDash 320 &ldquo;$wavfilename&rdquo;
+set wavfilename (generateWav 24 &ldquo;output$i&rdquo; &ldquo;$freq&rdquo;)
+generateDash 128 &ldquo;$wavfilename&rdquo;
+generateDash 192 &ldquo;$wavfilename&rdquo;
+generateDash 320 &ldquo;$wavfilename&rdquo;
+end
+[/code]</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Top 5 Recommended Upgrades for your PC</title>
-      <link>http://davidcraddock.net:9796/2015/12/21/top-5-recommended-upgrades-for-your-pc/</link>
+      <link>http://davidcraddock.net/2015/12/21/top-5-recommended-upgrades-for-your-pc/</link>
       <pubDate>Mon, 21 Dec 2015 08:37:03 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2015/12/21/top-5-recommended-upgrades-for-your-pc/</guid>
-      <description>I have made a lot of different upgrades and modifications to my PC, as you can see here. Some of the upgrades have made more of a difference than others though. Here is what I think you should be concentrating on, if you&amp;rsquo;re looking to upgrade.&#xA;Solid State Hardisk (SSD) - Solid State hard drives use flash memory instead of the moving disk platters of traditional hard disks. It is the same type of storage as your USB stick.</description>
+      
+      <guid>http://davidcraddock.net/2015/12/21/top-5-recommended-upgrades-for-your-pc/</guid>
+      <description>I have made a lot of different upgrades and modifications to my PC, as you can see here. Some of the upgrades have made more of a difference than others though. Here is what I think you should be concentrating on, if you&amp;rsquo;re looking to upgrade.
+Solid State Hardisk (SSD) - Solid State hard drives use flash memory instead of the moving disk platters of traditional hard disks. It is the same type of storage as your USB stick.</description>
+      <content:encoded><![CDATA[<p>I have made a lot of different upgrades and modifications to my PC, <a href="http://www.davidcraddock.net/my-computer-setup/">as you can see here</a>. Some of the upgrades have made more of a difference than others though. Here is what I think you should be concentrating on, if you&rsquo;re looking to upgrade.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2015/12/upgrades.jpg" type="" alt="upgrades"  /></p>
+<ul>
+<li><strong>Solid State Hardisk (SSD)</strong> - Solid State hard drives use flash memory instead of the moving disk platters of traditional hard disks. It is the same type of storage as your USB stick. This type of storage is a lot faster to access compared to magnetic storage. Upgrading will result in a huge performance increase for most systems if you are changing from a traditional hard disk. Get as big a size as you can afford. If you play computer games or do a lot of media production work, then the added space will be useful. They have reduced in price over the years, the first SSD I bought was £120 for 120GB SSD back in 2012, in 2015 I just bought a 250GB SSD for £50. So it&rsquo;s definitely affordable now.</li>
+<li><strong>Large Monitor</strong> - If you can get a 27&quot;-32&quot; monitor then do so. It has made so much difference to the day to day usage of my PC. I would recommend 1440p if you can. 1440p is half the resolution of 4K. I wouldn&rsquo;t recommend a 4K monitor yet in 2015 as I don&rsquo;t think they have enough software support, and the cost is considerable for a decent screen. If you&rsquo;re a gamer, then you might want to aim for a higher refresh speed, but I&rsquo;d say this should be a secondary consideration to the screen space. Look on <a href="http://www.tftcentral.co.uk/">TFTCentral</a> for reviews and guides to the different screen types available.</li>
+<li><strong>Good Soundcard and Surround Sound Speaker System</strong> - Headphones are OK, but even a basic surround sound soundcard and speaker system is going to be so much better. I have a <a href="http://www.amazon.co.uk/dp/B00CRRVL4S/">Asus Xonar Phoebus Solo</a> which I recommend, it&rsquo;s a 7.1 surround sound card. I have a cheap £60 set of surround sound speakers, <a href="http://www.amazon.co.uk/gp/product/B003WJR482">Logitech Z506 Surround Sound Speakers</a>. Surround sound really makes a difference in gaming and movies. I think it&rsquo;s the seperate subwoofer that has the most effect, so if you are not that convinced by surround sound, you could get a 2.1 (two speakers and a subwoofer) setup for a bit less.</li>
+<li><strong>Ergonomic Mouse and good mousemat</strong> - Chances are, most of the time you&rsquo;re at your PC, you will be using the mouse. It is therefore really important you have a good mouse that won&rsquo;t damange your hand after a few years use and is comfortable to use. Modern mice use laser scanners to track the position of the mouse on a flat surface. A higher resolution laser (measured in DPI - dots per inch) means that you can get more accurate tracking. Therefore look for high DPI mice for gaming or fine detail work as well as an ergonomic fit and lots of buttons. I recommend Logitech mice, after having had several Razer mice that didn&rsquo;t last very long. I would also pick up a steel mousemat, as they never get tangled up in your mouse like the fibre mousemats do.</li>
+<li><strong>Recent Graphics Card</strong> - If you are into gaming or 3D modelling work, you would often prioritise this over any other upgrade. A new graphics card means that your existing games will run faster on higher detail settings, and you can play new games on higher settings with better framerate. I don&rsquo;t think it matters too much whether you go for Nvidea or AMD as long as you can run the games you want to run. If you are not interested in running the latest games, then perhaps you don&rsquo;t need this, but you may be missing out in the future.</li>
+</ul>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Biggest Disappointment Purchases for PC - Razer Tiamat &#43; Lightpack</title>
-      <link>http://davidcraddock.net:9796/2015/11/08/biggest-disappointment-purchases-for-pc-razer-tiamat-lightpack/</link>
+      <link>http://davidcraddock.net/2015/11/08/biggest-disappointment-purchases-for-pc-razer-tiamat-lightpack/</link>
       <pubDate>Sun, 08 Nov 2015 19:22:50 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2015/11/08/biggest-disappointment-purchases-for-pc-razer-tiamat-lightpack/</guid>
-      <description>As you can see, I buy a lot of bits and pieces for my PC. Occasionally though, I buy something that I feel was a disappointment, or not worth the investment. This post is meant to caution against other people making the same mistake.&#xA;Razer Tiamat - 7.1 Surround Sound Gaming Headset, with microphone (http://www.razerzone.com) This was a big dissapointment in a couple of ways. The first, and most obvious in hindsight now I&amp;rsquo;m actually working on spatial audio for a living at BBC R&amp;amp;D, is that 7.</description>
+      
+      <guid>http://davidcraddock.net/2015/11/08/biggest-disappointment-purchases-for-pc-razer-tiamat-lightpack/</guid>
+      <description>As you can see, I buy a lot of bits and pieces for my PC. Occasionally though, I buy something that I feel was a disappointment, or not worth the investment. This post is meant to caution against other people making the same mistake.
+Razer Tiamat - 7.1 Surround Sound Gaming Headset, with microphone (http://www.razerzone.com) This was a big dissapointment in a couple of ways. The first, and most obvious in hindsight now I&amp;rsquo;m actually working on spatial audio for a living at BBC R&amp;amp;D, is that 7.</description>
+      <content:encoded><![CDATA[<p><a href="http://www.davidcraddock.net/my-computer-setup/">As you can see</a>, I buy a lot of bits and pieces for my PC. Occasionally though, I buy something that I feel was a disappointment, or not worth the investment. This post is meant to caution against other people making the same mistake.</p>
+<h3 id="razer-tiamat---71-surround-sound-gaming-headset-with-microphone-httpwwwrazerzonecomhttpwwwrazerzonecom">Razer Tiamat - 7.1 Surround Sound Gaming Headset, with microphone <a href="http://www.razerzone.com">(http://www.razerzone.com)</a></h3>
+<p>This was a big dissapointment in a couple of ways. The first, and most obvious in hindsight now I&rsquo;m actually working on spatial audio for a living at BBC R&amp;D, is that 7.1 surround sound headsets are a joke. There is no way you can get enough seperation between the different speaker drivers when your ears are so close to the speakers. If you have a soundcard or motherboard that supports surround sound, do yourself a favour and get a surround sound speaker set.</p>
+<p>The second problem is that the Razer Tiamat has issues with electrical hum from the unshielded cables it uses. I replaced it with the <a href="http://www.roccat.org/en-GB/Products/Gaming-Sound/Kave-Series/Kave-XTD-5-1-Analog/">ROCCAT Kave XTD 5.1 Analog surround sound</a> headset which is better, although still not anything like the surround sound speaker setup which I now have.</p>
+<h3 id="lightpack---backlight-kit-with-adaptive-lighting-for-games-wwwlightpacktvhttpwwwlightpacktv">Lightpack - Backlight kit with adaptive lighting for games <a href="http://www.lightpack.tv">(www.lightpack.tv)</a></h3>
+<p>I took a risk on this, it was a kickstarter idea which offered the promise of an &lsquo;intelligent&rsquo; backlight which changed colours depending on what was on the screen. And it did work pretty well.. back when I was running Windows 7. Since upgrading to Windows 10, I haven&rsquo;t been able to get it to work properly when playing games with Playclaw, which is my main use for it. I even had to purchase Playclaw, as the software which comes with Lightpack doesn&rsquo;t work well. It still has limited use for me in terms of a colour spectrum effect for music when I throw a party, through using third-party software such as Ambibox. But the company really should improve its software to work with Windows 10 gaming. It didn&rsquo;t even work well for me under Windows 8.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>IFTTT.com - Program your Life</title>
-      <link>http://davidcraddock.net:9796/2015/10/15/ifttt-com-program-your-life/</link>
+      <link>http://davidcraddock.net/2015/10/15/ifttt-com-program-your-life/</link>
       <pubDate>Thu, 15 Oct 2015 10:17:28 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2015/10/15/ifttt-com-program-your-life/</guid>
+      
+      <guid>http://davidcraddock.net/2015/10/15/ifttt-com-program-your-life/</guid>
       <description>If you haven&amp;rsquo;t seen If This Then That.com then I encourage you to check it out. It has a number of ways of automating your life, and can do things like text message you when you get mentioned on Twitter, up to deactivate your smart alarm when you&amp;rsquo;re nearing your house. This message will (hopefully) be posted on my Facebook page and my Twitter account, all thanks to IFTTT.com.</description>
+      <content:encoded><![CDATA[<p>If you haven&rsquo;t seen <a href="http://www.ifttt.com">If This Then That.com</a> then I encourage you to check it out. It has a number of ways of automating your life, and can do things like text message you when you get mentioned on Twitter, up to deactivate your smart alarm when you&rsquo;re nearing your house. This message will (hopefully) be posted on my Facebook page and my Twitter account, all thanks to IFTTT.com.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Scope in JavaScript</title>
-      <link>http://davidcraddock.net:9796/2015/09/28/scope-in-javascript/</link>
+      <link>http://davidcraddock.net/2015/09/28/scope-in-javascript/</link>
       <pubDate>Mon, 28 Sep 2015 17:32:15 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2015/09/28/scope-in-javascript/</guid>
-      <description>I am learning JS for work. This is a pretty good summary of the most common scoping rules in JavaScript:&#xA;http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript</description>
+      
+      <guid>http://davidcraddock.net/2015/09/28/scope-in-javascript/</guid>
+      <description>I am learning JS for work. This is a pretty good summary of the most common scoping rules in JavaScript:
+http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript</description>
+      <content:encoded><![CDATA[<p>I am learning JS for work. This is a pretty good summary of the most common scoping rules in JavaScript:</p>
+<p><a href="http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript">http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript</a></p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Tailing a log file and Running an Application at the Same Time</title>
-      <link>http://davidcraddock.net:9796/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/</link>
+      <link>http://davidcraddock.net/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/</link>
       <pubDate>Tue, 11 Jun 2013 15:55:04 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/</guid>
-      <description>A quick tip this, but a useful one. You can tail a log file in the background while running a script in the foreground. So for example, I frequently execute the following commands:&#xA;1.&#xA;tail -f /var/log/httpd.log &amp;amp; /etc/init.d/apache restart 2. (The log file will spool onto the terminal as Apache is restarted.)&#xA;3. Once you are finished viewing the log file, foreground the log file process and kill it:</description>
+      
+      <guid>http://davidcraddock.net/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/</guid>
+      <description>A quick tip this, but a useful one. You can tail a log file in the background while running a script in the foreground. So for example, I frequently execute the following commands:
+1.
+tail -f /var/log/httpd.log &amp;amp; /etc/init.d/apache restart 2. (The log file will spool onto the terminal as Apache is restarted.)
+3. Once you are finished viewing the log file, foreground the log file process and kill it:</description>
+      <content:encoded><![CDATA[<p>A quick tip this, but a useful one. You can tail a log file in the background while running a script in the foreground. So for example, I frequently execute the following commands:</p>
+<p>1.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>tail <span style="color:#f92672">-</span>f <span style="color:#f92672">/</span><span style="color:#66d9ef">var</span><span style="color:#f92672">/</span>log<span style="color:#f92672">/</span>httpd<span style="color:#f92672">.</span>log <span style="color:#f92672">&amp;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">/</span>etc<span style="color:#f92672">/</span>init<span style="color:#f92672">.</span>d<span style="color:#f92672">/</span>apache restart
+</span></span></code></pre></div><p>2. (The log file will spool onto the terminal as Apache is restarted.)</p>
+<p>3. Once you are finished viewing the log file, foreground the log file process and kill it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>fg
+</span></span></code></pre></div><p>Then terminate the foregrounded log tail with a control-c.</p>
+<p>With this technique you can run as many commands as you want, and see the real-time effects on your log file, without having to open a new terminal. You will also see your program output interspersed with your log file output, which can be helpful when tracing down particular problems.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Monitoring a Slow Internet Connection in OSX</title>
-      <link>http://davidcraddock.net:9796/2013/03/01/monitoring-a-slow-internet-connection-in-osx/</link>
+      <link>http://davidcraddock.net/2013/03/01/monitoring-a-slow-internet-connection-in-osx/</link>
       <pubDate>Fri, 01 Mar 2013 01:28:54 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2013/03/01/monitoring-a-slow-internet-connection-in-osx/</guid>
+      
+      <guid>http://davidcraddock.net/2013/03/01/monitoring-a-slow-internet-connection-in-osx/</guid>
       <description>I am currently on holiday in Tenerife, and although I really like it here, one thing I do not like is the internet connection we have in our resort. Sometimes networked applications will just hang with no warning and there will be minutes where it&amp;rsquo;s not clear what is going on. Here are some ways you can find a little bit more about what is happening when an application is slow or seems to hang when you have a poor internet connection.</description>
+      <content:encoded><![CDATA[<p>I am currently on holiday in Tenerife, and although I really like it here, one thing I do not like is the internet connection we have in our resort. Sometimes networked applications will just hang with no warning and there will be minutes where it&rsquo;s not clear what is going on. Here are some ways you can find a little bit more about what is happening when an application is slow or seems to hang when you have a poor internet connection. Execute the following commands each in a separate terminal window.</p>
+<h3 id="log-files">Log Files</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>tail <span style="color:#f92672">-</span>f <span style="color:#f92672">/</span><span style="color:#66d9ef">var</span><span style="color:#f92672">/</span>log<span style="color:#f92672">/*</span>
+</span></span></code></pre></div><p>This will give you an indication of what is happening in OSX. For example, I was installing the XCode Command Line Utils from within XCode. The installation progress information is severely lacking, it just shows a bar which moves from left to right. However I was able to find out what was happening by tailing the log files in /var/log, which provided me with an updated breakdown of the installer progress. You can exit tail by using Control-C which will return you to the shell.</p>
+<h3 id="constant-ping">Constant Ping</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ping www.google.com
+</span></span></code></pre></div><p>When I have problems with my internet connection, I always keep a ping running in the background in a terminal. The interesting information here is the ICMP RTT time shown as the milliseconds next to the &rsquo;time&rsquo; label, and how many packets were dropped shown by the number of &lsquo;request timeout&rsquo; messages. Google does not mind you pinging it, just like hundreds of thousands of other people do, and so you can keep this up constantly, monitoring problems with your internet connection. When you get &rsquo;no route to host&rsquo; printed, this usually means that your gateway or wireless connection is down, which means you usually have to reestablish a connection manually.</p>
+<h3 id="tcpdump">tcpdump</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo tcpdump en0 -vvv
+</span></span></code></pre></div><p>Do you really want to see what is happening on your computers network connection? Turn the floodgates on then, and use tcpdump. This will output information on each packet that your computer sends out and is received in a slightly Matrix-style torrent of information. If you are downloading something via an application or have a number of active web connections such as AJAX Facebook pages loaded, you would expect to see a lot of traffic. If you don&rsquo;t have a lot of traffic, and you&rsquo;re expecting a lot, then something may be wrong. You can use tcpdump to get a general feel of what data is being passed around, and to what IP address, which you can then look up later for more clarity. You can also use grep and some basic TCP/IP networking knowledge to find out what exactly is happening on the network level.</p>
+<h3 id="network-connection-status-of-each-application">Network Connection Status of Each Application</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo lsof -i tcp
+</span></span></code></pre></div><p>Want to find out information about applications are using your internet connection, and the connection state of each TCP connection? Use lsof. You will be given the name of the application that is using each TCP connection, the IP address to which it is connected to, and the TCP connection state (established is good, time wait can be a problem sign). Run this regularly to check on the connection state of your programs. This won&rsquo;t monitor UDP connections, but should cover your web browsers.</p>
+<p>Hopefully this information will give you a bit more insight into what is actually happening on your OSX machine when your internet connection is being unreliable and you want more information about what is going on. Once you have this information, you can use it to inform actions such as toggling the wireless off and on again to reestablish a connection, reloading webpages that have hung, restarting application downloads, or possibly finding a new hotel or resort with a better internet connection :)</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Reverting back to a previous version in CVS - the magic &#34;undo&#34; feature</title>
-      <link>http://davidcraddock.net:9796/2011/01/28/reverting-back-to-a-previous-version-in-cvs-the-magic-undo-feature/</link>
+      <link>http://davidcraddock.net/2011/01/28/reverting-back-to-a-previous-version-in-cvs-the-magic-undo-feature/</link>
       <pubDate>Fri, 28 Jan 2011 16:27:43 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2011/01/28/reverting-back-to-a-previous-version-in-cvs-the-magic-undo-feature/</guid>
-      <description>If you&amp;rsquo;ve committed some code into to CVS, and made a mistake on that commit, you will want to know how to revert to a previously saved version. Here is the command line command for CLI versions of CVS:&#xA;$ cvs update -D &amp;#39;1 week ago&amp;#39; Run this command in the main directory of your checked out working copy. This will revert your working copy to the version of the code that was checked in &amp;lsquo;1 week ago&amp;rsquo; from the present date.</description>
+      
+      <guid>http://davidcraddock.net/2011/01/28/reverting-back-to-a-previous-version-in-cvs-the-magic-undo-feature/</guid>
+      <description>If you&amp;rsquo;ve committed some code into to CVS, and made a mistake on that commit, you will want to know how to revert to a previously saved version. Here is the command line command for CLI versions of CVS:
+$ cvs update -D &amp;#39;1 week ago&amp;#39; Run this command in the main directory of your checked out working copy. This will revert your working copy to the version of the code that was checked in &amp;lsquo;1 week ago&amp;rsquo; from the present date.</description>
+      <content:encoded><![CDATA[<p>If you&rsquo;ve committed some code into to CVS, and made a mistake on that commit, you will want to know how to revert to a previously saved version. Here is the command line command for CLI versions of CVS:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ cvs update -D &#39;1 week ago&#39;
+</span></span></code></pre></div><p>Run this command in the main directory of your checked out working copy. This will revert your working copy to the version of the code that was checked in &lsquo;1 week ago&rsquo; from the present date. You also use commands like &ldquo;1 day ago&rdquo; and &ldquo;5 days ago&rdquo;.</p>
+<p>Then simply commit the changes with a log message:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ cvs commit -m &#34;Oops! Made a mistake, had to revert back to the 21/1/2011 version&#34;
+</span></span></code></pre></div>]]></content:encoded>
     </item>
+    
     <item>
       <title>Netbeans for simple Java GUI Applications</title>
-      <link>http://davidcraddock.net:9796/2010/12/07/netbeans-for-simple-java-gui-applications/</link>
+      <link>http://davidcraddock.net/2010/12/07/netbeans-for-simple-java-gui-applications/</link>
       <pubDate>Tue, 07 Dec 2010 17:32:36 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2010/12/07/netbeans-for-simple-java-gui-applications/</guid>
+      
+      <guid>http://davidcraddock.net/2010/12/07/netbeans-for-simple-java-gui-applications/</guid>
       <description>I&amp;rsquo;ve been writing some simple Java GUI applications using the Netbeans IDE. It allows you to quickly make event-driven GUI applications, and generates a lot of skeleton code that you&amp;rsquo;ll need, but don&amp;rsquo;t necessarily want to type out. It reminds me of the IDE designer of Visual Basic 6, which allowed you to mock up simple GUIs with code in almost no time at all, although the VB language itself often proved difficult.</description>
+      <content:encoded><![CDATA[<p>I&rsquo;ve been writing some simple Java GUI applications using the Netbeans IDE. It allows you to quickly make event-driven GUI applications, and generates a lot of skeleton code that you&rsquo;ll need, but don&rsquo;t necessarily want to type out. It reminds me of the IDE designer of Visual Basic 6, which allowed you to mock up simple GUIs with code in almost no time at all, although the VB language itself often proved difficult. With Netbeans you are using Java, and so you can make some powerful software with little effort.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Applications I Reccomend</title>
-      <link>http://davidcraddock.net:9796/2010/07/19/applications-i-reccomend/</link>
+      <link>http://davidcraddock.net/2010/07/19/applications-i-reccomend/</link>
       <pubDate>Mon, 19 Jul 2010 00:37:15 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2010/07/19/applications-i-reccomend/</guid>
-      <description>Software I use on my macbook &amp;amp; PC:&#xA;DVDRipper Pro for Mac - DVD ripping, can also rip to ISO Handbrake for Mac - Transcoding from DVD rip to iPhone-playable file iMovie for Mac - Video editing BabasChess for Windows - Best chess client for internet play Hypercam 2 - Best screencapture utility Skype for both - For reliable messaging as well as voice and video chat Virtual Clone Drive for Windows - For mounting ISO images iTunes for Mac - Best music player, and keeps media synced with iPhone VLC Player for both - For watching movies DVD Player for Mac - For watching DVDs</description>
+      
+      <guid>http://davidcraddock.net/2010/07/19/applications-i-reccomend/</guid>
+      <description>Software I use on my macbook &amp;amp; PC:
+DVDRipper Pro for Mac - DVD ripping, can also rip to ISO Handbrake for Mac - Transcoding from DVD rip to iPhone-playable file iMovie for Mac - Video editing BabasChess for Windows - Best chess client for internet play Hypercam 2 - Best screencapture utility Skype for both - For reliable messaging as well as voice and video chat Virtual Clone Drive for Windows - For mounting ISO images iTunes for Mac - Best music player, and keeps media synced with iPhone VLC Player for both - For watching movies DVD Player for Mac - For watching DVDs</description>
+      <content:encoded><![CDATA[<p>Software I use on my macbook &amp; PC:</p>
+<p><strong>DVDRipper Pro for Mac</strong> - DVD ripping, can also rip to ISO
+<strong>Handbrake for Mac</strong> - Transcoding from DVD rip to iPhone-playable file
+<strong>iMovie for Mac</strong> - Video editing
+<strong>BabasChess for Windows</strong> - Best chess client for internet play
+<strong>Hypercam 2</strong> - Best screencapture utility
+<strong>Skype for both</strong> - For reliable messaging as well as voice and video chat
+<strong>Virtual Clone Drive for Windows</strong> - For mounting ISO images
+<strong>iTunes for Mac</strong> - Best music player, and keeps media synced with iPhone
+<strong>VLC Player for both</strong> - For watching movies
+<strong>DVD Player for Mac</strong> - For watching DVDs</p>
+<p>iPhone Apps:</p>
+<p><strong>Skype</strong> - Best messenger
+<strong>iBooks</strong> - Best ebook reader
+<strong>London Buses</strong> - Best London transport router, can route via tube, bus, cycle path and foot
+<strong>Tube Status</strong> - Displays the status of all lines, with any disruptions summarised
+<strong>NextBuses</strong> - Great app that gives you lots of info on the buses and bus stops in your area.
+<strong>Apple Remote</strong> - Apple remote, allows you to control the music on any wi-fi linked iTunes library
+<strong>Chess.com&rsquo;s Chess</strong> - Great chess game for vs. computer play
+<strong>TasteKid</strong> - Type in a film, author, tv series.. and it will give you similar recommendations
+<strong>Google Earth</strong> - Brilliant for navigational help, although I use iPhone&rsquo;s inbuilt Maps first, for most things.
+<strong>SomaFM</strong> - Chilled out relaxing electronica</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Useful OSX commands for Linux users</title>
-      <link>http://davidcraddock.net:9796/2010/03/19/useful-osx-command-line-commands/</link>
+      <link>http://davidcraddock.net/2010/03/19/useful-osx-command-line-commands/</link>
       <pubDate>Fri, 19 Mar 2010 23:03:33 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2010/03/19/useful-osx-command-line-commands/</guid>
-      <description>I wrote this list to remind me, as a newcomer to OSX, how the command line differed from the Linux commandline. I thought I&amp;rsquo;d expand on it, and share it:&#xA;To mount any iso:&#xA;hdiutil mount sample.iso To download a file as you would using wget:&#xA;curl http://ftp.heanet.ie/pub/linuxmint.com/stable/8/LinuxMint-8.iso -o linuxmint.iso -C - the -o specifies the output file (required) the -C - specifies automatically resuming if possible.&#xA;To burn a bootable iso to CD, DVD or USB key: use the &amp;ldquo;diskutil&amp;rdquo; program as described in: http://forums.</description>
+      
+      <guid>http://davidcraddock.net/2010/03/19/useful-osx-command-line-commands/</guid>
+      <description>I wrote this list to remind me, as a newcomer to OSX, how the command line differed from the Linux commandline. I thought I&amp;rsquo;d expand on it, and share it:
+To mount any iso:
+hdiutil mount sample.iso To download a file as you would using wget:
+curl http://ftp.heanet.ie/pub/linuxmint.com/stable/8/LinuxMint-8.iso -o linuxmint.iso -C - the -o specifies the output file (required) the -C - specifies automatically resuming if possible.
+To burn a bootable iso to CD, DVD or USB key: use the &amp;ldquo;diskutil&amp;rdquo; program as described in: http://forums.</description>
+      <content:encoded><![CDATA[<p>I wrote this list to remind me, as a newcomer to OSX, how the command line differed from the Linux commandline. I thought I&rsquo;d expand on it, and share it:</p>
+<p><strong>To mount any iso:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>hdiutil mount sample.iso
+</span></span></code></pre></div><p><strong>To download a file as you would using wget:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>curl http://ftp.heanet.ie/pub/linuxmint.com/stable/8/LinuxMint-8.iso -o linuxmint.iso -C -
+</span></span></code></pre></div><p>the -o specifies the output file (required)
+the -C - specifies automatically resuming if possible.</p>
+<p><strong>To burn a bootable iso to CD, DVD or USB key:</strong>
+use the &ldquo;diskutil&rdquo; program as described in: <a href="http://forums.macrumors.com/showthread.php?t=598291">http://forums.macrumors.com/showthread.php?t=598291</a> <strong>Monitor disk io utilisation.. poll once per second</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>iostat -c 99999
+</span></span></code></pre></div><p>will run until 99999 seconds have passed.</p>
+<p><strong>Monitor CPU and memory utilisation.. polling per second</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>top
+</span></span></code></pre></div><p>Just like Linux.</p>
+<p><strong>Mount Windows Shares</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>mount -t smbfs //@/
+</span></span></code></pre></div><p>ie:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>mount -t smbfs //davec@SERVER/Dev samba-to-netdev
+</span></span></code></pre></div><p>then it will appear mounted in /Volumes with the mount point name you supplied, ie: /Volumes/samba-to-netdev/.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Long Bash History Files are Great.</title>
-      <link>http://davidcraddock.net:9796/2010/03/18/long-bash-history-files-are-great/</link>
+      <link>http://davidcraddock.net/2010/03/18/long-bash-history-files-are-great/</link>
       <pubDate>Thu, 18 Mar 2010 19:55:51 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2010/03/18/long-bash-history-files-are-great/</guid>
-      <description>When I&amp;rsquo;m installing software, or doing some complicated stuff on the linux command line, which nowadays is pretty much all the time, I will sometimes want to remember exactly what I typed.&#xA;Now the normal /home/david/.bash_history file is usually fine for that. Run this command, for example, and you will see the commands you typed in before you logged out of the server last time you used it:&#xA;cat ~/.bash_history You can also find out what you typed in this session, ie: since you logged in, by typing this:</description>
+      
+      <guid>http://davidcraddock.net/2010/03/18/long-bash-history-files-are-great/</guid>
+      <description>When I&amp;rsquo;m installing software, or doing some complicated stuff on the linux command line, which nowadays is pretty much all the time, I will sometimes want to remember exactly what I typed.
+Now the normal /home/david/.bash_history file is usually fine for that. Run this command, for example, and you will see the commands you typed in before you logged out of the server last time you used it:
+cat ~/.bash_history You can also find out what you typed in this session, ie: since you logged in, by typing this:</description>
+      <content:encoded><![CDATA[<p>When I&rsquo;m installing software, or doing some complicated stuff on the linux command line, which nowadays is pretty much all the time, I will sometimes want to remember exactly what I typed.</p>
+<p>Now the normal /home/david/.bash_history file is usually fine for that. Run this command, for example, and you will see the commands you typed in before you logged out of the server last time you used it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>cat ~/.bash_history
+</span></span></code></pre></div><p>You can also find out what you typed in this session, ie: since you logged in, by typing this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>history
+</span></span></code></pre></div><p>This is great, and it&rsquo;s even more useful if you add a grep pipeline, so you can search through the previous commands you typed in for a particular phrase or command, ie:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>history | grep apt-get
+</span></span></code></pre></div><p>However what I really want nowadays is an almost infinite bash_history file, so I can find out not just what I did last week, but two weeks ago, or last month or perhaps last year. Now there are obvious security risks involved with this, and to make sure you don&rsquo;t accidently store mistyped passwords to other systems, or other things, you should probably make sure you never type them in on the command line. This is good practice anyway, and since I use key&rsquo;d sshd logins exclusively nowadays, there is not much chance of me tripping up, typing a password into the terminal, and then forgetting about it. In theory however, using long/infinite bash_history files does mean that if anyone compromised your shell account, they&rsquo;d have any passwords to systems that you mistyped.</p>
+<p>So I&rsquo;m careful with this. You can also clear your history file quite quickly if you do accidently find you&rsquo;ve messed up. Log out, log back in again, and just do this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>echo  &gt; ~/.bash_history
+</span></span></code></pre></div><p>Then that will delete all the previous logged commands.</p>
+<p>Apart from serving as a major memory aid to complicated install work, and a log for those increasingly complicated chained, piped, one-liners that I&rsquo;m fond of but only really want to have to type once, there are other benefits to keeping a large bash_history file. The main one is that it makes it easy to convert your previous commands into a handy shell script or two, which you can set to run at a specific time of day via cron.. or even make into a system-wide command for other users to use.</p>
+<p>OK so hopefully I&rsquo;ve convinced you that it can be very useful to have a long, persistent, bash_history file. But how do you configure the shell so that it does this for you? The following is the magic customization lines that I use on my personal desktops, laptops, and any other trusted computers that I think are reasonably free from the risk of people hacking in just to retrieve my .bash_history file..:</p>
+<p>/home/david/bash_profile
+`..
+..</p>
+<h2 id="bash-history-db">bash history db</h2>
+<h1 id="heading"></h1>
+<h1 id="increase-the-history-file-size-to-20000-lines">increase the history file size to 20,000 lines</h1>
+<p>export HISTSIZE=20000</p>
+<h1 id="append-all-commands-to-the-history-file-dont-overwrite-it-at-the-start-of-every-new-session">append all commands to the history file, don&rsquo;t overwrite it at the start of every new session</h1>
+<p>shopt -s histappend
+`</p>
+<p>The above will give you an (almost) infinite bash_history file. It will start deleting old commands at 20,000 lines, ie: 20,000 commands. Make sure you have enough disk space for that. My .bash_history file is currently at around 200KB, not a huge file by any means. I&rsquo;d say it will grow to 400-600KB max. If you want to calculate approximatly how much it will use, then in bytes, it&rsquo;s the number of characters in your average linux command x 20,000.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>MicroKORG &#43; Python = MIDI fun!</title>
-      <link>http://davidcraddock.net:9796/2009/03/30/microkorg-python-midi-fun/</link>
+      <link>http://davidcraddock.net/2009/03/30/microkorg-python-midi-fun/</link>
       <pubDate>Mon, 30 Mar 2009 00:14:10 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2009/03/30/microkorg-python-midi-fun/</guid>
-      <description>So, about a month ago I got a second-hand microKORG from Ebay. Fiddling around with the preset patches, and creating new patches is great fun, even though I only know a few chords. Recently I plugged it in to my PC via my M-Audio Uno USB-&amp;gt;MIDI interface, and soon was using Ableton Live to program drums in time with the microKORG&amp;rsquo;s arp.&#xA;I thought I&amp;rsquo;d experiment the music libraries available in python, and see if I could send notes to the synth via MIDI.</description>
+      
+      <guid>http://davidcraddock.net/2009/03/30/microkorg-python-midi-fun/</guid>
+      <description>So, about a month ago I got a second-hand microKORG from Ebay. Fiddling around with the preset patches, and creating new patches is great fun, even though I only know a few chords. Recently I plugged it in to my PC via my M-Audio Uno USB-&amp;gt;MIDI interface, and soon was using Ableton Live to program drums in time with the microKORG&amp;rsquo;s arp.
+I thought I&amp;rsquo;d experiment the music libraries available in python, and see if I could send notes to the synth via MIDI.</description>
+      <content:encoded><![CDATA[<p>So, about a month ago I got a second-hand <a href="http://en.wikipedia.org/wiki/MicroKORG">microKORG</a> from Ebay. Fiddling around with the preset patches, and creating new patches is great fun, even though I only know a few chords. Recently I plugged it in to my PC via my <a href="http://www.dolphinmusic.co.uk/product/1773-m-audio-uno-usb.html">M-Audio Uno USB-&gt;MIDI interface</a>, and soon was using Ableton Live to program drums in time with the microKORG&rsquo;s arp.</p>
+<p>I thought I&rsquo;d experiment the music libraries available in python, and see if I could send notes to the synth via MIDI. Turns out that the M-Audio Uno is supported under Ubuntu, all you have to do is install the <code>midisport-firmware</code> package. With the help of <a href="http://trac2.assembla.com/pkaudio/wiki/pyrtmidi">pyrtmidi</a>, a set of python wrappers around the C++ audio library rtmidi I was able to recieve MIDI signals in realtime from the microKORG, and send them in realtime also. With the help of <a href="http://www.davidcraddock.net/images/midilib.py">this</a> old midi file reader/writer library that I found posted to a python mailing list, I&rsquo;ve made some progress in writing a simple MIDI file player that sends notes to the &lsquo;KORG.</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>EasyEclipse &#43; Vimplugin for Python Development</title>
-      <link>http://davidcraddock.net:9796/2009/03/26/easyeclipse-vimplugin-for-python-development/</link>
+      <link>http://davidcraddock.net/2009/03/26/easyeclipse-vimplugin-for-python-development/</link>
       <pubDate>Thu, 26 Mar 2009 18:53:01 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2009/03/26/easyeclipse-vimplugin-for-python-development/</guid>
-      <description>Up until now, I&amp;rsquo;ve always used the terminal for programming development on my projects. Because I&amp;rsquo;m so familiar with the advanced text editor vim, I can get a lot done on the command line, and it doesn&amp;rsquo;t detract away from what is actually going on behind the scenes, as a lot of IDEs seem to do.&#xA;However, in reading the book Foundations of Agile Python Development (which I recommend highly), and through working in software houses using IDE s only, I&amp;rsquo;ve come to realise that I need to gain at least some familiarity with an IDE.</description>
+      
+      <guid>http://davidcraddock.net/2009/03/26/easyeclipse-vimplugin-for-python-development/</guid>
+      <description>Up until now, I&amp;rsquo;ve always used the terminal for programming development on my projects. Because I&amp;rsquo;m so familiar with the advanced text editor vim, I can get a lot done on the command line, and it doesn&amp;rsquo;t detract away from what is actually going on behind the scenes, as a lot of IDEs seem to do.
+However, in reading the book Foundations of Agile Python Development (which I recommend highly), and through working in software houses using IDE s only, I&amp;rsquo;ve come to realise that I need to gain at least some familiarity with an IDE.</description>
+      <content:encoded><![CDATA[<p>Up until now, I&rsquo;ve always used the terminal for programming development on my projects. Because I&rsquo;m so familiar with the advanced text editor <a href="http://www.vim.org">vim</a>, I can get a lot done on the command line, and it doesn&rsquo;t detract away from what is actually going on behind the scenes, as a lot of IDEs seem to do.</p>
+<p>However, in reading the book <a href="http://www.amazon.com/Foundations-Python-Development-Experts-Source/dp/1590599810">Foundations of Agile Python Development</a> (which I recommend highly), and through working in software houses using <a href="http://en.wikipedia.org/wiki/Integrated_development_environment">IDE</a> s only, I&rsquo;ve come to realise that I need to gain at least some familiarity with an IDE.</p>
+<p>So I&rsquo;ve decided to try out <a href="http://www.eclipse.org">Eclipse</a>. I fiddled around with the Eclipse version in the Ubuntu 8.10 repositories for a while, with little success. I wanted to install <a href="http://pydev.sourceforge.ne">pydev</a> and <a href="http://vimplugin.org/">vimplugin</a>. Pydev is an eclipse python development environment. Vimplugin allows vim keybindings, and can actually embed the gvim editor within Eclipse. I tried for a few hours, but couldn&rsquo;t get it all working with the stock Eclipse version in the Ubuntu repositories.</p>
+<p>So I thought I&rsquo;d try out <a href="http://www.easyeclipse.org/site/distributions/python.html">EasyEclipse</a>. EasyEclipse bundles a stable version of Eclipse with pydev in its &ldquo;Easy Eclipse for Python Development&rdquo; distribution, and that worked a charm. I then installed vimplugin which worked immediately when enabled, and supported embedded VIM mode within Eclipse. In the screenshot below, you should be able to (just about!) see what I mean, gvim is embedded into Eclipse:</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Linux under Hyper-V</title>
-      <link>http://davidcraddock.net:9796/2008/10/09/linux-under-hyper-v/</link>
+      <link>http://davidcraddock.net/2008/10/09/linux-under-hyper-v/</link>
       <pubDate>Thu, 09 Oct 2008 23:30:10 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2008/10/09/linux-under-hyper-v/</guid>
-      <description>This is an overview of current Linux support under Hyper-V, the free Windows Server 2008 virtualisation product.&#xA;As you probably know, virtual servers allow the emulation of hardware in software. So you have a single physical &amp;lsquo;virtual server&amp;rsquo;. This virtual server emulates the physical hardware for several &amp;lsquo;virtual machines&amp;rsquo; which sit on top of the virtual server. As far as the operating system on the virtual machine is concerned, it doesn&amp;rsquo;t notice anything different at all - it thinks it is running on a full set of dedicated hardware.</description>
+      
+      <guid>http://davidcraddock.net/2008/10/09/linux-under-hyper-v/</guid>
+      <description>This is an overview of current Linux support under Hyper-V, the free Windows Server 2008 virtualisation product.
+As you probably know, virtual servers allow the emulation of hardware in software. So you have a single physical &amp;lsquo;virtual server&amp;rsquo;. This virtual server emulates the physical hardware for several &amp;lsquo;virtual machines&amp;rsquo; which sit on top of the virtual server. As far as the operating system on the virtual machine is concerned, it doesn&amp;rsquo;t notice anything different at all - it thinks it is running on a full set of dedicated hardware.</description>
+      <content:encoded><![CDATA[<p>This is an overview of current Linux support under Hyper-V, the free Windows Server 2008 virtualisation product.</p>
+<p>As you probably know, virtual servers allow the emulation of hardware in software. So you have a single physical &lsquo;virtual server&rsquo;. This virtual server emulates the physical hardware for several &lsquo;virtual machines&rsquo; which sit on top of the virtual server. As far as the operating system on the virtual machine is concerned, it doesn&rsquo;t notice anything different at all - it thinks it is running on a full set of dedicated hardware. However in reality, the virtual server is sharing its real physical resouces amongst the collection of virtual machines, assigning for example - 3GB of its memory to virtual machine A, and 1GB to virtual machine B.</p>
+<p>Hyper-V requires a package called the &lsquo;integration components&rsquo; to be installed on each virtual machine. This makes it easier for the virtual machine operating system kernel to talk with the virtual server, speeds up and increases the reliability of the emulation of virtual machine hardware by the virtual server.</p>
+<p>Hyper-V supports the Xen virtualisation layer. Xen is a Linux-only virtualisation platform that requires a patched kernel on the virtual machine in order for the virtual server to communicate with the virtual machine.</p>
+<p>The only officially supported distribution is SuSE Enterprise Linux 10, Service Packs 1 + 2. However because of the way the Hyper-V works, any Xen kernel in theory can be patched to run under Hyper-V.</p>
+<p>In fact, this is exactly what you have to do in order to get any Linux distro fully working under the Hyper-V virtual server. So:</p>
+<ol>
+<li>Download the kernel source for the Xen kernel for your distro</li>
+<li>Patch it with the Hyper-V integration services patch</li>
+<li>Compile the kernel</li>
+</ol>
+<p>.. and bingo - you should have Linux &lsquo;fully supported&rsquo; by Hyper-V.</p>
+<p>Now it remains to be seen whether there are any problems with running Linux under Hyper-V in a live environment. I know that we encountered multiple problems with Linux under VMWare ESX Server - and VMWare is the most mature virtualisation product available.</p>
+<p>Those problems included: network interfaces dropping packets and the virtual machine system clock &lsquo;drifting&rsquo; - running too fast or slow. These are NOT problems you want in a live enviroment, and so it remains to be seen whether Hyper-V can support Linux with the same ease as it supports Windows OSs.</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>

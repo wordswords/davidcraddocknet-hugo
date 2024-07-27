@@ -1,19 +1,58 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Assets on DavidCraddock.net</title>
-    <link>http://davidcraddock.net:9796/tag/assets/</link>
+    <link>http://davidcraddock.net/tag/assets/</link>
     <description>Recent content in Assets on DavidCraddock.net</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Mar 2016 17:22:37 +0000</lastBuildDate>
-    <atom:link href="http://davidcraddock.net:9796/tag/assets/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Mar 2016 17:22:37 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/tag/assets/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Working with Fish Shell, ffmpeg, MP4Box and sox to generate audio files</title>
-      <link>http://davidcraddock.net:9796/2016/03/08/working-with-fish-shell-ffmpeg-mp4box-and-sox-to-generate-audio-files/</link>
+      <link>http://davidcraddock.net/2016/03/08/working-with-fish-shell-ffmpeg-mp4box-and-sox-to-generate-audio-files/</link>
       <pubDate>Tue, 08 Mar 2016 17:22:37 +0000</pubDate>
-      <guid>http://davidcraddock.net:9796/2016/03/08/working-with-fish-shell-ffmpeg-mp4box-and-sox-to-generate-audio-files/</guid>
-      <description>More adventures with Fish shell. I have scripted the generation of a bunch of test asset audio files in mp4 format suitable for dash streaming. I have used the audio file commandline tools ffmepg MP4Box and sox in this script, they are pretty powerful and worth installing via homebrew on OSX.&#xA;Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I&amp;rsquo;m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy.</description>
+      
+      <guid>http://davidcraddock.net/2016/03/08/working-with-fish-shell-ffmpeg-mp4box-and-sox-to-generate-audio-files/</guid>
+      <description>More adventures with Fish shell. I have scripted the generation of a bunch of test asset audio files in mp4 format suitable for dash streaming. I have used the audio file commandline tools ffmepg MP4Box and sox in this script, they are pretty powerful and worth installing via homebrew on OSX.
+Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I&amp;rsquo;m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy.</description>
+      <content:encoded><![CDATA[<p>More adventures with Fish shell. I have scripted the generation of a bunch of test asset audio files in mp4 format suitable for dash streaming. I have used the audio file commandline tools ffmepg MP4Box and sox in this script, they are pretty powerful and worth installing via homebrew on OSX.</p>
+<p>Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I&rsquo;m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy.
+[code lang=&ldquo;bash&rdquo;]
+#!/usr/bin/env fish
+# move to the asset output directory..
+cd ..</p>
+<p># Generate .m4a file for file, and all the associated .mp4 dash assets
+function generateDash
+set bitrate $argv[1]
+set input_filename $argv[2]
+set output_filename &ldquo;$input_filename&rdquo;-&quot;$bitrate&quot;.m4a
+ffmpeg -i &ldquo;$input_filename&rdquo; -ab &ldquo;$bitrate&quot;k &ldquo;$output_filename&rdquo;
+MP4Box -dash 10000 &ldquo;$output_filename&rdquo;
+end</p>
+<p># Generate 3 second sine wave in a specified bitrate at a specified frequency
+function generateWav
+set bitrate $argv[1]
+set filename $argv[2]
+set frequency $argv[3]
+set wavfilename &ldquo;$filename&rdquo;-&quot;$bitrate&rdquo;.wav
+sox -n &ndash;norm=-3 -b &ldquo;$bitrate&rdquo; &ldquo;$wavfilename&rdquo; synth 3 sine &ldquo;$frequency&rdquo;
+echo $wavfilename
+end</p>
+<p># Main loop, generate 128,192 and 320 bitrate dashed .mp4s for 16bit and 32bit 3 second sine waves
+for i in (seq 24)
+set freq (math &ldquo;$i * 64.5&rdquo;)
+set wavfilename (generateWav 16 &ldquo;output$i&rdquo; &ldquo;$freq&rdquo;)
+generateDash 128 &ldquo;$wavfilename&rdquo;
+generateDash 192 &ldquo;$wavfilename&rdquo;
+generateDash 320 &ldquo;$wavfilename&rdquo;
+set wavfilename (generateWav 24 &ldquo;output$i&rdquo; &ldquo;$freq&rdquo;)
+generateDash 128 &ldquo;$wavfilename&rdquo;
+generateDash 192 &ldquo;$wavfilename&rdquo;
+generateDash 320 &ldquo;$wavfilename&rdquo;
+end
+[/code]</p>
+]]></content:encoded>
     </item>
+    
   </channel>
 </rss>
