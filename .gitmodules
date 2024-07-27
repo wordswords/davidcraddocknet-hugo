@@ -1,3 +1,4 @@
 [submodule "hugo-site/themes/PaperModX"]
 	path = hugo-site/themes/PaperModX
     url = https://github.com/wordswords/hugo-PaperModX-davidcraddocknet.git
+	branch = master
