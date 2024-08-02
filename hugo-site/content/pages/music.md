@@ -27,4 +27,9 @@ I have released some music under the 'Concrete Spectre' project. It is industria
 
 * * *
 
-I also DJ as a multi-genre DJ under the name 'DJ David Craddock'. See: [https://linktr.ee/davidcraddock](https://linktr.ee/davidcraddock) for a full list of my music activities.
+Currently I'm not DJing, but I still have the DJ homepage up which has information on ALL my musical endevours:
+[DJ Homepage](https://DJDavidCraddock.com)
+
+Also, this is my professional portfolio for the audio and music industry:
+[DavidCraddockAudio.com](https://DavidCraddockAudio.com)
+
