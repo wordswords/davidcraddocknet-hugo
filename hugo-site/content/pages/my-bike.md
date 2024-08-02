@@ -10,11 +10,15 @@ url: /my-bike/
 Decided not to mention the security aspects of my setup on a public page, but trust me, there are many!
 
 - Himiway Zebra Electric Mountainbike 2024 Version
-- Spare official battery and battery charger
+- 2s official batteries
+- 2x battery chargers
 - Two spare tires
 - Spare inner tube
 - Electric fat tire pump
 - Metal tire levers
+- Chain tool
+- Chain cleaner tool
+- Mudoff bike cleaning kit
 - Small first aid kit
 - Compass
 - Himiway fold-out cycle toolkit
@@ -23,13 +27,16 @@ Decided not to mention the security aspects of my setup on a public page, but tr
 - Himiway official cargo bag with foldout panniers
 - 2x Rockbros waterproof pannier bags
 - Rockbros Handlebar bag
-- RAM quick release handlebar mount for mobile phone
 - Electric bike horn
 - Bike bell
 - Himiway cycle helmet with front light
 - 4x vaccum thermos 750ml flasks for water
 - All-weather MTB grips for handlebar
 - Fingerless MTB gloves for warmer weather
-- Electric heated motorbike/cycle gloves for colder weather
 - Wraparound anti-glare sun glasses for protection against surface dirt etc
+- Wraparound cycle goggles with different visors
 - Light backpack suitable for cycling
+- Gortex water-resistent high-vis cycle jacket
+- RAM Mounts Quick-release handlebar Mobile Phone holder
+- VEVOR Cycle Bike Cargo Trailer
+
