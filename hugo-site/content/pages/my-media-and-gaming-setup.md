@@ -140,8 +140,8 @@ Currently these are the consoles I have hooked up:
 - **XBox 360** with 2x official wired 360 controllers
 - **Sega Dreamcast** with 3x official DC controllers, 2x VMUs and 1x third-party memory pack
 - **Sony PSP2000** (TV out)
-- **Nintendo Wii (Gamecube compatiable version)** with Wiimote Motion controller
-- **Nintendo 64 with 1x official N64 controller**
+- **Nintendo Wii (Gamecube compatiable version)** with 2x Wiimote Motion controller and official balance board
+- **Nintendo 64 with 2x official N64 controller and memory pak**
 - **Microsoft XBox V1** with Duke controllers
 
 [![](/wp-content/uploads/2023/12/20231223_0927581.jpg)](/wp-content/uploads/2023/12/20231223_0927581.jpg)
@@ -161,6 +161,5 @@ You should able to browse through the games I have, both on PC and console, here
 We have a super minimal setup in our living room which my wife uses heavily. It is super minimal because she doesn't like overcomplicated tech stuff :) It consisters of:
 
 - Sony BRAVIA 2023 Edition, KD-43X75WL, 43 Inch, LED, Smart TV, 4K HDR, Google TV
-- We either listen using the in-built speakers or our Sony bluetooth earphones and headphones. The bluetooth only supports the 'bog standard fidelity' SBC codec and doesn't support Apt-X HD or LDAC.. which is more than a bit annoying. We may have to get a seperate bluetooth unit because of this.
 
 Because it has Google TV, we can use the Plex app to wirelessly stream 4K videos from my Plex server, and it handles 4K videos well, which is not a small feat as the wireless signal is being blasted through a concrete wall :) Netflix and all the other standard services also work well.
