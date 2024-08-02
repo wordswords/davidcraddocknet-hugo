@@ -1,6 +1,6 @@
 ---
 category:
-  - uncategorized
+  - retrospectives
 date: "2023-11-25T20:07:59+00:00"
 guid: https://davidcraddock.net/?p=4226
 title: Retrospective for 2023
