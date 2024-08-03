@@ -5,11 +5,11 @@ title: My Mobile Laptop Setup
 url: /my-mobile-laptop-setup/
 
 ---
-[![]](/hugo-uploads/2024/8/3/mobilesetup1.jpg)
-[![]](/hugo-uploads/2024/8/3/mobilesetup2.jpg)
-[![]](/hugo-uploads/2024/8/3/mobilesetup3.jpg)
-[![]](/hugo-uploads/2024/8/3/mobilesetup4.jpg)
-[![]](/hugo-uploads/2024/8/3/mobilesetup5.jpg)
+![](/hugo-uploads/2024/8/3/mobilesetup1.jpg)
+![](/hugo-uploads/2024/8/3/mobilesetup2.jpg)
+![](/hugo-uploads/2024/8/3/mobilesetup3.jpg)
+![](/hugo-uploads/2024/8/3/mobilesetup4.jpg)
+![](/hugo-uploads/2024/8/3/mobilesetup5.jpg)
 
 I use this setup, along with [my bike](/my-bike/) to work from wherever I want.
 
