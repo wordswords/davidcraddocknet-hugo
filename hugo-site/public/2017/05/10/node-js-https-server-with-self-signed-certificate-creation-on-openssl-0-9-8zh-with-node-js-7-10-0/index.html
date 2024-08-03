@@ -212,22 +212,25 @@ function toggleThemeListener() {
     </div>
   </header> 
 
-
-<div>
-    <ul>
-        <li><a href="/">Blog Posts</a></li>
-        <li><a href="/music">My Music</a></li>
-        <li><a href="/my-home-network">My Home Network</a></li>
-        <li><a href="/my-gaming-setup">My Gaming Setup</a></li>
-        <li><a href="/my-mobile-laptop-setup">My Mobile Laptop Setup</a></li>
-        <li><a href="/my-work-computer">My Work Computer</a></li>
-    </ul>
-</div>
   <div class="post-content"><p>I couldn&rsquo;t find a concise guide to setting this up quickly so thought it was worth a post. To quickly get something working and create a https server using the above versions of openssl and node.js, do the following:</p>
 <p> <strong>Generate self-signed server certificate with no password</strong> <code>sudo openssl req -x509 -newkey rsa:2048 -keyout ./csr.pem -out server.crt -days 3001 -nodes</code> <strong>Use this node.js code to setup a server quickly</strong> <code>const https = require('https'); const fs = require('fs'); const options = { key: fs.readFileSync('csr.pem'), cert: fs.readFileSync('server.crt') }; https.createServer(options, (req, res) =&gt; { res.writeHead(200); res.end('hello world\n'); }).listen(8000);</code> <strong>Go to https://localhost:8000 and accept the certificate, you should see &lsquo;hello world&rsquo;</strong></p>
 
 
   </div>
+
+<div>
+    <ul>
+        <li><a href="/">Blog Posts</a></li>
+        <li><a href="/my-home-network/">Home Network</a></li>
+        <li><a href="/my-gaming-setup/">Gaming Setup</a></li>
+        <li><a href="/my-mobile-laptop-setup/">Mobile Working Setup</a></li>
+        <li><a href="/my-work-computer/">WFH Computer Setup</a></li>
+        <li><a href="/my-bike/">Bike Setup</a></li>
+        <li><a href="http://davidcraddocktutor.com">Software Career Tutoring</a></li>
+        <li><a href="http://davidcraddockaudio.com">Music Industry Portfolio</a></li>
+        <li><a href="https://github.com/wordswords/dotfiles.git">My Github</a></li>
+    </ul>
+</div>
 
   <footer class="post-footer">
   </footer>

@@ -209,17 +209,6 @@ function toggleThemeListener() {
     </div>
   </header> 
 
-
-<div>
-    <ul>
-        <li><a href="/">Blog Posts</a></li>
-        <li><a href="/music">My Music</a></li>
-        <li><a href="/my-home-network">My Home Network</a></li>
-        <li><a href="/my-gaming-setup">My Gaming Setup</a></li>
-        <li><a href="/my-mobile-laptop-setup">My Mobile Laptop Setup</a></li>
-        <li><a href="/my-work-computer">My Work Computer</a></li>
-    </ul>
-</div>
   <div class="post-content"><p><a href="/wp-content/uploads/2013/11/android.png"><img loading="lazy" src="/wp-content/uploads/2013/11/android.png" type="" alt="Android"  /></a></p>
 <p>I&rsquo;ve been working on a project at the BBC where we are using the Android command-line tools from the <a href="http://developer.android.com/tools/index.html">Android Developer Tools</a>, to spin up and terminate series of emulators. I noticed a big problem under OSX where &lsquo;adb devices&rsquo; was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb.</p>
 <p>We switched to using adb with emulators in an Ubuntu 12.04 VM running under OSX, and we had no further problems with our setup. Emulators will now be programatically launched and torn down by our monitoring application. We now have an array of emulators which we can deploy to at will, which is very useful.</p>
@@ -227,6 +216,20 @@ function toggleThemeListener() {
 
 
   </div>
+
+<div>
+    <ul>
+        <li><a href="/">Blog Posts</a></li>
+        <li><a href="/my-home-network/">Home Network</a></li>
+        <li><a href="/my-gaming-setup/">Gaming Setup</a></li>
+        <li><a href="/my-mobile-laptop-setup/">Mobile Working Setup</a></li>
+        <li><a href="/my-work-computer/">WFH Computer Setup</a></li>
+        <li><a href="/my-bike/">Bike Setup</a></li>
+        <li><a href="http://davidcraddocktutor.com">Software Career Tutoring</a></li>
+        <li><a href="http://davidcraddockaudio.com">Music Industry Portfolio</a></li>
+        <li><a href="https://github.com/wordswords/dotfiles.git">My Github</a></li>
+    </ul>
+</div>
 
   <footer class="post-footer">
   </footer>

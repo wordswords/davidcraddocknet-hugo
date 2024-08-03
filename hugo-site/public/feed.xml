@@ -4,10 +4,19 @@
     <title>DavidCraddock.net</title>
     <link>http://davidcraddock.net/</link>
     <description>Recent content on DavidCraddock.net</description>
-    <generator>Hugo -- 0.129.0</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 26 Jul 2024 04:28:43 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 02 Aug 2024 23:15:41 +0100</lastBuildDate>
     <atom:link href="http://davidcraddock.net/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mid 2024 Retrospective Update</title>
+      <link>http://davidcraddock.net/2024/08/02/mid-2024-update/</link>
+      <pubDate>Fri, 02 Aug 2024 23:15:41 +0100</pubDate>
+       <guid isPermaLink="false">http://www.davidcraddock.net/mid-2024-update.md</guid> 
+      <description>Every year I&amp;rsquo;ve been doing these &amp;lsquo;retrospectives&amp;rsquo;, usually once per year but sometimes a couple of times per year.
+Things have changed quite significantly since the last retrospective, and I was in a pensive mood, so I thought I would write a retrospective for half the year.
+I finally found a job, with CGI, early in the year, and started in March 2023. Unfortunately, for reasons I&amp;rsquo;m contractually obliged not to get into, it wasn&amp;rsquo;t long before I was looking for work again.</description>
+    </item>
     <item>
       <title>Moved From Wp to Hugo</title>
       <link>http://davidcraddock.net/2024/07/26/moved-from-wp-to-hugo/</link>
@@ -25,7 +34,7 @@ I will continue to tidy up bits and pieces as I go along.</description>
        <guid isPermaLink="false">https://davidcraddock.net/?page_id=4801</guid> 
       <description>
 Decided not to mention the security aspects of my setup on a public page, but trust me, there are many!
-Himiway Zebra Electric Mountainbike 2024 Version Spare official battery and battery charger Two spare tires Spare inner tube Electric fat tire pump Metal tire levers Small first aid kit Compass Himiway fold-out cycle toolkit Energy bars + nuts 2x cycle frame bags Himiway official cargo bag with foldout panniers 2x Rockbros waterproof pannier bags Rockbros Handlebar bag RAM quick release handlebar mount for mobile phone Electric bike horn Bike bell Himiway cycle helmet with front light 4x vaccum thermos 750ml flasks for water All-weather MTB grips for handlebar Fingerless MTB gloves for warmer weather Electric heated motorbike/cycle gloves for colder weather Wraparound anti-glare sun glasses for protection against surface dirt etc Light backpack suitable for cycling </description>
+Himiway Zebra Electric Mountainbike 2024 Version 2s official batteries 2x battery chargers Two spare tires Spare inner tube Electric fat tire pump Metal tire levers Chain tool Chain cleaner tool Mudoff bike cleaning kit Small first aid kit Compass Himiway fold-out cycle toolkit Energy bars + nuts 2x cycle frame bags Himiway official cargo bag with foldout panniers 2x Rockbros waterproof pannier bags Rockbros Handlebar bag Electric bike horn Bike bell Himiway cycle helmet with front light 4x vaccum thermos 750ml flasks for water All-weather MTB grips for handlebar Fingerless MTB gloves for warmer weather Wraparound anti-glare sun glasses for protection against surface dirt etc Wraparound cycle goggles with different visors Light backpack suitable for cycling Gortex water-resistent high-vis cycle jacket RAM Mounts Quick-release handlebar Mobile Phone holder VEVOR Cycle Bike Cargo Trailer </description>
     </item>
     <item>
       <title>Video Routing for Dave Cave Studio</title>
@@ -47,9 +56,10 @@ Start programming on personal projects right away, and keep it up during your en
       <link>http://davidcraddock.net/my-mobile-laptop-setup/</link>
       <pubDate>Sun, 04 Feb 2024 02:48:13 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?page_id=4413</guid> 
-      <description>I use this setup to work from co-working spaces such as libraries and cafes.
-I combine working in co-working spaces with getting out of the house and exercising, so I have a setup I can walk long distances with.
-It does kind of turn heads, and I&amp;rsquo;m aware it may look a little &amp;lsquo;over the top&amp;rsquo; - but it&amp;rsquo;s a very useful setup for me, keeps me healthy, and fits all my requirements.</description>
+      <description>![] ![] ![] ![] ![]
+I use this setup, along with my bike to work from wherever I want.
+It does kind of turn heads, and I&amp;rsquo;m aware it may look a little &amp;lsquo;over the top&amp;rsquo; - but it&amp;rsquo;s a very useful setup for me, keeps me healthy, and fits all my requirements.
+Hercules DG400BB Laptop Stand w/ Bag - this portable laptop stand is very sturdy and is designed for mobile DJ use.</description>
     </item>
     <item>
       <title>Music Acquisition Process for DJ Music</title>
@@ -70,7 +80,7 @@ ARM (Automatic Ripping Machine) rips CDs I buy into FLAC form without any intera
       <title>Retrospective for 2023</title>
       <link>http://davidcraddock.net/2023/11/25/retrospective-for-2023/</link>
       <pubDate>Sat, 25 Nov 2023 20:07:59 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=4226</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=4226</guid> 
       <description>Every year towards the end of the year, I put together a retrospective of events that have happened over the year - the good, bad and the ugly.
 The Bad Most of the year was taken up with treatment for relapsed Hodgkins Lymphoma cancer. After the clinical immunotherapy drug trial finished in Feb 2023, cancer was unfortunately still detected, so it did not completely cure it. I had a further (awful) spell in hospital around March/April where my Hickman line became infected and I had a severe mental health episode, probably caused by the strong antibiotics being pumped through my system.</description>
     </item>
@@ -1528,7 +1538,7 @@ Login again and test if it works by running glxgears and glxinfo on the console<
       <link>http://davidcraddock.net/about-2/</link>
       <pubDate>Mon, 02 Apr 2007 18:16:45 +0000</pubDate>
        <guid isPermaLink="false">http://davidcraddock.net/about-2/</guid> 
-      <description>Hello! I&amp;rsquo;m David Craddock, I live in Manchester, and have worked in IT for the past 15 years, currently as a Senior Software Engineer.</description>
+      <description>Hello! I&amp;rsquo;m David Craddock, I live in Manchester, and have worked in IT and software for the past 20 years, currently as a Principal Software Engineer.</description>
     </item>
     <item>
       <title>The topic of this blog</title>

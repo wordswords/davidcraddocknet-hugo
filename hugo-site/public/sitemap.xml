@@ -2,20 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://davidcraddock.net/category/</loc>
+    <lastmod>2024-08-02T23:15:41+01:00</lastmod>
+  </url><url>
     <loc>http://davidcraddock.net/</loc>
-    <lastmod>2024-07-26T04:28:43+01:00</lastmod>
+    <lastmod>2024-08-02T23:15:41+01:00</lastmod>
+  </url><url>
+    <loc>http://davidcraddock.net/2024/08/02/mid-2024-update/</loc>
+    <lastmod>2024-08-02T23:15:41+01:00</lastmod>
+  </url><url>
+    <loc>http://davidcraddock.net/posts/</loc>
+    <lastmod>2024-08-02T23:15:41+01:00</lastmod>
+  </url><url>
+    <loc>http://davidcraddock.net/category/retrospectives/</loc>
+    <lastmod>2024-08-02T23:15:41+01:00</lastmod>
   </url><url>
     <loc>http://davidcraddock.net/2024/07/26/moved-from-wp-to-hugo/</loc>
     <lastmod>2024-07-26T04:28:43+01:00</lastmod>
   </url><url>
-    <loc>http://davidcraddock.net/posts/</loc>
-    <lastmod>2024-07-26T04:28:43+01:00</lastmod>
-  </url><url>
     <loc>http://davidcraddock.net/my-bike/</loc>
     <lastmod>2024-06-09T22:34:52+00:00</lastmod>
-  </url><url>
-    <loc>http://davidcraddock.net/category/</loc>
-    <lastmod>2024-04-25T04:55:52+00:00</lastmod>
   </url><url>
     <loc>http://davidcraddock.net/category/uncategorized/</loc>
     <lastmod>2024-04-25T04:55:52+00:00</lastmod>
@@ -57,9 +63,6 @@
     <lastmod>2023-01-19T09:12:32+00:00</lastmod>
   </url><url>
     <loc>http://davidcraddock.net/2022/12/23/my-personal-retrospective-on-2022/</loc>
-    <lastmod>2022-12-23T23:26:12+00:00</lastmod>
-  </url><url>
-    <loc>http://davidcraddock.net/category/retrospectives/</loc>
     <lastmod>2022-12-23T23:26:12+00:00</lastmod>
   </url><url>
     <loc>http://davidcraddock.net/my-work-computer/</loc>
