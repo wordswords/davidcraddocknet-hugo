@@ -32,7 +32,7 @@ I've also spent a lot of time working on my home [Plex Server](https://plex.tv),
 
 In terms of cancer, I am still cancer-free, and it has been over 1 year since my stem cell transplant. If I make it to 2 years the doctors told me I can consider myself essentially 'cured'. The risk of cancer returning is highest in the first few months after the stem cell transplant, so by now there is very little chance that I will not be cured.
 
-The clinical trial that I was a part of was such a success that the drug I was on ('Nivolumab') has been approved as a treatment for the type of cancer I had. So I am glad that I was able to contribute to cancer research (and also directly benefit from it!).
+The clinical trial that I was a part of was such a success that the drug I was on - '[Nivolumab](https://www.cancerresearchuk.org/about-cancer/treatment/drugs/nivolumab)' has been approved as a treatment for the type of cancer I had. So I am glad that I was able to contribute to cancer research (and also directly benefit from it!).
 
 We have a new Labour government, which I'm SO VERY happy about, having been a long-term supporter of the Labour Party for many years. One of the things that kept me going throughout cancer treatment was the hope that I'd live to see another Labour government, and indeed I did.
 
