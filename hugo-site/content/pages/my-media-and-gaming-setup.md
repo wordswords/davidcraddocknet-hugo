@@ -5,8 +5,12 @@ title: My Media and Gaming Setup
 url: /my-gaming-setup/
 
 ---
-\[youtube https://www.youtube.com/watch?v=w-QOfONKTWs?si=oJ2ojPGFUt02r4UJ&w=560&h=315\]
-[![](/wp-content/uploads/2023/12/20231216_180047.jpg)](/wp-content/uploads/2023/12/20231216_180047.jpg) [![](/wp-content/uploads/2023/12/20231216_180059.jpg)](/wp-content/uploads/2023/12/20231216_180059.jpg) [![](/wp-content/uploads/2023/12/20231216_180202_1.jpg)](/wp-content/uploads/2023/12/20231216_180202_1.jpg) [![](/wp-content/uploads/2023/12/20231216_180225_1.jpg)](/wp-content/uploads/2023/12/20231216_180225_1.jpg)
+{{ youtube w-QOfONKTWs }}
+
+[![](/wp-content/uploads/2023/12/20231216_180047.jpg)](/wp-content/uploads/2023/12/20231216_180047.jpg)
+[![](/wp-content/uploads/2023/12/20231216_180059.jpg)](/wp-content/uploads/2023/12/20231216_180059.jpg)
+[![](/wp-content/uploads/2023/12/20231216_180202_1.jpg)](/wp-content/uploads/2023/12/20231216_180202_1.jpg)
+[![](/wp-content/uploads/2023/12/20231216_180225_1.jpg)](/wp-content/uploads/2023/12/20231216_180225_1.jpg)
 
 ## Media PC
 
