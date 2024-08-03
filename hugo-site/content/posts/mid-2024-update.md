@@ -28,7 +28,7 @@ I've stopped DJing regularly, and sold my DJ equipment. This was a positive step
 
 I have been working on other side-incomes, such as my professional career tutoring for software/IT technical people, and selling stuff via eBay, not just my stuff (we have had a huge declutter of the house) but selling things for friends who are not able to sell them themselves.
 
-I've also spent a lot of time working on my home [https://plex.tv](Plex server), which now has nearly 300 films and nearly 50 TV series on it. I have been ripping films from Blu-rays I buy second-hand, and then donating those Blu-rays to charity shops in Withington. It gives me a lot of pleasure to be able to donate the amount I have. I have also ripped my entire CD collection (over 300 CDs) and given them away to charity.
+I've also spent a lot of time working on my home [Plex Server](https://plex.tv), which now has nearly 300 films and nearly 50 TV series on it. I have been ripping films from Blu-rays I buy second-hand, and then donating those Blu-rays to charity shops in Withington. It gives me a lot of pleasure to be able to donate the amount I have. I have also ripped my entire CD collection (over 300 CDs) and given them away to charity.
 
 In terms of cancer, I am still cancer-free, and it has been over 1 year since my stem cell transplant. If I make it to 2 years the doctors told me I can consider myself essentially 'cured'. The risk of cancer returning is highest in the first few months after the stem cell transplant, so by now there is very little chance that I will not be cured.
 
