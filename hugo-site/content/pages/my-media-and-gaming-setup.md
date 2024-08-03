@@ -5,7 +5,7 @@ title: My Media and Gaming Setup
 url: /my-gaming-setup/
 
 ---
-{{ youtube w-QOfONKTWs }}
+{{< youtube w-QOfONKTWs >}}
 
 [![](/wp-content/uploads/2023/12/20231216_180047.jpg)](/wp-content/uploads/2023/12/20231216_180047.jpg)
 [![](/wp-content/uploads/2023/12/20231216_180059.jpg)](/wp-content/uploads/2023/12/20231216_180059.jpg)
