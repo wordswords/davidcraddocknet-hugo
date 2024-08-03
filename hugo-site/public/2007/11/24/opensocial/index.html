@@ -8,7 +8,7 @@
 <title>OpenSocial | DavidCraddock.net</title>
 <meta name="keywords" content="">
 <meta name="description" content="This is going to be absolutely huge:
-[youtube https://www.youtube.com/watch?v=RytmNqEHYiE&rel=1]">
+[youtube https://www.youtube.com/watch?v=RytmNqEHYiE&amp;rel=1]">
 <meta name="author" content="Reorx">
 <link rel="canonical" href="http://davidcraddock.net/2007/11/24/opensocial/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.97d99fcdd90c38f6e3343e959a97a0295b30f590730a4ece2347f7f24ad997d1.css" integrity="sha256-l9mfzdkMOPbjND6VmpegKVsw9ZBzCk7OI0f38krZl9E=" rel="preload stylesheet" as="style">
@@ -18,10 +18,10 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="OpenSocial | DavidCraddock.net" />
 <meta name="twitter:description" content="This is going to be absolutely huge:
-[youtube https://www.youtube.com/watch?v=RytmNqEHYiE&rel=1]" />
+[youtube https://www.youtube.com/watch?v=RytmNqEHYiE&amp;rel=1]" />
 <meta property="og:title" content="OpenSocial | DavidCraddock.net" />
 <meta property="og:description" content="This is going to be absolutely huge:
-[youtube https://www.youtube.com/watch?v=RytmNqEHYiE&rel=1]" />
+[youtube https://www.youtube.com/watch?v=RytmNqEHYiE&amp;rel=1]" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://davidcraddock.net/2007/11/24/opensocial/" />
     <meta property="og:image" content="http://davidcraddock.net/cover.png"/>
@@ -56,7 +56,7 @@
   "@type": "BlogPosting",
   "headline": "OpenSocial | DavidCraddock.net",
   "name": "OpenSocial",
-  "description": "This is going to be absolutely huge:\n[youtube https://www.youtube.com/watch?v=RytmNqEHYiE\u0026rel=1]",
+  "description": "This is going to be absolutely huge:\n[youtube https://www.youtube.com/watch?v=RytmNqEHYiE\u0026amp;rel=1]",
   "keywords": [
     
   ],
@@ -220,7 +220,7 @@ function toggleThemeListener() {
   </header> 
 
   <div class="post-content"><p>This is going to be absolutely huge:</p>
-<p>[youtube <a href="https://www.youtube.com/watch?v=RytmNqEHYiE&rel=1">https://www.youtube.com/watch?v=RytmNqEHYiE&rel=1</a>]</p>
+<p>[youtube <a href="https://www.youtube.com/watch?v=RytmNqEHYiE&amp;rel=1">https://www.youtube.com/watch?v=RytmNqEHYiE&amp;rel=1</a>]</p>
 
   </div>
 
@@ -255,61 +255,33 @@ function toggleThemeListener() {
 </nav>
 
   </footer>
-    <div class="comments-separator"></div><div class="comments">
-  <div class="title">
-    <span>Comments</span>
-    <span class="counter"><span class="remark42__counter" data-url="http://davidcraddock.net/2007/11/24/opensocial/"></span></span>
-  </div>
-  <div id="remark42">
-  </div>
+    <div class="comments-separator"></div><div class="comments-box">
+  <div id="disqus_thread"></div>
 </div>
 
-<script>
-  var remark_config = {
-    host: 'https:\/\/remark42.reorx.com',
-    site_id: 'reorx.github.io',
-    components: ['embed', 'counter'],
-    max_shown_comments: 20,
-    theme: 'light',
-    simple_view: true,
-    admonition: JSON.stringify(['Please subscribe by email to receive reply notifications.']),
+<script type="text/javascript">
+  var disqus_config = function () {
+    this.page.url = 'http:\/\/davidcraddock.net\/2007\/11\/24\/opensocial\/';  
+    this.page.identifier = 'opensocial'; 
   };
-  if (isDarkTheme()) {
-    remark_config.theme = 'dark'
-  }
 
-  (function() {
-    
-    const key = 'remark42'
-    if (!toggleThemeCallbacks.hasOwnProperty(key)) {
-      toggleThemeCallbacks[key] = (isDark) => {
-        const remark42 = window.REMARK42
-        if (!remark42 || !document.querySelector('#remark42')) {
-          return;
-        }
-        if (isDark) {
-          remark42.changeTheme('light');
-        } else {
-          remark42.changeTheme('dark');
-        }
-      }
-    }
-
-    
-    const remark42 = window.REMARK42
-    if (remark42) {
-      remark42.destroy()
-      remark42.createInstance(remark_config)
+  (function () {
+    const disqus = window.DISQUS
+    if (disqus) {
+      
+      
+      disqus.reset({
+        reload: true,
+        config: disqus_config,
+      });
     } else {
-      for (const component of remark_config.components) {
-        var d = document, s = d.createElement('script');
-        s.src = `${remark_config.host}/web/${component}.mjs`;
-        s.type = 'module';
-        s.defer = true;
-        
-        s.setAttribute('data-no-instant', '')
-        d.head.appendChild(s);
-      }
+      var d = document, s = d.createElement('script');
+      s.src = '//' + 'davidcraddocknet' + '.disqus.com/embed.js';
+      s.defer = true;
+      s.setAttribute('data-timestamp', +new Date());
+      
+      s.setAttribute('data-no-instant', '')
+      d.head.appendChild(s);
     }
   })();
 </script>

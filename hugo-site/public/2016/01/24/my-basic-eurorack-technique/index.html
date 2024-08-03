@@ -222,8 +222,8 @@ function toggleThemeListener() {
 <p>Here is the patch I almost always use:</p>
 <p><img loading="lazy" src="/wp-content/uploads/2016/01/untitled-diagram.png" type="" alt="Eurorack Patch Diagram"  /></p>
 <p>Here are some examples of where this same basic technique has been used:</p>
-<p>[soundcloud url=&ldquo;<a href="https://api.soundcloud.com/tracks/238832020%22">https://api.soundcloud.com/tracks/238832020"</a> params=&ldquo;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true&rdquo; width=&ldquo;100%&rdquo; height=&ldquo;300&rdquo; iframe=&ldquo;true&rdquo; /]</p>
-<p>[soundcloud url=&ldquo;<a href="https://api.soundcloud.com/tracks/216449918%22">https://api.soundcloud.com/tracks/216449918"</a> params=&ldquo;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true&rdquo; width=&ldquo;100%&rdquo; height=&ldquo;300&rdquo; iframe=&ldquo;true&rdquo; /]</p>
+<p>[soundcloud url=&ldquo;<a href="https://api.soundcloud.com/tracks/238832020%22">https://api.soundcloud.com/tracks/238832020&quot;</a> params=&ldquo;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true&rdquo; width=&ldquo;100%&rdquo; height=&ldquo;300&rdquo; iframe=&ldquo;true&rdquo; /]</p>
+<p>[soundcloud url=&ldquo;<a href="https://api.soundcloud.com/tracks/216449918%22">https://api.soundcloud.com/tracks/216449918&quot;</a> params=&ldquo;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true&rdquo; width=&ldquo;100%&rdquo; height=&ldquo;300&rdquo; iframe=&ldquo;true&rdquo; /]</p>
 
   </div>
 
@@ -258,61 +258,33 @@ function toggleThemeListener() {
 </nav>
 
   </footer>
-    <div class="comments-separator"></div><div class="comments">
-  <div class="title">
-    <span>Comments</span>
-    <span class="counter"><span class="remark42__counter" data-url="http://davidcraddock.net/2016/01/24/my-basic-eurorack-technique/"></span></span>
-  </div>
-  <div id="remark42">
-  </div>
+    <div class="comments-separator"></div><div class="comments-box">
+  <div id="disqus_thread"></div>
 </div>
 
-<script>
-  var remark_config = {
-    host: 'https:\/\/remark42.reorx.com',
-    site_id: 'reorx.github.io',
-    components: ['embed', 'counter'],
-    max_shown_comments: 20,
-    theme: 'light',
-    simple_view: true,
-    admonition: JSON.stringify(['Please subscribe by email to receive reply notifications.']),
+<script type="text/javascript">
+  var disqus_config = function () {
+    this.page.url = 'http:\/\/davidcraddock.net\/2016\/01\/24\/my-basic-eurorack-technique\/';  
+    this.page.identifier = 'my-basic-eurorack-technique'; 
   };
-  if (isDarkTheme()) {
-    remark_config.theme = 'dark'
-  }
 
-  (function() {
-    
-    const key = 'remark42'
-    if (!toggleThemeCallbacks.hasOwnProperty(key)) {
-      toggleThemeCallbacks[key] = (isDark) => {
-        const remark42 = window.REMARK42
-        if (!remark42 || !document.querySelector('#remark42')) {
-          return;
-        }
-        if (isDark) {
-          remark42.changeTheme('light');
-        } else {
-          remark42.changeTheme('dark');
-        }
-      }
-    }
-
-    
-    const remark42 = window.REMARK42
-    if (remark42) {
-      remark42.destroy()
-      remark42.createInstance(remark_config)
+  (function () {
+    const disqus = window.DISQUS
+    if (disqus) {
+      
+      
+      disqus.reset({
+        reload: true,
+        config: disqus_config,
+      });
     } else {
-      for (const component of remark_config.components) {
-        var d = document, s = d.createElement('script');
-        s.src = `${remark_config.host}/web/${component}.mjs`;
-        s.type = 'module';
-        s.defer = true;
-        
-        s.setAttribute('data-no-instant', '')
-        d.head.appendChild(s);
-      }
+      var d = document, s = d.createElement('script');
+      s.src = '//' + 'davidcraddocknet' + '.disqus.com/embed.js';
+      s.defer = true;
+      s.setAttribute('data-timestamp', +new Date());
+      
+      s.setAttribute('data-no-instant', '')
+      d.head.appendChild(s);
     }
   })();
 </script>

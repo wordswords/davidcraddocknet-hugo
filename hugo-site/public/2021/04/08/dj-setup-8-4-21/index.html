@@ -232,7 +232,7 @@ I am also using the <a href="https://xferrecords.com/freeware">https://xferrecor
 <p>I have a sustain pedal which I use to trigger the &lsquo;ducking&rsquo; affect in Ableton when I want to talk over the music.. when the pedal is depressed, the music fades down and the mic up a bit, so people can hear me better. When the pedal is let go, the microphone volume is killed so no background noise is picked up.</p>
 <p><img loading="lazy" src="/wp-content/uploads/2021/04/dj-setup-21-4-2021.png" type="" alt=""  /></p>
 <p>Here it is in action - the clicks are me flipping the crossfader or the channel faders on the VCM-600:</p>
-<p>[youtube <a href="https://www.youtube.com/watch?v=LJs7rw7jDtQ&w=560&h=315">https://www.youtube.com/watch?v=LJs7rw7jDtQ&w=560&h=315</a>]</p>
+<p>[youtube <a href="https://www.youtube.com/watch?v=LJs7rw7jDtQ&amp;w=560&amp;h=315">https://www.youtube.com/watch?v=LJs7rw7jDtQ&amp;w=560&amp;h=315</a>]</p>
 <p>As you can see from the video, the latency really isn&rsquo;t an issue. It&rsquo;s very responsive even though the timecode audio from the turntables is being processed by the Denon DS1, sent through the Douk VU-meter, and then converted to digital signals by the UMC1820 sound interface, sent through an EQ and FX chain, and mixed by Ableton according to the VCM600 DJ controller movements.</p>
 <p>Here is a flowchart which should help explain the signal flow:
 <img loading="lazy" src="/wp-content/uploads/2021/04/dj-setup-flowchart.png" type="" alt=""  /></p>
@@ -308,61 +308,33 @@ For used equipment I use <a href="http://www.reverb.com">Reverb.com</a> or <a hr
 </nav>
 
   </footer>
-    <div class="comments-separator"></div><div class="comments">
-  <div class="title">
-    <span>Comments</span>
-    <span class="counter"><span class="remark42__counter" data-url="http://davidcraddock.net/2021/04/08/dj-setup-8-4-21/"></span></span>
-  </div>
-  <div id="remark42">
-  </div>
+    <div class="comments-separator"></div><div class="comments-box">
+  <div id="disqus_thread"></div>
 </div>
 
-<script>
-  var remark_config = {
-    host: 'https:\/\/remark42.reorx.com',
-    site_id: 'reorx.github.io',
-    components: ['embed', 'counter'],
-    max_shown_comments: 20,
-    theme: 'light',
-    simple_view: true,
-    admonition: JSON.stringify(['Please subscribe by email to receive reply notifications.']),
+<script type="text/javascript">
+  var disqus_config = function () {
+    this.page.url = 'http:\/\/davidcraddock.net\/2021\/04\/08\/dj-setup-8-4-21\/';  
+    this.page.identifier = 'dj-setup-8-4-21'; 
   };
-  if (isDarkTheme()) {
-    remark_config.theme = 'dark'
-  }
 
-  (function() {
-    
-    const key = 'remark42'
-    if (!toggleThemeCallbacks.hasOwnProperty(key)) {
-      toggleThemeCallbacks[key] = (isDark) => {
-        const remark42 = window.REMARK42
-        if (!remark42 || !document.querySelector('#remark42')) {
-          return;
-        }
-        if (isDark) {
-          remark42.changeTheme('light');
-        } else {
-          remark42.changeTheme('dark');
-        }
-      }
-    }
-
-    
-    const remark42 = window.REMARK42
-    if (remark42) {
-      remark42.destroy()
-      remark42.createInstance(remark_config)
+  (function () {
+    const disqus = window.DISQUS
+    if (disqus) {
+      
+      
+      disqus.reset({
+        reload: true,
+        config: disqus_config,
+      });
     } else {
-      for (const component of remark_config.components) {
-        var d = document, s = d.createElement('script');
-        s.src = `${remark_config.host}/web/${component}.mjs`;
-        s.type = 'module';
-        s.defer = true;
-        
-        s.setAttribute('data-no-instant', '')
-        d.head.appendChild(s);
-      }
+      var d = document, s = d.createElement('script');
+      s.src = '//' + 'davidcraddocknet' + '.disqus.com/embed.js';
+      s.defer = true;
+      s.setAttribute('data-timestamp', +new Date());
+      
+      s.setAttribute('data-no-instant', '')
+      d.head.appendChild(s);
     }
   })();
 </script>

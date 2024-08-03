@@ -220,7 +220,7 @@ function toggleThemeListener() {
   </header> 
 
   <div class="post-content"><p>Volunteers on the <a href="http://en.wikipedia.org/wiki/One_Laptop_per_Child">OLPC project</a> have developed a low-cost heart rate monitor that can be plugged into the <a href="http://en.wikipedia.org/wiki/OLPC_XO-1">XO laptop</a>, making steps towards an affordable monitoring system for hospitals in developing countries.</p>
-<p>For more information on the development, see the: <a href="http://olpcgoldenstate.blogspot.com/2009/04/new-pcb-revision-and-low-cost-proto.html">OLPC Goldenstate</a> project. People in the US can currently buy the <a href="http://xoexplosion.com/index.php?main_page=product_info&cPath=1_34&products_id=158">sensor here</a>; unfortunately there is no international shipping yet in place.</p>
+<p>For more information on the development, see the: <a href="http://olpcgoldenstate.blogspot.com/2009/04/new-pcb-revision-and-low-cost-proto.html">OLPC Goldenstate</a> project. People in the US can currently buy the <a href="http://xoexplosion.com/index.php?main_page=product_info&amp;cPath=1_34&amp;products_id=158">sensor here</a>; unfortunately there is no international shipping yet in place.</p>
 
   </div>
 
@@ -255,61 +255,33 @@ function toggleThemeListener() {
 </nav>
 
   </footer>
-    <div class="comments-separator"></div><div class="comments">
-  <div class="title">
-    <span>Comments</span>
-    <span class="counter"><span class="remark42__counter" data-url="http://davidcraddock.net/2009/04/07/heart-rate-monitor-now-available-for-the-xo-laptop/"></span></span>
-  </div>
-  <div id="remark42">
-  </div>
+    <div class="comments-separator"></div><div class="comments-box">
+  <div id="disqus_thread"></div>
 </div>
 
-<script>
-  var remark_config = {
-    host: 'https:\/\/remark42.reorx.com',
-    site_id: 'reorx.github.io',
-    components: ['embed', 'counter'],
-    max_shown_comments: 20,
-    theme: 'light',
-    simple_view: true,
-    admonition: JSON.stringify(['Please subscribe by email to receive reply notifications.']),
+<script type="text/javascript">
+  var disqus_config = function () {
+    this.page.url = 'http:\/\/davidcraddock.net\/2009\/04\/07\/heart-rate-monitor-now-available-for-the-xo-laptop\/';  
+    this.page.identifier = 'heart-rate-monitor-now-available-for-the-xo-laptop'; 
   };
-  if (isDarkTheme()) {
-    remark_config.theme = 'dark'
-  }
 
-  (function() {
-    
-    const key = 'remark42'
-    if (!toggleThemeCallbacks.hasOwnProperty(key)) {
-      toggleThemeCallbacks[key] = (isDark) => {
-        const remark42 = window.REMARK42
-        if (!remark42 || !document.querySelector('#remark42')) {
-          return;
-        }
-        if (isDark) {
-          remark42.changeTheme('light');
-        } else {
-          remark42.changeTheme('dark');
-        }
-      }
-    }
-
-    
-    const remark42 = window.REMARK42
-    if (remark42) {
-      remark42.destroy()
-      remark42.createInstance(remark_config)
+  (function () {
+    const disqus = window.DISQUS
+    if (disqus) {
+      
+      
+      disqus.reset({
+        reload: true,
+        config: disqus_config,
+      });
     } else {
-      for (const component of remark_config.components) {
-        var d = document, s = d.createElement('script');
-        s.src = `${remark_config.host}/web/${component}.mjs`;
-        s.type = 'module';
-        s.defer = true;
-        
-        s.setAttribute('data-no-instant', '')
-        d.head.appendChild(s);
-      }
+      var d = document, s = d.createElement('script');
+      s.src = '//' + 'davidcraddocknet' + '.disqus.com/embed.js';
+      s.defer = true;
+      s.setAttribute('data-timestamp', +new Date());
+      
+      s.setAttribute('data-no-instant', '')
+      d.head.appendChild(s);
     }
   })();
 </script>

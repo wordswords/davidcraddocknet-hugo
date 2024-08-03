@@ -38,7 +38,7 @@
       <description>Volunteers on the OLPC project have developed a low-cost heart rate monitor that can be plugged into the XO laptop, making steps towards an affordable monitoring system for hospitals in developing countries.
 For more information on the development, see the: OLPC Goldenstate project. People in the US can currently buy the sensor here; unfortunately there is no international shipping yet in place.</description>
       <content:encoded><![CDATA[<p>Volunteers on the <a href="http://en.wikipedia.org/wiki/One_Laptop_per_Child">OLPC project</a> have developed a low-cost heart rate monitor that can be plugged into the <a href="http://en.wikipedia.org/wiki/OLPC_XO-1">XO laptop</a>, making steps towards an affordable monitoring system for hospitals in developing countries.</p>
-<p>For more information on the development, see the: <a href="http://olpcgoldenstate.blogspot.com/2009/04/new-pcb-revision-and-low-cost-proto.html">OLPC Goldenstate</a> project. People in the US can currently buy the <a href="http://xoexplosion.com/index.php?main_page=product_info&cPath=1_34&products_id=158">sensor here</a>; unfortunately there is no international shipping yet in place.</p>
+<p>For more information on the development, see the: <a href="http://olpcgoldenstate.blogspot.com/2009/04/new-pcb-revision-and-low-cost-proto.html">OLPC Goldenstate</a> project. People in the US can currently buy the <a href="http://xoexplosion.com/index.php?main_page=product_info&amp;cPath=1_34&amp;products_id=158">sensor here</a>; unfortunately there is no international shipping yet in place.</p>
 ]]></content:encoded>
     </item>
     
@@ -188,9 +188,9 @@ This was really interesting, and I learned a huge amount in a very short amount 
       
       <guid>http://davidcraddock.net/2007/11/24/opensocial/</guid>
       <description>This is going to be absolutely huge:
-[youtube https://www.youtube.com/watch?v=RytmNqEHYiE&amp;rel=1]</description>
+[youtube https://www.youtube.com/watch?v=RytmNqEHYiE&amp;amp;rel=1]</description>
       <content:encoded><![CDATA[<p>This is going to be absolutely huge:</p>
-<p>[youtube <a href="https://www.youtube.com/watch?v=RytmNqEHYiE&rel=1">https://www.youtube.com/watch?v=RytmNqEHYiE&rel=1</a>]</p>
+<p>[youtube <a href="https://www.youtube.com/watch?v=RytmNqEHYiE&amp;rel=1">https://www.youtube.com/watch?v=RytmNqEHYiE&amp;rel=1</a>]</p>
 ]]></content:encoded>
     </item>
     

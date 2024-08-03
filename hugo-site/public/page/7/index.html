@@ -16,7 +16,6 @@
 <link rel="apple-touch-icon" href="http://davidcraddock.net/apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" href="http://davidcraddock.net/feed.xml">
 <link rel="alternate" type="application/json" href="http://davidcraddock.net/index.json">
-<link rel="alternate" hreflang="zh" href="http://davidcraddock.net/zh/">
 <link rel="alternate" hreflang="en" href="http://davidcraddock.net/">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="DavidCraddock.net" />
@@ -37,7 +36,7 @@
   "description": "The personal blog of David Craddock, a software engineer based in Manchester, UK.",
   "thumbnailUrl": "http://davidcraddock.net/favicon.ico",
   "sameAs": [
-      "https://github.com/reorx/hugo-PaperModX", "index.xml"
+      "https://github.com/wordswords"
   ]
 }
 </script>
@@ -184,6 +183,160 @@ function toggleThemeListener() {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>Node.js HTTPS server with self-signed certificate creation on openssl 0.9.8zh with node.js 7.10.0
+    </h2>
+  </header>
+  <section class="entry-content">
+    
+      <p>I couldn’t find a concise guide to setting this up quickly so thought it was worth a post. To quickly get something working and create a https server using the above versions of openssl and node.js, do the following:
+Generate self-signed server certificate with no password sudo openssl req -x509 -newkey rsa:2048 -keyout ./csr.pem -out server.crt -days 3001 -nodes Use this node.js code to setup a server quickly const https = require(&#39;https&#39;); const fs = require(&#39;fs&#39;); const options = { key: fs....</p>
+    
+  </section>
+  <footer class="entry-footer"><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
+  <span>2017-05-10</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
+  <span>106 words</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
+  <span>1 min</span></span>
+</footer>
+  <a class="entry-link" aria-label="post link to Node.js HTTPS server with self-signed certificate creation on openssl 0.9.8zh with node.js 7.10.0" href="http://davidcraddock.net/2017/05/10/node-js-https-server-with-self-signed-certificate-creation-on-openssl-0-9-8zh-with-node-js-7-10-0/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Finished Planning My Eurorack Modular Synthesizer
+    </h2>
+  </header>
+  <section class="entry-content">
+    
+      <p>In January 2015 I put in an order for my first Eurorack case. Little did I know that I would end up filling that case and buying a larger one. Finally, 2 years and 3 months later, I have nearly finished assembling what will be the complete Eurorack. I have been buying a module or two per month, researching what I need and playing a lot with what I have got already to find out its limitations and areas for possible expansion....</p>
+    
+  </section>
+  <footer class="entry-footer"><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
+  <span>2017-04-16</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
+  <span>632 words</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
+  <span>3 min</span></span>
+</footer>
+  <a class="entry-link" aria-label="post link to Finished Planning My Eurorack Modular Synthesizer" href="http://davidcraddock.net/2017/04/16/finished-planning-my-eurorack-modular-synthesizer/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Goals for 2017
+    </h2>
+  </header>
+  <section class="entry-content">
+    
+      <p>Looking at my past posts, you may notice that I didn’t set myself any goals for 2016. Looking back, this was a mistake, so I’m going to remedy this by setting some for 2017.
+Goals:
+Lose a significant amount of weight - this is very important for health reasons. Study maths courses - I intend to sign up for some maths courses at the OU. This will improve my mathematical knowledge, allowing for further study in subjects I’m interested in, plus allow me to work in more mathematically-heavy careers....</p>
+    
+  </section>
+  <footer class="entry-footer"><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
+  <span>2017-02-27</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
+  <span>181 words</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
+  <span>1 min</span></span>
+</footer>
+  <a class="entry-link" aria-label="post link to Goals for 2017" href="http://davidcraddock.net/2017/02/27/goals-for-2017/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Studio Setup
+    </h2>
+  </header>
+  <section class="entry-content">
+    
+      <p>This is my current studio setup.
+I have the following gear:
+Eurorack 9U case Eurorack 6U case KORG MS20 Mini Synth Roland TB3 Synth AY3 Chiptune Synth Roland A500-PRO Keyboard Controller Nord Drum Synth Macbook Pro with Ableton Live 9 Suite MIDI.OCD Polyphonic MIDI-&gt;CV Converter Samson Patchbay
+I am looking to sell my Acces Virus A and concentrate on filling up the remaining Eurorack case holes.</p>
+    
+  </section>
+  <footer class="entry-footer"><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
+  <span>2017-02-11</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
+  <span>66 words</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
+  <span>1 min</span></span>
+</footer>
+  <a class="entry-link" aria-label="post link to Studio Setup" href="http://davidcraddock.net/2017/02/11/studio-setup/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Switching to Wordpress.com
+    </h2>
+  </header>
+  <section class="entry-content">
+    
+      <p>I am currently moving the blog, which was formerly hosted on Dreamhost, to Wordpress.com hosting. Most of the content is moved over already, I have to go through all the posts and tidy up the references, relink the images etc. Hopefully I will get around to this shortly.</p>
+    
+  </section>
+  <footer class="entry-footer"><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
+  <span>2017-01-30</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
+  <span>48 words</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
+  <span>1 min</span></span>
+</footer>
+  <a class="entry-link" aria-label="post link to Switching to Wordpress.com" href="http://davidcraddock.net/2017/01/30/switching-to-wordpress-com/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Contact
+    </h2>
+  </header>
+  <section class="entry-content">
+    
+      <p>[contact-form][contact-field label=“Name” type=“name” required=“1”/][contact-field label=“Email” type=“email” required=“1”/][contact-field label=“Website” type=“url”/][contact-field label=“Comment” type=“textarea” required=“1”/][/contact-form]</p>
+    
+  </section>
+  <footer class="entry-footer"><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
+  <span>2017-01-29</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
+  <span>12 words</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
+  <span>1 min</span></span>
+</footer>
+  <a class="entry-link" aria-label="post link to Contact" href="http://davidcraddock.net/contact/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Music Workflow 2017
+    </h2>
+  </header>
+  <section class="entry-content">
+    
+      <p>In 2017 I want to build a relatively static hardware-based workflow. This is what I’ve chosen: The components are:
+Roland A-500PRO keyboard controller - https://www.roland.com/global/products/a-500pro/ Arpie MIDI Arpeggiator - https://www.tindie.com/products/hotchk155/arpie-midi-arpeggiator-kit/ CV.OCD Midi -&gt; CV Convertor - https://www.tindie.com/products/hotchk155/cvocd-a-super-flexible-midi-to-cv-box/ KORG MS20 Semi-Modular Mini Synth Eurorack - https://www.modulargrid.net/e/racks/view/350623 Nord Drum Semi-Modular Drum Module - http://www.nordkeyboards.com/products/nord-drum Stereo Memory Man with Hazarai (Reverb/Echo Pedal) - http://www.ehx.com/products/stereo-memory-man-with-hazarai Focusrite Saffire Pro 24 Audio Interface - https://us.focusrite.com/firewire-audio-interfaces/saffire-pro-24 Ableton Push Controller (MK1) - https://www....</p>
+    
+  </section>
+  <footer class="entry-footer"><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
+  <span>2016-12-03</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
+  <span>75 words</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
+  <span>1 min</span></span>
+</footer>
+  <a class="entry-link" aria-label="post link to Music Workflow 2017" href="http://davidcraddock.net/2016/12/03/music-workflow-2017/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>Current Music-Making Setup
     </h2>
   </header>
@@ -246,159 +399,6 @@ Top shelf: 3 oscilators and noise generator in the top left, 4 VCAs and S&amp;H 
   <span>1 min</span></span>
 </footer>
   <a class="entry-link" aria-label="post link to Eurorack 2016" href="http://davidcraddock.net/2016/04/16/eurorack-2016/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>OSX Fish Functions to open Chrome from the Shell
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>These functions are quite handy, and allow you to do things such as copy and paste errors and google for them without having to manually open a browser. You have to enclose arguments to both functions in single quotes, e.g. ‘chrome ‘http://www.google.co.uk’ and google ‘one two three four’. You should add these to your config file at ~/.config/fish/config.fish and make sure Google Chrome is already installed.
-[code language=“bash”] function chrome /usr/bin/open -a ‘/Applications/Google Chrome....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2016-04-04</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>85 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to OSX Fish Functions to open Chrome from the Shell" href="http://davidcraddock.net/2016/04/04/osx-fish-functions-to-open-chrome-from-the-shell/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>My vIM Configuration
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>I use a heavily customised setup for vIM, the text editor that annoys me the least in ~30 years of using a computer. You can see my exact setup in my dotfiles repo on github, https://github.com/wordswords/-.
-Here are the plugins I use:
-ConqueTerm - Opens a shell window inside vIM, allowing you to have a REPL environment within vIM. NERDTree - A filetree plugin that you can see on the left of the window above....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2016-03-26</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>155 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to My vIM Configuration" href="http://davidcraddock.net/2016/03/26/my-vim-configuration/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Working with Fish Shell, ffmpeg, MP4Box and sox to generate audio files
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>More adventures with Fish shell. I have scripted the generation of a bunch of test asset audio files in mp4 format suitable for dash streaming. I have used the audio file commandline tools ffmepg MP4Box and sox in this script, they are pretty powerful and worth installing via homebrew on OSX.
-Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I’m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2016-03-08</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>254 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Working with Fish Shell, ffmpeg, MP4Box and sox to generate audio files" href="http://davidcraddock.net/2016/03/08/working-with-fish-shell-ffmpeg-mp4box-and-sox-to-generate-audio-files/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Audio Routing for my PC
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>For my own benefit as much as anyone elses, I thought I’d document my PC audio setup. I have two soundcards and two sets of speakers, one surround soundcard and speaker set for gaming and watching surround sound movies, and one audio interface linked up to my studio monitor speakers for music production. I also have a Digi 002 mixer which I use to mix in the outputs from my synthesisers to my recording interface....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2016-02-06</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>188 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Audio Routing for my PC" href="http://davidcraddock.net/2016/02/06/audio-routing-for-my-pc/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Fish Shell Scripting
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>A few months ago I switched across from Bash onto the Fish shell, on my main development machine. I can’t get enough of its fast autosuggestions and its sane scripting language. Compared to Bash it is very fun to use.
-Today I wrote a script to automate the backup of my development workspace onto a private bitbucket account. Bitbucket is good because it allows unlimited private repositories, but it caps the size of these repos at 2GB max, with some features disabled after 1GB....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2016-02-02</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>230 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Fish Shell Scripting" href="http://davidcraddock.net/2016/02/02/fish-shell-scripting/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>ADAT with Digi 002 Consoles - Don&#39;t throw them away just yet!
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>So I got given a Digi 002 console version, which looks like this:
-A fairly old style digital audio interface and mixer, which was all the rage back in 2002 when it first came out, but now is often found sitting in the skip. Why? Because it is a Pro-Tools inteface, and Avid stopped supporting it about 5 years ago, so it won’t actually work under Pro Tools and Windows 10 (believe me, I’ve tried!...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2016-01-25</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>277 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to ADAT with Digi 002 Consoles - Don&#39;t throw them away just yet!" href="http://davidcraddock.net/2016/01/25/adat-with-digi-002-console-dont-throw-them-away-just-yet/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>A Basic Eurorack Technique
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>I thought it might be of some interest to describe how I use my Eurorack, at lot of the time, in making tracks. I have a 3 oscilator - 3 VCA - 3 filter Eurorack which I use primarily so that the oscilators initially work in unison mode with some slight detuning. I typically use a single loop, arpeggio or pattern that I repeat over the song. Then, partway through a track, I will transpose the octaves of the oscilators and vary the sustain of the envelopes, along with the filters and pulse-width modulation amount, to make a morphing yet harmonious sound texture progression....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2016-01-24</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>166 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to A Basic Eurorack Technique" href="http://davidcraddock.net/2016/01/24/my-basic-eurorack-technique/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

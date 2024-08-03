@@ -221,7 +221,7 @@ I am also using the <a href="https://xferrecords.com/freeware">https://xferrecor
 <p>I have a sustain pedal which I use to trigger the &lsquo;ducking&rsquo; affect in Ableton when I want to talk over the music.. when the pedal is depressed, the music fades down and the mic up a bit, so people can hear me better. When the pedal is let go, the microphone volume is killed so no background noise is picked up.</p>
 <p><img loading="lazy" src="/wp-content/uploads/2021/04/dj-setup-21-4-2021.png" type="" alt=""  /></p>
 <p>Here it is in action - the clicks are me flipping the crossfader or the channel faders on the VCM-600:</p>
-<p>[youtube <a href="https://www.youtube.com/watch?v=LJs7rw7jDtQ&w=560&h=315">https://www.youtube.com/watch?v=LJs7rw7jDtQ&w=560&h=315</a>]</p>
+<p>[youtube <a href="https://www.youtube.com/watch?v=LJs7rw7jDtQ&amp;w=560&amp;h=315">https://www.youtube.com/watch?v=LJs7rw7jDtQ&amp;w=560&amp;h=315</a>]</p>
 <p>As you can see from the video, the latency really isn&rsquo;t an issue. It&rsquo;s very responsive even though the timecode audio from the turntables is being processed by the Denon DS1, sent through the Douk VU-meter, and then converted to digital signals by the UMC1820 sound interface, sent through an EQ and FX chain, and mixed by Ableton according to the VCM600 DJ controller movements.</p>
 <p>Here is a flowchart which should help explain the signal flow:
 <img loading="lazy" src="/wp-content/uploads/2021/04/dj-setup-flowchart.png" type="" alt=""  /></p>

@@ -220,7 +220,7 @@ function toggleThemeListener() {
 <p><img loading="lazy" src="/wp-content/uploads/2021/06/navidrome.jpg" type="" alt=""  /></p>
 <p>It remotely mounts the music share on my main Windows PC which is almost always on, and quickly indexes and serves up the content in a Spotify type way.</p>
 <p>I have setup an iptables port redirect so that any web traffic to port 80 or port 443 will be redirected to the correct navidrome app port so I don&rsquo;t have to remember the obscure port number just the domain name above. I have also setup AutoFS to automatically detect when my main PC is running and mount the windows share automatically, so everything just works whenever my main PC is switched on and off, and docker-compose automatically loads the container whenever it goes down and the setup persists between reboots of the RPI and the windows PC. I have also installed Plex on the same RPI, using AutoFS so that it mounts and unmounts the video share on my other PC when it is switched on. I have ripped a bunch of comedy videos from my DVDs and BluRays using Handbrake.</p>
-<p>Navidrome implements the Subsonic API, so it is compatible with a lot of different applications, including the excellent <a href="https://play.google.com/store/apps/details?id=github.daneren2005.dsub&hl=en_GB&gl=US">DSub</a> application for Android which offers a more mobile-friendly streamlined player that connects to my Navidrome server and allows caching and pre-downloading, and a bunch of other cool features.</p>
+<p>Navidrome implements the Subsonic API, so it is compatible with a lot of different applications, including the excellent <a href="https://play.google.com/store/apps/details?id=github.daneren2005.dsub&amp;hl=en_GB&amp;gl=US">DSub</a> application for Android which offers a more mobile-friendly streamlined player that connects to my Navidrome server and allows caching and pre-downloading, and a bunch of other cool features.</p>
 <p>It provides an easy way for me to browse and play any music from my music collection from anywhere on my network, and it has full metadata added as part of my DJ music metadata workflow (see: /2021/05/05/organising-huge-music-libraries-with-serato/ for more info). I have also setup my RPI3 as a ZeroTier bridge to my local network, meaning I can create a P2P VPN from my phone to stream music via DSub when I am outside the house too, or to access Plex on the RPI from my phone while I&rsquo;m on the move.</p>
 <p>Another useful feature is that I can save playlists using Navidrome and download all the files that make up the playlist via the web interface. This is useful for preparing a set and moving all teh files onto my DJing laptop so that I can analyse them in Serato and play them in a Serato crate.</p>
 
@@ -257,61 +257,33 @@ function toggleThemeListener() {
 </nav>
 
   </footer>
-    <div class="comments-separator"></div><div class="comments">
-  <div class="title">
-    <span>Comments</span>
-    <span class="counter"><span class="remark42__counter" data-url="http://davidcraddock.net/2021/06/09/using-navidrome-on-a-rpi3-to-host-my-music-collection-for-djing-so-i-can-listen-between-sets/"></span></span>
-  </div>
-  <div id="remark42">
-  </div>
+    <div class="comments-separator"></div><div class="comments-box">
+  <div id="disqus_thread"></div>
 </div>
 
-<script>
-  var remark_config = {
-    host: 'https:\/\/remark42.reorx.com',
-    site_id: 'reorx.github.io',
-    components: ['embed', 'counter'],
-    max_shown_comments: 20,
-    theme: 'light',
-    simple_view: true,
-    admonition: JSON.stringify(['Please subscribe by email to receive reply notifications.']),
+<script type="text/javascript">
+  var disqus_config = function () {
+    this.page.url = 'http:\/\/davidcraddock.net\/2021\/06\/09\/using-navidrome-on-a-rpi3-to-host-my-music-collection-for-djing-so-i-can-listen-between-sets\/';  
+    this.page.identifier = 'using-navidrome-on-a-rpi3-to-host-my-music-collection-for-djing-so-i-can-listen-between-sets'; 
   };
-  if (isDarkTheme()) {
-    remark_config.theme = 'dark'
-  }
 
-  (function() {
-    
-    const key = 'remark42'
-    if (!toggleThemeCallbacks.hasOwnProperty(key)) {
-      toggleThemeCallbacks[key] = (isDark) => {
-        const remark42 = window.REMARK42
-        if (!remark42 || !document.querySelector('#remark42')) {
-          return;
-        }
-        if (isDark) {
-          remark42.changeTheme('light');
-        } else {
-          remark42.changeTheme('dark');
-        }
-      }
-    }
-
-    
-    const remark42 = window.REMARK42
-    if (remark42) {
-      remark42.destroy()
-      remark42.createInstance(remark_config)
+  (function () {
+    const disqus = window.DISQUS
+    if (disqus) {
+      
+      
+      disqus.reset({
+        reload: true,
+        config: disqus_config,
+      });
     } else {
-      for (const component of remark_config.components) {
-        var d = document, s = d.createElement('script');
-        s.src = `${remark_config.host}/web/${component}.mjs`;
-        s.type = 'module';
-        s.defer = true;
-        
-        s.setAttribute('data-no-instant', '')
-        d.head.appendChild(s);
-      }
+      var d = document, s = d.createElement('script');
+      s.src = '//' + 'davidcraddocknet' + '.disqus.com/embed.js';
+      s.defer = true;
+      s.setAttribute('data-timestamp', +new Date());
+      
+      s.setAttribute('data-no-instant', '')
+      d.head.appendChild(s);
     }
   })();
 </script>

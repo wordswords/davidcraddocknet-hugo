@@ -223,7 +223,7 @@ function toggleThemeListener() {
   </header> 
 
   <div class="post-content"><p>I&rsquo;m going to take a break from the purely technical posts to get more people to see this video. Here the late Dan Osman speed-climbs a cliff without any safety equipment.</p>
-<p><a href="http://www.youtube-nocookie.com/v/Fpm0m6bVfrM&hl=en&fs=1&rel=0">http://www.youtube-nocookie.com/v/Fpm0m6bVfrM&amp;hl=en&amp;fs=1&amp;rel=0</a></p>
+<p><a href="http://www.youtube-nocookie.com/v/Fpm0m6bVfrM&amp;hl=en&amp;fs=1&amp;rel=0">http://www.youtube-nocookie.com/v/Fpm0m6bVfrM&amp;hl=en&amp;fs=1&amp;rel=0</a></p>
 <p>Risky? Just a bit. A few years later he lost his life during a similar attempt. But no-one can doubt the guts required, and the level of skill he achieved, in this type of climbing.</p>
 
   </div>
@@ -259,61 +259,33 @@ function toggleThemeListener() {
 </nav>
 
   </footer>
-    <div class="comments-separator"></div><div class="comments">
-  <div class="title">
-    <span>Comments</span>
-    <span class="counter"><span class="remark42__counter" data-url="http://davidcraddock.net/2009/10/17/speed-climbing/"></span></span>
-  </div>
-  <div id="remark42">
-  </div>
+    <div class="comments-separator"></div><div class="comments-box">
+  <div id="disqus_thread"></div>
 </div>
 
-<script>
-  var remark_config = {
-    host: 'https:\/\/remark42.reorx.com',
-    site_id: 'reorx.github.io',
-    components: ['embed', 'counter'],
-    max_shown_comments: 20,
-    theme: 'light',
-    simple_view: true,
-    admonition: JSON.stringify(['Please subscribe by email to receive reply notifications.']),
+<script type="text/javascript">
+  var disqus_config = function () {
+    this.page.url = 'http:\/\/davidcraddock.net\/2009\/10\/17\/speed-climbing\/';  
+    this.page.identifier = 'speed-climbing'; 
   };
-  if (isDarkTheme()) {
-    remark_config.theme = 'dark'
-  }
 
-  (function() {
-    
-    const key = 'remark42'
-    if (!toggleThemeCallbacks.hasOwnProperty(key)) {
-      toggleThemeCallbacks[key] = (isDark) => {
-        const remark42 = window.REMARK42
-        if (!remark42 || !document.querySelector('#remark42')) {
-          return;
-        }
-        if (isDark) {
-          remark42.changeTheme('light');
-        } else {
-          remark42.changeTheme('dark');
-        }
-      }
-    }
-
-    
-    const remark42 = window.REMARK42
-    if (remark42) {
-      remark42.destroy()
-      remark42.createInstance(remark_config)
+  (function () {
+    const disqus = window.DISQUS
+    if (disqus) {
+      
+      
+      disqus.reset({
+        reload: true,
+        config: disqus_config,
+      });
     } else {
-      for (const component of remark_config.components) {
-        var d = document, s = d.createElement('script');
-        s.src = `${remark_config.host}/web/${component}.mjs`;
-        s.type = 'module';
-        s.defer = true;
-        
-        s.setAttribute('data-no-instant', '')
-        d.head.appendChild(s);
-      }
+      var d = document, s = d.createElement('script');
+      s.src = '//' + 'davidcraddocknet' + '.disqus.com/embed.js';
+      s.defer = true;
+      s.setAttribute('data-timestamp', +new Date());
+      
+      s.setAttribute('data-no-instant', '')
+      d.head.appendChild(s);
     }
   })();
 </script>

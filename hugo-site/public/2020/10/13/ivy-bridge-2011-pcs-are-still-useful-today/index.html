@@ -223,7 +223,7 @@ function toggleThemeListener() {
   </header> 
 
   <div class="post-content"><p>In our house, seperate to my main PC (see the tab above) we still have two Ivy Bridge-based PCs:</p>
-<p><a href="https://www.youtube.com/watch?v=-AQXobsZHNg&t=212s"><strong>Conny&rsquo;s PC</strong></a></p>
+<p><a href="https://www.youtube.com/watch?v=-AQXobsZHNg&amp;t=212s"><strong>Conny&rsquo;s PC</strong></a></p>
 <ul>
 <li>i7-3770K</li>
 <li>16GB DDR3 RAM</li>
@@ -244,7 +244,7 @@ function toggleThemeListener() {
 </ul>
 <p>I don&rsquo;t need a powerful graphics card as I don&rsquo;t game on it, and the Radeon R9 3200 supports my 2560x1440px monitor so it is more than adequete. I have installed VMWare on it and am looking to spin up some virtual machines as servers, and have them running in the background while I am browsing. I could assign several cores and quite a lot of the RAM and not really notice a difference with the light work I do when using the computer.</p>
 <p>I am just amazed at how much you can do with these old high-end CPUS. The performance delta between these Ivy Bridge 2011 CPUs today&rsquo;s processors really isn&rsquo;t that large, and they are so cheap these days. This following video shows just how cheap you can build one of these setups, and how powerful they are even today:</p>
-<p><a href="https://www.youtube.com/watch?v=-AQXobsZHNg&t=212s">https://www.youtube.com/watch?v=-AQXobsZHNg&t=212s</a></p>
+<p><a href="https://www.youtube.com/watch?v=-AQXobsZHNg&amp;t=212s">https://www.youtube.com/watch?v=-AQXobsZHNg&amp;t=212s</a></p>
 <p>The only situation where these processors don&rsquo;t really work hugely well is in applications which emphasise single-core performance - I tried to use my second PC as an Ableton Live machine, and a lot of audio plugins I wanted to use were not optimised for multi-core processors, just single-core, so that didn&rsquo;t work well.</p>
 
   </div>
@@ -280,61 +280,33 @@ function toggleThemeListener() {
 </nav>
 
   </footer>
-    <div class="comments-separator"></div><div class="comments">
-  <div class="title">
-    <span>Comments</span>
-    <span class="counter"><span class="remark42__counter" data-url="http://davidcraddock.net/2020/10/13/ivy-bridge-2011-pcs-are-still-useful-today/"></span></span>
-  </div>
-  <div id="remark42">
-  </div>
+    <div class="comments-separator"></div><div class="comments-box">
+  <div id="disqus_thread"></div>
 </div>
 
-<script>
-  var remark_config = {
-    host: 'https:\/\/remark42.reorx.com',
-    site_id: 'reorx.github.io',
-    components: ['embed', 'counter'],
-    max_shown_comments: 20,
-    theme: 'light',
-    simple_view: true,
-    admonition: JSON.stringify(['Please subscribe by email to receive reply notifications.']),
+<script type="text/javascript">
+  var disqus_config = function () {
+    this.page.url = 'http:\/\/davidcraddock.net\/2020\/10\/13\/ivy-bridge-2011-pcs-are-still-useful-today\/';  
+    this.page.identifier = 'ivy-bridge-2011-pcs-are-still-useful-today'; 
   };
-  if (isDarkTheme()) {
-    remark_config.theme = 'dark'
-  }
 
-  (function() {
-    
-    const key = 'remark42'
-    if (!toggleThemeCallbacks.hasOwnProperty(key)) {
-      toggleThemeCallbacks[key] = (isDark) => {
-        const remark42 = window.REMARK42
-        if (!remark42 || !document.querySelector('#remark42')) {
-          return;
-        }
-        if (isDark) {
-          remark42.changeTheme('light');
-        } else {
-          remark42.changeTheme('dark');
-        }
-      }
-    }
-
-    
-    const remark42 = window.REMARK42
-    if (remark42) {
-      remark42.destroy()
-      remark42.createInstance(remark_config)
+  (function () {
+    const disqus = window.DISQUS
+    if (disqus) {
+      
+      
+      disqus.reset({
+        reload: true,
+        config: disqus_config,
+      });
     } else {
-      for (const component of remark_config.components) {
-        var d = document, s = d.createElement('script');
-        s.src = `${remark_config.host}/web/${component}.mjs`;
-        s.type = 'module';
-        s.defer = true;
-        
-        s.setAttribute('data-no-instant', '')
-        d.head.appendChild(s);
-      }
+      var d = document, s = d.createElement('script');
+      s.src = '//' + 'davidcraddocknet' + '.disqus.com/embed.js';
+      s.defer = true;
+      s.setAttribute('data-timestamp', +new Date());
+      
+      s.setAttribute('data-no-instant', '')
+      d.head.appendChild(s);
     }
   })();
 </script>

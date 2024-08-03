@@ -16,7 +16,6 @@
 <link rel="apple-touch-icon" href="http://davidcraddock.net/apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" href="http://davidcraddock.net/feed.xml">
 <link rel="alternate" type="application/json" href="http://davidcraddock.net/index.json">
-<link rel="alternate" hreflang="zh" href="http://davidcraddock.net/zh/">
 <link rel="alternate" hreflang="en" href="http://davidcraddock.net/">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="DavidCraddock.net" />
@@ -37,7 +36,7 @@
   "description": "The personal blog of David Craddock, a software engineer based in Manchester, UK.",
   "thumbnailUrl": "http://davidcraddock.net/favicon.ico",
   "sameAs": [
-      "https://github.com/reorx/hugo-PaperModX", "index.xml"
+      "https://github.com/wordswords"
   ]
 }
 </script>
@@ -184,6 +183,186 @@ function toggleThemeListener() {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>Converting week numbers to dates
+    </h2>
+  </header>
+  <section class="entry-content">
+    
+      <p>Here is some python code I adapted from this stackoverflow post to get the first day of a week specificed by a week number. This method includes leap year and summer time differences.
+import time def weeknum(num,year): instr = str(year)&#43;&#34; &#34;&#43;str(num-1)&#43;&#34; 1&#34; print time.asctime(time.strptime(instr,&#39;%Y %W %w&#39;)) Here is me exectuting the code in Python’s IDLE shell:
+See that the first week of 2009 actually started in 2008, but by the end of that week we are in 2009....</p>
+    
+  </section>
+  <footer class="entry-footer"><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
+  <span>2010-11-24</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
+  <span>78 words</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
+  <span>1 min</span></span>
+</footer>
+  <a class="entry-link" aria-label="post link to Converting week numbers to dates" href="http://davidcraddock.net/2010/11/24/converting-week-numbers-to-dates/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Mac BBC Radio Player
+    </h2>
+  </header>
+  <section class="entry-content">
+    
+      <p>Quite cool little app that allows you to listen to different BBC Radio programmes from within a standalone application, instead of iPlayer:
+http://whomwah.github.com/radioaunty/</p>
+    
+  </section>
+  <footer class="entry-footer"><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
+  <span>2010-11-16</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
+  <span>23 words</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
+  <span>1 min</span></span>
+</footer>
+  <a class="entry-link" aria-label="post link to Mac BBC Radio Player" href="http://davidcraddock.net/2010/11/16/mac-bbc-radio-player/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>MediaMonkey allows you to transfer music from any computer onto your guest iPhone
+    </h2>
+  </header>
+  <section class="entry-content">
+    
+      <p>MediaMonkey is a popular free media player for Windows. It has a great feature that allows you to transfer to and from an iPhone that is not registered with your computer. Normally only one iTunes install can be associated with your iPhone, but MediaMonkey allows you another way to transfer music and audio files with a ‘guest’ iPhone. Check it out, it works:
+MediaMonkey</p>
+    
+  </section>
+  <footer class="entry-footer"><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
+  <span>2010-11-14</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
+  <span>64 words</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
+  <span>1 min</span></span>
+</footer>
+  <a class="entry-link" aria-label="post link to MediaMonkey allows you to transfer music from any computer onto your guest iPhone" href="http://davidcraddock.net/2010/11/14/mediamonkey-allows-you-to-transfer-music-from-any-computer-onto-your-guest-iphone/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Applications I Reccomend
+    </h2>
+  </header>
+  <section class="entry-content">
+    
+      <p>Software I use on my macbook &amp; PC:
+DVDRipper Pro for Mac - DVD ripping, can also rip to ISO Handbrake for Mac - Transcoding from DVD rip to iPhone-playable file iMovie for Mac - Video editing BabasChess for Windows - Best chess client for internet play Hypercam 2 - Best screencapture utility Skype for both - For reliable messaging as well as voice and video chat Virtual Clone Drive for Windows - For mounting ISO images iTunes for Mac - Best music player, and keeps media synced with iPhone VLC Player for both - For watching movies DVD Player for Mac - For watching DVDs...</p>
+    
+  </section>
+  <footer class="entry-footer"><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
+  <span>2010-07-19</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
+  <span>231 words</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
+  <span>2 min</span></span>
+</footer>
+  <a class="entry-link" aria-label="post link to Applications I Reccomend" href="http://davidcraddock.net/2010/07/19/applications-i-reccomend/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Recording Game Videos on Windows 7
+    </h2>
+  </header>
+  <section class="entry-content">
+    
+      <p>This is just a quick note to remind myself how I did this.
+Hypercam2 is a good, free, video recorder that can cope with recording game videos. It’s freely available from http://www.hyperionics.com/hc/downloads.asp - just make sure when you install it you don’t tick on the spyware toolbar installation options.
+My motherboard has a 5.1 digital soundcard built in. However the only way I can record off the soundcard is to plug in a standard audio cable from the speaker out (green) to the microphone in (orange)....</p>
+    
+  </section>
+  <footer class="entry-footer"><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
+  <span>2010-07-18</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
+  <span>238 words</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
+  <span>2 min</span></span>
+</footer>
+  <a class="entry-link" aria-label="post link to Recording Game Videos on Windows 7" href="http://davidcraddock.net/2010/07/18/798/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Insights into a modern Indie Music label
+    </h2>
+  </header>
+  <section class="entry-content">
+    
+      <p>I read this remarkable post on a public mailing list I subscribe to. I thought it was such a great insight into running a music label, that I just had to post it here. It discusses issues facing modern music, such as DRM, DMCA, and other ways of making (or losing) money. Fascinating.
+Here it is:
+I work for a (fairly small) indie label - from witnessing this model in action I feel I have to stick up for the label given that I see the model working (or sometimes not so well) on a daily basis!...</p>
+    
+  </section>
+  <footer class="entry-footer"><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
+  <span>2010-07-16</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
+  <span>1369 words</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
+  <span>7 min</span></span>
+</footer>
+  <a class="entry-link" aria-label="post link to Insights into a modern Indie Music label" href="http://davidcraddock.net/2010/07/16/insights-into-a-modern-indie-music-label/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Restoring Ubuntu 10.4&#39;s Bootloader, after a Windows 7 Install
+    </h2>
+  </header>
+  <section class="entry-content">
+    
+      <p>I installed Windows 7 after I had installed Ubuntu 10.4. Windows 7 overwrote the Linux bootloader “grub” on my master boot record. Therefore I had to restore it.
+I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under the LiveCD, I then restored the Grub bootloader by chrooting into my old install, using the linux command line. This is a fairly complex thing to do, and so I recommend you use this approach only if you’re are confident with the linux command line:...</p>
+    
+  </section>
+  <footer class="entry-footer"><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
+  <span>2010-07-13</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
+  <span>225 words</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
+  <span>2 min</span></span>
+</footer>
+  <a class="entry-link" aria-label="post link to Restoring Ubuntu 10.4&#39;s Bootloader, after a Windows 7 Install" href="http://davidcraddock.net/2010/07/13/restoring-ubuntu-10-4s-bootloader-after-a-windows-7-install/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Windows 7 Gaming on my Macbook
+    </h2>
+  </header>
+  <section class="entry-content">
+    
+      <p>I have a 2006/2007 Core 2 Duo 2.6ghz white macbook, that I use regularly for internet, music, watching films, itunes and integration with my iPhone.
+I wanted to turn my desktop PC into a ‘work only’ Ubuntu Linux machine, so that I don’t get distracted when I’m supposed to be doing something else.
+But I still have a lot of PC games that I wanted to play on the Macbook, so I decided to try and setup a windows environment to play games on using Bootcamp 2....</p>
+    
+  </section>
+  <footer class="entry-footer"><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
+  <span>2010-07-01</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
+  <span>401 words</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
+  <span>2 min</span></span>
+</footer>
+  <a class="entry-link" aria-label="post link to Windows 7 Gaming on my Macbook" href="http://davidcraddock.net/2010/07/01/running-windows-7-on-my-macbook/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>Ripping Movies onto the iPhone
     </h2>
   </header>
@@ -225,187 +404,6 @@ I found this article, and was impressed at the quality and the resources mention
   <span>1 min</span></span>
 </footer>
   <a class="entry-link" aria-label="post link to Decent Graphics for Flash Games" href="http://davidcraddock.net/2010/05/17/art-for-flash-games/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Wordpress HTML edit mode inserts BR tags sometimes when you add a carriage return..
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>This is something that was quite annoying today, as I was struggling to use Wordpress 2.9.2 to align some pictures in the HTML mode of editing a page, on a client’s website.
-It turns out that Wordpress was adding BR tags sometimes when I hit return.. and sometimes not. The annoying thing was, although the BRs were outputted in the resultant Wordpress site, the BRs were not visible in the Wordpress HTML edit mode itself....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2010-04-28</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>189 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Wordpress HTML edit mode inserts BR tags sometimes when you add a carriage return.." href="http://davidcraddock.net/2010/04/28/wordpress-html-edit-mode-inserts-br-tags-sometimes-when-you-add-a-carriage-return/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Forkbombs and How to Prevent Them
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>A forkbomb is a program or script that continually creates new copies of itself, that create new copies of themselves. It’s usually a function that calls itself, and each time that function is called, it creates a new process to run the same function.
-You end up with thousands of processes, all creating processes themselves, with an exponential growth. Soon it takes up all the resources of your server, and prevents anything else running on it....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2010-04-02</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>513 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>3 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Forkbombs and How to Prevent Them" href="http://davidcraddock.net/2010/04/02/forkbombs-and-how-to-prevent-them/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>How to remove nano, vim and other editors&#39; backup files out of a directory tree
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>Linux command-line editors such as nano and vim often, by default, create backup files with the prefix of “”. I.e, if I created a file called /home/david/myfile, then nano would create a backup in /home/david/myfile. Sometimes it doesn’t delete them either, so you’re left with a bunch of backup files all over the place, especially if you’re editing a lot on a directory tree full of source code.
-Those stray backup files make directory listings confusing, and also add unnecessary weight to the commits on source control systems such as svn, cvs, git....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2010-03-22</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>372 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to How to remove nano, vim and other editors&#39; backup files out of a directory tree" href="http://davidcraddock.net/2010/03/22/how-to-remove-nano-vim-and-other-editors-backup-files-out-of-a-directory-tree/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Tip for watching the completion of a large file copy
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>Forget the wonderful windows progress bar, and imagine I’m in the world of command-line Linux, and I want to copy a 484MB file, called VMware-server-2.0.2-203138.i386.tar.gz, from my home directory to a remote server. But I want to figure out how long it’s going to take.
-1. First I can run a “du -m” command to get the total MB size of the original file:
-du -m /home/david/VMware-server-2.0.2-203138.i386.tar.gz I.e: david@believe:~$ du -m VMware-server-2....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2010-03-20</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>301 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Tip for watching the completion of a large file copy" href="http://davidcraddock.net/2010/03/20/tip-for-watching-the-completion-of-a-large-file-copy/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>The Linux Root Directory, Explained
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>It’s helpful to know the basic filesystem on a Linux machine, to better understand where everything is supposed to go, and where you should start looking if you want to find a certain file.
-Everything in Linux is stored in the “root directory”. On a windows machine, that would be equivalent to C:. C: is the main folder where everything is stored. On Linux we call this the “root directory”, or simply “/”....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2010-03-20</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>1049 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>5 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to The Linux Root Directory, Explained" href="http://davidcraddock.net/2010/03/20/the-linux-file-structure/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Useful OSX commands for Linux users
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>I wrote this list to remind me, as a newcomer to OSX, how the command line differed from the Linux commandline. I thought I’d expand on it, and share it:
-To mount any iso:
-hdiutil mount sample.iso To download a file as you would using wget:
-curl http://ftp.heanet.ie/pub/linuxmint.com/stable/8/LinuxMint-8.iso -o linuxmint.iso -C - the -o specifies the output file (required) the -C - specifies automatically resuming if possible.
-To burn a bootable iso to CD, DVD or USB key: use the “diskutil” program as described in: http://forums....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2010-03-19</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>145 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Useful OSX commands for Linux users" href="http://davidcraddock.net/2010/03/19/useful-osx-command-line-commands/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Long Bash History Files are Great.
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>When I’m installing software, or doing some complicated stuff on the linux command line, which nowadays is pretty much all the time, I will sometimes want to remember exactly what I typed.
-Now the normal /home/david/.bash_history file is usually fine for that. Run this command, for example, and you will see the commands you typed in before you logged out of the server last time you used it:
-cat ~/.bash_history You can also find out what you typed in this session, ie: since you logged in, by typing this:...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2010-03-18</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>584 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>3 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Long Bash History Files are Great." href="http://davidcraddock.net/2010/03/18/long-bash-history-files-are-great/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>My minimal VIM config
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>This is the absolute minimum I do when I have to log onto a new server or shell account that I haven’t used before, that I will need to edit text files with.
-First I figure out whether VIM is really installed. A lot of installs, especially those based on ubuntu, ship with VI aliased to VIM, but the VIM install is usually not really VIM at all, and behaves exactly like VI but with some minor bugs fixed....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2010-03-18</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>405 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to My minimal VIM config" href="http://davidcraddock.net/2010/03/18/my-minimal-vim-config/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
