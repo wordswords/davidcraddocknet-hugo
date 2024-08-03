@@ -2,7 +2,7 @@
 category:
   - music
 date: "2021-06-13T20:54:40+00:00"
-guid: https://davidcraddock.net/?p=2595
+guid: http://davidcraddock.net/?p=2595
 title: Making Twitch DJ Promo Mix Videos
 url: /2021/06/13/making-twitch-dj-promo-mix-videos/
 

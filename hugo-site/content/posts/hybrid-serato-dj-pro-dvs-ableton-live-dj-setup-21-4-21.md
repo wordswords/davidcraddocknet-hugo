@@ -4,7 +4,7 @@ category:
   - denon-ds1
   - reloop-8000mk2
 date: "2021-04-08T03:49:31+00:00"
-guid: https://davidcraddock.net/?p=2424
+guid: http://davidcraddock.net/?p=2424
 tag:
   - ableton-live
   - denon-ds1

@@ -4,7 +4,7 @@ category:
   - gaming
   - playnite
 date: "2022-08-09T02:53:48+00:00"
-guid: https://davidcraddock.net/?p=3158
+guid: http://davidcraddock.net/?p=3158
 tag:
   - collecting
   - gaming

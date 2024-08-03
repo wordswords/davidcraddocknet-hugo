@@ -2,7 +2,7 @@
 category:
   - uncategorized
 date: "2022-09-01T21:27:22+00:00"
-guid: https://davidcraddock.net/?p=3203
+guid: http://davidcraddock.net/?p=3203
 title: My Job Requirements
 url: /2022/09/01/my-ideal-job/
 

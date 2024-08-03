@@ -2,7 +2,7 @@
 category:
   - music
 date: "2021-04-26T18:26:14+00:00"
-guid: https://davidcraddock.net/?p=2477
+guid: http://davidcraddock.net/?p=2477
 title: Resolume MIDI Control in my Twitch DJing Setup
 url: /2021/04/26/resolume-midi-control-in-my-twitch-djing-setup/
 

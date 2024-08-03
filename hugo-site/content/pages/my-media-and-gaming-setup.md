@@ -1,6 +1,6 @@
 ---
 date: "2023-06-26T19:52:05+00:00"
-guid: https://davidcraddock.net/?page_id=3856
+guid: http://davidcraddock.net/?page_id=3856
 title: My Media and Gaming Setup
 url: /my-gaming-setup/
 

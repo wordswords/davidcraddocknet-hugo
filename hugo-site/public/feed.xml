@@ -36,7 +36,7 @@ I will continue to tidy up bits and pieces as I go along.</description>
       <title>My Bike</title>
       <link>http://davidcraddock.net/my-bike/</link>
       <pubDate>Sun, 09 Jun 2024 22:34:52 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?page_id=4801</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?page_id=4801</guid> 
       <description>
 Decided not to mention the security aspects of my setup on a public page, but trust me, there are many!
 Himiway Zebra Electric Mountainbike 2024 Version 2s official batteries 2x battery chargers Two spare tires Spare inner tube Electric fat tire pump Metal tire levers Chain tool Chain cleaner tool Mudoff bike cleaning kit Small first aid kit Compass Himiway fold-out cycle toolkit Energy bars + nuts 2x cycle frame bags Himiway official cargo bag with foldout panniers 2x Rockbros waterproof pannier bags Rockbros Handlebar bag Electric bike horn Bike bell Himiway cycle helmet with front light 4x vaccum thermos 750ml flasks for water All-weather MTB grips for handlebar Fingerless MTB gloves for warmer weather Wraparound anti-glare sun glasses for protection against surface dirt etc Wraparound cycle goggles with different visors Light backpack suitable for cycling Gortex water-resistent high-vis cycle jacket RAM Mounts Quick-release handlebar Mobile Phone holder VEVOR Cycle Bike Cargo Trailer </description>
@@ -45,14 +45,14 @@ Himiway Zebra Electric Mountainbike 2024 Version 2s official batteries 2x batter
       <title>Video Routing for Dave Cave Studio</title>
       <link>http://davidcraddock.net/2024/04/25/video-routing-for-dave-cave-studio/</link>
       <pubDate>Thu, 25 Apr 2024 04:55:52 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=4694</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=4694</guid> 
       <description>Here is a quick diagram I mocked up to detail exactly how video routing works in the studio.</description>
     </item>
     <item>
       <title>Advice to young people in the UK wanting a career in Tech</title>
       <link>http://davidcraddock.net/2024/04/23/4683/</link>
       <pubDate>Tue, 23 Apr 2024 22:54:59 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=4683</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=4683</guid> 
       <description>If you&amp;rsquo;re currently in high school in the UK and want to be a GOOD and EMPLOYED software engineer.. this is my advice.
 Start programming on personal projects right away, and keep it up during your entire working career. Always have something going on in the background. Get into a RUSSELL GROUP university in the UK and take a technical, demanding degree in a computing-related discipline, for example, Physics, Electronic Engineering, Maths, Computer Science, Artificial Intelligence.</description>
     </item>
@@ -60,7 +60,7 @@ Start programming on personal projects right away, and keep it up during your en
       <title>My Mobile Laptop Setup</title>
       <link>http://davidcraddock.net/my-mobile-laptop-setup/</link>
       <pubDate>Sun, 04 Feb 2024 02:48:13 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?page_id=4413</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?page_id=4413</guid> 
       <description>I use this setup, along with my bike to work from wherever I want.
 It does kind of turn heads, and I&amp;rsquo;m aware it may look a little &amp;lsquo;over the top&amp;rsquo; - but it&amp;rsquo;s a very useful setup for me, keeps me healthy, and fits all my requirements.
 Hercules DG400BB Laptop Stand w/ Bag - this portable laptop stand is very sturdy and is designed for mobile DJ use. I find it is excellent in all situations, not just DJ use.</description>
@@ -69,7 +69,7 @@ Hercules DG400BB Laptop Stand w/ Bag - this portable laptop stand is very sturdy
       <title>Music Acquisition Process for DJ Music</title>
       <link>http://davidcraddock.net/2024/01/11/music-acquisition-process-for-dj-music/</link>
       <pubDate>Thu, 11 Jan 2024 23:41:50 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=4348</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=4348</guid> 
       <description>My music acquisition process for DJ music:
 ARM (Automatic Ripping Machine) rips CDs I buy into FLAC form without any interactivity. You just insert a CD into the Linux server, and then it ejects it when it&amp;rsquo;s done. Lidarr downloads FLACs of any tracks of artists I have in my collection, but I don&amp;rsquo;t have their full discography. It does this automatically and silently in the background. Once a day, a cron job imports ARM and Lidarr downloads into my Beets.</description>
     </item>
@@ -77,7 +77,7 @@ ARM (Automatic Ripping Machine) rips CDs I buy into FLAC form without any intera
       <title>My Homelab</title>
       <link>http://davidcraddock.net/my-home-network/</link>
       <pubDate>Sun, 17 Dec 2023 02:13:39 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?page_id=4287</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?page_id=4287</guid> 
       <description>My home network routes at around 2-4gbit/sec between 10gbit/sec DAC fibre connected hosts, and around 2gbit/sec via CAT8 for Thunderbolt 2.5Ggbit/sec laptop network interfaces. We two Ubiquiti wireless APs in a mesh configuration, with seperate SSIDs for 2Ghz, 5Ghz, guest and IOT networks. The guest and IOT networks are isolated from everything else. I use a Mikrotik router which hosts an iperf3 docker container for network testing I have a home server running Ubuntu Linux that hosts a bunch of services via docker containers, including Pi-Hole for DNS and a Ubiquiti Network Controller.</description>
     </item>
     <item>
@@ -92,7 +92,7 @@ The Bad Most of the year was taken up with treatment for relapsed Hodgkins Lymph
       <title>Latest Remote Guitar Lesson Setup</title>
       <link>http://davidcraddock.net/2023/09/22/latest-remote-guitar-lesson-setup/</link>
       <pubDate>Fri, 22 Sep 2023 16:56:26 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=4053</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=4053</guid> 
       <description>I&amp;rsquo;ve been having online guitar lessons with my friend Jon.
 After a while we have got things down to a setup that seems to work remotely.
 I have an Epiphone Les Paul Vintage Edition electric guitar, and a Marshall MG15G Practice Amp. I use a headphone splitter cable to plug into the Marshall&amp;rsquo;s headphone out socket, which splits the audio into left and right channels, and a 3.5mm to phono mono cable plugged into the headphone splitter that runs to my audio interface.</description>
@@ -101,14 +101,14 @@ I have an Epiphone Les Paul Vintage Edition electric guitar, and a Marshall MG15
       <title>My Media and Gaming Setup</title>
       <link>http://davidcraddock.net/my-gaming-setup/</link>
       <pubDate>Mon, 26 Jun 2023 19:52:05 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?page_id=3856</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?page_id=3856</guid> 
       <description>[youtube https://www.youtube.com/watch?v=w-QOfONKTWs?si=oJ2ojPGFUt02r4UJ&amp;amp;w=560&amp;amp;h=315] Media PC I use this mainly as a general purpose PC, and for streaming on Twitch. I also use it for video editing, adding animations, animated gifs, anything visual etc and audio editing for processing mixcloud uploads. I also use it to rip Blu-rays for my Plex server, and to watch movies and listen to music on as it has my studio EQ calibrated Sonorworks SoundID Reference profiles.</description>
     </item>
     <item>
       <title>Optical Drive Cleaners and Home Entertainment Test Tools</title>
       <link>http://davidcraddock.net/2023/02/23/optical-drive-cleaners-and-home-entertainment-test-tools/</link>
       <pubDate>Thu, 23 Feb 2023 09:57:30 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=3617</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=3617</guid> 
       <description>If you are still using optical discs, e.g. CDs or Blu-rays, in music, video or games, then you are in the minority these days. Downloads and streaming have become the norm, which means 1) A lot less discs are being produced 2) A lot less optical drives are being produced.
 Because a lot less optical drives are being produced, we can imagine a time in the future when the only optical drives you can buy, are second-hand.</description>
     </item>
@@ -116,7 +116,7 @@ Because a lot less optical drives are being produced, we can imagine a time in t
       <title>Books that have changed the way I see the practice of Software Engineering</title>
       <link>http://davidcraddock.net/2023/01/19/books-that-have-changed-the-way-i-see-the-practice-of-software-engineering/</link>
       <pubDate>Thu, 19 Jan 2023 09:12:32 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=3531</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=3531</guid> 
       <description>The Mythical Man Month and other Essays - Fred Brooks - Read it as part of my university degree. A lot of good sense. I can&amp;rsquo;t believe there are people out there in charge of software projects that haven&amp;rsquo;t read this book, or think it somehow doesn&amp;rsquo;t apply anymore, but unfortunately, it seems quite common. -
 [Read reviews on Good Reads] The Cathedral and the Bazaar - Eric S Raymound - One of the first books I read on software development process.</description>
     </item>
@@ -124,7 +124,7 @@ Because a lot less optical drives are being produced, we can imagine a time in t
       <title>My Personal Retrospective on 2022</title>
       <link>http://davidcraddock.net/2022/12/23/my-personal-retrospective-on-2022/</link>
       <pubDate>Fri, 23 Dec 2022 23:26:12 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=3472</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=3472</guid> 
       <description>Every year (when I remember) I do an end-of-year summary to outline what has been going on in my life. I’ve been doing this for a few years now, and it’s a great way to look back on the year and see has happened.
 The Bad: The main bad news of the year is that, contrary to expectations, my Hodgkins Lymphoma cancer was detected again around April after the initial chemotherapy.</description>
     </item>
@@ -132,7 +132,7 @@ The Bad: The main bad news of the year is that, contrary to expectations, my Hod
       <title>My Work Computer</title>
       <link>http://davidcraddock.net/my-work-computer/</link>
       <pubDate>Fri, 16 Dec 2022 23:06:40 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?page_id=3423</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?page_id=3423</guid> 
       <description>This is my work from home setup. I work from home every work day. I use the following equipment:
 HDMI, network cables and and USB hookups for 2 additional laptops if needed HDMI Switcher USB Switcher IKEA Motorized Standing Desk Benq 32&amp;quot; 2560x1440 graphic designers monitor on Amazon Basics extendable desk mount arm Pro-Ject Record Player Honeywell desk fan Logitech 5.1 surround sound system with 5 speakers and subwoofer Sony WH-1000XM3 Apt-X HD Noise cancelling headphones with an Avantree Oasis Plus Apt-X HD bluetooth transmitter, so I can listen to any of the music devices on noise cancelling headphones Ergonomic book stand for textbooks ThinkStation Xeon workstation/server running the latest Ubuntu Fibreoptic 10Gb/sec DAC cable routed from my ThinkStation server to my personal computer downstairs for fast data transfer 1GB/sec ethernet cable and gigabit switch running downstairs for general internet KVM switch and full hookup for work laptop Drinks holder Groot from Guardians of the Galaxy Phone holder Johnny Silverhand Plushie from Cyberpunk 2077 Pomodoro timer Standing desk mat for easing long standing experiences XL rocker style wooden balance board XL 360 style wooden balance board Fast Anker USB charger Logi USB headset with noise cancelling microphone Kinesis Freestyle 2 ergonomic keyboard Anker vertical mouse Apple Magic Pad 2 that I&amp;rsquo;ve made work with Ubuntu - I use this in preference to the vertical mouse as I&amp;rsquo;ve found it much more comfortable in most cases.</description>
     </item>
@@ -140,7 +140,7 @@ HDMI, network cables and and USB hookups for 2 additional laptops if needed HDMI
       <title>Tips for Working from Home</title>
       <link>http://davidcraddock.net/2022/10/18/tips-for-working-from-home/</link>
       <pubDate>Tue, 18 Oct 2022 17:29:44 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=3317</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=3317</guid> 
       <description>I have been working from home, the majority of the time, for over 5 years. It took a lot of adjustment, and I&amp;rsquo;m still not 100% adjusted, but if you want to undertake this, then these are my tips.
 Note that a big part of the benefit from working from home is the total flexibility in work environment, so these are only tips that work for me - they might not work for you!</description>
     </item>
@@ -148,7 +148,7 @@ Note that a big part of the benefit from working from home is the total flexibil
       <title>PSP Preset for Handbrake for transcoding video files into a PSP compatible format</title>
       <link>http://davidcraddock.net/2022/10/16/psp-preset-for-handbrake-for-transcoding-video-files-into-a-psp-compatible-format/</link>
       <pubDate>Sun, 16 Oct 2022 16:00:48 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=3304</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=3304</guid> 
       <description>This is based off of the 2021 Reddit post here: https://www.reddit.com/r/PSP/comments/kcx4ei/tutorial_convert_most_video_formats_to/
 I am using it with Handbrake 1.5.1. You can import it into your Handbrake via &amp;ldquo;Preset -&amp;gt; File Import&amp;rdquo;.
 Download PSP Handbrake Preset.</description>
@@ -157,7 +157,7 @@ Download PSP Handbrake Preset.</description>
       <title>The Current State of UK Politics</title>
       <link>http://davidcraddock.net/2022/09/29/the-current-state-of-uk-politics/</link>
       <pubDate>Thu, 29 Sep 2022 04:07:41 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=3276</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=3276</guid> 
       <description>For years, UK politics has become more right-wing, popularist, and presidential.
 Right-wing, because the Conservatives have been in power for over 10 years, and have had the opportunity to implement most of their ideological policies, which we see at the moment highlighted to an extreme with Liz Truss gearing up to emulate Thatcher on almost every level.
 Popularist, because the Conservatives have implemented policies designed to appease the populations feelings, rather than those based on factual positive outcomes.</description>
@@ -166,7 +166,7 @@ Popularist, because the Conservatives have implemented policies designed to appe
       <title>Tips for new Ubuntu Users</title>
       <link>http://davidcraddock.net/2022/09/29/tips-for-new-ubuntu-users/</link>
       <pubDate>Thu, 29 Sep 2022 00:00:36 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=3270</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=3270</guid> 
       <description>Here are some extra tips if you&amp;rsquo;re just getting started out on Ubuntu.
 You don&amp;rsquo;t have to go through the UI to shut down or reboot your computer. You can do it from the command line. The commands are:
 sudo reboot # to reboot sudo poweroff # to shut down and power off the computer You can get a lot more information on your computers startup and shutdown sequences by removing the default Ubuntu splash screen that obscures this.</description>
@@ -175,7 +175,7 @@ sudo reboot # to reboot sudo poweroff # to shut down and power off the computer 
       <title>Current Twitch DJ Setup</title>
       <link>http://davidcraddock.net/2022/09/27/current-dj-setup/</link>
       <pubDate>Tue, 27 Sep 2022 02:56:21 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=3255</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=3255</guid> 
       <description>Click to view full diagram
 Hardware 2 x Reloop 8000mk2 turntables Roland 707m Mixer and DJ Controller 2015 Macbook Pro (DJ Laptop) SoundSwitch USB -&amp;gt; DMX interface, attached to broadcast PC Beatstep MIDI Controller mapped for controlling SoundSwitch, attached to broadcast PC Vestax VCM-600 MIDI Controller used for controlling Resolume, attached to broadcast PC AKAI LPD8 MIDI Controller used for controlling Serato&amp;rsquo;s FX, attached to DJ laptop Rode Soundcaster Pro microphone used as a DJ mic 4 x Phillips Hue Colour Bulbs in lamps Phillips Hue Lightstrip Behringer UMC1820 Sound Interface connected to broadcast PC, attached to broadcast PC 2 x Logitech C920 Cameras used for capturing video for streaming, attached to broadcast PC Software SoundSwitch lighting software running on broadcast PC Resolume Avenue running on broadcast PC Streamlabs OBS running on broadcast PC Serato DJ Pro software running on DJ laptop </description>
     </item>
@@ -183,7 +183,7 @@ Hardware 2 x Reloop 8000mk2 turntables Roland 707m Mixer and DJ Controller 2015 
       <title>Google Drive Backup using Rclone</title>
       <link>http://davidcraddock.net/2022/09/24/google-drive-backup-using-rclone/</link>
       <pubDate>Sat, 24 Sep 2022 17:39:06 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=3249</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=3249</guid> 
       <description>For 8 TB of data storage on Google Drive, plus my own Google organization, I am paying £30/month, which is a pretty good deal.
 I wanted to use this space for backing up my NAS, but it was proving difficult. The program I was recommended for Linux backup, Duplicati, was not the best for this purpose. My backup runs would not complete, they would be slow, and full of syncing errors.</description>
     </item>
@@ -191,7 +191,7 @@ I wanted to use this space for backing up my NAS, but it was proving difficult. 
       <title>Home Network September 2022</title>
       <link>http://davidcraddock.net/2022/09/08/home-network-september-2022/</link>
       <pubDate>Thu, 08 Sep 2022 09:43:35 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=3219</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=3219</guid> 
       <description>I had planned a different network toplogy for sure, but this is my current setup and it seems to work well:
 I was not able to implement connection load balancing using the Miktrotik router. It was just too complicated and didn&amp;rsquo;t work reliably enough. My current network is a gigabit network across all areas, so every PC has gigabit cables, switch and so on. I either have plugged in my Virgin Media 1000mb/50mbs internet connection or my BRSK fibre 900mb/900mb connection.</description>
     </item>
@@ -199,7 +199,7 @@ I was not able to implement connection load balancing using the Miktrotik router
       <title>My Job Requirements</title>
       <link>http://davidcraddock.net/2022/09/01/my-ideal-job/</link>
       <pubDate>Thu, 01 Sep 2022 21:27:22 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=3203</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=3203</guid> 
       <description>I have nearly 20 years experience, so my skill-set is in high demand from all sorts of different organisations. If I were looking for a job, then these would be my priorities:
 Understanding of medical appointments - My situation is that I currently have cancer. Although it&amp;rsquo;s recommended I work, some of my time will be spent in medical appointments at the hospital that is 15 mins walk away from me.</description>
     </item>
@@ -207,7 +207,7 @@ Understanding of medical appointments - My situation is that I currently have ca
       <title>Sleep Tracking</title>
       <link>http://davidcraddock.net/2022/08/18/sleep-tracking/</link>
       <pubDate>Thu, 18 Aug 2022 19:58:57 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=3173</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=3173</guid> 
       <description>I really like my Withings Mattress-Based Sleep Tracker.
 I keep unusual sleeping hours a lot of the time, as I&amp;rsquo;m undergoing treatment, and a lot of the medication I&amp;rsquo;m taking effect my sleep. Even when I&amp;rsquo;m relatively healthy, some of the medication I&amp;rsquo;m on for a long-term condition also affects my sleep.
 What&amp;rsquo;s more, I enjoy a non-standard sleeping schedule. I find I get more work done in the early morning or late at night.</description>
@@ -216,7 +216,7 @@ What&amp;rsquo;s more, I enjoy a non-standard sleeping schedule. I find I get mo
       <title>Digital Game Collecting</title>
       <link>http://davidcraddock.net/2022/08/09/digital-game-collecting/</link>
       <pubDate>Tue, 09 Aug 2022 02:53:48 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=3158</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=3158</guid> 
       <description>I have a relatively obscure hobby - I collect digital video games. Quite a few people collect physical games, but I like the advantages of having a large library of gaming options which are just a download away.
 Like a lot of collectors, I have more games than I have actually played, or probably will do in my lifetime. I mostly get them via discounted bundles such as HumbleBundle.com, so I rarely play full price for them.</description>
     </item>
@@ -224,7 +224,7 @@ Like a lot of collectors, I have more games than I have actually played, or prob
       <title>Home Network Design 28/7/22</title>
       <link>http://davidcraddock.net/2022/07/28/home-network-design-28-7-22/</link>
       <pubDate>Thu, 28 Jul 2022 00:57:42 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=3139</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=3139</guid> 
       <description>Now that I actually have the internet connectivity being installed to make use of it, I am getting my home network design a bit more finished.
 Components:
 Virgin Hub providing a 1100/50mbps connection BetterInternet Fibre Hub providing a 900/900mbps connection Raspberry Pi 3 running Pi-Hole DNS MikroTik CRS309-1G-8S+IN Cloud Router Switch 4 x SFP+10Gb SFP+ RJ45 Copper Modules CAT8 30M Outdoor Cable to connect the studio to the study Short run CAT7 Patch Cables Windows 11 Studio PC with 10GB/sec SFP+ Port ThinkStation Server with twin 10GB/sec SFP+ Ports and separate gigabit NIC 3x LinkSys 3200WRT Routers in wireless repeater mode, creating a 2.</description>
@@ -233,7 +233,7 @@ Virgin Hub providing a 1100/50mbps connection BetterInternet Fibre Hub providing
       <title>MIDI Routing for Home Studio</title>
       <link>http://davidcraddock.net/2022/06/19/midi-routing-for-home-studio/</link>
       <pubDate>Sun, 19 Jun 2022 03:04:47 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=3084</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=3084</guid> 
       <description>I have had this knowledge in my head for a long time now and thought it would be better to write a diagram to explain the current setup for my MIDI routing.
 I use MIDI routing one way - MIDI OUT - from my UMC1820 sound interface.
 I have two keyboard controllers, one next to my computer, and one next to my Eurorack, that are attached via USB to my computer which I route the notes via Ableton to the MIDI out of the UMC1820 interface.</description>
@@ -242,7 +242,7 @@ I have two keyboard controllers, one next to my computer, and one next to my Eur
       <title>Home Network Design</title>
       <link>http://davidcraddock.net/2022/05/15/home-network-design/</link>
       <pubDate>Sat, 14 May 2022 23:15:20 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=3029</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=3029</guid> 
       <description>Did some network design for my home network. This will ensure that my new Virgin Media 1100mbps/50mps speed is fully utilised without any bottlenecks and will futureproof things up to at least 2.5Gbs/speed connections.
 I should be able to load balance both internet connections to utilise them both simultaniously in the future, but for now I want to be able to get greater than 1000mbit/s speed on a single device otherwise there is not much point in speed increases past 1000mbits.</description>
     </item>
@@ -250,7 +250,7 @@ I should be able to load balance both internet connections to utilise them both 
       <title>DJ Setup 2/5/22</title>
       <link>http://davidcraddock.net/2022/05/02/dj-setup-2-5-22/</link>
       <pubDate>Mon, 02 May 2022 22:11:13 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=3000</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=3000</guid> 
       <description>This is my current DJ setup that I use for Twitch streaming mainly.
 2x Reloop RL-8000mk2 turntables. 2x Serato ‘Butter Rug’ Slipmats. 2x Concorde Mk2 Digital carts. Numark NDX500 CDJ which I use for playing CDs, and as a Serato Controller as it has Serato Integration. Roland DJ-707m controller. Sennheiser HD-25 headphones. Rode Procaster mic with mic boom, pop shield and cage. t.bone MB 88U mic with table stand that I use as a guest microphone.</description>
     </item>
@@ -258,7 +258,7 @@ I should be able to load balance both internet connections to utilise them both 
       <title>Video Tools I use for my Media Collection</title>
       <link>http://davidcraddock.net/2022/03/16/video-tools-i-use-for-my-media-collection/</link>
       <pubDate>Wed, 16 Mar 2022 17:58:33 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=2968</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=2968</guid> 
       <description>I use and recommend the following software for Windows. They&amp;rsquo;re all quite easy to use. The paid software all have lifetime subscriptions, which are worth it because you need the latest updates in this area.
 Aiseesoft Blu-ray Player: (for playing Blu-Rays) (paid) https://www.aiseesoft.com/blu-ray-player/
 Easyfab Lossless Copy: (for ripping Blu-Rays, also works for DVDs) (paid) https://www.easefab.com/losslesscopy/
@@ -269,7 +269,7 @@ Handbrake: (for converting between different video formats and compressing video
       <title>Using VIM as a Word Processor</title>
       <link>http://davidcraddock.net/2022/03/08/using-vim-as-a-word-processor/</link>
       <pubDate>Tue, 08 Mar 2022 19:43:00 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=2958</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=2958</guid> 
       <description>It may surprise some people to learn that I don&amp;rsquo;t use a word processor to write pure text any more, and haven&amp;rsquo;t for several months. I still have a subscription to Microsoft Office 365, and probably will as long as recruiters and offices around the world still pay the MS tax.
 I have created my own custom writing environment in my favourite text editor, VIM. This may sound like an absolutely foolish thing to do to anyone who knows VIM.</description>
     </item>
@@ -277,7 +277,7 @@ I have created my own custom writing environment in my favourite text editor, VI
       <title>DJ Setup 03/03/2022</title>
       <link>http://davidcraddock.net/2022/03/03/dj-setup-03-03-2022/</link>
       <pubDate>Thu, 03 Mar 2022 01:19:28 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=2933</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=2933</guid> 
       <description>This is my current DJ setup with the following components:
 Decks 1 and 2 - 2x Reloop 8000mk2 Vinyl Turntables with Serato intergration Deck 3 - Numark NDX500 CDJ with Serato Integration Deck 4 - Roland 707m Serato Controller and Mixer using its internal drum machine as a deck Behringer TB-303 Clone fed into the Aux input of the Roland 707m Controller Pioneer EFX-1000 DJ FX Unit placed between the master out of the 707m controller and the input of the sound interface on the broadcasting PC Reloop Neon Serato Controller used to control the Serato DJ Pro sampler Rode Procaster Microphone (not shown in diagram) fed to the Mic 1 channel on the 707m Controller as the main microphone for me while DJing t.</description>
     </item>
@@ -285,7 +285,7 @@ Decks 1 and 2 - 2x Reloop 8000mk2 Vinyl Turntables with Serato intergration Deck
       <title>Working with Jenkinsfiles in VIM</title>
       <link>http://davidcraddock.net/2022/02/19/working-with-jenkinsfiles-in-vim/</link>
       <pubDate>Sat, 19 Feb 2022 05:51:56 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=2917</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=2917</guid> 
       <description>Using Jenkinsfiles in repositories for declarative pipelines, which is an example as infrastructure as code, is absolutely the right thing to do, in my opinion.
 However the tooling for debugging and error checking Jenkinsfiles is currently quite difficult.
 Setup Jenkinsfile linter First of all you need to make sure to be able to access the Jenkinsfile linter. This linter is processed on the Jenkins server itself, unusually. There is a configuration option that requires adminstrator access to the Jenkins server.</description>
@@ -294,7 +294,7 @@ Setup Jenkinsfile linter First of all you need to make sure to be able to access
       <title>My Story in Tech</title>
       <link>http://davidcraddock.net/2022/02/13/my-story-in-tech/</link>
       <pubDate>Sun, 13 Feb 2022 08:59:05 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=2901</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=2901</guid> 
       <description>I thought I&amp;rsquo;d write here a bit about how I got into technology and how my career has progressed for those people wanting to get into technology.
 I was lucky enough to be born in a supportive home to good parents. My father was an early entrant into the world of computing, and my birth certificate records his profession as a &amp;lsquo;Computer Science Lecturer&amp;rsquo;, which was very rare at the time.</description>
     </item>
@@ -302,7 +302,7 @@ I was lucky enough to be born in a supportive home to good parents. My father wa
       <title>Privacy and Security methods I use</title>
       <link>http://davidcraddock.net/2022/01/14/privacy-and-security-methods-i-use/</link>
       <pubDate>Fri, 14 Jan 2022 06:01:21 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=2880</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=2880</guid> 
       <description>Ever since I worked at an internet marketing company on an advertising analytics platform, I have realised that I don&amp;rsquo;t want my personal internet browsing tracked, monetised, influenced, and sold to the highest bidder. These are the steps that I have taken to reduce (you can never totally eliminate) this process.
 Pi-Hole DNS This is a DNS server installed on a Raspberry Pi on my local home network. I have all the internet traffic going through my Virgin Media router filtered through this DNS server.</description>
     </item>
@@ -310,7 +310,7 @@ Pi-Hole DNS This is a DNS server installed on a Raspberry Pi on my local home ne
       <title>The Persuit of Happiness and the Hill-Climbing Problem</title>
       <link>http://davidcraddock.net/2022/01/07/the-persuit-of-happiness-and-the-hill-climbing-problem/</link>
       <pubDate>Fri, 07 Jan 2022 05:50:39 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=2867</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=2867</guid> 
       <description>It seems that for a lot of people, perhaps the vast majority, they cannot expect to be 100% happy all the time. Even those incredibly successful celebrities and incredibly rich CEOs and politicians are not happy 100% of the time.
 So is it a good idea to seek 100% happiness right away? Or should we always try and select the &amp;rsquo;least worst&amp;rsquo; situation? If we keep making progress and optimse our happiness levels through constantly selecting the &amp;rsquo;least worst&amp;rsquo; situation whenever we have a descision then it seems to me we will maximise our happiness potential in the long run.</description>
     </item>
@@ -318,7 +318,7 @@ So is it a good idea to seek 100% happiness right away? Or should we always try 
       <title>Retrospective on 2021</title>
       <link>http://davidcraddock.net/2022/01/01/retrospective-on-2021/</link>
       <pubDate>Sat, 01 Jan 2022 15:58:05 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=2849</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=2849</guid> 
       <description>Well, 2021 has been a bit of a downer in a number of ways. There has been some upsides though.
 I spent the first part of 2021 burned out, as in - totally burned out - of my career and really needing a break. This affected my work. It turns out that unknown to me at the time, I had cancer, Hodgkins Lymophoma, and a lot of my lack of energy and generally feeling awful was down to a large tumor that had been growing my chest for some time and was pressing down on my heart and lungs.</description>
     </item>
@@ -326,7 +326,7 @@ I spent the first part of 2021 burned out, as in - totally burned out - of my ca
       <title>Setting up Enlightenment window manager on Ubuntu 21.10</title>
       <link>http://davidcraddock.net/2021/11/18/setting-up-enlightenment-window-manager-on-ubuntu-21-10/</link>
       <pubDate>Thu, 18 Nov 2021 08:54:42 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=2829</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=2829</guid> 
       <description>Enlightenment is a very underrated window manager choice, in my opinion. It still looks very pretty and is very configurable. There is a packaging bug with the latest version of Enlightement in the 21.10 repo which means it doesn&amp;rsquo;t work correctly. The fix is to set the suid bit on the &amp;rsquo;enlightenment_system&amp;rsquo; binary. So:
 sudo apt install enlightenment sudo find /usr/lib -type f -name enlightenment_system -exec sudo chmod 4755 {} \; Log out of Ubuntu Click the settings cog in the bottom right to change your Window manager to enlightenment Log on and the settings wizard will help you configure Enlightenment </description>
     </item>
@@ -334,7 +334,7 @@ sudo apt install enlightenment sudo find /usr/lib -type f -name enlightenment_sy
       <title>My Simple Commandline Git Workflow</title>
       <link>http://davidcraddock.net/2021/10/21/my-simple-commandline-git-workflow/</link>
       <pubDate>Thu, 21 Oct 2021 16:44:09 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=2755</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=2755</guid> 
       <description>This is a simple description of how I work 99% of the time, as I am a simpleton. Origin/main is the new origin/master for future repositories, I just note both here for completeness because I use origin master for a lot of current repos.
 I first make sure I am uptodate on origin/master or origin/main by git pulling. git checkout origin master git pull origin master I start making changes to the local copy on my local machine.</description>
     </item>
@@ -342,14 +342,14 @@ I first make sure I am uptodate on origin/master or origin/main by git pulling. 
       <title>How to fix Plex Media Servers &#39;Various Artists&#39; problem using Beets.io and other tools</title>
       <link>http://davidcraddock.net/2021/09/21/how-to-fix-plex-media-servers-various-artists-problem-using-beets-io-and-other-tools/</link>
       <pubDate>Tue, 21 Sep 2021 22:22:47 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=2720</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=2720</guid> 
       <description>The Problem As of the day of posting, Plex Media Server has a suboptimal handling of Various Artists compilations. Unless you follow BOTH of these rules, described clearly on the Plex support here under &amp;lsquo;Various Artists&amp;rsquo;, then they won&amp;rsquo;t appear collected under a particular album, they will be spread out filed under the different artists that created them. I think it should only require one of these rules, but it is not up to me.</description>
     </item>
     <item>
       <title>My PSP Entertainment System for 2021!</title>
       <link>http://davidcraddock.net/2021/08/07/my-psp-entertainment-system-for-2021/</link>
       <pubDate>Sat, 07 Aug 2021 19:57:27 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=2641</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=2641</guid> 
       <description>I have recently been in hospital and been diagnosed with a condition that might mean I need to return quite a bit, at least in the short term. When I was in hospital I was struck by the fact that there were very long periods of waiting and it was easy to get very bored and quite dejected just sitting in a hospital bed.
 Also there is not a lot of room for laptops, tablets and other things – you really don’t get a lot of space by your bed usually to store large items and they are not practical most of the time.</description>
     </item>
@@ -357,21 +357,21 @@ Also there is not a lot of room for laptops, tablets and other things – you re
       <title>Making Twitch DJ Promo Mix Videos</title>
       <link>http://davidcraddock.net/2021/06/13/making-twitch-dj-promo-mix-videos/</link>
       <pubDate>Sun, 13 Jun 2021 20:54:40 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=2595</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=2595</guid> 
       <description>Sometimes as a DJ you may want to reconstruct the Twitch stream you have streamed into a video format to send to other people, for promotional purposes, or just to have a record of what you&amp;rsquo;ve done. Twitch makes this difficult though, as it mutes copyrighted music in the video it records for your Twitch stream. Also, when you download this video, it does not include the chat log, so any attempts at reconstruction are without the chat, so it looks like the DJ is just talking to him/herself.</description>
     </item>
     <item>
       <title>Using Navidrome on a RPI3 to host my music collection for DJing so I can listen between sets</title>
       <link>http://davidcraddock.net/2021/06/09/using-navidrome-on-a-rpi3-to-host-my-music-collection-for-djing-so-i-can-listen-between-sets/</link>
       <pubDate>Wed, 09 Jun 2021 14:29:14 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=2584</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=2584</guid> 
       <description>As a DJ it is important to listen to the music in your collection so you get an idea of what would work in particular sets, and you have a memory of how the tracks progress. So I decided to host a Spotify like service in my house so I could listen to my 500GB+ DJ music library. Navidrome (free open source software from https://navidrome.org) is running on the Raspberry Pi 3 which is under my desk via a wired connection with it&amp;rsquo;s own http://navidrome.</description>
     </item>
     <item>
       <title>Proper Care and Operation of Vinyl Turntables for DJs</title>
       <link>http://davidcraddock.net/2021/06/01/2552/</link>
       <pubDate>Mon, 31 May 2021 23:53:14 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=2552</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=2552</guid> 
       <description>Setup your new Turntable Follow this and only this guide. This is the best vinyl setup video on the internet as of 2021:
 [youtube https://www.youtube.com/watch?v=WM-aIDwfrhc&amp;amp;w=560&amp;amp;h=315]
 A lot of DJ turntables are based on Technics OEM clones, and so you will need to set the tonearm height, which is the only thing not covered by the above video:
@@ -383,14 +383,14 @@ Should go without saying that I always use a velvet dust brush on my records jus
       <title>Lighting and Camera Setup</title>
       <link>http://davidcraddock.net/2021/05/11/lighting-and-camera-setup/</link>
       <pubDate>Tue, 11 May 2021 03:20:16 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=2526</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=2526</guid> 
       <description>Light Sources: Phillips Hue Colour Lamp (top right) Phillips Hue Colour Lamp (Middle) Phillips Hue Colour Lamp (Bottom) Phillips Hue Lightstrip &amp;ldquo;DJ David Craddock&amp;rdquo; white illuminated sign &amp;ldquo;Live on Air&amp;rdquo; blue sign Laser (green or red laser wash) Revolving disco balls Dark Music Lighting Settings For Phillips Hue sources I use Hue Sync on my broadcast PC which syncs the lights in time with the music. I will use different palletes depending on the event.</description>
     </item>
     <item>
       <title>Organising Huge Music Libraries for use with Serato DJ Pro</title>
       <link>http://davidcraddock.net/2021/05/05/organising-huge-music-libraries-with-serato/</link>
       <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=2490</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=2490</guid> 
       <description>Updated: 25-11-22
 My music library is around 24k files, mostly FLAC and some 320kbps MP3s. I use the following tools to organise my music library:
 Acquisition: dbPoweramp CD Ripper - https://www.dbpoweramp.com/cd-ripper.htm Bandcamp Collection Downloader - https://github.com/Ezwen/bandcamp-collection-downloader Soulseek - http://www.slsknet.org Tagging and Metadata: Beets - https://beets.io Mixed In Key - https://mixedinkey.com Lexicon https://www.lexicondj.com/ Backup and sync: Robocopy - comes free with Windows 10. Documentation: https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy Google Drive Rsync
@@ -400,21 +400,21 @@ Searching: Everything Search - https://voidtools.</description>
       <title>Resolume MIDI Control in my Twitch DJing Setup</title>
       <link>http://davidcraddock.net/2021/04/26/resolume-midi-control-in-my-twitch-djing-setup/</link>
       <pubDate>Mon, 26 Apr 2021 18:26:14 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=2477</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=2477</guid> 
       <description>I have retired the Novation SL Zero Mk1 MIDI controller that was causing me a lot of grief when I was running Resolume and Ableton Live at the same time, as its Automap functionality was locking on to the Ableton Live mixer in session view now and then, and so, sometimes, when I thought I was controlling Resolumes visual FX, I was actually changing the volume faders in my DJ mix.</description>
     </item>
     <item>
       <title>Hybrid Serato DJ Pro DVS/Ableton Live DJ setup (21/4/21)</title>
       <link>http://davidcraddock.net/2021/04/08/dj-setup-8-4-21/</link>
       <pubDate>Thu, 08 Apr 2021 03:49:31 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=2424</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=2424</guid> 
       <description>I recently found a good price on a Vestax VCM-600 controller. It is a specially made MIDI controller for Ableton Live, with the same build quality as a DJ mixer. It allows for control over 6 channels in the Ableton Live &amp;lsquo;session&amp;rsquo; view, which is arranged similarly to a mixing console. It also adds dozens of MIDI mappable DJ controls such as the traditional Hi, Mid and Lo EQs, a crossfader, a filter control, control over a lot of Ableton FX, and more.</description>
     </item>
     <item>
       <title>2020 Retrospective – Wow, what a year!</title>
       <link>http://davidcraddock.net/2021/03/04/2020-retrospective-wow-what-a-year/</link>
       <pubDate>Thu, 04 Mar 2021 19:02:19 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=2387</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=2387</guid> 
       <description>I think, for obvious reasons, 2020 has been a year that no-one could really have expected. With COVID-19 and lockdown, a lot of things have changed, both in my life, in everyone&amp;rsquo;s lives, and in the workplace.
 My online DJing setup
 Things that went well I changed medication around March 2020 which has resulted in significant weight loss, as expected. The previous medication was making me put on and retain weight even when I was eating very very little.</description>
@@ -423,7 +423,7 @@ Things that went well I changed medication around March 2020 which has resulted 
       <title>26/2/2021 DJ Setup with Diagrams</title>
       <link>http://davidcraddock.net/2021/02/26/26-2-2021-dj-setup-with-diagrams/</link>
       <pubDate>Fri, 26 Feb 2021 17:26:22 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.net/?p=2373</guid> 
+       <guid isPermaLink="false">http://davidcraddock.net/?p=2373</guid> 
       <description>After the last post I have added Ableton Live and my Eurorack modular to my DJ setup, with a master clock being sent via MIDI cables from my Roland TR8 drum machine that syncs with Ableton. The drum machine also can be used creatively for drum fills etc.
 I hope these two diagrams explain my setup adequately - sometimes a picture is worth a thousand words! The &amp;lsquo;actor&amp;rsquo; is me - I just couldn&amp;rsquo;t find a way to change that on http://draw.</description>
     </item>
@@ -552,7 +552,7 @@ I am looking to sell my Acces Virus A and concentrate on filling up the remainin
       <title>Contact</title>
       <link>http://davidcraddock.net/contact/</link>
       <pubDate>Sun, 29 Jan 2017 17:33:01 +0000</pubDate>
-       <guid isPermaLink="false">https://davidcraddock.wordpress.com/?page_id=3</guid> 
+       <guid isPermaLink="false">http://davidcraddock.wordpress.com/?page_id=3</guid> 
       <description>[contact-form][contact-field label=&amp;ldquo;Name&amp;rdquo; type=&amp;ldquo;name&amp;rdquo; required=&amp;ldquo;1&amp;rdquo;/][contact-field label=&amp;ldquo;Email&amp;rdquo; type=&amp;ldquo;email&amp;rdquo; required=&amp;ldquo;1&amp;rdquo;/][contact-field label=&amp;ldquo;Website&amp;rdquo; type=&amp;ldquo;url&amp;rdquo;/][contact-field label=&amp;ldquo;Comment&amp;rdquo; type=&amp;ldquo;textarea&amp;rdquo; required=&amp;ldquo;1&amp;rdquo;/][/contact-form]</description>
     </item>
     <item>

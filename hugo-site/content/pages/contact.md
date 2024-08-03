@@ -1,6 +1,6 @@
 ---
 date: "2017-01-29T17:33:01+00:00"
-guid: https://davidcraddock.wordpress.com/?page_id=3
+guid: http://davidcraddock.wordpress.com/?page_id=3
 title: Contact
 url: /contact/
 

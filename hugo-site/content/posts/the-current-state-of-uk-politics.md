@@ -2,7 +2,7 @@
 category:
   - politics
 date: "2022-09-29T04:07:41+00:00"
-guid: https://davidcraddock.net/?p=3276
+guid: http://davidcraddock.net/?p=3276
 tag:
   - politics
 title: The Current State of UK Politics

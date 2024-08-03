@@ -4,7 +4,7 @@ category:
   - lint
   - vim
 date: "2022-02-19T05:51:56+00:00"
-guid: https://davidcraddock.net/?p=2917
+guid: http://davidcraddock.net/?p=2917
 tag:
   - jenkinsfile
   - lint

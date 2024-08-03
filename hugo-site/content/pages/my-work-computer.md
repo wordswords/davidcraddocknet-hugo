@@ -1,6 +1,6 @@
 ---
 date: "2022-12-16T23:06:40+00:00"
-guid: https://davidcraddock.net/?page_id=3423
+guid: http://davidcraddock.net/?page_id=3423
 title: My Work Computer
 url: /my-work-computer/
 

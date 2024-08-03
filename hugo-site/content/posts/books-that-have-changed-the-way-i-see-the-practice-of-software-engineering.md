@@ -2,7 +2,7 @@
 category:
   - tutorials
 date: "2023-01-19T09:12:32+00:00"
-guid: https://davidcraddock.net/?p=3531
+guid: http://davidcraddock.net/?p=3531
 title: Books that have changed the way I see the practice of Software Engineering
 url: /2023/01/19/books-that-have-changed-the-way-i-see-the-practice-of-software-engineering/
 

@@ -2,7 +2,7 @@
 category:
   - retrospectives
 date: "2022-12-23T23:26:12+00:00"
-guid: https://davidcraddock.net/?p=3472
+guid: http://davidcraddock.net/?p=3472
 title: My Personal Retrospective on 2022
 url: /2022/12/23/my-personal-retrospective-on-2022/
 

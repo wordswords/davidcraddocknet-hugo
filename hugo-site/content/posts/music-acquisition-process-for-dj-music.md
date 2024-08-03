@@ -2,7 +2,7 @@
 category:
   - uncategorized
 date: "2024-01-11T23:41:50+00:00"
-guid: https://davidcraddock.net/?p=4348
+guid: http://davidcraddock.net/?p=4348
 title: Music Acquisition Process for DJ Music
 url: /2024/01/11/music-acquisition-process-for-dj-music/
 

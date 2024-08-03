@@ -2,7 +2,7 @@
 category:
   - solutions-to-a-specific-problem
 date: "2022-05-14T23:15:20+00:00"
-guid: https://davidcraddock.net/?p=3029
+guid: http://davidcraddock.net/?p=3029
 title: Home Network Design
 url: /2022/05/15/home-network-design/
 

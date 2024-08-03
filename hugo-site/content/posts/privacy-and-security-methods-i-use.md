@@ -2,7 +2,7 @@
 category:
   - uncategorized
 date: "2022-01-14T06:01:21+00:00"
-guid: https://davidcraddock.net/?p=2880
+guid: http://davidcraddock.net/?p=2880
 title: Privacy and Security methods I use
 url: /2022/01/14/privacy-and-security-methods-i-use/
 

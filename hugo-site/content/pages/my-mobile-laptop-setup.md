@@ -1,6 +1,6 @@
 ---
 date: "2024-02-04T02:48:13+00:00"
-guid: https://davidcraddock.net/?page_id=4413
+guid: http://davidcraddock.net/?page_id=4413
 title: My Mobile Laptop Setup
 url: /my-mobile-laptop-setup/
 

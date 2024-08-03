@@ -5,7 +5,7 @@ category:
   - tutorial
   - video-tools
 date: "2022-03-16T17:58:33+00:00"
-guid: https://davidcraddock.net/?p=2968
+guid: http://davidcraddock.net/?p=2968
 tag:
   - ripping
   - ripping-blurays

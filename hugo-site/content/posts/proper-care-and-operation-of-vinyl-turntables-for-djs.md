@@ -2,7 +2,7 @@
 category:
   - music
 date: "2021-05-31T23:53:14+00:00"
-guid: https://davidcraddock.net/?p=2552
+guid: http://davidcraddock.net/?p=2552
 title: Proper Care and Operation of Vinyl Turntables for DJs
 url: /2021/06/01/2552/
 

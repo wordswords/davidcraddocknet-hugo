@@ -2,7 +2,7 @@
 category:
   - uncategorized
 date: "2022-07-28T00:57:42+00:00"
-guid: https://davidcraddock.net/?p=3139
+guid: http://davidcraddock.net/?p=3139
 title: Home Network Design 28/7/22
 url: /2022/07/28/home-network-design-28-7-22/
 

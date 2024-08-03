@@ -2,7 +2,7 @@
 category:
   - uncategorized
 date: "2021-02-26T17:26:22+00:00"
-guid: https://davidcraddock.net/?p=2373
+guid: http://davidcraddock.net/?p=2373
 title: 26/2/2021 DJ Setup with Diagrams
 url: /2021/02/26/26-2-2021-dj-setup-with-diagrams/
 

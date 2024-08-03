@@ -2,7 +2,7 @@
 category:
   - retrospectives
 date: "2022-02-13T08:59:05+00:00"
-guid: https://davidcraddock.net/?p=2901
+guid: http://davidcraddock.net/?p=2901
 title: My Story in Tech
 url: /2022/02/13/my-story-in-tech/
 
