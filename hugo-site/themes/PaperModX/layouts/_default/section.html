@@ -1,0 +1,42 @@
+{{/* section is AKA list */}}
+
+{{- define "main" }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+</header>
+
+<div>
+    <ul>
+        <li><a href="/">Blog Posts</a></li>
+        <li><a href="/my-home-network/">Home Network</a></li>
+        <li><a href="/my-gaming-setup/">Gaming Setup</a></li>
+        <li><a href="/my-mobile-laptop-setup/">Mobile Working Setup</a></li>
+        <li><a href="/my-work-computer/">Work Computer</a></li>
+        <li><a href="/my-bike/">Bike Setup</a></li>
+        <li><a href="http://davidcraddocktutor.com">Software Career Tutoring</a></li>
+        <li><a href="http://davidcraddockaudio.com">Music Industry Portfolio</a></li>
+    </ul>
+</div>
+<article class="links-container">
+  <blockquote>
+    <p>{{ .Description }}</p>
+  </blockquote>
+
+  <div class="links">
+    {{ range site.Params.Links }}
+      <div class="item">
+        <div class="title">
+          {{- $url := urls.Parse .url }}
+          <span class="favicon" style="background-image: url({{ .favicon | default (printf "%s/favicon.ico" .url ) }});"></span
+            ><a href="{{ .url }}" target="_blank">{{ .name }}</a>
+        </div>
+        <div class="description">
+          {{- .domain | default $url.Host }}
+          {{- with .description }}<span class="delimiter"></span>{{ . }}{{- end }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</article>
+
+{{- end }}

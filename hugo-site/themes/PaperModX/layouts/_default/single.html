@@ -1,0 +1,93 @@
+{{- define "main" }}
+{{- $isNewsletter := eq .Type "newsletter" }}
+
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+
+    {{- if $isNewsletter -}}
+      {{- partial "newsletter_brand.html" . }}
+    {{- end -}}
+    <h1 class="post-title">
+      {{- if $isNewsletter -}}
+        {{- replace .Title (.Param "titlePrefix") (.Param "titlePrefixReplace") -}}
+      {{- else -}}
+        {{- .Title -}}
+      {{- end -}}
+      {{- if .Draft -}}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end -}}
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+      {{- .Description -}}
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <div class="post-meta">
+      {{- partial "post_meta.html" . -}}
+      {{/* TODO move to footer */}}
+      {{/* partial "edit_post.html" . */}}
+      {{/* partial "post_canonical.html" . */}}
+    </div>
+    {{- end }}
+  </header>
+  {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
+  {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
+  {{- if (.Param "ShowToc") }}
+  {{- partial "toc.html" . }}
+  {{- end }}
+
+  {{- if .Content }}
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+  <img src="/images/me.jpg">
+
+<div>
+    <ul>
+        <li><a href="/">Blog Posts</a></li>
+        <li><a href="/my-home-network/">Home Network</a></li>
+        <li><a href="/my-gaming-setup/">Gaming Setup</a></li>
+        <li><a href="/my-mobile-laptop-setup/">Mobile Working Setup</a></li>
+        <li><a href="/my-work-computer/">WFH Computer Setup</a></li>
+        <li><a href="/my-bike/">Bike Setup</a></li>
+        <li><a href="http://davidcraddocktutor.com">Software Career Tutoring</a></li>
+        <li><a href="http://davidcraddockaudio.com">Music Industry Portfolio</a></li>
+        <li><a href="https://github.com/wordswords">Github</a></li>
+        <li><a href="https://linkedin.com/in/davidcraddock">LinkedIn</a></li>
+        <li><a href="https://wordswords.github.io/dpc-resume/CV.html">CV/Resume</a></li>
+    </ul>
+</div>
+
+  <footer class="post-footer">
+    {{- if (.Param "socialLinks") }}
+    {{- partial "social_links.html" . }}
+    {{- end }}
+
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . }}
+    {{- end }}
+
+    {{- if $isNewsletter }}
+      <div class="newsletter-sub">
+        <div class="notice">
+          {{- if site.Params.newsletter.notice.usePartial }}
+            {{- partial "newsletter_notice.html"}}
+          {{- else }}
+            {{- site.Params.newsletter.notice.content | default "Thanks for reading, if you like it, please subscribe below." }}
+          {{- end }}
+        </div>
+        {{- partial "newsletter_sub_form.html"}}
+      </div>
+    {{- end }}
+  </footer>
+
+  {{- if not (.Param "noComments") }}
+    <div class="comments-separator"></div>
+    {{- partial "comments.html" . }}
+  {{- end }}
+</article>
+
+{{- end }}{{/* end main */}}
