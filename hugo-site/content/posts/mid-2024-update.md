@@ -8,6 +8,8 @@ url: /2024/08/02/mid-2024-update/
 
 ---
 
+![](/hugo-uploads/2024/8/3/biketrailer.jpg)
+
 Every year I've been doing these 'retrospectives', usually once per year but sometimes a couple of times per year.
 
 Things have changed quite significantly since the last retrospective (around December/January 2023), and I was in a pensive mood, so I thought I would write a retrospective for half the year.
