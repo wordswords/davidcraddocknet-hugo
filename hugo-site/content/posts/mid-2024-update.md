@@ -12,7 +12,7 @@ url: /2024/08/02/mid-2024-update/
 
 Every year I've been doing these 'retrospectives', usually once per year but sometimes a couple of times per year.
 
-Things have changed quite significantly since the last retrospective (around December/January 2023), and I was in a pensive mood, so I thought I would write a retrospective for half the year.
+Things have changed quite significantly since [the last retrospective](http://davidcraddock.net/2023/11/25/retrospective-for-2023/), and I was in a pensive mood, so I thought I would write a retrospective for half the year.
 
 I finally found a job, with CGI, early in the year, and started in March 2023. Unfortunately, for reasons I'm contractually obliged not to get into, it wasn't long before I was looking for work again. I resigned from CGI at the end of June.
 
@@ -26,7 +26,7 @@ In the meantime I've been keeping busy, working on my hobby technology projects,
 
 It has been hugely beneficial for my mental and physical health, and just general independence, as I cannot drive, and never have been able to, and neither can my wife.
 
-I've stopped DJing regularly, and sold my DJ equipment. This was a positive step, as I wasn't happy doing the DJing regularly - it was amazing when I first started DJing on Twitch.tv, but recently it's just been a huge effort to get motivated to do it - just about everything has changed about the community since I started doing it around lockdown time. With the new Twitch.tv 'tax' on DJing I wouldn't have been able to make any money to cover my costs at all, which was something I was very happy I was able to do for the 3-4 years I was doing it. So I am glad I stopped.
+I've stopped DJing regularly, and sold my DJ equipment. This was a positive step, as I wasn't happy doing the DJing regularly - it was amazing when I first started DJing on Twitch.tv, but recently it's just been a huge effort to get motivated to do it - just about everything has changed about the community since I started doing it around lockdown time. With the new [Twitch.tv](https://twitch.tv) 'tax' on DJing I wouldn't have been able to make any money to cover my costs at all, which was something I was very happy I was able to do for the 3-4 years I was doing it. So I am glad I stopped.
 
 I have been working on other side-incomes, such as my professional career tutoring for software/IT technical people, and selling stuff via eBay, not just my stuff (we have had a huge declutter of the house) but selling things for friends who are not able to sell them themselves.
 
