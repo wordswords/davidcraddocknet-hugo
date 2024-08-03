@@ -218,7 +218,7 @@ function toggleThemeListener() {
 
   <div class="post-content"><p>I wrote an email alerter that sends me an email whenever the upcoming temperature may dip below freezing. It uses the <a href="http://magpierss.sourceforge.net/">Magpie RSS reader</a> to pull down a 3 day weather forecast that is provided for my area in RSS form by the BBC weather site. It then parses this forecast and determines if either today&rsquo;s or tomorrow&rsquo;s weather may dip below freezing. If it might, it sends an email to my email address to warn me.</p>
 <p>I scheduled this script to run every day by adding it as a <a href="http://en.wikipedia.org/wiki/Cron">daily cron job</a> on my web host. You can set this up for any web hosts that support cron jobs.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>items) != 3){
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>items) != 3){
 </span></span><span style="display:flex;"><span>                $message .= &#39;Error: problem parsing BBC weather feed&#39;;
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>        $i=0;

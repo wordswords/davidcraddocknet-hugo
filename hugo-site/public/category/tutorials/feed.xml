@@ -161,63 +161,63 @@ Here&amp;rsquo;s what I used to convert my newly bought Persepolis DVD, for watc
 Everything in Linux is stored in the &amp;ldquo;root directory&amp;rdquo;. On a windows machine, that would be equivalent to C:. C: is the main folder where everything is stored. On Linux we call this the &amp;ldquo;root directory&amp;rdquo;, or simply &amp;ldquo;/&amp;rdquo;.</description>
       <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2010/03/got-root.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/got-root.jpg" type="" alt=""  /></a> It&rsquo;s helpful to know the basic filesystem on a Linux machine, to better understand where everything is supposed to go, and where you should start looking if you want to find a certain file.</p>
 <p>Everything in Linux is stored in the &ldquo;root directory&rdquo;. On a windows machine, that would be equivalent to C:. C: is the main folder where everything is stored. On Linux we call this the &ldquo;root directory&rdquo;, or simply &ldquo;/&rdquo;. To go up to this root directory, type:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>cd /
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>cd /
 </span></span></code></pre></div><p>To list all the folders and files in the root directory, type this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ls /
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ls /
 </span></span></code></pre></div><p>Alternatively, if you want to see the folders and files exactly the way I see them below for easy comparison, type this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ls -lhaFtr --color /
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ls -lhaFtr --color /
 </span></span></code></pre></div><p>Once you&rsquo;ve typed in one of the &rsquo;ls&rsquo; commands above, you&rsquo;ll see some information similar to that on the screenshot below.. (please scroll down)..</p>
 <p><strong>Ubuntu Linux</strong> <a href="/wp-content/uploads/2010/03/1348573631.png"><img loading="lazy" src="/wp-content/uploads/2010/03/1348573631.png" type="" alt=""  /></a></p>
 <p>Above you can see the files and folders in the root directory of my ubuntu linux server, after I&rsquo;ve typed &rsquo;ls /&rsquo;. Ignore everything but the coloured names on the right, those coloured names are the names of the files and folders in this directory. Don&rsquo;t worry about the shades of different colours either. It&rsquo;s not really important to explain how they are coloured right now, just to explain the purpose behind each file or folder shown.</p>
 <p>So let me explain the purpose behind each of these, in turn. I&rsquo;ll include the same screenshot multiple times, so you can reference the explanations against it as you scroll down.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>selinux/
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>selinux/
 </span></span></code></pre></div><p>- Directory for linux security features, rarely visited by normal users like you or me.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>mnt/
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>mnt/
 </span></span></code></pre></div><p>- Traditional directory for the files from removable media, ie USB keys, external hard drives. Not used anymore, it only exists for historical purposes.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>lost+found/
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>lost+found/
 </span></span></code></pre></div><p>- Directory where files and directories end up when they&rsquo;ve been recovered from a hard disc repair.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span> cdrom -&gt; media/cdrom/
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span> cdrom -&gt; media/cdrom/
 </span></span></code></pre></div><p>- Link the files currently in your CDROM or DVDROM drive.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>media/
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>media/
 </span></span></code></pre></div><p>- New style directory for the files from removable media such as USB keys, external hard drives, etc. This is the new convention, and so you should always use media/ instead of mnt/, above.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>vmlinuz.old -&gt; boot/vmlinuz-2.6.31-17-generic
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>vmlinuz.old -&gt; boot/vmlinuz-2.6.31-17-generic
 </span></span></code></pre></div><p>- A backup of your most recent old Linux operating system kernel, ie: your operating system. Don&rsquo;t delete this =)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>initrd.img.old -&gt; boot/initrd.img-2.6.31-17-generic
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>initrd.img.old -&gt; boot/initrd.img-2.6.31-17-generic
 </span></span></code></pre></div><p>- Another part of the backup for your most recent old Linux kernel.</p>
 <p><a href="/wp-content/uploads/2010/03/1348573631.png"><img loading="lazy" src="/wp-content/uploads/2010/03/1348573631.png" type="" alt=""  /></a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>opt/
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>opt/
 </span></span></code></pre></div><p>- An empty directory reserved for you to put third-party programs and software in.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>lib/
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>lib/
 </span></span></code></pre></div><p>- Operating system drivers and kernel modules live here. Also contains all system libraries, so when you compile a new program from the source code, it will use the existing code libraries stored here.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>bin/
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>bin/
 </span></span></code></pre></div><p>- Basic commands that everyone uses, like &ldquo;ls&rdquo; and &ldquo;cd&rdquo;, live here.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>usr/
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>usr/
 </span></span></code></pre></div><p>- This is where all user-supplied software should go; ie: software that you install that doesn&rsquo;t normally come with the operating system. Put all programs here.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sbin/
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sbin/
 </span></span></code></pre></div><p>- Basic but essential system administration commands that the admin user only uses, ie: reboot, poweroff, etc.</p>
 <p><a href="/wp-content/uploads/2010/03/1348573631.png"><img loading="lazy" src="/wp-content/uploads/2010/03/1348573631.png" type="" alt=""  /></a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>vmlinuz -&gt; boot/vmlinuz-2.6.31-20-generic
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>vmlinuz -&gt; boot/vmlinuz-2.6.31-20-generic
 </span></span></code></pre></div><p>- Your actual operating system kernel, ie: the one that is running right now. Don&rsquo;t delete this.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>initrd.img -&gt; boot/initrd.img-2.6.31-20-generic
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>initrd.img -&gt; boot/initrd.img-2.6.31-20-generic
 </span></span></code></pre></div><p>- Another part of the kernel that is running right now.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>boot/
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>boot/
 </span></span></code></pre></div><p>- Reserved for Linux kernel files, and other things that need to be loaded on bootup. Don&rsquo;t touch these.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>proc/
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>proc/
 </span></span></code></pre></div><p>- Proc is a handy way of accessing critical operating system information, through a bunch of files. Ie: try typing &lsquo;cat /proc/cpuinfo&rsquo;. That queries the current kernel for the information on your processors (CPUs), and returns the info for you in a text file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sys/
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sys/
 </span></span></code></pre></div><p>- Like proc/, this is another bunch of files that aren&rsquo;t files at all, but &lsquo;fake&rsquo; files. When you access them, the operating system goes away and finds out information, and offers that information up as a text file to you.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>dev/
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>dev/
 </span></span></code></pre></div><p>- Device files. In here live the device files for your hard drives, your CD/DVD drives, your soundcard, your network card.. in fact anything you have installed that Linux uses, it has a counterpart in here that is automatically added and removed by the OS. Don&rsquo;t ever delete, move or rename any of the files here.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>home/
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>home/
 </span></span></code></pre></div><p>- The directory that you&rsquo;ll use the most. Every user on your Linux machine, except the system administrator, has a folder here. This is where each user is meant to store all their documents. Think of it as the Linux &lsquo;My Documents&rsquo; folder.</p>
 <p><a href="/wp-content/uploads/2010/03/1348573631.png"><img loading="lazy" src="/wp-content/uploads/2010/03/1348573631.png" type="" alt=""  /></a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#66d9ef">var</span><span style="color:#f92672">/</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span><span style="color:#000;font-weight:bold">/</span>
 </span></span></code></pre></div><p>- This is a catch-all directory for &lsquo;variables&rsquo;, ie things that the OS has to write to, and vary, as part of its operation. Examples include: email inboxes for all users, cache files, the lock files that are generated and removed as part of normal program execution, and also the /var/www directory. /var/www is a directory you will probably see and use a lot, as it is where all the websites are stored that your linux machine serves when operating as a web server. /var/log is also a very important directory, and contains &rsquo;log&rsquo; files which is a kind of &ldquo;diary&rdquo; that the linux OS uses to explain exactly what it&rsquo;s done, as it happens, so you can easily find out what&rsquo;s been going on by viewing the right log file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>tmp/
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>tmp/
 </span></span></code></pre></div><p>- The space for any and all temporary files. Store files here that you want to throw away quite quickly. Depending on your configuration, all files and folders in the /tmp directory may be deleted on system reboot, or more frequently, perhaps every day.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>root/
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>root/
 </span></span></code></pre></div><p>- This is the system administrators &lsquo;my documents&rsquo; folder. Anything that the sysadmin stores, for example: programs that he downloads, are put here. Not accessible to anyone else but the system administrator.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>etc/
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>etc/
 </span></span></code></pre></div><p>- Configuration files. Any and all program configuration files or information belong here. Think of it like the windows registry, except every registry entry is a text file that you can open up and edit, and also copy, move around, and save. You will typically have to create configuration files yourself sometimes, and put them in this directory. They are almost always simple text files.</p>
 <p><a href="/wp-content/uploads/2010/03/1348573631.png"><img loading="lazy" src="/wp-content/uploads/2010/03/1348573631.png" type="" alt=""  /></a></p>
 <p>And that&rsquo;s a basic overview of the files and folders in the root directory of your linux machine.</p>
@@ -268,7 +268,7 @@ Here is a simple method for using regex in the powerful text editor VIM that wil
 <h2 id="examples">Examples</h2>
 <p>Here I use the shorthand &quot; <strong>#&hellip;</strong>&quot; to denote comments on what I&rsquo;m doing&hellip; if you want to copy and paste the example as written, then you will have to remove those comments.</p>
 <p>1. Remove ancient uppercase <!-- raw HTML omitted --> tags from a document.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:set wrapscan # debug on
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:set wrapscan # debug on
 </span></span><span style="display:flex;"><span>:set hlsearch # debug on
 </span></span><span style="display:flex;"><span>:/&lt;BLINK&gt; # try 1.. bingo! first time.. selected all tags I want
 </span></span><span style="display:flex;"><span>:%s/&lt;BLINK&gt;//g # lets execute my regex remove
@@ -280,7 +280,7 @@ Here is a simple method for using regex in the powerful text editor VIM that wil
 </span></span><span style="display:flex;"><span>:set nohlsearch # debug off
 </span></span><span style="display:flex;"><span>:set nowrapscan # debug off
 </span></span></code></pre></div><p>2. Oh no! We missed some lower and mixedcase <!-- raw HTML omitted --> tags that some sneaky person slipped in. Let&rsquo;s take them out.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:set wrapscan # debug on
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:set wrapscan # debug on
 </span></span><span style="display:flex;"><span>:set hlsearch # debug on
 </span></span><span style="display:flex;"><span>:/&lt;blink&gt; # try 1.. hm.. worked for many, but didnt match BlInK or blINK mixedcase
 </span></span><span style="display:flex;"><span>:/&lt;blink&gt;/i # try 2.. much better.. seems to have worked!
@@ -294,7 +294,7 @@ Here is a simple method for using regex in the powerful text editor VIM that wil
 </span></span><span style="display:flex;"><span>:set nohlsearch # debug off
 </span></span><span style="display:flex;"><span>:set nowrapscan # debug off
 </span></span></code></pre></div><p>3. Replacing uppercase or mixedcase <!-- raw HTML omitted --> tags with the more modern <!-- raw HTML omitted -->.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:set wrapscan # debug on
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:set wrapscan # debug on
 </span></span><span style="display:flex;"><span>:set hlsearch # debug on
 </span></span><span style="display:flex;"><span>:/&lt;BR&gt; # try 1.. hmm.. just uppercase.. not gonna work..
 </span></span><span style="display:flex;"><span>:/&lt;br&gt; # try 2.. hmm.. just lowercase..
@@ -331,109 +331,109 @@ Here is a simple method for using regex in the powerful text editor VIM that wil
       <content:encoded><![CDATA[<p>I&rsquo;ve abandoned the previous Wikipedia scraping approach for Brightonsound.com, as it was unreliable and didn&rsquo;t pinpoint the right Wikipedia entry - ie: a band called &lsquo;Horses&rsquo; would pull up a Wikipedia bio on the animal - which doesn&rsquo;t look very professional. So instead, I have used the Musicbrainz API to retrieve some information on the artist; the homepage URL, the correct Wikipedia entry, and any genres/terms the artist has been tagged with.</p>
 <p>It would be simple to extend this to fetch the actual bio from a site like DBpedia.org (which provides XML-tagged Wikipedia data), now that you always have the correct Wikipedia page reference to fetch the data from.</p>
 <p>(You will need to download the Musicbrainz python library to use this code):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zed" data-lang="zed"><span style="display:flex;"><span>import time
-</span></span><span style="display:flex;"><span>import sys
-</span></span><span style="display:flex;"><span>import logging
-</span></span><span style="display:flex;"><span>from musicbrainz2.webservice import Query, ArtistFilter, WebServiceError
-</span></span><span style="display:flex;"><span>import musicbrainz2.webservice as ws
-</span></span><span style="display:flex;"><span>import musicbrainz2.model as m
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>class scrapewiki2(object)<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  def __init__(self)<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>    pass
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  def getbio(self,artist)<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    time.sleep(<span style="color:#960050;background-color:#1e0010">2</span>)
-</span></span><span style="display:flex;"><span>    art <span style="color:#f92672">=</span> artist
-</span></span><span style="display:flex;"><span>    logging.basicConfig()
-</span></span><span style="display:flex;"><span>    logger <span style="color:#f92672">=</span> logging.getLogger()
-</span></span><span style="display:flex;"><span>    logger.setLevel(logging.DEBUG)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    q <span style="color:#f92672">=</span> Query()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    try<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#960050;background-color:#1e0010">#</span> Search for all artists matching the given name. Limit the results
-</span></span><span style="display:flex;"><span>      <span style="color:#960050;background-color:#1e0010">#</span> to the <span style="color:#960050;background-color:#1e0010">5</span> best matches. The offset parameter could be used to page
-</span></span><span style="display:flex;"><span>      <span style="color:#960050;background-color:#1e0010">#</span> through the results.
-</span></span><span style="display:flex;"><span>      <span style="color:#960050;background-color:#1e0010">#</span>
-</span></span><span style="display:flex;"><span>      f <span style="color:#f92672">=</span> ArtistFilter(name<span style="color:#f92672">=</span>art, limit<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">1</span>)
-</span></span><span style="display:flex;"><span>      artistResults <span style="color:#f92672">=</span> q.getArtists(f)
-</span></span><span style="display:flex;"><span>    except WebServiceError, e<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>      print <span style="color:#960050;background-color:#1e0010">&#39;</span>Error<span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">&#39;</span>, e
-</span></span><span style="display:flex;"><span>      sys.exit(<span style="color:#960050;background-color:#1e0010">1</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span> No error occurred, so display the results of the search. It consists of
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span> ArtistResult objects, where each contains an artist.
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    if not artistResults<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>      print <span style="color:#960050;background-color:#1e0010">&#34;</span>WIKI SCRAPE <span style="color:#f92672">-</span> Couldn<span style="color:#960050;background-color:#1e0010">&#39;</span>t find a single match<span style="color:#f92672">!</span><span style="color:#960050;background-color:#1e0010">&#34;</span>
-</span></span><span style="display:flex;"><span>      return <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    for result in artistResults<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>      artist <span style="color:#f92672">=</span> result.artist
-</span></span><span style="display:flex;"><span>      print <span style="color:#960050;background-color:#1e0010">&#34;</span>Score     <span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">&#34;</span>, result.score
-</span></span><span style="display:flex;"><span>      print <span style="color:#960050;background-color:#1e0010">&#34;</span>Id        <span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">&#34;</span>, artist.id
-</span></span><span style="display:flex;"><span>      try<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>        print <span style="color:#960050;background-color:#1e0010">&#34;</span>Name      <span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">&#34;</span>, artist.name.encode(<span style="color:#960050;background-color:#1e0010">&#39;</span>ascii<span style="color:#960050;background-color:#1e0010">&#39;</span>)
-</span></span><span style="display:flex;"><span>      except Exception, e<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>      print <span style="color:#960050;background-color:#1e0010">&#39;</span>Error<span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">&#39;</span>, e
-</span></span><span style="display:flex;"><span>      sys.exit(<span style="color:#960050;background-color:#1e0010">1</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    print <span style="color:#960050;background-color:#1e0010">&#34;</span>Id         <span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">&#34;</span>, artist.id
-</span></span><span style="display:flex;"><span>    print <span style="color:#960050;background-color:#1e0010">&#34;</span>Name       <span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">&#34;</span>, artist.name
-</span></span><span style="display:flex;"><span>    print
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span> Get the artist<span style="color:#960050;background-color:#1e0010">&#39;</span>s relations to URLs (m.Relation.TO_URL) having the <span style="color:#f92672">relation</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span> type <span style="color:#960050;background-color:#1e0010">&#39;</span>http<span style="color:#f92672">:</span><span style="color:#75715e">//musicbrainz.org/ns/rel-1.0#Wikipedia&#39;. Note that there could
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#960050;background-color:#1e0010">#</span> be more than one <span style="color:#f92672">relation</span> per type. We just print the first one.
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span>
-</span></span><span style="display:flex;"><span>    wiki <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>
-</span></span><span style="display:flex;"><span>    urls <span style="color:#f92672">=</span> artist.getRelationTargets(m.Relation.TO_URL, m.NS_REL_1<span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">&#39;</span>Wikipedia<span style="color:#960050;background-color:#1e0010">&#39;</span>)
-</span></span><span style="display:flex;"><span>    if len(urls) <span style="color:#f92672">&gt;</span> <span style="color:#960050;background-color:#1e0010">0</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>      print <span style="color:#960050;background-color:#1e0010">&#39;</span>Wikipedia<span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">&#39;</span>, urls[<span style="color:#960050;background-color:#1e0010">0</span>]
-</span></span><span style="display:flex;"><span>      wiki <span style="color:#f92672">=</span> urls[<span style="color:#960050;background-color:#1e0010">0</span>]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span> List discography pages for an artist.
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span>
-</span></span><span style="display:flex;"><span>    disco <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>
-</span></span><span style="display:flex;"><span>    for rel in artist.getRelations(m.Relation.TO_URL, m.NS_REL_1<span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">&#39;</span>Discography<span style="color:#960050;background-color:#1e0010">&#39;</span>)<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>      disco <span style="color:#f92672">=</span> rel.targetId
-</span></span><span style="display:flex;"><span>      print disco
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    try<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#960050;background-color:#1e0010">#</span> The result should include all official albums.
-</span></span><span style="display:flex;"><span>      <span style="color:#960050;background-color:#1e0010">#</span>
-</span></span><span style="display:flex;"><span>      inc <span style="color:#f92672">=</span> ws.ArtistIncludes(
-</span></span><span style="display:flex;"><span>        releases<span style="color:#f92672">=</span>(m.Release.TYPE_OFFICIAL, m.Release.TYPE_ALBUM),
-</span></span><span style="display:flex;"><span>        tags<span style="color:#f92672">=</span>True)
-</span></span><span style="display:flex;"><span>      artist <span style="color:#f92672">=</span> q.getArtistById(artist.id, inc)
-</span></span><span style="display:flex;"><span>    except ws.WebServiceError, e<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>      print <span style="color:#960050;background-color:#1e0010">&#39;</span>Error<span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">&#39;</span>, e
-</span></span><span style="display:flex;"><span>      sys.exit(<span style="color:#960050;background-color:#1e0010">1</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    tags <span style="color:#f92672">=</span> artist.tags
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    toret <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>
-</span></span><span style="display:flex;"><span>    if(wiki)<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>      toret <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span><span style="color:#f92672">+</span>art<span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">&#39;</span> Wikipedia Articlen<span style="color:#960050;background-color:#1e0010">&#39;</span>
-</span></span><span style="display:flex;"><span>    if(disco)<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>      toret <span style="color:#f92672">=</span> toret <span style="color:#f92672">+</span> <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span><span style="color:#f92672">+</span>art<span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">&#39;</span> Main Siten<span style="color:#960050;background-color:#1e0010">&#39;</span>
-</span></span><span style="display:flex;"><span>    if(tags)<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>      toret <span style="color:#f92672">=</span> toret <span style="color:#f92672">+</span> <span style="color:#960050;background-color:#1e0010">&#39;</span>
-</span></span><span style="display:flex;"><span>Tags<span style="color:#f92672">:</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">+</span>(<span style="color:#960050;background-color:#1e0010">&#39;</span>,<span style="color:#960050;background-color:#1e0010">&#39;</span>.join(t.value for t in tags))<span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">&#39;</span>n<span style="color:#960050;background-color:#1e0010">&#39;</span>
-</span></span><span style="display:flex;"><span>    return toret
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>sw2 <span style="color:#f92672">=</span> scrapewiki2()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span> unit test
-</span></span><span style="display:flex;"><span>print sw2.getbio(<span style="color:#960050;background-color:#1e0010">&#39;</span>Blur<span style="color:#960050;background-color:#1e0010">&#39;</span>)
-</span></span><span style="display:flex;"><span>print sw2.getbio(<span style="color:#960050;background-color:#1e0010">&#39;</span>fatboy slim<span style="color:#960050;background-color:#1e0010">&#39;</span>)
-</span></span></code></pre></div><p>PS:
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zed" data-lang="zed"><span style="display:flex;"><span>import<span style="color:#bbb"> </span>time<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>import<span style="color:#bbb"> </span>sys<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>import<span style="color:#bbb"> </span>logging<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>from<span style="color:#bbb"> </span>musicbrainz2.webservice<span style="color:#bbb"> </span>import<span style="color:#bbb"> </span>Query,<span style="color:#bbb"> </span>ArtistFilter,<span style="color:#bbb"> </span>WebServiceError<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>import<span style="color:#bbb"> </span>musicbrainz2.webservice<span style="color:#bbb"> </span>as<span style="color:#bbb"> </span>ws<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>import<span style="color:#bbb"> </span>musicbrainz2.model<span style="color:#bbb"> </span>as<span style="color:#bbb"> </span>m<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>class<span style="color:#bbb"> </span>scrapewiki2(object)<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span>def<span style="color:#bbb"> </span>__init__(self)<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>pass<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span>def<span style="color:#bbb"> </span>getbio(self,artist)<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>time.sleep(<span style="color:#a61717;background-color:#e3d2d2">2</span>)<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>art<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>artist<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>logging.basicConfig()<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>logger<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>logging.getLogger()<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>logger.setLevel(logging.DEBUG)<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>q<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>Query()<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>try<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb"> </span>Search<span style="color:#bbb"> </span>for<span style="color:#bbb"> </span>all<span style="color:#bbb"> </span>artists<span style="color:#bbb"> </span>matching<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>given<span style="color:#bbb"> </span>name.<span style="color:#bbb"> </span>Limit<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>results<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb"> </span>to<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">5</span><span style="color:#bbb"> </span>best<span style="color:#bbb"> </span>matches.<span style="color:#bbb"> </span>The<span style="color:#bbb"> </span>offset<span style="color:#bbb"> </span>parameter<span style="color:#bbb"> </span>could<span style="color:#bbb"> </span>be<span style="color:#bbb"> </span>used<span style="color:#bbb"> </span>to<span style="color:#bbb"> </span>page<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb"> </span>through<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>results.<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>f<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>ArtistFilter(name<span style="color:#000;font-weight:bold">=</span>art,<span style="color:#bbb"> </span>limit<span style="color:#000;font-weight:bold">=</span><span style="color:#a61717;background-color:#e3d2d2">1</span>)<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>artistResults<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>q.getArtists(f)<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>except<span style="color:#bbb"> </span>WebServiceError,<span style="color:#bbb"> </span>e<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>print<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>Error<span style="color:#000;font-weight:bold">:</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>,<span style="color:#bbb"> </span>e<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>sys.exit(<span style="color:#a61717;background-color:#e3d2d2">1</span>)<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb"> </span>No<span style="color:#bbb"> </span>error<span style="color:#bbb"> </span>occurred,<span style="color:#bbb"> </span>so<span style="color:#bbb"> </span>display<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>results<span style="color:#bbb"> </span>of<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>search.<span style="color:#bbb"> </span>It<span style="color:#bbb"> </span>consists<span style="color:#bbb"> </span>of<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb"> </span>ArtistResult<span style="color:#bbb"> </span>objects,<span style="color:#bbb"> </span>where<span style="color:#bbb"> </span>each<span style="color:#bbb"> </span>contains<span style="color:#bbb"> </span>an<span style="color:#bbb"> </span>artist.<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>if<span style="color:#bbb"> </span>not<span style="color:#bbb"> </span>artistResults<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>print<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span>WIKI<span style="color:#bbb"> </span>SCRAPE<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span>Couldn<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>t<span style="color:#bbb"> </span>find<span style="color:#bbb"> </span>a<span style="color:#bbb"> </span>single<span style="color:#bbb"> </span>match<span style="color:#000;font-weight:bold">!</span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>return<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>for<span style="color:#bbb"> </span>result<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>artistResults<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>artist<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>result.artist<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>print<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span>Score<span style="color:#bbb">     </span><span style="color:#000;font-weight:bold">:</span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span>,<span style="color:#bbb"> </span>result.score<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>print<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span>Id<span style="color:#bbb">        </span><span style="color:#000;font-weight:bold">:</span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span>,<span style="color:#bbb"> </span>artist.id<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>try<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>print<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span>Name<span style="color:#bbb">      </span><span style="color:#000;font-weight:bold">:</span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span>,<span style="color:#bbb"> </span>artist.name.encode(<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>ascii<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>except<span style="color:#bbb"> </span>Exception,<span style="color:#bbb"> </span>e<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>print<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>Error<span style="color:#000;font-weight:bold">:</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>,<span style="color:#bbb"> </span>e<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>sys.exit(<span style="color:#a61717;background-color:#e3d2d2">1</span>)<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>print<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span>Id<span style="color:#bbb">         </span><span style="color:#000;font-weight:bold">:</span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span>,<span style="color:#bbb"> </span>artist.id<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>print<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span>Name<span style="color:#bbb">       </span><span style="color:#000;font-weight:bold">:</span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span>,<span style="color:#bbb"> </span>artist.name<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>print<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb"> </span>Get<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>artist<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>s<span style="color:#bbb"> </span>relations<span style="color:#bbb"> </span>to<span style="color:#bbb"> </span>URLs<span style="color:#bbb"> </span>(m.Relation.TO_URL)<span style="color:#bbb"> </span>having<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">relation</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb"> </span>type<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>http<span style="color:#000;font-weight:bold">:</span><span style="color:#998;font-style:italic">//musicbrainz.org/ns/rel-1.0#Wikipedia&#39;. Note that there could
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#bbb">    </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb"> </span>be<span style="color:#bbb"> </span>more<span style="color:#bbb"> </span>than<span style="color:#bbb"> </span>one<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">relation</span><span style="color:#bbb"> </span>per<span style="color:#bbb"> </span>type.<span style="color:#bbb"> </span>We<span style="color:#bbb"> </span>just<span style="color:#bbb"> </span>print<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>first<span style="color:#bbb"> </span>one.<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>wiki<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>urls<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>artist.getRelationTargets(m.Relation.TO_URL,<span style="color:#bbb"> </span>m.NS_REL_1<span style="color:#000;font-weight:bold">+</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>Wikipedia<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>if<span style="color:#bbb"> </span>len(urls)<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">&gt;</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">0</span><span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>print<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>Wikipedia<span style="color:#000;font-weight:bold">:</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>,<span style="color:#bbb"> </span>urls[<span style="color:#a61717;background-color:#e3d2d2">0</span>]<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>wiki<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>urls[<span style="color:#a61717;background-color:#e3d2d2">0</span>]<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb"> </span>List<span style="color:#bbb"> </span>discography<span style="color:#bbb"> </span>pages<span style="color:#bbb"> </span>for<span style="color:#bbb"> </span>an<span style="color:#bbb"> </span>artist.<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>disco<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>for<span style="color:#bbb"> </span>rel<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>artist.getRelations(m.Relation.TO_URL,<span style="color:#bbb"> </span>m.NS_REL_1<span style="color:#000;font-weight:bold">+</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>Discography<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>disco<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>rel.targetId<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>print<span style="color:#bbb"> </span>disco<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>try<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb"> </span>The<span style="color:#bbb"> </span>result<span style="color:#bbb"> </span>should<span style="color:#bbb"> </span>include<span style="color:#bbb"> </span>all<span style="color:#bbb"> </span>official<span style="color:#bbb"> </span>albums.<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>inc<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>ws.ArtistIncludes(<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>releases<span style="color:#000;font-weight:bold">=</span>(m.Release.TYPE_OFFICIAL,<span style="color:#bbb"> </span>m.Release.TYPE_ALBUM),<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>tags<span style="color:#000;font-weight:bold">=</span>True)<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>artist<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>q.getArtistById(artist.id,<span style="color:#bbb"> </span>inc)<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>except<span style="color:#bbb"> </span>ws.WebServiceError,<span style="color:#bbb"> </span>e<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>print<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>Error<span style="color:#000;font-weight:bold">:</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>,<span style="color:#bbb"> </span>e<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>sys.exit(<span style="color:#a61717;background-color:#e3d2d2">1</span>)<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>tags<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>artist.tags<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>toret<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>if(wiki)<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>toret<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span><span style="color:#000;font-weight:bold">+</span>art<span style="color:#000;font-weight:bold">+</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span><span style="color:#bbb"> </span>Wikipedia<span style="color:#bbb"> </span>Articlen<span style="color:#a61717;background-color:#e3d2d2">&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>if(disco)<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>toret<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>toret<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">+</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span><span style="color:#000;font-weight:bold">+</span>art<span style="color:#000;font-weight:bold">+</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span><span style="color:#bbb"> </span>Main<span style="color:#bbb"> </span>Siten<span style="color:#a61717;background-color:#e3d2d2">&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>if(tags)<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>toret<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>toret<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">+</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Tags<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span><span style="color:#000;font-weight:bold">+</span>(<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>,<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>.join(t.value<span style="color:#bbb"> </span>for<span style="color:#bbb"> </span>t<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>tags))<span style="color:#000;font-weight:bold">+</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>n<span style="color:#a61717;background-color:#e3d2d2">&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>return<span style="color:#bbb"> </span>toret<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>sw2<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>scrapewiki2()<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb"> </span>unit<span style="color:#bbb"> </span>test<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>print<span style="color:#bbb"> </span>sw2.getbio(<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>Blur<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>print<span style="color:#bbb"> </span>sw2.getbio(<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>fatboy<span style="color:#bbb"> </span>slim<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)<span style="color:#bbb">
+</span></span></span></code></pre></div><p>PS:
 Apologies to the person that left several comments on the previous wikipedia scraping post, I have disabled comments temporarily for now due to heavy amounts of spam, but you can contact me using the following address: david@paul@craddock@googlemail.com (subsitute first two @s for &lsquo;.&rsquo;s ). I also hope this post answers your question.</p>
 ]]></content:encoded>
     </item>
@@ -449,7 +449,7 @@ The Songbird media player plugin &amp;lsquo;mashTape&amp;rsquo; draws upon a num
       <content:encoded><![CDATA[<p>I&rsquo;ve been hacking away at <a href="http://www.brightonsound.com">BrightonSound.com</a> and I&rsquo;ve been looking for a way of automatically sourcing biographical information from artists, so that visitors are presented with more information on the event.</p>
 <p>The Songbird media player plugin &lsquo;mashTape&rsquo; draws upon a number of web services to grab artist bio, event listings, youtube vidoes and flickr pictures of the currently playing artist. I was reading through the mashTape code, and then found <a href="http://whacked.net/2008/03/30/mashtape-and-apis/">this posting</a> by its developer, which helpfully provided the exact method I needed.</p>
 <p>I then hacked up two versions of the code, a PHP version using simpleXML:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Result-&gt;Url);
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Result-&gt;Url);
 </span></span><span style="display:flex;"><span>    if($ar[2] == &#39;en.wikipedia.org&#39;){
 </span></span><span style="display:flex;"><span>      $wikikey = $ar[4]; // more than likely to be the wikipedia page
 </span></span><span style="display:flex;"><span>    }else{
@@ -463,51 +463,51 @@ The Songbird media player plugin &amp;lsquo;mashTape&amp;rsquo; draws upon a num
 </span></span><span style="display:flex;"><span> }
 </span></span><span style="display:flex;"><span>?&gt;
 </span></span></code></pre></div><p>and a pythonic version using the amara XML library (has to be installed seperately):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>import amara
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>import amara
 </span></span><span style="display:flex;"><span>import urllib2
 </span></span><span style="display:flex;"><span>from urllib import urlencode
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getwikikey</span>(band):
-</span></span><span style="display:flex;"><span>  url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;http://api.search.yahoo.com/WebSearchService/V1/webSearch?appid=YahooDemo&amp;query=%22&#34;</span><span style="color:#f92672">+</span>band<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;%22&amp;site=wikipedia.org&#34;</span>;
-</span></span><span style="display:flex;"><span>  print url
-</span></span><span style="display:flex;"><span>  c<span style="color:#f92672">=</span>urllib2<span style="color:#f92672">.</span>urlopen(url)
-</span></span><span style="display:flex;"><span>  f<span style="color:#f92672">=</span>c<span style="color:#f92672">.</span>read()
-</span></span><span style="display:flex;"><span>  doc <span style="color:#f92672">=</span> amara<span style="color:#f92672">.</span>parse(f)
-</span></span><span style="display:flex;"><span>  url <span style="color:#f92672">=</span> str(doc<span style="color:#f92672">.</span>ResultSet<span style="color:#f92672">.</span>Result[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>Url)
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> url<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;/&#39;</span>)[<span style="color:#ae81ff">4</span>]
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">getwikikey</span>(band):
+</span></span><span style="display:flex;"><span>  url <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;http://api.search.yahoo.com/WebSearchService/V1/webSearch?appid=YahooDemo&amp;query=%22&#34;</span><span style="color:#000;font-weight:bold">+</span>band<span style="color:#000;font-weight:bold">+</span><span style="color:#d14">&#34;%22&amp;site=wikipedia.org&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#0086b3">print</span> url
+</span></span><span style="display:flex;"><span>  c<span style="color:#000;font-weight:bold">=</span>urllib2<span style="color:#000;font-weight:bold">.</span>urlopen(url)
+</span></span><span style="display:flex;"><span>  f<span style="color:#000;font-weight:bold">=</span>c<span style="color:#000;font-weight:bold">.</span>read()
+</span></span><span style="display:flex;"><span>  doc <span style="color:#000;font-weight:bold">=</span> amara<span style="color:#000;font-weight:bold">.</span>parse(f)
+</span></span><span style="display:flex;"><span>  url <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">str</span>(doc<span style="color:#000;font-weight:bold">.</span>ResultSet<span style="color:#000;font-weight:bold">.</span>Result[<span style="color:#099">0</span>]<span style="color:#000;font-weight:bold">.</span>Url)
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">return</span> url<span style="color:#000;font-weight:bold">.</span>split(<span style="color:#d14">&#39;/&#39;</span>)[<span style="color:#099">4</span>]
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">uurlencode</span>(text):
-</span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;&#34;&#34;single URL-encode a given &#39;text&#39;.  Do not return the &#39;variablename=&#39; portion.&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>   blah <span style="color:#f92672">=</span> urlencode({<span style="color:#e6db74">&#39;u&#39;</span>:text})
-</span></span><span style="display:flex;"><span>   blah <span style="color:#f92672">=</span> blah[<span style="color:#ae81ff">2</span>:]
-</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">return</span> blah
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">uurlencode</span>(text):
+</span></span><span style="display:flex;"><span>   <span style="color:#d14">&#34;&#34;&#34;single URL-encode a given &#39;text&#39;.  Do not return the &#39;variablename=&#39; portion.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>   blah <span style="color:#000;font-weight:bold">=</span> urlencode({<span style="color:#d14">&#39;u&#39;</span>:text})
+</span></span><span style="display:flex;"><span>   blah <span style="color:#000;font-weight:bold">=</span> blah[<span style="color:#099">2</span>:]
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">return</span> blah
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getwikibio</span>(key):
-</span></span><span style="display:flex;"><span>  url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;http://dbpedia.org/data/&#34;</span><span style="color:#f92672">+</span>str(key);
-</span></span><span style="display:flex;"><span>  print url
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">getwikibio</span>(key):
+</span></span><span style="display:flex;"><span>  url <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;http://dbpedia.org/data/&#34;</span><span style="color:#000;font-weight:bold">+</span><span style="color:#0086b3">str</span>(key);
+</span></span><span style="display:flex;"><span>  <span style="color:#0086b3">print</span> url
 </span></span><span style="display:flex;"><span>  try:
-</span></span><span style="display:flex;"><span>    c<span style="color:#f92672">=</span>urllib2<span style="color:#f92672">.</span>urlopen(url)
-</span></span><span style="display:flex;"><span>    f<span style="color:#f92672">=</span>c<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span>    c<span style="color:#000;font-weight:bold">=</span>urllib2<span style="color:#000;font-weight:bold">.</span>urlopen(url)
+</span></span><span style="display:flex;"><span>    f<span style="color:#000;font-weight:bold">=</span>c<span style="color:#000;font-weight:bold">.</span>read()
 </span></span><span style="display:flex;"><span>  except Exception, e:
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;&#39;</span>
-</span></span><span style="display:flex;"><span>  doc <span style="color:#f92672">=</span> amara<span style="color:#f92672">.</span>parse(f)
-</span></span><span style="display:flex;"><span>  b <span style="color:#f92672">=</span> doc<span style="color:#f92672">.</span>xml_xpath(<span style="color:#e6db74">&#34;//p:abstract[@xml:lang=&#39;en&#39;]&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> <span style="color:#d14">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>  doc <span style="color:#000;font-weight:bold">=</span> amara<span style="color:#000;font-weight:bold">.</span>parse(f)
+</span></span><span style="display:flex;"><span>  b <span style="color:#000;font-weight:bold">=</span> doc<span style="color:#000;font-weight:bold">.</span>xml_xpath(<span style="color:#d14">&#34;//p:abstract[@xml:lang=&#39;en&#39;]&#34;</span>)
 </span></span><span style="display:flex;"><span>  try:
-</span></span><span style="display:flex;"><span>    r <span style="color:#f92672">=</span> str(b[<span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>    r <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">str</span>(b[<span style="color:#099">0</span>])
 </span></span><span style="display:flex;"><span>  except Exception, e:
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;&#39;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> r
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> <span style="color:#d14">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">return</span> r
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">scrapewiki</span>(band):
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">scrapewiki</span>(band):
 </span></span><span style="display:flex;"><span>  try:
-</span></span><span style="display:flex;"><span>    key <span style="color:#f92672">=</span> getwikikey(uurlencode(band))
+</span></span><span style="display:flex;"><span>    key <span style="color:#000;font-weight:bold">=</span> getwikikey(uurlencode(band))
 </span></span><span style="display:flex;"><span>  except Exception, e:
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;&#39;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> getwikibio(key)
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> <span style="color:#d14">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">return</span> getwikibio(key)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#unit test</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#print scrapewiki(&#39;guns n bombs&#39;)</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#print scrapewiki(&#39;diana ross&#39;)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic">#unit test</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic">#print scrapewiki(&#39;guns n bombs&#39;)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic">#print scrapewiki(&#39;diana ross&#39;)</span>
 </span></span></code></pre></div><p>There we go, artist bio scraping from wikipedia.</p>
 ]]></content:encoded>
     </item>

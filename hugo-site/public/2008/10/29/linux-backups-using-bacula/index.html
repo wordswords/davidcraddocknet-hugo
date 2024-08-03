@@ -236,28 +236,28 @@ function toggleThemeListener() {
 <p>This means that there will always be 2 weeks of incremental backups to fall back on which depend on a weekly differential which depends on a monthly full. This strategy aims to save as much space as possible - there is no redundancy. This means that if a backup fails, especially a monthly or weekly, it will have to be re-run immediately.</p>
 <p>The backup volumes will cycle using this method; they will be reused once the maxium volume limits are hit. Also, if you run a backup job from the console, it will revert to the &lsquo;Default&rsquo; pool, so you will have to explicitly define either the daily incremental, weekly differential or the monthly full pools.</p>
 <p>Here is my director configuration:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>Job {
-</span></span><span style="display:flex;"><span>  Name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Backup def&#34;</span>
-</span></span><span style="display:flex;"><span>  Type <span style="color:#f92672">=</span> Backup
-</span></span><span style="display:flex;"><span>  Client <span style="color:#f92672">=</span> localhost<span style="color:#f92672">-</span>fd
-</span></span><span style="display:flex;"><span>  FileSet <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Full Set&#34;</span>
-</span></span><span style="display:flex;"><span>  Storage <span style="color:#f92672">=</span> localhost<span style="color:#f92672">-</span>sd
-</span></span><span style="display:flex;"><span>  Schedule <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;BackupCycle&#34;</span>
-</span></span><span style="display:flex;"><span>  Messages <span style="color:#f92672">=</span> Standard
-</span></span><span style="display:flex;"><span>  Pool <span style="color:#f92672">=</span> Default
-</span></span><span style="display:flex;"><span>  Full Backup Pool <span style="color:#f92672">=</span> Full<span style="color:#f92672">-</span>Pool
-</span></span><span style="display:flex;"><span>  Incremental Backup Pool <span style="color:#f92672">=</span> Inc<span style="color:#f92672">-</span>Pool
-</span></span><span style="display:flex;"><span>  Differential Backup Pool <span style="color:#f92672">=</span> Diff<span style="color:#f92672">-</span>Pool
-</span></span><span style="display:flex;"><span>  Write Bootstrap <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/var/bacula/working/Client1.bsr&#34;</span>
-</span></span><span style="display:flex;"><span>  Priority <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>Job {
+</span></span><span style="display:flex;"><span>  Name <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;Backup def&#34;</span>
+</span></span><span style="display:flex;"><span>  Type <span style="color:#000;font-weight:bold">=</span> Backup
+</span></span><span style="display:flex;"><span>  Client <span style="color:#000;font-weight:bold">=</span> localhost<span style="color:#000;font-weight:bold">-</span>fd
+</span></span><span style="display:flex;"><span>  FileSet <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;Full Set&#34;</span>
+</span></span><span style="display:flex;"><span>  Storage <span style="color:#000;font-weight:bold">=</span> localhost<span style="color:#000;font-weight:bold">-</span>sd
+</span></span><span style="display:flex;"><span>  Schedule <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;BackupCycle&#34;</span>
+</span></span><span style="display:flex;"><span>  Messages <span style="color:#000;font-weight:bold">=</span> Standard
+</span></span><span style="display:flex;"><span>  Pool <span style="color:#000;font-weight:bold">=</span> Default
+</span></span><span style="display:flex;"><span>  Full Backup Pool <span style="color:#000;font-weight:bold">=</span> Full<span style="color:#000;font-weight:bold">-</span>Pool
+</span></span><span style="display:flex;"><span>  Incremental Backup Pool <span style="color:#000;font-weight:bold">=</span> Inc<span style="color:#000;font-weight:bold">-</span>Pool
+</span></span><span style="display:flex;"><span>  Differential Backup Pool <span style="color:#000;font-weight:bold">=</span> Diff<span style="color:#000;font-weight:bold">-</span>Pool
+</span></span><span style="display:flex;"><span>  Write Bootstrap <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;/var/bacula/working/Client1.bsr&#34;</span>
+</span></span><span style="display:flex;"><span>  Priority <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">10</span>
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Schedule {
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Schedule {
 </span></span><span style="display:flex;"><span>  Name = &#34;BackupCycle&#34;
 </span></span><span style="display:flex;"><span>  Run = Level=Full Pool=Full-Pool 1st mon at 1:05
 </span></span><span style="display:flex;"><span>  Run = Level=Differential Pool=Diff-Pool mon at 1:05
 </span></span><span style="display:flex;"><span>  Run = Level=Incremental Pool=Inc-Pool mon-sun at 1:05
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># This is the default backup stanza, which always gets overridden by one of the other Pools, except when a manual backup is performed via the console.
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># This is the default backup stanza, which always gets overridden by one of the other Pools, except when a manual backup is performed via the console.
 </span></span><span style="display:flex;"><span>Pool {
 </span></span><span style="display:flex;"><span>  Name = Default
 </span></span><span style="display:flex;"><span>  Pool Type = Backup

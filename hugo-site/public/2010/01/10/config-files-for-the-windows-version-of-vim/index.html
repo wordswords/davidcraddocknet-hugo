@@ -258,9 +258,9 @@ $HOME = the logged in user&rsquo;s documents and settings directory, in windows 
 <p>On my Windows Vista 64 install:</p>
 <p><strong>$VIM = &ldquo;C:Program Files&rdquo;</strong> <strong>$HOME = &ldquo;C:UsersDave&rdquo;</strong></p>
 <p>You can see what files VIM includes by running the handy command</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>vim -V
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>vim -V
 </span></span></code></pre></div><p>at a command prompt; it will go through the different settings and output something similar to this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Searching for &#34;C:UsersDave/vimfilesfiletype.vim&#34;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Searching for &#34;C:UsersDave/vimfilesfiletype.vim&#34;
 </span></span><span style="display:flex;"><span>Searching for &#34;C:Program Files/vimfilesfiletype.vim&#34;
 </span></span><span style="display:flex;"><span>Searching for &#34;C:Program Filesvim72filetype.vim&#34;
 </span></span><span style="display:flex;"><span>line 49: sourcing &#34;C:Program Filesvim72filetype.vim&#34;
@@ -308,11 +308,11 @@ $HOME = the logged in user&rsquo;s documents and settings directory, in windows 
 </span></span><span style="display:flex;"><span>Press ENTER or type command to continue
 </span></span></code></pre></div><p>Notice how it does pull in all the syntax highlighting macros and other extension files correctly, which are specified in the <strong>.vim</strong> files above.. but it doesn&rsquo;t pull in the global configuration files that I&rsquo;ve copied also to <strong>C:Program Filesvim72_gvimrc</strong> and <strong>C:Program Filesvim72_vimrc</strong>. However, it does pickup the files I copied to <strong>C:UsersDave</strong>.. both the <strong>C:UsersDave_vimrc</strong> and <strong>C:UsersDave_gvimrc</strong> are picked up, although VIM will normally read &lsquo;_gvimrc&rsquo; when the gui version of VIM is run (called gvim).</p>
 <p>To see exactly what those environmental variables are being set to, when you&rsquo;re inside the editor, issue these two commands, and their values will be show in the editor:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:echo $HOME
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:echo $HOME
 </span></span><span style="display:flex;"><span>:echo $VIM
 </span></span></code></pre></div><p>It seems to make sense for me - and perhaps you, if you&rsquo;re working with VIM on windows - to place my _vimrc and _gvimrc files configuration files in $HOME in Vista. They are then picked up without having to worry about explicitly defining any environmental variables, creating a batch file, or any other hassle.</p>
 <p>You can do this easily by the following two commands:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:ed $HOME_vimrc
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:ed $HOME_vimrc
 </span></span><span style="display:flex;"><span>:sp $HOME_gvimrc
 </span></span></code></pre></div><p>That will open the two new configuration files, side by side, and you can paste in your existing configuration that you&rsquo;ve used in Linux, and windows will pick them up the next time you start VIM.</p>
 

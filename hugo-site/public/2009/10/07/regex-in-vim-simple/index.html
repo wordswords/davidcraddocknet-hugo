@@ -272,7 +272,7 @@ function toggleThemeListener() {
 <h2 id="examples">Examples</h2>
 <p>Here I use the shorthand &quot; <strong>#&hellip;</strong>&quot; to denote comments on what I&rsquo;m doing&hellip; if you want to copy and paste the example as written, then you will have to remove those comments.</p>
 <p>1. Remove ancient uppercase <!-- raw HTML omitted --> tags from a document.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:set wrapscan # debug on
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:set wrapscan # debug on
 </span></span><span style="display:flex;"><span>:set hlsearch # debug on
 </span></span><span style="display:flex;"><span>:/&lt;BLINK&gt; # try 1.. bingo! first time.. selected all tags I want
 </span></span><span style="display:flex;"><span>:%s/&lt;BLINK&gt;//g # lets execute my regex remove
@@ -284,7 +284,7 @@ function toggleThemeListener() {
 </span></span><span style="display:flex;"><span>:set nohlsearch # debug off
 </span></span><span style="display:flex;"><span>:set nowrapscan # debug off
 </span></span></code></pre></div><p>2. Oh no! We missed some lower and mixedcase <!-- raw HTML omitted --> tags that some sneaky person slipped in. Let&rsquo;s take them out.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:set wrapscan # debug on
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:set wrapscan # debug on
 </span></span><span style="display:flex;"><span>:set hlsearch # debug on
 </span></span><span style="display:flex;"><span>:/&lt;blink&gt; # try 1.. hm.. worked for many, but didnt match BlInK or blINK mixedcase
 </span></span><span style="display:flex;"><span>:/&lt;blink&gt;/i # try 2.. much better.. seems to have worked!
@@ -298,7 +298,7 @@ function toggleThemeListener() {
 </span></span><span style="display:flex;"><span>:set nohlsearch # debug off
 </span></span><span style="display:flex;"><span>:set nowrapscan # debug off
 </span></span></code></pre></div><p>3. Replacing uppercase or mixedcase <!-- raw HTML omitted --> tags with the more modern <!-- raw HTML omitted -->.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:set wrapscan # debug on
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:set wrapscan # debug on
 </span></span><span style="display:flex;"><span>:set hlsearch # debug on
 </span></span><span style="display:flex;"><span>:/&lt;BR&gt; # try 1.. hmm.. just uppercase.. not gonna work..
 </span></span><span style="display:flex;"><span>:/&lt;br&gt; # try 2.. hmm.. just lowercase..

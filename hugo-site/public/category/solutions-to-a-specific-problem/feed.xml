@@ -111,7 +111,7 @@ https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbek
 <p>Lately I&rsquo;ve had the idea of creating a text-based <a href="http://en.wikipedia.org/wiki/Roguelike">Roguelike</a> in C++. This lead me on to think about the game AI experiments that I worked during my degree in <a href="http://www.sussex.ac.uk/informatics/">Computer Science and A.I.</a>. Essential to game AI is the notion of pathfinding, or finding a path from &lsquo;A&rsquo; to &lsquo;B&rsquo;, past any obstacles that get in the way. One way to do this is to use the A* algorithm. I decided to implement an A* pathfinding algorithm for possible use in a Roguelike later, and chose <a href="http://en.wikipedia.org/wiki/A*_search_algorithm">the pseudocode from the Wikipedia example</a> to implement.</p>
 <p>The program finds a path from the top right hand corner to the top left, avoiding impassable &lsquo;7&rsquo; obstacles. The &lsquo;*&rsquo; are the steps along the path. The algorithm is guaranteed to find the shortest path between the goal and the start, which means it can optimally solve any solvable maze, given time.</p>
 <p>This is a sample board with obstacles setup:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
 </span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
 </span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
 </span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
@@ -162,7 +162,7 @@ https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbek
 </span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
 </span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
 </span></span></code></pre></div><p>This is the path found (the &lsquo;*&rsquo;s):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>**000000000000000000000000000000000000000000000000
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>**000000000000000000000000000000000000000000000000
 </span></span><span style="display:flex;"><span>0***********************************00000000000000
 </span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
 </span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
@@ -227,10 +227,10 @@ https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbek
       <description>I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame.</description>
       <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg"><img loading="lazy" src="/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg" type="" alt=""  /></a></p>
 <p>I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame. I couldn&rsquo;t find a video player that would open the single frame. So I resorted to the command line version of ffmpeg, which I installed via macports, to convert this single frame to a jpg file to view as normal. This line worked a treat:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ffmpeg -i north.mpg -ss 00:00:00 -t 00:00:1 -s 1024x768 -r 1 -f mjpeg north.jpg
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ffmpeg -i north.mpg -ss 00:00:00 -t 00:00:1 -s 1024x768 -r 1 -f mjpeg north.jpg
 </span></span></code></pre></div><p>Where &rsquo;north.mpg&rsquo; was the m2v file, and &rsquo;north.jpg&rsquo; was the output jpeg.</p>
 <p>And this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>find -name *.mpg -exec ffmpeg -i {} -ss 00:00:00 -t 00:00:1 -s 1024x768 -r 1 -f mjpeg {}.jpg ;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>find -name *.mpg -exec ffmpeg -i {} -ss 00:00:00 -t 00:00:1 -s 1024x768 -r 1 -f mjpeg {}.jpg ;
 </span></span></code></pre></div><p>Will go through all the mpg files in the current directory and below, and create their jpeg single frame equivalents, ie: for north.mpg it will create north.mpg.jpg.</p>
 ]]></content:encoded>
     </item>
@@ -279,9 +279,9 @@ There are two soloutions that I have used:</description>
 <p>If you use Putty, ticking &lsquo;Use System Colours&rsquo; here changes the &ldquo;white foreground, black background&rdquo; default into a &ldquo;white background, black foreground&rdquo;. This way you can at least read the console properly, good for a quick fix. You can also save these settings in putty to be the default for the host that you are connecting to, or even all hosts.</p>
 <p><strong>2. Change the LS_COLORS directive temporarily in the shell.</strong></p>
 <p>Alternatively, you can ask the <strong>ls</strong> command to display directories and other entries in colours that you specify. You could add these lines to the bottom of your .bashrc to make these changes permanent, or if you are using a shared machine, just copy and paste the following lines into the terminal and they will change the colours to a reddish more visable set, until you logout. :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>alias ls<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ls --color&#39;</span> <span style="color:#75715e"># just to make sure we are using coloured ls</span>
-</span></span><span style="display:flex;"><span>LS_COLORS<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;di=94:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> LS_COLORS
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>alias ls<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;ls --color&#39;</span> <span style="color:#998;font-style:italic"># just to make sure we are using coloured ls</span>
+</span></span><span style="display:flex;"><span>LS_COLORS<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;di=94:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> LS_COLORS
 </span></span></code></pre></div><p>(Original source for this particular LS_COLORS combo: <a href="http://linux-sxs.org/housekeeping/lscolors.html">http://linux-sxs.org/housekeeping/lscolors.html</a>)</p>
 ]]></content:encoded>
     </item>
@@ -295,7 +295,7 @@ There are two soloutions that I have used:</description>
       <description>To quickly find large files to delete if you have filled your startup disk, enter this command on the OSX terminal:
 sudo find / -size +500000 -print This will find and print out file paths to files over 500MB. You can then go through them and delete them individually by typing rm &amp;ldquo;&amp;rdquo;, although there is no undelete so make sure you know you won&amp;rsquo;t miss them.</description>
       <content:encoded><![CDATA[<p>To quickly find large files to delete if you have filled your startup disk, enter this command on the OSX terminal:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo find / -size +500000 -print
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo find / -size +500000 -print
 </span></span></code></pre></div><p>This will find and print out file paths to files over 500MB. You can then go through them and delete them individually by typing <strong>rm &ldquo;<!-- raw HTML omitted -->&rdquo;</strong>, although there is no undelete so make sure you know you won&rsquo;t miss them.</p>
 ]]></content:encoded>
     </item>
@@ -309,7 +309,7 @@ sudo find / -size +500000 -print This will find and print out file paths to file
       <description>You use the &amp;rsquo;touch&amp;rsquo; command to create two blank files, with a last modified date that you specify - one with a date of the start of the range you want to specify, and the second with a date at the end of the range you want to specify. Then you reference to those two files in your find command:
 touch /tmp/temp -t 200604141130 touch /tmp/ntemp -t 200604261630 find /data/ -cnewer /tmp/temp -and !</description>
       <content:encoded><![CDATA[<p>You use the &rsquo;touch&rsquo; command to create two blank files, with a last modified date that you specify - one with a date of the start of the range you want to specify, and the second with a date at the end of the range you want to specify. Then you reference to those two files in your find command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>touch /tmp/temp -t 200604141130
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>touch /tmp/temp -t 200604141130
 </span></span><span style="display:flex;"><span>touch /tmp/ntemp -t 200604261630
 </span></span><span style="display:flex;"><span>find /data/ -cnewer /tmp/temp -and ! -cnewer /tmp/ntemp
 </span></span></code></pre></div>]]></content:encoded>
@@ -324,7 +324,7 @@ touch /tmp/temp -t 200604141130 touch /tmp/ntemp -t 200604261630 find /data/ -cn
       <description>I wrote an email alerter that sends me an email whenever the upcoming temperature may dip below freezing. It uses the Magpie RSS reader to pull down a 3 day weather forecast that is provided for my area in RSS form by the BBC weather site. It then parses this forecast and determines if either today&amp;rsquo;s or tomorrow&amp;rsquo;s weather may dip below freezing. If it might, it sends an email to my email address to warn me.</description>
       <content:encoded><![CDATA[<p>I wrote an email alerter that sends me an email whenever the upcoming temperature may dip below freezing. It uses the <a href="http://magpierss.sourceforge.net/">Magpie RSS reader</a> to pull down a 3 day weather forecast that is provided for my area in RSS form by the BBC weather site. It then parses this forecast and determines if either today&rsquo;s or tomorrow&rsquo;s weather may dip below freezing. If it might, it sends an email to my email address to warn me.</p>
 <p>I scheduled this script to run every day by adding it as a <a href="http://en.wikipedia.org/wiki/Cron">daily cron job</a> on my web host. You can set this up for any web hosts that support cron jobs.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>items) != 3){
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>items) != 3){
 </span></span><span style="display:flex;"><span>                $message .= &#39;Error: problem parsing BBC weather feed&#39;;
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>        $i=0;
@@ -360,7 +360,7 @@ touch /tmp/temp -t 200604141130 touch /tmp/ntemp -t 200604261630 find /data/ -cn
 import time def weeknum(num,year): instr = str(year)+&amp;#34; &amp;#34;+str(num-1)+&amp;#34; 1&amp;#34; print time.asctime(time.strptime(instr,&amp;#39;%Y %W %w&amp;#39;)) Here is me exectuting the code in Python&amp;rsquo;s IDLE shell:
 See that the first week of 2009 actually started in 2008, but by the end of that week we are in 2009.</description>
       <content:encoded><![CDATA[<p>Here is some python code I adapted from <a href="http://stackoverflow.com/questions/396913/in-python-how-do-i-find-the-date-of-the-first-monday-of-a-given-week">this stackoverflow post</a> to get the first day of a week specificed by a week number. This method includes leap year and summer time differences.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>import time
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>import time
 </span></span><span style="display:flex;"><span>def weeknum(num,year):
 </span></span><span style="display:flex;"><span>	instr = str(year)+&#34; &#34;+str(num-1)+&#34; 1&#34;
 </span></span><span style="display:flex;"><span>	print time.asctime(time.strptime(instr,&#39;%Y %W %w&#39;))
@@ -439,7 +439,7 @@ When you send emails to users of your site through using the PHP mail() function
 From: Root &amp;lt;root@apache.ecommercecompany.com&amp;gt; This makes absolutely no sense to your customers, and often they will think it is spam and delete it.</description>
       <content:encoded><![CDATA[<p>I&rsquo;ve had to solve this problem a couple of times at least, and it&rsquo;s quite a common task, so I thought I&rsquo;d document it here.</p>
 <p>When you send emails to users of your site through using the PHP mail() function, they will sometimes turn up in the mailbox of customers of your site with the following from address:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>From: Root &lt;root@apache.ecommercecompany.com&gt;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>From: Root &lt;root@apache.ecommercecompany.com&gt;
 </span></span></code></pre></div><p>This makes absolutely no sense to your customers, and often they will think it is spam and delete it. Often, the decision will be made for them by their web mail host, such as hotmail.com or googlemail.com, and they will never even see the email. You don&rsquo;t want this to happen.</p>
 <p>Writing email templates that appear &ldquo;trustworthy&rdquo; and have a low chance of being mislabled as spam by the webmail companies, is quite a difficult task, and there&rsquo;s quite a bit to know about it. However it is quite easy to change the default &ldquo;From:&rdquo; email address that PHP sends your emails on as, and that will definitely help.</p>
 <p>Assuming you&rsquo;re running a linux server using sendmail, all you have to do is this.</p>
@@ -450,7 +450,7 @@ From: Root &amp;lt;root@apache.ecommercecompany.com&amp;gt; This makes absolutel
 <p>Broken down, those extra options are:
 <code>-F 'customer-emails' # the name of the sender -f 'Customer Emails &lt;customer-emails@ecommercecompany.com&gt;' # the email From header, which should have the name matching the email address, and it should be the same email address as above </code></p>
 <p>Then restart apache, and it should load the php.ini file changes. Test it by sending a couple of emails to your email address, and you should see emails sent out like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>From: Customer Emails &lt;customer-emails@ecommercecompany.com&gt;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>From: Customer Emails &lt;customer-emails@ecommercecompany.com&gt;
 </span></span></code></pre></div>]]></content:encoded>
     </item>
     
@@ -464,7 +464,7 @@ From: Root &amp;lt;root@apache.ecommercecompany.com&amp;gt; This makes absolutel
 I thought someone may well find a use for it - I&amp;rsquo;ve used the class in several different web scraping applications, and I found it handy.</description>
       <content:encoded><![CDATA[<p>Back in 2008, I wrote a PHP class that fetched an arbitary URL, parsed it, and coverted it into an PHP object with different attributes for the different elements of the page. I recently updated it and sent it along to a company that wanted a programming example to show I could code in PHP.</p>
 <p>I thought someone may well find a use for it - I&rsquo;ve used the class in several different web scraping applications, and I found it handy. From the readme:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>This is a class I wrote back in 2008 to help me pull down and parse HTML pages I updated it on
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>This is a class I wrote back in 2008 to help me pull down and parse HTML pages I updated it on
 </span></span><span style="display:flex;"><span>14/01/10 to print the results in a nicer way to the commandline.
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>- David Craddock (contact@davidcraddock.net)
@@ -499,124 +499,124 @@ I thought someone may well find a use for it - I&amp;rsquo;ve used the class in 
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>That will output the info to result.txt so you can read it at will.
 </span></span></code></pre></div><p>Here&rsquo;s an example of one of the unit tests, which fetches this frontpage and parses it:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#f92672">**++++</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">***</span> Page Print of http:<span style="color:#f92672">//</span>www<span style="color:#f92672">.</span>davidcraddock<span style="color:#f92672">.</span>net <span style="color:#f92672">***</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">**++++</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">**++++</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">***</span> Page Print of http:<span style="color:#000;font-weight:bold">//</span>www<span style="color:#000;font-weight:bold">.</span>davidcraddock<span style="color:#000;font-weight:bold">.</span>net <span style="color:#000;font-weight:bold">***</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">**++++</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">**</span> Transfer Status
-</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> URL Retrieved:
-</span></span><span style="display:flex;"><span>http:<span style="color:#f92672">//</span>www<span style="color:#f92672">.</span>davidcraddock<span style="color:#f92672">.</span>net
-</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> CURL Fetch Status:
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Array</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">**</span> Transfer Status
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">+</span> URL Retrieved:
+</span></span><span style="display:flex;"><span>http:<span style="color:#000;font-weight:bold">//</span>www<span style="color:#000;font-weight:bold">.</span>davidcraddock<span style="color:#000;font-weight:bold">.</span>net
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">+</span> CURL Fetch Status:
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">Array</span>
 </span></span><span style="display:flex;"><span>(
-</span></span><span style="display:flex;"><span>    [url] <span style="color:#f92672">=&gt;</span> http:<span style="color:#f92672">//</span>www<span style="color:#f92672">.</span>davidcraddock<span style="color:#f92672">.</span>net
-</span></span><span style="display:flex;"><span>    [content_type] <span style="color:#f92672">=&gt;</span> text<span style="color:#f92672">/</span>html; charset<span style="color:#f92672">=</span>UTF<span style="color:#f92672">-</span><span style="color:#ae81ff">8</span>
-</span></span><span style="display:flex;"><span>    [http_code] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">200</span>
-</span></span><span style="display:flex;"><span>    [header_size] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">237</span>
-</span></span><span style="display:flex;"><span>    [request_size] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">175</span>
-</span></span><span style="display:flex;"><span>    [filetime] <span style="color:#f92672">=&gt;</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>    [ssl_verify_result] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>    [redirect_count] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>    [total_time] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">1.490972</span>
-</span></span><span style="display:flex;"><span>    [namelookup_time] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">5.3E-5</span>
-</span></span><span style="display:flex;"><span>    [connect_time] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">0.175803</span>
-</span></span><span style="display:flex;"><span>    [pretransfer_time] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">0.175812</span>
-</span></span><span style="display:flex;"><span>    [size_upload] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>    [size_download] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">30416</span>
-</span></span><span style="display:flex;"><span>    [speed_download] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">20400</span>
-</span></span><span style="display:flex;"><span>    [speed_upload] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>    [download_content_length] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">30416</span>
-</span></span><span style="display:flex;"><span>    [upload_content_length] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>    [starttransfer_time] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">0.714943</span>
-</span></span><span style="display:flex;"><span>    [redirect_time] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    [url] <span style="color:#000;font-weight:bold">=&gt;</span> http:<span style="color:#000;font-weight:bold">//</span>www<span style="color:#000;font-weight:bold">.</span>davidcraddock<span style="color:#000;font-weight:bold">.</span>net
+</span></span><span style="display:flex;"><span>    [content_type] <span style="color:#000;font-weight:bold">=&gt;</span> text<span style="color:#000;font-weight:bold">/</span>html; charset<span style="color:#000;font-weight:bold">=</span>UTF<span style="color:#000;font-weight:bold">-</span><span style="color:#099">8</span>
+</span></span><span style="display:flex;"><span>    [http_code] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">200</span>
+</span></span><span style="display:flex;"><span>    [header_size] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">237</span>
+</span></span><span style="display:flex;"><span>    [request_size] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">175</span>
+</span></span><span style="display:flex;"><span>    [filetime] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>    [ssl_verify_result] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>    [redirect_count] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>    [total_time] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">1.490972</span>
+</span></span><span style="display:flex;"><span>    [namelookup_time] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">5.3E-5</span>
+</span></span><span style="display:flex;"><span>    [connect_time] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">0.175803</span>
+</span></span><span style="display:flex;"><span>    [pretransfer_time] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">0.175812</span>
+</span></span><span style="display:flex;"><span>    [size_upload] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>    [size_download] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">30416</span>
+</span></span><span style="display:flex;"><span>    [speed_download] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">20400</span>
+</span></span><span style="display:flex;"><span>    [speed_upload] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>    [download_content_length] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">30416</span>
+</span></span><span style="display:flex;"><span>    [upload_content_length] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>    [starttransfer_time] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">0.714943</span>
+</span></span><span style="display:flex;"><span>    [redirect_time] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">0</span>
 </span></span><span style="display:flex;"><span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">**</span> Header
-</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> Title: Random Eye Movement
-</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> Meta Desc:
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">**</span> Header
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">+</span> Title: Random Eye Movement
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">+</span> Meta Desc:
 </span></span><span style="display:flex;"><span>Not Set
-</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> Meta Keywords:
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">+</span> Meta Keywords:
 </span></span><span style="display:flex;"><span>Not Set
-</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> Meta Robots:
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">+</span> Meta Robots:
 </span></span><span style="display:flex;"><span>Not Set
-</span></span><span style="display:flex;"><span><span style="color:#f92672">**</span> Flags
-</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> Has Frames<span style="color:#960050;background-color:#1e0010">?</span>:
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">**</span> Flags
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">+</span> Has Frames<span style="color:#a61717;background-color:#e3d2d2">?</span>:
 </span></span><span style="display:flex;"><span>FALSE
-</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> Has body content been parsed<span style="color:#960050;background-color:#1e0010">?</span>:
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">+</span> Has body content been parsed<span style="color:#a61717;background-color:#e3d2d2">?</span>:
 </span></span><span style="display:flex;"><span>TRUE
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">**</span> Non Html Tags
-</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> Tags scanned <span style="color:#66d9ef">for</span>:
-</span></span><span style="display:flex;"><span>Tag Type: script tags processed: <span style="color:#ae81ff">4</span>
-</span></span><span style="display:flex;"><span>Tag Type: embed tags processed: <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>Tag Type: style tags processed: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">**</span> Non Html Tags
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">+</span> Tags scanned <span style="color:#000;font-weight:bold">for</span>:
+</span></span><span style="display:flex;"><span>Tag Type: script tags processed: <span style="color:#099">4</span>
+</span></span><span style="display:flex;"><span>Tag Type: embed tags processed: <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>Tag Type: style tags processed: <span style="color:#099">0</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> Tag contents:
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Array</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">+</span> Tag contents:
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">Array</span>
 </span></span><span style="display:flex;"><span>(
-</span></span><span style="display:flex;"><span>    [ script ] <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">Array</span>
+</span></span><span style="display:flex;"><span>    [ script ] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#900;font-weight:bold">Array</span>
 </span></span><span style="display:flex;"><span>        (
-</span></span><span style="display:flex;"><span>            [<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">Array</span>
+</span></span><span style="display:flex;"><span>            [<span style="color:#099">0</span>] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#900;font-weight:bold">Array</span>
 </span></span><span style="display:flex;"><span>                (
-</span></span><span style="display:flex;"><span>                    [src] <span style="color:#f92672">=&gt;</span> http:<span style="color:#f92672">//</span>www<span style="color:#f92672">.</span>davidcraddock<span style="color:#f92672">.</span>net<span style="color:#f92672">/</span>wp<span style="color:#f92672">-</span>content<span style="color:#f92672">/</span>themes<span style="color:#f92672">/</span>this<span style="color:#f92672">-</span>just<span style="color:#f92672">-</span><span style="color:#f92672">in</span><span style="color:#f92672">/</span>js<span style="color:#f92672">/</span>ThemeJS<span style="color:#f92672">.</span>js
-</span></span><span style="display:flex;"><span>                    [type] <span style="color:#f92672">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [isinline] <span style="color:#f92672">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [content] <span style="color:#f92672">=&gt;</span>
+</span></span><span style="display:flex;"><span>                    [src] <span style="color:#000;font-weight:bold">=&gt;</span> http:<span style="color:#000;font-weight:bold">//</span>www<span style="color:#000;font-weight:bold">.</span>davidcraddock<span style="color:#000;font-weight:bold">.</span>net<span style="color:#000;font-weight:bold">/</span>wp<span style="color:#000;font-weight:bold">-</span>content<span style="color:#000;font-weight:bold">/</span>themes<span style="color:#000;font-weight:bold">/</span>this<span style="color:#000;font-weight:bold">-</span>just<span style="color:#000;font-weight:bold">-</span><span style="color:#000;font-weight:bold">in</span><span style="color:#000;font-weight:bold">/</span>js<span style="color:#000;font-weight:bold">/</span>ThemeJS<span style="color:#000;font-weight:bold">.</span>js
+</span></span><span style="display:flex;"><span>                    [type] <span style="color:#000;font-weight:bold">=&gt;</span>
+</span></span><span style="display:flex;"><span>                    [isinline] <span style="color:#000;font-weight:bold">=&gt;</span>
+</span></span><span style="display:flex;"><span>                    [content] <span style="color:#000;font-weight:bold">=&gt;</span>
 </span></span><span style="display:flex;"><span>                )
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            [<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">Array</span>
+</span></span><span style="display:flex;"><span>            [<span style="color:#099">1</span>] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#900;font-weight:bold">Array</span>
 </span></span><span style="display:flex;"><span>                (
-</span></span><span style="display:flex;"><span>                    [src] <span style="color:#f92672">=&gt;</span> http:<span style="color:#f92672">//</span>www<span style="color:#f92672">.</span>davidcraddock<span style="color:#f92672">.</span>net<span style="color:#f92672">/</span>wp<span style="color:#f92672">-</span>content<span style="color:#f92672">/</span>plugins<span style="color:#f92672">/</span>lifestream<span style="color:#f92672">/</span>lifestream<span style="color:#f92672">.</span>js
-</span></span><span style="display:flex;"><span>                    [type] <span style="color:#f92672">=&gt;</span> text<span style="color:#f92672">/</span>javascript
-</span></span><span style="display:flex;"><span>                    [isinline] <span style="color:#f92672">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [content] <span style="color:#f92672">=&gt;</span>
+</span></span><span style="display:flex;"><span>                    [src] <span style="color:#000;font-weight:bold">=&gt;</span> http:<span style="color:#000;font-weight:bold">//</span>www<span style="color:#000;font-weight:bold">.</span>davidcraddock<span style="color:#000;font-weight:bold">.</span>net<span style="color:#000;font-weight:bold">/</span>wp<span style="color:#000;font-weight:bold">-</span>content<span style="color:#000;font-weight:bold">/</span>plugins<span style="color:#000;font-weight:bold">/</span>lifestream<span style="color:#000;font-weight:bold">/</span>lifestream<span style="color:#000;font-weight:bold">.</span>js
+</span></span><span style="display:flex;"><span>                    [type] <span style="color:#000;font-weight:bold">=&gt;</span> text<span style="color:#000;font-weight:bold">/</span>javascript
+</span></span><span style="display:flex;"><span>                    [isinline] <span style="color:#000;font-weight:bold">=&gt;</span>
+</span></span><span style="display:flex;"><span>                    [content] <span style="color:#000;font-weight:bold">=&gt;</span>
 </span></span><span style="display:flex;"><span>                )
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            [<span style="color:#ae81ff">2</span>] <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">Array</span>
+</span></span><span style="display:flex;"><span>            [<span style="color:#099">2</span>] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#900;font-weight:bold">Array</span>
 </span></span><span style="display:flex;"><span>                (
-</span></span><span style="display:flex;"><span>                    [src] <span style="color:#f92672">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [type] <span style="color:#f92672">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [isinline] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>                    [content] <span style="color:#f92672">=&gt;</span>
-</span></span><span style="display:flex;"><span>                 <span style="color:#66d9ef">var</span> odesk_widgets_width <span style="color:#f92672">=</span> <span style="color:#ae81ff">340</span>;
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">var</span> odesk_widgets_height <span style="color:#f92672">=</span> <span style="color:#ae81ff">230</span>;
+</span></span><span style="display:flex;"><span>                    [src] <span style="color:#000;font-weight:bold">=&gt;</span>
+</span></span><span style="display:flex;"><span>                    [type] <span style="color:#000;font-weight:bold">=&gt;</span>
+</span></span><span style="display:flex;"><span>                    [isinline] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>                    [content] <span style="color:#000;font-weight:bold">=&gt;</span>
+</span></span><span style="display:flex;"><span>                 <span style="color:#000;font-weight:bold">var</span> odesk_widgets_width <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">340</span>;
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">var</span> odesk_widgets_height <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">230</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>                )
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            [<span style="color:#ae81ff">3</span>] <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">Array</span>
+</span></span><span style="display:flex;"><span>            [<span style="color:#099">3</span>] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#900;font-weight:bold">Array</span>
 </span></span><span style="display:flex;"><span>                (
-</span></span><span style="display:flex;"><span>                    [src] <span style="color:#f92672">=&gt;</span> http:<span style="color:#f92672">//</span>www<span style="color:#f92672">.</span>odesk<span style="color:#f92672">.</span>com<span style="color:#f92672">/</span>widgets<span style="color:#f92672">/</span>v1<span style="color:#f92672">/</span>providers<span style="color:#f92672">/</span>large<span style="color:#f92672">/~~</span><span style="color:#ae81ff">8</span>f250a5e32c8d3fa<span style="color:#f92672">.</span>js
-</span></span><span style="display:flex;"><span>                    [type] <span style="color:#f92672">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [isinline] <span style="color:#f92672">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [content] <span style="color:#f92672">=&gt;</span>
+</span></span><span style="display:flex;"><span>                    [src] <span style="color:#000;font-weight:bold">=&gt;</span> http:<span style="color:#000;font-weight:bold">//</span>www<span style="color:#000;font-weight:bold">.</span>odesk<span style="color:#000;font-weight:bold">.</span>com<span style="color:#000;font-weight:bold">/</span>widgets<span style="color:#000;font-weight:bold">/</span>v1<span style="color:#000;font-weight:bold">/</span>providers<span style="color:#000;font-weight:bold">/</span>large<span style="color:#000;font-weight:bold">/~~</span><span style="color:#099">8</span>f250a5e32c8d3fa<span style="color:#000;font-weight:bold">.</span>js
+</span></span><span style="display:flex;"><span>                    [type] <span style="color:#000;font-weight:bold">=&gt;</span>
+</span></span><span style="display:flex;"><span>                    [isinline] <span style="color:#000;font-weight:bold">=&gt;</span>
+</span></span><span style="display:flex;"><span>                    [content] <span style="color:#000;font-weight:bold">=&gt;</span>
 </span></span><span style="display:flex;"><span>                )
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            [count] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>            [count] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">4</span>
 </span></span><span style="display:flex;"><span>        )
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    [ embed ] <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">Array</span>
+</span></span><span style="display:flex;"><span>    [ embed ] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#900;font-weight:bold">Array</span>
 </span></span><span style="display:flex;"><span>        (
-</span></span><span style="display:flex;"><span>            [<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">Array</span>
+</span></span><span style="display:flex;"><span>            [<span style="color:#099">0</span>] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#900;font-weight:bold">Array</span>
 </span></span><span style="display:flex;"><span>                (
-</span></span><span style="display:flex;"><span>                    [src] <span style="color:#f92672">=&gt;</span> http:<span style="color:#f92672">//</span>www<span style="color:#f92672">.</span>youtube<span style="color:#f92672">-</span>nocookie<span style="color:#f92672">.</span>com<span style="color:#f92672">/</span>v<span style="color:#f92672">/</span>Fpm0m6bVfrM<span style="color:#f92672">&amp;</span>hl<span style="color:#f92672">=</span>en<span style="color:#f92672">&amp;</span>fs<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#f92672">&amp;</span>rel<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>                    [type] <span style="color:#f92672">=&gt;</span> application<span style="color:#f92672">/</span>x<span style="color:#f92672">-</span>shockwave<span style="color:#f92672">-</span>flash
-</span></span><span style="display:flex;"><span>                    [isinline] <span style="color:#f92672">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [content] <span style="color:#f92672">=&gt;</span>
+</span></span><span style="display:flex;"><span>                    [src] <span style="color:#000;font-weight:bold">=&gt;</span> http:<span style="color:#000;font-weight:bold">//</span>www<span style="color:#000;font-weight:bold">.</span>youtube<span style="color:#000;font-weight:bold">-</span>nocookie<span style="color:#000;font-weight:bold">.</span>com<span style="color:#000;font-weight:bold">/</span>v<span style="color:#000;font-weight:bold">/</span>Fpm0m6bVfrM<span style="color:#000;font-weight:bold">&amp;</span>hl<span style="color:#000;font-weight:bold">=</span>en<span style="color:#000;font-weight:bold">&amp;</span>fs<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span><span style="color:#000;font-weight:bold">&amp;</span>rel<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>                    [type] <span style="color:#000;font-weight:bold">=&gt;</span> application<span style="color:#000;font-weight:bold">/</span>x<span style="color:#000;font-weight:bold">-</span>shockwave<span style="color:#000;font-weight:bold">-</span>flash
+</span></span><span style="display:flex;"><span>                    [isinline] <span style="color:#000;font-weight:bold">=&gt;</span>
+</span></span><span style="display:flex;"><span>                    [content] <span style="color:#000;font-weight:bold">=&gt;</span>
 </span></span><span style="display:flex;"><span>                )
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            [count] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>            [count] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">1</span>
 </span></span><span style="display:flex;"><span>        )
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    [ style ] <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">Array</span>
+</span></span><span style="display:flex;"><span>    [ style ] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#900;font-weight:bold">Array</span>
 </span></span><span style="display:flex;"><span>        (
-</span></span><span style="display:flex;"><span>            [count] <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>            [count] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">0</span>
 </span></span><span style="display:flex;"><span>        )
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">**----</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">***</span> Page Print of http:<span style="color:#f92672">//</span>www<span style="color:#f92672">.</span>davidcraddock<span style="color:#f92672">.</span>net Finished <span style="color:#f92672">***</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">**----</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">**----</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">***</span> Page Print of http:<span style="color:#000;font-weight:bold">//</span>www<span style="color:#000;font-weight:bold">.</span>davidcraddock<span style="color:#000;font-weight:bold">.</span>net Finished <span style="color:#000;font-weight:bold">***</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">**----</span>
 </span></span></code></pre></div><p>If you want to download a copy, the file is below. If you find it useful for you, a pingback would be appreciated.
 <a href="http://www.davidcraddock.net/uploads/code-sample.tar.gz">code-sample.tar.gz</a></p>
 ]]></content:encoded>
@@ -652,9 +652,9 @@ $HOME = the logged in user&rsquo;s documents and settings directory, in windows 
 <p>On my Windows Vista 64 install:</p>
 <p><strong>$VIM = &ldquo;C:Program Files&rdquo;</strong> <strong>$HOME = &ldquo;C:UsersDave&rdquo;</strong></p>
 <p>You can see what files VIM includes by running the handy command</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>vim -V
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>vim -V
 </span></span></code></pre></div><p>at a command prompt; it will go through the different settings and output something similar to this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Searching for &#34;C:UsersDave/vimfilesfiletype.vim&#34;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Searching for &#34;C:UsersDave/vimfilesfiletype.vim&#34;
 </span></span><span style="display:flex;"><span>Searching for &#34;C:Program Files/vimfilesfiletype.vim&#34;
 </span></span><span style="display:flex;"><span>Searching for &#34;C:Program Filesvim72filetype.vim&#34;
 </span></span><span style="display:flex;"><span>line 49: sourcing &#34;C:Program Filesvim72filetype.vim&#34;
@@ -702,11 +702,11 @@ $HOME = the logged in user&rsquo;s documents and settings directory, in windows 
 </span></span><span style="display:flex;"><span>Press ENTER or type command to continue
 </span></span></code></pre></div><p>Notice how it does pull in all the syntax highlighting macros and other extension files correctly, which are specified in the <strong>.vim</strong> files above.. but it doesn&rsquo;t pull in the global configuration files that I&rsquo;ve copied also to <strong>C:Program Filesvim72_gvimrc</strong> and <strong>C:Program Filesvim72_vimrc</strong>. However, it does pickup the files I copied to <strong>C:UsersDave</strong>.. both the <strong>C:UsersDave_vimrc</strong> and <strong>C:UsersDave_gvimrc</strong> are picked up, although VIM will normally read &lsquo;_gvimrc&rsquo; when the gui version of VIM is run (called gvim).</p>
 <p>To see exactly what those environmental variables are being set to, when you&rsquo;re inside the editor, issue these two commands, and their values will be show in the editor:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:echo $HOME
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:echo $HOME
 </span></span><span style="display:flex;"><span>:echo $VIM
 </span></span></code></pre></div><p>It seems to make sense for me - and perhaps you, if you&rsquo;re working with VIM on windows - to place my _vimrc and _gvimrc files configuration files in $HOME in Vista. They are then picked up without having to worry about explicitly defining any environmental variables, creating a batch file, or any other hassle.</p>
 <p>You can do this easily by the following two commands:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:ed $HOME_vimrc
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:ed $HOME_vimrc
 </span></span><span style="display:flex;"><span>:sp $HOME_gvimrc
 </span></span></code></pre></div><p>That will open the two new configuration files, side by side, and you can paste in your existing configuration that you&rsquo;ve used in Linux, and windows will pick them up the next time you start VIM.</p>
 ]]></content:encoded>
@@ -737,28 +737,28 @@ One &amp;lsquo;Director&amp;rsquo; - which sends messages to the other component
 <p>This means that there will always be 2 weeks of incremental backups to fall back on which depend on a weekly differential which depends on a monthly full. This strategy aims to save as much space as possible - there is no redundancy. This means that if a backup fails, especially a monthly or weekly, it will have to be re-run immediately.</p>
 <p>The backup volumes will cycle using this method; they will be reused once the maxium volume limits are hit. Also, if you run a backup job from the console, it will revert to the &lsquo;Default&rsquo; pool, so you will have to explicitly define either the daily incremental, weekly differential or the monthly full pools.</p>
 <p>Here is my director configuration:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>Job {
-</span></span><span style="display:flex;"><span>  Name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Backup def&#34;</span>
-</span></span><span style="display:flex;"><span>  Type <span style="color:#f92672">=</span> Backup
-</span></span><span style="display:flex;"><span>  Client <span style="color:#f92672">=</span> localhost<span style="color:#f92672">-</span>fd
-</span></span><span style="display:flex;"><span>  FileSet <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Full Set&#34;</span>
-</span></span><span style="display:flex;"><span>  Storage <span style="color:#f92672">=</span> localhost<span style="color:#f92672">-</span>sd
-</span></span><span style="display:flex;"><span>  Schedule <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;BackupCycle&#34;</span>
-</span></span><span style="display:flex;"><span>  Messages <span style="color:#f92672">=</span> Standard
-</span></span><span style="display:flex;"><span>  Pool <span style="color:#f92672">=</span> Default
-</span></span><span style="display:flex;"><span>  Full Backup Pool <span style="color:#f92672">=</span> Full<span style="color:#f92672">-</span>Pool
-</span></span><span style="display:flex;"><span>  Incremental Backup Pool <span style="color:#f92672">=</span> Inc<span style="color:#f92672">-</span>Pool
-</span></span><span style="display:flex;"><span>  Differential Backup Pool <span style="color:#f92672">=</span> Diff<span style="color:#f92672">-</span>Pool
-</span></span><span style="display:flex;"><span>  Write Bootstrap <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/var/bacula/working/Client1.bsr&#34;</span>
-</span></span><span style="display:flex;"><span>  Priority <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>Job {
+</span></span><span style="display:flex;"><span>  Name <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;Backup def&#34;</span>
+</span></span><span style="display:flex;"><span>  Type <span style="color:#000;font-weight:bold">=</span> Backup
+</span></span><span style="display:flex;"><span>  Client <span style="color:#000;font-weight:bold">=</span> localhost<span style="color:#000;font-weight:bold">-</span>fd
+</span></span><span style="display:flex;"><span>  FileSet <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;Full Set&#34;</span>
+</span></span><span style="display:flex;"><span>  Storage <span style="color:#000;font-weight:bold">=</span> localhost<span style="color:#000;font-weight:bold">-</span>sd
+</span></span><span style="display:flex;"><span>  Schedule <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;BackupCycle&#34;</span>
+</span></span><span style="display:flex;"><span>  Messages <span style="color:#000;font-weight:bold">=</span> Standard
+</span></span><span style="display:flex;"><span>  Pool <span style="color:#000;font-weight:bold">=</span> Default
+</span></span><span style="display:flex;"><span>  Full Backup Pool <span style="color:#000;font-weight:bold">=</span> Full<span style="color:#000;font-weight:bold">-</span>Pool
+</span></span><span style="display:flex;"><span>  Incremental Backup Pool <span style="color:#000;font-weight:bold">=</span> Inc<span style="color:#000;font-weight:bold">-</span>Pool
+</span></span><span style="display:flex;"><span>  Differential Backup Pool <span style="color:#000;font-weight:bold">=</span> Diff<span style="color:#000;font-weight:bold">-</span>Pool
+</span></span><span style="display:flex;"><span>  Write Bootstrap <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;/var/bacula/working/Client1.bsr&#34;</span>
+</span></span><span style="display:flex;"><span>  Priority <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">10</span>
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Schedule {
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Schedule {
 </span></span><span style="display:flex;"><span>  Name = &#34;BackupCycle&#34;
 </span></span><span style="display:flex;"><span>  Run = Level=Full Pool=Full-Pool 1st mon at 1:05
 </span></span><span style="display:flex;"><span>  Run = Level=Differential Pool=Diff-Pool mon at 1:05
 </span></span><span style="display:flex;"><span>  Run = Level=Incremental Pool=Inc-Pool mon-sun at 1:05
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># This is the default backup stanza, which always gets overridden by one of the other Pools, except when a manual backup is performed via the console.
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># This is the default backup stanza, which always gets overridden by one of the other Pools, except when a manual backup is performed via the console.
 </span></span><span style="display:flex;"><span>Pool {
 </span></span><span style="display:flex;"><span>  Name = Default
 </span></span><span style="display:flex;"><span>  Pool Type = Backup
@@ -811,59 +811,59 @@ Firstly, you will need a subversion hook setup on post-commit. The post-commit h
       <content:encoded><![CDATA[<p>At work I&rsquo;ve written a couple of scripts that send out emails to the appropriate project team when someone checks in a commit to the project subversion repository. Here are the details.</p>
 <p>Firstly, you will need a subversion hook setup on post-commit. The post-commit hook needs to be located in SVNROOT/YOURPROJECT/hooks where YOURPROJECT is your svn project name, and SVNROOT is the root directory where you are storing the data files for your subversion repository.</p>
 <p>Substitute projectmember1,projectmember2 etc.. in the post-commit script below for the email addresses of the people to be notified when someone commits a change to the project.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/sh
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># POST-COMMIT HOOK</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># The post-commit hook is invoked after a commit.  Subversion runs</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># this hook by invoking a program (script, executable, binary, etc.)</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># named &#39;post-commit&#39; (for which this file is a template) with the</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># following ordered arguments:</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#   [1] REPOS-PATH   (the path to this repository)</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#   [2] REV          (the number of the revision just committed)</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># The default working directory for the invocation is undefined, so</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># the program should set one explicitly if it cares.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Because the commit has already completed and cannot be undone,</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># the exit code of the hook program is ignored.  The hook program</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># can use the &#39;svnlook&#39; utility to help it examine the</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># newly-committed tree.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># On a Unix system, the normal procedure is to have &#39;post-commit&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># invoke other programs to do the real work, though it may do the</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># work itself too.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Note that &#39;post-commit&#39; must be executable by the user(s) who will</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># invoke it (typically the user httpd runs as), and that user must</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># have filesystem-level permission to access the repository.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># On a Windows system, you should name the hook program</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># &#39;post-commit.bat&#39; or &#39;post-commit.exe&#39;,</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># but the basic idea is the same.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># The hook program typically does not inherit the environment of</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># its parent process.  For example, a common problem is for the</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># PATH environment variable to not be set to its usual value, so</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># that subprograms fail to launch unless invoked via absolute path.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># If you&#39;re having unexpected problems with a hook program, the</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># culprit may be unusual (or missing) environment variables.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Here is an example hook script, for a Unix /bin/sh interpreter.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># For more examples and pre-written hooks, see those in</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># the Subversion repository at</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># http://svn.collab.net/repos/svn/trunk/tools/hook-scripts/ and</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># http://svn.collab.net/repos/svn/trunk/contrib/hook-scripts/</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#!/bin/sh
+</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># POST-COMMIT HOOK</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># The post-commit hook is invoked after a commit.  Subversion runs</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># this hook by invoking a program (script, executable, binary, etc.)</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># named &#39;post-commit&#39; (for which this file is a template) with the</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># following ordered arguments:</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#   [1] REPOS-PATH   (the path to this repository)</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#   [2] REV          (the number of the revision just committed)</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># The default working directory for the invocation is undefined, so</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># the program should set one explicitly if it cares.</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Because the commit has already completed and cannot be undone,</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># the exit code of the hook program is ignored.  The hook program</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># can use the &#39;svnlook&#39; utility to help it examine the</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># newly-committed tree.</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># On a Unix system, the normal procedure is to have &#39;post-commit&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># invoke other programs to do the real work, though it may do the</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># work itself too.</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Note that &#39;post-commit&#39; must be executable by the user(s) who will</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># invoke it (typically the user httpd runs as), and that user must</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># have filesystem-level permission to access the repository.</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># On a Windows system, you should name the hook program</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># &#39;post-commit.bat&#39; or &#39;post-commit.exe&#39;,</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># but the basic idea is the same.</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># The hook program typically does not inherit the environment of</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># its parent process.  For example, a common problem is for the</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># PATH environment variable to not be set to its usual value, so</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># that subprograms fail to launch unless invoked via absolute path.</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># If you&#39;re having unexpected problems with a hook program, the</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># culprit may be unusual (or missing) environment variables.</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Here is an example hook script, for a Unix /bin/sh interpreter.</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># For more examples and pre-written hooks, see those in</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># the Subversion repository at</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># http://svn.collab.net/repos/svn/trunk/tools/hook-scripts/ and</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># http://svn.collab.net/repos/svn/trunk/contrib/hook-scripts/</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>REPOS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>REV<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$2<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>EMAILS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;projectmember1email,projectmember2email,projectmember3email,projectmember4email&#34;</span>
-</span></span><span style="display:flex;"><span>LOG<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;svnlook log </span>$REPOS<span style="color:#e6db74"> -r</span>$REV<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>/usr/bin/python /usr/local/scripts/svncommitemail.py $EMAILS $REPOS <span style="color:#e6db74">`</span>whoami<span style="color:#e6db74">`</span> $REV <span style="color:#e6db74">&#34;`</span>$LOG<span style="color:#e6db74">`&#34;</span> &gt; /tmp/svncommitemail.log
+</span></span><span style="display:flex;"><span><span style="color:#008080">REPOS</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;</span><span style="color:#008080">$1</span><span style="color:#d14">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008080">REV</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;</span><span style="color:#008080">$2</span><span style="color:#d14">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008080">EMAILS</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;projectmember1email,projectmember2email,projectmember3email,projectmember4email&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008080">LOG</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;svnlook log </span><span style="color:#008080">$REPOS</span><span style="color:#d14"> -r</span><span style="color:#008080">$REV</span><span style="color:#d14">&#34;</span>
+</span></span><span style="display:flex;"><span>/usr/bin/python /usr/local/scripts/svncommitemail.py <span style="color:#008080">$EMAILS</span> <span style="color:#008080">$REPOS</span> <span style="color:#d14">`</span>whoami<span style="color:#d14">`</span> <span style="color:#008080">$REV</span> <span style="color:#d14">&#34;`</span><span style="color:#008080">$LOG</span><span style="color:#d14">`&#34;</span> &gt; /tmp/svncommitemail.log
 </span></span></code></pre></div><p>Secondly you will need this python script:</p>
 <p>Edit the &lsquo;fromaddr&rsquo; variable to equal your configuration manager&rsquo;s email address (probably your own!).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>#!/usr/bin/env python
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>#!/usr/bin/env python
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>import smtplib
 </span></span><span style="display:flex;"><span>import sys
@@ -935,16 +935,16 @@ If you are ever in this situation, I suggest you handle everything as UTF-8. Tha
 [mysqld] .. default-character-set=utf8 skip-character-set-client-handshake If you already have tables in your database that you have created, and they have defaulted to the latin1 charset, you&amp;rsquo;ll be able to tell by looking at the mysqldump SQL:</description>
       <content:encoded><![CDATA[<p>For some reason, under ubuntu-server, my default MySQL 5 character encoding was latin1. This caused no end of problems with grabbing data from the web, which was not necessarily in latin1 characterset.</p>
 <p>If you are ever in this situation, I suggest you handle everything as UTF-8. That means setting the following lines in my.cnf:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>[mysqld]
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>[mysqld]
 </span></span><span style="display:flex;"><span>..
 </span></span><span style="display:flex;"><span>default-character-set=utf8
 </span></span><span style="display:flex;"><span>skip-character-set-client-handshake
 </span></span></code></pre></div><p>If you already have tables in your database that you have created, and they have defaulted to the latin1 charset, you&rsquo;ll be able to tell by looking at the mysqldump SQL:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mysql" data-lang="mysql"><span style="display:flex;"><span><span style="color:#66d9ef">DROP</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">IF</span> <span style="color:#66d9ef">EXISTS</span> <span style="color:#f92672">`</span>ARTISTS<span style="color:#f92672">`</span>;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#f92672">`</span>ARTISTS<span style="color:#f92672">`</span> (
-</span></span><span style="display:flex;"><span>.. some col declarations..
-</span></span><span style="display:flex;"><span>) <span style="color:#66d9ef">ENGINE</span><span style="color:#f92672">=</span>MyISAM <span style="color:#66d9ef">AUTO_INCREMENT</span><span style="color:#f92672">=</span><span style="color:#ae81ff">4519</span> <span style="color:#66d9ef">DEFAULT</span> <span style="color:#66d9ef">CHARSET</span><span style="color:#f92672">=</span>latin1;
-</span></span></code></pre></div><p>See here this artists table has been set to default charset of latin1 by mysql. This is bad. So what I recommend is:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mysql" data-lang="mysql"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">DROP</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">TABLE</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">IF</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">EXISTS</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">`</span>ARTISTS<span style="color:#000;font-weight:bold">`</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">CREATE</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">TABLE</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">`</span>ARTISTS<span style="color:#000;font-weight:bold">`</span><span style="color:#bbb"> </span>(<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>..<span style="color:#bbb"> </span>some<span style="color:#bbb"> </span>col<span style="color:#bbb"> </span>declarations..<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>)<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">ENGINE</span><span style="color:#000;font-weight:bold">=</span>MyISAM<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">AUTO_INCREMENT</span><span style="color:#000;font-weight:bold">=</span><span style="color:#099">4519</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">DEFAULT</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">CHARSET</span><span style="color:#000;font-weight:bold">=</span>latin1;<span style="color:#bbb">
+</span></span></span></code></pre></div><p>See here this artists table has been set to default charset of latin1 by mysql. This is bad. So what I recommend is:</p>
 <p>1. Dump the full database structure + data to a file using mysqldump
 2. Substitute &rsquo;latin1&rsquo; for &lsquo;utf8&rsquo; universally on that file using your favourite text editor
 3. Import the resultant file into mysql using the mysql -uroot -p -Dyourdb &lt; dump.sql method</p>

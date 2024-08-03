@@ -230,22 +230,22 @@ function toggleThemeListener() {
 
   <div class="post-content"><p>I wrote this list to remind me, as a newcomer to OSX, how the command line differed from the Linux commandline. I thought I&rsquo;d expand on it, and share it:</p>
 <p><strong>To mount any iso:</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>hdiutil mount sample.iso
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>hdiutil mount sample.iso
 </span></span></code></pre></div><p><strong>To download a file as you would using wget:</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>curl http://ftp.heanet.ie/pub/linuxmint.com/stable/8/LinuxMint-8.iso -o linuxmint.iso -C -
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>curl http://ftp.heanet.ie/pub/linuxmint.com/stable/8/LinuxMint-8.iso -o linuxmint.iso -C -
 </span></span></code></pre></div><p>the -o specifies the output file (required)
 the -C - specifies automatically resuming if possible.</p>
 <p><strong>To burn a bootable iso to CD, DVD or USB key:</strong>
 use the &ldquo;diskutil&rdquo; program as described in: <a href="http://forums.macrumors.com/showthread.php?t=598291">http://forums.macrumors.com/showthread.php?t=598291</a> <strong>Monitor disk io utilisation.. poll once per second</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>iostat -c 99999
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>iostat -c 99999
 </span></span></code></pre></div><p>will run until 99999 seconds have passed.</p>
 <p><strong>Monitor CPU and memory utilisation.. polling per second</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>top
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>top
 </span></span></code></pre></div><p>Just like Linux.</p>
 <p><strong>Mount Windows Shares</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>mount -t smbfs //@/
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>mount -t smbfs //@/
 </span></span></code></pre></div><p>ie:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>mount -t smbfs //davec@SERVER/Dev samba-to-netdev
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>mount -t smbfs //davec@SERVER/Dev samba-to-netdev
 </span></span></code></pre></div><p>then it will appear mounted in /Volumes with the mount point name you supplied, ie: /Volumes/samba-to-netdev/.</p>
 
   </div>

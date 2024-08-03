@@ -23,14 +23,14 @@ If you want 256 color VIM for your root user when you sudo edit, then edit /usr/
 <ol>
 <li>
 <p>Add to ~/.bashrc</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> TERM<span style="color:#f92672">=</span>xterm<span style="color:#f92672">-</span><span style="color:#ae81ff">256</span>color
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> TERM<span style="color:#000;font-weight:bold">=</span>xterm<span style="color:#000;font-weight:bold">-</span><span style="color:#099">256</span>color
 </span></span></code></pre></div></li>
 <li>
 <p>Install a 256 color VIM colorcheme, see <a href="http://www.vim.org/scripts/script.php?script_id=1243">desert256 for example</a>.</p>
 </li>
 <li>
 <p>Add the following to ~/.vimrc:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>set t_Co=256
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>set t_Co=256
 </span></span><span style="display:flex;"><span>set t_AB=^[[48;5;%dm
 </span></span><span style="display:flex;"><span>set t_AF=^[[38;5;%dm
 </span></span></code></pre></div><p>&rsquo;t_Co&rsquo; specifies exactly how many colours VIM can use. The other two lines seem to be Debian-specific color code escape sequences.</p>
@@ -53,9 +53,9 @@ First I figure out whether VIM is really installed. A lot of installs, especiall
       <content:encoded><![CDATA[<p>This is the absolute minimum I do when I have to log onto a new server or shell account that I haven&rsquo;t used before, that I will need to edit text files with.</p>
 <p>First I figure out whether VIM is really installed. A lot of installs, especially those based on ubuntu, ship with VI aliased to VIM, but the VIM install is usually not really VIM at all, and behaves exactly like VI but with some minor bugs fixed. This is not what I want.</p>
 <p>So first I figure out what distribution of linux I&rsquo;m using through executing the following command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>cat /etc/issue
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>cat /etc/issue
 </span></span></code></pre></div><p>Then if it&rsquo;s ubuntu, which doesn&rsquo;t ship with the full VIM package on a lot of default installs, then I usually do this, presuming I have admin access. In practice I usually have admin access because people are generous with this when they want you to fix their server =) Anyway, if I have admin access, I install ubuntu&rsquo;s &lsquo;vim full&rsquo; package, which is aliased as &lsquo;vim&rsquo;:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo apt-get install vim
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo apt-get install vim
 </span></span></code></pre></div><p>Now I can move onto my config. Occasionally there will be a global system config, but I probably want to override that anyway. So I create a vim configuration file specific to me in my home directory:</p>
 <p>/home/david/.vimrc
 <code>set bg=dark set backspace=2 </code></p>

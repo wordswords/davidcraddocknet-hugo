@@ -223,7 +223,7 @@ function toggleThemeListener() {
   </header> 
 
   <div class="post-content"><p>Here is some python code I adapted from <a href="http://stackoverflow.com/questions/396913/in-python-how-do-i-find-the-date-of-the-first-monday-of-a-given-week">this stackoverflow post</a> to get the first day of a week specificed by a week number. This method includes leap year and summer time differences.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>import time
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>import time
 </span></span><span style="display:flex;"><span>def weeknum(num,year):
 </span></span><span style="display:flex;"><span>	instr = str(year)+&#34; &#34;+str(num-1)+&#34; 1&#34;
 </span></span><span style="display:flex;"><span>	print time.asctime(time.strptime(instr,&#39;%Y %W %w&#39;))

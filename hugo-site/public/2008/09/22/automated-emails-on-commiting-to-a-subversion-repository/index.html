@@ -222,59 +222,59 @@ function toggleThemeListener() {
   <div class="post-content"><p>At work I&rsquo;ve written a couple of scripts that send out emails to the appropriate project team when someone checks in a commit to the project subversion repository. Here are the details.</p>
 <p>Firstly, you will need a subversion hook setup on post-commit. The post-commit hook needs to be located in SVNROOT/YOURPROJECT/hooks where YOURPROJECT is your svn project name, and SVNROOT is the root directory where you are storing the data files for your subversion repository.</p>
 <p>Substitute projectmember1,projectmember2 etc.. in the post-commit script below for the email addresses of the people to be notified when someone commits a change to the project.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/sh
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># POST-COMMIT HOOK</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># The post-commit hook is invoked after a commit.  Subversion runs</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># this hook by invoking a program (script, executable, binary, etc.)</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># named &#39;post-commit&#39; (for which this file is a template) with the</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># following ordered arguments:</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#   [1] REPOS-PATH   (the path to this repository)</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#   [2] REV          (the number of the revision just committed)</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># The default working directory for the invocation is undefined, so</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># the program should set one explicitly if it cares.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Because the commit has already completed and cannot be undone,</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># the exit code of the hook program is ignored.  The hook program</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># can use the &#39;svnlook&#39; utility to help it examine the</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># newly-committed tree.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># On a Unix system, the normal procedure is to have &#39;post-commit&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># invoke other programs to do the real work, though it may do the</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># work itself too.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Note that &#39;post-commit&#39; must be executable by the user(s) who will</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># invoke it (typically the user httpd runs as), and that user must</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># have filesystem-level permission to access the repository.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># On a Windows system, you should name the hook program</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># &#39;post-commit.bat&#39; or &#39;post-commit.exe&#39;,</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># but the basic idea is the same.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># The hook program typically does not inherit the environment of</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># its parent process.  For example, a common problem is for the</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># PATH environment variable to not be set to its usual value, so</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># that subprograms fail to launch unless invoked via absolute path.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># If you&#39;re having unexpected problems with a hook program, the</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># culprit may be unusual (or missing) environment variables.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Here is an example hook script, for a Unix /bin/sh interpreter.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># For more examples and pre-written hooks, see those in</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># the Subversion repository at</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># http://svn.collab.net/repos/svn/trunk/tools/hook-scripts/ and</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># http://svn.collab.net/repos/svn/trunk/contrib/hook-scripts/</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">#!/bin/sh
+</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># POST-COMMIT HOOK</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># The post-commit hook is invoked after a commit.  Subversion runs</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># this hook by invoking a program (script, executable, binary, etc.)</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># named &#39;post-commit&#39; (for which this file is a template) with the</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># following ordered arguments:</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#   [1] REPOS-PATH   (the path to this repository)</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#   [2] REV          (the number of the revision just committed)</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># The default working directory for the invocation is undefined, so</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># the program should set one explicitly if it cares.</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Because the commit has already completed and cannot be undone,</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># the exit code of the hook program is ignored.  The hook program</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># can use the &#39;svnlook&#39; utility to help it examine the</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># newly-committed tree.</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># On a Unix system, the normal procedure is to have &#39;post-commit&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># invoke other programs to do the real work, though it may do the</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># work itself too.</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Note that &#39;post-commit&#39; must be executable by the user(s) who will</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># invoke it (typically the user httpd runs as), and that user must</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># have filesystem-level permission to access the repository.</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># On a Windows system, you should name the hook program</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># &#39;post-commit.bat&#39; or &#39;post-commit.exe&#39;,</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># but the basic idea is the same.</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># The hook program typically does not inherit the environment of</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># its parent process.  For example, a common problem is for the</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># PATH environment variable to not be set to its usual value, so</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># that subprograms fail to launch unless invoked via absolute path.</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># If you&#39;re having unexpected problems with a hook program, the</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># culprit may be unusual (or missing) environment variables.</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Here is an example hook script, for a Unix /bin/sh interpreter.</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># For more examples and pre-written hooks, see those in</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># the Subversion repository at</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># http://svn.collab.net/repos/svn/trunk/tools/hook-scripts/ and</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># http://svn.collab.net/repos/svn/trunk/contrib/hook-scripts/</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>REPOS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>REV<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$2<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>EMAILS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;projectmember1email,projectmember2email,projectmember3email,projectmember4email&#34;</span>
-</span></span><span style="display:flex;"><span>LOG<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;svnlook log </span>$REPOS<span style="color:#e6db74"> -r</span>$REV<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>/usr/bin/python /usr/local/scripts/svncommitemail.py $EMAILS $REPOS <span style="color:#e6db74">`</span>whoami<span style="color:#e6db74">`</span> $REV <span style="color:#e6db74">&#34;`</span>$LOG<span style="color:#e6db74">`&#34;</span> &gt; /tmp/svncommitemail.log
+</span></span><span style="display:flex;"><span><span style="color:#008080">REPOS</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;</span><span style="color:#008080">$1</span><span style="color:#d14">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008080">REV</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;</span><span style="color:#008080">$2</span><span style="color:#d14">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008080">EMAILS</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;projectmember1email,projectmember2email,projectmember3email,projectmember4email&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008080">LOG</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;svnlook log </span><span style="color:#008080">$REPOS</span><span style="color:#d14"> -r</span><span style="color:#008080">$REV</span><span style="color:#d14">&#34;</span>
+</span></span><span style="display:flex;"><span>/usr/bin/python /usr/local/scripts/svncommitemail.py <span style="color:#008080">$EMAILS</span> <span style="color:#008080">$REPOS</span> <span style="color:#d14">`</span>whoami<span style="color:#d14">`</span> <span style="color:#008080">$REV</span> <span style="color:#d14">&#34;`</span><span style="color:#008080">$LOG</span><span style="color:#d14">`&#34;</span> &gt; /tmp/svncommitemail.log
 </span></span></code></pre></div><p>Secondly you will need this python script:</p>
 <p>Edit the &lsquo;fromaddr&rsquo; variable to equal your configuration manager&rsquo;s email address (probably your own!).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>#!/usr/bin/env python
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>#!/usr/bin/env python
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>import smtplib
 </span></span><span style="display:flex;"><span>import sys

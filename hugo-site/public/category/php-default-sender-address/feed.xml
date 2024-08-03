@@ -18,7 +18,7 @@ When you send emails to users of your site through using the PHP mail() function
 From: Root &amp;lt;root@apache.ecommercecompany.com&amp;gt; This makes absolutely no sense to your customers, and often they will think it is spam and delete it.</description>
       <content:encoded><![CDATA[<p>I&rsquo;ve had to solve this problem a couple of times at least, and it&rsquo;s quite a common task, so I thought I&rsquo;d document it here.</p>
 <p>When you send emails to users of your site through using the PHP mail() function, they will sometimes turn up in the mailbox of customers of your site with the following from address:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>From: Root &lt;root@apache.ecommercecompany.com&gt;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>From: Root &lt;root@apache.ecommercecompany.com&gt;
 </span></span></code></pre></div><p>This makes absolutely no sense to your customers, and often they will think it is spam and delete it. Often, the decision will be made for them by their web mail host, such as hotmail.com or googlemail.com, and they will never even see the email. You don&rsquo;t want this to happen.</p>
 <p>Writing email templates that appear &ldquo;trustworthy&rdquo; and have a low chance of being mislabled as spam by the webmail companies, is quite a difficult task, and there&rsquo;s quite a bit to know about it. However it is quite easy to change the default &ldquo;From:&rdquo; email address that PHP sends your emails on as, and that will definitely help.</p>
 <p>Assuming you&rsquo;re running a linux server using sendmail, all you have to do is this.</p>
@@ -29,7 +29,7 @@ From: Root &amp;lt;root@apache.ecommercecompany.com&amp;gt; This makes absolutel
 <p>Broken down, those extra options are:
 <code>-F 'customer-emails' # the name of the sender -f 'Customer Emails &lt;customer-emails@ecommercecompany.com&gt;' # the email From header, which should have the name matching the email address, and it should be the same email address as above </code></p>
 <p>Then restart apache, and it should load the php.ini file changes. Test it by sending a couple of emails to your email address, and you should see emails sent out like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>From: Customer Emails &lt;customer-emails@ecommercecompany.com&gt;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>From: Customer Emails &lt;customer-emails@ecommercecompany.com&gt;
 </span></span></code></pre></div>]]></content:encoded>
     </item>
     

@@ -33,7 +33,7 @@ ical.php – this contains the class ical which corresponds to a single calendar
 <li><strong>iCalcreator 2.8</strong> – this is used for creating the output iCal format of the calendar in ical.php and outputting it to the browser in reader.php.</li>
 </ul>
 <p><strong>Files</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>init();
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>init();
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	function init(){
@@ -76,10 +76,10 @@ ical.php – this contains the class ical which corresponds to a single calendar
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>?&gt;
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>forecasts = new ArrayObject();
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>forecasts = new ArrayObject();
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>scrapecurrent();
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>scrapecurrent();
 </span></span><span style="display:flex;"><span>		$this-&gt;store();
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>
@@ -141,7 +141,7 @@ ical.php – this contains the class ical which corresponds to a single calendar
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>$s = new scrape3day();
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>&lt;?php
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>&lt;?php
 </span></span><span style="display:flex;"><span>require_once(&#39;ical.php&#39;);
 </span></span><span style="display:flex;"><span>require_once(&#39;forecast.php&#39;);
 </span></span><span style="display:flex;"><span>
@@ -157,9 +157,9 @@ ical.php – this contains the class ical which corresponds to a single calendar
 <p>If you have subversion, you can check out the project from: <a href="http://svn.davidcraddock.net/weather-services/">http://svn.davidcraddock.net/weather-services/</a>. There are a couple extra files in that directory for my automated freezing weather alerts, but you can safely ignore those.</p>
 <p><strong>Installation</strong></p>
 <p>You will have to add this entry to your crontab to run once per day. You could set the script to run at midnight through adding the following:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>0 0 * * *
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>0 0 * * *
 </span></span></code></pre></div><p>For example, in my case:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>0 0 * * * /usr/local/bin/php /home/david_craddock/work.davidcraddock.net/weather/scrape-weather.php
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>0 0 * * * /usr/local/bin/php /home/david_craddock/work.davidcraddock.net/weather/scrape-weather.php
 </span></span></code></pre></div><p>You will then need to edit the contents of the $store_path and $feed_url variables in scrape-weather.php. Store_path should refer to a file path that the web server can create and edit files in, and feed_url should refer to the RSS feed of your local area that you have copied and pasted from the <a href="http://news.bbc.co.uk/weather/">http://news.bbc.co.uk/weather/</a> site, don&rsquo;t use mine because your area is likely different. After that, you&rsquo;re set to go.</p>
 ]]></content:encoded>
     </item>

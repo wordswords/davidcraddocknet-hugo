@@ -220,7 +220,7 @@ function toggleThemeListener() {
   </header> 
 
   <div class="post-content"><p>You use the &rsquo;touch&rsquo; command to create two blank files, with a last modified date that you specify - one with a date of the start of the range you want to specify, and the second with a date at the end of the range you want to specify. Then you reference to those two files in your find command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>touch /tmp/temp -t 200604141130
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>touch /tmp/temp -t 200604141130
 </span></span><span style="display:flex;"><span>touch /tmp/ntemp -t 200604261630
 </span></span><span style="display:flex;"><span>find /data/ -cnewer /tmp/temp -and ! -cnewer /tmp/ntemp
 </span></span></code></pre></div>

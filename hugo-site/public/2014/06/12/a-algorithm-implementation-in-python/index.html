@@ -220,7 +220,7 @@ function toggleThemeListener() {
 <p>Lately I&rsquo;ve had the idea of creating a text-based <a href="http://en.wikipedia.org/wiki/Roguelike">Roguelike</a> in C++. This lead me on to think about the game AI experiments that I worked during my degree in <a href="http://www.sussex.ac.uk/informatics/">Computer Science and A.I.</a>. Essential to game AI is the notion of pathfinding, or finding a path from &lsquo;A&rsquo; to &lsquo;B&rsquo;, past any obstacles that get in the way. One way to do this is to use the A* algorithm. I decided to implement an A* pathfinding algorithm for possible use in a Roguelike later, and chose <a href="http://en.wikipedia.org/wiki/A*_search_algorithm">the pseudocode from the Wikipedia example</a> to implement.</p>
 <p>The program finds a path from the top right hand corner to the top left, avoiding impassable &lsquo;7&rsquo; obstacles. The &lsquo;*&rsquo; are the steps along the path. The algorithm is guaranteed to find the shortest path between the goal and the start, which means it can optimally solve any solvable maze, given time.</p>
 <p>This is a sample board with obstacles setup:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
 </span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
 </span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
 </span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
@@ -271,7 +271,7 @@ function toggleThemeListener() {
 </span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
 </span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
 </span></span></code></pre></div><p>This is the path found (the &lsquo;*&rsquo;s):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>**000000000000000000000000000000000000000000000000
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>**000000000000000000000000000000000000000000000000
 </span></span><span style="display:flex;"><span>0***********************************00000000000000
 </span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
 </span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000

@@ -25,7 +25,7 @@ markup:
   highlight:
     codeFences: true
     guessSyntax: true
-    style: monokai
+    style: github
 outputs:
   home:
     - HTML

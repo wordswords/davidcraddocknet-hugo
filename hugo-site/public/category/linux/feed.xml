@@ -38,20 +38,20 @@ chmod a+r /etc/udev/rules.d/51-android.rules 3. Reload the rules by executing th
       <content:encoded><![CDATA[<p>I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.</p>
 <p>First I needed to setup the udev rules:</p>
 <p>1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>SUBSYSTEM==&#34;usb&#34;, ATTRS{idVendor}==&#34;1949&#34;, MODE=&#34;0666&#34;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>SUBSYSTEM==&#34;usb&#34;, ATTRS{idVendor}==&#34;1949&#34;, MODE=&#34;0666&#34;
 </span></span></code></pre></div><p>2. Change the permission of this file by executing the following command as root:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>chmod a+r /etc/udev/rules.d/51-android.rules
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>chmod a+r /etc/udev/rules.d/51-android.rules
 </span></span></code></pre></div><p>3. Reload the rules by executing the following command as root:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>udevadm control <span style="color:#f92672">--</span>reload<span style="color:#f92672">-</span>rules
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>udevadm control <span style="color:#000;font-weight:bold">--</span>reload<span style="color:#000;font-weight:bold">-</span>rules
 </span></span></code></pre></div><p>4. Run these commands to restart adb:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>adb kill-server
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>adb kill-server
 </span></span><span style="display:flex;"><span>adb start-server
 </span></span></code></pre></div><p>5. Now when I run</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>lsusb
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>lsusb
 </span></span></code></pre></div><p>I can see the device listed.</p>
 <p>6. Next I needed to enable adb access on the Kindlefire HDX device itself by going to <strong>Settings -&gt; Device -&gt; Enable ADB</strong>.</p>
 <p>7. Finally I could run:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>adb devices
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>adb devices
 </span></span></code></pre></div><p>within Ubuntu and have it recognise the Kindlefire HDX.</p>
 ]]></content:encoded>
     </item>
@@ -68,9 +68,9 @@ Those stray backup files make directory listings confusing, and also add unneces
 <p>Those stray backup files make directory listings confusing, and also add unnecessary weight to the commits on source control systems such as svn, cvs, git.. etc. If you&rsquo;re working on a programming team with other people, then it causes further problems and confusion, because person A&rsquo;s editor can accidentally load person B&rsquo;s backup file.. etc etc. Nightmare.</p>
 <p>So instruct your editor, or the programming team you&rsquo;re working with, not to drop these backup files. You can configure most editors to change the place where the editor drops its backup files, so you could store all your backup files in a subdirectory of your home directory, for example, if needed. However I always set my editors not to leave backup files about.</p>
 <p>Once you know that new backup files will not be created, view the current list of backup files, along with the user that created them.. so you know who&rsquo;s been creating the backup files and when, etc:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>find . -name &#39;*~&#39; -type f -exec ls -al {}  ;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>find . -name &#39;*~&#39; -type f -exec ls -al {}  ;
 </span></span></code></pre></div><p>Then archive the stray backup files, with this command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>find . -name &#39;*~&#39; -type f -exec mv -i {} ./archived-backups ;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>find . -name &#39;*~&#39; -type f -exec mv -i {} ./archived-backups ;
 </span></span></code></pre></div><p>That will find all backup files in the current directory and below, and move them all to a subdirectory in the current directory called &lsquo;archived-backups&rsquo;. This is a fairly safe find/exec command, because with the -i switch, mv will not &lsquo;clobber&rsquo;. This means If you have two backup files, one in /opt/code/index~ and one in /opt/code/bla/bla/index~, they will not &lsquo;clobber&rsquo;, or overwrite each other automatically when moved into the new directory. You will be informed of any conflicts present so you can resolve them yourself.</p>
 <p>However in practice I usually omit the &lsquo;-i&rsquo; switch and let them clobber each other, because I usually end up deleting the ./archived-backups/ directory very quickly after that anyway.</p>
 ]]></content:encoded>

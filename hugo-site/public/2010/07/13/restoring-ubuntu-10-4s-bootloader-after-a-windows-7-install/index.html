@@ -221,37 +221,37 @@ function toggleThemeListener() {
 
   <div class="post-content"><p>I installed Windows 7 after I had installed Ubuntu 10.4. Windows 7 overwrote the Linux bootloader &ldquo;grub&rdquo; on my master boot record. Therefore I had to restore it.</p>
 <p>I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under the LiveCD, I then restored the Grub bootloader by chrooting into my old install, using the linux command line. This is a fairly complex thing to do, and so I recommend you use this approach only if you&rsquo;re are confident with the linux command line:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#75715e"># (as root under Ubuntu&#39;s LiveCD)</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># (as root under Ubuntu&#39;s LiveCD)</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># prepare chroot directory</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># prepare chroot directory</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>mkdir <span style="color:#f92672">/</span>chroot
-</span></span><span style="display:flex;"><span>d<span style="color:#f92672">=/</span>chroot
+</span></span><span style="display:flex;"><span>mkdir <span style="color:#000;font-weight:bold">/</span>chroot
+</span></span><span style="display:flex;"><span>d<span style="color:#000;font-weight:bold">=/</span>chroot
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># mount my linux partition</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># mount my linux partition</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>mount <span style="color:#f92672">/</span>dev<span style="color:#f92672">/</span>sda1 <span style="color:#f92672">$</span>d   <span style="color:#75715e"># my linux partition was installed on my first SATA hard disk, on the first parition (hence sdA1).</span>
+</span></span><span style="display:flex;"><span>mount <span style="color:#000;font-weight:bold">/</span>dev<span style="color:#000;font-weight:bold">/</span>sda1 <span style="color:#000;font-weight:bold">$</span>d   <span style="color:#998;font-style:italic"># my linux partition was installed on my first SATA hard disk, on the first parition (hence sdA1).</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># mount system directories inside the new chroot directory</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># mount system directories inside the new chroot directory</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>mount <span style="color:#f92672">-</span>o bind <span style="color:#f92672">/</span>dev <span style="color:#f92672">$</span>d<span style="color:#f92672">/</span>dev
-</span></span><span style="display:flex;"><span>mount <span style="color:#f92672">-</span>o bind <span style="color:#f92672">/</span>sys <span style="color:#f92672">$</span>d<span style="color:#f92672">/</span>sys
-</span></span><span style="display:flex;"><span>mount <span style="color:#f92672">-</span>o bind <span style="color:#f92672">/</span>dev<span style="color:#f92672">/</span>shm <span style="color:#f92672">$</span>d<span style="color:#f92672">/</span>dev<span style="color:#f92672">/</span>shm
-</span></span><span style="display:flex;"><span>mount <span style="color:#f92672">-</span>o bind <span style="color:#f92672">/</span>proc <span style="color:#f92672">$</span>d<span style="color:#f92672">/</span>proc
+</span></span><span style="display:flex;"><span>mount <span style="color:#000;font-weight:bold">-</span>o bind <span style="color:#000;font-weight:bold">/</span>dev <span style="color:#000;font-weight:bold">$</span>d<span style="color:#000;font-weight:bold">/</span>dev
+</span></span><span style="display:flex;"><span>mount <span style="color:#000;font-weight:bold">-</span>o bind <span style="color:#000;font-weight:bold">/</span>sys <span style="color:#000;font-weight:bold">$</span>d<span style="color:#000;font-weight:bold">/</span>sys
+</span></span><span style="display:flex;"><span>mount <span style="color:#000;font-weight:bold">-</span>o bind <span style="color:#000;font-weight:bold">/</span>dev<span style="color:#000;font-weight:bold">/</span>shm <span style="color:#000;font-weight:bold">$</span>d<span style="color:#000;font-weight:bold">/</span>dev<span style="color:#000;font-weight:bold">/</span>shm
+</span></span><span style="display:flex;"><span>mount <span style="color:#000;font-weight:bold">-</span>o bind <span style="color:#000;font-weight:bold">/</span>proc <span style="color:#000;font-weight:bold">$</span>d<span style="color:#000;font-weight:bold">/</span>proc
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># accomplish the chroot</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># accomplish the chroot</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>chroot <span style="color:#f92672">$</span>d
+</span></span><span style="display:flex;"><span>chroot <span style="color:#000;font-weight:bold">$</span>d
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># proceed to update the grub config file to include the option to boot into my new windows 7 install</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># proceed to update the grub config file to include the option to boot into my new windows 7 install</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>update<span style="color:#f92672">-</span>grub
+</span></span><span style="display:flex;"><span>update<span style="color:#000;font-weight:bold">-</span>grub
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># install grub with the new configuration options from the config file, to the master boot record on my first hard disk</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># install grub with the new configuration options from the config file, to the master boot record on my first hard disk</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>grub<span style="color:#f92672">-</span>install <span style="color:#f92672">/</span>dev<span style="color:#f92672">/</span>sda
+</span></span><span style="display:flex;"><span>grub<span style="color:#000;font-weight:bold">-</span>install <span style="color:#000;font-weight:bold">/</span>dev<span style="color:#000;font-weight:bold">/</span>sda
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># close down the liveCD instance of linux, and boot from the newly restored grub bootloader</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># close down the liveCD instance of linux, and boot from the newly restored grub bootloader</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>reboot
 </span></span></code></pre></div>
