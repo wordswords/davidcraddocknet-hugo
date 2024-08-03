@@ -8,19 +8,20 @@
 <title>Monitoring a Slow Internet Connection in OSX | DavidCraddock.net</title>
 <meta name="keywords" content="">
 <meta name="description" content="I am currently on holiday in Tenerife, and although I really like it here, one thing I do not like is the internet connection we have in our resort. Sometimes networked applications will just hang with no warning and there will be minutes where it&rsquo;s not clear what is going on. Here are some ways you can find a little bit more about what is happening when an application is slow or seems to hang when you have a poor internet connection.">
-<meta name="author" content="">
+<meta name="author" content="Reorx">
 <link rel="canonical" href="http://davidcraddock.net/2013/03/01/monitoring-a-slow-internet-connection-in-osx/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.7da7716a1f2d0725f74c6ae7f8d6adafc43aabe2b366b65bfbf433448e2a2001.css" integrity="sha256-fadxah8tByX3TGrn&#43;Natr8Q6q&#43;KzZrZb&#43;/QzRI4qIAE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.97d99fcdd90c38f6e3343e959a97a0295b30f590730a4ece2347f7f24ad997d1.css" integrity="sha256-l9mfzdkMOPbjND6VmpegKVsw9ZBzCk7OI0f38krZl9E=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://davidcraddock.net/favicon.ico">
 <link rel="apple-touch-icon" href="http://davidcraddock.net/apple-touch-icon.png">
 <link rel="alternate" hreflang="en" href="http://davidcraddock.net/2013/03/01/monitoring-a-slow-internet-connection-in-osx/">
-
+<meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Monitoring a Slow Internet Connection in OSX | DavidCraddock.net" />
 <meta name="twitter:description" content="I am currently on holiday in Tenerife, and although I really like it here, one thing I do not like is the internet connection we have in our resort. Sometimes networked applications will just hang with no warning and there will be minutes where it&rsquo;s not clear what is going on. Here are some ways you can find a little bit more about what is happening when an application is slow or seems to hang when you have a poor internet connection." />
 <meta property="og:title" content="Monitoring a Slow Internet Connection in OSX | DavidCraddock.net" />
 <meta property="og:description" content="I am currently on holiday in Tenerife, and although I really like it here, one thing I do not like is the internet connection we have in our resort. Sometimes networked applications will just hang with no warning and there will be minutes where it&rsquo;s not clear what is going on. Here are some ways you can find a little bit more about what is happening when an application is slow or seems to hang when you have a poor internet connection." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://davidcraddock.net/2013/03/01/monitoring-a-slow-internet-connection-in-osx/" />
+    <meta property="og:image" content="http://davidcraddock.net/cover.png"/>
 <meta property="article:section" content="posts" />
   <meta property="article:published_time" content="2013-03-01T01:28:54&#43;00:00" />
   <meta property="article:modified_time" content="2013-03-01T01:28:54&#43;00:00" />
@@ -60,6 +61,10 @@
   "inLanguage": "en",
   "datePublished": "2013-03-01T01:28:54Z",
   "dateModified": "2013-03-01T01:28:54Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Reorx"
+  }],
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "http://davidcraddock.net/2013/03/01/monitoring-a-slow-internet-connection-in-osx/"
@@ -200,7 +205,9 @@ function toggleThemeListener() {
     <div class="breadcrumbs"><a href="http://davidcraddock.net/">Home</a>&nbsp;»&nbsp;<a href="http://davidcraddock.net/posts/">Posts</a></div><h1 class="post-title">Monitoring a Slow Internet Connection in OSX</h1>
     <div class="post-meta"><span class="meta-item">
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>March 1, 2013</span></span><span class="meta-item">
+  <span>2013-03-01</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
+  <span>625 words</span></span><span class="meta-item">
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
   <span>3 min</span></span>
 
@@ -208,7 +215,7 @@ function toggleThemeListener() {
       
     </div>
   </header> <div class="toc side left">
-    <details >
+    <details  open>
         <summary accesskey="c" title="(Alt + C)">
             <span class="details">Table of Contents</span>
         </summary>
@@ -229,20 +236,19 @@ function toggleThemeListener() {
 </div>
 
   <div class="post-content"><p>I am currently on holiday in Tenerife, and although I really like it here, one thing I do not like is the internet connection we have in our resort. Sometimes networked applications will just hang with no warning and there will be minutes where it&rsquo;s not clear what is going on. Here are some ways you can find a little bit more about what is happening when an application is slow or seems to hang when you have a poor internet connection. Execute the following commands each in a separate terminal window.</p>
-<h3 id="log-files">Log Files<a hidden class="anchor" aria-hidden="true" href="#log-files">¶</a></h3>
+<h3 id="log-files">Log Files</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>tail <span style="color:#f92672">-</span>f <span style="color:#f92672">/</span><span style="color:#66d9ef">var</span><span style="color:#f92672">/</span>log<span style="color:#f92672">/*</span>
 </span></span></code></pre></div><p>This will give you an indication of what is happening in OSX. For example, I was installing the XCode Command Line Utils from within XCode. The installation progress information is severely lacking, it just shows a bar which moves from left to right. However I was able to find out what was happening by tailing the log files in /var/log, which provided me with an updated breakdown of the installer progress. You can exit tail by using Control-C which will return you to the shell.</p>
-<h3 id="constant-ping">Constant Ping<a hidden class="anchor" aria-hidden="true" href="#constant-ping">¶</a></h3>
+<h3 id="constant-ping">Constant Ping</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ping www.google.com
 </span></span></code></pre></div><p>When I have problems with my internet connection, I always keep a ping running in the background in a terminal. The interesting information here is the ICMP RTT time shown as the milliseconds next to the &rsquo;time&rsquo; label, and how many packets were dropped shown by the number of &lsquo;request timeout&rsquo; messages. Google does not mind you pinging it, just like hundreds of thousands of other people do, and so you can keep this up constantly, monitoring problems with your internet connection. When you get &rsquo;no route to host&rsquo; printed, this usually means that your gateway or wireless connection is down, which means you usually have to reestablish a connection manually.</p>
-<h3 id="tcpdump">tcpdump<a hidden class="anchor" aria-hidden="true" href="#tcpdump">¶</a></h3>
+<h3 id="tcpdump">tcpdump</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo tcpdump en0 -vvv
 </span></span></code></pre></div><p>Do you really want to see what is happening on your computers network connection? Turn the floodgates on then, and use tcpdump. This will output information on each packet that your computer sends out and is received in a slightly Matrix-style torrent of information. If you are downloading something via an application or have a number of active web connections such as AJAX Facebook pages loaded, you would expect to see a lot of traffic. If you don&rsquo;t have a lot of traffic, and you&rsquo;re expecting a lot, then something may be wrong. You can use tcpdump to get a general feel of what data is being passed around, and to what IP address, which you can then look up later for more clarity. You can also use grep and some basic TCP/IP networking knowledge to find out what exactly is happening on the network level.</p>
-<h3 id="network-connection-status-of-each-application">Network Connection Status of Each Application<a hidden class="anchor" aria-hidden="true" href="#network-connection-status-of-each-application">¶</a></h3>
+<h3 id="network-connection-status-of-each-application">Network Connection Status of Each Application</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo lsof -i tcp
 </span></span></code></pre></div><p>Want to find out information about applications are using your internet connection, and the connection state of each TCP connection? Use lsof. You will be given the name of the application that is using each TCP connection, the IP address to which it is connected to, and the TCP connection state (established is good, time wait can be a problem sign). Run this regularly to check on the connection state of your programs. This won&rsquo;t monitor UDP connections, but should cover your web browsers.</p>
 <p>Hopefully this information will give you a bit more insight into what is actually happening on your OSX machine when your internet connection is being unreliable and you want more information about what is going on. Once you have this information, you can use it to inform actions such as toggling the wireless off and on again to reestablish a connection, reloading webpages that have hung, restarting application downloads, or possibly finding a new hotel or resort with a better internet connection :)</p>
-
 
   </div>
 
@@ -261,8 +267,81 @@ function toggleThemeListener() {
 </div>
 
   <footer class="post-footer">
+<nav class="paginav">
+  <a class="prev" href="http://davidcraddock.net/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/">
+    <span class="title">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left" style="user-select: text;"><line x1="19" y1="12" x2="5" y2="12" style="user-select: text;"></line><polyline points="12 19 5 12 12 5" style="user-select: text;"></polyline></svg>&nbsp;Prev Page</span>
+    <br>
+    <span>Tailing a log file and Running an Application at the Same Time</span>
+  </a>
+  <a class="next" href="http://davidcraddock.net/2013/03/01/tdd-talk/">
+    <span class="title">Next Page&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right" style="user-select: text;"><line x1="5" y1="12" x2="19" y2="12" style="user-select: text;"></line><polyline points="12 5 19 12 12 19" style="user-select: text;"></polyline></svg>
+    </span>
+    <br>
+    <span>TDD Talk</span>
+  </a>
+</nav>
+
   </footer>
-    <div class="comments-separator"></div>
+    <div class="comments-separator"></div><div class="comments">
+  <div class="title">
+    <span>Comments</span>
+    <span class="counter"><span class="remark42__counter" data-url="http://davidcraddock.net/2013/03/01/monitoring-a-slow-internet-connection-in-osx/"></span></span>
+  </div>
+  <div id="remark42">
+  </div>
+</div>
+
+<script>
+  var remark_config = {
+    host: 'https:\/\/remark42.reorx.com',
+    site_id: 'reorx.github.io',
+    components: ['embed', 'counter'],
+    max_shown_comments: 20,
+    theme: 'light',
+    simple_view: true,
+    admonition: JSON.stringify(['Please subscribe by email to receive reply notifications.']),
+  };
+  if (isDarkTheme()) {
+    remark_config.theme = 'dark'
+  }
+
+  (function() {
+    
+    const key = 'remark42'
+    if (!toggleThemeCallbacks.hasOwnProperty(key)) {
+      toggleThemeCallbacks[key] = (isDark) => {
+        const remark42 = window.REMARK42
+        if (!remark42 || !document.querySelector('#remark42')) {
+          return;
+        }
+        if (isDark) {
+          remark42.changeTheme('light');
+        } else {
+          remark42.changeTheme('dark');
+        }
+      }
+    }
+
+    
+    const remark42 = window.REMARK42
+    if (remark42) {
+      remark42.destroy()
+      remark42.createInstance(remark_config)
+    } else {
+      for (const component of remark_config.components) {
+        var d = document, s = d.createElement('script');
+        s.src = `${remark_config.host}/web/${component}.mjs`;
+        s.type = 'module';
+        s.defer = true;
+        
+        s.setAttribute('data-no-instant', '')
+        d.head.appendChild(s);
+      }
+    }
+  })();
+</script>
+
 </article>
     </main>
     
@@ -477,6 +556,10 @@ function toggleThemeListener() {
     }
   })();
   </script>
+<script>
+  mediumZoom('.entry-cover img');
+  mediumZoom('.post-content img:not([no-zoom])');
+</script>
 
 <script src="/js/instantclick.min.js" data-no-instant
 ></script>

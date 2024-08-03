@@ -1116,7 +1116,7 @@ You should (maybe) also be able to preview it here:</p>
 <p><img loading="lazy" src="/wp-content/uploads/2021/06/navidrome.jpg" type="" alt=""  /></p>
 <p>It remotely mounts the music share on my main Windows PC which is almost always on, and quickly indexes and serves up the content in a Spotify type way.</p>
 <p>I have setup an iptables port redirect so that any web traffic to port 80 or port 443 will be redirected to the correct navidrome app port so I don&rsquo;t have to remember the obscure port number just the domain name above. I have also setup AutoFS to automatically detect when my main PC is running and mount the windows share automatically, so everything just works whenever my main PC is switched on and off, and docker-compose automatically loads the container whenever it goes down and the setup persists between reboots of the RPI and the windows PC. I have also installed Plex on the same RPI, using AutoFS so that it mounts and unmounts the video share on my other PC when it is switched on. I have ripped a bunch of comedy videos from my DVDs and BluRays using Handbrake.</p>
-<p>Navidrome implements the Subsonic API, so it is compatible with a lot of different applications, including the excellent <a href="https://play.google.com/store/apps/details?id=github.daneren2005.dsub&amp;hl=en_GB&amp;gl=US">DSub</a> application for Android which offers a more mobile-friendly streamlined player that connects to my Navidrome server and allows caching and pre-downloading, and a bunch of other cool features.</p>
+<p>Navidrome implements the Subsonic API, so it is compatible with a lot of different applications, including the excellent <a href="https://play.google.com/store/apps/details?id=github.daneren2005.dsub&hl=en_GB&gl=US">DSub</a> application for Android which offers a more mobile-friendly streamlined player that connects to my Navidrome server and allows caching and pre-downloading, and a bunch of other cool features.</p>
 <p>It provides an easy way for me to browse and play any music from my music collection from anywhere on my network, and it has full metadata added as part of my DJ music metadata workflow (see: /2021/05/05/organising-huge-music-libraries-with-serato/ for more info). I have also setup my RPI3 as a ZeroTier bridge to my local network, meaning I can create a P2P VPN from my phone to stream music via DSub when I am outside the house too, or to access Plex on the RPI from my phone while I&rsquo;m on the move.</p>
 <p>Another useful feature is that I can save playlists using Navidrome and download all the files that make up the playlist via the web interface. This is useful for preparing a set and moving all teh files onto my DJing laptop so that I can analyse them in Serato and play them in a Serato crate.</p>
 ]]></content:encoded>
@@ -1129,14 +1129,14 @@ You should (maybe) also be able to preview it here:</p>
       
       <guid>http://davidcraddock.net/2021/06/01/2552/</guid>
       <description>Setup your new Turntable Follow this and only this guide. This is the best vinyl setup video on the internet as of 2021:
-[youtube https://www.youtube.com/watch?v=WM-aIDwfrhc&amp;amp;w=560&amp;amp;h=315]
+[youtube https://www.youtube.com/watch?v=WM-aIDwfrhc&amp;w=560&amp;h=315]
 A lot of DJ turntables are based on Technics OEM clones, and so you will need to set the tonearm height, which is the only thing not covered by the above video:
 [youtube https://www.youtube.com/watch?v=SYScinvkrrM]
 The Basics Once you&amp;rsquo;ve setup your turntable:
 Should go without saying that I always use a velvet dust brush on my records just before I play them.</description>
       <content:encoded><![CDATA[<h2 id="setup-your-new-turntable">Setup your new Turntable</h2>
 <p>Follow this and only this guide. This is the best vinyl setup video on the internet as of 2021:</p>
-<p>[youtube <a href="https://www.youtube.com/watch?v=WM-aIDwfrhc&amp;w=560&amp;h=315">https://www.youtube.com/watch?v=WM-aIDwfrhc&amp;w=560&amp;h=315</a>]</p>
+<p>[youtube <a href="https://www.youtube.com/watch?v=WM-aIDwfrhc&w=560&h=315">https://www.youtube.com/watch?v=WM-aIDwfrhc&w=560&h=315</a>]</p>
 <p>A lot of DJ turntables are based on Technics OEM clones, and so you will need to set the tonearm height, which is the only thing not covered by the above video:</p>
 <p>[youtube <a href="https://www.youtube.com/watch?v=SYScinvkrrM">https://www.youtube.com/watch?v=SYScinvkrrM</a>]</p>
 <h2 id="the-basics">The Basics</h2>
@@ -1450,7 +1450,7 @@ I am also using the <a href="https://xferrecords.com/freeware">https://xferrecor
 <p>I have a sustain pedal which I use to trigger the &lsquo;ducking&rsquo; affect in Ableton when I want to talk over the music.. when the pedal is depressed, the music fades down and the mic up a bit, so people can hear me better. When the pedal is let go, the microphone volume is killed so no background noise is picked up.</p>
 <p><img loading="lazy" src="/wp-content/uploads/2021/04/dj-setup-21-4-2021.png" type="" alt=""  /></p>
 <p>Here it is in action - the clicks are me flipping the crossfader or the channel faders on the VCM-600:</p>
-<p>[youtube <a href="https://www.youtube.com/watch?v=LJs7rw7jDtQ&amp;w=560&amp;h=315">https://www.youtube.com/watch?v=LJs7rw7jDtQ&amp;w=560&amp;h=315</a>]</p>
+<p>[youtube <a href="https://www.youtube.com/watch?v=LJs7rw7jDtQ&w=560&h=315">https://www.youtube.com/watch?v=LJs7rw7jDtQ&w=560&h=315</a>]</p>
 <p>As you can see from the video, the latency really isn&rsquo;t an issue. It&rsquo;s very responsive even though the timecode audio from the turntables is being processed by the Denon DS1, sent through the Douk VU-meter, and then converted to digital signals by the UMC1820 sound interface, sent through an EQ and FX chain, and mixed by Ableton according to the VCM600 DJ controller movements.</p>
 <p>Here is a flowchart which should help explain the signal flow:
 <img loading="lazy" src="/wp-content/uploads/2021/04/dj-setup-flowchart.png" type="" alt=""  /></p>
@@ -1665,7 +1665,7 @@ So. I have been reading through these DJing books to see if they could teach me 
 Conny&amp;rsquo;s PC
 i7-3770K 16GB DDR3 RAM Nvidea Radeon 970 Graphics Card 250 GB SSD Windows 10 My wife uses this as her main PC, and plays quite a few games with it. For a CPU and motherboard that I put together in 2011 or so, I am quite amazed it still runs adequetely!</description>
       <content:encoded><![CDATA[<p>In our house, seperate to my main PC (see the tab above) we still have two Ivy Bridge-based PCs:</p>
-<p><a href="https://www.youtube.com/watch?v=-AQXobsZHNg&amp;t=212s"><strong>Conny&rsquo;s PC</strong></a></p>
+<p><a href="https://www.youtube.com/watch?v=-AQXobsZHNg&t=212s"><strong>Conny&rsquo;s PC</strong></a></p>
 <ul>
 <li>i7-3770K</li>
 <li>16GB DDR3 RAM</li>
@@ -1686,7 +1686,7 @@ i7-3770K 16GB DDR3 RAM Nvidea Radeon 970 Graphics Card 250 GB SSD Windows 10 My 
 </ul>
 <p>I don&rsquo;t need a powerful graphics card as I don&rsquo;t game on it, and the Radeon R9 3200 supports my 2560x1440px monitor so it is more than adequete. I have installed VMWare on it and am looking to spin up some virtual machines as servers, and have them running in the background while I am browsing. I could assign several cores and quite a lot of the RAM and not really notice a difference with the light work I do when using the computer.</p>
 <p>I am just amazed at how much you can do with these old high-end CPUS. The performance delta between these Ivy Bridge 2011 CPUs today&rsquo;s processors really isn&rsquo;t that large, and they are so cheap these days. This following video shows just how cheap you can build one of these setups, and how powerful they are even today:</p>
-<p><a href="https://www.youtube.com/watch?v=-AQXobsZHNg&amp;t=212s">https://www.youtube.com/watch?v=-AQXobsZHNg&amp;t=212s</a></p>
+<p><a href="https://www.youtube.com/watch?v=-AQXobsZHNg&t=212s">https://www.youtube.com/watch?v=-AQXobsZHNg&t=212s</a></p>
 <p>The only situation where these processors don&rsquo;t really work hugely well is in applications which emphasise single-core performance - I tried to use my second PC as an Ableton Live machine, and a lot of audio plugins I wanted to use were not optimised for multi-core processors, just single-core, so that didn&rsquo;t work well.</p>
 ]]></content:encoded>
     </item>
@@ -2138,8 +2138,8 @@ A fairly old style digital audio interface and mixer, which was all the rage bac
 <p>Here is the patch I almost always use:</p>
 <p><img loading="lazy" src="/wp-content/uploads/2016/01/untitled-diagram.png" type="" alt="Eurorack Patch Diagram"  /></p>
 <p>Here are some examples of where this same basic technique has been used:</p>
-<p>[soundcloud url=&ldquo;<a href="https://api.soundcloud.com/tracks/238832020%22">https://api.soundcloud.com/tracks/238832020&quot;</a> params=&ldquo;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true&rdquo; width=&ldquo;100%&rdquo; height=&ldquo;300&rdquo; iframe=&ldquo;true&rdquo; /]</p>
-<p>[soundcloud url=&ldquo;<a href="https://api.soundcloud.com/tracks/216449918%22">https://api.soundcloud.com/tracks/216449918&quot;</a> params=&ldquo;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true&rdquo; width=&ldquo;100%&rdquo; height=&ldquo;300&rdquo; iframe=&ldquo;true&rdquo; /]</p>
+<p>[soundcloud url=&ldquo;<a href="https://api.soundcloud.com/tracks/238832020%22">https://api.soundcloud.com/tracks/238832020"</a> params=&ldquo;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true&rdquo; width=&ldquo;100%&rdquo; height=&ldquo;300&rdquo; iframe=&ldquo;true&rdquo; /]</p>
+<p>[soundcloud url=&ldquo;<a href="https://api.soundcloud.com/tracks/216449918%22">https://api.soundcloud.com/tracks/216449918"</a> params=&ldquo;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true&rdquo; width=&ldquo;100%&rdquo; height=&ldquo;300&rdquo; iframe=&ldquo;true&rdquo; /]</p>
 ]]></content:encoded>
     </item>
     
@@ -2452,7 +2452,7 @@ Maths - It might surprise a few people that, as a software developer, I never to
       <description>Now that I am midway through the year, I thought I&amp;rsquo;d revisit the goals I set myself at the start of the year, to see what has changed.
 Career Goals Settle into my new role at the BBC as Test Manager - I suppose this has not been achieved. I will have more updates soon (hopefully) but a change of direction is likely to happen. Pushing for a place to be opened up in Platform Test to employ someone from the Extend Scheme - This has been achieved, and someone will be joining Platform Test from the Extend scheme in October, I&amp;rsquo;m happy to say.</description>
       <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2015/01/windingroad.jpg"><img loading="lazy" src="/wp-content/uploads/2015/01/windingroad.jpg" type="" alt="Winding Road"  /></a></p>
-<p>Now that I am midway through the year, I thought I&rsquo;d revisit <a href="http://www.davidcraddock.net/?p=1301&amp;preview=true">the goals I set myself at the start of the year</a>, to see what has changed.</p>
+<p>Now that I am midway through the year, I thought I&rsquo;d revisit <a href="http://www.davidcraddock.net/?p=1301&preview=true">the goals I set myself at the start of the year</a>, to see what has changed.</p>
 <h3 id="career-goals">Career Goals</h3>
 <ul>
 <li><em>Settle into my new role at the BBC as Test Manager</em> - I suppose this has not been achieved. I will have more updates soon (hopefully) but a change of direction is likely to happen.</li>
@@ -2712,7 +2712,7 @@ Access Virus A This is the original 1998 Access Virus A. It, it was a staple syn
 <p>This is the original <a href="http://www.vintagesynth.com/misc/virusa.php">1998 Access Virus A</a>. It, it was a staple synth for trance and electronic music in general for the early 00s. I am very happy that I managed to get this secondhand for less than a MicroKORG. It cost over £800 when it came out in 1998. Old digital synths seem to be unpopular at the moment, I&rsquo;ve heard comments along the lines of &lsquo;if it&rsquo;s digital then I might as well use a plugin in my DAW&rsquo;. But I think this is ignoring the tactile control surface that you get, and how it gets your head outside the computer and playing an actual physical instrument. The presets are really inspiring, several sounds that you will recognise if you were into electronic music in the 00s. VNV Nation, one of my favourite bands, produced their <a href="http://www.youtube.com/watch?v=vDPwv0n8LzY">entire &lsquo;Empires&rsquo; album</a> with just the Access Virus A and a couple of samplers.</p>
 <p>It has two oscillators which have extra functionality, as you can choose the waveform from a large selection of presampled waveforms, in addition to the usual sawtooth, sine, square. There is also a suboscilator, two filters, each with a ASDTR configurable envelope, the usual ASDTR for the amplifier, and three LFOs. You can choose to map the LFOs to almost anything, allowing a great amount of flexibility. It also has effects - delay and unison, as well as multiple timbers, meaning that you can have up to 12 different patches playing at the same time, each controlled with different MIDI channels. The whole thing is extensively controllable via MIDI also. It is my first polyphonic hardware synthesier, and so has opened up a whole range of new composition possibilities around chords.</p>
 <h3 id="microbrute">Microbrute</h3>
-<p>The Microbrute is fully analogue, and it can produce a good number of sounds through its one oscilator, by allowing you to blend in different quantities of sawtooth, sine and square, along with some extensive extras, such as a metalizer. It has a Steiner Parker filter, a LFO and a step sequencer. You can get more technical details about the Microbrute in Marc Doty&rsquo;s <a href="https://www.youtube.com/watch?v=3R_b2f74uZE&amp;list=RD3R_b2f74uZE#t=41">great series of videos</a>.</p>
+<p>The Microbrute is fully analogue, and it can produce a good number of sounds through its one oscilator, by allowing you to blend in different quantities of sawtooth, sine and square, along with some extensive extras, such as a metalizer. It has a Steiner Parker filter, a LFO and a step sequencer. You can get more technical details about the Microbrute in Marc Doty&rsquo;s <a href="https://www.youtube.com/watch?v=3R_b2f74uZE&list=RD3R_b2f74uZE#t=41">great series of videos</a>.</p>
 <p>It has a hard aggressive character to the sound, especially when used with the &lsquo;brute factor&rsquo;. I like its sound, but sometimes wish for a little bit more warmth. However you can make all sorts of sounds with it, and I particularly like making chiptune arpeggio with the square wave, <a href="https://soundcloud.com/cachebuster/blue-sky">such as in my track &lsquo;Blue Sky&rsquo;</a>.</p>
 <p>It also has a mod matrix that I haven&rsquo;t fully explored yet, but is very powerful, especially if you want to link it up to other CV capable synths.</p>
 <h3 id="nord-drum">Nord Drum</h3>
@@ -2917,37 +2917,37 @@ Headphones Soundcard Headset Speakers Speaker Stands Mixer Desktop Microphone Pe
 <p>I use my computer a lot, for work (software development), gaming and music production. I wanted to build a high-end computer setup, as I&rsquo;ve always lagged behind with upgrades before. So I gradually have been accumulating and swapping bits around to make the setup above.</p>
 <p>Internals</p>
 <ul>
-<li><a href="#case">Case</a></li>
-<li><a href="#motherboard">Motherboard</a></li>
-<li><a href="#cpu">CPU</a></li>
-<li><a href="#cpucooler">CPU Cooler</a></li>
-<li><a href="#ram">RAM</a></li>
-<li><a href="#wifi">Wireless Card</a></li>
-<li><a href="#optical">Optical Drive</a></li>
-<li><a href="#psu">PSU</a></li>
+<li><a href="/2014/01/29/my-computer-build/#case">Case</a></li>
+<li><a href="/2014/01/29/my-computer-build/#motherboard">Motherboard</a></li>
+<li><a href="/2014/01/29/my-computer-build/#cpu">CPU</a></li>
+<li><a href="/2014/01/29/my-computer-build/#cpucooler">CPU Cooler</a></li>
+<li><a href="/2014/01/29/my-computer-build/#ram">RAM</a></li>
+<li><a href="/2014/01/29/my-computer-build/#wifi">Wireless Card</a></li>
+<li><a href="/2014/01/29/my-computer-build/#optical">Optical Drive</a></li>
+<li><a href="/2014/01/29/my-computer-build/#psu">PSU</a></li>
 </ul>
 <p>Visual</p>
 <ul>
-<li><a href="#monitor">Monitor</a></li>
-<li><a href="#backlight">Backlight</a></li>
-<li><a href="#gpu">GPU</a></li>
+<li><a href="/2014/01/29/my-computer-build/#monitor">Monitor</a></li>
+<li><a href="/2014/01/29/my-computer-build/#backlight">Backlight</a></li>
+<li><a href="/2014/01/29/my-computer-build/#gpu">GPU</a></li>
 </ul>
 <p>Audio</p>
 <ul>
-<li><a href="#headphones">Headphones</a></li>
-<li><a href="#soundcard">Soundcard</a></li>
-<li><a href="#headset">Headset</a></li>
-<li><a href="#speakers">Speakers</a></li>
-<li><a href="#speakerstands">Speaker Stands</a></li>
-<li><a href="#mixer">Mixer</a></li>
-<li><a href="#microphone">Desktop Microphone</a></li>
+<li><a href="/2014/01/29/my-computer-build/#headphones">Headphones</a></li>
+<li><a href="/2014/01/29/my-computer-build/#soundcard">Soundcard</a></li>
+<li><a href="/2014/01/29/my-computer-build/#headset">Headset</a></li>
+<li><a href="/2014/01/29/my-computer-build/#speakers">Speakers</a></li>
+<li><a href="/2014/01/29/my-computer-build/#speakerstands">Speaker Stands</a></li>
+<li><a href="/2014/01/29/my-computer-build/#mixer">Mixer</a></li>
+<li><a href="/2014/01/29/my-computer-build/#microphone">Desktop Microphone</a></li>
 </ul>
 <p>Peripherals</p>
 <ul>
-<li><a href="#webcam">Webcam</a></li>
-<li><a href="#keyboard">Keyboard</a></li>
-<li><a href="#keypad">Gaming Keypad</a></li>
-<li><a href="#mouse">Mouse</a></li>
+<li><a href="/2014/01/29/my-computer-build/#webcam">Webcam</a></li>
+<li><a href="/2014/01/29/my-computer-build/#keyboard">Keyboard</a></li>
+<li><a href="/2014/01/29/my-computer-build/#keypad">Gaming Keypad</a></li>
+<li><a href="/2014/01/29/my-computer-build/#mouse">Mouse</a></li>
 </ul>
 <hr>
 <hr>
@@ -2988,7 +2988,7 @@ Headphones Soundcard Headset Speakers Speaker Stands Mixer Desktop Microphone Pe
 <h4 id="3x-hard-drives-----1x-crucial-ct256m4ssd2baa-256gb-ssd-1x-unknown-model-crucial-120gb-ssd-1x-seagate-3tb-35-inch-7200rpm-64mb-cache-sata3-hard-drive">3x Hard Drives -   1x Crucial CT256M4SSD2BAA 256GB SSD 1x Unknown model Crucial 120GB SSD 1x Seagate 3TB 3.5 inch 7200RPM 64MB Cache SATA3 Hard Drive</h4>
 <p>The 256GB SSD is my system drive, the older 120GB SSD is for games, and the 3TB HD is for storage: my music collection, video files collection, backup images and virtual machines. Being SSDs, the 256GB and 120GB drives are totally silent, making the 3TB HD sound really loud when it spins up. However, the 3TB drive has enough space to store full Blu-Ray ripped files.. not that I would do that, of course :)</p>
 <hr>
-<p><strong><a href="#top">Back to Top of Post</a></strong></p>
+<p><strong><a href="/2014/01/29/my-computer-build/#top">Back to Top of Post</a></strong></p>
 <hr>
 <hr>
 <h3 id="visual">Visual</h3>
@@ -3005,7 +3005,7 @@ Headphones Soundcard Headset Speakers Speaker Stands Mixer Desktop Microphone Pe
 <p><a href="http://www.lightpack.tv">www.lightpack.tv</a></p>
 <p>This is a monitor or TV backlighting kit that changes the colour of the light projected behind your screen to match the colours on the edges of your display. This provides a more immersive experience when playing games with the lights down, and you can also set it to become a graphic equaliser where the lights flash in time with the music. I bought this on a whim and I&rsquo;ve been quite impressed with it so far. It definitely adds to immersion and the graphic equaliser mode is rather trippy when writing or playing music.</p>
 <hr>
-<p><strong><a href="#top">Back to Top of Post</a></strong></p>
+<p><strong><a href="/2014/01/29/my-computer-build/#top">Back to Top of Post</a></strong></p>
 <hr>
 <hr>
 <h3 id="audio">Audio</h3>
@@ -3038,7 +3038,7 @@ Headphones Soundcard Headset Speakers Speaker Stands Mixer Desktop Microphone Pe
 <p><a href="http://www.amazon.co.uk/gp/product/B0013NCY3Y">[Link to Amazon]</a></p>
 <p>This is a 50&rsquo;s style microphone that I liked the look of. I got it because I wanted a microphone that plugged into my mixing desk, which would allow me to talk hands-free on Skype. Also it is good for streaming games, as I can mix my voice in the microphone with the output the computer game sounds, and send both mixed to skype or Twitch.TV or wherever. It is also moderately useful for recording voices for music production and for routing via my FX pedal for some novelty vocal effects on Skype, such as delay, echo and reverb.</p>
 <hr>
-<p><strong><a href="#top">Back to Top of Post</a></strong></p>
+<p><strong><a href="/2014/01/29/my-computer-build/#top">Back to Top of Post</a></strong></p>
 <hr>
 <hr>
 <h3 id="peripherals">Peripherals</h3>
@@ -3058,9 +3058,9 @@ Headphones Soundcard Headset Speakers Speaker Stands Mixer Desktop Microphone Pe
 <h4 id="mouse---logitech-g9x">Mouse - Logitech G9X</h4>
 <p><a href="http://www.amazon.co.uk/gp/product/B001NTFATI">[Link to Amazon]</a> <a href="/wp-content/uploads/2014/01/g9x.jpg"><img loading="lazy" src="/wp-content/uploads/2014/01/g9x.jpg" type="" alt="g9x"  /></a></p>
 <p>I upgraded from my G500 mouse to this, smaller, G9X. I have started to adopt <a href="http://www.razerzone.com/mouseguide/ergonomic/clawgrip">the claw grip</a> for gaming and generally using my mouse. This makes the larger G500 difficult to use, as the larger size means that the mouse buttons don&rsquo;t click properly when you have your fingers higher up on the mouse. So far, I am very happy with the G9X, the higher DPI scanning, and the easier to grip &lsquo;precicse grip&rsquo; material means that it is better for other reasons for me.</p>
-<p>I use the <a href="http://www.amazon.co.uk/gp/product/B00BF9MZZI/ref=oh_details_o02_s00_i01?ie=UTF8&amp;psc=1#productDetails">Corsair Vengeance</a> mouse matt, it is made of metal unlike my previous Razor Golliathus cloth one, which I didn&rsquo;t like because the edge of the matt would get stuck in the mouse when you moved it too far.</p>
+<p>I use the <a href="http://www.amazon.co.uk/gp/product/B00BF9MZZI/ref=oh_details_o02_s00_i01?ie=UTF8&psc=1#productDetails">Corsair Vengeance</a> mouse matt, it is made of metal unlike my previous Razor Golliathus cloth one, which I didn&rsquo;t like because the edge of the matt would get stuck in the mouse when you moved it too far.</p>
 <hr>
-<p><strong><a href="#top">Back to Top of Post</a></strong></p>
+<p><strong><a href="/2014/01/29/my-computer-build/#top">Back to Top of Post</a></strong></p>
 <hr>
 ]]></content:encoded>
     </item>
@@ -4292,7 +4292,7 @@ But I still have a lot of PC games that I wanted to play on the Macbook, so I de
 <p>First you need to partition your macbook&rsquo;s HD using the Bootcamp assistant, in the OSX utilities section. Make sure you have your first OSX installation DVD to hand, the one that came with your Macbook. I chose to split the hard drive into two equally sized partitions. Then just place your W7 DVD in the drive, and Bootcamp takes care of the rest.</p>
 <p>Once W7 is installed, you can access the Bootcamp menu on startup by holding down the option key. This brings up a menu where you can select to boot into OSX or Windows.</p>
 <p>When you start W7 for the first time, you can install the windows driver set for your Macbook that Bootcamp provides you. Insert your OSX installation DVD 1, and run the setup.exe that is located in the Bootcamp folder. This will install native windows drivers for your Macbook hardware.</p>
-<p>The only change I needed to make for my macbook, was to install the latest 64bit Realtek drivers for Vista/Windows 7, which are located <a href="http://www.realtek.com/downloads/downloadsCheck.aspx?Langid=1&amp;PNid=24&amp;PFid=24&amp;Level=4&amp;Conn=3&amp;DownTypeID=3&amp;GetDown=false">on the Realtek website</a>. This will fix any sound problems you might have while playing games.</p>
+<p>The only change I needed to make for my macbook, was to install the latest 64bit Realtek drivers for Vista/Windows 7, which are located <a href="http://www.realtek.com/downloads/downloadsCheck.aspx?Langid=1&PNid=24&PFid=24&Level=4&Conn=3&DownTypeID=3&GetDown=false">on the Realtek website</a>. This will fix any sound problems you might have while playing games.</p>
 <p>Now don&rsquo;t expect to run the latest 3D games, but if you&rsquo;re happy enough with slightly older, classic, indie or retro games, you can get a good gaming experience on Windows 7 from your macbook. It does well with plenty of the indie games available on Value&rsquo;s Steam distribution network.</p>
 ]]></content:encoded>
     </item>
@@ -5018,7 +5018,7 @@ $HOME = the logged in user&rsquo;s documents and settings directory, in windows 
 http://www.youtube-nocookie.com/v/Fpm0m6bVfrM&amp;amp;hl=en&amp;amp;fs=1&amp;amp;rel=0
 Risky? Just a bit. A few years later he lost his life during a similar attempt. But no-one can doubt the guts required, and the level of skill he achieved, in this type of climbing.</description>
       <content:encoded><![CDATA[<p>I&rsquo;m going to take a break from the purely technical posts to get more people to see this video. Here the late Dan Osman speed-climbs a cliff without any safety equipment.</p>
-<p><a href="http://www.youtube-nocookie.com/v/Fpm0m6bVfrM&amp;hl=en&amp;fs=1&amp;rel=0">http://www.youtube-nocookie.com/v/Fpm0m6bVfrM&amp;hl=en&amp;fs=1&amp;rel=0</a></p>
+<p><a href="http://www.youtube-nocookie.com/v/Fpm0m6bVfrM&hl=en&fs=1&rel=0">http://www.youtube-nocookie.com/v/Fpm0m6bVfrM&amp;hl=en&amp;fs=1&amp;rel=0</a></p>
 <p>Risky? Just a bit. A few years later he lost his life during a similar attempt. But no-one can doubt the guts required, and the level of skill he achieved, in this type of climbing.</p>
 ]]></content:encoded>
     </item>
@@ -5129,7 +5129,7 @@ Here is a simple method for using regex in the powerful text editor VIM that wil
       <description>Volunteers on the OLPC project have developed a low-cost heart rate monitor that can be plugged into the XO laptop, making steps towards an affordable monitoring system for hospitals in developing countries.
 For more information on the development, see the: OLPC Goldenstate project. People in the US can currently buy the sensor here; unfortunately there is no international shipping yet in place.</description>
       <content:encoded><![CDATA[<p>Volunteers on the <a href="http://en.wikipedia.org/wiki/One_Laptop_per_Child">OLPC project</a> have developed a low-cost heart rate monitor that can be plugged into the <a href="http://en.wikipedia.org/wiki/OLPC_XO-1">XO laptop</a>, making steps towards an affordable monitoring system for hospitals in developing countries.</p>
-<p>For more information on the development, see the: <a href="http://olpcgoldenstate.blogspot.com/2009/04/new-pcb-revision-and-low-cost-proto.html">OLPC Goldenstate</a> project. People in the US can currently buy the <a href="http://xoexplosion.com/index.php?main_page=product_info&amp;cPath=1_34&amp;products_id=158">sensor here</a>; unfortunately there is no international shipping yet in place.</p>
+<p>For more information on the development, see the: <a href="http://olpcgoldenstate.blogspot.com/2009/04/new-pcb-revision-and-low-cost-proto.html">OLPC Goldenstate</a> project. People in the US can currently buy the <a href="http://xoexplosion.com/index.php?main_page=product_info&cPath=1_34&products_id=158">sensor here</a>; unfortunately there is no international shipping yet in place.</p>
 ]]></content:encoded>
     </item>
     
@@ -5876,9 +5876,9 @@ This was really interesting, and I learned a huge amount in a very short amount 
       
       <guid>http://davidcraddock.net/2007/11/24/opensocial/</guid>
       <description>This is going to be absolutely huge:
-[youtube https://www.youtube.com/watch?v=RytmNqEHYiE&amp;amp;rel=1]</description>
+[youtube https://www.youtube.com/watch?v=RytmNqEHYiE&amp;rel=1]</description>
       <content:encoded><![CDATA[<p>This is going to be absolutely huge:</p>
-<p>[youtube <a href="https://www.youtube.com/watch?v=RytmNqEHYiE&amp;rel=1">https://www.youtube.com/watch?v=RytmNqEHYiE&amp;rel=1</a>]</p>
+<p>[youtube <a href="https://www.youtube.com/watch?v=RytmNqEHYiE&rel=1">https://www.youtube.com/watch?v=RytmNqEHYiE&rel=1</a>]</p>
 ]]></content:encoded>
     </item>
     

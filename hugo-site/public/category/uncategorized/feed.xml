@@ -487,7 +487,7 @@ So. I have been reading through these DJing books to see if they could teach me 
 Conny&amp;rsquo;s PC
 i7-3770K 16GB DDR3 RAM Nvidea Radeon 970 Graphics Card 250 GB SSD Windows 10 My wife uses this as her main PC, and plays quite a few games with it. For a CPU and motherboard that I put together in 2011 or so, I am quite amazed it still runs adequetely!</description>
       <content:encoded><![CDATA[<p>In our house, seperate to my main PC (see the tab above) we still have two Ivy Bridge-based PCs:</p>
-<p><a href="https://www.youtube.com/watch?v=-AQXobsZHNg&amp;t=212s"><strong>Conny&rsquo;s PC</strong></a></p>
+<p><a href="https://www.youtube.com/watch?v=-AQXobsZHNg&t=212s"><strong>Conny&rsquo;s PC</strong></a></p>
 <ul>
 <li>i7-3770K</li>
 <li>16GB DDR3 RAM</li>
@@ -508,7 +508,7 @@ i7-3770K 16GB DDR3 RAM Nvidea Radeon 970 Graphics Card 250 GB SSD Windows 10 My 
 </ul>
 <p>I don&rsquo;t need a powerful graphics card as I don&rsquo;t game on it, and the Radeon R9 3200 supports my 2560x1440px monitor so it is more than adequete. I have installed VMWare on it and am looking to spin up some virtual machines as servers, and have them running in the background while I am browsing. I could assign several cores and quite a lot of the RAM and not really notice a difference with the light work I do when using the computer.</p>
 <p>I am just amazed at how much you can do with these old high-end CPUS. The performance delta between these Ivy Bridge 2011 CPUs today&rsquo;s processors really isn&rsquo;t that large, and they are so cheap these days. This following video shows just how cheap you can build one of these setups, and how powerful they are even today:</p>
-<p><a href="https://www.youtube.com/watch?v=-AQXobsZHNg&amp;t=212s">https://www.youtube.com/watch?v=-AQXobsZHNg&amp;t=212s</a></p>
+<p><a href="https://www.youtube.com/watch?v=-AQXobsZHNg&t=212s">https://www.youtube.com/watch?v=-AQXobsZHNg&t=212s</a></p>
 <p>The only situation where these processors don&rsquo;t really work hugely well is in applications which emphasise single-core performance - I tried to use my second PC as an Ableton Live machine, and a lot of audio plugins I wanted to use were not optimised for multi-core processors, just single-core, so that didn&rsquo;t work well.</p>
 ]]></content:encoded>
     </item>
@@ -905,7 +905,7 @@ Maths - It might surprise a few people that, as a software developer, I never to
       <description>Now that I am midway through the year, I thought I&amp;rsquo;d revisit the goals I set myself at the start of the year, to see what has changed.
 Career Goals Settle into my new role at the BBC as Test Manager - I suppose this has not been achieved. I will have more updates soon (hopefully) but a change of direction is likely to happen. Pushing for a place to be opened up in Platform Test to employ someone from the Extend Scheme - This has been achieved, and someone will be joining Platform Test from the Extend scheme in October, I&amp;rsquo;m happy to say.</description>
       <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2015/01/windingroad.jpg"><img loading="lazy" src="/wp-content/uploads/2015/01/windingroad.jpg" type="" alt="Winding Road"  /></a></p>
-<p>Now that I am midway through the year, I thought I&rsquo;d revisit <a href="http://www.davidcraddock.net/?p=1301&amp;preview=true">the goals I set myself at the start of the year</a>, to see what has changed.</p>
+<p>Now that I am midway through the year, I thought I&rsquo;d revisit <a href="http://www.davidcraddock.net/?p=1301&preview=true">the goals I set myself at the start of the year</a>, to see what has changed.</p>
 <h3 id="career-goals">Career Goals</h3>
 <ul>
 <li><em>Settle into my new role at the BBC as Test Manager</em> - I suppose this has not been achieved. I will have more updates soon (hopefully) but a change of direction is likely to happen.</li>
@@ -1042,37 +1042,37 @@ Headphones Soundcard Headset Speakers Speaker Stands Mixer Desktop Microphone Pe
 <p>I use my computer a lot, for work (software development), gaming and music production. I wanted to build a high-end computer setup, as I&rsquo;ve always lagged behind with upgrades before. So I gradually have been accumulating and swapping bits around to make the setup above.</p>
 <p>Internals</p>
 <ul>
-<li><a href="#case">Case</a></li>
-<li><a href="#motherboard">Motherboard</a></li>
-<li><a href="#cpu">CPU</a></li>
-<li><a href="#cpucooler">CPU Cooler</a></li>
-<li><a href="#ram">RAM</a></li>
-<li><a href="#wifi">Wireless Card</a></li>
-<li><a href="#optical">Optical Drive</a></li>
-<li><a href="#psu">PSU</a></li>
+<li><a href="/2014/01/29/my-computer-build/#case">Case</a></li>
+<li><a href="/2014/01/29/my-computer-build/#motherboard">Motherboard</a></li>
+<li><a href="/2014/01/29/my-computer-build/#cpu">CPU</a></li>
+<li><a href="/2014/01/29/my-computer-build/#cpucooler">CPU Cooler</a></li>
+<li><a href="/2014/01/29/my-computer-build/#ram">RAM</a></li>
+<li><a href="/2014/01/29/my-computer-build/#wifi">Wireless Card</a></li>
+<li><a href="/2014/01/29/my-computer-build/#optical">Optical Drive</a></li>
+<li><a href="/2014/01/29/my-computer-build/#psu">PSU</a></li>
 </ul>
 <p>Visual</p>
 <ul>
-<li><a href="#monitor">Monitor</a></li>
-<li><a href="#backlight">Backlight</a></li>
-<li><a href="#gpu">GPU</a></li>
+<li><a href="/2014/01/29/my-computer-build/#monitor">Monitor</a></li>
+<li><a href="/2014/01/29/my-computer-build/#backlight">Backlight</a></li>
+<li><a href="/2014/01/29/my-computer-build/#gpu">GPU</a></li>
 </ul>
 <p>Audio</p>
 <ul>
-<li><a href="#headphones">Headphones</a></li>
-<li><a href="#soundcard">Soundcard</a></li>
-<li><a href="#headset">Headset</a></li>
-<li><a href="#speakers">Speakers</a></li>
-<li><a href="#speakerstands">Speaker Stands</a></li>
-<li><a href="#mixer">Mixer</a></li>
-<li><a href="#microphone">Desktop Microphone</a></li>
+<li><a href="/2014/01/29/my-computer-build/#headphones">Headphones</a></li>
+<li><a href="/2014/01/29/my-computer-build/#soundcard">Soundcard</a></li>
+<li><a href="/2014/01/29/my-computer-build/#headset">Headset</a></li>
+<li><a href="/2014/01/29/my-computer-build/#speakers">Speakers</a></li>
+<li><a href="/2014/01/29/my-computer-build/#speakerstands">Speaker Stands</a></li>
+<li><a href="/2014/01/29/my-computer-build/#mixer">Mixer</a></li>
+<li><a href="/2014/01/29/my-computer-build/#microphone">Desktop Microphone</a></li>
 </ul>
 <p>Peripherals</p>
 <ul>
-<li><a href="#webcam">Webcam</a></li>
-<li><a href="#keyboard">Keyboard</a></li>
-<li><a href="#keypad">Gaming Keypad</a></li>
-<li><a href="#mouse">Mouse</a></li>
+<li><a href="/2014/01/29/my-computer-build/#webcam">Webcam</a></li>
+<li><a href="/2014/01/29/my-computer-build/#keyboard">Keyboard</a></li>
+<li><a href="/2014/01/29/my-computer-build/#keypad">Gaming Keypad</a></li>
+<li><a href="/2014/01/29/my-computer-build/#mouse">Mouse</a></li>
 </ul>
 <hr>
 <hr>
@@ -1113,7 +1113,7 @@ Headphones Soundcard Headset Speakers Speaker Stands Mixer Desktop Microphone Pe
 <h4 id="3x-hard-drives-----1x-crucial-ct256m4ssd2baa-256gb-ssd-1x-unknown-model-crucial-120gb-ssd-1x-seagate-3tb-35-inch-7200rpm-64mb-cache-sata3-hard-drive">3x Hard Drives -   1x Crucial CT256M4SSD2BAA 256GB SSD 1x Unknown model Crucial 120GB SSD 1x Seagate 3TB 3.5 inch 7200RPM 64MB Cache SATA3 Hard Drive</h4>
 <p>The 256GB SSD is my system drive, the older 120GB SSD is for games, and the 3TB HD is for storage: my music collection, video files collection, backup images and virtual machines. Being SSDs, the 256GB and 120GB drives are totally silent, making the 3TB HD sound really loud when it spins up. However, the 3TB drive has enough space to store full Blu-Ray ripped files.. not that I would do that, of course :)</p>
 <hr>
-<p><strong><a href="#top">Back to Top of Post</a></strong></p>
+<p><strong><a href="/2014/01/29/my-computer-build/#top">Back to Top of Post</a></strong></p>
 <hr>
 <hr>
 <h3 id="visual">Visual</h3>
@@ -1130,7 +1130,7 @@ Headphones Soundcard Headset Speakers Speaker Stands Mixer Desktop Microphone Pe
 <p><a href="http://www.lightpack.tv">www.lightpack.tv</a></p>
 <p>This is a monitor or TV backlighting kit that changes the colour of the light projected behind your screen to match the colours on the edges of your display. This provides a more immersive experience when playing games with the lights down, and you can also set it to become a graphic equaliser where the lights flash in time with the music. I bought this on a whim and I&rsquo;ve been quite impressed with it so far. It definitely adds to immersion and the graphic equaliser mode is rather trippy when writing or playing music.</p>
 <hr>
-<p><strong><a href="#top">Back to Top of Post</a></strong></p>
+<p><strong><a href="/2014/01/29/my-computer-build/#top">Back to Top of Post</a></strong></p>
 <hr>
 <hr>
 <h3 id="audio">Audio</h3>
@@ -1163,7 +1163,7 @@ Headphones Soundcard Headset Speakers Speaker Stands Mixer Desktop Microphone Pe
 <p><a href="http://www.amazon.co.uk/gp/product/B0013NCY3Y">[Link to Amazon]</a></p>
 <p>This is a 50&rsquo;s style microphone that I liked the look of. I got it because I wanted a microphone that plugged into my mixing desk, which would allow me to talk hands-free on Skype. Also it is good for streaming games, as I can mix my voice in the microphone with the output the computer game sounds, and send both mixed to skype or Twitch.TV or wherever. It is also moderately useful for recording voices for music production and for routing via my FX pedal for some novelty vocal effects on Skype, such as delay, echo and reverb.</p>
 <hr>
-<p><strong><a href="#top">Back to Top of Post</a></strong></p>
+<p><strong><a href="/2014/01/29/my-computer-build/#top">Back to Top of Post</a></strong></p>
 <hr>
 <hr>
 <h3 id="peripherals">Peripherals</h3>
@@ -1183,9 +1183,9 @@ Headphones Soundcard Headset Speakers Speaker Stands Mixer Desktop Microphone Pe
 <h4 id="mouse---logitech-g9x">Mouse - Logitech G9X</h4>
 <p><a href="http://www.amazon.co.uk/gp/product/B001NTFATI">[Link to Amazon]</a> <a href="/wp-content/uploads/2014/01/g9x.jpg"><img loading="lazy" src="/wp-content/uploads/2014/01/g9x.jpg" type="" alt="g9x"  /></a></p>
 <p>I upgraded from my G500 mouse to this, smaller, G9X. I have started to adopt <a href="http://www.razerzone.com/mouseguide/ergonomic/clawgrip">the claw grip</a> for gaming and generally using my mouse. This makes the larger G500 difficult to use, as the larger size means that the mouse buttons don&rsquo;t click properly when you have your fingers higher up on the mouse. So far, I am very happy with the G9X, the higher DPI scanning, and the easier to grip &lsquo;precicse grip&rsquo; material means that it is better for other reasons for me.</p>
-<p>I use the <a href="http://www.amazon.co.uk/gp/product/B00BF9MZZI/ref=oh_details_o02_s00_i01?ie=UTF8&amp;psc=1#productDetails">Corsair Vengeance</a> mouse matt, it is made of metal unlike my previous Razor Golliathus cloth one, which I didn&rsquo;t like because the edge of the matt would get stuck in the mouse when you moved it too far.</p>
+<p>I use the <a href="http://www.amazon.co.uk/gp/product/B00BF9MZZI/ref=oh_details_o02_s00_i01?ie=UTF8&psc=1#productDetails">Corsair Vengeance</a> mouse matt, it is made of metal unlike my previous Razor Golliathus cloth one, which I didn&rsquo;t like because the edge of the matt would get stuck in the mouse when you moved it too far.</p>
 <hr>
-<p><strong><a href="#top">Back to Top of Post</a></strong></p>
+<p><strong><a href="/2014/01/29/my-computer-build/#top">Back to Top of Post</a></strong></p>
 <hr>
 ]]></content:encoded>
     </item>
@@ -1229,7 +1229,7 @@ I found this article, and was impressed at the quality and the resources mention
 http://www.youtube-nocookie.com/v/Fpm0m6bVfrM&amp;amp;hl=en&amp;amp;fs=1&amp;amp;rel=0
 Risky? Just a bit. A few years later he lost his life during a similar attempt. But no-one can doubt the guts required, and the level of skill he achieved, in this type of climbing.</description>
       <content:encoded><![CDATA[<p>I&rsquo;m going to take a break from the purely technical posts to get more people to see this video. Here the late Dan Osman speed-climbs a cliff without any safety equipment.</p>
-<p><a href="http://www.youtube-nocookie.com/v/Fpm0m6bVfrM&amp;hl=en&amp;fs=1&amp;rel=0">http://www.youtube-nocookie.com/v/Fpm0m6bVfrM&amp;hl=en&amp;fs=1&amp;rel=0</a></p>
+<p><a href="http://www.youtube-nocookie.com/v/Fpm0m6bVfrM&hl=en&fs=1&rel=0">http://www.youtube-nocookie.com/v/Fpm0m6bVfrM&amp;hl=en&amp;fs=1&amp;rel=0</a></p>
 <p>Risky? Just a bit. A few years later he lost his life during a similar attempt. But no-one can doubt the guts required, and the level of skill he achieved, in this type of climbing.</p>
 ]]></content:encoded>
     </item>
