@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Bash on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/tag/bash/</link>
+    <link>https://davidcraddock.net/tag/bash/</link>
     <description>Recent content in Bash on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Jun 2013 16:08:16 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/tag/bash/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jun 2013 16:08:16 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/tag/bash/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>iTerm for OSX for a Colourful Terminal Experience</title>
-      <link>http://davidcraddock.net/2013/06/11/iterm-for-osx-for-a-colourful-terminal-experience/</link>
+      <link>https://davidcraddock.net/2013/06/11/iterm-for-osx-for-a-colourful-terminal-experience/</link>
       <pubDate>Tue, 11 Jun 2013 16:08:16 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2013/06/11/iterm-for-osx-for-a-colourful-terminal-experience/</guid>
+      <guid>https://davidcraddock.net/2013/06/11/iterm-for-osx-for-a-colourful-terminal-experience/</guid>
       <description>iTerm is much better than the standard OSX terminal client, not least because it has compatiablity with xterm256-color terminal emulation. xterm256-color emulation will give your terminal access to 256 colours instead of the usual 16. Much better, not just for looking pretty, but for distinguishing between different types of data in an editor like VIM or even in Cucumber output (see picture above). It&amp;rsquo;s also free.
 http://iterm.sourceforge.net
 Once installed, you will have to go in to the preferences and set your &amp;lsquo;Report Terminal Type&amp;rsquo; to be &amp;lsquo;xterm256-color&amp;rsquo;.</description>
@@ -25,10 +25,10 @@ Once installed, you will have to go in to the preferences and set your &amp;lsqu
     
     <item>
       <title>Tailing a log file and Running an Application at the Same Time</title>
-      <link>http://davidcraddock.net/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/</link>
+      <link>https://davidcraddock.net/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/</link>
       <pubDate>Tue, 11 Jun 2013 15:55:04 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/</guid>
+      <guid>https://davidcraddock.net/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/</guid>
       <description>A quick tip this, but a useful one. You can tail a log file in the background while running a script in the foreground. So for example, I frequently execute the following commands:
 1.
 tail -f /var/log/httpd.log &amp;amp; /etc/init.d/apache restart 2. (The log file will spool onto the terminal as Apache is restarted.)
@@ -47,10 +47,10 @@ tail -f /var/log/httpd.log &amp;amp; /etc/init.d/apache restart 2. (The log file
     
     <item>
       <title>Long Bash History Files are Great.</title>
-      <link>http://davidcraddock.net/2010/03/18/long-bash-history-files-are-great/</link>
+      <link>https://davidcraddock.net/2010/03/18/long-bash-history-files-are-great/</link>
       <pubDate>Thu, 18 Mar 2010 19:55:51 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2010/03/18/long-bash-history-files-are-great/</guid>
+      <guid>https://davidcraddock.net/2010/03/18/long-bash-history-files-are-great/</guid>
       <description>When I&amp;rsquo;m installing software, or doing some complicated stuff on the linux command line, which nowadays is pretty much all the time, I will sometimes want to remember exactly what I typed.
 Now the normal /home/david/.bash_history file is usually fine for that. Run this command, for example, and you will see the commands you typed in before you logged out of the server last time you used it:
 cat ~/.bash_history You can also find out what you typed in this session, ie: since you logged in, by typing this:</description>

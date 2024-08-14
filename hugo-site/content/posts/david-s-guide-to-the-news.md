@@ -2,7 +2,7 @@
 category:
   - uncategorized
 date: "2021-01-08T08:50:03+00:00"
-guid: http://davidcraddock.net/?p=1843
+guid: https://davidcraddock.net/?p=1843
 title: David’s Guide to The News
 url: /2021/01/08/davids-guide-to-the-news/
 

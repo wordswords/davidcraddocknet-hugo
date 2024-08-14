@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Uncategorized on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/category/uncategorized/</link>
+    <link>https://davidcraddock.net/category/uncategorized/</link>
     <description>Recent content in Uncategorized on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Apr 2024 04:55:52 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/uncategorized/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Apr 2024 04:55:52 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/category/uncategorized/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Video Routing for Dave Cave Studio</title>
-      <link>http://davidcraddock.net/2024/04/25/video-routing-for-dave-cave-studio/</link>
+      <link>https://davidcraddock.net/2024/04/25/video-routing-for-dave-cave-studio/</link>
       <pubDate>Thu, 25 Apr 2024 04:55:52 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2024/04/25/video-routing-for-dave-cave-studio/</guid>
+      <guid>https://davidcraddock.net/2024/04/25/video-routing-for-dave-cave-studio/</guid>
       <description>Here is a quick diagram I mocked up to detail exactly how video routing works in the studio.</description>
       <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2024/04/studio-video-routing.drawio.png"><img loading="lazy" src="/wp-content/uploads/2024/04/studio-video-routing.drawio.png" type="" alt=""  /></a></p>
 <p>Here is a quick diagram I mocked up to detail exactly how video routing works in the studio.</p>
@@ -21,10 +21,10 @@
     
     <item>
       <title>Music Acquisition Process for DJ Music</title>
-      <link>http://davidcraddock.net/2024/01/11/music-acquisition-process-for-dj-music/</link>
+      <link>https://davidcraddock.net/2024/01/11/music-acquisition-process-for-dj-music/</link>
       <pubDate>Thu, 11 Jan 2024 23:41:50 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2024/01/11/music-acquisition-process-for-dj-music/</guid>
+      <guid>https://davidcraddock.net/2024/01/11/music-acquisition-process-for-dj-music/</guid>
       <description>My music acquisition process for DJ music:
 ARM (Automatic Ripping Machine) rips CDs I buy into FLAC form without any interactivity. You just insert a CD into the Linux server, and then it ejects it when it&amp;rsquo;s done. Lidarr downloads FLACs of any tracks of artists I have in my collection, but I don&amp;rsquo;t have their full discography. It does this automatically and silently in the background. Once a day, a cron job imports ARM and Lidarr downloads into my Beets.</description>
       <content:encoded><![CDATA[<p>My music acquisition process for DJ music:</p>
@@ -43,10 +43,10 @@ ARM (Automatic Ripping Machine) rips CDs I buy into FLAC form without any intera
     
     <item>
       <title>Latest Remote Guitar Lesson Setup</title>
-      <link>http://davidcraddock.net/2023/09/22/latest-remote-guitar-lesson-setup/</link>
+      <link>https://davidcraddock.net/2023/09/22/latest-remote-guitar-lesson-setup/</link>
       <pubDate>Fri, 22 Sep 2023 16:56:26 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2023/09/22/latest-remote-guitar-lesson-setup/</guid>
+      <guid>https://davidcraddock.net/2023/09/22/latest-remote-guitar-lesson-setup/</guid>
       <description>I&amp;rsquo;ve been having online guitar lessons with my friend Jon.
 After a while we have got things down to a setup that seems to work remotely.
 I have an Epiphone Les Paul Vintage Edition electric guitar, and a Marshall MG15G Practice Amp. I use a headphone splitter cable to plug into the Marshall&amp;rsquo;s headphone out socket, which splits the audio into left and right channels, and a 3.5mm to phono mono cable plugged into the headphone splitter that runs to my audio interface.</description>
@@ -97,10 +97,10 @@ I have an Epiphone Les Paul Vintage Edition electric guitar, and a Marshall MG15
     
     <item>
       <title>Optical Drive Cleaners and Home Entertainment Test Tools</title>
-      <link>http://davidcraddock.net/2023/02/23/optical-drive-cleaners-and-home-entertainment-test-tools/</link>
+      <link>https://davidcraddock.net/2023/02/23/optical-drive-cleaners-and-home-entertainment-test-tools/</link>
       <pubDate>Thu, 23 Feb 2023 09:57:30 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2023/02/23/optical-drive-cleaners-and-home-entertainment-test-tools/</guid>
+      <guid>https://davidcraddock.net/2023/02/23/optical-drive-cleaners-and-home-entertainment-test-tools/</guid>
       <description>If you are still using optical discs, e.g. CDs or Blu-rays, in music, video or games, then you are in the minority these days. Downloads and streaming have become the norm, which means 1) A lot less discs are being produced 2) A lot less optical drives are being produced.
 Because a lot less optical drives are being produced, we can imagine a time in the future when the only optical drives you can buy, are second-hand.</description>
       <content:encoded><![CDATA[<p>If you are still using optical discs, e.g. CDs or Blu-rays, in music, video or games, then you are in the minority these days. Downloads and streaming have become the norm, which means 1) A lot less discs are being produced 2) A lot less optical drives are being produced.</p>
@@ -116,10 +116,10 @@ Because a lot less optical drives are being produced, we can imagine a time in t
     
     <item>
       <title>PSP Preset for Handbrake for transcoding video files into a PSP compatible format</title>
-      <link>http://davidcraddock.net/2022/10/16/psp-preset-for-handbrake-for-transcoding-video-files-into-a-psp-compatible-format/</link>
+      <link>https://davidcraddock.net/2022/10/16/psp-preset-for-handbrake-for-transcoding-video-files-into-a-psp-compatible-format/</link>
       <pubDate>Sun, 16 Oct 2022 16:00:48 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2022/10/16/psp-preset-for-handbrake-for-transcoding-video-files-into-a-psp-compatible-format/</guid>
+      <guid>https://davidcraddock.net/2022/10/16/psp-preset-for-handbrake-for-transcoding-video-files-into-a-psp-compatible-format/</guid>
       <description>This is based off of the 2021 Reddit post here: https://www.reddit.com/r/PSP/comments/kcx4ei/tutorial_convert_most_video_formats_to/
 I am using it with Handbrake 1.5.1. You can import it into your Handbrake via &amp;ldquo;Preset -&amp;gt; File Import&amp;rdquo;.
 Download PSP Handbrake Preset.</description>
@@ -131,10 +131,10 @@ Download PSP Handbrake Preset.</description>
     
     <item>
       <title>Home Network September 2022</title>
-      <link>http://davidcraddock.net/2022/09/08/home-network-september-2022/</link>
+      <link>https://davidcraddock.net/2022/09/08/home-network-september-2022/</link>
       <pubDate>Thu, 08 Sep 2022 09:43:35 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2022/09/08/home-network-september-2022/</guid>
+      <guid>https://davidcraddock.net/2022/09/08/home-network-september-2022/</guid>
       <description>I had planned a different network toplogy for sure, but this is my current setup and it seems to work well:
 I was not able to implement connection load balancing using the Miktrotik router. It was just too complicated and didn&amp;rsquo;t work reliably enough. My current network is a gigabit network across all areas, so every PC has gigabit cables, switch and so on. I either have plugged in my Virgin Media 1000mb/50mbs internet connection or my BRSK fibre 900mb/900mb connection.</description>
       <content:encoded><![CDATA[<p>I had planned a different network toplogy for sure, but this is my current setup and it seems to work well:</p>
@@ -152,10 +152,10 @@ I was not able to implement connection load balancing using the Miktrotik router
     
     <item>
       <title>My Job Requirements</title>
-      <link>http://davidcraddock.net/2022/09/01/my-ideal-job/</link>
+      <link>https://davidcraddock.net/2022/09/01/my-ideal-job/</link>
       <pubDate>Thu, 01 Sep 2022 21:27:22 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2022/09/01/my-ideal-job/</guid>
+      <guid>https://davidcraddock.net/2022/09/01/my-ideal-job/</guid>
       <description>I have nearly 20 years experience, so my skill-set is in high demand from all sorts of different organisations. If I were looking for a job, then these would be my priorities:
 Understanding of medical appointments - My situation is that I currently have cancer. Although it&amp;rsquo;s recommended I work, some of my time will be spent in medical appointments at the hospital that is 15 mins walk away from me.</description>
       <content:encoded><![CDATA[<p>I have nearly 20 years experience, so my skill-set is in high demand from all sorts of different organisations. If I were looking for a job, then these would be my priorities:</p>
@@ -174,10 +174,10 @@ Understanding of medical appointments - My situation is that I currently have ca
     
     <item>
       <title>Home Network Design 28/7/22</title>
-      <link>http://davidcraddock.net/2022/07/28/home-network-design-28-7-22/</link>
+      <link>https://davidcraddock.net/2022/07/28/home-network-design-28-7-22/</link>
       <pubDate>Thu, 28 Jul 2022 00:57:42 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2022/07/28/home-network-design-28-7-22/</guid>
+      <guid>https://davidcraddock.net/2022/07/28/home-network-design-28-7-22/</guid>
       <description>Now that I actually have the internet connectivity being installed to make use of it, I am getting my home network design a bit more finished.
 Components:
 Virgin Hub providing a 1100/50mbps connection BetterInternet Fibre Hub providing a 900/900mbps connection Raspberry Pi 3 running Pi-Hole DNS MikroTik CRS309-1G-8S+IN Cloud Router Switch 4 x SFP+10Gb SFP+ RJ45 Copper Modules CAT8 30M Outdoor Cable to connect the studio to the study Short run CAT7 Patch Cables Windows 11 Studio PC with 10GB/sec SFP+ Port ThinkStation Server with twin 10GB/sec SFP+ Ports and separate gigabit NIC 3x LinkSys 3200WRT Routers in wireless repeater mode, creating a 2.</description>
@@ -214,10 +214,10 @@ Virgin Hub providing a 1100/50mbps connection BetterInternet Fibre Hub providing
     
     <item>
       <title>MIDI Routing for Home Studio</title>
-      <link>http://davidcraddock.net/2022/06/19/midi-routing-for-home-studio/</link>
+      <link>https://davidcraddock.net/2022/06/19/midi-routing-for-home-studio/</link>
       <pubDate>Sun, 19 Jun 2022 03:04:47 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2022/06/19/midi-routing-for-home-studio/</guid>
+      <guid>https://davidcraddock.net/2022/06/19/midi-routing-for-home-studio/</guid>
       <description>I have had this knowledge in my head for a long time now and thought it would be better to write a diagram to explain the current setup for my MIDI routing.
 I use MIDI routing one way - MIDI OUT - from my UMC1820 sound interface.
 I have two keyboard controllers, one next to my computer, and one next to my Eurorack, that are attached via USB to my computer which I route the notes via Ableton to the MIDI out of the UMC1820 interface.</description>
@@ -232,10 +232,10 @@ I have two keyboard controllers, one next to my computer, and one next to my Eur
     
     <item>
       <title>DJ Setup 2/5/22</title>
-      <link>http://davidcraddock.net/2022/05/02/dj-setup-2-5-22/</link>
+      <link>https://davidcraddock.net/2022/05/02/dj-setup-2-5-22/</link>
       <pubDate>Mon, 02 May 2022 22:11:13 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2022/05/02/dj-setup-2-5-22/</guid>
+      <guid>https://davidcraddock.net/2022/05/02/dj-setup-2-5-22/</guid>
       <description>This is my current DJ setup that I use for Twitch streaming mainly.
 2x Reloop RL-8000mk2 turntables. 2x Serato ‘Butter Rug’ Slipmats. 2x Concorde Mk2 Digital carts. Numark NDX500 CDJ which I use for playing CDs, and as a Serato Controller as it has Serato Integration. Roland DJ-707m controller. Sennheiser HD-25 headphones. Rode Procaster mic with mic boom, pop shield and cage. t.bone MB 88U mic with table stand that I use as a guest microphone.</description>
       <content:encoded><![CDATA[<p>This is my current DJ setup that I use for Twitch streaming mainly.</p>
@@ -289,10 +289,10 @@ Deck 4 - Numark NDX500 CDJ used in Serato DJ Mode (PC mode)</p>
     
     <item>
       <title>DJ Setup 03/03/2022</title>
-      <link>http://davidcraddock.net/2022/03/03/dj-setup-03-03-2022/</link>
+      <link>https://davidcraddock.net/2022/03/03/dj-setup-03-03-2022/</link>
       <pubDate>Thu, 03 Mar 2022 01:19:28 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2022/03/03/dj-setup-03-03-2022/</guid>
+      <guid>https://davidcraddock.net/2022/03/03/dj-setup-03-03-2022/</guid>
       <description>This is my current DJ setup with the following components:
 Decks 1 and 2 - 2x Reloop 8000mk2 Vinyl Turntables with Serato intergration Deck 3 - Numark NDX500 CDJ with Serato Integration Deck 4 - Roland 707m Serato Controller and Mixer using its internal drum machine as a deck Behringer TB-303 Clone fed into the Aux input of the Roland 707m Controller Pioneer EFX-1000 DJ FX Unit placed between the master out of the 707m controller and the input of the sound interface on the broadcasting PC Reloop Neon Serato Controller used to control the Serato DJ Pro sampler Rode Procaster Microphone (not shown in diagram) fed to the Mic 1 channel on the 707m Controller as the main microphone for me while DJing t.</description>
       <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2022/03/dj-setup.jpg" type="" alt=""  /></p>
@@ -322,10 +322,10 @@ Decks 1 and 2 - 2x Reloop 8000mk2 Vinyl Turntables with Serato intergration Deck
     
     <item>
       <title>Privacy and Security methods I use</title>
-      <link>http://davidcraddock.net/2022/01/14/privacy-and-security-methods-i-use/</link>
+      <link>https://davidcraddock.net/2022/01/14/privacy-and-security-methods-i-use/</link>
       <pubDate>Fri, 14 Jan 2022 06:01:21 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2022/01/14/privacy-and-security-methods-i-use/</guid>
+      <guid>https://davidcraddock.net/2022/01/14/privacy-and-security-methods-i-use/</guid>
       <description>Ever since I worked at an internet marketing company on an advertising analytics platform, I have realised that I don&amp;rsquo;t want my personal internet browsing tracked, monetised, influenced, and sold to the highest bidder. These are the steps that I have taken to reduce (you can never totally eliminate) this process.
 Pi-Hole DNS This is a DNS server installed on a Raspberry Pi on my local home network. I have all the internet traffic going through my Virgin Media router filtered through this DNS server.</description>
       <content:encoded><![CDATA[<p>Ever since I worked at an internet marketing company on an advertising analytics platform, I have realised that I don&rsquo;t want my personal internet browsing tracked, monetised, influenced, and sold to the highest bidder. These are the steps that I have taken to reduce (you can never totally eliminate) this process.</p>
@@ -347,10 +347,10 @@ Pi-Hole DNS This is a DNS server installed on a Raspberry Pi on my local home ne
     
     <item>
       <title>My Simple Commandline Git Workflow</title>
-      <link>http://davidcraddock.net/2021/10/21/my-simple-commandline-git-workflow/</link>
+      <link>https://davidcraddock.net/2021/10/21/my-simple-commandline-git-workflow/</link>
       <pubDate>Thu, 21 Oct 2021 16:44:09 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2021/10/21/my-simple-commandline-git-workflow/</guid>
+      <guid>https://davidcraddock.net/2021/10/21/my-simple-commandline-git-workflow/</guid>
       <description>This is a simple description of how I work 99% of the time, as I am a simpleton. Origin/main is the new origin/master for future repositories, I just note both here for completeness because I use origin master for a lot of current repos.
 I first make sure I am uptodate on origin/master or origin/main by git pulling. git checkout origin master git pull origin master I start making changes to the local copy on my local machine.</description>
       <content:encoded><![CDATA[<p>This is a simple description of how I work 99% of the time, as I am a simpleton. Origin/main is the new origin/master for future repositories, I just note both here for completeness because I use origin master for a lot of current repos.</p>
@@ -385,10 +385,10 @@ I first make sure I am uptodate on origin/master or origin/main by git pulling. 
     
     <item>
       <title>26/2/2021 DJ Setup with Diagrams</title>
-      <link>http://davidcraddock.net/2021/02/26/26-2-2021-dj-setup-with-diagrams/</link>
+      <link>https://davidcraddock.net/2021/02/26/26-2-2021-dj-setup-with-diagrams/</link>
       <pubDate>Fri, 26 Feb 2021 17:26:22 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2021/02/26/26-2-2021-dj-setup-with-diagrams/</guid>
+      <guid>https://davidcraddock.net/2021/02/26/26-2-2021-dj-setup-with-diagrams/</guid>
       <description>After the last post I have added Ableton Live and my Eurorack modular to my DJ setup, with a master clock being sent via MIDI cables from my Roland TR8 drum machine that syncs with Ableton. The drum machine also can be used creatively for drum fills etc.
 I hope these two diagrams explain my setup adequately - sometimes a picture is worth a thousand words! The &amp;lsquo;actor&amp;rsquo; is me - I just couldn&amp;rsquo;t find a way to change that on http://draw.</description>
       <content:encoded><![CDATA[<p>After the last post I have added Ableton Live and my Eurorack modular to my DJ setup, with a master clock being sent via MIDI cables from my Roland TR8 drum machine that syncs with Ableton. The drum machine also can be used creatively for drum fills etc.</p>
@@ -400,10 +400,10 @@ I hope these two diagrams explain my setup adequately - sometimes a picture is w
     
     <item>
       <title>DJ Books: Reviewed</title>
-      <link>http://davidcraddock.net/2021/02/18/dj-books-reviewed/</link>
+      <link>https://davidcraddock.net/2021/02/18/dj-books-reviewed/</link>
       <pubDate>Thu, 18 Feb 2021 16:56:59 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2021/02/18/dj-books-reviewed/</guid>
+      <guid>https://davidcraddock.net/2021/02/18/dj-books-reviewed/</guid>
       <description>The classic!
 Yes! Some people actually write and read BOOKS on DJing. As if YouTube wasn&amp;rsquo;t enough. Well it can be enough.. but YouTube is also a cess pit of rubbish information, and at least a book has a better chance of being properly edited and reviewed. Also reading a book makes you more intellectual. Which is utterly true.
 So. I have been reading through these DJing books to see if they could teach me something I didn&amp;rsquo;t know about DJing after over 10 years doing it.</description>
@@ -427,10 +427,10 @@ So. I have been reading through these DJing books to see if they could teach me 
     
     <item>
       <title>David’s Guide to The News</title>
-      <link>http://davidcraddock.net/2021/01/08/davids-guide-to-the-news/</link>
+      <link>https://davidcraddock.net/2021/01/08/davids-guide-to-the-news/</link>
       <pubDate>Fri, 08 Jan 2021 08:50:03 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2021/01/08/davids-guide-to-the-news/</guid>
+      <guid>https://davidcraddock.net/2021/01/08/davids-guide-to-the-news/</guid>
       <description>Journalism has deteriorated to a huge degree in the online age. A lot of articles and video content are one-sided short ‘clickbait’ – short messages designed to trigger an extreme emotional reaction. ALMOST ALL journalism is like this these days, it doesn’t matter if you have a highly established news network you have been trusting for decades, they have all had to adopt this low-quality strategy due to the ultra-competitive and dire financial situation that all news reporting finds itself in.</description>
       <content:encoded><![CDATA[<p>Journalism has deteriorated to a huge degree in the online age. A lot of articles and video content are one-sided short ‘clickbait’ – short messages designed to trigger an extreme emotional reaction. ALMOST ALL journalism is like this these days, it doesn’t matter if you have a highly established news network you have been trusting for decades, they have all had to adopt this low-quality strategy due to the ultra-competitive and dire financial situation that all news reporting finds itself in. However a lot of people still take news content at complete face value, and this leads to a huge number of people being misled about the real facts.</p>
 <p>So, whenever you are reading, listening to, or watching a piece of news content, here are some questions you can ask yourself to really get the full picture of what you are consuming.</p>
@@ -457,10 +457,10 @@ So. I have been reading through these DJing books to see if they could teach me 
     
     <item>
       <title>Finally my 27U Eurorack is complete!</title>
-      <link>http://davidcraddock.net/2020/12/11/finally-my-27u-eurorack-is-complete/</link>
+      <link>https://davidcraddock.net/2020/12/11/finally-my-27u-eurorack-is-complete/</link>
       <pubDate>Fri, 11 Dec 2020 22:03:36 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2020/12/11/finally-my-27u-eurorack-is-complete/</guid>
+      <guid>https://davidcraddock.net/2020/12/11/finally-my-27u-eurorack-is-complete/</guid>
       <description>The three sections Left 9U section Right 9U section Middle 9U section So.. finally my 27U Eurorack modular synthesiser is complete. I have filled up the third - and surely last, as there is no more room in the studio! - case. I started this Eurorack modular in 2015.. so I am glad it is all complete now. I put in a small amount nearly every month for new modules.</description>
       <content:encoded><![CDATA[<ul>
 <li><img loading="lazy" src="/wp-content/uploads/2020/12/img_20201211_215515-1.jpg" type="" alt=""  />The three sections</li>
@@ -479,10 +479,10 @@ So. I have been reading through these DJing books to see if they could teach me 
     
     <item>
       <title>Ivy Bridge 2011 PCs are still useful today</title>
-      <link>http://davidcraddock.net/2020/10/13/ivy-bridge-2011-pcs-are-still-useful-today/</link>
+      <link>https://davidcraddock.net/2020/10/13/ivy-bridge-2011-pcs-are-still-useful-today/</link>
       <pubDate>Tue, 13 Oct 2020 18:06:30 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2020/10/13/ivy-bridge-2011-pcs-are-still-useful-today/</guid>
+      <guid>https://davidcraddock.net/2020/10/13/ivy-bridge-2011-pcs-are-still-useful-today/</guid>
       <description>In our house, seperate to my main PC (see the tab above) we still have two Ivy Bridge-based PCs:
 Conny&amp;rsquo;s PC
 i7-3770K 16GB DDR3 RAM Nvidea Radeon 970 Graphics Card 250 GB SSD Windows 10 My wife uses this as her main PC, and plays quite a few games with it. For a CPU and motherboard that I put together in 2011 or so, I am quite amazed it still runs adequetely!</description>
@@ -515,10 +515,10 @@ i7-3770K 16GB DDR3 RAM Nvidea Radeon 970 Graphics Card 250 GB SSD Windows 10 My 
     
     <item>
       <title>Studio Setup in 2020</title>
-      <link>http://davidcraddock.net/2020/01/30/studio-setup-in-2020/</link>
+      <link>https://davidcraddock.net/2020/01/30/studio-setup-in-2020/</link>
       <pubDate>Thu, 30 Jan 2020 14:55:22 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2020/01/30/studio-setup-in-2020/</guid>
+      <guid>https://davidcraddock.net/2020/01/30/studio-setup-in-2020/</guid>
       <description>I have made some considerable modifications to my modular since my last post. I have a 4-voice polyphony setup now with multiple voice Osc, VCA, Envelope and MIDI-CV modules, allowing me to experiment with polyphony voicing.
 Elsewhere, I have added an Access Virus C synthesizer to my studio, and now have rack-mounted Behringer Model D and Emu Orbit 9090 synthesizers. I have also upgraded to Ableton 10 and use NI&amp;rsquo;s Komplete suite including Massive X, plus TAL-NO-UX Juno 106 softsynth, Sylenth1 and others.</description>
       <content:encoded><![CDATA[<p><a href="https://www.modulargrid.net/e/racks/view/744839">
@@ -530,10 +530,10 @@ Elsewhere, I have added an Access Virus C synthesizer to my studio, and now have
     
     <item>
       <title>Finished Eurorack</title>
-      <link>http://davidcraddock.net/2017/06/16/finished-eurorack/</link>
+      <link>https://davidcraddock.net/2017/06/16/finished-eurorack/</link>
       <pubDate>Fri, 16 Jun 2017 17:57:23 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2017/06/16/finished-eurorack/</guid>
+      <guid>https://davidcraddock.net/2017/06/16/finished-eurorack/</guid>
       <description>Finally I have finished my Eurorack synthesiser! And I know many people say that &amp;lsquo;Euroracks are never finished&amp;rsquo; but this one absolutely has to be, for financial reasons. I think that I have got to a place where I have every major feature common in most synthesisers, but in a modular instrument format. It is a great place to learn about different synthesis techniques.
 [gallery ids=&amp;ldquo;1945&amp;rdquo; type=&amp;ldquo;rectangular&amp;rdquo;]
 This is the layout on Modulargrid.</description>
@@ -546,10 +546,10 @@ This is the layout on Modulargrid.</description>
     
     <item>
       <title>Finished Planning My Eurorack Modular Synthesizer</title>
-      <link>http://davidcraddock.net/2017/04/16/finished-planning-my-eurorack-modular-synthesizer/</link>
+      <link>https://davidcraddock.net/2017/04/16/finished-planning-my-eurorack-modular-synthesizer/</link>
       <pubDate>Sun, 16 Apr 2017 21:37:29 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2017/04/16/finished-planning-my-eurorack-modular-synthesizer/</guid>
+      <guid>https://davidcraddock.net/2017/04/16/finished-planning-my-eurorack-modular-synthesizer/</guid>
       <description>In January 2015 I put in an order for my first Eurorack case. Little did I know that I would end up filling that case and buying a larger one. Finally, 2 years and 3 months later, I have nearly finished assembling what will be the complete Eurorack. I have been buying a module or two per month, researching what I need and playing a lot with what I have got already to find out its limitations and areas for possible expansion.</description>
       <content:encoded><![CDATA[<p>In January 2015 I put in an order for my first Eurorack case. Little did I know that I would end up filling that case and buying a larger one. Finally, 2 years and 3 months later, I have nearly finished assembling what will be the complete Eurorack. I have been buying a module or two per month, researching what I need and playing a lot with what I have got already to find out its limitations and areas for possible expansion. It&rsquo;s much like incrementally building and upgrading a gaming PC really, although with very different results.</p>
 <p>Today I have come up with a final plan for what the cases will contain. The picture below is slightly misleading, I have two cases, so the case below is actually split down the middle into two enclosures. The left-side case is 2/3rds the size of the right hand case, that is why there is a grey unusable area at the top left.</p>
@@ -571,10 +571,10 @@ This is the layout on Modulargrid.</description>
     
     <item>
       <title>Goals for 2017</title>
-      <link>http://davidcraddock.net/2017/02/27/goals-for-2017/</link>
+      <link>https://davidcraddock.net/2017/02/27/goals-for-2017/</link>
       <pubDate>Mon, 27 Feb 2017 14:58:18 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2017/02/27/goals-for-2017/</guid>
+      <guid>https://davidcraddock.net/2017/02/27/goals-for-2017/</guid>
       <description>Looking at my past posts, you may notice that I didn&amp;rsquo;t set myself any goals for 2016. Looking back, this was a mistake, so I&amp;rsquo;m going to remedy this by setting some for 2017.
 Goals:
 Lose a significant amount of weight - this is very important for health reasons. Study maths courses - I intend to sign up for some maths courses at the OU. This will improve my mathematical knowledge, allowing for further study in subjects I&amp;rsquo;m interested in, plus allow me to work in more mathematically-heavy careers.</description>
@@ -592,10 +592,10 @@ Lose a significant amount of weight - this is very important for health reasons.
     
     <item>
       <title>Studio Setup</title>
-      <link>http://davidcraddock.net/2017/02/11/studio-setup/</link>
+      <link>https://davidcraddock.net/2017/02/11/studio-setup/</link>
       <pubDate>Sat, 11 Feb 2017 13:25:27 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2017/02/11/studio-setup/</guid>
+      <guid>https://davidcraddock.net/2017/02/11/studio-setup/</guid>
       <description>This is my current studio setup.
 I have the following gear:
 Eurorack 9U case Eurorack 6U case KORG MS20 Mini Synth Roland TB3 Synth AY3 Chiptune Synth Roland A500-PRO Keyboard Controller Nord Drum Synth Macbook Pro with Ableton Live 9 Suite MIDI.OCD Polyphonic MIDI-&amp;gt;CV Converter Samson Patchbay
@@ -619,10 +619,10 @@ Samson Patchbay</p>
     
     <item>
       <title>Switching to Wordpress.com</title>
-      <link>http://davidcraddock.net/2017/01/30/switching-to-wordpress-com/</link>
+      <link>https://davidcraddock.net/2017/01/30/switching-to-wordpress-com/</link>
       <pubDate>Mon, 30 Jan 2017 07:09:58 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2017/01/30/switching-to-wordpress-com/</guid>
+      <guid>https://davidcraddock.net/2017/01/30/switching-to-wordpress-com/</guid>
       <description>I am currently moving the blog, which was formerly hosted on Dreamhost, to Wordpress.com hosting. Most of the content is moved over already, I have to go through all the posts and tidy up the references, relink the images etc. Hopefully I will get around to this shortly.</description>
       <content:encoded><![CDATA[<p>I am currently moving the blog, which was formerly hosted on Dreamhost, to Wordpress.com hosting. Most of the content is moved over already, I have to go through all the posts and tidy up the references, relink the images etc. Hopefully I will get around to this shortly.</p>
 ]]></content:encoded>
@@ -630,10 +630,10 @@ Samson Patchbay</p>
     
     <item>
       <title>Music Workflow 2017</title>
-      <link>http://davidcraddock.net/2016/12/03/music-workflow-2017/</link>
+      <link>https://davidcraddock.net/2016/12/03/music-workflow-2017/</link>
       <pubDate>Sat, 03 Dec 2016 20:02:18 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2016/12/03/music-workflow-2017/</guid>
+      <guid>https://davidcraddock.net/2016/12/03/music-workflow-2017/</guid>
       <description>In 2017 I want to build a relatively static hardware-based workflow. This is what I&amp;rsquo;ve chosen: The components are:
 Roland A-500PRO keyboard controller - https://www.roland.com/global/products/a-500pro/ Arpie MIDI Arpeggiator - https://www.tindie.com/products/hotchk155/arpie-midi-arpeggiator-kit/ CV.OCD Midi -&amp;gt; CV Convertor - https://www.tindie.com/products/hotchk155/cvocd-a-super-flexible-midi-to-cv-box/ KORG MS20 Semi-Modular Mini Synth Eurorack - https://www.modulargrid.net/e/racks/view/350623 Nord Drum Semi-Modular Drum Module - http://www.nordkeyboards.com/products/nord-drum Stereo Memory Man with Hazarai (Reverb/Echo Pedal) - http://www.ehx.com/products/stereo-memory-man-with-hazarai Focusrite Saffire Pro 24 Audio Interface - https://us.focusrite.com/firewire-audio-interfaces/saffire-pro-24 Ableton Push Controller (MK1) - https://www.</description>
       <content:encoded><![CDATA[<p>In 2017 I want to build a relatively static hardware-based workflow. This is what I&rsquo;ve chosen: <a href="https://www.ableton.com/en/push/"><img loading="lazy" src="/wp-content/uploads/2016/12/workflow-setup-2.png" type="" alt="workflow-setup"  /></a></p>
@@ -654,10 +654,10 @@ Roland A-500PRO keyboard controller - https://www.roland.com/global/products/a-5
     
     <item>
       <title>Current Music-Making Setup</title>
-      <link>http://davidcraddock.net/2016/11/16/current-music-making-setup/</link>
+      <link>https://davidcraddock.net/2016/11/16/current-music-making-setup/</link>
       <pubDate>Wed, 16 Nov 2016 17:23:09 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2016/11/16/current-music-making-setup/</guid>
+      <guid>https://davidcraddock.net/2016/11/16/current-music-making-setup/</guid>
       <description>With my current setup, I&amp;rsquo;m trying to make as much music &amp;lsquo;out of the box&amp;rsquo; as possible, away from the computer as I find it more fun.
 Synths: KORG Minilogue: I use this for a keyboard controller, and I use the 16 step sequencer to run simple sequences. It connects to the PC via USB and has MIDI output. I can also use this as a synthesizer its own right, it&amp;rsquo;s good for backing chords and pads.</description>
       <content:encoded><![CDATA[<p>With my current setup, I&rsquo;m trying to make as much music &lsquo;out of the box&rsquo; as possible, away from the computer as I find it more fun.</p>
@@ -676,10 +676,10 @@ Synths: KORG Minilogue: I use this for a keyboard controller, and I use the 16 s
     
     <item>
       <title>Narrative-Led PC Games</title>
-      <link>http://davidcraddock.net/2016/09/05/narrative-led-pc-games/</link>
+      <link>https://davidcraddock.net/2016/09/05/narrative-led-pc-games/</link>
       <pubDate>Mon, 05 Sep 2016 17:22:14 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2016/09/05/narrative-led-pc-games/</guid>
+      <guid>https://davidcraddock.net/2016/09/05/narrative-led-pc-games/</guid>
       <description>When I first started getting into computer roleplaying games in the 90s/00s I remember playing the Infinity Engine games by Bioware and Black Isle, such as Baldur’s Gate 2, the original Fallout games, and of course Planescape: Torment. It was the quality of writing that drew me in and took me to another world, the graphics were just a background setting to that writing.
 Somewhere in the 2000s RPGs became more action orientated and prioritised mechanics and visual appeal and combat over branching stories.</description>
       <content:encoded><![CDATA[<p>
@@ -699,10 +699,10 @@ Another outlandish game, this time set in the world of Monte Cook’s Numenera, 
     
     <item>
       <title>Eurorack 2016</title>
-      <link>http://davidcraddock.net/2016/04/16/eurorack-2016/</link>
+      <link>https://davidcraddock.net/2016/04/16/eurorack-2016/</link>
       <pubDate>Sat, 16 Apr 2016 20:58:13 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2016/04/16/eurorack-2016/</guid>
+      <guid>https://davidcraddock.net/2016/04/16/eurorack-2016/</guid>
       <description>So.. the problem, as so many people have said, with getting into building a Eurorack modular synthesizer is that it becomes addictive, and you inevitably spend more than you can really afford. That said.. I now have a great fully customised synthesiser for what I want to do :) The layout is:
 Top shelf: 3 oscilators and noise generator in the top left, 4 VCAs and S&amp;amp;H and Ring Mod sections in the mid center, LFOs in the top right.</description>
       <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2016/04/eurorack.png" type="" alt="eurorack"  /></p>
@@ -718,10 +718,10 @@ Top shelf: 3 oscilators and noise generator in the top left, 4 VCAs and S&amp;am
     
     <item>
       <title>My vIM Configuration</title>
-      <link>http://davidcraddock.net/2016/03/26/my-vim-configuration/</link>
+      <link>https://davidcraddock.net/2016/03/26/my-vim-configuration/</link>
       <pubDate>Sat, 26 Mar 2016 04:13:08 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2016/03/26/my-vim-configuration/</guid>
+      <guid>https://davidcraddock.net/2016/03/26/my-vim-configuration/</guid>
       <description>I use a heavily customised setup for vIM, the text editor that annoys me the least in ~30 years of using a computer. You can see my exact setup in my dotfiles repo on github, https://github.com/wordswords/-.
 Here are the plugins I use:
 ConqueTerm - Opens a shell window inside vIM, allowing you to have a REPL environment within vIM. NERDTree - A filetree plugin that you can see on the left of the window above.</description>
@@ -742,10 +742,10 @@ ConqueTerm - Opens a shell window inside vIM, allowing you to have a REPL enviro
     
     <item>
       <title>Goals of 2015 Summary</title>
-      <link>http://davidcraddock.net/2016/01/17/2015-goals-summary/</link>
+      <link>https://davidcraddock.net/2016/01/17/2015-goals-summary/</link>
       <pubDate>Sun, 17 Jan 2016 20:38:13 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2016/01/17/2015-goals-summary/</guid>
+      <guid>https://davidcraddock.net/2016/01/17/2015-goals-summary/</guid>
       <description>At the start of 2015, I wrote down some goals for 2015. Around half-way through the year, I revisited these goals with some thoughts on how well I&amp;rsquo;d done. Now 2015 is over, I want to reflect on what has been achieved and what hasn&amp;rsquo;t.
 I also want to comment on the fact that I am discussing personal things here. A few years ago I was decided that I was going to keep this blog professional and pretty much dry of any thoughts or feelings on my personal life.</description>
       <content:encoded><![CDATA[<p>At the start of 2015, I wrote down <a href="http://www.davidcraddock.net/2015/01/17/goals-for-the-year-2015/">some goals for 2015</a>. Around half-way through the year, I revisited these goals with <a href="http://www.davidcraddock.net/2015/09/01/goals-for-the-year-2015-midway-update/">some thoughts on how well I&rsquo;d done</a>. Now 2015 is over, I want to reflect on what has been achieved and what hasn&rsquo;t.</p>
@@ -788,10 +788,10 @@ I also want to comment on the fact that I am discussing personal things here. A 
     
     <item>
       <title>Introversion, Extroversion and the BBC Software Engineer</title>
-      <link>http://davidcraddock.net/2015/09/28/introversion-extroversion-and-being-a-bbc-software-engineer/</link>
+      <link>https://davidcraddock.net/2015/09/28/introversion-extroversion-and-being-a-bbc-software-engineer/</link>
       <pubDate>Mon, 28 Sep 2015 16:22:52 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2015/09/28/introversion-extroversion-and-being-a-bbc-software-engineer/</guid>
+      <guid>https://davidcraddock.net/2015/09/28/introversion-extroversion-and-being-a-bbc-software-engineer/</guid>
       <description>Whether you agree with Myers-Briggs personality profiling or not, like fellow BBC&amp;rsquo;er Ian Forrester I have found them a useful frame of reference from which to discuss my personality, because I see similarities between my perception of me, and the classification.
 I took the Myers-Briggs personality profiling, and it has labelled me on several occasions an INTP:
 INTPs are marked by a quiet, stoic, modest, and aloof exterior that masks strong creativity and enthusiasm for novel possibilities.</description>
@@ -826,10 +826,10 @@ I – Introversion preferred to extraversion: INTPs tend to be quiet and reserve
     
     <item>
       <title>Completed Eurorack</title>
-      <link>http://davidcraddock.net/2015/09/02/completed-eurorack/</link>
+      <link>https://davidcraddock.net/2015/09/02/completed-eurorack/</link>
       <pubDate>Wed, 02 Sep 2015 08:13:17 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2015/09/02/completed-eurorack/</guid>
+      <guid>https://davidcraddock.net/2015/09/02/completed-eurorack/</guid>
       <description>I&amp;rsquo;ve finished my 6U Eurorack case. It took me 9 months to build, buying a couple of modules a month.
 Goals I wanted to make a self-contained dual voice synthesizer that would interface with my 2x Doepfer Dark Energy MK1s and my Microbrute, on a budget. I also wanted to add some random sound generation features.
 I chose to make the synthesizer out of Doepfer modules because they are easy to find cheap second-hand, and also because they are well-engineered.</description>
@@ -877,10 +877,10 @@ I chose to make the synthesizer out of Doepfer modules because they are easy to 
     
     <item>
       <title>Things I&#39;d like to Learn More About</title>
-      <link>http://davidcraddock.net/2015/09/02/things-id-like-to-learn-more-about/</link>
+      <link>https://davidcraddock.net/2015/09/02/things-id-like-to-learn-more-about/</link>
       <pubDate>Wed, 02 Sep 2015 06:31:10 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2015/09/02/things-id-like-to-learn-more-about/</guid>
+      <guid>https://davidcraddock.net/2015/09/02/things-id-like-to-learn-more-about/</guid>
       <description>Some things I have been meaning to investigate in my own time, but haven&amp;rsquo;t, because life just gets in the way.
 Maths - It might surprise a few people that, as a software developer, I never took maths to A-level. I picked up a bit of maths in my CS degree, but I never really got a firm grounding in it. This has prevented me from understanding and coding advanced stuff in game development, understanding audio to a decent level, and generally doing things in which I consider the more interesting fields of computing.</description>
       <content:encoded><![CDATA[<p>Some things I have been meaning to investigate in my own time, but haven&rsquo;t, because life just gets in the way.</p>
@@ -898,10 +898,10 @@ Maths - It might surprise a few people that, as a software developer, I never to
     
     <item>
       <title>Goals for the Year 2015 - Midway Update</title>
-      <link>http://davidcraddock.net/2015/09/01/goals-for-the-year-2015-midway-update/</link>
+      <link>https://davidcraddock.net/2015/09/01/goals-for-the-year-2015-midway-update/</link>
       <pubDate>Tue, 01 Sep 2015 15:33:18 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2015/09/01/goals-for-the-year-2015-midway-update/</guid>
+      <guid>https://davidcraddock.net/2015/09/01/goals-for-the-year-2015-midway-update/</guid>
       <description>Now that I am midway through the year, I thought I&amp;rsquo;d revisit the goals I set myself at the start of the year, to see what has changed.
 Career Goals Settle into my new role at the BBC as Test Manager - I suppose this has not been achieved. I will have more updates soon (hopefully) but a change of direction is likely to happen. Pushing for a place to be opened up in Platform Test to employ someone from the Extend Scheme - This has been achieved, and someone will be joining Platform Test from the Extend scheme in October, I&amp;rsquo;m happy to say.</description>
       <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2015/01/windingroad.jpg"><img loading="lazy" src="/wp-content/uploads/2015/01/windingroad.jpg" type="" alt="Winding Road"  /></a></p>
@@ -936,10 +936,10 @@ Career Goals Settle into my new role at the BBC as Test Manager - I suppose this
     
     <item>
       <title>Open Source! Device API and Device API-Android on Github</title>
-      <link>http://davidcraddock.net/2015/06/21/open-source-device-api-and-device-api-android-on-github/</link>
+      <link>https://davidcraddock.net/2015/06/21/open-source-device-api-and-device-api-android-on-github/</link>
       <pubDate>Sun, 21 Jun 2015 17:28:22 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2015/06/21/open-source-device-api-and-device-api-android-on-github/</guid>
+      <guid>https://davidcraddock.net/2015/06/21/open-source-device-api-and-device-api-android-on-github/</guid>
       <description>Two Ruby gems that I contributed to from my days in the BBC&amp;rsquo;s TITAN (Test Tools and Infrastructure) team, have been open-sourced. So finally I can say that I have made proper open-source contributions. The gems are for making automating of Android phones via Android Calabash easier, and are used in a lot of the mobile testing we do at the BBC. Here they are:
 https://github.com/bbc/device_api https://github.com/bbc/device_api-android Here is my Github profile, which doesn&amp;rsquo;t look very active on the surface, but I have been contributing to repositories which remain private at the moment, so my history is not visible.</description>
       <content:encoded><![CDATA[<p>Two Ruby gems that I contributed to from my days in the BBC&rsquo;s TITAN (Test Tools and Infrastructure) team, have been open-sourced. So finally I can say that I have made proper open-source contributions. The gems are for making automating of Android phones via Android Calabash easier, and are used in a lot of the mobile testing we do at the BBC. Here they are:</p>
@@ -949,10 +949,10 @@ https://github.com/bbc/device_api https://github.com/bbc/device_api-android Here
     
     <item>
       <title>Instruments That I Use</title>
-      <link>http://davidcraddock.net/2015/06/21/instruments-that-i-use/</link>
+      <link>https://davidcraddock.net/2015/06/21/instruments-that-i-use/</link>
       <pubDate>Sun, 21 Jun 2015 17:05:00 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2015/06/21/instruments-that-i-use/</guid>
+      <guid>https://davidcraddock.net/2015/06/21/instruments-that-i-use/</guid>
       <description>I have a lot of different instruments, both hardware and software, for making music, but here is what I use the most at the moment:
 Piano I have an actual electric piano but I don&amp;rsquo;t use the onboard sound engine, preferring to use it as a midi controller for a software piano sound. Recently I bought Ableton Live Full Suite, before I was using the &amp;lsquo;Grand Piano&amp;rsquo; sound from the default install.</description>
       <content:encoded><![CDATA[<p>I have a lot of different instruments, both hardware and software, for making music, but here is what I use the most at the moment:</p>
@@ -967,10 +967,10 @@ I have been using my modular and semi-modular synthesizer as a main bassline syn
     
     <item>
       <title>Modular Progress</title>
-      <link>http://davidcraddock.net/2015/06/21/eurorack-progress/</link>
+      <link>https://davidcraddock.net/2015/06/21/eurorack-progress/</link>
       <pubDate>Sun, 21 Jun 2015 16:18:11 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2015/06/21/eurorack-progress/</guid>
+      <guid>https://davidcraddock.net/2015/06/21/eurorack-progress/</guid>
       <description>Specs
 I have finished filling the top half of my Eurorack case, see above. Here is a list of modules:
 Dual VCA - A-132-3 Buffered Multiples - Intellij Buff Mult VCO #1 - A-110-1 VCO VCO #2 - A-110-1 VCO Low Pass Filter - A-120 Multiples #1 - A-180-1 Multiples #2 - A-180-1 Quantizer - A-156 Dual Quantizer Envelope Generator - A-140 ADSR Noise Generator/Random - A-118 Quad LFO - A-143-3 Quad LFO Next Moves:</description>
@@ -1005,10 +1005,10 @@ Dual VCA - A-132-3 Buffered Multiples - Intellij Buff Mult VCO #1 - A-110-1 VCO 
     
     <item>
       <title>Modular Synthesizers</title>
-      <link>http://davidcraddock.net/2015/01/30/modular-synthesizers/</link>
+      <link>https://davidcraddock.net/2015/01/30/modular-synthesizers/</link>
       <pubDate>Fri, 30 Jan 2015 00:15:11 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2015/01/30/modular-synthesizers/</guid>
+      <guid>https://davidcraddock.net/2015/01/30/modular-synthesizers/</guid>
       <description>I am putting together a small modular synthesiser setup. Modular synthesizers are synthesizers composed of small individual modules, which are wired up to create a circuit for producing sound. They were very popular in the 1970s, with big bands such as Emmerson, Lake and Palmer, Kraftwerk and Jean Michael Jarre all owning big modular setups:
 Modular synthesisers have had a resurgence in recent years with modern versions becoming available. One producer of modular synthesiser modules is Doepfer, a German company who&amp;rsquo;s modular synthesizer standard &amp;lsquo;Eurorack&amp;rsquo; has become very popular recently.</description>
       <content:encoded><![CDATA[<p>I am putting together a small modular synthesiser setup. Modular synthesizers are synthesizers composed of small individual modules, which are wired up to create a circuit for producing sound. They were very popular in the 1970s, with big bands such as Emmerson, Lake and Palmer, Kraftwerk and Jean Michael Jarre all owning big modular setups:</p>
@@ -1028,10 +1028,10 @@ Modular synthesisers have had a resurgence in recent years with modern versions 
     
     <item>
       <title>My Computer Build</title>
-      <link>http://davidcraddock.net/2014/01/29/my-computer-build/</link>
+      <link>https://davidcraddock.net/2014/01/29/my-computer-build/</link>
       <pubDate>Wed, 29 Jan 2014 00:13:12 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2014/01/29/my-computer-build/</guid>
+      <guid>https://davidcraddock.net/2014/01/29/my-computer-build/</guid>
       <description>Updated: Reorganised, replaced Tiamat headset for KAVE.
 I use my computer a lot, for work (software development), gaming and music production. I wanted to build a high-end computer setup, as I&amp;rsquo;ve always lagged behind with upgrades before. So I gradually have been accumulating and swapping bits around to make the setup above.
 Internals
@@ -1192,10 +1192,10 @@ Headphones Soundcard Headset Speakers Speaker Stands Mixer Desktop Microphone Pe
     
     <item>
       <title>iTerm for OSX for a Colourful Terminal Experience</title>
-      <link>http://davidcraddock.net/2013/06/11/iterm-for-osx-for-a-colourful-terminal-experience/</link>
+      <link>https://davidcraddock.net/2013/06/11/iterm-for-osx-for-a-colourful-terminal-experience/</link>
       <pubDate>Tue, 11 Jun 2013 16:08:16 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2013/06/11/iterm-for-osx-for-a-colourful-terminal-experience/</guid>
+      <guid>https://davidcraddock.net/2013/06/11/iterm-for-osx-for-a-colourful-terminal-experience/</guid>
       <description>iTerm is much better than the standard OSX terminal client, not least because it has compatiablity with xterm256-color terminal emulation. xterm256-color emulation will give your terminal access to 256 colours instead of the usual 16. Much better, not just for looking pretty, but for distinguishing between different types of data in an editor like VIM or even in Cucumber output (see picture above). It&amp;rsquo;s also free.
 http://iterm.sourceforge.net
 Once installed, you will have to go in to the preferences and set your &amp;lsquo;Report Terminal Type&amp;rsquo; to be &amp;lsquo;xterm256-color&amp;rsquo;.</description>
@@ -1208,10 +1208,10 @@ Once installed, you will have to go in to the preferences and set your &amp;lsqu
     
     <item>
       <title>Decent Graphics for Flash Games</title>
-      <link>http://davidcraddock.net/2010/05/17/art-for-flash-games/</link>
+      <link>https://davidcraddock.net/2010/05/17/art-for-flash-games/</link>
       <pubDate>Mon, 17 May 2010 02:29:54 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2010/05/17/art-for-flash-games/</guid>
+      <guid>https://davidcraddock.net/2010/05/17/art-for-flash-games/</guid>
       <description>Lately I&amp;rsquo;ve been thinking about making a Flash game or application. Although I haven&amp;rsquo;t made one yet, my current understanding is that most projects of this type require a lot of artwork.
 I found this article, and was impressed at the quality and the resources mentioned: http://freelanceflashgames.com/news/2009/03/25/the-big-guide-to-hiring-an-artist/</description>
       <content:encoded><![CDATA[<p>Lately I&rsquo;ve been thinking about making a Flash game or application. Although I haven&rsquo;t made one yet, my current understanding is that most projects of this type require a lot of artwork.</p>
@@ -1221,10 +1221,10 @@ I found this article, and was impressed at the quality and the resources mention
     
     <item>
       <title>Speed Climbing</title>
-      <link>http://davidcraddock.net/2009/10/17/speed-climbing/</link>
+      <link>https://davidcraddock.net/2009/10/17/speed-climbing/</link>
       <pubDate>Sat, 17 Oct 2009 23:05:11 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2009/10/17/speed-climbing/</guid>
+      <guid>https://davidcraddock.net/2009/10/17/speed-climbing/</guid>
       <description>I&amp;rsquo;m going to take a break from the purely technical posts to get more people to see this video. Here the late Dan Osman speed-climbs a cliff without any safety equipment.
 http://www.youtube-nocookie.com/v/Fpm0m6bVfrM&amp;amp;hl=en&amp;amp;fs=1&amp;amp;rel=0
 Risky? Just a bit. A few years later he lost his life during a similar attempt. But no-one can doubt the guts required, and the level of skill he achieved, in this type of climbing.</description>

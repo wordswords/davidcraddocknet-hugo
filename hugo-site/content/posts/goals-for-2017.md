@@ -2,7 +2,7 @@
 category:
   - uncategorized
 date: "2017-02-27T14:58:18+00:00"
-guid: http://davidcraddock.net/?p=1847
+guid: https://davidcraddock.net/?p=1847
 title: Goals for 2017
 url: /2017/02/27/goals-for-2017/
 

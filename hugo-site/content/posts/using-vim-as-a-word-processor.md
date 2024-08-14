@@ -2,7 +2,7 @@
 category:
   - tutorials
 date: "2022-03-08T19:43:00+00:00"
-guid: http://davidcraddock.net/?p=2958
+guid: https://davidcraddock.net/?p=2958
 title: Using VIM as a Word Processor
 url: /2022/03/08/using-vim-as-a-word-processor/
 

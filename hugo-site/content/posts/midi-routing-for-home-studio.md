@@ -2,7 +2,7 @@
 category:
   - uncategorized
 date: "2022-06-19T03:04:47+00:00"
-guid: http://davidcraddock.net/?p=3084
+guid: https://davidcraddock.net/?p=3084
 title: MIDI Routing for Home Studio
 url: /2022/06/19/midi-routing-for-home-studio/
 

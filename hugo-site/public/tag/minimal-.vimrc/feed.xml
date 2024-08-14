@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Minimal-.Vimrc on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/tag/minimal-.vimrc/</link>
+    <link>https://davidcraddock.net/tag/minimal-.vimrc/</link>
     <description>Recent content in Minimal-.Vimrc on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 18 Mar 2010 19:23:07 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/tag/minimal-.vimrc/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Mar 2010 19:23:07 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/tag/minimal-.vimrc/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My minimal VIM config</title>
-      <link>http://davidcraddock.net/2010/03/18/my-minimal-vim-config/</link>
+      <link>https://davidcraddock.net/2010/03/18/my-minimal-vim-config/</link>
       <pubDate>Thu, 18 Mar 2010 19:23:07 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2010/03/18/my-minimal-vim-config/</guid>
+      <guid>https://davidcraddock.net/2010/03/18/my-minimal-vim-config/</guid>
       <description>This is the absolute minimum I do when I have to log onto a new server or shell account that I haven&amp;rsquo;t used before, that I will need to edit text files with.
 First I figure out whether VIM is really installed. A lot of installs, especially those based on ubuntu, ship with VI aliased to VIM, but the VIM install is usually not really VIM at all, and behaves exactly like VI but with some minor bugs fixed.</description>
       <content:encoded><![CDATA[<p>This is the absolute minimum I do when I have to log onto a new server or shell account that I haven&rsquo;t used before, that I will need to edit text files with.</p>

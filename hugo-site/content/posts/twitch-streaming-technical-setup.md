@@ -13,7 +13,7 @@ category:
   - twitch
   - vjing
 date: "2021-02-14T23:57:54+00:00"
-guid: http://davidcraddock.net/?p=2342
+guid: https://davidcraddock.net/?p=2342
 tag:
   - configuration
   - djing

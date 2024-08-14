@@ -2,7 +2,7 @@
 category:
   - uncategorized
 date: "2020-12-11T22:03:36+00:00"
-guid: http://davidcraddock.net/?p=2288
+guid: https://davidcraddock.net/?p=2288
 title: Finally my 27U Eurorack is complete!
 url: /2020/12/11/finally-my-27u-eurorack-is-complete/
 

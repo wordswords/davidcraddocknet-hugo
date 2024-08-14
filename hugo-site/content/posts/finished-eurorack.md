@@ -2,7 +2,7 @@
 category:
   - uncategorized
 date: "2017-06-16T17:57:23+00:00"
-guid: http://davidcraddock.net/?p=1940
+guid: https://davidcraddock.net/?p=1940
 title: Finished Eurorack
 url: /2017/06/16/finished-eurorack/
 

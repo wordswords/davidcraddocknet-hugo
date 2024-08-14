@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Jenkinsfile on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/category/jenkinsfile/</link>
+    <link>https://davidcraddock.net/category/jenkinsfile/</link>
     <description>Recent content in Jenkinsfile on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 19 Feb 2022 05:51:56 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/jenkinsfile/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Feb 2022 05:51:56 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/category/jenkinsfile/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Working with Jenkinsfiles in VIM</title>
-      <link>http://davidcraddock.net/2022/02/19/working-with-jenkinsfiles-in-vim/</link>
+      <link>https://davidcraddock.net/2022/02/19/working-with-jenkinsfiles-in-vim/</link>
       <pubDate>Sat, 19 Feb 2022 05:51:56 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2022/02/19/working-with-jenkinsfiles-in-vim/</guid>
+      <guid>https://davidcraddock.net/2022/02/19/working-with-jenkinsfiles-in-vim/</guid>
       <description>Using Jenkinsfiles in repositories for declarative pipelines, which is an example as infrastructure as code, is absolutely the right thing to do, in my opinion.
 However the tooling for debugging and error checking Jenkinsfiles is currently quite difficult.
 Setup Jenkinsfile linter First of all you need to make sure to be able to access the Jenkinsfile linter. This linter is processed on the Jenkins server itself, unusually. There is a configuration option that requires adminstrator access to the Jenkins server.</description>

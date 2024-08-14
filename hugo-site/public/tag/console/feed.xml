@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Console on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/tag/console/</link>
+    <link>https://davidcraddock.net/tag/console/</link>
     <description>Recent content in Console on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 25 Jan 2016 21:10:44 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/tag/console/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Jan 2016 21:10:44 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/tag/console/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ADAT with Digi 002 Consoles - Don&#39;t throw them away just yet!</title>
-      <link>http://davidcraddock.net/2016/01/25/adat-with-digi-002-console-dont-throw-them-away-just-yet/</link>
+      <link>https://davidcraddock.net/2016/01/25/adat-with-digi-002-console-dont-throw-them-away-just-yet/</link>
       <pubDate>Mon, 25 Jan 2016 21:10:44 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2016/01/25/adat-with-digi-002-console-dont-throw-them-away-just-yet/</guid>
+      <guid>https://davidcraddock.net/2016/01/25/adat-with-digi-002-console-dont-throw-them-away-just-yet/</guid>
       <description>So I got given a Digi 002 console version, which looks like this:
 A fairly old style digital audio interface and mixer, which was all the rage back in 2002 when it first came out, but now is often found sitting in the skip. Why? Because it is a Pro-Tools inteface, and Avid stopped supporting it about 5 years ago, so it won&amp;rsquo;t actually work under Pro Tools and Windows 10 (believe me, I&amp;rsquo;ve tried!</description>
       <content:encoded><![CDATA[<p>So I got given a Digi 002 console version, which looks like this:</p>
@@ -26,10 +26,10 @@ A fairly old style digital audio interface and mixer, which was all the rage bac
     
     <item>
       <title>Directory names not visable under ls? Change your colours.</title>
-      <link>http://davidcraddock.net/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</link>
+      <link>https://davidcraddock.net/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</link>
       <pubDate>Wed, 04 May 2011 16:03:55 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</guid>
+      <guid>https://davidcraddock.net/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</guid>
       <description>There is a problem I frequently encouter on Redhat/Fedora/CentOS systems with the output of the ls command. Under those distributions, the default setup is to display directories in a very dark colour. If you usually use a white foreground and a black background on your terminal client (such as Putty) then you will struggle to read the names of the directories under Redhat-based distributions.
 There are two soloutions that I have used:</description>
       <content:encoded><![CDATA[<p>There is a problem I frequently encouter on Redhat/Fedora/CentOS systems with the output of the <strong>ls</strong> command. Under those distributions, the default setup is to display directories in a very dark colour. If you usually use a white foreground and a black background on your terminal client (such as Putty) then you will struggle to read the names of the directories under Redhat-based distributions.</p>

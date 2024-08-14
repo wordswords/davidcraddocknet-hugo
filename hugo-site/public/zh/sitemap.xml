@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://davidcraddock.net/zh/category/</loc>
+    <loc>https://davidcraddock.net/zh/category/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://davidcraddock.net/category/"
+                href="https://davidcraddock.net/category/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://davidcraddock.net/zh/category/"
+                href="https://davidcraddock.net/zh/category/"
                 />
   </url><url>
-    <loc>http://davidcraddock.net/zh/page/</loc>
+    <loc>https://davidcraddock.net/zh/page/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://davidcraddock.net/page/"
+                href="https://davidcraddock.net/page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://davidcraddock.net/zh/page/"
+                href="https://davidcraddock.net/zh/page/"
                 />
   </url><url>
-    <loc>http://davidcraddock.net/zh/</loc>
+    <loc>https://davidcraddock.net/zh/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://davidcraddock.net/"
+                href="https://davidcraddock.net/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://davidcraddock.net/zh/"
+                href="https://davidcraddock.net/zh/"
                 />
   </url><url>
-    <loc>http://davidcraddock.net/zh/tag/</loc>
+    <loc>https://davidcraddock.net/zh/tag/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://davidcraddock.net/tag/"
+                href="https://davidcraddock.net/tag/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://davidcraddock.net/zh/tag/"
+                href="https://davidcraddock.net/zh/tag/"
                 />
   </url>
 </urlset>

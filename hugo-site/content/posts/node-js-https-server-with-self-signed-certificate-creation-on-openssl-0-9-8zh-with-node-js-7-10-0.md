@@ -9,7 +9,7 @@ category:
   - self-signed
   - solutions-to-a-specific-problem
 date: "2017-05-10T13:59:18+00:00"
-guid: http://davidcraddock.net/?p=1923
+guid: https://davidcraddock.net/?p=1923
 tag:
   - node
   - node.js

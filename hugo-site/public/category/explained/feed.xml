@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Explained on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/category/explained/</link>
+    <link>https://davidcraddock.net/category/explained/</link>
     <description>Recent content in Explained on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 20 Mar 2010 15:19:46 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/explained/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Mar 2010 15:19:46 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/category/explained/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Linux Root Directory, Explained</title>
-      <link>http://davidcraddock.net/2010/03/20/the-linux-file-structure/</link>
+      <link>https://davidcraddock.net/2010/03/20/the-linux-file-structure/</link>
       <pubDate>Sat, 20 Mar 2010 15:19:46 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2010/03/20/the-linux-file-structure/</guid>
+      <guid>https://davidcraddock.net/2010/03/20/the-linux-file-structure/</guid>
       <description>It&amp;rsquo;s helpful to know the basic filesystem on a Linux machine, to better understand where everything is supposed to go, and where you should start looking if you want to find a certain file.
 Everything in Linux is stored in the &amp;ldquo;root directory&amp;rdquo;. On a windows machine, that would be equivalent to C:. C: is the main folder where everything is stored. On Linux we call this the &amp;ldquo;root directory&amp;rdquo;, or simply &amp;ldquo;/&amp;rdquo;.</description>
       <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2010/03/got-root.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/got-root.jpg" type="" alt=""  /></a> It&rsquo;s helpful to know the basic filesystem on a Linux machine, to better understand where everything is supposed to go, and where you should start looking if you want to find a certain file.</p>

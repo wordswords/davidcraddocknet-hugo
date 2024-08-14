@@ -2,7 +2,7 @@
 category:
   - retrospectives
 date: "2023-11-25T20:07:59+00:00"
-guid: http://davidcraddock.net/?p=4226
+guid: https://davidcraddock.net/?p=4226
 title: Retrospective for 2023
 url: /2023/11/25/retrospective-for-2023/
 

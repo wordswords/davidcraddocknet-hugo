@@ -2,7 +2,7 @@
 category:
   - video-games
 date: "2021-08-07T19:57:27+00:00"
-guid: http://davidcraddock.net/?p=2641
+guid: https://davidcraddock.net/?p=2641
 title: My PSP Entertainment System for 2021!
 url: /2021/08/07/my-psp-entertainment-system-for-2021/
 

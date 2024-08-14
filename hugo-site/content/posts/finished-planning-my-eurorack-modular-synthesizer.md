@@ -2,7 +2,7 @@
 category:
   - uncategorized
 date: "2017-04-16T21:37:29+00:00"
-guid: http://davidcraddock.net/?p=1865
+guid: https://davidcraddock.net/?p=1865
 title: Finished Planning My Eurorack Modular Synthesizer
 url: /2017/04/16/finished-planning-my-eurorack-modular-synthesizer/
 

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Du on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/category/du/</link>
+    <link>https://davidcraddock.net/category/du/</link>
     <description>Recent content in Du on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Feb 2016 17:28:39 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/du/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Feb 2016 17:28:39 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/category/du/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fish Shell Scripting</title>
-      <link>http://davidcraddock.net/2016/02/02/fish-shell-scripting/</link>
+      <link>https://davidcraddock.net/2016/02/02/fish-shell-scripting/</link>
       <pubDate>Tue, 02 Feb 2016 17:28:39 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2016/02/02/fish-shell-scripting/</guid>
+      <guid>https://davidcraddock.net/2016/02/02/fish-shell-scripting/</guid>
       <description>A few months ago I switched across from Bash onto the Fish shell, on my main development machine. I can&amp;rsquo;t get enough of its fast autosuggestions and its sane scripting language. Compared to Bash it is very fun to use.
 Today I wrote a script to automate the backup of my development workspace onto a private bitbucket account. Bitbucket is good because it allows unlimited private repositories, but it caps the size of these repos at 2GB max, with some features disabled after 1GB.</description>
       <content:encoded><![CDATA[<p>

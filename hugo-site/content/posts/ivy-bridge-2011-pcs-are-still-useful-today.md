@@ -2,7 +2,7 @@
 category:
   - uncategorized
 date: "2020-10-13T18:06:30+00:00"
-guid: http://davidcraddock.net/?p=2243
+guid: https://davidcraddock.net/?p=2243
 title: Ivy Bridge 2011 PCs are still useful today
 url: /2020/10/13/ivy-bridge-2011-pcs-are-still-useful-today/
 

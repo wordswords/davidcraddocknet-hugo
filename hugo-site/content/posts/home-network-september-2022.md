@@ -2,7 +2,7 @@
 category:
   - uncategorized
 date: "2022-09-08T09:43:35+00:00"
-guid: http://davidcraddock.net/?p=3219
+guid: https://davidcraddock.net/?p=3219
 title: Home Network September 2022
 url: /2022/09/08/home-network-september-2022/
 

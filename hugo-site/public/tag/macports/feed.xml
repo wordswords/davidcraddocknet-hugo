@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Macports on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/tag/macports/</link>
+    <link>https://davidcraddock.net/tag/macports/</link>
     <description>Recent content in Macports on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Apr 2012 15:20:23 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/tag/macports/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Apr 2012 15:20:23 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/tag/macports/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Converting a single M2V frame into JPEG under OSX</title>
-      <link>http://davidcraddock.net/2012/04/12/converting-a-single-m2v-frame-into-jpeg/</link>
+      <link>https://davidcraddock.net/2012/04/12/converting-a-single-m2v-frame-into-jpeg/</link>
       <pubDate>Thu, 12 Apr 2012 15:20:23 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2012/04/12/converting-a-single-m2v-frame-into-jpeg/</guid>
+      <guid>https://davidcraddock.net/2012/04/12/converting-a-single-m2v-frame-into-jpeg/</guid>
       <description>I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame.</description>
       <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg"><img loading="lazy" src="/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg" type="" alt=""  /></a></p>
 <p>I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame. I couldn&rsquo;t find a video player that would open the single frame. So I resorted to the command line version of ffmpeg, which I installed via macports, to convert this single frame to a jpg file to view as normal. This line worked a treat:</p>

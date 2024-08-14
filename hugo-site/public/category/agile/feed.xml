@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Agile on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/category/agile/</link>
+    <link>https://davidcraddock.net/category/agile/</link>
     <description>Recent content in Agile on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Mar 2009 23:47:59 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/agile/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Mar 2009 23:47:59 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/category/agile/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Eclipse 3.4.2 &#43; Pydev &#43; Eclim = win</title>
-      <link>http://davidcraddock.net/2009/03/27/eclipse-342-pydev-eclim-win/</link>
+      <link>https://davidcraddock.net/2009/03/27/eclipse-342-pydev-eclim-win/</link>
       <pubDate>Fri, 27 Mar 2009 23:47:59 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2009/03/27/eclipse-342-pydev-eclim-win/</guid>
+      <guid>https://davidcraddock.net/2009/03/27/eclipse-342-pydev-eclim-win/</guid>
       <description>So, after saying all that stuff about how vimplugin and EasyEclipse was great, I actually started to use the setup heavily, and it started to annoy me.
 For one, EE is not a recent build of eclipse, nor does it come with a full set of recent plugins. This makes it annoyingly difficult to use when you want to use more than the set of plugins it packages for you. As far as vimplugin goes, it does not provide the vim integration I thought it might from embedded vim.</description>
       <content:encoded><![CDATA[<p>So, after saying all that stuff about how vimplugin and EasyEclipse was great, I actually started to use the setup heavily, and it started to annoy me.</p>

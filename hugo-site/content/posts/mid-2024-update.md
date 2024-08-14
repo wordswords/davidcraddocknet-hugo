@@ -12,7 +12,7 @@ url: /2024/08/02/mid-2024-update/
 
 Every year I've been doing these 'retrospectives', usually once per year but sometimes a couple of times per year.
 
-Things have changed quite significantly since [the last retrospective](http://davidcraddock.net/2023/11/25/retrospective-for-2023/), and I was in a pensive mood, so I thought I would write a retrospective for half the year.
+Things have changed quite significantly since [the last retrospective](https://davidcraddock.net/2023/11/25/retrospective-for-2023/), and I was in a pensive mood, so I thought I would write a retrospective for half the year.
 
 I finally found a job, with CGI, early in the year, and started in March 2023. Unfortunately, for reasons I'm contractually obliged not to get into, it wasn't long before I was looking for work again. I resigned from CGI at the end of June.
 
@@ -22,7 +22,7 @@ These large companies take a long time to onboard and there is so much paperwork
 
 I am really looking forward to start at BAE as my finances have taken quite a hit from the 12 months I had to take off work for cancer treatment, and the subsequent struggle I had to find work after that gap on my CV.
 
-In the meantime I've been keeping busy, working on my hobby technology projects, but also spending a lot of time cycling on my electric mountain bike [http://davidcraddock.net/my-bike/](http://davidcraddock.net/my-bike/). I aim to cycle every day, and I have bought many accessories and support gear to make that happen. So far I have noticed a real improvement in my health and fitness and energy levels, and I absolutely WILL keep this daily cycling a feature of my life when I start work again.
+In the meantime I've been keeping busy, working on my hobby technology projects, but also spending a lot of time cycling on my electric mountain bike [https://davidcraddock.net/my-bike/](https://davidcraddock.net/my-bike/). I aim to cycle every day, and I have bought many accessories and support gear to make that happen. So far I have noticed a real improvement in my health and fitness and energy levels, and I absolutely WILL keep this daily cycling a feature of my life when I start work again.
 
 It has been hugely beneficial for my mental and physical health, and just general independence, as I cannot drive, and never have been able to, and neither can my wife.
 

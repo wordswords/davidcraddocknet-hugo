@@ -2,7 +2,7 @@
 category:
   - retrospectives
 date: "2019-03-30T23:09:23+00:00"
-guid: http://davidcraddock.net/?p=2034
+guid: https://davidcraddock.net/?p=2034
 title: A Retrospective for Years 2016-19
 url: /2019/03/30/a-retrospective-for-years-2016-19/
 

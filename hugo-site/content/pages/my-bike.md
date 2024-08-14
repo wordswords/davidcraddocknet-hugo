@@ -1,6 +1,6 @@
 ---
 date: "2024-06-09T22:34:52+00:00"
-guid: http://davidcraddock.net/?page_id=4801
+guid: https://davidcraddock.net/?page_id=4801
 title: My Bike
 url: /my-bike/
 

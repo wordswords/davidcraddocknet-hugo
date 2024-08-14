@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Denial-of-Service on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/tag/denial-of-service/</link>
+    <link>https://davidcraddock.net/tag/denial-of-service/</link>
     <description>Recent content in Denial-of-Service on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 02 Apr 2010 03:50:37 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/tag/denial-of-service/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Apr 2010 03:50:37 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/tag/denial-of-service/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Forkbombs and How to Prevent Them</title>
-      <link>http://davidcraddock.net/2010/04/02/forkbombs-and-how-to-prevent-them/</link>
+      <link>https://davidcraddock.net/2010/04/02/forkbombs-and-how-to-prevent-them/</link>
       <pubDate>Fri, 02 Apr 2010 03:50:37 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2010/04/02/forkbombs-and-how-to-prevent-them/</guid>
+      <guid>https://davidcraddock.net/2010/04/02/forkbombs-and-how-to-prevent-them/</guid>
       <description>A forkbomb is a program or script that continually creates new copies of itself, that create new copies of themselves. It&amp;rsquo;s usually a function that calls itself, and each time that function is called, it creates a new process to run the same function.
 You end up with thousands of processes, all creating processes themselves, with an exponential growth. Soon it takes up all the resources of your server, and prevents anything else running on it.</description>
       <content:encoded><![CDATA[<p>A forkbomb is a program or script that continually creates new copies of itself, that create new copies of themselves. It&rsquo;s usually a function that calls itself, and each time that function is called, it creates a new process to run the same function.</p>

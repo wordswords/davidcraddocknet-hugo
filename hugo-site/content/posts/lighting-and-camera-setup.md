@@ -2,7 +2,7 @@
 category:
   - music
 date: "2021-05-11T03:20:16+00:00"
-guid: http://davidcraddock.net/?p=2526
+guid: https://davidcraddock.net/?p=2526
 title: Lighting and Camera Setup
 url: /2021/05/11/lighting-and-camera-setup/
 

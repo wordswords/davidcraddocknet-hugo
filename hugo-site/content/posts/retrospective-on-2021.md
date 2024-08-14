@@ -2,7 +2,7 @@
 category:
   - retrospectives
 date: "2022-01-01T15:58:05+00:00"
-guid: http://davidcraddock.net/?p=2849
+guid: https://davidcraddock.net/?p=2849
 title: Retrospective on 2021
 url: /2022/01/01/retrospective-on-2021/
 

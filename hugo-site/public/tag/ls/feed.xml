@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ls on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/tag/ls/</link>
+    <link>https://davidcraddock.net/tag/ls/</link>
     <description>Recent content in Ls on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 04 May 2011 16:03:55 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/tag/ls/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 May 2011 16:03:55 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/tag/ls/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Directory names not visable under ls? Change your colours.</title>
-      <link>http://davidcraddock.net/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</link>
+      <link>https://davidcraddock.net/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</link>
       <pubDate>Wed, 04 May 2011 16:03:55 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</guid>
+      <guid>https://davidcraddock.net/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</guid>
       <description>There is a problem I frequently encouter on Redhat/Fedora/CentOS systems with the output of the ls command. Under those distributions, the default setup is to display directories in a very dark colour. If you usually use a white foreground and a black background on your terminal client (such as Putty) then you will struggle to read the names of the directories under Redhat-based distributions.
 There are two soloutions that I have used:</description>
       <content:encoded><![CDATA[<p>There is a problem I frequently encouter on Redhat/Fedora/CentOS systems with the output of the <strong>ls</strong> command. Under those distributions, the default setup is to display directories in a very dark colour. If you usually use a white foreground and a black background on your terminal client (such as Putty) then you will struggle to read the names of the directories under Redhat-based distributions.</p>

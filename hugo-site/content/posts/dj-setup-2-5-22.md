@@ -2,7 +2,7 @@
 category:
   - uncategorized
 date: "2022-05-02T22:11:13+00:00"
-guid: http://davidcraddock.net/?p=3000
+guid: https://davidcraddock.net/?p=3000
 title: DJ Setup 2/5/22
 url: /2022/05/02/dj-setup-2-5-22/
 

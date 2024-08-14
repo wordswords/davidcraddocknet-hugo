@@ -5,7 +5,7 @@ category:
   - enlightement_system
   - suit
 date: "2021-11-18T08:54:42+00:00"
-guid: http://davidcraddock.net/?p=2829
+guid: https://davidcraddock.net/?p=2829
 tag:
   - chmod
   - enlightement

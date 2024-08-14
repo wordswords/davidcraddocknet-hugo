@@ -2,7 +2,7 @@
 category:
   - music
 date: "2021-06-09T14:29:14+00:00"
-guid: http://davidcraddock.net/?p=2584
+guid: https://davidcraddock.net/?p=2584
 title: Using Navidrome on a RPI3 to host my music collection for DJing so I can listen between sets
 url: /2021/06/09/using-navidrome-on-a-rpi3-to-host-my-music-collection-for-djing-so-i-can-listen-between-sets/
 

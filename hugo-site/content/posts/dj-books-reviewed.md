@@ -5,7 +5,7 @@ category:
   - djing
   - uncategorized
 date: "2021-02-18T16:56:59+00:00"
-guid: http://davidcraddock.net/?p=2362
+guid: https://davidcraddock.net/?p=2362
 tag:
   - book-reviews
   - dj-books

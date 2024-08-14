@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Handbrake on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/category/handbrake/</link>
+    <link>https://davidcraddock.net/category/handbrake/</link>
     <description>Recent content in Handbrake on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 17 May 2010 03:15:00 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/handbrake/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 May 2010 03:15:00 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/category/handbrake/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ripping Movies onto the iPhone</title>
-      <link>http://davidcraddock.net/2010/05/17/ripping-movies-onto-the-iphone/</link>
+      <link>https://davidcraddock.net/2010/05/17/ripping-movies-onto-the-iphone/</link>
       <pubDate>Mon, 17 May 2010 03:15:00 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2010/05/17/ripping-movies-onto-the-iphone/</guid>
+      <guid>https://davidcraddock.net/2010/05/17/ripping-movies-onto-the-iphone/</guid>
       <description>I&amp;rsquo;m currently watching Persepolis, the 2008 animated film about a tomboy anarchist growing up in Iran. I&amp;rsquo;m watching this on my new iPhone 3GS, and the picture and audio quality is very good.
 Here&amp;rsquo;s what I used to convert my newly bought Persepolis DVD, for watching on the iPhone.
 1x Macbook (but you can use any intel mac) 1x iTunes 1x RipIt - Commercial Mac DVD Ripper (rips up to 10 DVDs on the free trial, $20 after) 1x Handbrake 32 - Freely available transcoder 1x VLC 32 - Freely available media player 1x DVD</description>

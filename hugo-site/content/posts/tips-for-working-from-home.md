@@ -2,7 +2,7 @@
 category:
   - tips
 date: "2022-10-18T17:29:44+00:00"
-guid: http://davidcraddock.net/?p=3317
+guid: https://davidcraddock.net/?p=3317
 title: Tips for Working from Home
 url: /2022/10/18/tips-for-working-from-home/
 

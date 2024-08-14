@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Dbpoweramp on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/category/dbpoweramp/</link>
+    <link>https://davidcraddock.net/category/dbpoweramp/</link>
     <description>Recent content in Dbpoweramp on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 05 May 2021 21:06:13 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/dbpoweramp/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 May 2021 21:06:13 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/category/dbpoweramp/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Organising Huge Music Libraries for use with Serato DJ Pro</title>
-      <link>http://davidcraddock.net/2021/05/05/organising-huge-music-libraries-with-serato/</link>
+      <link>https://davidcraddock.net/2021/05/05/organising-huge-music-libraries-with-serato/</link>
       <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2021/05/05/organising-huge-music-libraries-with-serato/</guid>
+      <guid>https://davidcraddock.net/2021/05/05/organising-huge-music-libraries-with-serato/</guid>
       <description>Updated: 25-11-22
 My music library is around 24k files, mostly FLAC and some 320kbps MP3s. I use the following tools to organise my music library:
 Acquisition: dbPoweramp CD Ripper - https://www.dbpoweramp.com/cd-ripper.htm Bandcamp Collection Downloader - https://github.com/Ezwen/bandcamp-collection-downloader Soulseek - http://www.slsknet.org Tagging and Metadata: Beets - https://beets.io Mixed In Key - https://mixedinkey.com Lexicon https://www.lexicondj.com/ Backup and sync: Robocopy - comes free with Windows 10. Documentation: https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy Google Drive Rsync

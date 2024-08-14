@@ -6,7 +6,7 @@ category:
   - reboot
   - ubuntu
 date: "2022-09-29T00:00:36+00:00"
-guid: http://davidcraddock.net/?p=3270
+guid: https://davidcraddock.net/?p=3270
 tag:
   - grub
   - new

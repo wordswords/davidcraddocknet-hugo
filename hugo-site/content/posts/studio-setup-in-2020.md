@@ -2,7 +2,7 @@
 category:
   - uncategorized
 date: "2020-01-30T14:55:22+00:00"
-guid: http://davidcraddock.net/?p=2127
+guid: https://davidcraddock.net/?p=2127
 title: Studio Setup in 2020
 url: /2020/01/30/studio-setup-in-2020/
 

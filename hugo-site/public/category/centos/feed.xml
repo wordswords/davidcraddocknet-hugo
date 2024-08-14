@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Centos on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/category/centos/</link>
+    <link>https://davidcraddock.net/category/centos/</link>
     <description>Recent content in Centos on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 04 May 2011 16:03:55 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/centos/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 May 2011 16:03:55 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/category/centos/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Directory names not visable under ls? Change your colours.</title>
-      <link>http://davidcraddock.net/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</link>
+      <link>https://davidcraddock.net/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</link>
       <pubDate>Wed, 04 May 2011 16:03:55 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</guid>
+      <guid>https://davidcraddock.net/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</guid>
       <description>There is a problem I frequently encouter on Redhat/Fedora/CentOS systems with the output of the ls command. Under those distributions, the default setup is to display directories in a very dark colour. If you usually use a white foreground and a black background on your terminal client (such as Putty) then you will struggle to read the names of the directories under Redhat-based distributions.
 There are two soloutions that I have used:</description>
       <content:encoded><![CDATA[<p>There is a problem I frequently encouter on Redhat/Fedora/CentOS systems with the output of the <strong>ls</strong> command. Under those distributions, the default setup is to display directories in a very dark colour. If you usually use a white foreground and a black background on your terminal client (such as Putty) then you will struggle to read the names of the directories under Redhat-based distributions.</p>
@@ -30,10 +30,10 @@ There are two soloutions that I have used:</description>
     
     <item>
       <title>VirutalHosts on CentOS</title>
-      <link>http://davidcraddock.net/2009/03/30/virutalhosts-on-centos/</link>
+      <link>https://davidcraddock.net/2009/03/30/virutalhosts-on-centos/</link>
       <pubDate>Mon, 30 Mar 2009 22:45:50 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2009/03/30/virutalhosts-on-centos/</guid>
+      <guid>https://davidcraddock.net/2009/03/30/virutalhosts-on-centos/</guid>
       <description>A common task when setting up an Apache webserver under Linux, is writing a httpd.conf file. The httpd.conf file is the main configuration file for Apache. One of the main reasons to edit the httpd.conf file is to setup virtual hosts In Apache. A Virtual host configuration allows several different domains to be run off a single instance of Apache, on a single IP. Each host is a &amp;lsquo;Virtual host&amp;rsquo;, and typically has a different web root, log file, and any number of subdomains aliased to it.</description>
       <content:encoded><![CDATA[<p>A common task when setting up an <a href="http://en.wikipedia.org/wiki/Apache_HTTP_Server">Apache</a> webserver under Linux, is writing a httpd.conf file. The httpd.conf file is the main configuration file for Apache. One of the main reasons to edit the httpd.conf file is to setup virtual hosts In Apache. A Virtual host configuration allows several different domains to be run off a single instance of Apache, on a single IP. Each host is a &lsquo;Virtual host&rsquo;, and typically has a different web root, log file, and any number of subdomains aliased to it. The virtualhosts are configured in parts of the httpd.conf file that look like this:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>

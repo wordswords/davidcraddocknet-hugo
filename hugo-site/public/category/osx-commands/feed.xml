@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Osx-Commands on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/category/osx-commands/</link>
+    <link>https://davidcraddock.net/category/osx-commands/</link>
     <description>Recent content in Osx-Commands on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 19 Mar 2010 23:03:33 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/osx-commands/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Mar 2010 23:03:33 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/category/osx-commands/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Useful OSX commands for Linux users</title>
-      <link>http://davidcraddock.net/2010/03/19/useful-osx-command-line-commands/</link>
+      <link>https://davidcraddock.net/2010/03/19/useful-osx-command-line-commands/</link>
       <pubDate>Fri, 19 Mar 2010 23:03:33 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2010/03/19/useful-osx-command-line-commands/</guid>
+      <guid>https://davidcraddock.net/2010/03/19/useful-osx-command-line-commands/</guid>
       <description>I wrote this list to remind me, as a newcomer to OSX, how the command line differed from the Linux commandline. I thought I&amp;rsquo;d expand on it, and share it:
 To mount any iso:
 hdiutil mount sample.iso To download a file as you would using wget:

@@ -2,7 +2,7 @@
 category:
   - uncategorized
 date: "2021-10-21T16:44:09+00:00"
-guid: http://davidcraddock.net/?p=2755
+guid: https://davidcraddock.net/?p=2755
 title: My Simple Commandline Git Workflow
 url: /2021/10/21/my-simple-commandline-git-workflow/
 

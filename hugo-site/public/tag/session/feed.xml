@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Session on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/tag/session/</link>
+    <link>https://davidcraddock.net/tag/session/</link>
     <description>Recent content in Session on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 01 Mar 2013 00:44:50 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/tag/session/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Mar 2013 00:44:50 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/tag/session/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TDD Talk</title>
-      <link>http://davidcraddock.net/2013/03/01/tdd-talk/</link>
+      <link>https://davidcraddock.net/2013/03/01/tdd-talk/</link>
       <pubDate>Fri, 01 Mar 2013 00:44:50 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2013/03/01/tdd-talk/</guid>
+      <guid>https://davidcraddock.net/2013/03/01/tdd-talk/</guid>
       <description>Recently, myself and two colleagues from the BBC, ran a session on Test Driven Development at the Manchester University &amp;lsquo;Ultimate Programming&amp;rsquo; society. The society is a gathering where students discuss cool things they have done with programming, and occasionally have guest speakers from industry. I found the society online and thought it would be great to get the BBC more involved in the local university happenings.
 It is the first outreach project that I have undertaken, and it required a lot of preparation.</description>
       <content:encoded><![CDATA[<p>Recently, myself and two colleagues from the BBC, ran a session on Test Driven Development at the Manchester University &lsquo;Ultimate Programming&rsquo; society. <a href="http://www.man-up.appspot.com/">The society</a> is a gathering where students discuss cool things they have done with programming, and occasionally have guest speakers from industry. I found the society online and thought it would be great to get the BBC more involved in the local university happenings.</p>

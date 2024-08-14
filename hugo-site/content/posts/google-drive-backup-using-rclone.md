@@ -6,7 +6,7 @@ category:
   - rclone
   - ubuntu
 date: "2022-09-24T17:39:06+00:00"
-guid: http://davidcraddock.net/?p=3249
+guid: https://davidcraddock.net/?p=3249
 tag:
   - duplicati
   - google-drive

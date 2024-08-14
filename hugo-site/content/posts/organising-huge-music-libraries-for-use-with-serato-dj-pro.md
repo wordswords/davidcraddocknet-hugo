@@ -11,7 +11,7 @@ category:
   - serato-dj-pro
   - tagging
 date: "2021-05-05T21:06:13+00:00"
-guid: http://davidcraddock.net/?p=2490
+guid: https://davidcraddock.net/?p=2490
 tag:
   - cd-ripping
   - dbpoweramp

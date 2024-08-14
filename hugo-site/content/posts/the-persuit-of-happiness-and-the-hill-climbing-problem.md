@@ -2,7 +2,7 @@
 category:
   - solutions-to-a-specific-problem
 date: "2022-01-07T05:50:39+00:00"
-guid: http://davidcraddock.net/?p=2867
+guid: https://davidcraddock.net/?p=2867
 title: The Persuit of Happiness and the Hill-Climbing Problem
 url: /2022/01/07/the-persuit-of-happiness-and-the-hill-climbing-problem/
 

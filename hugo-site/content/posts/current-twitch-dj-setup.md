@@ -6,7 +6,7 @@ category:
   - dmx
   - serato
 date: "2022-09-27T02:56:21+00:00"
-guid: http://davidcraddock.net/?p=3255
+guid: https://davidcraddock.net/?p=3255
 tag:
   - /home
   - broadcast-studio

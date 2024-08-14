@@ -5,7 +5,7 @@ category:
   - sleep-tracker
   - withings
 date: "2022-08-18T19:58:57+00:00"
-guid: http://davidcraddock.net/?p=3173
+guid: https://davidcraddock.net/?p=3173
 tag:
   - health
   - sleep

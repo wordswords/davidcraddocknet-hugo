@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Career on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/category/career/</link>
+    <link>https://davidcraddock.net/category/career/</link>
     <description>Recent content in Career on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 17 Nov 2013 03:40:14 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/career/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Nov 2013 03:40:14 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/category/career/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2013 Career Retrospective</title>
-      <link>http://davidcraddock.net/2013/11/17/2013-career-retrospective/</link>
+      <link>https://davidcraddock.net/2013/11/17/2013-career-retrospective/</link>
       <pubDate>Sun, 17 Nov 2013 03:40:14 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2013/11/17/2013-career-retrospective/</guid>
+      <guid>https://davidcraddock.net/2013/11/17/2013-career-retrospective/</guid>
       <description>2015 Update: The &amp;ldquo;Device Hive&amp;rdquo; project has now been changed to be called &amp;lsquo;Hive CI&amp;rsquo; and it is being maintained by a team of developers at the BBC, which I am no longer a part of. It is in the process of being opensourced, see: http://bbc.github.io/hive-ci/
 This year has been quite a busy and eventful one for me.
 Connected Red Button At the start of the year, I was working on the Connected Red Button team within the BBC.</description>

@@ -2,7 +2,7 @@
 category:
   - uncategorized
 date: "2023-09-22T16:56:26+00:00"
-guid: http://davidcraddock.net/?p=4053
+guid: https://davidcraddock.net/?p=4053
 title: Latest Remote Guitar Lesson Setup
 url: /2023/09/22/latest-remote-guitar-lesson-setup/
 

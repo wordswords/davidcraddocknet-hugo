@@ -2,7 +2,7 @@
 category:
   - uncategorized
 date: "2023-02-23T09:57:30+00:00"
-guid: http://davidcraddock.net/?p=3617
+guid: https://davidcraddock.net/?p=3617
 title: Optical Drive Cleaners and Home Entertainment Test Tools
 url: /2023/02/23/optical-drive-cleaners-and-home-entertainment-test-tools/
 

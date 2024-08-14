@@ -2,7 +2,7 @@
 category:
   - solutions-to-a-specific-problem
 date: "2021-09-21T22:22:47+00:00"
-guid: http://davidcraddock.net/?p=2720
+guid: https://davidcraddock.net/?p=2720
 title: How to fix Plex Media Servers 'Various Artists' problem using Beets.io and other tools
 url: /2021/09/21/how-to-fix-plex-media-servers-various-artists-problem-using-beets-io-and-other-tools/
 

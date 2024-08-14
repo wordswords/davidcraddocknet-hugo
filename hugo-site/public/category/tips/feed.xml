@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tips on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/category/tips/</link>
+    <link>https://davidcraddock.net/category/tips/</link>
     <description>Recent content in Tips on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 23 Apr 2024 22:54:59 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/tips/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Apr 2024 22:54:59 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/category/tips/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Advice to young people in the UK wanting a career in Tech</title>
-      <link>http://davidcraddock.net/2024/04/23/4683/</link>
+      <link>https://davidcraddock.net/2024/04/23/4683/</link>
       <pubDate>Tue, 23 Apr 2024 22:54:59 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2024/04/23/4683/</guid>
+      <guid>https://davidcraddock.net/2024/04/23/4683/</guid>
       <description>If you&amp;rsquo;re currently in high school in the UK and want to be a GOOD and EMPLOYED software engineer.. this is my advice.
 Start programming on personal projects right away, and keep it up during your entire working career. Always have something going on in the background. Get into a RUSSELL GROUP university in the UK and take a technical, demanding degree in a computing-related discipline, for example, Physics, Electronic Engineering, Maths, Computer Science, Artificial Intelligence.</description>
       <content:encoded><![CDATA[<p>If you&rsquo;re currently in high school in the UK and want to be a GOOD and EMPLOYED software engineer.. this is my advice.</p>
@@ -29,10 +29,10 @@ Start programming on personal projects right away, and keep it up during your en
     
     <item>
       <title>Tips for Working from Home</title>
-      <link>http://davidcraddock.net/2022/10/18/tips-for-working-from-home/</link>
+      <link>https://davidcraddock.net/2022/10/18/tips-for-working-from-home/</link>
       <pubDate>Tue, 18 Oct 2022 17:29:44 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2022/10/18/tips-for-working-from-home/</guid>
+      <guid>https://davidcraddock.net/2022/10/18/tips-for-working-from-home/</guid>
       <description>I have been working from home, the majority of the time, for over 5 years. It took a lot of adjustment, and I&amp;rsquo;m still not 100% adjusted, but if you want to undertake this, then these are my tips.
 Note that a big part of the benefit from working from home is the total flexibility in work environment, so these are only tips that work for me - they might not work for you!</description>
       <content:encoded><![CDATA[<p>I have been working from home, the majority of the time, for over 5 years. It took a lot of adjustment, and I&rsquo;m still not 100% adjusted, but if you want to undertake this, then these are my tips.</p>
@@ -66,10 +66,10 @@ Note that a big part of the benefit from working from home is the total flexibil
     
     <item>
       <title>OSX Fish Functions to open Chrome from the Shell</title>
-      <link>http://davidcraddock.net/2016/04/04/osx-fish-functions-to-open-chrome-from-the-shell/</link>
+      <link>https://davidcraddock.net/2016/04/04/osx-fish-functions-to-open-chrome-from-the-shell/</link>
       <pubDate>Mon, 04 Apr 2016 11:50:31 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2016/04/04/osx-fish-functions-to-open-chrome-from-the-shell/</guid>
+      <guid>https://davidcraddock.net/2016/04/04/osx-fish-functions-to-open-chrome-from-the-shell/</guid>
       <description>These functions are quite handy, and allow you to do things such as copy and paste errors and google for them without having to manually open a browser. You have to enclose arguments to both functions in single quotes, e.g. &amp;lsquo;chrome &amp;lsquo;http://www.google.co.uk&amp;rsquo; and google &amp;lsquo;one two three four&amp;rsquo;. You should add these to your config file at ~/.config/fish/config.fish and make sure Google Chrome is already installed.
 [code language=&amp;ldquo;bash&amp;rdquo;] function chrome /usr/bin/open -a &amp;lsquo;/Applications/Google Chrome.</description>
       <content:encoded><![CDATA[<p>These functions are quite handy, and allow you to do things such as copy and paste errors and google for them without having to manually open a browser. You have to enclose arguments to both functions in single quotes, e.g. &lsquo;chrome &lsquo;<a href="http://www.google.co.uk">http://www.google.co.uk</a>&rsquo; and google &lsquo;one two three four&rsquo;. You should add these to your config file at ~/.config/fish/config.fish and make sure Google Chrome is already installed.</p>
@@ -86,10 +86,10 @@ end
     
     <item>
       <title>Working with Fish Shell, ffmpeg, MP4Box and sox to generate audio files</title>
-      <link>http://davidcraddock.net/2016/03/08/working-with-fish-shell-ffmpeg-mp4box-and-sox-to-generate-audio-files/</link>
+      <link>https://davidcraddock.net/2016/03/08/working-with-fish-shell-ffmpeg-mp4box-and-sox-to-generate-audio-files/</link>
       <pubDate>Tue, 08 Mar 2016 17:22:37 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2016/03/08/working-with-fish-shell-ffmpeg-mp4box-and-sox-to-generate-audio-files/</guid>
+      <guid>https://davidcraddock.net/2016/03/08/working-with-fish-shell-ffmpeg-mp4box-and-sox-to-generate-audio-files/</guid>
       <description>More adventures with Fish shell. I have scripted the generation of a bunch of test asset audio files in mp4 format suitable for dash streaming. I have used the audio file commandline tools ffmepg MP4Box and sox in this script, they are pretty powerful and worth installing via homebrew on OSX.
 Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I&amp;rsquo;m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy.</description>
       <content:encoded><![CDATA[<p>More adventures with Fish shell. I have scripted the generation of a bunch of test asset audio files in mp4 format suitable for dash streaming. I have used the audio file commandline tools ffmepg MP4Box and sox in this script, they are pretty powerful and worth installing via homebrew on OSX.</p>
@@ -133,10 +133,10 @@ end
     
     <item>
       <title>Top 5 Recommended Upgrades for your PC</title>
-      <link>http://davidcraddock.net/2015/12/21/top-5-recommended-upgrades-for-your-pc/</link>
+      <link>https://davidcraddock.net/2015/12/21/top-5-recommended-upgrades-for-your-pc/</link>
       <pubDate>Mon, 21 Dec 2015 08:37:03 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2015/12/21/top-5-recommended-upgrades-for-your-pc/</guid>
+      <guid>https://davidcraddock.net/2015/12/21/top-5-recommended-upgrades-for-your-pc/</guid>
       <description>I have made a lot of different upgrades and modifications to my PC, as you can see here. Some of the upgrades have made more of a difference than others though. Here is what I think you should be concentrating on, if you&amp;rsquo;re looking to upgrade.
 Solid State Hardisk (SSD) - Solid State hard drives use flash memory instead of the moving disk platters of traditional hard disks. It is the same type of storage as your USB stick.</description>
       <content:encoded><![CDATA[<p>I have made a lot of different upgrades and modifications to my PC, <a href="http://www.davidcraddock.net/my-computer-setup/">as you can see here</a>. Some of the upgrades have made more of a difference than others though. Here is what I think you should be concentrating on, if you&rsquo;re looking to upgrade.</p>
@@ -153,10 +153,10 @@ Solid State Hardisk (SSD) - Solid State hard drives use flash memory instead of 
     
     <item>
       <title>Biggest Disappointment Purchases for PC - Razer Tiamat &#43; Lightpack</title>
-      <link>http://davidcraddock.net/2015/11/08/biggest-disappointment-purchases-for-pc-razer-tiamat-lightpack/</link>
+      <link>https://davidcraddock.net/2015/11/08/biggest-disappointment-purchases-for-pc-razer-tiamat-lightpack/</link>
       <pubDate>Sun, 08 Nov 2015 19:22:50 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2015/11/08/biggest-disappointment-purchases-for-pc-razer-tiamat-lightpack/</guid>
+      <guid>https://davidcraddock.net/2015/11/08/biggest-disappointment-purchases-for-pc-razer-tiamat-lightpack/</guid>
       <description>As you can see, I buy a lot of bits and pieces for my PC. Occasionally though, I buy something that I feel was a disappointment, or not worth the investment. This post is meant to caution against other people making the same mistake.
 Razer Tiamat - 7.1 Surround Sound Gaming Headset, with microphone (http://www.razerzone.com) This was a big dissapointment in a couple of ways. The first, and most obvious in hindsight now I&amp;rsquo;m actually working on spatial audio for a living at BBC R&amp;amp;D, is that 7.</description>
       <content:encoded><![CDATA[<p><a href="http://www.davidcraddock.net/my-computer-setup/">As you can see</a>, I buy a lot of bits and pieces for my PC. Occasionally though, I buy something that I feel was a disappointment, or not worth the investment. This post is meant to caution against other people making the same mistake.</p>
@@ -170,10 +170,10 @@ Razer Tiamat - 7.1 Surround Sound Gaming Headset, with microphone (http://www.ra
     
     <item>
       <title>IFTTT.com - Program your Life</title>
-      <link>http://davidcraddock.net/2015/10/15/ifttt-com-program-your-life/</link>
+      <link>https://davidcraddock.net/2015/10/15/ifttt-com-program-your-life/</link>
       <pubDate>Thu, 15 Oct 2015 10:17:28 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2015/10/15/ifttt-com-program-your-life/</guid>
+      <guid>https://davidcraddock.net/2015/10/15/ifttt-com-program-your-life/</guid>
       <description>If you haven&amp;rsquo;t seen If This Then That.com then I encourage you to check it out. It has a number of ways of automating your life, and can do things like text message you when you get mentioned on Twitter, up to deactivate your smart alarm when you&amp;rsquo;re nearing your house. This message will (hopefully) be posted on my Facebook page and my Twitter account, all thanks to IFTTT.com.</description>
       <content:encoded><![CDATA[<p>If you haven&rsquo;t seen <a href="http://www.ifttt.com">If This Then That.com</a> then I encourage you to check it out. It has a number of ways of automating your life, and can do things like text message you when you get mentioned on Twitter, up to deactivate your smart alarm when you&rsquo;re nearing your house. This message will (hopefully) be posted on my Facebook page and my Twitter account, all thanks to IFTTT.com.</p>
 ]]></content:encoded>
@@ -181,10 +181,10 @@ Razer Tiamat - 7.1 Surround Sound Gaming Headset, with microphone (http://www.ra
     
     <item>
       <title>Scope in JavaScript</title>
-      <link>http://davidcraddock.net/2015/09/28/scope-in-javascript/</link>
+      <link>https://davidcraddock.net/2015/09/28/scope-in-javascript/</link>
       <pubDate>Mon, 28 Sep 2015 17:32:15 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2015/09/28/scope-in-javascript/</guid>
+      <guid>https://davidcraddock.net/2015/09/28/scope-in-javascript/</guid>
       <description>I am learning JS for work. This is a pretty good summary of the most common scoping rules in JavaScript:
 http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript</description>
       <content:encoded><![CDATA[<p>I am learning JS for work. This is a pretty good summary of the most common scoping rules in JavaScript:</p>
@@ -194,10 +194,10 @@ http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-java
     
     <item>
       <title>Tailing a log file and Running an Application at the Same Time</title>
-      <link>http://davidcraddock.net/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/</link>
+      <link>https://davidcraddock.net/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/</link>
       <pubDate>Tue, 11 Jun 2013 15:55:04 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/</guid>
+      <guid>https://davidcraddock.net/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/</guid>
       <description>A quick tip this, but a useful one. You can tail a log file in the background while running a script in the foreground. So for example, I frequently execute the following commands:
 1.
 tail -f /var/log/httpd.log &amp;amp; /etc/init.d/apache restart 2. (The log file will spool onto the terminal as Apache is restarted.)
@@ -216,10 +216,10 @@ tail -f /var/log/httpd.log &amp;amp; /etc/init.d/apache restart 2. (The log file
     
     <item>
       <title>Monitoring a Slow Internet Connection in OSX</title>
-      <link>http://davidcraddock.net/2013/03/01/monitoring-a-slow-internet-connection-in-osx/</link>
+      <link>https://davidcraddock.net/2013/03/01/monitoring-a-slow-internet-connection-in-osx/</link>
       <pubDate>Fri, 01 Mar 2013 01:28:54 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2013/03/01/monitoring-a-slow-internet-connection-in-osx/</guid>
+      <guid>https://davidcraddock.net/2013/03/01/monitoring-a-slow-internet-connection-in-osx/</guid>
       <description>I am currently on holiday in Tenerife, and although I really like it here, one thing I do not like is the internet connection we have in our resort. Sometimes networked applications will just hang with no warning and there will be minutes where it&amp;rsquo;s not clear what is going on. Here are some ways you can find a little bit more about what is happening when an application is slow or seems to hang when you have a poor internet connection.</description>
       <content:encoded><![CDATA[<p>I am currently on holiday in Tenerife, and although I really like it here, one thing I do not like is the internet connection we have in our resort. Sometimes networked applications will just hang with no warning and there will be minutes where it&rsquo;s not clear what is going on. Here are some ways you can find a little bit more about what is happening when an application is slow or seems to hang when you have a poor internet connection. Execute the following commands each in a separate terminal window.</p>
 <h3 id="log-files">Log Files</h3>
@@ -240,10 +240,10 @@ tail -f /var/log/httpd.log &amp;amp; /etc/init.d/apache restart 2. (The log file
     
     <item>
       <title>Reverting back to a previous version in CVS - the magic &#34;undo&#34; feature</title>
-      <link>http://davidcraddock.net/2011/01/28/reverting-back-to-a-previous-version-in-cvs-the-magic-undo-feature/</link>
+      <link>https://davidcraddock.net/2011/01/28/reverting-back-to-a-previous-version-in-cvs-the-magic-undo-feature/</link>
       <pubDate>Fri, 28 Jan 2011 16:27:43 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2011/01/28/reverting-back-to-a-previous-version-in-cvs-the-magic-undo-feature/</guid>
+      <guid>https://davidcraddock.net/2011/01/28/reverting-back-to-a-previous-version-in-cvs-the-magic-undo-feature/</guid>
       <description>If you&amp;rsquo;ve committed some code into to CVS, and made a mistake on that commit, you will want to know how to revert to a previously saved version. Here is the command line command for CLI versions of CVS:
 $ cvs update -D &amp;#39;1 week ago&amp;#39; Run this command in the main directory of your checked out working copy. This will revert your working copy to the version of the code that was checked in &amp;lsquo;1 week ago&amp;rsquo; from the present date.</description>
       <content:encoded><![CDATA[<p>If you&rsquo;ve committed some code into to CVS, and made a mistake on that commit, you will want to know how to revert to a previously saved version. Here is the command line command for CLI versions of CVS:</p>
@@ -256,10 +256,10 @@ $ cvs update -D &amp;#39;1 week ago&amp;#39; Run this command in the main direct
     
     <item>
       <title>Netbeans for simple Java GUI Applications</title>
-      <link>http://davidcraddock.net/2010/12/07/netbeans-for-simple-java-gui-applications/</link>
+      <link>https://davidcraddock.net/2010/12/07/netbeans-for-simple-java-gui-applications/</link>
       <pubDate>Tue, 07 Dec 2010 17:32:36 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2010/12/07/netbeans-for-simple-java-gui-applications/</guid>
+      <guid>https://davidcraddock.net/2010/12/07/netbeans-for-simple-java-gui-applications/</guid>
       <description>I&amp;rsquo;ve been writing some simple Java GUI applications using the Netbeans IDE. It allows you to quickly make event-driven GUI applications, and generates a lot of skeleton code that you&amp;rsquo;ll need, but don&amp;rsquo;t necessarily want to type out. It reminds me of the IDE designer of Visual Basic 6, which allowed you to mock up simple GUIs with code in almost no time at all, although the VB language itself often proved difficult.</description>
       <content:encoded><![CDATA[<p>I&rsquo;ve been writing some simple Java GUI applications using the Netbeans IDE. It allows you to quickly make event-driven GUI applications, and generates a lot of skeleton code that you&rsquo;ll need, but don&rsquo;t necessarily want to type out. It reminds me of the IDE designer of Visual Basic 6, which allowed you to mock up simple GUIs with code in almost no time at all, although the VB language itself often proved difficult. With Netbeans you are using Java, and so you can make some powerful software with little effort.</p>
 ]]></content:encoded>
@@ -267,10 +267,10 @@ $ cvs update -D &amp;#39;1 week ago&amp;#39; Run this command in the main direct
     
     <item>
       <title>Applications I Reccomend</title>
-      <link>http://davidcraddock.net/2010/07/19/applications-i-reccomend/</link>
+      <link>https://davidcraddock.net/2010/07/19/applications-i-reccomend/</link>
       <pubDate>Mon, 19 Jul 2010 00:37:15 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2010/07/19/applications-i-reccomend/</guid>
+      <guid>https://davidcraddock.net/2010/07/19/applications-i-reccomend/</guid>
       <description>Software I use on my macbook &amp;amp; PC:
 DVDRipper Pro for Mac - DVD ripping, can also rip to ISO Handbrake for Mac - Transcoding from DVD rip to iPhone-playable file iMovie for Mac - Video editing BabasChess for Windows - Best chess client for internet play Hypercam 2 - Best screencapture utility Skype for both - For reliable messaging as well as voice and video chat Virtual Clone Drive for Windows - For mounting ISO images iTunes for Mac - Best music player, and keeps media synced with iPhone VLC Player for both - For watching movies DVD Player for Mac - For watching DVDs</description>
       <content:encoded><![CDATA[<p>Software I use on my macbook &amp; PC:</p>
@@ -300,10 +300,10 @@ DVDRipper Pro for Mac - DVD ripping, can also rip to ISO Handbrake for Mac - Tra
     
     <item>
       <title>Useful OSX commands for Linux users</title>
-      <link>http://davidcraddock.net/2010/03/19/useful-osx-command-line-commands/</link>
+      <link>https://davidcraddock.net/2010/03/19/useful-osx-command-line-commands/</link>
       <pubDate>Fri, 19 Mar 2010 23:03:33 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2010/03/19/useful-osx-command-line-commands/</guid>
+      <guid>https://davidcraddock.net/2010/03/19/useful-osx-command-line-commands/</guid>
       <description>I wrote this list to remind me, as a newcomer to OSX, how the command line differed from the Linux commandline. I thought I&amp;rsquo;d expand on it, and share it:
 To mount any iso:
 hdiutil mount sample.iso To download a file as you would using wget:
@@ -333,10 +333,10 @@ use the &ldquo;diskutil&rdquo; program as described in: <a href="http://forums.m
     
     <item>
       <title>Long Bash History Files are Great.</title>
-      <link>http://davidcraddock.net/2010/03/18/long-bash-history-files-are-great/</link>
+      <link>https://davidcraddock.net/2010/03/18/long-bash-history-files-are-great/</link>
       <pubDate>Thu, 18 Mar 2010 19:55:51 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2010/03/18/long-bash-history-files-are-great/</guid>
+      <guid>https://davidcraddock.net/2010/03/18/long-bash-history-files-are-great/</guid>
       <description>When I&amp;rsquo;m installing software, or doing some complicated stuff on the linux command line, which nowadays is pretty much all the time, I will sometimes want to remember exactly what I typed.
 Now the normal /home/david/.bash_history file is usually fine for that. Run this command, for example, and you will see the commands you typed in before you logged out of the server last time you used it:
 cat ~/.bash_history You can also find out what you typed in this session, ie: since you logged in, by typing this:</description>
@@ -369,10 +369,10 @@ cat ~/.bash_history You can also find out what you typed in this session, ie: si
     
     <item>
       <title>MicroKORG &#43; Python = MIDI fun!</title>
-      <link>http://davidcraddock.net/2009/03/30/microkorg-python-midi-fun/</link>
+      <link>https://davidcraddock.net/2009/03/30/microkorg-python-midi-fun/</link>
       <pubDate>Mon, 30 Mar 2009 00:14:10 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2009/03/30/microkorg-python-midi-fun/</guid>
+      <guid>https://davidcraddock.net/2009/03/30/microkorg-python-midi-fun/</guid>
       <description>So, about a month ago I got a second-hand microKORG from Ebay. Fiddling around with the preset patches, and creating new patches is great fun, even though I only know a few chords. Recently I plugged it in to my PC via my M-Audio Uno USB-&amp;gt;MIDI interface, and soon was using Ableton Live to program drums in time with the microKORG&amp;rsquo;s arp.
 I thought I&amp;rsquo;d experiment the music libraries available in python, and see if I could send notes to the synth via MIDI.</description>
       <content:encoded><![CDATA[<p>So, about a month ago I got a second-hand <a href="http://en.wikipedia.org/wiki/MicroKORG">microKORG</a> from Ebay. Fiddling around with the preset patches, and creating new patches is great fun, even though I only know a few chords. Recently I plugged it in to my PC via my <a href="http://www.dolphinmusic.co.uk/product/1773-m-audio-uno-usb.html">M-Audio Uno USB-&gt;MIDI interface</a>, and soon was using Ableton Live to program drums in time with the microKORG&rsquo;s arp.</p>
@@ -382,10 +382,10 @@ I thought I&amp;rsquo;d experiment the music libraries available in python, and 
     
     <item>
       <title>EasyEclipse &#43; Vimplugin for Python Development</title>
-      <link>http://davidcraddock.net/2009/03/26/easyeclipse-vimplugin-for-python-development/</link>
+      <link>https://davidcraddock.net/2009/03/26/easyeclipse-vimplugin-for-python-development/</link>
       <pubDate>Thu, 26 Mar 2009 18:53:01 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2009/03/26/easyeclipse-vimplugin-for-python-development/</guid>
+      <guid>https://davidcraddock.net/2009/03/26/easyeclipse-vimplugin-for-python-development/</guid>
       <description>Up until now, I&amp;rsquo;ve always used the terminal for programming development on my projects. Because I&amp;rsquo;m so familiar with the advanced text editor vim, I can get a lot done on the command line, and it doesn&amp;rsquo;t detract away from what is actually going on behind the scenes, as a lot of IDEs seem to do.
 However, in reading the book Foundations of Agile Python Development (which I recommend highly), and through working in software houses using IDE s only, I&amp;rsquo;ve come to realise that I need to gain at least some familiarity with an IDE.</description>
       <content:encoded><![CDATA[<p>Up until now, I&rsquo;ve always used the terminal for programming development on my projects. Because I&rsquo;m so familiar with the advanced text editor <a href="http://www.vim.org">vim</a>, I can get a lot done on the command line, and it doesn&rsquo;t detract away from what is actually going on behind the scenes, as a lot of IDEs seem to do.</p>
@@ -397,10 +397,10 @@ However, in reading the book Foundations of Agile Python Development (which I re
     
     <item>
       <title>Linux under Hyper-V</title>
-      <link>http://davidcraddock.net/2008/10/09/linux-under-hyper-v/</link>
+      <link>https://davidcraddock.net/2008/10/09/linux-under-hyper-v/</link>
       <pubDate>Thu, 09 Oct 2008 23:30:10 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2008/10/09/linux-under-hyper-v/</guid>
+      <guid>https://davidcraddock.net/2008/10/09/linux-under-hyper-v/</guid>
       <description>This is an overview of current Linux support under Hyper-V, the free Windows Server 2008 virtualisation product.
 As you probably know, virtual servers allow the emulation of hardware in software. So you have a single physical &amp;lsquo;virtual server&amp;rsquo;. This virtual server emulates the physical hardware for several &amp;lsquo;virtual machines&amp;rsquo; which sit on top of the virtual server. As far as the operating system on the virtual machine is concerned, it doesn&amp;rsquo;t notice anything different at all - it thinks it is running on a full set of dedicated hardware.</description>
       <content:encoded><![CDATA[<p>This is an overview of current Linux support under Hyper-V, the free Windows Server 2008 virtualisation product.</p>

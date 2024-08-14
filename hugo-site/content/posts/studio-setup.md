@@ -2,7 +2,7 @@
 category:
   - uncategorized
 date: "2017-02-11T13:25:27+00:00"
-guid: http://davidcraddock.net/?p=1844
+guid: https://davidcraddock.net/?p=1844
 title: Studio Setup
 url: /2017/02/11/studio-setup/
 

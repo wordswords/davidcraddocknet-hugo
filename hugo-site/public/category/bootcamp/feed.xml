@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Bootcamp on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/category/bootcamp/</link>
+    <link>https://davidcraddock.net/category/bootcamp/</link>
     <description>Recent content in Bootcamp on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 01 Jul 2010 22:50:25 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/bootcamp/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Jul 2010 22:50:25 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/category/bootcamp/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows 7 Gaming on my Macbook</title>
-      <link>http://davidcraddock.net/2010/07/01/running-windows-7-on-my-macbook/</link>
+      <link>https://davidcraddock.net/2010/07/01/running-windows-7-on-my-macbook/</link>
       <pubDate>Thu, 01 Jul 2010 22:50:25 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2010/07/01/running-windows-7-on-my-macbook/</guid>
+      <guid>https://davidcraddock.net/2010/07/01/running-windows-7-on-my-macbook/</guid>
       <description>I have a 2006/2007 Core 2 Duo 2.6ghz white macbook, that I use regularly for internet, music, watching films, itunes and integration with my iPhone.
 I wanted to turn my desktop PC into a &amp;lsquo;work only&amp;rsquo; Ubuntu Linux machine, so that I don&amp;rsquo;t get distracted when I&amp;rsquo;m supposed to be doing something else.
 But I still have a lot of PC games that I wanted to play on the Macbook, so I decided to try and setup a windows environment to play games on using Bootcamp 2.</description>

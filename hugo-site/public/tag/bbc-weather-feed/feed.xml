@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Bbc-Weather-Feed on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/tag/bbc-weather-feed/</link>
+    <link>https://davidcraddock.net/tag/bbc-weather-feed/</link>
     <description>Recent content in Bbc-Weather-Feed on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 24 Feb 2011 19:31:48 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/tag/bbc-weather-feed/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Feb 2011 19:31:48 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/tag/bbc-weather-feed/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>&#39;Weather Forecast&#39; Calendar Service in PHP</title>
-      <link>http://davidcraddock.net/2011/02/24/a-3-day-weather-forecast-calendar-service/</link>
+      <link>https://davidcraddock.net/2011/02/24/a-3-day-weather-forecast-calendar-service/</link>
       <pubDate>Thu, 24 Feb 2011 19:31:48 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2011/02/24/a-3-day-weather-forecast-calendar-service/</guid>
+      <guid>https://davidcraddock.net/2011/02/24/a-3-day-weather-forecast-calendar-service/</guid>
       <description>The BBC provide 3 day weather RSS feeds for most locations in the UK. I thought it would be interesting to create a web service to turn the weather feed into calendar feed format, so I could have a constantly updated forecast of the next 3 days of weather mapped on to my iPhone’s calendar. Here it is on my iPhone:
 Overview
 The service is separated into five files:

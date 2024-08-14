@@ -10,7 +10,7 @@ category:
   - logitech-z906-5.1
   - surround-sound
 date: "2018-05-20T11:40:51+00:00"
-guid: http://davidcraddock.net/?p=1993
+guid: https://davidcraddock.net/?p=1993
 tag:
   - 3440x1440
   - 4k-video

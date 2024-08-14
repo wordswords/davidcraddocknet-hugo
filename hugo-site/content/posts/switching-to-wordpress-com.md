@@ -2,7 +2,7 @@
 category:
   - uncategorized
 date: "2017-01-30T07:09:58+00:00"
-guid: http://davidcraddock.net/?p=1830
+guid: https://davidcraddock.net/?p=1830
 title: Switching to Wordpress.com
 url: /2017/01/30/switching-to-wordpress-com/
 

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Nest on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/tag/nest/</link>
+    <link>https://davidcraddock.net/tag/nest/</link>
     <description>Recent content in Nest on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Oct 2015 15:28:52 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/tag/nest/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Oct 2015 15:28:52 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/tag/nest/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Next Big Thing: Voice Control for Home Automation</title>
-      <link>http://davidcraddock.net/2015/10/15/voice-control-for-home-automation-having-a-virtual-assitant-in-your-living-room/</link>
+      <link>https://davidcraddock.net/2015/10/15/voice-control-for-home-automation-having-a-virtual-assitant-in-your-living-room/</link>
       <pubDate>Thu, 15 Oct 2015 15:28:52 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2015/10/15/voice-control-for-home-automation-having-a-virtual-assitant-in-your-living-room/</guid>
+      <guid>https://davidcraddock.net/2015/10/15/voice-control-for-home-automation-having-a-virtual-assitant-in-your-living-room/</guid>
       <description>So, I have totally bought in to the home automation craze that is currently &amp;rsquo;the next big thing&amp;rsquo; in the technology world in 2015. Apple has released iOS 9 with their HomeKit home automation framework, Google have the Nest series of smart devices, and there are numerous emerging competitors and hundreds of devices out there right now that will network together in your home.
 For the uninitiated, a &amp;lsquo;virtual assistant&amp;rsquo; is a cloud-connected voice processing system which you can &amp;rsquo;talk&amp;rsquo; to.</description>
       <content:encoded><![CDATA[<p>So, I have totally bought in to the home automation craze that is currently &rsquo;the next big thing&rsquo; in the technology world in 2015. Apple has released iOS 9 with their HomeKit home automation framework, Google have the Nest series of smart devices, and there are numerous emerging competitors and hundreds of devices out there right now that will network together in your home.</p>

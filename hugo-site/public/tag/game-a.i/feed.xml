@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Game-A.i on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/tag/game-a.i/</link>
+    <link>https://davidcraddock.net/tag/game-a.i/</link>
     <description>Recent content in Game-A.i on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Jun 2014 00:24:34 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/tag/game-a.i/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Jun 2014 00:24:34 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/tag/game-a.i/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A* Algorithm implementation in Python</title>
-      <link>http://davidcraddock.net/2014/06/12/a-algorithm-implementation-in-python/</link>
+      <link>https://davidcraddock.net/2014/06/12/a-algorithm-implementation-in-python/</link>
       <pubDate>Thu, 12 Jun 2014 00:24:34 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2014/06/12/a-algorithm-implementation-in-python/</guid>
+      <guid>https://davidcraddock.net/2014/06/12/a-algorithm-implementation-in-python/</guid>
       <description>Lately I&amp;rsquo;ve had the idea of creating a text-based Roguelike in C++. This lead me on to think about the game AI experiments that I worked during my degree in Computer Science and A.I.. Essential to game AI is the notion of pathfinding, or finding a path from &amp;lsquo;A&amp;rsquo; to &amp;lsquo;B&amp;rsquo;, past any obstacles that get in the way. One way to do this is to use the A* algorithm.</description>
       <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2014/06/pathfinding.jpg"><img loading="lazy" src="/wp-content/uploads/2014/06/pathfinding.jpg" type="" alt="pathfinding"  /></a></p>
 <p>Lately I&rsquo;ve had the idea of creating a text-based <a href="http://en.wikipedia.org/wiki/Roguelike">Roguelike</a> in C++. This lead me on to think about the game AI experiments that I worked during my degree in <a href="http://www.sussex.ac.uk/informatics/">Computer Science and A.I.</a>. Essential to game AI is the notion of pathfinding, or finding a path from &lsquo;A&rsquo; to &lsquo;B&rsquo;, past any obstacles that get in the way. One way to do this is to use the A* algorithm. I decided to implement an A* pathfinding algorithm for possible use in a Roguelike later, and chose <a href="http://en.wikipedia.org/wiki/A*_search_algorithm">the pseudocode from the Wikipedia example</a> to implement.</p>

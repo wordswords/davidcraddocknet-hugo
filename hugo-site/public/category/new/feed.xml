@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>New on DavidCraddock.net</title>
-    <link>http://davidcraddock.net/category/new/</link>
+    <link>https://davidcraddock.net/category/new/</link>
     <description>Recent content in New on DavidCraddock.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Sep 2022 00:00:36 +0000</lastBuildDate><atom:link href="http://davidcraddock.net/category/new/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Sep 2022 00:00:36 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/category/new/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tips for new Ubuntu Users</title>
-      <link>http://davidcraddock.net/2022/09/29/tips-for-new-ubuntu-users/</link>
+      <link>https://davidcraddock.net/2022/09/29/tips-for-new-ubuntu-users/</link>
       <pubDate>Thu, 29 Sep 2022 00:00:36 +0000</pubDate>
       
-      <guid>http://davidcraddock.net/2022/09/29/tips-for-new-ubuntu-users/</guid>
+      <guid>https://davidcraddock.net/2022/09/29/tips-for-new-ubuntu-users/</guid>
       <description>Here are some extra tips if you&amp;rsquo;re just getting started out on Ubuntu.
 You don&amp;rsquo;t have to go through the UI to shut down or reboot your computer. You can do it from the command line. The commands are:
 sudo reboot # to reboot sudo poweroff # to shut down and power off the computer You can get a lot more information on your computers startup and shutdown sequences by removing the default Ubuntu splash screen that obscures this.</description>

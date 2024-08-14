@@ -2,7 +2,7 @@
 category:
   - retrospectives
 date: "2021-03-04T19:02:19+00:00"
-guid: http://davidcraddock.net/?p=2387
+guid: https://davidcraddock.net/?p=2387
 title: 2020 Retrospective – Wow, what a year!
 url: /2021/03/04/2020-retrospective-wow-what-a-year/
 

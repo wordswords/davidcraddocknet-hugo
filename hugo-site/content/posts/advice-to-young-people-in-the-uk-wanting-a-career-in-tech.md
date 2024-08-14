@@ -2,7 +2,7 @@
 category:
   - tips
 date: "2024-04-23T22:54:59+00:00"
-guid: http://davidcraddock.net/?p=4683
+guid: https://davidcraddock.net/?p=4683
 title: Advice to young people in the UK wanting a career in Tech
 url: /2024/04/23/4683/
 
