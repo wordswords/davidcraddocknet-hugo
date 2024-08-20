@@ -28,3 +28,5 @@ It does kind of turn heads, and I'm aware it may look a little 'over the top' - 
 - **Pro-plus caffiene pills** \- My lifestyle means I am tired sometimes, and I don't drink tea or coffee, so I always keep some of these in my wallet if I need to walk home, for example.
 - **SanDisk 1TB Extreme Portable SSD, USB-C USB 3.2 Gen 2, External NVMe Solid State Drive** \- This is very useful for transferring large file collections to and from other peoples computers, and is very small for carrying.
 - **Fasgear Cat 6 Ethernet Cable, Retractable Network Cable 10Gbps** \- If I ever need to connect to a wired network, I can use this network cable - it takes up very little space.
+- **Dell 2010 Inspiron Netbook** \- This is a very small laptop that I use for when I don't want to lug around the huge gaming laptop. It runs a very cut-down version of Linux and my Linux development environment, using the terminal only, and connects via my mobile phone connection to my home server via SSh where I can use the power of the server instead of the tiny netbook CPU.
+
