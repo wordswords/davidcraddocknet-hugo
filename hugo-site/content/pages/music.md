@@ -27,7 +27,7 @@ I have released some music under the 'Concrete Spectre' project. It is industria
 
 * * *
 
-Currently I'm not DJing, but I still have the DJ homepage up which has information on ALL my musical endevours:
+Currently I'm not DJing, but I still have the DJ homepage up which has information on ALL my musical endeavours:
 [DJ Homepage](https://DJDavidCraddock.com)
 
 Also, this is my professional portfolio for the audio and music industry:
