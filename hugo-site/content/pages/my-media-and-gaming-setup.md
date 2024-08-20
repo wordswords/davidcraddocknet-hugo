@@ -24,17 +24,17 @@ I use this mainly as a general purpose PC, and for streaming on Twitch. I also u
 - 1x 2.5 TB HDD (storage)
 - 3x Logitech C920 Webcams (for streaming)
 - 1x Nvidia 1080 GPU
-- 10Gb/sec fibre card connected to my 10Gb/sec Miktrotik switch
+- 10Gb/sec fibre card connected to my 10Gb/sec Mikrotik switch
 - 27" 1440p TN LCD monitor with Gsync and 144hz refresh (used as a streaming monitor in the DJ booth)
 - Nedis HDMI Splitter 2-Port HDMI™ Eingang 2x HDMI 4K@60Hz
 - 2x Libredrive flashed LG-WH16NS40 multi-disk optical drivers for ripping Blu-rays, CDs, DVDs and any optical disk with MakeMKV and games for my Plex server and emulators.
 
 **Media Software:**
 
-- dbPowerAmp CD Ripper (lifetime lisence)
+- dbPowerAmp CD Ripper (lifetime licence)
 - MakeMKV for ripping CDs and Blu-rays
-- AnyDVD HD (lifetime lisence) for ripping DVDs and Blu-rays
-- 4K Video Downloader (lifetime lisence) for ripping videos from Youtube etc
+- AnyDVD HD (lifetime licence) for ripping DVDs and Blu-rays
+- 4K Video Downloader (lifetime licence) for ripping videos from Youtube etc
 - Imagemagik for creating GIFs and command line batch graphics manipulation and conversion
 - FFMPEG for command line batch video manipulation
 - Movavai Video Editor 2022
@@ -43,16 +43,16 @@ I use this mainly as a general purpose PC, and for streaming on Twitch. I also u
 - Sonarworks SoundID Reference - speaker and headphones environmental EQ software.
 - Audacity Audio Editor for editing and mastering mixes uploaded to Mixcloud
 - hueDynamic for syncing Phillips Hue lights to the music on my stream
-- Hye Sync (official app) for syncing Phillips Hue lights to movies, games etc
+- Hye Sync (official app) for syncing Phillips Hue lights to movies, games, etc
 - PlexAmp and Plex for streaming audio and video from my Plex server at highest quality
 - VLC for video playback
 - HandBrake for transcoding and compressing video
 - OBS Studio and Streamlabs OBS
 - Resolume Avenue 7 for visuals for my DJ stream
-- Resolume Wire for creating custom beatsynced visualisations for my stream
+- Resolume Wire for creating custom beat-synced visualisations for my stream
 - Paint.net open source graphics program for simple crops and photo editing
 - Aiseesoft Blu-ray Player (lifetime licence) for playing unripped Blu-rays on my PC
-- Bome MIDI Translator Classic (lifetime licence) for translating MIDI events to keypresses - useful for complex streaming setups
+- Bome MIDI Translator Classic (lifetime licence) for translating MIDI events to key presses - useful for complex streaming setups
 - Various free emulation tools for decrypting/anti-DRMing copies of video game console optical disks and getting them in a playable state for use in an emulator
 
 ## Gaming Laptop
@@ -162,7 +162,7 @@ You should able to browse through the games I have, both on PC and console, here
 
 ### Living Room TV Setup
 
-We have a super minimal setup in our living room which my wife uses heavily. It is super minimal because she doesn't like overcomplicated tech stuff :) It consisters of:
+We have a super minimal setup in our living room which my wife uses heavily. It is super minimal because she doesn't like overcomplicated tech stuff :) It consists of:
 
 - Sony BRAVIA 2023 Edition, KD-43X75WL, 43 Inch, LED, Smart TV, 4K HDR, Google TV
 
