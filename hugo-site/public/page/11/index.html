@@ -185,28 +185,6 @@ function toggleThemeListener() {
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Pioneer DDJ-SR Serato Controller Review
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>I decided to buy the DDJ-SR controller because it was cheaper than even the cheapest pair of Pioneer CDJs. I’m no stranger to using a laptop and controller, before the DDJ-SR I used my trusty Faderfox DJ2 controller, which is a basic no-frills ‘play buttons, 3 EQs, crossfader and volume faders’ unit.
-I was considering getting the Native Instruments Traktor S4 DJ controller, which is one of the most popular full-size controllers for Traktor....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2014-09-03</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>764 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>4 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Pioneer DDJ-SR Serato Controller Review" href="https://davidcraddock.net/2014/09/03/pioneer-ddj-sr-serato-controller-review/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
     <h2>New Synthesiser Additions: Microbrute, Nord Drum and Access Virus A
     </h2>
   </header>
@@ -408,6 +386,32 @@ Connected Red Button At the start of the year, I was working on the Connected Re
   <span>1 min</span></span>
 </footer>
   <a class="entry-link" aria-label="post link to The Haiku Machine" href="https://davidcraddock.net/2013/07/27/thehaiku-machine/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>256 Color VIM on Crunchbang Waldorf
+    </h2>
+  </header>
+  <section class="entry-content">
+    
+      <p>To get 256 colors working within terminator in Crunchbang Waldorf, I had to do the following:
+Add to ~/.bashrc
+export TERM=xterm-256color Install a 256 color VIM colorcheme, see desert256 for example.
+Add the following to ~/.vimrc:
+set t_Co=256 set t_AB=^[[48;5;%dm set t_AF=^[[38;5;%dm ’t_Co’ specifies exactly how many colours VIM can use. The other two lines seem to be Debian-specific color code escape sequences.
+If you want 256 color VIM for your root user when you sudo edit, then edit /usr/share/vim/vimrc and copy across your settings from your local ~/....</p>
+    
+  </section>
+  <footer class="entry-footer"><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
+  <span>2013-06-20</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
+  <span>95 words</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
+  <span>1 min</span></span>
+</footer>
+  <a class="entry-link" aria-label="post link to 256 Color VIM on Crunchbang Waldorf" href="https://davidcraddock.net/2013/06/20/256-color-vim-on-crunchbang-waldorf/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

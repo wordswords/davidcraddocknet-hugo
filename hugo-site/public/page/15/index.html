@@ -185,28 +185,6 @@ function toggleThemeListener() {
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Wordpress HTML edit mode inserts BR tags sometimes when you add a carriage return..
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>This is something that was quite annoying today, as I was struggling to use Wordpress 2.9.2 to align some pictures in the HTML mode of editing a page, on a client’s website.
-It turns out that Wordpress was adding BR tags sometimes when I hit return.. and sometimes not. The annoying thing was, although the BRs were outputted in the resultant Wordpress site, the BRs were not visible in the Wordpress HTML edit mode itself....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2010-04-28</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>189 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Wordpress HTML edit mode inserts BR tags sometimes when you add a carriage return.." href="https://davidcraddock.net/2010/04/28/wordpress-html-edit-mode-inserts-br-tags-sometimes-when-you-add-a-carriage-return/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
     <h2>Forkbombs and How to Prevent Them
     </h2>
   </header>
@@ -407,6 +385,29 @@ From: Root &lt;root@apache.ecommercecompany.com&gt; This makes absolutely no sen
   <span>2 min</span></span>
 </footer>
   <a class="entry-link" aria-label="post link to Changing the default &#34;From:&#34; email address for emails sent via PHP on Linux" href="https://davidcraddock.net/2010/03/10/changing-the-default-from-email-address-for-php/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Shell scripts for converting between Unix and Windows text file formats
+    </h2>
+  </header>
+  <section class="entry-content">
+    
+      <p>I’ve been using these shell scripts I wrote to convert between unix and windows text file formats. They seem to work well without any problems. If you put them in the /usr/sbin/ directory, they will be accessible on the path of the linux admin account root.
+/usr/sbin/unix2win `#!/bin/bash
+Converts a unix text file to a windows text file. usage: unix2win requirements: sed version 4.2 or later, check with sed –version sed -i -e ’s/$/r/’ $1 `...</p>
+    
+  </section>
+  <footer class="entry-footer"><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
+  <span>2010-03-09</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
+  <span>154 words</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
+  <span>1 min</span></span>
+</footer>
+  <a class="entry-link" aria-label="post link to Shell scripts for converting between Unix and Windows text file formats" href="https://davidcraddock.net/2010/03/09/shell-scripts-for-converting-between-unix-and-windows-text-file-formats/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
