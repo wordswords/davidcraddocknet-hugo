@@ -9,7 +9,7 @@ url: /my-bike/
 
 Decided not to mention the security aspects of my setup on a public page, but trust me, there are many!
 
-- Himiway Zebra Electric Mountainbike 2023 Version (road legal, top electric-assisted speed 15mph, max pull 400lbs)
+- Himiway Zebra Electric Mountain Bike 2023 Version (road legal, top electric-assisted speed 15mph, max. pull 400lbs)
 - 2x official batteries (40-80 miles on a single charge each)
 - 2x battery chargers
 - Two spare tires
@@ -19,7 +19,7 @@ Decided not to mention the security aspects of my setup on a public page, but tr
 - Adjustable wrench
 - Chain tool for removing chain links
 - Chain cleaner tool
-- MuckOff bike cleaning kit
+- "MuckOff" bike cleaning kit
 - Small first aid kit
 - Compass
 - Himiway fold-out cycle toolkit
@@ -37,6 +37,6 @@ Decided not to mention the security aspects of my setup on a public page, but tr
 - Wraparound anti-glare sun glasses for protection against surface dirt etc
 - Wraparound cycle goggles with different visors
 - Light backpack suitable for cycling
-- Gortex water-resistant high-vis cycle jacket
+- Goretex water-resistant high-vis cycle jacket
 - VEVOR Cycle Bike Cargo Trailer
 

@@ -14,14 +14,12 @@ This is my work from home setup. I work from home every work day. I use the foll
 - USB Switcher
 - IKEA Motorized Standing Desk
 - Benq 32" 2560x1440 graphic designers monitor on Amazon Basics extendable desk mount arm
-- Pro-Ject Record Player
 - Honeywell desk fan
 - Logitech 5.1 surround sound system with 5 speakers and subwoofer
 - Sony WH-1000XM3 Apt-X HD Noise cancelling headphones with an Avantree Oasis Plus Apt-X HD bluetooth transmitter, so I can listen to any of the music devices on noise cancelling headphones
 - Ergonomic book stand for textbooks
 - ThinkStation Xeon workstation/server running the latest Ubuntu
 - Fibreoptic 10Gb/sec DAC cable routed from my ThinkStation server to my personal computer downstairs for fast data transfer
-- 1GB/sec ethernet cable and gigabit switch running downstairs for general internet
 - KVM switch and full hookup for work laptop
 - Drinks holder
 - Groot from Guardians of the Galaxy Phone holder
@@ -43,7 +41,6 @@ This is my work from home setup. I work from home every work day. I use the foll
 - USB Foot Switch Keyboard Pedal for using with VIM (insert mode/normal mode toggle)
 - Mini fridge for Pepsi Max cans
 - Logitech Key light for web cam calls
-- 32" Privacy and blue light protection screen filter
 
 [![](/wp-content/uploads/2022/12/20221217_112627.jpg)](/wp-content/uploads/2022/12/20221217_112627.jpg)[![](/wp-content/uploads/2022/12/20221217_112620.jpg)](/wp-content/uploads/2022/12/20221217_112620.jpg)[![](/wp-content/uploads/2022/12/20221217_112635.jpg)](/wp-content/uploads/2022/12/20221217_112635.jpg)
 
