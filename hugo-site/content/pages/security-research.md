@@ -30,4 +30,8 @@ I have a small device which I can use as an evil wifi portal. This will deauth a
 
 I have a Proxmark3 setup which I'm using to learn about smart card security and smart card cloning. I am still getting used to using this, there is a lot to learn!
 
+## Kali Nethunter
+
+I am planning on installing Kali Nethunter on my Sony Xperia 1 III. This will allow me to do more security research on the go.
+
 
