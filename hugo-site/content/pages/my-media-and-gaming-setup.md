@@ -147,7 +147,7 @@ Currently these are the consoles I have hooked up:
 - **Sega Dreamcast** with 3x official DC controllers, 2x VMUs and 1x third-party memory pack
 - **Sony PSP2000** (TV out)
 - **Nintendo Wii (Gamecube compatiable version)** with 2x Wiimote Motion controller and official balance board
-- **Nintendo 64 with 2x official N64 controller and memory pak**
+- **Nintendo 64 with 2x official N64 controller, Kaico PAL N64 -> HDMI convertor, and memory pak**
 - **Microsoft XBox V1** with Duke controllers
 
 [![](/wp-content/uploads/2023/12/20231223_0927581.jpg)](/wp-content/uploads/2023/12/20231223_0927581.jpg)
@@ -202,11 +202,11 @@ Rode Procast mic w/ pop shield, mic cage and boom -> Presonus Studio USB-C 1824 
 Presonus Studio USB-C 1824 1x mic input -> 2x Genelec 8020D Speakers + 1x Presonus Speaker acting as a subwoofer (with hardware EQ)
 ```
 
-### My Games
+## My Games
 
-You should able to browse through the games I have, both on PC and console, here: [https://wordswords.github.io/media-library-homepage](https://wordswords.github.io/media-library-homepage)
+I collect physical and digital games, both modern and retro. You should able to browse through the games I have, both on PC and console, here: [https://wordswords.github.io/media-library-homepage](https://wordswords.github.io/media-library-homepage)
 
-### Living Room TV Setup
+## Living Room TV Setup
 
 We have a super minimal setup in our living room which my wife uses heavily. It is super minimal because she doesn't like overcomplicated tech stuff :) It consists of:
 
