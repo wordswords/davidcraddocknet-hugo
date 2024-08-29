@@ -163,30 +163,44 @@ Currently these are the consoles I have hooked up:
 So, my video setup, depending on gaming needs, is:
 
 1.
+```
 All retro consoles -> OSSC -> MClassic -> 4K capture card * -> PASSTHROUGH -> Monitor (up to 4K)
                                                           \ -> RECORD -> OBS Studio stream/record (up to 1080p)
+```
 2.
+```
 All modern (HDMI) consoles -> MClassic -> 4K capture card * -> PASSTHROUGH -> Monitor (up to 4K)
                                                           \ -> RECORD -> OBS Studio stream/record (up to 1080p)
+```
 3.
+```
 PC gaming laptop -> 4K capture card * -> PASSTHROUGH -> Monitor (up to 4K)
                                     \ -> RECORD -> OBS Studio stream/record (up to 1080p)
+```
 ## Audio Chain
 
 ### INPUT
 
 1.
+```
 All retro consoles -> 4K capture card -> PASSTHROUGH -> Monitor -> speaker stereo audio jack -> Presonus Studio USB-C 1824 2x line inputs
+```
 
 2.
+```
 All modern (HDMI) consoles -> 4K capture card -> PASSTHROUGH -> Monitor -> speaker stereo audio jack -> Presonus Studio USB-C 1824 2x line inputs
+```
 
 3.
+```
 Rode Procast mic w/ pop shield, mic cage and boom -> Presonus Studio USB-C 1824 1x mic input
+```
 
 ### OUTPUT
 
+```
 Presonus Studio USB-C 1824 1x mic input -> 2x Genelec 8020D Speakers + 1x Presonus Speaker acting as a subwoofer (with hardware EQ)
+```
 
 ### My Games
 
