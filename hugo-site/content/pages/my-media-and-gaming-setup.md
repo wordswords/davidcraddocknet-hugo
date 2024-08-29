@@ -133,6 +133,8 @@ These all work with the gaming PC and laptop and connect via USB:
 
 I have a Kaico Edition OSSC Open Source Scan Converter 1.6, which upscales all my retro consoles to HDMI. I use cables from [https://retrogamingcables.co.uk/](https://retrogamingcables.co.uk/) with the OSSC, which are highly recommended as they make so much difference in terms of audio and video noise. The right cable can also unlock better sound and graphics quality when combined with the OSSC that was never available before.
 
+I also have a Marsellie MClassic HDMI to HDMI hardware-based AI image improver and upscaler which I use for the output of the OSSC.
+
 Currently these are the consoles I have hooked up:
 
 - **Super Nintendo** with 2x official controllers
@@ -155,6 +157,36 @@ Currently these are the consoles I have hooked up:
 - I have a customised Sony PSP which I have cracked, and put a 64GB memory card in it. It has a complete set of SNES and Genesis games, as well as several PS One games which the PSP can emulate. I love playing the game 'Wip3out' on it.
 - I have a Nintendo DSi XL which has a cartridge loader meaning I can play any games on it. Currently I mostly only use it for chess games, but aim to use it more.
 - I have a Gameboy Advance SP which I use almost exclusively for the game 'Final Fantasy Tactics'.
+
+## Video Chain
+
+So, my video setup, depending on gaming needs, is:
+
+1.
+All retro consoles -> OSSC -> MClassic -> 4K capture card * -> PASSTHROUGH -> Monitor (up to 4K)
+                                                          \ -> RECORD -> OBS Studio stream/record (up to 1080p)
+2.
+All modern (HDMI) consoles -> MClassic -> 4K capture card * -> PASSTHROUGH -> Monitor (up to 4K)
+                                                          \ -> RECORD -> OBS Studio stream/record (up to 1080p)
+3.
+PC gaming laptop -> 4K capture card * -> PASSTHROUGH -> Monitor (up to 4K)
+                                    \ -> RECORD -> OBS Studio stream/record (up to 1080p)
+## Audio Chain
+
+### INPUT
+
+1.
+All retro consoles -> 4K capture card -> PASSTHROUGH -> Monitor -> speaker stereo audio jack -> Presonus Studio USB-C 1824 2x line inputs
+
+2.
+All modern (HDMI) consoles -> 4K capture card -> PASSTHROUGH -> Monitor -> speaker stereo audio jack -> Presonus Studio USB-C 1824 2x line inputs
+
+3.
+Rode Procast mic w/ pop shield, mic cage and boom -> Presonus Studio USB-C 1824 1x mic input
+
+### OUTPUT
+
+Presonus Studio USB-C 1824 1x mic input -> 2x Genelec 8020D Speakers + 1x Presonus Speaker acting as a subwoofer (with hardware EQ)
 
 ### My Games
 
