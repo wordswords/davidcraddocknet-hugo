@@ -9,10 +9,20 @@
       <url>https://davidcraddock.net/cover.png</url>
       <link>https://davidcraddock.net/cover.png</link>
     </image>
-    <generator>Hugo -- 0.133.0</generator>
+    <generator>Hugo -- 0.133.1</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 02 Aug 2024 23:15:41 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 24 Aug 2024 03:42:48 +0000</lastBuildDate>
     <atom:link href="https://davidcraddock.net/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Security Research</title>
+      <link>https://davidcraddock.net/security-research/</link>
+      <pubDate>Sat, 24 Aug 2024 03:42:48 +0000</pubDate>
+       <guid isPermaLink="false">https://davidcraddock.net/security-research/</guid> 
+      <description>Security Research I am currently familiarising myself with tools to do security research around physical pentesting.
+This is in preparation for my research project as part of the MSc Cyber Security masters I&amp;rsquo;m taking from the University of London via distance learning.
+This research is strictly for informational purposes and I don&amp;rsquo;t do anything criminal with it.
+Wardriving and Wifi cracking I have two Raspberry Pi Zero 2s configured headless with pwnagotchi</description>
+    </item>
     <item>
       <title>Mid 2024 Retrospective Update</title>
       <link>https://davidcraddock.net/2024/08/02/mid-2024-update/</link>

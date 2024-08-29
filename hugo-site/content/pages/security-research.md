@@ -1,6 +1,6 @@
 ---
 date: "2024-08-24T03:42:48+00:00"
-guid: https://davidcraddock.net/security-research
+guid: https://davidcraddock.net/security-research/
 title: Security Research
 url: /security-research/
 
@@ -18,7 +18,7 @@ This research is strictly for informational purposes and I don't do anything cri
 
 I have two Raspberry Pi Zero 2s configured headless with pwnagotchi
 
-## Passord cracking
+## Password cracking
 
 I have a hashmat password cracker setup that utilises my PC with an Nvidea gaming graphics card.
 
@@ -32,6 +32,10 @@ I have a Proxmark3 setup which I'm using to learn about smart card security and 
 
 ## Kali Nethunter
 
-I am planning on installing Kali Nethunter on my Sony Xperia 1 III. This will allow me to do more security research on the go.
+I am planning on installing Kali Nethunter on my old Sony Xperia 1 III. This will allow me to do more security research on the go.
+
+## Self-hosting Security
+
+I am moving to self-host as much of my digital content as possible, to force myself how to learn to secure things properly.
 
 
