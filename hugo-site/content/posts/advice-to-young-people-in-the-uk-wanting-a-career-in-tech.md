@@ -7,6 +7,8 @@ title: Advice to young people in the UK wanting a career in Tech
 url: /2024/04/23/4683/
 
 ---
+![](/hugo-uploads/2024/9/7/thinking.jpg)
+
 If you're currently in high school in the UK and want to be a GOOD and EMPLOYED software engineer.. this is my advice.
 
 1. Start programming on personal projects right away, and keep it up during your entire working career. Always have something going on in the background.
