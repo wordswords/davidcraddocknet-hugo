@@ -13,10 +13,9 @@
       <pubDate>Thu, 24 Feb 2011 19:31:48 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2011/02/24/a-3-day-weather-forecast-calendar-service/</guid>
-      <description>The BBC provide 3 day weather RSS feeds for most locations in the UK. I thought it would be interesting to create a web service to turn the weather feed into calendar feed format, so I could have a constantly updated forecast of the next 3 days of weather mapped on to my iPhone’s calendar. Here it is on my iPhone:
-Overview
-The service is separated into five files:
-ical.php – this contains the class ical which corresponds to a single calendar feed.</description>
+      <description>&lt;p&gt;The BBC provide 3 day weather RSS feeds for most locations in the UK. I thought it would be interesting to create a web service to turn the weather feed into calendar feed format, so I could have a constantly updated forecast of the next 3 days of weather mapped on to my iPhone’s calendar. Here it is on my iPhone:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Overview&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The service is separated into five files:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>The BBC provide 3 day weather RSS feeds for most locations in the UK. I thought it would be interesting to create a web service to turn the weather feed into calendar feed format, so I could have a constantly updated forecast of the next 3 days of weather mapped on to my iPhone’s calendar. Here it is on my iPhone:</p>
 <p><strong>Overview</strong></p>
 <p>The service is separated into five files:</p>

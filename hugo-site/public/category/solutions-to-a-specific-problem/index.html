@@ -182,8 +182,10 @@ function toggleThemeListener() {
   </header>
   <section class="entry-content">
     
-      <p>Did some network design for my home network. This will ensure that my new Virgin Media 1100mbps/50mps speed is fully utilised without any bottlenecks and will futureproof things up to at least 2.5Gbs/speed connections.
-I should be able to load balance both internet connections to utilise them both simultaniously in the future, but for now I want to be able to get greater than 1000mbit/s speed on a single device otherwise there is not much point in speed increases past 1000mbits....</p>
+      <p>
+Did some network design for my home network. This will ensure that my new Virgin Media 1100mbps/50mps speed is fully utilised without any bottlenecks and will futureproof things up to at least 2.5Gbs/speed connections.
+I should be able to load balance both internet connections to utilise them both simultaniously in the future, but for now I want to be able to get greater than 1000mbit/s speed on a single device otherwise there is not much point in speed increases past 1000mbits. Also there is a 200-300mbits speed increase possible from my existing VM hardware that is not utilised in the current network.
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -205,7 +207,8 @@ I should be able to load balance both internet connections to utilise them both 
   <section class="entry-content">
     
       <p>It seems that for a lot of people, perhaps the vast majority, they cannot expect to be 100% happy all the time. Even those incredibly successful celebrities and incredibly rich CEOs and politicians are not happy 100% of the time.
-So is it a good idea to seek 100% happiness right away? Or should we always try and select the ’least worst’ situation? If we keep making progress and optimse our happiness levels through constantly selecting the ’least worst’ situation whenever we have a descision then it seems to me we will maximise our happiness potential in the long run....</p>
+So is it a good idea to seek 100% happiness right away? Or should we always try and select the ’least worst’ situation? If we keep making progress and optimse our happiness levels through constantly selecting the ’least worst’ situation whenever we have a descision then it seems to me we will maximise our happiness potential in the long run.
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -226,7 +229,8 @@ So is it a good idea to seek 100% happiness right away? Or should we always try 
   </header>
   <section class="entry-content">
     
-      <p>The Problem As of the day of posting, Plex Media Server has a suboptimal handling of Various Artists compilations. Unless you follow BOTH of these rules, described clearly on the Plex support here under ‘Various Artists’, then they won’t appear collected under a particular album, they will be spread out filed under the different artists that created them. I think it should only require one of these rules, but it is not up to me....</p>
+      <p>The Problem As of the day of posting, Plex Media Server has a suboptimal handling of Various Artists compilations. Unless you follow BOTH of these rules, described clearly on the Plex support here under ‘Various Artists’, then they won’t appear collected under a particular album, they will be spread out filed under the different artists that created them. I think it should only require one of these rules, but it is not up to me. The problem is that release metadata available from the online metadata databases, often doesn’t follow these rules - lots of DJ mix compilations for example, do not set albumartist tag to Various Artists from the online metadata databases.
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -248,7 +252,8 @@ So is it a good idea to seek 100% happiness right away? Or should we always try 
   <section class="entry-content">
     
       <p>I couldn’t find a concise guide to setting this up quickly so thought it was worth a post. To quickly get something working and create a https server using the above versions of openssl and node.js, do the following:
-Generate self-signed server certificate with no password sudo openssl req -x509 -newkey rsa:2048 -keyout ./csr.pem -out server.crt -days 3001 -nodes Use this node.js code to setup a server quickly const https = require(&#39;https&#39;); const fs = require(&#39;fs&#39;); const options = { key: fs....</p>
+Generate self-signed server certificate with no password sudo openssl req -x509 -newkey rsa:2048 -keyout ./csr.pem -out server.crt -days 3001 -nodes Use this node.js code to setup a server quickly const https = require(&#39;https&#39;); const fs = require(&#39;fs&#39;); const options = { key: fs.readFileSync(&#39;csr.pem&#39;), cert: fs.readFileSync(&#39;server.crt&#39;) }; https.createServer(options, (req, res) =&gt; { res.writeHead(200); res.end(&#39;hello world\n&#39;); }).listen(8000); Go to https://localhost:8000 and accept the certificate, you should see ‘hello world’
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -270,7 +275,8 @@ Generate self-signed server certificate with no password sudo openssl req -x509 
   <section class="entry-content">
     
       <p>Not that I particularly look at anything weird, but when I’m showing someone my computer I don’t want to have my ‘most visited sites’ pop up when I fire up Chrome. The following Chrome extension will get rid of the default loading page, and just display a blank page:
-https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbekmfgabipmfilij</p>
+https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbekmfgabipmfilij
+</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -291,7 +297,9 @@ https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbek
   </header>
   <section class="entry-content">
     
-      <p>Lately I’ve had the idea of creating a text-based Roguelike in C&#43;&#43;. This lead me on to think about the game AI experiments that I worked during my degree in Computer Science and A.I.. Essential to game AI is the notion of pathfinding, or finding a path from ‘A’ to ‘B’, past any obstacles that get in the way. One way to do this is to use the A* algorithm....</p>
+      <p>
+Lately I’ve had the idea of creating a text-based Roguelike in C&#43;&#43;. This lead me on to think about the game AI experiments that I worked during my degree in Computer Science and A.I.. Essential to game AI is the notion of pathfinding, or finding a path from ‘A’ to ‘B’, past any obstacles that get in the way. One way to do this is to use the A* algorithm. I decided to implement an A* pathfinding algorithm for possible use in a Roguelike later, and chose the pseudocode from the Wikipedia example to implement.
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -312,7 +320,9 @@ https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbek
   </header>
   <section class="entry-content">
     
-      <p>I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame....</p>
+      <p>
+I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame. I couldn’t find a video player that would open the single frame. So I resorted to the command line version of ffmpeg, which I installed via macports, to convert this single frame to a jpg file to view as normal. This line worked a treat:
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -334,7 +344,8 @@ https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbek
   <section class="entry-content">
     
       <p>At work, I still have to use Windows XP and Outlook 2003. I don’t particually mind this, except when I draft an email to someone and accidently I press Control-B instead of Control-V. Control-B will go ahead and send your partially composed email, resulting in some embarassment as you have to tell everyone to disregard it.
-So I wanted to remove the ‘send email’ shortcut keys in Outlook 2003. There are two ways of doing this, one involves editing your group policy, which is something only my IT administration team can do, and I didn’t want to have to involve them....</p>
+So I wanted to remove the ‘send email’ shortcut keys in Outlook 2003. There are two ways of doing this, one involves editing your group policy, which is something only my IT administration team can do, and I didn’t want to have to involve them. The other way is by making a change to your registry, which I will describe here.
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -356,7 +367,8 @@ So I wanted to remove the ‘send email’ shortcut keys in Outlook 2003. There 
   <section class="entry-content">
     
       <p>There is a problem I frequently encouter on Redhat/Fedora/CentOS systems with the output of the ls command. Under those distributions, the default setup is to display directories in a very dark colour. If you usually use a white foreground and a black background on your terminal client (such as Putty) then you will struggle to read the names of the directories under Redhat-based distributions.
-There are two soloutions that I have used:...</p>
+There are two soloutions that I have used:
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -378,7 +390,8 @@ There are two soloutions that I have used:...</p>
   <section class="entry-content">
     
       <p>To quickly find large files to delete if you have filled your startup disk, enter this command on the OSX terminal:
-sudo find / -size &#43;500000 -print This will find and print out file paths to files over 500MB. You can then go through them and delete them individually by typing rm “”, although there is no undelete so make sure you know you won’t miss them.</p>
+sudo find / -size &#43;500000 -print This will find and print out file paths to files over 500MB. You can then go through them and delete them individually by typing rm “”, although there is no undelete so make sure you know you won’t miss them.
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">

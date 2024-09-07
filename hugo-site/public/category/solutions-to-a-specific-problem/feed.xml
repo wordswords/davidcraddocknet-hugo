@@ -13,8 +13,9 @@
       <pubDate>Sat, 14 May 2022 23:15:20 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2022/05/15/home-network-design/</guid>
-      <description>Did some network design for my home network. This will ensure that my new Virgin Media 1100mbps/50mps speed is fully utilised without any bottlenecks and will futureproof things up to at least 2.5Gbs/speed connections.
-I should be able to load balance both internet connections to utilise them both simultaniously in the future, but for now I want to be able to get greater than 1000mbit/s speed on a single device otherwise there is not much point in speed increases past 1000mbits.</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/05/screenshot-2022-05-15-at-00-10-35-linkedin-2.png&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;Did some network design for my home network. This will ensure that my new Virgin Media 1100mbps/50mps speed is fully utilised without any bottlenecks and will futureproof things up to at least 2.5Gbs/speed connections.&lt;/p&gt;
+&lt;p&gt;I should be able to load balance both internet connections to utilise them both simultaniously in the future, but for now I want to be able to get greater than 1000mbit/s speed on a single device otherwise there is not much point in speed increases past 1000mbits. Also there is a 200-300mbits speed increase possible from my existing VM hardware that is not utilised in the current network.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2022/05/screenshot-2022-05-15-at-00-10-35-linkedin-2.png" type="" alt=""  /></p>
 <p>Did some network design for my home network. This will ensure that my new Virgin Media 1100mbps/50mps speed is fully utilised without any bottlenecks and will futureproof things up to at least 2.5Gbs/speed connections.</p>
 <p>I should be able to load balance both internet connections to utilise them both simultaniously in the future, but for now I want to be able to get greater than 1000mbit/s speed on a single device otherwise there is not much point in speed increases past 1000mbits. Also there is a 200-300mbits speed increase possible from my existing VM hardware that is not utilised in the current network.</p>
@@ -29,8 +30,8 @@ I should be able to load balance both internet connections to utilise them both 
       <pubDate>Fri, 07 Jan 2022 05:50:39 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2022/01/07/the-persuit-of-happiness-and-the-hill-climbing-problem/</guid>
-      <description>It seems that for a lot of people, perhaps the vast majority, they cannot expect to be 100% happy all the time. Even those incredibly successful celebrities and incredibly rich CEOs and politicians are not happy 100% of the time.
-So is it a good idea to seek 100% happiness right away? Or should we always try and select the &amp;rsquo;least worst&amp;rsquo; situation? If we keep making progress and optimse our happiness levels through constantly selecting the &amp;rsquo;least worst&amp;rsquo; situation whenever we have a descision then it seems to me we will maximise our happiness potential in the long run.</description>
+      <description>&lt;p&gt;It seems that for a lot of people, perhaps the vast majority, they cannot expect to be 100% happy all the time. Even those incredibly successful celebrities and incredibly rich CEOs and politicians are not happy 100% of the time.&lt;/p&gt;
+&lt;p&gt;So is it a good idea to seek 100% happiness right away? Or should we always try and select the &amp;rsquo;least worst&amp;rsquo; situation? If we keep making progress and optimse our happiness levels through constantly selecting the &amp;rsquo;least worst&amp;rsquo; situation whenever we have a descision then it seems to me we will maximise our happiness potential in the long run.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>It seems that for a lot of people, perhaps the vast majority, they cannot expect to be 100% happy all the time. Even those incredibly successful celebrities and incredibly rich CEOs and politicians are not happy 100% of the time.</p>
 <p>So is it a good idea to seek 100% happiness right away? Or should we always try and select the &rsquo;least worst&rsquo; situation? If we keep making progress and optimse our happiness levels through constantly selecting the &rsquo;least worst&rsquo; situation whenever we have a descision then it seems to me we will maximise our happiness potential in the long run.</p>
 <p>Once we have reached the plateau of happiness for our chosen path though, and we are not getting any happier or there is no way to continue improving our happiness, then the only way of potentially improving our happiness is to do something radical and leap to another approach.</p>
@@ -47,7 +48,8 @@ So is it a good idea to seek 100% happiness right away? Or should we always try 
       <pubDate>Tue, 21 Sep 2021 22:22:47 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2021/09/21/how-to-fix-plex-media-servers-various-artists-problem-using-beets-io-and-other-tools/</guid>
-      <description>The Problem As of the day of posting, Plex Media Server has a suboptimal handling of Various Artists compilations. Unless you follow BOTH of these rules, described clearly on the Plex support here under &amp;lsquo;Various Artists&amp;rsquo;, then they won&amp;rsquo;t appear collected under a particular album, they will be spread out filed under the different artists that created them. I think it should only require one of these rules, but it is not up to me.</description>
+      <description>&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
+&lt;p&gt;As of the day of posting, Plex Media Server has a suboptimal handling of Various Artists compilations. Unless you follow BOTH of these rules, &lt;a href=&#34;https://support.plex.tv/articles/200265296-adding-music-media-from-folders/&#34;&gt;described clearly on the Plex support here under &amp;lsquo;Various Artists&amp;rsquo;,&lt;/a&gt; then they won&amp;rsquo;t appear collected under a particular album, they will be spread out filed under the different artists that created them. I think it should only require one of these rules, but it is not up to me. The problem is that release metadata available from the online metadata databases, often doesn&amp;rsquo;t follow these rules - lots of DJ mix compilations for example, do not set albumartist tag to Various Artists from the online metadata databases.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="the-problem">The Problem</h2>
 <p>As of the day of posting, Plex Media Server has a suboptimal handling of Various Artists compilations. Unless you follow BOTH of these rules, <a href="https://support.plex.tv/articles/200265296-adding-music-media-from-folders/">described clearly on the Plex support here under &lsquo;Various Artists&rsquo;,</a> then they won&rsquo;t appear collected under a particular album, they will be spread out filed under the different artists that created them. I think it should only require one of these rules, but it is not up to me. The problem is that release metadata available from the online metadata databases, often doesn&rsquo;t follow these rules - lots of DJ mix compilations for example, do not set albumartist tag to Various Artists from the online metadata databases.</p>
 <p>Also you may want to adopt a different file structure for your music than what is recommended and essential for Plex. I would agree that ONE of these measures should be required, and I would argue that setting album artist would be enough for Plex to figure out this problem, but you also need to structure your music also under the way they suggest, you won&rsquo;t get the desired result of compilations being collected as a single album and in order.</p>
@@ -80,8 +82,8 @@ So is it a good idea to seek 100% happiness right away? Or should we always try 
       <pubDate>Wed, 10 May 2017 13:59:18 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2017/05/10/node-js-https-server-with-self-signed-certificate-creation-on-openssl-0-9-8zh-with-node-js-7-10-0/</guid>
-      <description>I couldn&amp;rsquo;t find a concise guide to setting this up quickly so thought it was worth a post. To quickly get something working and create a https server using the above versions of openssl and node.js, do the following:
-Generate self-signed server certificate with no password sudo openssl req -x509 -newkey rsa:2048 -keyout ./csr.pem -out server.crt -days 3001 -nodes Use this node.js code to setup a server quickly const https = require(&#39;https&#39;); const fs = require(&#39;fs&#39;); const options = { key: fs.</description>
+      <description>&lt;p&gt;I couldn&amp;rsquo;t find a concise guide to setting this up quickly so thought it was worth a post. To quickly get something working and create a https server using the above versions of openssl and node.js, do the following:&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;Generate self-signed server certificate with no password&lt;/strong&gt; &lt;code&gt;sudo openssl req -x509 -newkey rsa:2048 -keyout ./csr.pem -out server.crt -days 3001 -nodes&lt;/code&gt; &lt;strong&gt;Use this node.js code to setup a server quickly&lt;/strong&gt; &lt;code&gt;const https = require(&#39;https&#39;); const fs = require(&#39;fs&#39;); const options = { key: fs.readFileSync(&#39;csr.pem&#39;), cert: fs.readFileSync(&#39;server.crt&#39;) }; https.createServer(options, (req, res) =&amp;gt; { res.writeHead(200); res.end(&#39;hello world\n&#39;); }).listen(8000);&lt;/code&gt; &lt;strong&gt;Go to https://localhost:8000 and accept the certificate, you should see &amp;lsquo;hello world&amp;rsquo;&lt;/strong&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I couldn&rsquo;t find a concise guide to setting this up quickly so thought it was worth a post. To quickly get something working and create a https server using the above versions of openssl and node.js, do the following:</p>
 <p> <strong>Generate self-signed server certificate with no password</strong> <code>sudo openssl req -x509 -newkey rsa:2048 -keyout ./csr.pem -out server.crt -days 3001 -nodes</code> <strong>Use this node.js code to setup a server quickly</strong> <code>const https = require('https'); const fs = require('fs'); const options = { key: fs.readFileSync('csr.pem'), cert: fs.readFileSync('server.crt') }; https.createServer(options, (req, res) =&gt; { res.writeHead(200); res.end('hello world\n'); }).listen(8000);</code> <strong>Go to https://localhost:8000 and accept the certificate, you should see &lsquo;hello world&rsquo;</strong></p>
 ]]></content:encoded>
@@ -93,8 +95,8 @@ Generate self-signed server certificate with no password sudo openssl req -x509 
       <pubDate>Sun, 21 Jun 2015 17:49:00 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2015/06/21/get-rid-of-the-most-visited-sites-grid-on-chrome/</guid>
-      <description>Not that I particularly look at anything weird, but when I&amp;rsquo;m showing someone my computer I don&amp;rsquo;t want to have my &amp;lsquo;most visited sites&amp;rsquo; pop up when I fire up Chrome. The following Chrome extension will get rid of the default loading page, and just display a blank page:
-https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbekmfgabipmfilij</description>
+      <description>&lt;p&gt;Not that I particularly look at anything weird, but when I&amp;rsquo;m showing someone my computer I don&amp;rsquo;t want to have my &amp;lsquo;most visited sites&amp;rsquo; pop up when I fire up Chrome. The following Chrome extension will get rid of the default loading page, and just display a blank page:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbekmfgabipmfilij&#34;&gt;https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbekmfgabipmfilij&lt;/a&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Not that I particularly look at anything weird, but when I&rsquo;m showing someone my computer I don&rsquo;t want to have my &lsquo;most visited sites&rsquo; pop up when I fire up Chrome. The following Chrome extension will get rid of the default loading page, and just display a blank page:</p>
 <p><a href="https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbekmfgabipmfilij">https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbekmfgabipmfilij</a></p>
 ]]></content:encoded>
@@ -106,7 +108,8 @@ https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbek
       <pubDate>Thu, 12 Jun 2014 00:24:34 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2014/06/12/a-algorithm-implementation-in-python/</guid>
-      <description>Lately I&amp;rsquo;ve had the idea of creating a text-based Roguelike in C++. This lead me on to think about the game AI experiments that I worked during my degree in Computer Science and A.I.. Essential to game AI is the notion of pathfinding, or finding a path from &amp;lsquo;A&amp;rsquo; to &amp;lsquo;B&amp;rsquo;, past any obstacles that get in the way. One way to do this is to use the A* algorithm.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2014/06/pathfinding.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2014/06/pathfinding.jpg&#34; type=&#34;&#34; alt=&#34;pathfinding&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Lately I&amp;rsquo;ve had the idea of creating a text-based &lt;a href=&#34;http://en.wikipedia.org/wiki/Roguelike&#34;&gt;Roguelike&lt;/a&gt; in C++. This lead me on to think about the game AI experiments that I worked during my degree in &lt;a href=&#34;http://www.sussex.ac.uk/informatics/&#34;&gt;Computer Science and A.I.&lt;/a&gt;. Essential to game AI is the notion of pathfinding, or finding a path from &amp;lsquo;A&amp;rsquo; to &amp;lsquo;B&amp;rsquo;, past any obstacles that get in the way. One way to do this is to use the A* algorithm. I decided to implement an A* pathfinding algorithm for possible use in a Roguelike later, and chose &lt;a href=&#34;http://en.wikipedia.org/wiki/A*_search_algorithm&#34;&gt;the pseudocode from the Wikipedia example&lt;/a&gt; to implement.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2014/06/pathfinding.jpg"><img loading="lazy" src="/wp-content/uploads/2014/06/pathfinding.jpg" type="" alt="pathfinding"  /></a></p>
 <p>Lately I&rsquo;ve had the idea of creating a text-based <a href="http://en.wikipedia.org/wiki/Roguelike">Roguelike</a> in C++. This lead me on to think about the game AI experiments that I worked during my degree in <a href="http://www.sussex.ac.uk/informatics/">Computer Science and A.I.</a>. Essential to game AI is the notion of pathfinding, or finding a path from &lsquo;A&rsquo; to &lsquo;B&rsquo;, past any obstacles that get in the way. One way to do this is to use the A* algorithm. I decided to implement an A* pathfinding algorithm for possible use in a Roguelike later, and chose <a href="http://en.wikipedia.org/wiki/A*_search_algorithm">the pseudocode from the Wikipedia example</a> to implement.</p>
 <p>The program finds a path from the top right hand corner to the top left, avoiding impassable &lsquo;7&rsquo; obstacles. The &lsquo;*&rsquo; are the steps along the path. The algorithm is guaranteed to find the shortest path between the goal and the start, which means it can optimally solve any solvable maze, given time.</p>
@@ -224,7 +227,8 @@ https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbek
       <pubDate>Thu, 12 Apr 2012 15:20:23 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2012/04/12/converting-a-single-m2v-frame-into-jpeg/</guid>
-      <description>I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame. I couldn&amp;rsquo;t find a video player that would open the single frame. So I resorted to the command line version of ffmpeg, which I installed via macports, to convert this single frame to a jpg file to view as normal. This line worked a treat:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg"><img loading="lazy" src="/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg" type="" alt=""  /></a></p>
 <p>I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame. I couldn&rsquo;t find a video player that would open the single frame. So I resorted to the command line version of ffmpeg, which I installed via macports, to convert this single frame to a jpg file to view as normal. This line worked a treat:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ffmpeg -i north.mpg -ss 00:00:00 -t 00:00:1 -s 1024x768 -r 1 -f mjpeg north.jpg
@@ -241,8 +245,8 @@ https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbek
       <pubDate>Wed, 13 Jul 2011 16:34:39 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2011/07/13/disabling-control-enter-and-control-b-shortcut-keys-in-outlook-2003/</guid>
-      <description>At work, I still have to use Windows XP and Outlook 2003. I don&amp;rsquo;t particually mind this, except when I draft an email to someone and accidently I press Control-B instead of Control-V. Control-B will go ahead and send your partially composed email, resulting in some embarassment as you have to tell everyone to disregard it.
-So I wanted to remove the &amp;lsquo;send email&amp;rsquo; shortcut keys in Outlook 2003. There are two ways of doing this, one involves editing your group policy, which is something only my IT administration team can do, and I didn&amp;rsquo;t want to have to involve them.</description>
+      <description>&lt;p&gt;At work, I still have to use Windows XP and Outlook 2003. I don&amp;rsquo;t particually mind this, except when I draft an email to someone and accidently I press Control-B instead of Control-V. Control-B will go ahead and send your partially composed email, resulting in some embarassment as you have to tell everyone to disregard it.&lt;/p&gt;
+&lt;p&gt;So I wanted to remove the &amp;lsquo;send email&amp;rsquo; shortcut keys in Outlook 2003. There are two ways of doing this, one involves editing your group policy, which is something only my IT administration team can do, and I didn&amp;rsquo;t want to have to involve them. The other way is by making a change to your registry, which I will describe here.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>At work, I still have to use Windows XP and Outlook 2003. I don&rsquo;t particually mind this, except when I draft an email to someone and accidently I press Control-B instead of Control-V. Control-B will go ahead and send your partially composed email, resulting in some embarassment as you have to tell everyone to disregard it.</p>
 <p>So I wanted to remove the &lsquo;send email&rsquo; shortcut keys in Outlook 2003. There are two ways of doing this, one involves editing your group policy, which is something only my IT administration team can do, and I didn&rsquo;t want to have to involve them. The other way is by making a change to your registry, which I will describe here.</p>
 <ol>
@@ -271,8 +275,8 @@ Name: CtrlEnter Data: 13,8</p>
       <pubDate>Wed, 04 May 2011 16:03:55 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/</guid>
-      <description>There is a problem I frequently encouter on Redhat/Fedora/CentOS systems with the output of the ls command. Under those distributions, the default setup is to display directories in a very dark colour. If you usually use a white foreground and a black background on your terminal client (such as Putty) then you will struggle to read the names of the directories under Redhat-based distributions.
-There are two soloutions that I have used:</description>
+      <description>&lt;p&gt;There is a problem I frequently encouter on Redhat/Fedora/CentOS systems with the output of the &lt;strong&gt;ls&lt;/strong&gt; command. Under those distributions, the default setup is to display directories in a very dark colour. If you usually use a white foreground and a black background on your terminal client (such as Putty) then you will struggle to read the names of the directories under Redhat-based distributions.&lt;/p&gt;
+&lt;p&gt;There are two soloutions that I have used:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>There is a problem I frequently encouter on Redhat/Fedora/CentOS systems with the output of the <strong>ls</strong> command. Under those distributions, the default setup is to display directories in a very dark colour. If you usually use a white foreground and a black background on your terminal client (such as Putty) then you will struggle to read the names of the directories under Redhat-based distributions.</p>
 <p>There are two soloutions that I have used:</p>
 <p><strong>1. Change the colour settings in Putty</strong></p>
@@ -292,8 +296,9 @@ There are two soloutions that I have used:</description>
       <pubDate>Tue, 22 Feb 2011 00:16:12 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2011/02/22/find-large-files-by-using-the-osx-commandline/</guid>
-      <description>To quickly find large files to delete if you have filled your startup disk, enter this command on the OSX terminal:
-sudo find / -size +500000 -print This will find and print out file paths to files over 500MB. You can then go through them and delete them individually by typing rm &amp;ldquo;&amp;rdquo;, although there is no undelete so make sure you know you won&amp;rsquo;t miss them.</description>
+      <description>&lt;p&gt;To quickly find large files to delete if you have filled your startup disk, enter this command on the OSX terminal:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo find / -size +500000 -print
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will find and print out file paths to files over 500MB. You can then go through them and delete them individually by typing &lt;strong&gt;rm &amp;ldquo;&lt;!-- raw HTML omitted --&gt;&amp;rdquo;&lt;/strong&gt;, although there is no undelete so make sure you know you won&amp;rsquo;t miss them.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>To quickly find large files to delete if you have filled your startup disk, enter this command on the OSX terminal:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo find / -size +500000 -print
 </span></span></code></pre></div><p>This will find and print out file paths to files over 500MB. You can then go through them and delete them individually by typing <strong>rm &ldquo;<!-- raw HTML omitted -->&rdquo;</strong>, although there is no undelete so make sure you know you won&rsquo;t miss them.</p>
@@ -306,8 +311,11 @@ sudo find / -size +500000 -print This will find and print out file paths to file
       <pubDate>Wed, 16 Feb 2011 12:33:44 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2011/02/16/finding-files-in-linux-modified-between-two-dates/</guid>
-      <description>You use the &amp;rsquo;touch&amp;rsquo; command to create two blank files, with a last modified date that you specify - one with a date of the start of the range you want to specify, and the second with a date at the end of the range you want to specify. Then you reference to those two files in your find command:
-touch /tmp/temp -t 200604141130 touch /tmp/ntemp -t 200604261630 find /data/ -cnewer /tmp/temp -and !</description>
+      <description>&lt;p&gt;You use the &amp;rsquo;touch&amp;rsquo; command to create two blank files, with a last modified date that you specify - one with a date of the start of the range you want to specify, and the second with a date at the end of the range you want to specify. Then you reference to those two files in your find command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;touch /tmp/temp -t 200604141130
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;touch /tmp/ntemp -t 200604261630
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;find /data/ -cnewer /tmp/temp -and ! -cnewer /tmp/ntemp
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
       <content:encoded><![CDATA[<p>You use the &rsquo;touch&rsquo; command to create two blank files, with a last modified date that you specify - one with a date of the start of the range you want to specify, and the second with a date at the end of the range you want to specify. Then you reference to those two files in your find command:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>touch /tmp/temp -t 200604141130
 </span></span><span style="display:flex;"><span>touch /tmp/ntemp -t 200604261630
@@ -321,7 +329,7 @@ touch /tmp/temp -t 200604141130 touch /tmp/ntemp -t 200604261630 find /data/ -cn
       <pubDate>Sat, 12 Feb 2011 20:01:13 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2011/02/12/writing-simple-email-alerts-in-php-with-magpierss/</guid>
-      <description>I wrote an email alerter that sends me an email whenever the upcoming temperature may dip below freezing. It uses the Magpie RSS reader to pull down a 3 day weather forecast that is provided for my area in RSS form by the BBC weather site. It then parses this forecast and determines if either today&amp;rsquo;s or tomorrow&amp;rsquo;s weather may dip below freezing. If it might, it sends an email to my email address to warn me.</description>
+      <description>&lt;p&gt;I wrote an email alerter that sends me an email whenever the upcoming temperature may dip below freezing. It uses the &lt;a href=&#34;http://magpierss.sourceforge.net/&#34;&gt;Magpie RSS reader&lt;/a&gt; to pull down a 3 day weather forecast that is provided for my area in RSS form by the BBC weather site. It then parses this forecast and determines if either today&amp;rsquo;s or tomorrow&amp;rsquo;s weather may dip below freezing. If it might, it sends an email to my email address to warn me.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I wrote an email alerter that sends me an email whenever the upcoming temperature may dip below freezing. It uses the <a href="http://magpierss.sourceforge.net/">Magpie RSS reader</a> to pull down a 3 day weather forecast that is provided for my area in RSS form by the BBC weather site. It then parses this forecast and determines if either today&rsquo;s or tomorrow&rsquo;s weather may dip below freezing. If it might, it sends an email to my email address to warn me.</p>
 <p>I scheduled this script to run every day by adding it as a <a href="http://en.wikipedia.org/wiki/Cron">daily cron job</a> on my web host. You can set this up for any web hosts that support cron jobs.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>items) != 3){
@@ -356,9 +364,12 @@ touch /tmp/temp -t 200604141130 touch /tmp/ntemp -t 200604261630 find /data/ -cn
       <pubDate>Wed, 24 Nov 2010 13:50:44 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2010/11/24/converting-week-numbers-to-dates/</guid>
-      <description>Here is some python code I adapted from this stackoverflow post to get the first day of a week specificed by a week number. This method includes leap year and summer time differences.
-import time def weeknum(num,year): instr = str(year)+&amp;#34; &amp;#34;+str(num-1)+&amp;#34; 1&amp;#34; print time.asctime(time.strptime(instr,&amp;#39;%Y %W %w&amp;#39;)) Here is me exectuting the code in Python&amp;rsquo;s IDLE shell:
-See that the first week of 2009 actually started in 2008, but by the end of that week we are in 2009.</description>
+      <description>&lt;p&gt;Here is some python code I adapted from &lt;a href=&#34;http://stackoverflow.com/questions/396913/in-python-how-do-i-find-the-date-of-the-first-monday-of-a-given-week&#34;&gt;this stackoverflow post&lt;/a&gt; to get the first day of a week specificed by a week number. This method includes leap year and summer time differences.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;import time
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;def weeknum(num,year):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	instr = str(year)+&amp;#34; &amp;#34;+str(num-1)+&amp;#34; 1&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	print time.asctime(time.strptime(instr,&amp;#39;%Y %W %w&amp;#39;))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Here is me exectuting the code in Python&amp;rsquo;s IDLE shell:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Here is some python code I adapted from <a href="http://stackoverflow.com/questions/396913/in-python-how-do-i-find-the-date-of-the-first-monday-of-a-given-week">this stackoverflow post</a> to get the first day of a week specificed by a week number. This method includes leap year and summer time differences.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>import time
 </span></span><span style="display:flex;"><span>def weeknum(num,year):
@@ -375,8 +386,8 @@ See that the first week of 2009 actually started in 2008, but by the end of that
       <pubDate>Tue, 16 Nov 2010 18:42:27 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2010/11/16/mac-bbc-radio-player/</guid>
-      <description>Quite cool little app that allows you to listen to different BBC Radio programmes from within a standalone application, instead of iPlayer:
-http://whomwah.github.com/radioaunty/</description>
+      <description>&lt;p&gt;Quite cool little app that allows you to listen to different BBC Radio programmes from within a standalone application, instead of iPlayer:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://whomwah.github.com/radioaunty/&#34;&gt;http://whomwah.github.com/radioaunty/&lt;/a&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Quite cool little app that allows you to listen to different BBC Radio programmes from within a standalone application, instead of iPlayer:</p>
 <p><a href="http://whomwah.github.com/radioaunty/">http://whomwah.github.com/radioaunty/</a></p>
 ]]></content:encoded>
@@ -388,8 +399,8 @@ http://whomwah.github.com/radioaunty/</description>
       <pubDate>Sun, 14 Nov 2010 16:54:08 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2010/11/14/mediamonkey-allows-you-to-transfer-music-from-any-computer-onto-your-guest-iphone/</guid>
-      <description>MediaMonkey is a popular free media player for Windows. It has a great feature that allows you to transfer to and from an iPhone that is not registered with your computer. Normally only one iTunes install can be associated with your iPhone, but MediaMonkey allows you another way to transfer music and audio files with a &amp;lsquo;guest&amp;rsquo; iPhone. Check it out, it works:
-MediaMonkey</description>
+      <description>&lt;p&gt;MediaMonkey is a popular free media player for Windows. It has a great feature that allows you to transfer to and from an iPhone that is not registered with your computer. Normally only one iTunes install can be associated with your iPhone, but MediaMonkey allows you another way to transfer music and audio files with a &amp;lsquo;guest&amp;rsquo; iPhone. Check it out, it works:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.mediamonkey.com/&#34;&gt;MediaMonkey&lt;/a&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>MediaMonkey is a popular free media player for Windows. It has a great feature that allows you to transfer to and from an iPhone that is not registered with your computer. Normally only one iTunes install can be associated with your iPhone, but MediaMonkey allows you another way to transfer music and audio files with a &lsquo;guest&rsquo; iPhone. Check it out, it works:</p>
 <p><a href="http://www.mediamonkey.com/">MediaMonkey</a></p>
 ]]></content:encoded>
@@ -401,9 +412,13 @@ MediaMonkey</description>
       <pubDate>Sun, 18 Jul 2010 23:55:33 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2010/07/18/798/</guid>
-      <description>This is just a quick note to remind myself how I did this.
-Hypercam2 is a good, free, video recorder that can cope with recording game videos. It&amp;rsquo;s freely available from http://www.hyperionics.com/hc/downloads.asp - just make sure when you install it you don&amp;rsquo;t tick on the spyware toolbar installation options.
-My motherboard has a 5.1 digital soundcard built in. However the only way I can record off the soundcard is to plug in a standard audio cable from the speaker out (green) to the microphone in (orange).</description>
+      <description>&lt;p&gt;This is just a quick note to remind myself how I did this.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Hypercam2 is a good, free, video recorder that can cope with recording game videos. It&amp;rsquo;s freely available from &lt;a href=&#34;http://www.hyperionics.com/hc/downloads.asp&#34;&gt;http://www.hyperionics.com/hc/downloads.asp&lt;/a&gt; - just make sure when you install it you don&amp;rsquo;t tick on the spyware toolbar installation options.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;My motherboard has a 5.1 digital soundcard built in. However the only way I can record off the soundcard is to plug in a standard audio cable from the speaker out (green) to the microphone in (orange).&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>This is just a quick note to remind myself how I did this.</p>
 <ul>
 <li>
@@ -434,9 +449,10 @@ My motherboard has a 5.1 digital soundcard built in. However the only way I can 
       <pubDate>Wed, 10 Mar 2010 06:36:26 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2010/03/10/changing-the-default-from-email-address-for-php/</guid>
-      <description>I&amp;rsquo;ve had to solve this problem a couple of times at least, and it&amp;rsquo;s quite a common task, so I thought I&amp;rsquo;d document it here.
-When you send emails to users of your site through using the PHP mail() function, they will sometimes turn up in the mailbox of customers of your site with the following from address:
-From: Root &amp;lt;root@apache.ecommercecompany.com&amp;gt; This makes absolutely no sense to your customers, and often they will think it is spam and delete it.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve had to solve this problem a couple of times at least, and it&amp;rsquo;s quite a common task, so I thought I&amp;rsquo;d document it here.&lt;/p&gt;
+&lt;p&gt;When you send emails to users of your site through using the PHP mail() function, they will sometimes turn up in the mailbox of customers of your site with the following from address:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;From: Root &amp;lt;root@apache.ecommercecompany.com&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
       <content:encoded><![CDATA[<p>I&rsquo;ve had to solve this problem a couple of times at least, and it&rsquo;s quite a common task, so I thought I&rsquo;d document it here.</p>
 <p>When you send emails to users of your site through using the PHP mail() function, they will sometimes turn up in the mailbox of customers of your site with the following from address:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>From: Root &lt;root@apache.ecommercecompany.com&gt;
@@ -460,8 +476,8 @@ From: Root &amp;lt;root@apache.ecommercecompany.com&amp;gt; This makes absolutel
       <pubDate>Thu, 14 Jan 2010 05:53:47 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2010/01/14/php-sample-html-page-fetcher-and-parser/</guid>
-      <description>Back in 2008, I wrote a PHP class that fetched an arbitary URL, parsed it, and coverted it into an PHP object with different attributes for the different elements of the page. I recently updated it and sent it along to a company that wanted a programming example to show I could code in PHP.
-I thought someone may well find a use for it - I&amp;rsquo;ve used the class in several different web scraping applications, and I found it handy.</description>
+      <description>&lt;p&gt;Back in 2008, I wrote a PHP class that fetched an arbitary URL, parsed it, and coverted it into an PHP object with different attributes for the different elements of the page. I recently updated it and sent it along to a company that wanted a programming example to show I could code in PHP.&lt;/p&gt;
+&lt;p&gt;I thought someone may well find a use for it - I&amp;rsquo;ve used the class in several different web scraping applications, and I found it handy. From the readme:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Back in 2008, I wrote a PHP class that fetched an arbitary URL, parsed it, and coverted it into an PHP object with different attributes for the different elements of the page. I recently updated it and sent it along to a company that wanted a programming example to show I could code in PHP.</p>
 <p>I thought someone may well find a use for it - I&rsquo;ve used the class in several different web scraping applications, and I found it handy. From the readme:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>This is a class I wrote back in 2008 to help me pull down and parse HTML pages I updated it on
@@ -628,8 +644,9 @@ I thought someone may well find a use for it - I&amp;rsquo;ve used the class in 
       <pubDate>Sun, 10 Jan 2010 23:06:06 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2010/01/10/config-files-for-the-windows-version-of-vim/</guid>
-      <description>Today I encountered problems configuring the windows version of the popular text editor VIM, so I thought I&amp;rsquo;d write up a quick post talk about configuration files under the Windows version, if anyone becomes stuck like I did. I use Linux, OSX and Windows on a day-to-day basis, and VIM as a text editor for a lot of quick edits on all three platforms. Here&amp;rsquo;s a quick comparison:
-Linux Linux is easy because that&amp;rsquo;s what most people who use VIM run, and so it is very well tested.</description>
+      <description>&lt;p&gt;Today I encountered problems configuring the windows version of the popular text editor &lt;a href=&#34;http://www.vim.org&#34;&gt;VIM&lt;/a&gt;, so I thought I&amp;rsquo;d write up a quick post talk about configuration files under the Windows version, if anyone becomes stuck like I did. I use Linux, OSX and Windows on a day-to-day basis, and VIM as a text editor for a lot of quick edits on all three platforms. Here&amp;rsquo;s a quick comparison:&lt;/p&gt;
+&lt;h3 id=&#34;linux&#34;&gt;Linux&lt;/h3&gt;
+&lt;p&gt;Linux is easy because that&amp;rsquo;s what most people who use VIM run, and so it is very well tested.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Today I encountered problems configuring the windows version of the popular text editor <a href="http://www.vim.org">VIM</a>, so I thought I&rsquo;d write up a quick post talk about configuration files under the Windows version, if anyone becomes stuck like I did. I use Linux, OSX and Windows on a day-to-day basis, and VIM as a text editor for a lot of quick edits on all three platforms. Here&rsquo;s a quick comparison:</p>
 <h3 id="linux">Linux</h3>
 <p>Linux is easy because that&rsquo;s what most people who use VIM run, and so it is very well tested.</p>
@@ -718,8 +735,13 @@ $HOME = the logged in user&rsquo;s documents and settings directory, in windows 
       <pubDate>Wed, 29 Oct 2008 20:24:31 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2008/10/29/linux-backups-using-bacula/</guid>
-      <description>Bacula is a great open-source distributed backup program for Linux/UNIX systems. It is separated into three main components:
-One &amp;lsquo;Director&amp;rsquo; - which sends messages to the other components and co-ordinates the backup One or more &amp;lsquo;File Demons&amp;rsquo; - which &amp;lsquo;pull&amp;rsquo; the data from the host they are installed from. One or more &amp;lsquo;Storage Demons&amp;rsquo; - which &amp;lsquo;push&amp;rsquo; the data taken from the file demons into a type of archival storage, IE: backup tapes, a backup hard disc, etc I found it extremely versatile yet very complicated to configure.</description>
+      <description>&lt;p&gt;Bacula is a great open-source distributed backup program for Linux/UNIX systems. It is separated into three main components:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;One &amp;lsquo;Director&amp;rsquo; - which sends messages to the other components and co-ordinates the backup&lt;/li&gt;
+&lt;li&gt;One or more &amp;lsquo;File Demons&amp;rsquo; - which &amp;lsquo;pull&amp;rsquo; the data from the host they are installed from.&lt;/li&gt;
+&lt;li&gt;One or more &amp;lsquo;Storage Demons&amp;rsquo; - which &amp;lsquo;push&amp;rsquo; the data taken from the file demons into a type of archival storage, IE: backup tapes, a backup hard disc, etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I found it extremely versatile yet very complicated to configure. Before you configure it you have to decide on a backup strategy; what you want to backup, why you want to back it up, how often you want to back it up, and how you are going to off-site/preserve the backups.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Bacula is a great open-source distributed backup program for Linux/UNIX systems. It is separated into three main components:</p>
 <ul>
 <li>One &lsquo;Director&rsquo; - which sends messages to the other components and co-ordinates the backup</li>
@@ -806,8 +828,8 @@ One &amp;lsquo;Director&amp;rsquo; - which sends messages to the other component
       <pubDate>Mon, 22 Sep 2008 23:22:54 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2008/09/22/automated-emails-on-commiting-to-a-subversion-repository/</guid>
-      <description>At work I&amp;rsquo;ve written a couple of scripts that send out emails to the appropriate project team when someone checks in a commit to the project subversion repository. Here are the details.
-Firstly, you will need a subversion hook setup on post-commit. The post-commit hook needs to be located in SVNROOT/YOURPROJECT/hooks where YOURPROJECT is your svn project name, and SVNROOT is the root directory where you are storing the data files for your subversion repository.</description>
+      <description>&lt;p&gt;At work I&amp;rsquo;ve written a couple of scripts that send out emails to the appropriate project team when someone checks in a commit to the project subversion repository. Here are the details.&lt;/p&gt;
+&lt;p&gt;Firstly, you will need a subversion hook setup on post-commit. The post-commit hook needs to be located in SVNROOT/YOURPROJECT/hooks where YOURPROJECT is your svn project name, and SVNROOT is the root directory where you are storing the data files for your subversion repository.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>At work I&rsquo;ve written a couple of scripts that send out emails to the appropriate project team when someone checks in a commit to the project subversion repository. Here are the details.</p>
 <p>Firstly, you will need a subversion hook setup on post-commit. The post-commit hook needs to be located in SVNROOT/YOURPROJECT/hooks where YOURPROJECT is your svn project name, and SVNROOT is the root directory where you are storing the data files for your subversion repository.</p>
 <p>Substitute projectmember1,projectmember2 etc.. in the post-commit script below for the email addresses of the people to be notified when someone commits a change to the project.</p>
@@ -930,9 +952,13 @@ Firstly, you will need a subversion hook setup on post-commit. The post-commit h
       <pubDate>Sun, 06 Jul 2008 23:34:50 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2008/07/06/character-encoding-fix-with-php-mysql-5-and-ubuntu-server/</guid>
-      <description>For some reason, under ubuntu-server, my default MySQL 5 character encoding was latin1. This caused no end of problems with grabbing data from the web, which was not necessarily in latin1 characterset.
-If you are ever in this situation, I suggest you handle everything as UTF-8. That means setting the following lines in my.cnf:
-[mysqld] .. default-character-set=utf8 skip-character-set-client-handshake If you already have tables in your database that you have created, and they have defaulted to the latin1 charset, you&amp;rsquo;ll be able to tell by looking at the mysqldump SQL:</description>
+      <description>&lt;p&gt;For some reason, under ubuntu-server, my default MySQL 5 character encoding was latin1. This caused no end of problems with grabbing data from the web, which was not necessarily in latin1 characterset.&lt;/p&gt;
+&lt;p&gt;If you are ever in this situation, I suggest you handle everything as UTF-8. That means setting the following lines in my.cnf:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[mysqld]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;..
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;default-character-set=utf8
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;skip-character-set-client-handshake
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
       <content:encoded><![CDATA[<p>For some reason, under ubuntu-server, my default MySQL 5 character encoding was latin1. This caused no end of problems with grabbing data from the web, which was not necessarily in latin1 characterset.</p>
 <p>If you are ever in this situation, I suggest you handle everything as UTF-8. That means setting the following lines in my.cnf:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>[mysqld]
@@ -958,11 +984,23 @@ If you are ever in this situation, I suggest you handle everything as UTF-8. Tha
       <pubDate>Mon, 09 Apr 2007 18:26:36 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2007/04/09/nvidia-geforce4-mx-420-under-ubuntu-dapper-drake/</guid>
-      <description>My GeForce4 MX 420 didn&amp;rsquo;t work properly with OpenGL under a fresh install of Dapper Drake. Fixing it, however, proved to be really easy:
-Install the nvidia package: $ apt-get install nvidia
-Edit /etc/X11/xorg.conf and replace the &amp;lsquo;driver&amp;rsquo; where it says &amp;rsquo;nv&amp;rsquo; with &amp;ldquo;nvidia&amp;rdquo;: Section &amp;ldquo;Device&amp;rdquo; Identifier &amp;ldquo;NVIDIA Corporation NV17 [GeForce4 MX 420]&amp;rdquo; #Driver &amp;ldquo;nv&amp;rdquo; Driver &amp;ldquo;nvidia&amp;rdquo; BusID &amp;ldquo;PCI:1:0:0&amp;rdquo; EndSection
-Kill X with control-alt-backspace
-Login again and test if it works by running glxgears and glxinfo on the console</description>
+      <description>&lt;p&gt;My GeForce4 MX 420 didn&amp;rsquo;t work properly with OpenGL under a fresh install of Dapper Drake. Fixing it, however, proved to be really easy:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install the nvidia package:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$ apt-get install nvidia&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Edit /etc/X11/xorg.conf and replace the &amp;lsquo;driver&amp;rsquo; where it says &amp;rsquo;nv&amp;rsquo; with &amp;ldquo;nvidia&amp;rdquo;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Section &amp;ldquo;Device&amp;rdquo;
+Identifier &amp;ldquo;NVIDIA Corporation NV17 [GeForce4 MX 420]&amp;rdquo;
+#Driver &amp;ldquo;nv&amp;rdquo;
+Driver &amp;ldquo;nvidia&amp;rdquo;
+BusID &amp;ldquo;PCI:1:0:0&amp;rdquo;
+EndSection&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>My GeForce4 MX 420 didn&rsquo;t work properly with OpenGL under a fresh install of Dapper Drake. Fixing it, however, proved to be really easy:</p>
 <ol>
 <li>Install the nvidia package:</li>

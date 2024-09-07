@@ -13,7 +13,8 @@
       <pubDate>Thu, 25 Apr 2024 04:55:52 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2024/04/25/video-routing-for-dave-cave-studio/</guid>
-      <description>Here is a quick diagram I mocked up to detail exactly how video routing works in the studio.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2024/04/studio-video-routing.drawio.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2024/04/studio-video-routing.drawio.png&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here is a quick diagram I mocked up to detail exactly how video routing works in the studio.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2024/04/studio-video-routing.drawio.png"><img loading="lazy" src="/wp-content/uploads/2024/04/studio-video-routing.drawio.png" type="" alt=""  /></a></p>
 <p>Here is a quick diagram I mocked up to detail exactly how video routing works in the studio.</p>
 ]]></content:encoded>
@@ -25,8 +26,17 @@
       <pubDate>Thu, 11 Jan 2024 23:41:50 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2024/01/11/music-acquisition-process-for-dj-music/</guid>
-      <description>My music acquisition process for DJ music:
-ARM (Automatic Ripping Machine) rips CDs I buy into FLAC form without any interactivity. You just insert a CD into the Linux server, and then it ejects it when it&amp;rsquo;s done. Lidarr downloads FLACs of any tracks of artists I have in my collection, but I don&amp;rsquo;t have their full discography. It does this automatically and silently in the background. Once a day, a cron job imports ARM and Lidarr downloads into my Beets.</description>
+      <description>&lt;p&gt;My music acquisition process for DJ music:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;ARM (Automatic Ripping Machine) rips CDs I buy into FLAC form without any interactivity. You just insert a CD into the Linux server, and then it ejects it when it&amp;rsquo;s done.&lt;/li&gt;
+&lt;li&gt;Lidarr downloads FLACs of any tracks of artists I have in my collection, but I don&amp;rsquo;t have their full discography. It does this automatically and silently in the background.&lt;/li&gt;
+&lt;li&gt;Once a day, a cron job imports ARM and Lidarr downloads into my Beets.io music library, and deals with file integrity checks, tagging, metadata, library file structure and embedded images of the artist.&lt;/li&gt;
+&lt;li&gt;Whenever I&amp;rsquo;m ready to have a fresh library copy, I run my batch script on my W11 DJ laptop and it robocopy mirrors the entire library from my Linux samba share onto my computer.&lt;/li&gt;
+&lt;li&gt;I then send it through MixedInKey 10 to analyse the BPM and the music key of each track, and to check again the integrity of each file.&lt;/li&gt;
+&lt;li&gt;Once that is done, and any corrupt files removed, I import the file library into Serato DJ Pro, and analyse the entire collection. This again removes any dud files from the collection.&lt;/li&gt;
+&lt;li&gt;Now I have a complete music library, I run a batch file to reverse mirror the music from the DJ library back onto the server, so my collection doesn&amp;rsquo;t accumalate corrupt files.&lt;/li&gt;
+&lt;li&gt;Now I have a full DJ music library of FLACs on my DJ laptop, over 22,000 files, great for requests!&lt;/li&gt;
+&lt;/ol&gt;</description>
       <content:encoded><![CDATA[<p>My music acquisition process for DJ music:</p>
 <ol>
 <li>ARM (Automatic Ripping Machine) rips CDs I buy into FLAC form without any interactivity. You just insert a CD into the Linux server, and then it ejects it when it&rsquo;s done.</li>
@@ -47,9 +57,26 @@ ARM (Automatic Ripping Machine) rips CDs I buy into FLAC form without any intera
       <pubDate>Fri, 22 Sep 2023 16:56:26 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2023/09/22/latest-remote-guitar-lesson-setup/</guid>
-      <description>I&amp;rsquo;ve been having online guitar lessons with my friend Jon.
-After a while we have got things down to a setup that seems to work remotely.
-I have an Epiphone Les Paul Vintage Edition electric guitar, and a Marshall MG15G Practice Amp. I use a headphone splitter cable to plug into the Marshall&amp;rsquo;s headphone out socket, which splits the audio into left and right channels, and a 3.5mm to phono mono cable plugged into the headphone splitter that runs to my audio interface.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve been having online guitar lessons with my friend Jon.&lt;/p&gt;
+&lt;p&gt;After a while we have got things down to a setup that seems to work remotely.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I have an Epiphone Les Paul Vintage Edition electric guitar, and a Marshall MG15G Practice Amp.&lt;/li&gt;
+&lt;li&gt;I use a headphone splitter cable to plug into the Marshall&amp;rsquo;s headphone out socket, which splits the audio into left and right channels, and a 3.5mm to phono mono cable plugged into the headphone splitter that runs to my audio interface.&lt;/li&gt;
+&lt;li&gt;I use Logitech C270 and a Logitech 920 cameras, the C270 for the front on face cam, and the 920 suspended on a lighting boom above my head, pointed down so that Jon can see the guitar fret fingering I am attempting.&lt;/li&gt;
+&lt;li&gt;I also use a t.bone MB88U directional microphone on a desk microphone stand to talk into.&lt;/li&gt;
+&lt;li&gt;The sound interface I use is my studio one, which is a Behringer UMC1820 audio interface, but really, you can use any audio interface with two mono input channels and a headphone monitor.&lt;/li&gt;
+&lt;li&gt;I have a KORG CA-2 portable tuner which helps me get the guitar in tune before each session.&lt;/li&gt;
+&lt;li&gt;I use a WINGO Guitar Capo and plectrums as well.&lt;/li&gt;
+&lt;li&gt;We use Zoom to do the lessons over, Jon has a subscription, and Skype to store notes between sessions.&lt;/li&gt;
+&lt;li&gt;I use my phone to take pictures of my fret fingering to practice.&lt;/li&gt;
+&lt;li&gt;I have a portable flask that I keep with me if I need to take a drink during the session, as to not disrupt things.&lt;/li&gt;
+&lt;li&gt;I always tune the guitar before the session as to not waste time.&lt;/li&gt;
+&lt;li&gt;I always switch my audio speakers off, and use headphones on the audio interface, to minimise disturbance to others, and to stop feedback.&lt;/li&gt;
+&lt;li&gt;I have a pen and paper to make any notes needed on the session. This saves time compared to typing them into the computer.&lt;/li&gt;
+&lt;li&gt;The sessions are 45mins -&amp;gt; 1 hour max, weekly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;zoom-setup&#34;&gt;Zoom Setup&lt;/h3&gt;
+&lt;p&gt;This is the Zoom configuration options that I use. Currently I do not turn on the &amp;lsquo;original audio for musicians&amp;rsquo; toggle when on the call:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I&rsquo;ve been having online guitar lessons with my friend Jon.</p>
 <p>After a while we have got things down to a setup that seems to work remotely.</p>
 <ul>
@@ -101,8 +128,8 @@ I have an Epiphone Les Paul Vintage Edition electric guitar, and a Marshall MG15
       <pubDate>Thu, 23 Feb 2023 09:57:30 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2023/02/23/optical-drive-cleaners-and-home-entertainment-test-tools/</guid>
-      <description>If you are still using optical discs, e.g. CDs or Blu-rays, in music, video or games, then you are in the minority these days. Downloads and streaming have become the norm, which means 1) A lot less discs are being produced 2) A lot less optical drives are being produced.
-Because a lot less optical drives are being produced, we can imagine a time in the future when the only optical drives you can buy, are second-hand.</description>
+      <description>&lt;p&gt;If you are still using optical discs, e.g. CDs or Blu-rays, in music, video or games, then you are in the minority these days. Downloads and streaming have become the norm, which means 1) A lot less discs are being produced 2) A lot less optical drives are being produced.&lt;/p&gt;
+&lt;p&gt;Because a lot less optical drives are being produced, we can imagine a time in the future when the only optical drives you can buy, are second-hand. Regardless if you can buy new optical drives currently or not, often the best value/quality ratio can be found in second-hand optical drives.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>If you are still using optical discs, e.g. CDs or Blu-rays, in music, video or games, then you are in the minority these days. Downloads and streaming have become the norm, which means 1) A lot less discs are being produced 2) A lot less optical drives are being produced.</p>
 <p>Because a lot less optical drives are being produced, we can imagine a time in the future when the only optical drives you can buy, are second-hand. Regardless if you can buy new optical drives currently or not, often the best value/quality ratio can be found in second-hand optical drives.</p>
 <p>But, the problem with second-hand optical drives is that they often have been heavily used, and are dirty. This is where optical drive cleaners come in.</p>
@@ -120,9 +147,9 @@ Because a lot less optical drives are being produced, we can imagine a time in t
       <pubDate>Sun, 16 Oct 2022 16:00:48 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2022/10/16/psp-preset-for-handbrake-for-transcoding-video-files-into-a-psp-compatible-format/</guid>
-      <description>This is based off of the 2021 Reddit post here: https://www.reddit.com/r/PSP/comments/kcx4ei/tutorial_convert_most_video_formats_to/
-I am using it with Handbrake 1.5.1. You can import it into your Handbrake via &amp;ldquo;Preset -&amp;gt; File Import&amp;rdquo;.
-Download PSP Handbrake Preset.</description>
+      <description>&lt;p&gt;This is based off of the 2021 Reddit post here: &lt;a href=&#34;https://www.reddit.com/r/PSP/comments/kcx4ei/tutorial_convert_most_video_formats_to/&#34;&gt;https://www.reddit.com/r/PSP/comments/kcx4ei/tutorial_convert_most_video_formats_to/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I am using it with Handbrake 1.5.1. You can import it into your Handbrake via &amp;ldquo;Preset -&amp;gt; File Import&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/psp.zip&#34;&gt;Download PSP Handbrake Preset&lt;/a&gt;.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>This is based off of the 2021 Reddit post here: <a href="https://www.reddit.com/r/PSP/comments/kcx4ei/tutorial_convert_most_video_formats_to/">https://www.reddit.com/r/PSP/comments/kcx4ei/tutorial_convert_most_video_formats_to/</a></p>
 <p>I am using it with Handbrake 1.5.1. You can import it into your Handbrake via &ldquo;Preset -&gt; File Import&rdquo;.</p>
 <p><a href="/psp.zip">Download PSP Handbrake Preset</a>.</p>
@@ -135,8 +162,16 @@ Download PSP Handbrake Preset.</description>
       <pubDate>Thu, 08 Sep 2022 09:43:35 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2022/09/08/home-network-september-2022/</guid>
-      <description>I had planned a different network toplogy for sure, but this is my current setup and it seems to work well:
-I was not able to implement connection load balancing using the Miktrotik router. It was just too complicated and didn&amp;rsquo;t work reliably enough. My current network is a gigabit network across all areas, so every PC has gigabit cables, switch and so on. I either have plugged in my Virgin Media 1000mb/50mbs internet connection or my BRSK fibre 900mb/900mb connection.</description>
+      <description>&lt;p&gt;I had planned a different network toplogy for sure, but this is my current setup and it seems to work well:&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/09/home-network-sept-22.drawio1.png&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I was not able to implement connection load balancing using the Miktrotik router. It was just too complicated and didn&amp;rsquo;t work reliably enough.&lt;/li&gt;
+&lt;li&gt;My current network is a gigabit network across all areas, so every PC has gigabit cables, switch and so on.&lt;/li&gt;
+&lt;li&gt;I either have plugged in my Virgin Media 1000mb/50mbs internet connection or my BRSK fibre 900mb/900mb connection. I simply plug in the WAN cable from the main Linksys router into one of the hubs at one time. If one connection goes down, I manually switch over.&lt;/li&gt;
+&lt;li&gt;I have a 10GB/sec SFP link between my server upstairs in the study and my main studio PC downstairs. This allows me to transfer files at 10Gb/sec rate between the two.&lt;/li&gt;
+&lt;li&gt;I need two wireless repeaters, even though I have a small house, because the house walls are made of a concrete mix. This means the wireless signal needs boosting a lot.&lt;/li&gt;
+&lt;li&gt;In the future, I may try load balancing again, or wait until one of my service providers offers &amp;gt;1000mb/sec speeds. When this happens it would make sense to expand the 10Gbs/sec links as there would be more point.&lt;/li&gt;
+&lt;/ul&gt;</description>
       <content:encoded><![CDATA[<p>I had planned a different network toplogy for sure, but this is my current setup and it seems to work well:</p>
 <p><img loading="lazy" src="/wp-content/uploads/2022/09/home-network-sept-22.drawio1.png" type="" alt=""  /></p>
 <ul>
@@ -156,8 +191,17 @@ I was not able to implement connection load balancing using the Miktrotik router
       <pubDate>Thu, 01 Sep 2022 21:27:22 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2022/09/01/my-ideal-job/</guid>
-      <description>I have nearly 20 years experience, so my skill-set is in high demand from all sorts of different organisations. If I were looking for a job, then these would be my priorities:
-Understanding of medical appointments - My situation is that I currently have cancer. Although it&amp;rsquo;s recommended I work, some of my time will be spent in medical appointments at the hospital that is 15 mins walk away from me.</description>
+      <description>&lt;p&gt;I have nearly 20 years experience, so my skill-set is in high demand from all sorts of different organisations. If I were looking for a job, then these would be my priorities:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Understanding of medical appointments&lt;/strong&gt; - My situation is that I currently have cancer. Although it&amp;rsquo;s recommended I work, some of my time will be spent in medical appointments at the hospital that is 15 mins walk away from me. Currently this is expected to take up 1 weekday every fortnight.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;100% working from home&lt;/strong&gt; - This means that, several years down the line, the company policy will NOT change to &amp;rsquo;everyone in the office&amp;rsquo;. Almost all meetings should be remote-first, meaning that everyone is an equal participant in them if they are working remotely. Some people can of course dial in from an office location but they should be at no communication advantage compared to remote workers. Also, the main communication for the team and organisation should be done online, remote workers should not be &amp;lsquo;second class citizens&amp;rsquo; to water-cooler gossip.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;No Java technology stack&lt;/strong&gt; - This means that Java and IntelliJ are not used as the mainstay of the application stack. I do not like working with Java and find it convoluted.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;No unethical industries&lt;/strong&gt; - This means no gambling, no defence, no industries which disadvantage society in a big way in general.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Good Pension&lt;/strong&gt; - An above-average pension contribution. I would expect to be seeing at least 6% max employer contribution which is double the NEST minimum.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Good Pay&lt;/strong&gt; - This is negotiable but I need to pay my bills, and that includes the 10% inflationary cost of living crisis we&amp;rsquo;re in.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ability to use my own development environment&lt;/strong&gt; - My customised development environment will run without issue on Linux machines, OSX machines, and on Windows 11 with WSL2. I am SO much more productive and happy using it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Learning and dev time or budget allocated (nice to have)&lt;/strong&gt; - This is a &amp;rsquo;nice to have&amp;rsquo; but really if you aren&amp;rsquo;t able and willing to expense costs such as monthly technical books (£50/month) maybe you should be asking yourself why not, as an organisation.&lt;/li&gt;
+&lt;/ol&gt;</description>
       <content:encoded><![CDATA[<p>I have nearly 20 years experience, so my skill-set is in high demand from all sorts of different organisations. If I were looking for a job, then these would be my priorities:</p>
 <ol>
 <li><strong>Understanding of medical appointments</strong> - My situation is that I currently have cancer. Although it&rsquo;s recommended I work, some of my time will be spent in medical appointments at the hospital that is 15 mins walk away from me. Currently this is expected to take up 1 weekday every fortnight.</li>
@@ -178,9 +222,23 @@ Understanding of medical appointments - My situation is that I currently have ca
       <pubDate>Thu, 28 Jul 2022 00:57:42 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2022/07/28/home-network-design-28-7-22/</guid>
-      <description>Now that I actually have the internet connectivity being installed to make use of it, I am getting my home network design a bit more finished.
-Components:
-Virgin Hub providing a 1100/50mbps connection BetterInternet Fibre Hub providing a 900/900mbps connection Raspberry Pi 3 running Pi-Hole DNS MikroTik CRS309-1G-8S+IN Cloud Router Switch 4 x SFP+10Gb SFP+ RJ45 Copper Modules CAT8 30M Outdoor Cable to connect the studio to the study Short run CAT7 Patch Cables Windows 11 Studio PC with 10GB/sec SFP+ Port ThinkStation Server with twin 10GB/sec SFP+ Ports and separate gigabit NIC 3x LinkSys 3200WRT Routers in wireless repeater mode, creating a 2.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2022/07/untitled-diagram.drawio.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/07/untitled-diagram.drawio.png&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now that I actually have the internet connectivity being installed to make use of it, I am getting my home network design a bit more finished.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Components:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Virgin Hub providing a 1100/50mbps connection&lt;/li&gt;
+&lt;li&gt;BetterInternet Fibre Hub providing a 900/900mbps connection&lt;/li&gt;
+&lt;li&gt;Raspberry Pi 3 running Pi-Hole DNS&lt;/li&gt;
+&lt;li&gt;MikroTik CRS309-1G-8S+IN Cloud Router Switch&lt;/li&gt;
+&lt;li&gt;4 x SFP+10Gb SFP+ RJ45 Copper Modules&lt;/li&gt;
+&lt;li&gt;CAT8 30M Outdoor Cable to connect the studio to the study&lt;/li&gt;
+&lt;li&gt;Short run CAT7 Patch Cables&lt;/li&gt;
+&lt;li&gt;Windows 11 Studio PC with 10GB/sec SFP+ Port&lt;/li&gt;
+&lt;li&gt;ThinkStation Server with twin 10GB/sec SFP+ Ports and separate gigabit NIC&lt;/li&gt;
+&lt;li&gt;3x LinkSys 3200WRT Routers in wireless repeater mode, creating a 2.4hz wireless network with speeds around 500mbps on average to each wireless device.&lt;/li&gt;
+&lt;li&gt;TP-Link Gigabit switch&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Load-balancing internet connections:&lt;/strong&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2022/07/untitled-diagram.drawio.png"><img loading="lazy" src="/wp-content/uploads/2022/07/untitled-diagram.drawio.png" type="" alt=""  /></a></p>
 <p>Now that I actually have the internet connectivity being installed to make use of it, I am getting my home network design a bit more finished.</p>
 <p><strong>Components:</strong></p>
@@ -218,9 +276,9 @@ Virgin Hub providing a 1100/50mbps connection BetterInternet Fibre Hub providing
       <pubDate>Sun, 19 Jun 2022 03:04:47 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2022/06/19/midi-routing-for-home-studio/</guid>
-      <description>I have had this knowledge in my head for a long time now and thought it would be better to write a diagram to explain the current setup for my MIDI routing.
-I use MIDI routing one way - MIDI OUT - from my UMC1820 sound interface.
-I have two keyboard controllers, one next to my computer, and one next to my Eurorack, that are attached via USB to my computer which I route the notes via Ableton to the MIDI out of the UMC1820 interface.</description>
+      <description>&lt;p&gt;I have had this knowledge in my head for a long time now and thought it would be better to write a diagram to explain the current setup for my MIDI routing.&lt;/p&gt;
+&lt;p&gt;I use MIDI routing one way - MIDI OUT - from my UMC1820 sound interface.&lt;/p&gt;
+&lt;p&gt;I have two keyboard controllers, one next to my computer, and one next to my Eurorack, that are attached via USB to my computer which I route the notes via Ableton to the MIDI out of the UMC1820 interface.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I have had this knowledge in my head for a long time now and thought it would be better to write a diagram to explain the current setup for my MIDI routing.</p>
 <p>I use MIDI routing one way - MIDI OUT - from my UMC1820 sound interface.</p>
 <p>I have two keyboard controllers, one next to my computer, and one next to my Eurorack, that are attached via USB to my computer which I route the notes via Ableton to the MIDI out of the UMC1820 interface.</p>
@@ -236,8 +294,22 @@ I have two keyboard controllers, one next to my computer, and one next to my Eur
       <pubDate>Mon, 02 May 2022 22:11:13 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2022/05/02/dj-setup-2-5-22/</guid>
-      <description>This is my current DJ setup that I use for Twitch streaming mainly.
-2x Reloop RL-8000mk2 turntables. 2x Serato ‘Butter Rug’ Slipmats. 2x Concorde Mk2 Digital carts. Numark NDX500 CDJ which I use for playing CDs, and as a Serato Controller as it has Serato Integration. Roland DJ-707m controller. Sennheiser HD-25 headphones. Rode Procaster mic with mic boom, pop shield and cage. t.bone MB 88U mic with table stand that I use as a guest microphone.</description>
+      <description>&lt;p&gt;This is my current DJ setup that I use for Twitch streaming mainly.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/05/djsetup.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2x Reloop RL-8000mk2 turntables.&lt;/li&gt;
+&lt;li&gt;2x Serato ‘Butter Rug’ Slipmats.&lt;/li&gt;
+&lt;li&gt;2x Concorde Mk2 Digital carts.&lt;/li&gt;
+&lt;li&gt;Numark NDX500 CDJ which I use for playing CDs, and as a Serato Controller as it has Serato Integration.&lt;/li&gt;
+&lt;li&gt;Roland DJ-707m controller.&lt;/li&gt;
+&lt;li&gt;Sennheiser HD-25 headphones.&lt;/li&gt;
+&lt;li&gt;Rode Procaster mic with mic boom, pop shield and cage.&lt;/li&gt;
+&lt;li&gt;t.bone MB 88U mic with table stand that I use as a guest microphone.&lt;/li&gt;
+&lt;li&gt;AKAI LPD8 Midi controller which I use to trigger Serato Sampler samples.&lt;/li&gt;
+&lt;li&gt;Macbook Pro Early 2015 Retina running Serato DJ Pro.&lt;/li&gt;
+&lt;li&gt;Behringer TD-3 acid groovebox for adding acid patterns over the top of the Roland drum machine.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The audio signal flow is below:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>This is my current DJ setup that I use for Twitch streaming mainly.</p>
 <p><img loading="lazy" src="/wp-content/uploads/2022/05/djsetup.jpg" type="" alt=""  /></p>
 <ul>
@@ -293,8 +365,19 @@ Deck 4 - Numark NDX500 CDJ used in Serato DJ Mode (PC mode)</p>
       <pubDate>Thu, 03 Mar 2022 01:19:28 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2022/03/03/dj-setup-03-03-2022/</guid>
-      <description>This is my current DJ setup with the following components:
-Decks 1 and 2 - 2x Reloop 8000mk2 Vinyl Turntables with Serato intergration Deck 3 - Numark NDX500 CDJ with Serato Integration Deck 4 - Roland 707m Serato Controller and Mixer using its internal drum machine as a deck Behringer TB-303 Clone fed into the Aux input of the Roland 707m Controller Pioneer EFX-1000 DJ FX Unit placed between the master out of the 707m controller and the input of the sound interface on the broadcasting PC Reloop Neon Serato Controller used to control the Serato DJ Pro sampler Rode Procaster Microphone (not shown in diagram) fed to the Mic 1 channel on the 707m Controller as the main microphone for me while DJing t.</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/03/dj-setup.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;This is my current DJ setup with the following components:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Decks 1 and 2 - 2x Reloop 8000mk2 Vinyl Turntables with Serato intergration&lt;/li&gt;
+&lt;li&gt;Deck 3 - Numark NDX500 CDJ with Serato Integration&lt;/li&gt;
+&lt;li&gt;Deck 4 - Roland 707m Serato Controller and Mixer using its internal drum machine as a deck&lt;/li&gt;
+&lt;li&gt;Behringer TB-303 Clone fed into the Aux input of the Roland 707m Controller&lt;/li&gt;
+&lt;li&gt;Pioneer EFX-1000 DJ FX Unit placed between the master out of the 707m controller and the input of the sound interface on the broadcasting PC&lt;/li&gt;
+&lt;li&gt;Reloop Neon Serato Controller used to control the Serato DJ Pro sampler&lt;/li&gt;
+&lt;li&gt;Rode Procaster Microphone (not shown in diagram) fed to the Mic 1 channel on the 707m Controller as the main microphone for me while DJing&lt;/li&gt;
+&lt;li&gt;t.bone MB 88U Dual Microphone (not shown in diagram) fed to the Mic 2 channel on the 707m Controller as the guest microphone for use when I have guests in the studio&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I have simplified things massively over the last year over my previous setups with the purchase of the Roland 707m. It it an amazingly clever piece of equipment and does so much. I think it is definitely one of the most advanced and most powerful controllers on the market today. This is what I can do with the new setup:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2022/03/dj-setup.jpg" type="" alt=""  /></p>
 <p>This is my current DJ setup with the following components:</p>
 <ol>
@@ -326,8 +409,9 @@ Decks 1 and 2 - 2x Reloop 8000mk2 Vinyl Turntables with Serato intergration Deck
       <pubDate>Fri, 14 Jan 2022 06:01:21 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2022/01/14/privacy-and-security-methods-i-use/</guid>
-      <description>Ever since I worked at an internet marketing company on an advertising analytics platform, I have realised that I don&amp;rsquo;t want my personal internet browsing tracked, monetised, influenced, and sold to the highest bidder. These are the steps that I have taken to reduce (you can never totally eliminate) this process.
-Pi-Hole DNS This is a DNS server installed on a Raspberry Pi on my local home network. I have all the internet traffic going through my Virgin Media router filtered through this DNS server.</description>
+      <description>&lt;p&gt;Ever since I worked at an internet marketing company on an advertising analytics platform, I have realised that I don&amp;rsquo;t want my personal internet browsing tracked, monetised, influenced, and sold to the highest bidder. These are the steps that I have taken to reduce (you can never totally eliminate) this process.&lt;/p&gt;
+&lt;h2 id=&#34;pi-hole-dns&#34;&gt;Pi-Hole DNS&lt;/h2&gt;
+&lt;p&gt;This is a DNS server installed on a Raspberry Pi on my local home network. I have all the internet traffic going through my Virgin Media router filtered through this DNS server. It has many privacy-boosting features, but its main claim to fame is that it blocks the vast majority of internet advertising and analytics traffic on the DNS level. It currently blocks 20% of the requests made, which results in approximately 20% faster internet for me, and a lot more privacy/less tracking/less adverts.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Ever since I worked at an internet marketing company on an advertising analytics platform, I have realised that I don&rsquo;t want my personal internet browsing tracked, monetised, influenced, and sold to the highest bidder. These are the steps that I have taken to reduce (you can never totally eliminate) this process.</p>
 <h2 id="pi-hole-dns">Pi-Hole DNS</h2>
 <p>This is a DNS server installed on a Raspberry Pi on my local home network. I have all the internet traffic going through my Virgin Media router filtered through this DNS server. It has many privacy-boosting features, but its main claim to fame is that it blocks the vast majority of internet advertising and analytics traffic on the DNS level. It currently blocks 20% of the requests made, which results in approximately 20% faster internet for me, and a lot more privacy/less tracking/less adverts.</p>
@@ -351,8 +435,33 @@ Pi-Hole DNS This is a DNS server installed on a Raspberry Pi on my local home ne
       <pubDate>Thu, 21 Oct 2021 16:44:09 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2021/10/21/my-simple-commandline-git-workflow/</guid>
-      <description>This is a simple description of how I work 99% of the time, as I am a simpleton. Origin/main is the new origin/master for future repositories, I just note both here for completeness because I use origin master for a lot of current repos.
-I first make sure I am uptodate on origin/master or origin/main by git pulling. git checkout origin master git pull origin master I start making changes to the local copy on my local machine.</description>
+      <description>&lt;p&gt;This is a simple description of how I work 99% of the time, as I am a simpleton. Origin/main is the new origin/master for future repositories, I just note both here for completeness because I use origin master for a lot of current repos.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I first make sure I am uptodate on origin/master or origin/main by git pulling.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git checkout origin master&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git pull origin master&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;I start making changes to the local copy on my local machine.&lt;/li&gt;
+&lt;li&gt;When it gets to a point where I want to save my changes, I:&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git stash push&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git checkout -b &amp;lt;branch name which will be made into a PR&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git stash pop&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;I then commit the changes to the new branch.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git commit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;When I am ready to create the PR, I create and push to the remote branch:&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git push origin &amp;lt;branch name which will be made into a PR&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Github will tell me if master/main has diverged past a state where my commits can be merged in without conflict. If there is a possible conflict, I will merge in origin master/main to my local copy and then push to the PR branch again:&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git checkout &amp;lt;branch name which will be made into a PR&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git pull origin master (or origin main)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;I resolve locally conflicts through &lt;code&gt;git mergetool&lt;/code&gt; which, for me, is vim&amp;rsquo;s three way diff tool.&lt;/li&gt;
+&lt;li&gt;I commit the updated conflicts and push to the remote branch - &lt;code&gt;git add &amp;amp;&amp;amp; git commit &amp;amp;&amp;amp; git push origin &amp;lt;branch name which will be made into a PR&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Often at this point I find I have to add new commits to fix things I have broken or have been flagged up in PR review.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git commit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git push origin &amp;lt;branch name which will be made into a PR&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Reviewers now have some of their comments made on stale commits in Github. This is better than squashing the commits I find because sometimes the commits are not stale and their comments are still valid, and it becomes easier to keep track of. They can view the &amp;lsquo;files changed&amp;rsquo; tab to add review comments until they are happy. I loop back to check whether master/main has diverged, and if it hasn&amp;rsquo;t just keep adding commits to address their concerns.&lt;/li&gt;
+&lt;li&gt;The PR gets approved (hopefully)&lt;/li&gt;
+&lt;li&gt;I merge the PR into master or main&lt;/li&gt;
+&lt;li&gt;I delete the old branch&lt;/li&gt;
+&lt;/ol&gt;</description>
       <content:encoded><![CDATA[<p>This is a simple description of how I work 99% of the time, as I am a simpleton. Origin/main is the new origin/master for future repositories, I just note both here for completeness because I use origin master for a lot of current repos.</p>
 <ol>
 <li>I first make sure I am uptodate on origin/master or origin/main by git pulling.</li>
@@ -389,8 +498,8 @@ I first make sure I am uptodate on origin/master or origin/main by git pulling. 
       <pubDate>Fri, 26 Feb 2021 17:26:22 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2021/02/26/26-2-2021-dj-setup-with-diagrams/</guid>
-      <description>After the last post I have added Ableton Live and my Eurorack modular to my DJ setup, with a master clock being sent via MIDI cables from my Roland TR8 drum machine that syncs with Ableton. The drum machine also can be used creatively for drum fills etc.
-I hope these two diagrams explain my setup adequately - sometimes a picture is worth a thousand words! The &amp;lsquo;actor&amp;rsquo; is me - I just couldn&amp;rsquo;t find a way to change that on http://draw.</description>
+      <description>&lt;p&gt;After the last post I have added Ableton Live and my Eurorack modular to my DJ setup, with a master clock being sent via MIDI cables from my Roland TR8 drum machine that syncs with Ableton. The drum machine also can be used creatively for drum fills etc.&lt;/p&gt;
+&lt;p&gt;I hope these two diagrams explain my setup adequately - sometimes a picture is worth a thousand words! The &amp;lsquo;actor&amp;rsquo; is me - I just couldn&amp;rsquo;t find a way to change that on &lt;a href=&#34;http://draw.io&#34;&gt;http://draw.io&lt;/a&gt; :)&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>After the last post I have added Ableton Live and my Eurorack modular to my DJ setup, with a master clock being sent via MIDI cables from my Roland TR8 drum machine that syncs with Ableton. The drum machine also can be used creatively for drum fills etc.</p>
 <p>I hope these two diagrams explain my setup adequately - sometimes a picture is worth a thousand words! The &lsquo;actor&rsquo; is me - I just couldn&rsquo;t find a way to change that on <a href="http://draw.io">http://draw.io</a> :)</p>
 <p><img loading="lazy" src="/wp-content/uploads/2021/02/dj-setup.jpg" type="" alt=""  /></p>
@@ -404,9 +513,9 @@ I hope these two diagrams explain my setup adequately - sometimes a picture is w
       <pubDate>Thu, 18 Feb 2021 16:56:59 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2021/02/18/dj-books-reviewed/</guid>
-      <description>The classic!
-Yes! Some people actually write and read BOOKS on DJing. As if YouTube wasn&amp;rsquo;t enough. Well it can be enough.. but YouTube is also a cess pit of rubbish information, and at least a book has a better chance of being properly edited and reviewed. Also reading a book makes you more intellectual. Which is utterly true.
-So. I have been reading through these DJing books to see if they could teach me something I didn&amp;rsquo;t know about DJing after over 10 years doing it.</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/02/frank.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;The classic!&lt;/p&gt;
+&lt;p&gt;Yes! Some people actually write and read BOOKS on DJing. As if YouTube wasn&amp;rsquo;t enough. Well it can be enough.. but YouTube is also a cess pit of rubbish information, and at least a book has a better chance of being properly edited and reviewed. Also reading a book makes you more intellectual. Which is utterly true.&lt;/p&gt;
+&lt;p&gt;So. I have been reading through these DJing books to see if they could teach me something I didn&amp;rsquo;t know about DJing after over 10 years doing it. And there were quite a few interesting techniques and tricks that I learned from these.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2021/02/frank.jpg" type="" alt=""  />The classic!</p>
 <p>Yes! Some people actually write and read BOOKS on DJing. As if YouTube wasn&rsquo;t enough. Well it can be enough.. but YouTube is also a cess pit of rubbish information, and at least a book has a better chance of being properly edited and reviewed. Also reading a book makes you more intellectual. Which is utterly true.</p>
 <p>So. I have been reading through these DJing books to see if they could teach me something I didn&rsquo;t know about DJing after over 10 years doing it. And there were quite a few interesting techniques and tricks that I learned from these.</p>
@@ -431,7 +540,7 @@ So. I have been reading through these DJing books to see if they could teach me 
       <pubDate>Fri, 08 Jan 2021 08:50:03 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2021/01/08/davids-guide-to-the-news/</guid>
-      <description>Journalism has deteriorated to a huge degree in the online age. A lot of articles and video content are one-sided short ‘clickbait’ – short messages designed to trigger an extreme emotional reaction. ALMOST ALL journalism is like this these days, it doesn’t matter if you have a highly established news network you have been trusting for decades, they have all had to adopt this low-quality strategy due to the ultra-competitive and dire financial situation that all news reporting finds itself in.</description>
+      <description>&lt;p&gt;Journalism has deteriorated to a huge degree in the online age. A lot of articles and video content are one-sided short ‘clickbait’ – short messages designed to trigger an extreme emotional reaction. ALMOST ALL journalism is like this these days, it doesn’t matter if you have a highly established news network you have been trusting for decades, they have all had to adopt this low-quality strategy due to the ultra-competitive and dire financial situation that all news reporting finds itself in. However a lot of people still take news content at complete face value, and this leads to a huge number of people being misled about the real facts.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Journalism has deteriorated to a huge degree in the online age. A lot of articles and video content are one-sided short ‘clickbait’ – short messages designed to trigger an extreme emotional reaction. ALMOST ALL journalism is like this these days, it doesn’t matter if you have a highly established news network you have been trusting for decades, they have all had to adopt this low-quality strategy due to the ultra-competitive and dire financial situation that all news reporting finds itself in. However a lot of people still take news content at complete face value, and this leads to a huge number of people being misled about the real facts.</p>
 <p>So, whenever you are reading, listening to, or watching a piece of news content, here are some questions you can ask yourself to really get the full picture of what you are consuming.</p>
 <ol>
@@ -461,7 +570,13 @@ So. I have been reading through these DJing books to see if they could teach me 
       <pubDate>Fri, 11 Dec 2020 22:03:36 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2020/12/11/finally-my-27u-eurorack-is-complete/</guid>
-      <description>The three sections Left 9U section Right 9U section Middle 9U section So.. finally my 27U Eurorack modular synthesiser is complete. I have filled up the third - and surely last, as there is no more room in the studio! - case. I started this Eurorack modular in 2015.. so I am glad it is all complete now. I put in a small amount nearly every month for new modules.</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2020/12/img_20201211_215515-1.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;The three sections&lt;/li&gt;
+&lt;li&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2020/12/img_20201211_215456.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;Left 9U section&lt;/li&gt;
+&lt;li&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2020/12/img_20201211_215508.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;Right 9U section&lt;/li&gt;
+&lt;li&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2020/12/img_20201211_215550.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;Middle 9U section&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So.. finally my 27U Eurorack modular synthesiser is complete. I have filled up the third - and surely last, as there is no more room in the studio! - case. I started this Eurorack modular in 2015.. so I am glad it is all complete now. I put in a small amount nearly every month for new modules. I am not some &amp;lsquo;rich kid&amp;rsquo; who could afford to buy everything at once - and indeed I think my gradual approach has benefitted the overall modular because it&amp;rsquo;s made me think about what I actually need, and given me time to learn as I go along.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<ul>
 <li><img loading="lazy" src="/wp-content/uploads/2020/12/img_20201211_215515-1.jpg" type="" alt=""  />The three sections</li>
 <li><img loading="lazy" src="/wp-content/uploads/2020/12/img_20201211_215456.jpg" type="" alt=""  />Left 9U section</li>
@@ -483,9 +598,16 @@ So. I have been reading through these DJing books to see if they could teach me 
       <pubDate>Tue, 13 Oct 2020 18:06:30 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2020/10/13/ivy-bridge-2011-pcs-are-still-useful-today/</guid>
-      <description>In our house, seperate to my main PC (see the tab above) we still have two Ivy Bridge-based PCs:
-Conny&amp;rsquo;s PC
-i7-3770K 16GB DDR3 RAM Nvidea Radeon 970 Graphics Card 250 GB SSD Windows 10 My wife uses this as her main PC, and plays quite a few games with it. For a CPU and motherboard that I put together in 2011 or so, I am quite amazed it still runs adequetely!</description>
+      <description>&lt;p&gt;In our house, seperate to my main PC (see the tab above) we still have two Ivy Bridge-based PCs:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=-AQXobsZHNg&amp;amp;t=212s&#34;&gt;&lt;strong&gt;Conny&amp;rsquo;s PC&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;i7-3770K&lt;/li&gt;
+&lt;li&gt;16GB DDR3 RAM&lt;/li&gt;
+&lt;li&gt;Nvidea Radeon 970 Graphics Card&lt;/li&gt;
+&lt;li&gt;250 GB SSD&lt;/li&gt;
+&lt;li&gt;Windows 10&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;My wife uses this as her main PC, and plays quite a few games with it. For a CPU and motherboard that I put together in 2011 or so, I am quite amazed it still runs adequetely! It runs the games she wants to play, the most graphically intensive being Deadpool, but it will also cope with Borderlands 2, Skyrim Special Edition, Shadow Warrior 2, and others. She is not interested in the top graphics games, but it runs just fine.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>In our house, seperate to my main PC (see the tab above) we still have two Ivy Bridge-based PCs:</p>
 <p><a href="https://www.youtube.com/watch?v=-AQXobsZHNg&amp;t=212s"><strong>Conny&rsquo;s PC</strong></a></p>
 <ul>
@@ -519,8 +641,10 @@ i7-3770K 16GB DDR3 RAM Nvidea Radeon 970 Graphics Card 250 GB SSD Windows 10 My 
       <pubDate>Thu, 30 Jan 2020 14:55:22 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2020/01/30/studio-setup-in-2020/</guid>
-      <description>I have made some considerable modifications to my modular since my last post. I have a 4-voice polyphony setup now with multiple voice Osc, VCA, Envelope and MIDI-CV modules, allowing me to experiment with polyphony voicing.
-Elsewhere, I have added an Access Virus C synthesizer to my studio, and now have rack-mounted Behringer Model D and Emu Orbit 9090 synthesizers. I have also upgraded to Ableton 10 and use NI&amp;rsquo;s Komplete suite including Massive X, plus TAL-NO-UX Juno 106 softsynth, Sylenth1 and others.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.modulargrid.net/e/racks/view/744839&#34;&gt;
+  &lt;img loading=&#34;lazy&#34; src=&#34;https://cdn.modulargrid.net/img/racks/modulargrid_744839.jpg&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2020/01/img_20200130_1437551.jpg&#34; type=&#34;&#34; alt=&#34;IMG_20200130_143755(1)&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;I have made some considerable modifications to my modular since my last post. I have a 4-voice polyphony setup now with multiple voice Osc, VCA, Envelope and MIDI-CV modules, allowing me to experiment with polyphony voicing.&lt;/p&gt;
+&lt;p&gt;Elsewhere, I have added an Access Virus C synthesizer to my studio, and now have rack-mounted Behringer Model D and Emu Orbit 9090 synthesizers. I have also upgraded to Ableton 10 and use NI&amp;rsquo;s Komplete suite including Massive X, plus TAL-NO-UX Juno 106 softsynth, Sylenth1 and others.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><a href="https://www.modulargrid.net/e/racks/view/744839">
   <img loading="lazy" src="https://cdn.modulargrid.net/img/racks/modulargrid_744839.jpg" alt=""  /></a><img loading="lazy" src="/wp-content/uploads/2020/01/img_20200130_1437551.jpg" type="" alt="IMG_20200130_143755(1)"  /></p>
 <p>I have made some considerable modifications to my modular since my last post. I have a 4-voice polyphony setup now with multiple voice Osc, VCA, Envelope and MIDI-CV modules, allowing me to experiment with polyphony voicing.</p>
@@ -534,9 +658,8 @@ Elsewhere, I have added an Access Virus C synthesizer to my studio, and now have
       <pubDate>Fri, 16 Jun 2017 17:57:23 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2017/06/16/finished-eurorack/</guid>
-      <description>Finally I have finished my Eurorack synthesiser! And I know many people say that &amp;lsquo;Euroracks are never finished&amp;rsquo; but this one absolutely has to be, for financial reasons. I think that I have got to a place where I have every major feature common in most synthesisers, but in a modular instrument format. It is a great place to learn about different synthesis techniques.
-[gallery ids=&amp;ldquo;1945&amp;rdquo; type=&amp;ldquo;rectangular&amp;rdquo;]
-This is the layout on Modulargrid.</description>
+      <description>&lt;p&gt;Finally I have finished my Eurorack synthesiser! And I know many people say that &amp;lsquo;Euroracks are never finished&amp;rsquo; but this one absolutely has to be, for financial reasons. I think that I have got to a place where I have every major feature common in most synthesisers, but in a modular instrument format. It is a great place to learn about different synthesis techniques.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2017/06/finished-modular.jpg&#34; type=&#34;&#34; alt=&#34;finished modular&#34;  /&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Finally I have finished my Eurorack synthesiser! And I know many people say that &lsquo;Euroracks are never finished&rsquo; but this one absolutely has to be, for financial reasons. I think that I have got to a place where I have every major feature common in most synthesisers, but in a modular instrument format. It is a great place to learn about different synthesis techniques.</p>
 <p><img loading="lazy" src="/wp-content/uploads/2017/06/finished-modular.jpg" type="" alt="finished modular"  /></p>
 <p>[gallery ids=&ldquo;1945&rdquo; type=&ldquo;rectangular&rdquo;]</p>
@@ -550,7 +673,7 @@ This is the layout on Modulargrid.</description>
       <pubDate>Sun, 16 Apr 2017 21:37:29 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2017/04/16/finished-planning-my-eurorack-modular-synthesizer/</guid>
-      <description>In January 2015 I put in an order for my first Eurorack case. Little did I know that I would end up filling that case and buying a larger one. Finally, 2 years and 3 months later, I have nearly finished assembling what will be the complete Eurorack. I have been buying a module or two per month, researching what I need and playing a lot with what I have got already to find out its limitations and areas for possible expansion.</description>
+      <description>&lt;p&gt;In January 2015 I put in an order for my first Eurorack case. Little did I know that I would end up filling that case and buying a larger one. Finally, 2 years and 3 months later, I have nearly finished assembling what will be the complete Eurorack. I have been buying a module or two per month, researching what I need and playing a lot with what I have got already to find out its limitations and areas for possible expansion. It&amp;rsquo;s much like incrementally building and upgrading a gaming PC really, although with very different results.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>In January 2015 I put in an order for my first Eurorack case. Little did I know that I would end up filling that case and buying a larger one. Finally, 2 years and 3 months later, I have nearly finished assembling what will be the complete Eurorack. I have been buying a module or two per month, researching what I need and playing a lot with what I have got already to find out its limitations and areas for possible expansion. It&rsquo;s much like incrementally building and upgrading a gaming PC really, although with very different results.</p>
 <p>Today I have come up with a final plan for what the cases will contain. The picture below is slightly misleading, I have two cases, so the case below is actually split down the middle into two enclosures. The left-side case is 2/3rds the size of the right hand case, that is why there is a grey unusable area at the top left.</p>
 <p>With the purchase of 4 modules this month, I&rsquo;m nearly at the end. The remaining 3 modules will be bought and installed over the next month or two, depending on budget.</p>
@@ -575,9 +698,14 @@ This is the layout on Modulargrid.</description>
       <pubDate>Mon, 27 Feb 2017 14:58:18 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2017/02/27/goals-for-2017/</guid>
-      <description>Looking at my past posts, you may notice that I didn&amp;rsquo;t set myself any goals for 2016. Looking back, this was a mistake, so I&amp;rsquo;m going to remedy this by setting some for 2017.
-Goals:
-Lose a significant amount of weight - this is very important for health reasons. Study maths courses - I intend to sign up for some maths courses at the OU. This will improve my mathematical knowledge, allowing for further study in subjects I&amp;rsquo;m interested in, plus allow me to work in more mathematically-heavy careers.</description>
+      <description>&lt;p&gt;Looking at my past posts, you may notice that I didn&amp;rsquo;t set myself any goals for 2016. Looking back, this was a mistake, so I&amp;rsquo;m going to remedy this by setting some for 2017.&lt;/p&gt;
+&lt;p&gt;Goals:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lose a significant amount of weight - this is very important for health reasons.&lt;/li&gt;
+&lt;li&gt;Study maths courses - I intend to sign up for some maths courses at the OU. This will improve my mathematical knowledge, allowing for further study in subjects I&amp;rsquo;m interested in, plus allow me to work in more mathematically-heavy careers. This equates to 10 hours study per week, so it&amp;rsquo;s not a light commitment, but one I think I need to make.&lt;/li&gt;
+&lt;li&gt;Exercise more - this is important as it improves my mindset, stamina, and makes me feel good.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Not too many goals this time, but some important ones, and I think I&amp;rsquo;m in a good position to commit to these thanks to the support of my partner, and therefore I am in a position to improve my life.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Looking at my past posts, you may notice that I didn&rsquo;t set myself any goals for 2016. Looking back, this was a mistake, so I&rsquo;m going to remedy this by setting some for 2017.</p>
 <p>Goals:</p>
 <ul>
@@ -596,10 +724,20 @@ Lose a significant amount of weight - this is very important for health reasons.
       <pubDate>Sat, 11 Feb 2017 13:25:27 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2017/02/11/studio-setup/</guid>
-      <description>This is my current studio setup.
-I have the following gear:
-Eurorack 9U case Eurorack 6U case KORG MS20 Mini Synth Roland TB3 Synth AY3 Chiptune Synth Roland A500-PRO Keyboard Controller Nord Drum Synth Macbook Pro with Ableton Live 9 Suite MIDI.OCD Polyphonic MIDI-&amp;gt;CV Converter Samson Patchbay
-I am looking to sell my Acces Virus A and concentrate on filling up the remaining Eurorack case holes.</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2017/02/img_0024.jpg&#34; type=&#34;&#34; alt=&#34;Studio&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;This is my current studio setup.&lt;/p&gt;
+&lt;p&gt;I have the following gear:&lt;/p&gt;
+&lt;p&gt;Eurorack 9U case
+Eurorack 6U case
+KORG MS20 Mini Synth
+Roland TB3 Synth
+AY3 Chiptune Synth
+Roland A500-PRO Keyboard Controller
+Nord Drum Synth
+Macbook Pro with Ableton Live 9 Suite
+MIDI.OCD Polyphonic MIDI-&amp;gt;CV Converter
+Samson Patchbay&lt;/p&gt;
+&lt;p&gt;I am looking to sell my Acces Virus A and concentrate on filling up the remaining Eurorack case holes.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2017/02/img_0024.jpg" type="" alt="Studio"  /></p>
 <p>This is my current studio setup.</p>
 <p>I have the following gear:</p>
@@ -623,7 +761,7 @@ Samson Patchbay</p>
       <pubDate>Mon, 30 Jan 2017 07:09:58 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2017/01/30/switching-to-wordpress-com/</guid>
-      <description>I am currently moving the blog, which was formerly hosted on Dreamhost, to Wordpress.com hosting. Most of the content is moved over already, I have to go through all the posts and tidy up the references, relink the images etc. Hopefully I will get around to this shortly.</description>
+      <description>&lt;p&gt;I am currently moving the blog, which was formerly hosted on Dreamhost, to Wordpress.com hosting. Most of the content is moved over already, I have to go through all the posts and tidy up the references, relink the images etc. Hopefully I will get around to this shortly.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I am currently moving the blog, which was formerly hosted on Dreamhost, to Wordpress.com hosting. Most of the content is moved over already, I have to go through all the posts and tidy up the references, relink the images etc. Hopefully I will get around to this shortly.</p>
 ]]></content:encoded>
     </item>
@@ -634,8 +772,19 @@ Samson Patchbay</p>
       <pubDate>Sat, 03 Dec 2016 20:02:18 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2016/12/03/music-workflow-2017/</guid>
-      <description>In 2017 I want to build a relatively static hardware-based workflow. This is what I&amp;rsquo;ve chosen: The components are:
-Roland A-500PRO keyboard controller - https://www.roland.com/global/products/a-500pro/ Arpie MIDI Arpeggiator - https://www.tindie.com/products/hotchk155/arpie-midi-arpeggiator-kit/ CV.OCD Midi -&amp;gt; CV Convertor - https://www.tindie.com/products/hotchk155/cvocd-a-super-flexible-midi-to-cv-box/ KORG MS20 Semi-Modular Mini Synth Eurorack - https://www.modulargrid.net/e/racks/view/350623 Nord Drum Semi-Modular Drum Module - http://www.nordkeyboards.com/products/nord-drum Stereo Memory Man with Hazarai (Reverb/Echo Pedal) - http://www.ehx.com/products/stereo-memory-man-with-hazarai Focusrite Saffire Pro 24 Audio Interface - https://us.focusrite.com/firewire-audio-interfaces/saffire-pro-24 Ableton Push Controller (MK1) - https://www.</description>
+      <description>&lt;p&gt;In 2017 I want to build a relatively static hardware-based workflow. This is what I&amp;rsquo;ve chosen: &lt;a href=&#34;https://www.ableton.com/en/push/&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2016/12/workflow-setup-2.png&#34; type=&#34;&#34; alt=&#34;workflow-setup&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The components are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Roland A-500PRO keyboard controller&lt;/strong&gt; - &lt;a href=&#34;https://www.roland.com/global/products/a-500pro/&#34;&gt;https://www.roland.com/global/products/a-500pro/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Arpie MIDI Arpeggiator&lt;/strong&gt; - &lt;a href=&#34;https://www.tindie.com/products/hotchk155/arpie-midi-arpeggiator-kit/&#34;&gt;https://www.tindie.com/products/hotchk155/arpie-midi-arpeggiator-kit/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CV.OCD Midi -&amp;gt; CV Convertor&lt;/strong&gt; - &lt;a href=&#34;https://www.tindie.com/products/hotchk155/cvocd-a-super-flexible-midi-to-cv-box/&#34;&gt;https://www.tindie.com/products/hotchk155/cvocd-a-super-flexible-midi-to-cv-box/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;KORG MS20 Semi-Modular Mini Synth&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Eurorack&lt;/strong&gt; - &lt;a href=&#34;https://www.modulargrid.net/e/racks/view/350623&#34;&gt;https://www.modulargrid.net/e/racks/view/350623&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Nord Drum Semi-Modular Drum Module&lt;/strong&gt; - &lt;a href=&#34;http://www.nordkeyboards.com/products/nord-drum&#34;&gt;http://www.nordkeyboards.com/products/nord-drum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stereo Memory Man with Hazarai (Reverb/Echo Pedal)&lt;/strong&gt; - &lt;a href=&#34;http://www.ehx.com/products/stereo-memory-man-with-hazarai&#34;&gt;http://www.ehx.com/products/stereo-memory-man-with-hazarai&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Focusrite Saffire Pro 24 Audio Interface&lt;/strong&gt; - &lt;a href=&#34;https://us.focusrite.com/firewire-audio-interfaces/saffire-pro-24&#34;&gt;https://us.focusrite.com/firewire-audio-interfaces/saffire-pro-24&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ableton Push Controller (MK1)&lt;/strong&gt; - &lt;a href=&#34;https://www.ableton.com/en/push/&#34;&gt;https://www.ableton.com/en/push/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
       <content:encoded><![CDATA[<p>In 2017 I want to build a relatively static hardware-based workflow. This is what I&rsquo;ve chosen: <a href="https://www.ableton.com/en/push/"><img loading="lazy" src="/wp-content/uploads/2016/12/workflow-setup-2.png" type="" alt="workflow-setup"  /></a></p>
 <p>The components are:</p>
 <ul>
@@ -658,8 +807,9 @@ Roland A-500PRO keyboard controller - https://www.roland.com/global/products/a-5
       <pubDate>Wed, 16 Nov 2016 17:23:09 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2016/11/16/current-music-making-setup/</guid>
-      <description>With my current setup, I&amp;rsquo;m trying to make as much music &amp;lsquo;out of the box&amp;rsquo; as possible, away from the computer as I find it more fun.
-Synths: KORG Minilogue: I use this for a keyboard controller, and I use the 16 step sequencer to run simple sequences. It connects to the PC via USB and has MIDI output. I can also use this as a synthesizer its own right, it&amp;rsquo;s good for backing chords and pads.</description>
+      <description>&lt;p&gt;With my current setup, I&amp;rsquo;m trying to make as much music &amp;lsquo;out of the box&amp;rsquo; as possible, away from the computer as I find it more fun.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Synths:&lt;/strong&gt; &lt;em&gt;KORG Minilogue&lt;/em&gt;: I use this for a keyboard controller, and I use the 16 step sequencer to run simple sequences. It connects to the PC via USB and has MIDI output. I can also use this as a synthesizer its own right, it&amp;rsquo;s good for backing chords and pads.
+&lt;em&gt;KORG MS20 Mini&lt;/em&gt;: I&amp;rsquo;m borrowing this from a friend. I will use it as a bass synth mostly. I&amp;rsquo;ve got a Harvestman English Tear module which connects it to my Eurorack.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>With my current setup, I&rsquo;m trying to make as much music &lsquo;out of the box&rsquo; as possible, away from the computer as I find it more fun.</p>
 <p><strong>Synths:</strong> <em>KORG Minilogue</em>: I use this for a keyboard controller, and I use the 16 step sequencer to run simple sequences. It connects to the PC via USB and has MIDI output. I can also use this as a synthesizer its own right, it&rsquo;s good for backing chords and pads.
 <em>KORG MS20 Mini</em>: I&rsquo;m borrowing this from a friend. I will use it as a bass synth mostly. I&rsquo;ve got a Harvestman English Tear module which connects it to my Eurorack.</p>
@@ -680,8 +830,9 @@ Synths: KORG Minilogue: I use this for a keyboard controller, and I use the 16 s
       <pubDate>Mon, 05 Sep 2016 17:22:14 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2016/09/05/narrative-led-pc-games/</guid>
-      <description>When I first started getting into computer roleplaying games in the 90s/00s I remember playing the Infinity Engine games by Bioware and Black Isle, such as Baldur’s Gate 2, the original Fallout games, and of course Planescape: Torment. It was the quality of writing that drew me in and took me to another world, the graphics were just a background setting to that writing.
-Somewhere in the 2000s RPGs became more action orientated and prioritised mechanics and visual appeal and combat over branching stories.</description>
+      <description>&lt;p&gt;
+  &lt;img loading=&#34;lazy&#34; src=&#34;http://www.inklestudios.com/press/80days/img/80-days-poster-promo.jpg&#34; alt=&#34;80 days poster&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;When I first started getting into computer roleplaying games in the 90s/00s I remember playing the Infinity Engine games by Bioware and Black Isle, such as Baldur’s Gate 2, the original Fallout games, and of course Planescape: Torment. It was the quality of writing that drew me in and took me to another world, the graphics were just a background setting to that writing.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
   <img loading="lazy" src="http://www.inklestudios.com/press/80days/img/80-days-poster-promo.jpg" alt="80 days poster"  /></p>
 <p>When I first started getting into computer roleplaying games in the 90s/00s I remember playing the Infinity Engine games by Bioware and Black Isle, such as Baldur’s Gate 2, the original Fallout games, and of course Planescape: Torment. It was the quality of writing that drew me in and took me to another world, the graphics were just a background setting to that writing.</p>
@@ -703,8 +854,10 @@ Another outlandish game, this time set in the world of Monte Cook’s Numenera, 
       <pubDate>Sat, 16 Apr 2016 20:58:13 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2016/04/16/eurorack-2016/</guid>
-      <description>So.. the problem, as so many people have said, with getting into building a Eurorack modular synthesizer is that it becomes addictive, and you inevitably spend more than you can really afford. That said.. I now have a great fully customised synthesiser for what I want to do :) The layout is:
-Top shelf: 3 oscilators and noise generator in the top left, 4 VCAs and S&amp;amp;H and Ring Mod sections in the mid center, LFOs in the top right.</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2016/04/eurorack.png&#34; type=&#34;&#34; alt=&#34;eurorack&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;So.. the problem, as so many people have said, with getting into building a Eurorack modular synthesizer is that it becomes addictive, and you inevitably spend more than you can really afford. That said.. I now have a great fully customised synthesiser for what I want to do :) The layout is:&lt;/p&gt;
+&lt;h3 id=&#34;top-shelf&#34;&gt;Top shelf:&lt;/h3&gt;
+&lt;p&gt;3 oscilators and noise generator in the top left, 4 VCAs and S&amp;amp;H and Ring Mod sections in the mid center, LFOs in the top right.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2016/04/eurorack.png" type="" alt="eurorack"  /></p>
 <p>So.. the problem, as so many people have said, with getting into building a Eurorack modular synthesizer is that it becomes addictive, and you inevitably spend more than you can really afford. That said.. I now have a great fully customised synthesiser for what I want to do :) The layout is:</p>
 <h3 id="top-shelf">Top shelf:</h3>
@@ -722,9 +875,18 @@ Top shelf: 3 oscilators and noise generator in the top left, 4 VCAs and S&amp;am
       <pubDate>Sat, 26 Mar 2016 04:13:08 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2016/03/26/my-vim-configuration/</guid>
-      <description>I use a heavily customised setup for vIM, the text editor that annoys me the least in ~30 years of using a computer. You can see my exact setup in my dotfiles repo on github, https://github.com/wordswords/-.
-Here are the plugins I use:
-ConqueTerm - Opens a shell window inside vIM, allowing you to have a REPL environment within vIM. NERDTree - A filetree plugin that you can see on the left of the window above.</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2016/03/screen-shot-2016-03-26-at-04-00-46.png&#34; type=&#34;&#34; alt=&#34;Screen Shot 2016-03-26 at 04.00.46&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;I use a heavily customised setup for vIM, the text editor that annoys me the least in ~30 years of using a computer. You can see my exact setup in my dotfiles repo on github, &lt;a href=&#34;https://github.com/wordswords/-&#34;&gt;https://github.com/wordswords/-&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here are the plugins I use:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ConqueTerm&lt;/strong&gt; - Opens a shell window inside vIM, allowing you to have a REPL environment within vIM.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NERDTree&lt;/strong&gt; - A filetree plugin that you can see on the left of the window above. It replicates the Sublime text editor&amp;rsquo;s filetree.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;vim-airline&lt;/strong&gt; - This is a statusline plugin for vIM that allows for a nicer status view for windows and buffers.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;vim-devicons&lt;/strong&gt; - Allows for UTF-8 icons to make vIM editing slightly more graphical. Used by airline to display more info in less space, and by NERDTree to show filetype information.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;vim-fish&lt;/strong&gt; - Syntax highlighting for fish shell script editing.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;vim-rails&lt;/strong&gt; - Syntax highlighting and more for rails.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;vim-ruby&lt;/strong&gt; - Syntax highlighting for Ruby.&lt;/li&gt;
+&lt;/ul&gt;</description>
       <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2016/03/screen-shot-2016-03-26-at-04-00-46.png" type="" alt="Screen Shot 2016-03-26 at 04.00.46"  /></p>
 <p>I use a heavily customised setup for vIM, the text editor that annoys me the least in ~30 years of using a computer. You can see my exact setup in my dotfiles repo on github, <a href="https://github.com/wordswords/-">https://github.com/wordswords/-</a>.</p>
 <p>Here are the plugins I use:</p>
@@ -746,8 +908,8 @@ ConqueTerm - Opens a shell window inside vIM, allowing you to have a REPL enviro
       <pubDate>Sun, 17 Jan 2016 20:38:13 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2016/01/17/2015-goals-summary/</guid>
-      <description>At the start of 2015, I wrote down some goals for 2015. Around half-way through the year, I revisited these goals with some thoughts on how well I&amp;rsquo;d done. Now 2015 is over, I want to reflect on what has been achieved and what hasn&amp;rsquo;t.
-I also want to comment on the fact that I am discussing personal things here. A few years ago I was decided that I was going to keep this blog professional and pretty much dry of any thoughts or feelings on my personal life.</description>
+      <description>&lt;p&gt;At the start of 2015, I wrote down &lt;a href=&#34;http://www.davidcraddock.net/2015/01/17/goals-for-the-year-2015/&#34;&gt;some goals for 2015&lt;/a&gt;. Around half-way through the year, I revisited these goals with &lt;a href=&#34;http://www.davidcraddock.net/2015/09/01/goals-for-the-year-2015-midway-update/&#34;&gt;some thoughts on how well I&amp;rsquo;d done&lt;/a&gt;. Now 2015 is over, I want to reflect on what has been achieved and what hasn&amp;rsquo;t.&lt;/p&gt;
+&lt;p&gt;I also want to comment on the fact that I am discussing personal things here. A few years ago I was decided that I was going to keep this blog professional and pretty much dry of any thoughts or feelings on my personal life. I have moved away from that though, inspired by blogs such as &lt;a href=&#34;http://www.cubicgarden.com&#34;&gt;Iain&amp;rsquo;s&lt;/a&gt;, where personal thoughts and feelings are mixed with technical observations. I would like to think that this isn&amp;rsquo;t a bad move; after all if potential employers come to look at this 5 years from now, and don&amp;rsquo;t like what I&amp;rsquo;ve done here, then I probably don&amp;rsquo;t want to work for them anyway. There is the argument that blogs should be &amp;rsquo;themed&amp;rsquo; or targetted towards a particular subject to garner followers, and that too much sharing is possibly a bad thing. However, my current thoughts are that dry techncial info is boring, and I&amp;rsquo;d rather mix it with other things that are important to me.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>At the start of 2015, I wrote down <a href="http://www.davidcraddock.net/2015/01/17/goals-for-the-year-2015/">some goals for 2015</a>. Around half-way through the year, I revisited these goals with <a href="http://www.davidcraddock.net/2015/09/01/goals-for-the-year-2015-midway-update/">some thoughts on how well I&rsquo;d done</a>. Now 2015 is over, I want to reflect on what has been achieved and what hasn&rsquo;t.</p>
 <p>I also want to comment on the fact that I am discussing personal things here. A few years ago I was decided that I was going to keep this blog professional and pretty much dry of any thoughts or feelings on my personal life. I have moved away from that though, inspired by blogs such as <a href="http://www.cubicgarden.com">Iain&rsquo;s</a>, where personal thoughts and feelings are mixed with technical observations. I would like to think that this isn&rsquo;t a bad move; after all if potential employers come to look at this 5 years from now, and don&rsquo;t like what I&rsquo;ve done here, then I probably don&rsquo;t want to work for them anyway. There is the argument that blogs should be &rsquo;themed&rsquo; or targetted towards a particular subject to garner followers, and that too much sharing is possibly a bad thing. However, my current thoughts are that dry techncial info is boring, and I&rsquo;d rather mix it with other things that are important to me.</p>
 <h3 id="retrospective-for-2015">Retrospective for 2015</h3>
@@ -792,9 +954,13 @@ I also want to comment on the fact that I am discussing personal things here. A 
       <pubDate>Mon, 28 Sep 2015 16:22:52 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2015/09/28/introversion-extroversion-and-being-a-bbc-software-engineer/</guid>
-      <description>Whether you agree with Myers-Briggs personality profiling or not, like fellow BBC&amp;rsquo;er Ian Forrester I have found them a useful frame of reference from which to discuss my personality, because I see similarities between my perception of me, and the classification.
-I took the Myers-Briggs personality profiling, and it has labelled me on several occasions an INTP:
-INTPs are marked by a quiet, stoic, modest, and aloof exterior that masks strong creativity and enthusiasm for novel possibilities.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2015/09/introvert.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2015/09/introvert.jpg&#34; type=&#34;&#34; alt=&#34;introvert&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Whether you agree with Myers-Briggs personality profiling or not, like fellow BBC&amp;rsquo;er &lt;a href=&#34;http://cubicgarden.com/2015/07/27/being-entp-dyslexic-and-relationships/&#34;&gt;Ian Forrester&lt;/a&gt; I have found them a useful frame of reference from which to discuss my personality, because I see similarities between my perception of me, and the classification.&lt;/p&gt;
+&lt;p&gt;I took the Myers-Briggs personality profiling, and it has labelled me on several occasions an INTP:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;INTPs are marked by a quiet, stoic, modest, and aloof exterior that masks strong creativity and enthusiasm for novel possibilities. Their weaknesses include poor organization, insensitivity to social niceties, and a tendency to get lost in abstractions. Keirsey referred to INTPs as Architects, one of the four types belonging to the temperament he called the Rationals
+&amp;hellip;
+I – Introversion preferred to extraversion: INTPs tend to be quiet and reserved. They generally prefer interacting with a few close friends rather than a wide circle of acquaintances, and they expend energy in social situations (whereas extraverts gain energy).&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2015/09/introvert.jpg"><img loading="lazy" src="/wp-content/uploads/2015/09/introvert.jpg" type="" alt="introvert"  /></a></p>
 <p>Whether you agree with Myers-Briggs personality profiling or not, like fellow BBC&rsquo;er <a href="http://cubicgarden.com/2015/07/27/being-entp-dyslexic-and-relationships/">Ian Forrester</a> I have found them a useful frame of reference from which to discuss my personality, because I see similarities between my perception of me, and the classification.</p>
 <p>I took the Myers-Briggs personality profiling, and it has labelled me on several occasions an INTP:</p>
@@ -807,7 +973,7 @@ I – Introversion preferred to extraversion: INTPs tend to be quiet and reserve
 <p>I know a few people from Imperial College London, one of the top universities in the world for Computer Science (and Science Technology Engineering and Medicine in general) and have found it full of technically gifted introverts. Now, I didn&rsquo;t go to Imperial myself, but it does seem that there is a correlation between introversion and high amounts of technical ability. I have found this also with a lot of software engineers that I have worked with.</p>
 <p>I am not saying necessarily that all good software engineers are extreme introverts, in fact I would say that this is untrue in a number of cases. This is because Agile software engineering often uses techniques such as pair programming from Extreme Programming, and it helps to have extroversion when dealing with hyper-social practices such as programming as a pair every day all day (which I have done, and found it very draining).</p>
 <p>In fact, I have noticed that technical ability is less important than your ability to work in a team at the BBC. I generally have fairly good social skills and tend to like introverts so I personally have not had a problem with dealing with people who were very introverted but were technically quite brilliant. However it was clear that these types of people just didn&rsquo;t seem to fit in quite as well in BBC teams with high collaboration aspects. I think this may be down to cultural fit rather than something we can extrapolate over all software engineering organisations.</p>
-<p><a href="http://www.amazon.co.uk/Making-Software-Really-Works-Believe/dp/0596808321"><img loading="lazy" src="/wp-content/uploads/2015/09/512etxcgw6l-_sx379_bo1204203200_.jpg" type="" alt="512eTxcGW6L.&lt;em&gt;SX379_BO1,204,203,200&lt;/em&gt;"  /></a></p>
+<p><a href="http://www.amazon.co.uk/Making-Software-Really-Works-Believe/dp/0596808321"><img loading="lazy" src="/wp-content/uploads/2015/09/512etxcgw6l-_sx379_bo1204203200_.jpg" type="" alt="512eTxcGW6L.SX379_BO1,204,203,200"  /></a></p>
 <p>Indeed, aside from my anecdotal evidence, in the book <a href="http://www.amazon.co.uk/Making-Software-Really-Works-Believe/dp/0596808321">&lsquo;Making Software&rsquo;</a> Jo E. Hannay analyses the academic research on what type of personality programmers have, and what effect this has on their work. She writes;</p>
 <blockquote>
 <p>We found that programmers deviated from a reference group in that they are lower on Extraversion, lower on Emotional Stability, and higher on Openness to Experience [Hannay et al. 2010]. See also [Moore 1991], [Smith 1989], [Woodruff 1979], [Capretz 2003], and [Turley and Bieman 1995] for related results. Programmers are also more homogeneous than the population as a whole; that is, programmers vary less in personality than do people in general.</p>
@@ -830,9 +996,10 @@ I – Introversion preferred to extraversion: INTPs tend to be quiet and reserve
       <pubDate>Wed, 02 Sep 2015 08:13:17 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2015/09/02/completed-eurorack/</guid>
-      <description>I&amp;rsquo;ve finished my 6U Eurorack case. It took me 9 months to build, buying a couple of modules a month.
-Goals I wanted to make a self-contained dual voice synthesizer that would interface with my 2x Doepfer Dark Energy MK1s and my Microbrute, on a budget. I also wanted to add some random sound generation features.
-I chose to make the synthesizer out of Doepfer modules because they are easy to find cheap second-hand, and also because they are well-engineered.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve finished my 6U Eurorack case. It took me 9 months to build, buying a couple of modules a month.&lt;/p&gt;
+&lt;h3 id=&#34;goals&#34;&gt;Goals&lt;/h3&gt;
+&lt;p&gt;I wanted to make a self-contained dual voice synthesizer that would interface with my 2x Doepfer Dark Energy MK1s and my Microbrute, on a budget. I also wanted to add some random sound generation features.&lt;/p&gt;
+&lt;p&gt;I chose to make the synthesizer out of Doepfer modules because they are easy to find cheap second-hand, and also because they are well-engineered. (If they&amp;rsquo;re good enough for Kraftwerk, who am I to complain?)&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I&rsquo;ve finished my 6U Eurorack case. It took me 9 months to build, buying a couple of modules a month.</p>
 <h3 id="goals">Goals</h3>
 <p>I wanted to make a self-contained dual voice synthesizer that would interface with my 2x Doepfer Dark Energy MK1s and my Microbrute, on a budget. I also wanted to add some random sound generation features.</p>
@@ -881,8 +1048,16 @@ I chose to make the synthesizer out of Doepfer modules because they are easy to 
       <pubDate>Wed, 02 Sep 2015 06:31:10 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2015/09/02/things-id-like-to-learn-more-about/</guid>
-      <description>Some things I have been meaning to investigate in my own time, but haven&amp;rsquo;t, because life just gets in the way.
-Maths - It might surprise a few people that, as a software developer, I never took maths to A-level. I picked up a bit of maths in my CS degree, but I never really got a firm grounding in it. This has prevented me from understanding and coding advanced stuff in game development, understanding audio to a decent level, and generally doing things in which I consider the more interesting fields of computing.</description>
+      <description>&lt;p&gt;Some things I have been meaning to investigate in my own time, but haven&amp;rsquo;t, because life just gets in the way.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Maths
+- It might surprise a few people that, as a software developer, I never took maths to A-level. I picked up a bit of maths in my CS degree, but I never really got a firm grounding in it. This has prevented me from understanding and coding advanced stuff in game development, understanding audio to a decent level, and generally doing things in which I consider the more interesting fields of computing.&lt;/li&gt;
+&lt;li&gt;Music Theory
+- I have been getting better at playing the piano/keyboard by ear, but I have never fully learned to read music, and I would like to.&lt;/li&gt;
+&lt;li&gt;Electronics
+- I would love to be able to build simple DIY synthesiser module kits for my Eurorack setup. I imagine I&amp;rsquo;d have to start on something small though.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It would be great if I could take courses in these subjects, via the OU or something similar. I just have to find the time.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Some things I have been meaning to investigate in my own time, but haven&rsquo;t, because life just gets in the way.</p>
 <ol>
 <li>Maths
@@ -902,8 +1077,33 @@ Maths - It might surprise a few people that, as a software developer, I never to
       <pubDate>Tue, 01 Sep 2015 15:33:18 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2015/09/01/goals-for-the-year-2015-midway-update/</guid>
-      <description>Now that I am midway through the year, I thought I&amp;rsquo;d revisit the goals I set myself at the start of the year, to see what has changed.
-Career Goals Settle into my new role at the BBC as Test Manager - I suppose this has not been achieved. I will have more updates soon (hopefully) but a change of direction is likely to happen. Pushing for a place to be opened up in Platform Test to employ someone from the Extend Scheme - This has been achieved, and someone will be joining Platform Test from the Extend scheme in October, I&amp;rsquo;m happy to say.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2015/01/windingroad.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2015/01/windingroad.jpg&#34; type=&#34;&#34; alt=&#34;Winding Road&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now that I am midway through the year, I thought I&amp;rsquo;d revisit &lt;a href=&#34;http://www.davidcraddock.net/?p=1301&amp;amp;preview=true&#34;&gt;the goals I set myself at the start of the year&lt;/a&gt;, to see what has changed.&lt;/p&gt;
+&lt;h3 id=&#34;career-goals&#34;&gt;Career Goals&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Settle into my new role at the BBC as Test Manager&lt;/em&gt; - I suppose this has not been achieved. I will have more updates soon (hopefully) but a change of direction is likely to happen.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Pushing for a place to be opened up in Platform Test to employ someone from the Extend Scheme&lt;/em&gt; - This has been achieved, and someone will be joining Platform Test from the Extend scheme in October, I&amp;rsquo;m happy to say.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;creative-goals&#34;&gt;Creative Goals&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Get better at music production&lt;/em&gt; - This has been achieved. I have been working with my friend I will call &amp;lsquo;G&amp;rsquo;, which has massively improved my production skills. I have posted music that I see as much better to Soundcloud.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;social-goals&#34;&gt;Social Goals&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Getting married&lt;/em&gt; - Well.. things didn&amp;rsquo;t work out with that. But I have a new girlfriend who will hopefully be moving to live with me, so things seem to be recovering there.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Making friends with more people that share the same interests&lt;/em&gt; - Partly achieved. G is a good example of someone that I have met through looking for friends with the same interest.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;financial-goals&#34;&gt;Financial Goals&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Saving more over the course of the year&lt;/em&gt; - Partly achieved. I have bought a house, so now I am in a quite a bit of debt, but the money I will be putting towards my mortgage will be money I am effectively &amp;lsquo;saving&amp;rsquo; because it will be put into the value of the house.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Joining a pension scheme&lt;/em&gt; - Achieved.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;health-goals&#34;&gt;Health Goals&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Adopt a regular form of keeping fit&lt;/em&gt; - Not achieved. I have a gym even closer to where I live, 5 minutes walk, so hopefully I will use it more soon. It is difficult for me, as the medication I&amp;rsquo;m on makes me feel tired all the time, but they do say that exercise improves energy levels.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;Although I&amp;rsquo;ve achieved the majority of my goals, I haven&amp;rsquo;t achieved two of the major goals - around my job and around exercise, which are both things I need to work on. There is still time left this year to make a difference in these areas.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2015/01/windingroad.jpg"><img loading="lazy" src="/wp-content/uploads/2015/01/windingroad.jpg" type="" alt="Winding Road"  /></a></p>
 <p>Now that I am midway through the year, I thought I&rsquo;d revisit <a href="http://www.davidcraddock.net/?p=1301&amp;preview=true">the goals I set myself at the start of the year</a>, to see what has changed.</p>
 <h3 id="career-goals">Career Goals</h3>
@@ -940,8 +1140,8 @@ Career Goals Settle into my new role at the BBC as Test Manager - I suppose this
       <pubDate>Sun, 21 Jun 2015 17:28:22 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2015/06/21/open-source-device-api-and-device-api-android-on-github/</guid>
-      <description>Two Ruby gems that I contributed to from my days in the BBC&amp;rsquo;s TITAN (Test Tools and Infrastructure) team, have been open-sourced. So finally I can say that I have made proper open-source contributions. The gems are for making automating of Android phones via Android Calabash easier, and are used in a lot of the mobile testing we do at the BBC. Here they are:
-https://github.com/bbc/device_api https://github.com/bbc/device_api-android Here is my Github profile, which doesn&amp;rsquo;t look very active on the surface, but I have been contributing to repositories which remain private at the moment, so my history is not visible.</description>
+      <description>&lt;p&gt;Two Ruby gems that I contributed to from my days in the BBC&amp;rsquo;s TITAN (Test Tools and Infrastructure) team, have been open-sourced. So finally I can say that I have made proper open-source contributions. The gems are for making automating of Android phones via Android Calabash easier, and are used in a lot of the mobile testing we do at the BBC. Here they are:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/bbc/device_api&#34;&gt;https://github.com/bbc/device_api&lt;/a&gt; &lt;a href=&#34;https://github.com/bbc/device_api-android&#34;&gt;https://github.com/bbc/device_api-android&lt;/a&gt; &lt;a href=&#34;http://github.com/wordswords&#34;&gt;Here is my Github profile&lt;/a&gt;, which doesn&amp;rsquo;t look very active on the surface, but I have been contributing to repositories which remain private at the moment, so my history is not visible.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Two Ruby gems that I contributed to from my days in the BBC&rsquo;s TITAN (Test Tools and Infrastructure) team, have been open-sourced. So finally I can say that I have made proper open-source contributions. The gems are for making automating of Android phones via Android Calabash easier, and are used in a lot of the mobile testing we do at the BBC. Here they are:</p>
 <p><a href="https://github.com/bbc/device_api">https://github.com/bbc/device_api</a> <a href="https://github.com/bbc/device_api-android">https://github.com/bbc/device_api-android</a> <a href="http://github.com/wordswords">Here is my Github profile</a>, which doesn&rsquo;t look very active on the surface, but I have been contributing to repositories which remain private at the moment, so my history is not visible.</p>
 ]]></content:encoded>
@@ -953,8 +1153,9 @@ https://github.com/bbc/device_api https://github.com/bbc/device_api-android Here
       <pubDate>Sun, 21 Jun 2015 17:05:00 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2015/06/21/instruments-that-i-use/</guid>
-      <description>I have a lot of different instruments, both hardware and software, for making music, but here is what I use the most at the moment:
-Piano I have an actual electric piano but I don&amp;rsquo;t use the onboard sound engine, preferring to use it as a midi controller for a software piano sound. Recently I bought Ableton Live Full Suite, before I was using the &amp;lsquo;Grand Piano&amp;rsquo; sound from the default install.</description>
+      <description>&lt;p&gt;I have a lot of different instruments, both hardware and software, for making music, but here is what I use the most at the moment:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Piano&lt;/strong&gt;
+I have an actual electric piano but I don&amp;rsquo;t use the onboard sound engine, preferring to use it as a midi controller for a software piano sound. Recently I bought Ableton Live Full Suite, before I was using the &amp;lsquo;Grand Piano&amp;rsquo; sound from the default install. Now there is a whole &amp;lsquo;Piano&amp;rsquo; Ableton Live pack, and that seems to offer much more realistic piano sounds.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I have a lot of different instruments, both hardware and software, for making music, but here is what I use the most at the moment:</p>
 <p><strong>Piano</strong>
 I have an actual electric piano but I don&rsquo;t use the onboard sound engine, preferring to use it as a midi controller for a software piano sound. Recently I bought Ableton Live Full Suite, before I was using the &lsquo;Grand Piano&rsquo; sound from the default install. Now there is a whole &lsquo;Piano&rsquo; Ableton Live pack, and that seems to offer much more realistic piano sounds.</p>
@@ -971,9 +1172,22 @@ I have been using my modular and semi-modular synthesizer as a main bassline syn
       <pubDate>Sun, 21 Jun 2015 16:18:11 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2015/06/21/eurorack-progress/</guid>
-      <description>Specs
-I have finished filling the top half of my Eurorack case, see above. Here is a list of modules:
-Dual VCA - A-132-3 Buffered Multiples - Intellij Buff Mult VCO #1 - A-110-1 VCO VCO #2 - A-110-1 VCO Low Pass Filter - A-120 Multiples #1 - A-180-1 Multiples #2 - A-180-1 Quantizer - A-156 Dual Quantizer Envelope Generator - A-140 ADSR Noise Generator/Random - A-118 Quad LFO - A-143-3 Quad LFO Next Moves:</description>
+      <description>&lt;p&gt;Specs&lt;/p&gt;
+&lt;p&gt;I have finished filling the top half of my Eurorack case, see above. Here is a list of modules:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.doepfer.de/a1323.htm&#34;&gt;Dual VCA - A-132-3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.intellijel.com/eurorack-modules/buff-mult/&#34;&gt;Buffered Multiples - Intellij Buff Mult&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.doepfer.de/a110.htm&#34;&gt;VCO #1 - A-110-1 VCO&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.doepfer.de/a110.htm&#34;&gt;VCO #2 - A-110-1 VCO&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.doepfer.de/a120.htm&#34;&gt;Low Pass Filter - A-120&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.doepfer.de/a180.htm&#34;&gt;Multiples #1 - A-180-1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.doepfer.de/a180.htm&#34;&gt;Multiples #2 - A-180-1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.doepfer.de/a156.htm&#34;&gt;Quantizer - A-156 Dual Quantizer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.doepfer.de/a140.htm&#34;&gt;Envelope Generator - A-140 ADSR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.doepfer.de/a118.htm&#34;&gt;Noise Generator/Random - A-118&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.doepfer.de/a1433.htm&#34;&gt;Quad LFO - A-143-3 Quad LFO&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Next Moves:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Specs</p>
 <p>I have finished filling the top half of my Eurorack case, see above. Here is a list of modules:</p>
 <ul>
@@ -1009,8 +1223,8 @@ Dual VCA - A-132-3 Buffered Multiples - Intellij Buff Mult VCO #1 - A-110-1 VCO 
       <pubDate>Fri, 30 Jan 2015 00:15:11 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2015/01/30/modular-synthesizers/</guid>
-      <description>I am putting together a small modular synthesiser setup. Modular synthesizers are synthesizers composed of small individual modules, which are wired up to create a circuit for producing sound. They were very popular in the 1970s, with big bands such as Emmerson, Lake and Palmer, Kraftwerk and Jean Michael Jarre all owning big modular setups:
-Modular synthesisers have had a resurgence in recent years with modern versions becoming available. One producer of modular synthesiser modules is Doepfer, a German company who&amp;rsquo;s modular synthesizer standard &amp;lsquo;Eurorack&amp;rsquo; has become very popular recently.</description>
+      <description>&lt;p&gt;I am putting together a small modular synthesiser setup. Modular synthesizers are synthesizers composed of small individual modules, which are wired up to create a circuit for producing sound. They were very popular in the 1970s, with big bands such as Emmerson, Lake and Palmer, Kraftwerk and Jean Michael Jarre all owning big modular setups:&lt;/p&gt;
+&lt;p&gt;Modular synthesisers have had a resurgence in recent years with modern versions becoming available. One producer of modular synthesiser modules is &lt;a href=&#34;http://www.doepfer.de&#34;&gt;Doepfer&lt;/a&gt;, a German company who&amp;rsquo;s modular synthesizer standard &amp;lsquo;Eurorack&amp;rsquo; has become very popular recently. I have decided to build a small Eurorack modular, here it is so far:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I am putting together a small modular synthesiser setup. Modular synthesizers are synthesizers composed of small individual modules, which are wired up to create a circuit for producing sound. They were very popular in the 1970s, with big bands such as Emmerson, Lake and Palmer, Kraftwerk and Jean Michael Jarre all owning big modular setups:</p>
 <p>Modular synthesisers have had a resurgence in recent years with modern versions becoming available. One producer of modular synthesiser modules is <a href="http://www.doepfer.de">Doepfer</a>, a German company who&rsquo;s modular synthesizer standard &lsquo;Eurorack&rsquo; has become very popular recently. I have decided to build a small Eurorack modular, here it is so far:</p>
 <p>The blank plates are spaces for modules that I haven&rsquo;t bought yet, I am slowly accumulating them. I have currently been wiring my modular setup to my &lsquo;semi-modular&rsquo; synths. They include the Microbrute, and 2x Dark Energy MK1s synths, shown below:</p>
@@ -1032,12 +1246,20 @@ Modular synthesisers have had a resurgence in recent years with modern versions 
       <pubDate>Wed, 29 Jan 2014 00:13:12 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2014/01/29/my-computer-build/</guid>
-      <description>Updated: Reorganised, replaced Tiamat headset for KAVE.
-I use my computer a lot, for work (software development), gaming and music production. I wanted to build a high-end computer setup, as I&amp;rsquo;ve always lagged behind with upgrades before. So I gradually have been accumulating and swapping bits around to make the setup above.
-Internals
-Case Motherboard CPU CPU Cooler RAM Wireless Card Optical Drive PSU Visual
-Monitor Backlight GPU Audio
-Headphones Soundcard Headset Speakers Speaker Stands Mixer Desktop Microphone Peripherals</description>
+      <description>&lt;p&gt;&lt;strong&gt;Updated:&lt;/strong&gt; Reorganised, replaced Tiamat headset for KAVE.&lt;/p&gt;
+&lt;p&gt;I use my computer a lot, for work (software development), gaming and music production. I wanted to build a high-end computer setup, as I&amp;rsquo;ve always lagged behind with upgrades before. So I gradually have been accumulating and swapping bits around to make the setup above.&lt;/p&gt;
+&lt;p&gt;Internals&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#case&#34;&gt;Case&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#motherboard&#34;&gt;Motherboard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cpu&#34;&gt;CPU&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cpucooler&#34;&gt;CPU Cooler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#ram&#34;&gt;RAM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#wifi&#34;&gt;Wireless Card&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#optical&#34;&gt;Optical Drive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#psu&#34;&gt;PSU&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Visual&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><strong>Updated:</strong> Reorganised, replaced Tiamat headset for KAVE.</p>
 <p>I use my computer a lot, for work (software development), gaming and music production. I wanted to build a high-end computer setup, as I&rsquo;ve always lagged behind with upgrades before. So I gradually have been accumulating and swapping bits around to make the setup above.</p>
 <p>Internals</p>
@@ -1196,9 +1418,8 @@ Headphones Soundcard Headset Speakers Speaker Stands Mixer Desktop Microphone Pe
       <pubDate>Tue, 11 Jun 2013 16:08:16 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2013/06/11/iterm-for-osx-for-a-colourful-terminal-experience/</guid>
-      <description>iTerm is much better than the standard OSX terminal client, not least because it has compatiablity with xterm256-color terminal emulation. xterm256-color emulation will give your terminal access to 256 colours instead of the usual 16. Much better, not just for looking pretty, but for distinguishing between different types of data in an editor like VIM or even in Cucumber output (see picture above). It&amp;rsquo;s also free.
-http://iterm.sourceforge.net
-Once installed, you will have to go in to the preferences and set your &amp;lsquo;Report Terminal Type&amp;rsquo; to be &amp;lsquo;xterm256-color&amp;rsquo;.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2013/06/screen-shot-2013-06-11-at-17-06-36.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2013/06/screen-shot-2013-06-11-at-17-06-36.png&#34; type=&#34;&#34; alt=&#34;Screen Shot 2013-06-11 at 17.06.36&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;iTerm is much better than the standard OSX terminal client, not least because it has compatiablity with xterm256-color terminal emulation. xterm256-color emulation will give your terminal access to 256 colours instead of the usual 16. Much better, not just for looking pretty, but for distinguishing between different types of data in an editor like VIM or even in Cucumber output (see picture above). It&amp;rsquo;s also free.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2013/06/screen-shot-2013-06-11-at-17-06-36.png"><img loading="lazy" src="/wp-content/uploads/2013/06/screen-shot-2013-06-11-at-17-06-36.png" type="" alt="Screen Shot 2013-06-11 at 17.06.36"  /></a></p>
 <p>iTerm is much better than the standard OSX terminal client, not least because it has compatiablity with xterm256-color terminal emulation. xterm256-color emulation will give your terminal access to 256 colours instead of the usual 16. Much better, not just for looking pretty, but for distinguishing between different types of data in an editor like VIM or even in Cucumber output (see picture above). It&rsquo;s also free.</p>
 <p><a href="http://iterm.sourceforge.net">http://iterm.sourceforge.net</a></p>
@@ -1212,8 +1433,8 @@ Once installed, you will have to go in to the preferences and set your &amp;lsqu
       <pubDate>Mon, 17 May 2010 02:29:54 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2010/05/17/art-for-flash-games/</guid>
-      <description>Lately I&amp;rsquo;ve been thinking about making a Flash game or application. Although I haven&amp;rsquo;t made one yet, my current understanding is that most projects of this type require a lot of artwork.
-I found this article, and was impressed at the quality and the resources mentioned: http://freelanceflashgames.com/news/2009/03/25/the-big-guide-to-hiring-an-artist/</description>
+      <description>&lt;p&gt;Lately I&amp;rsquo;ve been thinking about making a Flash game or application. Although I haven&amp;rsquo;t made one yet, my current understanding is that most projects of this type require a lot of artwork.&lt;/p&gt;
+&lt;p&gt;I found this article, and was impressed at the quality and the resources mentioned: &lt;a href=&#34;http://freelanceflashgames.com/news/2009/03/25/the-big-guide-to-hiring-an-artist/&#34;&gt;http://freelanceflashgames.com/news/2009/03/25/the-big-guide-to-hiring-an-artist/&lt;/a&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Lately I&rsquo;ve been thinking about making a Flash game or application. Although I haven&rsquo;t made one yet, my current understanding is that most projects of this type require a lot of artwork.</p>
 <p>I found this article, and was impressed at the quality and the resources mentioned: <a href="http://freelanceflashgames.com/news/2009/03/25/the-big-guide-to-hiring-an-artist/">http://freelanceflashgames.com/news/2009/03/25/the-big-guide-to-hiring-an-artist/</a></p>
 ]]></content:encoded>
@@ -1225,9 +1446,9 @@ I found this article, and was impressed at the quality and the resources mention
       <pubDate>Sat, 17 Oct 2009 23:05:11 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2009/10/17/speed-climbing/</guid>
-      <description>I&amp;rsquo;m going to take a break from the purely technical posts to get more people to see this video. Here the late Dan Osman speed-climbs a cliff without any safety equipment.
-http://www.youtube-nocookie.com/v/Fpm0m6bVfrM&amp;amp;hl=en&amp;amp;fs=1&amp;amp;rel=0
-Risky? Just a bit. A few years later he lost his life during a similar attempt. But no-one can doubt the guts required, and the level of skill he achieved, in this type of climbing.</description>
+      <description>&lt;p&gt;I&amp;rsquo;m going to take a break from the purely technical posts to get more people to see this video. Here the late Dan Osman speed-climbs a cliff without any safety equipment.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.youtube-nocookie.com/v/Fpm0m6bVfrM&amp;amp;hl=en&amp;amp;fs=1&amp;amp;rel=0&#34;&gt;http://www.youtube-nocookie.com/v/Fpm0m6bVfrM&amp;amp;hl=en&amp;amp;fs=1&amp;amp;rel=0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Risky? Just a bit. A few years later he lost his life during a similar attempt. But no-one can doubt the guts required, and the level of skill he achieved, in this type of climbing.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I&rsquo;m going to take a break from the purely technical posts to get more people to see this video. Here the late Dan Osman speed-climbs a cliff without any safety equipment.</p>
 <p><a href="http://www.youtube-nocookie.com/v/Fpm0m6bVfrM&amp;hl=en&amp;fs=1&amp;rel=0">http://www.youtube-nocookie.com/v/Fpm0m6bVfrM&amp;hl=en&amp;fs=1&amp;rel=0</a></p>
 <p>Risky? Just a bit. A few years later he lost his life during a similar attempt. But no-one can doubt the guts required, and the level of skill he achieved, in this type of climbing.</p>

@@ -183,7 +183,8 @@ function toggleThemeListener() {
   <section class="entry-content">
     
       <p>I couldn’t find a concise guide to setting this up quickly so thought it was worth a post. To quickly get something working and create a https server using the above versions of openssl and node.js, do the following:
-Generate self-signed server certificate with no password sudo openssl req -x509 -newkey rsa:2048 -keyout ./csr.pem -out server.crt -days 3001 -nodes Use this node.js code to setup a server quickly const https = require(&#39;https&#39;); const fs = require(&#39;fs&#39;); const options = { key: fs....</p>
+Generate self-signed server certificate with no password sudo openssl req -x509 -newkey rsa:2048 -keyout ./csr.pem -out server.crt -days 3001 -nodes Use this node.js code to setup a server quickly const https = require(&#39;https&#39;); const fs = require(&#39;fs&#39;); const options = { key: fs.readFileSync(&#39;csr.pem&#39;), cert: fs.readFileSync(&#39;server.crt&#39;) }; https.createServer(options, (req, res) =&gt; { res.writeHead(200); res.end(&#39;hello world\n&#39;); }).listen(8000); Go to https://localhost:8000 and accept the certificate, you should see ‘hello world’
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">

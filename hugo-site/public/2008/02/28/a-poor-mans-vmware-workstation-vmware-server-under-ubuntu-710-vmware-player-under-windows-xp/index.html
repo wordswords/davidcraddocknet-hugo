@@ -8,7 +8,13 @@
 <title>A poor man&#39;s VMWare Workstation: VMWare Server under Ubuntu 7.10 &#43; VMWare Player under Windows XP | DavidCraddock.net</title>
 <meta name="keywords" content="">
 <meta name="description" content="I finally setup my Dell Lattitude D630 laptop the way I wanted it last night, and thought I&rsquo;d do a quick writeup about it. Here is the parttition table:
-A 40GB Windows XP partition, with VMWare Player installed, which I will be using for Windows applications that don&rsquo;t play well in virtualised mode (eg media applications). I will also be using it as the main platform for running VMs. A basic 5GB root &#43; 1.">
+
+A 40GB Windows XP partition, with VMWare Player installed, which I will be using for Windows applications that don&rsquo;t play well in virtualised mode (eg media applications). I will also be using it as the main platform for running VMs.
+A basic 5GB root &#43; 1.4GB swap 7.10 Ubuntu server partition, with VMWare Server installed (for creating, advanced editing and performing network testing on VMs). I used these VMWare server on Ubuntu 7.10 tutorials.
+A 36GB NTFS partition for storing VMs
+A 26GB NTFS media partition for media I want to share between VMs and the two operating systems on the disc.
+
+We use VMWare servers at work to host our infrastructure, so this setup will be very useful for me. I can now:">
 <meta name="author" content="Reorx">
 <link rel="canonical" href="https://davidcraddock.net/2008/02/28/a-poor-mans-vmware-workstation-vmware-server-under-ubuntu-710-vmware-player-under-windows-xp/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.97d99fcdd90c38f6e3343e959a97a0295b30f590730a4ece2347f7f24ad997d1.css" integrity="sha256-l9mfzdkMOPbjND6VmpegKVsw9ZBzCk7OI0f38krZl9E=" rel="preload stylesheet" as="style">
@@ -18,10 +24,22 @@ A 40GB Windows XP partition, with VMWare Player installed, which I will be using
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="A poor man&#39;s VMWare Workstation: VMWare Server under Ubuntu 7.10 &#43; VMWare Player under Windows XP | DavidCraddock.net" />
 <meta name="twitter:description" content="I finally setup my Dell Lattitude D630 laptop the way I wanted it last night, and thought I&rsquo;d do a quick writeup about it. Here is the parttition table:
-A 40GB Windows XP partition, with VMWare Player installed, which I will be using for Windows applications that don&rsquo;t play well in virtualised mode (eg media applications). I will also be using it as the main platform for running VMs. A basic 5GB root &#43; 1." />
+
+A 40GB Windows XP partition, with VMWare Player installed, which I will be using for Windows applications that don&rsquo;t play well in virtualised mode (eg media applications). I will also be using it as the main platform for running VMs.
+A basic 5GB root &#43; 1.4GB swap 7.10 Ubuntu server partition, with VMWare Server installed (for creating, advanced editing and performing network testing on VMs). I used these VMWare server on Ubuntu 7.10 tutorials.
+A 36GB NTFS partition for storing VMs
+A 26GB NTFS media partition for media I want to share between VMs and the two operating systems on the disc.
+
+We use VMWare servers at work to host our infrastructure, so this setup will be very useful for me. I can now:" />
 <meta property="og:title" content="A poor man&#39;s VMWare Workstation: VMWare Server under Ubuntu 7.10 &#43; VMWare Player under Windows XP | DavidCraddock.net" />
 <meta property="og:description" content="I finally setup my Dell Lattitude D630 laptop the way I wanted it last night, and thought I&rsquo;d do a quick writeup about it. Here is the parttition table:
-A 40GB Windows XP partition, with VMWare Player installed, which I will be using for Windows applications that don&rsquo;t play well in virtualised mode (eg media applications). I will also be using it as the main platform for running VMs. A basic 5GB root &#43; 1." />
+
+A 40GB Windows XP partition, with VMWare Player installed, which I will be using for Windows applications that don&rsquo;t play well in virtualised mode (eg media applications). I will also be using it as the main platform for running VMs.
+A basic 5GB root &#43; 1.4GB swap 7.10 Ubuntu server partition, with VMWare Server installed (for creating, advanced editing and performing network testing on VMs). I used these VMWare server on Ubuntu 7.10 tutorials.
+A 36GB NTFS partition for storing VMs
+A 26GB NTFS media partition for media I want to share between VMs and the two operating systems on the disc.
+
+We use VMWare servers at work to host our infrastructure, so this setup will be very useful for me. I can now:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2008/02/28/a-poor-mans-vmware-workstation-vmware-server-under-ubuntu-710-vmware-player-under-windows-xp/" />
     <meta property="og:image" content="https://davidcraddock.net/cover.png"/>
@@ -56,7 +74,7 @@ A 40GB Windows XP partition, with VMWare Player installed, which I will be using
   "@type": "BlogPosting",
   "headline": "A poor man's VMWare Workstation: VMWare Server under Ubuntu 7.10 + VMWare Player under Windows XP | DavidCraddock.net",
   "name": "A poor man\u0027s VMWare Workstation: VMWare Server under Ubuntu 7.10 \u002b VMWare Player under Windows XP",
-  "description": "I finally setup my Dell Lattitude D630 laptop the way I wanted it last night, and thought I\u0026rsquo;d do a quick writeup about it. Here is the parttition table:\nA 40GB Windows XP partition, with VMWare Player installed, which I will be using for Windows applications that don\u0026rsquo;t play well in virtualised mode (eg media applications). I will also be using it as the main platform for running VMs. A basic 5GB root + 1.",
+  "description": "I finally setup my Dell Lattitude D630 laptop the way I wanted it last night, and thought I\u0026rsquo;d do a quick writeup about it. Here is the parttition table:\nA 40GB Windows XP partition, with VMWare Player installed, which I will be using for Windows applications that don\u0026rsquo;t play well in virtualised mode (eg media applications). I will also be using it as the main platform for running VMs. A basic 5GB root + 1.4GB swap 7.10 Ubuntu server partition, with VMWare Server installed (for creating, advanced editing and performing network testing on VMs). I used these VMWare server on Ubuntu 7.10 tutorials. A 36GB NTFS partition for storing VMs A 26GB NTFS media partition for media I want to share between VMs and the two operating systems on the disc. We use VMWare servers at work to host our infrastructure, so this setup will be very useful for me. I can now:\n",
   "keywords": [
     
   ],

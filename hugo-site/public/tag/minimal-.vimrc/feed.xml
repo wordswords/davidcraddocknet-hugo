@@ -13,8 +13,8 @@
       <pubDate>Thu, 18 Mar 2010 19:23:07 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2010/03/18/my-minimal-vim-config/</guid>
-      <description>This is the absolute minimum I do when I have to log onto a new server or shell account that I haven&amp;rsquo;t used before, that I will need to edit text files with.
-First I figure out whether VIM is really installed. A lot of installs, especially those based on ubuntu, ship with VI aliased to VIM, but the VIM install is usually not really VIM at all, and behaves exactly like VI but with some minor bugs fixed.</description>
+      <description>&lt;p&gt;This is the absolute minimum I do when I have to log onto a new server or shell account that I haven&amp;rsquo;t used before, that I will need to edit text files with.&lt;/p&gt;
+&lt;p&gt;First I figure out whether VIM is really installed. A lot of installs, especially those based on ubuntu, ship with VI aliased to VIM, but the VIM install is usually not really VIM at all, and behaves exactly like VI but with some minor bugs fixed. This is not what I want.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>This is the absolute minimum I do when I have to log onto a new server or shell account that I haven&rsquo;t used before, that I will need to edit text files with.</p>
 <p>First I figure out whether VIM is really installed. A lot of installs, especially those based on ubuntu, ship with VI aliased to VIM, but the VIM install is usually not really VIM at all, and behaves exactly like VI but with some minor bugs fixed. This is not what I want.</p>
 <p>So first I figure out what distribution of linux I&rsquo;m using through executing the following command:</p>

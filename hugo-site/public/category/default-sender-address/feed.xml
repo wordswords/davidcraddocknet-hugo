@@ -13,9 +13,10 @@
       <pubDate>Wed, 10 Mar 2010 06:36:26 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2010/03/10/changing-the-default-from-email-address-for-php/</guid>
-      <description>I&amp;rsquo;ve had to solve this problem a couple of times at least, and it&amp;rsquo;s quite a common task, so I thought I&amp;rsquo;d document it here.
-When you send emails to users of your site through using the PHP mail() function, they will sometimes turn up in the mailbox of customers of your site with the following from address:
-From: Root &amp;lt;root@apache.ecommercecompany.com&amp;gt; This makes absolutely no sense to your customers, and often they will think it is spam and delete it.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve had to solve this problem a couple of times at least, and it&amp;rsquo;s quite a common task, so I thought I&amp;rsquo;d document it here.&lt;/p&gt;
+&lt;p&gt;When you send emails to users of your site through using the PHP mail() function, they will sometimes turn up in the mailbox of customers of your site with the following from address:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;From: Root &amp;lt;root@apache.ecommercecompany.com&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
       <content:encoded><![CDATA[<p>I&rsquo;ve had to solve this problem a couple of times at least, and it&rsquo;s quite a common task, so I thought I&rsquo;d document it here.</p>
 <p>When you send emails to users of your site through using the PHP mail() function, they will sometimes turn up in the mailbox of customers of your site with the following from address:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>From: Root &lt;root@apache.ecommercecompany.com&gt;

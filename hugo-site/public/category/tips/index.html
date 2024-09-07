@@ -183,7 +183,7 @@ function toggleThemeListener() {
   <section class="entry-content">
     
       <p>If you’re currently in high school in the UK and want to be a GOOD and EMPLOYED software engineer.. this is my advice.
-Start programming on personal projects right away, and keep it up during your entire working career. Always have something going on in the background. Get into a RUSSELL GROUP university in the UK and take a technical, demanding degree in a computing-related discipline, for example, Physics, Electronic Engineering, Maths, Computer Science, Artificial Intelligence....</p>
+Start programming on personal projects right away, and keep it up during your entire working career. Always have something going on in the background. Get into a RUSSELL GROUP university in the UK and take a technical, demanding degree in a computing-related discipline, for example, Physics, Electronic Engineering, Maths, Computer Science, Artificial Intelligence. If you can’t get into a university and course that isn’t in the top 25% of courses for your subject in the UK, and someone isn’t paying all your bills (e.g rich parents), don’t bother going to university, It’s not worth the loan. Find another way. Look into apprenticeships. Try to not be a total ’tech head’ and develop some creative and artistic side to you, taking up writing is a really good idea as it improves your thinking and communication skills. Ideally learn to write humanities essays to the standard of the first year humanities majors at your university. Try and get onto as many technical internships and technical work experience as possible throughout your degree. Once you have graduated, and found that the Junior tech worker job market is depressingly non-existant, move back in with your parents and start your informal and free ‘post-graduate’ learning. Take AT LEAST this free course but also certifications such as AWS certs, and anything that you have researched on Reddit etc that you can do cheaply and is sought after by your chosen target job (as evidenced by being mentioned on job descriptions of jobs you’d like to apply for). Increase your work on your personal projects and move to open source them and build up a following from them, and possibly a side-income. Keep in contact with your old uni friends, especially the ones that have got jobs. Read ‘So Good They Can’t Ignore You’ by Cal Newport, learn to market yourself, build your LinkedIn presence, network like crazy, and hopefully you will get your foot in the door with that ‘all important’ first job that you can launch a career off of. You’ll certainly deserve it. </p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -205,7 +205,8 @@ Start programming on personal projects right away, and keep it up during your en
   <section class="entry-content">
     
       <p>I have been working from home, the majority of the time, for over 5 years. It took a lot of adjustment, and I’m still not 100% adjusted, but if you want to undertake this, then these are my tips.
-Note that a big part of the benefit from working from home is the total flexibility in work environment, so these are only tips that work for me - they might not work for you!...</p>
+Note that a big part of the benefit from working from home is the total flexibility in work environment, so these are only tips that work for me - they might not work for you! However, I think there is probably quite a bit of commonality.
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -227,7 +228,8 @@ Note that a big part of the benefit from working from home is the total flexibil
   <section class="entry-content">
     
       <p>These functions are quite handy, and allow you to do things such as copy and paste errors and google for them without having to manually open a browser. You have to enclose arguments to both functions in single quotes, e.g. ‘chrome ‘http://www.google.co.uk’ and google ‘one two three four’. You should add these to your config file at ~/.config/fish/config.fish and make sure Google Chrome is already installed.
-[code language=“bash”] function chrome /usr/bin/open -a ‘/Applications/Google Chrome....</p>
+[code language=“bash”] function chrome /usr/bin/open -a ‘/Applications/Google Chrome.app’ $argv[1:] end function google /usr/bin/open -a ‘/Applications/Google Chrome.app’ “https://www.google.co.uk/search?q=$argv[1]” end [/code]
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -249,7 +251,8 @@ Note that a big part of the benefit from working from home is the total flexibil
   <section class="entry-content">
     
       <p>More adventures with Fish shell. I have scripted the generation of a bunch of test asset audio files in mp4 format suitable for dash streaming. I have used the audio file commandline tools ffmepg MP4Box and sox in this script, they are pretty powerful and worth installing via homebrew on OSX.
-Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I’m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy....</p>
+Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I’m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy. [code lang=“bash”] #!/usr/bin/env fish # move to the asset output directory.. cd ..
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -271,7 +274,7 @@ Thoughts: I think that instead of quoting you can just output $variable, which i
   <section class="entry-content">
     
       <p>I have made a lot of different upgrades and modifications to my PC, as you can see here. Some of the upgrades have made more of a difference than others though. Here is what I think you should be concentrating on, if you’re looking to upgrade.
-Solid State Hardisk (SSD) - Solid State hard drives use flash memory instead of the moving disk platters of traditional hard disks. It is the same type of storage as your USB stick....</p>
+Solid State Hardisk (SSD) - Solid State hard drives use flash memory instead of the moving disk platters of traditional hard disks. It is the same type of storage as your USB stick. This type of storage is a lot faster to access compared to magnetic storage. Upgrading will result in a huge performance increase for most systems if you are changing from a traditional hard disk. Get as big a size as you can afford. If you play computer games or do a lot of media production work, then the added space will be useful. They have reduced in price over the years, the first SSD I bought was £120 for 120GB SSD back in 2012, in 2015 I just bought a 250GB SSD for £50. So it’s definitely affordable now. Large Monitor - If you can get a 27&#34;-32&#34; monitor then do so. It has made so much difference to the day to day usage of my PC. I would recommend 1440p if you can. 1440p is half the resolution of 4K. I wouldn’t recommend a 4K monitor yet in 2015 as I don’t think they have enough software support, and the cost is considerable for a decent screen. If you’re a gamer, then you might want to aim for a higher refresh speed, but I’d say this should be a secondary consideration to the screen space. Look on TFTCentral for reviews and guides to the different screen types available. Good Soundcard and Surround Sound Speaker System - Headphones are OK, but even a basic surround sound soundcard and speaker system is going to be so much better. I have a Asus Xonar Phoebus Solo which I recommend, it’s a 7.1 surround sound card. I have a cheap £60 set of surround sound speakers, Logitech Z506 Surround Sound Speakers. Surround sound really makes a difference in gaming and movies. I think it’s the seperate subwoofer that has the most effect, so if you are not that convinced by surround sound, you could get a 2.1 (two speakers and a subwoofer) setup for a bit less. Ergonomic Mouse and good mousemat - Chances are, most of the time you’re at your PC, you will be using the mouse. It is therefore really important you have a good mouse that won’t damange your hand after a few years use and is comfortable to use. Modern mice use laser scanners to track the position of the mouse on a flat surface. A higher resolution laser (measured in DPI - dots per inch) means that you can get more accurate tracking. Therefore look for high DPI mice for gaming or fine detail work as well as an ergonomic fit and lots of buttons. I recommend Logitech mice, after having had several Razer mice that didn’t last very long. I would also pick up a steel mousemat, as they never get tangled up in your mouse like the fibre mousemats do. Recent Graphics Card - If you are into gaming or 3D modelling work, you would often prioritise this over any other upgrade. A new graphics card means that your existing games will run faster on higher detail settings, and you can play new games on higher settings with better framerate. I don’t think it matters too much whether you go for Nvidea or AMD as long as you can run the games you want to run. If you are not interested in running the latest games, then perhaps you don’t need this, but you may be missing out in the future. </p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -293,7 +296,8 @@ Solid State Hardisk (SSD) - Solid State hard drives use flash memory instead of 
   <section class="entry-content">
     
       <p>As you can see, I buy a lot of bits and pieces for my PC. Occasionally though, I buy something that I feel was a disappointment, or not worth the investment. This post is meant to caution against other people making the same mistake.
-Razer Tiamat - 7.1 Surround Sound Gaming Headset, with microphone (http://www.razerzone.com) This was a big dissapointment in a couple of ways. The first, and most obvious in hindsight now I’m actually working on spatial audio for a living at BBC R&amp;D, is that 7....</p>
+Razer Tiamat - 7.1 Surround Sound Gaming Headset, with microphone (http://www.razerzone.com) This was a big dissapointment in a couple of ways. The first, and most obvious in hindsight now I’m actually working on spatial audio for a living at BBC R&amp;D, is that 7.1 surround sound headsets are a joke. There is no way you can get enough seperation between the different speaker drivers when your ears are so close to the speakers. If you have a soundcard or motherboard that supports surround sound, do yourself a favour and get a surround sound speaker set.
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -314,7 +318,8 @@ Razer Tiamat - 7.1 Surround Sound Gaming Headset, with microphone (http://www.ra
   </header>
   <section class="entry-content">
     
-      <p>If you haven’t seen If This Then That.com then I encourage you to check it out. It has a number of ways of automating your life, and can do things like text message you when you get mentioned on Twitter, up to deactivate your smart alarm when you’re nearing your house. This message will (hopefully) be posted on my Facebook page and my Twitter account, all thanks to IFTTT.com.</p>
+      <p>If you haven’t seen If This Then That.com then I encourage you to check it out. It has a number of ways of automating your life, and can do things like text message you when you get mentioned on Twitter, up to deactivate your smart alarm when you’re nearing your house. This message will (hopefully) be posted on my Facebook page and my Twitter account, all thanks to IFTTT.com.
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -336,7 +341,8 @@ Razer Tiamat - 7.1 Surround Sound Gaming Headset, with microphone (http://www.ra
   <section class="entry-content">
     
       <p>I am learning JS for work. This is a pretty good summary of the most common scoping rules in JavaScript:
-http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript</p>
+http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript
+</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -360,7 +366,7 @@ http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-java
       <p>A quick tip this, but a useful one. You can tail a log file in the background while running a script in the foreground. So for example, I frequently execute the following commands:
 1.
 tail -f /var/log/httpd.log &amp; /etc/init.d/apache restart 2. (The log file will spool onto the terminal as Apache is restarted.)
-3. Once you are finished viewing the log file, foreground the log file process and kill it:...</p>
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -381,7 +387,8 @@ tail -f /var/log/httpd.log &amp; /etc/init.d/apache restart 2. (The log file wil
   </header>
   <section class="entry-content">
     
-      <p>I am currently on holiday in Tenerife, and although I really like it here, one thing I do not like is the internet connection we have in our resort. Sometimes networked applications will just hang with no warning and there will be minutes where it’s not clear what is going on. Here are some ways you can find a little bit more about what is happening when an application is slow or seems to hang when you have a poor internet connection....</p>
+      <p>I am currently on holiday in Tenerife, and although I really like it here, one thing I do not like is the internet connection we have in our resort. Sometimes networked applications will just hang with no warning and there will be minutes where it’s not clear what is going on. Here are some ways you can find a little bit more about what is happening when an application is slow or seems to hang when you have a poor internet connection. Execute the following commands each in a separate terminal window.
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">

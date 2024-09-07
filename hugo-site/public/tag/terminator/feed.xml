@@ -13,12 +13,21 @@
       <pubDate>Thu, 20 Jun 2013 22:15:52 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2013/06/20/256-color-vim-on-crunchbang-waldorf/</guid>
-      <description>To get 256 colors working within terminator in Crunchbang Waldorf, I had to do the following:
-Add to ~/.bashrc
-export TERM=xterm-256color Install a 256 color VIM colorcheme, see desert256 for example.
-Add the following to ~/.vimrc:
-set t_Co=256 set t_AB=^[[48;5;%dm set t_AF=^[[38;5;%dm &amp;rsquo;t_Co&amp;rsquo; specifies exactly how many colours VIM can use. The other two lines seem to be Debian-specific color code escape sequences.
-If you want 256 color VIM for your root user when you sudo edit, then edit /usr/share/vim/vimrc and copy across your settings from your local ~/.</description>
+      <description>&lt;p&gt;To get 256 colors working within terminator in Crunchbang Waldorf, I had to do the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Add to ~/.bashrc&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;export&lt;/span&gt; TERM&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;xterm&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#099&#34;&gt;256&lt;/span&gt;color
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install a 256 color VIM colorcheme, see &lt;a href=&#34;http://www.vim.org/scripts/script.php?script_id=1243&#34;&gt;desert256 for example&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add the following to ~/.vimrc:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;set t_Co=256
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;set t_AB=^[[48;5;%dm
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;set t_AF=^[[38;5;%dm
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
       <content:encoded><![CDATA[<p>To get 256 colors working within terminator in Crunchbang Waldorf, I had to do the following:</p>
 <ol>
 <li>

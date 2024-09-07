@@ -186,8 +186,7 @@ function toggleThemeListener() {
 Add to ~/.bashrc
 export TERM=xterm-256color Install a 256 color VIM colorcheme, see desert256 for example.
 Add the following to ~/.vimrc:
-set t_Co=256 set t_AB=^[[48;5;%dm set t_AF=^[[38;5;%dm ’t_Co’ specifies exactly how many colours VIM can use. The other two lines seem to be Debian-specific color code escape sequences.
-If you want 256 color VIM for your root user when you sudo edit, then edit /usr/share/vim/vimrc and copy across your settings from your local ~/....</p>
+set t_Co=256 set t_AB=^[[48;5;%dm set t_AF=^[[38;5;%dm ...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -209,7 +208,8 @@ If you want 256 color VIM for your root user when you sudo edit, then edit /usr/
   <section class="entry-content">
     
       <p>This is the absolute minimum I do when I have to log onto a new server or shell account that I haven’t used before, that I will need to edit text files with.
-First I figure out whether VIM is really installed. A lot of installs, especially those based on ubuntu, ship with VI aliased to VIM, but the VIM install is usually not really VIM at all, and behaves exactly like VI but with some minor bugs fixed....</p>
+First I figure out whether VIM is really installed. A lot of installs, especially those based on ubuntu, ship with VI aliased to VIM, but the VIM install is usually not really VIM at all, and behaves exactly like VI but with some minor bugs fixed. This is not what I want.
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">

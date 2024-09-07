@@ -13,9 +13,10 @@
       <pubDate>Sat, 19 Feb 2022 05:51:56 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2022/02/19/working-with-jenkinsfiles-in-vim/</guid>
-      <description>Using Jenkinsfiles in repositories for declarative pipelines, which is an example as infrastructure as code, is absolutely the right thing to do, in my opinion.
-However the tooling for debugging and error checking Jenkinsfiles is currently quite difficult.
-Setup Jenkinsfile linter First of all you need to make sure to be able to access the Jenkinsfile linter. This linter is processed on the Jenkins server itself, unusually. There is a configuration option that requires adminstrator access to the Jenkins server.</description>
+      <description>&lt;p&gt;Using Jenkinsfiles in repositories for declarative pipelines, which is an example as infrastructure as code, is absolutely the right thing to do, in my opinion.&lt;/p&gt;
+&lt;p&gt;However the tooling for debugging and error checking Jenkinsfiles is currently quite difficult.&lt;/p&gt;
+&lt;h2 id=&#34;setup-jenkinsfile-linter&#34;&gt;Setup Jenkinsfile linter&lt;/h2&gt;
+&lt;p&gt;First of all you need to make sure to be able to access the Jenkinsfile linter. This linter is processed on the Jenkins server itself, unusually. There is a configuration option that requires adminstrator access to the Jenkins server.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Using Jenkinsfiles in repositories for declarative pipelines, which is an example as infrastructure as code, is absolutely the right thing to do, in my opinion.</p>
 <p>However the tooling for debugging and error checking Jenkinsfiles is currently quite difficult.</p>
 <h2 id="setup-jenkinsfile-linter">Setup Jenkinsfile linter</h2>
@@ -44,8 +45,8 @@ Setup Jenkinsfile linter First of all you need to make sure to be able to access
       <pubDate>Fri, 27 Mar 2009 23:47:59 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2009/03/27/eclipse-342-pydev-eclim-win/</guid>
-      <description>So, after saying all that stuff about how vimplugin and EasyEclipse was great, I actually started to use the setup heavily, and it started to annoy me.
-For one, EE is not a recent build of eclipse, nor does it come with a full set of recent plugins. This makes it annoyingly difficult to use when you want to use more than the set of plugins it packages for you. As far as vimplugin goes, it does not provide the vim integration I thought it might from embedded vim.</description>
+      <description>&lt;p&gt;So, after saying all that stuff about how vimplugin and EasyEclipse was great, I actually started to use the setup heavily, and it started to annoy me.&lt;/p&gt;
+&lt;p&gt;For one, EE is not a recent build of eclipse, nor does it come with a full set of recent plugins. This makes it annoyingly difficult to use when you want to use more than the set of plugins it packages for you. As far as vimplugin goes, it does not provide the vim integration I thought it might from embedded vim. Not really even close.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So, after saying all that stuff about how vimplugin and EasyEclipse was great, I actually started to use the setup heavily, and it started to annoy me.</p>
 <p>For one, EE is not a recent build of eclipse, nor does it come with a full set of recent plugins. This makes it annoyingly difficult to use when you want to use more than the set of plugins it packages for you. As far as vimplugin goes, it does not provide the vim integration I thought it might from embedded vim. Not really even close.</p>
 <p>What I use now, after lots of trial and error, and at least 4 reinstalls of Eclipse, is a combination of Eclipse 3.4.2, <a href="http://eclim.sourceforge.net/">Eclim</a>, (which is the most mature of the free vi-binding plugins around, and actually includes an improved version of the vimplugin previously mentioned), and the latest pydev, Mylyn and Subeclipse.</p>

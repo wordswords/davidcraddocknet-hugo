@@ -13,9 +13,16 @@
       <pubDate>Thu, 29 Sep 2022 00:00:36 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2022/09/29/tips-for-new-ubuntu-users/</guid>
-      <description>Here are some extra tips if you&amp;rsquo;re just getting started out on Ubuntu.
-You don&amp;rsquo;t have to go through the UI to shut down or reboot your computer. You can do it from the command line. The commands are:
-sudo reboot # to reboot sudo poweroff # to shut down and power off the computer You can get a lot more information on your computers startup and shutdown sequences by removing the default Ubuntu splash screen that obscures this.</description>
+      <description>&lt;p&gt;Here are some extra tips if you&amp;rsquo;re just getting started out on Ubuntu.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;You don&amp;rsquo;t have to go through the UI to shut down or reboot your computer. You can do it from the command line. The commands are:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo reboot # to reboot
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo poweroff # to shut down and power off the computer
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can get a lot more information on your computers startup and shutdown sequences by removing the default Ubuntu splash screen that obscures this. You should definitely do this if you want to learn more about what your system is
+actually doing under the hood, especially if you need to troubleshoot what it&amp;rsquo;s doing. To do this:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Here are some extra tips if you&rsquo;re just getting started out on Ubuntu.</p>
 <ol>
 <li>
@@ -45,8 +52,8 @@ shuts down, or reboots.</p>
       <pubDate>Tue, 13 Jul 2010 13:02:51 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2010/07/13/restoring-ubuntu-10-4s-bootloader-after-a-windows-7-install/</guid>
-      <description>I installed Windows 7 after I had installed Ubuntu 10.4. Windows 7 overwrote the Linux bootloader &amp;ldquo;grub&amp;rdquo; on my master boot record. Therefore I had to restore it.
-I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under the LiveCD, I then restored the Grub bootloader by chrooting into my old install, using the linux command line. This is a fairly complex thing to do, and so I recommend you use this approach only if you&amp;rsquo;re are confident with the linux command line:</description>
+      <description>&lt;p&gt;I installed Windows 7 after I had installed Ubuntu 10.4. Windows 7 overwrote the Linux bootloader &amp;ldquo;grub&amp;rdquo; on my master boot record. Therefore I had to restore it.&lt;/p&gt;
+&lt;p&gt;I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under the LiveCD, I then restored the Grub bootloader by chrooting into my old install, using the linux command line. This is a fairly complex thing to do, and so I recommend you use this approach only if you&amp;rsquo;re are confident with the linux command line:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I installed Windows 7 after I had installed Ubuntu 10.4. Windows 7 overwrote the Linux bootloader &ldquo;grub&rdquo; on my master boot record. Therefore I had to restore it.</p>
 <p>I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under the LiveCD, I then restored the Grub bootloader by chrooting into my old install, using the linux command line. This is a fairly complex thing to do, and so I recommend you use this approach only if you&rsquo;re are confident with the linux command line:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># (as root under Ubuntu&#39;s LiveCD)</span>

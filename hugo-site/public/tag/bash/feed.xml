@@ -13,9 +13,8 @@
       <pubDate>Tue, 11 Jun 2013 16:08:16 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2013/06/11/iterm-for-osx-for-a-colourful-terminal-experience/</guid>
-      <description>iTerm is much better than the standard OSX terminal client, not least because it has compatiablity with xterm256-color terminal emulation. xterm256-color emulation will give your terminal access to 256 colours instead of the usual 16. Much better, not just for looking pretty, but for distinguishing between different types of data in an editor like VIM or even in Cucumber output (see picture above). It&amp;rsquo;s also free.
-http://iterm.sourceforge.net
-Once installed, you will have to go in to the preferences and set your &amp;lsquo;Report Terminal Type&amp;rsquo; to be &amp;lsquo;xterm256-color&amp;rsquo;.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2013/06/screen-shot-2013-06-11-at-17-06-36.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2013/06/screen-shot-2013-06-11-at-17-06-36.png&#34; type=&#34;&#34; alt=&#34;Screen Shot 2013-06-11 at 17.06.36&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;iTerm is much better than the standard OSX terminal client, not least because it has compatiablity with xterm256-color terminal emulation. xterm256-color emulation will give your terminal access to 256 colours instead of the usual 16. Much better, not just for looking pretty, but for distinguishing between different types of data in an editor like VIM or even in Cucumber output (see picture above). It&amp;rsquo;s also free.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2013/06/screen-shot-2013-06-11-at-17-06-36.png"><img loading="lazy" src="/wp-content/uploads/2013/06/screen-shot-2013-06-11-at-17-06-36.png" type="" alt="Screen Shot 2013-06-11 at 17.06.36"  /></a></p>
 <p>iTerm is much better than the standard OSX terminal client, not least because it has compatiablity with xterm256-color terminal emulation. xterm256-color emulation will give your terminal access to 256 colours instead of the usual 16. Much better, not just for looking pretty, but for distinguishing between different types of data in an editor like VIM or even in Cucumber output (see picture above). It&rsquo;s also free.</p>
 <p><a href="http://iterm.sourceforge.net">http://iterm.sourceforge.net</a></p>
@@ -29,10 +28,11 @@ Once installed, you will have to go in to the preferences and set your &amp;lsqu
       <pubDate>Tue, 11 Jun 2013 15:55:04 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/</guid>
-      <description>A quick tip this, but a useful one. You can tail a log file in the background while running a script in the foreground. So for example, I frequently execute the following commands:
-1.
-tail -f /var/log/httpd.log &amp;amp; /etc/init.d/apache restart 2. (The log file will spool onto the terminal as Apache is restarted.)
-3. Once you are finished viewing the log file, foreground the log file process and kill it:</description>
+      <description>&lt;p&gt;A quick tip this, but a useful one. You can tail a log file in the background while running a script in the foreground. So for example, I frequently execute the following commands:&lt;/p&gt;
+&lt;p&gt;1.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tail &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&lt;/span&gt;f &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;var&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#0086b3&#34;&gt;log&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;/&lt;/span&gt;httpd&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;log &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;amp;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;/&lt;/span&gt;etc&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;/&lt;/span&gt;init&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;d&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;/&lt;/span&gt;apache restart
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;2. (The log file will spool onto the terminal as Apache is restarted.)&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>A quick tip this, but a useful one. You can tail a log file in the background while running a script in the foreground. So for example, I frequently execute the following commands:</p>
 <p>1.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>tail <span style="color:#000;font-weight:bold">-</span>f <span style="color:#000;font-weight:bold">/</span><span style="color:#000;font-weight:bold">var</span><span style="color:#000;font-weight:bold">/</span><span style="color:#0086b3">log</span><span style="color:#000;font-weight:bold">/</span>httpd<span style="color:#000;font-weight:bold">.</span>log <span style="color:#000;font-weight:bold">&amp;</span>
@@ -51,9 +51,10 @@ tail -f /var/log/httpd.log &amp;amp; /etc/init.d/apache restart 2. (The log file
       <pubDate>Thu, 18 Mar 2010 19:55:51 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2010/03/18/long-bash-history-files-are-great/</guid>
-      <description>When I&amp;rsquo;m installing software, or doing some complicated stuff on the linux command line, which nowadays is pretty much all the time, I will sometimes want to remember exactly what I typed.
-Now the normal /home/david/.bash_history file is usually fine for that. Run this command, for example, and you will see the commands you typed in before you logged out of the server last time you used it:
-cat ~/.bash_history You can also find out what you typed in this session, ie: since you logged in, by typing this:</description>
+      <description>&lt;p&gt;When I&amp;rsquo;m installing software, or doing some complicated stuff on the linux command line, which nowadays is pretty much all the time, I will sometimes want to remember exactly what I typed.&lt;/p&gt;
+&lt;p&gt;Now the normal /home/david/.bash_history file is usually fine for that. Run this command, for example, and you will see the commands you typed in before you logged out of the server last time you used it:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cat ~/.bash_history
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
       <content:encoded><![CDATA[<p>When I&rsquo;m installing software, or doing some complicated stuff on the linux command line, which nowadays is pretty much all the time, I will sometimes want to remember exactly what I typed.</p>
 <p>Now the normal /home/david/.bash_history file is usually fine for that. Run this command, for example, and you will see the commands you typed in before you logged out of the server last time you used it:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>cat ~/.bash_history

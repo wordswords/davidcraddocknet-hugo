@@ -13,8 +13,8 @@
       <pubDate>Mon, 28 Sep 2015 17:32:15 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2015/09/28/scope-in-javascript/</guid>
-      <description>I am learning JS for work. This is a pretty good summary of the most common scoping rules in JavaScript:
-http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript</description>
+      <description>&lt;p&gt;I am learning JS for work. This is a pretty good summary of the most common scoping rules in JavaScript:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript&#34;&gt;http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript&lt;/a&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I am learning JS for work. This is a pretty good summary of the most common scoping rules in JavaScript:</p>
 <p><a href="http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript">http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript</a></p>
 ]]></content:encoded>

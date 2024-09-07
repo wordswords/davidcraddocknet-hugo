@@ -8,7 +8,32 @@
 <title>My Simple Commandline Git Workflow | DavidCraddock.net</title>
 <meta name="keywords" content="">
 <meta name="description" content="This is a simple description of how I work 99% of the time, as I am a simpleton. Origin/main is the new origin/master for future repositories, I just note both here for completeness because I use origin master for a lot of current repos.
-I first make sure I am uptodate on origin/master or origin/main by git pulling. git checkout origin master git pull origin master I start making changes to the local copy on my local machine.">
+
+I first make sure I am uptodate on origin/master or origin/main by git pulling.
+git checkout origin master
+git pull origin master
+I start making changes to the local copy on my local machine.
+When it gets to a point where I want to save my changes, I:
+git stash push
+git checkout -b &lt;branch name which will be made into a PR&gt;
+git stash pop
+I then commit the changes to the new branch.
+git commit
+When I am ready to create the PR, I create and push to the remote branch:
+git push origin &lt;branch name which will be made into a PR&gt;
+Github will tell me if master/main has diverged past a state where my commits can be merged in without conflict. If there is a possible conflict, I will merge in origin master/main to my local copy and then push to the PR branch again:
+git checkout &lt;branch name which will be made into a PR&gt;
+git pull origin master (or origin main)
+I resolve locally conflicts through git mergetool which, for me, is vim&rsquo;s three way diff tool.
+I commit the updated conflicts and push to the remote branch - git add &amp;&amp; git commit &amp;&amp; git push origin &lt;branch name which will be made into a PR&gt;
+Often at this point I find I have to add new commits to fix things I have broken or have been flagged up in PR review.
+git commit
+git push origin &lt;branch name which will be made into a PR&gt;
+Reviewers now have some of their comments made on stale commits in Github. This is better than squashing the commits I find because sometimes the commits are not stale and their comments are still valid, and it becomes easier to keep track of. They can view the &lsquo;files changed&rsquo; tab to add review comments until they are happy. I loop back to check whether master/main has diverged, and if it hasn&rsquo;t just keep adding commits to address their concerns.
+The PR gets approved (hopefully)
+I merge the PR into master or main
+I delete the old branch
+">
 <meta name="author" content="Reorx">
 <link rel="canonical" href="https://davidcraddock.net/2021/10/21/my-simple-commandline-git-workflow/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.97d99fcdd90c38f6e3343e959a97a0295b30f590730a4ece2347f7f24ad997d1.css" integrity="sha256-l9mfzdkMOPbjND6VmpegKVsw9ZBzCk7OI0f38krZl9E=" rel="preload stylesheet" as="style">
@@ -18,10 +43,60 @@ I first make sure I am uptodate on origin/master or origin/main by git pulling. 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="My Simple Commandline Git Workflow | DavidCraddock.net" />
 <meta name="twitter:description" content="This is a simple description of how I work 99% of the time, as I am a simpleton. Origin/main is the new origin/master for future repositories, I just note both here for completeness because I use origin master for a lot of current repos.
-I first make sure I am uptodate on origin/master or origin/main by git pulling. git checkout origin master git pull origin master I start making changes to the local copy on my local machine." />
+
+I first make sure I am uptodate on origin/master or origin/main by git pulling.
+git checkout origin master
+git pull origin master
+I start making changes to the local copy on my local machine.
+When it gets to a point where I want to save my changes, I:
+git stash push
+git checkout -b &lt;branch name which will be made into a PR&gt;
+git stash pop
+I then commit the changes to the new branch.
+git commit
+When I am ready to create the PR, I create and push to the remote branch:
+git push origin &lt;branch name which will be made into a PR&gt;
+Github will tell me if master/main has diverged past a state where my commits can be merged in without conflict. If there is a possible conflict, I will merge in origin master/main to my local copy and then push to the PR branch again:
+git checkout &lt;branch name which will be made into a PR&gt;
+git pull origin master (or origin main)
+I resolve locally conflicts through git mergetool which, for me, is vim&rsquo;s three way diff tool.
+I commit the updated conflicts and push to the remote branch - git add &amp;&amp; git commit &amp;&amp; git push origin &lt;branch name which will be made into a PR&gt;
+Often at this point I find I have to add new commits to fix things I have broken or have been flagged up in PR review.
+git commit
+git push origin &lt;branch name which will be made into a PR&gt;
+Reviewers now have some of their comments made on stale commits in Github. This is better than squashing the commits I find because sometimes the commits are not stale and their comments are still valid, and it becomes easier to keep track of. They can view the &lsquo;files changed&rsquo; tab to add review comments until they are happy. I loop back to check whether master/main has diverged, and if it hasn&rsquo;t just keep adding commits to address their concerns.
+The PR gets approved (hopefully)
+I merge the PR into master or main
+I delete the old branch
+" />
 <meta property="og:title" content="My Simple Commandline Git Workflow | DavidCraddock.net" />
 <meta property="og:description" content="This is a simple description of how I work 99% of the time, as I am a simpleton. Origin/main is the new origin/master for future repositories, I just note both here for completeness because I use origin master for a lot of current repos.
-I first make sure I am uptodate on origin/master or origin/main by git pulling. git checkout origin master git pull origin master I start making changes to the local copy on my local machine." />
+
+I first make sure I am uptodate on origin/master or origin/main by git pulling.
+git checkout origin master
+git pull origin master
+I start making changes to the local copy on my local machine.
+When it gets to a point where I want to save my changes, I:
+git stash push
+git checkout -b &lt;branch name which will be made into a PR&gt;
+git stash pop
+I then commit the changes to the new branch.
+git commit
+When I am ready to create the PR, I create and push to the remote branch:
+git push origin &lt;branch name which will be made into a PR&gt;
+Github will tell me if master/main has diverged past a state where my commits can be merged in without conflict. If there is a possible conflict, I will merge in origin master/main to my local copy and then push to the PR branch again:
+git checkout &lt;branch name which will be made into a PR&gt;
+git pull origin master (or origin main)
+I resolve locally conflicts through git mergetool which, for me, is vim&rsquo;s three way diff tool.
+I commit the updated conflicts and push to the remote branch - git add &amp;&amp; git commit &amp;&amp; git push origin &lt;branch name which will be made into a PR&gt;
+Often at this point I find I have to add new commits to fix things I have broken or have been flagged up in PR review.
+git commit
+git push origin &lt;branch name which will be made into a PR&gt;
+Reviewers now have some of their comments made on stale commits in Github. This is better than squashing the commits I find because sometimes the commits are not stale and their comments are still valid, and it becomes easier to keep track of. They can view the &lsquo;files changed&rsquo; tab to add review comments until they are happy. I loop back to check whether master/main has diverged, and if it hasn&rsquo;t just keep adding commits to address their concerns.
+The PR gets approved (hopefully)
+I merge the PR into master or main
+I delete the old branch
+" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2021/10/21/my-simple-commandline-git-workflow/" />
     <meta property="og:image" content="https://davidcraddock.net/cover.png"/>
@@ -56,7 +131,7 @@ I first make sure I am uptodate on origin/master or origin/main by git pulling. 
   "@type": "BlogPosting",
   "headline": "My Simple Commandline Git Workflow | DavidCraddock.net",
   "name": "My Simple Commandline Git Workflow",
-  "description": "This is a simple description of how I work 99% of the time, as I am a simpleton. Origin/main is the new origin/master for future repositories, I just note both here for completeness because I use origin master for a lot of current repos.\nI first make sure I am uptodate on origin/master or origin/main by git pulling. git checkout origin master git pull origin master I start making changes to the local copy on my local machine.",
+  "description": "This is a simple description of how I work 99% of the time, as I am a simpleton. Origin/main is the new origin/master for future repositories, I just note both here for completeness because I use origin master for a lot of current repos.\nI first make sure I am uptodate on origin/master or origin/main by git pulling. git checkout origin master git pull origin master I start making changes to the local copy on my local machine. When it gets to a point where I want to save my changes, I: git stash push git checkout -b \u0026lt;branch name which will be made into a PR\u0026gt; git stash pop I then commit the changes to the new branch. git commit When I am ready to create the PR, I create and push to the remote branch: git push origin \u0026lt;branch name which will be made into a PR\u0026gt; Github will tell me if master/main has diverged past a state where my commits can be merged in without conflict. If there is a possible conflict, I will merge in origin master/main to my local copy and then push to the PR branch again: git checkout \u0026lt;branch name which will be made into a PR\u0026gt; git pull origin master (or origin main) I resolve locally conflicts through git mergetool which, for me, is vim\u0026rsquo;s three way diff tool. I commit the updated conflicts and push to the remote branch - git add \u0026amp;\u0026amp; git commit \u0026amp;\u0026amp; git push origin \u0026lt;branch name which will be made into a PR\u0026gt; Often at this point I find I have to add new commits to fix things I have broken or have been flagged up in PR review. git commit git push origin \u0026lt;branch name which will be made into a PR\u0026gt; Reviewers now have some of their comments made on stale commits in Github. This is better than squashing the commits I find because sometimes the commits are not stale and their comments are still valid, and it becomes easier to keep track of. They can view the \u0026lsquo;files changed\u0026rsquo; tab to add review comments until they are happy. I loop back to check whether master/main has diverged, and if it hasn\u0026rsquo;t just keep adding commits to address their concerns. The PR gets approved (hopefully) I merge the PR into master or main I delete the old branch ",
   "keywords": [
     
   ],

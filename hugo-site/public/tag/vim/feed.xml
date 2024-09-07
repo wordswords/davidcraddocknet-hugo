@@ -13,9 +13,10 @@
       <pubDate>Sat, 19 Feb 2022 05:51:56 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2022/02/19/working-with-jenkinsfiles-in-vim/</guid>
-      <description>Using Jenkinsfiles in repositories for declarative pipelines, which is an example as infrastructure as code, is absolutely the right thing to do, in my opinion.
-However the tooling for debugging and error checking Jenkinsfiles is currently quite difficult.
-Setup Jenkinsfile linter First of all you need to make sure to be able to access the Jenkinsfile linter. This linter is processed on the Jenkins server itself, unusually. There is a configuration option that requires adminstrator access to the Jenkins server.</description>
+      <description>&lt;p&gt;Using Jenkinsfiles in repositories for declarative pipelines, which is an example as infrastructure as code, is absolutely the right thing to do, in my opinion.&lt;/p&gt;
+&lt;p&gt;However the tooling for debugging and error checking Jenkinsfiles is currently quite difficult.&lt;/p&gt;
+&lt;h2 id=&#34;setup-jenkinsfile-linter&#34;&gt;Setup Jenkinsfile linter&lt;/h2&gt;
+&lt;p&gt;First of all you need to make sure to be able to access the Jenkinsfile linter. This linter is processed on the Jenkins server itself, unusually. There is a configuration option that requires adminstrator access to the Jenkins server.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Using Jenkinsfiles in repositories for declarative pipelines, which is an example as infrastructure as code, is absolutely the right thing to do, in my opinion.</p>
 <p>However the tooling for debugging and error checking Jenkinsfiles is currently quite difficult.</p>
 <h2 id="setup-jenkinsfile-linter">Setup Jenkinsfile linter</h2>
@@ -44,8 +45,9 @@ Setup Jenkinsfile linter First of all you need to make sure to be able to access
       <pubDate>Sat, 07 Nov 2015 12:51:33 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2015/11/07/favourite-osx-apps-for-development/</guid>
-      <description>I&amp;rsquo;ve just recently bought a Macbook Pro for myself, after having used a MBP at work for 4 years. I find it to be a really powerful development environment for the development I do, in languages such as Java, PHP, Ruby, Python and JS. Here is what I use day-to-day:
-OSX El Capitan I haven&amp;rsquo;t found anything not to like about this upgrade. I don&amp;rsquo;t use a lot of external devices, for which Bruce has found problems with El Capitan&amp;rsquo;s new restricted driver management for Arduinos and others.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve just recently bought a Macbook Pro for myself, after having used a MBP at work for 4 years. I find it to be a really powerful development environment for the development I do, in languages such as Java, PHP, Ruby, Python and JS. Here is what I use day-to-day:&lt;/p&gt;
+&lt;h3 id=&#34;osx-el-capitan&#34;&gt;OSX El Capitan&lt;/h3&gt;
+&lt;p&gt;I haven&amp;rsquo;t found anything not to like about this upgrade. I don&amp;rsquo;t use a lot of external devices, for which &lt;a href=&#34;https://twitter.com/custardcat&#34;&gt;Bruce&lt;/a&gt; has found problems with El Capitan&amp;rsquo;s new restricted driver management for Arduinos and others. I like the fact I can use split screen functionality to side-by-side two windows easily, a feature that I very much like in Windows 10 too.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I&rsquo;ve just recently bought a Macbook Pro for myself, after having used a MBP at work for 4 years. I find it to be a really powerful development environment for the development I do, in languages such as Java, PHP, Ruby, Python and JS. Here is what I use day-to-day:</p>
 <h3 id="osx-el-capitan">OSX El Capitan</h3>
 <p>I haven&rsquo;t found anything not to like about this upgrade. I don&rsquo;t use a lot of external devices, for which <a href="https://twitter.com/custardcat">Bruce</a> has found problems with El Capitan&rsquo;s new restricted driver management for Arduinos and others. I like the fact I can use split screen functionality to side-by-side two windows easily, a feature that I very much like in Windows 10 too.</p>
@@ -78,12 +80,21 @@ OSX El Capitan I haven&amp;rsquo;t found anything not to like about this upgrade
       <pubDate>Thu, 20 Jun 2013 22:15:52 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2013/06/20/256-color-vim-on-crunchbang-waldorf/</guid>
-      <description>To get 256 colors working within terminator in Crunchbang Waldorf, I had to do the following:
-Add to ~/.bashrc
-export TERM=xterm-256color Install a 256 color VIM colorcheme, see desert256 for example.
-Add the following to ~/.vimrc:
-set t_Co=256 set t_AB=^[[48;5;%dm set t_AF=^[[38;5;%dm &amp;rsquo;t_Co&amp;rsquo; specifies exactly how many colours VIM can use. The other two lines seem to be Debian-specific color code escape sequences.
-If you want 256 color VIM for your root user when you sudo edit, then edit /usr/share/vim/vimrc and copy across your settings from your local ~/.</description>
+      <description>&lt;p&gt;To get 256 colors working within terminator in Crunchbang Waldorf, I had to do the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Add to ~/.bashrc&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;export&lt;/span&gt; TERM&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;xterm&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#099&#34;&gt;256&lt;/span&gt;color
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install a 256 color VIM colorcheme, see &lt;a href=&#34;http://www.vim.org/scripts/script.php?script_id=1243&#34;&gt;desert256 for example&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add the following to ~/.vimrc:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;set t_Co=256
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;set t_AB=^[[48;5;%dm
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;set t_AF=^[[38;5;%dm
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
       <content:encoded><![CDATA[<p>To get 256 colors working within terminator in Crunchbang Waldorf, I had to do the following:</p>
 <ol>
 <li>
@@ -113,8 +124,8 @@ If you want 256 color VIM for your root user when you sudo edit, then edit /usr/
       <pubDate>Thu, 18 Mar 2010 19:23:07 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2010/03/18/my-minimal-vim-config/</guid>
-      <description>This is the absolute minimum I do when I have to log onto a new server or shell account that I haven&amp;rsquo;t used before, that I will need to edit text files with.
-First I figure out whether VIM is really installed. A lot of installs, especially those based on ubuntu, ship with VI aliased to VIM, but the VIM install is usually not really VIM at all, and behaves exactly like VI but with some minor bugs fixed.</description>
+      <description>&lt;p&gt;This is the absolute minimum I do when I have to log onto a new server or shell account that I haven&amp;rsquo;t used before, that I will need to edit text files with.&lt;/p&gt;
+&lt;p&gt;First I figure out whether VIM is really installed. A lot of installs, especially those based on ubuntu, ship with VI aliased to VIM, but the VIM install is usually not really VIM at all, and behaves exactly like VI but with some minor bugs fixed. This is not what I want.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>This is the absolute minimum I do when I have to log onto a new server or shell account that I haven&rsquo;t used before, that I will need to edit text files with.</p>
 <p>First I figure out whether VIM is really installed. A lot of installs, especially those based on ubuntu, ship with VI aliased to VIM, but the VIM install is usually not really VIM at all, and behaves exactly like VI but with some minor bugs fixed. This is not what I want.</p>
 <p>So first I figure out what distribution of linux I&rsquo;m using through executing the following command:</p>
@@ -137,8 +148,8 @@ First I figure out whether VIM is really installed. A lot of installs, especiall
       <pubDate>Fri, 27 Mar 2009 23:47:59 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2009/03/27/eclipse-342-pydev-eclim-win/</guid>
-      <description>So, after saying all that stuff about how vimplugin and EasyEclipse was great, I actually started to use the setup heavily, and it started to annoy me.
-For one, EE is not a recent build of eclipse, nor does it come with a full set of recent plugins. This makes it annoyingly difficult to use when you want to use more than the set of plugins it packages for you. As far as vimplugin goes, it does not provide the vim integration I thought it might from embedded vim.</description>
+      <description>&lt;p&gt;So, after saying all that stuff about how vimplugin and EasyEclipse was great, I actually started to use the setup heavily, and it started to annoy me.&lt;/p&gt;
+&lt;p&gt;For one, EE is not a recent build of eclipse, nor does it come with a full set of recent plugins. This makes it annoyingly difficult to use when you want to use more than the set of plugins it packages for you. As far as vimplugin goes, it does not provide the vim integration I thought it might from embedded vim. Not really even close.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So, after saying all that stuff about how vimplugin and EasyEclipse was great, I actually started to use the setup heavily, and it started to annoy me.</p>
 <p>For one, EE is not a recent build of eclipse, nor does it come with a full set of recent plugins. This makes it annoyingly difficult to use when you want to use more than the set of plugins it packages for you. As far as vimplugin goes, it does not provide the vim integration I thought it might from embedded vim. Not really even close.</p>
 <p>What I use now, after lots of trial and error, and at least 4 reinstalls of Eclipse, is a combination of Eclipse 3.4.2, <a href="http://eclim.sourceforge.net/">Eclim</a>, (which is the most mature of the free vi-binding plugins around, and actually includes an improved version of the vimplugin previously mentioned), and the latest pydev, Mylyn and Subeclipse.</p>

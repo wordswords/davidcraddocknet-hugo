@@ -13,9 +13,16 @@
       <pubDate>Thu, 29 Sep 2022 00:00:36 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2022/09/29/tips-for-new-ubuntu-users/</guid>
-      <description>Here are some extra tips if you&amp;rsquo;re just getting started out on Ubuntu.
-You don&amp;rsquo;t have to go through the UI to shut down or reboot your computer. You can do it from the command line. The commands are:
-sudo reboot # to reboot sudo poweroff # to shut down and power off the computer You can get a lot more information on your computers startup and shutdown sequences by removing the default Ubuntu splash screen that obscures this.</description>
+      <description>&lt;p&gt;Here are some extra tips if you&amp;rsquo;re just getting started out on Ubuntu.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;You don&amp;rsquo;t have to go through the UI to shut down or reboot your computer. You can do it from the command line. The commands are:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo reboot # to reboot
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo poweroff # to shut down and power off the computer
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can get a lot more information on your computers startup and shutdown sequences by removing the default Ubuntu splash screen that obscures this. You should definitely do this if you want to learn more about what your system is
+actually doing under the hood, especially if you need to troubleshoot what it&amp;rsquo;s doing. To do this:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Here are some extra tips if you&rsquo;re just getting started out on Ubuntu.</p>
 <ol>
 <li>
@@ -45,8 +52,8 @@ shuts down, or reboots.</p>
       <pubDate>Sat, 24 Sep 2022 17:39:06 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2022/09/24/google-drive-backup-using-rclone/</guid>
-      <description>For 8 TB of data storage on Google Drive, plus my own Google organization, I am paying £30/month, which is a pretty good deal.
-I wanted to use this space for backing up my NAS, but it was proving difficult. The program I was recommended for Linux backup, Duplicati, was not the best for this purpose. My backup runs would not complete, they would be slow, and full of syncing errors.</description>
+      <description>&lt;p&gt;For 8 TB of data storage on Google Drive, plus my own Google organization, I am paying £30/month, which is a pretty good deal.&lt;/p&gt;
+&lt;p&gt;I wanted to use this space for backing up my NAS, but it was proving difficult. The program I was recommended for Linux backup, Duplicati, was not the best for this purpose. My backup runs would not complete, they would be slow, and full of syncing errors.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>For 8 TB of data storage on Google Drive, plus my own Google organization, I am paying £30/month, which is a pretty good deal.</p>
 <p>I wanted to use this space for backing up my NAS, but it was proving difficult. The program I was recommended for Linux backup, Duplicati, was not the best for this purpose. My backup runs would not complete, they would be slow, and full of syncing errors.</p>
 <p>Until I discovered rclone.</p>
@@ -62,8 +69,14 @@ I wanted to use this space for backing up my NAS, but it was proving difficult. 
       <pubDate>Thu, 18 Nov 2021 08:54:42 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2021/11/18/setting-up-enlightenment-window-manager-on-ubuntu-21-10/</guid>
-      <description>Enlightenment is a very underrated window manager choice, in my opinion. It still looks very pretty and is very configurable. There is a packaging bug with the latest version of Enlightement in the 21.10 repo which means it doesn&amp;rsquo;t work correctly. The fix is to set the suid bit on the &amp;rsquo;enlightenment_system&amp;rsquo; binary. So:
-sudo apt install enlightenment sudo find /usr/lib -type f -name enlightenment_system -exec sudo chmod 4755 {} \; Log out of Ubuntu Click the settings cog in the bottom right to change your Window manager to enlightenment Log on and the settings wizard will help you configure Enlightenment </description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.enlightenment.org&#34;&gt;Enlightenment&lt;/a&gt; is a very underrated window manager choice, in my opinion. It still looks very pretty and is very configurable. There is a packaging bug with the latest version of Enlightement in the 21.10 repo which means it doesn&amp;rsquo;t work correctly. The fix is to set the suid bit on the &amp;rsquo;enlightenment_system&amp;rsquo; binary. So:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;sudo apt install enlightenment&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo find /usr/lib -type f -name enlightenment_system -exec sudo chmod 4755 {} \;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Log out of Ubuntu&lt;/li&gt;
+&lt;li&gt;Click the settings cog in the bottom right to change your Window manager to enlightenment&lt;/li&gt;
+&lt;li&gt;Log on and the settings wizard will help you configure Enlightenment&lt;/li&gt;
+&lt;/ol&gt;</description>
       <content:encoded><![CDATA[<p><a href="https://www.enlightenment.org">Enlightenment</a> is a very underrated window manager choice, in my opinion. It still looks very pretty and is very configurable. There is a packaging bug with the latest version of Enlightement in the 21.10 repo which means it doesn&rsquo;t work correctly. The fix is to set the suid bit on the &rsquo;enlightenment_system&rsquo; binary. So:</p>
 <ol>
 <li><code>sudo apt install enlightenment</code></li>
@@ -81,11 +94,13 @@ sudo apt install enlightenment sudo find /usr/lib -type f -name enlightenment_sy
       <pubDate>Mon, 10 Feb 2014 15:28:45 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2014/02/10/kindlefire-hdx-under-ubuntu-12-04/</guid>
-      <description>I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.
-First I needed to setup the udev rules:
-1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):
-SUBSYSTEM==&amp;#34;usb&amp;#34;, ATTRS{idVendor}==&amp;#34;1949&amp;#34;, MODE=&amp;#34;0666&amp;#34; 2. Change the permission of this file by executing the following command as root:
-chmod a+r /etc/udev/rules.d/51-android.rules 3. Reload the rules by executing the following command as root:</description>
+      <description>&lt;p&gt;I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.&lt;/p&gt;
+&lt;p&gt;First I needed to setup the udev rules:&lt;/p&gt;
+&lt;p&gt;1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SUBSYSTEM==&amp;#34;usb&amp;#34;, ATTRS{idVendor}==&amp;#34;1949&amp;#34;, MODE=&amp;#34;0666&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;2. Change the permission of this file by executing the following command as root:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;chmod a+r /etc/udev/rules.d/51-android.rules
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
       <content:encoded><![CDATA[<p>I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.</p>
 <p>First I needed to setup the udev rules:</p>
 <p>1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):</p>
@@ -113,7 +128,8 @@ chmod a+r /etc/udev/rules.d/51-android.rules 3. Reload the rules by executing th
       <pubDate>Sun, 17 Nov 2013 02:21:34 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2013/11/17/android-debug-bridge-failing-to-detect-emulators-under-osx/</guid>
-      <description>I&amp;rsquo;ve been working on a project at the BBC where we are using the Android command-line tools from the Android Developer Tools, to spin up and terminate series of emulators. I noticed a big problem under OSX where &amp;lsquo;adb devices&amp;rsquo; was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2013/11/android.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2013/11/android.png&#34; type=&#34;&#34; alt=&#34;Android&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been working on a project at the BBC where we are using the Android command-line tools from the &lt;a href=&#34;http://developer.android.com/tools/index.html&#34;&gt;Android Developer Tools&lt;/a&gt;, to spin up and terminate series of emulators. I noticed a big problem under OSX where &amp;lsquo;adb devices&amp;rsquo; was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2013/11/android.png"><img loading="lazy" src="/wp-content/uploads/2013/11/android.png" type="" alt="Android"  /></a></p>
 <p>I&rsquo;ve been working on a project at the BBC where we are using the Android command-line tools from the <a href="http://developer.android.com/tools/index.html">Android Developer Tools</a>, to spin up and terminate series of emulators. I noticed a big problem under OSX where &lsquo;adb devices&rsquo; was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb.</p>
 <p>We switched to using adb with emulators in an Ubuntu 12.04 VM running under OSX, and we had no further problems with our setup. Emulators will now be programatically launched and torn down by our monitoring application. We now have an array of emulators which we can deploy to at will, which is very useful.</p>
@@ -127,7 +143,7 @@ chmod a+r /etc/udev/rules.d/51-android.rules 3. Reload the rules by executing th
       <pubDate>Mon, 30 Mar 2009 22:45:50 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2009/03/30/virutalhosts-on-centos/</guid>
-      <description>A common task when setting up an Apache webserver under Linux, is writing a httpd.conf file. The httpd.conf file is the main configuration file for Apache. One of the main reasons to edit the httpd.conf file is to setup virtual hosts In Apache. A Virtual host configuration allows several different domains to be run off a single instance of Apache, on a single IP. Each host is a &amp;lsquo;Virtual host&amp;rsquo;, and typically has a different web root, log file, and any number of subdomains aliased to it.</description>
+      <description>&lt;p&gt;A common task when setting up an &lt;a href=&#34;http://en.wikipedia.org/wiki/Apache_HTTP_Server&#34;&gt;Apache&lt;/a&gt; webserver under Linux, is writing a httpd.conf file. The httpd.conf file is the main configuration file for Apache. One of the main reasons to edit the httpd.conf file is to setup virtual hosts In Apache. A Virtual host configuration allows several different domains to be run off a single instance of Apache, on a single IP. Each host is a &amp;lsquo;Virtual host&amp;rsquo;, and typically has a different web root, log file, and any number of subdomains aliased to it. The virtualhosts are configured in parts of the httpd.conf file that look like this:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>A common task when setting up an <a href="http://en.wikipedia.org/wiki/Apache_HTTP_Server">Apache</a> webserver under Linux, is writing a httpd.conf file. The httpd.conf file is the main configuration file for Apache. One of the main reasons to edit the httpd.conf file is to setup virtual hosts In Apache. A Virtual host configuration allows several different domains to be run off a single instance of Apache, on a single IP. Each host is a &lsquo;Virtual host&rsquo;, and typically has a different web root, log file, and any number of subdomains aliased to it. The virtualhosts are configured in parts of the httpd.conf file that look like this:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    ServerName myserver<span style="color:#000;font-weight:bold">.</span>co<span style="color:#000;font-weight:bold">.</span>uk

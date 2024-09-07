@@ -8,7 +8,11 @@
 <title>Working with Fish Shell, ffmpeg, MP4Box and sox to generate audio files | DavidCraddock.net</title>
 <meta name="keywords" content="">
 <meta name="description" content="More adventures with Fish shell. I have scripted the generation of a bunch of test asset audio files in mp4 format suitable for dash streaming. I have used the audio file commandline tools ffmepg MP4Box and sox in this script, they are pretty powerful and worth installing via homebrew on OSX.
-Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I&rsquo;m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy.">
+Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I&rsquo;m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy.
+[code lang=&ldquo;bash&rdquo;]
+#!/usr/bin/env fish
+# move to the asset output directory..
+cd ..">
 <meta name="author" content="Reorx">
 <link rel="canonical" href="https://davidcraddock.net/2016/03/08/working-with-fish-shell-ffmpeg-mp4box-and-sox-to-generate-audio-files/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.97d99fcdd90c38f6e3343e959a97a0295b30f590730a4ece2347f7f24ad997d1.css" integrity="sha256-l9mfzdkMOPbjND6VmpegKVsw9ZBzCk7OI0f38krZl9E=" rel="preload stylesheet" as="style">
@@ -18,10 +22,18 @@ Thoughts: I think that instead of quoting you can just output $variable, which i
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Working with Fish Shell, ffmpeg, MP4Box and sox to generate audio files | DavidCraddock.net" />
 <meta name="twitter:description" content="More adventures with Fish shell. I have scripted the generation of a bunch of test asset audio files in mp4 format suitable for dash streaming. I have used the audio file commandline tools ffmepg MP4Box and sox in this script, they are pretty powerful and worth installing via homebrew on OSX.
-Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I&rsquo;m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy." />
+Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I&rsquo;m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy.
+[code lang=&ldquo;bash&rdquo;]
+#!/usr/bin/env fish
+# move to the asset output directory..
+cd .." />
 <meta property="og:title" content="Working with Fish Shell, ffmpeg, MP4Box and sox to generate audio files | DavidCraddock.net" />
 <meta property="og:description" content="More adventures with Fish shell. I have scripted the generation of a bunch of test asset audio files in mp4 format suitable for dash streaming. I have used the audio file commandline tools ffmepg MP4Box and sox in this script, they are pretty powerful and worth installing via homebrew on OSX.
-Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I&rsquo;m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy." />
+Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I&rsquo;m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy.
+[code lang=&ldquo;bash&rdquo;]
+#!/usr/bin/env fish
+# move to the asset output directory..
+cd .." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2016/03/08/working-with-fish-shell-ffmpeg-mp4box-and-sox-to-generate-audio-files/" />
     <meta property="og:image" content="https://davidcraddock.net/cover.png"/>
@@ -56,7 +68,7 @@ Thoughts: I think that instead of quoting you can just output $variable, which i
   "@type": "BlogPosting",
   "headline": "Working with Fish Shell, ffmpeg, MP4Box and sox to generate audio files | DavidCraddock.net",
   "name": "Working with Fish Shell, ffmpeg, MP4Box and sox to generate audio files",
-  "description": "More adventures with Fish shell. I have scripted the generation of a bunch of test asset audio files in mp4 format suitable for dash streaming. I have used the audio file commandline tools ffmepg MP4Box and sox in this script, they are pretty powerful and worth installing via homebrew on OSX.\nThoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I\u0026rsquo;m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy.",
+  "description": "More adventures with Fish shell. I have scripted the generation of a bunch of test asset audio files in mp4 format suitable for dash streaming. I have used the audio file commandline tools ffmepg MP4Box and sox in this script, they are pretty powerful and worth installing via homebrew on OSX.\nThoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I\u0026rsquo;m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy. [code lang=\u0026ldquo;bash\u0026rdquo;] #!/usr/bin/env fish # move to the asset output directory.. cd ..\n",
   "keywords": [
     
   ],

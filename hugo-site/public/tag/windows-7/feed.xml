@@ -13,8 +13,9 @@
       <pubDate>Sun, 21 Jun 2015 17:55:50 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2015/06/21/switching-audio-between-two-soundcards/</guid>
-      <description>If you have two soundcards - maybe a normal soundcard for your speakers and maybe a headset with its own audio interface - you will want some way of switching all audio between the two. This is an great little open-source tool to do just that. It works on Mac, and Windows 7 up to 10:
-https://soundswitch.codeplex.com/</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2015/06/headphones_accept.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2015/06/headphones_accept.png&#34; type=&#34;&#34; alt=&#34;headphones_accept&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you have two soundcards - maybe a normal soundcard for your speakers and maybe a headset with its own audio interface - you will want some way of switching all audio between the two. This is an great little open-source tool to do just that. It works on Mac, and Windows 7 up to 10:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://soundswitch.codeplex.com/&#34;&gt;https://soundswitch.codeplex.com/&lt;/a&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2015/06/headphones_accept.png"><img loading="lazy" src="/wp-content/uploads/2015/06/headphones_accept.png" type="" alt="headphones_accept"  /></a></p>
 <p>If you have two soundcards - maybe a normal soundcard for your speakers and maybe a headset with its own audio interface - you will want some way of switching all audio between the two. This is an great little open-source tool to do just that. It works on Mac, and Windows 7 up to 10:</p>
 <p><a href="https://soundswitch.codeplex.com/">https://soundswitch.codeplex.com/</a></p>
@@ -27,8 +28,8 @@ https://soundswitch.codeplex.com/</description>
       <pubDate>Tue, 13 Jul 2010 13:02:51 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2010/07/13/restoring-ubuntu-10-4s-bootloader-after-a-windows-7-install/</guid>
-      <description>I installed Windows 7 after I had installed Ubuntu 10.4. Windows 7 overwrote the Linux bootloader &amp;ldquo;grub&amp;rdquo; on my master boot record. Therefore I had to restore it.
-I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under the LiveCD, I then restored the Grub bootloader by chrooting into my old install, using the linux command line. This is a fairly complex thing to do, and so I recommend you use this approach only if you&amp;rsquo;re are confident with the linux command line:</description>
+      <description>&lt;p&gt;I installed Windows 7 after I had installed Ubuntu 10.4. Windows 7 overwrote the Linux bootloader &amp;ldquo;grub&amp;rdquo; on my master boot record. Therefore I had to restore it.&lt;/p&gt;
+&lt;p&gt;I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under the LiveCD, I then restored the Grub bootloader by chrooting into my old install, using the linux command line. This is a fairly complex thing to do, and so I recommend you use this approach only if you&amp;rsquo;re are confident with the linux command line:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I installed Windows 7 after I had installed Ubuntu 10.4. Windows 7 overwrote the Linux bootloader &ldquo;grub&rdquo; on my master boot record. Therefore I had to restore it.</p>
 <p>I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under the LiveCD, I then restored the Grub bootloader by chrooting into my old install, using the linux command line. This is a fairly complex thing to do, and so I recommend you use this approach only if you&rsquo;re are confident with the linux command line:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># (as root under Ubuntu&#39;s LiveCD)</span>
@@ -73,9 +74,9 @@ I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under 
       <pubDate>Thu, 01 Jul 2010 22:50:25 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2010/07/01/running-windows-7-on-my-macbook/</guid>
-      <description>I have a 2006/2007 Core 2 Duo 2.6ghz white macbook, that I use regularly for internet, music, watching films, itunes and integration with my iPhone.
-I wanted to turn my desktop PC into a &amp;lsquo;work only&amp;rsquo; Ubuntu Linux machine, so that I don&amp;rsquo;t get distracted when I&amp;rsquo;m supposed to be doing something else.
-But I still have a lot of PC games that I wanted to play on the Macbook, so I decided to try and setup a windows environment to play games on using Bootcamp 2.</description>
+      <description>&lt;p&gt;I have a 2006/2007 Core 2 Duo 2.6ghz white macbook, that I use regularly for internet, music, watching films, itunes and integration with my iPhone.&lt;/p&gt;
+&lt;p&gt;I wanted to turn my desktop PC into a &amp;lsquo;work only&amp;rsquo; Ubuntu Linux machine, so that I don&amp;rsquo;t get distracted when I&amp;rsquo;m supposed to be doing something else.&lt;/p&gt;
+&lt;p&gt;But I still have a lot of PC games that I wanted to play on the Macbook, so I decided to try and setup a windows environment to play games on using Bootcamp 2.0 to create a dual-boot OSX/Windows 7 configuration.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I have a 2006/2007 Core 2 Duo 2.6ghz white macbook, that I use regularly for internet, music, watching films, itunes and integration with my iPhone.</p>
 <p>I wanted to turn my desktop PC into a &lsquo;work only&rsquo; Ubuntu Linux machine, so that I don&rsquo;t get distracted when I&rsquo;m supposed to be doing something else.</p>
 <p>But I still have a lot of PC games that I wanted to play on the Macbook, so I decided to try and setup a windows environment to play games on using Bootcamp 2.0 to create a dual-boot OSX/Windows 7 configuration.</p>

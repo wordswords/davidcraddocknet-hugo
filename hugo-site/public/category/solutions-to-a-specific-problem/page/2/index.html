@@ -183,7 +183,7 @@ function toggleThemeListener() {
   <section class="entry-content">
     
       <p>You use the ’touch’ command to create two blank files, with a last modified date that you specify - one with a date of the start of the range you want to specify, and the second with a date at the end of the range you want to specify. Then you reference to those two files in your find command:
-touch /tmp/temp -t 200604141130 touch /tmp/ntemp -t 200604261630 find /data/ -cnewer /tmp/temp -and !...</p>
+touch /tmp/temp -t 200604141130 touch /tmp/ntemp -t 200604261630 find /data/ -cnewer /tmp/temp -and ! -cnewer /tmp/ntemp ...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -204,7 +204,8 @@ touch /tmp/temp -t 200604141130 touch /tmp/ntemp -t 200604261630 find /data/ -cn
   </header>
   <section class="entry-content">
     
-      <p>I wrote an email alerter that sends me an email whenever the upcoming temperature may dip below freezing. It uses the Magpie RSS reader to pull down a 3 day weather forecast that is provided for my area in RSS form by the BBC weather site. It then parses this forecast and determines if either today’s or tomorrow’s weather may dip below freezing. If it might, it sends an email to my email address to warn me....</p>
+      <p>I wrote an email alerter that sends me an email whenever the upcoming temperature may dip below freezing. It uses the Magpie RSS reader to pull down a 3 day weather forecast that is provided for my area in RSS form by the BBC weather site. It then parses this forecast and determines if either today’s or tomorrow’s weather may dip below freezing. If it might, it sends an email to my email address to warn me.
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -227,7 +228,7 @@ touch /tmp/temp -t 200604141130 touch /tmp/ntemp -t 200604261630 find /data/ -cn
     
       <p>Here is some python code I adapted from this stackoverflow post to get the first day of a week specificed by a week number. This method includes leap year and summer time differences.
 import time def weeknum(num,year): instr = str(year)&#43;&#34; &#34;&#43;str(num-1)&#43;&#34; 1&#34; print time.asctime(time.strptime(instr,&#39;%Y %W %w&#39;)) Here is me exectuting the code in Python’s IDLE shell:
-See that the first week of 2009 actually started in 2008, but by the end of that week we are in 2009....</p>
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -249,7 +250,8 @@ See that the first week of 2009 actually started in 2008, but by the end of that
   <section class="entry-content">
     
       <p>Quite cool little app that allows you to listen to different BBC Radio programmes from within a standalone application, instead of iPlayer:
-http://whomwah.github.com/radioaunty/</p>
+http://whomwah.github.com/radioaunty/
+</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -271,7 +273,8 @@ http://whomwah.github.com/radioaunty/</p>
   <section class="entry-content">
     
       <p>MediaMonkey is a popular free media player for Windows. It has a great feature that allows you to transfer to and from an iPhone that is not registered with your computer. Normally only one iTunes install can be associated with your iPhone, but MediaMonkey allows you another way to transfer music and audio files with a ‘guest’ iPhone. Check it out, it works:
-MediaMonkey</p>
+MediaMonkey
+</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -294,7 +297,8 @@ MediaMonkey</p>
     
       <p>This is just a quick note to remind myself how I did this.
 Hypercam2 is a good, free, video recorder that can cope with recording game videos. It’s freely available from http://www.hyperionics.com/hc/downloads.asp - just make sure when you install it you don’t tick on the spyware toolbar installation options.
-My motherboard has a 5.1 digital soundcard built in. However the only way I can record off the soundcard is to plug in a standard audio cable from the speaker out (green) to the microphone in (orange)....</p>
+My motherboard has a 5.1 digital soundcard built in. However the only way I can record off the soundcard is to plug in a standard audio cable from the speaker out (green) to the microphone in (orange).
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -317,7 +321,7 @@ My motherboard has a 5.1 digital soundcard built in. However the only way I can 
     
       <p>I’ve had to solve this problem a couple of times at least, and it’s quite a common task, so I thought I’d document it here.
 When you send emails to users of your site through using the PHP mail() function, they will sometimes turn up in the mailbox of customers of your site with the following from address:
-From: Root &lt;root@apache.ecommercecompany.com&gt; This makes absolutely no sense to your customers, and often they will think it is spam and delete it....</p>
+From: Root &lt;root@apache.ecommercecompany.com&gt; ...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -339,7 +343,8 @@ From: Root &lt;root@apache.ecommercecompany.com&gt; This makes absolutely no sen
   <section class="entry-content">
     
       <p>Back in 2008, I wrote a PHP class that fetched an arbitary URL, parsed it, and coverted it into an PHP object with different attributes for the different elements of the page. I recently updated it and sent it along to a company that wanted a programming example to show I could code in PHP.
-I thought someone may well find a use for it - I’ve used the class in several different web scraping applications, and I found it handy....</p>
+I thought someone may well find a use for it - I’ve used the class in several different web scraping applications, and I found it handy. From the readme:
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -361,7 +366,8 @@ I thought someone may well find a use for it - I’ve used the class in several 
   <section class="entry-content">
     
       <p>Today I encountered problems configuring the windows version of the popular text editor VIM, so I thought I’d write up a quick post talk about configuration files under the Windows version, if anyone becomes stuck like I did. I use Linux, OSX and Windows on a day-to-day basis, and VIM as a text editor for a lot of quick edits on all three platforms. Here’s a quick comparison:
-Linux Linux is easy because that’s what most people who use VIM run, and so it is very well tested....</p>
+Linux Linux is easy because that’s what most people who use VIM run, and so it is very well tested.
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -383,7 +389,8 @@ Linux Linux is easy because that’s what most people who use VIM run, and so it
   <section class="entry-content">
     
       <p>Bacula is a great open-source distributed backup program for Linux/UNIX systems. It is separated into three main components:
-One ‘Director’ - which sends messages to the other components and co-ordinates the backup One or more ‘File Demons’ - which ‘pull’ the data from the host they are installed from. One or more ‘Storage Demons’ - which ‘push’ the data taken from the file demons into a type of archival storage, IE: backup tapes, a backup hard disc, etc I found it extremely versatile yet very complicated to configure....</p>
+One ‘Director’ - which sends messages to the other components and co-ordinates the backup One or more ‘File Demons’ - which ‘pull’ the data from the host they are installed from. One or more ‘Storage Demons’ - which ‘push’ the data taken from the file demons into a type of archival storage, IE: backup tapes, a backup hard disc, etc I found it extremely versatile yet very complicated to configure. Before you configure it you have to decide on a backup strategy; what you want to backup, why you want to back it up, how often you want to back it up, and how you are going to off-site/preserve the backups.
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">

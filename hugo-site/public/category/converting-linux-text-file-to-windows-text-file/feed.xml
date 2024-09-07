@@ -13,9 +13,14 @@
       <pubDate>Tue, 09 Mar 2010 00:04:40 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2010/03/09/shell-scripts-for-converting-between-unix-and-windows-text-file-formats/</guid>
-      <description>I&amp;rsquo;ve been using these shell scripts I wrote to convert between unix and windows text file formats. They seem to work well without any problems. If you put them in the /usr/sbin/ directory, they will be accessible on the path of the linux admin account root.
-/usr/sbin/unix2win `#!/bin/bash
-Converts a unix text file to a windows text file. usage: unix2win requirements: sed version 4.2 or later, check with sed &amp;ndash;version sed -i -e &amp;rsquo;s/$/r/&amp;rsquo; $1 `</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve been using these shell scripts I wrote to convert between unix and windows text file formats. They seem to work well without any problems. If you put them in the /usr/sbin/ directory, they will be accessible on the path of the linux admin account root.&lt;/p&gt;
+&lt;p&gt;/usr/sbin/unix2win
+`#!/bin/bash&lt;/p&gt;
+&lt;h1 id=&#34;converts-a-unix-text-file-to-a-windows-text-file&#34;&gt;Converts a unix text file to a windows text file.&lt;/h1&gt;
+&lt;h1 id=&#34;usage-unix2win-text-file-to-convert&#34;&gt;usage: unix2win &lt;!-- raw HTML omitted --&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;requirements-sed-version-42-or-later-check-with-sed---version&#34;&gt;requirements: sed version 4.2 or later, check with sed &amp;ndash;version&lt;/h1&gt;
+&lt;p&gt;sed -i -e &amp;rsquo;s/$/r/&amp;rsquo; $1
+`&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I&rsquo;ve been using these shell scripts I wrote to convert between unix and windows text file formats. They seem to work well without any problems. If you put them in the /usr/sbin/ directory, they will be accessible on the path of the linux admin account root.</p>
 <p>/usr/sbin/unix2win
 `#!/bin/bash</p>

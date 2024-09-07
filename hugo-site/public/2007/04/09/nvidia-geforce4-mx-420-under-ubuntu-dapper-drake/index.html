@@ -8,10 +8,22 @@
 <title>NVIDIA GeForce4 MX 420 under Ubuntu Dapper Drake | DavidCraddock.net</title>
 <meta name="keywords" content="">
 <meta name="description" content="My GeForce4 MX 420 didn&rsquo;t work properly with OpenGL under a fresh install of Dapper Drake. Fixing it, however, proved to be really easy:
-Install the nvidia package: $ apt-get install nvidia
-Edit /etc/X11/xorg.conf and replace the &lsquo;driver&rsquo; where it says &rsquo;nv&rsquo; with &ldquo;nvidia&rdquo;: Section &ldquo;Device&rdquo; Identifier &ldquo;NVIDIA Corporation NV17 [GeForce4 MX 420]&rdquo; #Driver &ldquo;nv&rdquo; Driver &ldquo;nvidia&rdquo; BusID &ldquo;PCI:1:0:0&rdquo; EndSection
-Kill X with control-alt-backspace
-Login again and test if it works by running glxgears and glxinfo on the console">
+
+Install the nvidia package:
+
+
+$ apt-get install nvidia
+
+
+Edit /etc/X11/xorg.conf and replace the &lsquo;driver&rsquo; where it says &rsquo;nv&rsquo; with &ldquo;nvidia&rdquo;:
+
+
+Section &ldquo;Device&rdquo;
+Identifier &ldquo;NVIDIA Corporation NV17 [GeForce4 MX 420]&rdquo;
+#Driver &ldquo;nv&rdquo;
+Driver &ldquo;nvidia&rdquo;
+BusID &ldquo;PCI:1:0:0&rdquo;
+EndSection">
 <meta name="author" content="Reorx">
 <link rel="canonical" href="https://davidcraddock.net/2007/04/09/nvidia-geforce4-mx-420-under-ubuntu-dapper-drake/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.97d99fcdd90c38f6e3343e959a97a0295b30f590730a4ece2347f7f24ad997d1.css" integrity="sha256-l9mfzdkMOPbjND6VmpegKVsw9ZBzCk7OI0f38krZl9E=" rel="preload stylesheet" as="style">
@@ -21,16 +33,40 @@ Login again and test if it works by running glxgears and glxinfo on the console"
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="NVIDIA GeForce4 MX 420 under Ubuntu Dapper Drake | DavidCraddock.net" />
 <meta name="twitter:description" content="My GeForce4 MX 420 didn&rsquo;t work properly with OpenGL under a fresh install of Dapper Drake. Fixing it, however, proved to be really easy:
-Install the nvidia package: $ apt-get install nvidia
-Edit /etc/X11/xorg.conf and replace the &lsquo;driver&rsquo; where it says &rsquo;nv&rsquo; with &ldquo;nvidia&rdquo;: Section &ldquo;Device&rdquo; Identifier &ldquo;NVIDIA Corporation NV17 [GeForce4 MX 420]&rdquo; #Driver &ldquo;nv&rdquo; Driver &ldquo;nvidia&rdquo; BusID &ldquo;PCI:1:0:0&rdquo; EndSection
-Kill X with control-alt-backspace
-Login again and test if it works by running glxgears and glxinfo on the console" />
+
+Install the nvidia package:
+
+
+$ apt-get install nvidia
+
+
+Edit /etc/X11/xorg.conf and replace the &lsquo;driver&rsquo; where it says &rsquo;nv&rsquo; with &ldquo;nvidia&rdquo;:
+
+
+Section &ldquo;Device&rdquo;
+Identifier &ldquo;NVIDIA Corporation NV17 [GeForce4 MX 420]&rdquo;
+#Driver &ldquo;nv&rdquo;
+Driver &ldquo;nvidia&rdquo;
+BusID &ldquo;PCI:1:0:0&rdquo;
+EndSection" />
 <meta property="og:title" content="NVIDIA GeForce4 MX 420 under Ubuntu Dapper Drake | DavidCraddock.net" />
 <meta property="og:description" content="My GeForce4 MX 420 didn&rsquo;t work properly with OpenGL under a fresh install of Dapper Drake. Fixing it, however, proved to be really easy:
-Install the nvidia package: $ apt-get install nvidia
-Edit /etc/X11/xorg.conf and replace the &lsquo;driver&rsquo; where it says &rsquo;nv&rsquo; with &ldquo;nvidia&rdquo;: Section &ldquo;Device&rdquo; Identifier &ldquo;NVIDIA Corporation NV17 [GeForce4 MX 420]&rdquo; #Driver &ldquo;nv&rdquo; Driver &ldquo;nvidia&rdquo; BusID &ldquo;PCI:1:0:0&rdquo; EndSection
-Kill X with control-alt-backspace
-Login again and test if it works by running glxgears and glxinfo on the console" />
+
+Install the nvidia package:
+
+
+$ apt-get install nvidia
+
+
+Edit /etc/X11/xorg.conf and replace the &lsquo;driver&rsquo; where it says &rsquo;nv&rsquo; with &ldquo;nvidia&rdquo;:
+
+
+Section &ldquo;Device&rdquo;
+Identifier &ldquo;NVIDIA Corporation NV17 [GeForce4 MX 420]&rdquo;
+#Driver &ldquo;nv&rdquo;
+Driver &ldquo;nvidia&rdquo;
+BusID &ldquo;PCI:1:0:0&rdquo;
+EndSection" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2007/04/09/nvidia-geforce4-mx-420-under-ubuntu-dapper-drake/" />
     <meta property="og:image" content="https://davidcraddock.net/cover.png"/>
@@ -65,7 +101,7 @@ Login again and test if it works by running glxgears and glxinfo on the console"
   "@type": "BlogPosting",
   "headline": "NVIDIA GeForce4 MX 420 under Ubuntu Dapper Drake | DavidCraddock.net",
   "name": "NVIDIA GeForce4 MX 420 under Ubuntu Dapper Drake",
-  "description": "My GeForce4 MX 420 didn\u0026rsquo;t work properly with OpenGL under a fresh install of Dapper Drake. Fixing it, however, proved to be really easy:\nInstall the nvidia package: $ apt-get install nvidia\nEdit /etc/X11/xorg.conf and replace the \u0026lsquo;driver\u0026rsquo; where it says \u0026rsquo;nv\u0026rsquo; with \u0026ldquo;nvidia\u0026rdquo;: Section \u0026ldquo;Device\u0026rdquo; Identifier \u0026ldquo;NVIDIA Corporation NV17 [GeForce4 MX 420]\u0026rdquo; #Driver \u0026ldquo;nv\u0026rdquo; Driver \u0026ldquo;nvidia\u0026rdquo; BusID \u0026ldquo;PCI:1:0:0\u0026rdquo; EndSection\nKill X with control-alt-backspace\nLogin again and test if it works by running glxgears and glxinfo on the console",
+  "description": "My GeForce4 MX 420 didn\u0026rsquo;t work properly with OpenGL under a fresh install of Dapper Drake. Fixing it, however, proved to be really easy:\nInstall the nvidia package: $ apt-get install nvidia\nEdit /etc/X11/xorg.conf and replace the \u0026lsquo;driver\u0026rsquo; where it says \u0026rsquo;nv\u0026rsquo; with \u0026ldquo;nvidia\u0026rdquo;: Section \u0026ldquo;Device\u0026rdquo; Identifier \u0026ldquo;NVIDIA Corporation NV17 [GeForce4 MX 420]\u0026rdquo; #Driver \u0026ldquo;nv\u0026rdquo; Driver \u0026ldquo;nvidia\u0026rdquo; BusID \u0026ldquo;PCI:1:0:0\u0026rdquo; EndSection\n",
   "keywords": [
     
   ],

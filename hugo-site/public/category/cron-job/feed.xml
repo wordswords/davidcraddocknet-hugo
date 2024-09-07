@@ -13,8 +13,8 @@
       <pubDate>Sat, 13 Mar 2010 16:02:42 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2010/03/13/using-the-linux-command-watch-to-test-cron-jobs/</guid>
-      <description>OK, so you have added a cron job that you want to perform a routine task every day at 6am. How do you test it?
-You probably don&amp;rsquo;t want to spend all night waiting for it to execute, and there&amp;rsquo;s every chance that when it does execute, you won&amp;rsquo;t be able to find out whether it is executing properly - the task might take 30 minutes to run, for example. So every time you debug it and want to test it again, you have to wait until 6am the following day.</description>
+      <description>&lt;p&gt;OK, so you have added a cron job that you want to perform a routine task every day at 6am. How do you test it?&lt;/p&gt;
+&lt;p&gt;You probably don&amp;rsquo;t want to spend all night waiting for it to execute, and there&amp;rsquo;s every chance that when it does execute, you won&amp;rsquo;t be able to find out whether it is executing properly - the task might take 30 minutes to run, for example. So every time you debug it and want to test it again, you have to wait until 6am the following day.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>OK, so you have added a cron job that you want to perform a routine task every day at 6am. How do you test it?</p>
 <p>You probably don&rsquo;t want to spend all night waiting for it to execute, and there&rsquo;s every chance that when it does execute, you won&rsquo;t be able to find out whether it is executing properly - the task might take 30 minutes to run, for example. So every time you debug it and want to test it again, you have to wait until 6am the following day.</p>
 <p>So instead, configure that cron job to run a bit earlier than that, say in 10 minutes, and monitor the execution with a &lsquo;watch&rsquo; command, so you can see if it&rsquo;s doing what you want it to.</p>

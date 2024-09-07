@@ -183,7 +183,8 @@ function toggleThemeListener() {
   <section class="entry-content">
     
       <p>At work I’ve written a couple of scripts that send out emails to the appropriate project team when someone checks in a commit to the project subversion repository. Here are the details.
-Firstly, you will need a subversion hook setup on post-commit. The post-commit hook needs to be located in SVNROOT/YOURPROJECT/hooks where YOURPROJECT is your svn project name, and SVNROOT is the root directory where you are storing the data files for your subversion repository....</p>
+Firstly, you will need a subversion hook setup on post-commit. The post-commit hook needs to be located in SVNROOT/YOURPROJECT/hooks where YOURPROJECT is your svn project name, and SVNROOT is the root directory where you are storing the data files for your subversion repository.
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -206,7 +207,7 @@ Firstly, you will need a subversion hook setup on post-commit. The post-commit h
     
       <p>For some reason, under ubuntu-server, my default MySQL 5 character encoding was latin1. This caused no end of problems with grabbing data from the web, which was not necessarily in latin1 characterset.
 If you are ever in this situation, I suggest you handle everything as UTF-8. That means setting the following lines in my.cnf:
-[mysqld] .. default-character-set=utf8 skip-character-set-client-handshake If you already have tables in your database that you have created, and they have defaulted to the latin1 charset, you’ll be able to tell by looking at the mysqldump SQL:...</p>
+[mysqld] .. default-character-set=utf8 skip-character-set-client-handshake ...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -230,8 +231,7 @@ If you are ever in this situation, I suggest you handle everything as UTF-8. Tha
       <p>My GeForce4 MX 420 didn’t work properly with OpenGL under a fresh install of Dapper Drake. Fixing it, however, proved to be really easy:
 Install the nvidia package: $ apt-get install nvidia
 Edit /etc/X11/xorg.conf and replace the ‘driver’ where it says ’nv’ with “nvidia”: Section “Device” Identifier “NVIDIA Corporation NV17 [GeForce4 MX 420]” #Driver “nv” Driver “nvidia” BusID “PCI:1:0:0” EndSection
-Kill X with control-alt-backspace
-Login again and test if it works by running glxgears and glxinfo on the console</p>
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">

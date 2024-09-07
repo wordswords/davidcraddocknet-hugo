@@ -186,7 +186,7 @@ function toggleThemeListener() {
 First I needed to setup the udev rules:
 1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):
 SUBSYSTEM==&#34;usb&#34;, ATTRS{idVendor}==&#34;1949&#34;, MODE=&#34;0666&#34; 2. Change the permission of this file by executing the following command as root:
-chmod a&#43;r /etc/udev/rules.d/51-android.rules 3. Reload the rules by executing the following command as root:...</p>
+chmod a&#43;r /etc/udev/rules.d/51-android.rules ...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">

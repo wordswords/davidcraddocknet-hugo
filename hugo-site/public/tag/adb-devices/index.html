@@ -186,7 +186,7 @@ function toggleThemeListener() {
 First I needed to setup the udev rules:
 1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):
 SUBSYSTEM==&#34;usb&#34;, ATTRS{idVendor}==&#34;1949&#34;, MODE=&#34;0666&#34; 2. Change the permission of this file by executing the following command as root:
-chmod a&#43;r /etc/udev/rules.d/51-android.rules 3. Reload the rules by executing the following command as root:...</p>
+chmod a&#43;r /etc/udev/rules.d/51-android.rules ...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -207,7 +207,9 @@ chmod a&#43;r /etc/udev/rules.d/51-android.rules 3. Reload the rules by executin
   </header>
   <section class="entry-content">
     
-      <p>I’ve been working on a project at the BBC where we are using the Android command-line tools from the Android Developer Tools, to spin up and terminate series of emulators. I noticed a big problem under OSX where ‘adb devices’ was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb....</p>
+      <p>
+I’ve been working on a project at the BBC where we are using the Android command-line tools from the Android Developer Tools, to spin up and terminate series of emulators. I noticed a big problem under OSX where ‘adb devices’ was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb.
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">

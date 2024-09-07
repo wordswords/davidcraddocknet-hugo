@@ -8,7 +8,14 @@
 <title>OSX Fish Functions to open Chrome from the Shell | DavidCraddock.net</title>
 <meta name="keywords" content="">
 <meta name="description" content="These functions are quite handy, and allow you to do things such as copy and paste errors and google for them without having to manually open a browser. You have to enclose arguments to both functions in single quotes, e.g. &lsquo;chrome &lsquo;http://www.google.co.uk&rsquo; and google &lsquo;one two three four&rsquo;. You should add these to your config file at ~/.config/fish/config.fish and make sure Google Chrome is already installed.
-[code language=&ldquo;bash&rdquo;] function chrome /usr/bin/open -a &lsquo;/Applications/Google Chrome.">
+[code language=&ldquo;bash&rdquo;]
+function chrome
+/usr/bin/open -a &lsquo;/Applications/Google Chrome.app&rsquo; $argv[1:]
+end
+function google
+/usr/bin/open -a &lsquo;/Applications/Google Chrome.app&rsquo; &ldquo;https://www.google.co.uk/search?q=$argv[1]&rdquo;
+end
+[/code]">
 <meta name="author" content="Reorx">
 <link rel="canonical" href="https://davidcraddock.net/2016/04/04/osx-fish-functions-to-open-chrome-from-the-shell/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.97d99fcdd90c38f6e3343e959a97a0295b30f590730a4ece2347f7f24ad997d1.css" integrity="sha256-l9mfzdkMOPbjND6VmpegKVsw9ZBzCk7OI0f38krZl9E=" rel="preload stylesheet" as="style">
@@ -18,10 +25,24 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="OSX Fish Functions to open Chrome from the Shell | DavidCraddock.net" />
 <meta name="twitter:description" content="These functions are quite handy, and allow you to do things such as copy and paste errors and google for them without having to manually open a browser. You have to enclose arguments to both functions in single quotes, e.g. &lsquo;chrome &lsquo;http://www.google.co.uk&rsquo; and google &lsquo;one two three four&rsquo;. You should add these to your config file at ~/.config/fish/config.fish and make sure Google Chrome is already installed.
-[code language=&ldquo;bash&rdquo;] function chrome /usr/bin/open -a &lsquo;/Applications/Google Chrome." />
+[code language=&ldquo;bash&rdquo;]
+function chrome
+/usr/bin/open -a &lsquo;/Applications/Google Chrome.app&rsquo; $argv[1:]
+end
+function google
+/usr/bin/open -a &lsquo;/Applications/Google Chrome.app&rsquo; &ldquo;https://www.google.co.uk/search?q=$argv[1]&rdquo;
+end
+[/code]" />
 <meta property="og:title" content="OSX Fish Functions to open Chrome from the Shell | DavidCraddock.net" />
 <meta property="og:description" content="These functions are quite handy, and allow you to do things such as copy and paste errors and google for them without having to manually open a browser. You have to enclose arguments to both functions in single quotes, e.g. &lsquo;chrome &lsquo;http://www.google.co.uk&rsquo; and google &lsquo;one two three four&rsquo;. You should add these to your config file at ~/.config/fish/config.fish and make sure Google Chrome is already installed.
-[code language=&ldquo;bash&rdquo;] function chrome /usr/bin/open -a &lsquo;/Applications/Google Chrome." />
+[code language=&ldquo;bash&rdquo;]
+function chrome
+/usr/bin/open -a &lsquo;/Applications/Google Chrome.app&rsquo; $argv[1:]
+end
+function google
+/usr/bin/open -a &lsquo;/Applications/Google Chrome.app&rsquo; &ldquo;https://www.google.co.uk/search?q=$argv[1]&rdquo;
+end
+[/code]" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2016/04/04/osx-fish-functions-to-open-chrome-from-the-shell/" />
     <meta property="og:image" content="https://davidcraddock.net/cover.png"/>
@@ -56,7 +77,7 @@
   "@type": "BlogPosting",
   "headline": "OSX Fish Functions to open Chrome from the Shell | DavidCraddock.net",
   "name": "OSX Fish Functions to open Chrome from the Shell",
-  "description": "These functions are quite handy, and allow you to do things such as copy and paste errors and google for them without having to manually open a browser. You have to enclose arguments to both functions in single quotes, e.g. \u0026lsquo;chrome \u0026lsquo;http://www.google.co.uk\u0026rsquo; and google \u0026lsquo;one two three four\u0026rsquo;. You should add these to your config file at ~/.config/fish/config.fish and make sure Google Chrome is already installed.\n[code language=\u0026ldquo;bash\u0026rdquo;] function chrome /usr/bin/open -a \u0026lsquo;/Applications/Google Chrome.",
+  "description": "These functions are quite handy, and allow you to do things such as copy and paste errors and google for them without having to manually open a browser. You have to enclose arguments to both functions in single quotes, e.g. \u0026lsquo;chrome \u0026lsquo;http://www.google.co.uk\u0026rsquo; and google \u0026lsquo;one two three four\u0026rsquo;. You should add these to your config file at ~/.config/fish/config.fish and make sure Google Chrome is already installed.\n[code language=\u0026ldquo;bash\u0026rdquo;] function chrome /usr/bin/open -a \u0026lsquo;/Applications/Google Chrome.app\u0026rsquo; $argv[1:] end function google /usr/bin/open -a \u0026lsquo;/Applications/Google Chrome.app\u0026rsquo; \u0026ldquo;https://www.google.co.uk/search?q=$argv[1]\u0026rdquo; end [/code]\n",
   "keywords": [
     
   ],

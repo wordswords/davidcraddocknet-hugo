@@ -13,8 +13,15 @@
       <pubDate>Mon, 04 Apr 2016 11:50:31 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2016/04/04/osx-fish-functions-to-open-chrome-from-the-shell/</guid>
-      <description>These functions are quite handy, and allow you to do things such as copy and paste errors and google for them without having to manually open a browser. You have to enclose arguments to both functions in single quotes, e.g. &amp;lsquo;chrome &amp;lsquo;http://www.google.co.uk&amp;rsquo; and google &amp;lsquo;one two three four&amp;rsquo;. You should add these to your config file at ~/.config/fish/config.fish and make sure Google Chrome is already installed.
-[code language=&amp;ldquo;bash&amp;rdquo;] function chrome /usr/bin/open -a &amp;lsquo;/Applications/Google Chrome.</description>
+      <description>&lt;p&gt;These functions are quite handy, and allow you to do things such as copy and paste errors and google for them without having to manually open a browser. You have to enclose arguments to both functions in single quotes, e.g. &amp;lsquo;chrome &amp;lsquo;&lt;a href=&#34;http://www.google.co.uk&#34;&gt;http://www.google.co.uk&lt;/a&gt;&amp;rsquo; and google &amp;lsquo;one two three four&amp;rsquo;. You should add these to your config file at ~/.config/fish/config.fish and make sure Google Chrome is already installed.&lt;/p&gt;
+&lt;p&gt;[code language=&amp;ldquo;bash&amp;rdquo;]
+function chrome
+/usr/bin/open -a &amp;lsquo;/Applications/Google Chrome.app&amp;rsquo; $argv[1:]
+end
+function google
+/usr/bin/open -a &amp;lsquo;/Applications/Google Chrome.app&amp;rsquo; &amp;ldquo;&lt;a href=&#34;https://www.google.co.uk/search?q=$argv&#34;&gt;https://www.google.co.uk/search?q=$argv&lt;/a&gt;[1]&amp;rdquo;
+end
+[/code]&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>These functions are quite handy, and allow you to do things such as copy and paste errors and google for them without having to manually open a browser. You have to enclose arguments to both functions in single quotes, e.g. &lsquo;chrome &lsquo;<a href="http://www.google.co.uk">http://www.google.co.uk</a>&rsquo; and google &lsquo;one two three four&rsquo;. You should add these to your config file at ~/.config/fish/config.fish and make sure Google Chrome is already installed.</p>
 <p>[code language=&ldquo;bash&rdquo;]
 function chrome

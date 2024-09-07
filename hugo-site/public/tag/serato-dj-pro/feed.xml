@@ -13,10 +13,18 @@
       <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2021/05/05/organising-huge-music-libraries-with-serato/</guid>
-      <description>Updated: 25-11-22
-My music library is around 24k files, mostly FLAC and some 320kbps MP3s. I use the following tools to organise my music library:
-Acquisition: dbPoweramp CD Ripper - https://www.dbpoweramp.com/cd-ripper.htm Bandcamp Collection Downloader - https://github.com/Ezwen/bandcamp-collection-downloader Soulseek - http://www.slsknet.org Tagging and Metadata: Beets - https://beets.io Mixed In Key - https://mixedinkey.com Lexicon https://www.lexicondj.com/ Backup and sync: Robocopy - comes free with Windows 10. Documentation: https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy Google Drive Rsync
-Searching: Everything Search - https://voidtools.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Updated: 25-11-22&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;My music library is around 24k files, mostly FLAC and some 320kbps MP3s. I use the following tools to organise my music library:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Acquisition:&lt;/strong&gt;
+dbPoweramp CD Ripper - &lt;a href=&#34;https://www.dbpoweramp.com/cd-ripper.htm&#34;&gt;https://www.dbpoweramp.com/cd-ripper.htm&lt;/a&gt;
+Bandcamp Collection Downloader - &lt;a href=&#34;https://github.com/Ezwen/bandcamp-collection-downloader&#34;&gt;https://github.com/Ezwen/bandcamp-collection-downloader&lt;/a&gt;
+Soulseek - &lt;a href=&#34;http://www.slsknet.org&#34;&gt;http://www.slsknet.org&lt;/a&gt; &lt;strong&gt;Tagging and Metadata:&lt;/strong&gt;
+Beets - &lt;a href=&#34;https://beets.io&#34;&gt;https://beets.io&lt;/a&gt;
+Mixed In Key - &lt;a href=&#34;https://mixedinkey.com&#34;&gt;https://mixedinkey.com&lt;/a&gt;
+Lexicon &lt;a href=&#34;https://www.lexicondj.com/&#34;&gt;https://www.lexicondj.com/&lt;/a&gt; &lt;strong&gt;Backup and sync:&lt;/strong&gt;
+Robocopy - comes free with Windows 10. Documentation: &lt;a href=&#34;https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy&#34;&gt;https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy&lt;/a&gt;
+Google Drive
+Rsync&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><strong>Updated: 25-11-22</strong></p>
 <p>My music library is around 24k files, mostly FLAC and some 320kbps MP3s. I use the following tools to organise my music library:</p>
 <p><strong>Acquisition:</strong>
@@ -204,7 +212,8 @@ quality: 0</p>
       <pubDate>Thu, 08 Apr 2021 03:49:31 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2021/04/08/dj-setup-8-4-21/</guid>
-      <description>I recently found a good price on a Vestax VCM-600 controller. It is a specially made MIDI controller for Ableton Live, with the same build quality as a DJ mixer. It allows for control over 6 channels in the Ableton Live &amp;lsquo;session&amp;rsquo; view, which is arranged similarly to a mixing console. It also adds dozens of MIDI mappable DJ controls such as the traditional Hi, Mid and Lo EQs, a crossfader, a filter control, control over a lot of Ableton FX, and more.</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/04/hybridsetup.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;I recently found a good price on a Vestax VCM-600 controller. It is a specially made MIDI controller for Ableton Live, with the same build quality as a DJ mixer. It allows for control over 6 channels in the Ableton Live &amp;lsquo;session&amp;rsquo; view, which is arranged similarly to a mixing console. It also adds dozens of MIDI mappable DJ controls such as the traditional Hi, Mid and Lo EQs, a crossfader, a filter control, control over a lot of Ableton FX, and more. It has 6 channel faders + 2 send faders for FX. More info in this video:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2021/04/hybridsetup.jpg" type="" alt=""  /></p>
 <p>I recently found a good price on a Vestax VCM-600 controller. It is a specially made MIDI controller for Ableton Live, with the same build quality as a DJ mixer. It allows for control over 6 channels in the Ableton Live &lsquo;session&rsquo; view, which is arranged similarly to a mixing console. It also adds dozens of MIDI mappable DJ controls such as the traditional Hi, Mid and Lo EQs, a crossfader, a filter control, control over a lot of Ableton FX, and more. It has 6 channel faders + 2 send faders for FX. More info in this video:</p>
 <p>[youtube <a href="https://www.youtube.com/watch?v=GpZ7o">https://www.youtube.com/watch?v=GpZ7o</a>_H9u2M&amp;w=560&amp;h=315]</p>

@@ -184,7 +184,8 @@ function toggleThemeListener() {
     
       <p>Here are some extra tips if you’re just getting started out on Ubuntu.
 You don’t have to go through the UI to shut down or reboot your computer. You can do it from the command line. The commands are:
-sudo reboot # to reboot sudo poweroff # to shut down and power off the computer You can get a lot more information on your computers startup and shutdown sequences by removing the default Ubuntu splash screen that obscures this....</p>
+sudo reboot # to reboot sudo poweroff # to shut down and power off the computer You can get a lot more information on your computers startup and shutdown sequences by removing the default Ubuntu splash screen that obscures this. You should definitely do this if you want to learn more about what your system is actually doing under the hood, especially if you need to troubleshoot what it’s doing. To do this:
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -206,7 +207,8 @@ sudo reboot # to reboot sudo poweroff # to shut down and power off the computer 
   <section class="entry-content">
     
       <p>For 8 TB of data storage on Google Drive, plus my own Google organization, I am paying £30/month, which is a pretty good deal.
-I wanted to use this space for backing up my NAS, but it was proving difficult. The program I was recommended for Linux backup, Duplicati, was not the best for this purpose. My backup runs would not complete, they would be slow, and full of syncing errors....</p>
+I wanted to use this space for backing up my NAS, but it was proving difficult. The program I was recommended for Linux backup, Duplicati, was not the best for this purpose. My backup runs would not complete, they would be slow, and full of syncing errors.
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -253,7 +255,7 @@ sudo apt install enlightenment sudo find /usr/lib -type f -name enlightenment_sy
 First I needed to setup the udev rules:
 1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):
 SUBSYSTEM==&#34;usb&#34;, ATTRS{idVendor}==&#34;1949&#34;, MODE=&#34;0666&#34; 2. Change the permission of this file by executing the following command as root:
-chmod a&#43;r /etc/udev/rules.d/51-android.rules 3. Reload the rules by executing the following command as root:...</p>
+chmod a&#43;r /etc/udev/rules.d/51-android.rules ...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -274,7 +276,9 @@ chmod a&#43;r /etc/udev/rules.d/51-android.rules 3. Reload the rules by executin
   </header>
   <section class="entry-content">
     
-      <p>I’ve been working on a project at the BBC where we are using the Android command-line tools from the Android Developer Tools, to spin up and terminate series of emulators. I noticed a big problem under OSX where ‘adb devices’ was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb....</p>
+      <p>
+I’ve been working on a project at the BBC where we are using the Android command-line tools from the Android Developer Tools, to spin up and terminate series of emulators. I noticed a big problem under OSX where ‘adb devices’ was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb.
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -295,7 +299,8 @@ chmod a&#43;r /etc/udev/rules.d/51-android.rules 3. Reload the rules by executin
   </header>
   <section class="entry-content">
     
-      <p>A common task when setting up an Apache webserver under Linux, is writing a httpd.conf file. The httpd.conf file is the main configuration file for Apache. One of the main reasons to edit the httpd.conf file is to setup virtual hosts In Apache. A Virtual host configuration allows several different domains to be run off a single instance of Apache, on a single IP. Each host is a ‘Virtual host’, and typically has a different web root, log file, and any number of subdomains aliased to it....</p>
+      <p>A common task when setting up an Apache webserver under Linux, is writing a httpd.conf file. The httpd.conf file is the main configuration file for Apache. One of the main reasons to edit the httpd.conf file is to setup virtual hosts In Apache. A Virtual host configuration allows several different domains to be run off a single instance of Apache, on a single IP. Each host is a ‘Virtual host’, and typically has a different web root, log file, and any number of subdomains aliased to it. The virtualhosts are configured in parts of the httpd.conf file that look like this:
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">

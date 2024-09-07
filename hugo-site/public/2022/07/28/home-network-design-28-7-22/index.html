@@ -7,9 +7,23 @@
 <meta name="robots" content="index, follow">
 <title>Home Network Design 28/7/22 | DavidCraddock.net</title>
 <meta name="keywords" content="">
-<meta name="description" content="Now that I actually have the internet connectivity being installed to make use of it, I am getting my home network design a bit more finished.
+<meta name="description" content="
+Now that I actually have the internet connectivity being installed to make use of it, I am getting my home network design a bit more finished.
 Components:
-Virgin Hub providing a 1100/50mbps connection BetterInternet Fibre Hub providing a 900/900mbps connection Raspberry Pi 3 running Pi-Hole DNS MikroTik CRS309-1G-8S&#43;IN Cloud Router Switch 4 x SFP&#43;10Gb SFP&#43; RJ45 Copper Modules CAT8 30M Outdoor Cable to connect the studio to the study Short run CAT7 Patch Cables Windows 11 Studio PC with 10GB/sec SFP&#43; Port ThinkStation Server with twin 10GB/sec SFP&#43; Ports and separate gigabit NIC 3x LinkSys 3200WRT Routers in wireless repeater mode, creating a 2.">
+
+Virgin Hub providing a 1100/50mbps connection
+BetterInternet Fibre Hub providing a 900/900mbps connection
+Raspberry Pi 3 running Pi-Hole DNS
+MikroTik CRS309-1G-8S&#43;IN Cloud Router Switch
+4 x SFP&#43;10Gb SFP&#43; RJ45 Copper Modules
+CAT8 30M Outdoor Cable to connect the studio to the study
+Short run CAT7 Patch Cables
+Windows 11 Studio PC with 10GB/sec SFP&#43; Port
+ThinkStation Server with twin 10GB/sec SFP&#43; Ports and separate gigabit NIC
+3x LinkSys 3200WRT Routers in wireless repeater mode, creating a 2.4hz wireless network with speeds around 500mbps on average to each wireless device.
+TP-Link Gigabit switch
+
+Load-balancing internet connections:">
 <meta name="author" content="Reorx">
 <link rel="canonical" href="https://davidcraddock.net/2022/07/28/home-network-design-28-7-22/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.97d99fcdd90c38f6e3343e959a97a0295b30f590730a4ece2347f7f24ad997d1.css" integrity="sha256-l9mfzdkMOPbjND6VmpegKVsw9ZBzCk7OI0f38krZl9E=" rel="preload stylesheet" as="style">
@@ -18,13 +32,41 @@ Virgin Hub providing a 1100/50mbps connection BetterInternet Fibre Hub providing
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/2022/07/28/home-network-design-28-7-22/">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Home Network Design 28/7/22 | DavidCraddock.net" />
-<meta name="twitter:description" content="Now that I actually have the internet connectivity being installed to make use of it, I am getting my home network design a bit more finished.
+<meta name="twitter:description" content="
+Now that I actually have the internet connectivity being installed to make use of it, I am getting my home network design a bit more finished.
 Components:
-Virgin Hub providing a 1100/50mbps connection BetterInternet Fibre Hub providing a 900/900mbps connection Raspberry Pi 3 running Pi-Hole DNS MikroTik CRS309-1G-8S&#43;IN Cloud Router Switch 4 x SFP&#43;10Gb SFP&#43; RJ45 Copper Modules CAT8 30M Outdoor Cable to connect the studio to the study Short run CAT7 Patch Cables Windows 11 Studio PC with 10GB/sec SFP&#43; Port ThinkStation Server with twin 10GB/sec SFP&#43; Ports and separate gigabit NIC 3x LinkSys 3200WRT Routers in wireless repeater mode, creating a 2." />
+
+Virgin Hub providing a 1100/50mbps connection
+BetterInternet Fibre Hub providing a 900/900mbps connection
+Raspberry Pi 3 running Pi-Hole DNS
+MikroTik CRS309-1G-8S&#43;IN Cloud Router Switch
+4 x SFP&#43;10Gb SFP&#43; RJ45 Copper Modules
+CAT8 30M Outdoor Cable to connect the studio to the study
+Short run CAT7 Patch Cables
+Windows 11 Studio PC with 10GB/sec SFP&#43; Port
+ThinkStation Server with twin 10GB/sec SFP&#43; Ports and separate gigabit NIC
+3x LinkSys 3200WRT Routers in wireless repeater mode, creating a 2.4hz wireless network with speeds around 500mbps on average to each wireless device.
+TP-Link Gigabit switch
+
+Load-balancing internet connections:" />
 <meta property="og:title" content="Home Network Design 28/7/22 | DavidCraddock.net" />
-<meta property="og:description" content="Now that I actually have the internet connectivity being installed to make use of it, I am getting my home network design a bit more finished.
+<meta property="og:description" content="
+Now that I actually have the internet connectivity being installed to make use of it, I am getting my home network design a bit more finished.
 Components:
-Virgin Hub providing a 1100/50mbps connection BetterInternet Fibre Hub providing a 900/900mbps connection Raspberry Pi 3 running Pi-Hole DNS MikroTik CRS309-1G-8S&#43;IN Cloud Router Switch 4 x SFP&#43;10Gb SFP&#43; RJ45 Copper Modules CAT8 30M Outdoor Cable to connect the studio to the study Short run CAT7 Patch Cables Windows 11 Studio PC with 10GB/sec SFP&#43; Port ThinkStation Server with twin 10GB/sec SFP&#43; Ports and separate gigabit NIC 3x LinkSys 3200WRT Routers in wireless repeater mode, creating a 2." />
+
+Virgin Hub providing a 1100/50mbps connection
+BetterInternet Fibre Hub providing a 900/900mbps connection
+Raspberry Pi 3 running Pi-Hole DNS
+MikroTik CRS309-1G-8S&#43;IN Cloud Router Switch
+4 x SFP&#43;10Gb SFP&#43; RJ45 Copper Modules
+CAT8 30M Outdoor Cable to connect the studio to the study
+Short run CAT7 Patch Cables
+Windows 11 Studio PC with 10GB/sec SFP&#43; Port
+ThinkStation Server with twin 10GB/sec SFP&#43; Ports and separate gigabit NIC
+3x LinkSys 3200WRT Routers in wireless repeater mode, creating a 2.4hz wireless network with speeds around 500mbps on average to each wireless device.
+TP-Link Gigabit switch
+
+Load-balancing internet connections:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2022/07/28/home-network-design-28-7-22/" />
     <meta property="og:image" content="https://davidcraddock.net/cover.png"/>
@@ -59,7 +101,7 @@ Virgin Hub providing a 1100/50mbps connection BetterInternet Fibre Hub providing
   "@type": "BlogPosting",
   "headline": "Home Network Design 28/7/22 | DavidCraddock.net",
   "name": "Home Network Design 28\/7\/22",
-  "description": "Now that I actually have the internet connectivity being installed to make use of it, I am getting my home network design a bit more finished.\nComponents:\nVirgin Hub providing a 1100/50mbps connection BetterInternet Fibre Hub providing a 900/900mbps connection Raspberry Pi 3 running Pi-Hole DNS MikroTik CRS309-1G-8S+IN Cloud Router Switch 4 x SFP+10Gb SFP+ RJ45 Copper Modules CAT8 30M Outdoor Cable to connect the studio to the study Short run CAT7 Patch Cables Windows 11 Studio PC with 10GB/sec SFP+ Port ThinkStation Server with twin 10GB/sec SFP+ Ports and separate gigabit NIC 3x LinkSys 3200WRT Routers in wireless repeater mode, creating a 2.",
+  "description": "\nNow that I actually have the internet connectivity being installed to make use of it, I am getting my home network design a bit more finished.\nComponents:\nVirgin Hub providing a 1100/50mbps connection BetterInternet Fibre Hub providing a 900/900mbps connection Raspberry Pi 3 running Pi-Hole DNS MikroTik CRS309-1G-8S+IN Cloud Router Switch 4 x SFP+10Gb SFP+ RJ45 Copper Modules CAT8 30M Outdoor Cable to connect the studio to the study Short run CAT7 Patch Cables Windows 11 Studio PC with 10GB/sec SFP+ Port ThinkStation Server with twin 10GB/sec SFP+ Ports and separate gigabit NIC 3x LinkSys 3200WRT Routers in wireless repeater mode, creating a 2.4hz wireless network with speeds around 500mbps on average to each wireless device. TP-Link Gigabit switch Load-balancing internet connections:\n",
   "keywords": [
     
   ],

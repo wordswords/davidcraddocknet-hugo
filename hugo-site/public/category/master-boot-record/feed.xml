@@ -13,8 +13,8 @@
       <pubDate>Tue, 13 Jul 2010 13:02:51 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2010/07/13/restoring-ubuntu-10-4s-bootloader-after-a-windows-7-install/</guid>
-      <description>I installed Windows 7 after I had installed Ubuntu 10.4. Windows 7 overwrote the Linux bootloader &amp;ldquo;grub&amp;rdquo; on my master boot record. Therefore I had to restore it.
-I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under the LiveCD, I then restored the Grub bootloader by chrooting into my old install, using the linux command line. This is a fairly complex thing to do, and so I recommend you use this approach only if you&amp;rsquo;re are confident with the linux command line:</description>
+      <description>&lt;p&gt;I installed Windows 7 after I had installed Ubuntu 10.4. Windows 7 overwrote the Linux bootloader &amp;ldquo;grub&amp;rdquo; on my master boot record. Therefore I had to restore it.&lt;/p&gt;
+&lt;p&gt;I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under the LiveCD, I then restored the Grub bootloader by chrooting into my old install, using the linux command line. This is a fairly complex thing to do, and so I recommend you use this approach only if you&amp;rsquo;re are confident with the linux command line:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I installed Windows 7 after I had installed Ubuntu 10.4. Windows 7 overwrote the Linux bootloader &ldquo;grub&rdquo; on my master boot record. Therefore I had to restore it.</p>
 <p>I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under the LiveCD, I then restored the Grub bootloader by chrooting into my old install, using the linux command line. This is a fairly complex thing to do, and so I recommend you use this approach only if you&rsquo;re are confident with the linux command line:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># (as root under Ubuntu&#39;s LiveCD)</span>

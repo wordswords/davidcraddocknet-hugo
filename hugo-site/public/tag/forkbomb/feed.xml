@@ -13,8 +13,8 @@
       <pubDate>Fri, 02 Apr 2010 03:50:37 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2010/04/02/forkbombs-and-how-to-prevent-them/</guid>
-      <description>A forkbomb is a program or script that continually creates new copies of itself, that create new copies of themselves. It&amp;rsquo;s usually a function that calls itself, and each time that function is called, it creates a new process to run the same function.
-You end up with thousands of processes, all creating processes themselves, with an exponential growth. Soon it takes up all the resources of your server, and prevents anything else running on it.</description>
+      <description>&lt;p&gt;A forkbomb is a program or script that continually creates new copies of itself, that create new copies of themselves. It&amp;rsquo;s usually a function that calls itself, and each time that function is called, it creates a new process to run the same function.&lt;/p&gt;
+&lt;p&gt;You end up with thousands of processes, all creating processes themselves, with an exponential growth. Soon it takes up all the resources of your server, and prevents anything else running on it.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>A forkbomb is a program or script that continually creates new copies of itself, that create new copies of themselves. It&rsquo;s usually a function that calls itself, and each time that function is called, it creates a new process to run the same function.</p>
 <p>You end up with thousands of processes, all creating processes themselves, with an exponential growth. Soon it takes up all the resources of your server, and prevents anything else running on it.</p>
 <p>Forkbombs are an example of a denial of service attack, because it completely locks up the server it&rsquo;s run on.</p>

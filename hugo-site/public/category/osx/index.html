@@ -183,7 +183,8 @@ function toggleThemeListener() {
   <section class="entry-content">
     
       <p>These functions are quite handy, and allow you to do things such as copy and paste errors and google for them without having to manually open a browser. You have to enclose arguments to both functions in single quotes, e.g. ‘chrome ‘http://www.google.co.uk’ and google ‘one two three four’. You should add these to your config file at ~/.config/fish/config.fish and make sure Google Chrome is already installed.
-[code language=“bash”] function chrome /usr/bin/open -a ‘/Applications/Google Chrome....</p>
+[code language=“bash”] function chrome /usr/bin/open -a ‘/Applications/Google Chrome.app’ $argv[1:] end function google /usr/bin/open -a ‘/Applications/Google Chrome.app’ “https://www.google.co.uk/search?q=$argv[1]” end [/code]
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -204,8 +205,10 @@ function toggleThemeListener() {
   </header>
   <section class="entry-content">
     
-      <p>If you have two soundcards - maybe a normal soundcard for your speakers and maybe a headset with its own audio interface - you will want some way of switching all audio between the two. This is an great little open-source tool to do just that. It works on Mac, and Windows 7 up to 10:
-https://soundswitch.codeplex.com/</p>
+      <p>
+If you have two soundcards - maybe a normal soundcard for your speakers and maybe a headset with its own audio interface - you will want some way of switching all audio between the two. This is an great little open-source tool to do just that. It works on Mac, and Windows 7 up to 10:
+https://soundswitch.codeplex.com/
+</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -226,7 +229,9 @@ https://soundswitch.codeplex.com/</p>
   </header>
   <section class="entry-content">
     
-      <p>I’ve been working on a project at the BBC where we are using the Android command-line tools from the Android Developer Tools, to spin up and terminate series of emulators. I noticed a big problem under OSX where ‘adb devices’ was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb....</p>
+      <p>
+I’ve been working on a project at the BBC where we are using the Android command-line tools from the Android Developer Tools, to spin up and terminate series of emulators. I noticed a big problem under OSX where ‘adb devices’ was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb.
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -247,7 +252,8 @@ https://soundswitch.codeplex.com/</p>
   </header>
   <section class="entry-content">
     
-      <p>I am currently on holiday in Tenerife, and although I really like it here, one thing I do not like is the internet connection we have in our resort. Sometimes networked applications will just hang with no warning and there will be minutes where it’s not clear what is going on. Here are some ways you can find a little bit more about what is happening when an application is slow or seems to hang when you have a poor internet connection....</p>
+      <p>I am currently on holiday in Tenerife, and although I really like it here, one thing I do not like is the internet connection we have in our resort. Sometimes networked applications will just hang with no warning and there will be minutes where it’s not clear what is going on. Here are some ways you can find a little bit more about what is happening when an application is slow or seems to hang when you have a poor internet connection. Execute the following commands each in a separate terminal window.
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -268,7 +274,9 @@ https://soundswitch.codeplex.com/</p>
   </header>
   <section class="entry-content">
     
-      <p>I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame....</p>
+      <p>
+I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame. I couldn’t find a video player that would open the single frame. So I resorted to the command line version of ffmpeg, which I installed via macports, to convert this single frame to a jpg file to view as normal. This line worked a treat:
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -290,7 +298,8 @@ https://soundswitch.codeplex.com/</p>
   <section class="entry-content">
     
       <p>To quickly find large files to delete if you have filled your startup disk, enter this command on the OSX terminal:
-sudo find / -size &#43;500000 -print This will find and print out file paths to files over 500MB. You can then go through them and delete them individually by typing rm “”, although there is no undelete so make sure you know you won’t miss them.</p>
+sudo find / -size &#43;500000 -print This will find and print out file paths to files over 500MB. You can then go through them and delete them individually by typing rm “”, although there is no undelete so make sure you know you won’t miss them.
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -313,7 +322,8 @@ sudo find / -size &#43;500000 -print This will find and print out file paths to 
     
       <p>I have a 2006/2007 Core 2 Duo 2.6ghz white macbook, that I use regularly for internet, music, watching films, itunes and integration with my iPhone.
 I wanted to turn my desktop PC into a ‘work only’ Ubuntu Linux machine, so that I don’t get distracted when I’m supposed to be doing something else.
-But I still have a lot of PC games that I wanted to play on the Macbook, so I decided to try and setup a windows environment to play games on using Bootcamp 2....</p>
+But I still have a lot of PC games that I wanted to play on the Macbook, so I decided to try and setup a windows environment to play games on using Bootcamp 2.0 to create a dual-boot OSX/Windows 7 configuration.
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">

@@ -13,11 +13,13 @@
       <pubDate>Mon, 10 Feb 2014 15:28:45 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2014/02/10/kindlefire-hdx-under-ubuntu-12-04/</guid>
-      <description>I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.
-First I needed to setup the udev rules:
-1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):
-SUBSYSTEM==&amp;#34;usb&amp;#34;, ATTRS{idVendor}==&amp;#34;1949&amp;#34;, MODE=&amp;#34;0666&amp;#34; 2. Change the permission of this file by executing the following command as root:
-chmod a+r /etc/udev/rules.d/51-android.rules 3. Reload the rules by executing the following command as root:</description>
+      <description>&lt;p&gt;I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.&lt;/p&gt;
+&lt;p&gt;First I needed to setup the udev rules:&lt;/p&gt;
+&lt;p&gt;1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SUBSYSTEM==&amp;#34;usb&amp;#34;, ATTRS{idVendor}==&amp;#34;1949&amp;#34;, MODE=&amp;#34;0666&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;2. Change the permission of this file by executing the following command as root:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;chmod a+r /etc/udev/rules.d/51-android.rules
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
       <content:encoded><![CDATA[<p>I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.</p>
 <p>First I needed to setup the udev rules:</p>
 <p>1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):</p>

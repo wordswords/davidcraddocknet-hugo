@@ -183,7 +183,8 @@ function toggleThemeListener() {
   <section class="entry-content">
     
       <p>More adventures with Fish shell. I have scripted the generation of a bunch of test asset audio files in mp4 format suitable for dash streaming. I have used the audio file commandline tools ffmepg MP4Box and sox in this script, they are pretty powerful and worth installing via homebrew on OSX.
-Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I’m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy....</p>
+Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I’m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy. [code lang=“bash”] #!/usr/bin/env fish # move to the asset output directory.. cd ..
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">
@@ -204,7 +205,9 @@ Thoughts: I think that instead of quoting you can just output $variable, which i
   </header>
   <section class="entry-content">
     
-      <p>I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame....</p>
+      <p>
+I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame. I couldn’t find a video player that would open the single frame. So I resorted to the command line version of ffmpeg, which I installed via macports, to convert this single frame to a jpg file to view as normal. This line worked a treat:
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">

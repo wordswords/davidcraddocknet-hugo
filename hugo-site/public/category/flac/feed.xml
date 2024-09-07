@@ -13,10 +13,18 @@
       <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2021/05/05/organising-huge-music-libraries-with-serato/</guid>
-      <description>Updated: 25-11-22
-My music library is around 24k files, mostly FLAC and some 320kbps MP3s. I use the following tools to organise my music library:
-Acquisition: dbPoweramp CD Ripper - https://www.dbpoweramp.com/cd-ripper.htm Bandcamp Collection Downloader - https://github.com/Ezwen/bandcamp-collection-downloader Soulseek - http://www.slsknet.org Tagging and Metadata: Beets - https://beets.io Mixed In Key - https://mixedinkey.com Lexicon https://www.lexicondj.com/ Backup and sync: Robocopy - comes free with Windows 10. Documentation: https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy Google Drive Rsync
-Searching: Everything Search - https://voidtools.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Updated: 25-11-22&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;My music library is around 24k files, mostly FLAC and some 320kbps MP3s. I use the following tools to organise my music library:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Acquisition:&lt;/strong&gt;
+dbPoweramp CD Ripper - &lt;a href=&#34;https://www.dbpoweramp.com/cd-ripper.htm&#34;&gt;https://www.dbpoweramp.com/cd-ripper.htm&lt;/a&gt;
+Bandcamp Collection Downloader - &lt;a href=&#34;https://github.com/Ezwen/bandcamp-collection-downloader&#34;&gt;https://github.com/Ezwen/bandcamp-collection-downloader&lt;/a&gt;
+Soulseek - &lt;a href=&#34;http://www.slsknet.org&#34;&gt;http://www.slsknet.org&lt;/a&gt; &lt;strong&gt;Tagging and Metadata:&lt;/strong&gt;
+Beets - &lt;a href=&#34;https://beets.io&#34;&gt;https://beets.io&lt;/a&gt;
+Mixed In Key - &lt;a href=&#34;https://mixedinkey.com&#34;&gt;https://mixedinkey.com&lt;/a&gt;
+Lexicon &lt;a href=&#34;https://www.lexicondj.com/&#34;&gt;https://www.lexicondj.com/&lt;/a&gt; &lt;strong&gt;Backup and sync:&lt;/strong&gt;
+Robocopy - comes free with Windows 10. Documentation: &lt;a href=&#34;https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy&#34;&gt;https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy&lt;/a&gt;
+Google Drive
+Rsync&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><strong>Updated: 25-11-22</strong></p>
 <p>My music library is around 24k files, mostly FLAC and some 320kbps MP3s. I use the following tools to organise my music library:</p>
 <p><strong>Acquisition:</strong>

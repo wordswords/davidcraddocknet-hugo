@@ -183,7 +183,8 @@ function toggleThemeListener() {
   <section class="entry-content">
     
       <p>More adventures with Fish shell. I have scripted the generation of a bunch of test asset audio files in mp4 format suitable for dash streaming. I have used the audio file commandline tools ffmepg MP4Box and sox in this script, they are pretty powerful and worth installing via homebrew on OSX.
-Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I’m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy....</p>
+Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I’m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy. [code lang=“bash”] #!/usr/bin/env fish # move to the asset output directory.. cd ..
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">

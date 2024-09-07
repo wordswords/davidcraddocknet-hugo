@@ -8,7 +8,16 @@
 <title>Music Acquisition Process for DJ Music | DavidCraddock.net</title>
 <meta name="keywords" content="">
 <meta name="description" content="My music acquisition process for DJ music:
-ARM (Automatic Ripping Machine) rips CDs I buy into FLAC form without any interactivity. You just insert a CD into the Linux server, and then it ejects it when it&rsquo;s done. Lidarr downloads FLACs of any tracks of artists I have in my collection, but I don&rsquo;t have their full discography. It does this automatically and silently in the background. Once a day, a cron job imports ARM and Lidarr downloads into my Beets.">
+
+ARM (Automatic Ripping Machine) rips CDs I buy into FLAC form without any interactivity. You just insert a CD into the Linux server, and then it ejects it when it&rsquo;s done.
+Lidarr downloads FLACs of any tracks of artists I have in my collection, but I don&rsquo;t have their full discography. It does this automatically and silently in the background.
+Once a day, a cron job imports ARM and Lidarr downloads into my Beets.io music library, and deals with file integrity checks, tagging, metadata, library file structure and embedded images of the artist.
+Whenever I&rsquo;m ready to have a fresh library copy, I run my batch script on my W11 DJ laptop and it robocopy mirrors the entire library from my Linux samba share onto my computer.
+I then send it through MixedInKey 10 to analyse the BPM and the music key of each track, and to check again the integrity of each file.
+Once that is done, and any corrupt files removed, I import the file library into Serato DJ Pro, and analyse the entire collection. This again removes any dud files from the collection.
+Now I have a complete music library, I run a batch file to reverse mirror the music from the DJ library back onto the server, so my collection doesn&rsquo;t accumalate corrupt files.
+Now I have a full DJ music library of FLACs on my DJ laptop, over 22,000 files, great for requests!
+">
 <meta name="author" content="Reorx">
 <link rel="canonical" href="https://davidcraddock.net/2024/01/11/music-acquisition-process-for-dj-music/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.97d99fcdd90c38f6e3343e959a97a0295b30f590730a4ece2347f7f24ad997d1.css" integrity="sha256-l9mfzdkMOPbjND6VmpegKVsw9ZBzCk7OI0f38krZl9E=" rel="preload stylesheet" as="style">
@@ -18,10 +27,28 @@ ARM (Automatic Ripping Machine) rips CDs I buy into FLAC form without any intera
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Music Acquisition Process for DJ Music | DavidCraddock.net" />
 <meta name="twitter:description" content="My music acquisition process for DJ music:
-ARM (Automatic Ripping Machine) rips CDs I buy into FLAC form without any interactivity. You just insert a CD into the Linux server, and then it ejects it when it&rsquo;s done. Lidarr downloads FLACs of any tracks of artists I have in my collection, but I don&rsquo;t have their full discography. It does this automatically and silently in the background. Once a day, a cron job imports ARM and Lidarr downloads into my Beets." />
+
+ARM (Automatic Ripping Machine) rips CDs I buy into FLAC form without any interactivity. You just insert a CD into the Linux server, and then it ejects it when it&rsquo;s done.
+Lidarr downloads FLACs of any tracks of artists I have in my collection, but I don&rsquo;t have their full discography. It does this automatically and silently in the background.
+Once a day, a cron job imports ARM and Lidarr downloads into my Beets.io music library, and deals with file integrity checks, tagging, metadata, library file structure and embedded images of the artist.
+Whenever I&rsquo;m ready to have a fresh library copy, I run my batch script on my W11 DJ laptop and it robocopy mirrors the entire library from my Linux samba share onto my computer.
+I then send it through MixedInKey 10 to analyse the BPM and the music key of each track, and to check again the integrity of each file.
+Once that is done, and any corrupt files removed, I import the file library into Serato DJ Pro, and analyse the entire collection. This again removes any dud files from the collection.
+Now I have a complete music library, I run a batch file to reverse mirror the music from the DJ library back onto the server, so my collection doesn&rsquo;t accumalate corrupt files.
+Now I have a full DJ music library of FLACs on my DJ laptop, over 22,000 files, great for requests!
+" />
 <meta property="og:title" content="Music Acquisition Process for DJ Music | DavidCraddock.net" />
 <meta property="og:description" content="My music acquisition process for DJ music:
-ARM (Automatic Ripping Machine) rips CDs I buy into FLAC form without any interactivity. You just insert a CD into the Linux server, and then it ejects it when it&rsquo;s done. Lidarr downloads FLACs of any tracks of artists I have in my collection, but I don&rsquo;t have their full discography. It does this automatically and silently in the background. Once a day, a cron job imports ARM and Lidarr downloads into my Beets." />
+
+ARM (Automatic Ripping Machine) rips CDs I buy into FLAC form without any interactivity. You just insert a CD into the Linux server, and then it ejects it when it&rsquo;s done.
+Lidarr downloads FLACs of any tracks of artists I have in my collection, but I don&rsquo;t have their full discography. It does this automatically and silently in the background.
+Once a day, a cron job imports ARM and Lidarr downloads into my Beets.io music library, and deals with file integrity checks, tagging, metadata, library file structure and embedded images of the artist.
+Whenever I&rsquo;m ready to have a fresh library copy, I run my batch script on my W11 DJ laptop and it robocopy mirrors the entire library from my Linux samba share onto my computer.
+I then send it through MixedInKey 10 to analyse the BPM and the music key of each track, and to check again the integrity of each file.
+Once that is done, and any corrupt files removed, I import the file library into Serato DJ Pro, and analyse the entire collection. This again removes any dud files from the collection.
+Now I have a complete music library, I run a batch file to reverse mirror the music from the DJ library back onto the server, so my collection doesn&rsquo;t accumalate corrupt files.
+Now I have a full DJ music library of FLACs on my DJ laptop, over 22,000 files, great for requests!
+" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2024/01/11/music-acquisition-process-for-dj-music/" />
     <meta property="og:image" content="https://davidcraddock.net/cover.png"/>
@@ -56,7 +83,7 @@ ARM (Automatic Ripping Machine) rips CDs I buy into FLAC form without any intera
   "@type": "BlogPosting",
   "headline": "Music Acquisition Process for DJ Music | DavidCraddock.net",
   "name": "Music Acquisition Process for DJ Music",
-  "description": "My music acquisition process for DJ music:\nARM (Automatic Ripping Machine) rips CDs I buy into FLAC form without any interactivity. You just insert a CD into the Linux server, and then it ejects it when it\u0026rsquo;s done. Lidarr downloads FLACs of any tracks of artists I have in my collection, but I don\u0026rsquo;t have their full discography. It does this automatically and silently in the background. Once a day, a cron job imports ARM and Lidarr downloads into my Beets.",
+  "description": "My music acquisition process for DJ music:\nARM (Automatic Ripping Machine) rips CDs I buy into FLAC form without any interactivity. You just insert a CD into the Linux server, and then it ejects it when it\u0026rsquo;s done. Lidarr downloads FLACs of any tracks of artists I have in my collection, but I don\u0026rsquo;t have their full discography. It does this automatically and silently in the background. Once a day, a cron job imports ARM and Lidarr downloads into my Beets.io music library, and deals with file integrity checks, tagging, metadata, library file structure and embedded images of the artist. Whenever I\u0026rsquo;m ready to have a fresh library copy, I run my batch script on my W11 DJ laptop and it robocopy mirrors the entire library from my Linux samba share onto my computer. I then send it through MixedInKey 10 to analyse the BPM and the music key of each track, and to check again the integrity of each file. Once that is done, and any corrupt files removed, I import the file library into Serato DJ Pro, and analyse the entire collection. This again removes any dud files from the collection. Now I have a complete music library, I run a batch file to reverse mirror the music from the DJ library back onto the server, so my collection doesn\u0026rsquo;t accumalate corrupt files. Now I have a full DJ music library of FLACs on my DJ laptop, over 22,000 files, great for requests! ",
   "keywords": [
     
   ],

@@ -13,9 +13,9 @@
       <pubDate>Sat, 20 Mar 2010 22:44:06 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2010/03/20/tip-for-watching-the-completion-of-a-large-file-copy/</guid>
-      <description>Forget the wonderful windows progress bar, and imagine I&amp;rsquo;m in the world of command-line Linux, and I want to copy a 484MB file, called VMware-server-2.0.2-203138.i386.tar.gz, from my home directory to a remote server. But I want to figure out how long it&amp;rsquo;s going to take.
-1. First I can run a &amp;ldquo;du -m&amp;rdquo; command to get the total MB size of the original file:
-du -m /home/david/VMware-server-2.0.2-203138.i386.tar.gz I.e: david@believe:~$ du -m VMware-server-2.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2010/03/windows-copy.gif&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2010/03/windows-copy.gif&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Forget the wonderful windows progress bar, and imagine I&amp;rsquo;m in the world of command-line Linux, and I want to copy a 484MB file, called VMware-server-2.0.2-203138.i386.tar.gz, from my home directory to a remote server. But I want to figure out how long it&amp;rsquo;s going to take.&lt;/p&gt;
+&lt;p&gt;1. First I can run a &amp;ldquo;du -m&amp;rdquo; command to get the total MB size of the original file:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2010/03/windows-copy.gif"><img loading="lazy" src="/wp-content/uploads/2010/03/windows-copy.gif" type="" alt=""  /></a></p>
 <p>Forget the wonderful windows progress bar, and imagine I&rsquo;m in the world of command-line Linux, and I want to copy a 484MB file, called VMware-server-2.0.2-203138.i386.tar.gz, from my home directory to a remote server. But I want to figure out how long it&rsquo;s going to take.</p>
 <p>1. First I can run a &ldquo;du -m&rdquo; command to get the total MB size of the original file:</p>
@@ -39,8 +39,8 @@ du -m /home/david/VMware-server-2.0.2-203138.i386.tar.gz I.e: david@believe:~$ d
       <pubDate>Sat, 13 Mar 2010 16:02:42 +0000</pubDate>
       
       <guid>https://davidcraddock.net/2010/03/13/using-the-linux-command-watch-to-test-cron-jobs/</guid>
-      <description>OK, so you have added a cron job that you want to perform a routine task every day at 6am. How do you test it?
-You probably don&amp;rsquo;t want to spend all night waiting for it to execute, and there&amp;rsquo;s every chance that when it does execute, you won&amp;rsquo;t be able to find out whether it is executing properly - the task might take 30 minutes to run, for example. So every time you debug it and want to test it again, you have to wait until 6am the following day.</description>
+      <description>&lt;p&gt;OK, so you have added a cron job that you want to perform a routine task every day at 6am. How do you test it?&lt;/p&gt;
+&lt;p&gt;You probably don&amp;rsquo;t want to spend all night waiting for it to execute, and there&amp;rsquo;s every chance that when it does execute, you won&amp;rsquo;t be able to find out whether it is executing properly - the task might take 30 minutes to run, for example. So every time you debug it and want to test it again, you have to wait until 6am the following day.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>OK, so you have added a cron job that you want to perform a routine task every day at 6am. How do you test it?</p>
 <p>You probably don&rsquo;t want to spend all night waiting for it to execute, and there&rsquo;s every chance that when it does execute, you won&rsquo;t be able to find out whether it is executing properly - the task might take 30 minutes to run, for example. So every time you debug it and want to test it again, you have to wait until 6am the following day.</p>
 <p>So instead, configure that cron job to run a bit earlier than that, say in 10 minutes, and monitor the execution with a &lsquo;watch&rsquo; command, so you can see if it&rsquo;s doing what you want it to.</p>

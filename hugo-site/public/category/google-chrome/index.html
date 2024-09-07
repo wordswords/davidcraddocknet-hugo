@@ -183,7 +183,8 @@ function toggleThemeListener() {
   <section class="entry-content">
     
       <p>These functions are quite handy, and allow you to do things such as copy and paste errors and google for them without having to manually open a browser. You have to enclose arguments to both functions in single quotes, e.g. ‘chrome ‘http://www.google.co.uk’ and google ‘one two three four’. You should add these to your config file at ~/.config/fish/config.fish and make sure Google Chrome is already installed.
-[code language=“bash”] function chrome /usr/bin/open -a ‘/Applications/Google Chrome....</p>
+[code language=“bash”] function chrome /usr/bin/open -a ‘/Applications/Google Chrome.app’ $argv[1:] end function google /usr/bin/open -a ‘/Applications/Google Chrome.app’ “https://www.google.co.uk/search?q=$argv[1]” end [/code]
+...</p>
     
   </section>
   <footer class="entry-footer"><span class="meta-item">

@@ -7,8 +7,9 @@
 <meta name="robots" content="index, follow">
 <title>JSoup Method for Page Scraping | DavidCraddock.net</title>
 <meta name="keywords" content="">
-<meta name="description" content="I&rsquo;m currently in the process of writing a web scraper for the forums on Gaia Online. Previously, I used to use Python to develop web scrapers, with the very handy Python library BeautifulSoup. Java has an equivalent called JSoup.
-Here I have written a class which is extended by each class in my project that wants to scrape HTML. This &lsquo;Scraper&rsquo; class deals with the fetching of the HTML and converting it into a JSoup tree to be navigated and have the data picked out of.">
+<meta name="description" content="
+I&rsquo;m currently in the process of writing a web scraper for the forums on Gaia Online. Previously, I used to use Python to develop web scrapers, with the very handy Python library BeautifulSoup. Java has an equivalent called JSoup.
+Here I have written a class which is extended by each class in my project that wants to scrape HTML. This &lsquo;Scraper&rsquo; class deals with the fetching of the HTML and converting it into a JSoup tree to be navigated and have the data picked out of. It advertises itself as a &lsquo;web spider&rsquo; type of web agent and also adds a 0-7 second random wait before fetching the page to make sure it isn&rsquo;t used to overload a web server. It also converts the entire page to ASCII, which may not be the best thing to do for multi-language web pages, but certainly has made the scraping of the English language site Gaia Online much easier.">
 <meta name="author" content="Reorx">
 <link rel="canonical" href="https://davidcraddock.net/2011/09/07/jsoup-method-for-page-scraping/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.97d99fcdd90c38f6e3343e959a97a0295b30f590730a4ece2347f7f24ad997d1.css" integrity="sha256-l9mfzdkMOPbjND6VmpegKVsw9ZBzCk7OI0f38krZl9E=" rel="preload stylesheet" as="style">
@@ -17,11 +18,13 @@ Here I have written a class which is extended by each class in my project that w
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/2011/09/07/jsoup-method-for-page-scraping/">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="JSoup Method for Page Scraping | DavidCraddock.net" />
-<meta name="twitter:description" content="I&rsquo;m currently in the process of writing a web scraper for the forums on Gaia Online. Previously, I used to use Python to develop web scrapers, with the very handy Python library BeautifulSoup. Java has an equivalent called JSoup.
-Here I have written a class which is extended by each class in my project that wants to scrape HTML. This &lsquo;Scraper&rsquo; class deals with the fetching of the HTML and converting it into a JSoup tree to be navigated and have the data picked out of." />
+<meta name="twitter:description" content="
+I&rsquo;m currently in the process of writing a web scraper for the forums on Gaia Online. Previously, I used to use Python to develop web scrapers, with the very handy Python library BeautifulSoup. Java has an equivalent called JSoup.
+Here I have written a class which is extended by each class in my project that wants to scrape HTML. This &lsquo;Scraper&rsquo; class deals with the fetching of the HTML and converting it into a JSoup tree to be navigated and have the data picked out of. It advertises itself as a &lsquo;web spider&rsquo; type of web agent and also adds a 0-7 second random wait before fetching the page to make sure it isn&rsquo;t used to overload a web server. It also converts the entire page to ASCII, which may not be the best thing to do for multi-language web pages, but certainly has made the scraping of the English language site Gaia Online much easier." />
 <meta property="og:title" content="JSoup Method for Page Scraping | DavidCraddock.net" />
-<meta property="og:description" content="I&rsquo;m currently in the process of writing a web scraper for the forums on Gaia Online. Previously, I used to use Python to develop web scrapers, with the very handy Python library BeautifulSoup. Java has an equivalent called JSoup.
-Here I have written a class which is extended by each class in my project that wants to scrape HTML. This &lsquo;Scraper&rsquo; class deals with the fetching of the HTML and converting it into a JSoup tree to be navigated and have the data picked out of." />
+<meta property="og:description" content="
+I&rsquo;m currently in the process of writing a web scraper for the forums on Gaia Online. Previously, I used to use Python to develop web scrapers, with the very handy Python library BeautifulSoup. Java has an equivalent called JSoup.
+Here I have written a class which is extended by each class in my project that wants to scrape HTML. This &lsquo;Scraper&rsquo; class deals with the fetching of the HTML and converting it into a JSoup tree to be navigated and have the data picked out of. It advertises itself as a &lsquo;web spider&rsquo; type of web agent and also adds a 0-7 second random wait before fetching the page to make sure it isn&rsquo;t used to overload a web server. It also converts the entire page to ASCII, which may not be the best thing to do for multi-language web pages, but certainly has made the scraping of the English language site Gaia Online much easier." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2011/09/07/jsoup-method-for-page-scraping/" />
     <meta property="og:image" content="https://davidcraddock.net/cover.png"/>
@@ -56,7 +59,7 @@ Here I have written a class which is extended by each class in my project that w
   "@type": "BlogPosting",
   "headline": "JSoup Method for Page Scraping | DavidCraddock.net",
   "name": "JSoup Method for Page Scraping",
-  "description": "I\u0026rsquo;m currently in the process of writing a web scraper for the forums on Gaia Online. Previously, I used to use Python to develop web scrapers, with the very handy Python library BeautifulSoup. Java has an equivalent called JSoup.\nHere I have written a class which is extended by each class in my project that wants to scrape HTML. This \u0026lsquo;Scraper\u0026rsquo; class deals with the fetching of the HTML and converting it into a JSoup tree to be navigated and have the data picked out of.",
+  "description": "\nI\u0026rsquo;m currently in the process of writing a web scraper for the forums on Gaia Online. Previously, I used to use Python to develop web scrapers, with the very handy Python library BeautifulSoup. Java has an equivalent called JSoup.\nHere I have written a class which is extended by each class in my project that wants to scrape HTML. This \u0026lsquo;Scraper\u0026rsquo; class deals with the fetching of the HTML and converting it into a JSoup tree to be navigated and have the data picked out of. It advertises itself as a \u0026lsquo;web spider\u0026rsquo; type of web agent and also adds a 0-7 second random wait before fetching the page to make sure it isn\u0026rsquo;t used to overload a web server. It also converts the entire page to ASCII, which may not be the best thing to do for multi-language web pages, but certainly has made the scraping of the English language site Gaia Online much easier.\n",
   "keywords": [
     
   ],
