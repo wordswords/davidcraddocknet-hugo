@@ -5,7 +5,8 @@ date: "2024-04-23T22:54:59+00:00"
 guid: https://davidcraddock.net/?p=4683
 title: Advice to young people in the UK wanting a career in Tech
 url: /2024/04/23/4683/
-
+image: /home-uploads/2024/9/7/thinking.jpg
+author: David Craddock
 ---
 ![](/hugo-uploads/2024/9/7/thinking.jpg)
 
