@@ -147,7 +147,7 @@ Currently these are the consoles I have hooked up:
 - **Sega Dreamcast** with 3x official DC controllers, 2x VMUs and 1x third-party memory pack
 - **Sony PSP2000** (TV out)
 - **Nintendo Wii (Gamecube compatiable version)** with 2x Wiimote Motion controller and official balance board
-- **Nintendo 64 with 2x official N64 controller, Kaico PAL N64 -> HDMI convertor, and memory pak**
+- **Nintendo 64 with 2x official N64 controller, Kaico PAL N64 -> HDMI convertor, expansion pak and memory pak**
 - **Microsoft XBox V1** with Duke controllers
 
 [![](/wp-content/uploads/2023/12/20231223_0927581.jpg)](/wp-content/uploads/2023/12/20231223_0927581.jpg)
