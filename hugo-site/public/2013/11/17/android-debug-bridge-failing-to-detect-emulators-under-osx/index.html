@@ -12,7 +12,7 @@
 I&rsquo;ve been working on a project at the BBC where we are using the Android command-line tools from the Android Developer Tools, to spin up and terminate series of emulators. I noticed a big problem under OSX where &lsquo;adb devices&rsquo; was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb.">
 <meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2013/11/17/android-debug-bridge-failing-to-detect-emulators-under-osx/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.41b9674e7dd0324dbc4c2ab940c0957033436cc108e55f3d6ceed518637f37d6.css" integrity="sha256-QblnTn3QMk28TCq5QMCVcDNDbMEI5V89bO7VGGN/N9Y=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://davidcraddock.net/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://davidcraddock.net/favicon-32x32.png">
@@ -66,13 +66,13 @@ I&rsquo;ve been working on a project at the BBC where we are using the Android c
 I&rsquo;ve been working on a project at the BBC where we are using the Android command-line tools from the Android Developer Tools, to spin up and terminate series of emulators. I noticed a big problem under OSX where &lsquo;adb devices&rsquo; was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2013/11/17/android-debug-bridge-failing-to-detect-emulators-under-osx/" />
-<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="og:image" content="https://davidcraddock.net/hugo-uploads/9/8/headshot.png" />
 <meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2013-11-17T02:21:34+00:00" />
 <meta property="article:modified_time" content="2013-11-17T02:21:34+00:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta name="twitter:image" content="https://davidcraddock.net/hugo-uploads/9/8/headshot.png" />
 <meta name="twitter:title" content="Android Debug Bridge failing to detect emulators under OSX"/>
 <meta name="twitter:description" content="
 
@@ -112,7 +112,7 @@ I&rsquo;ve been working on a project at the BBC where we are using the Android c
   "articleBody": " I’ve been working on a project at the BBC where we are using the Android command-line tools from the Android Developer Tools, to spin up and terminate series of emulators. I noticed a big problem under OSX where ‘adb devices’ was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb.\nWe switched to using adb with emulators in an Ubuntu 12.04 VM running under OSX, and we had no further problems with our setup. Emulators will now be programatically launched and torn down by our monitoring application. We now have an array of emulators which we can deploy to at will, which is very useful.\nI don’t know what has caused this problem, my only hunch is that the Android toolkit was probably developed in a very Linux-heavy environment, and so adb on Linux was probably their first testing platform. All I can say is that Linux is much more stable than OSX, even as a VM, for Android emulation.\n",
   "wordCount" : "203",
   "inLanguage": "en",
-  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2013-11-17T02:21:34Z",
+  "image": "https://davidcraddock.net/hugo-uploads/9/8/headshot.png","datePublished": "2013-11-17T02:21:34Z",
   "dateModified": "2013-11-17T02:21:34Z",
   "author":{
     "@type": "Person",
@@ -224,6 +224,7 @@ I&rsquo;ve been working on a project at the BBC where we are using the Android c
 
 </div>
   </header> 
+
 
   <div class="post-content"><p><a href="/wp-content/uploads/2013/11/android.png"><img loading="lazy" src="/wp-content/uploads/2013/11/android.png" alt="Android"  />
 </a></p>

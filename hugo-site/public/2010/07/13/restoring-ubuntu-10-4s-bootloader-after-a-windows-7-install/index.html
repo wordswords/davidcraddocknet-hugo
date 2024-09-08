@@ -11,7 +11,7 @@
 I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under the LiveCD, I then restored the Grub bootloader by chrooting into my old install, using the linux command line. This is a fairly complex thing to do, and so I recommend you use this approach only if you&rsquo;re are confident with the linux command line:">
 <meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2010/07/13/restoring-ubuntu-10-4s-bootloader-after-a-windows-7-install/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.41b9674e7dd0324dbc4c2ab940c0957033436cc108e55f3d6ceed518637f37d6.css" integrity="sha256-QblnTn3QMk28TCq5QMCVcDNDbMEI5V89bO7VGGN/N9Y=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://davidcraddock.net/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://davidcraddock.net/favicon-32x32.png">
@@ -64,13 +64,13 @@ I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under 
 I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under the LiveCD, I then restored the Grub bootloader by chrooting into my old install, using the linux command line. This is a fairly complex thing to do, and so I recommend you use this approach only if you&rsquo;re are confident with the linux command line:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2010/07/13/restoring-ubuntu-10-4s-bootloader-after-a-windows-7-install/" />
-<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="og:image" content="https://davidcraddock.net/hugo-uploads/9/8/headshot.png" />
 <meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-07-13T13:02:51+00:00" />
 <meta property="article:modified_time" content="2010-07-13T13:02:51+00:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta name="twitter:image" content="https://davidcraddock.net/hugo-uploads/9/8/headshot.png" />
 <meta name="twitter:title" content="Restoring Ubuntu 10.4&#39;s Bootloader, after a Windows 7 Install"/>
 <meta name="twitter:description" content="I installed Windows 7 after I had installed Ubuntu 10.4. Windows 7 overwrote the Linux bootloader &ldquo;grub&rdquo; on my master boot record. Therefore I had to restore it.
 I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under the LiveCD, I then restored the Grub bootloader by chrooting into my old install, using the linux command line. This is a fairly complex thing to do, and so I recommend you use this approach only if you&rsquo;re are confident with the linux command line:"/>
@@ -109,7 +109,7 @@ I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under 
   "articleBody": "I installed Windows 7 after I had installed Ubuntu 10.4. Windows 7 overwrote the Linux bootloader “grub” on my master boot record. Therefore I had to restore it.\nI used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under the LiveCD, I then restored the Grub bootloader by chrooting into my old install, using the linux command line. This is a fairly complex thing to do, and so I recommend you use this approach only if you’re are confident with the linux command line:\n# (as root under Ubuntu's LiveCD) # prepare chroot directory mkdir /chroot d=/chroot # mount my linux partition mount /dev/sda1 $d # my linux partition was installed on my first SATA hard disk, on the first parition (hence sdA1). # mount system directories inside the new chroot directory mount -o bind /dev $d/dev mount -o bind /sys $d/sys mount -o bind /dev/shm $d/dev/shm mount -o bind /proc $d/proc # accomplish the chroot chroot $d # proceed to update the grub config file to include the option to boot into my new windows 7 install update-grub # install grub with the new configuration options from the config file, to the master boot record on my first hard disk grub-install /dev/sda # close down the liveCD instance of linux, and boot from the newly restored grub bootloader reboot ",
   "wordCount" : "225",
   "inLanguage": "en",
-  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2010-07-13T13:02:51Z",
+  "image": "https://davidcraddock.net/hugo-uploads/9/8/headshot.png","datePublished": "2010-07-13T13:02:51Z",
   "dateModified": "2010-07-13T13:02:51Z",
   "author":{
     "@type": "Person",
@@ -221,6 +221,7 @@ I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under 
 
 </div>
   </header> 
+
 
   <div class="post-content"><p>I installed Windows 7 after I had installed Ubuntu 10.4. Windows 7 overwrote the Linux bootloader &ldquo;grub&rdquo; on my master boot record. Therefore I had to restore it.</p>
 <p>I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under the LiveCD, I then restored the Grub bootloader by chrooting into my old install, using the linux command line. This is a fairly complex thing to do, and so I recommend you use this approach only if you&rsquo;re are confident with the linux command line:</p>

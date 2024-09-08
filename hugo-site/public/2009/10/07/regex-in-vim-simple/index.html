@@ -11,7 +11,7 @@
 Here is a simple method for using regex in the powerful text editor VIM that will work well for common use.">
 <meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2009/10/07/regex-in-vim-simple/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.41b9674e7dd0324dbc4c2ab940c0957033436cc108e55f3d6ceed518637f37d6.css" integrity="sha256-QblnTn3QMk28TCq5QMCVcDNDbMEI5V89bO7VGGN/N9Y=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://davidcraddock.net/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://davidcraddock.net/favicon-32x32.png">
@@ -64,13 +64,13 @@ Here is a simple method for using regex in the powerful text editor VIM that wil
 Here is a simple method for using regex in the powerful text editor VIM that will work well for common use." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2009/10/07/regex-in-vim-simple/" />
-<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="og:image" content="https://davidcraddock.net/hugo-uploads/9/8/headshot.png" />
 <meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2009-10-07T06:40:02+00:00" />
 <meta property="article:modified_time" content="2009-10-07T06:40:02+00:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta name="twitter:image" content="https://davidcraddock.net/hugo-uploads/9/8/headshot.png" />
 <meta name="twitter:title" content="Regex in VIM.. simple"/>
 <meta name="twitter:description" content="There are more than a gazillion ways to use regexs. I am sure they are each very useful for their own subset of problems. The sheer variety can be highly confusing and scary for a lot of people though, and you only need to use a few approaches to accomplish most text-editing tasks.
 Here is a simple method for using regex in the powerful text editor VIM that will work well for common use."/>
@@ -109,7 +109,7 @@ Here is a simple method for using regex in the powerful text editor VIM that wil
   "articleBody": "There are more than a gazillion ways to use regexs. I am sure they are each very useful for their own subset of problems. The sheer variety can be highly confusing and scary for a lot of people though, and you only need to use a few approaches to accomplish most text-editing tasks.\nHere is a simple method for using regex in the powerful text editor VIM that will work well for common use.\nMethod We are going to take the “search and delete a word” problem for an example. We want to delete all instances of the singular noun “needle” in a text file. Let’s assume there are no instances of the pluralisation “needles” in our document.\nDebug on.. turn some VIM options on :set hlsearch :set wrapscan - this will make all regex expressions possible to debug by visually showing what they match in your document (first line) and make all searches wrap around instead of just search forward from your current position, which is the default. (second line)\nDevelop and Test.. your regex attempts by using a simple search. Here we see three attempts at solving the problem: :/needl :/needle :/ - our third try is correct, and highlights all words that spell “needle”. The \u003c and \u003e markers allow you to specify the beginning and the end of a word. Play with different regexs using the simple search and watching what is highlighted, until you discover one that works for you.\nRun… your regex :%s///g - once you’ve figured out a regex, run the regex on your document. This example will execute a search for the word “needle” and delete every one. If you wanted to substitute needle for another word, you would put the word in between the / / marks. As we can see, there is nothing between the marks in this example, so it will replace instances of “needle” with nothing. This means it will serve to delete every instance of the word “needle”.\nCheck things are OK… with your document :/ :/needle :/needl - has the regex done what you want? Use the search function to see if regex has done what you wanted it to do. The above examples show different searches through the document to see if different variations remain. Any matches of these searches will highlight any problems. You can use the lower-case N(next search result) and lower-case P(previous search result) commands to navigate through any found search results. You must remember to manually look through the document and see what the regex has changed, make sure there aren’t any unwanted surprises!\nRecover… from any mistakes u - just press the U key (with no capslock or shift). This will undo the very last last change made to the document.\nRedo… any work that you need to -r - use the redo fuction; press the CONTROL and R keys together (with no capslock or shift). This will redo the last change made to the document.\nFinish up and Write… to file :w - write your work on the document to file. Even after you have written out to file, you can probably still use the undo function to get back to where you were, but it’s best practice to not rely on this, and only write once you’re done.\nDebug off.. turn some options off :set nohlsearch :set nowrapscan - turn off the regular expression highlighting (line 1). turn off the wraparound searching (line 2). You can leave either or both options on if you want, they’re often useful. Up to you.\nUse a combination of these wonderful commands to test and improve your regex development skills in VIM.\nExamples Here I use the shorthand \" #…\" to denote comments on what I’m doing… if you want to copy and paste the example as written, then you will have to remove those comments.\n1. Remove ancient uppercase tags from a document.\n:set wrapscan # debug on :set hlsearch # debug on :/ # try 1.. bingo! first time.. selected all tags I want :%s///g # lets execute my regex remove :/BLINK # check 1.. testing things are OK in my file by searching through.. :/blinked # check 2.. yep thats ok.. :/ # check 3.. yep looks ok... the problem tags are gone # ...manual scroll through the document.. looks good! :w # write out to file :set nohlsearch # debug off :set nowrapscan # debug off 2. Oh no! We missed some lower and mixedcase tags that some sneaky person slipped in. Let’s take them out.\n:set wrapscan # debug on :set hlsearch # debug on :/ # try 1.. hm.. worked for many, but didnt match BlInK or blINK mixedcase ://i # try 2.. much better.. seems to have worked! :%s///i # lets execute my regex remove :/BLINK # check 1.. testing things are OK in my file by searching through.. :/blinked # check 2.. yep thats ok.. :/ # check 3.. yep thats fine. ://i # check 4.. looks good... problem solved # ...manual scroll through the document.. looks much better! :w # write out to file :set nohlsearch # debug off :set nowrapscan # debug off 3. Replacing uppercase or mixedcase tags with the more modern .\n:set wrapscan # debug on :set hlsearch # debug on :/ # try 1.. hmm.. just uppercase.. not gonna work.. :/\n# try 2.. hmm.. just lowercase.. ://i # try 3.. ahh.. that'll be it then :%s//\n/gi # lets execute my regex substitution :/BR # check 1.. testing things are OK in my file by searching through.. :/br # check 2.. yep thats ok.. /bR # check 3 ..yup.. ://i # check 4.. yep looks ok... the problem tags seem to be gone # ...manual scroll through the document.. looks good! :w # write out to file :set nohlsearch # debug off :set nowrapscan # debug off For More.. Regexs are the gift that just keeps on giving. Here are some good resources on regexs in general, and regexs in VIM.\nA great modern way to learn regexs.. try them online! interactive flash awesomeness. A neat graphical VI/VIM cheat-sheet. An advanced VIM/regex tutorial.. More VIM/regex ninja skills. Stackoverflow is a good place to find practical ways to solve regex problems with VIM. Probably the most definitive regex site on the ’net ",
   "wordCount" : "1053",
   "inLanguage": "en",
-  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2009-10-07T06:40:02Z",
+  "image": "https://davidcraddock.net/hugo-uploads/9/8/headshot.png","datePublished": "2009-10-07T06:40:02Z",
   "dateModified": "2009-10-07T06:40:02Z",
   "author":{
     "@type": "Person",
@@ -220,24 +220,86 @@ Here is a simple method for using regex in the powerful text editor VIM that wil
     <div class="post-meta"><span title='2009-10-07 06:40:02 +0000 +0000'>October 7, 2009</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;David Craddock
 
 </div>
-  </header> <div class="toc">
-    <details >
-        <summary accesskey="c" title="(Alt + C)">
-            <span class="details">Table of Contents</span>
-        </summary>
+  </header> <aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details  open>
+            <summary accesskey="c" title="(Alt + C)">
+                <span class="details">Table of Contents</span>
+            </summary>
 
-        <div class="inner"><ul>
-                <li>
-                    <a href="#method" aria-label="Method">Method</a></li>
-                <li>
-                    <a href="#examples" aria-label="Examples">Examples</a></li>
-                <li>
-                    <a href="#for-more" aria-label="For More..">For More..</a>
-                </li>
-            </ul>
-        </div>
-    </details>
-</div>
+            <div class="inner"><ul>
+                    <li>
+                        <a href="#method" aria-label="Method">Method</a></li>
+                    <li>
+                        <a href="#examples" aria-label="Examples">Examples</a></li>
+                    <li>
+                        <a href="#for-more" aria-label="For More..">For More..</a>
+                    </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+         
+         activeElement = elements[0];
+         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+     }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        activeElement = Array.from(elements).find((element) => {
+            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
+                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                return element;
+            }
+        }) || activeElement
+
+        elements.forEach(element => {
+             const id = encodeURI(element.getAttribute('id')).toLowerCase();
+             if (element === activeElement){
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+             } else {
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+             }
+         })
+     }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;   
+    }
+</script>
+
 
   <div class="post-content"><p>There are <a href="http://www.geocities.com/volontir/">more than a gazillion ways</a> to use regexs. I am sure they are each very useful for their own subset of problems. The sheer variety can be highly confusing and scary for <a href="http://www.google.co.uk/search?q=regex+difficult">a lot of people</a> though, and you only need to use a few approaches to accomplish most text-editing tasks.</p>
 <p>Here is a simple method for using regex in the powerful text editor <a href="http://www.vim.org">VIM</a> that will work well for common use.</p>

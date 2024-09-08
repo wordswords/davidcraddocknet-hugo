@@ -33,7 +33,7 @@ Serato DJ Pro software running on DJ laptop
 ">
 <meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2022/09/27/current-dj-setup/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.41b9674e7dd0324dbc4c2ab940c0957033436cc108e55f3d6ceed518637f37d6.css" integrity="sha256-QblnTn3QMk28TCq5QMCVcDNDbMEI5V89bO7VGGN/N9Y=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://davidcraddock.net/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://davidcraddock.net/favicon-32x32.png">
@@ -108,13 +108,13 @@ Serato DJ Pro software running on DJ laptop
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2022/09/27/current-dj-setup/" />
-<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="og:image" content="https://davidcraddock.net/hugo-uploads/9/8/headshot.png" />
 <meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-09-27T02:56:21+00:00" />
 <meta property="article:modified_time" content="2022-09-27T02:56:21+00:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta name="twitter:image" content="https://davidcraddock.net/hugo-uploads/9/8/headshot.png" />
 <meta name="twitter:title" content="Current Twitch DJ Setup"/>
 <meta name="twitter:description" content="
 Click to view full diagram
@@ -175,7 +175,7 @@ Serato DJ Pro software running on DJ laptop
   "articleBody": " Click to view full diagram\nHardware 2 x Reloop 8000mk2 turntables Roland 707m Mixer and DJ Controller 2015 Macbook Pro (DJ Laptop) SoundSwitch USB -\u003e DMX interface, attached to broadcast PC Beatstep MIDI Controller mapped for controlling SoundSwitch, attached to broadcast PC Vestax VCM-600 MIDI Controller used for controlling Resolume, attached to broadcast PC AKAI LPD8 MIDI Controller used for controlling Serato’s FX, attached to DJ laptop Rode Soundcaster Pro microphone used as a DJ mic 4 x Phillips Hue Colour Bulbs in lamps Phillips Hue Lightstrip Behringer UMC1820 Sound Interface connected to broadcast PC, attached to broadcast PC 2 x Logitech C920 Cameras used for capturing video for streaming, attached to broadcast PC Software SoundSwitch lighting software running on broadcast PC Resolume Avenue running on broadcast PC Streamlabs OBS running on broadcast PC Serato DJ Pro software running on DJ laptop ",
   "wordCount" : "142",
   "inLanguage": "en",
-  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2022-09-27T02:56:21Z",
+  "image": "https://davidcraddock.net/hugo-uploads/9/8/headshot.png","datePublished": "2022-09-27T02:56:21Z",
   "dateModified": "2022-09-27T02:56:21Z",
   "author":{
     "@type": "Person",
@@ -286,22 +286,84 @@ Serato DJ Pro software running on DJ laptop
     <div class="post-meta"><span title='2022-09-27 02:56:21 +0000 +0000'>September 27, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock
 
 </div>
-  </header> <div class="toc">
-    <details >
-        <summary accesskey="c" title="(Alt + C)">
-            <span class="details">Table of Contents</span>
-        </summary>
+  </header> <aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details  open>
+            <summary accesskey="c" title="(Alt + C)">
+                <span class="details">Table of Contents</span>
+            </summary>
 
-        <div class="inner"><ul>
-                <li>
-                    <a href="#hardware" aria-label="Hardware">Hardware</a></li>
-                <li>
-                    <a href="#software" aria-label="Software">Software</a>
-                </li>
-            </ul>
-        </div>
-    </details>
-</div>
+            <div class="inner"><ul>
+                    <li>
+                        <a href="#hardware" aria-label="Hardware">Hardware</a></li>
+                    <li>
+                        <a href="#software" aria-label="Software">Software</a>
+                    </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+         
+         activeElement = elements[0];
+         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+     }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        activeElement = Array.from(elements).find((element) => {
+            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
+                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                return element;
+            }
+        }) || activeElement
+
+        elements.forEach(element => {
+             const id = encodeURI(element.getAttribute('id')).toLowerCase();
+             if (element === activeElement){
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+             } else {
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+             }
+         })
+     }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;   
+    }
+</script>
+
 
   <div class="post-content"><p><a href="/wp-content/uploads/2022/09/wiring-diagram-for-studio.drawio2.png"><img loading="lazy" src="/wp-content/uploads/2022/09/wiring-diagram-for-studio.drawio2.png" alt=""  />
 </a><a href="/wp-content/uploads/2022/09/wiring-diagram-for-studio.drawio2.png">Click to view full diagram</a></p>

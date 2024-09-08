@@ -75,6 +75,7 @@ params:
   ShowAllPagesInArchive: true
   ShowPageNums: true
   ShowToc: true
+  TocOpen: true # open contents automantically
   # comments: false
   images: ["/hugo-uploads/9/8/headshot.png"]
 
