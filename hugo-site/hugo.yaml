@@ -98,7 +98,7 @@ params:
     Title: "DavidCraddock.net"
 
     Content: >
-      <img src="/mugshot.png" />
+      <img loading="lazy" src="/mugshot.png" alt="A mugshot of me">
       👋 Welcome to my Geocities page! (just kidding). It's my personal <a href="https://gohugo.io/">blog</a> self-hosted on my <a href="/my-home-network/">Linux server</a> in my house.
 
   socialIcons:
