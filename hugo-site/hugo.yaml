@@ -20,6 +20,11 @@ minify:
   disableXML: true
   # minifyOutput: true
 
+cover:
+  hidden: false
+  hiddenInList: false
+  hiddenInSingle: false
+
 languages:
   en:
     languageName: "English"
