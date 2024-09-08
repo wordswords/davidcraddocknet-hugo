@@ -76,7 +76,7 @@ params:
   ShowPageNums: true
   ShowToc: true
   # comments: false
-  images: ["images/papermod-cover.png"]
+  images: ["/hugo-uploads/9/8/headshot.png"]
 
   profileMode:
     enabled: false
