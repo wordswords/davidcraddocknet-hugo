@@ -74,13 +74,13 @@ chmod a&#43;r /etc/udev/rules.d/51-android.rules
 3. Reload the rules by executing the following command as root:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2014/02/10/kindlefire-hdx-under-ubuntu-12-04/" />
-<meta property="og:image" content="https://davidcraddock.net/hugo-uploads/2024/9/8/headshot.png" />
+<meta property="og:image" content="https://davidcraddock.net/hugo-uploads/2024/9/8/mugshot.png" />
 <meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2014-02-10T15:28:45+00:00" />
 <meta property="article:modified_time" content="2014-02-10T15:28:45+00:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://davidcraddock.net/hugo-uploads/2024/9/8/headshot.png" />
+<meta name="twitter:image" content="https://davidcraddock.net/hugo-uploads/2024/9/8/mugshot.png" />
 <meta name="twitter:title" content="Setting up Kindlefire HDX for Development under Ubuntu 12.04"/>
 <meta name="twitter:description" content="I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.
 First I needed to setup the udev rules:
@@ -124,7 +124,7 @@ chmod a&#43;r /etc/udev/rules.d/51-android.rules
   "articleBody": "I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.\nFirst I needed to setup the udev rules:\n1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):\nSUBSYSTEM==\"usb\", ATTRS{idVendor}==\"1949\", MODE=\"0666\" 2. Change the permission of this file by executing the following command as root:\nchmod a+r /etc/udev/rules.d/51-android.rules 3. Reload the rules by executing the following command as root:\nudevadm control --reload-rules 4. Run these commands to restart adb:\nadb kill-server adb start-server 5. Now when I run\nlsusb I can see the device listed.\n6. Next I needed to enable adb access on the Kindlefire HDX device itself by going to Settings -\u003e Device -\u003e Enable ADB.\n7. Finally I could run:\nadb devices within Ubuntu and have it recognise the Kindlefire HDX.\n",
   "wordCount" : "135",
   "inLanguage": "en",
-  "image": "https://davidcraddock.net/hugo-uploads/2024/9/8/headshot.png","datePublished": "2014-02-10T15:28:45Z",
+  "image": "https://davidcraddock.net/hugo-uploads/2024/9/8/mugshot.png","datePublished": "2014-02-10T15:28:45Z",
   "dateModified": "2014-02-10T15:28:45Z",
   "author":{
     "@type": "Person",
