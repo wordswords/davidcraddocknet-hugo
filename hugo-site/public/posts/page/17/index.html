@@ -8,7 +8,7 @@
 <title>Posts | DavidCraddock.net</title>
 <meta name="keywords" content="">
 <meta name="description" content="Posts - DavidCraddock.net">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/posts/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/posts/feed.xml">
+<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/posts/index.xml">
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/posts/">
 <noscript>
     <style>
@@ -60,13 +60,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
 <meta property="og:title" content="Posts" />
-<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
+<meta property="og:description" content="DavidCraddock.net" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://davidcraddock.net/posts/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 
-<meta name="twitter:card" content="summary"/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK."/>
+<meta name="twitter:description" content="DavidCraddock.net"/>
 
 
 <script type="application/ld+json">
@@ -87,7 +90,11 @@
 
 <body class="list" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -98,9 +105,44 @@
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -108,165 +150,97 @@
 <header class="page-header"><div class="breadcrumbs"><a href="https://davidcraddock.net/">Home</a></div>
   <h1>
     Posts
+    <a href="/posts/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
   </h1>
 </header>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Stanford Engineering for Everyone
+    <h2 class="entry-hint-parent">Things I&#39;d like to Learn More About
     </h2>
   </header>
   <div class="entry-content">
-    <p>The Stanford engineering department, often regarded as the best in the world for computer science education, has made its core CS curriculum free for anyone with an internet connection. There are some catches, ie: you don’t get your assignments marked, you have no contact with the lecturer, but all the same, it is really a great resource. The material is very high-quality, professionally filmed lectures and a full compliment of handouts and course notes. It also does not even assume knowledge of programming - it teaches you right from the basics.
+    <p>Some things I have been meaning to investigate in my own time, but haven’t, because life just gets in the way.
+Maths - It might surprise a few people that, as a software developer, I never took maths to A-level. I picked up a bit of maths in my CS degree, but I never really got a firm grounding in it. This has prevented me from understanding and coding advanced stuff in game development, understanding audio to a decent level, and generally doing things in which I consider the more interesting fields of computing. Music Theory - I have been getting better at playing the piano/keyboard by ear, but I have never fully learned to read music, and I would like to. Electronics - I would love to be able to build simple DIY synthesiser module kits for my Eurorack setup. I imagine I’d have to start on something small though. It would be great if I could take courses in these subjects, via the OU or something similar. I just have to find the time.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2008-09-22 23:53:54 +0000 +0000'>September 22, 2008</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Stanford Engineering for Everyone" href="https://davidcraddock.net/2008/09/22/stanford-engineering-for-everyone/"></a>
+  <footer class="entry-footer"><span title='2015-09-02 06:31:10 +0000 +0000'>September 2, 2015</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Things I&#39;d like to Learn More About" href="https://davidcraddock.net/2015/09/02/things-id-like-to-learn-more-about/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Automated Emails on Commiting to a Subversion Repository Using Python
+    <h2 class="entry-hint-parent">Goals for the Year 2015 - Midway Update
     </h2>
   </header>
   <div class="entry-content">
-    <p>At work I’ve written a couple of scripts that send out emails to the appropriate project team when someone checks in a commit to the project subversion repository. Here are the details.
-Firstly, you will need a subversion hook setup on post-commit. The post-commit hook needs to be located in SVNROOT/YOURPROJECT/hooks where YOURPROJECT is your svn project name, and SVNROOT is the root directory where you are storing the data files for your subversion repository.
+    <p> Now that I am midway through the year, I thought I’d revisit the goals I set myself at the start of the year, to see what has changed.
+Career Goals Settle into my new role at the BBC as Test Manager - I suppose this has not been achieved. I will have more updates soon (hopefully) but a change of direction is likely to happen. Pushing for a place to be opened up in Platform Test to employ someone from the Extend Scheme - This has been achieved, and someone will be joining Platform Test from the Extend scheme in October, I’m happy to say. Creative Goals Get better at music production - This has been achieved. I have been working with my friend I will call ‘G’, which has massively improved my production skills. I have posted music that I see as much better to Soundcloud. Social Goals Getting married - Well.. things didn’t work out with that. But I have a new girlfriend who will hopefully be moving to live with me, so things seem to be recovering there. Making friends with more people that share the same interests - Partly achieved. G is a good example of someone that I have met through looking for friends with the same interest. Financial Goals Saving more over the course of the year - Partly achieved. I have bought a house, so now I am in a quite a bit of debt, but the money I will be putting towards my mortgage will be money I am effectively ‘saving’ because it will be put into the value of the house. Joining a pension scheme - Achieved. Health Goals Adopt a regular form of keeping fit - Not achieved. I have a gym even closer to where I live, 5 minutes walk, so hopefully I will use it more soon. It is difficult for me, as the medication I’m on makes me feel tired all the time, but they do say that exercise improves energy levels. Conclusion Although I’ve achieved the majority of my goals, I haven’t achieved two of the major goals - around my job and around exercise, which are both things I need to work on. There is still time left this year to make a difference in these areas.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2008-09-22 23:22:54 +0000 +0000'>September 22, 2008</span>&nbsp;·&nbsp;4 min</footer>
-  <a class="entry-link" aria-label="post link to Automated Emails on Commiting to a Subversion Repository Using Python" href="https://davidcraddock.net/2008/09/22/automated-emails-on-commiting-to-a-subversion-repository/"></a>
+  <footer class="entry-footer"><span title='2015-09-01 15:33:18 +0000 +0000'>September 1, 2015</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Goals for the Year 2015 - Midway Update" href="https://davidcraddock.net/2015/09/01/goals-for-the-year-2015-midway-update/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Scraping Wikipedia Information for music artists, Part 2
+    <h2 class="entry-hint-parent">Use Siri, Apple Earphones and Apple Music Together
     </h2>
   </header>
   <div class="entry-content">
-    <p>I’ve abandoned the previous Wikipedia scraping approach for Brightonsound.com, as it was unreliable and didn’t pinpoint the right Wikipedia entry - ie: a band called ‘Horses’ would pull up a Wikipedia bio on the animal - which doesn’t look very professional. So instead, I have used the Musicbrainz API to retrieve some information on the artist; the homepage URL, the correct Wikipedia entry, and any genres/terms the artist has been tagged with.
+    <p>This requires you to have a subscription to Apple Music and a 3G/4G/wireless data connection, but it is so useful! Using this tip, you can be walking along with your iPhone in your pocket and your Apple earphones in, and then change music just by pressing a button on the earphones remote control and saying ‘Play (your favourite band)’.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2008-09-22 23:04:45 +0000 +0000'>September 22, 2008</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to Scraping Wikipedia Information for music artists, Part 2" href="https://davidcraddock.net/2008/09/22/scraping-wikipedia-information-for-music-artists-part-2/"></a>
+  <footer class="entry-footer"><span title='2015-08-15 20:46:21 +0000 +0000'>August 15, 2015</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Use Siri, Apple Earphones and Apple Music Together" href="https://davidcraddock.net/2015/08/15/use-siri-apple-earphones-and-apple-music-together/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Character encoding fix with PHP, MySQL 5 and ubuntu-server
+    <h2 class="entry-hint-parent">Modular Progress
     </h2>
   </header>
   <div class="entry-content">
-    <p>For some reason, under ubuntu-server, my default MySQL 5 character encoding was latin1. This caused no end of problems with grabbing data from the web, which was not necessarily in latin1 characterset.
-If you are ever in this situation, I suggest you handle everything as UTF-8. That means setting the following lines in my.cnf:
-[mysqld] .. default-character-set=utf8 skip-character-set-client-handshake ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2008-07-06 23:34:50 +0000 +0000'>July 6, 2008</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Character encoding fix with PHP, MySQL 5 and ubuntu-server" href="https://davidcraddock.net/2008/07/06/character-encoding-fix-with-php-mysql-5-and-ubuntu-server/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Scraping artists bios off of Wikipedia
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I’ve been hacking away at BrightonSound.com and I’ve been looking for a way of automatically sourcing biographical information from artists, so that visitors are presented with more information on the event.
-The Songbird media player plugin ‘mashTape’ draws upon a number of web services to grab artist bio, event listings, youtube vidoes and flickr pictures of the currently playing artist. I was reading through the mashTape code, and then found this posting by its developer, which helpfully provided the exact method I needed.
+    <p>My Eurorack modular has been progressing. I’ve added several low-cost modules, a Doepfer A-138b audio mixer module so I can mix the audio outputs of the oscilators, the noise output, and my Doepfer Dark Energy modules. I found this so useful with the Dark Energys that I have ordered another mixer. This I can use to mix audio before sending it to the filter, for example, or mix audio before sending it to a VCA to be amplified. I also added another envelope generator, Doepfer A-140, a sturdy workhorse and also useful for triggering the filter independently of the VCA envelope. Then I added a syncable LFO.. I already have 4 LFOs from the quad-LFO module in the top right, but I wanted a LFO with a reset option that I can use for MIDI syncing. On order is also a A-148 S&amp;H (sample and hold) module which I will use for generating interesting random tones once I have expanded the ‘generative music’ theme of my setup a bit more.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2008-06-18 17:43:19 +0000 +0000'>June 18, 2008</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to Scraping artists bios off of Wikipedia" href="https://davidcraddock.net/2008/06/18/scraping-artists-bios-off-of-wikipedia/"></a>
+  <footer class="entry-footer"><span title='2015-07-21 19:42:04 +0000 +0000'>July 21, 2015</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Modular Progress" href="https://davidcraddock.net/2015/07/21/modular-progress/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">adExcellence Exam passed
+    <h2 class="entry-hint-parent">Switching Audio between two Soundcards
     </h2>
   </header>
   <div class="entry-content">
-    <p>I passed the adExcellence exam first time.. woo! It wasn’t that difficult really.
-“David Craddock of iCrossing is accredited as an official Microsoft adExcellence Member. A Microsoft adExcellence Member has completed comprehensive online training on managing Microsoft adCenter search engine marketing campaigns and has demonstrated expert knowledge by passing the Microsoft adExcellence accreditation exam.”
-As of 21/3/08, I’m somehow also now #1 on Google.co.uk for the keyword “adExcellence exam”.. if that’s what you googled for, you probably want the adExcellence main site instead. Or use Live Search.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2008-03-21 07:52:24 +0000 GMT'>March 21, 2008</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to adExcellence Exam passed" href="https://davidcraddock.net/2008/03/21/adexcellence-exam-passed/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Yahoo! Pipes
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I have just seen Yahoo! Pipes, and am convinced this is going to change the web. For real.
-Data source sites will become ‘content providers’, data will be aggregated and filtered from multiple content providers, either by the user or by ‘intermediary’ sites. The user will be able to choose his ‘data view’ of the content on the internet, just as Google is currently doing.
-This is fascinating stuff if you’re involved in the web industry.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2008-03-17 06:44:04 +0000 GMT'>March 17, 2008</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Yahoo! Pipes" href="https://davidcraddock.net/2008/03/17/yahoo-pipes/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">BrightonSound.com
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>We’ve been working on a Brighton music events Google maps mashup project: www.BrightonSound.com
-It’s still developing, but it looks quite good, and we’re ready to start showing it off to people. So check it out!
-UPDATE: This project is now defunct after running for several years, and is no longer hosted. But thanks for the interest!
-.
+    <p> If you have two soundcards - maybe a normal soundcard for your speakers and maybe a headset with its own audio interface - you will want some way of switching all audio between the two. This is an great little open-source tool to do just that. It works on Mac, and Windows 7 up to 10:
+https://soundswitch.codeplex.com/
 </p>
   </div>
-  <footer class="entry-footer"><span title='2008-03-15 21:16:07 +0000 GMT'>March 15, 2008</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to BrightonSound.com" href="https://davidcraddock.net/2008/03/15/brightonsoundcom/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">A poor man&#39;s VMWare Workstation: VMWare Server under Ubuntu 7.10 &#43; VMWare Player under Windows XP
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I finally setup my Dell Lattitude D630 laptop the way I wanted it last night, and thought I’d do a quick writeup about it. Here is the parttition table:
-A 40GB Windows XP partition, with VMWare Player installed, which I will be using for Windows applications that don’t play well in virtualised mode (eg media applications). I will also be using it as the main platform for running VMs. A basic 5GB root &#43; 1.4GB swap 7.10 Ubuntu server partition, with VMWare Server installed (for creating, advanced editing and performing network testing on VMs). I used these VMWare server on Ubuntu 7.10 tutorials. A 36GB NTFS partition for storing VMs A 26GB NTFS media partition for media I want to share between VMs and the two operating systems on the disc. We use VMWare servers at work to host our infrastructure, so this setup will be very useful for me. I can now:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2008-02-28 23:56:17 +0000 GMT'>February 28, 2008</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to A poor man&#39;s VMWare Workstation: VMWare Server under Ubuntu 7.10 &#43; VMWare Player under Windows XP" href="https://davidcraddock.net/2008/02/28/a-poor-mans-vmware-workstation-vmware-server-under-ubuntu-710-vmware-player-under-windows-xp/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Brighton Barcamp2
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I will be attending Brighton Barcamp 2 on the weekend of the 14th March, and presenting on a new web project I’ve been working on.
-See: http://barcamp.pbwiki.com/BarCampBrighton2 and http://www.barcampbrighton.org/ for more info.
-Update: Brighton Barcamp 2 is now over.
-This was really interesting, and I learned a huge amount in a very short amount of time. Thanks to everyone who talked to me. I’ll definitely be attending future Barcamps.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2008-02-22 02:06:33 +0000 GMT'>February 22, 2008</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Brighton Barcamp2" href="https://davidcraddock.net/2008/02/22/brighton-barcamp2/"></a>
+  <footer class="entry-footer"><span title='2015-06-21 17:55:50 +0000 +0000'>June 21, 2015</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Switching Audio between two Soundcards" href="https://davidcraddock.net/2015/06/21/switching-audio-between-two-soundcards/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://davidcraddock.net/posts/page/16/">
-      «&nbsp;Prev&nbsp;
+      «&nbsp;Prev&nbsp;16/36
     </a>
-    <a class="next" href="https://davidcraddock.net/posts/page/18/">Next&nbsp;&nbsp;»
+    <a class="next" href="https://davidcraddock.net/posts/page/18/">Next&nbsp;18/36&nbsp;»
     </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -320,6 +294,18 @@ This was really interesting, and I learned a huge amount in a very short amount 
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 </body>

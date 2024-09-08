@@ -8,8 +8,8 @@
 <meta name="robots" content="index, follow">
 <title>DavidCraddock.net</title>
 
-<meta name="description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK.">
-<meta name="author" content="">
+<meta name="description" content="DavidCraddock.net">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/feed.xml">
+<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/index.xml">
 <link rel="alternate" type="application/json" href="https://davidcraddock.net/index.json">
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/">
 <noscript>
@@ -62,13 +62,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
 <meta property="og:title" content="DavidCraddock.net" />
-<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
+<meta property="og:description" content="DavidCraddock.net" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://davidcraddock.net/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 
-<meta name="twitter:card" content="summary"/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="DavidCraddock.net"/>
-<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK."/>
+<meta name="twitter:description" content="DavidCraddock.net"/>
 
 <script type="application/ld+json">
 {
@@ -76,10 +79,10 @@
   "@type": "Organization",
   "name": "DavidCraddock.net",
   "url": "https://davidcraddock.net/",
-  "description": "The personal blog of David Craddock, a software engineer based in Manchester, UK.",
+  "description": "DavidCraddock.net",
   "thumbnailUrl": "https://davidcraddock.net/favicon.ico",
   "sameAs": [
-      
+      "https://github.com/wordswords"
   ]
 }
 </script>
@@ -87,7 +90,11 @@
 
 <body class="list" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -98,9 +105,44 @@
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -108,153 +150,83 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Current Music-Making Setup
+    <h2 class="entry-hint-parent">The Persuit of Happiness and the Hill-Climbing Problem
     </h2>
   </header>
   <div class="entry-content">
-    <p>With my current setup, I’m trying to make as much music ‘out of the box’ as possible, away from the computer as I find it more fun.
-Synths: KORG Minilogue: I use this for a keyboard controller, and I use the 16 step sequencer to run simple sequences. It connects to the PC via USB and has MIDI output. I can also use this as a synthesizer its own right, it’s good for backing chords and pads. KORG MS20 Mini: I’m borrowing this from a friend. I will use it as a bass synth mostly. I’ve got a Harvestman English Tear module which connects it to my Eurorack.
+    <p>It seems that for a lot of people, perhaps the vast majority, they cannot expect to be 100% happy all the time. Even those incredibly successful celebrities and incredibly rich CEOs and politicians are not happy 100% of the time.
+So is it a good idea to seek 100% happiness right away? Or should we always try and select the ’least worst’ situation? If we keep making progress and optimse our happiness levels through constantly selecting the ’least worst’ situation whenever we have a descision then it seems to me we will maximise our happiness potential in the long run.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2016-11-16 17:23:09 +0000 GMT'>November 16, 2016</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to Current Music-Making Setup" href="https://davidcraddock.net/2016/11/16/current-music-making-setup/"></a>
+  <footer class="entry-footer"><span title='2022-01-07 05:50:39 +0000 GMT'>January 7, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to The Persuit of Happiness and the Hill-Climbing Problem" href="https://davidcraddock.net/2022/01/07/the-persuit-of-happiness-and-the-hill-climbing-problem/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Narrative-Led PC Games
+    <h2 class="entry-hint-parent">Retrospective on 2021
     </h2>
   </header>
   <div class="entry-content">
-    <p> When I first started getting into computer roleplaying games in the 90s/00s I remember playing the Infinity Engine games by Bioware and Black Isle, such as Baldur’s Gate 2, the original Fallout games, and of course Planescape: Torment. It was the quality of writing that drew me in and took me to another world, the graphics were just a background setting to that writing.
+    <p>Well, 2021 has been a bit of a downer in a number of ways. There has been some upsides though.
+I spent the first part of 2021 burned out, as in - totally burned out - of my career and really needing a break. This affected my work. It turns out that unknown to me at the time, I had cancer, Hodgkins Lymophoma, and a lot of my lack of energy and generally feeling awful was down to a large tumor that had been growing my chest for some time and was pressing down on my heart and lungs. In June I was admitted to hospital and they diagnosed the cancer. In July I started chemotherapy. Now the good news is that Hodgkins Lymphoma is one of the best cancers to get if you were able to choose, as it has a very high cure rate and very low fatality rate. The chemo as of November’s scan seems to be working even better than expected and they were expecting a good outcome. So that is positive. I should hopefully be done with chemo by March 2022. One of the good things about 2021 has been the job that I found in the music industry. It is still doing software engineering, what my career has been based around, but they seem like a very nice bunch of people, and were prepared to support me and keep me on around chemotherapy. I am still employed part-time and that has been a HUGE help financially as you really don’t get a lot of money in benefits from the government, even when you have cancer it seems, and my family have had to help me out quite a bit. I have also had some success in the work that I’ve been doing - it seems very appreciated which is something I’m not really used to! I have continued DJing on Twitch which has been great. I still do my regular Sunday show for 4 hours most Sundays, and it is a lot of fun and I have a bunch of regulars who pop in. I enjoy it a lot. I reached 500 followers and raised a LOT of money via charity streams with other DJs, both as a DJ and also helping as an organiser. In December Conny and I caught the omicron varient of COVID-19 and that was a huge worry at the time because of my low immune system due to chemo and cancer. However we both have beaten it now, I had a short stay in hospital but it wasn’t that bad. NHS staff were very helpful and I think it really helped that I had 3 vaccinations in my system at the time of catching it. In Jan 2021 I took the third of the 10 week university level courses at Point Blank Music School as part of my study of Electronic Music Production. This course was on mixing and mastering. I have learned a lot from it already, although I still haven’t finished it as I was quite busy most of the year. I single-handedly raised £270 from friends and family for a cancer charity for my mother (who also has cancer) during a 12 hour DJ stream on my birthday in 2021. Ironically I had no idea I had cancer myself at the time. I ripped all of CDs to FLAC. Hundreds of CDs. Ripped hundreds of DVDs, PS2 and PS1 games too. Hosted them all on a Plex media server and gave the majority of discs away to charity. I sorted all my physical books, split into different subject bookshelves, alphabeticalised and catalogued in GoodReads.com. I have read more books this year than several previous years. I still have a huge backlog to go through though. I played quite a few more computer games than I have for a while, including beating Cyberpunk 2077 in a no-sleep 28 hour marathon after it was released. (Although that was technically in December 2020 I am going to include it anyway). It was such a great game in my view, amazing storyline and setting. Here’s to 2022!
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2016-09-05 17:22:14 +0000 +0000'>September 5, 2016</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to Narrative-Led PC Games" href="https://davidcraddock.net/2016/09/05/narrative-led-pc-games/"></a>
+  <footer class="entry-footer"><span title='2022-01-01 15:58:05 +0000 GMT'>January 1, 2022</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Retrospective on 2021" href="https://davidcraddock.net/2022/01/01/retrospective-on-2021/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Eurorack 2016
+    <h2 class="entry-hint-parent">Setting up Enlightenment window manager on Ubuntu 21.10
     </h2>
   </header>
   <div class="entry-content">
-    <p> So.. the problem, as so many people have said, with getting into building a Eurorack modular synthesizer is that it becomes addictive, and you inevitably spend more than you can really afford. That said.. I now have a great fully customised synthesiser for what I want to do :) The layout is:
-Top shelf: 3 oscilators and noise generator in the top left, 4 VCAs and S&amp;H and Ring Mod sections in the mid center, LFOs in the top right.
-...</p>
+    <p>Enlightenment is a very underrated window manager choice, in my opinion. It still looks very pretty and is very configurable. There is a packaging bug with the latest version of Enlightement in the 21.10 repo which means it doesn’t work correctly. The fix is to set the suid bit on the ’enlightenment_system’ binary. So:
+sudo apt install enlightenment sudo find /usr/lib -type f -name enlightenment_system -exec sudo chmod 4755 {} \; Log out of Ubuntu Click the settings cog in the bottom right to change your Window manager to enlightenment Log on and the settings wizard will help you configure Enlightenment </p>
   </div>
-  <footer class="entry-footer"><span title='2016-04-16 20:58:13 +0000 +0000'>April 16, 2016</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Eurorack 2016" href="https://davidcraddock.net/2016/04/16/eurorack-2016/"></a>
+  <footer class="entry-footer"><span title='2021-11-18 08:54:42 +0000 GMT'>November 18, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Setting up Enlightenment window manager on Ubuntu 21.10" href="https://davidcraddock.net/2021/11/18/setting-up-enlightenment-window-manager-on-ubuntu-21-10/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">OSX Fish Functions to open Chrome from the Shell
+    <h2 class="entry-hint-parent">My Simple Commandline Git Workflow
     </h2>
   </header>
   <div class="entry-content">
-    <p>These functions are quite handy, and allow you to do things such as copy and paste errors and google for them without having to manually open a browser. You have to enclose arguments to both functions in single quotes, e.g. ‘chrome ‘http://www.google.co.uk’ and google ‘one two three four’. You should add these to your config file at ~/.config/fish/config.fish and make sure Google Chrome is already installed.
-[code language=“bash”] function chrome /usr/bin/open -a ‘/Applications/Google Chrome.app’ $argv[1:] end function google /usr/bin/open -a ‘/Applications/Google Chrome.app’ “https://www.google.co.uk/search?q=$argv[1]” end [/code]
-...</p>
+    <p>This is a simple description of how I work 99% of the time, as I am a simpleton. Origin/main is the new origin/master for future repositories, I just note both here for completeness because I use origin master for a lot of current repos.
+I first make sure I am uptodate on origin/master or origin/main by git pulling. git checkout origin master git pull origin master I start making changes to the local copy on my local machine. When it gets to a point where I want to save my changes, I: git stash push git checkout -b &lt;branch name which will be made into a PR&gt; git stash pop I then commit the changes to the new branch. git commit When I am ready to create the PR, I create and push to the remote branch: git push origin &lt;branch name which will be made into a PR&gt; Github will tell me if master/main has diverged past a state where my commits can be merged in without conflict. If there is a possible conflict, I will merge in origin master/main to my local copy and then push to the PR branch again: git checkout &lt;branch name which will be made into a PR&gt; git pull origin master (or origin main) I resolve locally conflicts through git mergetool which, for me, is vim’s three way diff tool. I commit the updated conflicts and push to the remote branch - git add &amp;&amp; git commit &amp;&amp; git push origin &lt;branch name which will be made into a PR&gt; Often at this point I find I have to add new commits to fix things I have broken or have been flagged up in PR review. git commit git push origin &lt;branch name which will be made into a PR&gt; Reviewers now have some of their comments made on stale commits in Github. This is better than squashing the commits I find because sometimes the commits are not stale and their comments are still valid, and it becomes easier to keep track of. They can view the ‘files changed’ tab to add review comments until they are happy. I loop back to check whether master/main has diverged, and if it hasn’t just keep adding commits to address their concerns. The PR gets approved (hopefully) I merge the PR into master or main I delete the old branch </p>
   </div>
-  <footer class="entry-footer"><span title='2016-04-04 11:50:31 +0000 +0000'>April 4, 2016</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to OSX Fish Functions to open Chrome from the Shell" href="https://davidcraddock.net/2016/04/04/osx-fish-functions-to-open-chrome-from-the-shell/"></a>
+  <footer class="entry-footer"><span title='2021-10-21 16:44:09 +0000 +0000'>October 21, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to My Simple Commandline Git Workflow" href="https://davidcraddock.net/2021/10/21/my-simple-commandline-git-workflow/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">My vIM Configuration
+    <h2 class="entry-hint-parent">How to fix Plex Media Servers &#39;Various Artists&#39; problem using Beets.io and other tools
     </h2>
   </header>
   <div class="entry-content">
-    <p> I use a heavily customised setup for vIM, the text editor that annoys me the least in ~30 years of using a computer. You can see my exact setup in my dotfiles repo on github, https://github.com/wordswords/-.
-Here are the plugins I use:
-ConqueTerm - Opens a shell window inside vIM, allowing you to have a REPL environment within vIM. NERDTree - A filetree plugin that you can see on the left of the window above. It replicates the Sublime text editor’s filetree. vim-airline - This is a statusline plugin for vIM that allows for a nicer status view for windows and buffers. vim-devicons - Allows for UTF-8 icons to make vIM editing slightly more graphical. Used by airline to display more info in less space, and by NERDTree to show filetype information. vim-fish - Syntax highlighting for fish shell script editing. vim-rails - Syntax highlighting and more for rails. vim-ruby - Syntax highlighting for Ruby. </p>
-  </div>
-  <footer class="entry-footer"><span title='2016-03-26 04:13:08 +0000 GMT'>March 26, 2016</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to My vIM Configuration" href="https://davidcraddock.net/2016/03/26/my-vim-configuration/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Working with Fish Shell, ffmpeg, MP4Box and sox to generate audio files
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>More adventures with Fish shell. I have scripted the generation of a bunch of test asset audio files in mp4 format suitable for dash streaming. I have used the audio file commandline tools ffmepg MP4Box and sox in this script, they are pretty powerful and worth installing via homebrew on OSX.
-Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I’m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy. [code lang=“bash”] #!/usr/bin/env fish # move to the asset output directory.. cd ..
+    <p>The Problem As of the day of posting, Plex Media Server has a suboptimal handling of Various Artists compilations. Unless you follow BOTH of these rules, described clearly on the Plex support here under ‘Various Artists’, then they won’t appear collected under a particular album, they will be spread out filed under the different artists that created them. I think it should only require one of these rules, but it is not up to me. The problem is that release metadata available from the online metadata databases, often doesn’t follow these rules - lots of DJ mix compilations for example, do not set albumartist tag to Various Artists from the online metadata databases.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2016-03-08 17:22:37 +0000 GMT'>March 8, 2016</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to Working with Fish Shell, ffmpeg, MP4Box and sox to generate audio files" href="https://davidcraddock.net/2016/03/08/working-with-fish-shell-ffmpeg-mp4box-and-sox-to-generate-audio-files/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Audio Routing for my PC
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>For my own benefit as much as anyone elses, I thought I’d document my PC audio setup. I have two soundcards and two sets of speakers, one surround soundcard and speaker set for gaming and watching surround sound movies, and one audio interface linked up to my studio monitor speakers for music production. I also have a Digi 002 mixer which I use to mix in the outputs from my synthesisers to my recording interface. When I want to record, I usually record one track at a time from a synthesier to the audio input of the audio interface, via the Digi 002 mixer:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2016-02-06 08:40:22 +0000 GMT'>February 6, 2016</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Audio Routing for my PC" href="https://davidcraddock.net/2016/02/06/audio-routing-for-my-pc/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Fish Shell Scripting
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> A few months ago I switched across from Bash onto the Fish shell, on my main development machine. I can’t get enough of its fast autosuggestions and its sane scripting language. Compared to Bash it is very fun to use.
-Today I wrote a script to automate the backup of my development workspace onto a private bitbucket account. Bitbucket is good because it allows unlimited private repositories, but it caps the size of these repos at 2GB max, with some features disabled after 1GB. This means that I want to find out the size of my repo before automatically backing it up. This script does this:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2016-02-02 17:28:39 +0000 GMT'>February 2, 2016</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to Fish Shell Scripting" href="https://davidcraddock.net/2016/02/02/fish-shell-scripting/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">ADAT with Digi 002 Consoles - Don&#39;t throw them away just yet!
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>So I got given a Digi 002 console version, which looks like this:
-A fairly old style digital audio interface and mixer, which was all the rage back in 2002 when it first came out, but now is often found sitting in the skip. Why? Because it is a Pro-Tools inteface, and Avid stopped supporting it about 5 years ago, so it won’t actually work under Pro Tools and Windows 10 (believe me, I’ve tried!). It only works as a recording interface through Pro Tools, so you can’t just connect it via firewire to your PC and expect it to work.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2016-01-25 21:10:44 +0000 GMT'>January 25, 2016</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to ADAT with Digi 002 Consoles - Don&#39;t throw them away just yet!" href="https://davidcraddock.net/2016/01/25/adat-with-digi-002-console-dont-throw-them-away-just-yet/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">A Basic Eurorack Technique
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I thought it might be of some interest to describe how I use my Eurorack, at lot of the time, in making tracks. I have a 3 oscilator - 3 VCA - 3 filter Eurorack which I use primarily so that the oscilators initially work in unison mode with some slight detuning. I typically use a single loop, arpeggio or pattern that I repeat over the song. Then, partway through a track, I will transpose the octaves of the oscilators and vary the sustain of the envelopes, along with the filters and pulse-width modulation amount, to make a morphing yet harmonious sound texture progression.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2016-01-24 05:37:52 +0000 GMT'>January 24, 2016</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to A Basic Eurorack Technique" href="https://davidcraddock.net/2016/01/24/my-basic-eurorack-technique/"></a>
+  <footer class="entry-footer"><span title='2021-09-21 22:22:47 +0000 +0000'>September 21, 2021</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to How to fix Plex Media Servers &#39;Various Artists&#39; problem using Beets.io and other tools" href="https://davidcraddock.net/2021/09/21/how-to-fix-plex-media-servers-various-artists-problem-using-beets-io-and-other-tools/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://davidcraddock.net/page/6/">
-      «&nbsp;Prev&nbsp;
+      «&nbsp;Prev&nbsp;6/36
     </a>
-    <a class="next" href="https://davidcraddock.net/page/8/">Next&nbsp;&nbsp;»
+    <a class="next" href="https://davidcraddock.net/page/8/">Next&nbsp;8/36&nbsp;»
     </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -308,6 +280,18 @@ A fairly old style digital audio interface and mixer, which was all the rage bac
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 </body>

@@ -11,7 +11,7 @@
 
 A few months ago I switched across from Bash onto the Fish shell, on my main development machine. I can&rsquo;t get enough of its fast autosuggestions and its sane scripting language. Compared to Bash it is very fun to use.
 Today I wrote a script to automate the backup of my development workspace onto a private bitbucket account. Bitbucket is good because it allows unlimited private repositories, but it caps the size of these repos at 2GB max, with some features disabled after 1GB. This means that I want to find out the size of my repo before automatically backing it up. This script does this:">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2016/02/02/fish-shell-scripting/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -67,11 +67,14 @@ Today I wrote a script to automate the backup of my development workspace onto a
 A few months ago I switched across from Bash onto the Fish shell, on my main development machine. I can&rsquo;t get enough of its fast autosuggestions and its sane scripting language. Compared to Bash it is very fun to use.
 Today I wrote a script to automate the backup of my development workspace onto a private bitbucket account. Bitbucket is good because it allows unlimited private repositories, but it caps the size of these repos at 2GB max, with some features disabled after 1GB. This means that I want to find out the size of my repo before automatically backing it up. This script does this:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2016/02/02/fish-shell-scripting/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2016/02/02/fish-shell-scripting/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2016-02-02T17:28:39+00:00" />
 <meta property="article:modified_time" content="2016-02-02T17:28:39+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Fish Shell Scripting"/>
 <meta name="twitter:description" content="
 
@@ -112,8 +115,12 @@ Today I wrote a script to automate the backup of my development workspace onto a
   "articleBody": " A few months ago I switched across from Bash onto the Fish shell, on my main development machine. I can’t get enough of its fast autosuggestions and its sane scripting language. Compared to Bash it is very fun to use.\nToday I wrote a script to automate the backup of my development workspace onto a private bitbucket account. Bitbucket is good because it allows unlimited private repositories, but it caps the size of these repos at 2GB max, with some features disabled after 1GB. This means that I want to find out the size of my repo before automatically backing it up. This script does this:\n#!/usr/bin/env fish set size (du -sm . | awk '{print $1}') echo \"Workspace is $size MB\" if math \"$size \u003e 1000\" echo \"Workspace too big to commit!\" exit else echo \"Workspace is under 1GB, OK to commit\" end git add . git commit -m \"Automated backup\" git push origin master Each individual directory additionally usually has its own git config which is synced to the separate repos for the code I’m actually working on. But if my development machine is stolen or somehow destroyed, or I want to quickly replicate my environment on another machine with access to the original repos, then I can regenerate the associations between the different directories. It also makes me mindful of not committing images or other video assets.\n",
   "wordCount" : "230",
   "inLanguage": "en",
-  "datePublished": "2016-02-02T17:28:39Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2016-02-02T17:28:39Z",
   "dateModified": "2016-02-02T17:28:39Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2016/02/02/fish-shell-scripting/"
@@ -132,7 +139,11 @@ Today I wrote a script to automate the backup of my development workspace onto a
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -143,9 +154,44 @@ Today I wrote a script to automate the backup of my development workspace onto a
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -157,7 +203,7 @@ Today I wrote a script to automate the backup of my development workspace onto a
     <h1 class="post-title entry-hint-parent">
       Fish Shell Scripting
     </h1>
-    <div class="post-meta"><span title='2016-02-02 17:28:39 +0000 GMT'>February 2, 2016</span>&nbsp;·&nbsp;2 min
+    <div class="post-meta"><span title='2016-02-02 17:28:39 +0000 GMT'>February 2, 2016</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> 
@@ -166,21 +212,21 @@ Today I wrote a script to automate the backup of my development workspace onto a
 </p>
 <p>A few months ago I switched across from Bash onto the <a href="http://fishshell.com/">Fish shell</a>, on my main development machine. I can&rsquo;t get enough of its fast autosuggestions and its sane scripting language. Compared to Bash it is very fun to use.</p>
 <p>Today I wrote a script to automate the backup of my development workspace onto a private bitbucket account. Bitbucket is good because it allows unlimited private repositories, but it caps the size of these repos at 2GB max, with some features disabled after 1GB. This means that I want to find out the size of my repo before automatically backing it up. This script does this:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>#!/usr/bin/env fish
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>set size (du -sm . | awk &#39;{print $1}&#39;)
-</span></span><span style="display:flex;"><span>echo &#34;Workspace is $size MB&#34;
-</span></span><span style="display:flex;"><span>if math &#34;$size &gt; 1000&#34;
-</span></span><span style="display:flex;"><span>  echo &#34;Workspace too big to commit!&#34;
-</span></span><span style="display:flex;"><span>  exit
-</span></span><span style="display:flex;"><span>else
-</span></span><span style="display:flex;"><span>  echo &#34;Workspace is under 1GB, OK to commit&#34;
-</span></span><span style="display:flex;"><span>end
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>git add .
-</span></span><span style="display:flex;"><span>git commit -m &#34;Automated backup&#34;
-</span></span><span style="display:flex;"><span>git push origin master
-</span></span></code></pre></div><p>Each individual directory additionally usually has its own git config which is synced to the separate repos for the code I&rsquo;m actually working on. But if my development machine is stolen or somehow destroyed, or I want to quickly replicate my environment on another machine with access to the original repos, then I can regenerate the associations between the different directories. It also makes me mindful of not committing images or other video assets.</p>
+<pre tabindex="0"><code>#!/usr/bin/env fish
+
+set size (du -sm . | awk &#39;{print $1}&#39;)
+echo &#34;Workspace is $size MB&#34;
+if math &#34;$size &gt; 1000&#34;
+  echo &#34;Workspace too big to commit!&#34;
+  exit
+else
+  echo &#34;Workspace is under 1GB, OK to commit&#34;
+end
+
+git add .
+git commit -m &#34;Automated backup&#34;
+git push origin master
+</code></pre><p>Each individual directory additionally usually has its own git config which is synced to the separate repos for the code I&rsquo;m actually working on. But if my development machine is stolen or somehow destroyed, or I want to quickly replicate my environment on another machine with access to the original repos, then I can regenerate the associations between the different directories. It also makes me mindful of not committing images or other video assets.</p>
 
 
   </div>
@@ -188,6 +234,19 @@ Today I wrote a script to automate the backup of my development workspace onto a
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2016/02/06/audio-routing-for-my-pc/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Audio Routing for my PC</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2016/01/25/adat-with-digi-002-console-dont-throw-them-away-just-yet/">
+    <span class="title">Next »</span>
+    <br>
+    <span>ADAT with Digi 002 Consoles - Don&#39;t throw them away just yet!</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -261,7 +320,7 @@ Today I wrote a script to automate the backup of my development workspace onto a
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -315,6 +374,18 @@ Today I wrote a script to automate the backup of my development workspace onto a
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

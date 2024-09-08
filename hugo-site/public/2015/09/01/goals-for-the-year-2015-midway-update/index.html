@@ -35,7 +35,7 @@ Adopt a regular form of keeping fit - Not achieved. I have a gym even closer to 
 
 Conclusion
 Although I&rsquo;ve achieved the majority of my goals, I haven&rsquo;t achieved two of the major goals - around my job and around exercise, which are both things I need to work on. There is still time left this year to make a difference in these areas.">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2015/09/01/goals-for-the-year-2015-midway-update/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -115,11 +115,14 @@ Adopt a regular form of keeping fit - Not achieved. I have a gym even closer to 
 Conclusion
 Although I&rsquo;ve achieved the majority of my goals, I haven&rsquo;t achieved two of the major goals - around my job and around exercise, which are both things I need to work on. There is still time left this year to make a difference in these areas." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2015/09/01/goals-for-the-year-2015-midway-update/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2015/09/01/goals-for-the-year-2015-midway-update/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2015-09-01T15:33:18+00:00" />
 <meta property="article:modified_time" content="2015-09-01T15:33:18+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Goals for the Year 2015 - Midway Update"/>
 <meta name="twitter:description" content="
 
@@ -184,8 +187,12 @@ Although I&rsquo;ve achieved the majority of my goals, I haven&rsquo;t achieved 
   "articleBody": " Now that I am midway through the year, I thought I’d revisit the goals I set myself at the start of the year, to see what has changed.\nCareer Goals Settle into my new role at the BBC as Test Manager - I suppose this has not been achieved. I will have more updates soon (hopefully) but a change of direction is likely to happen. Pushing for a place to be opened up in Platform Test to employ someone from the Extend Scheme - This has been achieved, and someone will be joining Platform Test from the Extend scheme in October, I’m happy to say. Creative Goals Get better at music production - This has been achieved. I have been working with my friend I will call ‘G’, which has massively improved my production skills. I have posted music that I see as much better to Soundcloud. Social Goals Getting married - Well.. things didn’t work out with that. But I have a new girlfriend who will hopefully be moving to live with me, so things seem to be recovering there. Making friends with more people that share the same interests - Partly achieved. G is a good example of someone that I have met through looking for friends with the same interest. Financial Goals Saving more over the course of the year - Partly achieved. I have bought a house, so now I am in a quite a bit of debt, but the money I will be putting towards my mortgage will be money I am effectively ‘saving’ because it will be put into the value of the house. Joining a pension scheme - Achieved. Health Goals Adopt a regular form of keeping fit - Not achieved. I have a gym even closer to where I live, 5 minutes walk, so hopefully I will use it more soon. It is difficult for me, as the medication I’m on makes me feel tired all the time, but they do say that exercise improves energy levels. Conclusion Although I’ve achieved the majority of my goals, I haven’t achieved two of the major goals - around my job and around exercise, which are both things I need to work on. There is still time left this year to make a difference in these areas.\n",
   "wordCount" : "382",
   "inLanguage": "en",
-  "datePublished": "2015-09-01T15:33:18Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2015-09-01T15:33:18Z",
   "dateModified": "2015-09-01T15:33:18Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2015/09/01/goals-for-the-year-2015-midway-update/"
@@ -204,7 +211,11 @@ Although I&rsquo;ve achieved the majority of my goals, I haven&rsquo;t achieved 
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -215,9 +226,44 @@ Although I&rsquo;ve achieved the majority of my goals, I haven&rsquo;t achieved 
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -229,7 +275,7 @@ Although I&rsquo;ve achieved the majority of my goals, I haven&rsquo;t achieved 
     <h1 class="post-title entry-hint-parent">
       Goals for the Year 2015 - Midway Update
     </h1>
-    <div class="post-meta"><span title='2015-09-01 15:33:18 +0000 +0000'>September 1, 2015</span>&nbsp;·&nbsp;2 min
+    <div class="post-meta"><span title='2015-09-01 15:33:18 +0000 +0000'>September 1, 2015</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> <div class="toc">
@@ -259,7 +305,7 @@ Although I&rsquo;ve achieved the majority of my goals, I haven&rsquo;t achieved 
 
   <div class="post-content"><p><a href="/wp-content/uploads/2015/01/windingroad.jpg"><img loading="lazy" src="/wp-content/uploads/2015/01/windingroad.jpg" alt="Winding Road"  />
 </a></p>
-<p>Now that I am midway through the year, I thought I&rsquo;d revisit <a href="http://www.davidcraddock.net/?p=1301&amp;preview=true">the goals I set myself at the start of the year</a>, to see what has changed.</p>
+<p>Now that I am midway through the year, I thought I&rsquo;d revisit <a href="http://www.davidcraddock.net/?p=1301&preview=true">the goals I set myself at the start of the year</a>, to see what has changed.</p>
 <h3 id="career-goals">Career Goals<a hidden class="anchor" aria-hidden="true" href="#career-goals">#</a></h3>
 <ul>
 <li><em>Settle into my new role at the BBC as Test Manager</em> - I suppose this has not been achieved. I will have more updates soon (hopefully) but a change of direction is likely to happen.</li>
@@ -292,6 +338,19 @@ Although I&rsquo;ve achieved the majority of my goals, I haven&rsquo;t achieved 
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2015/09/02/things-id-like-to-learn-more-about/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Things I&#39;d like to Learn More About</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2015/08/15/use-siri-apple-earphones-and-apple-music-together/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Use Siri, Apple Earphones and Apple Music Together</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -365,7 +424,7 @@ Although I&rsquo;ve achieved the majority of my goals, I haven&rsquo;t achieved 
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -419,6 +478,18 @@ Although I&rsquo;ve achieved the majority of my goals, I haven&rsquo;t achieved 
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

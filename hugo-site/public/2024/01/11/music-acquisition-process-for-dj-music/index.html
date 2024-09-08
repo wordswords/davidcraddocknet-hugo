@@ -18,7 +18,7 @@ Once that is done, and any corrupt files removed, I import the file library into
 Now I have a complete music library, I run a batch file to reverse mirror the music from the DJ library back onto the server, so my collection doesn&rsquo;t accumalate corrupt files.
 Now I have a full DJ music library of FLACs on my DJ laptop, over 22,000 files, great for requests!
 ">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2024/01/11/music-acquisition-process-for-dj-music/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -81,11 +81,14 @@ Now I have a complete music library, I run a batch file to reverse mirror the mu
 Now I have a full DJ music library of FLACs on my DJ laptop, over 22,000 files, great for requests!
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2024/01/11/music-acquisition-process-for-dj-music/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2024/01/11/music-acquisition-process-for-dj-music/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-01-11T23:41:50+00:00" />
 <meta property="article:modified_time" content="2024-01-11T23:41:50+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Music Acquisition Process for DJ Music"/>
 <meta name="twitter:description" content="My music acquisition process for DJ music:
 
@@ -133,8 +136,12 @@ Now I have a full DJ music library of FLACs on my DJ laptop, over 22,000 files, 
   "articleBody": "My music acquisition process for DJ music:\nARM (Automatic Ripping Machine) rips CDs I buy into FLAC form without any interactivity. You just insert a CD into the Linux server, and then it ejects it when it’s done. Lidarr downloads FLACs of any tracks of artists I have in my collection, but I don’t have their full discography. It does this automatically and silently in the background. Once a day, a cron job imports ARM and Lidarr downloads into my Beets.io music library, and deals with file integrity checks, tagging, metadata, library file structure and embedded images of the artist. Whenever I’m ready to have a fresh library copy, I run my batch script on my W11 DJ laptop and it robocopy mirrors the entire library from my Linux samba share onto my computer. I then send it through MixedInKey 10 to analyse the BPM and the music key of each track, and to check again the integrity of each file. Once that is done, and any corrupt files removed, I import the file library into Serato DJ Pro, and analyse the entire collection. This again removes any dud files from the collection. Now I have a complete music library, I run a batch file to reverse mirror the music from the DJ library back onto the server, so my collection doesn’t accumalate corrupt files. Now I have a full DJ music library of FLACs on my DJ laptop, over 22,000 files, great for requests! ",
   "wordCount" : "245",
   "inLanguage": "en",
-  "datePublished": "2024-01-11T23:41:50Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2024-01-11T23:41:50Z",
   "dateModified": "2024-01-11T23:41:50Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2024/01/11/music-acquisition-process-for-dj-music/"
@@ -153,7 +160,11 @@ Now I have a full DJ music library of FLACs on my DJ laptop, over 22,000 files, 
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -164,9 +175,44 @@ Now I have a full DJ music library of FLACs on my DJ laptop, over 22,000 files, 
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -178,7 +224,7 @@ Now I have a full DJ music library of FLACs on my DJ laptop, over 22,000 files, 
     <h1 class="post-title entry-hint-parent">
       Music Acquisition Process for DJ Music
     </h1>
-    <div class="post-meta"><span title='2024-01-11 23:41:50 +0000 GMT'>January 11, 2024</span>&nbsp;·&nbsp;2 min
+    <div class="post-meta"><span title='2024-01-11 23:41:50 +0000 GMT'>January 11, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> 
@@ -201,6 +247,19 @@ Now I have a full DJ music library of FLACs on my DJ laptop, over 22,000 files, 
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2024/04/23/4683/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Advice to young people in the UK wanting a career in Tech</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2023/11/25/retrospective-for-2023/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Retrospective for 2023</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -274,7 +333,7 @@ Now I have a full DJ music library of FLACs on my DJ laptop, over 22,000 files, 
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -328,6 +387,18 @@ Now I have a full DJ music library of FLACs on my DJ laptop, over 22,000 files, 
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

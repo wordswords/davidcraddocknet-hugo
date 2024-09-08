@@ -10,7 +10,7 @@
 <meta name="description" content="
 
 I have retired the Novation SL Zero Mk1 MIDI controller that was causing me a lot of grief when I was running Resolume and Ableton Live at the same time, as its Automap functionality was locking on to the Ableton Live mixer in session view now and then, and so, sometimes, when I thought I was controlling Resolumes visual FX, I was actually changing the volume faders in my DJ mix. Which was bad.">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2021/04/26/resolume-midi-control-in-my-twitch-djing-setup/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -65,11 +65,14 @@ I have retired the Novation SL Zero Mk1 MIDI controller that was causing me a lo
 
 I have retired the Novation SL Zero Mk1 MIDI controller that was causing me a lot of grief when I was running Resolume and Ableton Live at the same time, as its Automap functionality was locking on to the Ableton Live mixer in session view now and then, and so, sometimes, when I thought I was controlling Resolumes visual FX, I was actually changing the volume faders in my DJ mix. Which was bad." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2021/04/26/resolume-midi-control-in-my-twitch-djing-setup/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2021/04/26/resolume-midi-control-in-my-twitch-djing-setup/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-04-26T18:26:14+00:00" />
 <meta property="article:modified_time" content="2021-04-26T18:26:14+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Resolume MIDI Control in my Twitch DJing Setup"/>
 <meta name="twitter:description" content="
 
@@ -109,8 +112,12 @@ I have retired the Novation SL Zero Mk1 MIDI controller that was causing me a lo
   "articleBody": " I have retired the Novation SL Zero Mk1 MIDI controller that was causing me a lot of grief when I was running Resolume and Ableton Live at the same time, as its Automap functionality was locking on to the Ableton Live mixer in session view now and then, and so, sometimes, when I thought I was controlling Resolumes visual FX, I was actually changing the volume faders in my DJ mix. Which was bad.\nI have replaced it with the even older but classic Behringer BCF2000. I use the sliders to control the 8 dashboard visual FX controls on Resolume. I also have attached two pedals to the BCF2000. The first one, the sustain on/off switch pedal, I have mapped to control whether Resolume is running in autopilot mode or just looping the current visual. This will allow me to set it on autopilot through most of the set and then focus on one visual when I want to do some more involved stuff. The expression pedal, I have set to control the opacity of the top layer. I run Resolume with two layers, the main layer which is usually a background of an animation, and then the ’extra lines and bars and stuff on top’ layer. So when I gradually depress and release the expression pedal, I fade in and fade out the ’extra stuff’ layer from the scene.\nI have additionally mapped four buttons on the Behringer BCF2000 to manually skip forward and backwards each layer through the prepared layer list. So if one layer is boring or I want to select something specific I have some control over that without having to open the Resolume window on the PC.\nSo far I’m happy with the autopilot setup I’ve got. I want to spend more time on Resolume and the VJing side of my stream, but for now this will do and will offer sufficient variety.\n",
   "wordCount" : "318",
   "inLanguage": "en",
-  "datePublished": "2021-04-26T18:26:14Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2021-04-26T18:26:14Z",
   "dateModified": "2021-04-26T18:26:14Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2021/04/26/resolume-midi-control-in-my-twitch-djing-setup/"
@@ -129,7 +136,11 @@ I have retired the Novation SL Zero Mk1 MIDI controller that was causing me a lo
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -140,9 +151,44 @@ I have retired the Novation SL Zero Mk1 MIDI controller that was causing me a lo
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -154,7 +200,7 @@ I have retired the Novation SL Zero Mk1 MIDI controller that was causing me a lo
     <h1 class="post-title entry-hint-parent">
       Resolume MIDI Control in my Twitch DJing Setup
     </h1>
-    <div class="post-meta"><span title='2021-04-26 18:26:14 +0000 +0000'>April 26, 2021</span>&nbsp;·&nbsp;2 min
+    <div class="post-meta"><span title='2021-04-26 18:26:14 +0000 +0000'>April 26, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> 
@@ -174,6 +220,19 @@ I have retired the Novation SL Zero Mk1 MIDI controller that was causing me a lo
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2021/05/05/organising-huge-music-libraries-with-serato/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Organising Huge Music Libraries for use with Serato DJ Pro</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2021/04/08/dj-setup-8-4-21/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Hybrid Serato DJ Pro DVS/Ableton Live DJ setup (21/4/21)</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -247,7 +306,7 @@ I have retired the Novation SL Zero Mk1 MIDI controller that was causing me a lo
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -301,6 +360,18 @@ I have retired the Novation SL Zero Mk1 MIDI controller that was causing me a lo
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

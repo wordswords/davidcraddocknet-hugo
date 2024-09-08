@@ -8,8 +8,8 @@
 <meta name="robots" content="index, follow">
 <title>DavidCraddock.net</title>
 
-<meta name="description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK.">
-<meta name="author" content="">
+<meta name="description" content="DavidCraddock.net">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/feed.xml">
+<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/index.xml">
 <link rel="alternate" type="application/json" href="https://davidcraddock.net/index.json">
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/">
 <noscript>
@@ -62,13 +62,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
 <meta property="og:title" content="DavidCraddock.net" />
-<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
+<meta property="og:description" content="DavidCraddock.net" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://davidcraddock.net/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 
-<meta name="twitter:card" content="summary"/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="DavidCraddock.net"/>
-<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK."/>
+<meta name="twitter:description" content="DavidCraddock.net"/>
 
 <script type="application/ld+json">
 {
@@ -76,10 +79,10 @@
   "@type": "Organization",
   "name": "DavidCraddock.net",
   "url": "https://davidcraddock.net/",
-  "description": "The personal blog of David Craddock, a software engineer based in Manchester, UK.",
+  "description": "DavidCraddock.net",
   "thumbnailUrl": "https://davidcraddock.net/favicon.ico",
   "sameAs": [
-      
+      "https://github.com/wordswords"
   ]
 }
 </script>
@@ -87,7 +90,11 @@
 
 <body class="list" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -98,9 +105,44 @@
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -108,157 +150,86 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Tips for Working from Home
+    <h2 class="entry-hint-parent">Retrospective for 2023
     </h2>
   </header>
   <div class="entry-content">
-    <p>I have been working from home, the majority of the time, for over 5 years. It took a lot of adjustment, and I’m still not 100% adjusted, but if you want to undertake this, then these are my tips.
-Note that a big part of the benefit from working from home is the total flexibility in work environment, so these are only tips that work for me - they might not work for you! However, I think there is probably quite a bit of commonality.
+    <p>Every year towards the end of the year, I put together a retrospective of events that have happened over the year - the good, bad and the ugly.
+The Bad Most of the year was taken up with treatment for relapsed Hodgkins Lymphoma cancer. After the clinical immunotherapy drug trial finished in Feb 2023, cancer was unfortunately still detected, so it did not completely cure it. I had a further (awful) spell in hospital around March/April where my Hickman line became infected and I had a severe mental health episode, probably caused by the strong antibiotics being pumped through my system. Finally I was accepted for a stem cell transplant, and had my transplant on 4th July. We have had to deal with complications of cancer elsewhere in the family, not just my mum’s own cancer treatment being ongoing, but the financial impact of the family having to support both of us, is quite a significant burden. The Good Thankfully, I’m finally in remission for cancer! I have been in remission for 6 months, and if I make it to 2 years, then I am effectively cured. I have a 75% chance of it not coming back within that time, approximately. We got an absolute ton of stuff done on the house, and I have an awesome gaming setup, an awesome DJing setup, an awesome music production setup, an awesome high speed network and server setup, and an awesome WFH setup. All of the goals I set myself of things I wanted to achieve during my downtime having cancer treatment nearly 2 years ago, are more or less finished now. We have decided that we’re moving out of Manchester. We are going to move to Chester, which promises a much, much nicer, quieter, and actually, cheaper place to live now that I am committed to a 100% WFH work life. Things are progressing well with the house sale, and we’ve got a lot of interest so far. I have got fitter and healthier and my posture has got better over the year. I have also managed to reduce the medication I am on, which has helped my health. The Ugly There has been a worldwide downturn for software jobs, just as I had to take some time off my career due to work reasons. This downturn is probably comparable to the 2008/9 downturn in software jobs around the financial crisis. This is definitely bad news for everyone in software. ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-11-25 20:07:59 +0000 GMT'>November 25, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Retrospective for 2023" href="https://davidcraddock.net/2023/11/25/retrospective-for-2023/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Latest Remote Guitar Lesson Setup
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’ve been having online guitar lessons with my friend Jon.
+After a while we have got things down to a setup that seems to work remotely.
+I have an Epiphone Les Paul Vintage Edition electric guitar, and a Marshall MG15G Practice Amp. I use a headphone splitter cable to plug into the Marshall’s headphone out socket, which splits the audio into left and right channels, and a 3.5mm to phono mono cable plugged into the headphone splitter that runs to my audio interface. I use Logitech C270 and a Logitech 920 cameras, the C270 for the front on face cam, and the 920 suspended on a lighting boom above my head, pointed down so that Jon can see the guitar fret fingering I am attempting. I also use a t.bone MB88U directional microphone on a desk microphone stand to talk into. The sound interface I use is my studio one, which is a Behringer UMC1820 audio interface, but really, you can use any audio interface with two mono input channels and a headphone monitor. I have a KORG CA-2 portable tuner which helps me get the guitar in tune before each session. I use a WINGO Guitar Capo and plectrums as well. We use Zoom to do the lessons over, Jon has a subscription, and Skype to store notes between sessions. I use my phone to take pictures of my fret fingering to practice. I have a portable flask that I keep with me if I need to take a drink during the session, as to not disrupt things. I always tune the guitar before the session as to not waste time. I always switch my audio speakers off, and use headphones on the audio interface, to minimise disturbance to others, and to stop feedback. I have a pen and paper to make any notes needed on the session. This saves time compared to typing them into the computer. The sessions are 45mins -&gt; 1 hour max, weekly. Zoom Setup This is the Zoom configuration options that I use. Currently I do not turn on the ‘original audio for musicians’ toggle when on the call:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-10-18 17:29:44 +0000 +0000'>October 18, 2022</span>&nbsp;·&nbsp;5 min</footer>
-  <a class="entry-link" aria-label="post link to Tips for Working from Home" href="https://davidcraddock.net/2022/10/18/tips-for-working-from-home/"></a>
+  <footer class="entry-footer"><span title='2023-09-22 16:56:26 +0000 +0000'>September 22, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Latest Remote Guitar Lesson Setup" href="https://davidcraddock.net/2023/09/22/latest-remote-guitar-lesson-setup/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">PSP Preset for Handbrake for transcoding video files into a PSP compatible format
+    <h2 class="entry-hint-parent">Optical Drive Cleaners and Home Entertainment Test Tools
     </h2>
   </header>
   <div class="entry-content">
-    <p>This is based off of the 2021 Reddit post here: https://www.reddit.com/r/PSP/comments/kcx4ei/tutorial_convert_most_video_formats_to/
-I am using it with Handbrake 1.5.1. You can import it into your Handbrake via “Preset -&gt; File Import”.
-Download PSP Handbrake Preset.
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-10-16 16:00:48 +0000 +0000'>October 16, 2022</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to PSP Preset for Handbrake for transcoding video files into a PSP compatible format" href="https://davidcraddock.net/2022/10/16/psp-preset-for-handbrake-for-transcoding-video-files-into-a-psp-compatible-format/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">The Current State of UK Politics
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>For years, UK politics has become more right-wing, popularist, and presidential.
-Right-wing, because the Conservatives have been in power for over 10 years, and have had the opportunity to implement most of their ideological policies, which we see at the moment highlighted to an extreme with Liz Truss gearing up to emulate Thatcher on almost every level.
-Popularist, because the Conservatives have implemented policies designed to appease the populations feelings, rather than those based on factual positive outcomes.
+    <p>If you are still using optical discs, e.g. CDs or Blu-rays, in music, video or games, then you are in the minority these days. Downloads and streaming have become the norm, which means 1) A lot less discs are being produced 2) A lot less optical drives are being produced.
+Because a lot less optical drives are being produced, we can imagine a time in the future when the only optical drives you can buy, are second-hand. Regardless if you can buy new optical drives currently or not, often the best value/quality ratio can be found in second-hand optical drives.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-09-29 04:07:41 +0000 +0000'>September 29, 2022</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to The Current State of UK Politics" href="https://davidcraddock.net/2022/09/29/the-current-state-of-uk-politics/"></a>
+  <footer class="entry-footer"><span title='2023-02-23 09:57:30 +0000 GMT'>February 23, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Optical Drive Cleaners and Home Entertainment Test Tools" href="https://davidcraddock.net/2023/02/23/optical-drive-cleaners-and-home-entertainment-test-tools/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Tips for new Ubuntu Users
+    <h2 class="entry-hint-parent">Books that have changed the way I see the practice of Software Engineering
     </h2>
   </header>
   <div class="entry-content">
-    <p>Here are some extra tips if you’re just getting started out on Ubuntu.
-You don’t have to go through the UI to shut down or reboot your computer. You can do it from the command line. The commands are:
-sudo reboot # to reboot sudo poweroff # to shut down and power off the computer You can get a lot more information on your computers startup and shutdown sequences by removing the default Ubuntu splash screen that obscures this. You should definitely do this if you want to learn more about what your system is actually doing under the hood, especially if you need to troubleshoot what it’s doing. To do this:
+    <p> The Mythical Man Month and other Essays - Fred Brooks - Read it as part of my university degree. A lot of good sense. I can’t believe there are people out there in charge of software projects that haven’t read this book, or think it somehow doesn’t apply anymore, but unfortunately, it seems quite common. -
+[Read reviews on Good Reads] The Cathedral and the Bazaar - Eric S Raymound - One of the first books I read on software development process. Really blew my mind. -
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-09-29 00:00:36 +0000 +0000'>September 29, 2022</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Tips for new Ubuntu Users" href="https://davidcraddock.net/2022/09/29/tips-for-new-ubuntu-users/"></a>
+  <footer class="entry-footer"><span title='2023-01-19 09:12:32 +0000 GMT'>January 19, 2023</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Books that have changed the way I see the practice of Software Engineering" href="https://davidcraddock.net/2023/01/19/books-that-have-changed-the-way-i-see-the-practice-of-software-engineering/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Current Twitch DJ Setup
+    <h2 class="entry-hint-parent">My Personal Retrospective on 2022
     </h2>
   </header>
   <div class="entry-content">
-    <p> Click to view full diagram
-Hardware 2 x Reloop 8000mk2 turntables Roland 707m Mixer and DJ Controller 2015 Macbook Pro (DJ Laptop) SoundSwitch USB -&gt; DMX interface, attached to broadcast PC Beatstep MIDI Controller mapped for controlling SoundSwitch, attached to broadcast PC Vestax VCM-600 MIDI Controller used for controlling Resolume, attached to broadcast PC AKAI LPD8 MIDI Controller used for controlling Serato’s FX, attached to DJ laptop Rode Soundcaster Pro microphone used as a DJ mic 4 x Phillips Hue Colour Bulbs in lamps Phillips Hue Lightstrip Behringer UMC1820 Sound Interface connected to broadcast PC, attached to broadcast PC 2 x Logitech C920 Cameras used for capturing video for streaming, attached to broadcast PC Software SoundSwitch lighting software running on broadcast PC Resolume Avenue running on broadcast PC Streamlabs OBS running on broadcast PC Serato DJ Pro software running on DJ laptop </p>
-  </div>
-  <footer class="entry-footer"><span title='2022-09-27 02:56:21 +0000 +0000'>September 27, 2022</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Current Twitch DJ Setup" href="https://davidcraddock.net/2022/09/27/current-dj-setup/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Google Drive Backup using Rclone
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>For 8 TB of data storage on Google Drive, plus my own Google organization, I am paying £30/month, which is a pretty good deal.
-I wanted to use this space for backing up my NAS, but it was proving difficult. The program I was recommended for Linux backup, Duplicati, was not the best for this purpose. My backup runs would not complete, they would be slow, and full of syncing errors.
+    <p>Every year (when I remember) I do an end-of-year summary to outline what has been going on in my life. I’ve been doing this for a few years now, and it’s a great way to look back on the year and see has happened.
+The Bad: The main bad news of the year is that, contrary to expectations, my Hodgkins Lymphoma cancer was detected again around April after the initial chemotherapy. So it had come back. The rest of the year has mostly revolved around subsequent treatments to try and reach a long term remission, e.g. cure. I’m not there yet, but there are a lot of treatments still available, and I have hope that my current immunotherapy treatment might be the one that works. It wasn’t just me that was affected, my wife suffered quite a bit on hearing the news, and has only just really taken it all in and come to terms with it. I’m pretty sure that I will be cured eventually, at least for a good 10-20 years or so, it just is a pain having to take time off work and go through sometimes intensive treatment sessions. The economy has not had the greatest of years either, and the cost of living crisis affecting the UK has had an effect on us, and my parents who are the main financial support we have while I am unable to work. The Good: I have found a renewed interest in my career, in software development, and I have spent a lot of my spare time, and part of my downtime for treatment, learning new technical things and just generally finding the enjoyment in technology that I thought I’d permanently lost for so many years. The career opportunities around working from home have been very good considering my illness. There is still, despite a downturn, more than enough work around, and a lot of it is 100% work from home work. I’m no longer worried about being unemployed for any great length of time, presuming I am healthy enough to work from home. I’ve been developing my writing and social media skills, which have been a welcome distraction from the bad stuff going on. I’ve always enjoyed writing, but I would say my writing has particularly improved over the past year. Work on the house We have spent a lot of time, effort and money on working on the house this year. Conny has put in a great deal of amazing work, in particular.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-09-24 17:39:06 +0000 +0000'>September 24, 2022</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Google Drive Backup using Rclone" href="https://davidcraddock.net/2022/09/24/google-drive-backup-using-rclone/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Home Network September 2022
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I had planned a different network toplogy for sure, but this is my current setup and it seems to work well:
-I was not able to implement connection load balancing using the Miktrotik router. It was just too complicated and didn’t work reliably enough. My current network is a gigabit network across all areas, so every PC has gigabit cables, switch and so on. I either have plugged in my Virgin Media 1000mb/50mbs internet connection or my BRSK fibre 900mb/900mb connection. I simply plug in the WAN cable from the main Linksys router into one of the hubs at one time. If one connection goes down, I manually switch over. I have a 10GB/sec SFP link between my server upstairs in the study and my main studio PC downstairs. This allows me to transfer files at 10Gb/sec rate between the two. I need two wireless repeaters, even though I have a small house, because the house walls are made of a concrete mix. This means the wireless signal needs boosting a lot. In the future, I may try load balancing again, or wait until one of my service providers offers &gt;1000mb/sec speeds. When this happens it would make sense to expand the 10Gbs/sec links as there would be more point. </p>
-  </div>
-  <footer class="entry-footer"><span title='2022-09-08 09:43:35 +0000 +0000'>September 8, 2022</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Home Network September 2022" href="https://davidcraddock.net/2022/09/08/home-network-september-2022/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">My Job Requirements
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I have nearly 20 years experience, so my skill-set is in high demand from all sorts of different organisations. If I were looking for a job, then these would be my priorities:
-Understanding of medical appointments - My situation is that I currently have cancer. Although it’s recommended I work, some of my time will be spent in medical appointments at the hospital that is 15 mins walk away from me. Currently this is expected to take up 1 weekday every fortnight. 100% working from home - This means that, several years down the line, the company policy will NOT change to ’everyone in the office’. Almost all meetings should be remote-first, meaning that everyone is an equal participant in them if they are working remotely. Some people can of course dial in from an office location but they should be at no communication advantage compared to remote workers. Also, the main communication for the team and organisation should be done online, remote workers should not be ‘second class citizens’ to water-cooler gossip. No Java technology stack - This means that Java and IntelliJ are not used as the mainstay of the application stack. I do not like working with Java and find it convoluted. No unethical industries - This means no gambling, no defence, no industries which disadvantage society in a big way in general. Good Pension - An above-average pension contribution. I would expect to be seeing at least 6% max employer contribution which is double the NEST minimum. Good Pay - This is negotiable but I need to pay my bills, and that includes the 10% inflationary cost of living crisis we’re in. Ability to use my own development environment - My customised development environment will run without issue on Linux machines, OSX machines, and on Windows 11 with WSL2. I am SO much more productive and happy using it. Learning and dev time or budget allocated (nice to have) - This is a ’nice to have’ but really if you aren’t able and willing to expense costs such as monthly technical books (£50/month) maybe you should be asking yourself why not, as an organisation. </p>
-  </div>
-  <footer class="entry-footer"><span title='2022-09-01 21:27:22 +0000 +0000'>September 1, 2022</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to My Job Requirements" href="https://davidcraddock.net/2022/09/01/my-ideal-job/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Sleep Tracking
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I really like my Withings Mattress-Based Sleep Tracker.
-I keep unusual sleeping hours a lot of the time, as I’m undergoing treatment, and a lot of the medication I’m taking effect my sleep. Even when I’m relatively healthy, some of the medication I’m on for a long-term condition also affects my sleep.
-What’s more, I enjoy a non-standard sleeping schedule. I find I get more work done in the early morning or late at night. As I work from home 100% this is not as problematic as it used to be.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-08-18 19:58:57 +0000 +0000'>August 18, 2022</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to Sleep Tracking" href="https://davidcraddock.net/2022/08/18/sleep-tracking/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Digital Game Collecting
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I have a relatively obscure hobby - I collect digital video games. Quite a few people collect physical games, but I like the advantages of having a large library of gaming options which are just a download away.
-Like a lot of collectors, I have more games than I have actually played, or probably will do in my lifetime. I mostly get them via discounted bundles such as HumbleBundle.com, so I rarely play full price for them.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-08-09 02:53:48 +0000 +0000'>August 9, 2022</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to Digital Game Collecting" href="https://davidcraddock.net/2022/08/09/digital-game-collecting/"></a>
+  <footer class="entry-footer"><span title='2022-12-23 23:26:12 +0000 GMT'>December 23, 2022</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to My Personal Retrospective on 2022" href="https://davidcraddock.net/2022/12/23/my-personal-retrospective-on-2022/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://davidcraddock.net/">
-      «&nbsp;Prev&nbsp;
+      «&nbsp;Prev&nbsp;1/36
     </a>
-    <a class="next" href="https://davidcraddock.net/page/3/">Next&nbsp;&nbsp;»
+    <a class="next" href="https://davidcraddock.net/page/3/">Next&nbsp;3/36&nbsp;»
     </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -312,6 +283,18 @@ Like a lot of collectors, I have more games than I have actually played, or prob
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 </body>

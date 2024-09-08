@@ -8,7 +8,7 @@
 <title>Posts | DavidCraddock.net</title>
 <meta name="keywords" content="">
 <meta name="description" content="Posts - DavidCraddock.net">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/posts/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/posts/feed.xml">
+<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/posts/index.xml">
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/posts/">
 <noscript>
     <style>
@@ -60,13 +60,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
 <meta property="og:title" content="Posts" />
-<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
+<meta property="og:description" content="DavidCraddock.net" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://davidcraddock.net/posts/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 
-<meta name="twitter:card" content="summary"/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK."/>
+<meta name="twitter:description" content="DavidCraddock.net"/>
 
 
 <script type="application/ld+json">
@@ -87,7 +90,11 @@
 
 <body class="list" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -98,9 +105,44 @@
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -108,164 +150,97 @@
 <header class="page-header"><div class="breadcrumbs"><a href="https://davidcraddock.net/">Home</a></div>
   <h1>
     Posts
+    <a href="/posts/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
   </h1>
 </header>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Ripping Movies onto the iPhone
+    <h2 class="entry-hint-parent">Working with Fish Shell, ffmpeg, MP4Box and sox to generate audio files
     </h2>
   </header>
   <div class="entry-content">
-    <p>I’m currently watching Persepolis, the 2008 animated film about a tomboy anarchist growing up in Iran. I’m watching this on my new iPhone 3GS, and the picture and audio quality is very good.
-Here’s what I used to convert my newly bought Persepolis DVD, for watching on the iPhone.
-1x Macbook (but you can use any intel mac) 1x iTunes 1x RipIt - Commercial Mac DVD Ripper (rips up to 10 DVDs on the free trial, $20 after) 1x Handbrake 32 - Freely available transcoder 1x VLC 32 - Freely available media player 1x DVD
+    <p>More adventures with Fish shell. I have scripted the generation of a bunch of test asset audio files in mp4 format suitable for dash streaming. I have used the audio file commandline tools ffmepg MP4Box and sox in this script, they are pretty powerful and worth installing via homebrew on OSX.
+Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I’m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy. [code lang=“bash”] #!/usr/bin/env fish # move to the asset output directory.. cd ..
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2010-05-17 03:15:00 +0000 +0000'>May 17, 2010</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to Ripping Movies onto the iPhone" href="https://davidcraddock.net/2010/05/17/ripping-movies-onto-the-iphone/"></a>
+  <footer class="entry-footer"><span title='2016-03-08 17:22:37 +0000 GMT'>March 8, 2016</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Working with Fish Shell, ffmpeg, MP4Box and sox to generate audio files" href="https://davidcraddock.net/2016/03/08/working-with-fish-shell-ffmpeg-mp4box-and-sox-to-generate-audio-files/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Decent Graphics for Flash Games
+    <h2 class="entry-hint-parent">Audio Routing for my PC
     </h2>
   </header>
   <div class="entry-content">
-    <p>Lately I’ve been thinking about making a Flash game or application. Although I haven’t made one yet, my current understanding is that most projects of this type require a lot of artwork.
-I found this article, and was impressed at the quality and the resources mentioned: http://freelanceflashgames.com/news/2009/03/25/the-big-guide-to-hiring-an-artist/
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-05-17 02:29:54 +0000 +0000'>May 17, 2010</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Decent Graphics for Flash Games" href="https://davidcraddock.net/2010/05/17/art-for-flash-games/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Wordpress HTML edit mode inserts BR tags sometimes when you add a carriage return..
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>This is something that was quite annoying today, as I was struggling to use Wordpress 2.9.2 to align some pictures in the HTML mode of editing a page, on a client’s website.
-It turns out that Wordpress was adding BR tags sometimes when I hit return.. and sometimes not. The annoying thing was, although the BRs were outputted in the resultant Wordpress site, the BRs were not visible in the Wordpress HTML edit mode itself.. meaning they were invisible and undetectable until I viewed the resultant website source and finally figured it out.
+    <p>For my own benefit as much as anyone elses, I thought I’d document my PC audio setup. I have two soundcards and two sets of speakers, one surround soundcard and speaker set for gaming and watching surround sound movies, and one audio interface linked up to my studio monitor speakers for music production. I also have a Digi 002 mixer which I use to mix in the outputs from my synthesisers to my recording interface. When I want to record, I usually record one track at a time from a synthesier to the audio input of the audio interface, via the Digi 002 mixer:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2010-04-28 20:44:39 +0000 +0000'>April 28, 2010</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Wordpress HTML edit mode inserts BR tags sometimes when you add a carriage return.." href="https://davidcraddock.net/2010/04/28/wordpress-html-edit-mode-inserts-br-tags-sometimes-when-you-add-a-carriage-return/"></a>
+  <footer class="entry-footer"><span title='2016-02-06 08:40:22 +0000 GMT'>February 6, 2016</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Audio Routing for my PC" href="https://davidcraddock.net/2016/02/06/audio-routing-for-my-pc/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Forkbombs and How to Prevent Them
+    <h2 class="entry-hint-parent">Fish Shell Scripting
     </h2>
   </header>
   <div class="entry-content">
-    <p>A forkbomb is a program or script that continually creates new copies of itself, that create new copies of themselves. It’s usually a function that calls itself, and each time that function is called, it creates a new process to run the same function.
-You end up with thousands of processes, all creating processes themselves, with an exponential growth. Soon it takes up all the resources of your server, and prevents anything else running on it.
+    <p> A few months ago I switched across from Bash onto the Fish shell, on my main development machine. I can’t get enough of its fast autosuggestions and its sane scripting language. Compared to Bash it is very fun to use.
+Today I wrote a script to automate the backup of my development workspace onto a private bitbucket account. Bitbucket is good because it allows unlimited private repositories, but it caps the size of these repos at 2GB max, with some features disabled after 1GB. This means that I want to find out the size of my repo before automatically backing it up. This script does this:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2010-04-02 03:50:37 +0000 +0000'>April 2, 2010</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to Forkbombs and How to Prevent Them" href="https://davidcraddock.net/2010/04/02/forkbombs-and-how-to-prevent-them/"></a>
+  <footer class="entry-footer"><span title='2016-02-02 17:28:39 +0000 GMT'>February 2, 2016</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Fish Shell Scripting" href="https://davidcraddock.net/2016/02/02/fish-shell-scripting/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">How to remove nano, vim and other editors&#39; backup files out of a directory tree
+    <h2 class="entry-hint-parent">ADAT with Digi 002 Consoles - Don&#39;t throw them away just yet!
     </h2>
   </header>
   <div class="entry-content">
-    <p>Linux command-line editors such as nano and vim often, by default, create backup files with the prefix of “”. I.e, if I created a file called /home/david/myfile, then nano would create a backup in /home/david/myfile. Sometimes it doesn’t delete them either, so you’re left with a bunch of backup files all over the place, especially if you’re editing a lot on a directory tree full of source code.
-Those stray backup files make directory listings confusing, and also add unnecessary weight to the commits on source control systems such as svn, cvs, git.. etc. If you’re working on a programming team with other people, then it causes further problems and confusion, because person A’s editor can accidentally load person B’s backup file.. etc etc. Nightmare.
+    <p>So I got given a Digi 002 console version, which looks like this:
+A fairly old style digital audio interface and mixer, which was all the rage back in 2002 when it first came out, but now is often found sitting in the skip. Why? Because it is a Pro-Tools inteface, and Avid stopped supporting it about 5 years ago, so it won’t actually work under Pro Tools and Windows 10 (believe me, I’ve tried!). It only works as a recording interface through Pro Tools, so you can’t just connect it via firewire to your PC and expect it to work.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2010-03-22 20:49:20 +0000 GMT'>March 22, 2010</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to How to remove nano, vim and other editors&#39; backup files out of a directory tree" href="https://davidcraddock.net/2010/03/22/how-to-remove-nano-vim-and-other-editors-backup-files-out-of-a-directory-tree/"></a>
+  <footer class="entry-footer"><span title='2016-01-25 21:10:44 +0000 GMT'>January 25, 2016</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to ADAT with Digi 002 Consoles - Don&#39;t throw them away just yet!" href="https://davidcraddock.net/2016/01/25/adat-with-digi-002-console-dont-throw-them-away-just-yet/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Tip for watching the completion of a large file copy
+    <h2 class="entry-hint-parent">A Basic Eurorack Technique
     </h2>
   </header>
   <div class="entry-content">
-    <p> Forget the wonderful windows progress bar, and imagine I’m in the world of command-line Linux, and I want to copy a 484MB file, called VMware-server-2.0.2-203138.i386.tar.gz, from my home directory to a remote server. But I want to figure out how long it’s going to take.
-1. First I can run a “du -m” command to get the total MB size of the original file:
+    <p>I thought it might be of some interest to describe how I use my Eurorack, at lot of the time, in making tracks. I have a 3 oscilator - 3 VCA - 3 filter Eurorack which I use primarily so that the oscilators initially work in unison mode with some slight detuning. I typically use a single loop, arpeggio or pattern that I repeat over the song. Then, partway through a track, I will transpose the octaves of the oscilators and vary the sustain of the envelopes, along with the filters and pulse-width modulation amount, to make a morphing yet harmonious sound texture progression.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2010-03-20 22:44:06 +0000 GMT'>March 20, 2010</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to Tip for watching the completion of a large file copy" href="https://davidcraddock.net/2010/03/20/tip-for-watching-the-completion-of-a-large-file-copy/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">The Linux Root Directory, Explained
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> It’s helpful to know the basic filesystem on a Linux machine, to better understand where everything is supposed to go, and where you should start looking if you want to find a certain file.
-Everything in Linux is stored in the “root directory”. On a windows machine, that would be equivalent to C:. C: is the main folder where everything is stored. On Linux we call this the “root directory”, or simply “/”. To go up to this root directory, type:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-03-20 15:19:46 +0000 GMT'>March 20, 2010</span>&nbsp;·&nbsp;5 min</footer>
-  <a class="entry-link" aria-label="post link to The Linux Root Directory, Explained" href="https://davidcraddock.net/2010/03/20/the-linux-file-structure/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Useful OSX commands for Linux users
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I wrote this list to remind me, as a newcomer to OSX, how the command line differed from the Linux commandline. I thought I’d expand on it, and share it:
-To mount any iso:
-hdiutil mount sample.iso To download a file as you would using wget:
-curl http://ftp.heanet.ie/pub/linuxmint.com/stable/8/LinuxMint-8.iso -o linuxmint.iso -C - the -o specifies the output file (required) the -C - specifies automatically resuming if possible.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-03-19 23:03:33 +0000 GMT'>March 19, 2010</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Useful OSX commands for Linux users" href="https://davidcraddock.net/2010/03/19/useful-osx-command-line-commands/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Long Bash History Files are Great.
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>When I’m installing software, or doing some complicated stuff on the linux command line, which nowadays is pretty much all the time, I will sometimes want to remember exactly what I typed.
-Now the normal /home/david/.bash_history file is usually fine for that. Run this command, for example, and you will see the commands you typed in before you logged out of the server last time you used it:
-cat ~/.bash_history ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-03-18 19:55:51 +0000 GMT'>March 18, 2010</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to Long Bash History Files are Great." href="https://davidcraddock.net/2010/03/18/long-bash-history-files-are-great/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">My minimal VIM config
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>This is the absolute minimum I do when I have to log onto a new server or shell account that I haven’t used before, that I will need to edit text files with.
-First I figure out whether VIM is really installed. A lot of installs, especially those based on ubuntu, ship with VI aliased to VIM, but the VIM install is usually not really VIM at all, and behaves exactly like VI but with some minor bugs fixed. This is not what I want.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-03-18 19:23:07 +0000 GMT'>March 18, 2010</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to My minimal VIM config" href="https://davidcraddock.net/2010/03/18/my-minimal-vim-config/"></a>
+  <footer class="entry-footer"><span title='2016-01-24 05:37:52 +0000 GMT'>January 24, 2016</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to A Basic Eurorack Technique" href="https://davidcraddock.net/2016/01/24/my-basic-eurorack-technique/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://davidcraddock.net/posts/page/13/">
-      «&nbsp;Prev&nbsp;
+      «&nbsp;Prev&nbsp;13/36
     </a>
-    <a class="next" href="https://davidcraddock.net/posts/page/15/">Next&nbsp;&nbsp;»
+    <a class="next" href="https://davidcraddock.net/posts/page/15/">Next&nbsp;15/36&nbsp;»
     </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -319,6 +294,18 @@ First I figure out whether VIM is really installed. A lot of installs, especiall
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 </body>

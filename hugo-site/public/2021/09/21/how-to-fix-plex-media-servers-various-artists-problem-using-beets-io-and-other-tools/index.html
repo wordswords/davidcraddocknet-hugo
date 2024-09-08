@@ -9,7 +9,7 @@
 <meta name="keywords" content="">
 <meta name="description" content="The Problem
 As of the day of posting, Plex Media Server has a suboptimal handling of Various Artists compilations. Unless you follow BOTH of these rules, described clearly on the Plex support here under &lsquo;Various Artists&rsquo;, then they won&rsquo;t appear collected under a particular album, they will be spread out filed under the different artists that created them. I think it should only require one of these rules, but it is not up to me. The problem is that release metadata available from the online metadata databases, often doesn&rsquo;t follow these rules - lots of DJ mix compilations for example, do not set albumartist tag to Various Artists from the online metadata databases.">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2021/09/21/how-to-fix-plex-media-servers-various-artists-problem-using-beets-io-and-other-tools/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -63,11 +63,14 @@ As of the day of posting, Plex Media Server has a suboptimal handling of Various
 <meta property="og:description" content="The Problem
 As of the day of posting, Plex Media Server has a suboptimal handling of Various Artists compilations. Unless you follow BOTH of these rules, described clearly on the Plex support here under &lsquo;Various Artists&rsquo;, then they won&rsquo;t appear collected under a particular album, they will be spread out filed under the different artists that created them. I think it should only require one of these rules, but it is not up to me. The problem is that release metadata available from the online metadata databases, often doesn&rsquo;t follow these rules - lots of DJ mix compilations for example, do not set albumartist tag to Various Artists from the online metadata databases." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2021/09/21/how-to-fix-plex-media-servers-various-artists-problem-using-beets-io-and-other-tools/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2021/09/21/how-to-fix-plex-media-servers-various-artists-problem-using-beets-io-and-other-tools/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-09-21T22:22:47+00:00" />
 <meta property="article:modified_time" content="2021-09-21T22:22:47+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="How to fix Plex Media Servers &#39;Various Artists&#39; problem using Beets.io and other tools"/>
 <meta name="twitter:description" content="The Problem
 As of the day of posting, Plex Media Server has a suboptimal handling of Various Artists compilations. Unless you follow BOTH of these rules, described clearly on the Plex support here under &lsquo;Various Artists&rsquo;, then they won&rsquo;t appear collected under a particular album, they will be spread out filed under the different artists that created them. I think it should only require one of these rules, but it is not up to me. The problem is that release metadata available from the online metadata databases, often doesn&rsquo;t follow these rules - lots of DJ mix compilations for example, do not set albumartist tag to Various Artists from the online metadata databases."/>
@@ -106,8 +109,12 @@ As of the day of posting, Plex Media Server has a suboptimal handling of Various
   "articleBody": "The Problem As of the day of posting, Plex Media Server has a suboptimal handling of Various Artists compilations. Unless you follow BOTH of these rules, described clearly on the Plex support here under ‘Various Artists’, then they won’t appear collected under a particular album, they will be spread out filed under the different artists that created them. I think it should only require one of these rules, but it is not up to me. The problem is that release metadata available from the online metadata databases, often doesn’t follow these rules - lots of DJ mix compilations for example, do not set albumartist tag to Various Artists from the online metadata databases.\nAlso you may want to adopt a different file structure for your music than what is recommended and essential for Plex. I would agree that ONE of these measures should be required, and I would argue that setting album artist would be enough for Plex to figure out this problem, but you also need to structure your music also under the way they suggest, you won’t get the desired result of compilations being collected as a single album and in order.\nMy Solution Firstly, you’re going to have to manually add the ‘Various Artists’ content to the ‘albumartist’ tag for all tracks in a compilation that doesn’t have them. Currently I’ve only found a way to do this by hand, would be very interested in any automated approaches, or if someone wants to write a beets.io plugin that would be amazing. You can do this with any tag editor, but I wrote my own solution which is faster for what I want to do and easy to use on my existing Beets.io setup and database which has a lot of these problem compilations already. Because I am using Windows I wrote a batch file which uses several third party tools to fix the metadata fast. You will have to download and setup the tools seperately, details are in the batch file comments.\nSecondly, you’re going to have to make sure that Beets.io moves your files into the way that Plex Media Server recommends. This is my current Beets.io config file, the important bits here are the file rename and move structure, as per the support page, it has to be something along the lines of:\n$albumartist/$album/$artist - $title\nMy Process ‘beet ls to identify tracks that need fixing. ‘beet ls fabric’ for example, got almost all of my dozens of Fabric mix CD tracks, which sped up the renaming significantly than using a GUI editor to go in and manually change each album. You have to make sure that the query string selects only the tracks you want to modify, unless you want to go back and edit those few tracks that got caught in the process later. I send that query string to my batch file which goes through the ‘beets ls -p ’ full path results iteratively and runs a couple of command line tag editors on them, the first works for all MP3s and the second for all FLACs, e.g. ‘.\\tag-various-artists.bat fabric’ ‘beet update’ to update my Beets.io database with the new metadata I’ve changed with the batch script. ‘beet dup -d’ to delete any duplicates that have arisen. ‘beet move -p’ to preview the file moves into the new directory structure that is required by Plex. When I’ve scanned through and am happy with the file moves - ‘beet move’ to do the moving. I then backup my files through robocopying to an external drive, but this is not essential. Make sure you have checked ‘prefer existing metadata’ in the Plex options for your music library. Set Plex to rescan your libraries metadata. Tools The batch file I use, my beets.io config and other tools I use to organise my music collection on Windows 10.\nThe Results All my Fabric mix CDs are now properly collected under one ordered album each on Plex: ",
   "wordCount" : "660",
   "inLanguage": "en",
-  "datePublished": "2021-09-21T22:22:47Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2021-09-21T22:22:47Z",
   "dateModified": "2021-09-21T22:22:47Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2021/09/21/how-to-fix-plex-media-servers-various-artists-problem-using-beets-io-and-other-tools/"
@@ -126,7 +133,11 @@ As of the day of posting, Plex Media Server has a suboptimal handling of Various
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -137,9 +148,44 @@ As of the day of posting, Plex Media Server has a suboptimal handling of Various
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -151,7 +197,7 @@ As of the day of posting, Plex Media Server has a suboptimal handling of Various
     <h1 class="post-title entry-hint-parent">
       How to fix Plex Media Servers &#39;Various Artists&#39; problem using Beets.io and other tools
     </h1>
-    <div class="post-meta"><span title='2021-09-21 22:22:47 +0000 +0000'>September 21, 2021</span>&nbsp;·&nbsp;4 min
+    <div class="post-meta"><span title='2021-09-21 22:22:47 +0000 +0000'>September 21, 2021</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> <div class="toc">
@@ -186,7 +232,7 @@ As of the day of posting, Plex Media Server has a suboptimal handling of Various
 <p><code>$albumartist/$album/$artist - $title</code></p>
 <h2 id="my-process">My Process<a hidden class="anchor" aria-hidden="true" href="#my-process">#</a></h2>
 <ol>
-<li>&lsquo;beet ls <!-- raw HTML omitted --> to identify tracks that need fixing. &lsquo;beet ls fabric&rsquo; for example, got almost all of my dozens of Fabric mix CD tracks, which sped up the renaming significantly than using a GUI editor to go in and manually change each album. You have to make sure that the query string selects only the tracks you want to modify, unless you want to go back and edit those few tracks that got caught in the process later.</li>
+<li>&lsquo;beet ls <query string> to identify tracks that need fixing. &lsquo;beet ls fabric&rsquo; for example, got almost all of my dozens of Fabric mix CD tracks, which sped up the renaming significantly than using a GUI editor to go in and manually change each album. You have to make sure that the query string selects only the tracks you want to modify, unless you want to go back and edit those few tracks that got caught in the process later.</li>
 <li>I send that query string to my batch file which goes through the &lsquo;beets ls -p &rsquo; full path results iteratively and runs a couple of command line tag editors on them, the first works for all MP3s and the second for all FLACs, e.g. &lsquo;.\tag-various-artists.bat fabric&rsquo;</li>
 <li>&lsquo;beet update&rsquo; to update my Beets.io database with the new metadata I&rsquo;ve changed with the batch script.</li>
 <li>&lsquo;beet dup -d&rsquo; to delete any duplicates that have arisen.</li>
@@ -208,6 +254,19 @@ As of the day of posting, Plex Media Server has a suboptimal handling of Various
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2021/10/21/my-simple-commandline-git-workflow/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>My Simple Commandline Git Workflow</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2021/08/07/my-psp-entertainment-system-for-2021/">
+    <span class="title">Next »</span>
+    <br>
+    <span>My PSP Entertainment System for 2021!</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -281,7 +340,7 @@ As of the day of posting, Plex Media Server has a suboptimal handling of Various
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -335,6 +394,18 @@ As of the day of posting, Plex Media Server has a suboptimal handling of Various
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

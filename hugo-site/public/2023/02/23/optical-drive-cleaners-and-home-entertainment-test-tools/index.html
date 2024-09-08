@@ -9,7 +9,7 @@
 <meta name="keywords" content="">
 <meta name="description" content="If you are still using optical discs, e.g. CDs or Blu-rays, in music, video or games, then you are in the minority these days. Downloads and streaming have become the norm, which means 1) A lot less discs are being produced 2) A lot less optical drives are being produced.
 Because a lot less optical drives are being produced, we can imagine a time in the future when the only optical drives you can buy, are second-hand. Regardless if you can buy new optical drives currently or not, often the best value/quality ratio can be found in second-hand optical drives.">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2023/02/23/optical-drive-cleaners-and-home-entertainment-test-tools/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -63,11 +63,14 @@ Because a lot less optical drives are being produced, we can imagine a time in t
 <meta property="og:description" content="If you are still using optical discs, e.g. CDs or Blu-rays, in music, video or games, then you are in the minority these days. Downloads and streaming have become the norm, which means 1) A lot less discs are being produced 2) A lot less optical drives are being produced.
 Because a lot less optical drives are being produced, we can imagine a time in the future when the only optical drives you can buy, are second-hand. Regardless if you can buy new optical drives currently or not, often the best value/quality ratio can be found in second-hand optical drives." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2023/02/23/optical-drive-cleaners-and-home-entertainment-test-tools/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2023/02/23/optical-drive-cleaners-and-home-entertainment-test-tools/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-02-23T09:57:30+00:00" />
 <meta property="article:modified_time" content="2023-02-23T09:57:30+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Optical Drive Cleaners and Home Entertainment Test Tools"/>
 <meta name="twitter:description" content="If you are still using optical discs, e.g. CDs or Blu-rays, in music, video or games, then you are in the minority these days. Downloads and streaming have become the norm, which means 1) A lot less discs are being produced 2) A lot less optical drives are being produced.
 Because a lot less optical drives are being produced, we can imagine a time in the future when the only optical drives you can buy, are second-hand. Regardless if you can buy new optical drives currently or not, often the best value/quality ratio can be found in second-hand optical drives."/>
@@ -106,8 +109,12 @@ Because a lot less optical drives are being produced, we can imagine a time in t
   "articleBody": "If you are still using optical discs, e.g. CDs or Blu-rays, in music, video or games, then you are in the minority these days. Downloads and streaming have become the norm, which means 1) A lot less discs are being produced 2) A lot less optical drives are being produced.\nBecause a lot less optical drives are being produced, we can imagine a time in the future when the only optical drives you can buy, are second-hand. Regardless if you can buy new optical drives currently or not, often the best value/quality ratio can be found in second-hand optical drives.\nBut, the problem with second-hand optical drives is that they often have been heavily used, and are dirty. This is where optical drive cleaners come in.\nAlso, if you have a 5.1 surround system, or a complex audio/video sound setup of any type, then you can benefit from the tests and tools included on these discs. I found, for example, that even on my 2.0 stereo setup, my system was ‘out of phase’ when using my CD cleaner, and figuring that out REALLY helped the quality of my sound setup!\nSo yes, they are a good thing to have, and they are quite cheap, compared to the cost of buying a brand new optical drive anyway, or a new sound system!\nThese are the ones I use:\nI use Allsop’s “Prolens Laser Lens Cleaner” for CD players, and DigitalInnovation’s “Clean DR Laser Lens Cleaner” for Blu-ray drives, DVD drives, and games consoles with those. They work great, and have already fixed an old CD player that wouldn’t work, and also fixed my second-hand PS4 which wouldn’t play Blu-ray games.\n",
   "wordCount" : "279",
   "inLanguage": "en",
-  "datePublished": "2023-02-23T09:57:30Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2023-02-23T09:57:30Z",
   "dateModified": "2023-02-23T09:57:30Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2023/02/23/optical-drive-cleaners-and-home-entertainment-test-tools/"
@@ -126,7 +133,11 @@ Because a lot less optical drives are being produced, we can imagine a time in t
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -137,9 +148,44 @@ Because a lot less optical drives are being produced, we can imagine a time in t
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -151,7 +197,7 @@ Because a lot less optical drives are being produced, we can imagine a time in t
     <h1 class="post-title entry-hint-parent">
       Optical Drive Cleaners and Home Entertainment Test Tools
     </h1>
-    <div class="post-meta"><span title='2023-02-23 09:57:30 +0000 GMT'>February 23, 2023</span>&nbsp;·&nbsp;2 min
+    <div class="post-meta"><span title='2023-02-23 09:57:30 +0000 GMT'>February 23, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> 
@@ -172,6 +218,19 @@ Because a lot less optical drives are being produced, we can imagine a time in t
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2023/09/22/latest-remote-guitar-lesson-setup/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Latest Remote Guitar Lesson Setup</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2023/01/19/books-that-have-changed-the-way-i-see-the-practice-of-software-engineering/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Books that have changed the way I see the practice of Software Engineering</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -245,7 +304,7 @@ Because a lot less optical drives are being produced, we can imagine a time in t
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -299,6 +358,18 @@ Because a lot less optical drives are being produced, we can imagine a time in t
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

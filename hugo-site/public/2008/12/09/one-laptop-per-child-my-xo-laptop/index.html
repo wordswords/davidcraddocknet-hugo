@@ -9,7 +9,7 @@
 <meta name="keywords" content="">
 <meta name="description" content="I did something out of the ordinary this Christmas. I bought an &ldquo;XO&rdquo; laptop for a child in a third world country. I also bought an XO laptop for myself, so I can develop software designed to be distributed to the 1 million&#43; XO laptops out there in the third world.
 The laptop runs a Linux operating system, with an special interface programmed almost exclusively in Python. Most apps, called &lsquo;activities&rsquo;, run as python programs. This is ideal for me, as I enjoy hacking around in python, and Linux is - of course - very familiar to me.">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2008/12/09/one-laptop-per-child-my-xo-laptop/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -63,11 +63,14 @@ The laptop runs a Linux operating system, with an special interface programmed a
 <meta property="og:description" content="I did something out of the ordinary this Christmas. I bought an &ldquo;XO&rdquo; laptop for a child in a third world country. I also bought an XO laptop for myself, so I can develop software designed to be distributed to the 1 million&#43; XO laptops out there in the third world.
 The laptop runs a Linux operating system, with an special interface programmed almost exclusively in Python. Most apps, called &lsquo;activities&rsquo;, run as python programs. This is ideal for me, as I enjoy hacking around in python, and Linux is - of course - very familiar to me." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2008/12/09/one-laptop-per-child-my-xo-laptop/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2008/12/09/one-laptop-per-child-my-xo-laptop/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2008-12-09T01:31:12+00:00" />
 <meta property="article:modified_time" content="2008-12-09T01:31:12+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="One Laptop Per Child - My XO Laptop"/>
 <meta name="twitter:description" content="I did something out of the ordinary this Christmas. I bought an &ldquo;XO&rdquo; laptop for a child in a third world country. I also bought an XO laptop for myself, so I can develop software designed to be distributed to the 1 million&#43; XO laptops out there in the third world.
 The laptop runs a Linux operating system, with an special interface programmed almost exclusively in Python. Most apps, called &lsquo;activities&rsquo;, run as python programs. This is ideal for me, as I enjoy hacking around in python, and Linux is - of course - very familiar to me."/>
@@ -106,8 +109,12 @@ The laptop runs a Linux operating system, with an special interface programmed a
   "articleBody": "I did something out of the ordinary this Christmas. I bought an “XO” laptop for a child in a third world country. I also bought an XO laptop for myself, so I can develop software designed to be distributed to the 1 million+ XO laptops out there in the third world.\nThe laptop runs a Linux operating system, with an special interface programmed almost exclusively in Python. Most apps, called ‘activities’, run as python programs. This is ideal for me, as I enjoy hacking around in python, and Linux is - of course - very familiar to me.\nI hope to use the laptop to contribute to health informatics applications that allow the laptop to be used in hospitals where there are no existing comparable health systems. If you wish to get involved in this project and give something back, here in the UK you can now order your own laptop from Amazon.co.uk.\n",
   "wordCount" : "153",
   "inLanguage": "en",
-  "datePublished": "2008-12-09T01:31:12Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2008-12-09T01:31:12Z",
   "dateModified": "2008-12-09T01:31:12Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2008/12/09/one-laptop-per-child-my-xo-laptop/"
@@ -126,7 +133,11 @@ The laptop runs a Linux operating system, with an special interface programmed a
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -137,9 +148,44 @@ The laptop runs a Linux operating system, with an special interface programmed a
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -151,7 +197,7 @@ The laptop runs a Linux operating system, with an special interface programmed a
     <h1 class="post-title entry-hint-parent">
       One Laptop Per Child - My XO Laptop
     </h1>
-    <div class="post-meta"><span title='2008-12-09 01:31:12 +0000 GMT'>December 9, 2008</span>&nbsp;·&nbsp;1 min
+    <div class="post-meta"><span title='2008-12-09 01:31:12 +0000 GMT'>December 9, 2008</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> 
@@ -166,6 +212,19 @@ The laptop runs a Linux operating system, with an special interface programmed a
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2009/03/11/google-sync-for-mobile/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Google Sync for Mobile</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2008/12/03/the-blog-factory/">
+    <span class="title">Next »</span>
+    <br>
+    <span>The Blog Factory</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -239,7 +298,7 @@ The laptop runs a Linux operating system, with an special interface programmed a
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -293,6 +352,18 @@ The laptop runs a Linux operating system, with an special interface programmed a
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

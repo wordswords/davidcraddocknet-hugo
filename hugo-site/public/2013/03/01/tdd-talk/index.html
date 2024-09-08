@@ -9,7 +9,7 @@
 <meta name="keywords" content="">
 <meta name="description" content="Recently, myself and two colleagues from the BBC, ran a session on Test Driven Development at the Manchester University &lsquo;Ultimate Programming&rsquo; society. The society is a gathering where students discuss cool things they have done with programming, and occasionally have guest speakers from industry. I found the society online and thought it would be great to get the BBC more involved in the local university happenings.
 It is the first outreach project that I have undertaken, and it required a lot of preparation. Our initial idea was to get students to implement the A* search algorithm in a practical session, using TDD. However after we had all implemented our own copy of the algorithm, and realised it had taken several hours each, we realised we&rsquo;d not have enough time in the 2 hour slot that we had.">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2013/03/01/tdd-talk/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -63,11 +63,14 @@ It is the first outreach project that I have undertaken, and it required a lot o
 <meta property="og:description" content="Recently, myself and two colleagues from the BBC, ran a session on Test Driven Development at the Manchester University &lsquo;Ultimate Programming&rsquo; society. The society is a gathering where students discuss cool things they have done with programming, and occasionally have guest speakers from industry. I found the society online and thought it would be great to get the BBC more involved in the local university happenings.
 It is the first outreach project that I have undertaken, and it required a lot of preparation. Our initial idea was to get students to implement the A* search algorithm in a practical session, using TDD. However after we had all implemented our own copy of the algorithm, and realised it had taken several hours each, we realised we&rsquo;d not have enough time in the 2 hour slot that we had." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2013/03/01/tdd-talk/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2013/03/01/tdd-talk/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2013-03-01T00:44:50+00:00" />
 <meta property="article:modified_time" content="2013-03-01T00:44:50+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="TDD Talk"/>
 <meta name="twitter:description" content="Recently, myself and two colleagues from the BBC, ran a session on Test Driven Development at the Manchester University &lsquo;Ultimate Programming&rsquo; society. The society is a gathering where students discuss cool things they have done with programming, and occasionally have guest speakers from industry. I found the society online and thought it would be great to get the BBC more involved in the local university happenings.
 It is the first outreach project that I have undertaken, and it required a lot of preparation. Our initial idea was to get students to implement the A* search algorithm in a practical session, using TDD. However after we had all implemented our own copy of the algorithm, and realised it had taken several hours each, we realised we&rsquo;d not have enough time in the 2 hour slot that we had."/>
@@ -106,8 +109,12 @@ It is the first outreach project that I have undertaken, and it required a lot o
   "articleBody": "Recently, myself and two colleagues from the BBC, ran a session on Test Driven Development at the Manchester University ‘Ultimate Programming’ society. The society is a gathering where students discuss cool things they have done with programming, and occasionally have guest speakers from industry. I found the society online and thought it would be great to get the BBC more involved in the local university happenings.\nIt is the first outreach project that I have undertaken, and it required a lot of preparation. Our initial idea was to get students to implement the A* search algorithm in a practical session, using TDD. However after we had all implemented our own copy of the algorithm, and realised it had taken several hours each, we realised we’d not have enough time in the 2 hour slot that we had.\nInstead then, we went back to the tried and tested FizzBuzz example, which is how I learned TDD at the BBC. This was nice and simple and relatively straightforward to implement in an hour practical session. The task was to implement FizzBuzz using write-the-tests-first TDD process, and we gave approximately 1 hour for the students to undertake this task. For the rest of the time we were going through our presentation and talking about how we use TDD and other development concepts at the BBC.\nThe session overall went quite well, and although it showed to me how difficult it is to present in front of a group of people for an hour, we had good feedback, and I think we really gave the students a different perspective on how to write code, one that a large section of them would not have been exposed to in a standard CS curriculum. We aim to do other talks, starting with the next one, which will be a session on how we use BDD (Behaviour Driven Development) at the BBC.\nHere are the slides we put together for the presentation:\nhttp://www.davidcraddock.net/uploads/TDDPresentation.pptx Here is the model solution to the TDD exercise, written by my colleague Jack Palfry:\nhttps://github.com/palf/tdd_path_ex/blob/master/python/fizzbuzz_test.py https://github.com/palf/tdd_path_ex/blob/master/python/fizzbuzz.py ",
   "wordCount" : "343",
   "inLanguage": "en",
-  "datePublished": "2013-03-01T00:44:50Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2013-03-01T00:44:50Z",
   "dateModified": "2013-03-01T00:44:50Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2013/03/01/tdd-talk/"
@@ -126,7 +133,11 @@ It is the first outreach project that I have undertaken, and it required a lot o
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -137,9 +148,44 @@ It is the first outreach project that I have undertaken, and it required a lot o
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -151,7 +197,7 @@ It is the first outreach project that I have undertaken, and it required a lot o
     <h1 class="post-title entry-hint-parent">
       TDD Talk
     </h1>
-    <div class="post-meta"><span title='2013-03-01 00:44:50 +0000 GMT'>March 1, 2013</span>&nbsp;·&nbsp;2 min
+    <div class="post-meta"><span title='2013-03-01 00:44:50 +0000 GMT'>March 1, 2013</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> 
@@ -176,6 +222,19 @@ It is the first outreach project that I have undertaken, and it required a lot o
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2013/03/01/monitoring-a-slow-internet-connection-in-osx/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Monitoring a Slow Internet Connection in OSX</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2012/04/12/converting-a-single-m2v-frame-into-jpeg/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Converting a single M2V frame into JPEG under OSX</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -249,7 +308,7 @@ It is the first outreach project that I have undertaken, and it required a lot o
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -303,6 +362,18 @@ It is the first outreach project that I have undertaken, and it required a lot o
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

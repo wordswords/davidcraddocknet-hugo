@@ -8,7 +8,7 @@
 <title>Monitoring a Slow Internet Connection in OSX | DavidCraddock.net</title>
 <meta name="keywords" content="">
 <meta name="description" content="I am currently on holiday in Tenerife, and although I really like it here, one thing I do not like is the internet connection we have in our resort. Sometimes networked applications will just hang with no warning and there will be minutes where it&rsquo;s not clear what is going on. Here are some ways you can find a little bit more about what is happening when an application is slow or seems to hang when you have a poor internet connection. Execute the following commands each in a separate terminal window.">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2013/03/01/monitoring-a-slow-internet-connection-in-osx/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -61,11 +61,14 @@
 <meta property="og:title" content="Monitoring a Slow Internet Connection in OSX" />
 <meta property="og:description" content="I am currently on holiday in Tenerife, and although I really like it here, one thing I do not like is the internet connection we have in our resort. Sometimes networked applications will just hang with no warning and there will be minutes where it&rsquo;s not clear what is going on. Here are some ways you can find a little bit more about what is happening when an application is slow or seems to hang when you have a poor internet connection. Execute the following commands each in a separate terminal window." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2013/03/01/monitoring-a-slow-internet-connection-in-osx/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2013/03/01/monitoring-a-slow-internet-connection-in-osx/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2013-03-01T01:28:54+00:00" />
 <meta property="article:modified_time" content="2013-03-01T01:28:54+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Monitoring a Slow Internet Connection in OSX"/>
 <meta name="twitter:description" content="I am currently on holiday in Tenerife, and although I really like it here, one thing I do not like is the internet connection we have in our resort. Sometimes networked applications will just hang with no warning and there will be minutes where it&rsquo;s not clear what is going on. Here are some ways you can find a little bit more about what is happening when an application is slow or seems to hang when you have a poor internet connection. Execute the following commands each in a separate terminal window."/>
 
@@ -103,8 +106,12 @@
   "articleBody": "I am currently on holiday in Tenerife, and although I really like it here, one thing I do not like is the internet connection we have in our resort. Sometimes networked applications will just hang with no warning and there will be minutes where it’s not clear what is going on. Here are some ways you can find a little bit more about what is happening when an application is slow or seems to hang when you have a poor internet connection. Execute the following commands each in a separate terminal window.\nLog Files tail -f /var/log/* This will give you an indication of what is happening in OSX. For example, I was installing the XCode Command Line Utils from within XCode. The installation progress information is severely lacking, it just shows a bar which moves from left to right. However I was able to find out what was happening by tailing the log files in /var/log, which provided me with an updated breakdown of the installer progress. You can exit tail by using Control-C which will return you to the shell.\nConstant Ping ping www.google.com When I have problems with my internet connection, I always keep a ping running in the background in a terminal. The interesting information here is the ICMP RTT time shown as the milliseconds next to the ’time’ label, and how many packets were dropped shown by the number of ‘request timeout’ messages. Google does not mind you pinging it, just like hundreds of thousands of other people do, and so you can keep this up constantly, monitoring problems with your internet connection. When you get ’no route to host’ printed, this usually means that your gateway or wireless connection is down, which means you usually have to reestablish a connection manually.\ntcpdump sudo tcpdump en0 -vvv Do you really want to see what is happening on your computers network connection? Turn the floodgates on then, and use tcpdump. This will output information on each packet that your computer sends out and is received in a slightly Matrix-style torrent of information. If you are downloading something via an application or have a number of active web connections such as AJAX Facebook pages loaded, you would expect to see a lot of traffic. If you don’t have a lot of traffic, and you’re expecting a lot, then something may be wrong. You can use tcpdump to get a general feel of what data is being passed around, and to what IP address, which you can then look up later for more clarity. You can also use grep and some basic TCP/IP networking knowledge to find out what exactly is happening on the network level.\nNetwork Connection Status of Each Application sudo lsof -i tcp Want to find out information about applications are using your internet connection, and the connection state of each TCP connection? Use lsof. You will be given the name of the application that is using each TCP connection, the IP address to which it is connected to, and the TCP connection state (established is good, time wait can be a problem sign). Run this regularly to check on the connection state of your programs. This won’t monitor UDP connections, but should cover your web browsers.\nHopefully this information will give you a bit more insight into what is actually happening on your OSX machine when your internet connection is being unreliable and you want more information about what is going on. Once you have this information, you can use it to inform actions such as toggling the wireless off and on again to reestablish a connection, reloading webpages that have hung, restarting application downloads, or possibly finding a new hotel or resort with a better internet connection :)\n",
   "wordCount" : "625",
   "inLanguage": "en",
-  "datePublished": "2013-03-01T01:28:54Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2013-03-01T01:28:54Z",
   "dateModified": "2013-03-01T01:28:54Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2013/03/01/monitoring-a-slow-internet-connection-in-osx/"
@@ -123,7 +130,11 @@
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -134,9 +145,44 @@
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -148,7 +194,7 @@
     <h1 class="post-title entry-hint-parent">
       Monitoring a Slow Internet Connection in OSX
     </h1>
-    <div class="post-meta"><span title='2013-03-01 01:28:54 +0000 GMT'>March 1, 2013</span>&nbsp;·&nbsp;3 min
+    <div class="post-meta"><span title='2013-03-01 01:28:54 +0000 GMT'>March 1, 2013</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> <div class="toc">
@@ -174,17 +220,17 @@
 
   <div class="post-content"><p>I am currently on holiday in Tenerife, and although I really like it here, one thing I do not like is the internet connection we have in our resort. Sometimes networked applications will just hang with no warning and there will be minutes where it&rsquo;s not clear what is going on. Here are some ways you can find a little bit more about what is happening when an application is slow or seems to hang when you have a poor internet connection. Execute the following commands each in a separate terminal window.</p>
 <h3 id="log-files">Log Files<a hidden class="anchor" aria-hidden="true" href="#log-files">#</a></h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>tail <span style="color:#000;font-weight:bold">-</span>f <span style="color:#000;font-weight:bold">/</span><span style="color:#000;font-weight:bold">var</span><span style="color:#000;font-weight:bold">/</span><span style="color:#0086b3">log</span><span style="color:#000;font-weight:bold">/*</span>
-</span></span></code></pre></div><p>This will give you an indication of what is happening in OSX. For example, I was installing the XCode Command Line Utils from within XCode. The installation progress information is severely lacking, it just shows a bar which moves from left to right. However I was able to find out what was happening by tailing the log files in /var/log, which provided me with an updated breakdown of the installer progress. You can exit tail by using Control-C which will return you to the shell.</p>
+<pre tabindex="0"><code>tail -f /var/log/*
+</code></pre><p>This will give you an indication of what is happening in OSX. For example, I was installing the XCode Command Line Utils from within XCode. The installation progress information is severely lacking, it just shows a bar which moves from left to right. However I was able to find out what was happening by tailing the log files in /var/log, which provided me with an updated breakdown of the installer progress. You can exit tail by using Control-C which will return you to the shell.</p>
 <h3 id="constant-ping">Constant Ping<a hidden class="anchor" aria-hidden="true" href="#constant-ping">#</a></h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ping www.google.com
-</span></span></code></pre></div><p>When I have problems with my internet connection, I always keep a ping running in the background in a terminal. The interesting information here is the ICMP RTT time shown as the milliseconds next to the &rsquo;time&rsquo; label, and how many packets were dropped shown by the number of &lsquo;request timeout&rsquo; messages. Google does not mind you pinging it, just like hundreds of thousands of other people do, and so you can keep this up constantly, monitoring problems with your internet connection. When you get &rsquo;no route to host&rsquo; printed, this usually means that your gateway or wireless connection is down, which means you usually have to reestablish a connection manually.</p>
+<pre tabindex="0"><code>ping www.google.com
+</code></pre><p>When I have problems with my internet connection, I always keep a ping running in the background in a terminal. The interesting information here is the ICMP RTT time shown as the milliseconds next to the &rsquo;time&rsquo; label, and how many packets were dropped shown by the number of &lsquo;request timeout&rsquo; messages. Google does not mind you pinging it, just like hundreds of thousands of other people do, and so you can keep this up constantly, monitoring problems with your internet connection. When you get &rsquo;no route to host&rsquo; printed, this usually means that your gateway or wireless connection is down, which means you usually have to reestablish a connection manually.</p>
 <h3 id="tcpdump">tcpdump<a hidden class="anchor" aria-hidden="true" href="#tcpdump">#</a></h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo tcpdump en0 -vvv
-</span></span></code></pre></div><p>Do you really want to see what is happening on your computers network connection? Turn the floodgates on then, and use tcpdump. This will output information on each packet that your computer sends out and is received in a slightly Matrix-style torrent of information. If you are downloading something via an application or have a number of active web connections such as AJAX Facebook pages loaded, you would expect to see a lot of traffic. If you don&rsquo;t have a lot of traffic, and you&rsquo;re expecting a lot, then something may be wrong. You can use tcpdump to get a general feel of what data is being passed around, and to what IP address, which you can then look up later for more clarity. You can also use grep and some basic TCP/IP networking knowledge to find out what exactly is happening on the network level.</p>
+<pre tabindex="0"><code>sudo tcpdump en0 -vvv
+</code></pre><p>Do you really want to see what is happening on your computers network connection? Turn the floodgates on then, and use tcpdump. This will output information on each packet that your computer sends out and is received in a slightly Matrix-style torrent of information. If you are downloading something via an application or have a number of active web connections such as AJAX Facebook pages loaded, you would expect to see a lot of traffic. If you don&rsquo;t have a lot of traffic, and you&rsquo;re expecting a lot, then something may be wrong. You can use tcpdump to get a general feel of what data is being passed around, and to what IP address, which you can then look up later for more clarity. You can also use grep and some basic TCP/IP networking knowledge to find out what exactly is happening on the network level.</p>
 <h3 id="network-connection-status-of-each-application">Network Connection Status of Each Application<a hidden class="anchor" aria-hidden="true" href="#network-connection-status-of-each-application">#</a></h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo lsof -i tcp
-</span></span></code></pre></div><p>Want to find out information about applications are using your internet connection, and the connection state of each TCP connection? Use lsof. You will be given the name of the application that is using each TCP connection, the IP address to which it is connected to, and the TCP connection state (established is good, time wait can be a problem sign). Run this regularly to check on the connection state of your programs. This won&rsquo;t monitor UDP connections, but should cover your web browsers.</p>
+<pre tabindex="0"><code>sudo lsof -i tcp
+</code></pre><p>Want to find out information about applications are using your internet connection, and the connection state of each TCP connection? Use lsof. You will be given the name of the application that is using each TCP connection, the IP address to which it is connected to, and the TCP connection state (established is good, time wait can be a problem sign). Run this regularly to check on the connection state of your programs. This won&rsquo;t monitor UDP connections, but should cover your web browsers.</p>
 <p>Hopefully this information will give you a bit more insight into what is actually happening on your OSX machine when your internet connection is being unreliable and you want more information about what is going on. Once you have this information, you can use it to inform actions such as toggling the wireless off and on again to reestablish a connection, reloading webpages that have hung, restarting application downloads, or possibly finding a new hotel or resort with a better internet connection :)</p>
 
 
@@ -193,6 +239,19 @@
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Tailing a log file and Running an Application at the Same Time</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2013/03/01/tdd-talk/">
+    <span class="title">Next »</span>
+    <br>
+    <span>TDD Talk</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -266,7 +325,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -320,6 +379,18 @@
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

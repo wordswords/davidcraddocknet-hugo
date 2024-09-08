@@ -9,7 +9,7 @@
 <meta name="keywords" content="">
 <meta name="description" content="After the last post I have added Ableton Live and my Eurorack modular to my DJ setup, with a master clock being sent via MIDI cables from my Roland TR8 drum machine that syncs with Ableton. The drum machine also can be used creatively for drum fills etc.
 I hope these two diagrams explain my setup adequately - sometimes a picture is worth a thousand words! The &lsquo;actor&rsquo; is me - I just couldn&rsquo;t find a way to change that on http://draw.io :)">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2021/02/26/26-2-2021-dj-setup-with-diagrams/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -63,11 +63,14 @@ I hope these two diagrams explain my setup adequately - sometimes a picture is w
 <meta property="og:description" content="After the last post I have added Ableton Live and my Eurorack modular to my DJ setup, with a master clock being sent via MIDI cables from my Roland TR8 drum machine that syncs with Ableton. The drum machine also can be used creatively for drum fills etc.
 I hope these two diagrams explain my setup adequately - sometimes a picture is worth a thousand words! The &lsquo;actor&rsquo; is me - I just couldn&rsquo;t find a way to change that on http://draw.io :)" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2021/02/26/26-2-2021-dj-setup-with-diagrams/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2021/02/26/26-2-2021-dj-setup-with-diagrams/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-02-26T17:26:22+00:00" />
 <meta property="article:modified_time" content="2021-02-26T17:26:22+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="26/2/2021 DJ Setup with Diagrams"/>
 <meta name="twitter:description" content="After the last post I have added Ableton Live and my Eurorack modular to my DJ setup, with a master clock being sent via MIDI cables from my Roland TR8 drum machine that syncs with Ableton. The drum machine also can be used creatively for drum fills etc.
 I hope these two diagrams explain my setup adequately - sometimes a picture is worth a thousand words! The &lsquo;actor&rsquo; is me - I just couldn&rsquo;t find a way to change that on http://draw.io :)"/>
@@ -106,8 +109,12 @@ I hope these two diagrams explain my setup adequately - sometimes a picture is w
   "articleBody": "After the last post I have added Ableton Live and my Eurorack modular to my DJ setup, with a master clock being sent via MIDI cables from my Roland TR8 drum machine that syncs with Ableton. The drum machine also can be used creatively for drum fills etc.\nI hope these two diagrams explain my setup adequately - sometimes a picture is worth a thousand words! The ‘actor’ is me - I just couldn’t find a way to change that on http://draw.io :)\n",
   "wordCount" : "83",
   "inLanguage": "en",
-  "datePublished": "2021-02-26T17:26:22Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2021-02-26T17:26:22Z",
   "dateModified": "2021-02-26T17:26:22Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2021/02/26/26-2-2021-dj-setup-with-diagrams/"
@@ -126,7 +133,11 @@ I hope these two diagrams explain my setup adequately - sometimes a picture is w
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -137,9 +148,44 @@ I hope these two diagrams explain my setup adequately - sometimes a picture is w
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -151,7 +197,7 @@ I hope these two diagrams explain my setup adequately - sometimes a picture is w
     <h1 class="post-title entry-hint-parent">
       26/2/2021 DJ Setup with Diagrams
     </h1>
-    <div class="post-meta"><span title='2021-02-26 17:26:22 +0000 GMT'>February 26, 2021</span>&nbsp;·&nbsp;1 min
+    <div class="post-meta"><span title='2021-02-26 17:26:22 +0000 GMT'>February 26, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> 
@@ -169,6 +215,19 @@ I hope these two diagrams explain my setup adequately - sometimes a picture is w
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2021/03/04/2020-retrospective-wow-what-a-year/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>2020 Retrospective – Wow, what a year!</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2021/02/18/dj-books-reviewed/">
+    <span class="title">Next »</span>
+    <br>
+    <span>DJ Books: Reviewed</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -242,7 +301,7 @@ I hope these two diagrams explain my setup adequately - sometimes a picture is w
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -296,6 +355,18 @@ I hope these two diagrams explain my setup adequately - sometimes a picture is w
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

@@ -9,7 +9,7 @@
 <meta name="keywords" content="">
 <meta name="description" content="This is an overview of current Linux support under Hyper-V, the free Windows Server 2008 virtualisation product.
 As you probably know, virtual servers allow the emulation of hardware in software. So you have a single physical &lsquo;virtual server&rsquo;. This virtual server emulates the physical hardware for several &lsquo;virtual machines&rsquo; which sit on top of the virtual server. As far as the operating system on the virtual machine is concerned, it doesn&rsquo;t notice anything different at all - it thinks it is running on a full set of dedicated hardware. However in reality, the virtual server is sharing its real physical resouces amongst the collection of virtual machines, assigning for example - 3GB of its memory to virtual machine A, and 1GB to virtual machine B.">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2008/10/09/linux-under-hyper-v/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -63,11 +63,14 @@ As you probably know, virtual servers allow the emulation of hardware in softwar
 <meta property="og:description" content="This is an overview of current Linux support under Hyper-V, the free Windows Server 2008 virtualisation product.
 As you probably know, virtual servers allow the emulation of hardware in software. So you have a single physical &lsquo;virtual server&rsquo;. This virtual server emulates the physical hardware for several &lsquo;virtual machines&rsquo; which sit on top of the virtual server. As far as the operating system on the virtual machine is concerned, it doesn&rsquo;t notice anything different at all - it thinks it is running on a full set of dedicated hardware. However in reality, the virtual server is sharing its real physical resouces amongst the collection of virtual machines, assigning for example - 3GB of its memory to virtual machine A, and 1GB to virtual machine B." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2008/10/09/linux-under-hyper-v/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2008/10/09/linux-under-hyper-v/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2008-10-09T23:30:10+00:00" />
 <meta property="article:modified_time" content="2008-10-09T23:30:10+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Linux under Hyper-V"/>
 <meta name="twitter:description" content="This is an overview of current Linux support under Hyper-V, the free Windows Server 2008 virtualisation product.
 As you probably know, virtual servers allow the emulation of hardware in software. So you have a single physical &lsquo;virtual server&rsquo;. This virtual server emulates the physical hardware for several &lsquo;virtual machines&rsquo; which sit on top of the virtual server. As far as the operating system on the virtual machine is concerned, it doesn&rsquo;t notice anything different at all - it thinks it is running on a full set of dedicated hardware. However in reality, the virtual server is sharing its real physical resouces amongst the collection of virtual machines, assigning for example - 3GB of its memory to virtual machine A, and 1GB to virtual machine B."/>
@@ -106,8 +109,12 @@ As you probably know, virtual servers allow the emulation of hardware in softwar
   "articleBody": "This is an overview of current Linux support under Hyper-V, the free Windows Server 2008 virtualisation product.\nAs you probably know, virtual servers allow the emulation of hardware in software. So you have a single physical ‘virtual server’. This virtual server emulates the physical hardware for several ‘virtual machines’ which sit on top of the virtual server. As far as the operating system on the virtual machine is concerned, it doesn’t notice anything different at all - it thinks it is running on a full set of dedicated hardware. However in reality, the virtual server is sharing its real physical resouces amongst the collection of virtual machines, assigning for example - 3GB of its memory to virtual machine A, and 1GB to virtual machine B.\nHyper-V requires a package called the ‘integration components’ to be installed on each virtual machine. This makes it easier for the virtual machine operating system kernel to talk with the virtual server, speeds up and increases the reliability of the emulation of virtual machine hardware by the virtual server.\nHyper-V supports the Xen virtualisation layer. Xen is a Linux-only virtualisation platform that requires a patched kernel on the virtual machine in order for the virtual server to communicate with the virtual machine.\nThe only officially supported distribution is SuSE Enterprise Linux 10, Service Packs 1 + 2. However because of the way the Hyper-V works, any Xen kernel in theory can be patched to run under Hyper-V.\nIn fact, this is exactly what you have to do in order to get any Linux distro fully working under the Hyper-V virtual server. So:\nDownload the kernel source for the Xen kernel for your distro Patch it with the Hyper-V integration services patch Compile the kernel .. and bingo - you should have Linux ‘fully supported’ by Hyper-V.\nNow it remains to be seen whether there are any problems with running Linux under Hyper-V in a live environment. I know that we encountered multiple problems with Linux under VMWare ESX Server - and VMWare is the most mature virtualisation product available.\nThose problems included: network interfaces dropping packets and the virtual machine system clock ‘drifting’ - running too fast or slow. These are NOT problems you want in a live enviroment, and so it remains to be seen whether Hyper-V can support Linux with the same ease as it supports Windows OSs.\n",
   "wordCount" : "395",
   "inLanguage": "en",
-  "datePublished": "2008-10-09T23:30:10Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2008-10-09T23:30:10Z",
   "dateModified": "2008-10-09T23:30:10Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2008/10/09/linux-under-hyper-v/"
@@ -126,7 +133,11 @@ As you probably know, virtual servers allow the emulation of hardware in softwar
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -137,9 +148,44 @@ As you probably know, virtual servers allow the emulation of hardware in softwar
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -151,7 +197,7 @@ As you probably know, virtual servers allow the emulation of hardware in softwar
     <h1 class="post-title entry-hint-parent">
       Linux under Hyper-V
     </h1>
-    <div class="post-meta"><span title='2008-10-09 23:30:10 +0000 +0000'>October 9, 2008</span>&nbsp;·&nbsp;2 min
+    <div class="post-meta"><span title='2008-10-09 23:30:10 +0000 +0000'>October 9, 2008</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> 
@@ -177,6 +223,19 @@ As you probably know, virtual servers allow the emulation of hardware in softwar
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2008/10/29/linux-backups-using-bacula/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Bacula Scheduling</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2008/09/22/stanford-engineering-for-everyone/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Stanford Engineering for Everyone</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -250,7 +309,7 @@ As you probably know, virtual servers allow the emulation of hardware in softwar
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -304,6 +363,18 @@ As you probably know, virtual servers allow the emulation of hardware in softwar
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

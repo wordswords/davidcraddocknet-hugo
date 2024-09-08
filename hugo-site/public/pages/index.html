@@ -7,8 +7,8 @@
 <meta name="robots" content="index, follow">
 <title>Pages | DavidCraddock.net</title>
 <meta name="keywords" content="">
-<meta name="description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK.">
-<meta name="author" content="">
+<meta name="description" content="Pages - DavidCraddock.net">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/pages/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/pages/feed.xml">
+<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/pages/index.xml">
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/pages/">
 <noscript>
     <style>
@@ -60,19 +60,41 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
 <meta property="og:title" content="Pages" />
-<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
+<meta property="og:description" content="DavidCraddock.net" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://davidcraddock.net/pages/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 
-<meta name="twitter:card" content="summary"/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Pages"/>
-<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK."/>
+<meta name="twitter:description" content="DavidCraddock.net"/>
 
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Pages",
+      "item": "https://davidcraddock.net/pages/"
+    }
+  ]
+}
+</script>
 </head>
 
 <body class="list" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -83,9 +105,44 @@
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -93,12 +150,93 @@
 <header class="page-header"><div class="breadcrumbs"><a href="https://davidcraddock.net/">Home</a></div>
   <h1>
     Pages
+    <a href="/pages/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
   </h1>
 </header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Security Research
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Security Research I am currently familiarising myself with tools to do security research around physical pentesting.
+This is in preparation for my research project as part of the MSc Cyber Security masters I’m taking from the University of London via distance learning.
+This research is strictly for informational purposes and I don’t do anything criminal with it.
+Wardriving and Wifi cracking I have two Raspberry Pi Zero 2s configured headless with pwnagotchi
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-08-24 03:42:48 +0000 +0000'>August 24, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Security Research" href="https://davidcraddock.net/security-research/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">My Bike
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Decided not to mention the security aspects of my setup on a public page, but trust me, there are many!
+Himiway Zebra Electric Mountain Bike 2023 Version (road legal, top electric-assisted speed 15mph, max. pull 400lbs) 2x official batteries (40-80 miles on a single charge each) 2x battery chargers Two spare tires Spare inner tube Electric fat tire pump Metal tire levers Adjustable wrench Chain tool for removing chain links Chain cleaner tool “MuckOff” bike cleaning kit Small first aid kit Compass Himiway fold-out cycle toolkit Energy bars &#43; nuts 2x cycle frame bags 2x Rockbros waterproof pannier bags Rockbros Handlebar bag Rockbros Mobile phone holder bag Electric bike horn Bike bell Himiway cycle helmet with front light 4x vaccum thermos 750ml flasks for water All-weather MTB grips for handlebar Fingerless MTB gloves for warmer weather Wraparound anti-glare sun glasses for protection against surface dirt etc Wraparound cycle goggles with different visors Light backpack suitable for cycling Goretex water-resistant high-vis cycle jacket VEVOR Cycle Bike Cargo Trailer </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-06-09 22:34:52 +0000 +0000'>June 9, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to My Bike" href="https://davidcraddock.net/my-bike/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">My Mobile Laptop Setup
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> I use this setup, along with my bike to work from wherever I want.
+It does kind of turn heads, and I’m aware it may look a little ‘over the top’ - but it’s a very useful setup for me, keeps me healthy, and fits all my requirements.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-04 02:48:13 +0000 GMT'>February 4, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to My Mobile Laptop Setup" href="https://davidcraddock.net/my-mobile-laptop-setup/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">My Homelab
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> My home network routes at around 2-4gbit/sec between 10gbit/sec DAC fibre connected hosts, and around 2gbit/sec via CAT8 for Thunderbolt 2.5Ggbit/sec laptop network interfaces. We two Ubiquiti wireless APs in a mesh configuration, with seperate SSIDs for 2Ghz, 5Ghz, guest and IOT networks. The guest and IOT networks are isolated from everything else. I use a Mikrotik router which hosts an iperf3 docker container for network testing I have a home server running Ubuntu Linux that hosts a bunch of services via docker containers, including Pi-Hole for DNS and a Ubiquiti Network Controller. I have a Google smart home setup with 2x Google Home Mini speakers, 1x Google Home Hub (1st) gen, 1x Google Doorbell, 1x Google Nest Smoke Alarm, 1x Google Nest Thermostat, and 2x Google Nest Cameras. We have a Phillips Hue light source setup, with 5 Hue lights in the Music Studio/Games room, which I set to strobe to music when I do my DJ sets, and setup as a Hue Entertainment Area when I play games/watch films. I also have Hue lights in the study and my bedroom, with dimmers etc. We have a robotic vacuum cleaner which helps Conny around the house. We call it ‘Dusterbuster’. Wherever possible, all devices have a wired network connection. Wireless is only used as a last resort, to minimise spectrum interference. We use ZeroTier as a VPN so that everything useful is accessible outside the home. We run a Plex server so that all music and video content is accessible outside the home, which is shared with friends. ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-12-17 02:13:39 +0000 GMT'>December 17, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to My Homelab" href="https://davidcraddock.net/my-home-network/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">My Media and Gaming Setup
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-06-26 19:52:05 +0000 +0000'>June 26, 2023</span>&nbsp;·&nbsp;8 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to My Media and Gaming Setup" href="https://davidcraddock.net/my-gaming-setup/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="https://davidcraddock.net/pages/page/2/">Next&nbsp;2/2&nbsp;»
+    </a>
+  </nav>
+</footer>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -152,6 +290,18 @@
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 </body>

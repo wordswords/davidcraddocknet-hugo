@@ -8,7 +8,7 @@
 <title>Passed the W3Schools PHP Certification | DavidCraddock.net</title>
 <meta name="keywords" content="">
 <meta name="description" content="As a break from my contract work, I took the W3Schools PHP Certification. I didn&rsquo;t do any revision, which probably wasn&rsquo;t wise. It was a bit more difficult than I thought, but I passed still.">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2010/01/14/passed-the-w3schools-php-certification/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -61,11 +61,14 @@
 <meta property="og:title" content="Passed the W3Schools PHP Certification" />
 <meta property="og:description" content="As a break from my contract work, I took the W3Schools PHP Certification. I didn&rsquo;t do any revision, which probably wasn&rsquo;t wise. It was a bit more difficult than I thought, but I passed still." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2010/01/14/passed-the-w3schools-php-certification/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2010/01/14/passed-the-w3schools-php-certification/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-01-14T01:19:57+00:00" />
 <meta property="article:modified_time" content="2010-01-14T01:19:57+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Passed the W3Schools PHP Certification"/>
 <meta name="twitter:description" content="As a break from my contract work, I took the W3Schools PHP Certification. I didn&rsquo;t do any revision, which probably wasn&rsquo;t wise. It was a bit more difficult than I thought, but I passed still."/>
 
@@ -103,8 +106,12 @@
   "articleBody": "As a break from my contract work, I took the W3Schools PHP Certification. I didn’t do any revision, which probably wasn’t wise. It was a bit more difficult than I thought, but I passed still.\n",
   "wordCount" : "35",
   "inLanguage": "en",
-  "datePublished": "2010-01-14T01:19:57Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2010-01-14T01:19:57Z",
   "dateModified": "2010-01-14T01:19:57Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2010/01/14/passed-the-w3schools-php-certification/"
@@ -123,7 +130,11 @@
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -134,9 +145,44 @@
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -148,7 +194,7 @@
     <h1 class="post-title entry-hint-parent">
       Passed the W3Schools PHP Certification
     </h1>
-    <div class="post-meta"><span title='2010-01-14 01:19:57 +0000 GMT'>January 14, 2010</span>&nbsp;·&nbsp;1 min
+    <div class="post-meta"><span title='2010-01-14 01:19:57 +0000 GMT'>January 14, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> 
@@ -161,6 +207,19 @@
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2010/01/14/php-sample-html-page-fetcher-and-parser/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>PHP Sample - HTML Page Fetcher and Parser</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2010/01/10/config-files-for-the-windows-version-of-vim/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Config files for the Windows version of VIM</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -234,7 +293,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -288,6 +347,18 @@
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

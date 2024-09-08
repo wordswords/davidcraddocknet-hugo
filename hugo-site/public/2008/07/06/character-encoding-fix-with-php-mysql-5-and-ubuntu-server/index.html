@@ -13,8 +13,8 @@ If you are ever in this situation, I suggest you handle everything as UTF-8. Tha
 ..
 default-character-set=utf8
 skip-character-set-client-handshake
-">
-<meta name="author" content="">
+If you already have tables in your database that you have created, and they have defaulted to the latin1 charset, you&rsquo;ll be able to tell by looking at the mysqldump SQL:">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2008/07/06/character-encoding-fix-with-php-mysql-5-and-ubuntu-server/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -71,13 +71,16 @@ If you are ever in this situation, I suggest you handle everything as UTF-8. Tha
 ..
 default-character-set=utf8
 skip-character-set-client-handshake
-" />
+If you already have tables in your database that you have created, and they have defaulted to the latin1 charset, you&rsquo;ll be able to tell by looking at the mysqldump SQL:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2008/07/06/character-encoding-fix-with-php-mysql-5-and-ubuntu-server/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2008/07/06/character-encoding-fix-with-php-mysql-5-and-ubuntu-server/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2008-07-06T23:34:50+00:00" />
 <meta property="article:modified_time" content="2008-07-06T23:34:50+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Character encoding fix with PHP, MySQL 5 and ubuntu-server"/>
 <meta name="twitter:description" content="For some reason, under ubuntu-server, my default MySQL 5 character encoding was latin1. This caused no end of problems with grabbing data from the web, which was not necessarily in latin1 characterset.
 If you are ever in this situation, I suggest you handle everything as UTF-8. That means setting the following lines in my.cnf:
@@ -85,7 +88,7 @@ If you are ever in this situation, I suggest you handle everything as UTF-8. Tha
 ..
 default-character-set=utf8
 skip-character-set-client-handshake
-"/>
+If you already have tables in your database that you have created, and they have defaulted to the latin1 charset, you&rsquo;ll be able to tell by looking at the mysqldump SQL:"/>
 
 
 <script type="application/ld+json">
@@ -114,15 +117,19 @@ skip-character-set-client-handshake
   "@type": "BlogPosting",
   "headline": "Character encoding fix with PHP, MySQL 5 and ubuntu-server",
   "name": "Character encoding fix with PHP, MySQL 5 and ubuntu-server",
-  "description": "For some reason, under ubuntu-server, my default MySQL 5 character encoding was latin1. This caused no end of problems with grabbing data from the web, which was not necessarily in latin1 characterset.\nIf you are ever in this situation, I suggest you handle everything as UTF-8. That means setting the following lines in my.cnf:\n[mysqld] .. default-character-set=utf8 skip-character-set-client-handshake ",
+  "description": "For some reason, under ubuntu-server, my default MySQL 5 character encoding was latin1. This caused no end of problems with grabbing data from the web, which was not necessarily in latin1 characterset.\nIf you are ever in this situation, I suggest you handle everything as UTF-8. That means setting the following lines in my.cnf:\n[mysqld] .. default-character-set=utf8 skip-character-set-client-handshake If you already have tables in your database that you have created, and they have defaulted to the latin1 charset, you\u0026rsquo;ll be able to tell by looking at the mysqldump SQL:\n",
   "keywords": [
     
   ],
   "articleBody": "For some reason, under ubuntu-server, my default MySQL 5 character encoding was latin1. This caused no end of problems with grabbing data from the web, which was not necessarily in latin1 characterset.\nIf you are ever in this situation, I suggest you handle everything as UTF-8. That means setting the following lines in my.cnf:\n[mysqld] .. default-character-set=utf8 skip-character-set-client-handshake If you already have tables in your database that you have created, and they have defaulted to the latin1 charset, you’ll be able to tell by looking at the mysqldump SQL:\nDROP TABLE IF EXISTS `ARTISTS`; CREATE TABLE `ARTISTS` ( .. some col declarations.. ) ENGINE=MyISAM AUTO_INCREMENT=4519 DEFAULT CHARSET=latin1; See here this artists table has been set to default charset of latin1 by mysql. This is bad. So what I recommend is:\n1. Dump the full database structure + data to a file using mysqldump 2. Substitute ’latin1’ for ‘utf8’ universally on that file using your favourite text editor 3. Import the resultant file into mysql using the mysql -uroot -p -Dyourdb \u003c dump.sql method\nThen everything will be in utf8, and your character encoding issues will be solved :)\n",
   "wordCount" : "188",
   "inLanguage": "en",
-  "datePublished": "2008-07-06T23:34:50Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2008-07-06T23:34:50Z",
   "dateModified": "2008-07-06T23:34:50Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2008/07/06/character-encoding-fix-with-php-mysql-5-and-ubuntu-server/"
@@ -141,7 +148,11 @@ skip-character-set-client-handshake
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -152,9 +163,44 @@ skip-character-set-client-handshake
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -166,23 +212,23 @@ skip-character-set-client-handshake
     <h1 class="post-title entry-hint-parent">
       Character encoding fix with PHP, MySQL 5 and ubuntu-server
     </h1>
-    <div class="post-meta"><span title='2008-07-06 23:34:50 +0000 +0000'>July 6, 2008</span>&nbsp;·&nbsp;1 min
+    <div class="post-meta"><span title='2008-07-06 23:34:50 +0000 +0000'>July 6, 2008</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> 
 
   <div class="post-content"><p>For some reason, under ubuntu-server, my default MySQL 5 character encoding was latin1. This caused no end of problems with grabbing data from the web, which was not necessarily in latin1 characterset.</p>
 <p>If you are ever in this situation, I suggest you handle everything as UTF-8. That means setting the following lines in my.cnf:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>[mysqld]
-</span></span><span style="display:flex;"><span>..
-</span></span><span style="display:flex;"><span>default-character-set=utf8
-</span></span><span style="display:flex;"><span>skip-character-set-client-handshake
-</span></span></code></pre></div><p>If you already have tables in your database that you have created, and they have defaulted to the latin1 charset, you&rsquo;ll be able to tell by looking at the mysqldump SQL:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mysql" data-lang="mysql"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">DROP</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">TABLE</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">IF</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">EXISTS</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">`</span>ARTISTS<span style="color:#000;font-weight:bold">`</span>;<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">CREATE</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">TABLE</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">`</span>ARTISTS<span style="color:#000;font-weight:bold">`</span><span style="color:#bbb"> </span>(<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>..<span style="color:#bbb"> </span>some<span style="color:#bbb"> </span>col<span style="color:#bbb"> </span>declarations..<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>)<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">ENGINE</span><span style="color:#000;font-weight:bold">=</span>MyISAM<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">AUTO_INCREMENT</span><span style="color:#000;font-weight:bold">=</span><span style="color:#099">4519</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">DEFAULT</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">CHARSET</span><span style="color:#000;font-weight:bold">=</span>latin1;<span style="color:#bbb">
-</span></span></span></code></pre></div><p>See here this artists table has been set to default charset of latin1 by mysql. This is bad. So what I recommend is:</p>
+<pre tabindex="0"><code>[mysqld]
+..
+default-character-set=utf8
+skip-character-set-client-handshake
+</code></pre><p>If you already have tables in your database that you have created, and they have defaulted to the latin1 charset, you&rsquo;ll be able to tell by looking at the mysqldump SQL:</p>
+<pre tabindex="0"><code>DROP TABLE IF EXISTS `ARTISTS`;
+CREATE TABLE `ARTISTS` (
+.. some col declarations..
+) ENGINE=MyISAM AUTO_INCREMENT=4519 DEFAULT CHARSET=latin1;
+</code></pre><p>See here this artists table has been set to default charset of latin1 by mysql. This is bad. So what I recommend is:</p>
 <p>1. Dump the full database structure + data to a file using mysqldump
 2. Substitute &rsquo;latin1&rsquo; for &lsquo;utf8&rsquo; universally on that file using your favourite text editor
 3. Import the resultant file into mysql using the mysql -uroot -p -Dyourdb &lt; dump.sql method</p>
@@ -194,6 +240,19 @@ skip-character-set-client-handshake
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2008/09/22/scraping-wikipedia-information-for-music-artists-part-2/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Scraping Wikipedia Information for music artists, Part 2</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2008/06/18/scraping-artists-bios-off-of-wikipedia/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Scraping artists bios off of Wikipedia</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -267,7 +326,7 @@ skip-character-set-client-handshake
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -321,6 +380,18 @@ skip-character-set-client-handshake
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

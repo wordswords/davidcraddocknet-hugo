@@ -8,8 +8,8 @@
 <meta name="robots" content="index, follow">
 <title>DavidCraddock.net</title>
 
-<meta name="description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK.">
-<meta name="author" content="">
+<meta name="description" content="DavidCraddock.net">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/feed.xml">
+<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/index.xml">
 <link rel="alternate" type="application/json" href="https://davidcraddock.net/index.json">
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/">
 <noscript>
@@ -62,13 +62,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
 <meta property="og:title" content="DavidCraddock.net" />
-<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
+<meta property="og:description" content="DavidCraddock.net" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://davidcraddock.net/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 
-<meta name="twitter:card" content="summary"/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="DavidCraddock.net"/>
-<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK."/>
+<meta name="twitter:description" content="DavidCraddock.net"/>
 
 <script type="application/ld+json">
 {
@@ -76,10 +79,10 @@
   "@type": "Organization",
   "name": "DavidCraddock.net",
   "url": "https://davidcraddock.net/",
-  "description": "The personal blog of David Craddock, a software engineer based in Manchester, UK.",
+  "description": "DavidCraddock.net",
   "thumbnailUrl": "https://davidcraddock.net/favicon.ico",
   "sameAs": [
-      
+      "https://github.com/wordswords"
   ]
 }
 </script>
@@ -87,7 +90,11 @@
 
 <body class="list" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -98,9 +105,44 @@
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -108,162 +150,88 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Home Network Design 28/7/22
+    <h2 class="entry-hint-parent">Tips for Working from Home
     </h2>
   </header>
   <div class="entry-content">
-    <p> Now that I actually have the internet connectivity being installed to make use of it, I am getting my home network design a bit more finished.
-Components:
-Virgin Hub providing a 1100/50mbps connection BetterInternet Fibre Hub providing a 900/900mbps connection Raspberry Pi 3 running Pi-Hole DNS MikroTik CRS309-1G-8S&#43;IN Cloud Router Switch 4 x SFP&#43;10Gb SFP&#43; RJ45 Copper Modules CAT8 30M Outdoor Cable to connect the studio to the study Short run CAT7 Patch Cables Windows 11 Studio PC with 10GB/sec SFP&#43; Port ThinkStation Server with twin 10GB/sec SFP&#43; Ports and separate gigabit NIC 3x LinkSys 3200WRT Routers in wireless repeater mode, creating a 2.4hz wireless network with speeds around 500mbps on average to each wireless device. TP-Link Gigabit switch Load-balancing internet connections:
+    <p>I have been working from home, the majority of the time, for over 5 years. It took a lot of adjustment, and I’m still not 100% adjusted, but if you want to undertake this, then these are my tips.
+Note that a big part of the benefit from working from home is the total flexibility in work environment, so these are only tips that work for me - they might not work for you! However, I think there is probably quite a bit of commonality.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-07-28 00:57:42 +0000 +0000'>July 28, 2022</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to Home Network Design 28/7/22" href="https://davidcraddock.net/2022/07/28/home-network-design-28-7-22/"></a>
+  <footer class="entry-footer"><span title='2022-10-18 17:29:44 +0000 +0000'>October 18, 2022</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Tips for Working from Home" href="https://davidcraddock.net/2022/10/18/tips-for-working-from-home/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">MIDI Routing for Home Studio
+    <h2 class="entry-hint-parent">PSP Preset for Handbrake for transcoding video files into a PSP compatible format
     </h2>
   </header>
   <div class="entry-content">
-    <p>I have had this knowledge in my head for a long time now and thought it would be better to write a diagram to explain the current setup for my MIDI routing.
-I use MIDI routing one way - MIDI OUT - from my UMC1820 sound interface.
-I have two keyboard controllers, one next to my computer, and one next to my Eurorack, that are attached via USB to my computer which I route the notes via Ableton to the MIDI out of the UMC1820 interface.
-...</p>
+    <p>This is based off of the 2021 Reddit post here: https://www.reddit.com/r/PSP/comments/kcx4ei/tutorial_convert_most_video_formats_to/
+I am using it with Handbrake 1.5.1. You can import it into your Handbrake via “Preset -&gt; File Import”.
+Download PSP Handbrake Preset.
+</p>
   </div>
-  <footer class="entry-footer"><span title='2022-06-19 03:04:47 +0000 +0000'>June 19, 2022</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to MIDI Routing for Home Studio" href="https://davidcraddock.net/2022/06/19/midi-routing-for-home-studio/"></a>
+  <footer class="entry-footer"><span title='2022-10-16 16:00:48 +0000 +0000'>October 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to PSP Preset for Handbrake for transcoding video files into a PSP compatible format" href="https://davidcraddock.net/2022/10/16/psp-preset-for-handbrake-for-transcoding-video-files-into-a-psp-compatible-format/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Home Network Design
+    <h2 class="entry-hint-parent">The Current State of UK Politics
     </h2>
   </header>
   <div class="entry-content">
-    <p> Did some network design for my home network. This will ensure that my new Virgin Media 1100mbps/50mps speed is fully utilised without any bottlenecks and will futureproof things up to at least 2.5Gbs/speed connections.
-I should be able to load balance both internet connections to utilise them both simultaniously in the future, but for now I want to be able to get greater than 1000mbit/s speed on a single device otherwise there is not much point in speed increases past 1000mbits. Also there is a 200-300mbits speed increase possible from my existing VM hardware that is not utilised in the current network.
+    <p>For years, UK politics has become more right-wing, popularist, and presidential.
+Right-wing, because the Conservatives have been in power for over 10 years, and have had the opportunity to implement most of their ideological policies, which we see at the moment highlighted to an extreme with Liz Truss gearing up to emulate Thatcher on almost every level.
+Popularist, because the Conservatives have implemented policies designed to appease the populations feelings, rather than those based on factual positive outcomes.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-05-14 23:15:20 +0000 +0000'>May 14, 2022</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Home Network Design" href="https://davidcraddock.net/2022/05/15/home-network-design/"></a>
+  <footer class="entry-footer"><span title='2022-09-29 04:07:41 +0000 +0000'>September 29, 2022</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to The Current State of UK Politics" href="https://davidcraddock.net/2022/09/29/the-current-state-of-uk-politics/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">DJ Setup 2/5/22
+    <h2 class="entry-hint-parent">Tips for new Ubuntu Users
     </h2>
   </header>
   <div class="entry-content">
-    <p>This is my current DJ setup that I use for Twitch streaming mainly.
-2x Reloop RL-8000mk2 turntables. 2x Serato ‘Butter Rug’ Slipmats. 2x Concorde Mk2 Digital carts. Numark NDX500 CDJ which I use for playing CDs, and as a Serato Controller as it has Serato Integration. Roland DJ-707m controller. Sennheiser HD-25 headphones. Rode Procaster mic with mic boom, pop shield and cage. t.bone MB 88U mic with table stand that I use as a guest microphone. AKAI LPD8 Midi controller which I use to trigger Serato Sampler samples. Macbook Pro Early 2015 Retina running Serato DJ Pro. Behringer TD-3 acid groovebox for adding acid patterns over the top of the Roland drum machine. The audio signal flow is below:
+    <p>Here are some extra tips if you’re just getting started out on Ubuntu.
+You don’t have to go through the UI to shut down or reboot your computer. You can do it from the command line. The commands are:
+sudo reboot # to reboot sudo poweroff # to shut down and power off the computer You can get a lot more information on your computers startup and shutdown sequences by removing the default Ubuntu splash screen that obscures this. You should definitely do this if you want to learn more about what your system is actually doing under the hood, especially if you need to troubleshoot what it’s doing. To do this:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-05-02 22:11:13 +0000 +0000'>May 2, 2022</span>&nbsp;·&nbsp;4 min</footer>
-  <a class="entry-link" aria-label="post link to DJ Setup 2/5/22" href="https://davidcraddock.net/2022/05/02/dj-setup-2-5-22/"></a>
+  <footer class="entry-footer"><span title='2022-09-29 00:00:36 +0000 +0000'>September 29, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Tips for new Ubuntu Users" href="https://davidcraddock.net/2022/09/29/tips-for-new-ubuntu-users/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Video Tools I use for my Media Collection
+    <h2 class="entry-hint-parent">Current Twitch DJ Setup
     </h2>
   </header>
   <div class="entry-content">
-    <p>I use and recommend the following software for Windows. They’re all quite easy to use. The paid software all have lifetime subscriptions, which are worth it because you need the latest updates in this area.
-Aiseesoft Blu-ray Player: (for playing Blu-Rays) (paid) https://www.aiseesoft.com/blu-ray-player/
-Easyfab Lossless Copy: (for ripping Blu-Rays, also works for DVDs) (paid) https://www.easefab.com/losslesscopy/
-VLC: (for playing ripped copies) (free) https://www.videolan.org/
-Handbrake: (for converting between different video formats and compressing video) (free) https://handbrake.fr/
-...</p>
+    <p> Click to view full diagram
+Hardware 2 x Reloop 8000mk2 turntables Roland 707m Mixer and DJ Controller 2015 Macbook Pro (DJ Laptop) SoundSwitch USB -&gt; DMX interface, attached to broadcast PC Beatstep MIDI Controller mapped for controlling SoundSwitch, attached to broadcast PC Vestax VCM-600 MIDI Controller used for controlling Resolume, attached to broadcast PC AKAI LPD8 MIDI Controller used for controlling Serato’s FX, attached to DJ laptop Rode Soundcaster Pro microphone used as a DJ mic 4 x Phillips Hue Colour Bulbs in lamps Phillips Hue Lightstrip Behringer UMC1820 Sound Interface connected to broadcast PC, attached to broadcast PC 2 x Logitech C920 Cameras used for capturing video for streaming, attached to broadcast PC Software SoundSwitch lighting software running on broadcast PC Resolume Avenue running on broadcast PC Streamlabs OBS running on broadcast PC Serato DJ Pro software running on DJ laptop </p>
   </div>
-  <footer class="entry-footer"><span title='2022-03-16 17:58:33 +0000 GMT'>March 16, 2022</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to Video Tools I use for my Media Collection" href="https://davidcraddock.net/2022/03/16/video-tools-i-use-for-my-media-collection/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Using VIM as a Word Processor
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>It may surprise some people to learn that I don’t use a word processor to write pure text any more, and haven’t for several months. I still have a subscription to Microsoft Office 365, and probably will as long as recruiters and offices around the world still pay the MS tax.
-I have created my own custom writing environment in my favourite text editor, VIM. This may sound like an absolutely foolish thing to do to anyone who knows VIM. By default, it is not setup at all to be an effective word processor. It is a programmers text editor, and a very complex and difficult to learn one at that.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-03-08 19:43:00 +0000 GMT'>March 8, 2022</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to Using VIM as a Word Processor" href="https://davidcraddock.net/2022/03/08/using-vim-as-a-word-processor/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DJ Setup 03/03/2022
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> This is my current DJ setup with the following components:
-Decks 1 and 2 - 2x Reloop 8000mk2 Vinyl Turntables with Serato intergration Deck 3 - Numark NDX500 CDJ with Serato Integration Deck 4 - Roland 707m Serato Controller and Mixer using its internal drum machine as a deck Behringer TB-303 Clone fed into the Aux input of the Roland 707m Controller Pioneer EFX-1000 DJ FX Unit placed between the master out of the 707m controller and the input of the sound interface on the broadcasting PC Reloop Neon Serato Controller used to control the Serato DJ Pro sampler Rode Procaster Microphone (not shown in diagram) fed to the Mic 1 channel on the 707m Controller as the main microphone for me while DJing t.bone MB 88U Dual Microphone (not shown in diagram) fed to the Mic 2 channel on the 707m Controller as the guest microphone for use when I have guests in the studio I have simplified things massively over the last year over my previous setups with the purchase of the Roland 707m. It it an amazingly clever piece of equipment and does so much. I think it is definitely one of the most advanced and most powerful controllers on the market today. This is what I can do with the new setup:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-03-03 01:19:28 +0000 GMT'>March 3, 2022</span>&nbsp;·&nbsp;4 min</footer>
-  <a class="entry-link" aria-label="post link to DJ Setup 03/03/2022" href="https://davidcraddock.net/2022/03/03/dj-setup-03-03-2022/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Working with Jenkinsfiles in VIM
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Using Jenkinsfiles in repositories for declarative pipelines, which is an example as infrastructure as code, is absolutely the right thing to do, in my opinion.
-However the tooling for debugging and error checking Jenkinsfiles is currently quite difficult.
-Setup Jenkinsfile linter First of all you need to make sure to be able to access the Jenkinsfile linter. This linter is processed on the Jenkins server itself, unusually. There is a configuration option that requires adminstrator access to the Jenkins server.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-02-19 05:51:56 +0000 GMT'>February 19, 2022</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to Working with Jenkinsfiles in VIM" href="https://davidcraddock.net/2022/02/19/working-with-jenkinsfiles-in-vim/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">My Story in Tech
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I thought I’d write here a bit about how I got into technology and how my career has progressed for those people wanting to get into technology.
-I was lucky enough to be born in a supportive home to good parents. My father was an early entrant into the world of computing, and my birth certificate records his profession as a ‘Computer Science Lecturer’, which was very rare at the time. In actuality, I’m fairly sure he taught only at local higher education colleges, but technically that still made him a lecturer. At any rate, he definitely worked in computing at a time when few others did (1982).
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-02-13 08:59:05 +0000 GMT'>February 13, 2022</span>&nbsp;·&nbsp;9 min</footer>
-  <a class="entry-link" aria-label="post link to My Story in Tech" href="https://davidcraddock.net/2022/02/13/my-story-in-tech/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Privacy and Security methods I use
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Ever since I worked at an internet marketing company on an advertising analytics platform, I have realised that I don’t want my personal internet browsing tracked, monetised, influenced, and sold to the highest bidder. These are the steps that I have taken to reduce (you can never totally eliminate) this process.
-Pi-Hole DNS This is a DNS server installed on a Raspberry Pi on my local home network. I have all the internet traffic going through my Virgin Media router filtered through this DNS server. It has many privacy-boosting features, but its main claim to fame is that it blocks the vast majority of internet advertising and analytics traffic on the DNS level. It currently blocks 20% of the requests made, which results in approximately 20% faster internet for me, and a lot more privacy/less tracking/less adverts.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-01-14 06:01:21 +0000 GMT'>January 14, 2022</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to Privacy and Security methods I use" href="https://davidcraddock.net/2022/01/14/privacy-and-security-methods-i-use/"></a>
+  <footer class="entry-footer"><span title='2022-09-27 02:56:21 +0000 +0000'>September 27, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Current Twitch DJ Setup" href="https://davidcraddock.net/2022/09/27/current-dj-setup/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://davidcraddock.net/page/2/">
-      «&nbsp;Prev&nbsp;
+      «&nbsp;Prev&nbsp;2/36
     </a>
-    <a class="next" href="https://davidcraddock.net/page/4/">Next&nbsp;&nbsp;»
+    <a class="next" href="https://davidcraddock.net/page/4/">Next&nbsp;4/36&nbsp;»
     </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -317,6 +285,18 @@ Pi-Hole DNS This is a DNS server installed on a Raspberry Pi on my local home ne
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 </body>

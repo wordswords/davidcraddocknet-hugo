@@ -10,7 +10,7 @@
 <meta name="description" content="I have been gradually adding parts to my PC so that it functions better for watching movies and gaming. Here are the components that I have used:
 Monitor – BenQ EX3501R 35″ Ultra WQHD Curved Monitor
 This monitor is great for watching movies and gaming as it is ultra-wide at an aspect radio of 21:9, 3440x1440, a VA panel with high contrast, and the monitor is slightly curved so that you get a cinematic experience.">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2018/05/20/home-cinema-setup/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -65,11 +65,14 @@ This monitor is great for watching movies and gaming as it is ultra-wide at an a
 Monitor – BenQ EX3501R 35″ Ultra WQHD Curved Monitor
 This monitor is great for watching movies and gaming as it is ultra-wide at an aspect radio of 21:9, 3440x1440, a VA panel with high contrast, and the monitor is slightly curved so that you get a cinematic experience." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2018/05/20/home-cinema-setup/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2018/05/20/home-cinema-setup/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2018-05-20T11:40:51+00:00" />
 <meta property="article:modified_time" content="2018-05-20T11:40:51+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Home Cinema Setup"/>
 <meta name="twitter:description" content="I have been gradually adding parts to my PC so that it functions better for watching movies and gaming. Here are the components that I have used:
 Monitor – BenQ EX3501R 35″ Ultra WQHD Curved Monitor
@@ -109,8 +112,12 @@ This monitor is great for watching movies and gaming as it is ultra-wide at an a
   "articleBody": "I have been gradually adding parts to my PC so that it functions better for watching movies and gaming. Here are the components that I have used:\nMonitor – BenQ EX3501R 35″ Ultra WQHD Curved Monitor This monitor is great for watching movies and gaming as it is ultra-wide at an aspect radio of 21:9, 3440x1440, a VA panel with high contrast, and the monitor is slightly curved so that you get a cinematic experience.\nSurround Sound Speakers – Logitech Z906 5.1 Speakers This is a good set of 5.1 surround sound speakers with a separate subwoofer. I connect it from my motherboard’s optical out via ADAT for the best connection. I have the rear speakers mounted on the wall behind me, and the front speakers on the desk in front of me angled towards my seat.\nPhillips Hue Bulbs and Dynamic Lighting I have three Phillips Hue bulbs near the monitor which I have added to a ‘ Hue Entertainment Group’ which means their colours can be rapidly changed with applications that use the Phillips Hue Entertainment API. One such application is ‘ hueDynamic for Hue’ which is a Windows 10 application that monitors the colours on the pixels at the edges of the monitor, and changes the lights next to each edge according to the colours on that edge. This means I can have some dynamic lighting when watching movies.\nSource of 4K Video Even though my monitor doesn’t quite support 4K, using VLC means I can adjust the aspect ratio so that it will re scale the 4K video onto the monitor’s 3440x1440 dimensions, making 4K the best fit for my monitor. However my wireless connection is not currently fast enough to stream 4K video, so I use the ‘ 4K Video Downloade r’ app to download free 4K videos from YouTube so I can play them on VLC.\nPutting It All Together (Click on diagram to enlarge) So, I download 4K videos from Youtube, play them on VLC which adjusts the 4K content to fit my monitor. The audio goes to my surround sound setup which creates a virtualised surround sound output to my speakers, and the hueDynamic app running in the background on my PC samples the colours are the left and right areas of my monitor, and dynamically changes the colour of the Hue bulbs as the video plays. This creates an immersive ‘Home Cinema’ experience.\n",
   "wordCount" : "402",
   "inLanguage": "en",
-  "datePublished": "2018-05-20T11:40:51Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2018-05-20T11:40:51Z",
   "dateModified": "2018-05-20T11:40:51Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2018/05/20/home-cinema-setup/"
@@ -129,7 +136,11 @@ This monitor is great for watching movies and gaming as it is ultra-wide at an a
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -140,9 +151,44 @@ This monitor is great for watching movies and gaming as it is ultra-wide at an a
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -154,7 +200,7 @@ This monitor is great for watching movies and gaming as it is ultra-wide at an a
     <h1 class="post-title entry-hint-parent">
       Home Cinema Setup
     </h1>
-    <div class="post-meta"><span title='2018-05-20 11:40:51 +0000 +0000'>May 20, 2018</span>&nbsp;·&nbsp;2 min
+    <div class="post-meta"><span title='2018-05-20 11:40:51 +0000 +0000'>May 20, 2018</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> <div class="toc">
@@ -204,6 +250,19 @@ This monitor is great for watching movies and gaming as it is ultra-wide at an a
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2019/03/30/a-retrospective-for-years-2016-19/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>A Retrospective for Years 2016-19</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2017/06/16/finished-eurorack/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Finished Eurorack</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -277,7 +336,7 @@ This monitor is great for watching movies and gaming as it is ultra-wide at an a
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -331,6 +390,18 @@ This monitor is great for watching movies and gaming as it is ultra-wide at an a
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

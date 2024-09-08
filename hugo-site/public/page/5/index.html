@@ -8,8 +8,8 @@
 <meta name="robots" content="index, follow">
 <title>DavidCraddock.net</title>
 
-<meta name="description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK.">
-<meta name="author" content="">
+<meta name="description" content="DavidCraddock.net">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/feed.xml">
+<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/index.xml">
 <link rel="alternate" type="application/json" href="https://davidcraddock.net/index.json">
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/">
 <noscript>
@@ -62,13 +62,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
 <meta property="og:title" content="DavidCraddock.net" />
-<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
+<meta property="og:description" content="DavidCraddock.net" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://davidcraddock.net/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 
-<meta name="twitter:card" content="summary"/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="DavidCraddock.net"/>
-<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK."/>
+<meta name="twitter:description" content="DavidCraddock.net"/>
 
 <script type="application/ld+json">
 {
@@ -76,10 +79,10 @@
   "@type": "Organization",
   "name": "DavidCraddock.net",
   "url": "https://davidcraddock.net/",
-  "description": "The personal blog of David Craddock, a software engineer based in Manchester, UK.",
+  "description": "DavidCraddock.net",
   "thumbnailUrl": "https://davidcraddock.net/favicon.ico",
   "sameAs": [
-      
+      "https://github.com/wordswords"
   ]
 }
 </script>
@@ -87,7 +90,11 @@
 
 <body class="list" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -98,9 +105,44 @@
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -108,155 +150,91 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Organising Huge Music Libraries for use with Serato DJ Pro
+    <h2 class="entry-hint-parent">Home Network Design 28/7/22
     </h2>
   </header>
   <div class="entry-content">
-    <p>Updated: 25-11-22
-My music library is around 24k files, mostly FLAC and some 320kbps MP3s. I use the following tools to organise my music library:
-Acquisition: dbPoweramp CD Ripper - https://www.dbpoweramp.com/cd-ripper.htm Bandcamp Collection Downloader - https://github.com/Ezwen/bandcamp-collection-downloader Soulseek - http://www.slsknet.org Tagging and Metadata: Beets - https://beets.io Mixed In Key - https://mixedinkey.com Lexicon https://www.lexicondj.com/ Backup and sync: Robocopy - comes free with Windows 10. Documentation: https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy Google Drive Rsync
+    <p> Now that I actually have the internet connectivity being installed to make use of it, I am getting my home network design a bit more finished.
+Components:
+Virgin Hub providing a 1100/50mbps connection BetterInternet Fibre Hub providing a 900/900mbps connection Raspberry Pi 3 running Pi-Hole DNS MikroTik CRS309-1G-8S&#43;IN Cloud Router Switch 4 x SFP&#43;10Gb SFP&#43; RJ45 Copper Modules CAT8 30M Outdoor Cable to connect the studio to the study Short run CAT7 Patch Cables Windows 11 Studio PC with 10GB/sec SFP&#43; Port ThinkStation Server with twin 10GB/sec SFP&#43; Ports and separate gigabit NIC 3x LinkSys 3200WRT Routers in wireless repeater mode, creating a 2.4hz wireless network with speeds around 500mbps on average to each wireless device. TP-Link Gigabit switch Load-balancing internet connections:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2021-05-05 21:06:13 +0000 +0000'>May 5, 2021</span>&nbsp;·&nbsp;7 min</footer>
-  <a class="entry-link" aria-label="post link to Organising Huge Music Libraries for use with Serato DJ Pro" href="https://davidcraddock.net/2021/05/05/organising-huge-music-libraries-with-serato/"></a>
+  <footer class="entry-footer"><span title='2022-07-28 00:57:42 +0000 +0000'>July 28, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Home Network Design 28/7/22" href="https://davidcraddock.net/2022/07/28/home-network-design-28-7-22/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Resolume MIDI Control in my Twitch DJing Setup
+    <h2 class="entry-hint-parent">MIDI Routing for Home Studio
     </h2>
   </header>
   <div class="entry-content">
-    <p> I have retired the Novation SL Zero Mk1 MIDI controller that was causing me a lot of grief when I was running Resolume and Ableton Live at the same time, as its Automap functionality was locking on to the Ableton Live mixer in session view now and then, and so, sometimes, when I thought I was controlling Resolumes visual FX, I was actually changing the volume faders in my DJ mix. Which was bad.
+    <p>I have had this knowledge in my head for a long time now and thought it would be better to write a diagram to explain the current setup for my MIDI routing.
+I use MIDI routing one way - MIDI OUT - from my UMC1820 sound interface.
+I have two keyboard controllers, one next to my computer, and one next to my Eurorack, that are attached via USB to my computer which I route the notes via Ableton to the MIDI out of the UMC1820 interface.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2021-04-26 18:26:14 +0000 +0000'>April 26, 2021</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to Resolume MIDI Control in my Twitch DJing Setup" href="https://davidcraddock.net/2021/04/26/resolume-midi-control-in-my-twitch-djing-setup/"></a>
+  <footer class="entry-footer"><span title='2022-06-19 03:04:47 +0000 +0000'>June 19, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to MIDI Routing for Home Studio" href="https://davidcraddock.net/2022/06/19/midi-routing-for-home-studio/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Hybrid Serato DJ Pro DVS/Ableton Live DJ setup (21/4/21)
+    <h2 class="entry-hint-parent">Home Network Design
     </h2>
   </header>
   <div class="entry-content">
-    <p> I recently found a good price on a Vestax VCM-600 controller. It is a specially made MIDI controller for Ableton Live, with the same build quality as a DJ mixer. It allows for control over 6 channels in the Ableton Live ‘session’ view, which is arranged similarly to a mixing console. It also adds dozens of MIDI mappable DJ controls such as the traditional Hi, Mid and Lo EQs, a crossfader, a filter control, control over a lot of Ableton FX, and more. It has 6 channel faders &#43; 2 send faders for FX. More info in this video:
+    <p> Did some network design for my home network. This will ensure that my new Virgin Media 1100mbps/50mps speed is fully utilised without any bottlenecks and will futureproof things up to at least 2.5Gbs/speed connections.
+I should be able to load balance both internet connections to utilise them both simultaniously in the future, but for now I want to be able to get greater than 1000mbit/s speed on a single device otherwise there is not much point in speed increases past 1000mbits. Also there is a 200-300mbits speed increase possible from my existing VM hardware that is not utilised in the current network.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2021-04-08 03:49:31 +0000 +0000'>April 8, 2021</span>&nbsp;·&nbsp;7 min</footer>
-  <a class="entry-link" aria-label="post link to Hybrid Serato DJ Pro DVS/Ableton Live DJ setup (21/4/21)" href="https://davidcraddock.net/2021/04/08/dj-setup-8-4-21/"></a>
+  <footer class="entry-footer"><span title='2022-05-14 23:15:20 +0000 +0000'>May 14, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Home Network Design" href="https://davidcraddock.net/2022/05/15/home-network-design/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">2020 Retrospective – Wow, what a year!
+    <h2 class="entry-hint-parent">DJ Setup 2/5/22
     </h2>
   </header>
   <div class="entry-content">
-    <p>I think, for obvious reasons, 2020 has been a year that no-one could really have expected. With COVID-19 and lockdown, a lot of things have changed, both in my life, in everyone’s lives, and in the workplace.
-My online DJing setup
-Things that went well I changed medication around March 2020 which has resulted in significant weight loss, as expected. The previous medication was making me put on and retain weight even when I was eating very very little. In March 2020 my weight was nearly 136KG and now it has gone down to 125KG in March 2021. I have not been doing more exercise, indeed quite a bit less, as I have been staying indoors most of the time. The weight loss has had a very good effect on my general health and my sleep. I am much happier than this time last year. Working corporate jobs I found very very stressful and apart from being financially rewarding, I wasn’t getting much else out of it. My mental and physical health was suffering. My relationship with my wife and friends are much better now because I am less miserable all the time. I have taken up DJing over the internet and have turned this into a part-time income. It is so much fun. I used to DJ in clubs in my 20s regularly and I didn’t realise how much I had missed it. It is great to have a way to connect socially with people in lockdown and people really appreciate my DJ sets, which is great. Working from home has been a great change for me. Before the pandemic I wanted to work from home 100% anyway, because I was ending up spending at least 2 hours commuting to and from work, it was costing a lot (because I can’t drive) and it was taking up a lot of time and energy. My work from home setup
+    <p>This is my current DJ setup that I use for Twitch streaming mainly.
+2x Reloop RL-8000mk2 turntables. 2x Serato ‘Butter Rug’ Slipmats. 2x Concorde Mk2 Digital carts. Numark NDX500 CDJ which I use for playing CDs, and as a Serato Controller as it has Serato Integration. Roland DJ-707m controller. Sennheiser HD-25 headphones. Rode Procaster mic with mic boom, pop shield and cage. t.bone MB 88U mic with table stand that I use as a guest microphone. AKAI LPD8 Midi controller which I use to trigger Serato Sampler samples. Macbook Pro Early 2015 Retina running Serato DJ Pro. Behringer TD-3 acid groovebox for adding acid patterns over the top of the Roland drum machine. The audio signal flow is below:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2021-03-04 19:02:19 +0000 GMT'>March 4, 2021</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to 2020 Retrospective – Wow, what a year!" href="https://davidcraddock.net/2021/03/04/2020-retrospective-wow-what-a-year/"></a>
+  <footer class="entry-footer"><span title='2022-05-02 22:11:13 +0000 +0000'>May 2, 2022</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to DJ Setup 2/5/22" href="https://davidcraddock.net/2022/05/02/dj-setup-2-5-22/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">26/2/2021 DJ Setup with Diagrams
+    <h2 class="entry-hint-parent">Video Tools I use for my Media Collection
     </h2>
   </header>
   <div class="entry-content">
-    <p>After the last post I have added Ableton Live and my Eurorack modular to my DJ setup, with a master clock being sent via MIDI cables from my Roland TR8 drum machine that syncs with Ableton. The drum machine also can be used creatively for drum fills etc.
-I hope these two diagrams explain my setup adequately - sometimes a picture is worth a thousand words! The ‘actor’ is me - I just couldn’t find a way to change that on http://draw.io :)
+    <p>I use and recommend the following software for Windows. They’re all quite easy to use. The paid software all have lifetime subscriptions, which are worth it because you need the latest updates in this area.
+Aiseesoft Blu-ray Player: (for playing Blu-Rays) (paid) https://www.aiseesoft.com/blu-ray-player/
+Easyfab Lossless Copy: (for ripping Blu-Rays, also works for DVDs) (paid) https://www.easefab.com/losslesscopy/
+VLC: (for playing ripped copies) (free) https://www.videolan.org/
+Handbrake: (for converting between different video formats and compressing video) (free) https://handbrake.fr/
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2021-02-26 17:26:22 +0000 GMT'>February 26, 2021</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to 26/2/2021 DJ Setup with Diagrams" href="https://davidcraddock.net/2021/02/26/26-2-2021-dj-setup-with-diagrams/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DJ Books: Reviewed
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> The classic!
-Yes! Some people actually write and read BOOKS on DJing. As if YouTube wasn’t enough. Well it can be enough.. but YouTube is also a cess pit of rubbish information, and at least a book has a better chance of being properly edited and reviewed. Also reading a book makes you more intellectual. Which is utterly true.
-So. I have been reading through these DJing books to see if they could teach me something I didn’t know about DJing after over 10 years doing it. And there were quite a few interesting techniques and tricks that I learned from these.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2021-02-18 16:56:59 +0000 GMT'>February 18, 2021</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to DJ Books: Reviewed" href="https://davidcraddock.net/2021/02/18/dj-books-reviewed/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Twitch Streaming Technical Setup
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> I thought I’d write a bit here about my Twitch DJing setup and some of the hardware and software I’m using. Twitch streaming has become very popular over the lockdown period, and I think people might be interested in how I have configured my stream. Something that seperates my stream from anyone else I’ve seen on Twitch is that is that I do live vinyl DJing AND live VJing at the same time on my stream. This is how I achieve it.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2021-02-14 23:57:54 +0000 GMT'>February 14, 2021</span>&nbsp;·&nbsp;7 min</footer>
-  <a class="entry-link" aria-label="post link to Twitch Streaming Technical Setup" href="https://davidcraddock.net/2021/02/14/twitch-dj-streaming-technical-setup/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">David’s Guide to The News
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Journalism has deteriorated to a huge degree in the online age. A lot of articles and video content are one-sided short ‘clickbait’ – short messages designed to trigger an extreme emotional reaction. ALMOST ALL journalism is like this these days, it doesn’t matter if you have a highly established news network you have been trusting for decades, they have all had to adopt this low-quality strategy due to the ultra-competitive and dire financial situation that all news reporting finds itself in. However a lot of people still take news content at complete face value, and this leads to a huge number of people being misled about the real facts.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2021-01-08 08:50:03 +0000 GMT'>January 8, 2021</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to David’s Guide to The News" href="https://davidcraddock.net/2021/01/08/davids-guide-to-the-news/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Finally my 27U Eurorack is complete!
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> The three sections Left 9U section Right 9U section Middle 9U section So.. finally my 27U Eurorack modular synthesiser is complete. I have filled up the third - and surely last, as there is no more room in the studio! - case. I started this Eurorack modular in 2015.. so I am glad it is all complete now. I put in a small amount nearly every month for new modules. I am not some ‘rich kid’ who could afford to buy everything at once - and indeed I think my gradual approach has benefitted the overall modular because it’s made me think about what I actually need, and given me time to learn as I go along.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2020-12-11 22:03:36 +0000 GMT'>December 11, 2020</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Finally my 27U Eurorack is complete!" href="https://davidcraddock.net/2020/12/11/finally-my-27u-eurorack-is-complete/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Ivy Bridge 2011 PCs are still useful today
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>In our house, seperate to my main PC (see the tab above) we still have two Ivy Bridge-based PCs:
-Conny’s PC
-i7-3770K 16GB DDR3 RAM Nvidea Radeon 970 Graphics Card 250 GB SSD Windows 10 My wife uses this as her main PC, and plays quite a few games with it. For a CPU and motherboard that I put together in 2011 or so, I am quite amazed it still runs adequetely! It runs the games she wants to play, the most graphically intensive being Deadpool, but it will also cope with Borderlands 2, Skyrim Special Edition, Shadow Warrior 2, and others. She is not interested in the top graphics games, but it runs just fine.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2020-10-13 18:06:30 +0000 +0000'>October 13, 2020</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to Ivy Bridge 2011 PCs are still useful today" href="https://davidcraddock.net/2020/10/13/ivy-bridge-2011-pcs-are-still-useful-today/"></a>
+  <footer class="entry-footer"><span title='2022-03-16 17:58:33 +0000 GMT'>March 16, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Video Tools I use for my Media Collection" href="https://davidcraddock.net/2022/03/16/video-tools-i-use-for-my-media-collection/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://davidcraddock.net/page/4/">
-      «&nbsp;Prev&nbsp;
+      «&nbsp;Prev&nbsp;4/36
     </a>
-    <a class="next" href="https://davidcraddock.net/page/6/">Next&nbsp;&nbsp;»
+    <a class="next" href="https://davidcraddock.net/page/6/">Next&nbsp;6/36&nbsp;»
     </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -310,6 +288,18 @@ i7-3770K 16GB DDR3 RAM Nvidea Radeon 970 Graphics Card 250 GB SSD Windows 10 My 
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 </body>

@@ -10,7 +10,7 @@
 <meta name="description" content="Today I encountered problems configuring the windows version of the popular text editor VIM, so I thought I&rsquo;d write up a quick post talk about configuration files under the Windows version, if anyone becomes stuck like I did. I use Linux, OSX and Windows on a day-to-day basis, and VIM as a text editor for a lot of quick edits on all three platforms. Here&rsquo;s a quick comparison:
 Linux
 Linux is easy because that&rsquo;s what most people who use VIM run, and so it is very well tested.">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2010/01/10/config-files-for-the-windows-version-of-vim/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -65,11 +65,14 @@ Linux is easy because that&rsquo;s what most people who use VIM run, and so it i
 Linux
 Linux is easy because that&rsquo;s what most people who use VIM run, and so it is very well tested." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2010/01/10/config-files-for-the-windows-version-of-vim/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2010/01/10/config-files-for-the-windows-version-of-vim/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-01-10T23:06:06+00:00" />
 <meta property="article:modified_time" content="2010-01-10T23:06:06+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Config files for the Windows version of VIM"/>
 <meta name="twitter:description" content="Today I encountered problems configuring the windows version of the popular text editor VIM, so I thought I&rsquo;d write up a quick post talk about configuration files under the Windows version, if anyone becomes stuck like I did. I use Linux, OSX and Windows on a day-to-day basis, and VIM as a text editor for a lot of quick edits on all three platforms. Here&rsquo;s a quick comparison:
 Linux
@@ -109,8 +112,12 @@ Linux is easy because that&rsquo;s what most people who use VIM run, and so it i
   "articleBody": "Today I encountered problems configuring the windows version of the popular text editor VIM, so I thought I’d write up a quick post talk about configuration files under the Windows version, if anyone becomes stuck like I did. I use Linux, OSX and Windows on a day-to-day basis, and VIM as a text editor for a lot of quick edits on all three platforms. Here’s a quick comparison:\nLinux Linux is easy because that’s what most people who use VIM run, and so it is very well tested.\n~/.vimrc - Configuration file for command line vim. ~/.gvimrc - Configuration file for gui vim.\nOSX OSX is simple also, as it’s based on unix:\n~/.vimrc - Configuration file for command line vim. ~/.gvimrc - Configuration file for gui vim.\nWindows Windows is not easy at all.. it doesn’t have a unix file structure, and doesn’t have support for the unix hidden file names, that start with a ‘.’, ie: ‘.vimrc’, ‘.bashrc’, and so on. Most open-source programs like VIM that require these hidden configuration files, and have been ported over to windows, seem to adopt this naming convention: ‘_vimrc’, ‘_bashrc’.. and so forth. So:\n_vimrc - Configuration file for command line vim. _gvimrc - Configuration file for gui vim.\nRenaming configuration files from “.” to “_” wouldn’t make much difference on its own. You’d have to rename your files, but.. big deal. It’s not much of a problem.\nAnother, more tricky, problem you may encounter however, is that there’s no clear home directory on windows systems. Each major incarnation of windows seems to have a slightly different way of dealing with user’s files.. from 2000 to XP, a change, from XP to Vista, there is a change. I haven’t tried VIM on W7 yet, but it seems similar to Vista in structure, so this information may actually be consistent to W7.\nThe Vista 64 version of VIM I have, looks in another place for configuration files. For a global configuration file, it looks in “C:Program Files”. Yes.. “C:Program Files”. According to Vista 64’s version of VIM.. that’s the exact directory where I installed VIM. This is clearly not right. What’s happening is that the file system on windows is different to the unix-type file systems, and the VIM port is having problems adapting. The real VIM install directory is C:Program Filesvim72. Because VIM is looking for a global configuration file in “C:Program Files_vimrc”, it’ll never find it.\nNow you could override this with a batch file that sets the right environmental variables on startup, or you could change the environmental variables exported in windows, but I prefer to have a user-specified configuration file in my personal files directory, as it’s easier to backup and manage. If you wanted to specify the environmental variables yourself, which I’m guessing many will, the two environmental variables to override are:\n$VIM = the VIM install directory, not always set properly, as I mentioned. $HOME = the logged in user’s documents and settings directory, in windows speak this is also where the ‘user profile’ is stored, which is a collection of settings and configurations for the user. The exact directory will depend on which version of Windows you’re running, and if you override the HOME folder, you may have problems with other programs that rely on it being static.\nOn my Windows Vista 64 install:\n$VIM = “C:Program Files” $HOME = “C:UsersDave”\nYou can see what files VIM includes by running the handy command\nvim -V at a command prompt; it will go through the different settings and output something similar to this:\nSearching for \"C:UsersDave/vimfilesfiletype.vim\" Searching for \"C:Program Files/vimfilesfiletype.vim\" Searching for \"C:Program Filesvim72filetype.vim\" line 49: sourcing \"C:Program Filesvim72filetype.vim\" finished sourcing C:Program Filesvim72filetype.vim continuing in C:UsersDave_vimrc Searching for \"C:Program Files/vimfiles/afterfiletype.vim\" Searching for \"C:UsersDave/vimfiles/afterfiletype.vim\" Searching for \"ftplugin.vim\" in \"C:UsersDave/vimfiles,C:Program Files/vimfiles,C:Program Filesvim72,C:Program Files/vimfiles/after,C:UsersDave/vimfiles/after\" Searching for \"C:UsersDave/vimfilesftplugin.vim\" Searching for \"C:Program Files/vimfilesftplugin.vim\" Searching for \"C:Program Filesvim72ftplugin.vim\" line 49: sourcing \"C:Program Filesvim72ftplugin.vim\" finished sourcing C:Program Filesvim72ftplugin.vim continuing in C:UsersDave_vimrc Searching for \"C:Program Files/vimfiles/afterftplugin.vim\" Searching for \"C:UsersDave/vimfiles/afterftplugin.vim\" finished sourcing $HOME_vimrc Searching for \"plugin/**/*.vim\" in \"C:UsersDave/vimfiles,C:Program Files/vimfiles,C:Program Filesvim72,C:Program Files/vimfiles/after,C:UsersDave/vimfiles/after\" Searching for \"C:UsersDave/vimfilesplugin/**/*.vim\" Searching for \"C:Program Files/vimfilesplugin/**/*.vim\" Searching for \"C:Program Filesvim72plugin/**/*.vim\" sourcing \"C:Program Filesvim72plugingetscriptPlugin.vim\" finished sourcing C:Program Filesvim72plugingetscriptPlugin.vim sourcing \"C:Program Filesvim72plugingzip.vim\" finished sourcing C:Program Filesvim72plugingzip.vim sourcing \"C:Program Filesvim72pluginmatchparen.vim\" finished sourcing C:Program Filesvim72pluginmatchparen.vim sourcing \"C:Program Filesvim72pluginnetrwPlugin.vim\" finished sourcing C:Program Filesvim72pluginnetrwPlugin.vim sourcing \"C:Program Filesvim72pluginrrhelper.vim\" finished sourcing C:Program Filesvim72pluginrrhelper.vim sourcing \"C:Program Filesvim72pluginspellfile.vim\" finished sourcing C:Program Filesvim72pluginspellfile.vim sourcing \"C:Program Filesvim72plugintarPlugin.vim\" finished sourcing C:Program Filesvim72plugintarPlugin.vim sourcing \"C:Program Filesvim72plugintohtml.vim\" finished sourcing C:Program Filesvim72plugintohtml.vim sourcing \"C:Program Filesvim72pluginvimballPlugin.vim\" finished sourcing C:Program Filesvim72pluginvimballPlugin.vim sourcing \"C:Program Filesvim72pluginzipPlugin.vim\" finished sourcing C:Program Filesvim72pluginzipPlugin.vim Searching for \"C:Program Files/vimfiles/afterplugin/**/*.vim\" Searching for \"C:UsersDave/vimfiles/afterplugin/**/*.vim\" Reading viminfo file \"C:UsersDave_viminfo\" info Press ENTER or type command to continue Notice how it does pull in all the syntax highlighting macros and other extension files correctly, which are specified in the .vim files above.. but it doesn’t pull in the global configuration files that I’ve copied also to C:Program Filesvim72_gvimrc and C:Program Filesvim72_vimrc. However, it does pickup the files I copied to C:UsersDave.. both the C:UsersDave_vimrc and C:UsersDave_gvimrc are picked up, although VIM will normally read ‘_gvimrc’ when the gui version of VIM is run (called gvim).\nTo see exactly what those environmental variables are being set to, when you’re inside the editor, issue these two commands, and their values will be show in the editor:\n:echo $HOME :echo $VIM It seems to make sense for me - and perhaps you, if you’re working with VIM on windows - to place my _vimrc and _gvimrc files configuration files in $HOME in Vista. They are then picked up without having to worry about explicitly defining any environmental variables, creating a batch file, or any other hassle.\nYou can do this easily by the following two commands:\n:ed $HOME_vimrc :sp $HOME_gvimrc That will open the two new configuration files, side by side, and you can paste in your existing configuration that you’ve used in Linux, and windows will pick them up the next time you start VIM.\n",
   "wordCount" : "991",
   "inLanguage": "en",
-  "datePublished": "2010-01-10T23:06:06Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2010-01-10T23:06:06Z",
   "dateModified": "2010-01-10T23:06:06Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2010/01/10/config-files-for-the-windows-version-of-vim/"
@@ -129,7 +136,11 @@ Linux is easy because that&rsquo;s what most people who use VIM run, and so it i
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -140,9 +151,44 @@ Linux is easy because that&rsquo;s what most people who use VIM run, and so it i
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -154,7 +200,7 @@ Linux is easy because that&rsquo;s what most people who use VIM run, and so it i
     <h1 class="post-title entry-hint-parent">
       Config files for the Windows version of VIM
     </h1>
-    <div class="post-meta"><span title='2010-01-10 23:06:06 +0000 GMT'>January 10, 2010</span>&nbsp;·&nbsp;5 min
+    <div class="post-meta"><span title='2010-01-10 23:06:06 +0000 GMT'>January 10, 2010</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> <div class="toc">
@@ -198,63 +244,63 @@ $HOME = the logged in user&rsquo;s documents and settings directory, in windows 
 <p>On my Windows Vista 64 install:</p>
 <p><strong>$VIM = &ldquo;C:Program Files&rdquo;</strong> <strong>$HOME = &ldquo;C:UsersDave&rdquo;</strong></p>
 <p>You can see what files VIM includes by running the handy command</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>vim -V
-</span></span></code></pre></div><p>at a command prompt; it will go through the different settings and output something similar to this:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Searching for &#34;C:UsersDave/vimfilesfiletype.vim&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;C:Program Files/vimfilesfiletype.vim&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;C:Program Filesvim72filetype.vim&#34;
-</span></span><span style="display:flex;"><span>line 49: sourcing &#34;C:Program Filesvim72filetype.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72filetype.vim
-</span></span><span style="display:flex;"><span>continuing in C:UsersDave_vimrc
-</span></span><span style="display:flex;"><span>Searching for &#34;C:Program Files/vimfiles/afterfiletype.vim&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;C:UsersDave/vimfiles/afterfiletype.vim&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;ftplugin.vim&#34; in &#34;C:UsersDave/vimfiles,C:Program Files/vimfiles,C:Program Filesvim72,C:Program Files/vimfiles/after,C:UsersDave/vimfiles/after&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;C:UsersDave/vimfilesftplugin.vim&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;C:Program Files/vimfilesftplugin.vim&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;C:Program Filesvim72ftplugin.vim&#34;
-</span></span><span style="display:flex;"><span>line 49: sourcing &#34;C:Program Filesvim72ftplugin.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72ftplugin.vim
-</span></span><span style="display:flex;"><span>continuing in C:UsersDave_vimrc
-</span></span><span style="display:flex;"><span>Searching for &#34;C:Program Files/vimfiles/afterftplugin.vim&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;C:UsersDave/vimfiles/afterftplugin.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing $HOME_vimrc
-</span></span><span style="display:flex;"><span>Searching for &#34;plugin/**/*.vim&#34; in &#34;C:UsersDave/vimfiles,C:Program Files/vimfiles,C:Program Filesvim72,C:Program Files/vimfiles/after,C:UsersDave/vimfiles/after&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;C:UsersDave/vimfilesplugin/**/*.vim&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;C:Program Files/vimfilesplugin/**/*.vim&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;C:Program Filesvim72plugin/**/*.vim&#34;
-</span></span><span style="display:flex;"><span>sourcing &#34;C:Program Filesvim72plugingetscriptPlugin.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72plugingetscriptPlugin.vim
-</span></span><span style="display:flex;"><span>sourcing &#34;C:Program Filesvim72plugingzip.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72plugingzip.vim
-</span></span><span style="display:flex;"><span>sourcing &#34;C:Program Filesvim72pluginmatchparen.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72pluginmatchparen.vim
-</span></span><span style="display:flex;"><span>sourcing &#34;C:Program Filesvim72pluginnetrwPlugin.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72pluginnetrwPlugin.vim
-</span></span><span style="display:flex;"><span>sourcing &#34;C:Program Filesvim72pluginrrhelper.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72pluginrrhelper.vim
-</span></span><span style="display:flex;"><span>sourcing &#34;C:Program Filesvim72pluginspellfile.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72pluginspellfile.vim
-</span></span><span style="display:flex;"><span>sourcing &#34;C:Program Filesvim72plugintarPlugin.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72plugintarPlugin.vim
-</span></span><span style="display:flex;"><span>sourcing &#34;C:Program Filesvim72plugintohtml.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72plugintohtml.vim
-</span></span><span style="display:flex;"><span>sourcing &#34;C:Program Filesvim72pluginvimballPlugin.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72pluginvimballPlugin.vim
-</span></span><span style="display:flex;"><span>sourcing &#34;C:Program Filesvim72pluginzipPlugin.vim&#34;
-</span></span><span style="display:flex;"><span>finished sourcing C:Program Filesvim72pluginzipPlugin.vim
-</span></span><span style="display:flex;"><span>Searching for &#34;C:Program Files/vimfiles/afterplugin/**/*.vim&#34;
-</span></span><span style="display:flex;"><span>Searching for &#34;C:UsersDave/vimfiles/afterplugin/**/*.vim&#34;
-</span></span><span style="display:flex;"><span>Reading viminfo file &#34;C:UsersDave_viminfo&#34; info
-</span></span><span style="display:flex;"><span>Press ENTER or type command to continue
-</span></span></code></pre></div><p>Notice how it does pull in all the syntax highlighting macros and other extension files correctly, which are specified in the <strong>.vim</strong> files above.. but it doesn&rsquo;t pull in the global configuration files that I&rsquo;ve copied also to <strong>C:Program Filesvim72_gvimrc</strong> and <strong>C:Program Filesvim72_vimrc</strong>. However, it does pickup the files I copied to <strong>C:UsersDave</strong>.. both the <strong>C:UsersDave_vimrc</strong> and <strong>C:UsersDave_gvimrc</strong> are picked up, although VIM will normally read &lsquo;_gvimrc&rsquo; when the gui version of VIM is run (called gvim).</p>
+<pre tabindex="0"><code>vim -V
+</code></pre><p>at a command prompt; it will go through the different settings and output something similar to this:</p>
+<pre tabindex="0"><code>Searching for &#34;C:UsersDave/vimfilesfiletype.vim&#34;
+Searching for &#34;C:Program Files/vimfilesfiletype.vim&#34;
+Searching for &#34;C:Program Filesvim72filetype.vim&#34;
+line 49: sourcing &#34;C:Program Filesvim72filetype.vim&#34;
+finished sourcing C:Program Filesvim72filetype.vim
+continuing in C:UsersDave_vimrc
+Searching for &#34;C:Program Files/vimfiles/afterfiletype.vim&#34;
+Searching for &#34;C:UsersDave/vimfiles/afterfiletype.vim&#34;
+Searching for &#34;ftplugin.vim&#34; in &#34;C:UsersDave/vimfiles,C:Program Files/vimfiles,C:Program Filesvim72,C:Program Files/vimfiles/after,C:UsersDave/vimfiles/after&#34;
+Searching for &#34;C:UsersDave/vimfilesftplugin.vim&#34;
+Searching for &#34;C:Program Files/vimfilesftplugin.vim&#34;
+Searching for &#34;C:Program Filesvim72ftplugin.vim&#34;
+line 49: sourcing &#34;C:Program Filesvim72ftplugin.vim&#34;
+finished sourcing C:Program Filesvim72ftplugin.vim
+continuing in C:UsersDave_vimrc
+Searching for &#34;C:Program Files/vimfiles/afterftplugin.vim&#34;
+Searching for &#34;C:UsersDave/vimfiles/afterftplugin.vim&#34;
+finished sourcing $HOME_vimrc
+Searching for &#34;plugin/**/*.vim&#34; in &#34;C:UsersDave/vimfiles,C:Program Files/vimfiles,C:Program Filesvim72,C:Program Files/vimfiles/after,C:UsersDave/vimfiles/after&#34;
+Searching for &#34;C:UsersDave/vimfilesplugin/**/*.vim&#34;
+Searching for &#34;C:Program Files/vimfilesplugin/**/*.vim&#34;
+Searching for &#34;C:Program Filesvim72plugin/**/*.vim&#34;
+sourcing &#34;C:Program Filesvim72plugingetscriptPlugin.vim&#34;
+finished sourcing C:Program Filesvim72plugingetscriptPlugin.vim
+sourcing &#34;C:Program Filesvim72plugingzip.vim&#34;
+finished sourcing C:Program Filesvim72plugingzip.vim
+sourcing &#34;C:Program Filesvim72pluginmatchparen.vim&#34;
+finished sourcing C:Program Filesvim72pluginmatchparen.vim
+sourcing &#34;C:Program Filesvim72pluginnetrwPlugin.vim&#34;
+finished sourcing C:Program Filesvim72pluginnetrwPlugin.vim
+sourcing &#34;C:Program Filesvim72pluginrrhelper.vim&#34;
+finished sourcing C:Program Filesvim72pluginrrhelper.vim
+sourcing &#34;C:Program Filesvim72pluginspellfile.vim&#34;
+finished sourcing C:Program Filesvim72pluginspellfile.vim
+sourcing &#34;C:Program Filesvim72plugintarPlugin.vim&#34;
+finished sourcing C:Program Filesvim72plugintarPlugin.vim
+sourcing &#34;C:Program Filesvim72plugintohtml.vim&#34;
+finished sourcing C:Program Filesvim72plugintohtml.vim
+sourcing &#34;C:Program Filesvim72pluginvimballPlugin.vim&#34;
+finished sourcing C:Program Filesvim72pluginvimballPlugin.vim
+sourcing &#34;C:Program Filesvim72pluginzipPlugin.vim&#34;
+finished sourcing C:Program Filesvim72pluginzipPlugin.vim
+Searching for &#34;C:Program Files/vimfiles/afterplugin/**/*.vim&#34;
+Searching for &#34;C:UsersDave/vimfiles/afterplugin/**/*.vim&#34;
+Reading viminfo file &#34;C:UsersDave_viminfo&#34; info
+Press ENTER or type command to continue
+</code></pre><p>Notice how it does pull in all the syntax highlighting macros and other extension files correctly, which are specified in the <strong>.vim</strong> files above.. but it doesn&rsquo;t pull in the global configuration files that I&rsquo;ve copied also to <strong>C:Program Filesvim72_gvimrc</strong> and <strong>C:Program Filesvim72_vimrc</strong>. However, it does pickup the files I copied to <strong>C:UsersDave</strong>.. both the <strong>C:UsersDave_vimrc</strong> and <strong>C:UsersDave_gvimrc</strong> are picked up, although VIM will normally read &lsquo;_gvimrc&rsquo; when the gui version of VIM is run (called gvim).</p>
 <p>To see exactly what those environmental variables are being set to, when you&rsquo;re inside the editor, issue these two commands, and their values will be show in the editor:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:echo $HOME
-</span></span><span style="display:flex;"><span>:echo $VIM
-</span></span></code></pre></div><p>It seems to make sense for me - and perhaps you, if you&rsquo;re working with VIM on windows - to place my _vimrc and _gvimrc files configuration files in $HOME in Vista. They are then picked up without having to worry about explicitly defining any environmental variables, creating a batch file, or any other hassle.</p>
+<pre tabindex="0"><code>:echo $HOME
+:echo $VIM
+</code></pre><p>It seems to make sense for me - and perhaps you, if you&rsquo;re working with VIM on windows - to place my _vimrc and _gvimrc files configuration files in $HOME in Vista. They are then picked up without having to worry about explicitly defining any environmental variables, creating a batch file, or any other hassle.</p>
 <p>You can do this easily by the following two commands:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:ed $HOME_vimrc
-</span></span><span style="display:flex;"><span>:sp $HOME_gvimrc
-</span></span></code></pre></div><p>That will open the two new configuration files, side by side, and you can paste in your existing configuration that you&rsquo;ve used in Linux, and windows will pick them up the next time you start VIM.</p>
+<pre tabindex="0"><code>:ed $HOME_vimrc
+:sp $HOME_gvimrc
+</code></pre><p>That will open the two new configuration files, side by side, and you can paste in your existing configuration that you&rsquo;ve used in Linux, and windows will pick them up the next time you start VIM.</p>
 
 
   </div>
@@ -262,6 +308,19 @@ $HOME = the logged in user&rsquo;s documents and settings directory, in windows 
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2010/01/14/passed-the-w3schools-php-certification/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Passed the W3Schools PHP Certification</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2009/10/17/speed-climbing/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Speed Climbing</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -335,7 +394,7 @@ $HOME = the logged in user&rsquo;s documents and settings directory, in windows 
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -389,6 +448,18 @@ $HOME = the logged in user&rsquo;s documents and settings directory, in windows 
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

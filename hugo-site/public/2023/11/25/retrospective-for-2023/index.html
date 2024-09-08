@@ -26,7 +26,7 @@ There has been a worldwide downturn for software jobs, just as I had to take som
 
 
 ">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2023/11/25/retrospective-for-2023/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -97,11 +97,14 @@ There has been a worldwide downturn for software jobs, just as I had to take som
 
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2023/11/25/retrospective-for-2023/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2023/11/25/retrospective-for-2023/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-11-25T20:07:59+00:00" />
 <meta property="article:modified_time" content="2023-11-25T20:07:59+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Retrospective for 2023"/>
 <meta name="twitter:description" content="Every year towards the end of the year, I put together a retrospective of events that have happened over the year - the good, bad and the ugly.
 The Bad
@@ -157,8 +160,12 @@ There has been a worldwide downturn for software jobs, just as I had to take som
   "articleBody": "Every year towards the end of the year, I put together a retrospective of events that have happened over the year - the good, bad and the ugly.\nThe Bad Most of the year was taken up with treatment for relapsed Hodgkins Lymphoma cancer. After the clinical immunotherapy drug trial finished in Feb 2023, cancer was unfortunately still detected, so it did not completely cure it. I had a further (awful) spell in hospital around March/April where my Hickman line became infected and I had a severe mental health episode, probably caused by the strong antibiotics being pumped through my system. Finally I was accepted for a stem cell transplant, and had my transplant on 4th July. We have had to deal with complications of cancer elsewhere in the family, not just my mum’s own cancer treatment being ongoing, but the financial impact of the family having to support both of us, is quite a significant burden. The Good Thankfully, I’m finally in remission for cancer! I have been in remission for 6 months, and if I make it to 2 years, then I am effectively cured. I have a 75% chance of it not coming back within that time, approximately. We got an absolute ton of stuff done on the house, and I have an awesome gaming setup, an awesome DJing setup, an awesome music production setup, an awesome high speed network and server setup, and an awesome WFH setup. All of the goals I set myself of things I wanted to achieve during my downtime having cancer treatment nearly 2 years ago, are more or less finished now. We have decided that we’re moving out of Manchester. We are going to move to Chester, which promises a much, much nicer, quieter, and actually, cheaper place to live now that I am committed to a 100% WFH work life. Things are progressing well with the house sale, and we’ve got a lot of interest so far. I have got fitter and healthier and my posture has got better over the year. I have also managed to reduce the medication I am on, which has helped my health. The Ugly There has been a worldwide downturn for software jobs, just as I had to take some time off my career due to work reasons. This downturn is probably comparable to the 2008/9 downturn in software jobs around the financial crisis. This is definitely bad news for everyone in software. ",
   "wordCount" : "409",
   "inLanguage": "en",
-  "datePublished": "2023-11-25T20:07:59Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2023-11-25T20:07:59Z",
   "dateModified": "2023-11-25T20:07:59Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2023/11/25/retrospective-for-2023/"
@@ -177,7 +184,11 @@ There has been a worldwide downturn for software jobs, just as I had to take som
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -188,9 +199,44 @@ There has been a worldwide downturn for software jobs, just as I had to take som
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -202,7 +248,7 @@ There has been a worldwide downturn for software jobs, just as I had to take som
     <h1 class="post-title entry-hint-parent">
       Retrospective for 2023
     </h1>
-    <div class="post-meta"><span title='2023-11-25 20:07:59 +0000 GMT'>November 25, 2023</span>&nbsp;·&nbsp;2 min
+    <div class="post-meta"><span title='2023-11-25 20:07:59 +0000 GMT'>November 25, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> <div class="toc">
@@ -250,6 +296,19 @@ There has been a worldwide downturn for software jobs, just as I had to take som
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2024/01/11/music-acquisition-process-for-dj-music/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Music Acquisition Process for DJ Music</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2023/09/22/latest-remote-guitar-lesson-setup/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Latest Remote Guitar Lesson Setup</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -323,7 +382,7 @@ There has been a worldwide downturn for software jobs, just as I had to take som
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -377,6 +436,18 @@ There has been a worldwide downturn for software jobs, just as I had to take som
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

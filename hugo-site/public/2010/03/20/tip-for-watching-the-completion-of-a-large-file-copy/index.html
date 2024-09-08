@@ -11,7 +11,7 @@
 
 Forget the wonderful windows progress bar, and imagine I&rsquo;m in the world of command-line Linux, and I want to copy a 484MB file, called VMware-server-2.0.2-203138.i386.tar.gz, from my home directory to a remote server. But I want to figure out how long it&rsquo;s going to take.
 1. First I can run a &ldquo;du -m&rdquo; command to get the total MB size of the original file:">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2010/03/20/tip-for-watching-the-completion-of-a-large-file-copy/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -67,11 +67,14 @@ Forget the wonderful windows progress bar, and imagine I&rsquo;m in the world of
 Forget the wonderful windows progress bar, and imagine I&rsquo;m in the world of command-line Linux, and I want to copy a 484MB file, called VMware-server-2.0.2-203138.i386.tar.gz, from my home directory to a remote server. But I want to figure out how long it&rsquo;s going to take.
 1. First I can run a &ldquo;du -m&rdquo; command to get the total MB size of the original file:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2010/03/20/tip-for-watching-the-completion-of-a-large-file-copy/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2010/03/20/tip-for-watching-the-completion-of-a-large-file-copy/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-03-20T22:44:06+00:00" />
 <meta property="article:modified_time" content="2010-03-20T22:44:06+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Tip for watching the completion of a large file copy"/>
 <meta name="twitter:description" content="
 
@@ -112,8 +115,12 @@ Forget the wonderful windows progress bar, and imagine I&rsquo;m in the world of
   "articleBody": " Forget the wonderful windows progress bar, and imagine I’m in the world of command-line Linux, and I want to copy a 484MB file, called VMware-server-2.0.2-203138.i386.tar.gz, from my home directory to a remote server. But I want to figure out how long it’s going to take.\n1. First I can run a “du -m” command to get the total MB size of the original file:\ndu -m /home/david/VMware-server-2.0.2-203138.i386.tar.gz I.e: david@believe:~$ du -m VMware-server-2.0.2-203138.i386.tar.gz 484 VMware-server-2.0.2-203138.i386.tar.gz\nNow I know it is approximately 484MB.\n2. Then I run the copy. I’m copying the file from /home/david/ to /opt/remote/myserver, which is a remotely mounted directory on a server somewhere in Canada.\ndavid@believe:~$ cp ./VMware-server-2.0.2-203138.i386.tar.gz /opt/remote/myserver/\nAt this point cp will just hang until it’s finished. There is normally no progress indicator or anything. But I want to figure out how much of the file has been copied, so I can figure out how much is left to copy, and get a rough idea of the progress.\n3. So I SSH into the remote server in Canada, and run this command\ndavid@myserver:~$ watch du -m ./VMware-server-2.0.2-203138.i386.tar.gz\nthe copy command by default seems to be incremental, ie: piece by piece, not all at once. Therefore with the “Watch” command, you can watch the size, in MB, of the new file as it accumulates. The watch command will refresh every 2 seconds, so you’ll be updated as the copy goes on.\nYou can probably invoke a progress meter with the cp command, or use rsync. Rsync is much better for large file copies, and remote file copies. But the advantage of the method above is that you can watch file copies already executed without any special arguments, which I sometimes find very useful when I remember that that file I already started copying isn’t 200MB.. it’s actually 2.5GB.\n",
   "wordCount" : "301",
   "inLanguage": "en",
-  "datePublished": "2010-03-20T22:44:06Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2010-03-20T22:44:06Z",
   "dateModified": "2010-03-20T22:44:06Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2010/03/20/tip-for-watching-the-completion-of-a-large-file-copy/"
@@ -132,7 +139,11 @@ Forget the wonderful windows progress bar, and imagine I&rsquo;m in the world of
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -143,9 +154,44 @@ Forget the wonderful windows progress bar, and imagine I&rsquo;m in the world of
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -157,7 +203,7 @@ Forget the wonderful windows progress bar, and imagine I&rsquo;m in the world of
     <h1 class="post-title entry-hint-parent">
       Tip for watching the completion of a large file copy
     </h1>
-    <div class="post-meta"><span title='2010-03-20 22:44:06 +0000 GMT'>March 20, 2010</span>&nbsp;·&nbsp;2 min
+    <div class="post-meta"><span title='2010-03-20 22:44:06 +0000 GMT'>March 20, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> 
@@ -166,8 +212,8 @@ Forget the wonderful windows progress bar, and imagine I&rsquo;m in the world of
 </a></p>
 <p>Forget the wonderful windows progress bar, and imagine I&rsquo;m in the world of command-line Linux, and I want to copy a 484MB file, called VMware-server-2.0.2-203138.i386.tar.gz, from my home directory to a remote server. But I want to figure out how long it&rsquo;s going to take.</p>
 <p>1. First I can run a &ldquo;du -m&rdquo; command to get the total MB size of the original file:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>du -m /home/david/VMware-server-2.0.2-203138.i386.tar.gz
-</span></span></code></pre></div><p>I.e:
+<pre tabindex="0"><code>du -m /home/david/VMware-server-2.0.2-203138.i386.tar.gz
+</code></pre><p>I.e:
 <code>david@believe:~$ du -m VMware-server-2.0.2-203138.i386.tar.gz 484     VMware-server-2.0.2-203138.i386.tar.gz</code></p>
 <p>Now I know it is approximately 484MB.</p>
 <p>2. Then I run the copy. I&rsquo;m copying the file from /home/david/ to /opt/remote/myserver, which is a remotely mounted directory on a server somewhere in Canada.</p>
@@ -184,6 +230,19 @@ Forget the wonderful windows progress bar, and imagine I&rsquo;m in the world of
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2010/03/22/how-to-remove-nano-vim-and-other-editors-backup-files-out-of-a-directory-tree/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>How to remove nano, vim and other editors&#39; backup files out of a directory tree</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2010/03/20/the-linux-file-structure/">
+    <span class="title">Next »</span>
+    <br>
+    <span>The Linux Root Directory, Explained</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -257,7 +316,7 @@ Forget the wonderful windows progress bar, and imagine I&rsquo;m in the world of
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -311,6 +370,18 @@ Forget the wonderful windows progress bar, and imagine I&rsquo;m in the world of
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

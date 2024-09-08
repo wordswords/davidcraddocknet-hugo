@@ -10,7 +10,7 @@
 <meta name="description" content="I really like my Withings Mattress-Based Sleep Tracker.
 I keep unusual sleeping hours a lot of the time, as I&rsquo;m undergoing treatment, and a lot of the medication I&rsquo;m taking effect my sleep. Even when I&rsquo;m relatively healthy, some of the medication I&rsquo;m on for a long-term condition also affects my sleep.
 What&rsquo;s more, I enjoy a non-standard sleeping schedule. I find I get more work done in the early morning or late at night. As I work from home 100% this is not as problematic as it used to be.">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2022/08/18/sleep-tracking/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -65,11 +65,14 @@ What&rsquo;s more, I enjoy a non-standard sleeping schedule. I find I get more w
 I keep unusual sleeping hours a lot of the time, as I&rsquo;m undergoing treatment, and a lot of the medication I&rsquo;m taking effect my sleep. Even when I&rsquo;m relatively healthy, some of the medication I&rsquo;m on for a long-term condition also affects my sleep.
 What&rsquo;s more, I enjoy a non-standard sleeping schedule. I find I get more work done in the early morning or late at night. As I work from home 100% this is not as problematic as it used to be." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2022/08/18/sleep-tracking/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2022/08/18/sleep-tracking/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-08-18T19:58:57+00:00" />
 <meta property="article:modified_time" content="2022-08-18T19:58:57+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Sleep Tracking"/>
 <meta name="twitter:description" content="I really like my Withings Mattress-Based Sleep Tracker.
 I keep unusual sleeping hours a lot of the time, as I&rsquo;m undergoing treatment, and a lot of the medication I&rsquo;m taking effect my sleep. Even when I&rsquo;m relatively healthy, some of the medication I&rsquo;m on for a long-term condition also affects my sleep.
@@ -109,8 +112,12 @@ What&rsquo;s more, I enjoy a non-standard sleeping schedule. I find I get more w
   "articleBody": "I really like my Withings Mattress-Based Sleep Tracker.\nI keep unusual sleeping hours a lot of the time, as I’m undergoing treatment, and a lot of the medication I’m taking effect my sleep. Even when I’m relatively healthy, some of the medication I’m on for a long-term condition also affects my sleep.\nWhat’s more, I enjoy a non-standard sleeping schedule. I find I get more work done in the early morning or late at night. As I work from home 100% this is not as problematic as it used to be.\nIt is still good to monitor your sleep though, when you are ill or like me, when you have odd sleeping hours.\nLike a lot of these smart health things, it is not perfect. Sometimes it will create erroneous data, and then correct itself a few days later, such as when I was in hospital, and it registered someone sleeping in my bed :D My wife was quite surprised when I told her. Thankfully for both of us it corrected itself a day later.\nAlso it comes up with all this wake-up time and time spend in bed not sleeping, data which I don’t really trust. I don’t think it’s reliable enough. The core metric, amount of time asleep, is fairly accurate though, within a few hours. When averaged over 1-2 weeks it does give you a good general idea of how much sleep you’re getting.\nSleep is so important for recovery and feeling well. You can compare the statistics of two fortnights, one when I was being pumped full of steroids and hardly sleeping at all, and one when I was relatively medication free and relaxed:\nNot Relaxed: As you can see, I was getting max about 3 hours a night.\nRelaxed: Although the latest week is not full, it’s a much more healthy 6 hours or so on average.\nI find if I am logging 2-3 hours a night sleep for more than a couple of weeks, something is seriously wrong, however I might feel at the time, and I should see a medical professional about it. It is easy to forget this when you might be energised and “doing all the things” but there is a danger that you might be manic or hyperactive and that really isn’t good long term. So this is why I recommend the sleep tracker.\n",
   "wordCount" : "394",
   "inLanguage": "en",
-  "datePublished": "2022-08-18T19:58:57Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2022-08-18T19:58:57Z",
   "dateModified": "2022-08-18T19:58:57Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2022/08/18/sleep-tracking/"
@@ -129,7 +136,11 @@ What&rsquo;s more, I enjoy a non-standard sleeping schedule. I find I get more w
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -140,9 +151,44 @@ What&rsquo;s more, I enjoy a non-standard sleeping schedule. I find I get more w
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -154,7 +200,7 @@ What&rsquo;s more, I enjoy a non-standard sleeping schedule. I find I get more w
     <h1 class="post-title entry-hint-parent">
       Sleep Tracking
     </h1>
-    <div class="post-meta"><span title='2022-08-18 19:58:57 +0000 +0000'>August 18, 2022</span>&nbsp;·&nbsp;2 min
+    <div class="post-meta"><span title='2022-08-18 19:58:57 +0000 +0000'>August 18, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> <div class="toc">
@@ -197,6 +243,19 @@ What&rsquo;s more, I enjoy a non-standard sleeping schedule. I find I get more w
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2022/09/01/my-ideal-job/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>My Job Requirements</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2022/08/09/digital-game-collecting/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Digital Game Collecting</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -270,7 +329,7 @@ What&rsquo;s more, I enjoy a non-standard sleeping schedule. I find I get more w
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -324,6 +383,18 @@ What&rsquo;s more, I enjoy a non-standard sleeping schedule. I find I get more w
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

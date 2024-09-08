@@ -8,8 +8,8 @@
 <meta name="robots" content="index, follow">
 <title>DavidCraddock.net</title>
 
-<meta name="description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK.">
-<meta name="author" content="">
+<meta name="description" content="DavidCraddock.net">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/feed.xml">
+<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/index.xml">
 <link rel="alternate" type="application/json" href="https://davidcraddock.net/index.json">
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/">
 <noscript>
@@ -62,13 +62,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
 <meta property="og:title" content="DavidCraddock.net" />
-<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
+<meta property="og:description" content="DavidCraddock.net" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://davidcraddock.net/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 
-<meta name="twitter:card" content="summary"/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="DavidCraddock.net"/>
-<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK."/>
+<meta name="twitter:description" content="DavidCraddock.net"/>
 
 <script type="application/ld+json">
 {
@@ -76,10 +79,10 @@
   "@type": "Organization",
   "name": "DavidCraddock.net",
   "url": "https://davidcraddock.net/",
-  "description": "The personal blog of David Craddock, a software engineer based in Manchester, UK.",
+  "description": "DavidCraddock.net",
   "thumbnailUrl": "https://davidcraddock.net/favicon.ico",
   "sameAs": [
-      
+      "https://github.com/wordswords"
   ]
 }
 </script>
@@ -87,7 +90,11 @@
 
 <body class="list" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -98,9 +105,44 @@
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -108,117 +150,87 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">OpenSocial
+    <h2 class="entry-hint-parent">Get rid of the &#39;most visited sites&#39; Grid on Chrome
     </h2>
   </header>
   <div class="entry-content">
-    <p>This is going to be absolutely huge:
-[youtube https://www.youtube.com/watch?v=RytmNqEHYiE&amp;rel=1]
+    <p>Not that I particularly look at anything weird, but when I’m showing someone my computer I don’t want to have my ‘most visited sites’ pop up when I fire up Chrome. The following Chrome extension will get rid of the default loading page, and just display a blank page:
+https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbekmfgabipmfilij
 </p>
   </div>
-  <footer class="entry-footer"><span title='2007-11-24 04:25:29 +0000 GMT'>November 24, 2007</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to OpenSocial" href="https://davidcraddock.net/2007/11/24/opensocial/"></a>
+  <footer class="entry-footer"><span title='2015-06-21 17:49:00 +0000 +0000'>June 21, 2015</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Get rid of the &#39;most visited sites&#39; Grid on Chrome" href="https://davidcraddock.net/2015/06/21/get-rid-of-the-most-visited-sites-grid-on-chrome/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">An interesting blog written by a friend of mine
+    <h2 class="entry-hint-parent">Open Source! Device API and Device API-Android on Github
     </h2>
   </header>
   <div class="entry-content">
-    <p>My friend Adam has a blog featuring interesting internet finds. Check it out:
-One Idea
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2007-11-12 20:03:00 +0000 GMT'>November 12, 2007</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to An interesting blog written by a friend of mine" href="https://davidcraddock.net/2007/11/12/an-interesting-blog-written-by-a-friend-of-mine/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">A bit of theory..
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I’ve been trying to learn a lot about search engines lately, as I’ve been starting at an internet marketing firm. I found this excellent list of online materials for university courses related to search engines:
-http://clair.si.umich.edu:8080/wordpress/?p=11
-In particular, these seem especially relevant:
-The Structure of Information Networks - http://www.cs.cornell.edu/Courses/cs685/2002fa/ (a good introduction) Search Engine Technology - http://www1.cs.columbia.edu/~radev/SET07.htm (a great course) Information Retreival and Web Search - http://www.cs.utexas.edu/~mooney/ir-course/ (less math than the columbia course, and thus somewhat easier follow) Networked Life - http://www.cis.upenn.edu/~mkearns/teaching/NetworkedLife/ - (a course on networked societies for humanities students, relavent to social networks and such) </p>
-  </div>
-  <footer class="entry-footer"><span title='2007-06-02 14:14:15 +0000 +0000'>June 2, 2007</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to A bit of theory.." href="https://davidcraddock.net/2007/06/02/a-bit-of-theory/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Craiglist opens a Brighton, UK section
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I just noticed that US bulletinboard giant Craigslist.com has opened a Brighton UK section of their website! There are a few posts already. At the moment, Gumtree’s Brighton Section is massively popular here. I’ve recurited several flatmates using Gumtree, and am basing my local housing search around it.
-It will be interesting to see how Gumtree.com fares now that Craigslist.com has competition in the Brighton local area.
+    <p>Two Ruby gems that I contributed to from my days in the BBC’s TITAN (Test Tools and Infrastructure) team, have been open-sourced. So finally I can say that I have made proper open-source contributions. The gems are for making automating of Android phones via Android Calabash easier, and are used in a lot of the mobile testing we do at the BBC. Here they are:
+https://github.com/bbc/device_api https://github.com/bbc/device_api-android Here is my Github profile, which doesn’t look very active on the surface, but I have been contributing to repositories which remain private at the moment, so my history is not visible.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2007-05-17 02:14:01 +0000 +0000'>May 17, 2007</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Craiglist opens a Brighton, UK section" href="https://davidcraddock.net/2007/05/17/craiglist-opens-a-brighton-uk-section/"></a>
+  <footer class="entry-footer"><span title='2015-06-21 17:28:22 +0000 +0000'>June 21, 2015</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Open Source! Device API and Device API-Android on Github" href="https://davidcraddock.net/2015/06/21/open-source-device-api-and-device-api-android-on-github/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">My Nabaztag
+    <h2 class="entry-hint-parent">Instruments That I Use
     </h2>
   </header>
   <div class="entry-content">
-    <p>Nabaztag (Armenian for “rabbit”) is a Wi-Fi enabled rabbit, manufactured by Violet. The Nabaztag is a “smart object”; it can connect to the Internet (for example to download weather forecasts, read its owner’s email, etc). It is also fully customizable and programmable. - Wikipedia.org
-Here is our Nabaztag - Francois Xavier:
-Of course, I’ve been messing around with poor old Francois’s programming..
-With the help of OpenNab, a proxy server that masquerades as an official Nabaztag server, you can make your Nabaztag do all kinds of tricks. At the moment I’m getting him to read out what’s currently showing on TV when someone presses his button.
+    <p>I have a lot of different instruments, both hardware and software, for making music, but here is what I use the most at the moment:
+Piano I have an actual electric piano but I don’t use the onboard sound engine, preferring to use it as a midi controller for a software piano sound. Recently I bought Ableton Live Full Suite, before I was using the ‘Grand Piano’ sound from the default install. Now there is a whole ‘Piano’ Ableton Live pack, and that seems to offer much more realistic piano sounds.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2007-05-08 04:01:16 +0000 +0000'>May 8, 2007</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to My Nabaztag" href="https://davidcraddock.net/2007/05/08/my-nabaztag/"></a>
+  <footer class="entry-footer"><span title='2015-06-21 17:05:00 +0000 +0000'>June 21, 2015</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Instruments That I Use" href="https://davidcraddock.net/2015/06/21/instruments-that-i-use/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">NVIDIA GeForce4 MX 420 under Ubuntu Dapper Drake
+    <h2 class="entry-hint-parent">Modular Progress
     </h2>
   </header>
   <div class="entry-content">
-    <p>My GeForce4 MX 420 didn’t work properly with OpenGL under a fresh install of Dapper Drake. Fixing it, however, proved to be really easy:
-Install the nvidia package: $ apt-get install nvidia
-Edit /etc/X11/xorg.conf and replace the ‘driver’ where it says ’nv’ with “nvidia”: Section “Device” Identifier “NVIDIA Corporation NV17 [GeForce4 MX 420]” #Driver “nv” Driver “nvidia” BusID “PCI:1:0:0” EndSection
+    <p>Specs
+I have finished filling the top half of my Eurorack case, see above. Here is a list of modules:
+Dual VCA - A-132-3 Buffered Multiples - Intellij Buff Mult VCO #1 - A-110-1 VCO VCO #2 - A-110-1 VCO Low Pass Filter - A-120 Multiples #1 - A-180-1 Multiples #2 - A-180-1 Quantizer - A-156 Dual Quantizer Envelope Generator - A-140 ADSR Noise Generator/Random - A-118 Quad LFO - A-143-3 Quad LFO Next Moves:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2007-04-09 18:26:36 +0000 +0000'>April 9, 2007</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to NVIDIA GeForce4 MX 420 under Ubuntu Dapper Drake" href="https://davidcraddock.net/2007/04/09/nvidia-geforce4-mx-420-under-ubuntu-dapper-drake/"></a>
+  <footer class="entry-footer"><span title='2015-06-21 16:18:11 +0000 +0000'>June 21, 2015</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Modular Progress" href="https://davidcraddock.net/2015/06/21/eurorack-progress/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">The topic of this blog
+    <h2 class="entry-hint-parent">Modular Synthesizers
     </h2>
   </header>
   <div class="entry-content">
-    <p>This blog will be about my perspective on technology. Anything that catches my interest will be fair game, but mainly it will revolve around internet technology and the development of such.
-It will allow me to create an online presence, and to improve my writing skills.
-I hope you will find the time to check back on this blog and watch it progress.
-</p>
+    <p>I am putting together a small modular synthesiser setup. Modular synthesizers are synthesizers composed of small individual modules, which are wired up to create a circuit for producing sound. They were very popular in the 1970s, with big bands such as Emmerson, Lake and Palmer, Kraftwerk and Jean Michael Jarre all owning big modular setups:
+Modular synthesisers have had a resurgence in recent years with modern versions becoming available. One producer of modular synthesiser modules is Doepfer, a German company who’s modular synthesizer standard ‘Eurorack’ has become very popular recently. I have decided to build a small Eurorack modular, here it is so far:
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2007-04-02 18:16:45 +0000 +0000'>April 2, 2007</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to The topic of this blog" href="https://davidcraddock.net/2007/04/02/hello-world/"></a>
+  <footer class="entry-footer"><span title='2015-01-30 00:15:11 +0000 GMT'>January 30, 2015</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Modular Synthesizers" href="https://davidcraddock.net/2015/01/30/modular-synthesizers/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://davidcraddock.net/page/17/">
-      «&nbsp;Prev&nbsp;
+      «&nbsp;Prev&nbsp;17/36
+    </a>
+    <a class="next" href="https://davidcraddock.net/page/19/">Next&nbsp;19/36&nbsp;»
     </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -272,6 +284,18 @@ I hope you will find the time to check back on this blog and watch it progress.
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 </body>

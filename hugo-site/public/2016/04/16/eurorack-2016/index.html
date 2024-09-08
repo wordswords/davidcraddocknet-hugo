@@ -12,7 +12,7 @@
 So.. the problem, as so many people have said, with getting into building a Eurorack modular synthesizer is that it becomes addictive, and you inevitably spend more than you can really afford. That said.. I now have a great fully customised synthesiser for what I want to do :) The layout is:
 Top shelf:
 3 oscilators and noise generator in the top left, 4 VCAs and S&amp;H and Ring Mod sections in the mid center, LFOs in the top right.">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2016/04/16/eurorack-2016/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -69,11 +69,14 @@ So.. the problem, as so many people have said, with getting into building a Euro
 Top shelf:
 3 oscilators and noise generator in the top left, 4 VCAs and S&amp;H and Ring Mod sections in the mid center, LFOs in the top right." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2016/04/16/eurorack-2016/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2016/04/16/eurorack-2016/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2016-04-16T20:58:13+00:00" />
 <meta property="article:modified_time" content="2016-04-16T20:58:13+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Eurorack 2016"/>
 <meta name="twitter:description" content="
 
@@ -115,8 +118,12 @@ Top shelf:
   "articleBody": " So.. the problem, as so many people have said, with getting into building a Eurorack modular synthesizer is that it becomes addictive, and you inevitably spend more than you can really afford. That said.. I now have a great fully customised synthesiser for what I want to do :) The layout is:\nTop shelf: 3 oscilators and noise generator in the top left, 4 VCAs and S\u0026H and Ring Mod sections in the mid center, LFOs in the top right.\nMiddle shelf: Filters! I love filters. 3 large format filter modules, and a Triple Resonance Filter which consists of an additional 3 filters packed into one unit. A quantizer is also there which I currently don’t use much.\nBottom shelf: Envelopes in the bottom left, Voltage Controlled Slew Generator and Make Noise’s Maths in the center left, center right is my trigger sequencer setup from LADIK, bottom right is attenuators and linear and exponential mixers.\n",
   "wordCount" : "155",
   "inLanguage": "en",
-  "datePublished": "2016-04-16T20:58:13Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2016-04-16T20:58:13Z",
   "dateModified": "2016-04-16T20:58:13Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2016/04/16/eurorack-2016/"
@@ -135,7 +142,11 @@ Top shelf:
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -146,9 +157,44 @@ Top shelf:
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -160,7 +206,7 @@ Top shelf:
     <h1 class="post-title entry-hint-parent">
       Eurorack 2016
     </h1>
-    <div class="post-meta"><span title='2016-04-16 20:58:13 +0000 +0000'>April 16, 2016</span>&nbsp;·&nbsp;1 min
+    <div class="post-meta"><span title='2016-04-16 20:58:13 +0000 +0000'>April 16, 2016</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> <div class="toc">
@@ -198,6 +244,19 @@ Top shelf:
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2016/09/05/narrative-led-pc-games/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Narrative-Led PC Games</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2016/04/04/osx-fish-functions-to-open-chrome-from-the-shell/">
+    <span class="title">Next »</span>
+    <br>
+    <span>OSX Fish Functions to open Chrome from the Shell</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -271,7 +330,7 @@ Top shelf:
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -325,6 +384,18 @@ Top shelf:
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

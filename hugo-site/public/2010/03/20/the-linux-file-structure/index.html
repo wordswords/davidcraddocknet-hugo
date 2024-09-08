@@ -10,7 +10,7 @@
 <meta name="description" content="
  It&rsquo;s helpful to know the basic filesystem on a Linux machine, to better understand where everything is supposed to go, and where you should start looking if you want to find a certain file.
 Everything in Linux is stored in the &ldquo;root directory&rdquo;. On a windows machine, that would be equivalent to C:. C: is the main folder where everything is stored. On Linux we call this the &ldquo;root directory&rdquo;, or simply &ldquo;/&rdquo;. To go up to this root directory, type:">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2010/03/20/the-linux-file-structure/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -65,11 +65,14 @@ Everything in Linux is stored in the &ldquo;root directory&rdquo;. On a windows 
  It&rsquo;s helpful to know the basic filesystem on a Linux machine, to better understand where everything is supposed to go, and where you should start looking if you want to find a certain file.
 Everything in Linux is stored in the &ldquo;root directory&rdquo;. On a windows machine, that would be equivalent to C:. C: is the main folder where everything is stored. On Linux we call this the &ldquo;root directory&rdquo;, or simply &ldquo;/&rdquo;. To go up to this root directory, type:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2010/03/20/the-linux-file-structure/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2010/03/20/the-linux-file-structure/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-03-20T15:19:46+00:00" />
 <meta property="article:modified_time" content="2010-03-20T15:19:46+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="The Linux Root Directory, Explained"/>
 <meta name="twitter:description" content="
  It&rsquo;s helpful to know the basic filesystem on a Linux machine, to better understand where everything is supposed to go, and where you should start looking if you want to find a certain file.
@@ -109,8 +112,12 @@ Everything in Linux is stored in the &ldquo;root directory&rdquo;. On a windows 
   "articleBody": " It’s helpful to know the basic filesystem on a Linux machine, to better understand where everything is supposed to go, and where you should start looking if you want to find a certain file.\nEverything in Linux is stored in the “root directory”. On a windows machine, that would be equivalent to C:. C: is the main folder where everything is stored. On Linux we call this the “root directory”, or simply “/”. To go up to this root directory, type:\ncd / To list all the folders and files in the root directory, type this:\nls / Alternatively, if you want to see the folders and files exactly the way I see them below for easy comparison, type this:\nls -lhaFtr --color / Once you’ve typed in one of the ’ls’ commands above, you’ll see some information similar to that on the screenshot below.. (please scroll down)..\nUbuntu Linux Above you can see the files and folders in the root directory of my ubuntu linux server, after I’ve typed ’ls /’. Ignore everything but the coloured names on the right, those coloured names are the names of the files and folders in this directory. Don’t worry about the shades of different colours either. It’s not really important to explain how they are coloured right now, just to explain the purpose behind each file or folder shown.\nSo let me explain the purpose behind each of these, in turn. I’ll include the same screenshot multiple times, so you can reference the explanations against it as you scroll down.\nselinux/ - Directory for linux security features, rarely visited by normal users like you or me.\nmnt/ - Traditional directory for the files from removable media, ie USB keys, external hard drives. Not used anymore, it only exists for historical purposes.\nlost+found/ - Directory where files and directories end up when they’ve been recovered from a hard disc repair.\ncdrom -\u003e media/cdrom/ - Link the files currently in your CDROM or DVDROM drive.\nmedia/ - New style directory for the files from removable media such as USB keys, external hard drives, etc. This is the new convention, and so you should always use media/ instead of mnt/, above.\nvmlinuz.old -\u003e boot/vmlinuz-2.6.31-17-generic - A backup of your most recent old Linux operating system kernel, ie: your operating system. Don’t delete this =)\ninitrd.img.old -\u003e boot/initrd.img-2.6.31-17-generic - Another part of the backup for your most recent old Linux kernel.\nopt/ - An empty directory reserved for you to put third-party programs and software in.\nlib/ - Operating system drivers and kernel modules live here. Also contains all system libraries, so when you compile a new program from the source code, it will use the existing code libraries stored here.\nbin/ - Basic commands that everyone uses, like “ls” and “cd”, live here.\nusr/ - This is where all user-supplied software should go; ie: software that you install that doesn’t normally come with the operating system. Put all programs here.\nsbin/ - Basic but essential system administration commands that the admin user only uses, ie: reboot, poweroff, etc.\nvmlinuz -\u003e boot/vmlinuz-2.6.31-20-generic - Your actual operating system kernel, ie: the one that is running right now. Don’t delete this.\ninitrd.img -\u003e boot/initrd.img-2.6.31-20-generic - Another part of the kernel that is running right now.\nboot/ - Reserved for Linux kernel files, and other things that need to be loaded on bootup. Don’t touch these.\nproc/ - Proc is a handy way of accessing critical operating system information, through a bunch of files. Ie: try typing ‘cat /proc/cpuinfo’. That queries the current kernel for the information on your processors (CPUs), and returns the info for you in a text file.\nsys/ - Like proc/, this is another bunch of files that aren’t files at all, but ‘fake’ files. When you access them, the operating system goes away and finds out information, and offers that information up as a text file to you.\ndev/ - Device files. In here live the device files for your hard drives, your CD/DVD drives, your soundcard, your network card.. in fact anything you have installed that Linux uses, it has a counterpart in here that is automatically added and removed by the OS. Don’t ever delete, move or rename any of the files here.\nhome/ - The directory that you’ll use the most. Every user on your Linux machine, except the system administrator, has a folder here. This is where each user is meant to store all their documents. Think of it as the Linux ‘My Documents’ folder.\nvar/ - This is a catch-all directory for ‘variables’, ie things that the OS has to write to, and vary, as part of its operation. Examples include: email inboxes for all users, cache files, the lock files that are generated and removed as part of normal program execution, and also the /var/www directory. /var/www is a directory you will probably see and use a lot, as it is where all the websites are stored that your linux machine serves when operating as a web server. /var/log is also a very important directory, and contains ’log’ files which is a kind of “diary” that the linux OS uses to explain exactly what it’s done, as it happens, so you can easily find out what’s been going on by viewing the right log file.\ntmp/ - The space for any and all temporary files. Store files here that you want to throw away quite quickly. Depending on your configuration, all files and folders in the /tmp directory may be deleted on system reboot, or more frequently, perhaps every day.\nroot/ - This is the system administrators ‘my documents’ folder. Anything that the sysadmin stores, for example: programs that he downloads, are put here. Not accessible to anyone else but the system administrator.\netc/ - Configuration files. Any and all program configuration files or information belong here. Think of it like the windows registry, except every registry entry is a text file that you can open up and edit, and also copy, move around, and save. You will typically have to create configuration files yourself sometimes, and put them in this directory. They are almost always simple text files.\nAnd that’s a basic overview of the files and folders in the root directory of your linux machine.\n",
   "wordCount" : "1049",
   "inLanguage": "en",
-  "datePublished": "2010-03-20T15:19:46Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2010-03-20T15:19:46Z",
   "dateModified": "2010-03-20T15:19:46Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2010/03/20/the-linux-file-structure/"
@@ -129,7 +136,11 @@ Everything in Linux is stored in the &ldquo;root directory&rdquo;. On a windows 
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -140,9 +151,44 @@ Everything in Linux is stored in the &ldquo;root directory&rdquo;. On a windows 
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -154,7 +200,7 @@ Everything in Linux is stored in the &ldquo;root directory&rdquo;. On a windows 
     <h1 class="post-title entry-hint-parent">
       The Linux Root Directory, Explained
     </h1>
-    <div class="post-meta"><span title='2010-03-20 15:19:46 +0000 GMT'>March 20, 2010</span>&nbsp;·&nbsp;5 min
+    <div class="post-meta"><span title='2010-03-20 15:19:46 +0000 GMT'>March 20, 2010</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> 
@@ -162,68 +208,68 @@ Everything in Linux is stored in the &ldquo;root directory&rdquo;. On a windows 
   <div class="post-content"><p><a href="/wp-content/uploads/2010/03/got-root.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/got-root.jpg" alt=""  />
 </a> It&rsquo;s helpful to know the basic filesystem on a Linux machine, to better understand where everything is supposed to go, and where you should start looking if you want to find a certain file.</p>
 <p>Everything in Linux is stored in the &ldquo;root directory&rdquo;. On a windows machine, that would be equivalent to C:. C: is the main folder where everything is stored. On Linux we call this the &ldquo;root directory&rdquo;, or simply &ldquo;/&rdquo;. To go up to this root directory, type:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>cd /
-</span></span></code></pre></div><p>To list all the folders and files in the root directory, type this:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ls /
-</span></span></code></pre></div><p>Alternatively, if you want to see the folders and files exactly the way I see them below for easy comparison, type this:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ls -lhaFtr --color /
-</span></span></code></pre></div><p>Once you&rsquo;ve typed in one of the &rsquo;ls&rsquo; commands above, you&rsquo;ll see some information similar to that on the screenshot below.. (please scroll down)..</p>
+<pre tabindex="0"><code>cd /
+</code></pre><p>To list all the folders and files in the root directory, type this:</p>
+<pre tabindex="0"><code>ls /
+</code></pre><p>Alternatively, if you want to see the folders and files exactly the way I see them below for easy comparison, type this:</p>
+<pre tabindex="0"><code>ls -lhaFtr --color /
+</code></pre><p>Once you&rsquo;ve typed in one of the &rsquo;ls&rsquo; commands above, you&rsquo;ll see some information similar to that on the screenshot below.. (please scroll down)..</p>
 <p><strong>Ubuntu Linux</strong> <a href="/wp-content/uploads/2010/03/1348573631.png"><img loading="lazy" src="/wp-content/uploads/2010/03/1348573631.png" alt=""  />
 </a></p>
 <p>Above you can see the files and folders in the root directory of my ubuntu linux server, after I&rsquo;ve typed &rsquo;ls /&rsquo;. Ignore everything but the coloured names on the right, those coloured names are the names of the files and folders in this directory. Don&rsquo;t worry about the shades of different colours either. It&rsquo;s not really important to explain how they are coloured right now, just to explain the purpose behind each file or folder shown.</p>
 <p>So let me explain the purpose behind each of these, in turn. I&rsquo;ll include the same screenshot multiple times, so you can reference the explanations against it as you scroll down.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>selinux/
-</span></span></code></pre></div><p>- Directory for linux security features, rarely visited by normal users like you or me.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>mnt/
-</span></span></code></pre></div><p>- Traditional directory for the files from removable media, ie USB keys, external hard drives. Not used anymore, it only exists for historical purposes.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>lost+found/
-</span></span></code></pre></div><p>- Directory where files and directories end up when they&rsquo;ve been recovered from a hard disc repair.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span> cdrom -&gt; media/cdrom/
-</span></span></code></pre></div><p>- Link the files currently in your CDROM or DVDROM drive.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>media/
-</span></span></code></pre></div><p>- New style directory for the files from removable media such as USB keys, external hard drives, etc. This is the new convention, and so you should always use media/ instead of mnt/, above.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>vmlinuz.old -&gt; boot/vmlinuz-2.6.31-17-generic
-</span></span></code></pre></div><p>- A backup of your most recent old Linux operating system kernel, ie: your operating system. Don&rsquo;t delete this =)</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>initrd.img.old -&gt; boot/initrd.img-2.6.31-17-generic
-</span></span></code></pre></div><p>- Another part of the backup for your most recent old Linux kernel.</p>
+<pre tabindex="0"><code>selinux/
+</code></pre><p>- Directory for linux security features, rarely visited by normal users like you or me.</p>
+<pre tabindex="0"><code>mnt/
+</code></pre><p>- Traditional directory for the files from removable media, ie USB keys, external hard drives. Not used anymore, it only exists for historical purposes.</p>
+<pre tabindex="0"><code>lost+found/
+</code></pre><p>- Directory where files and directories end up when they&rsquo;ve been recovered from a hard disc repair.</p>
+<pre tabindex="0"><code> cdrom -&gt; media/cdrom/
+</code></pre><p>- Link the files currently in your CDROM or DVDROM drive.</p>
+<pre tabindex="0"><code>media/
+</code></pre><p>- New style directory for the files from removable media such as USB keys, external hard drives, etc. This is the new convention, and so you should always use media/ instead of mnt/, above.</p>
+<pre tabindex="0"><code>vmlinuz.old -&gt; boot/vmlinuz-2.6.31-17-generic
+</code></pre><p>- A backup of your most recent old Linux operating system kernel, ie: your operating system. Don&rsquo;t delete this =)</p>
+<pre tabindex="0"><code>initrd.img.old -&gt; boot/initrd.img-2.6.31-17-generic
+</code></pre><p>- Another part of the backup for your most recent old Linux kernel.</p>
 <p><a href="/wp-content/uploads/2010/03/1348573631.png"><img loading="lazy" src="/wp-content/uploads/2010/03/1348573631.png" alt=""  />
 </a></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>opt/
-</span></span></code></pre></div><p>- An empty directory reserved for you to put third-party programs and software in.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>lib/
-</span></span></code></pre></div><p>- Operating system drivers and kernel modules live here. Also contains all system libraries, so when you compile a new program from the source code, it will use the existing code libraries stored here.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>bin/
-</span></span></code></pre></div><p>- Basic commands that everyone uses, like &ldquo;ls&rdquo; and &ldquo;cd&rdquo;, live here.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>usr/
-</span></span></code></pre></div><p>- This is where all user-supplied software should go; ie: software that you install that doesn&rsquo;t normally come with the operating system. Put all programs here.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sbin/
-</span></span></code></pre></div><p>- Basic but essential system administration commands that the admin user only uses, ie: reboot, poweroff, etc.</p>
+<pre tabindex="0"><code>opt/
+</code></pre><p>- An empty directory reserved for you to put third-party programs and software in.</p>
+<pre tabindex="0"><code>lib/
+</code></pre><p>- Operating system drivers and kernel modules live here. Also contains all system libraries, so when you compile a new program from the source code, it will use the existing code libraries stored here.</p>
+<pre tabindex="0"><code>bin/
+</code></pre><p>- Basic commands that everyone uses, like &ldquo;ls&rdquo; and &ldquo;cd&rdquo;, live here.</p>
+<pre tabindex="0"><code>usr/
+</code></pre><p>- This is where all user-supplied software should go; ie: software that you install that doesn&rsquo;t normally come with the operating system. Put all programs here.</p>
+<pre tabindex="0"><code>sbin/
+</code></pre><p>- Basic but essential system administration commands that the admin user only uses, ie: reboot, poweroff, etc.</p>
 <p><a href="/wp-content/uploads/2010/03/1348573631.png"><img loading="lazy" src="/wp-content/uploads/2010/03/1348573631.png" alt=""  />
 </a></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>vmlinuz -&gt; boot/vmlinuz-2.6.31-20-generic
-</span></span></code></pre></div><p>- Your actual operating system kernel, ie: the one that is running right now. Don&rsquo;t delete this.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>initrd.img -&gt; boot/initrd.img-2.6.31-20-generic
-</span></span></code></pre></div><p>- Another part of the kernel that is running right now.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>boot/
-</span></span></code></pre></div><p>- Reserved for Linux kernel files, and other things that need to be loaded on bootup. Don&rsquo;t touch these.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>proc/
-</span></span></code></pre></div><p>- Proc is a handy way of accessing critical operating system information, through a bunch of files. Ie: try typing &lsquo;cat /proc/cpuinfo&rsquo;. That queries the current kernel for the information on your processors (CPUs), and returns the info for you in a text file.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sys/
-</span></span></code></pre></div><p>- Like proc/, this is another bunch of files that aren&rsquo;t files at all, but &lsquo;fake&rsquo; files. When you access them, the operating system goes away and finds out information, and offers that information up as a text file to you.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>dev/
-</span></span></code></pre></div><p>- Device files. In here live the device files for your hard drives, your CD/DVD drives, your soundcard, your network card.. in fact anything you have installed that Linux uses, it has a counterpart in here that is automatically added and removed by the OS. Don&rsquo;t ever delete, move or rename any of the files here.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>home/
-</span></span></code></pre></div><p>- The directory that you&rsquo;ll use the most. Every user on your Linux machine, except the system administrator, has a folder here. This is where each user is meant to store all their documents. Think of it as the Linux &lsquo;My Documents&rsquo; folder.</p>
+<pre tabindex="0"><code>vmlinuz -&gt; boot/vmlinuz-2.6.31-20-generic
+</code></pre><p>- Your actual operating system kernel, ie: the one that is running right now. Don&rsquo;t delete this.</p>
+<pre tabindex="0"><code>initrd.img -&gt; boot/initrd.img-2.6.31-20-generic
+</code></pre><p>- Another part of the kernel that is running right now.</p>
+<pre tabindex="0"><code>boot/
+</code></pre><p>- Reserved for Linux kernel files, and other things that need to be loaded on bootup. Don&rsquo;t touch these.</p>
+<pre tabindex="0"><code>proc/
+</code></pre><p>- Proc is a handy way of accessing critical operating system information, through a bunch of files. Ie: try typing &lsquo;cat /proc/cpuinfo&rsquo;. That queries the current kernel for the information on your processors (CPUs), and returns the info for you in a text file.</p>
+<pre tabindex="0"><code>sys/
+</code></pre><p>- Like proc/, this is another bunch of files that aren&rsquo;t files at all, but &lsquo;fake&rsquo; files. When you access them, the operating system goes away and finds out information, and offers that information up as a text file to you.</p>
+<pre tabindex="0"><code>dev/
+</code></pre><p>- Device files. In here live the device files for your hard drives, your CD/DVD drives, your soundcard, your network card.. in fact anything you have installed that Linux uses, it has a counterpart in here that is automatically added and removed by the OS. Don&rsquo;t ever delete, move or rename any of the files here.</p>
+<pre tabindex="0"><code>home/
+</code></pre><p>- The directory that you&rsquo;ll use the most. Every user on your Linux machine, except the system administrator, has a folder here. This is where each user is meant to store all their documents. Think of it as the Linux &lsquo;My Documents&rsquo; folder.</p>
 <p><a href="/wp-content/uploads/2010/03/1348573631.png"><img loading="lazy" src="/wp-content/uploads/2010/03/1348573631.png" alt=""  />
 </a></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span><span style="color:#000;font-weight:bold">/</span>
-</span></span></code></pre></div><p>- This is a catch-all directory for &lsquo;variables&rsquo;, ie things that the OS has to write to, and vary, as part of its operation. Examples include: email inboxes for all users, cache files, the lock files that are generated and removed as part of normal program execution, and also the /var/www directory. /var/www is a directory you will probably see and use a lot, as it is where all the websites are stored that your linux machine serves when operating as a web server. /var/log is also a very important directory, and contains &rsquo;log&rsquo; files which is a kind of &ldquo;diary&rdquo; that the linux OS uses to explain exactly what it&rsquo;s done, as it happens, so you can easily find out what&rsquo;s been going on by viewing the right log file.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>tmp/
-</span></span></code></pre></div><p>- The space for any and all temporary files. Store files here that you want to throw away quite quickly. Depending on your configuration, all files and folders in the /tmp directory may be deleted on system reboot, or more frequently, perhaps every day.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>root/
-</span></span></code></pre></div><p>- This is the system administrators &lsquo;my documents&rsquo; folder. Anything that the sysadmin stores, for example: programs that he downloads, are put here. Not accessible to anyone else but the system administrator.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>etc/
-</span></span></code></pre></div><p>- Configuration files. Any and all program configuration files or information belong here. Think of it like the windows registry, except every registry entry is a text file that you can open up and edit, and also copy, move around, and save. You will typically have to create configuration files yourself sometimes, and put them in this directory. They are almost always simple text files.</p>
+<pre tabindex="0"><code>var/
+</code></pre><p>- This is a catch-all directory for &lsquo;variables&rsquo;, ie things that the OS has to write to, and vary, as part of its operation. Examples include: email inboxes for all users, cache files, the lock files that are generated and removed as part of normal program execution, and also the /var/www directory. /var/www is a directory you will probably see and use a lot, as it is where all the websites are stored that your linux machine serves when operating as a web server. /var/log is also a very important directory, and contains &rsquo;log&rsquo; files which is a kind of &ldquo;diary&rdquo; that the linux OS uses to explain exactly what it&rsquo;s done, as it happens, so you can easily find out what&rsquo;s been going on by viewing the right log file.</p>
+<pre tabindex="0"><code>tmp/
+</code></pre><p>- The space for any and all temporary files. Store files here that you want to throw away quite quickly. Depending on your configuration, all files and folders in the /tmp directory may be deleted on system reboot, or more frequently, perhaps every day.</p>
+<pre tabindex="0"><code>root/
+</code></pre><p>- This is the system administrators &lsquo;my documents&rsquo; folder. Anything that the sysadmin stores, for example: programs that he downloads, are put here. Not accessible to anyone else but the system administrator.</p>
+<pre tabindex="0"><code>etc/
+</code></pre><p>- Configuration files. Any and all program configuration files or information belong here. Think of it like the windows registry, except every registry entry is a text file that you can open up and edit, and also copy, move around, and save. You will typically have to create configuration files yourself sometimes, and put them in this directory. They are almost always simple text files.</p>
 <p><a href="/wp-content/uploads/2010/03/1348573631.png"><img loading="lazy" src="/wp-content/uploads/2010/03/1348573631.png" alt=""  />
 </a></p>
 <p>And that&rsquo;s a basic overview of the files and folders in the root directory of your linux machine.</p>
@@ -234,6 +280,19 @@ Everything in Linux is stored in the &ldquo;root directory&rdquo;. On a windows 
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2010/03/20/tip-for-watching-the-completion-of-a-large-file-copy/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Tip for watching the completion of a large file copy</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2010/03/19/useful-osx-command-line-commands/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Useful OSX commands for Linux users</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -307,7 +366,7 @@ Everything in Linux is stored in the &ldquo;root directory&rdquo;. On a windows 
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -361,6 +420,18 @@ Everything in Linux is stored in the &ldquo;root directory&rdquo;. On a windows 
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

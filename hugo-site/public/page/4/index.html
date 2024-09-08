@@ -8,8 +8,8 @@
 <meta name="robots" content="index, follow">
 <title>DavidCraddock.net</title>
 
-<meta name="description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK.">
-<meta name="author" content="">
+<meta name="description" content="DavidCraddock.net">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/feed.xml">
+<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/index.xml">
 <link rel="alternate" type="application/json" href="https://davidcraddock.net/index.json">
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/">
 <noscript>
@@ -62,13 +62,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
 <meta property="og:title" content="DavidCraddock.net" />
-<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
+<meta property="og:description" content="DavidCraddock.net" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://davidcraddock.net/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 
-<meta name="twitter:card" content="summary"/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="DavidCraddock.net"/>
-<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK."/>
+<meta name="twitter:description" content="DavidCraddock.net"/>
 
 <script type="application/ld+json">
 {
@@ -76,10 +79,10 @@
   "@type": "Organization",
   "name": "DavidCraddock.net",
   "url": "https://davidcraddock.net/",
-  "description": "The personal blog of David Craddock, a software engineer based in Manchester, UK.",
+  "description": "DavidCraddock.net",
   "thumbnailUrl": "https://davidcraddock.net/favicon.ico",
   "sameAs": [
-      
+      "https://github.com/wordswords"
   ]
 }
 </script>
@@ -87,7 +90,11 @@
 
 <body class="list" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -98,9 +105,44 @@
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -108,151 +150,85 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">The Persuit of Happiness and the Hill-Climbing Problem
+    <h2 class="entry-hint-parent">Google Drive Backup using Rclone
     </h2>
   </header>
   <div class="entry-content">
-    <p>It seems that for a lot of people, perhaps the vast majority, they cannot expect to be 100% happy all the time. Even those incredibly successful celebrities and incredibly rich CEOs and politicians are not happy 100% of the time.
-So is it a good idea to seek 100% happiness right away? Or should we always try and select the ’least worst’ situation? If we keep making progress and optimse our happiness levels through constantly selecting the ’least worst’ situation whenever we have a descision then it seems to me we will maximise our happiness potential in the long run.
+    <p>For 8 TB of data storage on Google Drive, plus my own Google organization, I am paying £30/month, which is a pretty good deal.
+I wanted to use this space for backing up my NAS, but it was proving difficult. The program I was recommended for Linux backup, Duplicati, was not the best for this purpose. My backup runs would not complete, they would be slow, and full of syncing errors.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-01-07 05:50:39 +0000 GMT'>January 7, 2022</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to The Persuit of Happiness and the Hill-Climbing Problem" href="https://davidcraddock.net/2022/01/07/the-persuit-of-happiness-and-the-hill-climbing-problem/"></a>
+  <footer class="entry-footer"><span title='2022-09-24 17:39:06 +0000 +0000'>September 24, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Google Drive Backup using Rclone" href="https://davidcraddock.net/2022/09/24/google-drive-backup-using-rclone/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Retrospective on 2021
+    <h2 class="entry-hint-parent">Home Network September 2022
     </h2>
   </header>
   <div class="entry-content">
-    <p>Well, 2021 has been a bit of a downer in a number of ways. There has been some upsides though.
-I spent the first part of 2021 burned out, as in - totally burned out - of my career and really needing a break. This affected my work. It turns out that unknown to me at the time, I had cancer, Hodgkins Lymophoma, and a lot of my lack of energy and generally feeling awful was down to a large tumor that had been growing my chest for some time and was pressing down on my heart and lungs. In June I was admitted to hospital and they diagnosed the cancer. In July I started chemotherapy. Now the good news is that Hodgkins Lymphoma is one of the best cancers to get if you were able to choose, as it has a very high cure rate and very low fatality rate. The chemo as of November’s scan seems to be working even better than expected and they were expecting a good outcome. So that is positive. I should hopefully be done with chemo by March 2022. One of the good things about 2021 has been the job that I found in the music industry. It is still doing software engineering, what my career has been based around, but they seem like a very nice bunch of people, and were prepared to support me and keep me on around chemotherapy. I am still employed part-time and that has been a HUGE help financially as you really don’t get a lot of money in benefits from the government, even when you have cancer it seems, and my family have had to help me out quite a bit. I have also had some success in the work that I’ve been doing - it seems very appreciated which is something I’m not really used to! I have continued DJing on Twitch which has been great. I still do my regular Sunday show for 4 hours most Sundays, and it is a lot of fun and I have a bunch of regulars who pop in. I enjoy it a lot. I reached 500 followers and raised a LOT of money via charity streams with other DJs, both as a DJ and also helping as an organiser. In December Conny and I caught the omicron varient of COVID-19 and that was a huge worry at the time because of my low immune system due to chemo and cancer. However we both have beaten it now, I had a short stay in hospital but it wasn’t that bad. NHS staff were very helpful and I think it really helped that I had 3 vaccinations in my system at the time of catching it. In Jan 2021 I took the third of the 10 week university level courses at Point Blank Music School as part of my study of Electronic Music Production. This course was on mixing and mastering. I have learned a lot from it already, although I still haven’t finished it as I was quite busy most of the year. I single-handedly raised £270 from friends and family for a cancer charity for my mother (who also has cancer) during a 12 hour DJ stream on my birthday in 2021. Ironically I had no idea I had cancer myself at the time. I ripped all of CDs to FLAC. Hundreds of CDs. Ripped hundreds of DVDs, PS2 and PS1 games too. Hosted them all on a Plex media server and gave the majority of discs away to charity. I sorted all my physical books, split into different subject bookshelves, alphabeticalised and catalogued in GoodReads.com. I have read more books this year than several previous years. I still have a huge backlog to go through though. I played quite a few more computer games than I have for a while, including beating Cyberpunk 2077 in a no-sleep 28 hour marathon after it was released. (Although that was technically in December 2020 I am going to include it anyway). It was such a great game in my view, amazing storyline and setting. Here’s to 2022!
+    <p>I had planned a different network toplogy for sure, but this is my current setup and it seems to work well:
+I was not able to implement connection load balancing using the Miktrotik router. It was just too complicated and didn’t work reliably enough. My current network is a gigabit network across all areas, so every PC has gigabit cables, switch and so on. I either have plugged in my Virgin Media 1000mb/50mbs internet connection or my BRSK fibre 900mb/900mb connection. I simply plug in the WAN cable from the main Linksys router into one of the hubs at one time. If one connection goes down, I manually switch over. I have a 10GB/sec SFP link between my server upstairs in the study and my main studio PC downstairs. This allows me to transfer files at 10Gb/sec rate between the two. I need two wireless repeaters, even though I have a small house, because the house walls are made of a concrete mix. This means the wireless signal needs boosting a lot. In the future, I may try load balancing again, or wait until one of my service providers offers &gt;1000mb/sec speeds. When this happens it would make sense to expand the 10Gbs/sec links as there would be more point. </p>
+  </div>
+  <footer class="entry-footer"><span title='2022-09-08 09:43:35 +0000 +0000'>September 8, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Home Network September 2022" href="https://davidcraddock.net/2022/09/08/home-network-september-2022/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">My Job Requirements
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I have nearly 20 years experience, so my skill-set is in high demand from all sorts of different organisations. If I were looking for a job, then these would be my priorities:
+Understanding of medical appointments - My situation is that I currently have cancer. Although it’s recommended I work, some of my time will be spent in medical appointments at the hospital that is 15 mins walk away from me. Currently this is expected to take up 1 weekday every fortnight. 100% working from home - This means that, several years down the line, the company policy will NOT change to ’everyone in the office’. Almost all meetings should be remote-first, meaning that everyone is an equal participant in them if they are working remotely. Some people can of course dial in from an office location but they should be at no communication advantage compared to remote workers. Also, the main communication for the team and organisation should be done online, remote workers should not be ‘second class citizens’ to water-cooler gossip. No Java technology stack - This means that Java and IntelliJ are not used as the mainstay of the application stack. I do not like working with Java and find it convoluted. No unethical industries - This means no gambling, no defence, no industries which disadvantage society in a big way in general. Good Pension - An above-average pension contribution. I would expect to be seeing at least 6% max employer contribution which is double the NEST minimum. Good Pay - This is negotiable but I need to pay my bills, and that includes the 10% inflationary cost of living crisis we’re in. Ability to use my own development environment - My customised development environment will run without issue on Linux machines, OSX machines, and on Windows 11 with WSL2. I am SO much more productive and happy using it. Learning and dev time or budget allocated (nice to have) - This is a ’nice to have’ but really if you aren’t able and willing to expense costs such as monthly technical books (£50/month) maybe you should be asking yourself why not, as an organisation. </p>
+  </div>
+  <footer class="entry-footer"><span title='2022-09-01 21:27:22 +0000 +0000'>September 1, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to My Job Requirements" href="https://davidcraddock.net/2022/09/01/my-ideal-job/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Sleep Tracking
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I really like my Withings Mattress-Based Sleep Tracker.
+I keep unusual sleeping hours a lot of the time, as I’m undergoing treatment, and a lot of the medication I’m taking effect my sleep. Even when I’m relatively healthy, some of the medication I’m on for a long-term condition also affects my sleep.
+What’s more, I enjoy a non-standard sleeping schedule. I find I get more work done in the early morning or late at night. As I work from home 100% this is not as problematic as it used to be.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-01-01 15:58:05 +0000 GMT'>January 1, 2022</span>&nbsp;·&nbsp;4 min</footer>
-  <a class="entry-link" aria-label="post link to Retrospective on 2021" href="https://davidcraddock.net/2022/01/01/retrospective-on-2021/"></a>
+  <footer class="entry-footer"><span title='2022-08-18 19:58:57 +0000 +0000'>August 18, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Sleep Tracking" href="https://davidcraddock.net/2022/08/18/sleep-tracking/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Setting up Enlightenment window manager on Ubuntu 21.10
+    <h2 class="entry-hint-parent">Digital Game Collecting
     </h2>
   </header>
   <div class="entry-content">
-    <p>Enlightenment is a very underrated window manager choice, in my opinion. It still looks very pretty and is very configurable. There is a packaging bug with the latest version of Enlightement in the 21.10 repo which means it doesn’t work correctly. The fix is to set the suid bit on the ’enlightenment_system’ binary. So:
-sudo apt install enlightenment sudo find /usr/lib -type f -name enlightenment_system -exec sudo chmod 4755 {} \; Log out of Ubuntu Click the settings cog in the bottom right to change your Window manager to enlightenment Log on and the settings wizard will help you configure Enlightenment </p>
-  </div>
-  <footer class="entry-footer"><span title='2021-11-18 08:54:42 +0000 GMT'>November 18, 2021</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Setting up Enlightenment window manager on Ubuntu 21.10" href="https://davidcraddock.net/2021/11/18/setting-up-enlightenment-window-manager-on-ubuntu-21-10/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">My Simple Commandline Git Workflow
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>This is a simple description of how I work 99% of the time, as I am a simpleton. Origin/main is the new origin/master for future repositories, I just note both here for completeness because I use origin master for a lot of current repos.
-I first make sure I am uptodate on origin/master or origin/main by git pulling. git checkout origin master git pull origin master I start making changes to the local copy on my local machine. When it gets to a point where I want to save my changes, I: git stash push git checkout -b &lt;branch name which will be made into a PR&gt; git stash pop I then commit the changes to the new branch. git commit When I am ready to create the PR, I create and push to the remote branch: git push origin &lt;branch name which will be made into a PR&gt; Github will tell me if master/main has diverged past a state where my commits can be merged in without conflict. If there is a possible conflict, I will merge in origin master/main to my local copy and then push to the PR branch again: git checkout &lt;branch name which will be made into a PR&gt; git pull origin master (or origin main) I resolve locally conflicts through git mergetool which, for me, is vim’s three way diff tool. I commit the updated conflicts and push to the remote branch - git add &amp;&amp; git commit &amp;&amp; git push origin &lt;branch name which will be made into a PR&gt; Often at this point I find I have to add new commits to fix things I have broken or have been flagged up in PR review. git commit git push origin &lt;branch name which will be made into a PR&gt; Reviewers now have some of their comments made on stale commits in Github. This is better than squashing the commits I find because sometimes the commits are not stale and their comments are still valid, and it becomes easier to keep track of. They can view the ‘files changed’ tab to add review comments until they are happy. I loop back to check whether master/main has diverged, and if it hasn’t just keep adding commits to address their concerns. The PR gets approved (hopefully) I merge the PR into master or main I delete the old branch </p>
-  </div>
-  <footer class="entry-footer"><span title='2021-10-21 16:44:09 +0000 +0000'>October 21, 2021</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to My Simple Commandline Git Workflow" href="https://davidcraddock.net/2021/10/21/my-simple-commandline-git-workflow/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">How to fix Plex Media Servers &#39;Various Artists&#39; problem using Beets.io and other tools
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem As of the day of posting, Plex Media Server has a suboptimal handling of Various Artists compilations. Unless you follow BOTH of these rules, described clearly on the Plex support here under ‘Various Artists’, then they won’t appear collected under a particular album, they will be spread out filed under the different artists that created them. I think it should only require one of these rules, but it is not up to me. The problem is that release metadata available from the online metadata databases, often doesn’t follow these rules - lots of DJ mix compilations for example, do not set albumartist tag to Various Artists from the online metadata databases.
+    <p>I have a relatively obscure hobby - I collect digital video games. Quite a few people collect physical games, but I like the advantages of having a large library of gaming options which are just a download away.
+Like a lot of collectors, I have more games than I have actually played, or probably will do in my lifetime. I mostly get them via discounted bundles such as HumbleBundle.com, so I rarely play full price for them.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2021-09-21 22:22:47 +0000 +0000'>September 21, 2021</span>&nbsp;·&nbsp;4 min</footer>
-  <a class="entry-link" aria-label="post link to How to fix Plex Media Servers &#39;Various Artists&#39; problem using Beets.io and other tools" href="https://davidcraddock.net/2021/09/21/how-to-fix-plex-media-servers-various-artists-problem-using-beets-io-and-other-tools/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">My PSP Entertainment System for 2021!
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> I have recently been in hospital and been diagnosed with a condition that might mean I need to return quite a bit, at least in the short term. When I was in hospital I was struck by the fact that there were very long periods of waiting and it was easy to get very bored and quite dejected just sitting in a hospital bed.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2021-08-07 19:57:27 +0000 +0000'>August 7, 2021</span>&nbsp;·&nbsp;4 min</footer>
-  <a class="entry-link" aria-label="post link to My PSP Entertainment System for 2021!" href="https://davidcraddock.net/2021/08/07/my-psp-entertainment-system-for-2021/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Making Twitch DJ Promo Mix Videos
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Sometimes as a DJ you may want to reconstruct the Twitch stream you have streamed into a video format to send to other people, for promotional purposes, or just to have a record of what you’ve done. Twitch makes this difficult though, as it mutes copyrighted music in the video it records for your Twitch stream. Also, when you download this video, it does not include the chat log, so any attempts at reconstruction are without the chat, so it looks like the DJ is just talking to him/herself. Not good. However you can get past this. This is how I reconstruct a video set to create a promo DJ video mix for my stream. You will need:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2021-06-13 20:54:40 +0000 +0000'>June 13, 2021</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to Making Twitch DJ Promo Mix Videos" href="https://davidcraddock.net/2021/06/13/making-twitch-dj-promo-mix-videos/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Using Navidrome on a RPI3 to host my music collection for DJing so I can listen between sets
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>As a DJ it is important to listen to the music in your collection so you get an idea of what would work in particular sets, and you have a memory of how the tracks progress. So I decided to host a Spotify like service in my house so I could listen to my 500GB&#43; DJ music library. Navidrome (free open source software from https://navidrome.org) is running on the Raspberry Pi 3 which is under my desk via a wired connection with it’s own http://navidrome.local custom domain name. This is what it looks like:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2021-06-09 14:29:14 +0000 +0000'>June 9, 2021</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to Using Navidrome on a RPI3 to host my music collection for DJing so I can listen between sets" href="https://davidcraddock.net/2021/06/09/using-navidrome-on-a-rpi3-to-host-my-music-collection-for-djing-so-i-can-listen-between-sets/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Proper Care and Operation of Vinyl Turntables for DJs
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Setup your new Turntable Follow this and only this guide. This is the best vinyl setup video on the internet as of 2021:
-[youtube https://www.youtube.com/watch?v=WM-aIDwfrhc&amp;w=560&amp;h=315]
-A lot of DJ turntables are based on Technics OEM clones, and so you will need to set the tonearm height, which is the only thing not covered by the above video:
-[youtube https://www.youtube.com/watch?v=SYScinvkrrM]
-The Basics Once you’ve setup your turntable:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2021-05-31 23:53:14 +0000 +0000'>May 31, 2021</span>&nbsp;·&nbsp;6 min</footer>
-  <a class="entry-link" aria-label="post link to Proper Care and Operation of Vinyl Turntables for DJs" href="https://davidcraddock.net/2021/06/01/2552/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Lighting and Camera Setup
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> Light Sources: Phillips Hue Colour Lamp (top right) Phillips Hue Colour Lamp (Middle) Phillips Hue Colour Lamp (Bottom) Phillips Hue Lightstrip “DJ David Craddock” white illuminated sign “Live on Air” blue sign Laser (green or red laser wash) Revolving disco balls Dark Music Lighting Settings For Phillips Hue sources I use Hue Sync on my broadcast PC which syncs the lights in time with the music. I will use different palletes depending on the event. For darkwave/dark music style events I will use this pallette: ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2021-05-11 03:20:16 +0000 +0000'>May 11, 2021</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Lighting and Camera Setup" href="https://davidcraddock.net/2021/05/11/lighting-and-camera-setup/"></a>
+  <footer class="entry-footer"><span title='2022-08-09 02:53:48 +0000 +0000'>August 9, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Digital Game Collecting" href="https://davidcraddock.net/2022/08/09/digital-game-collecting/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://davidcraddock.net/page/3/">
-      «&nbsp;Prev&nbsp;
+      «&nbsp;Prev&nbsp;3/36
     </a>
-    <a class="next" href="https://davidcraddock.net/page/5/">Next&nbsp;&nbsp;»
+    <a class="next" href="https://davidcraddock.net/page/5/">Next&nbsp;5/36&nbsp;»
     </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -306,6 +282,18 @@ The Basics Once you’ve setup your turntable:
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 </body>

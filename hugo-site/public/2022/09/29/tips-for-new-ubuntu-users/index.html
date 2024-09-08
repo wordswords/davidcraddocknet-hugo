@@ -17,7 +17,7 @@ sudo poweroff # to shut down and power off the computer
 
 You can get a lot more information on your computers startup and shutdown sequences by removing the default Ubuntu splash screen that obscures this. You should definitely do this if you want to learn more about what your system is
 actually doing under the hood, especially if you need to troubleshoot what it&rsquo;s doing. To do this:">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2022/09/29/tips-for-new-ubuntu-users/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -79,11 +79,14 @@ sudo poweroff # to shut down and power off the computer
 You can get a lot more information on your computers startup and shutdown sequences by removing the default Ubuntu splash screen that obscures this. You should definitely do this if you want to learn more about what your system is
 actually doing under the hood, especially if you need to troubleshoot what it&rsquo;s doing. To do this:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2022/09/29/tips-for-new-ubuntu-users/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2022/09/29/tips-for-new-ubuntu-users/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-09-29T00:00:36+00:00" />
 <meta property="article:modified_time" content="2022-09-29T00:00:36+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Tips for new Ubuntu Users"/>
 <meta name="twitter:description" content="Here are some extra tips if you&rsquo;re just getting started out on Ubuntu.
 
@@ -130,8 +133,12 @@ actually doing under the hood, especially if you need to troubleshoot what it&rs
   "articleBody": "Here are some extra tips if you’re just getting started out on Ubuntu.\nYou don’t have to go through the UI to shut down or reboot your computer. You can do it from the command line. The commands are:\nsudo reboot # to reboot sudo poweroff # to shut down and power off the computer You can get a lot more information on your computers startup and shutdown sequences by removing the default Ubuntu splash screen that obscures this. You should definitely do this if you want to learn more about what your system is actually doing under the hood, especially if you need to troubleshoot what it’s doing. To do this:\nsudo nano /etc/grub/default/grub # find the line where it says GRUB_CMDLINE_LINUX_DEFAULT and remove 'quiet splash' # from this variable. If that leaves the variable empty make sure it is # still set as an empty variable, e.g. GRUB_CMDLINE_LINUX_DEFAULT=\"\" sudo update-grub sudo reboot Now you will see everything that is happening when your system starts up and shuts down, or reboots.\n",
   "wordCount" : "172",
   "inLanguage": "en",
-  "datePublished": "2022-09-29T00:00:36Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2022-09-29T00:00:36Z",
   "dateModified": "2022-09-29T00:00:36Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2022/09/29/tips-for-new-ubuntu-users/"
@@ -150,7 +157,11 @@ actually doing under the hood, especially if you need to troubleshoot what it&rs
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -161,9 +172,44 @@ actually doing under the hood, especially if you need to troubleshoot what it&rs
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -175,7 +221,7 @@ actually doing under the hood, especially if you need to troubleshoot what it&rs
     <h1 class="post-title entry-hint-parent">
       Tips for new Ubuntu Users
     </h1>
-    <div class="post-meta"><span title='2022-09-29 00:00:36 +0000 +0000'>September 29, 2022</span>&nbsp;·&nbsp;1 min
+    <div class="post-meta"><span title='2022-09-29 00:00:36 +0000 +0000'>September 29, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> 
@@ -184,19 +230,19 @@ actually doing under the hood, especially if you need to troubleshoot what it&rs
 <ol>
 <li>
 <p>You don&rsquo;t have to go through the UI to shut down or reboot your computer. You can do it from the command line. The commands are:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo reboot # to reboot
-</span></span><span style="display:flex;"><span>sudo poweroff # to shut down and power off the computer
-</span></span></code></pre></div></li>
+<pre tabindex="0"><code>sudo reboot # to reboot
+sudo poweroff # to shut down and power off the computer
+</code></pre></li>
 <li>
 <p>You can get a lot more information on your computers startup and shutdown sequences by removing the default Ubuntu splash screen that obscures this. You should definitely do this if you want to learn more about what your system is
 actually doing under the hood, especially if you need to troubleshoot what it&rsquo;s doing. To do this:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>sudo nano <span style="color:#000;font-weight:bold">/</span>etc<span style="color:#000;font-weight:bold">/</span>grub<span style="color:#000;font-weight:bold">/</span>default<span style="color:#000;font-weight:bold">/</span>grub
-</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># find the line where it says GRUB_CMDLINE_LINUX_DEFAULT and remove &#39;quiet splash&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># from this variable. If that leaves the variable empty make sure it is</span>
-</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># still set as an empty variable, e.g. GRUB_CMDLINE_LINUX_DEFAULT=&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>sudo update<span style="color:#000;font-weight:bold">-</span>grub
-</span></span><span style="display:flex;"><span>sudo reboot
-</span></span></code></pre></div><p>Now you will see everything that is happening when your system starts up and
+<pre tabindex="0"><code>sudo nano /etc/grub/default/grub
+# find the line where it says GRUB_CMDLINE_LINUX_DEFAULT and remove &#39;quiet splash&#39;
+# from this variable. If that leaves the variable empty make sure it is
+# still set as an empty variable, e.g. GRUB_CMDLINE_LINUX_DEFAULT=&#34;&#34;
+sudo update-grub
+sudo reboot
+</code></pre><p>Now you will see everything that is happening when your system starts up and
 shuts down, or reboots.</p>
 </li>
 </ol>
@@ -207,6 +253,19 @@ shuts down, or reboots.</p>
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2022/09/29/the-current-state-of-uk-politics/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>The Current State of UK Politics</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2022/09/27/current-dj-setup/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Current Twitch DJ Setup</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -280,7 +339,7 @@ shuts down, or reboots.</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -334,6 +393,18 @@ shuts down, or reboots.</p>
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

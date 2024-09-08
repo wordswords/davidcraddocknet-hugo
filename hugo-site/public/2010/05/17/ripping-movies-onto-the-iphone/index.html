@@ -15,7 +15,7 @@ Here&rsquo;s what I used to convert my newly bought Persepolis DVD, for watching
 1x Handbrake 32 - Freely available transcoder
 1x VLC 32 - Freely available media player
 1x DVD">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2010/05/17/ripping-movies-onto-the-iphone/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -75,11 +75,14 @@ Here&rsquo;s what I used to convert my newly bought Persepolis DVD, for watching
 1x VLC 32 - Freely available media player
 1x DVD" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2010/05/17/ripping-movies-onto-the-iphone/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2010/05/17/ripping-movies-onto-the-iphone/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-05-17T03:15:00+00:00" />
 <meta property="article:modified_time" content="2010-05-17T03:15:00+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Ripping Movies onto the iPhone"/>
 <meta name="twitter:description" content="I&rsquo;m currently watching Persepolis, the 2008 animated film about a tomboy anarchist growing up in Iran. I&rsquo;m watching this on my new iPhone 3GS, and the picture and audio quality is very good.
 Here&rsquo;s what I used to convert my newly bought Persepolis DVD, for watching on the iPhone.
@@ -124,8 +127,12 @@ Here&rsquo;s what I used to convert my newly bought Persepolis DVD, for watching
   "articleBody": "I’m currently watching Persepolis, the 2008 animated film about a tomboy anarchist growing up in Iran. I’m watching this on my new iPhone 3GS, and the picture and audio quality is very good.\nHere’s what I used to convert my newly bought Persepolis DVD, for watching on the iPhone.\n1x Macbook (but you can use any intel mac) 1x iTunes 1x RipIt - Commercial Mac DVD Ripper (rips up to 10 DVDs on the free trial, $20 after) 1x Handbrake 32 - Freely available transcoder 1x VLC 32 - Freely available media player 1x DVD\n\\* Ripit - rips the video and audio from the DVD, onto your computer \\* Handbrake 32 - ’transcodes’ the ripped video and audio, meaning - it converts it into an iPhone compatible video file. \\* VLC 32 - is used by Handbrake 32 to get past any problems with converting the media.\nGo to the following sites to fetch the software:\n1. Ripit - http://thelittleappfactory.com/ripit/ 2. Handbrake 32 - http://handbrake.fr/downloads.php (get the 32 bit version) 3. VLC 32 - http://www.videolan.org/vlc/download-macosx.html (be sure to get the 32 bit version)\nThere’s currently a difficulty in getting the VLC 64 bit software for the Mac, and so although the 64 bit version is faster to use, you’re probably better off with 32 bit versions of both for now.\nThe Process\nRip the DVD. Start RipIt. It will ask for a DVD, insert the DVD.. and point the resultant save location to the desktop. The ripping process takes about 40 minutes on my Macbook, you can check the progress by looking at the icon in the dock - it will be updated with the percentage of progress until completion. You can do other things on your mac while it’s ripping, even though the DVD drive will be occupied. Wait until it’s completed before continuing.\nTranscode (convert) the ripped video file for use on the iPhone. Start Handbrake. There are a bunch of transcoding settings called presets - those tell Handbrake what type of media player you want the converted video to work on. In handbrake on the right section of the window, select the iPhone preset. Then go to the file menu, select ‘Open’, and then select the video file that RipIt saved onto your desktop. Then select the destination for the converted video file. Then select the Start (green) button on Handbrake window, and it will start. You can now minimise handbrake and do other things. The transcoding process depends on the film, but takes about an hour on my Macbook. You can check on progress by maximizing the Handbrake window, and checking on the progress bar.\nMove the converted video file onto your iPhone. Once that’s done, you will have another media file on your desktop - this is the end result, a video file that will play on your iPhone. Simply connect your iPhone to your Mac, start up iTunes, and drag that file from your desktop into the iPhone icon on your iTunes window. It will take a couple of minutes to transfer, then eject the iPhone as normal\nNow you can watch this new movie on your iPhone by going to the ‘Videos’ tab of your iPod app.\n",
   "wordCount" : "535",
   "inLanguage": "en",
-  "datePublished": "2010-05-17T03:15:00Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2010-05-17T03:15:00Z",
   "dateModified": "2010-05-17T03:15:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2010/05/17/ripping-movies-onto-the-iphone/"
@@ -144,7 +151,11 @@ Here&rsquo;s what I used to convert my newly bought Persepolis DVD, for watching
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -155,9 +166,44 @@ Here&rsquo;s what I used to convert my newly bought Persepolis DVD, for watching
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -169,7 +215,7 @@ Here&rsquo;s what I used to convert my newly bought Persepolis DVD, for watching
     <h1 class="post-title entry-hint-parent">
       Ripping Movies onto the iPhone
     </h1>
-    <div class="post-meta"><span title='2010-05-17 03:15:00 +0000 +0000'>May 17, 2010</span>&nbsp;·&nbsp;3 min
+    <div class="post-meta"><span title='2010-05-17 03:15:00 +0000 +0000'>May 17, 2010</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> 
@@ -211,6 +257,19 @@ Here&rsquo;s what I used to convert my newly bought Persepolis DVD, for watching
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2010/07/01/running-windows-7-on-my-macbook/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Windows 7 Gaming on my Macbook</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2010/05/17/art-for-flash-games/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Decent Graphics for Flash Games</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -284,7 +343,7 @@ Here&rsquo;s what I used to convert my newly bought Persepolis DVD, for watching
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -338,6 +397,18 @@ Here&rsquo;s what I used to convert my newly bought Persepolis DVD, for watching
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

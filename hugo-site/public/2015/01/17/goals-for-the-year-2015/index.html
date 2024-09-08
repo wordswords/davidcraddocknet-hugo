@@ -10,7 +10,7 @@
 <meta name="description" content="NOTE: I have an update on my progress as of 9/1/2015 here
 Motivated by my good friend CheerUpLove.com&rsquo;s reflective style of blogging, and Ian Forrester&rsquo;s many interesting posts, I thought it would be interesting to post something a bit more personal and less technical on this blog.
 Now that 2015 is upon us, I am going to take some time to publicly outline my goals for the year, so I can hold myself more accountable to them, and so I can look back on them this time next year.">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2015/01/17/goals-for-the-year-2015/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -65,11 +65,14 @@ Now that 2015 is upon us, I am going to take some time to publicly outline my go
 Motivated by my good friend CheerUpLove.com&rsquo;s reflective style of blogging, and Ian Forrester&rsquo;s many interesting posts, I thought it would be interesting to post something a bit more personal and less technical on this blog.
 Now that 2015 is upon us, I am going to take some time to publicly outline my goals for the year, so I can hold myself more accountable to them, and so I can look back on them this time next year." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2015/01/17/goals-for-the-year-2015/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2015/01/17/goals-for-the-year-2015/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2015-01-17T23:36:45+00:00" />
 <meta property="article:modified_time" content="2015-01-17T23:36:45+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Goals for the Year 2015"/>
 <meta name="twitter:description" content="NOTE: I have an update on my progress as of 9/1/2015 here
 Motivated by my good friend CheerUpLove.com&rsquo;s reflective style of blogging, and Ian Forrester&rsquo;s many interesting posts, I thought it would be interesting to post something a bit more personal and less technical on this blog.
@@ -109,8 +112,12 @@ Now that 2015 is upon us, I am going to take some time to publicly outline my go
   "articleBody": "NOTE: I have an update on my progress as of 9/1/2015 here\nMotivated by my good friend CheerUpLove.com’s reflective style of blogging, and Ian Forrester’s many interesting posts, I thought it would be interesting to post something a bit more personal and less technical on this blog.\nNow that 2015 is upon us, I am going to take some time to publicly outline my goals for the year, so I can hold myself more accountable to them, and so I can look back on them this time next year.\nCareer Goals One of my most important goals at the moment is to settle into my new role at the BBC as Test Manager. It is a step up for me, and I want to prove my stripes. I also will be pushing for a place to be opened up with Platform Test to employ someone from the Extend Scheme. What Success Will Look Like : Growing my team, Extendee placement, good performance reviews.\nCreative Goals I have been improving my music production skills a great deal over the past year, a pastime that I find very rewarding. I have also started piano lessons, which I aim to continue with. I aim to continue getting better, and maybe to look into another evening music course - perhaps the Game Audio course at Futureworks Manchester. What Success Will Look Like : Improved music posted to Soundcloud, collaborations with other musicians, better ability at piano\nSocial Goals Getting married is going to be the main point of the year for me, with the wedding coming in September. Lots of preparing to do. I also want to keep the good friendships that I have at the moment, but perhaps make some new friends, particularly those who are into the same interests as me What Success Will Look Like : Becoming Mr. Lewin, making friends with more people that are interested in the same things as I am\nFinancial Goals I need to be saving more over the course of the year. I also want to join the BBC pension scheme, as I don’t really have a pension yet What Success Will Look Like : Significant savings at the end of the year, joining the pension scheme\nHealth Goals My fitness is something I need to become more serious about. I enjoy long-distance indoor rowing for stamina and fitness. I would like to do more of this, and there is a gym just down my road, so there isn’t much excuse for me not to. What Success Will Look Like : Adopt a regular form of keeping fit\nSo.. I will look back on this post through the year and hopefully it will motivate me to achieve these goals. Currently I think these goals are achievable, and I think 2015 will be a great year.\n",
   "wordCount" : "470",
   "inLanguage": "en",
-  "datePublished": "2015-01-17T23:36:45Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2015-01-17T23:36:45Z",
   "dateModified": "2015-01-17T23:36:45Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2015/01/17/goals-for-the-year-2015/"
@@ -129,7 +136,11 @@ Now that 2015 is upon us, I am going to take some time to publicly outline my go
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -140,9 +151,44 @@ Now that 2015 is upon us, I am going to take some time to publicly outline my go
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -154,7 +200,7 @@ Now that 2015 is upon us, I am going to take some time to publicly outline my go
     <h1 class="post-title entry-hint-parent">
       Goals for the Year 2015
     </h1>
-    <div class="post-meta"><span title='2015-01-17 23:36:45 +0000 GMT'>January 17, 2015</span>&nbsp;·&nbsp;3 min
+    <div class="post-meta"><span title='2015-01-17 23:36:45 +0000 GMT'>January 17, 2015</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> <div class="toc">
@@ -206,6 +252,19 @@ Now that 2015 is upon us, I am going to take some time to publicly outline my go
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2015/01/30/modular-synthesizers/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Modular Synthesizers</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2014/10/31/microkorg-original-novation-impulse-61/">
+    <span class="title">Next »</span>
+    <br>
+    <span>microKORG Original &#43; Novation Impulse 61</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -279,7 +338,7 @@ Now that 2015 is upon us, I am going to take some time to publicly outline my go
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -333,6 +392,18 @@ Now that 2015 is upon us, I am going to take some time to publicly outline my go
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

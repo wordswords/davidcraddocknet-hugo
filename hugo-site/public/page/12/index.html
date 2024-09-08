@@ -8,8 +8,8 @@
 <meta name="robots" content="index, follow">
 <title>DavidCraddock.net</title>
 
-<meta name="description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK.">
-<meta name="author" content="">
+<meta name="description" content="DavidCraddock.net">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/feed.xml">
+<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/index.xml">
 <link rel="alternate" type="application/json" href="https://davidcraddock.net/index.json">
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/">
 <noscript>
@@ -62,13 +62,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
 <meta property="og:title" content="DavidCraddock.net" />
-<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
+<meta property="og:description" content="DavidCraddock.net" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://davidcraddock.net/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 
-<meta name="twitter:card" content="summary"/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="DavidCraddock.net"/>
-<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK."/>
+<meta name="twitter:description" content="DavidCraddock.net"/>
 
 <script type="application/ld+json">
 {
@@ -76,10 +79,10 @@
   "@type": "Organization",
   "name": "DavidCraddock.net",
   "url": "https://davidcraddock.net/",
-  "description": "The personal blog of David Craddock, a software engineer based in Manchester, UK.",
+  "description": "DavidCraddock.net",
   "thumbnailUrl": "https://davidcraddock.net/favicon.ico",
   "sameAs": [
-      
+      "https://github.com/wordswords"
   ]
 }
 </script>
@@ -87,7 +90,11 @@
 
 <body class="list" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -98,9 +105,44 @@
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -108,153 +150,86 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Test Driven Systems Development with Nagios
+    <h2 class="entry-hint-parent">Finished Planning My Eurorack Modular Synthesizer
     </h2>
   </header>
   <div class="entry-content">
-    <p>Nagios can be seen as a automated test tool for systems, just as you would have automated tests for software projects. In test driven development (TDD), you write the tests first, and then use those tests to build up a software project that you can have confidence that it works. We can use this method to build up systems, or networks of systems. Plan out which services and processes should be running on your new systems, and then implement Nagios tests for every one. You can check the progress of your build by checking Nagios. I have been doing this at the BBC. It is a simple idea but one that seems to work.
+    <p>In January 2015 I put in an order for my first Eurorack case. Little did I know that I would end up filling that case and buying a larger one. Finally, 2 years and 3 months later, I have nearly finished assembling what will be the complete Eurorack. I have been buying a module or two per month, researching what I need and playing a lot with what I have got already to find out its limitations and areas for possible expansion. It’s much like incrementally building and upgrading a gaming PC really, although with very different results.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2012-02-07 14:42:50 +0000 GMT'>February 7, 2012</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Test Driven Systems Development with Nagios" href="https://davidcraddock.net/2012/02/07/test-driven-systems-development-with-nagios/"></a>
+  <footer class="entry-footer"><span title='2017-04-16 21:37:29 +0000 +0000'>April 16, 2017</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Finished Planning My Eurorack Modular Synthesizer" href="https://davidcraddock.net/2017/04/16/finished-planning-my-eurorack-modular-synthesizer/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">JSoup Method for Page Scraping
+    <h2 class="entry-hint-parent">Goals for 2017
     </h2>
   </header>
   <div class="entry-content">
-    <p> I’m currently in the process of writing a web scraper for the forums on Gaia Online. Previously, I used to use Python to develop web scrapers, with the very handy Python library BeautifulSoup. Java has an equivalent called JSoup.
-Here I have written a class which is extended by each class in my project that wants to scrape HTML. This ‘Scraper’ class deals with the fetching of the HTML and converting it into a JSoup tree to be navigated and have the data picked out of. It advertises itself as a ‘web spider’ type of web agent and also adds a 0-7 second random wait before fetching the page to make sure it isn’t used to overload a web server. It also converts the entire page to ASCII, which may not be the best thing to do for multi-language web pages, but certainly has made the scraping of the English language site Gaia Online much easier.
+    <p>Looking at my past posts, you may notice that I didn’t set myself any goals for 2016. Looking back, this was a mistake, so I’m going to remedy this by setting some for 2017.
+Goals:
+Lose a significant amount of weight - this is very important for health reasons. Study maths courses - I intend to sign up for some maths courses at the OU. This will improve my mathematical knowledge, allowing for further study in subjects I’m interested in, plus allow me to work in more mathematically-heavy careers. This equates to 10 hours study per week, so it’s not a light commitment, but one I think I need to make. Exercise more - this is important as it improves my mindset, stamina, and makes me feel good. Not too many goals this time, but some important ones, and I think I’m in a good position to commit to these thanks to the support of my partner, and therefore I am in a position to improve my life.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2011-09-07 18:35:17 +0000 +0000'>September 7, 2011</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to JSoup Method for Page Scraping" href="https://davidcraddock.net/2011/09/07/jsoup-method-for-page-scraping/"></a>
+  <footer class="entry-footer"><span title='2017-02-27 14:58:18 +0000 GMT'>February 27, 2017</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Goals for 2017" href="https://davidcraddock.net/2017/02/27/goals-for-2017/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Disabling Control-Enter and Control-B shortcut keys in Outlook 2003
+    <h2 class="entry-hint-parent">Studio Setup
     </h2>
   </header>
   <div class="entry-content">
-    <p>At work, I still have to use Windows XP and Outlook 2003. I don’t particually mind this, except when I draft an email to someone and accidently I press Control-B instead of Control-V. Control-B will go ahead and send your partially composed email, resulting in some embarassment as you have to tell everyone to disregard it.
-So I wanted to remove the ‘send email’ shortcut keys in Outlook 2003. There are two ways of doing this, one involves editing your group policy, which is something only my IT administration team can do, and I didn’t want to have to involve them. The other way is by making a change to your registry, which I will describe here.
+    <p> This is my current studio setup.
+I have the following gear:
+Eurorack 9U case Eurorack 6U case KORG MS20 Mini Synth Roland TB3 Synth AY3 Chiptune Synth Roland A500-PRO Keyboard Controller Nord Drum Synth Macbook Pro with Ableton Live 9 Suite MIDI.OCD Polyphonic MIDI-&gt;CV Converter Samson Patchbay
+I am looking to sell my Acces Virus A and concentrate on filling up the remaining Eurorack case holes.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2011-07-13 16:34:39 +0000 +0000'>July 13, 2011</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Disabling Control-Enter and Control-B shortcut keys in Outlook 2003" href="https://davidcraddock.net/2011/07/13/disabling-control-enter-and-control-b-shortcut-keys-in-outlook-2003/"></a>
+  <footer class="entry-footer"><span title='2017-02-11 13:25:27 +0000 GMT'>February 11, 2017</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Studio Setup" href="https://davidcraddock.net/2017/02/11/studio-setup/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Directory names not visable under ls? Change your colours.
+    <h2 class="entry-hint-parent">Switching to Wordpress.com
     </h2>
   </header>
   <div class="entry-content">
-    <p>There is a problem I frequently encouter on Redhat/Fedora/CentOS systems with the output of the ls command. Under those distributions, the default setup is to display directories in a very dark colour. If you usually use a white foreground and a black background on your terminal client (such as Putty) then you will struggle to read the names of the directories under Redhat-based distributions.
-There are two soloutions that I have used:
-...</p>
+    <p>I am currently moving the blog, which was formerly hosted on Dreamhost, to Wordpress.com hosting. Most of the content is moved over already, I have to go through all the posts and tidy up the references, relink the images etc. Hopefully I will get around to this shortly.
+</p>
   </div>
-  <footer class="entry-footer"><span title='2011-05-04 16:03:55 +0000 +0000'>May 4, 2011</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to Directory names not visable under ls? Change your colours." href="https://davidcraddock.net/2011/05/04/directory-names-not-visable-under-ls-change-your-colours/"></a>
+  <footer class="entry-footer"><span title='2017-01-30 07:09:58 +0000 GMT'>January 30, 2017</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Switching to Wordpress.com" href="https://davidcraddock.net/2017/01/30/switching-to-wordpress-com/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Scraping Gumtree Property Adverts with Python and BeautifulSoup
+    <h2 class="entry-hint-parent">Music Workflow 2017
     </h2>
   </header>
   <div class="entry-content">
-    <p>I am moving to Manchester soon, and so I thought I’d get an idea of the housing market there by scraping all the Manchester Gumtree property adverts into a MySQL database. Once in the database, I could do things like find the average monthly price for a 2 bedroom flat in an area, and spot bargains through using standard deviation from the mean on the price through using simple SQL queries via phpMyAdmin.
-...</p>
+    <p>In 2017 I want to build a relatively static hardware-based workflow. This is what I’ve chosen: The components are:
+Roland A-500PRO keyboard controller - https://www.roland.com/global/products/a-500pro/ Arpie MIDI Arpeggiator - https://www.tindie.com/products/hotchk155/arpie-midi-arpeggiator-kit/ CV.OCD Midi -&gt; CV Convertor - https://www.tindie.com/products/hotchk155/cvocd-a-super-flexible-midi-to-cv-box/ KORG MS20 Semi-Modular Mini Synth Eurorack - https://www.modulargrid.net/e/racks/view/350623 Nord Drum Semi-Modular Drum Module - http://www.nordkeyboards.com/products/nord-drum Stereo Memory Man with Hazarai (Reverb/Echo Pedal) - http://www.ehx.com/products/stereo-memory-man-with-hazarai Focusrite Saffire Pro 24 Audio Interface - https://us.focusrite.com/firewire-audio-interfaces/saffire-pro-24 Ableton Push Controller (MK1) - https://www.ableton.com/en/push/ </p>
   </div>
-  <footer class="entry-footer"><span title='2011-05-01 14:07:02 +0000 +0000'>May 1, 2011</span>&nbsp;·&nbsp;7 min</footer>
-  <a class="entry-link" aria-label="post link to Scraping Gumtree Property Adverts with Python and BeautifulSoup" href="https://davidcraddock.net/2011/05/01/scraping-gumtree-property-adverts-with-python-and-beautifulsoup/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">RESTful Web Services
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>REST (Representational State Transfer) is a way of delivering web services. When a web service conforms to REST, it is known as RESTful. The largest RESTful web service is the Hypertext Transfer Protocol (HTTP) which you use every day to send and receive information from web servers while browsing the internet.
-To implement RESTful web services, you should implement four methods: GET, PUT, POST and DELETE. Resources on RESTful web services are typically defined as collections of elements. The REST methods can either act on a whole collection, or a specific element in a collection.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2011-03-02 14:21:23 +0000 GMT'>March 2, 2011</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to RESTful Web Services" href="https://davidcraddock.net/2011/03/02/restful-web-services/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">&#39;Weather Forecast&#39; Calendar Service in PHP
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The BBC provide 3 day weather RSS feeds for most locations in the UK. I thought it would be interesting to create a web service to turn the weather feed into calendar feed format, so I could have a constantly updated forecast of the next 3 days of weather mapped on to my iPhone’s calendar. Here it is on my iPhone:
-Overview
-The service is separated into five files:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2011-02-24 19:31:48 +0000 GMT'>February 24, 2011</span>&nbsp;·&nbsp;4 min</footer>
-  <a class="entry-link" aria-label="post link to &#39;Weather Forecast&#39; Calendar Service in PHP" href="https://davidcraddock.net/2011/02/24/a-3-day-weather-forecast-calendar-service/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Find large files by using the OSX commandline
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>To quickly find large files to delete if you have filled your startup disk, enter this command on the OSX terminal:
-sudo find / -size &#43;500000 -print This will find and print out file paths to files over 500MB. You can then go through them and delete them individually by typing rm “”, although there is no undelete so make sure you know you won’t miss them.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2011-02-22 00:16:12 +0000 GMT'>February 22, 2011</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Find large files by using the OSX commandline" href="https://davidcraddock.net/2011/02/22/find-large-files-by-using-the-osx-commandline/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Finding files in Linux modified between two dates
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>You use the ’touch’ command to create two blank files, with a last modified date that you specify - one with a date of the start of the range you want to specify, and the second with a date at the end of the range you want to specify. Then you reference to those two files in your find command:
-touch /tmp/temp -t 200604141130 touch /tmp/ntemp -t 200604261630 find /data/ -cnewer /tmp/temp -and ! -cnewer /tmp/ntemp ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2011-02-16 12:33:44 +0000 GMT'>February 16, 2011</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Finding files in Linux modified between two dates" href="https://davidcraddock.net/2011/02/16/finding-files-in-linux-modified-between-two-dates/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Writing simple email alerts in PHP with MagpieRSS
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I wrote an email alerter that sends me an email whenever the upcoming temperature may dip below freezing. It uses the Magpie RSS reader to pull down a 3 day weather forecast that is provided for my area in RSS form by the BBC weather site. It then parses this forecast and determines if either today’s or tomorrow’s weather may dip below freezing. If it might, it sends an email to my email address to warn me.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2011-02-12 20:01:13 +0000 GMT'>February 12, 2011</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Writing simple email alerts in PHP with MagpieRSS" href="https://davidcraddock.net/2011/02/12/writing-simple-email-alerts-in-php-with-magpierss/"></a>
+  <footer class="entry-footer"><span title='2016-12-03 20:02:18 +0000 GMT'>December 3, 2016</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Music Workflow 2017" href="https://davidcraddock.net/2016/12/03/music-workflow-2017/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://davidcraddock.net/page/11/">
-      «&nbsp;Prev&nbsp;
+      «&nbsp;Prev&nbsp;11/36
     </a>
-    <a class="next" href="https://davidcraddock.net/page/13/">Next&nbsp;&nbsp;»
+    <a class="next" href="https://davidcraddock.net/page/13/">Next&nbsp;13/36&nbsp;»
     </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -308,6 +283,18 @@ touch /tmp/temp -t 200604141130 touch /tmp/ntemp -t 200604261630 find /data/ -cn
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 </body>

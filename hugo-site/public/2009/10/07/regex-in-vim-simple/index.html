@@ -9,7 +9,7 @@
 <meta name="keywords" content="">
 <meta name="description" content="There are more than a gazillion ways to use regexs. I am sure they are each very useful for their own subset of problems. The sheer variety can be highly confusing and scary for a lot of people though, and you only need to use a few approaches to accomplish most text-editing tasks.
 Here is a simple method for using regex in the powerful text editor VIM that will work well for common use.">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2009/10/07/regex-in-vim-simple/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -63,11 +63,14 @@ Here is a simple method for using regex in the powerful text editor VIM that wil
 <meta property="og:description" content="There are more than a gazillion ways to use regexs. I am sure they are each very useful for their own subset of problems. The sheer variety can be highly confusing and scary for a lot of people though, and you only need to use a few approaches to accomplish most text-editing tasks.
 Here is a simple method for using regex in the powerful text editor VIM that will work well for common use." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2009/10/07/regex-in-vim-simple/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2009/10/07/regex-in-vim-simple/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2009-10-07T06:40:02+00:00" />
 <meta property="article:modified_time" content="2009-10-07T06:40:02+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Regex in VIM.. simple"/>
 <meta name="twitter:description" content="There are more than a gazillion ways to use regexs. I am sure they are each very useful for their own subset of problems. The sheer variety can be highly confusing and scary for a lot of people though, and you only need to use a few approaches to accomplish most text-editing tasks.
 Here is a simple method for using regex in the powerful text editor VIM that will work well for common use."/>
@@ -106,8 +109,12 @@ Here is a simple method for using regex in the powerful text editor VIM that wil
   "articleBody": "There are more than a gazillion ways to use regexs. I am sure they are each very useful for their own subset of problems. The sheer variety can be highly confusing and scary for a lot of people though, and you only need to use a few approaches to accomplish most text-editing tasks.\nHere is a simple method for using regex in the powerful text editor VIM that will work well for common use.\nMethod We are going to take the “search and delete a word” problem for an example. We want to delete all instances of the singular noun “needle” in a text file. Let’s assume there are no instances of the pluralisation “needles” in our document.\nDebug on.. turn some VIM options on :set hlsearch :set wrapscan - this will make all regex expressions possible to debug by visually showing what they match in your document (first line) and make all searches wrap around instead of just search forward from your current position, which is the default. (second line)\nDevelop and Test.. your regex attempts by using a simple search. Here we see three attempts at solving the problem: :/needl :/needle :/ - our third try is correct, and highlights all words that spell “needle”. The \u003c and \u003e markers allow you to specify the beginning and the end of a word. Play with different regexs using the simple search and watching what is highlighted, until you discover one that works for you.\nRun… your regex :%s///g - once you’ve figured out a regex, run the regex on your document. This example will execute a search for the word “needle” and delete every one. If you wanted to substitute needle for another word, you would put the word in between the / / marks. As we can see, there is nothing between the marks in this example, so it will replace instances of “needle” with nothing. This means it will serve to delete every instance of the word “needle”.\nCheck things are OK… with your document :/ :/needle :/needl - has the regex done what you want? Use the search function to see if regex has done what you wanted it to do. The above examples show different searches through the document to see if different variations remain. Any matches of these searches will highlight any problems. You can use the lower-case N(next search result) and lower-case P(previous search result) commands to navigate through any found search results. You must remember to manually look through the document and see what the regex has changed, make sure there aren’t any unwanted surprises!\nRecover… from any mistakes u - just press the U key (with no capslock or shift). This will undo the very last last change made to the document.\nRedo… any work that you need to -r - use the redo fuction; press the CONTROL and R keys together (with no capslock or shift). This will redo the last change made to the document.\nFinish up and Write… to file :w - write your work on the document to file. Even after you have written out to file, you can probably still use the undo function to get back to where you were, but it’s best practice to not rely on this, and only write once you’re done.\nDebug off.. turn some options off :set nohlsearch :set nowrapscan - turn off the regular expression highlighting (line 1). turn off the wraparound searching (line 2). You can leave either or both options on if you want, they’re often useful. Up to you.\nUse a combination of these wonderful commands to test and improve your regex development skills in VIM.\nExamples Here I use the shorthand \" #…\" to denote comments on what I’m doing… if you want to copy and paste the example as written, then you will have to remove those comments.\n1. Remove ancient uppercase tags from a document.\n:set wrapscan # debug on :set hlsearch # debug on :/ # try 1.. bingo! first time.. selected all tags I want :%s///g # lets execute my regex remove :/BLINK # check 1.. testing things are OK in my file by searching through.. :/blinked # check 2.. yep thats ok.. :/ # check 3.. yep looks ok... the problem tags are gone # ...manual scroll through the document.. looks good! :w # write out to file :set nohlsearch # debug off :set nowrapscan # debug off 2. Oh no! We missed some lower and mixedcase tags that some sneaky person slipped in. Let’s take them out.\n:set wrapscan # debug on :set hlsearch # debug on :/ # try 1.. hm.. worked for many, but didnt match BlInK or blINK mixedcase ://i # try 2.. much better.. seems to have worked! :%s///i # lets execute my regex remove :/BLINK # check 1.. testing things are OK in my file by searching through.. :/blinked # check 2.. yep thats ok.. :/ # check 3.. yep thats fine. ://i # check 4.. looks good... problem solved # ...manual scroll through the document.. looks much better! :w # write out to file :set nohlsearch # debug off :set nowrapscan # debug off 3. Replacing uppercase or mixedcase tags with the more modern .\n:set wrapscan # debug on :set hlsearch # debug on :/ # try 1.. hmm.. just uppercase.. not gonna work.. :/\n# try 2.. hmm.. just lowercase.. ://i # try 3.. ahh.. that'll be it then :%s//\n/gi # lets execute my regex substitution :/BR # check 1.. testing things are OK in my file by searching through.. :/br # check 2.. yep thats ok.. /bR # check 3 ..yup.. ://i # check 4.. yep looks ok... the problem tags seem to be gone # ...manual scroll through the document.. looks good! :w # write out to file :set nohlsearch # debug off :set nowrapscan # debug off For More.. Regexs are the gift that just keeps on giving. Here are some good resources on regexs in general, and regexs in VIM.\nA great modern way to learn regexs.. try them online! interactive flash awesomeness. A neat graphical VI/VIM cheat-sheet. An advanced VIM/regex tutorial.. More VIM/regex ninja skills. Stackoverflow is a good place to find practical ways to solve regex problems with VIM. Probably the most definitive regex site on the ’net ",
   "wordCount" : "1053",
   "inLanguage": "en",
-  "datePublished": "2009-10-07T06:40:02Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2009-10-07T06:40:02Z",
   "dateModified": "2009-10-07T06:40:02Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2009/10/07/regex-in-vim-simple/"
@@ -126,7 +133,11 @@ Here is a simple method for using regex in the powerful text editor VIM that wil
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -137,9 +148,44 @@ Here is a simple method for using regex in the powerful text editor VIM that wil
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -151,7 +197,7 @@ Here is a simple method for using regex in the powerful text editor VIM that wil
     <h1 class="post-title entry-hint-parent">
       Regex in VIM.. simple
     </h1>
-    <div class="post-meta"><span title='2009-10-07 06:40:02 +0000 +0000'>October 7, 2009</span>&nbsp;·&nbsp;5 min
+    <div class="post-meta"><span title='2009-10-07 06:40:02 +0000 +0000'>October 7, 2009</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> <div class="toc">
@@ -208,48 +254,48 @@ Here is a simple method for using regex in the powerful text editor VIM that wil
 <p>Use a combination of these wonderful commands to test and improve your regex development skills in VIM.</p>
 <h2 id="examples">Examples<a hidden class="anchor" aria-hidden="true" href="#examples">#</a></h2>
 <p>Here I use the shorthand &quot; <strong>#&hellip;</strong>&quot; to denote comments on what I&rsquo;m doing&hellip; if you want to copy and paste the example as written, then you will have to remove those comments.</p>
-<p>1. Remove ancient uppercase <!-- raw HTML omitted --> tags from a document.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:set wrapscan # debug on
-</span></span><span style="display:flex;"><span>:set hlsearch # debug on
-</span></span><span style="display:flex;"><span>:/&lt;BLINK&gt; # try 1.. bingo! first time.. selected all tags I want
-</span></span><span style="display:flex;"><span>:%s/&lt;BLINK&gt;//g # lets execute my regex remove
-</span></span><span style="display:flex;"><span>:/BLINK # check 1.. testing things are OK in my file by searching through..
-</span></span><span style="display:flex;"><span>:/blinked # check 2.. yep thats ok..
-</span></span><span style="display:flex;"><span>:/&lt;BLINK&gt; # check 3.. yep looks ok... the problem tags are gone
-</span></span><span style="display:flex;"><span># ...manual scroll through the document.. looks good!
-</span></span><span style="display:flex;"><span>:w # write out to file
-</span></span><span style="display:flex;"><span>:set nohlsearch # debug off
-</span></span><span style="display:flex;"><span>:set nowrapscan # debug off
-</span></span></code></pre></div><p>2. Oh no! We missed some lower and mixedcase <!-- raw HTML omitted --> tags that some sneaky person slipped in. Let&rsquo;s take them out.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:set wrapscan # debug on
-</span></span><span style="display:flex;"><span>:set hlsearch # debug on
-</span></span><span style="display:flex;"><span>:/&lt;blink&gt; # try 1.. hm.. worked for many, but didnt match BlInK or blINK mixedcase
-</span></span><span style="display:flex;"><span>:/&lt;blink&gt;/i # try 2.. much better.. seems to have worked!
-</span></span><span style="display:flex;"><span>:%s/&lt;blink&gt;//i # lets execute my regex remove
-</span></span><span style="display:flex;"><span>:/BLINK # check 1.. testing things are OK in my file by searching through..
-</span></span><span style="display:flex;"><span>:/blinked # check 2.. yep thats ok..
-</span></span><span style="display:flex;"><span>:/&lt;blink&gt; # check 3.. yep thats fine.
-</span></span><span style="display:flex;"><span>:/&lt;blink&gt;/i # check 4.. looks good... problem solved
-</span></span><span style="display:flex;"><span># ...manual scroll through the document.. looks much better!
-</span></span><span style="display:flex;"><span>:w # write out to file
-</span></span><span style="display:flex;"><span>:set nohlsearch # debug off
-</span></span><span style="display:flex;"><span>:set nowrapscan # debug off
-</span></span></code></pre></div><p>3. Replacing uppercase or mixedcase <!-- raw HTML omitted --> tags with the more modern <!-- raw HTML omitted -->.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:set wrapscan # debug on
-</span></span><span style="display:flex;"><span>:set hlsearch # debug on
-</span></span><span style="display:flex;"><span>:/&lt;BR&gt; # try 1.. hmm.. just uppercase.. not gonna work..
-</span></span><span style="display:flex;"><span>:/&lt;br&gt; # try 2.. hmm.. just lowercase..
-</span></span><span style="display:flex;"><span>:/&lt;BR&gt;/i # try 3.. ahh.. that&#39;ll be it then
-</span></span><span style="display:flex;"><span>:%s/&lt;BR&gt;/&lt;br&gt;/gi # lets execute my regex substitution
-</span></span><span style="display:flex;"><span>:/BR # check 1.. testing things are OK in my file by searching through..
-</span></span><span style="display:flex;"><span>:/br # check 2.. yep thats ok..
-</span></span><span style="display:flex;"><span>/bR # check 3 ..yup..
-</span></span><span style="display:flex;"><span>:/&lt;BR&gt;/i # check 4.. yep looks ok... the problem tags seem to be gone
-</span></span><span style="display:flex;"><span># ...manual scroll through the document.. looks good!
-</span></span><span style="display:flex;"><span>:w # write out to file
-</span></span><span style="display:flex;"><span>:set nohlsearch # debug off
-</span></span><span style="display:flex;"><span>:set nowrapscan # debug off
-</span></span></code></pre></div><h2 id="for-more">For More..<a hidden class="anchor" aria-hidden="true" href="#for-more">#</a></h2>
+<p>1. Remove ancient uppercase <BLINK> tags from a document.</p>
+<pre tabindex="0"><code>:set wrapscan # debug on
+:set hlsearch # debug on
+:/&lt;BLINK&gt; # try 1.. bingo! first time.. selected all tags I want
+:%s/&lt;BLINK&gt;//g # lets execute my regex remove
+:/BLINK # check 1.. testing things are OK in my file by searching through..
+:/blinked # check 2.. yep thats ok..
+:/&lt;BLINK&gt; # check 3.. yep looks ok... the problem tags are gone
+# ...manual scroll through the document.. looks good!
+:w # write out to file
+:set nohlsearch # debug off
+:set nowrapscan # debug off
+</code></pre><p>2. Oh no! We missed some lower and mixedcase <bLiNK> tags that some sneaky person slipped in. Let&rsquo;s take them out.</p>
+<pre tabindex="0"><code>:set wrapscan # debug on
+:set hlsearch # debug on
+:/&lt;blink&gt; # try 1.. hm.. worked for many, but didnt match BlInK or blINK mixedcase
+:/&lt;blink&gt;/i # try 2.. much better.. seems to have worked!
+:%s/&lt;blink&gt;//i # lets execute my regex remove
+:/BLINK # check 1.. testing things are OK in my file by searching through..
+:/blinked # check 2.. yep thats ok..
+:/&lt;blink&gt; # check 3.. yep thats fine.
+:/&lt;blink&gt;/i # check 4.. looks good... problem solved
+# ...manual scroll through the document.. looks much better!
+:w # write out to file
+:set nohlsearch # debug off
+:set nowrapscan # debug off
+</code></pre><p>3. Replacing uppercase or mixedcase <BR> tags with the more modern <br>.</p>
+<pre tabindex="0"><code>:set wrapscan # debug on
+:set hlsearch # debug on
+:/&lt;BR&gt; # try 1.. hmm.. just uppercase.. not gonna work..
+:/&lt;br&gt; # try 2.. hmm.. just lowercase..
+:/&lt;BR&gt;/i # try 3.. ahh.. that&#39;ll be it then
+:%s/&lt;BR&gt;/&lt;br&gt;/gi # lets execute my regex substitution
+:/BR # check 1.. testing things are OK in my file by searching through..
+:/br # check 2.. yep thats ok..
+/bR # check 3 ..yup..
+:/&lt;BR&gt;/i # check 4.. yep looks ok... the problem tags seem to be gone
+# ...manual scroll through the document.. looks good!
+:w # write out to file
+:set nohlsearch # debug off
+:set nowrapscan # debug off
+</code></pre><h2 id="for-more">For More..<a hidden class="anchor" aria-hidden="true" href="#for-more">#</a></h2>
 <p>Regexs are the gift that just keeps on giving. Here are some good resources on regexs in general, and regexs in VIM.</p>
 <ul>
 <li><a href="http://www.gskinner.com/RegExr/">A great modern way to learn regexs.. try them online! interactive flash awesomeness.</a></li>
@@ -266,6 +312,19 @@ Here is a simple method for using regex in the powerful text editor VIM that wil
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2009/10/17/speed-climbing/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Speed Climbing</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2009/04/07/heart-rate-monitor-now-available-for-the-xo-laptop/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Heart rate monitor now available for the XO Laptop</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -339,7 +398,7 @@ Here is a simple method for using regex in the powerful text editor VIM that wil
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -393,6 +452,18 @@ Here is a simple method for using regex in the powerful text editor VIM that wil
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

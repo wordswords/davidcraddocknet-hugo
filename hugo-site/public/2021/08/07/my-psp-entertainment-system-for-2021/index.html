@@ -10,7 +10,7 @@
 <meta name="description" content="
 
 I have recently been in hospital and been diagnosed with a condition that might mean I need to return quite a bit, at least in the short term. When I was in hospital I was struck by the fact that there were very long periods of waiting and it was easy to get very bored and quite dejected just sitting in a hospital bed.">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2021/08/07/my-psp-entertainment-system-for-2021/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -65,11 +65,14 @@ I have recently been in hospital and been diagnosed with a condition that might 
 
 I have recently been in hospital and been diagnosed with a condition that might mean I need to return quite a bit, at least in the short term. When I was in hospital I was struck by the fact that there were very long periods of waiting and it was easy to get very bored and quite dejected just sitting in a hospital bed." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2021/08/07/my-psp-entertainment-system-for-2021/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2021/08/07/my-psp-entertainment-system-for-2021/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-08-07T19:57:27+00:00" />
 <meta property="article:modified_time" content="2021-08-07T19:57:27+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="My PSP Entertainment System for 2021!"/>
 <meta name="twitter:description" content="
 
@@ -109,8 +112,12 @@ I have recently been in hospital and been diagnosed with a condition that might 
   "articleBody": " I have recently been in hospital and been diagnosed with a condition that might mean I need to return quite a bit, at least in the short term. When I was in hospital I was struck by the fact that there were very long periods of waiting and it was easy to get very bored and quite dejected just sitting in a hospital bed.\nAlso there is not a lot of room for laptops, tablets and other things – you really don’t get a lot of space by your bed usually to store large items and they are not practical most of the time. Therefore I thought I would hack together some kind of portable entertainment system that I could use to pass the time and to block out some of the hospital negativity if I need to be in hospital again. My DJ headphones Seinhausser HD 2-IIs are actually very useful in a hospital because they are very good at sound isolation and you can remove one of the ear cups so you can lie on your side in a hospital bed and just listen to one earcup without it being uncomfortable, so they were very good to use with the PSP.\nI chose the PSP 2000 model as it is very capable of playing emulated games up to Playstation 1 era, which includes my favourites the GBA, SNES and Genesis games. It also has option to watch Sony UMD movies, and the screen is actually very good and clear in the dark and most light settings.\nI went through Etsy until I found a seller that was selling custom PSPs. They came with a tested battery, a mint condition screen and you could choose from a number of different cases. I chose the rare special edition Japanese signature Model 000001 Tsukimi case and it came to quite a reasonable price overall, £160 for everything although no memory card was supplied.\nWhen it arrived, I was a bit worried that the screen would be scratched, but when I peeled off the screen protector there was zero damage to the screen. In all other ways it seemed mint, so was very happy. The battery was an official Sony one which still held a charge well, which I was very happy about because it is difficult to find a good battery.\nI peeled off the screen protector and put on a new one straight away. I also ordered a 32GB PSP memory card, and a joint USB charge/data transfer cable. When the card arrived I put on the PSP 2000 ‘PRO’ Custom Firmware, allowing me to ‘root’ the device and install third-party software such as emulators on it. I then installed a PSP Snes9x version and downloaded a full complete set of SNES games and copied them to the memory card. I had to split the games up into folders of 200 games or so each otherwise the PSP struggled indexing all the games, but when I had done that they all worked. I could play any Super Nintendo game ever released on the emulator on my PSP and take them anywhere.\nI also bought a hardshell carry case for my PSP which will have enough room for a charger, a few Sony UMD disks and the PSP. The PSP 2000 models are different from the 1000 models in that they actually have a HDMI cable available, so you can connect them to a HDMI monitor. So I bought one of those to play when I am home at my desk with my HDMI monitor – it is a much better user experience! See the picture below, it even works well in my 21:9 ultrawide monitor after fiddling with various upscaling options:\nI already had a couple of Sony UMD discs and they are very cheap on Ebay, so I splashed out and ordered a complete set of the Harry Potter 1-8 movies. I could definitely just rip movies and put them on the memory card and it would save a lot of hassle but I like the UMD format and as I said they are very cheap nowadays. I may put some additional video file rips on the memory card.\nI got ALL the information I could have wanted for this project from the excellent Reddit subreddit ‘PSP’. Reddit is a font of useful, up to date, technical info and just following the wiki and top links on that subreddit really was all that was required to do everything I needed.\n",
   "wordCount" : "751",
   "inLanguage": "en",
-  "datePublished": "2021-08-07T19:57:27Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2021-08-07T19:57:27Z",
   "dateModified": "2021-08-07T19:57:27Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2021/08/07/my-psp-entertainment-system-for-2021/"
@@ -129,7 +136,11 @@ I have recently been in hospital and been diagnosed with a condition that might 
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -140,9 +151,44 @@ I have recently been in hospital and been diagnosed with a condition that might 
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -154,7 +200,7 @@ I have recently been in hospital and been diagnosed with a condition that might 
     <h1 class="post-title entry-hint-parent">
       My PSP Entertainment System for 2021!
     </h1>
-    <div class="post-meta"><span title='2021-08-07 19:57:27 +0000 +0000'>August 7, 2021</span>&nbsp;·&nbsp;4 min
+    <div class="post-meta"><span title='2021-08-07 19:57:27 +0000 +0000'>August 7, 2021</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> 
@@ -181,6 +227,19 @@ I have recently been in hospital and been diagnosed with a condition that might 
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2021/09/21/how-to-fix-plex-media-servers-various-artists-problem-using-beets-io-and-other-tools/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>How to fix Plex Media Servers &#39;Various Artists&#39; problem using Beets.io and other tools</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2021/06/13/making-twitch-dj-promo-mix-videos/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Making Twitch DJ Promo Mix Videos</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -254,7 +313,7 @@ I have recently been in hospital and been diagnosed with a condition that might 
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -308,6 +367,18 @@ I have recently been in hospital and been diagnosed with a condition that might 
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

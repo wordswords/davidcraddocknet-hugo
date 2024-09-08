@@ -8,8 +8,8 @@
 <meta name="robots" content="index, follow">
 <title>DavidCraddock.net</title>
 
-<meta name="description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK.">
-<meta name="author" content="">
+<meta name="description" content="DavidCraddock.net">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/feed.xml">
+<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/index.xml">
 <link rel="alternate" type="application/json" href="https://davidcraddock.net/index.json">
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/">
 <noscript>
@@ -62,13 +62,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
 <meta property="og:title" content="DavidCraddock.net" />
-<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
+<meta property="og:description" content="DavidCraddock.net" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://davidcraddock.net/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 
-<meta name="twitter:card" content="summary"/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="DavidCraddock.net"/>
-<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK."/>
+<meta name="twitter:description" content="DavidCraddock.net"/>
 
 <script type="application/ld+json">
 {
@@ -76,10 +79,10 @@
   "@type": "Organization",
   "name": "DavidCraddock.net",
   "url": "https://davidcraddock.net/",
-  "description": "The personal blog of David Craddock, a software engineer based in Manchester, UK.",
+  "description": "DavidCraddock.net",
   "thumbnailUrl": "https://davidcraddock.net/favicon.ico",
   "sameAs": [
-      
+      "https://github.com/wordswords"
   ]
 }
 </script>
@@ -87,7 +90,11 @@
 
 <body class="list" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -98,9 +105,44 @@
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -108,154 +150,86 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Android Debug Bridge failing to detect emulators under OSX
+    <h2 class="entry-hint-parent">Studio Setup in 2020
     </h2>
   </header>
   <div class="entry-content">
-    <p> I’ve been working on a project at the BBC where we are using the Android command-line tools from the Android Developer Tools, to spin up and terminate series of emulators. I noticed a big problem under OSX where ‘adb devices’ was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb.
+    <p> I have made some considerable modifications to my modular since my last post. I have a 4-voice polyphony setup now with multiple voice Osc, VCA, Envelope and MIDI-CV modules, allowing me to experiment with polyphony voicing.
+Elsewhere, I have added an Access Virus C synthesizer to my studio, and now have rack-mounted Behringer Model D and Emu Orbit 9090 synthesizers. I have also upgraded to Ableton 10 and use NI’s Komplete suite including Massive X, plus TAL-NO-UX Juno 106 softsynth, Sylenth1 and others.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2013-11-17 02:21:34 +0000 GMT'>November 17, 2013</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Android Debug Bridge failing to detect emulators under OSX" href="https://davidcraddock.net/2013/11/17/android-debug-bridge-failing-to-detect-emulators-under-osx/"></a>
+  <footer class="entry-footer"><span title='2020-01-30 14:55:22 +0000 GMT'>January 30, 2020</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Studio Setup in 2020" href="https://davidcraddock.net/2020/01/30/studio-setup-in-2020/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">The Haiku Machine
+    <h2 class="entry-hint-parent">A Retrospective for Years 2016-19
     </h2>
   </header>
   <div class="entry-content">
-    <p> I found this awesome cut-up poetry generator, which takes the text of famous poets and builds structured poetry out of it. The guy that made it even developed the underlying algorithm as a research project. I have put a version of a free Amazon EC2 instance, wrote a little twitter bot in node.js, and wired the poetry generator with the twitter bot, and now I have this: https://twitter.com/haikumachine - a twitter bot that posts a haiku every five minutes, derived from Dylan Thomas’s poetry.
+    <p>I thought I’d update my blog to reflect recent changes in my life, and review what was good and bad about them, as I was doing before.
+The “Not Awesome”
+My overall health level has got a bit worse over the years. I have had limited success in losing weight. I was going for regular walks nearly every week with a friend of mine, but that has stopped lately. I find it difficult exercising while living in a city, as my favourite activity for excercising is walking, and there are not a huge amount of pleasent walking oppertunities around my area. I have been getting Ubers to parks and walking there. A posssible solution that I am actually considering is moving outside of the city, where there are a lot more pleasent walking oppertunities on my doorstep, and which would hopefully lead to a much more active lifestyle. The “Awesome”
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2013-07-27 02:29:10 +0000 +0000'>July 27, 2013</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to The Haiku Machine" href="https://davidcraddock.net/2013/07/27/thehaiku-machine/"></a>
+  <footer class="entry-footer"><span title='2019-03-30 23:09:23 +0000 GMT'>March 30, 2019</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to A Retrospective for Years 2016-19" href="https://davidcraddock.net/2019/03/30/a-retrospective-for-years-2016-19/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">256 Color VIM on Crunchbang Waldorf
+    <h2 class="entry-hint-parent">Home Cinema Setup
     </h2>
   </header>
   <div class="entry-content">
-    <p>To get 256 colors working within terminator in Crunchbang Waldorf, I had to do the following:
-Add to ~/.bashrc
-export TERM=xterm-256color Install a 256 color VIM colorcheme, see desert256 for example.
-Add the following to ~/.vimrc:
-set t_Co=256 set t_AB=^[[48;5;%dm set t_AF=^[[38;5;%dm ...</p>
+    <p>I have been gradually adding parts to my PC so that it functions better for watching movies and gaming. Here are the components that I have used:
+Monitor – BenQ EX3501R 35″ Ultra WQHD Curved Monitor This monitor is great for watching movies and gaming as it is ultra-wide at an aspect radio of 21:9, 3440x1440, a VA panel with high contrast, and the monitor is slightly curved so that you get a cinematic experience.
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2013-06-20 22:15:52 +0000 +0000'>June 20, 2013</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to 256 Color VIM on Crunchbang Waldorf" href="https://davidcraddock.net/2013/06/20/256-color-vim-on-crunchbang-waldorf/"></a>
+  <footer class="entry-footer"><span title='2018-05-20 11:40:51 +0000 +0000'>May 20, 2018</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Home Cinema Setup" href="https://davidcraddock.net/2018/05/20/home-cinema-setup/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Subversion 1.7 on Crunchbang Waldorf
+    <h2 class="entry-hint-parent">Finished Eurorack
     </h2>
   </header>
   <div class="entry-content">
-    <p>I use the excellent http://www.smartsvn.com/ client from WANdisco. WANdisco have been releasing new open-source versions of SVN to the public with new improved reliability, and the client uses one of these versions, 1.7, to offer better performance.
-Unfortunately if you choose to upgrade your entire repository to 1.7, this breaks compatibility with the default commandline SVN client on Waldorf which I like to use as well as Smart SVN, for quick ‘svn up’s and other commandline magic.
+    <p>Finally I have finished my Eurorack synthesiser! And I know many people say that ‘Euroracks are never finished’ but this one absolutely has to be, for financial reasons. I think that I have got to a place where I have every major feature common in most synthesisers, but in a modular instrument format. It is a great place to learn about different synthesis techniques.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2013-06-16 03:43:49 +0000 +0000'>June 16, 2013</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Subversion 1.7 on Crunchbang Waldorf" href="https://davidcraddock.net/2013/06/16/subversion-1-7-on-crunchbang-waldorf/"></a>
+  <footer class="entry-footer"><span title='2017-06-16 17:57:23 +0000 +0000'>June 16, 2017</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Finished Eurorack" href="https://davidcraddock.net/2017/06/16/finished-eurorack/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">iTerm for OSX for a Colourful Terminal Experience
+    <h2 class="entry-hint-parent">Node.js HTTPS server with self-signed certificate creation on openssl 0.9.8zh with node.js 7.10.0
     </h2>
   </header>
   <div class="entry-content">
-    <p> iTerm is much better than the standard OSX terminal client, not least because it has compatiablity with xterm256-color terminal emulation. xterm256-color emulation will give your terminal access to 256 colours instead of the usual 16. Much better, not just for looking pretty, but for distinguishing between different types of data in an editor like VIM or even in Cucumber output (see picture above). It’s also free.
+    <p>I couldn’t find a concise guide to setting this up quickly so thought it was worth a post. To quickly get something working and create a https server using the above versions of openssl and node.js, do the following:
+Generate self-signed server certificate with no password sudo openssl req -x509 -newkey rsa:2048 -keyout ./csr.pem -out server.crt -days 3001 -nodes Use this node.js code to setup a server quickly const https = require(&#39;https&#39;); const fs = require(&#39;fs&#39;); const options = { key: fs.readFileSync(&#39;csr.pem&#39;), cert: fs.readFileSync(&#39;server.crt&#39;) }; https.createServer(options, (req, res) =&gt; { res.writeHead(200); res.end(&#39;hello world\n&#39;); }).listen(8000); Go to https://localhost:8000 and accept the certificate, you should see ‘hello world’
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2013-06-11 16:08:16 +0000 +0000'>June 11, 2013</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to iTerm for OSX for a Colourful Terminal Experience" href="https://davidcraddock.net/2013/06/11/iterm-for-osx-for-a-colourful-terminal-experience/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Tailing a log file and Running an Application at the Same Time
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>A quick tip this, but a useful one. You can tail a log file in the background while running a script in the foreground. So for example, I frequently execute the following commands:
-1.
-tail -f /var/log/httpd.log &amp; /etc/init.d/apache restart 2. (The log file will spool onto the terminal as Apache is restarted.)
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2013-06-11 15:55:04 +0000 +0000'>June 11, 2013</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Tailing a log file and Running an Application at the Same Time" href="https://davidcraddock.net/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Monitoring a Slow Internet Connection in OSX
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I am currently on holiday in Tenerife, and although I really like it here, one thing I do not like is the internet connection we have in our resort. Sometimes networked applications will just hang with no warning and there will be minutes where it’s not clear what is going on. Here are some ways you can find a little bit more about what is happening when an application is slow or seems to hang when you have a poor internet connection. Execute the following commands each in a separate terminal window.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2013-03-01 01:28:54 +0000 GMT'>March 1, 2013</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to Monitoring a Slow Internet Connection in OSX" href="https://davidcraddock.net/2013/03/01/monitoring-a-slow-internet-connection-in-osx/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">TDD Talk
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Recently, myself and two colleagues from the BBC, ran a session on Test Driven Development at the Manchester University ‘Ultimate Programming’ society. The society is a gathering where students discuss cool things they have done with programming, and occasionally have guest speakers from industry. I found the society online and thought it would be great to get the BBC more involved in the local university happenings.
-It is the first outreach project that I have undertaken, and it required a lot of preparation. Our initial idea was to get students to implement the A* search algorithm in a practical session, using TDD. However after we had all implemented our own copy of the algorithm, and realised it had taken several hours each, we realised we’d not have enough time in the 2 hour slot that we had.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2013-03-01 00:44:50 +0000 GMT'>March 1, 2013</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to TDD Talk" href="https://davidcraddock.net/2013/03/01/tdd-talk/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Converting a single M2V frame into JPEG under OSX
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame. I couldn’t find a video player that would open the single frame. So I resorted to the command line version of ffmpeg, which I installed via macports, to convert this single frame to a jpg file to view as normal. This line worked a treat:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2012-04-12 15:20:23 +0000 +0000'>April 12, 2012</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Converting a single M2V frame into JPEG under OSX" href="https://davidcraddock.net/2012/04/12/converting-a-single-m2v-frame-into-jpeg/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Java 1.6 on RHEL4
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> After I wrote a Java application in JDK 1.6, I was stuck for a while when I realised that the target deployment machine was Red Hat Enterprise Linux 4. RHEL4 does not support Java 1.6 in its default configuration.
-Luckily I found this article on the CentOS wiki which included instructions on how to install Java 1.6 on CentOS 4. Remembering that RHEL4 and CentOS 4 are almost identical, I tried the method supplied, and it worked. This is the page with the method:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2012-02-11 01:36:52 +0000 GMT'>February 11, 2012</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Java 1.6 on RHEL4" href="https://davidcraddock.net/2012/02/11/java-1-6-on-rhel4/"></a>
+  <footer class="entry-footer"><span title='2017-05-10 13:59:18 +0000 +0000'>May 10, 2017</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Node.js HTTPS server with self-signed certificate creation on openssl 0.9.8zh with node.js 7.10.0" href="https://davidcraddock.net/2017/05/10/node-js-https-server-with-self-signed-certificate-creation-on-openssl-0-9-8zh-with-node-js-7-10-0/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://davidcraddock.net/page/10/">
-      «&nbsp;Prev&nbsp;
+      «&nbsp;Prev&nbsp;10/36
     </a>
-    <a class="next" href="https://davidcraddock.net/page/12/">Next&nbsp;&nbsp;»
+    <a class="next" href="https://davidcraddock.net/page/12/">Next&nbsp;12/36&nbsp;»
     </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -309,6 +283,18 @@ Luckily I found this article on the CentOS wiki which included instructions on h
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 </body>

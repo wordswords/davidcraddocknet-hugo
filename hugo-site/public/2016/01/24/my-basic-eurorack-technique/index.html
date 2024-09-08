@@ -8,7 +8,7 @@
 <title>A Basic Eurorack Technique | DavidCraddock.net</title>
 <meta name="keywords" content="">
 <meta name="description" content="I thought it might be of some interest to describe how I use my Eurorack, at lot of the time, in making tracks. I have a 3 oscilator - 3 VCA - 3 filter Eurorack which I use primarily so that the oscilators initially work in unison mode with some slight detuning. I typically use a single loop, arpeggio or pattern that I repeat over the song. Then, partway through a track, I will transpose the octaves of the oscilators and vary the sustain of the envelopes, along with the filters and pulse-width modulation amount, to make a morphing yet harmonious sound texture progression.">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2016/01/24/my-basic-eurorack-technique/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -61,11 +61,14 @@
 <meta property="og:title" content="A Basic Eurorack Technique" />
 <meta property="og:description" content="I thought it might be of some interest to describe how I use my Eurorack, at lot of the time, in making tracks. I have a 3 oscilator - 3 VCA - 3 filter Eurorack which I use primarily so that the oscilators initially work in unison mode with some slight detuning. I typically use a single loop, arpeggio or pattern that I repeat over the song. Then, partway through a track, I will transpose the octaves of the oscilators and vary the sustain of the envelopes, along with the filters and pulse-width modulation amount, to make a morphing yet harmonious sound texture progression." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2016/01/24/my-basic-eurorack-technique/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2016/01/24/my-basic-eurorack-technique/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2016-01-24T05:37:52+00:00" />
 <meta property="article:modified_time" content="2016-01-24T05:37:52+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="A Basic Eurorack Technique"/>
 <meta name="twitter:description" content="I thought it might be of some interest to describe how I use my Eurorack, at lot of the time, in making tracks. I have a 3 oscilator - 3 VCA - 3 filter Eurorack which I use primarily so that the oscilators initially work in unison mode with some slight detuning. I typically use a single loop, arpeggio or pattern that I repeat over the song. Then, partway through a track, I will transpose the octaves of the oscilators and vary the sustain of the envelopes, along with the filters and pulse-width modulation amount, to make a morphing yet harmonious sound texture progression."/>
 
@@ -103,8 +106,12 @@
   "articleBody": "I thought it might be of some interest to describe how I use my Eurorack, at lot of the time, in making tracks. I have a 3 oscilator - 3 VCA - 3 filter Eurorack which I use primarily so that the oscilators initially work in unison mode with some slight detuning. I typically use a single loop, arpeggio or pattern that I repeat over the song. Then, partway through a track, I will transpose the octaves of the oscilators and vary the sustain of the envelopes, along with the filters and pulse-width modulation amount, to make a morphing yet harmonious sound texture progression.\nHere is my Doepfer Eurorack, which has 2 oscilators, the third is provided by a Doepfer Dark Energy MK1 semi-modular synthesiser that is wired into the Eurorack.\nHere is the patch I almost always use:\nHere are some examples of where this same basic technique has been used:\n[soundcloud url=“https://api.soundcloud.com/tracks/238832020\" params=“auto_play=false\u0026hide_related=false\u0026show_comments=true\u0026show_user=true\u0026show_reposts=false\u0026visual=true” width=“100%” height=“300” iframe=“true” /]\n[soundcloud url=“https://api.soundcloud.com/tracks/216449918\" params=“auto_play=false\u0026hide_related=false\u0026show_comments=true\u0026show_user=true\u0026show_reposts=false\u0026visual=true” width=“100%” height=“300” iframe=“true” /]\n",
   "wordCount" : "166",
   "inLanguage": "en",
-  "datePublished": "2016-01-24T05:37:52Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2016-01-24T05:37:52Z",
   "dateModified": "2016-01-24T05:37:52Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2016/01/24/my-basic-eurorack-technique/"
@@ -123,7 +130,11 @@
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -134,9 +145,44 @@
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -148,7 +194,7 @@
     <h1 class="post-title entry-hint-parent">
       A Basic Eurorack Technique
     </h1>
-    <div class="post-meta"><span title='2016-01-24 05:37:52 +0000 GMT'>January 24, 2016</span>&nbsp;·&nbsp;1 min
+    <div class="post-meta"><span title='2016-01-24 05:37:52 +0000 GMT'>January 24, 2016</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> 
@@ -161,8 +207,8 @@
 <p><img loading="lazy" src="/wp-content/uploads/2016/01/untitled-diagram.png" alt="Eurorack Patch Diagram"  />
 </p>
 <p>Here are some examples of where this same basic technique has been used:</p>
-<p>[soundcloud url=&ldquo;<a href="https://api.soundcloud.com/tracks/238832020%22">https://api.soundcloud.com/tracks/238832020&quot;</a> params=&ldquo;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true&rdquo; width=&ldquo;100%&rdquo; height=&ldquo;300&rdquo; iframe=&ldquo;true&rdquo; /]</p>
-<p>[soundcloud url=&ldquo;<a href="https://api.soundcloud.com/tracks/216449918%22">https://api.soundcloud.com/tracks/216449918&quot;</a> params=&ldquo;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true&rdquo; width=&ldquo;100%&rdquo; height=&ldquo;300&rdquo; iframe=&ldquo;true&rdquo; /]</p>
+<p>[soundcloud url=&ldquo;<a href="https://api.soundcloud.com/tracks/238832020%22">https://api.soundcloud.com/tracks/238832020"</a> params=&ldquo;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true&rdquo; width=&ldquo;100%&rdquo; height=&ldquo;300&rdquo; iframe=&ldquo;true&rdquo; /]</p>
+<p>[soundcloud url=&ldquo;<a href="https://api.soundcloud.com/tracks/216449918%22">https://api.soundcloud.com/tracks/216449918"</a> params=&ldquo;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true&rdquo; width=&ldquo;100%&rdquo; height=&ldquo;300&rdquo; iframe=&ldquo;true&rdquo; /]</p>
 
 
   </div>
@@ -170,6 +216,19 @@
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2016/01/25/adat-with-digi-002-console-dont-throw-them-away-just-yet/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>ADAT with Digi 002 Consoles - Don&#39;t throw them away just yet!</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2016/01/17/2015-goals-summary/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Goals of 2015 Summary</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -243,7 +302,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -297,6 +356,18 @@
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

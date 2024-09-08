@@ -8,7 +8,7 @@
 <title>Scraping Wikipedia Information for music artists, Part 2 | DavidCraddock.net</title>
 <meta name="keywords" content="">
 <meta name="description" content="I&rsquo;ve abandoned the previous Wikipedia scraping approach for Brightonsound.com, as it was unreliable and didn&rsquo;t pinpoint the right Wikipedia entry - ie: a band called &lsquo;Horses&rsquo; would pull up a Wikipedia bio on the animal - which doesn&rsquo;t look very professional. So instead, I have used the Musicbrainz API to retrieve some information on the artist; the homepage URL, the correct Wikipedia entry, and any genres/terms the artist has been tagged with.">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2008/09/22/scraping-wikipedia-information-for-music-artists-part-2/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -61,11 +61,14 @@
 <meta property="og:title" content="Scraping Wikipedia Information for music artists, Part 2" />
 <meta property="og:description" content="I&rsquo;ve abandoned the previous Wikipedia scraping approach for Brightonsound.com, as it was unreliable and didn&rsquo;t pinpoint the right Wikipedia entry - ie: a band called &lsquo;Horses&rsquo; would pull up a Wikipedia bio on the animal - which doesn&rsquo;t look very professional. So instead, I have used the Musicbrainz API to retrieve some information on the artist; the homepage URL, the correct Wikipedia entry, and any genres/terms the artist has been tagged with." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2008/09/22/scraping-wikipedia-information-for-music-artists-part-2/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2008/09/22/scraping-wikipedia-information-for-music-artists-part-2/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2008-09-22T23:04:45+00:00" />
 <meta property="article:modified_time" content="2008-09-22T23:04:45+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Scraping Wikipedia Information for music artists, Part 2"/>
 <meta name="twitter:description" content="I&rsquo;ve abandoned the previous Wikipedia scraping approach for Brightonsound.com, as it was unreliable and didn&rsquo;t pinpoint the right Wikipedia entry - ie: a band called &lsquo;Horses&rsquo; would pull up a Wikipedia bio on the animal - which doesn&rsquo;t look very professional. So instead, I have used the Musicbrainz API to retrieve some information on the artist; the homepage URL, the correct Wikipedia entry, and any genres/terms the artist has been tagged with."/>
 
@@ -103,8 +106,12 @@
   "articleBody": "I’ve abandoned the previous Wikipedia scraping approach for Brightonsound.com, as it was unreliable and didn’t pinpoint the right Wikipedia entry - ie: a band called ‘Horses’ would pull up a Wikipedia bio on the animal - which doesn’t look very professional. So instead, I have used the Musicbrainz API to retrieve some information on the artist; the homepage URL, the correct Wikipedia entry, and any genres/terms the artist has been tagged with.\nIt would be simple to extend this to fetch the actual bio from a site like DBpedia.org (which provides XML-tagged Wikipedia data), now that you always have the correct Wikipedia page reference to fetch the data from.\n(You will need to download the Musicbrainz python library to use this code):\nimport time import sys import logging from musicbrainz2.webservice import Query, ArtistFilter, WebServiceError import musicbrainz2.webservice as ws import musicbrainz2.model as m class scrapewiki2(object): def __init__(self): pass def getbio(self,artist): time.sleep(2) art = artist logging.basicConfig() logger = logging.getLogger() logger.setLevel(logging.DEBUG) q = Query() try: # Search for all artists matching the given name. Limit the results # to the 5 best matches. The offset parameter could be used to page # through the results. # f = ArtistFilter(name=art, limit=1) artistResults = q.getArtists(f) except WebServiceError, e: print 'Error:', e sys.exit(1) # No error occurred, so display the results of the search. It consists of # ArtistResult objects, where each contains an artist. # if not artistResults: print \"WIKI SCRAPE - Couldn't find a single match!\" return '' for result in artistResults: artist = result.artist print \"Score :\", result.score print \"Id :\", artist.id try: print \"Name :\", artist.name.encode('ascii') except Exception, e: print 'Error:', e sys.exit(1) print \"Id :\", artist.id print \"Name :\", artist.name print # # Get the artist's relations to URLs (m.Relation.TO_URL) having the relation # type 'http://musicbrainz.org/ns/rel-1.0#Wikipedia'. Note that there could # be more than one relation per type. We just print the first one. # wiki = '' urls = artist.getRelationTargets(m.Relation.TO_URL, m.NS_REL_1+'Wikipedia') if len(urls) \u003e 0: print 'Wikipedia:', urls[0] wiki = urls[0] # # List discography pages for an artist. # disco = '' for rel in artist.getRelations(m.Relation.TO_URL, m.NS_REL_1+'Discography'): disco = rel.targetId print disco try: # The result should include all official albums. # inc = ws.ArtistIncludes( releases=(m.Release.TYPE_OFFICIAL, m.Release.TYPE_ALBUM), tags=True) artist = q.getArtistById(artist.id, inc) except ws.WebServiceError, e: print 'Error:', e sys.exit(1) tags = artist.tags toret = '' if(wiki): toret = ''+art+' Wikipedia Articlen' if(disco): toret = toret + ''+art+' Main Siten' if(tags): toret = toret + ' Tags: '+(','.join(t.value for t in tags))+'n' return toret sw2 = scrapewiki2() # unit test print sw2.getbio('Blur') print sw2.getbio('fatboy slim') PS: Apologies to the person that left several comments on the previous wikipedia scraping post, I have disabled comments temporarily for now due to heavy amounts of spam, but you can contact me using the following address: david@paul@craddock@googlemail.com (subsitute first two @s for ‘.’s ). I also hope this post answers your question.\n",
   "wordCount" : "478",
   "inLanguage": "en",
-  "datePublished": "2008-09-22T23:04:45Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2008-09-22T23:04:45Z",
   "dateModified": "2008-09-22T23:04:45Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2008/09/22/scraping-wikipedia-information-for-music-artists-part-2/"
@@ -123,7 +130,11 @@
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -134,9 +145,44 @@
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -148,7 +194,7 @@
     <h1 class="post-title entry-hint-parent">
       Scraping Wikipedia Information for music artists, Part 2
     </h1>
-    <div class="post-meta"><span title='2008-09-22 23:04:45 +0000 +0000'>September 22, 2008</span>&nbsp;·&nbsp;3 min
+    <div class="post-meta"><span title='2008-09-22 23:04:45 +0000 +0000'>September 22, 2008</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> 
@@ -156,109 +202,109 @@
   <div class="post-content"><p>I&rsquo;ve abandoned the previous Wikipedia scraping approach for Brightonsound.com, as it was unreliable and didn&rsquo;t pinpoint the right Wikipedia entry - ie: a band called &lsquo;Horses&rsquo; would pull up a Wikipedia bio on the animal - which doesn&rsquo;t look very professional. So instead, I have used the Musicbrainz API to retrieve some information on the artist; the homepage URL, the correct Wikipedia entry, and any genres/terms the artist has been tagged with.</p>
 <p>It would be simple to extend this to fetch the actual bio from a site like DBpedia.org (which provides XML-tagged Wikipedia data), now that you always have the correct Wikipedia page reference to fetch the data from.</p>
 <p>(You will need to download the Musicbrainz python library to use this code):</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zed" data-lang="zed"><span style="display:flex;"><span>import<span style="color:#bbb"> </span>time<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>import<span style="color:#bbb"> </span>sys<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>import<span style="color:#bbb"> </span>logging<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>from<span style="color:#bbb"> </span>musicbrainz2.webservice<span style="color:#bbb"> </span>import<span style="color:#bbb"> </span>Query,<span style="color:#bbb"> </span>ArtistFilter,<span style="color:#bbb"> </span>WebServiceError<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>import<span style="color:#bbb"> </span>musicbrainz2.webservice<span style="color:#bbb"> </span>as<span style="color:#bbb"> </span>ws<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>import<span style="color:#bbb"> </span>musicbrainz2.model<span style="color:#bbb"> </span>as<span style="color:#bbb"> </span>m<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>class<span style="color:#bbb"> </span>scrapewiki2(object)<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span>def<span style="color:#bbb"> </span>__init__(self)<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>pass<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span>def<span style="color:#bbb"> </span>getbio(self,artist)<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>time.sleep(<span style="color:#a61717;background-color:#e3d2d2">2</span>)<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>art<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>artist<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>logging.basicConfig()<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>logger<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>logging.getLogger()<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>logger.setLevel(logging.DEBUG)<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>q<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>Query()<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>try<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb"> </span>Search<span style="color:#bbb"> </span>for<span style="color:#bbb"> </span>all<span style="color:#bbb"> </span>artists<span style="color:#bbb"> </span>matching<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>given<span style="color:#bbb"> </span>name.<span style="color:#bbb"> </span>Limit<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>results<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb"> </span>to<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">5</span><span style="color:#bbb"> </span>best<span style="color:#bbb"> </span>matches.<span style="color:#bbb"> </span>The<span style="color:#bbb"> </span>offset<span style="color:#bbb"> </span>parameter<span style="color:#bbb"> </span>could<span style="color:#bbb"> </span>be<span style="color:#bbb"> </span>used<span style="color:#bbb"> </span>to<span style="color:#bbb"> </span>page<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb"> </span>through<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>results.<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>f<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>ArtistFilter(name<span style="color:#000;font-weight:bold">=</span>art,<span style="color:#bbb"> </span>limit<span style="color:#000;font-weight:bold">=</span><span style="color:#a61717;background-color:#e3d2d2">1</span>)<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>artistResults<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>q.getArtists(f)<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>except<span style="color:#bbb"> </span>WebServiceError,<span style="color:#bbb"> </span>e<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>print<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>Error<span style="color:#000;font-weight:bold">:</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>,<span style="color:#bbb"> </span>e<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>sys.exit(<span style="color:#a61717;background-color:#e3d2d2">1</span>)<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb"> </span>No<span style="color:#bbb"> </span>error<span style="color:#bbb"> </span>occurred,<span style="color:#bbb"> </span>so<span style="color:#bbb"> </span>display<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>results<span style="color:#bbb"> </span>of<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>search.<span style="color:#bbb"> </span>It<span style="color:#bbb"> </span>consists<span style="color:#bbb"> </span>of<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb"> </span>ArtistResult<span style="color:#bbb"> </span>objects,<span style="color:#bbb"> </span>where<span style="color:#bbb"> </span>each<span style="color:#bbb"> </span>contains<span style="color:#bbb"> </span>an<span style="color:#bbb"> </span>artist.<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>if<span style="color:#bbb"> </span>not<span style="color:#bbb"> </span>artistResults<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>print<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span>WIKI<span style="color:#bbb"> </span>SCRAPE<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span>Couldn<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>t<span style="color:#bbb"> </span>find<span style="color:#bbb"> </span>a<span style="color:#bbb"> </span>single<span style="color:#bbb"> </span>match<span style="color:#000;font-weight:bold">!</span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>return<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>for<span style="color:#bbb"> </span>result<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>artistResults<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>artist<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>result.artist<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>print<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span>Score<span style="color:#bbb">     </span><span style="color:#000;font-weight:bold">:</span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span>,<span style="color:#bbb"> </span>result.score<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>print<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span>Id<span style="color:#bbb">        </span><span style="color:#000;font-weight:bold">:</span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span>,<span style="color:#bbb"> </span>artist.id<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>try<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>print<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span>Name<span style="color:#bbb">      </span><span style="color:#000;font-weight:bold">:</span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span>,<span style="color:#bbb"> </span>artist.name.encode(<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>ascii<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>except<span style="color:#bbb"> </span>Exception,<span style="color:#bbb"> </span>e<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>print<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>Error<span style="color:#000;font-weight:bold">:</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>,<span style="color:#bbb"> </span>e<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>sys.exit(<span style="color:#a61717;background-color:#e3d2d2">1</span>)<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>print<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span>Id<span style="color:#bbb">         </span><span style="color:#000;font-weight:bold">:</span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span>,<span style="color:#bbb"> </span>artist.id<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>print<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span>Name<span style="color:#bbb">       </span><span style="color:#000;font-weight:bold">:</span><span style="color:#a61717;background-color:#e3d2d2">&#34;</span>,<span style="color:#bbb"> </span>artist.name<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>print<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb"> </span>Get<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>artist<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>s<span style="color:#bbb"> </span>relations<span style="color:#bbb"> </span>to<span style="color:#bbb"> </span>URLs<span style="color:#bbb"> </span>(m.Relation.TO_URL)<span style="color:#bbb"> </span>having<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">relation</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb"> </span>type<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>http<span style="color:#000;font-weight:bold">:</span><span style="color:#998;font-style:italic">//musicbrainz.org/ns/rel-1.0#Wikipedia&#39;. Note that there could
-</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#bbb">    </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb"> </span>be<span style="color:#bbb"> </span>more<span style="color:#bbb"> </span>than<span style="color:#bbb"> </span>one<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">relation</span><span style="color:#bbb"> </span>per<span style="color:#bbb"> </span>type.<span style="color:#bbb"> </span>We<span style="color:#bbb"> </span>just<span style="color:#bbb"> </span>print<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>first<span style="color:#bbb"> </span>one.<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>wiki<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>urls<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>artist.getRelationTargets(m.Relation.TO_URL,<span style="color:#bbb"> </span>m.NS_REL_1<span style="color:#000;font-weight:bold">+</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>Wikipedia<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>if<span style="color:#bbb"> </span>len(urls)<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">&gt;</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">0</span><span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>print<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>Wikipedia<span style="color:#000;font-weight:bold">:</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>,<span style="color:#bbb"> </span>urls[<span style="color:#a61717;background-color:#e3d2d2">0</span>]<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>wiki<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>urls[<span style="color:#a61717;background-color:#e3d2d2">0</span>]<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb"> </span>List<span style="color:#bbb"> </span>discography<span style="color:#bbb"> </span>pages<span style="color:#bbb"> </span>for<span style="color:#bbb"> </span>an<span style="color:#bbb"> </span>artist.<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>disco<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>for<span style="color:#bbb"> </span>rel<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>artist.getRelations(m.Relation.TO_URL,<span style="color:#bbb"> </span>m.NS_REL_1<span style="color:#000;font-weight:bold">+</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>Discography<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>disco<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>rel.targetId<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>print<span style="color:#bbb"> </span>disco<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>try<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb"> </span>The<span style="color:#bbb"> </span>result<span style="color:#bbb"> </span>should<span style="color:#bbb"> </span>include<span style="color:#bbb"> </span>all<span style="color:#bbb"> </span>official<span style="color:#bbb"> </span>albums.<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>inc<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>ws.ArtistIncludes(<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>releases<span style="color:#000;font-weight:bold">=</span>(m.Release.TYPE_OFFICIAL,<span style="color:#bbb"> </span>m.Release.TYPE_ALBUM),<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>tags<span style="color:#000;font-weight:bold">=</span>True)<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>artist<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>q.getArtistById(artist.id,<span style="color:#bbb"> </span>inc)<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>except<span style="color:#bbb"> </span>ws.WebServiceError,<span style="color:#bbb"> </span>e<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>print<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>Error<span style="color:#000;font-weight:bold">:</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>,<span style="color:#bbb"> </span>e<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>sys.exit(<span style="color:#a61717;background-color:#e3d2d2">1</span>)<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>tags<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>artist.tags<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>toret<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>if(wiki)<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>toret<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span><span style="color:#000;font-weight:bold">+</span>art<span style="color:#000;font-weight:bold">+</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span><span style="color:#bbb"> </span>Wikipedia<span style="color:#bbb"> </span>Articlen<span style="color:#a61717;background-color:#e3d2d2">&#39;</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>if(disco)<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>toret<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>toret<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">+</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;&#39;</span><span style="color:#000;font-weight:bold">+</span>art<span style="color:#000;font-weight:bold">+</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span><span style="color:#bbb"> </span>Main<span style="color:#bbb"> </span>Siten<span style="color:#a61717;background-color:#e3d2d2">&#39;</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>if(tags)<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span>toret<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>toret<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">+</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Tags<span style="color:#000;font-weight:bold">:</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span><span style="color:#000;font-weight:bold">+</span>(<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>,<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>.join(t.value<span style="color:#bbb"> </span>for<span style="color:#bbb"> </span>t<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>tags))<span style="color:#000;font-weight:bold">+</span><span style="color:#a61717;background-color:#e3d2d2">&#39;</span>n<span style="color:#a61717;background-color:#e3d2d2">&#39;</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>return<span style="color:#bbb"> </span>toret<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>sw2<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">=</span><span style="color:#bbb"> </span>scrapewiki2()<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a61717;background-color:#e3d2d2">#</span><span style="color:#bbb"> </span>unit<span style="color:#bbb"> </span>test<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>print<span style="color:#bbb"> </span>sw2.getbio(<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>Blur<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>print<span style="color:#bbb"> </span>sw2.getbio(<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>fatboy<span style="color:#bbb"> </span>slim<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>)<span style="color:#bbb">
-</span></span></span></code></pre></div><p>PS:
+<pre tabindex="0"><code>import time
+import sys
+import logging
+from musicbrainz2.webservice import Query, ArtistFilter, WebServiceError
+import musicbrainz2.webservice as ws
+import musicbrainz2.model as m
+
+class scrapewiki2(object):
+
+  def __init__(self):
+    pass
+
+  def getbio(self,artist):
+
+    time.sleep(2)
+    art = artist
+    logging.basicConfig()
+    logger = logging.getLogger()
+    logger.setLevel(logging.DEBUG)
+
+    q = Query()
+
+    try:
+      # Search for all artists matching the given name. Limit the results
+      # to the 5 best matches. The offset parameter could be used to page
+      # through the results.
+      #
+      f = ArtistFilter(name=art, limit=1)
+      artistResults = q.getArtists(f)
+    except WebServiceError, e:
+      print &#39;Error:&#39;, e
+      sys.exit(1)
+
+    # No error occurred, so display the results of the search. It consists of
+    # ArtistResult objects, where each contains an artist.
+    #
+
+    if not artistResults:
+      print &#34;WIKI SCRAPE - Couldn&#39;t find a single match!&#34;
+      return &#39;&#39;
+
+    for result in artistResults:
+      artist = result.artist
+      print &#34;Score     :&#34;, result.score
+      print &#34;Id        :&#34;, artist.id
+      try:
+        print &#34;Name      :&#34;, artist.name.encode(&#39;ascii&#39;)
+      except Exception, e:
+      print &#39;Error:&#39;, e
+      sys.exit(1)
+
+    print &#34;Id         :&#34;, artist.id
+    print &#34;Name       :&#34;, artist.name
+    print
+
+    #
+    # Get the artist&#39;s relations to URLs (m.Relation.TO_URL) having the relation
+    # type &#39;http://musicbrainz.org/ns/rel-1.0#Wikipedia&#39;. Note that there could
+    # be more than one relation per type. We just print the first one.
+    #
+    wiki = &#39;&#39;
+    urls = artist.getRelationTargets(m.Relation.TO_URL, m.NS_REL_1+&#39;Wikipedia&#39;)
+    if len(urls) &gt; 0:
+      print &#39;Wikipedia:&#39;, urls[0]
+      wiki = urls[0]
+
+    #
+    # List discography pages for an artist.
+    #
+    disco = &#39;&#39;
+    for rel in artist.getRelations(m.Relation.TO_URL, m.NS_REL_1+&#39;Discography&#39;):
+      disco = rel.targetId
+      print disco
+
+    try:
+      # The result should include all official albums.
+      #
+      inc = ws.ArtistIncludes(
+        releases=(m.Release.TYPE_OFFICIAL, m.Release.TYPE_ALBUM),
+        tags=True)
+      artist = q.getArtistById(artist.id, inc)
+    except ws.WebServiceError, e:
+      print &#39;Error:&#39;, e
+      sys.exit(1)
+
+    tags = artist.tags
+
+    toret = &#39;&#39;
+    if(wiki):
+      toret = &#39;&#39;+art+&#39; Wikipedia Articlen&#39;
+    if(disco):
+      toret = toret + &#39;&#39;+art+&#39; Main Siten&#39;
+    if(tags):
+      toret = toret + &#39;
+Tags: &#39;+(&#39;,&#39;.join(t.value for t in tags))+&#39;n&#39;
+    return toret
+
+sw2 = scrapewiki2()
+
+# unit test
+print sw2.getbio(&#39;Blur&#39;)
+print sw2.getbio(&#39;fatboy slim&#39;)
+</code></pre><p>PS:
 Apologies to the person that left several comments on the previous wikipedia scraping post, I have disabled comments temporarily for now due to heavy amounts of spam, but you can contact me using the following address: david@paul@craddock@googlemail.com (subsitute first two @s for &lsquo;.&rsquo;s ). I also hope this post answers your question.</p>
 
 
@@ -267,6 +313,19 @@ Apologies to the person that left several comments on the previous wikipedia scr
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2008/09/22/automated-emails-on-commiting-to-a-subversion-repository/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Automated Emails on Commiting to a Subversion Repository Using Python</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2008/07/06/character-encoding-fix-with-php-mysql-5-and-ubuntu-server/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Character encoding fix with PHP, MySQL 5 and ubuntu-server</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -340,7 +399,7 @@ Apologies to the person that left several comments on the previous wikipedia scr
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -394,6 +453,18 @@ Apologies to the person that left several comments on the previous wikipedia scr
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

@@ -31,7 +31,7 @@ Resolume Avenue running on broadcast PC
 Streamlabs OBS running on broadcast PC
 Serato DJ Pro software running on DJ laptop
 ">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2022/09/27/current-dj-setup/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -107,11 +107,14 @@ Streamlabs OBS running on broadcast PC
 Serato DJ Pro software running on DJ laptop
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2022/09/27/current-dj-setup/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2022/09/27/current-dj-setup/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-09-27T02:56:21+00:00" />
 <meta property="article:modified_time" content="2022-09-27T02:56:21+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Current Twitch DJ Setup"/>
 <meta name="twitter:description" content="
 Click to view full diagram
@@ -172,8 +175,12 @@ Serato DJ Pro software running on DJ laptop
   "articleBody": " Click to view full diagram\nHardware 2 x Reloop 8000mk2 turntables Roland 707m Mixer and DJ Controller 2015 Macbook Pro (DJ Laptop) SoundSwitch USB -\u003e DMX interface, attached to broadcast PC Beatstep MIDI Controller mapped for controlling SoundSwitch, attached to broadcast PC Vestax VCM-600 MIDI Controller used for controlling Resolume, attached to broadcast PC AKAI LPD8 MIDI Controller used for controlling Serato’s FX, attached to DJ laptop Rode Soundcaster Pro microphone used as a DJ mic 4 x Phillips Hue Colour Bulbs in lamps Phillips Hue Lightstrip Behringer UMC1820 Sound Interface connected to broadcast PC, attached to broadcast PC 2 x Logitech C920 Cameras used for capturing video for streaming, attached to broadcast PC Software SoundSwitch lighting software running on broadcast PC Resolume Avenue running on broadcast PC Streamlabs OBS running on broadcast PC Serato DJ Pro software running on DJ laptop ",
   "wordCount" : "142",
   "inLanguage": "en",
-  "datePublished": "2022-09-27T02:56:21Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2022-09-27T02:56:21Z",
   "dateModified": "2022-09-27T02:56:21Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2022/09/27/current-dj-setup/"
@@ -192,7 +199,11 @@ Serato DJ Pro software running on DJ laptop
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -203,9 +214,44 @@ Serato DJ Pro software running on DJ laptop
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -217,7 +263,7 @@ Serato DJ Pro software running on DJ laptop
     <h1 class="post-title entry-hint-parent">
       Current Twitch DJ Setup
     </h1>
-    <div class="post-meta"><span title='2022-09-27 02:56:21 +0000 +0000'>September 27, 2022</span>&nbsp;·&nbsp;1 min
+    <div class="post-meta"><span title='2022-09-27 02:56:21 +0000 +0000'>September 27, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> <div class="toc">
@@ -268,6 +314,19 @@ Serato DJ Pro software running on DJ laptop
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2022/09/29/tips-for-new-ubuntu-users/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Tips for new Ubuntu Users</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2022/09/24/google-drive-backup-using-rclone/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Google Drive Backup using Rclone</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -341,7 +400,7 @@ Serato DJ Pro software running on DJ laptop
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -395,6 +454,18 @@ Serato DJ Pro software running on DJ laptop
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

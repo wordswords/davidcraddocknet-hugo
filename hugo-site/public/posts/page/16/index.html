@@ -8,7 +8,7 @@
 <title>Posts | DavidCraddock.net</title>
 <meta name="keywords" content="">
 <meta name="description" content="Posts - DavidCraddock.net">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/posts/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/posts/feed.xml">
+<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/posts/index.xml">
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/posts/">
 <noscript>
     <style>
@@ -60,13 +60,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
 <meta property="og:title" content="Posts" />
-<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
+<meta property="og:description" content="DavidCraddock.net" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://davidcraddock.net/posts/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 
-<meta name="twitter:card" content="summary"/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK."/>
+<meta name="twitter:description" content="DavidCraddock.net"/>
 
 
 <script type="application/ld+json">
@@ -87,7 +90,11 @@
 
 <body class="list" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -98,9 +105,44 @@
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -108,159 +150,100 @@
 <header class="page-header"><div class="breadcrumbs"><a href="https://davidcraddock.net/">Home</a></div>
   <h1>
     Posts
+    <a href="/posts/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
   </h1>
 </header>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">VirutalHosts on CentOS
+    <h2 class="entry-hint-parent">Next Big Thing: Voice Control for Home Automation
     </h2>
   </header>
   <div class="entry-content">
-    <p>A common task when setting up an Apache webserver under Linux, is writing a httpd.conf file. The httpd.conf file is the main configuration file for Apache. One of the main reasons to edit the httpd.conf file is to setup virtual hosts In Apache. A Virtual host configuration allows several different domains to be run off a single instance of Apache, on a single IP. Each host is a ‘Virtual host’, and typically has a different web root, log file, and any number of subdomains aliased to it. The virtualhosts are configured in parts of the httpd.conf file that look like this:
+    <p>So, I have totally bought in to the home automation craze that is currently ’the next big thing’ in the technology world in 2015. Apple has released iOS 9 with their HomeKit home automation framework, Google have the Nest series of smart devices, and there are numerous emerging competitors and hundreds of devices out there right now that will network together in your home.
+For the uninitiated, a ‘virtual assistant’ is a cloud-connected voice processing system which you can ’talk’ to. This is how a voice assistant essentially works:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2009-03-30 22:45:50 +0000 +0000'>March 30, 2009</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to VirutalHosts on CentOS" href="https://davidcraddock.net/2009/03/30/virutalhosts-on-centos/"></a>
+  <footer class="entry-footer"><span title='2015-10-15 15:28:52 +0000 +0000'>October 15, 2015</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Next Big Thing: Voice Control for Home Automation" href="https://davidcraddock.net/2015/10/15/voice-control-for-home-automation-having-a-virtual-assitant-in-your-living-room/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">MicroKORG &#43; Python = MIDI fun!
+    <h2 class="entry-hint-parent">IFTTT.com - Program your Life
     </h2>
   </header>
   <div class="entry-content">
-    <p>So, about a month ago I got a second-hand microKORG from Ebay. Fiddling around with the preset patches, and creating new patches is great fun, even though I only know a few chords. Recently I plugged it in to my PC via my M-Audio Uno USB-&gt;MIDI interface, and soon was using Ableton Live to program drums in time with the microKORG’s arp.
-I thought I’d experiment the music libraries available in python, and see if I could send notes to the synth via MIDI. Turns out that the M-Audio Uno is supported under Ubuntu, all you have to do is install the midisport-firmware package. With the help of pyrtmidi, a set of python wrappers around the C&#43;&#43; audio library rtmidi I was able to recieve MIDI signals in realtime from the microKORG, and send them in realtime also. With the help of this old midi file reader/writer library that I found posted to a python mailing list, I’ve made some progress in writing a simple MIDI file player that sends notes to the ‘KORG.
+    <p>If you haven’t seen If This Then That.com then I encourage you to check it out. It has a number of ways of automating your life, and can do things like text message you when you get mentioned on Twitter, up to deactivate your smart alarm when you’re nearing your house. This message will (hopefully) be posted on my Facebook page and my Twitter account, all thanks to IFTTT.com.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2009-03-30 00:14:10 +0000 +0000'>March 30, 2009</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to MicroKORG &#43; Python = MIDI fun!" href="https://davidcraddock.net/2009/03/30/microkorg-python-midi-fun/"></a>
+  <footer class="entry-footer"><span title='2015-10-15 10:17:28 +0000 +0000'>October 15, 2015</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to IFTTT.com - Program your Life" href="https://davidcraddock.net/2015/10/15/ifttt-com-program-your-life/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Eclipse 3.4.2 &#43; Pydev &#43; Eclim = win
+    <h2 class="entry-hint-parent">Scope in JavaScript
     </h2>
   </header>
   <div class="entry-content">
-    <p>So, after saying all that stuff about how vimplugin and EasyEclipse was great, I actually started to use the setup heavily, and it started to annoy me.
-For one, EE is not a recent build of eclipse, nor does it come with a full set of recent plugins. This makes it annoyingly difficult to use when you want to use more than the set of plugins it packages for you. As far as vimplugin goes, it does not provide the vim integration I thought it might from embedded vim. Not really even close.
-...</p>
+    <p>I am learning JS for work. This is a pretty good summary of the most common scoping rules in JavaScript:
+http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript
+</p>
   </div>
-  <footer class="entry-footer"><span title='2009-03-27 23:47:59 +0000 GMT'>March 27, 2009</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Eclipse 3.4.2 &#43; Pydev &#43; Eclim = win" href="https://davidcraddock.net/2009/03/27/eclipse-342-pydev-eclim-win/"></a>
+  <footer class="entry-footer"><span title='2015-09-28 17:32:15 +0000 +0000'>September 28, 2015</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Scope in JavaScript" href="https://davidcraddock.net/2015/09/28/scope-in-javascript/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">EasyEclipse &#43; Vimplugin for Python Development
+    <h2 class="entry-hint-parent">Introversion, Extroversion and the BBC Software Engineer
     </h2>
   </header>
   <div class="entry-content">
-    <p>Up until now, I’ve always used the terminal for programming development on my projects. Because I’m so familiar with the advanced text editor vim, I can get a lot done on the command line, and it doesn’t detract away from what is actually going on behind the scenes, as a lot of IDEs seem to do.
-However, in reading the book Foundations of Agile Python Development (which I recommend highly), and through working in software houses using IDE s only, I’ve come to realise that I need to gain at least some familiarity with an IDE.
+    <p> Whether you agree with Myers-Briggs personality profiling or not, like fellow BBC’er Ian Forrester I have found them a useful frame of reference from which to discuss my personality, because I see similarities between my perception of me, and the classification.
+I took the Myers-Briggs personality profiling, and it has labelled me on several occasions an INTP:
+INTPs are marked by a quiet, stoic, modest, and aloof exterior that masks strong creativity and enthusiasm for novel possibilities. Their weaknesses include poor organization, insensitivity to social niceties, and a tendency to get lost in abstractions. Keirsey referred to INTPs as Architects, one of the four types belonging to the temperament he called the Rationals … I – Introversion preferred to extraversion: INTPs tend to be quiet and reserved. They generally prefer interacting with a few close friends rather than a wide circle of acquaintances, and they expend energy in social situations (whereas extraverts gain energy).
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2009-03-26 18:53:01 +0000 GMT'>March 26, 2009</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to EasyEclipse &#43; Vimplugin for Python Development" href="https://davidcraddock.net/2009/03/26/easyeclipse-vimplugin-for-python-development/"></a>
+  <footer class="entry-footer"><span title='2015-09-28 16:22:52 +0000 +0000'>September 28, 2015</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Introversion, Extroversion and the BBC Software Engineer" href="https://davidcraddock.net/2015/09/28/introversion-extroversion-and-being-a-bbc-software-engineer/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Google Sync for Mobile
+    <h2 class="entry-hint-parent">Completed Eurorack
     </h2>
   </header>
   <div class="entry-content">
-    <p>If you use Google calendar, and you’ve got an iPhone, or Windows Mobile phone like me, then you’ll be pleased to hear about the new Google Sync for Mobile tool just brought out into beta by Google. There were various ways to sync Google Calender events to Windows Mobile devices before, but nothing officially supported. Google uses an ActiveSync server to push the events to your phone, making things a lot easier. To quote:
+    <p>I’ve finished my 6U Eurorack case. It took me 9 months to build, buying a couple of modules a month.
+Goals I wanted to make a self-contained dual voice synthesizer that would interface with my 2x Doepfer Dark Energy MK1s and my Microbrute, on a budget. I also wanted to add some random sound generation features.
+I chose to make the synthesizer out of Doepfer modules because they are easy to find cheap second-hand, and also because they are well-engineered. (If they’re good enough for Kraftwerk, who am I to complain?)
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2009-03-11 08:19:15 +0000 GMT'>March 11, 2009</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Google Sync for Mobile" href="https://davidcraddock.net/2009/03/11/google-sync-for-mobile/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">One Laptop Per Child - My XO Laptop
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I did something out of the ordinary this Christmas. I bought an “XO” laptop for a child in a third world country. I also bought an XO laptop for myself, so I can develop software designed to be distributed to the 1 million&#43; XO laptops out there in the third world.
-The laptop runs a Linux operating system, with an special interface programmed almost exclusively in Python. Most apps, called ‘activities’, run as python programs. This is ideal for me, as I enjoy hacking around in python, and Linux is - of course - very familiar to me.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2008-12-09 01:31:12 +0000 GMT'>December 9, 2008</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to One Laptop Per Child - My XO Laptop" href="https://davidcraddock.net/2008/12/09/one-laptop-per-child-my-xo-laptop/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">The Blog Factory
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I’ve started my own blog consulting business, helping people setup their own blogs, either for their company or for personal use. It’s called The Blog Factory, see the site for more information on what we do. In a nutshell, we can:
-Setup and customise WordPress blogs. Design custom WordPress themes. Develop tailored WordPress plugins. Host the blogs on our servers. Use our SEO expertise to improve traffic to the blog. </p>
-  </div>
-  <footer class="entry-footer"><span title='2008-12-03 22:11:19 +0000 GMT'>December 3, 2008</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to The Blog Factory" href="https://davidcraddock.net/2008/12/03/the-blog-factory/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">FREE Cloud Computing testbed for Python Apps
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>This is so cool.. Google are beta-testing a totally free hosting and cloud-computing resource called Google App Engine. The caveat is that your hosted app must be written in Python. Python is amazing anyway, and if you don’t know it, now is the perfect time to learn. Check this out for more information about Google App Engine:
-http://code.google.com/appengine/docs/whatisgoogleappengine.html
-They’re giving away a very generous 500MB disk space and enough processing power to serve 5 million pages a month. Awesome!
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2008-11-22 05:11:37 +0000 GMT'>November 22, 2008</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to FREE Cloud Computing testbed for Python Apps" href="https://davidcraddock.net/2008/11/22/free-cloud-computing-testbed-for-python-apps/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Bacula Scheduling
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Bacula is a great open-source distributed backup program for Linux/UNIX systems. It is separated into three main components:
-One ‘Director’ - which sends messages to the other components and co-ordinates the backup One or more ‘File Demons’ - which ‘pull’ the data from the host they are installed from. One or more ‘Storage Demons’ - which ‘push’ the data taken from the file demons into a type of archival storage, IE: backup tapes, a backup hard disc, etc I found it extremely versatile yet very complicated to configure. Before you configure it you have to decide on a backup strategy; what you want to backup, why you want to back it up, how often you want to back it up, and how you are going to off-site/preserve the backups.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2008-10-29 20:24:31 +0000 GMT'>October 29, 2008</span>&nbsp;·&nbsp;4 min</footer>
-  <a class="entry-link" aria-label="post link to Bacula Scheduling" href="https://davidcraddock.net/2008/10/29/linux-backups-using-bacula/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Linux under Hyper-V
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>This is an overview of current Linux support under Hyper-V, the free Windows Server 2008 virtualisation product.
-As you probably know, virtual servers allow the emulation of hardware in software. So you have a single physical ‘virtual server’. This virtual server emulates the physical hardware for several ‘virtual machines’ which sit on top of the virtual server. As far as the operating system on the virtual machine is concerned, it doesn’t notice anything different at all - it thinks it is running on a full set of dedicated hardware. However in reality, the virtual server is sharing its real physical resouces amongst the collection of virtual machines, assigning for example - 3GB of its memory to virtual machine A, and 1GB to virtual machine B.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2008-10-09 23:30:10 +0000 +0000'>October 9, 2008</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to Linux under Hyper-V" href="https://davidcraddock.net/2008/10/09/linux-under-hyper-v/"></a>
+  <footer class="entry-footer"><span title='2015-09-02 08:13:17 +0000 +0000'>September 2, 2015</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Completed Eurorack" href="https://davidcraddock.net/2015/09/02/completed-eurorack/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://davidcraddock.net/posts/page/15/">
-      «&nbsp;Prev&nbsp;
+      «&nbsp;Prev&nbsp;15/36
     </a>
-    <a class="next" href="https://davidcraddock.net/posts/page/17/">Next&nbsp;&nbsp;»
+    <a class="next" href="https://davidcraddock.net/posts/page/17/">Next&nbsp;17/36&nbsp;»
     </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -314,6 +297,18 @@ As you probably know, virtual servers allow the emulation of hardware in softwar
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 </body>

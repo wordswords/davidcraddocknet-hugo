@@ -9,7 +9,7 @@
 <meta name="keywords" content="">
 <meta name="description" content="Not that I particularly look at anything weird, but when I&rsquo;m showing someone my computer I don&rsquo;t want to have my &lsquo;most visited sites&rsquo; pop up when I fire up Chrome. The following Chrome extension will get rid of the default loading page, and just display a blank page:
 https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbekmfgabipmfilij">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2015/06/21/get-rid-of-the-most-visited-sites-grid-on-chrome/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -63,11 +63,14 @@ https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbek
 <meta property="og:description" content="Not that I particularly look at anything weird, but when I&rsquo;m showing someone my computer I don&rsquo;t want to have my &lsquo;most visited sites&rsquo; pop up when I fire up Chrome. The following Chrome extension will get rid of the default loading page, and just display a blank page:
 https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbekmfgabipmfilij" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2015/06/21/get-rid-of-the-most-visited-sites-grid-on-chrome/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2015/06/21/get-rid-of-the-most-visited-sites-grid-on-chrome/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2015-06-21T17:49:00+00:00" />
 <meta property="article:modified_time" content="2015-06-21T17:49:00+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Get rid of the &#39;most visited sites&#39; Grid on Chrome"/>
 <meta name="twitter:description" content="Not that I particularly look at anything weird, but when I&rsquo;m showing someone my computer I don&rsquo;t want to have my &lsquo;most visited sites&rsquo; pop up when I fire up Chrome. The following Chrome extension will get rid of the default loading page, and just display a blank page:
 https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbekmfgabipmfilij"/>
@@ -106,8 +109,12 @@ https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbek
   "articleBody": "Not that I particularly look at anything weird, but when I’m showing someone my computer I don’t want to have my ‘most visited sites’ pop up when I fire up Chrome. The following Chrome extension will get rid of the default loading page, and just display a blank page:\nhttps://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbekmfgabipmfilij\n",
   "wordCount" : "50",
   "inLanguage": "en",
-  "datePublished": "2015-06-21T17:49:00Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2015-06-21T17:49:00Z",
   "dateModified": "2015-06-21T17:49:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2015/06/21/get-rid-of-the-most-visited-sites-grid-on-chrome/"
@@ -126,7 +133,11 @@ https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbek
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -137,9 +148,44 @@ https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbek
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -151,7 +197,7 @@ https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbek
     <h1 class="post-title entry-hint-parent">
       Get rid of the &#39;most visited sites&#39; Grid on Chrome
     </h1>
-    <div class="post-meta"><span title='2015-06-21 17:49:00 +0000 +0000'>June 21, 2015</span>&nbsp;·&nbsp;1 min
+    <div class="post-meta"><span title='2015-06-21 17:49:00 +0000 +0000'>June 21, 2015</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> 
@@ -165,6 +211,19 @@ https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbek
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2015/06/21/switching-audio-between-two-soundcards/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Switching Audio between two Soundcards</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2015/06/21/open-source-device-api-and-device-api-android-on-github/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Open Source! Device API and Device API-Android on Github</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -238,7 +297,7 @@ https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbek
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -292,6 +351,18 @@ https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbek
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

@@ -9,7 +9,7 @@
 <meta name="keywords" content="">
 <meta name="description" content="Back in 2008, I wrote a PHP class that fetched an arbitary URL, parsed it, and coverted it into an PHP object with different attributes for the different elements of the page. I recently updated it and sent it along to a company that wanted a programming example to show I could code in PHP.
 I thought someone may well find a use for it - I&rsquo;ve used the class in several different web scraping applications, and I found it handy. From the readme:">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2010/01/14/php-sample-html-page-fetcher-and-parser/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -63,11 +63,14 @@ I thought someone may well find a use for it - I&rsquo;ve used the class in seve
 <meta property="og:description" content="Back in 2008, I wrote a PHP class that fetched an arbitary URL, parsed it, and coverted it into an PHP object with different attributes for the different elements of the page. I recently updated it and sent it along to a company that wanted a programming example to show I could code in PHP.
 I thought someone may well find a use for it - I&rsquo;ve used the class in several different web scraping applications, and I found it handy. From the readme:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2010/01/14/php-sample-html-page-fetcher-and-parser/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2010/01/14/php-sample-html-page-fetcher-and-parser/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-01-14T05:53:47+00:00" />
 <meta property="article:modified_time" content="2010-01-14T05:53:47+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="PHP Sample - HTML Page Fetcher and Parser"/>
 <meta name="twitter:description" content="Back in 2008, I wrote a PHP class that fetched an arbitary URL, parsed it, and coverted it into an PHP object with different attributes for the different elements of the page. I recently updated it and sent it along to a company that wanted a programming example to show I could code in PHP.
 I thought someone may well find a use for it - I&rsquo;ve used the class in several different web scraping applications, and I found it handy. From the readme:"/>
@@ -106,8 +109,12 @@ I thought someone may well find a use for it - I&rsquo;ve used the class in seve
   "articleBody": "Back in 2008, I wrote a PHP class that fetched an arbitary URL, parsed it, and coverted it into an PHP object with different attributes for the different elements of the page. I recently updated it and sent it along to a company that wanted a programming example to show I could code in PHP.\nI thought someone may well find a use for it - I’ve used the class in several different web scraping applications, and I found it handy. From the readme:\nThis is a class I wrote back in 2008 to help me pull down and parse HTML pages I updated it on 14/01/10 to print the results in a nicer way to the commandline. - David Craddock (contact@davidcraddock.net) /// WHAT IT DOES It uses CURL to pull down a page from a URL, and sorts it into a 'Page' object which has different attributes for the different HTML properties of the page structure. By default it will also print the page object's properties neatly onto the commandline as part of its unit test. /// FILES * README.txt - this file * page.php - The PHP Class * LIB_http.php - a lightweight external library that I used. It is just a very light wrapper around CURL's HTTP functions. * expected-result.txt - output of the unit tests on my development machine * curl-cookie-jar.txt - this file will be created when you run the page.php's unit test /// SETUP You will need CURL installed, PHP's DOMXPATH functions available, and the PHP command line interface. It was tested on PHP5 on OSX. /// RUNNING Use the php commandline executable to run the page.php unit tests. IE: $ php page.php You should see a bunch of information being printed out, you can use: $ php page.php \u003e result.txt That will output the info to result.txt so you can read it at will. Here’s an example of one of the unit tests, which fetches this frontpage and parses it:\n**++++ *** Page Print of http://www.davidcraddock.net *** **++++ ** Transfer Status + URL Retrieved: http://www.davidcraddock.net + CURL Fetch Status: Array ( [url] =\u003e http://www.davidcraddock.net [content_type] =\u003e text/html; charset=UTF-8 [http_code] =\u003e 200 [header_size] =\u003e 237 [request_size] =\u003e 175 [filetime] =\u003e -1 [ssl_verify_result] =\u003e 0 [redirect_count] =\u003e 0 [total_time] =\u003e 1.490972 [namelookup_time] =\u003e 5.3E-5 [connect_time] =\u003e 0.175803 [pretransfer_time] =\u003e 0.175812 [size_upload] =\u003e 0 [size_download] =\u003e 30416 [speed_download] =\u003e 20400 [speed_upload] =\u003e 0 [download_content_length] =\u003e 30416 [upload_content_length] =\u003e 0 [starttransfer_time] =\u003e 0.714943 [redirect_time] =\u003e 0 ) ** Header + Title: Random Eye Movement + Meta Desc: Not Set + Meta Keywords: Not Set + Meta Robots: Not Set ** Flags + Has Frames?: FALSE + Has body content been parsed?: TRUE ** Non Html Tags + Tags scanned for: Tag Type: script tags processed: 4 Tag Type: embed tags processed: 1 Tag Type: style tags processed: 0 + Tag contents: Array ( [ script ] =\u003e Array ( [0] =\u003e Array ( [src] =\u003e http://www.davidcraddock.net/wp-content/themes/this-just-in/js/ThemeJS.js [type] =\u003e [isinline] =\u003e [content] =\u003e ) [1] =\u003e Array ( [src] =\u003e http://www.davidcraddock.net/wp-content/plugins/lifestream/lifestream.js [type] =\u003e text/javascript [isinline] =\u003e [content] =\u003e ) [2] =\u003e Array ( [src] =\u003e [type] =\u003e [isinline] =\u003e 1 [content] =\u003e var odesk_widgets_width = 340; var odesk_widgets_height = 230; ) [3] =\u003e Array ( [src] =\u003e http://www.odesk.com/widgets/v1/providers/large/~~8f250a5e32c8d3fa.js [type] =\u003e [isinline] =\u003e [content] =\u003e ) [count] =\u003e 4 ) [ embed ] =\u003e Array ( [0] =\u003e Array ( [src] =\u003e http://www.youtube-nocookie.com/v/Fpm0m6bVfrM\u0026hl=en\u0026fs=1\u0026rel=0 [type] =\u003e application/x-shockwave-flash [isinline] =\u003e [content] =\u003e ) [count] =\u003e 1 ) [ style ] =\u003e Array ( [count] =\u003e 0 ) ) **---- *** Page Print of http://www.davidcraddock.net Finished *** **---- If you want to download a copy, the file is below. If you find it useful for you, a pingback would be appreciated. code-sample.tar.gz\n",
   "wordCount" : "620",
   "inLanguage": "en",
-  "datePublished": "2010-01-14T05:53:47Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2010-01-14T05:53:47Z",
   "dateModified": "2010-01-14T05:53:47Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2010/01/14/php-sample-html-page-fetcher-and-parser/"
@@ -126,7 +133,11 @@ I thought someone may well find a use for it - I&rsquo;ve used the class in seve
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -137,9 +148,44 @@ I thought someone may well find a use for it - I&rsquo;ve used the class in seve
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -151,167 +197,167 @@ I thought someone may well find a use for it - I&rsquo;ve used the class in seve
     <h1 class="post-title entry-hint-parent">
       PHP Sample - HTML Page Fetcher and Parser
     </h1>
-    <div class="post-meta"><span title='2010-01-14 05:53:47 +0000 GMT'>January 14, 2010</span>&nbsp;·&nbsp;3 min
+    <div class="post-meta"><span title='2010-01-14 05:53:47 +0000 GMT'>January 14, 2010</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> 
 
   <div class="post-content"><p>Back in 2008, I wrote a PHP class that fetched an arbitary URL, parsed it, and coverted it into an PHP object with different attributes for the different elements of the page. I recently updated it and sent it along to a company that wanted a programming example to show I could code in PHP.</p>
 <p>I thought someone may well find a use for it - I&rsquo;ve used the class in several different web scraping applications, and I found it handy. From the readme:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>This is a class I wrote back in 2008 to help me pull down and parse HTML pages I updated it on
-</span></span><span style="display:flex;"><span>14/01/10 to print the results in a nicer way to the commandline.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>- David Craddock (contact@davidcraddock.net)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>/// WHAT IT DOES
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>It uses CURL to pull down a page from a URL, and sorts it into a &#39;Page&#39; object
-</span></span><span style="display:flex;"><span>which has different attributes for the different HTML properties of the page
-</span></span><span style="display:flex;"><span>structure. By default it will also print the page object&#39;s properties neatly
-</span></span><span style="display:flex;"><span>onto the commandline as part of its unit test.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>/// FILES
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>* README.txt - this file
-</span></span><span style="display:flex;"><span>* page.php - The PHP Class
-</span></span><span style="display:flex;"><span>* LIB_http.php - a lightweight external library that I used. It is just a very light wrapper around CURL&#39;s HTTP functions.
-</span></span><span style="display:flex;"><span>* expected-result.txt - output of the unit tests on my development machine
-</span></span><span style="display:flex;"><span>* curl-cookie-jar.txt - this file will be created when you run the page.php&#39;s unit test
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>/// SETUP
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>You will need CURL installed, PHP&#39;s DOMXPATH functions available, and the PHP
-</span></span><span style="display:flex;"><span>command line interface. It was tested on PHP5 on OSX.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>/// RUNNING
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Use the php commandline executable to run the page.php unit tests. IE:
-</span></span><span style="display:flex;"><span>$ php page.php
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>You should see a bunch of information being printed out, you can use:
-</span></span><span style="display:flex;"><span>$ php page.php &gt; result.txt
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>That will output the info to result.txt so you can read it at will.
-</span></span></code></pre></div><p>Here&rsquo;s an example of one of the unit tests, which fetches this frontpage and parses it:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">**++++</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">***</span> Page Print of http:<span style="color:#000;font-weight:bold">//</span>www<span style="color:#000;font-weight:bold">.</span>davidcraddock<span style="color:#000;font-weight:bold">.</span>net <span style="color:#000;font-weight:bold">***</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">**++++</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">**</span> Transfer Status
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">+</span> URL Retrieved:
-</span></span><span style="display:flex;"><span>http:<span style="color:#000;font-weight:bold">//</span>www<span style="color:#000;font-weight:bold">.</span>davidcraddock<span style="color:#000;font-weight:bold">.</span>net
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">+</span> CURL Fetch Status:
-</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">Array</span>
-</span></span><span style="display:flex;"><span>(
-</span></span><span style="display:flex;"><span>    [url] <span style="color:#000;font-weight:bold">=&gt;</span> http:<span style="color:#000;font-weight:bold">//</span>www<span style="color:#000;font-weight:bold">.</span>davidcraddock<span style="color:#000;font-weight:bold">.</span>net
-</span></span><span style="display:flex;"><span>    [content_type] <span style="color:#000;font-weight:bold">=&gt;</span> text<span style="color:#000;font-weight:bold">/</span>html; charset<span style="color:#000;font-weight:bold">=</span>UTF<span style="color:#000;font-weight:bold">-</span><span style="color:#099">8</span>
-</span></span><span style="display:flex;"><span>    [http_code] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">200</span>
-</span></span><span style="display:flex;"><span>    [header_size] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">237</span>
-</span></span><span style="display:flex;"><span>    [request_size] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">175</span>
-</span></span><span style="display:flex;"><span>    [filetime] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1</span>
-</span></span><span style="display:flex;"><span>    [ssl_verify_result] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">0</span>
-</span></span><span style="display:flex;"><span>    [redirect_count] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">0</span>
-</span></span><span style="display:flex;"><span>    [total_time] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">1.490972</span>
-</span></span><span style="display:flex;"><span>    [namelookup_time] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">5.3E-5</span>
-</span></span><span style="display:flex;"><span>    [connect_time] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">0.175803</span>
-</span></span><span style="display:flex;"><span>    [pretransfer_time] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">0.175812</span>
-</span></span><span style="display:flex;"><span>    [size_upload] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">0</span>
-</span></span><span style="display:flex;"><span>    [size_download] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">30416</span>
-</span></span><span style="display:flex;"><span>    [speed_download] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">20400</span>
-</span></span><span style="display:flex;"><span>    [speed_upload] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">0</span>
-</span></span><span style="display:flex;"><span>    [download_content_length] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">30416</span>
-</span></span><span style="display:flex;"><span>    [upload_content_length] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">0</span>
-</span></span><span style="display:flex;"><span>    [starttransfer_time] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">0.714943</span>
-</span></span><span style="display:flex;"><span>    [redirect_time] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">0</span>
-</span></span><span style="display:flex;"><span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">**</span> Header
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">+</span> Title: Random Eye Movement
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">+</span> Meta Desc:
-</span></span><span style="display:flex;"><span>Not Set
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">+</span> Meta Keywords:
-</span></span><span style="display:flex;"><span>Not Set
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">+</span> Meta Robots:
-</span></span><span style="display:flex;"><span>Not Set
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">**</span> Flags
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">+</span> Has Frames<span style="color:#a61717;background-color:#e3d2d2">?</span>:
-</span></span><span style="display:flex;"><span>FALSE
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">+</span> Has body content been parsed<span style="color:#a61717;background-color:#e3d2d2">?</span>:
-</span></span><span style="display:flex;"><span>TRUE
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">**</span> Non Html Tags
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">+</span> Tags scanned <span style="color:#000;font-weight:bold">for</span>:
-</span></span><span style="display:flex;"><span>Tag Type: script tags processed: <span style="color:#099">4</span>
-</span></span><span style="display:flex;"><span>Tag Type: embed tags processed: <span style="color:#099">1</span>
-</span></span><span style="display:flex;"><span>Tag Type: style tags processed: <span style="color:#099">0</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">+</span> Tag contents:
-</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">Array</span>
-</span></span><span style="display:flex;"><span>(
-</span></span><span style="display:flex;"><span>    [ script ] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#900;font-weight:bold">Array</span>
-</span></span><span style="display:flex;"><span>        (
-</span></span><span style="display:flex;"><span>            [<span style="color:#099">0</span>] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#900;font-weight:bold">Array</span>
-</span></span><span style="display:flex;"><span>                (
-</span></span><span style="display:flex;"><span>                    [src] <span style="color:#000;font-weight:bold">=&gt;</span> http:<span style="color:#000;font-weight:bold">//</span>www<span style="color:#000;font-weight:bold">.</span>davidcraddock<span style="color:#000;font-weight:bold">.</span>net<span style="color:#000;font-weight:bold">/</span>wp<span style="color:#000;font-weight:bold">-</span>content<span style="color:#000;font-weight:bold">/</span>themes<span style="color:#000;font-weight:bold">/</span>this<span style="color:#000;font-weight:bold">-</span>just<span style="color:#000;font-weight:bold">-</span><span style="color:#000;font-weight:bold">in</span><span style="color:#000;font-weight:bold">/</span>js<span style="color:#000;font-weight:bold">/</span>ThemeJS<span style="color:#000;font-weight:bold">.</span>js
-</span></span><span style="display:flex;"><span>                    [type] <span style="color:#000;font-weight:bold">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [isinline] <span style="color:#000;font-weight:bold">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [content] <span style="color:#000;font-weight:bold">=&gt;</span>
-</span></span><span style="display:flex;"><span>                )
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            [<span style="color:#099">1</span>] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#900;font-weight:bold">Array</span>
-</span></span><span style="display:flex;"><span>                (
-</span></span><span style="display:flex;"><span>                    [src] <span style="color:#000;font-weight:bold">=&gt;</span> http:<span style="color:#000;font-weight:bold">//</span>www<span style="color:#000;font-weight:bold">.</span>davidcraddock<span style="color:#000;font-weight:bold">.</span>net<span style="color:#000;font-weight:bold">/</span>wp<span style="color:#000;font-weight:bold">-</span>content<span style="color:#000;font-weight:bold">/</span>plugins<span style="color:#000;font-weight:bold">/</span>lifestream<span style="color:#000;font-weight:bold">/</span>lifestream<span style="color:#000;font-weight:bold">.</span>js
-</span></span><span style="display:flex;"><span>                    [type] <span style="color:#000;font-weight:bold">=&gt;</span> text<span style="color:#000;font-weight:bold">/</span>javascript
-</span></span><span style="display:flex;"><span>                    [isinline] <span style="color:#000;font-weight:bold">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [content] <span style="color:#000;font-weight:bold">=&gt;</span>
-</span></span><span style="display:flex;"><span>                )
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            [<span style="color:#099">2</span>] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#900;font-weight:bold">Array</span>
-</span></span><span style="display:flex;"><span>                (
-</span></span><span style="display:flex;"><span>                    [src] <span style="color:#000;font-weight:bold">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [type] <span style="color:#000;font-weight:bold">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [isinline] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">1</span>
-</span></span><span style="display:flex;"><span>                    [content] <span style="color:#000;font-weight:bold">=&gt;</span>
-</span></span><span style="display:flex;"><span>                 <span style="color:#000;font-weight:bold">var</span> odesk_widgets_width <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">340</span>;
-</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">var</span> odesk_widgets_height <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">230</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>                )
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            [<span style="color:#099">3</span>] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#900;font-weight:bold">Array</span>
-</span></span><span style="display:flex;"><span>                (
-</span></span><span style="display:flex;"><span>                    [src] <span style="color:#000;font-weight:bold">=&gt;</span> http:<span style="color:#000;font-weight:bold">//</span>www<span style="color:#000;font-weight:bold">.</span>odesk<span style="color:#000;font-weight:bold">.</span>com<span style="color:#000;font-weight:bold">/</span>widgets<span style="color:#000;font-weight:bold">/</span>v1<span style="color:#000;font-weight:bold">/</span>providers<span style="color:#000;font-weight:bold">/</span>large<span style="color:#000;font-weight:bold">/~~</span><span style="color:#099">8</span>f250a5e32c8d3fa<span style="color:#000;font-weight:bold">.</span>js
-</span></span><span style="display:flex;"><span>                    [type] <span style="color:#000;font-weight:bold">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [isinline] <span style="color:#000;font-weight:bold">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [content] <span style="color:#000;font-weight:bold">=&gt;</span>
-</span></span><span style="display:flex;"><span>                )
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            [count] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">4</span>
-</span></span><span style="display:flex;"><span>        )
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    [ embed ] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#900;font-weight:bold">Array</span>
-</span></span><span style="display:flex;"><span>        (
-</span></span><span style="display:flex;"><span>            [<span style="color:#099">0</span>] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#900;font-weight:bold">Array</span>
-</span></span><span style="display:flex;"><span>                (
-</span></span><span style="display:flex;"><span>                    [src] <span style="color:#000;font-weight:bold">=&gt;</span> http:<span style="color:#000;font-weight:bold">//</span>www<span style="color:#000;font-weight:bold">.</span>youtube<span style="color:#000;font-weight:bold">-</span>nocookie<span style="color:#000;font-weight:bold">.</span>com<span style="color:#000;font-weight:bold">/</span>v<span style="color:#000;font-weight:bold">/</span>Fpm0m6bVfrM<span style="color:#000;font-weight:bold">&amp;</span>hl<span style="color:#000;font-weight:bold">=</span>en<span style="color:#000;font-weight:bold">&amp;</span>fs<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span><span style="color:#000;font-weight:bold">&amp;</span>rel<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>
-</span></span><span style="display:flex;"><span>                    [type] <span style="color:#000;font-weight:bold">=&gt;</span> application<span style="color:#000;font-weight:bold">/</span>x<span style="color:#000;font-weight:bold">-</span>shockwave<span style="color:#000;font-weight:bold">-</span>flash
-</span></span><span style="display:flex;"><span>                    [isinline] <span style="color:#000;font-weight:bold">=&gt;</span>
-</span></span><span style="display:flex;"><span>                    [content] <span style="color:#000;font-weight:bold">=&gt;</span>
-</span></span><span style="display:flex;"><span>                )
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            [count] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">1</span>
-</span></span><span style="display:flex;"><span>        )
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    [ style ] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#900;font-weight:bold">Array</span>
-</span></span><span style="display:flex;"><span>        (
-</span></span><span style="display:flex;"><span>            [count] <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#099">0</span>
-</span></span><span style="display:flex;"><span>        )
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">**----</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">***</span> Page Print of http:<span style="color:#000;font-weight:bold">//</span>www<span style="color:#000;font-weight:bold">.</span>davidcraddock<span style="color:#000;font-weight:bold">.</span>net Finished <span style="color:#000;font-weight:bold">***</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">**----</span>
-</span></span></code></pre></div><p>If you want to download a copy, the file is below. If you find it useful for you, a pingback would be appreciated.
+<pre tabindex="0"><code>This is a class I wrote back in 2008 to help me pull down and parse HTML pages I updated it on
+14/01/10 to print the results in a nicer way to the commandline.
+
+- David Craddock (contact@davidcraddock.net)
+
+/// WHAT IT DOES
+
+It uses CURL to pull down a page from a URL, and sorts it into a &#39;Page&#39; object
+which has different attributes for the different HTML properties of the page
+structure. By default it will also print the page object&#39;s properties neatly
+onto the commandline as part of its unit test.
+
+/// FILES
+
+* README.txt - this file
+* page.php - The PHP Class
+* LIB_http.php - a lightweight external library that I used. It is just a very light wrapper around CURL&#39;s HTTP functions.
+* expected-result.txt - output of the unit tests on my development machine
+* curl-cookie-jar.txt - this file will be created when you run the page.php&#39;s unit test
+
+/// SETUP
+
+You will need CURL installed, PHP&#39;s DOMXPATH functions available, and the PHP
+command line interface. It was tested on PHP5 on OSX.
+
+/// RUNNING
+
+Use the php commandline executable to run the page.php unit tests. IE:
+$ php page.php
+
+You should see a bunch of information being printed out, you can use:
+$ php page.php &gt; result.txt
+
+That will output the info to result.txt so you can read it at will.
+</code></pre><p>Here&rsquo;s an example of one of the unit tests, which fetches this frontpage and parses it:</p>
+<pre tabindex="0"><code>**++++
+*** Page Print of http://www.davidcraddock.net ***
+**++++
+
+** Transfer Status
++ URL Retrieved:
+http://www.davidcraddock.net
++ CURL Fetch Status:
+Array
+(
+    [url] =&gt; http://www.davidcraddock.net
+    [content_type] =&gt; text/html; charset=UTF-8
+    [http_code] =&gt; 200
+    [header_size] =&gt; 237
+    [request_size] =&gt; 175
+    [filetime] =&gt; -1
+    [ssl_verify_result] =&gt; 0
+    [redirect_count] =&gt; 0
+    [total_time] =&gt; 1.490972
+    [namelookup_time] =&gt; 5.3E-5
+    [connect_time] =&gt; 0.175803
+    [pretransfer_time] =&gt; 0.175812
+    [size_upload] =&gt; 0
+    [size_download] =&gt; 30416
+    [speed_download] =&gt; 20400
+    [speed_upload] =&gt; 0
+    [download_content_length] =&gt; 30416
+    [upload_content_length] =&gt; 0
+    [starttransfer_time] =&gt; 0.714943
+    [redirect_time] =&gt; 0
+)
+
+** Header
++ Title: Random Eye Movement
++ Meta Desc:
+Not Set
++ Meta Keywords:
+Not Set
++ Meta Robots:
+Not Set
+** Flags
++ Has Frames?:
+FALSE
++ Has body content been parsed?:
+TRUE
+
+** Non Html Tags
++ Tags scanned for:
+Tag Type: script tags processed: 4
+Tag Type: embed tags processed: 1
+Tag Type: style tags processed: 0
+
++ Tag contents:
+Array
+(
+    [ script ] =&gt; Array
+        (
+            [0] =&gt; Array
+                (
+                    [src] =&gt; http://www.davidcraddock.net/wp-content/themes/this-just-in/js/ThemeJS.js
+                    [type] =&gt;
+                    [isinline] =&gt;
+                    [content] =&gt;
+                )
+
+            [1] =&gt; Array
+                (
+                    [src] =&gt; http://www.davidcraddock.net/wp-content/plugins/lifestream/lifestream.js
+                    [type] =&gt; text/javascript
+                    [isinline] =&gt;
+                    [content] =&gt;
+                )
+
+            [2] =&gt; Array
+                (
+                    [src] =&gt;
+                    [type] =&gt;
+                    [isinline] =&gt; 1
+                    [content] =&gt;
+                 var odesk_widgets_width = 340;
+                var odesk_widgets_height = 230;
+
+                )
+
+            [3] =&gt; Array
+                (
+                    [src] =&gt; http://www.odesk.com/widgets/v1/providers/large/~~8f250a5e32c8d3fa.js
+                    [type] =&gt;
+                    [isinline] =&gt;
+                    [content] =&gt;
+                )
+
+            [count] =&gt; 4
+        )
+
+    [ embed ] =&gt; Array
+        (
+            [0] =&gt; Array
+                (
+                    [src] =&gt; http://www.youtube-nocookie.com/v/Fpm0m6bVfrM&amp;hl=en&amp;fs=1&amp;rel=0
+                    [type] =&gt; application/x-shockwave-flash
+                    [isinline] =&gt;
+                    [content] =&gt;
+                )
+
+            [count] =&gt; 1
+        )
+
+    [ style ] =&gt; Array
+        (
+            [count] =&gt; 0
+        )
+
+)
+
+**----
+*** Page Print of http://www.davidcraddock.net Finished ***
+**----
+</code></pre><p>If you want to download a copy, the file is below. If you find it useful for you, a pingback would be appreciated.
 <a href="http://www.davidcraddock.net/uploads/code-sample.tar.gz">code-sample.tar.gz</a></p>
 
 
@@ -320,6 +366,19 @@ I thought someone may well find a use for it - I&rsquo;ve used the class in seve
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2010/01/14/site-redesign/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Site Redesign</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2010/01/14/passed-the-w3schools-php-certification/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Passed the W3Schools PHP Certification</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -393,7 +452,7 @@ I thought someone may well find a use for it - I&rsquo;ve used the class in seve
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -447,6 +506,18 @@ I thought someone may well find a use for it - I&rsquo;ve used the class in seve
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

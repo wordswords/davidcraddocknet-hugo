@@ -8,7 +8,7 @@
 <title>Posts | DavidCraddock.net</title>
 <meta name="keywords" content="">
 <meta name="description" content="Posts - DavidCraddock.net">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/posts/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/posts/feed.xml">
+<link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/posts/index.xml">
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/posts/">
 <noscript>
     <style>
@@ -60,13 +60,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
 <meta property="og:title" content="Posts" />
-<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
+<meta property="og:description" content="DavidCraddock.net" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://davidcraddock.net/posts/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 
-<meta name="twitter:card" content="summary"/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK."/>
+<meta name="twitter:description" content="DavidCraddock.net"/>
 
 
 <script type="application/ld+json">
@@ -87,7 +90,11 @@
 
 <body class="list" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -98,9 +105,44 @@
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -108,168 +150,98 @@
 <header class="page-header"><div class="breadcrumbs"><a href="https://davidcraddock.net/">Home</a></div>
   <h1>
     Posts
+    <a href="/posts/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
   </h1>
 </header>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Goals for the Year 2015
+    <h2 class="entry-hint-parent">DJ Books: Reviewed
     </h2>
   </header>
   <div class="entry-content">
-    <p>NOTE: I have an update on my progress as of 9/1/2015 here
-Motivated by my good friend CheerUpLove.com’s reflective style of blogging, and Ian Forrester’s many interesting posts, I thought it would be interesting to post something a bit more personal and less technical on this blog.
-Now that 2015 is upon us, I am going to take some time to publicly outline my goals for the year, so I can hold myself more accountable to them, and so I can look back on them this time next year.
+    <p> The classic!
+Yes! Some people actually write and read BOOKS on DJing. As if YouTube wasn’t enough. Well it can be enough.. but YouTube is also a cess pit of rubbish information, and at least a book has a better chance of being properly edited and reviewed. Also reading a book makes you more intellectual. Which is utterly true.
+So. I have been reading through these DJing books to see if they could teach me something I didn’t know about DJing after over 10 years doing it. And there were quite a few interesting techniques and tricks that I learned from these.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2015-01-17 23:36:45 +0000 GMT'>January 17, 2015</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to Goals for the Year 2015" href="https://davidcraddock.net/2015/01/17/goals-for-the-year-2015/"></a>
+  <footer class="entry-footer"><span title='2021-02-18 16:56:59 +0000 GMT'>February 18, 2021</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to DJ Books: Reviewed" href="https://davidcraddock.net/2021/02/18/dj-books-reviewed/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">microKORG Original &#43; Novation Impulse 61
+    <h2 class="entry-hint-parent">Twitch Streaming Technical Setup
     </h2>
   </header>
   <div class="entry-content">
-    <p>I picked up a rather ugly (but very cheap!) customised microKORG, and also the excellent Novation Impulse 61 USB/Midi keyboard controller.
-The microKORG I like a lot. It was my first synth, and at first I couldn’t make any sense of it. I do agree with the Reddit /r/synthesizers view that it is not the best synth to learn on. Their view is that the best synth to learn on is one with a one-to-one mapping between controls and sound engine parameters. To put another way, the best beginners synth is one which has lots of knobs and buttons on it that you can tweak and hear actual results in the sound. It makes it more difficult if the sound engine is hidden away behind a large menu system with lots of daunting menus, like the microKORG has.
+    <p> I thought I’d write a bit here about my Twitch DJing setup and some of the hardware and software I’m using. Twitch streaming has become very popular over the lockdown period, and I think people might be interested in how I have configured my stream. Something that seperates my stream from anyone else I’ve seen on Twitch is that is that I do live vinyl DJing AND live VJing at the same time on my stream. This is how I achieve it.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2014-10-31 20:16:56 +0000 GMT'>October 31, 2014</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to microKORG Original &#43; Novation Impulse 61" href="https://davidcraddock.net/2014/10/31/microkorg-original-novation-impulse-61/"></a>
+  <footer class="entry-footer"><span title='2021-02-14 23:57:54 +0000 GMT'>February 14, 2021</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Twitch Streaming Technical Setup" href="https://davidcraddock.net/2021/02/14/twitch-dj-streaming-technical-setup/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Pioneer DDJ-SR Serato Controller Review
+    <h2 class="entry-hint-parent">David’s Guide to The News
     </h2>
   </header>
   <div class="entry-content">
-    <p> I decided to buy the DDJ-SR controller because it was cheaper than even the cheapest pair of Pioneer CDJs. I’m no stranger to using a laptop and controller, before the DDJ-SR I used my trusty Faderfox DJ2 controller, which is a basic no-frills ‘play buttons, 3 EQs, crossfader and volume faders’ unit.
-I was considering getting the Native Instruments Traktor S4 DJ controller, which is one of the most popular full-size controllers for Traktor. However, after borrowing one from a friend, I compared the build quality of the DDJ-SR versus the S4, and there was no contest! The Pioneer DDJ-SR has the same buttons and jog wheel as the Pioneer CDJ units, which are rock solid and industry standard. For anyone wanting to use CDJs in the club after using the DDJ-SR at home, you will find the feel very familiar.
+    <p>Journalism has deteriorated to a huge degree in the online age. A lot of articles and video content are one-sided short ‘clickbait’ – short messages designed to trigger an extreme emotional reaction. ALMOST ALL journalism is like this these days, it doesn’t matter if you have a highly established news network you have been trusting for decades, they have all had to adopt this low-quality strategy due to the ultra-competitive and dire financial situation that all news reporting finds itself in. However a lot of people still take news content at complete face value, and this leads to a huge number of people being misled about the real facts.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2014-09-03 00:17:23 +0000 +0000'>September 3, 2014</span>&nbsp;·&nbsp;4 min</footer>
-  <a class="entry-link" aria-label="post link to Pioneer DDJ-SR Serato Controller Review" href="https://davidcraddock.net/2014/09/03/pioneer-ddj-sr-serato-controller-review/"></a>
+  <footer class="entry-footer"><span title='2021-01-08 08:50:03 +0000 GMT'>January 8, 2021</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to David’s Guide to The News" href="https://davidcraddock.net/2021/01/08/davids-guide-to-the-news/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">New Synthesiser Additions: Microbrute, Nord Drum and Access Virus A
+    <h2 class="entry-hint-parent">Finally my 27U Eurorack is complete!
     </h2>
   </header>
   <div class="entry-content">
-    <p>I bought some new synths.
-Access Virus A This is the original 1998 Access Virus A. It, it was a staple synth for trance and electronic music in general for the early 00s. I am very happy that I managed to get this secondhand for less than a MicroKORG. It cost over £800 when it came out in 1998. Old digital synths seem to be unpopular at the moment, I’ve heard comments along the lines of ‘if it’s digital then I might as well use a plugin in my DAW’. But I think this is ignoring the tactile control surface that you get, and how it gets your head outside the computer and playing an actual physical instrument. The presets are really inspiring, several sounds that you will recognise if you were into electronic music in the 00s. VNV Nation, one of my favourite bands, produced their entire ‘Empires’ album with just the Access Virus A and a couple of samplers.
+    <p> The three sections Left 9U section Right 9U section Middle 9U section So.. finally my 27U Eurorack modular synthesiser is complete. I have filled up the third - and surely last, as there is no more room in the studio! - case. I started this Eurorack modular in 2015.. so I am glad it is all complete now. I put in a small amount nearly every month for new modules. I am not some ‘rich kid’ who could afford to buy everything at once - and indeed I think my gradual approach has benefitted the overall modular because it’s made me think about what I actually need, and given me time to learn as I go along.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2014-08-10 21:53:19 +0000 +0000'>August 10, 2014</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to New Synthesiser Additions: Microbrute, Nord Drum and Access Virus A" href="https://davidcraddock.net/2014/08/10/new-synthesiser-additions-microbrute-nord-drum-and-access-virus-a/"></a>
+  <footer class="entry-footer"><span title='2020-12-11 22:03:36 +0000 GMT'>December 11, 2020</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Finally my 27U Eurorack is complete!" href="https://davidcraddock.net/2020/12/11/finally-my-27u-eurorack-is-complete/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">A* Algorithm implementation in Python
+    <h2 class="entry-hint-parent">Ivy Bridge 2011 PCs are still useful today
     </h2>
   </header>
   <div class="entry-content">
-    <p> Lately I’ve had the idea of creating a text-based Roguelike in C&#43;&#43;. This lead me on to think about the game AI experiments that I worked during my degree in Computer Science and A.I.. Essential to game AI is the notion of pathfinding, or finding a path from ‘A’ to ‘B’, past any obstacles that get in the way. One way to do this is to use the A* algorithm. I decided to implement an A* pathfinding algorithm for possible use in a Roguelike later, and chose the pseudocode from the Wikipedia example to implement.
+    <p>In our house, seperate to my main PC (see the tab above) we still have two Ivy Bridge-based PCs:
+Conny’s PC
+i7-3770K 16GB DDR3 RAM Nvidea Radeon 970 Graphics Card 250 GB SSD Windows 10 My wife uses this as her main PC, and plays quite a few games with it. For a CPU and motherboard that I put together in 2011 or so, I am quite amazed it still runs adequetely! It runs the games she wants to play, the most graphically intensive being Deadpool, but it will also cope with Borderlands 2, Skyrim Special Edition, Shadow Warrior 2, and others. She is not interested in the top graphics games, but it runs just fine.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2014-06-12 00:24:34 +0000 +0000'>June 12, 2014</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to A* Algorithm implementation in Python" href="https://davidcraddock.net/2014/06/12/a-algorithm-implementation-in-python/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Current Music Setup
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I like to dabble in making and playing music. Here is the equipment and setup that I use.
-Ableton Live Intro
-This is the DAW I use. I have been using Ableton Live for several years now, and I know my way around it. I have tried others but they never really felt as comfortable. Live comes in three flavours, ‘Intro’ is the most basic paid-for version. I was surprised how cheap the ‘Intro’ version was, and how little I find myself needing the features of the more expensive versions. I only have one paid-for VST plugin, and that is the KORG Legacy Cell MS-20, which I use on almost all the music I’ve made.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2014-05-05 16:20:33 +0000 +0000'>May 5, 2014</span>&nbsp;·&nbsp;4 min</footer>
-  <a class="entry-link" aria-label="post link to Current Music Setup" href="https://davidcraddock.net/2014/05/05/music-setup/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Setting up Kindlefire HDX for Development under Ubuntu 12.04
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.
-First I needed to setup the udev rules:
-1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):
-SUBSYSTEM==&#34;usb&#34;, ATTRS{idVendor}==&#34;1949&#34;, MODE=&#34;0666&#34; 2. Change the permission of this file by executing the following command as root:
-chmod a&#43;r /etc/udev/rules.d/51-android.rules ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2014-02-10 15:28:45 +0000 GMT'>February 10, 2014</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Setting up Kindlefire HDX for Development under Ubuntu 12.04" href="https://davidcraddock.net/2014/02/10/kindlefire-hdx-under-ubuntu-12-04/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">My Computer Build
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Updated: Reorganised, replaced Tiamat headset for KAVE.
-I use my computer a lot, for work (software development), gaming and music production. I wanted to build a high-end computer setup, as I’ve always lagged behind with upgrades before. So I gradually have been accumulating and swapping bits around to make the setup above.
-Internals
-Case Motherboard CPU CPU Cooler RAM Wireless Card Optical Drive PSU Visual
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2014-01-29 00:13:12 +0000 GMT'>January 29, 2014</span>&nbsp;·&nbsp;10 min</footer>
-  <a class="entry-link" aria-label="post link to My Computer Build" href="https://davidcraddock.net/2014/01/29/my-computer-build/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">My Aeron Chair
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>A good ergonomic chair is a wise investment if you’re going to spend a lot of time at your computer. One of the better known ergonomic models is the Herman Miller Aeron Task Chair.
-What Other People Say About the Aeron Jeff Atwood (from Coding Horror) says:
-In fact, after browsing chairs for the last few years of my career, I’ve come to one conclusion: you can’t expect to get a decent chair for less than $500. If you are spending less than that on seating – unless you are getting the deal of the century on dot-bomb bankruptcy auctions – you’re probably making a mistake.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2013-12-24 14:08:48 +0000 GMT'>December 24, 2013</span>&nbsp;·&nbsp;4 min</footer>
-  <a class="entry-link" aria-label="post link to My Aeron Chair" href="https://davidcraddock.net/2013/12/24/aeron-chair/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">2013 Career Retrospective
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>2015 Update: The “Device Hive” project has now been changed to be called ‘Hive CI’ and it is being maintained by a team of developers at the BBC, which I am no longer a part of. It is in the process of being opensourced, see: http://bbc.github.io/hive-ci/
-This year has been quite a busy and eventful one for me.
-Connected Red Button At the start of the year, I was working on the Connected Red Button team within the BBC. Connected Red Button is a major ongoing project in the Television and Mobile Platforms department at BBC North. Its aim is to replace the classic Red Button text service (which itself is the successor to Ceefax) with a new updated all-singing all-dancing interactive portal to internet content, available on Smart TVs and modern set top boxes. Currently Connected Red Button is live and accessible by pressing the Red Button on the new Virgin Media TiVo boxes. You can access the latest version of iPlayer, and the BBC News and BBC Sport smart TV apps from within one easy portal.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2013-11-17 03:40:14 +0000 GMT'>November 17, 2013</span>&nbsp;·&nbsp;5 min</footer>
-  <a class="entry-link" aria-label="post link to 2013 Career Retrospective" href="https://davidcraddock.net/2013/11/17/2013-career-retrospective/"></a>
+  <footer class="entry-footer"><span title='2020-10-13 18:06:30 +0000 +0000'>October 13, 2020</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Ivy Bridge 2011 PCs are still useful today" href="https://davidcraddock.net/2020/10/13/ivy-bridge-2011-pcs-are-still-useful-today/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://davidcraddock.net/posts/page/9/">
-      «&nbsp;Prev&nbsp;
+      «&nbsp;Prev&nbsp;9/36
     </a>
-    <a class="next" href="https://davidcraddock.net/posts/page/11/">Next&nbsp;&nbsp;»
+    <a class="next" href="https://davidcraddock.net/posts/page/11/">Next&nbsp;11/36&nbsp;»
     </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -323,6 +295,18 @@ Connected Red Button At the start of the year, I was working on the Connected Re
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 </body>

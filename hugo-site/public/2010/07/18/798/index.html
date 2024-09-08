@@ -14,7 +14,7 @@ Hypercam2 is a good, free, video recorder that can cope with recording game vide
 
 
 My motherboard has a 5.1 digital soundcard built in. However the only way I can record off the soundcard is to plug in a standard audio cable from the speaker out (green) to the microphone in (orange).">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2010/07/18/798/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -73,11 +73,14 @@ Hypercam2 is a good, free, video recorder that can cope with recording game vide
 
 My motherboard has a 5.1 digital soundcard built in. However the only way I can record off the soundcard is to plug in a standard audio cable from the speaker out (green) to the microphone in (orange)." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2010/07/18/798/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2010/07/18/798/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-07-18T23:55:33+00:00" />
 <meta property="article:modified_time" content="2010-07-18T23:55:33+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Recording Game Videos on Windows 7"/>
 <meta name="twitter:description" content="This is just a quick note to remind myself how I did this.
 
@@ -121,8 +124,12 @@ My motherboard has a 5.1 digital soundcard built in. However the only way I can 
   "articleBody": "This is just a quick note to remind myself how I did this.\nHypercam2 is a good, free, video recorder that can cope with recording game videos. It’s freely available from http://www.hyperionics.com/hc/downloads.asp - just make sure when you install it you don’t tick on the spyware toolbar installation options.\nMy motherboard has a 5.1 digital soundcard built in. However the only way I can record off the soundcard is to plug in a standard audio cable from the speaker out (green) to the microphone in (orange).\nThe soundcard switches off the headphone output when it detects a speaker attached to the speaker out, so you have to go to the recording options in Windows 7 and right click on the microphone in. It will give you an option to ‘Monitor this input using the headphones’ - which will allow you to listen to anything coming into the microphone socket through the headphone socket on the front on my PC.\nIn hypercam, set the sound to record from the default input device, set the frame rate to 10/10\nRecord using the ‘select window to record from’ option, select the game window, and use the F2 button to start and stop the recording.\nThe video will be output in AVI format, but you can transcode or convert it into a quicktime MOV file for editing in iMovie, or you can use windows movie editor, which is free and quite good.\n",
   "wordCount" : "238",
   "inLanguage": "en",
-  "datePublished": "2010-07-18T23:55:33Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2010-07-18T23:55:33Z",
   "dateModified": "2010-07-18T23:55:33Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2010/07/18/798/"
@@ -141,7 +148,11 @@ My motherboard has a 5.1 digital soundcard built in. However the only way I can 
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -152,9 +163,44 @@ My motherboard has a 5.1 digital soundcard built in. However the only way I can 
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -166,7 +212,7 @@ My motherboard has a 5.1 digital soundcard built in. However the only way I can 
     <h1 class="post-title entry-hint-parent">
       Recording Game Videos on Windows 7
     </h1>
-    <div class="post-meta"><span title='2010-07-18 23:55:33 +0000 +0000'>July 18, 2010</span>&nbsp;·&nbsp;2 min
+    <div class="post-meta"><span title='2010-07-18 23:55:33 +0000 +0000'>July 18, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> 
@@ -199,6 +245,19 @@ My motherboard has a 5.1 digital soundcard built in. However the only way I can 
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2010/07/19/applications-i-reccomend/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Applications I Reccomend</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2010/07/16/insights-into-a-modern-indie-music-label/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Insights into a modern Indie Music label</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -272,7 +331,7 @@ My motherboard has a 5.1 digital soundcard built in. However the only way I can 
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -326,6 +385,18 @@ My motherboard has a 5.1 digital soundcard built in. However the only way I can 
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>

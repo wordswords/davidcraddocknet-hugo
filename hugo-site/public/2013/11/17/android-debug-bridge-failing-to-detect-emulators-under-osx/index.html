@@ -10,7 +10,7 @@
 <meta name="description" content="
 
 I&rsquo;ve been working on a project at the BBC where we are using the Android command-line tools from the Android Developer Tools, to spin up and terminate series of emulators. I noticed a big problem under OSX where &lsquo;adb devices&rsquo; was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb.">
-<meta name="author" content="">
+<meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2013/11/17/android-debug-bridge-failing-to-detect-emulators-under-osx/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
@@ -65,11 +65,14 @@ I&rsquo;ve been working on a project at the BBC where we are using the Android c
 
 I&rsquo;ve been working on a project at the BBC where we are using the Android command-line tools from the Android Developer Tools, to spin up and terminate series of emulators. I noticed a big problem under OSX where &lsquo;adb devices&rsquo; was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidcraddock.net/2013/11/17/android-debug-bridge-failing-to-detect-emulators-under-osx/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://davidcraddock.net/2013/11/17/android-debug-bridge-failing-to-detect-emulators-under-osx/" />
+<meta property="og:image" content="https://davidcraddock.net/images/papermod-cover.png" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2013-11-17T02:21:34+00:00" />
 <meta property="article:modified_time" content="2013-11-17T02:21:34+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://davidcraddock.net/images/papermod-cover.png" />
 <meta name="twitter:title" content="Android Debug Bridge failing to detect emulators under OSX"/>
 <meta name="twitter:description" content="
 
@@ -109,8 +112,12 @@ I&rsquo;ve been working on a project at the BBC where we are using the Android c
   "articleBody": " I’ve been working on a project at the BBC where we are using the Android command-line tools from the Android Developer Tools, to spin up and terminate series of emulators. I noticed a big problem under OSX where ‘adb devices’ was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb.\nWe switched to using adb with emulators in an Ubuntu 12.04 VM running under OSX, and we had no further problems with our setup. Emulators will now be programatically launched and torn down by our monitoring application. We now have an array of emulators which we can deploy to at will, which is very useful.\nI don’t know what has caused this problem, my only hunch is that the Android toolkit was probably developed in a very Linux-heavy environment, and so adb on Linux was probably their first testing platform. All I can say is that Linux is much more stable than OSX, even as a VM, for Android emulation.\n",
   "wordCount" : "203",
   "inLanguage": "en",
-  "datePublished": "2013-11-17T02:21:34Z",
+  "image": "https://davidcraddock.net/images/papermod-cover.png","datePublished": "2013-11-17T02:21:34Z",
   "dateModified": "2013-11-17T02:21:34Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Craddock"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://davidcraddock.net/2013/11/17/android-debug-bridge-failing-to-detect-emulators-under-osx/"
@@ -129,7 +136,11 @@ I&rsquo;ve been working on a project at the BBC where we are using the Android c
 
 <body class="" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -140,9 +151,44 @@ I&rsquo;ve been working on a project at the BBC where we are using the Android c
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://davidcraddock.net/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://davidcraddock.net/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -154,7 +200,7 @@ I&rsquo;ve been working on a project at the BBC where we are using the Android c
     <h1 class="post-title entry-hint-parent">
       Android Debug Bridge failing to detect emulators under OSX
     </h1>
-    <div class="post-meta"><span title='2013-11-17 02:21:34 +0000 GMT'>November 17, 2013</span>&nbsp;·&nbsp;1 min
+    <div class="post-meta"><span title='2013-11-17 02:21:34 +0000 GMT'>November 17, 2013</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock
 
 </div>
   </header> 
@@ -171,6 +217,19 @@ I&rsquo;ve been working on a project at the BBC where we are using the Android c
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://davidcraddock.net/2013/11/17/2013-career-retrospective/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>2013 Career Retrospective</span>
+  </a>
+  <a class="next" href="https://davidcraddock.net/2013/07/27/thehaiku-machine/">
+    <span class="title">Next »</span>
+    <br>
+    <span>The Haiku Machine</span>
+  </a>
+</nav>
+
 
 <ul class="share-buttons">
     <li>
@@ -244,7 +303,7 @@ I&rsquo;ve been working on a project at the BBC where we are using the Android c
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+        <span>© David Paul Craddock</span> · 
 
     <span>
         Powered by
@@ -298,6 +357,18 @@ I&rsquo;ve been working on a project at the BBC where we are using the Android c
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 <script>
