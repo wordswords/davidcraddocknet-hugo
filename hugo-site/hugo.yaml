@@ -1,7 +1,7 @@
 baseURL: https://davidcraddock.net
 languageCode: en
 title: DavidCraddock.net
-theme: PaperModX
+theme: PaperMod
 taxonomies:
   pages: page
   category: category
