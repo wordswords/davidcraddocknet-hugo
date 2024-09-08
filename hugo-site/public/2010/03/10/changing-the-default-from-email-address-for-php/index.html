@@ -68,13 +68,13 @@ From: Root &lt;root@apache.ecommercecompany.com&gt;
 This makes absolutely no sense to your customers, and often they will think it is spam and delete it. Often, the decision will be made for them by their web mail host, such as hotmail.com or googlemail.com, and they will never even see the email. You don&rsquo;t want this to happen." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2010/03/10/changing-the-default-from-email-address-for-php/" />
-<meta property="og:image" content="https://davidcraddock.net/hugo-uploads/2024/9/8/mugshot.png" />
+<meta property="og:image" content="https://davidcraddock.net/mugshot.png" />
 <meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-03-10T06:36:26+00:00" />
 <meta property="article:modified_time" content="2010-03-10T06:36:26+00:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://davidcraddock.net/hugo-uploads/2024/9/8/mugshot.png" />
+<meta name="twitter:image" content="https://davidcraddock.net/mugshot.png" />
 <meta name="twitter:title" content="Changing the default &#34;From:&#34; email address for emails sent via PHP on Linux"/>
 <meta name="twitter:description" content="I&rsquo;ve had to solve this problem a couple of times at least, and it&rsquo;s quite a common task, so I thought I&rsquo;d document it here.
 When you send emails to users of your site through using the PHP mail() function, they will sometimes turn up in the mailbox of customers of your site with the following from address:
@@ -115,7 +115,7 @@ This makes absolutely no sense to your customers, and often they will think it i
   "articleBody": "I’ve had to solve this problem a couple of times at least, and it’s quite a common task, so I thought I’d document it here.\nWhen you send emails to users of your site through using the PHP mail() function, they will sometimes turn up in the mailbox of customers of your site with the following from address:\nFrom: Root This makes absolutely no sense to your customers, and often they will think it is spam and delete it. Often, the decision will be made for them by their web mail host, such as hotmail.com or googlemail.com, and they will never even see the email. You don’t want this to happen.\nWriting email templates that appear “trustworthy” and have a low chance of being mislabled as spam by the webmail companies, is quite a difficult task, and there’s quite a bit to know about it. However it is quite easy to change the default “From:” email address that PHP sends your emails on as, and that will definitely help.\nAssuming you’re running a linux server using sendmail, all you have to do is this.\nFirst create an email address that you would want the customers to see, through editing the /etc/aliases files and running the command newaliases. I created an email address called customer-emails@ecommercecompany.com.\nThen change the following sendmail_path line in your php.ini file to something like this:\n/etc/php.ini ... sendmail_path = /usr/sbin/sendmail -t -i -F 'customer-emails' -f 'Customer Emails ' ... Broken down, those extra options are: -F 'customer-emails' # the name of the sender -f 'Customer Emails ' # the email From header, which should have the name matching the email address, and it should be the same email address as above Then restart apache, and it should load the php.ini file changes. Test it by sending a couple of emails to your email address, and you should see emails sent out like this:\nFrom: Customer Emails ",
   "wordCount" : "321",
   "inLanguage": "en",
-  "image": "https://davidcraddock.net/hugo-uploads/2024/9/8/mugshot.png","datePublished": "2010-03-10T06:36:26Z",
+  "image": "https://davidcraddock.net/mugshot.png","datePublished": "2010-03-10T06:36:26Z",
   "dateModified": "2010-03-10T06:36:26Z",
   "author":{
     "@type": "Person",

@@ -64,13 +64,13 @@
  Generate self-signed server certificate with no password sudo openssl req -x509 -newkey rsa:2048 -keyout ./csr.pem -out server.crt -days 3001 -nodes Use this node.js code to setup a server quickly const https = require(&#39;https&#39;); const fs = require(&#39;fs&#39;); const options = { key: fs.readFileSync(&#39;csr.pem&#39;), cert: fs.readFileSync(&#39;server.crt&#39;) }; https.createServer(options, (req, res) =&gt; { res.writeHead(200); res.end(&#39;hello world\n&#39;); }).listen(8000); Go to https://localhost:8000 and accept the certificate, you should see &lsquo;hello world&rsquo;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2017/05/10/node-js-https-server-with-self-signed-certificate-creation-on-openssl-0-9-8zh-with-node-js-7-10-0/" />
-<meta property="og:image" content="https://davidcraddock.net/hugo-uploads/2024/9/8/mugshot.png" />
+<meta property="og:image" content="https://davidcraddock.net/mugshot.png" />
 <meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2017-05-10T13:59:18+00:00" />
 <meta property="article:modified_time" content="2017-05-10T13:59:18+00:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://davidcraddock.net/hugo-uploads/2024/9/8/mugshot.png" />
+<meta name="twitter:image" content="https://davidcraddock.net/mugshot.png" />
 <meta name="twitter:title" content="Node.js HTTPS server with self-signed certificate creation on openssl 0.9.8zh with node.js 7.10.0"/>
 <meta name="twitter:description" content="I couldn&rsquo;t find a concise guide to setting this up quickly so thought it was worth a post. To quickly get something working and create a https server using the above versions of openssl and node.js, do the following:
  Generate self-signed server certificate with no password sudo openssl req -x509 -newkey rsa:2048 -keyout ./csr.pem -out server.crt -days 3001 -nodes Use this node.js code to setup a server quickly const https = require(&#39;https&#39;); const fs = require(&#39;fs&#39;); const options = { key: fs.readFileSync(&#39;csr.pem&#39;), cert: fs.readFileSync(&#39;server.crt&#39;) }; https.createServer(options, (req, res) =&gt; { res.writeHead(200); res.end(&#39;hello world\n&#39;); }).listen(8000); Go to https://localhost:8000 and accept the certificate, you should see &lsquo;hello world&rsquo;"/>
@@ -109,7 +109,7 @@
   "articleBody": "I couldn’t find a concise guide to setting this up quickly so thought it was worth a post. To quickly get something working and create a https server using the above versions of openssl and node.js, do the following:\nGenerate self-signed server certificate with no password sudo openssl req -x509 -newkey rsa:2048 -keyout ./csr.pem -out server.crt -days 3001 -nodes Use this node.js code to setup a server quickly const https = require('https'); const fs = require('fs'); const options = { key: fs.readFileSync('csr.pem'), cert: fs.readFileSync('server.crt') }; https.createServer(options, (req, res) =\u003e { res.writeHead(200); res.end('hello world\\n'); }).listen(8000); Go to https://localhost:8000 and accept the certificate, you should see ‘hello world’\n",
   "wordCount" : "106",
   "inLanguage": "en",
-  "image": "https://davidcraddock.net/hugo-uploads/2024/9/8/mugshot.png","datePublished": "2017-05-10T13:59:18Z",
+  "image": "https://davidcraddock.net/mugshot.png","datePublished": "2017-05-10T13:59:18Z",
   "dateModified": "2017-05-10T13:59:18Z",
   "author":{
     "@type": "Person",

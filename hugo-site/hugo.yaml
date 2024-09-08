@@ -77,7 +77,7 @@ params:
   ShowToc: true
   TocOpen: true # open contents automantically
   # comments: false
-  images: ["/hugo-uploads/2024/9/8/mugshot.png"]
+  images: ["/mugshot.png"]
 
   profileMode:
     enabled: false
@@ -98,7 +98,7 @@ params:
     Title: "DavidCraddock.net"
 
     Content: >
-      <img src="/hugo-uploads/2024/9/8/mugshot.png" />
+      <img src="/mugshot.png" />
       👋 Welcome to my Geocities page! (just kidding). It's my personal <a href="https://gohugo.io/">blog</a> self-hosted on my <a href="/my-home-network/">Linux server</a> in my house.
 
   socialIcons:

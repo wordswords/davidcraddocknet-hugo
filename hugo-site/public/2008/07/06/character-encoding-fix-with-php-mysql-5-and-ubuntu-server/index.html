@@ -74,13 +74,13 @@ skip-character-set-client-handshake
 If you already have tables in your database that you have created, and they have defaulted to the latin1 charset, you&rsquo;ll be able to tell by looking at the mysqldump SQL:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2008/07/06/character-encoding-fix-with-php-mysql-5-and-ubuntu-server/" />
-<meta property="og:image" content="https://davidcraddock.net/hugo-uploads/2024/9/8/mugshot.png" />
+<meta property="og:image" content="https://davidcraddock.net/mugshot.png" />
 <meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2008-07-06T23:34:50+00:00" />
 <meta property="article:modified_time" content="2008-07-06T23:34:50+00:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://davidcraddock.net/hugo-uploads/2024/9/8/mugshot.png" />
+<meta name="twitter:image" content="https://davidcraddock.net/mugshot.png" />
 <meta name="twitter:title" content="Character encoding fix with PHP, MySQL 5 and ubuntu-server"/>
 <meta name="twitter:description" content="For some reason, under ubuntu-server, my default MySQL 5 character encoding was latin1. This caused no end of problems with grabbing data from the web, which was not necessarily in latin1 characterset.
 If you are ever in this situation, I suggest you handle everything as UTF-8. That means setting the following lines in my.cnf:
@@ -124,7 +124,7 @@ If you already have tables in your database that you have created, and they have
   "articleBody": "For some reason, under ubuntu-server, my default MySQL 5 character encoding was latin1. This caused no end of problems with grabbing data from the web, which was not necessarily in latin1 characterset.\nIf you are ever in this situation, I suggest you handle everything as UTF-8. That means setting the following lines in my.cnf:\n[mysqld] .. default-character-set=utf8 skip-character-set-client-handshake If you already have tables in your database that you have created, and they have defaulted to the latin1 charset, you’ll be able to tell by looking at the mysqldump SQL:\nDROP TABLE IF EXISTS `ARTISTS`; CREATE TABLE `ARTISTS` ( .. some col declarations.. ) ENGINE=MyISAM AUTO_INCREMENT=4519 DEFAULT CHARSET=latin1; See here this artists table has been set to default charset of latin1 by mysql. This is bad. So what I recommend is:\n1. Dump the full database structure + data to a file using mysqldump 2. Substitute ’latin1’ for ‘utf8’ universally on that file using your favourite text editor 3. Import the resultant file into mysql using the mysql -uroot -p -Dyourdb \u003c dump.sql method\nThen everything will be in utf8, and your character encoding issues will be solved :)\n",
   "wordCount" : "188",
   "inLanguage": "en",
-  "image": "https://davidcraddock.net/hugo-uploads/2024/9/8/mugshot.png","datePublished": "2008-07-06T23:34:50Z",
+  "image": "https://davidcraddock.net/mugshot.png","datePublished": "2008-07-06T23:34:50Z",
   "dateModified": "2008-07-06T23:34:50Z",
   "author":{
     "@type": "Person",
