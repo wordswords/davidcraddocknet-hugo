@@ -4,35 +4,19 @@
     <title>Default-From-Address on DavidCraddock.net</title>
     <link>https://davidcraddock.net/tag/default-from-address/</link>
     <description>Recent content in Default-From-Address on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 10 Mar 2010 06:36:26 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/tag/default-from-address/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Mar 2010 06:36:26 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/tag/default-from-address/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Changing the default &#34;From:&#34; email address for emails sent via PHP on Linux</title>
       <link>https://davidcraddock.net/2010/03/10/changing-the-default-from-email-address-for-php/</link>
       <pubDate>Wed, 10 Mar 2010 06:36:26 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2010/03/10/changing-the-default-from-email-address-for-php/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve had to solve this problem a couple of times at least, and it&amp;rsquo;s quite a common task, so I thought I&amp;rsquo;d document it here.&lt;/p&gt;
 &lt;p&gt;When you send emails to users of your site through using the PHP mail() function, they will sometimes turn up in the mailbox of customers of your site with the following from address:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;From: Root &amp;lt;root@apache.ecommercecompany.com&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
-      <content:encoded><![CDATA[<p>I&rsquo;ve had to solve this problem a couple of times at least, and it&rsquo;s quite a common task, so I thought I&rsquo;d document it here.</p>
-<p>When you send emails to users of your site through using the PHP mail() function, they will sometimes turn up in the mailbox of customers of your site with the following from address:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>From: Root &lt;root@apache.ecommercecompany.com&gt;
-</span></span></code></pre></div><p>This makes absolutely no sense to your customers, and often they will think it is spam and delete it. Often, the decision will be made for them by their web mail host, such as hotmail.com or googlemail.com, and they will never even see the email. You don&rsquo;t want this to happen.</p>
-<p>Writing email templates that appear &ldquo;trustworthy&rdquo; and have a low chance of being mislabled as spam by the webmail companies, is quite a difficult task, and there&rsquo;s quite a bit to know about it. However it is quite easy to change the default &ldquo;From:&rdquo; email address that PHP sends your emails on as, and that will definitely help.</p>
-<p>Assuming you&rsquo;re running a linux server using sendmail, all you have to do is this.</p>
-<p>First create an email address that you would want the customers to see, through editing the /etc/aliases files and running the command newaliases. I created an email address called <strong><a href="mailto:customer-emails@ecommercecompany.com">customer-emails@ecommercecompany.com</a></strong>.</p>
-<p>Then change the following sendmail_path line in your php.ini file to something like this:</p>
-<p>/etc/php.ini
-<code>... sendmail_path = /usr/sbin/sendmail -t -i -F 'customer-emails' -f 'Customer Emails &lt;customer-emails@ecommercecompany.com&gt;' ... </code></p>
-<p>Broken down, those extra options are:
-<code>-F 'customer-emails' # the name of the sender -f 'Customer Emails &lt;customer-emails@ecommercecompany.com&gt;' # the email From header, which should have the name matching the email address, and it should be the same email address as above </code></p>
-<p>Then restart apache, and it should load the php.ini file changes. Test it by sending a couple of emails to your email address, and you should see emails sent out like this:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>From: Customer Emails &lt;customer-emails@ecommercecompany.com&gt;
-</span></span></code></pre></div>]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

@@ -9,37 +9,19 @@
 <title>DavidCraddock.net</title>
 
 <meta name="description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK.">
-<meta name="author" content="Reorx">
+<meta name="author" content="">
 <link rel="canonical" href="https://davidcraddock.net/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.97d99fcdd90c38f6e3343e959a97a0295b30f590730a4ece2347f7f24ad997d1.css" integrity="sha256-l9mfzdkMOPbjND6VmpegKVsw9ZBzCk7OI0f38krZl9E=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://davidcraddock.net/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://davidcraddock.net/favicon-32x32.png">
 <link rel="apple-touch-icon" href="https://davidcraddock.net/apple-touch-icon.png">
+<link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/feed.xml">
 <link rel="alternate" type="application/json" href="https://davidcraddock.net/index.json">
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/">
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="DavidCraddock.net" />
-<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
-<meta property="og:title" content="DavidCraddock.net" />
-<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://davidcraddock.net/" />
-    <meta property="og:image" content="https://davidcraddock.net/cover.png"/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "DavidCraddock.net",
-  "url": "https://davidcraddock.net/",
-  "description": "The personal blog of David Craddock, a software engineer based in Manchester, UK.",
-  "thumbnailUrl": "https://davidcraddock.net/favicon.ico",
-  "sameAs": [
-      
-  ]
-}
-</script>
 <noscript>
     <style>
         #theme-toggle,
@@ -55,478 +37,242 @@
                 --entry: rgb(46, 46, 51);
                 --primary: rgb(218, 218, 219);
                 --secondary: rgb(155, 156, 157);
-                --tertiary-bg: rgb(65, 66, 68);
+                --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
 
-            .list-page {
+            .list {
                 background: var(--theme);
             }
 
-            .list-page:not(.dark)::-webkit-scrollbar-track {
+            .list:not(.dark)::-webkit-scrollbar-track {
                 background: 0 0;
             }
 
-            .list-page:not(.dark)::-webkit-scrollbar-thumb {
+            .list:not(.dark)::-webkit-scrollbar-thumb {
                 border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+<meta property="og:title" content="DavidCraddock.net" />
+<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://davidcraddock.net/" />
 
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="DavidCraddock.net"/>
+<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK."/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "DavidCraddock.net",
+  "url": "https://davidcraddock.net/",
+  "description": "The personal blog of David Craddock, a software engineer based in Manchester, UK.",
+  "thumbnailUrl": "https://davidcraddock.net/favicon.ico",
+  "sameAs": [
+      
+  ]
+}
+</script>
 </head>
 
-<body class="list-page type-page kind-home layout-" id="top"><script data-no-instant>
-function switchTheme(theme) {
-  switch (theme) {
-    case 'light':
-      document.body.classList.remove('dark');
-      break;
-    case 'dark':
-      document.body.classList.add('dark');
-      break;
-    
-    default:
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-      }
-  }
-}
-
-function isDarkTheme() {
-  return document.body.className.includes("dark");
-}
-
-function getPrefTheme() {
-  return localStorage.getItem("pref-theme");
-}
-
-function setPrefTheme(theme) {
-  switchTheme(theme)
-  localStorage.setItem("pref-theme", theme);
-}
-
-const toggleThemeCallbacks = {}
-toggleThemeCallbacks['main'] = (isDark) => {
-  
-  if (isDark) {
-    setPrefTheme('light');
-  } else {
-    setPrefTheme('dark');
-  }
-}
-
-
-
-
-window.addEventListener('toggle-theme', function() {
-  
-  const isDark = isDarkTheme()
-  for (const key in toggleThemeCallbacks) {
-    toggleThemeCallbacks[key](isDark)
-  }
-});
-
-
-function toggleThemeListener() {
-  
-  window.dispatchEvent(new CustomEvent('toggle-theme'));
-}
-
-</script>
+<body class="list" id="top">
 <script>
-  
-  (function() {
-    const defaultTheme = 'auto';
-    const prefTheme = getPrefTheme();
-    const theme = prefTheme ? prefTheme : defaultTheme;
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
 
-    switchTheme(theme);
-  })();
 </script>
 
 <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
-            <span class="logo-switches">
-            </span>
+            <div class="logo-switches">
+            </div>
         </div>
         <ul id="menu">
         </ul>
     </nav>
 </header>
 <main class="main"> 
-  <img src="/me.jpg">
-<div>
-    <ul>
-        <li><a href="/">Blog Posts</a></li>
-        <li><a href="/my-home-network/">Home Network</a></li>
-        <li><a href="/my-gaming-setup/">Gaming Setup</a></li>
-        <li><a href="/my-mobile-laptop-setup/">Mobile Working Setup</a></li>
-        <li><a href="/my-work-computer/">WFH Computer Setup</a></li>
-        <li><a href="/my-bike/">Bike Setup</a></li>
-        <li><a href="/security-research/">Security Research</a></li>
-        <li><a href="https://davidcraddocktutor.com">Software Career Tutoring</a></li>
-        <li><a href="https://davidcraddockaudio.com">Music Industry Portfolio</a></li>
-        <li><a href="https://github.com/wordswords">Github</a></li>
-        <li><a href="https://linkedin.com/in/davidcraddock">LinkedIn</a></li>
-        <li><a href="https://wordswords.github.io/dpc-resume/CV.html">CV/Resume</a></li>
-    </ul>
-</div>
-  
-
-
-
-
-
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Scraping Wikipedia Information for music artists, Part 2
+    <h2 class="entry-hint-parent">OpenSocial
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>I’ve abandoned the previous Wikipedia scraping approach for Brightonsound.com, as it was unreliable and didn’t pinpoint the right Wikipedia entry - ie: a band called ‘Horses’ would pull up a Wikipedia bio on the animal - which doesn’t look very professional. So instead, I have used the Musicbrainz API to retrieve some information on the artist; the homepage URL, the correct Wikipedia entry, and any genres/terms the artist has been tagged with.
-...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2008-09-22</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>478 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>3 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Scraping Wikipedia Information for music artists, Part 2" href="https://davidcraddock.net/2008/09/22/scraping-wikipedia-information-for-music-artists-part-2/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Character encoding fix with PHP, MySQL 5 and ubuntu-server
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>For some reason, under ubuntu-server, my default MySQL 5 character encoding was latin1. This caused no end of problems with grabbing data from the web, which was not necessarily in latin1 characterset.
-If you are ever in this situation, I suggest you handle everything as UTF-8. That means setting the following lines in my.cnf:
-[mysqld] .. default-character-set=utf8 skip-character-set-client-handshake ...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2008-07-06</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>188 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Character encoding fix with PHP, MySQL 5 and ubuntu-server" href="https://davidcraddock.net/2008/07/06/character-encoding-fix-with-php-mysql-5-and-ubuntu-server/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Scraping artists bios off of Wikipedia
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>I’ve been hacking away at BrightonSound.com and I’ve been looking for a way of automatically sourcing biographical information from artists, so that visitors are presented with more information on the event.
-The Songbird media player plugin ‘mashTape’ draws upon a number of web services to grab artist bio, event listings, youtube vidoes and flickr pictures of the currently playing artist. I was reading through the mashTape code, and then found this posting by its developer, which helpfully provided the exact method I needed.
-...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2008-06-18</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>260 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Scraping artists bios off of Wikipedia" href="https://davidcraddock.net/2008/06/18/scraping-artists-bios-off-of-wikipedia/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>adExcellence Exam passed
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>I passed the adExcellence exam first time.. woo! It wasn’t that difficult really.
-“David Craddock of iCrossing is accredited as an official Microsoft adExcellence Member. A Microsoft adExcellence Member has completed comprehensive online training on managing Microsoft adCenter search engine marketing campaigns and has demonstrated expert knowledge by passing the Microsoft adExcellence accreditation exam.”
-As of 21/3/08, I’m somehow also now #1 on Google.co.uk for the keyword “adExcellence exam”.. if that’s what you googled for, you probably want the adExcellence main site instead. Or use Live Search.
-...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2008-03-21</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>87 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to adExcellence Exam passed" href="https://davidcraddock.net/2008/03/21/adexcellence-exam-passed/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Yahoo! Pipes
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>I have just seen Yahoo! Pipes, and am convinced this is going to change the web. For real.
-Data source sites will become ‘content providers’, data will be aggregated and filtered from multiple content providers, either by the user or by ‘intermediary’ sites. The user will be able to choose his ‘data view’ of the content on the internet, just as Google is currently doing.
-This is fascinating stuff if you’re involved in the web industry.
-...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2008-03-17</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>76 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Yahoo! Pipes" href="https://davidcraddock.net/2008/03/17/yahoo-pipes/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>BrightonSound.com
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>We’ve been working on a Brighton music events Google maps mashup project: www.BrightonSound.com
-It’s still developing, but it looks quite good, and we’re ready to start showing it off to people. So check it out!
-UPDATE: This project is now defunct after running for several years, and is no longer hosted. But thanks for the interest!
-.
-</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2008-03-15</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>57 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to BrightonSound.com" href="https://davidcraddock.net/2008/03/15/brightonsoundcom/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>A poor man&#39;s VMWare Workstation: VMWare Server under Ubuntu 7.10 &#43; VMWare Player under Windows XP
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>I finally setup my Dell Lattitude D630 laptop the way I wanted it last night, and thought I’d do a quick writeup about it. Here is the parttition table:
-A 40GB Windows XP partition, with VMWare Player installed, which I will be using for Windows applications that don’t play well in virtualised mode (eg media applications). I will also be using it as the main platform for running VMs. A basic 5GB root &#43; 1.4GB swap 7.10 Ubuntu server partition, with VMWare Server installed (for creating, advanced editing and performing network testing on VMs). I used these VMWare server on Ubuntu 7.10 tutorials. A 36GB NTFS partition for storing VMs A 26GB NTFS media partition for media I want to share between VMs and the two operating systems on the disc. We use VMWare servers at work to host our infrastructure, so this setup will be very useful for me. I can now:
-...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2008-02-28</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>201 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to A poor man&#39;s VMWare Workstation: VMWare Server under Ubuntu 7.10 &#43; VMWare Player under Windows XP" href="https://davidcraddock.net/2008/02/28/a-poor-mans-vmware-workstation-vmware-server-under-ubuntu-710-vmware-player-under-windows-xp/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Brighton Barcamp2
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>I will be attending Brighton Barcamp 2 on the weekend of the 14th March, and presenting on a new web project I’ve been working on.
-See: http://barcamp.pbwiki.com/BarCampBrighton2 and http://www.barcampbrighton.org/ for more info.
-Update: Brighton Barcamp 2 is now over.
-This was really interesting, and I learned a huge amount in a very short amount of time. Thanks to everyone who talked to me. I’ll definitely be attending future Barcamps.
-...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2008-02-22</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>69 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Brighton Barcamp2" href="https://davidcraddock.net/2008/02/22/brighton-barcamp2/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>OpenSocial
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>This is going to be absolutely huge:
+  <div class="entry-content">
+    <p>This is going to be absolutely huge:
 [youtube https://www.youtube.com/watch?v=RytmNqEHYiE&amp;rel=1]
 </p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2007-11-24</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>9 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
+  </div>
+  <footer class="entry-footer"><span title='2007-11-24 04:25:29 +0000 GMT'>November 24, 2007</span>&nbsp;·&nbsp;1 min</footer>
   <a class="entry-link" aria-label="post link to OpenSocial" href="https://davidcraddock.net/2007/11/24/opensocial/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>An interesting blog written by a friend of mine
+    <h2 class="entry-hint-parent">An interesting blog written by a friend of mine
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>My friend Adam has a blog featuring interesting internet finds. Check it out:
+  <div class="entry-content">
+    <p>My friend Adam has a blog featuring interesting internet finds. Check it out:
 One Idea
 </p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2007-11-12</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>15 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
+  </div>
+  <footer class="entry-footer"><span title='2007-11-12 20:03:00 +0000 GMT'>November 12, 2007</span>&nbsp;·&nbsp;1 min</footer>
   <a class="entry-link" aria-label="post link to An interesting blog written by a friend of mine" href="https://davidcraddock.net/2007/11/12/an-interesting-blog-written-by-a-friend-of-mine/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">A bit of theory..
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’ve been trying to learn a lot about search engines lately, as I’ve been starting at an internet marketing firm. I found this excellent list of online materials for university courses related to search engines:
+http://clair.si.umich.edu:8080/wordpress/?p=11
+In particular, these seem especially relevant:
+The Structure of Information Networks - http://www.cs.cornell.edu/Courses/cs685/2002fa/ (a good introduction) Search Engine Technology - http://www1.cs.columbia.edu/~radev/SET07.htm (a great course) Information Retreival and Web Search - http://www.cs.utexas.edu/~mooney/ir-course/ (less math than the columbia course, and thus somewhat easier follow) Networked Life - http://www.cis.upenn.edu/~mkearns/teaching/NetworkedLife/ - (a course on networked societies for humanities students, relavent to social networks and such) </p>
+  </div>
+  <footer class="entry-footer"><span title='2007-06-02 14:14:15 +0000 +0000'>June 2, 2007</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to A bit of theory.." href="https://davidcraddock.net/2007/06/02/a-bit-of-theory/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Craiglist opens a Brighton, UK section
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I just noticed that US bulletinboard giant Craigslist.com has opened a Brighton UK section of their website! There are a few posts already. At the moment, Gumtree’s Brighton Section is massively popular here. I’ve recurited several flatmates using Gumtree, and am basing my local housing search around it.
+It will be interesting to see how Gumtree.com fares now that Craigslist.com has competition in the Brighton local area.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-05-17 02:14:01 +0000 +0000'>May 17, 2007</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Craiglist opens a Brighton, UK section" href="https://davidcraddock.net/2007/05/17/craiglist-opens-a-brighton-uk-section/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">My Nabaztag
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Nabaztag (Armenian for “rabbit”) is a Wi-Fi enabled rabbit, manufactured by Violet. The Nabaztag is a “smart object”; it can connect to the Internet (for example to download weather forecasts, read its owner’s email, etc). It is also fully customizable and programmable. - Wikipedia.org
+Here is our Nabaztag - Francois Xavier:
+Of course, I’ve been messing around with poor old Francois’s programming..
+With the help of OpenNab, a proxy server that masquerades as an official Nabaztag server, you can make your Nabaztag do all kinds of tricks. At the moment I’m getting him to read out what’s currently showing on TV when someone presses his button.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-05-08 04:01:16 +0000 +0000'>May 8, 2007</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to My Nabaztag" href="https://davidcraddock.net/2007/05/08/my-nabaztag/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">NVIDIA GeForce4 MX 420 under Ubuntu Dapper Drake
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>My GeForce4 MX 420 didn’t work properly with OpenGL under a fresh install of Dapper Drake. Fixing it, however, proved to be really easy:
+Install the nvidia package: $ apt-get install nvidia
+Edit /etc/X11/xorg.conf and replace the ‘driver’ where it says ’nv’ with “nvidia”: Section “Device” Identifier “NVIDIA Corporation NV17 [GeForce4 MX 420]” #Driver “nv” Driver “nvidia” BusID “PCI:1:0:0” EndSection
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-04-09 18:26:36 +0000 +0000'>April 9, 2007</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to NVIDIA GeForce4 MX 420 under Ubuntu Dapper Drake" href="https://davidcraddock.net/2007/04/09/nvidia-geforce4-mx-420-under-ubuntu-dapper-drake/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The topic of this blog
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This blog will be about my perspective on technology. Anything that catches my interest will be fair game, but mainly it will revolve around internet technology and the development of such.
+It will allow me to create an online presence, and to improve my writing skills.
+I hope you will find the time to check back on this blog and watch it progress.
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-04-02 18:16:45 +0000 +0000'>April 2, 2007</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to The topic of this blog" href="https://davidcraddock.net/2007/04/02/hello-world/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="prev" href="https://davidcraddock.net/page/17/">« Prev Page</a>
-    <a class="next" href="https://davidcraddock.net/page/19/">Next Page »</a>
+    <a class="prev" href="https://davidcraddock.net/page/17/">
+      «&nbsp;Prev&nbsp;
+    </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-  <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span><span style="display: inline-block; margin-left: 1em;">
-    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>
-  </span>
-  <span style="display: inline-block; margin-left: 1em;">
-    Powered by
-    <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-    <a href="https://github.com/reorx/hugo-PaperModX/" rel="noopener" target="_blank">PaperModX</a>
-  </span>
+        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-    <path d="M12 6H0l6-6z" />
-  </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
 </a>
 
 <script>
-  (function() {
-     
-    const disableThemeToggle = '1' == '1';
-    if (disableThemeToggle) {
-      return;
-    }
-
-    let button = document.getElementById("theme-toggle")
-    
-    button.removeEventListener('click', toggleThemeListener)
-    
-    button.addEventListener('click', toggleThemeListener)
-  })();
-</script>
-
-<script>
-  (function () {
     let menu = document.getElementById('menu')
     if (menu) {
-      menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-      menu.onscroll = function () {
-        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-      }
-    }
-
-    const disableSmoothScroll = '' == '1';
-    const enableInstantClick = '1' == '1';
-    
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || disableSmoothScroll || enableInstantClick) {
-      return;
-    }
-    
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        var id = this.getAttribute("href").substr(1);
-        document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-          behavior: "smooth"
-        });
-        if (id === "top") {
-          history.replaceState(null, null, " ");
-        } else {
-          history.pushState(null, null, `#${id}`);
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
-      });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
     });
-  })();
+
 </script>
 <script>
-  var mybutton = document.getElementById("top-link");
-  window.onscroll = function () {
-    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-      mybutton.style.visibility = "visible";
-      mybutton.style.opacity = "1";
-    } else {
-      mybutton.style.visibility = "hidden";
-      mybutton.style.opacity = "0";
-    }
-  };
-</script>
-<script>
-  if (window.scrollListeners) {
-    
-    for (const listener of scrollListeners) {
-      window.removeEventListener('scroll', listener)
-    }
-  }
-  window.scrollListeners = []
-</script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
 
-
-
-<script src="/js/medium-zoom.min.js" data-no-instant
-></script>
-<script src="/js/instantclick.min.js" data-no-instant
-></script>
-<script data-no-instant>
-  
-  
-  
-  
-  
-  
-  InstantClick.init();
 </script>
 </body>
 

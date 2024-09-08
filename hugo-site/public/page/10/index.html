@@ -9,37 +9,19 @@
 <title>DavidCraddock.net</title>
 
 <meta name="description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK.">
-<meta name="author" content="Reorx">
+<meta name="author" content="">
 <link rel="canonical" href="https://davidcraddock.net/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.97d99fcdd90c38f6e3343e959a97a0295b30f590730a4ece2347f7f24ad997d1.css" integrity="sha256-l9mfzdkMOPbjND6VmpegKVsw9ZBzCk7OI0f38krZl9E=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://davidcraddock.net/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://davidcraddock.net/favicon-32x32.png">
 <link rel="apple-touch-icon" href="https://davidcraddock.net/apple-touch-icon.png">
+<link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/feed.xml">
 <link rel="alternate" type="application/json" href="https://davidcraddock.net/index.json">
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/">
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="DavidCraddock.net" />
-<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
-<meta property="og:title" content="DavidCraddock.net" />
-<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://davidcraddock.net/" />
-    <meta property="og:image" content="https://davidcraddock.net/cover.png"/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "DavidCraddock.net",
-  "url": "https://davidcraddock.net/",
-  "description": "The personal blog of David Craddock, a software engineer based in Manchester, UK.",
-  "thumbnailUrl": "https://davidcraddock.net/favicon.ico",
-  "sameAs": [
-      
-  ]
-}
-</script>
 <noscript>
     <style>
         #theme-toggle,
@@ -55,479 +37,288 @@
                 --entry: rgb(46, 46, 51);
                 --primary: rgb(218, 218, 219);
                 --secondary: rgb(155, 156, 157);
-                --tertiary-bg: rgb(65, 66, 68);
+                --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
 
-            .list-page {
+            .list {
                 background: var(--theme);
             }
 
-            .list-page:not(.dark)::-webkit-scrollbar-track {
+            .list:not(.dark)::-webkit-scrollbar-track {
                 background: 0 0;
             }
 
-            .list-page:not(.dark)::-webkit-scrollbar-thumb {
+            .list:not(.dark)::-webkit-scrollbar-thumb {
                 border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+<meta property="og:title" content="DavidCraddock.net" />
+<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://davidcraddock.net/" />
 
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="DavidCraddock.net"/>
+<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK."/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "DavidCraddock.net",
+  "url": "https://davidcraddock.net/",
+  "description": "The personal blog of David Craddock, a software engineer based in Manchester, UK.",
+  "thumbnailUrl": "https://davidcraddock.net/favicon.ico",
+  "sameAs": [
+      
+  ]
+}
+</script>
 </head>
 
-<body class="list-page type-page kind-home layout-" id="top"><script data-no-instant>
-function switchTheme(theme) {
-  switch (theme) {
-    case 'light':
-      document.body.classList.remove('dark');
-      break;
-    case 'dark':
-      document.body.classList.add('dark');
-      break;
-    
-    default:
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-      }
-  }
-}
-
-function isDarkTheme() {
-  return document.body.className.includes("dark");
-}
-
-function getPrefTheme() {
-  return localStorage.getItem("pref-theme");
-}
-
-function setPrefTheme(theme) {
-  switchTheme(theme)
-  localStorage.setItem("pref-theme", theme);
-}
-
-const toggleThemeCallbacks = {}
-toggleThemeCallbacks['main'] = (isDark) => {
-  
-  if (isDark) {
-    setPrefTheme('light');
-  } else {
-    setPrefTheme('dark');
-  }
-}
-
-
-
-
-window.addEventListener('toggle-theme', function() {
-  
-  const isDark = isDarkTheme()
-  for (const key in toggleThemeCallbacks) {
-    toggleThemeCallbacks[key](isDark)
-  }
-});
-
-
-function toggleThemeListener() {
-  
-  window.dispatchEvent(new CustomEvent('toggle-theme'));
-}
-
-</script>
+<body class="list" id="top">
 <script>
-  
-  (function() {
-    const defaultTheme = 'auto';
-    const prefTheme = getPrefTheme();
-    const theme = prefTheme ? prefTheme : defaultTheme;
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
 
-    switchTheme(theme);
-  })();
 </script>
 
 <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
-            <span class="logo-switches">
-            </span>
+            <div class="logo-switches">
+            </div>
         </div>
         <ul id="menu">
         </ul>
     </nav>
 </header>
 <main class="main"> 
-  <img src="/me.jpg">
-<div>
-    <ul>
-        <li><a href="/">Blog Posts</a></li>
-        <li><a href="/my-home-network/">Home Network</a></li>
-        <li><a href="/my-gaming-setup/">Gaming Setup</a></li>
-        <li><a href="/my-mobile-laptop-setup/">Mobile Working Setup</a></li>
-        <li><a href="/my-work-computer/">WFH Computer Setup</a></li>
-        <li><a href="/my-bike/">Bike Setup</a></li>
-        <li><a href="/security-research/">Security Research</a></li>
-        <li><a href="https://davidcraddocktutor.com">Software Career Tutoring</a></li>
-        <li><a href="https://davidcraddockaudio.com">Music Industry Portfolio</a></li>
-        <li><a href="https://github.com/wordswords">Github</a></li>
-        <li><a href="https://linkedin.com/in/davidcraddock">LinkedIn</a></li>
-        <li><a href="https://wordswords.github.io/dpc-resume/CV.html">CV/Resume</a></li>
-    </ul>
-</div>
-  
-
-
-
-
-
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Modular Progress
+    <h2 class="entry-hint-parent">Goals for the Year 2015
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>My Eurorack modular has been progressing. I’ve added several low-cost modules, a Doepfer A-138b audio mixer module so I can mix the audio outputs of the oscilators, the noise output, and my Doepfer Dark Energy modules. I found this so useful with the Dark Energys that I have ordered another mixer. This I can use to mix audio before sending it to the filter, for example, or mix audio before sending it to a VCA to be amplified. I also added another envelope generator, Doepfer A-140, a sturdy workhorse and also useful for triggering the filter independently of the VCA envelope. Then I added a syncable LFO.. I already have 4 LFOs from the quad-LFO module in the top right, but I wanted a LFO with a reset option that I can use for MIDI syncing. On order is also a A-148 S&amp;H (sample and hold) module which I will use for generating interesting random tones once I have expanded the ‘generative music’ theme of my setup a bit more.
-...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2015-07-21</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>268 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Modular Progress" href="https://davidcraddock.net/2015/07/21/modular-progress/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Switching Audio between two Soundcards
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>
-If you have two soundcards - maybe a normal soundcard for your speakers and maybe a headset with its own audio interface - you will want some way of switching all audio between the two. This is an great little open-source tool to do just that. It works on Mac, and Windows 7 up to 10:
-https://soundswitch.codeplex.com/
-</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2015-06-21</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>57 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Switching Audio between two Soundcards" href="https://davidcraddock.net/2015/06/21/switching-audio-between-two-soundcards/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Get rid of the &#39;most visited sites&#39; Grid on Chrome
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>Not that I particularly look at anything weird, but when I’m showing someone my computer I don’t want to have my ‘most visited sites’ pop up when I fire up Chrome. The following Chrome extension will get rid of the default loading page, and just display a blank page:
-https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbekmfgabipmfilij
-</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2015-06-21</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>50 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Get rid of the &#39;most visited sites&#39; Grid on Chrome" href="https://davidcraddock.net/2015/06/21/get-rid-of-the-most-visited-sites-grid-on-chrome/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Open Source! Device API and Device API-Android on Github
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>Two Ruby gems that I contributed to from my days in the BBC’s TITAN (Test Tools and Infrastructure) team, have been open-sourced. So finally I can say that I have made proper open-source contributions. The gems are for making automating of Android phones via Android Calabash easier, and are used in a lot of the mobile testing we do at the BBC. Here they are:
-https://github.com/bbc/device_api https://github.com/bbc/device_api-android Here is my Github profile, which doesn’t look very active on the surface, but I have been contributing to repositories which remain private at the moment, so my history is not visible.
-...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2015-06-21</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>99 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Open Source! Device API and Device API-Android on Github" href="https://davidcraddock.net/2015/06/21/open-source-device-api-and-device-api-android-on-github/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Instruments That I Use
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>I have a lot of different instruments, both hardware and software, for making music, but here is what I use the most at the moment:
-Piano I have an actual electric piano but I don’t use the onboard sound engine, preferring to use it as a midi controller for a software piano sound. Recently I bought Ableton Live Full Suite, before I was using the ‘Grand Piano’ sound from the default install. Now there is a whole ‘Piano’ Ableton Live pack, and that seems to offer much more realistic piano sounds.
-...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2015-06-21</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>235 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Instruments That I Use" href="https://davidcraddock.net/2015/06/21/instruments-that-i-use/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Music
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>I create music and DJ in my free time. I have various music projects on the go at any one time.
-My ‘Socialist Synthesis’ project is an experimental/electronica/ambient/soundscape project:
-Summer Sun Highway by Socialist Synthesis
-Sound Escapes by Socialist Synthesis
-I have released an EP under the ‘Machines Move Mountains’ project with Ellis Breen. It is experimental/electronica/downtempo:
-Unfinished Dreams by Machines Move Mountains
-...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2015-06-21</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>114 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Music" href="https://davidcraddock.net/music/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Modular Progress
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>Specs
-I have finished filling the top half of my Eurorack case, see above. Here is a list of modules:
-Dual VCA - A-132-3 Buffered Multiples - Intellij Buff Mult VCO #1 - A-110-1 VCO VCO #2 - A-110-1 VCO Low Pass Filter - A-120 Multiples #1 - A-180-1 Multiples #2 - A-180-1 Quantizer - A-156 Dual Quantizer Envelope Generator - A-140 ADSR Noise Generator/Random - A-118 Quad LFO - A-143-3 Quad LFO Next Moves:
-...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2015-06-21</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>370 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Modular Progress" href="https://davidcraddock.net/2015/06/21/eurorack-progress/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Modular Synthesizers
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>I am putting together a small modular synthesiser setup. Modular synthesizers are synthesizers composed of small individual modules, which are wired up to create a circuit for producing sound. They were very popular in the 1970s, with big bands such as Emmerson, Lake and Palmer, Kraftwerk and Jean Michael Jarre all owning big modular setups:
-Modular synthesisers have had a resurgence in recent years with modern versions becoming available. One producer of modular synthesiser modules is Doepfer, a German company who’s modular synthesizer standard ‘Eurorack’ has become very popular recently. I have decided to build a small Eurorack modular, here it is so far:
-...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2015-01-30</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>461 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>3 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Modular Synthesizers" href="https://davidcraddock.net/2015/01/30/modular-synthesizers/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Goals for the Year 2015
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>NOTE: I have an update on my progress as of 9/1/2015 here
+  <div class="entry-content">
+    <p>NOTE: I have an update on my progress as of 9/1/2015 here
 Motivated by my good friend CheerUpLove.com’s reflective style of blogging, and Ian Forrester’s many interesting posts, I thought it would be interesting to post something a bit more personal and less technical on this blog.
 Now that 2015 is upon us, I am going to take some time to publicly outline my goals for the year, so I can hold myself more accountable to them, and so I can look back on them this time next year.
 ...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2015-01-17</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>470 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>3 min</span></span>
-</footer>
+  </div>
+  <footer class="entry-footer"><span title='2015-01-17 23:36:45 +0000 GMT'>January 17, 2015</span>&nbsp;·&nbsp;3 min</footer>
   <a class="entry-link" aria-label="post link to Goals for the Year 2015" href="https://davidcraddock.net/2015/01/17/goals-for-the-year-2015/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>microKORG Original &#43; Novation Impulse 61
+    <h2 class="entry-hint-parent">microKORG Original &#43; Novation Impulse 61
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>I picked up a rather ugly (but very cheap!) customised microKORG, and also the excellent Novation Impulse 61 USB/Midi keyboard controller.
+  <div class="entry-content">
+    <p>I picked up a rather ugly (but very cheap!) customised microKORG, and also the excellent Novation Impulse 61 USB/Midi keyboard controller.
 The microKORG I like a lot. It was my first synth, and at first I couldn’t make any sense of it. I do agree with the Reddit /r/synthesizers view that it is not the best synth to learn on. Their view is that the best synth to learn on is one with a one-to-one mapping between controls and sound engine parameters. To put another way, the best beginners synth is one which has lots of knobs and buttons on it that you can tweak and hear actual results in the sound. It makes it more difficult if the sound engine is hidden away behind a large menu system with lots of daunting menus, like the microKORG has.
 ...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2014-10-31</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>356 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
+  </div>
+  <footer class="entry-footer"><span title='2014-10-31 20:16:56 +0000 GMT'>October 31, 2014</span>&nbsp;·&nbsp;2 min</footer>
   <a class="entry-link" aria-label="post link to microKORG Original &#43; Novation Impulse 61" href="https://davidcraddock.net/2014/10/31/microkorg-original-novation-impulse-61/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Pioneer DDJ-SR Serato Controller Review
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> I decided to buy the DDJ-SR controller because it was cheaper than even the cheapest pair of Pioneer CDJs. I’m no stranger to using a laptop and controller, before the DDJ-SR I used my trusty Faderfox DJ2 controller, which is a basic no-frills ‘play buttons, 3 EQs, crossfader and volume faders’ unit.
+I was considering getting the Native Instruments Traktor S4 DJ controller, which is one of the most popular full-size controllers for Traktor. However, after borrowing one from a friend, I compared the build quality of the DDJ-SR versus the S4, and there was no contest! The Pioneer DDJ-SR has the same buttons and jog wheel as the Pioneer CDJ units, which are rock solid and industry standard. For anyone wanting to use CDJs in the club after using the DDJ-SR at home, you will find the feel very familiar.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2014-09-03 00:17:23 +0000 +0000'>September 3, 2014</span>&nbsp;·&nbsp;4 min</footer>
+  <a class="entry-link" aria-label="post link to Pioneer DDJ-SR Serato Controller Review" href="https://davidcraddock.net/2014/09/03/pioneer-ddj-sr-serato-controller-review/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">New Synthesiser Additions: Microbrute, Nord Drum and Access Virus A
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I bought some new synths.
+Access Virus A This is the original 1998 Access Virus A. It, it was a staple synth for trance and electronic music in general for the early 00s. I am very happy that I managed to get this secondhand for less than a MicroKORG. It cost over £800 when it came out in 1998. Old digital synths seem to be unpopular at the moment, I’ve heard comments along the lines of ‘if it’s digital then I might as well use a plugin in my DAW’. But I think this is ignoring the tactile control surface that you get, and how it gets your head outside the computer and playing an actual physical instrument. The presets are really inspiring, several sounds that you will recognise if you were into electronic music in the 00s. VNV Nation, one of my favourite bands, produced their entire ‘Empires’ album with just the Access Virus A and a couple of samplers.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2014-08-10 21:53:19 +0000 +0000'>August 10, 2014</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to New Synthesiser Additions: Microbrute, Nord Drum and Access Virus A" href="https://davidcraddock.net/2014/08/10/new-synthesiser-additions-microbrute-nord-drum-and-access-virus-a/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">A* Algorithm implementation in Python
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Lately I’ve had the idea of creating a text-based Roguelike in C&#43;&#43;. This lead me on to think about the game AI experiments that I worked during my degree in Computer Science and A.I.. Essential to game AI is the notion of pathfinding, or finding a path from ‘A’ to ‘B’, past any obstacles that get in the way. One way to do this is to use the A* algorithm. I decided to implement an A* pathfinding algorithm for possible use in a Roguelike later, and chose the pseudocode from the Wikipedia example to implement.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2014-06-12 00:24:34 +0000 +0000'>June 12, 2014</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to A* Algorithm implementation in Python" href="https://davidcraddock.net/2014/06/12/a-algorithm-implementation-in-python/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Current Music Setup
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I like to dabble in making and playing music. Here is the equipment and setup that I use.
+Ableton Live Intro
+This is the DAW I use. I have been using Ableton Live for several years now, and I know my way around it. I have tried others but they never really felt as comfortable. Live comes in three flavours, ‘Intro’ is the most basic paid-for version. I was surprised how cheap the ‘Intro’ version was, and how little I find myself needing the features of the more expensive versions. I only have one paid-for VST plugin, and that is the KORG Legacy Cell MS-20, which I use on almost all the music I’ve made.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2014-05-05 16:20:33 +0000 +0000'>May 5, 2014</span>&nbsp;·&nbsp;4 min</footer>
+  <a class="entry-link" aria-label="post link to Current Music Setup" href="https://davidcraddock.net/2014/05/05/music-setup/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Setting up Kindlefire HDX for Development under Ubuntu 12.04
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.
+First I needed to setup the udev rules:
+1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):
+SUBSYSTEM==&#34;usb&#34;, ATTRS{idVendor}==&#34;1949&#34;, MODE=&#34;0666&#34; 2. Change the permission of this file by executing the following command as root:
+chmod a&#43;r /etc/udev/rules.d/51-android.rules ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2014-02-10 15:28:45 +0000 GMT'>February 10, 2014</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Setting up Kindlefire HDX for Development under Ubuntu 12.04" href="https://davidcraddock.net/2014/02/10/kindlefire-hdx-under-ubuntu-12-04/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">My Computer Build
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Updated: Reorganised, replaced Tiamat headset for KAVE.
+I use my computer a lot, for work (software development), gaming and music production. I wanted to build a high-end computer setup, as I’ve always lagged behind with upgrades before. So I gradually have been accumulating and swapping bits around to make the setup above.
+Internals
+Case Motherboard CPU CPU Cooler RAM Wireless Card Optical Drive PSU Visual
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2014-01-29 00:13:12 +0000 GMT'>January 29, 2014</span>&nbsp;·&nbsp;10 min</footer>
+  <a class="entry-link" aria-label="post link to My Computer Build" href="https://davidcraddock.net/2014/01/29/my-computer-build/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">My Aeron Chair
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>A good ergonomic chair is a wise investment if you’re going to spend a lot of time at your computer. One of the better known ergonomic models is the Herman Miller Aeron Task Chair.
+What Other People Say About the Aeron Jeff Atwood (from Coding Horror) says:
+In fact, after browsing chairs for the last few years of my career, I’ve come to one conclusion: you can’t expect to get a decent chair for less than $500. If you are spending less than that on seating – unless you are getting the deal of the century on dot-bomb bankruptcy auctions – you’re probably making a mistake.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2013-12-24 14:08:48 +0000 GMT'>December 24, 2013</span>&nbsp;·&nbsp;4 min</footer>
+  <a class="entry-link" aria-label="post link to My Aeron Chair" href="https://davidcraddock.net/2013/12/24/aeron-chair/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">2013 Career Retrospective
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>2015 Update: The “Device Hive” project has now been changed to be called ‘Hive CI’ and it is being maintained by a team of developers at the BBC, which I am no longer a part of. It is in the process of being opensourced, see: http://bbc.github.io/hive-ci/
+This year has been quite a busy and eventful one for me.
+Connected Red Button At the start of the year, I was working on the Connected Red Button team within the BBC. Connected Red Button is a major ongoing project in the Television and Mobile Platforms department at BBC North. Its aim is to replace the classic Red Button text service (which itself is the successor to Ceefax) with a new updated all-singing all-dancing interactive portal to internet content, available on Smart TVs and modern set top boxes. Currently Connected Red Button is live and accessible by pressing the Red Button on the new Virgin Media TiVo boxes. You can access the latest version of iPlayer, and the BBC News and BBC Sport smart TV apps from within one easy portal.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2013-11-17 03:40:14 +0000 GMT'>November 17, 2013</span>&nbsp;·&nbsp;5 min</footer>
+  <a class="entry-link" aria-label="post link to 2013 Career Retrospective" href="https://davidcraddock.net/2013/11/17/2013-career-retrospective/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="prev" href="https://davidcraddock.net/page/9/">« Prev Page</a>
-    <a class="next" href="https://davidcraddock.net/page/11/">Next Page »</a>
+    <a class="prev" href="https://davidcraddock.net/page/9/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="https://davidcraddock.net/page/11/">Next&nbsp;&nbsp;»
+    </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-  <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span><span style="display: inline-block; margin-left: 1em;">
-    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>
-  </span>
-  <span style="display: inline-block; margin-left: 1em;">
-    Powered by
-    <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-    <a href="https://github.com/reorx/hugo-PaperModX/" rel="noopener" target="_blank">PaperModX</a>
-  </span>
+        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-    <path d="M12 6H0l6-6z" />
-  </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
 </a>
 
 <script>
-  (function() {
-     
-    const disableThemeToggle = '1' == '1';
-    if (disableThemeToggle) {
-      return;
-    }
-
-    let button = document.getElementById("theme-toggle")
-    
-    button.removeEventListener('click', toggleThemeListener)
-    
-    button.addEventListener('click', toggleThemeListener)
-  })();
-</script>
-
-<script>
-  (function () {
     let menu = document.getElementById('menu')
     if (menu) {
-      menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-      menu.onscroll = function () {
-        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-      }
-    }
-
-    const disableSmoothScroll = '' == '1';
-    const enableInstantClick = '1' == '1';
-    
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || disableSmoothScroll || enableInstantClick) {
-      return;
-    }
-    
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        var id = this.getAttribute("href").substr(1);
-        document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-          behavior: "smooth"
-        });
-        if (id === "top") {
-          history.replaceState(null, null, " ");
-        } else {
-          history.pushState(null, null, `#${id}`);
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
-      });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
     });
-  })();
+
 </script>
 <script>
-  var mybutton = document.getElementById("top-link");
-  window.onscroll = function () {
-    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-      mybutton.style.visibility = "visible";
-      mybutton.style.opacity = "1";
-    } else {
-      mybutton.style.visibility = "hidden";
-      mybutton.style.opacity = "0";
-    }
-  };
-</script>
-<script>
-  if (window.scrollListeners) {
-    
-    for (const listener of scrollListeners) {
-      window.removeEventListener('scroll', listener)
-    }
-  }
-  window.scrollListeners = []
-</script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
 
-
-
-<script src="/js/medium-zoom.min.js" data-no-instant
-></script>
-<script src="/js/instantclick.min.js" data-no-instant
-></script>
-<script data-no-instant>
-  
-  
-  
-  
-  
-  
-  InstantClick.init();
 </script>
 </body>
 

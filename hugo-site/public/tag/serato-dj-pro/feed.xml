@@ -4,14 +4,14 @@
     <title>Serato-Dj-Pro on DavidCraddock.net</title>
     <link>https://davidcraddock.net/tag/serato-dj-pro/</link>
     <description>Recent content in Serato-Dj-Pro on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 05 May 2021 21:06:13 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/tag/serato-dj-pro/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 May 2021 21:06:13 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/tag/serato-dj-pro/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Organising Huge Music Libraries for use with Serato DJ Pro</title>
       <link>https://davidcraddock.net/2021/05/05/organising-huge-music-libraries-with-serato/</link>
       <pubDate>Wed, 05 May 2021 21:06:13 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2021/05/05/organising-huge-music-libraries-with-serato/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Updated: 25-11-22&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;My music library is around 24k files, mostly FLAC and some 320kbps MP3s. I use the following tools to organise my music library:&lt;/p&gt;
@@ -25,255 +25,15 @@ Lexicon &lt;a href=&#34;https://www.lexicondj.com/&#34;&gt;https://www.lexicondj
 Robocopy - comes free with Windows 10. Documentation: &lt;a href=&#34;https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy&#34;&gt;https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy&lt;/a&gt;
 Google Drive
 Rsync&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p><strong>Updated: 25-11-22</strong></p>
-<p>My music library is around 24k files, mostly FLAC and some 320kbps MP3s. I use the following tools to organise my music library:</p>
-<p><strong>Acquisition:</strong>
-dbPoweramp CD Ripper - <a href="https://www.dbpoweramp.com/cd-ripper.htm">https://www.dbpoweramp.com/cd-ripper.htm</a>
-Bandcamp Collection Downloader - <a href="https://github.com/Ezwen/bandcamp-collection-downloader">https://github.com/Ezwen/bandcamp-collection-downloader</a>
-Soulseek - <a href="http://www.slsknet.org">http://www.slsknet.org</a> <strong>Tagging and Metadata:</strong>
-Beets - <a href="https://beets.io">https://beets.io</a>
-Mixed In Key - <a href="https://mixedinkey.com">https://mixedinkey.com</a>
-Lexicon <a href="https://www.lexicondj.com/">https://www.lexicondj.com/</a> <strong>Backup and sync:</strong>
-Robocopy - comes free with Windows 10. Documentation: <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy">https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy</a>
-Google Drive
-Rsync</p>
-<p><strong>Searching:</strong>
-Everything Search - <a href="https://voidtools.com/">https://voidtools.com/</a> <strong>Playing:</strong>
-Winamp
-Serato DJ Pro - <a href="https://serato.com/dj/pro">https://serato.com/dj/pro</a>
-Plex Media Server - <a href="https://www.plex.tv/">https://www.plex.tv/</a> <strong>dbPoweramp CD Ripper</strong></p>
-<p>I have found this to be the fastest and most reliable CD ripper. It is commercial but is a very small cost and contains access to a lot of metadata services. I rip all my CDs to FLAC.</p>
-<p><strong>Bandcamp Collection Downloader</strong></p>
-<p>This is so useful. It required a few tweaks to get to work reliably under Windows, and if you haven&rsquo;t got any scripting skills then it will be a pain, but it has been hugely useful in syncing my Bandcamp purchases, of which I have over 200. It checks whether it has downloaded a purchase before as well, so you don&rsquo;t need to re-download everything, just what has been added recently to your collection. I use the following settings in a batch file which works reliably. If you want to use it you will have to replace &lsquo;socialistsynthesis&rsquo; to be your bandcamp username. Remember to download the latest JDK NOT just the latest JRE otherwise it won&rsquo;t work.</p>
-<p><code>java -jar bandcamp-collection-downloader.jar -f=flac -j=1 -r=3 socialistsynthesis</code> <strong>Soulseek</strong></p>
-<p>I make a genuinely huge attempt to purchase all the music I play for my stream. I have spent SO much money on digital and physical copies of music over the years. When something is not available for purchase, or I have an old MP3 rip from a CD and I want a FLAC, then I use Soulseek. Whether you do is up to you, just know that it is there.</p>
-<p><strong>Beets.IO</strong></p>
-<p>I use Beets.io to manage all tagging. It is extremely powerful if you are comfortable with the commandline. This is my current config:</p>
-<p><code> plugins: duplicates replaygain the ftintitle discogs bandcamp badfiles embedart fetchart directory: /mnt2/music/</code> ``</p>
-<p>import:
-copy: no
-replaygain:
-command: /usr/bin/mp3gain
-targetlevel: 92
-overwrite: no
-auto: yes
-backend: command
-threads: 20
-parallel_on_import: no
-per_disc: no
-peak: &rsquo;true&rsquo;
-r128: [Opus]
-r128_targetlevel: 84
-noclip: yes</p>
-<p>``</p>
-<p>paths:
-default: &lsquo;%the{$albumartist}/$album/$artist - $title $bpm&rsquo;
-singleton: &lsquo;%the{$albumartist}/$artist - $title $bpm&rsquo;
-comp: &lsquo;%the{$albumartist}/artist - $title $bpm&rsquo;
-the:
-the: yes
-a: yes
-format: &lsquo;{0}, {1}&rsquo;
-strip: no
-patterns: []
-discogs:
-apikey: REDACTED
-apisecret: REDACTED
-tokenfile: discogs_token.json
-source_weight: 0.5
-user_token: REDACTED
-separator: &lsquo;, '
-index_tracks: no
-ftintitle:
-auto: yes
-drop: no
-format: feat. {0}
-duplicates:
-album: no
-checksum: &rsquo;&rsquo;
-copy: &rsquo;'
-count: no
-delete: no
-format: &rsquo;'
-full: no
-keys: []
-merge: no
-move: &rsquo;'
-path: no
-tiebreak: {}
-strict: no
-tag: &rsquo;'
-badfiles:
-check_on_import: yes
-commands:
-flac: flac &ndash;test &ndash;warnings-as-errors &ndash;silent
-va_name: Various Artists
-fetchart:
-cautious: yes
-cover_names: front back
-auto: yes
-minwidth: 0
-maxwidth: 0
-quality: 0
-max_filesize: 0
-enforce_ratio: no
-sources:
-- filesystem
-- coverart
-- itunes
-- amazon
-- albumart
-google_key: REDACTED
-google_engine: 001442825323518660753:hrh5ch1gjzm
-fanarttv_key: REDACTED
-lastfm_key: REDACTED
-store_source: no
-high_resolution: no
-deinterlace: no
-cover_format:
-embedart:
-maxwidth: 0
-auto: yes
-compare_threshold: 0
-ifempty: no
-remove_art_file: no
-quality: 0</p>
-<p>`</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mysql" data-lang="mysql"><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>I<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">use</span><span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>following<span style="color:#bbb"> </span>plugins:<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>_duplicates_<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">\</span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">for</span><span style="color:#bbb"> </span>removing<span style="color:#bbb"> </span>duplicates<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>_replaygain_<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">\</span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">for</span><span style="color:#bbb"> </span>setting<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>gain<span style="color:#bbb"> </span>level<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">for</span><span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>track<span style="color:#bbb"> </span>intelligently<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">in</span><span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>file<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">as</span><span style="color:#bbb"> </span>analysed<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">by</span><span style="color:#bbb"> </span>mp3gain.exe<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>_the_<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">\</span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">For</span><span style="color:#bbb"> </span>organising<span style="color:#bbb"> </span>artists<span style="color:#bbb"> </span>which<span style="color:#bbb"> </span>contain<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>word<span style="color:#bbb"> </span><span style="color:#d14">&#39;The&#39;</span>.<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">For</span><span style="color:#bbb"> </span>example<span style="color:#bbb"> </span><span style="color:#d14">&#39;The Chemical Brothers&#39;</span><span style="color:#bbb"> </span>becomes<span style="color:#bbb"> </span><span style="color:#d14">&#39;Chemical Brothers, The&#39;</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">on</span><span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>top<span style="color:#bbb"> </span>level<span style="color:#bbb"> </span>directory.<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>_discogs_<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">\</span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span>Provide<span style="color:#bbb"> </span>metadata<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">from</span><span style="color:#bbb"> </span>Discogs.<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>_bandcamp_<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">\</span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span>Provide<span style="color:#bbb"> </span>metadata<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">from</span><span style="color:#bbb"> </span>Bandcamp.<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>_ftintitle_<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">\</span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span>This<span style="color:#bbb"> </span>moves<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">all</span><span style="color:#bbb"> </span>the<span style="color:#bbb"> </span><span style="color:#d14">&#39;featured artists&#39;</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">in</span><span style="color:#bbb"> </span>song<span style="color:#bbb"> </span>names<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">and</span><span style="color:#bbb"> </span>albums<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">into</span><span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>title<span style="color:#bbb"> </span>of<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>song.<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>_badfiles_<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">\</span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span>Run<span style="color:#bbb"> </span>file<span style="color:#bbb"> </span>integrity<span style="color:#bbb"> </span>checkers<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">on</span><span style="color:#bbb"> </span>imported<span style="color:#bbb"> </span>files<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">to</span><span style="color:#bbb"> </span>get<span style="color:#bbb"> </span>rid<span style="color:#bbb"> </span>of<span style="color:#bbb"> </span>corrupt<span style="color:#bbb"> </span>files<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>_fetchart_<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">\</span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">Fetch</span><span style="color:#bbb"> </span>artwork<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">for</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">each</span><span style="color:#bbb"> </span>track<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>_embedart_<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">\</span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">And</span><span style="color:#bbb"> </span>embed<span style="color:#bbb"> </span>it<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">into</span><span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>file<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>I<span style="color:#bbb"> </span>structure<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>music<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">in</span><span style="color:#bbb"> </span>my<span style="color:#bbb"> </span>library<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">like</span><span style="color:#bbb"> </span>so:<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">`</span>S:<span style="color:#a61717;background-color:#e3d2d2">\</span>audio<span style="color:#a61717;background-color:#e3d2d2">\</span>music<span style="color:#a61717;background-color:#e3d2d2">\</span>Chemical<span style="color:#bbb"> </span>Brothers,<span style="color:#bbb"> </span>The<span style="color:#a61717;background-color:#e3d2d2">\</span>Surrender<span style="color:#a61717;background-color:#e3d2d2">\</span>The<span style="color:#bbb"> </span>Chemical<span style="color:#bbb"> </span>Brothers<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span>Under<span style="color:#bbb"> </span>The<span style="color:#bbb"> </span>Influence<span style="color:#bbb"> </span><span style="color:#099">135</span>.mp3<span style="color:#000;font-weight:bold">`</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">`</span>S:<span style="color:#a61717;background-color:#e3d2d2">\</span>audio<span style="color:#a61717;background-color:#e3d2d2">\</span>music<span style="color:#000;font-weight:bold">`</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">\</span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span>my<span style="color:#bbb"> </span>music<span style="color:#bbb"> </span>collection<span style="color:#bbb"> </span>top<span style="color:#bbb"> </span>level<span style="color:#bbb"> </span>folder.<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">`</span>Chemical<span style="color:#bbb"> </span>Brothers,<span style="color:#bbb"> </span>The<span style="color:#000;font-weight:bold">`</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">\</span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>artist<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">with</span><span style="color:#bbb"> </span><span style="color:#d14">&#39;The&#39;</span><span style="color:#bbb"> </span>moved<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">to</span><span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>end<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">for</span><span style="color:#bbb"> </span>easy<span style="color:#bbb"> </span>scanning<span style="color:#bbb"> </span>through<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>artists<span style="color:#bbb"> </span>list.<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">`</span>Surrender<span style="color:#000;font-weight:bold">`</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">\</span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>album.<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">`</span>The<span style="color:#bbb"> </span>Chemical<span style="color:#bbb"> </span>Brothers<span style="color:#000;font-weight:bold">`</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">\</span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>full<span style="color:#bbb"> </span>name<span style="color:#bbb"> </span>of<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>artist.<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">`</span>Under<span style="color:#bbb"> </span>The<span style="color:#bbb"> </span>Influence<span style="color:#000;font-weight:bold">`</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">\</span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>full<span style="color:#bbb"> </span>name<span style="color:#bbb"> </span>of<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>track.<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">`</span><span style="color:#099">135</span><span style="color:#000;font-weight:bold">`</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">\</span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>BPM<span style="color:#bbb"> </span>of<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>track.<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">`</span>.mp3<span style="color:#000;font-weight:bold">`</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">\</span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>file<span style="color:#bbb"> </span>extension<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span>usually<span style="color:#bbb"> </span>either<span style="color:#bbb"> </span>flac<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">or</span><span style="color:#bbb"> </span>mp3.<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>My<span style="color:#bbb"> </span>Beets.io<span style="color:#bbb"> </span>workflow:<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#099">1</span>.<span style="color:#bbb"> </span>I<span style="color:#bbb"> </span>put<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">all</span><span style="color:#bbb"> </span>new<span style="color:#bbb"> </span>music<span style="color:#bbb"> </span>file<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">to</span><span style="color:#bbb"> </span>be<span style="color:#bbb"> </span>processed<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">in</span><span style="color:#bbb"> </span>a<span style="color:#bbb"> </span>samba<span style="color:#bbb"> </span>share<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">on</span><span style="color:#bbb"> </span>my<span style="color:#bbb"> </span>Linux<span style="color:#bbb"> </span>server<span style="color:#bbb"> </span>called<span style="color:#bbb"> </span><span style="color:#d14">&#39;musicincoming&#39;</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#099">2</span>.<span style="color:#bbb"> </span>I<span style="color:#bbb"> </span>run<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">`</span>beet<span style="color:#bbb"> </span>import<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">-</span>AmPsq<span style="color:#bbb"> </span>.<span style="color:#000;font-weight:bold">`</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#099">3</span>.<span style="color:#bbb"> </span>This<span style="color:#bbb"> </span>processes<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>unorganised<span style="color:#bbb"> </span>files<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">and</span><span style="color:#bbb"> </span>moves<span style="color:#bbb"> </span>them<span style="color:#bbb"> </span>over<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">to</span><span style="color:#bbb"> </span>my<span style="color:#bbb"> </span>samba<span style="color:#bbb"> </span>share<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">on</span><span style="color:#bbb"> </span>my<span style="color:#bbb"> </span>Linux<span style="color:#bbb"> </span>server<span style="color:#bbb"> </span>called<span style="color:#bbb"> </span><span style="color:#d14">&#39;music&#39;</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#099">4</span>.<span style="color:#bbb"> </span>I<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">then</span><span style="color:#bbb"> </span>run<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">`</span>beet<span style="color:#bbb"> </span>dup<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">-</span>d<span style="color:#000;font-weight:bold">`</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">to</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">delete</span><span style="color:#bbb"> </span>any<span style="color:#bbb"> </span>duplicates<span style="color:#bbb"> </span>that<span style="color:#bbb"> </span>have<span style="color:#bbb"> </span>arisen.<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#099">5</span>.<span style="color:#bbb"> </span>I<span style="color:#bbb"> </span>mirror<span style="color:#bbb"> </span>my<span style="color:#bbb"> </span>entire<span style="color:#bbb"> </span>collection<span style="color:#bbb"> </span>over<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">to</span><span style="color:#bbb"> </span>my<span style="color:#bbb"> </span>DJing<span style="color:#bbb"> </span>laptop<span style="color:#bbb"> </span>external<span style="color:#bbb"> </span>DJing<span style="color:#bbb"> </span>hard<span style="color:#bbb"> </span>drive<span style="color:#bbb"> </span>over<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>network<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">with</span><span style="color:#bbb"> </span>rsync<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">or</span><span style="color:#bbb"> </span>robocopy.<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#099">6</span>.<span style="color:#bbb"> </span>I<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">then</span><span style="color:#bbb"> </span>drag<span style="color:#bbb"> </span>my<span style="color:#bbb"> </span>macbook<span style="color:#bbb"> </span>external<span style="color:#bbb"> </span>hardrive<span style="color:#bbb"> </span>icon<span style="color:#bbb"> </span>within<span style="color:#bbb"> </span>Serato<span style="color:#bbb"> </span>DJ<span style="color:#bbb"> </span>Pro<span style="color:#d14">&#39;s &#39;</span>Files<span style="color:#d14">&#39; tab onto the &#39;</span><span style="color:#000;font-weight:bold">All</span><span style="color:#bbb"> </span>audio<span style="color:#d14">&#39; section in Serato DJ Pro and it will import my files for me.
-</span></span></span><span style="display:flex;"><span><span style="color:#d14">7. I disconnect my Serato interface, access the &#39;</span>Preperation<span style="color:#d14">&#39; tab and click Analyse all files to enable the beatgrid, BPM detect and song key detection for Serato DJ Pro.
-</span></span></span><span style="display:flex;"><span><span style="color:#d14">
-</span></span></span><span style="display:flex;"><span><span style="color:#d14">**Mixed in Key**
-</span></span></span><span style="display:flex;"><span><span style="color:#d14">
-</span></span></span><span style="display:flex;"><span><span style="color:#d14">This has the best key detection and mood detection algorithms at the moment. I use it to analyse small sets of files for more planned sets
-</span></span></span><span style="display:flex;"><span><span style="color:#d14">
-</span></span></span><span style="display:flex;"><span><span style="color:#d14">**Lexicon**
-</span></span></span><span style="display:flex;"><span><span style="color:#d14">
-</span></span></span><span style="display:flex;"><span><span style="color:#d14">This has so much potential but I haven&#39;</span>t<span style="color:#bbb"> </span>dug<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">into</span><span style="color:#bbb"> </span>it<span style="color:#bbb"> </span>yet<span style="color:#bbb"> </span>properly.<span style="color:#bbb"> </span>My<span style="color:#bbb"> </span>subscription<span style="color:#bbb"> </span>expired<span style="color:#bbb"> </span>so<span style="color:#bbb"> </span>now<span style="color:#bbb"> </span>I<span style="color:#bbb"> </span>have<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">to</span><span style="color:#bbb"> </span>wait<span style="color:#bbb"> </span>until<span style="color:#bbb"> </span>I<span style="color:#bbb"> </span>have<span style="color:#bbb"> </span>enough<span style="color:#bbb"> </span>money<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">to</span><span style="color:#bbb"> </span>get<span style="color:#bbb"> </span>another<span style="color:#bbb"> </span>one.<span style="color:#bbb"> </span>You<span style="color:#bbb"> </span>can<span style="color:#bbb"> </span>perform<span style="color:#bbb"> </span>a<span style="color:#bbb"> </span>lot<span style="color:#bbb"> </span>of<span style="color:#bbb"> </span>useful<span style="color:#bbb"> </span>tricks<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">using</span><span style="color:#bbb"> </span>your<span style="color:#bbb"> </span>libraries<span style="color:#bbb"> </span>metadata.<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">**</span>Everything<span style="color:#bbb"> </span>Search<span style="color:#000;font-weight:bold">**</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>This<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">is</span><span style="color:#bbb"> </span>a<span style="color:#bbb"> </span>free<span style="color:#bbb"> </span>Windows<span style="color:#000;font-weight:bold">-</span>only<span style="color:#bbb"> </span>program<span style="color:#bbb"> </span>that<span style="color:#bbb"> </span>searches<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">for</span><span style="color:#bbb"> </span>files<span style="color:#bbb"> </span>extremely<span style="color:#bbb"> </span>quickly.<span style="color:#bbb"> </span>It<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">is</span><span style="color:#bbb"> </span>so<span style="color:#bbb"> </span>fast<span style="color:#bbb"> </span>that<span style="color:#bbb"> </span>I<span style="color:#bbb"> </span>can<span style="color:#bbb"> </span>get<span style="color:#bbb"> </span>results<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">from</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">all</span><span style="color:#bbb"> </span>my<span style="color:#bbb"> </span>media<span style="color:#bbb"> </span>files<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">in</span><span style="color:#bbb"> </span>a<span style="color:#bbb"> </span>couple<span style="color:#bbb"> </span>of<span style="color:#bbb"> </span>seconds<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">when</span><span style="color:#bbb"> </span>I<span style="color:#bbb"> </span>am<span style="color:#bbb"> </span>searching<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">for</span><span style="color:#bbb"> </span>something<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">while</span><span style="color:#bbb"> </span>I<span style="color:#bbb"> </span>am<span style="color:#bbb"> </span>DJing<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">on</span><span style="color:#bbb"> </span>Twitch.<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">**</span>Backup<span style="color:#bbb"> </span>Software<span style="color:#000;font-weight:bold">**</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>I<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">use</span><span style="color:#bbb"> </span>rclone<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">on</span><span style="color:#bbb"> </span>my<span style="color:#bbb"> </span>Linux<span style="color:#bbb"> </span>server<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">to</span><span style="color:#bbb"> </span>backup<span style="color:#bbb"> </span>my<span style="color:#bbb"> </span>music<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">to</span><span style="color:#bbb"> </span>Google<span style="color:#bbb"> </span>Drive,<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">where</span><span style="color:#bbb"> </span>I<span style="color:#bbb"> </span>have<span style="color:#bbb"> </span><span style="color:#099">8</span>TB<span style="color:#bbb"> </span>of<span style="color:#bbb"> </span>storage.<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">**</span>Winamp<span style="color:#000;font-weight:bold">**</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Now<span style="color:#bbb"> </span>that<span style="color:#bbb"> </span>Winamp<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">is</span><span style="color:#bbb"> </span>updated<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">for</span><span style="color:#bbb"> </span>Windows<span style="color:#bbb"> </span><span style="color:#099">11</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">and</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">is</span><span style="color:#bbb"> </span>being<span style="color:#bbb"> </span>actively<span style="color:#bbb"> </span>maintained,<span style="color:#bbb"> </span>I<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">use</span><span style="color:#bbb"> </span>it<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">as</span><span style="color:#bbb"> </span>a<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">primary</span><span style="color:#bbb"> </span>music<span style="color:#bbb"> </span>player<span style="color:#bbb"> </span>whenever<span style="color:#bbb"> </span>I<span style="color:#d14">&#39;m not use Plex Music Player.
-</span></span></span><span style="display:flex;"><span><span style="color:#d14">
-</span></span></span><span style="display:flex;"><span><span style="color:#d14">**Serato DJ Pro**
-</span></span></span><span style="display:flex;"><span><span style="color:#d14">
-</span></span></span><span style="display:flex;"><span><span style="color:#d14">This is what I use for my DJing when playing live. I analyze all my files to set the beatgrid, BPM and key. I have a 2TB external USB 2.0 hard disk so analyzing my entire library takes a couple of days of leaving my Macbook Pro on. But for new smaller additions it is much faster.
-</span></span></span><span style="display:flex;"><span><span style="color:#d14">
-</span></span></span><span style="display:flex;"><span><span style="color:#d14">I use Serato autocrates a lot to mine the large amount of metadata I&#39;</span>ve<span style="color:#bbb"> </span>added<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">as</span><span style="color:#bbb"> </span>part<span style="color:#bbb"> </span>of<span style="color:#bbb"> </span>my<span style="color:#bbb"> </span>process.<span style="color:#bbb"> </span>I<span style="color:#bbb"> </span>have<span style="color:#bbb"> </span>seperate<span style="color:#bbb"> </span>autocrates<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">for</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">each</span><span style="color:#bbb"> </span><span style="color:#099">10</span><span style="color:#bbb"> </span>BPM<span style="color:#bbb"> </span>division,<span style="color:#bbb"> </span>e.g.<span style="color:#bbb"> </span><span style="color:#099">71</span><span style="color:#000;font-weight:bold">-</span><span style="color:#099">80</span><span style="color:#bbb"> </span>BPM,<span style="color:#bbb"> </span><span style="color:#099">81</span><span style="color:#000;font-weight:bold">-</span><span style="color:#099">90</span><span style="color:#bbb"> </span>BPM<span style="color:#bbb"> </span>etc.<span style="color:#bbb"> </span>I<span style="color:#bbb"> </span>also<span style="color:#bbb"> </span>have<span style="color:#bbb"> </span>autocrates<span style="color:#bbb"> </span><span style="color:#458;font-weight:bold">set</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">by</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">release</span><span style="color:#bbb"> </span><span style="color:#458;font-weight:bold">date</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">-</span><span style="color:#bbb"> </span>I<span style="color:#bbb"> </span>have<span style="color:#bbb"> </span>music<span style="color:#bbb"> </span>released<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">in</span><span style="color:#bbb"> </span>the<span style="color:#bbb"> </span><span style="color:#099">80</span>s,<span style="color:#bbb"> </span>music<span style="color:#bbb"> </span>released<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">in</span><span style="color:#bbb"> </span>the<span style="color:#bbb"> </span><span style="color:#099">90</span>s,<span style="color:#bbb"> </span>music<span style="color:#bbb"> </span>released<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">in</span><span style="color:#bbb"> </span>the<span style="color:#bbb"> </span><span style="color:#099">00</span>s...etc.<span style="color:#bbb"> </span>There<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">is</span><span style="color:#bbb"> </span>so<span style="color:#bbb"> </span>much<span style="color:#bbb"> </span>you<span style="color:#bbb"> </span>can<span style="color:#bbb"> </span>do<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">with</span><span style="color:#bbb"> </span>autocrates<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">if</span><span style="color:#bbb"> </span>you<span style="color:#bbb"> </span>have<span style="color:#bbb"> </span>properly<span style="color:#bbb"> </span><span style="color:#458;font-weight:bold">set</span><span style="color:#bbb"> </span>metadata.<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000;font-weight:bold">**</span>Plex<span style="color:#bbb"> </span>Media<span style="color:#bbb"> </span>Server<span style="color:#000;font-weight:bold">**</span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>I<span style="color:#bbb"> </span>subscribe<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">to</span><span style="color:#bbb"> </span>Plex<span style="color:#bbb"> </span>Media<span style="color:#bbb"> </span>Server<span style="color:#bbb"> </span>which<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">is</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">where</span><span style="color:#bbb"> </span>I<span style="color:#bbb"> </span>put<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">all</span><span style="color:#bbb"> </span>my<span style="color:#bbb"> </span>music<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">and</span><span style="color:#bbb"> </span>video<span style="color:#bbb"> </span>files<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">for</span><span style="color:#bbb"> </span>non<span style="color:#000;font-weight:bold">-</span>DJing<span style="color:#bbb"> </span>playback.<span style="color:#bbb"> </span>Because<span style="color:#bbb"> </span>I<span style="color:#bbb"> </span><span style="color:#900;font-weight:bold">subscribe</span><span style="color:#bbb"> </span>(you<span style="color:#bbb"> </span>can<span style="color:#bbb"> </span>get<span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>basic<span style="color:#bbb"> </span>server<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">and</span><span style="color:#bbb"> </span>almost<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">all</span><span style="color:#bbb"> </span>functionality<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">for</span><span style="color:#bbb"> </span>free)<span style="color:#bbb"> </span>I<span style="color:#bbb"> </span>get<span style="color:#bbb"> </span>access<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">to</span><span style="color:#bbb"> </span>the<span style="color:#bbb"> </span>wonderful<span style="color:#bbb"> </span>PlexAmp<span style="color:#bbb"> </span>player<span style="color:#bbb"> </span>which<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">is</span><span style="color:#bbb"> </span>a<span style="color:#bbb"> </span>really<span style="color:#bbb"> </span>great<span style="color:#bbb"> </span>service.<span style="color:#bbb"> </span>I<span style="color:#bbb"> </span>have<span style="color:#bbb"> </span>it<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">on</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">all</span><span style="color:#bbb"> </span>my<span style="color:#bbb"> </span>mobile<span style="color:#bbb"> </span>devices<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">and</span><span style="color:#bbb"> </span>computers.<span style="color:#bbb"> </span>Plex<span style="color:#bbb"> </span>Media<span style="color:#bbb"> </span>Server<span style="color:#d14">&#39;s handling of &#39;</span>Various<span style="color:#bbb"> </span>Artists<span style="color:#d14">&#39; compilations is problematic and I have written about it [on this blog](/2021/09/21/how-to-fix-plex-media-servers-various-artists-problem-using-beets-io-and-other-tools/). I use a script I put together to fix problems when I encounter them. With the latest version of Beets.io you can get very specific with the &#39;</span>beets<span style="color:#bbb"> </span>ls<span style="color:#d14">&#39; query language so this script works very accuratedly.
-</span></span></span></code></pre></div>]]></content:encoded>
     </item>
-    
     <item>
       <title>Hybrid Serato DJ Pro DVS/Ableton Live DJ setup (21/4/21)</title>
       <link>https://davidcraddock.net/2021/04/08/dj-setup-8-4-21/</link>
       <pubDate>Thu, 08 Apr 2021 03:49:31 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2021/04/08/dj-setup-8-4-21/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/04/hybridsetup.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/04/hybridsetup.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;I recently found a good price on a Vestax VCM-600 controller. It is a specially made MIDI controller for Ableton Live, with the same build quality as a DJ mixer. It allows for control over 6 channels in the Ableton Live &amp;lsquo;session&amp;rsquo; view, which is arranged similarly to a mixing console. It also adds dozens of MIDI mappable DJ controls such as the traditional Hi, Mid and Lo EQs, a crossfader, a filter control, control over a lot of Ableton FX, and more. It has 6 channel faders + 2 send faders for FX. More info in this video:&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2021/04/hybridsetup.jpg" type="" alt=""  /></p>
-<p>I recently found a good price on a Vestax VCM-600 controller. It is a specially made MIDI controller for Ableton Live, with the same build quality as a DJ mixer. It allows for control over 6 channels in the Ableton Live &lsquo;session&rsquo; view, which is arranged similarly to a mixing console. It also adds dozens of MIDI mappable DJ controls such as the traditional Hi, Mid and Lo EQs, a crossfader, a filter control, control over a lot of Ableton FX, and more. It has 6 channel faders + 2 send faders for FX. More info in this video:</p>
-<p>[youtube <a href="https://www.youtube.com/watch?v=GpZ7o">https://www.youtube.com/watch?v=GpZ7o</a>_H9u2M&amp;w=560&amp;h=315]</p>
-<p>It replaces my Pioneer DJM-S3 mixer. I use a 4x4 interface compatible with Serato DJ Pro DVS, the Denon DS1, and run the timecode audio from the Reloop 8000Mk2 decks through the Denon DS1. It outputs the Serato DJ Pro modified audio for both decks. The outputs of the DS1 are connected via a Douk VU-Meter (to see the levels for both decks for accurate gain control while mixing) to the Behringer UMC1820 audio interface which is connected to my broadcast PC running Ableton.</p>
-<p>When I move the faders on the Vestax VCM-600 controller attached to the broadcast PC, it functions as a DJ mixer, with the actual mixing taking place in Ableton through the UMC1820 audio interface.</p>
-<p>The microphone for streaming is connected to the sound interface as usual, and the DJ headphones are connected to the headphone amp on the the sound interface, with mic levels and cueing dealt with via Ableton Live.</p>
-<p>The advantages of this setup over my previous setup are multifold, as I now have a 6 channel fully configurable mixer. Firstly it will allow me to bring in various external hardware instruments such as drum machines, hardware synths etc, all controlled via Ableton. I could also bring in software instruments/VSTs. It would allow me to use high quality studio software FX in my DJ sets. It would also allow me to trigger samples from Ableton Live and have them output on one of the channels, synced to the beat.</p>
-<p>I am currently using the 4-band X:One EQ filter Ableton FX Unit clone from <a href="https://tarekith.com/freestuff/">https://tarekith.com/freestuff/</a>, see: <a href="https://forum.ableton.com/viewtopic.php?t=144388">https://forum.ableton.com/viewtopic.php?t=144388</a> .
-I am also using the <a href="https://xferrecords.com/freeware">https://xferrecords.com/freeware</a> DJM-900 filter clone. I have adapted these both into my Ableton VCM600 template set. I might release this set later once I&rsquo;ve built it up more with Ableton FX.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2021/04/ableton-vcm600-set.png" type="" alt=""  /></p>
-<p>I am currently using Serato DJ Pro FX controlled by my Akai SP8 cheap controller connected to my DJ laptop, which I have changed the knobs on to make them more tactile. I also have an Ableton Push mk1 controller hooked up to broadcast PC which is useful for multiple things, but mostly for quickly controlling Ableton Live without having to mess around with the mouse. I have not synced the BPM automatically yet between Serato and Ableton; Serato has a problem with Ableton Link integration I found. For the moment, I am using the Serato DJ Pro beat-synced FX on Serato, and using tap-tempo on my Ableton Push controller to set the BPM in Ableton Live. I don&rsquo;t need the BPM to be exact at the moment for Ableton Live as I am not using any beat-synced FX or looping FX on Ableton.</p>
-<p>Looping, beat repeat, cue point jumping, tempo, sync, scratching and platter changes for each deck are handled by the controls on the Reloop 8000mk2 which are both connected via USB to Serato on the DJ laptop, so they function as a DVS system but with also pads and controls for Serato too.</p>
-<p>I am using Resolume on my broadcast PC. I run a number of scenes on autopilot mode, and use the ancient Novation SL1 Mk1 MIDI controller to apply video FX to Resolume. I sync the BPM to Resolume through Ableton Link, with Ableton Live setting the BPM for Resolume through Ableton Link, and me setting the BPM for Ableton Live using the tap-tempo on the Ableton Push controller.</p>
-<p>I have a sustain pedal which I use to trigger the &lsquo;ducking&rsquo; affect in Ableton when I want to talk over the music.. when the pedal is depressed, the music fades down and the mic up a bit, so people can hear me better. When the pedal is let go, the microphone volume is killed so no background noise is picked up.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2021/04/dj-setup-21-4-2021.png" type="" alt=""  /></p>
-<p>Here it is in action - the clicks are me flipping the crossfader or the channel faders on the VCM-600:</p>
-<p>[youtube <a href="https://www.youtube.com/watch?v=LJs7rw7jDtQ&amp;w=560&amp;h=315">https://www.youtube.com/watch?v=LJs7rw7jDtQ&amp;w=560&amp;h=315</a>]</p>
-<p>As you can see from the video, the latency really isn&rsquo;t an issue. It&rsquo;s very responsive even though the timecode audio from the turntables is being processed by the Denon DS1, sent through the Douk VU-meter, and then converted to digital signals by the UMC1820 sound interface, sent through an EQ and FX chain, and mixed by Ableton according to the VCM600 DJ controller movements.</p>
-<p>Here is a flowchart which should help explain the signal flow:
-<img loading="lazy" src="/wp-content/uploads/2021/04/dj-setup-flowchart.png" type="" alt=""  /></p>
-<p>Here is a list of equipment that I use:</p>
-<ul>
-<li>
-<p>VESTAX VCM-600 Ableton Controller. Came out in 2010, cannot buy anymore new. Bought second-hand for £175. Had to clean the knobs with isopropyl alcohol as the coating becomes sticky after years and years of use.</p>
-</li>
-<li>
-<p>Novation Remote Zero SL Controller. Very old MIDI controller, cannot buy anymore. Can buy very cheaply now. Not sure if I would buy this exact controller again but it certainly is durable.</p>
-</li>
-<li>
-<p>AKAI LPD8 Controller. Very cheap MIDI controller still being sold. Bought new for £30. Took the knobs off and replaced them with Doepfer knobs from my Eurorack for better grip.</p>
-</li>
-<li>
-<p>Behringer UMC1820 Sound Interface. Very good value USB audio interface with lots of inputs and outputs. It comes with 8 physical inputs and 10 physical outputs. To get access to the other inputs and outputs you would need to buy an ADAT or SPDIF expander. Bought new for around £200.</p>
-</li>
-<li>
-<p>Douk VU-Meter. Very cheap though accurate VU-meter for checking volume levels. Bought new for £60.</p>
-</li>
-<li>
-<p>Denon DS1 Serato Interface. Not sold anymore, sadly, although it has a class-compliant driver for OSX so it is likely to remain suported for a while, while the alternative Rane Serato interfaces may not. Bought secondhand via Ebay for £120.</p>
-</li>
-<li>
-<p>Reloop 8000mk2 vinyl turntables. Excellent turntables with a huge amount of features and a solid build. They are available quite cheaply new. Paid around £400 each for them. I use Concorde Mk2 Digital needles and Serato Butterrug slipmats and Serato control vinyl.</p>
-</li>
-<li>
-<p>Ableton Push Mk1 Controller. Although the MK2 is out, the MK1 is still supported and there is no indication it will be deprecated soon. Not available new anymore, buy secondhand. I paid £250 for mine although they&rsquo;re available much cheaper now.</p>
-</li>
-<li>
-<p>RODE Procaster Microphone, cage, pop sheild and boom mount - This is an excellent high quality microphone. You can get a lot cheaper if you wanted to. Mic setup cost about £200 new.</p>
-</li>
-<li>
-<p>Apple Macbook Pro 2015 13&quot; Retina edition. Still going strong from when I bought it. Only has 8GB memory and that is shared with the graphics card, but otherwise it is fine. I have kept it on Mojave, no plans to update. I only use it with Serato DJ Pro. I have an external HD attached to it for all my DJ music.</p>
-</li>
-<li>
-<p>Broadcast PC - a workstation PC I built myself. For the specs see: <a href="/my-computer-setup/">/my-computer-setup/</a>. In particular I have found the Nvidea 1080 graphics card very useful for Resolume - no way would it run well on my laptop.</p>
-</li>
-</ul>
-<p>For new equipment I use <a href="http://www.thomann.de">Thomann.de</a> often or <a href="http://www.dv247.com">DV247.com</a>, or Amazon, or whatever is cheaper on Google Shopping.
-For used equipment I use <a href="http://www.reverb.com">Reverb.com</a> or <a href="http://www.ebay.co.uk">Ebay.co.uk</a> or occasionally Facebook adverts.</p>
-]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

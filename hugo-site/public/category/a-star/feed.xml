@@ -4,127 +4,18 @@
     <title>A-Star on DavidCraddock.net</title>
     <link>https://davidcraddock.net/category/a-star/</link>
     <description>Recent content in A-Star on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Jun 2014 00:24:34 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/category/a-star/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Jun 2014 00:24:34 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/category/a-star/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A* Algorithm implementation in Python</title>
       <link>https://davidcraddock.net/2014/06/12/a-algorithm-implementation-in-python/</link>
       <pubDate>Thu, 12 Jun 2014 00:24:34 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2014/06/12/a-algorithm-implementation-in-python/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2014/06/pathfinding.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2014/06/pathfinding.jpg&#34; type=&#34;&#34; alt=&#34;pathfinding&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2014/06/pathfinding.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2014/06/pathfinding.jpg&#34; alt=&#34;pathfinding&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Lately I&amp;rsquo;ve had the idea of creating a text-based &lt;a href=&#34;http://en.wikipedia.org/wiki/Roguelike&#34;&gt;Roguelike&lt;/a&gt; in C++. This lead me on to think about the game AI experiments that I worked during my degree in &lt;a href=&#34;http://www.sussex.ac.uk/informatics/&#34;&gt;Computer Science and A.I.&lt;/a&gt;. Essential to game AI is the notion of pathfinding, or finding a path from &amp;lsquo;A&amp;rsquo; to &amp;lsquo;B&amp;rsquo;, past any obstacles that get in the way. One way to do this is to use the A* algorithm. I decided to implement an A* pathfinding algorithm for possible use in a Roguelike later, and chose &lt;a href=&#34;http://en.wikipedia.org/wiki/A*_search_algorithm&#34;&gt;the pseudocode from the Wikipedia example&lt;/a&gt; to implement.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2014/06/pathfinding.jpg"><img loading="lazy" src="/wp-content/uploads/2014/06/pathfinding.jpg" type="" alt="pathfinding"  /></a></p>
-<p>Lately I&rsquo;ve had the idea of creating a text-based <a href="http://en.wikipedia.org/wiki/Roguelike">Roguelike</a> in C++. This lead me on to think about the game AI experiments that I worked during my degree in <a href="http://www.sussex.ac.uk/informatics/">Computer Science and A.I.</a>. Essential to game AI is the notion of pathfinding, or finding a path from &lsquo;A&rsquo; to &lsquo;B&rsquo;, past any obstacles that get in the way. One way to do this is to use the A* algorithm. I decided to implement an A* pathfinding algorithm for possible use in a Roguelike later, and chose <a href="http://en.wikipedia.org/wiki/A*_search_algorithm">the pseudocode from the Wikipedia example</a> to implement.</p>
-<p>The program finds a path from the top right hand corner to the top left, avoiding impassable &lsquo;7&rsquo; obstacles. The &lsquo;*&rsquo; are the steps along the path. The algorithm is guaranteed to find the shortest path between the goal and the start, which means it can optimally solve any solvable maze, given time.</p>
-<p>This is a sample board with obstacles setup:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000007777000000000000000
-</span></span><span style="display:flex;"><span>00000000000000077777777777777777700000000000000000
-</span></span><span style="display:flex;"><span>00000000077777777777777777777777700000000000000000
-</span></span><span style="display:flex;"><span>00000077777777777700000000000000000000000000000000
-</span></span><span style="display:flex;"><span>77777777777000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>77777777000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>77777777777777777707777777777777777777777777777777
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>70777777777777777777777777777777777777777777777777
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>77777777777777777777700000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000777777777777777777777707777777
-</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000700000000000000000000000000000
-</span></span></code></pre></div><p>This is the path found (the &lsquo;*&rsquo;s):</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>**000000000000000000000000000000000000000000000000
-</span></span><span style="display:flex;"><span>0***********************************00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000777*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000007777*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000077777777777777777700*00000000000000
-</span></span><span style="display:flex;"><span>00000000077777777777777777777777700*00000000000000
-</span></span><span style="display:flex;"><span>00000077777777777700000000000000000*00000000000000
-</span></span><span style="display:flex;"><span>77777777777000000000000000000000000*00000000000000
-</span></span><span style="display:flex;"><span>77777777000000000000000000000000000*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000*00000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000*00000000000000
-</span></span><span style="display:flex;"><span>000000000000000000******************00000000000000
-</span></span><span style="display:flex;"><span>777777777777777777*7777777777777777777777777777777
-</span></span><span style="display:flex;"><span>000000000000000000*0000000000000000000000000000000
-</span></span><span style="display:flex;"><span>0******************0000000000000000000000000000000
-</span></span><span style="display:flex;"><span>7*777777777777777777777777777777777777777777777777
-</span></span><span style="display:flex;"><span>0*****************************00000000000000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000**0000000000000000000
-</span></span><span style="display:flex;"><span>000000000000000000000000000000**000000000000000000
-</span></span><span style="display:flex;"><span>0000000000000000000000000000000*000000000000000000
-</span></span><span style="display:flex;"><span>0000000000000000000000000000000***0000000000000000
-</span></span><span style="display:flex;"><span>000000000000000000000000000000000*0000000000000000
-</span></span><span style="display:flex;"><span>000000000000000000000000000000000**000000000000000
-</span></span><span style="display:flex;"><span>0000000000000000000000000000000000**00000000000000
-</span></span><span style="display:flex;"><span>77777777777777777777700000000000000***000000000000
-</span></span><span style="display:flex;"><span>0000000000000000000000000000000000000**00000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000*00000000000
-</span></span><span style="display:flex;"><span>00000000000000000000000000000000000000**0000000000
-</span></span><span style="display:flex;"><span>000000000000000000000000000000000000000****0000000
-</span></span><span style="display:flex;"><span>000000000000000000007777777777777777777777*7777777
-</span></span><span style="display:flex;"><span>000000000000000000007000000000000000000000**000000
-</span></span><span style="display:flex;"><span>0000000000000000000070000000000000000000000*000000
-</span></span><span style="display:flex;"><span>0000000000000000000070000000000000000000000***0000
-</span></span><span style="display:flex;"><span>000000000000000000007000000000000000000000000**000
-</span></span><span style="display:flex;"><span>0000000000000000000070000000000000000000000000*000
-</span></span><span style="display:flex;"><span>0000000000000000000070000000000000000000000000***0
-</span></span><span style="display:flex;"><span>000000000000000000007000000000000000000000000000*0
-</span></span><span style="display:flex;"><span>000000000000000000007000000000000000000000000000**
-</span></span></code></pre></div><p>Here is <a href="https://github.com/wordswords/astarpython">source code</a></p>
-<p>Amit&rsquo;s <a href="http://theory.stanford.edu/~amitp/GameProgramming/">A* pages</a> were incredibly useful in developing this.</p>
-<p>(Perhaps one day I will do a flashy JavaScript version!)</p>
-]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

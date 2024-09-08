@@ -4,14 +4,14 @@
     <title>Ffmpeg on DavidCraddock.net</title>
     <link>https://davidcraddock.net/category/ffmpeg/</link>
     <description>Recent content in Ffmpeg on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Mar 2016 17:22:37 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/category/ffmpeg/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Mar 2016 17:22:37 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/category/ffmpeg/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Working with Fish Shell, ffmpeg, MP4Box and sox to generate audio files</title>
       <link>https://davidcraddock.net/2016/03/08/working-with-fish-shell-ffmpeg-mp4box-and-sox-to-generate-audio-files/</link>
       <pubDate>Tue, 08 Mar 2016 17:22:37 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2016/03/08/working-with-fish-shell-ffmpeg-mp4box-and-sox-to-generate-audio-files/</guid>
       <description>&lt;p&gt;More adventures with Fish shell. I have scripted the generation of a bunch of test asset audio files in mp4 format suitable for dash streaming. I have used the audio file commandline tools ffmepg MP4Box and sox in this script, they are pretty powerful and worth installing via homebrew on OSX.&lt;/p&gt;
 &lt;p&gt;Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I&amp;rsquo;m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy.
@@ -19,62 +19,15 @@
 #!/usr/bin/env fish
 # move to the asset output directory..
 cd ..&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>More adventures with Fish shell. I have scripted the generation of a bunch of test asset audio files in mp4 format suitable for dash streaming. I have used the audio file commandline tools ffmepg MP4Box and sox in this script, they are pretty powerful and worth installing via homebrew on OSX.</p>
-<p>Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I&rsquo;m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy.
-[code lang=&ldquo;bash&rdquo;]
-#!/usr/bin/env fish
-# move to the asset output directory..
-cd ..</p>
-<p># Generate .m4a file for file, and all the associated .mp4 dash assets
-function generateDash
-set bitrate $argv[1]
-set input_filename $argv[2]
-set output_filename &ldquo;$input_filename&rdquo;-&quot;$bitrate&quot;.m4a
-ffmpeg -i &ldquo;$input_filename&rdquo; -ab &ldquo;$bitrate&quot;k &ldquo;$output_filename&rdquo;
-MP4Box -dash 10000 &ldquo;$output_filename&rdquo;
-end</p>
-<p># Generate 3 second sine wave in a specified bitrate at a specified frequency
-function generateWav
-set bitrate $argv[1]
-set filename $argv[2]
-set frequency $argv[3]
-set wavfilename &ldquo;$filename&rdquo;-&quot;$bitrate&rdquo;.wav
-sox -n &ndash;norm=-3 -b &ldquo;$bitrate&rdquo; &ldquo;$wavfilename&rdquo; synth 3 sine &ldquo;$frequency&rdquo;
-echo $wavfilename
-end</p>
-<p># Main loop, generate 128,192 and 320 bitrate dashed .mp4s for 16bit and 32bit 3 second sine waves
-for i in (seq 24)
-set freq (math &ldquo;$i * 64.5&rdquo;)
-set wavfilename (generateWav 16 &ldquo;output$i&rdquo; &ldquo;$freq&rdquo;)
-generateDash 128 &ldquo;$wavfilename&rdquo;
-generateDash 192 &ldquo;$wavfilename&rdquo;
-generateDash 320 &ldquo;$wavfilename&rdquo;
-set wavfilename (generateWav 24 &ldquo;output$i&rdquo; &ldquo;$freq&rdquo;)
-generateDash 128 &ldquo;$wavfilename&rdquo;
-generateDash 192 &ldquo;$wavfilename&rdquo;
-generateDash 320 &ldquo;$wavfilename&rdquo;
-end
-[/code]</p>
-]]></content:encoded>
     </item>
-    
     <item>
       <title>Converting a single M2V frame into JPEG under OSX</title>
       <link>https://davidcraddock.net/2012/04/12/converting-a-single-m2v-frame-into-jpeg/</link>
       <pubDate>Thu, 12 Apr 2012 15:20:23 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2012/04/12/converting-a-single-m2v-frame-into-jpeg/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame. I couldn&amp;rsquo;t find a video player that would open the single frame. So I resorted to the command line version of ffmpeg, which I installed via macports, to convert this single frame to a jpg file to view as normal. This line worked a treat:&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg"><img loading="lazy" src="/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg" type="" alt=""  /></a></p>
-<p>I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame. I couldn&rsquo;t find a video player that would open the single frame. So I resorted to the command line version of ffmpeg, which I installed via macports, to convert this single frame to a jpg file to view as normal. This line worked a treat:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ffmpeg -i north.mpg -ss 00:00:00 -t 00:00:1 -s 1024x768 -r 1 -f mjpeg north.jpg
-</span></span></code></pre></div><p>Where &rsquo;north.mpg&rsquo; was the m2v file, and &rsquo;north.jpg&rsquo; was the output jpeg.</p>
-<p>And this:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>find -name *.mpg -exec ffmpeg -i {} -ss 00:00:00 -t 00:00:1 -s 1024x768 -r 1 -f mjpeg {}.jpg ;
-</span></span></code></pre></div><p>Will go through all the mpg files in the current directory and below, and create their jpeg single frame equivalents, ie: for north.mpg it will create north.mpg.jpg.</p>
-]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

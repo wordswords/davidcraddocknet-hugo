@@ -4,23 +4,18 @@
     <title>Stability on DavidCraddock.net</title>
     <link>https://davidcraddock.net/tag/stability/</link>
     <description>Recent content in Stability on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 17 Nov 2013 02:21:34 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/tag/stability/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Nov 2013 02:21:34 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/tag/stability/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Android Debug Bridge failing to detect emulators under OSX</title>
       <link>https://davidcraddock.net/2013/11/17/android-debug-bridge-failing-to-detect-emulators-under-osx/</link>
       <pubDate>Sun, 17 Nov 2013 02:21:34 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2013/11/17/android-debug-bridge-failing-to-detect-emulators-under-osx/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2013/11/android.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2013/11/android.png&#34; type=&#34;&#34; alt=&#34;Android&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2013/11/android.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2013/11/android.png&#34; alt=&#34;Android&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve been working on a project at the BBC where we are using the Android command-line tools from the &lt;a href=&#34;http://developer.android.com/tools/index.html&#34;&gt;Android Developer Tools&lt;/a&gt;, to spin up and terminate series of emulators. I noticed a big problem under OSX where &amp;lsquo;adb devices&amp;rsquo; was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2013/11/android.png"><img loading="lazy" src="/wp-content/uploads/2013/11/android.png" type="" alt="Android"  /></a></p>
-<p>I&rsquo;ve been working on a project at the BBC where we are using the Android command-line tools from the <a href="http://developer.android.com/tools/index.html">Android Developer Tools</a>, to spin up and terminate series of emulators. I noticed a big problem under OSX where &lsquo;adb devices&rsquo; was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb.</p>
-<p>We switched to using adb with emulators in an Ubuntu 12.04 VM running under OSX, and we had no further problems with our setup. Emulators will now be programatically launched and torn down by our monitoring application. We now have an array of emulators which we can deploy to at will, which is very useful.</p>
-<p>I don&rsquo;t know what has caused this problem, my only hunch is that the Android toolkit was probably developed in a very Linux-heavy environment, and so adb on Linux was probably their first testing platform. All I can say is that Linux is much more stable than OSX, even as a VM, for Android emulation.</p>
-]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

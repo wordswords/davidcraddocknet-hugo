@@ -9,37 +9,19 @@
 <title>DavidCraddock.net</title>
 
 <meta name="description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK.">
-<meta name="author" content="Reorx">
+<meta name="author" content="">
 <link rel="canonical" href="https://davidcraddock.net/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.97d99fcdd90c38f6e3343e959a97a0295b30f590730a4ece2347f7f24ad997d1.css" integrity="sha256-l9mfzdkMOPbjND6VmpegKVsw9ZBzCk7OI0f38krZl9E=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://davidcraddock.net/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://davidcraddock.net/favicon-32x32.png">
 <link rel="apple-touch-icon" href="https://davidcraddock.net/apple-touch-icon.png">
+<link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/feed.xml">
 <link rel="alternate" type="application/json" href="https://davidcraddock.net/index.json">
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/">
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="DavidCraddock.net" />
-<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
-<meta property="og:title" content="DavidCraddock.net" />
-<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://davidcraddock.net/" />
-    <meta property="og:image" content="https://davidcraddock.net/cover.png"/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "DavidCraddock.net",
-  "url": "https://davidcraddock.net/",
-  "description": "The personal blog of David Craddock, a software engineer based in Manchester, UK.",
-  "thumbnailUrl": "https://davidcraddock.net/favicon.ico",
-  "sameAs": [
-      
-  ]
-}
-</script>
 <noscript>
     <style>
         #theme-toggle,
@@ -55,471 +37,281 @@
                 --entry: rgb(46, 46, 51);
                 --primary: rgb(218, 218, 219);
                 --secondary: rgb(155, 156, 157);
-                --tertiary-bg: rgb(65, 66, 68);
+                --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
 
-            .list-page {
+            .list {
                 background: var(--theme);
             }
 
-            .list-page:not(.dark)::-webkit-scrollbar-track {
+            .list:not(.dark)::-webkit-scrollbar-track {
                 background: 0 0;
             }
 
-            .list-page:not(.dark)::-webkit-scrollbar-thumb {
+            .list:not(.dark)::-webkit-scrollbar-thumb {
                 border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+<meta property="og:title" content="DavidCraddock.net" />
+<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://davidcraddock.net/" />
 
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="DavidCraddock.net"/>
+<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK."/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "DavidCraddock.net",
+  "url": "https://davidcraddock.net/",
+  "description": "The personal blog of David Craddock, a software engineer based in Manchester, UK.",
+  "thumbnailUrl": "https://davidcraddock.net/favicon.ico",
+  "sameAs": [
+      
+  ]
+}
+</script>
 </head>
 
-<body class="list-page type-page kind-home layout-" id="top"><script data-no-instant>
-function switchTheme(theme) {
-  switch (theme) {
-    case 'light':
-      document.body.classList.remove('dark');
-      break;
-    case 'dark':
-      document.body.classList.add('dark');
-      break;
-    
-    default:
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-      }
-  }
-}
-
-function isDarkTheme() {
-  return document.body.className.includes("dark");
-}
-
-function getPrefTheme() {
-  return localStorage.getItem("pref-theme");
-}
-
-function setPrefTheme(theme) {
-  switchTheme(theme)
-  localStorage.setItem("pref-theme", theme);
-}
-
-const toggleThemeCallbacks = {}
-toggleThemeCallbacks['main'] = (isDark) => {
-  
-  if (isDark) {
-    setPrefTheme('light');
-  } else {
-    setPrefTheme('dark');
-  }
-}
-
-
-
-
-window.addEventListener('toggle-theme', function() {
-  
-  const isDark = isDarkTheme()
-  for (const key in toggleThemeCallbacks) {
-    toggleThemeCallbacks[key](isDark)
-  }
-});
-
-
-function toggleThemeListener() {
-  
-  window.dispatchEvent(new CustomEvent('toggle-theme'));
-}
-
-</script>
+<body class="list" id="top">
 <script>
-  
-  (function() {
-    const defaultTheme = 'auto';
-    const prefTheme = getPrefTheme();
-    const theme = prefTheme ? prefTheme : defaultTheme;
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
 
-    switchTheme(theme);
-  })();
 </script>
 
 <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
-            <span class="logo-switches">
-            </span>
+            <div class="logo-switches">
+            </div>
         </div>
         <ul id="menu">
         </ul>
     </nav>
 </header>
 <main class="main"> 
-  <img src="/me.jpg">
-<div>
-    <ul>
-        <li><a href="/">Blog Posts</a></li>
-        <li><a href="/my-home-network/">Home Network</a></li>
-        <li><a href="/my-gaming-setup/">Gaming Setup</a></li>
-        <li><a href="/my-mobile-laptop-setup/">Mobile Working Setup</a></li>
-        <li><a href="/my-work-computer/">WFH Computer Setup</a></li>
-        <li><a href="/my-bike/">Bike Setup</a></li>
-        <li><a href="/security-research/">Security Research</a></li>
-        <li><a href="https://davidcraddocktutor.com">Software Career Tutoring</a></li>
-        <li><a href="https://davidcraddockaudio.com">Music Industry Portfolio</a></li>
-        <li><a href="https://github.com/wordswords">Github</a></li>
-        <li><a href="https://linkedin.com/in/davidcraddock">LinkedIn</a></li>
-        <li><a href="https://wordswords.github.io/dpc-resume/CV.html">CV/Resume</a></li>
-    </ul>
-</div>
-  
-
-
-
-
-
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>OSX Fish Functions to open Chrome from the Shell
+    <h2 class="entry-hint-parent">Goals of 2015 Summary
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>These functions are quite handy, and allow you to do things such as copy and paste errors and google for them without having to manually open a browser. You have to enclose arguments to both functions in single quotes, e.g. ‘chrome ‘http://www.google.co.uk’ and google ‘one two three four’. You should add these to your config file at ~/.config/fish/config.fish and make sure Google Chrome is already installed.
-[code language=“bash”] function chrome /usr/bin/open -a ‘/Applications/Google Chrome.app’ $argv[1:] end function google /usr/bin/open -a ‘/Applications/Google Chrome.app’ “https://www.google.co.uk/search?q=$argv[1]” end [/code]
-...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2016-04-04</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>85 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to OSX Fish Functions to open Chrome from the Shell" href="https://davidcraddock.net/2016/04/04/osx-fish-functions-to-open-chrome-from-the-shell/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>My vIM Configuration
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>
-I use a heavily customised setup for vIM, the text editor that annoys me the least in ~30 years of using a computer. You can see my exact setup in my dotfiles repo on github, https://github.com/wordswords/-.
-Here are the plugins I use:
-ConqueTerm - Opens a shell window inside vIM, allowing you to have a REPL environment within vIM. NERDTree - A filetree plugin that you can see on the left of the window above. It replicates the Sublime text editor’s filetree. vim-airline - This is a statusline plugin for vIM that allows for a nicer status view for windows and buffers. vim-devicons - Allows for UTF-8 icons to make vIM editing slightly more graphical. Used by airline to display more info in less space, and by NERDTree to show filetype information. vim-fish - Syntax highlighting for fish shell script editing. vim-rails - Syntax highlighting and more for rails. vim-ruby - Syntax highlighting for Ruby. </p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2016-03-26</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>155 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to My vIM Configuration" href="https://davidcraddock.net/2016/03/26/my-vim-configuration/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Working with Fish Shell, ffmpeg, MP4Box and sox to generate audio files
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>More adventures with Fish shell. I have scripted the generation of a bunch of test asset audio files in mp4 format suitable for dash streaming. I have used the audio file commandline tools ffmepg MP4Box and sox in this script, they are pretty powerful and worth installing via homebrew on OSX.
-Thoughts: I think that instead of quoting you can just output $variable, which is probably better coding style. I’m still working out good way to return variables from functions, it seems that you need to echo out the output and that gets picked up by the calling function, which is a bit messy. [code lang=“bash”] #!/usr/bin/env fish # move to the asset output directory.. cd ..
-...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2016-03-08</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>254 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Working with Fish Shell, ffmpeg, MP4Box and sox to generate audio files" href="https://davidcraddock.net/2016/03/08/working-with-fish-shell-ffmpeg-mp4box-and-sox-to-generate-audio-files/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Audio Routing for my PC
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>For my own benefit as much as anyone elses, I thought I’d document my PC audio setup. I have two soundcards and two sets of speakers, one surround soundcard and speaker set for gaming and watching surround sound movies, and one audio interface linked up to my studio monitor speakers for music production. I also have a Digi 002 mixer which I use to mix in the outputs from my synthesisers to my recording interface. When I want to record, I usually record one track at a time from a synthesier to the audio input of the audio interface, via the Digi 002 mixer:
-...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2016-02-06</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>188 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Audio Routing for my PC" href="https://davidcraddock.net/2016/02/06/audio-routing-for-my-pc/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Fish Shell Scripting
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p> A few months ago I switched across from Bash onto the Fish shell, on my main development machine. I can’t get enough of its fast autosuggestions and its sane scripting language. Compared to Bash it is very fun to use.
-Today I wrote a script to automate the backup of my development workspace onto a private bitbucket account. Bitbucket is good because it allows unlimited private repositories, but it caps the size of these repos at 2GB max, with some features disabled after 1GB. This means that I want to find out the size of my repo before automatically backing it up. This script does this:
-...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2016-02-02</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>230 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Fish Shell Scripting" href="https://davidcraddock.net/2016/02/02/fish-shell-scripting/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>ADAT with Digi 002 Consoles - Don&#39;t throw them away just yet!
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>So I got given a Digi 002 console version, which looks like this:
-A fairly old style digital audio interface and mixer, which was all the rage back in 2002 when it first came out, but now is often found sitting in the skip. Why? Because it is a Pro-Tools inteface, and Avid stopped supporting it about 5 years ago, so it won’t actually work under Pro Tools and Windows 10 (believe me, I’ve tried!). It only works as a recording interface through Pro Tools, so you can’t just connect it via firewire to your PC and expect it to work.
-...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2016-01-25</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>277 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to ADAT with Digi 002 Consoles - Don&#39;t throw them away just yet!" href="https://davidcraddock.net/2016/01/25/adat-with-digi-002-console-dont-throw-them-away-just-yet/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>A Basic Eurorack Technique
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>I thought it might be of some interest to describe how I use my Eurorack, at lot of the time, in making tracks. I have a 3 oscilator - 3 VCA - 3 filter Eurorack which I use primarily so that the oscilators initially work in unison mode with some slight detuning. I typically use a single loop, arpeggio or pattern that I repeat over the song. Then, partway through a track, I will transpose the octaves of the oscilators and vary the sustain of the envelopes, along with the filters and pulse-width modulation amount, to make a morphing yet harmonious sound texture progression.
-...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2016-01-24</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>166 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to A Basic Eurorack Technique" href="https://davidcraddock.net/2016/01/24/my-basic-eurorack-technique/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Goals of 2015 Summary
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>At the start of 2015, I wrote down some goals for 2015. Around half-way through the year, I revisited these goals with some thoughts on how well I’d done. Now 2015 is over, I want to reflect on what has been achieved and what hasn’t.
+  <div class="entry-content">
+    <p>At the start of 2015, I wrote down some goals for 2015. Around half-way through the year, I revisited these goals with some thoughts on how well I’d done. Now 2015 is over, I want to reflect on what has been achieved and what hasn’t.
 I also want to comment on the fact that I am discussing personal things here. A few years ago I was decided that I was going to keep this blog professional and pretty much dry of any thoughts or feelings on my personal life. I have moved away from that though, inspired by blogs such as Iain’s, where personal thoughts and feelings are mixed with technical observations. I would like to think that this isn’t a bad move; after all if potential employers come to look at this 5 years from now, and don’t like what I’ve done here, then I probably don’t want to work for them anyway. There is the argument that blogs should be ’themed’ or targetted towards a particular subject to garner followers, and that too much sharing is possibly a bad thing. However, my current thoughts are that dry techncial info is boring, and I’d rather mix it with other things that are important to me.
 ...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2016-01-17</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>914 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>5 min</span></span>
-</footer>
+  </div>
+  <footer class="entry-footer"><span title='2016-01-17 20:38:13 +0000 GMT'>January 17, 2016</span>&nbsp;·&nbsp;5 min</footer>
   <a class="entry-link" aria-label="post link to Goals of 2015 Summary" href="https://davidcraddock.net/2016/01/17/2015-goals-summary/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Top 5 Recommended Upgrades for your PC
+    <h2 class="entry-hint-parent">Top 5 Recommended Upgrades for your PC
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>I have made a lot of different upgrades and modifications to my PC, as you can see here. Some of the upgrades have made more of a difference than others though. Here is what I think you should be concentrating on, if you’re looking to upgrade.
+  <div class="entry-content">
+    <p>I have made a lot of different upgrades and modifications to my PC, as you can see here. Some of the upgrades have made more of a difference than others though. Here is what I think you should be concentrating on, if you’re looking to upgrade.
 Solid State Hardisk (SSD) - Solid State hard drives use flash memory instead of the moving disk platters of traditional hard disks. It is the same type of storage as your USB stick. This type of storage is a lot faster to access compared to magnetic storage. Upgrading will result in a huge performance increase for most systems if you are changing from a traditional hard disk. Get as big a size as you can afford. If you play computer games or do a lot of media production work, then the added space will be useful. They have reduced in price over the years, the first SSD I bought was £120 for 120GB SSD back in 2012, in 2015 I just bought a 250GB SSD for £50. So it’s definitely affordable now. Large Monitor - If you can get a 27&#34;-32&#34; monitor then do so. It has made so much difference to the day to day usage of my PC. I would recommend 1440p if you can. 1440p is half the resolution of 4K. I wouldn’t recommend a 4K monitor yet in 2015 as I don’t think they have enough software support, and the cost is considerable for a decent screen. If you’re a gamer, then you might want to aim for a higher refresh speed, but I’d say this should be a secondary consideration to the screen space. Look on TFTCentral for reviews and guides to the different screen types available. Good Soundcard and Surround Sound Speaker System - Headphones are OK, but even a basic surround sound soundcard and speaker system is going to be so much better. I have a Asus Xonar Phoebus Solo which I recommend, it’s a 7.1 surround sound card. I have a cheap £60 set of surround sound speakers, Logitech Z506 Surround Sound Speakers. Surround sound really makes a difference in gaming and movies. I think it’s the seperate subwoofer that has the most effect, so if you are not that convinced by surround sound, you could get a 2.1 (two speakers and a subwoofer) setup for a bit less. Ergonomic Mouse and good mousemat - Chances are, most of the time you’re at your PC, you will be using the mouse. It is therefore really important you have a good mouse that won’t damange your hand after a few years use and is comfortable to use. Modern mice use laser scanners to track the position of the mouse on a flat surface. A higher resolution laser (measured in DPI - dots per inch) means that you can get more accurate tracking. Therefore look for high DPI mice for gaming or fine detail work as well as an ergonomic fit and lots of buttons. I recommend Logitech mice, after having had several Razer mice that didn’t last very long. I would also pick up a steel mousemat, as they never get tangled up in your mouse like the fibre mousemats do. Recent Graphics Card - If you are into gaming or 3D modelling work, you would often prioritise this over any other upgrade. A new graphics card means that your existing games will run faster on higher detail settings, and you can play new games on higher settings with better framerate. I don’t think it matters too much whether you go for Nvidea or AMD as long as you can run the games you want to run. If you are not interested in running the latest games, then perhaps you don’t need this, but you may be missing out in the future. </p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2015-12-21</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>635 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>3 min</span></span>
-</footer>
+  </div>
+  <footer class="entry-footer"><span title='2015-12-21 08:37:03 +0000 GMT'>December 21, 2015</span>&nbsp;·&nbsp;3 min</footer>
   <a class="entry-link" aria-label="post link to Top 5 Recommended Upgrades for your PC" href="https://davidcraddock.net/2015/12/21/top-5-recommended-upgrades-for-your-pc/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Too much Scrolling! - Tips for Dealing with Mouse-Wheel Finger Repetitive Strain Injury
+    <h2 class="entry-hint-parent">Too much Scrolling! - Tips for Dealing with Mouse-Wheel Finger Repetitive Strain Injury
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>Recently I had noticed I’d been having quite bad problems with my fingers based on the fact that I had been scrolling the mouse wheel too much when scrolling through web pages. Here are a number of options you can take if you are in a similar situation as me:
+  <div class="entry-content">
+    <p>Recently I had noticed I’d been having quite bad problems with my fingers based on the fact that I had been scrolling the mouse wheel too much when scrolling through web pages. Here are a number of options you can take if you are in a similar situation as me:
 Change OS’s scrolling speed to its maximum This is the easiest change on most modern OSs, and will result in less scroll movements made by your fingers, because each scroll movement will move the screen down by a full screen height, (equivalent to a page down). This can be a bit annoying though as you lose accuracy when you want to just scroll down a small amount, it takes a bit of getting used to. Also you are still using the same muscles, just not as often.
 ...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2015-12-05</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>381 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
+  </div>
+  <footer class="entry-footer"><span title='2015-12-05 17:32:40 +0000 GMT'>December 5, 2015</span>&nbsp;·&nbsp;2 min</footer>
   <a class="entry-link" aria-label="post link to Too much Scrolling! - Tips for Dealing with Mouse-Wheel Finger Repetitive Strain Injury" href="https://davidcraddock.net/2015/12/05/too-much-scrolling-tips-for-dealing-with-mouse-wheel-finger-repetitive-strain-injury/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Biggest Disappointment Purchases for PC - Razer Tiamat &#43; Lightpack
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>As you can see, I buy a lot of bits and pieces for my PC. Occasionally though, I buy something that I feel was a disappointment, or not worth the investment. This post is meant to caution against other people making the same mistake.
+Razer Tiamat - 7.1 Surround Sound Gaming Headset, with microphone (http://www.razerzone.com) This was a big dissapointment in a couple of ways. The first, and most obvious in hindsight now I’m actually working on spatial audio for a living at BBC R&amp;D, is that 7.1 surround sound headsets are a joke. There is no way you can get enough seperation between the different speaker drivers when your ears are so close to the speakers. If you have a soundcard or motherboard that supports surround sound, do yourself a favour and get a surround sound speaker set.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-11-08 19:22:50 +0000 GMT'>November 8, 2015</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Biggest Disappointment Purchases for PC - Razer Tiamat &#43; Lightpack" href="https://davidcraddock.net/2015/11/08/biggest-disappointment-purchases-for-pc-razer-tiamat-lightpack/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">My Favourite OSX Apps for Development
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’ve just recently bought a Macbook Pro for myself, after having used a MBP at work for 4 years. I find it to be a really powerful development environment for the development I do, in languages such as Java, PHP, Ruby, Python and JS. Here is what I use day-to-day:
+OSX El Capitan I haven’t found anything not to like about this upgrade. I don’t use a lot of external devices, for which Bruce has found problems with El Capitan’s new restricted driver management for Arduinos and others. I like the fact I can use split screen functionality to side-by-side two windows easily, a feature that I very much like in Windows 10 too.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-11-07 12:51:33 +0000 GMT'>November 7, 2015</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to My Favourite OSX Apps for Development" href="https://davidcraddock.net/2015/11/07/favourite-osx-apps-for-development/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Next Big Thing: Voice Control for Home Automation
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>So, I have totally bought in to the home automation craze that is currently ’the next big thing’ in the technology world in 2015. Apple has released iOS 9 with their HomeKit home automation framework, Google have the Nest series of smart devices, and there are numerous emerging competitors and hundreds of devices out there right now that will network together in your home.
+For the uninitiated, a ‘virtual assistant’ is a cloud-connected voice processing system which you can ’talk’ to. This is how a voice assistant essentially works:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-10-15 15:28:52 +0000 +0000'>October 15, 2015</span>&nbsp;·&nbsp;4 min</footer>
+  <a class="entry-link" aria-label="post link to Next Big Thing: Voice Control for Home Automation" href="https://davidcraddock.net/2015/10/15/voice-control-for-home-automation-having-a-virtual-assitant-in-your-living-room/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">IFTTT.com - Program your Life
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>If you haven’t seen If This Then That.com then I encourage you to check it out. It has a number of ways of automating your life, and can do things like text message you when you get mentioned on Twitter, up to deactivate your smart alarm when you’re nearing your house. This message will (hopefully) be posted on my Facebook page and my Twitter account, all thanks to IFTTT.com.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-10-15 10:17:28 +0000 +0000'>October 15, 2015</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to IFTTT.com - Program your Life" href="https://davidcraddock.net/2015/10/15/ifttt-com-program-your-life/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Scope in JavaScript
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I am learning JS for work. This is a pretty good summary of the most common scoping rules in JavaScript:
+http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-09-28 17:32:15 +0000 +0000'>September 28, 2015</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Scope in JavaScript" href="https://davidcraddock.net/2015/09/28/scope-in-javascript/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Introversion, Extroversion and the BBC Software Engineer
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Whether you agree with Myers-Briggs personality profiling or not, like fellow BBC’er Ian Forrester I have found them a useful frame of reference from which to discuss my personality, because I see similarities between my perception of me, and the classification.
+I took the Myers-Briggs personality profiling, and it has labelled me on several occasions an INTP:
+INTPs are marked by a quiet, stoic, modest, and aloof exterior that masks strong creativity and enthusiasm for novel possibilities. Their weaknesses include poor organization, insensitivity to social niceties, and a tendency to get lost in abstractions. Keirsey referred to INTPs as Architects, one of the four types belonging to the temperament he called the Rationals … I – Introversion preferred to extraversion: INTPs tend to be quiet and reserved. They generally prefer interacting with a few close friends rather than a wide circle of acquaintances, and they expend energy in social situations (whereas extraverts gain energy).
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-09-28 16:22:52 +0000 +0000'>September 28, 2015</span>&nbsp;·&nbsp;5 min</footer>
+  <a class="entry-link" aria-label="post link to Introversion, Extroversion and the BBC Software Engineer" href="https://davidcraddock.net/2015/09/28/introversion-extroversion-and-being-a-bbc-software-engineer/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Completed Eurorack
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’ve finished my 6U Eurorack case. It took me 9 months to build, buying a couple of modules a month.
+Goals I wanted to make a self-contained dual voice synthesizer that would interface with my 2x Doepfer Dark Energy MK1s and my Microbrute, on a budget. I also wanted to add some random sound generation features.
+I chose to make the synthesizer out of Doepfer modules because they are easy to find cheap second-hand, and also because they are well-engineered. (If they’re good enough for Kraftwerk, who am I to complain?)
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-09-02 08:13:17 +0000 +0000'>September 2, 2015</span>&nbsp;·&nbsp;4 min</footer>
+  <a class="entry-link" aria-label="post link to Completed Eurorack" href="https://davidcraddock.net/2015/09/02/completed-eurorack/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="prev" href="https://davidcraddock.net/page/7/">« Prev Page</a>
-    <a class="next" href="https://davidcraddock.net/page/9/">Next Page »</a>
+    <a class="prev" href="https://davidcraddock.net/page/7/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="https://davidcraddock.net/page/9/">Next&nbsp;&nbsp;»
+    </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-  <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span><span style="display: inline-block; margin-left: 1em;">
-    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>
-  </span>
-  <span style="display: inline-block; margin-left: 1em;">
-    Powered by
-    <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-    <a href="https://github.com/reorx/hugo-PaperModX/" rel="noopener" target="_blank">PaperModX</a>
-  </span>
+        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-    <path d="M12 6H0l6-6z" />
-  </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
 </a>
 
 <script>
-  (function() {
-     
-    const disableThemeToggle = '1' == '1';
-    if (disableThemeToggle) {
-      return;
-    }
-
-    let button = document.getElementById("theme-toggle")
-    
-    button.removeEventListener('click', toggleThemeListener)
-    
-    button.addEventListener('click', toggleThemeListener)
-  })();
-</script>
-
-<script>
-  (function () {
     let menu = document.getElementById('menu')
     if (menu) {
-      menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-      menu.onscroll = function () {
-        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-      }
-    }
-
-    const disableSmoothScroll = '' == '1';
-    const enableInstantClick = '1' == '1';
-    
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || disableSmoothScroll || enableInstantClick) {
-      return;
-    }
-    
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        var id = this.getAttribute("href").substr(1);
-        document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-          behavior: "smooth"
-        });
-        if (id === "top") {
-          history.replaceState(null, null, " ");
-        } else {
-          history.pushState(null, null, `#${id}`);
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
-      });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
     });
-  })();
+
 </script>
 <script>
-  var mybutton = document.getElementById("top-link");
-  window.onscroll = function () {
-    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-      mybutton.style.visibility = "visible";
-      mybutton.style.opacity = "1";
-    } else {
-      mybutton.style.visibility = "hidden";
-      mybutton.style.opacity = "0";
-    }
-  };
-</script>
-<script>
-  if (window.scrollListeners) {
-    
-    for (const listener of scrollListeners) {
-      window.removeEventListener('scroll', listener)
-    }
-  }
-  window.scrollListeners = []
-</script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
 
-
-
-<script src="/js/medium-zoom.min.js" data-no-instant
-></script>
-<script src="/js/instantclick.min.js" data-no-instant
-></script>
-<script data-no-instant>
-  
-  
-  
-  
-  
-  
-  InstantClick.init();
 </script>
 </body>
 

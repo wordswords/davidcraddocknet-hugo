@@ -4,77 +4,18 @@
     <title>Ableton-Live on DavidCraddock.net</title>
     <link>https://davidcraddock.net/tag/ableton-live/</link>
     <description>Recent content in Ableton-Live on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 08 Apr 2021 03:49:31 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/tag/ableton-live/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Apr 2021 03:49:31 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/tag/ableton-live/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hybrid Serato DJ Pro DVS/Ableton Live DJ setup (21/4/21)</title>
       <link>https://davidcraddock.net/2021/04/08/dj-setup-8-4-21/</link>
       <pubDate>Thu, 08 Apr 2021 03:49:31 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2021/04/08/dj-setup-8-4-21/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/04/hybridsetup.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/04/hybridsetup.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;I recently found a good price on a Vestax VCM-600 controller. It is a specially made MIDI controller for Ableton Live, with the same build quality as a DJ mixer. It allows for control over 6 channels in the Ableton Live &amp;lsquo;session&amp;rsquo; view, which is arranged similarly to a mixing console. It also adds dozens of MIDI mappable DJ controls such as the traditional Hi, Mid and Lo EQs, a crossfader, a filter control, control over a lot of Ableton FX, and more. It has 6 channel faders + 2 send faders for FX. More info in this video:&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2021/04/hybridsetup.jpg" type="" alt=""  /></p>
-<p>I recently found a good price on a Vestax VCM-600 controller. It is a specially made MIDI controller for Ableton Live, with the same build quality as a DJ mixer. It allows for control over 6 channels in the Ableton Live &lsquo;session&rsquo; view, which is arranged similarly to a mixing console. It also adds dozens of MIDI mappable DJ controls such as the traditional Hi, Mid and Lo EQs, a crossfader, a filter control, control over a lot of Ableton FX, and more. It has 6 channel faders + 2 send faders for FX. More info in this video:</p>
-<p>[youtube <a href="https://www.youtube.com/watch?v=GpZ7o">https://www.youtube.com/watch?v=GpZ7o</a>_H9u2M&amp;w=560&amp;h=315]</p>
-<p>It replaces my Pioneer DJM-S3 mixer. I use a 4x4 interface compatible with Serato DJ Pro DVS, the Denon DS1, and run the timecode audio from the Reloop 8000Mk2 decks through the Denon DS1. It outputs the Serato DJ Pro modified audio for both decks. The outputs of the DS1 are connected via a Douk VU-Meter (to see the levels for both decks for accurate gain control while mixing) to the Behringer UMC1820 audio interface which is connected to my broadcast PC running Ableton.</p>
-<p>When I move the faders on the Vestax VCM-600 controller attached to the broadcast PC, it functions as a DJ mixer, with the actual mixing taking place in Ableton through the UMC1820 audio interface.</p>
-<p>The microphone for streaming is connected to the sound interface as usual, and the DJ headphones are connected to the headphone amp on the the sound interface, with mic levels and cueing dealt with via Ableton Live.</p>
-<p>The advantages of this setup over my previous setup are multifold, as I now have a 6 channel fully configurable mixer. Firstly it will allow me to bring in various external hardware instruments such as drum machines, hardware synths etc, all controlled via Ableton. I could also bring in software instruments/VSTs. It would allow me to use high quality studio software FX in my DJ sets. It would also allow me to trigger samples from Ableton Live and have them output on one of the channels, synced to the beat.</p>
-<p>I am currently using the 4-band X:One EQ filter Ableton FX Unit clone from <a href="https://tarekith.com/freestuff/">https://tarekith.com/freestuff/</a>, see: <a href="https://forum.ableton.com/viewtopic.php?t=144388">https://forum.ableton.com/viewtopic.php?t=144388</a> .
-I am also using the <a href="https://xferrecords.com/freeware">https://xferrecords.com/freeware</a> DJM-900 filter clone. I have adapted these both into my Ableton VCM600 template set. I might release this set later once I&rsquo;ve built it up more with Ableton FX.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2021/04/ableton-vcm600-set.png" type="" alt=""  /></p>
-<p>I am currently using Serato DJ Pro FX controlled by my Akai SP8 cheap controller connected to my DJ laptop, which I have changed the knobs on to make them more tactile. I also have an Ableton Push mk1 controller hooked up to broadcast PC which is useful for multiple things, but mostly for quickly controlling Ableton Live without having to mess around with the mouse. I have not synced the BPM automatically yet between Serato and Ableton; Serato has a problem with Ableton Link integration I found. For the moment, I am using the Serato DJ Pro beat-synced FX on Serato, and using tap-tempo on my Ableton Push controller to set the BPM in Ableton Live. I don&rsquo;t need the BPM to be exact at the moment for Ableton Live as I am not using any beat-synced FX or looping FX on Ableton.</p>
-<p>Looping, beat repeat, cue point jumping, tempo, sync, scratching and platter changes for each deck are handled by the controls on the Reloop 8000mk2 which are both connected via USB to Serato on the DJ laptop, so they function as a DVS system but with also pads and controls for Serato too.</p>
-<p>I am using Resolume on my broadcast PC. I run a number of scenes on autopilot mode, and use the ancient Novation SL1 Mk1 MIDI controller to apply video FX to Resolume. I sync the BPM to Resolume through Ableton Link, with Ableton Live setting the BPM for Resolume through Ableton Link, and me setting the BPM for Ableton Live using the tap-tempo on the Ableton Push controller.</p>
-<p>I have a sustain pedal which I use to trigger the &lsquo;ducking&rsquo; affect in Ableton when I want to talk over the music.. when the pedal is depressed, the music fades down and the mic up a bit, so people can hear me better. When the pedal is let go, the microphone volume is killed so no background noise is picked up.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2021/04/dj-setup-21-4-2021.png" type="" alt=""  /></p>
-<p>Here it is in action - the clicks are me flipping the crossfader or the channel faders on the VCM-600:</p>
-<p>[youtube <a href="https://www.youtube.com/watch?v=LJs7rw7jDtQ&amp;w=560&amp;h=315">https://www.youtube.com/watch?v=LJs7rw7jDtQ&amp;w=560&amp;h=315</a>]</p>
-<p>As you can see from the video, the latency really isn&rsquo;t an issue. It&rsquo;s very responsive even though the timecode audio from the turntables is being processed by the Denon DS1, sent through the Douk VU-meter, and then converted to digital signals by the UMC1820 sound interface, sent through an EQ and FX chain, and mixed by Ableton according to the VCM600 DJ controller movements.</p>
-<p>Here is a flowchart which should help explain the signal flow:
-<img loading="lazy" src="/wp-content/uploads/2021/04/dj-setup-flowchart.png" type="" alt=""  /></p>
-<p>Here is a list of equipment that I use:</p>
-<ul>
-<li>
-<p>VESTAX VCM-600 Ableton Controller. Came out in 2010, cannot buy anymore new. Bought second-hand for £175. Had to clean the knobs with isopropyl alcohol as the coating becomes sticky after years and years of use.</p>
-</li>
-<li>
-<p>Novation Remote Zero SL Controller. Very old MIDI controller, cannot buy anymore. Can buy very cheaply now. Not sure if I would buy this exact controller again but it certainly is durable.</p>
-</li>
-<li>
-<p>AKAI LPD8 Controller. Very cheap MIDI controller still being sold. Bought new for £30. Took the knobs off and replaced them with Doepfer knobs from my Eurorack for better grip.</p>
-</li>
-<li>
-<p>Behringer UMC1820 Sound Interface. Very good value USB audio interface with lots of inputs and outputs. It comes with 8 physical inputs and 10 physical outputs. To get access to the other inputs and outputs you would need to buy an ADAT or SPDIF expander. Bought new for around £200.</p>
-</li>
-<li>
-<p>Douk VU-Meter. Very cheap though accurate VU-meter for checking volume levels. Bought new for £60.</p>
-</li>
-<li>
-<p>Denon DS1 Serato Interface. Not sold anymore, sadly, although it has a class-compliant driver for OSX so it is likely to remain suported for a while, while the alternative Rane Serato interfaces may not. Bought secondhand via Ebay for £120.</p>
-</li>
-<li>
-<p>Reloop 8000mk2 vinyl turntables. Excellent turntables with a huge amount of features and a solid build. They are available quite cheaply new. Paid around £400 each for them. I use Concorde Mk2 Digital needles and Serato Butterrug slipmats and Serato control vinyl.</p>
-</li>
-<li>
-<p>Ableton Push Mk1 Controller. Although the MK2 is out, the MK1 is still supported and there is no indication it will be deprecated soon. Not available new anymore, buy secondhand. I paid £250 for mine although they&rsquo;re available much cheaper now.</p>
-</li>
-<li>
-<p>RODE Procaster Microphone, cage, pop sheild and boom mount - This is an excellent high quality microphone. You can get a lot cheaper if you wanted to. Mic setup cost about £200 new.</p>
-</li>
-<li>
-<p>Apple Macbook Pro 2015 13&quot; Retina edition. Still going strong from when I bought it. Only has 8GB memory and that is shared with the graphics card, but otherwise it is fine. I have kept it on Mojave, no plans to update. I only use it with Serato DJ Pro. I have an external HD attached to it for all my DJ music.</p>
-</li>
-<li>
-<p>Broadcast PC - a workstation PC I built myself. For the specs see: <a href="/my-computer-setup/">/my-computer-setup/</a>. In particular I have found the Nvidea 1080 graphics card very useful for Resolume - no way would it run well on my laptop.</p>
-</li>
-</ul>
-<p>For new equipment I use <a href="http://www.thomann.de">Thomann.de</a> often or <a href="http://www.dv247.com">DV247.com</a>, or Amazon, or whatever is cheaper on Google Shopping.
-For used equipment I use <a href="http://www.reverb.com">Reverb.com</a> or <a href="http://www.ebay.co.uk">Ebay.co.uk</a> or occasionally Facebook adverts.</p>
-]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

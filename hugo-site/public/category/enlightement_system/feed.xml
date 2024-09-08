@@ -4,14 +4,14 @@
     <title>Enlightement_system on DavidCraddock.net</title>
     <link>https://davidcraddock.net/category/enlightement_system/</link>
     <description>Recent content in Enlightement_system on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 18 Nov 2021 08:54:42 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/category/enlightement_system/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Nov 2021 08:54:42 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/category/enlightement_system/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setting up Enlightenment window manager on Ubuntu 21.10</title>
       <link>https://davidcraddock.net/2021/11/18/setting-up-enlightenment-window-manager-on-ubuntu-21-10/</link>
       <pubDate>Thu, 18 Nov 2021 08:54:42 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2021/11/18/setting-up-enlightenment-window-manager-on-ubuntu-21-10/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.enlightenment.org&#34;&gt;Enlightenment&lt;/a&gt; is a very underrated window manager choice, in my opinion. It still looks very pretty and is very configurable. There is a packaging bug with the latest version of Enlightement in the 21.10 repo which means it doesn&amp;rsquo;t work correctly. The fix is to set the suid bit on the &amp;rsquo;enlightenment_system&amp;rsquo; binary. So:&lt;/p&gt;
 &lt;ol&gt;
@@ -21,16 +21,6 @@
 &lt;li&gt;Click the settings cog in the bottom right to change your Window manager to enlightenment&lt;/li&gt;
 &lt;li&gt;Log on and the settings wizard will help you configure Enlightenment&lt;/li&gt;
 &lt;/ol&gt;</description>
-      <content:encoded><![CDATA[<p><a href="https://www.enlightenment.org">Enlightenment</a> is a very underrated window manager choice, in my opinion. It still looks very pretty and is very configurable. There is a packaging bug with the latest version of Enlightement in the 21.10 repo which means it doesn&rsquo;t work correctly. The fix is to set the suid bit on the &rsquo;enlightenment_system&rsquo; binary. So:</p>
-<ol>
-<li><code>sudo apt install enlightenment</code></li>
-<li><code>sudo find /usr/lib -type f -name enlightenment_system -exec sudo chmod 4755 {} \;</code></li>
-<li>Log out of Ubuntu</li>
-<li>Click the settings cog in the bottom right to change your Window manager to enlightenment</li>
-<li>Log on and the settings wizard will help you configure Enlightenment</li>
-</ol>
-]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

@@ -9,37 +9,19 @@
 <title>DavidCraddock.net</title>
 
 <meta name="description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK.">
-<meta name="author" content="Reorx">
+<meta name="author" content="">
 <link rel="canonical" href="https://davidcraddock.net/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.97d99fcdd90c38f6e3343e959a97a0295b30f590730a4ece2347f7f24ad997d1.css" integrity="sha256-l9mfzdkMOPbjND6VmpegKVsw9ZBzCk7OI0f38krZl9E=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://davidcraddock.net/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://davidcraddock.net/favicon-32x32.png">
 <link rel="apple-touch-icon" href="https://davidcraddock.net/apple-touch-icon.png">
+<link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/feed.xml">
 <link rel="alternate" type="application/json" href="https://davidcraddock.net/index.json">
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/">
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="DavidCraddock.net" />
-<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
-<meta property="og:title" content="DavidCraddock.net" />
-<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://davidcraddock.net/" />
-    <meta property="og:image" content="https://davidcraddock.net/cover.png"/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "DavidCraddock.net",
-  "url": "https://davidcraddock.net/",
-  "description": "The personal blog of David Craddock, a software engineer based in Manchester, UK.",
-  "thumbnailUrl": "https://davidcraddock.net/favicon.ico",
-  "sameAs": [
-      
-  ]
-}
-</script>
 <noscript>
     <style>
         #theme-toggle,
@@ -55,474 +37,278 @@
                 --entry: rgb(46, 46, 51);
                 --primary: rgb(218, 218, 219);
                 --secondary: rgb(155, 156, 157);
-                --tertiary-bg: rgb(65, 66, 68);
+                --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
 
-            .list-page {
+            .list {
                 background: var(--theme);
             }
 
-            .list-page:not(.dark)::-webkit-scrollbar-track {
+            .list:not(.dark)::-webkit-scrollbar-track {
                 background: 0 0;
             }
 
-            .list-page:not(.dark)::-webkit-scrollbar-thumb {
+            .list:not(.dark)::-webkit-scrollbar-thumb {
                 border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+<meta property="og:title" content="DavidCraddock.net" />
+<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://davidcraddock.net/" />
 
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="DavidCraddock.net"/>
+<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK."/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "DavidCraddock.net",
+  "url": "https://davidcraddock.net/",
+  "description": "The personal blog of David Craddock, a software engineer based in Manchester, UK.",
+  "thumbnailUrl": "https://davidcraddock.net/favicon.ico",
+  "sameAs": [
+      
+  ]
+}
+</script>
 </head>
 
-<body class="list-page type-page kind-home layout-" id="top"><script data-no-instant>
-function switchTheme(theme) {
-  switch (theme) {
-    case 'light':
-      document.body.classList.remove('dark');
-      break;
-    case 'dark':
-      document.body.classList.add('dark');
-      break;
-    
-    default:
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-      }
-  }
-}
-
-function isDarkTheme() {
-  return document.body.className.includes("dark");
-}
-
-function getPrefTheme() {
-  return localStorage.getItem("pref-theme");
-}
-
-function setPrefTheme(theme) {
-  switchTheme(theme)
-  localStorage.setItem("pref-theme", theme);
-}
-
-const toggleThemeCallbacks = {}
-toggleThemeCallbacks['main'] = (isDark) => {
-  
-  if (isDark) {
-    setPrefTheme('light');
-  } else {
-    setPrefTheme('dark');
-  }
-}
-
-
-
-
-window.addEventListener('toggle-theme', function() {
-  
-  const isDark = isDarkTheme()
-  for (const key in toggleThemeCallbacks) {
-    toggleThemeCallbacks[key](isDark)
-  }
-});
-
-
-function toggleThemeListener() {
-  
-  window.dispatchEvent(new CustomEvent('toggle-theme'));
-}
-
-</script>
+<body class="list" id="top">
 <script>
-  
-  (function() {
-    const defaultTheme = 'auto';
-    const prefTheme = getPrefTheme();
-    const theme = prefTheme ? prefTheme : defaultTheme;
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
 
-    switchTheme(theme);
-  })();
 </script>
 
 <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
-            <span class="logo-switches">
-            </span>
+            <div class="logo-switches">
+            </div>
         </div>
         <ul id="menu">
         </ul>
     </nav>
 </header>
 <main class="main"> 
-  <img src="/me.jpg">
-<div>
-    <ul>
-        <li><a href="/">Blog Posts</a></li>
-        <li><a href="/my-home-network/">Home Network</a></li>
-        <li><a href="/my-gaming-setup/">Gaming Setup</a></li>
-        <li><a href="/my-mobile-laptop-setup/">Mobile Working Setup</a></li>
-        <li><a href="/my-work-computer/">WFH Computer Setup</a></li>
-        <li><a href="/my-bike/">Bike Setup</a></li>
-        <li><a href="/security-research/">Security Research</a></li>
-        <li><a href="https://davidcraddocktutor.com">Software Career Tutoring</a></li>
-        <li><a href="https://davidcraddockaudio.com">Music Industry Portfolio</a></li>
-        <li><a href="https://github.com/wordswords">Github</a></li>
-        <li><a href="https://linkedin.com/in/davidcraddock">LinkedIn</a></li>
-        <li><a href="https://wordswords.github.io/dpc-resume/CV.html">CV/Resume</a></li>
-    </ul>
-</div>
-  
-
-
-
-
-
 
 <article class="first-entry"> 
   <header class="entry-header">
-    <h2>Security Research
+    <h2 class="entry-hint-parent">Mid 2024 Retrospective Update
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>Security Research I am currently familiarising myself with tools to do security research around physical pentesting.
-This is in preparation for my research project as part of the MSc Cyber Security masters I’m taking from the University of London via distance learning.
-This research is strictly for informational purposes and I don’t do anything criminal with it.
-Wardriving and Wifi cracking I have two Raspberry Pi Zero 2s configured headless with pwnagotchi
-...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2024-08-24</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>219 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Security Research" href="https://davidcraddock.net/security-research/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Mid 2024 Retrospective Update
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>
-Every year I’ve been doing these ‘retrospectives’, usually once per year but sometimes a couple of times per year.
+  <div class="entry-content">
+    <p> Every year I’ve been doing these ‘retrospectives’, usually once per year but sometimes a couple of times per year.
 Things have changed quite significantly since the last retrospective, and I was in a pensive mood, so I thought I would write a retrospective for half the year.
 I finally found a job, with CGI, early in the year, and started in March 2023. Unfortunately, for reasons I’m contractually obliged not to get into, it wasn’t long before I was looking for work again. I resigned from CGI at the end of June.
 ...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2024-08-02</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>817 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>4 min</span></span>
-</footer>
+  </div>
+  <footer class="entry-footer"><span title='2024-08-02 23:15:41 +0100 BST'>August 2, 2024</span>&nbsp;·&nbsp;4 min</footer>
   <a class="entry-link" aria-label="post link to Mid 2024 Retrospective Update" href="https://davidcraddock.net/2024/08/02/mid-2024-update/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Moved From Wp to Hugo
+    <h2 class="entry-hint-parent">Moved From Wp to Hugo
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>I have moved over from wordpress.com that I was using before on DavidCraddock.net to self-hosting using Python’s Hugo.
+  <div class="entry-content">
+    <p>I have moved over from wordpress.com that I was using before on DavidCraddock.net to self-hosting using Python’s Hugo.
 I hope this will be a good move!
 A bit of content didn’t make it, but most of it, thankfully, did.
 I will continue to tidy up bits and pieces as I go along.
 </p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2024-07-26</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>52 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
+  </div>
+  <footer class="entry-footer"><span title='2024-07-26 04:28:43 +0100 BST'>July 26, 2024</span>&nbsp;·&nbsp;1 min</footer>
   <a class="entry-link" aria-label="post link to Moved From Wp to Hugo" href="https://davidcraddock.net/2024/07/26/moved-from-wp-to-hugo/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>My Bike
+    <h2 class="entry-hint-parent">Video Routing for Dave Cave Studio
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>
-Decided not to mention the security aspects of my setup on a public page, but trust me, there are many!
-Himiway Zebra Electric Mountain Bike 2023 Version (road legal, top electric-assisted speed 15mph, max. pull 400lbs) 2x official batteries (40-80 miles on a single charge each) 2x battery chargers Two spare tires Spare inner tube Electric fat tire pump Metal tire levers Adjustable wrench Chain tool for removing chain links Chain cleaner tool “MuckOff” bike cleaning kit Small first aid kit Compass Himiway fold-out cycle toolkit Energy bars &#43; nuts 2x cycle frame bags 2x Rockbros waterproof pannier bags Rockbros Handlebar bag Rockbros Mobile phone holder bag Electric bike horn Bike bell Himiway cycle helmet with front light 4x vaccum thermos 750ml flasks for water All-weather MTB grips for handlebar Fingerless MTB gloves for warmer weather Wraparound anti-glare sun glasses for protection against surface dirt etc Wraparound cycle goggles with different visors Light backpack suitable for cycling Goretex water-resistant high-vis cycle jacket VEVOR Cycle Bike Cargo Trailer </p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2024-06-09</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>167 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to My Bike" href="https://davidcraddock.net/my-bike/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Video Routing for Dave Cave Studio
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>
-Here is a quick diagram I mocked up to detail exactly how video routing works in the studio.
+  <div class="entry-content">
+    <p> Here is a quick diagram I mocked up to detail exactly how video routing works in the studio.
 </p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2024-04-25</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>18 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-25 04:55:52 +0000 +0000'>April 25, 2024</span>&nbsp;·&nbsp;1 min</footer>
   <a class="entry-link" aria-label="post link to Video Routing for Dave Cave Studio" href="https://davidcraddock.net/2024/04/25/video-routing-for-dave-cave-studio/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Advice to young people in the UK wanting a career in Tech
+    <h2 class="entry-hint-parent">Advice to young people in the UK wanting a career in Tech
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>
-If you’re currently in high school in the UK and want to be a GOOD and EMPLOYED software engineer.. this is my advice.
+  <div class="entry-content">
+    <p> If you’re currently in high school in the UK and want to be a GOOD and EMPLOYED software engineer.. this is my advice.
 Start programming on personal projects right away, and keep it up during your entire working career. Always have something going on in the background. Get into a RUSSELL GROUP university in the UK and take a technical, demanding degree in a computing-related discipline, for example, Physics, Electronic Engineering, Maths, Computer Science, Artificial Intelligence. If you can’t get into a university and course that isn’t in the top 25% of courses for your subject in the UK, and someone isn’t paying all your bills (e.g rich parents), don’t bother going to university, It’s not worth the loan. Find another way. Look into apprenticeships. Try to not be a total ’tech head’ and develop some creative and artistic side to you, taking up writing is a really good idea as it improves your thinking and communication skills. Ideally learn to write humanities essays to the standard of the first year humanities majors at your university. Try and get onto as many technical internships and technical work experience as possible throughout your degree. Once you have graduated, and found that the Junior tech worker job market is depressingly non-existant, move back in with your parents and start your informal and free ‘post-graduate’ learning. Take AT LEAST this free course but also certifications such as AWS certs, and anything that you have researched on Reddit etc that you can do cheaply and is sought after by your chosen target job (as evidenced by being mentioned on job descriptions of jobs you’d like to apply for). Increase your work on your personal projects and move to open source them and build up a following from them, and possibly a side-income. Keep in contact with your old uni friends, especially the ones that have got jobs. Read ‘So Good They Can’t Ignore You’ by Cal Newport, learn to market yourself, build your LinkedIn presence, network like crazy, and hopefully you will get your foot in the door with that ‘all important’ first job that you can launch a career off of. You’ll certainly deserve it. </p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2024-04-23</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>362 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-23 22:54:59 +0000 +0000'>April 23, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
   <a class="entry-link" aria-label="post link to Advice to young people in the UK wanting a career in Tech" href="https://davidcraddock.net/2024/04/23/4683/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>My Mobile Laptop Setup
+    <h2 class="entry-hint-parent">Music Acquisition Process for DJ Music
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p> I use this setup, along with my bike to work from wherever I want.
-It does kind of turn heads, and I’m aware it may look a little ‘over the top’ - but it’s a very useful setup for me, keeps me healthy, and fits all my requirements.
-...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2024-02-04</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>532 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>3 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to My Mobile Laptop Setup" href="https://davidcraddock.net/my-mobile-laptop-setup/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Music Acquisition Process for DJ Music
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>My music acquisition process for DJ music:
+  <div class="entry-content">
+    <p>My music acquisition process for DJ music:
 ARM (Automatic Ripping Machine) rips CDs I buy into FLAC form without any interactivity. You just insert a CD into the Linux server, and then it ejects it when it’s done. Lidarr downloads FLACs of any tracks of artists I have in my collection, but I don’t have their full discography. It does this automatically and silently in the background. Once a day, a cron job imports ARM and Lidarr downloads into my Beets.io music library, and deals with file integrity checks, tagging, metadata, library file structure and embedded images of the artist. Whenever I’m ready to have a fresh library copy, I run my batch script on my W11 DJ laptop and it robocopy mirrors the entire library from my Linux samba share onto my computer. I then send it through MixedInKey 10 to analyse the BPM and the music key of each track, and to check again the integrity of each file. Once that is done, and any corrupt files removed, I import the file library into Serato DJ Pro, and analyse the entire collection. This again removes any dud files from the collection. Now I have a complete music library, I run a batch file to reverse mirror the music from the DJ library back onto the server, so my collection doesn’t accumalate corrupt files. Now I have a full DJ music library of FLACs on my DJ laptop, over 22,000 files, great for requests! </p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2024-01-11</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>245 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-11 23:41:50 +0000 GMT'>January 11, 2024</span>&nbsp;·&nbsp;2 min</footer>
   <a class="entry-link" aria-label="post link to Music Acquisition Process for DJ Music" href="https://davidcraddock.net/2024/01/11/music-acquisition-process-for-dj-music/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>My Homelab
+    <h2 class="entry-hint-parent">Retrospective for 2023
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p> My home network routes at around 2-4gbit/sec between 10gbit/sec DAC fibre connected hosts, and around 2gbit/sec via CAT8 for Thunderbolt 2.5Ggbit/sec laptop network interfaces. We two Ubiquiti wireless APs in a mesh configuration, with seperate SSIDs for 2Ghz, 5Ghz, guest and IOT networks. The guest and IOT networks are isolated from everything else. I use a Mikrotik router which hosts an iperf3 docker container for network testing I have a home server running Ubuntu Linux that hosts a bunch of services via docker containers, including Pi-Hole for DNS and a Ubiquiti Network Controller. I have a Google smart home setup with 2x Google Home Mini speakers, 1x Google Home Hub (1st) gen, 1x Google Doorbell, 1x Google Nest Smoke Alarm, 1x Google Nest Thermostat, and 2x Google Nest Cameras. We have a Phillips Hue light source setup, with 5 Hue lights in the Music Studio/Games room, which I set to strobe to music when I do my DJ sets, and setup as a Hue Entertainment Area when I play games/watch films. I also have Hue lights in the study and my bedroom, with dimmers etc. We have a robotic vacuum cleaner which helps Conny around the house. We call it ‘Dusterbuster’. Wherever possible, all devices have a wired network connection. Wireless is only used as a last resort, to minimise spectrum interference. We use ZeroTier as a VPN so that everything useful is accessible outside the home. We run a Plex server so that all music and video content is accessible outside the home, which is shared with friends. ...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2023-12-17</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>786 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>4 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to My Homelab" href="https://davidcraddock.net/my-home-network/"></a>
+  <div class="entry-content">
+    <p>Every year towards the end of the year, I put together a retrospective of events that have happened over the year - the good, bad and the ugly.
+The Bad Most of the year was taken up with treatment for relapsed Hodgkins Lymphoma cancer. After the clinical immunotherapy drug trial finished in Feb 2023, cancer was unfortunately still detected, so it did not completely cure it. I had a further (awful) spell in hospital around March/April where my Hickman line became infected and I had a severe mental health episode, probably caused by the strong antibiotics being pumped through my system. Finally I was accepted for a stem cell transplant, and had my transplant on 4th July. We have had to deal with complications of cancer elsewhere in the family, not just my mum’s own cancer treatment being ongoing, but the financial impact of the family having to support both of us, is quite a significant burden. The Good Thankfully, I’m finally in remission for cancer! I have been in remission for 6 months, and if I make it to 2 years, then I am effectively cured. I have a 75% chance of it not coming back within that time, approximately. We got an absolute ton of stuff done on the house, and I have an awesome gaming setup, an awesome DJing setup, an awesome music production setup, an awesome high speed network and server setup, and an awesome WFH setup. All of the goals I set myself of things I wanted to achieve during my downtime having cancer treatment nearly 2 years ago, are more or less finished now. We have decided that we’re moving out of Manchester. We are going to move to Chester, which promises a much, much nicer, quieter, and actually, cheaper place to live now that I am committed to a 100% WFH work life. Things are progressing well with the house sale, and we’ve got a lot of interest so far. I have got fitter and healthier and my posture has got better over the year. I have also managed to reduce the medication I am on, which has helped my health. The Ugly There has been a worldwide downturn for software jobs, just as I had to take some time off my career due to work reasons. This downturn is probably comparable to the 2008/9 downturn in software jobs around the financial crisis. This is definitely bad news for everyone in software. ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-11-25 20:07:59 +0000 GMT'>November 25, 2023</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Retrospective for 2023" href="https://davidcraddock.net/2023/11/25/retrospective-for-2023/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Retrospective for 2023
+    <h2 class="entry-hint-parent">Latest Remote Guitar Lesson Setup
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>Every year towards the end of the year, I put together a retrospective of events that have happened over the year - the good, bad and the ugly.
-The Bad Most of the year was taken up with treatment for relapsed Hodgkins Lymphoma cancer. After the clinical immunotherapy drug trial finished in Feb 2023, cancer was unfortunately still detected, so it did not completely cure it. I had a further (awful) spell in hospital around March/April where my Hickman line became infected and I had a severe mental health episode, probably caused by the strong antibiotics being pumped through my system. Finally I was accepted for a stem cell transplant, and had my transplant on 4th July. We have had to deal with complications of cancer elsewhere in the family, not just my mum’s own cancer treatment being ongoing, but the financial impact of the family having to support both of us, is quite a significant burden. The Good Thankfully, I’m finally in remission for cancer! I have been in remission for 6 months, and if I make it to 2 years, then I am effectively cured. I have a 75% chance of it not coming back within that time, approximately. We got an absolute ton of stuff done on the house, and I have an awesome gaming setup, an awesome DJing setup, an awesome music production setup, an awesome high speed network and server setup, and an awesome WFH setup. All of the goals I set myself of things I wanted to achieve during my downtime having cancer treatment nearly 2 years ago, are more or less finished now. We have decided that we’re moving out of Manchester. We are going to move to Chester, which promises a much, much nicer, quieter, and actually, cheaper place to live now that I am committed to a 100% WFH work life. Things are progressing well with the house sale, and we’ve got a lot of interest so far. I have got fitter and healthier and my posture has got better over the year. I have also managed to reduce the medication I am on, which has helped my health. The Ugly There has been a worldwide downturn for software jobs, just as I had to take some time off my career due to work reasons. This downturn is probably comparable to the 2008/9 downturn in software jobs around the financial crisis. This is definitely bad news for everyone in software. ...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2023-11-25</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>409 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Retrospective for 2023" href="https://davidcraddock.net/2023/11/25/retrospective-for-2023/"></a>
+  <div class="entry-content">
+    <p>I’ve been having online guitar lessons with my friend Jon.
+After a while we have got things down to a setup that seems to work remotely.
+I have an Epiphone Les Paul Vintage Edition electric guitar, and a Marshall MG15G Practice Amp. I use a headphone splitter cable to plug into the Marshall’s headphone out socket, which splits the audio into left and right channels, and a 3.5mm to phono mono cable plugged into the headphone splitter that runs to my audio interface. I use Logitech C270 and a Logitech 920 cameras, the C270 for the front on face cam, and the 920 suspended on a lighting boom above my head, pointed down so that Jon can see the guitar fret fingering I am attempting. I also use a t.bone MB88U directional microphone on a desk microphone stand to talk into. The sound interface I use is my studio one, which is a Behringer UMC1820 audio interface, but really, you can use any audio interface with two mono input channels and a headphone monitor. I have a KORG CA-2 portable tuner which helps me get the guitar in tune before each session. I use a WINGO Guitar Capo and plectrums as well. We use Zoom to do the lessons over, Jon has a subscription, and Skype to store notes between sessions. I use my phone to take pictures of my fret fingering to practice. I have a portable flask that I keep with me if I need to take a drink during the session, as to not disrupt things. I always tune the guitar before the session as to not waste time. I always switch my audio speakers off, and use headphones on the audio interface, to minimise disturbance to others, and to stop feedback. I have a pen and paper to make any notes needed on the session. This saves time compared to typing them into the computer. The sessions are 45mins -&gt; 1 hour max, weekly. Zoom Setup This is the Zoom configuration options that I use. Currently I do not turn on the ‘original audio for musicians’ toggle when on the call:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-09-22 16:56:26 +0000 +0000'>September 22, 2023</span>&nbsp;·&nbsp;4 min</footer>
+  <a class="entry-link" aria-label="post link to Latest Remote Guitar Lesson Setup" href="https://davidcraddock.net/2023/09/22/latest-remote-guitar-lesson-setup/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Optical Drive Cleaners and Home Entertainment Test Tools
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>If you are still using optical discs, e.g. CDs or Blu-rays, in music, video or games, then you are in the minority these days. Downloads and streaming have become the norm, which means 1) A lot less discs are being produced 2) A lot less optical drives are being produced.
+Because a lot less optical drives are being produced, we can imagine a time in the future when the only optical drives you can buy, are second-hand. Regardless if you can buy new optical drives currently or not, often the best value/quality ratio can be found in second-hand optical drives.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-02-23 09:57:30 +0000 GMT'>February 23, 2023</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Optical Drive Cleaners and Home Entertainment Test Tools" href="https://davidcraddock.net/2023/02/23/optical-drive-cleaners-and-home-entertainment-test-tools/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Books that have changed the way I see the practice of Software Engineering
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> The Mythical Man Month and other Essays - Fred Brooks - Read it as part of my university degree. A lot of good sense. I can’t believe there are people out there in charge of software projects that haven’t read this book, or think it somehow doesn’t apply anymore, but unfortunately, it seems quite common. -
+[Read reviews on Good Reads] The Cathedral and the Bazaar - Eric S Raymound - One of the first books I read on software development process. Really blew my mind. -
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-01-19 09:12:32 +0000 GMT'>January 19, 2023</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to Books that have changed the way I see the practice of Software Engineering" href="https://davidcraddock.net/2023/01/19/books-that-have-changed-the-way-i-see-the-practice-of-software-engineering/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">My Personal Retrospective on 2022
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Every year (when I remember) I do an end-of-year summary to outline what has been going on in my life. I’ve been doing this for a few years now, and it’s a great way to look back on the year and see has happened.
+The Bad: The main bad news of the year is that, contrary to expectations, my Hodgkins Lymphoma cancer was detected again around April after the initial chemotherapy. So it had come back. The rest of the year has mostly revolved around subsequent treatments to try and reach a long term remission, e.g. cure. I’m not there yet, but there are a lot of treatments still available, and I have hope that my current immunotherapy treatment might be the one that works. It wasn’t just me that was affected, my wife suffered quite a bit on hearing the news, and has only just really taken it all in and come to terms with it. I’m pretty sure that I will be cured eventually, at least for a good 10-20 years or so, it just is a pain having to take time off work and go through sometimes intensive treatment sessions. The economy has not had the greatest of years either, and the cost of living crisis affecting the UK has had an effect on us, and my parents who are the main financial support we have while I am unable to work. The Good: I have found a renewed interest in my career, in software development, and I have spent a lot of my spare time, and part of my downtime for treatment, learning new technical things and just generally finding the enjoyment in technology that I thought I’d permanently lost for so many years. The career opportunities around working from home have been very good considering my illness. There is still, despite a downturn, more than enough work around, and a lot of it is 100% work from home work. I’m no longer worried about being unemployed for any great length of time, presuming I am healthy enough to work from home. I’ve been developing my writing and social media skills, which have been a welcome distraction from the bad stuff going on. I’ve always enjoyed writing, but I would say my writing has particularly improved over the past year. Work on the house We have spent a lot of time, effort and money on working on the house this year. Conny has put in a great deal of amazing work, in particular.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-12-23 23:26:12 +0000 GMT'>December 23, 2022</span>&nbsp;·&nbsp;5 min</footer>
+  <a class="entry-link" aria-label="post link to My Personal Retrospective on 2022" href="https://davidcraddock.net/2022/12/23/my-personal-retrospective-on-2022/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="next" href="https://davidcraddock.net/page/2/">Next Page »</a>
+    <a class="next" href="https://davidcraddock.net/page/2/">Next&nbsp;&nbsp;»
+    </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-  <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span><span style="display: inline-block; margin-left: 1em;">
-    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>
-  </span>
-  <span style="display: inline-block; margin-left: 1em;">
-    Powered by
-    <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-    <a href="https://github.com/reorx/hugo-PaperModX/" rel="noopener" target="_blank">PaperModX</a>
-  </span>
+        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-    <path d="M12 6H0l6-6z" />
-  </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
 </a>
 
 <script>
-  (function() {
-     
-    const disableThemeToggle = '1' == '1';
-    if (disableThemeToggle) {
-      return;
-    }
-
-    let button = document.getElementById("theme-toggle")
-    
-    button.removeEventListener('click', toggleThemeListener)
-    
-    button.addEventListener('click', toggleThemeListener)
-  })();
-</script>
-
-<script>
-  (function () {
     let menu = document.getElementById('menu')
     if (menu) {
-      menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-      menu.onscroll = function () {
-        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-      }
-    }
-
-    const disableSmoothScroll = '' == '1';
-    const enableInstantClick = '1' == '1';
-    
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || disableSmoothScroll || enableInstantClick) {
-      return;
-    }
-    
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        var id = this.getAttribute("href").substr(1);
-        document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-          behavior: "smooth"
-        });
-        if (id === "top") {
-          history.replaceState(null, null, " ");
-        } else {
-          history.pushState(null, null, `#${id}`);
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
-      });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
     });
-  })();
+
 </script>
 <script>
-  var mybutton = document.getElementById("top-link");
-  window.onscroll = function () {
-    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-      mybutton.style.visibility = "visible";
-      mybutton.style.opacity = "1";
-    } else {
-      mybutton.style.visibility = "hidden";
-      mybutton.style.opacity = "0";
-    }
-  };
-</script>
-<script>
-  if (window.scrollListeners) {
-    
-    for (const listener of scrollListeners) {
-      window.removeEventListener('scroll', listener)
-    }
-  }
-  window.scrollListeners = []
-</script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
 
-
-
-<script src="/js/medium-zoom.min.js" data-no-instant
-></script>
-<script src="/js/instantclick.min.js" data-no-instant
-></script>
-<script data-no-instant>
-  
-  
-  
-  
-  
-  
-  InstantClick.init();
 </script>
 </body>
 

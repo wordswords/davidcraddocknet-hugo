@@ -4,81 +4,33 @@
     <title>Vim on DavidCraddock.net</title>
     <link>https://davidcraddock.net/tag/vim/</link>
     <description>Recent content in Vim on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 19 Feb 2022 05:51:56 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/tag/vim/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Feb 2022 05:51:56 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/tag/vim/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Working with Jenkinsfiles in VIM</title>
       <link>https://davidcraddock.net/2022/02/19/working-with-jenkinsfiles-in-vim/</link>
       <pubDate>Sat, 19 Feb 2022 05:51:56 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2022/02/19/working-with-jenkinsfiles-in-vim/</guid>
       <description>&lt;p&gt;Using Jenkinsfiles in repositories for declarative pipelines, which is an example as infrastructure as code, is absolutely the right thing to do, in my opinion.&lt;/p&gt;
 &lt;p&gt;However the tooling for debugging and error checking Jenkinsfiles is currently quite difficult.&lt;/p&gt;
 &lt;h2 id=&#34;setup-jenkinsfile-linter&#34;&gt;Setup Jenkinsfile linter&lt;/h2&gt;
 &lt;p&gt;First of all you need to make sure to be able to access the Jenkinsfile linter. This linter is processed on the Jenkins server itself, unusually. There is a configuration option that requires adminstrator access to the Jenkins server.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>Using Jenkinsfiles in repositories for declarative pipelines, which is an example as infrastructure as code, is absolutely the right thing to do, in my opinion.</p>
-<p>However the tooling for debugging and error checking Jenkinsfiles is currently quite difficult.</p>
-<h2 id="setup-jenkinsfile-linter">Setup Jenkinsfile linter</h2>
-<p>First of all you need to make sure to be able to access the Jenkinsfile linter. This linter is processed on the Jenkins server itself, unusually. There is a configuration option that requires adminstrator access to the Jenkins server.</p>
-<p>There are a number of options to access the linter, but Jenkins officially recommends the ssh server option with preshared ssh public keys as outlined here:</p>
-<p><a href="https://www.jenkins.io/doc/book/pipeline/development/">https://www.jenkins.io/doc/book/pipeline/development/</a></p>
-<p>Once you have set it up, you can pipe Jenkinsfiles through ssh to the linter and it will lint the Jenkinsfile for you:</p>
-<p><code>ssh jenkins.dev.mycompany.co.uk -p1337 declarative-linter &lt; Jenkinsfile</code></p>
-<p>(change jenkins.dev.mycompany.co.uk and the port number to match your configuration of course)</p>
-<p>And it will output the errors in the file.</p>
-<h2 id="jenkinsfile-syntax-highlighting-in-vim">Jenkinsfile syntax highlighting in VIM</h2>
-<p>VIM won&rsquo;t automatically syntax highlight Jenkinsfiles because they don&rsquo;t have an extension that it recognises. This is easily fixed with the following autocommand added to your .vimrc though:</p>
-<p><code>autocmd BufRead,BufNewFile Jenkinsfile set filetype=groovy</code></p>
-<p>This will ensure that Jenkinsfiles have some measure of syntax highlighting when loaded, as they are valid Groovy files.</p>
-<h2 id="jenkinsfile-linting-on-save-in-vim">Jenkinsfile linting on save in VIM</h2>
-<p>Once you have the linter running on a ssh port (see above) you can add this line to your .vimrc to have the linter run whenever a Jenkinsfile is saved, allowing you to debug your changes when you save them:</p>
-<p><code>autocmd BufWritePost Jenkinsfile !ssh jenkins.dev.myompany.co.uk -p1337 declarative-linter &lt; %</code></p>
-<p>(change jenkins.dev.mycompany.co.uk and the port number to match your configuration of course)</p>
-<p>This setup should make it significantly easier to spot and fix errors in your Jenkinsfile before it gets to the git commit stage.</p>
-]]></content:encoded>
     </item>
-    
     <item>
       <title>My Favourite OSX Apps for Development</title>
       <link>https://davidcraddock.net/2015/11/07/favourite-osx-apps-for-development/</link>
       <pubDate>Sat, 07 Nov 2015 12:51:33 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2015/11/07/favourite-osx-apps-for-development/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve just recently bought a Macbook Pro for myself, after having used a MBP at work for 4 years. I find it to be a really powerful development environment for the development I do, in languages such as Java, PHP, Ruby, Python and JS. Here is what I use day-to-day:&lt;/p&gt;
 &lt;h3 id=&#34;osx-el-capitan&#34;&gt;OSX El Capitan&lt;/h3&gt;
 &lt;p&gt;I haven&amp;rsquo;t found anything not to like about this upgrade. I don&amp;rsquo;t use a lot of external devices, for which &lt;a href=&#34;https://twitter.com/custardcat&#34;&gt;Bruce&lt;/a&gt; has found problems with El Capitan&amp;rsquo;s new restricted driver management for Arduinos and others. I like the fact I can use split screen functionality to side-by-side two windows easily, a feature that I very much like in Windows 10 too.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>I&rsquo;ve just recently bought a Macbook Pro for myself, after having used a MBP at work for 4 years. I find it to be a really powerful development environment for the development I do, in languages such as Java, PHP, Ruby, Python and JS. Here is what I use day-to-day:</p>
-<h3 id="osx-el-capitan">OSX El Capitan</h3>
-<p>I haven&rsquo;t found anything not to like about this upgrade. I don&rsquo;t use a lot of external devices, for which <a href="https://twitter.com/custardcat">Bruce</a> has found problems with El Capitan&rsquo;s new restricted driver management for Arduinos and others. I like the fact I can use split screen functionality to side-by-side two windows easily, a feature that I very much like in Windows 10 too.</p>
-<h3 id="iterm-2httpswwwiterm2com"><a href="https://www.iterm2.com/">iTerm 2</a></h3>
-<p>This is an awesome terminal, better than OSX&rsquo;s terminal. Nothing much more to say about it.</p>
-<h3 id="fish-shellhttpfishshellcom"><a href="http://fishshell.com/">Fish Shell</a></h3>
-<p>This shell has fast and smart command-line completion which is very handy and I&rsquo;d highly recommend it if you use the commandline a lot and are not totally won over by Bash. It looks nice too.</p>
-<h3 id="homebrewhttpbrewsh"><a href="http://brew.sh/">Homebrew</a></h3>
-<p>This is pretty much essential for command line OSX. It is a package manager which downloads and compiles the latest version of open source packages on your Mac. If you don&rsquo;t use it already, get used to it.</p>
-<h3 id="intellij-webstormhttpswwwjetbrainscomwebstorm"><a href="https://www.jetbrains.com/webstorm/">IntelliJ WebStorm</a></h3>
-<p>WebStorm is great for debugging JavaScript applications, which I seem to be doing a lot of lately. I recommend the IntelliJ IDEA family of IDEs, once you get use to them, they are a great help in productive development. There are also vim and Emacs keybindings.</p>
-<h3 id="vim">vim</h3>
-<p>If you are a fan of vim you will know what I mean when I say I can&rsquo;t be without it. My <a href="https://github.com/wordswords/-">Dotfiles</a> show my .vimrc and plugin configuration.</p>
-<h3 id="git">git</h3>
-<p>Thankfully the BBC has moved over to Github, meaning all my coding uses Git. It is so useful, and not just for storing code, you can store anything.</p>
-<h3 id="itunes">iTunes</h3>
-<p>I use Apple Music, and iTunes Match, so iTunes is a must. It annoys me at times, but I just have to live with it.</p>
-<h3 id="alfredhttpswwwalfredappcom"><a href="https://www.alfredapp.com/">Alfred</a></h3>
-<p>Alfred is a replacement for Spotlight search in OSX. It has a lot of functionality that I&rsquo;m still getting my head around, but it speeds up my OSX workflow a lot when undertaking frequent tasks such as Google searching.</p>
-<h3 id="evernotehttpevernotecom"><a href="http://evernote.com">Evernote</a></h3>
-<p>Evernote is so useful for making and sharing notes on my phone, mac, work computer.. anywhere</p>
-<h3 id="droplrhttpdroplrcom"><a href="http://droplr.com">Droplr</a></h3>
-<p>This is something someone only recently recommended to me. It seems very useful from what I&rsquo;ve seen, great way to share images files, screenshots, webcasts.. anything. Also it has as expiry policy for media, like Snapchat, so it doesn&rsquo;t exist on the internet for generations to come.</p>
-]]></content:encoded>
     </item>
-    
     <item>
       <title>256 Color VIM on Crunchbang Waldorf</title>
       <link>https://davidcraddock.net/2013/06/20/256-color-vim-on-crunchbang-waldorf/</link>
       <pubDate>Thu, 20 Jun 2013 22:15:52 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2013/06/20/256-color-vim-on-crunchbang-waldorf/</guid>
       <description>&lt;p&gt;To get 256 colors working within terminator in Crunchbang Waldorf, I had to do the following:&lt;/p&gt;
 &lt;ol&gt;
@@ -95,67 +47,22 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;set t_AB=^[[48;5;%dm
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;set t_AF=^[[38;5;%dm
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
-      <content:encoded><![CDATA[<p>To get 256 colors working within terminator in Crunchbang Waldorf, I had to do the following:</p>
-<ol>
-<li>
-<p>Add to ~/.bashrc</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> TERM<span style="color:#000;font-weight:bold">=</span>xterm<span style="color:#000;font-weight:bold">-</span><span style="color:#099">256</span>color
-</span></span></code></pre></div></li>
-<li>
-<p>Install a 256 color VIM colorcheme, see <a href="http://www.vim.org/scripts/script.php?script_id=1243">desert256 for example</a>.</p>
-</li>
-<li>
-<p>Add the following to ~/.vimrc:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>set t_Co=256
-</span></span><span style="display:flex;"><span>set t_AB=^[[48;5;%dm
-</span></span><span style="display:flex;"><span>set t_AF=^[[38;5;%dm
-</span></span></code></pre></div><p>&rsquo;t_Co&rsquo; specifies exactly how many colours VIM can use. The other two lines seem to be Debian-specific color code escape sequences.</p>
-</li>
-<li>
-<p>If you want 256 color VIM for your root user when you sudo edit, then edit /usr/share/vim/vimrc and copy across your settings from your local ~/.vimrc and ~/.vim to this global environment.</p>
-</li>
-</ol>
-]]></content:encoded>
     </item>
-    
     <item>
       <title>My minimal VIM config</title>
       <link>https://davidcraddock.net/2010/03/18/my-minimal-vim-config/</link>
       <pubDate>Thu, 18 Mar 2010 19:23:07 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2010/03/18/my-minimal-vim-config/</guid>
       <description>&lt;p&gt;This is the absolute minimum I do when I have to log onto a new server or shell account that I haven&amp;rsquo;t used before, that I will need to edit text files with.&lt;/p&gt;
 &lt;p&gt;First I figure out whether VIM is really installed. A lot of installs, especially those based on ubuntu, ship with VI aliased to VIM, but the VIM install is usually not really VIM at all, and behaves exactly like VI but with some minor bugs fixed. This is not what I want.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>This is the absolute minimum I do when I have to log onto a new server or shell account that I haven&rsquo;t used before, that I will need to edit text files with.</p>
-<p>First I figure out whether VIM is really installed. A lot of installs, especially those based on ubuntu, ship with VI aliased to VIM, but the VIM install is usually not really VIM at all, and behaves exactly like VI but with some minor bugs fixed. This is not what I want.</p>
-<p>So first I figure out what distribution of linux I&rsquo;m using through executing the following command:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>cat /etc/issue
-</span></span></code></pre></div><p>Then if it&rsquo;s ubuntu, which doesn&rsquo;t ship with the full VIM package on a lot of default installs, then I usually do this, presuming I have admin access. In practice I usually have admin access because people are generous with this when they want you to fix their server =) Anyway, if I have admin access, I install ubuntu&rsquo;s &lsquo;vim full&rsquo; package, which is aliased as &lsquo;vim&rsquo;:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo apt-get install vim
-</span></span></code></pre></div><p>Now I can move onto my config. Occasionally there will be a global system config, but I probably want to override that anyway. So I create a vim configuration file specific to me in my home directory:</p>
-<p>/home/david/.vimrc
-<code>set bg=dark set backspace=2 </code></p>
-<p>The first line sets the background to be dark, so I can see what is going on when I use a dark terminal program, such as putty, mac osx&rsquo;s terminal.. in fact nearly all terminal programs use a dark background, so this setting is almost compulsory.</p>
-<p>The second line configures the behaviour of the backspace key, so when I go the the start of a line, and press backspace, it adopts the wordprocessor conventional behaviour of skipping to the above line. Otherwise it uses the default VI behaviour, which is probably not intuitive at all to anyone who didn&rsquo;t grow up on UNIX mainframes and such.</p>
-<p>The very existence of a user-supplied configuration file will also jolt the VIM editor into &rsquo;non compatible mode&rsquo;, where it figures out automatically that it should be doing all the advanced VIM things, instead of just acting as a VI replacement. This should mean that if you create a config file, syntax highlighting is already turned on, another must for me. Otherwise you can explicitly set it with the line &lsquo;syntax on&rsquo;, but I never have to do this anymore.</p>
-<p>And that&rsquo;s it.</p>
-]]></content:encoded>
     </item>
-    
     <item>
       <title>Eclipse 3.4.2 &#43; Pydev &#43; Eclim = win</title>
       <link>https://davidcraddock.net/2009/03/27/eclipse-342-pydev-eclim-win/</link>
       <pubDate>Fri, 27 Mar 2009 23:47:59 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2009/03/27/eclipse-342-pydev-eclim-win/</guid>
       <description>&lt;p&gt;So, after saying all that stuff about how vimplugin and EasyEclipse was great, I actually started to use the setup heavily, and it started to annoy me.&lt;/p&gt;
 &lt;p&gt;For one, EE is not a recent build of eclipse, nor does it come with a full set of recent plugins. This makes it annoyingly difficult to use when you want to use more than the set of plugins it packages for you. As far as vimplugin goes, it does not provide the vim integration I thought it might from embedded vim. Not really even close.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>So, after saying all that stuff about how vimplugin and EasyEclipse was great, I actually started to use the setup heavily, and it started to annoy me.</p>
-<p>For one, EE is not a recent build of eclipse, nor does it come with a full set of recent plugins. This makes it annoyingly difficult to use when you want to use more than the set of plugins it packages for you. As far as vimplugin goes, it does not provide the vim integration I thought it might from embedded vim. Not really even close.</p>
-<p>What I use now, after lots of trial and error, and at least 4 reinstalls of Eclipse, is a combination of Eclipse 3.4.2, <a href="http://eclim.sourceforge.net/">Eclim</a>, (which is the most mature of the free vi-binding plugins around, and actually includes an improved version of the vimplugin previously mentioned), and the latest pydev, Mylyn and Subeclipse.</p>
-<p>I&rsquo;m using it now to refactor a largeish python project, and I&rsquo;m really appreciating the help it gives me. Definitely worth trying an Eclipse setup similar to this if you&rsquo;re writing any python apps that are more than small-scale.</p>
-]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

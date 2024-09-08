@@ -10,19 +10,63 @@
 <meta name="description" content="Posts - DavidCraddock.net">
 <meta name="author" content="">
 <link rel="canonical" href="https://davidcraddock.net/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.7da7716a1f2d0725f74c6ae7f8d6adafc43aabe2b366b65bfbf433448e2a2001.css" integrity="sha256-fadxah8tByX3TGrn&#43;Natr8Q6q&#43;KzZrZb&#43;/QzRI4qIAE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://davidcraddock.net/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://davidcraddock.net/favicon-32x32.png">
 <link rel="apple-touch-icon" href="https://davidcraddock.net/apple-touch-icon.png">
+<link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/posts/feed.xml">
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/posts/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-<meta name="twitter:title" content="Posts | DavidCraddock.net" />
-<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
-<meta property="og:title" content="Posts | DavidCraddock.net" />
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+<meta property="og:title" content="Posts" />
 <meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://davidcraddock.net/posts/" />
 
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Posts"/>
+<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK."/>
 
 
 <script type="application/ld+json">
@@ -39,120 +83,22 @@
   ]
 }
 </script>
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary-bg: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list-page {
-                background: var(--theme);
-            }
-
-            .list-page:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list-page:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
-</noscript>
-
 </head>
 
-<body class="list-page type-posts kind-section layout-" id="top"><script data-no-instant>
-function switchTheme(theme) {
-  switch (theme) {
-    case 'light':
-      document.body.classList.remove('dark');
-      break;
-    case 'dark':
-      document.body.classList.add('dark');
-      break;
-    
-    default:
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-      }
-  }
-}
-
-function isDarkTheme() {
-  return document.body.className.includes("dark");
-}
-
-function getPrefTheme() {
-  return localStorage.getItem("pref-theme");
-}
-
-function setPrefTheme(theme) {
-  switchTheme(theme)
-  localStorage.setItem("pref-theme", theme);
-}
-
-const toggleThemeCallbacks = {}
-toggleThemeCallbacks['main'] = (isDark) => {
-  
-  if (isDark) {
-    setPrefTheme('light');
-  } else {
-    setPrefTheme('dark');
-  }
-}
-
-
-
-
-window.addEventListener('toggle-theme', function() {
-  
-  const isDark = isDarkTheme()
-  for (const key in toggleThemeCallbacks) {
-    toggleThemeCallbacks[key](isDark)
-  }
-});
-
-
-function toggleThemeListener() {
-  
-  window.dispatchEvent(new CustomEvent('toggle-theme'));
-}
-
-</script>
+<body class="list" id="top">
 <script>
-  
-  (function() {
-    const defaultTheme = 'auto';
-    const prefTheme = getPrefTheme();
-    const theme = prefTheme ? prefTheme : defaultTheme;
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
 
-    switchTheme(theme);
-  })();
 </script>
 
 <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
-            <span class="logo-switches">
-            </span>
+            <div class="logo-switches">
+            </div>
         </div>
         <ul id="menu">
         </ul>
@@ -161,341 +107,218 @@ function toggleThemeListener() {
 <main class="main"> 
 <header class="page-header"><div class="breadcrumbs"><a href="https://davidcraddock.net/">Home</a></div>
   <h1>
-    Posts</h1><div class="inline-links">
-  
-  
-  <span><a href="https://davidcraddock.net/posts/feed.xml" target="_blank">RSS</a></span></div>
+    Posts
+  </h1>
 </header>
-
-
-<div>
-    <ul>
-        <li><a href="/">Blog Posts</a></li>
-        <li><a href="/music">My Music</a></li>
-        <li><a href="/my-home-network">My Home Network</a></li>
-        <li><a href="/my-gaming-setup">My Gaming Setup</a></li>
-        <li><a href="/my-mobile-laptop-setup">My Mobile Laptop Setup</a></li>
-        <li><a href="/my-work-computer">My Work Computer</a></li>
-    </ul>
-</div>
-
-
-
-
-
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Netbeans for simple Java GUI Applications
+    <h2 class="entry-hint-parent">Reverting back to a previous version in CVS - the magic &#34;undo&#34; feature
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>I’ve been writing some simple Java GUI applications using the Netbeans IDE. It allows you to quickly make event-driven GUI applications, and generates a lot of skeleton code that you’ll need, but don’t necessarily want to type out. It reminds me of the IDE designer of Visual Basic 6, which allowed you to mock up simple GUIs with code in almost no time at all, although the VB language itself often proved difficult....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>December 7, 2010</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
+  <div class="entry-content">
+    <p>If you’ve committed some code into to CVS, and made a mistake on that commit, you will want to know how to revert to a previously saved version. Here is the command line command for CLI versions of CVS:
+$ cvs update -D &#39;1 week ago&#39; Run this command in the main directory of your checked out working copy. This will revert your working copy to the version of the code that was checked in ‘1 week ago’ from the present date. You also use commands like “1 day ago” and “5 days ago”.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-01-28 16:27:43 +0000 GMT'>January 28, 2011</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Reverting back to a previous version in CVS - the magic &#34;undo&#34; feature" href="https://davidcraddock.net/2011/01/28/reverting-back-to-a-previous-version-in-cvs-the-magic-undo-feature/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Netbeans for simple Java GUI Applications
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’ve been writing some simple Java GUI applications using the Netbeans IDE. It allows you to quickly make event-driven GUI applications, and generates a lot of skeleton code that you’ll need, but don’t necessarily want to type out. It reminds me of the IDE designer of Visual Basic 6, which allowed you to mock up simple GUIs with code in almost no time at all, although the VB language itself often proved difficult. With Netbeans you are using Java, and so you can make some powerful software with little effort.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-12-07 17:32:36 +0000 GMT'>December 7, 2010</span>&nbsp;·&nbsp;1 min</footer>
   <a class="entry-link" aria-label="post link to Netbeans for simple Java GUI Applications" href="https://davidcraddock.net/2010/12/07/netbeans-for-simple-java-gui-applications/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Converting week numbers to dates
+    <h2 class="entry-hint-parent">Converting week numbers to dates
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>Here is some python code I adapted from this stackoverflow post to get the first day of a week specificed by a week number. This method includes leap year and summer time differences.
+  <div class="entry-content">
+    <p>Here is some python code I adapted from this stackoverflow post to get the first day of a week specificed by a week number. This method includes leap year and summer time differences.
 import time def weeknum(num,year): instr = str(year)&#43;&#34; &#34;&#43;str(num-1)&#43;&#34; 1&#34; print time.asctime(time.strptime(instr,&#39;%Y %W %w&#39;)) Here is me exectuting the code in Python’s IDLE shell:
-See that the first week of 2009 actually started in 2008, but by the end of that week we are in 2009....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>November 24, 2010</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-11-24 13:50:44 +0000 GMT'>November 24, 2010</span>&nbsp;·&nbsp;1 min</footer>
   <a class="entry-link" aria-label="post link to Converting week numbers to dates" href="https://davidcraddock.net/2010/11/24/converting-week-numbers-to-dates/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Mac BBC Radio Player
+    <h2 class="entry-hint-parent">Mac BBC Radio Player
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>Quite cool little app that allows you to listen to different BBC Radio programmes from within a standalone application, instead of iPlayer:
-http://whomwah.github.com/radioaunty/</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>November 16, 2010</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
+  <div class="entry-content">
+    <p>Quite cool little app that allows you to listen to different BBC Radio programmes from within a standalone application, instead of iPlayer:
+http://whomwah.github.com/radioaunty/
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-11-16 18:42:27 +0000 GMT'>November 16, 2010</span>&nbsp;·&nbsp;1 min</footer>
   <a class="entry-link" aria-label="post link to Mac BBC Radio Player" href="https://davidcraddock.net/2010/11/16/mac-bbc-radio-player/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>MediaMonkey allows you to transfer music from any computer onto your guest iPhone
+    <h2 class="entry-hint-parent">MediaMonkey allows you to transfer music from any computer onto your guest iPhone
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>MediaMonkey is a popular free media player for Windows. It has a great feature that allows you to transfer to and from an iPhone that is not registered with your computer. Normally only one iTunes install can be associated with your iPhone, but MediaMonkey allows you another way to transfer music and audio files with a ‘guest’ iPhone. Check it out, it works:
-MediaMonkey</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>November 14, 2010</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
+  <div class="entry-content">
+    <p>MediaMonkey is a popular free media player for Windows. It has a great feature that allows you to transfer to and from an iPhone that is not registered with your computer. Normally only one iTunes install can be associated with your iPhone, but MediaMonkey allows you another way to transfer music and audio files with a ‘guest’ iPhone. Check it out, it works:
+MediaMonkey
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-11-14 16:54:08 +0000 GMT'>November 14, 2010</span>&nbsp;·&nbsp;1 min</footer>
   <a class="entry-link" aria-label="post link to MediaMonkey allows you to transfer music from any computer onto your guest iPhone" href="https://davidcraddock.net/2010/11/14/mediamonkey-allows-you-to-transfer-music-from-any-computer-onto-your-guest-iphone/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Applications I Reccomend
+    <h2 class="entry-hint-parent">Applications I Reccomend
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>Software I use on my macbook &amp; PC:
-DVDRipper Pro for Mac - DVD ripping, can also rip to ISO Handbrake for Mac - Transcoding from DVD rip to iPhone-playable file iMovie for Mac - Video editing BabasChess for Windows - Best chess client for internet play Hypercam 2 - Best screencapture utility Skype for both - For reliable messaging as well as voice and video chat Virtual Clone Drive for Windows - For mounting ISO images iTunes for Mac - Best music player, and keeps media synced with iPhone VLC Player for both - For watching movies DVD Player for Mac - For watching DVDs...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>July 19, 2010</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
+  <div class="entry-content">
+    <p>Software I use on my macbook &amp; PC:
+DVDRipper Pro for Mac - DVD ripping, can also rip to ISO Handbrake for Mac - Transcoding from DVD rip to iPhone-playable file iMovie for Mac - Video editing BabasChess for Windows - Best chess client for internet play Hypercam 2 - Best screencapture utility Skype for both - For reliable messaging as well as voice and video chat Virtual Clone Drive for Windows - For mounting ISO images iTunes for Mac - Best music player, and keeps media synced with iPhone VLC Player for both - For watching movies DVD Player for Mac - For watching DVDs
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-07-19 00:37:15 +0000 +0000'>July 19, 2010</span>&nbsp;·&nbsp;2 min</footer>
   <a class="entry-link" aria-label="post link to Applications I Reccomend" href="https://davidcraddock.net/2010/07/19/applications-i-reccomend/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Recording Game Videos on Windows 7
+    <h2 class="entry-hint-parent">Recording Game Videos on Windows 7
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>This is just a quick note to remind myself how I did this.
+  <div class="entry-content">
+    <p>This is just a quick note to remind myself how I did this.
 Hypercam2 is a good, free, video recorder that can cope with recording game videos. It’s freely available from http://www.hyperionics.com/hc/downloads.asp - just make sure when you install it you don’t tick on the spyware toolbar installation options.
-My motherboard has a 5.1 digital soundcard built in. However the only way I can record off the soundcard is to plug in a standard audio cable from the speaker out (green) to the microphone in (orange)....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>July 18, 2010</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
+My motherboard has a 5.1 digital soundcard built in. However the only way I can record off the soundcard is to plug in a standard audio cable from the speaker out (green) to the microphone in (orange).
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-07-18 23:55:33 +0000 +0000'>July 18, 2010</span>&nbsp;·&nbsp;2 min</footer>
   <a class="entry-link" aria-label="post link to Recording Game Videos on Windows 7" href="https://davidcraddock.net/2010/07/18/798/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Insights into a modern Indie Music label
+    <h2 class="entry-hint-parent">Insights into a modern Indie Music label
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>I read this remarkable post on a public mailing list I subscribe to. I thought it was such a great insight into running a music label, that I just had to post it here. It discusses issues facing modern music, such as DRM, DMCA, and other ways of making (or losing) money. Fascinating.
+  <div class="entry-content">
+    <p>I read this remarkable post on a public mailing list I subscribe to. I thought it was such a great insight into running a music label, that I just had to post it here. It discusses issues facing modern music, such as DRM, DMCA, and other ways of making (or losing) money. Fascinating.
 Here it is:
-I work for a (fairly small) indie label - from witnessing this model in action I feel I have to stick up for the label given that I see the model working (or sometimes not so well) on a daily basis!...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>July 16, 2010</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>7 min</span></span>
-</footer>
+I work for a (fairly small) indie label - from witnessing this model in action I feel I have to stick up for the label given that I see the model working (or sometimes not so well) on a daily basis! Where we’ve done deals with artists in the past, they’ve almost always been a 50/50 arrangement - the artist receives 50% of net royalties. Where a label fronts recording costs, these can easily become £6-10,000 for an album session. Even an EP session can be upwards of £1,500 although these figures are a little pessimistic (though not unrealistic). (We actually designed, built and owned studios for ten years until 2001 but the project haemorrhaged money.)
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-07-16 00:52:05 +0000 +0000'>July 16, 2010</span>&nbsp;·&nbsp;7 min</footer>
   <a class="entry-link" aria-label="post link to Insights into a modern Indie Music label" href="https://davidcraddock.net/2010/07/16/insights-into-a-modern-indie-music-label/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Restoring Ubuntu 10.4&#39;s Bootloader, after a Windows 7 Install
+    <h2 class="entry-hint-parent">Restoring Ubuntu 10.4&#39;s Bootloader, after a Windows 7 Install
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>I installed Windows 7 after I had installed Ubuntu 10.4. Windows 7 overwrote the Linux bootloader “grub” on my master boot record. Therefore I had to restore it.
-I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under the LiveCD, I then restored the Grub bootloader by chrooting into my old install, using the linux command line. This is a fairly complex thing to do, and so I recommend you use this approach only if you’re are confident with the linux command line:...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>July 13, 2010</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
+  <div class="entry-content">
+    <p>I installed Windows 7 after I had installed Ubuntu 10.4. Windows 7 overwrote the Linux bootloader “grub” on my master boot record. Therefore I had to restore it.
+I used the Ubuntu 10.4 LiveCD to start up a live version of Ubuntu. While under the LiveCD, I then restored the Grub bootloader by chrooting into my old install, using the linux command line. This is a fairly complex thing to do, and so I recommend you use this approach only if you’re are confident with the linux command line:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-07-13 13:02:51 +0000 +0000'>July 13, 2010</span>&nbsp;·&nbsp;2 min</footer>
   <a class="entry-link" aria-label="post link to Restoring Ubuntu 10.4&#39;s Bootloader, after a Windows 7 Install" href="https://davidcraddock.net/2010/07/13/restoring-ubuntu-10-4s-bootloader-after-a-windows-7-install/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Windows 7 Gaming on my Macbook
+    <h2 class="entry-hint-parent">Windows 7 Gaming on my Macbook
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>I have a 2006/2007 Core 2 Duo 2.6ghz white macbook, that I use regularly for internet, music, watching films, itunes and integration with my iPhone.
+  <div class="entry-content">
+    <p>I have a 2006/2007 Core 2 Duo 2.6ghz white macbook, that I use regularly for internet, music, watching films, itunes and integration with my iPhone.
 I wanted to turn my desktop PC into a ‘work only’ Ubuntu Linux machine, so that I don’t get distracted when I’m supposed to be doing something else.
-But I still have a lot of PC games that I wanted to play on the Macbook, so I decided to try and setup a windows environment to play games on using Bootcamp 2....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>July 1, 2010</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
+But I still have a lot of PC games that I wanted to play on the Macbook, so I decided to try and setup a windows environment to play games on using Bootcamp 2.0 to create a dual-boot OSX/Windows 7 configuration.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-07-01 22:50:25 +0000 +0000'>July 1, 2010</span>&nbsp;·&nbsp;2 min</footer>
   <a class="entry-link" aria-label="post link to Windows 7 Gaming on my Macbook" href="https://davidcraddock.net/2010/07/01/running-windows-7-on-my-macbook/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Ripping Movies onto the iPhone
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>I’m currently watching Persepolis, the 2008 animated film about a tomboy anarchist growing up in Iran. I’m watching this on my new iPhone 3GS, and the picture and audio quality is very good.
-Here’s what I used to convert my newly bought Persepolis DVD, for watching on the iPhone.
-1x Macbook (but you can use any intel mac) 1x iTunes 1x RipIt - Commercial Mac DVD Ripper (rips up to 10 DVDs on the free trial, $20 after) 1x Handbrake 32 - Freely available transcoder 1x VLC 32 - Freely available media player 1x DVD...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>May 17, 2010</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>3 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Ripping Movies onto the iPhone" href="https://davidcraddock.net/2010/05/17/ripping-movies-onto-the-iphone/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="prev" href="https://davidcraddock.net/posts/page/12/">« Prev Page</a>
-    <a class="next" href="https://davidcraddock.net/posts/page/14/">Next Page »</a>
+    <a class="prev" href="https://davidcraddock.net/posts/page/12/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="https://davidcraddock.net/posts/page/14/">Next&nbsp;&nbsp;»
+    </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-  <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span><span style="display: inline-block; margin-left: 1em;">
-    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>
-  </span>
-  <span style="display: inline-block; margin-left: 1em;">
-    Powered by
-    <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-    <a href="https://github.com/reorx/hugo-PaperModX/" rel="noopener" target="_blank">PaperModX</a>
-  </span>
+        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-    <path d="M12 6H0l6-6z" />
-  </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
 </a>
 
 <script>
-  (function() {
-     
-    const disableThemeToggle = '1' == '1';
-    if (disableThemeToggle) {
-      return;
-    }
-
-    let button = document.getElementById("theme-toggle")
-    
-    button.removeEventListener('click', toggleThemeListener)
-    
-    button.addEventListener('click', toggleThemeListener)
-  })();
-</script>
-
-<script>
-  (function () {
     let menu = document.getElementById('menu')
     if (menu) {
-      menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-      menu.onscroll = function () {
-        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-      }
-    }
-
-    const disableSmoothScroll = '' == '1';
-    const enableInstantClick = '1' == '1';
-    
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || disableSmoothScroll || enableInstantClick) {
-      return;
-    }
-    
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        var id = this.getAttribute("href").substr(1);
-        document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-          behavior: "smooth"
-        });
-        if (id === "top") {
-          history.replaceState(null, null, " ");
-        } else {
-          history.pushState(null, null, `#${id}`);
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
-      });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
     });
-  })();
+
 </script>
 <script>
-  var mybutton = document.getElementById("top-link");
-  window.onscroll = function () {
-    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-      mybutton.style.visibility = "visible";
-      mybutton.style.opacity = "1";
-    } else {
-      mybutton.style.visibility = "hidden";
-      mybutton.style.opacity = "0";
-    }
-  };
-</script>
-<script>
-  if (window.scrollListeners) {
-    
-    for (const listener of scrollListeners) {
-      window.removeEventListener('scroll', listener)
-    }
-  }
-  window.scrollListeners = []
-</script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
 
-
-
-<script src="/js/medium-zoom.min.js" data-no-instant
-></script>
-<script src="/js/instantclick.min.js" data-no-instant
-></script>
-<script data-no-instant>
-  
-  
-  
-  
-  
-  
-  InstantClick.init();
 </script>
 </body>
 

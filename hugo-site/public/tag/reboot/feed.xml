@@ -4,14 +4,14 @@
     <title>Reboot on DavidCraddock.net</title>
     <link>https://davidcraddock.net/tag/reboot/</link>
     <description>Recent content in Reboot on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Sep 2022 00:00:36 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/tag/reboot/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Sep 2022 00:00:36 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/tag/reboot/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tips for new Ubuntu Users</title>
       <link>https://davidcraddock.net/2022/09/29/tips-for-new-ubuntu-users/</link>
       <pubDate>Thu, 29 Sep 2022 00:00:36 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2022/09/29/tips-for-new-ubuntu-users/</guid>
       <description>&lt;p&gt;Here are some extra tips if you&amp;rsquo;re just getting started out on Ubuntu.&lt;/p&gt;
 &lt;ol&gt;
@@ -23,28 +23,6 @@
 &lt;li&gt;
 &lt;p&gt;You can get a lot more information on your computers startup and shutdown sequences by removing the default Ubuntu splash screen that obscures this. You should definitely do this if you want to learn more about what your system is
 actually doing under the hood, especially if you need to troubleshoot what it&amp;rsquo;s doing. To do this:&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>Here are some extra tips if you&rsquo;re just getting started out on Ubuntu.</p>
-<ol>
-<li>
-<p>You don&rsquo;t have to go through the UI to shut down or reboot your computer. You can do it from the command line. The commands are:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo reboot # to reboot
-</span></span><span style="display:flex;"><span>sudo poweroff # to shut down and power off the computer
-</span></span></code></pre></div></li>
-<li>
-<p>You can get a lot more information on your computers startup and shutdown sequences by removing the default Ubuntu splash screen that obscures this. You should definitely do this if you want to learn more about what your system is
-actually doing under the hood, especially if you need to troubleshoot what it&rsquo;s doing. To do this:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>sudo nano <span style="color:#000;font-weight:bold">/</span>etc<span style="color:#000;font-weight:bold">/</span>grub<span style="color:#000;font-weight:bold">/</span>default<span style="color:#000;font-weight:bold">/</span>grub
-</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># find the line where it says GRUB_CMDLINE_LINUX_DEFAULT and remove &#39;quiet splash&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># from this variable. If that leaves the variable empty make sure it is</span>
-</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># still set as an empty variable, e.g. GRUB_CMDLINE_LINUX_DEFAULT=&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>sudo update<span style="color:#000;font-weight:bold">-</span>grub
-</span></span><span style="display:flex;"><span>sudo reboot
-</span></span></code></pre></div><p>Now you will see everything that is happening when your system starts up and
-shuts down, or reboots.</p>
-</li>
-</ol>
-]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

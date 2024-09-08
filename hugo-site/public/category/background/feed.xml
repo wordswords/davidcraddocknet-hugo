@@ -4,31 +4,20 @@
     <title>Background on DavidCraddock.net</title>
     <link>https://davidcraddock.net/category/background/</link>
     <description>Recent content in Background on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Jun 2013 15:55:04 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/category/background/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jun 2013 15:55:04 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/category/background/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tailing a log file and Running an Application at the Same Time</title>
       <link>https://davidcraddock.net/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/</link>
       <pubDate>Tue, 11 Jun 2013 15:55:04 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/</guid>
       <description>&lt;p&gt;A quick tip this, but a useful one. You can tail a log file in the background while running a script in the foreground. So for example, I frequently execute the following commands:&lt;/p&gt;
 &lt;p&gt;1.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tail &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&lt;/span&gt;f &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;var&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#0086b3&#34;&gt;log&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;/&lt;/span&gt;httpd&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;log &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;amp;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;/&lt;/span&gt;etc&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;/&lt;/span&gt;init&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;d&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;/&lt;/span&gt;apache restart
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;2. (The log file will spool onto the terminal as Apache is restarted.)&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>A quick tip this, but a useful one. You can tail a log file in the background while running a script in the foreground. So for example, I frequently execute the following commands:</p>
-<p>1.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>tail <span style="color:#000;font-weight:bold">-</span>f <span style="color:#000;font-weight:bold">/</span><span style="color:#000;font-weight:bold">var</span><span style="color:#000;font-weight:bold">/</span><span style="color:#0086b3">log</span><span style="color:#000;font-weight:bold">/</span>httpd<span style="color:#000;font-weight:bold">.</span>log <span style="color:#000;font-weight:bold">&amp;</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">/</span>etc<span style="color:#000;font-weight:bold">/</span>init<span style="color:#000;font-weight:bold">.</span>d<span style="color:#000;font-weight:bold">/</span>apache restart
-</span></span></code></pre></div><p>2. (The log file will spool onto the terminal as Apache is restarted.)</p>
-<p>3. Once you are finished viewing the log file, foreground the log file process and kill it:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>fg
-</span></span></code></pre></div><p>Then terminate the foregrounded log tail with a control-c.</p>
-<p>With this technique you can run as many commands as you want, and see the real-time effects on your log file, without having to open a new terminal. You will also see your program output interspersed with your log file output, which can be helpful when tracing down particular problems.</p>
-]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

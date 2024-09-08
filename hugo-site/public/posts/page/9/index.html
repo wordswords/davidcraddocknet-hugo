@@ -10,19 +10,63 @@
 <meta name="description" content="Posts - DavidCraddock.net">
 <meta name="author" content="">
 <link rel="canonical" href="https://davidcraddock.net/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.7da7716a1f2d0725f74c6ae7f8d6adafc43aabe2b366b65bfbf433448e2a2001.css" integrity="sha256-fadxah8tByX3TGrn&#43;Natr8Q6q&#43;KzZrZb&#43;/QzRI4qIAE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://davidcraddock.net/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://davidcraddock.net/favicon-32x32.png">
 <link rel="apple-touch-icon" href="https://davidcraddock.net/apple-touch-icon.png">
+<link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/posts/feed.xml">
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/posts/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-<meta name="twitter:title" content="Posts | DavidCraddock.net" />
-<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
-<meta property="og:title" content="Posts | DavidCraddock.net" />
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+<meta property="og:title" content="Posts" />
 <meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://davidcraddock.net/posts/" />
 
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Posts"/>
+<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK."/>
 
 
 <script type="application/ld+json">
@@ -39,120 +83,22 @@
   ]
 }
 </script>
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary-bg: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list-page {
-                background: var(--theme);
-            }
-
-            .list-page:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list-page:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
-</noscript>
-
 </head>
 
-<body class="list-page type-posts kind-section layout-" id="top"><script data-no-instant>
-function switchTheme(theme) {
-  switch (theme) {
-    case 'light':
-      document.body.classList.remove('dark');
-      break;
-    case 'dark':
-      document.body.classList.add('dark');
-      break;
-    
-    default:
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-      }
-  }
-}
-
-function isDarkTheme() {
-  return document.body.className.includes("dark");
-}
-
-function getPrefTheme() {
-  return localStorage.getItem("pref-theme");
-}
-
-function setPrefTheme(theme) {
-  switchTheme(theme)
-  localStorage.setItem("pref-theme", theme);
-}
-
-const toggleThemeCallbacks = {}
-toggleThemeCallbacks['main'] = (isDark) => {
-  
-  if (isDark) {
-    setPrefTheme('light');
-  } else {
-    setPrefTheme('dark');
-  }
-}
-
-
-
-
-window.addEventListener('toggle-theme', function() {
-  
-  const isDark = isDarkTheme()
-  for (const key in toggleThemeCallbacks) {
-    toggleThemeCallbacks[key](isDark)
-  }
-});
-
-
-function toggleThemeListener() {
-  
-  window.dispatchEvent(new CustomEvent('toggle-theme'));
-}
-
-</script>
+<body class="list" id="top">
 <script>
-  
-  (function() {
-    const defaultTheme = 'auto';
-    const prefTheme = getPrefTheme();
-    const theme = prefTheme ? prefTheme : defaultTheme;
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
 
-    switchTheme(theme);
-  })();
 </script>
 
 <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
-            <span class="logo-switches">
-            </span>
+            <div class="logo-switches">
+            </div>
         </div>
         <ul id="menu">
         </ul>
@@ -161,338 +107,215 @@ function toggleThemeListener() {
 <main class="main"> 
 <header class="page-header"><div class="breadcrumbs"><a href="https://davidcraddock.net/">Home</a></div>
   <h1>
-    Posts</h1><div class="inline-links">
-  
-  
-  <span><a href="https://davidcraddock.net/posts/feed.xml" target="_blank">RSS</a></span></div>
+    Posts
+  </h1>
 </header>
-
-
-<div>
-    <ul>
-        <li><a href="/">Blog Posts</a></li>
-        <li><a href="/music">My Music</a></li>
-        <li><a href="/my-home-network">My Home Network</a></li>
-        <li><a href="/my-gaming-setup">My Gaming Setup</a></li>
-        <li><a href="/my-mobile-laptop-setup">My Mobile Laptop Setup</a></li>
-        <li><a href="/my-work-computer">My Work Computer</a></li>
-    </ul>
-</div>
-
-
-
-
-
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Goals for the Year 2015 - Midway Update
+    <h2 class="entry-hint-parent">Things I&#39;d like to Learn More About
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>Now that I am midway through the year, I thought I’d revisit the goals I set myself at the start of the year, to see what has changed.
-Career Goals Settle into my new role at the BBC as Test Manager - I suppose this has not been achieved. I will have more updates soon (hopefully) but a change of direction is likely to happen. Pushing for a place to be opened up in Platform Test to employ someone from the Extend Scheme - This has been achieved, and someone will be joining Platform Test from the Extend scheme in October, I’m happy to say....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>September 1, 2015</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
+  <div class="entry-content">
+    <p>Some things I have been meaning to investigate in my own time, but haven’t, because life just gets in the way.
+Maths - It might surprise a few people that, as a software developer, I never took maths to A-level. I picked up a bit of maths in my CS degree, but I never really got a firm grounding in it. This has prevented me from understanding and coding advanced stuff in game development, understanding audio to a decent level, and generally doing things in which I consider the more interesting fields of computing. Music Theory - I have been getting better at playing the piano/keyboard by ear, but I have never fully learned to read music, and I would like to. Electronics - I would love to be able to build simple DIY synthesiser module kits for my Eurorack setup. I imagine I’d have to start on something small though. It would be great if I could take courses in these subjects, via the OU or something similar. I just have to find the time.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-09-02 06:31:10 +0000 +0000'>September 2, 2015</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Things I&#39;d like to Learn More About" href="https://davidcraddock.net/2015/09/02/things-id-like-to-learn-more-about/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Goals for the Year 2015 - Midway Update
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Now that I am midway through the year, I thought I’d revisit the goals I set myself at the start of the year, to see what has changed.
+Career Goals Settle into my new role at the BBC as Test Manager - I suppose this has not been achieved. I will have more updates soon (hopefully) but a change of direction is likely to happen. Pushing for a place to be opened up in Platform Test to employ someone from the Extend Scheme - This has been achieved, and someone will be joining Platform Test from the Extend scheme in October, I’m happy to say. Creative Goals Get better at music production - This has been achieved. I have been working with my friend I will call ‘G’, which has massively improved my production skills. I have posted music that I see as much better to Soundcloud. Social Goals Getting married - Well.. things didn’t work out with that. But I have a new girlfriend who will hopefully be moving to live with me, so things seem to be recovering there. Making friends with more people that share the same interests - Partly achieved. G is a good example of someone that I have met through looking for friends with the same interest. Financial Goals Saving more over the course of the year - Partly achieved. I have bought a house, so now I am in a quite a bit of debt, but the money I will be putting towards my mortgage will be money I am effectively ‘saving’ because it will be put into the value of the house. Joining a pension scheme - Achieved. Health Goals Adopt a regular form of keeping fit - Not achieved. I have a gym even closer to where I live, 5 minutes walk, so hopefully I will use it more soon. It is difficult for me, as the medication I’m on makes me feel tired all the time, but they do say that exercise improves energy levels. Conclusion Although I’ve achieved the majority of my goals, I haven’t achieved two of the major goals - around my job and around exercise, which are both things I need to work on. There is still time left this year to make a difference in these areas.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-09-01 15:33:18 +0000 +0000'>September 1, 2015</span>&nbsp;·&nbsp;2 min</footer>
   <a class="entry-link" aria-label="post link to Goals for the Year 2015 - Midway Update" href="https://davidcraddock.net/2015/09/01/goals-for-the-year-2015-midway-update/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Use Siri, Apple Earphones and Apple Music Together
+    <h2 class="entry-hint-parent">Use Siri, Apple Earphones and Apple Music Together
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>This requires you to have a subscription to Apple Music and a 3G/4G/wireless data connection, but it is so useful! Using this tip, you can be walking along with your iPhone in your pocket and your Apple earphones in, and then change music just by pressing a button on the earphones remote control and saying ‘Play (your favourite band)’.
-1. Activate Siri and subscribe to Apple Music. I used to subscribe to Spotify so I switched to Apple Music when I realised the advantages of the integration on my phone, and the wider selection of music....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>August 15, 2015</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
+  <div class="entry-content">
+    <p>This requires you to have a subscription to Apple Music and a 3G/4G/wireless data connection, but it is so useful! Using this tip, you can be walking along with your iPhone in your pocket and your Apple earphones in, and then change music just by pressing a button on the earphones remote control and saying ‘Play (your favourite band)’.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-08-15 20:46:21 +0000 +0000'>August 15, 2015</span>&nbsp;·&nbsp;2 min</footer>
   <a class="entry-link" aria-label="post link to Use Siri, Apple Earphones and Apple Music Together" href="https://davidcraddock.net/2015/08/15/use-siri-apple-earphones-and-apple-music-together/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Modular Progress
+    <h2 class="entry-hint-parent">Modular Progress
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>My Eurorack modular has been progressing. I’ve added several low-cost modules, a Doepfer A-138b audio mixer module so I can mix the audio outputs of the oscilators, the noise output, and my Doepfer Dark Energy modules. I found this so useful with the Dark Energys that I have ordered another mixer. This I can use to mix audio before sending it to the filter, for example, or mix audio before sending it to a VCA to be amplified....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>July 21, 2015</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
+  <div class="entry-content">
+    <p>My Eurorack modular has been progressing. I’ve added several low-cost modules, a Doepfer A-138b audio mixer module so I can mix the audio outputs of the oscilators, the noise output, and my Doepfer Dark Energy modules. I found this so useful with the Dark Energys that I have ordered another mixer. This I can use to mix audio before sending it to the filter, for example, or mix audio before sending it to a VCA to be amplified. I also added another envelope generator, Doepfer A-140, a sturdy workhorse and also useful for triggering the filter independently of the VCA envelope. Then I added a syncable LFO.. I already have 4 LFOs from the quad-LFO module in the top right, but I wanted a LFO with a reset option that I can use for MIDI syncing. On order is also a A-148 S&amp;H (sample and hold) module which I will use for generating interesting random tones once I have expanded the ‘generative music’ theme of my setup a bit more.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-07-21 19:42:04 +0000 +0000'>July 21, 2015</span>&nbsp;·&nbsp;2 min</footer>
   <a class="entry-link" aria-label="post link to Modular Progress" href="https://davidcraddock.net/2015/07/21/modular-progress/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Switching Audio between two Soundcards
+    <h2 class="entry-hint-parent">Switching Audio between two Soundcards
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>If you have two soundcards - maybe a normal soundcard for your speakers and maybe a headset with its own audio interface - you will want some way of switching all audio between the two. This is an great little open-source tool to do just that. It works on Mac, and Windows 7 up to 10:
-https://soundswitch.codeplex.com/</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>June 21, 2015</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
+  <div class="entry-content">
+    <p> If you have two soundcards - maybe a normal soundcard for your speakers and maybe a headset with its own audio interface - you will want some way of switching all audio between the two. This is an great little open-source tool to do just that. It works on Mac, and Windows 7 up to 10:
+https://soundswitch.codeplex.com/
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-06-21 17:55:50 +0000 +0000'>June 21, 2015</span>&nbsp;·&nbsp;1 min</footer>
   <a class="entry-link" aria-label="post link to Switching Audio between two Soundcards" href="https://davidcraddock.net/2015/06/21/switching-audio-between-two-soundcards/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Get rid of the &#39;most visited sites&#39; Grid on Chrome
+    <h2 class="entry-hint-parent">Get rid of the &#39;most visited sites&#39; Grid on Chrome
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>Not that I particularly look at anything weird, but when I’m showing someone my computer I don’t want to have my ‘most visited sites’ pop up when I fire up Chrome. The following Chrome extension will get rid of the default loading page, and just display a blank page:
-https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbekmfgabipmfilij</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>June 21, 2015</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
+  <div class="entry-content">
+    <p>Not that I particularly look at anything weird, but when I’m showing someone my computer I don’t want to have my ‘most visited sites’ pop up when I fire up Chrome. The following Chrome extension will get rid of the default loading page, and just display a blank page:
+https://chrome.google.com/webstore/detail/empty-new-tab-page/dpjamkmjmigaoobjbekmfgabipmfilij
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-06-21 17:49:00 +0000 +0000'>June 21, 2015</span>&nbsp;·&nbsp;1 min</footer>
   <a class="entry-link" aria-label="post link to Get rid of the &#39;most visited sites&#39; Grid on Chrome" href="https://davidcraddock.net/2015/06/21/get-rid-of-the-most-visited-sites-grid-on-chrome/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Open Source! Device API and Device API-Android on Github
+    <h2 class="entry-hint-parent">Open Source! Device API and Device API-Android on Github
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>Two Ruby gems that I contributed to from my days in the BBC’s TITAN (Test Tools and Infrastructure) team, have been open-sourced. So finally I can say that I have made proper open-source contributions. The gems are for making automating of Android phones via Android Calabash easier, and are used in a lot of the mobile testing we do at the BBC. Here they are:
-https://github.com/bbc/device_api https://github.com/bbc/device_api-android Here is my Github profile, which doesn’t look very active on the surface, but I have been contributing to repositories which remain private at the moment, so my history is not visible....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>June 21, 2015</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
+  <div class="entry-content">
+    <p>Two Ruby gems that I contributed to from my days in the BBC’s TITAN (Test Tools and Infrastructure) team, have been open-sourced. So finally I can say that I have made proper open-source contributions. The gems are for making automating of Android phones via Android Calabash easier, and are used in a lot of the mobile testing we do at the BBC. Here they are:
+https://github.com/bbc/device_api https://github.com/bbc/device_api-android Here is my Github profile, which doesn’t look very active on the surface, but I have been contributing to repositories which remain private at the moment, so my history is not visible.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-06-21 17:28:22 +0000 +0000'>June 21, 2015</span>&nbsp;·&nbsp;1 min</footer>
   <a class="entry-link" aria-label="post link to Open Source! Device API and Device API-Android on Github" href="https://davidcraddock.net/2015/06/21/open-source-device-api-and-device-api-android-on-github/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Instruments That I Use
+    <h2 class="entry-hint-parent">Instruments That I Use
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>I have a lot of different instruments, both hardware and software, for making music, but here is what I use the most at the moment:
-Piano I have an actual electric piano but I don’t use the onboard sound engine, preferring to use it as a midi controller for a software piano sound. Recently I bought Ableton Live Full Suite, before I was using the ‘Grand Piano’ sound from the default install....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>June 21, 2015</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
+  <div class="entry-content">
+    <p>I have a lot of different instruments, both hardware and software, for making music, but here is what I use the most at the moment:
+Piano I have an actual electric piano but I don’t use the onboard sound engine, preferring to use it as a midi controller for a software piano sound. Recently I bought Ableton Live Full Suite, before I was using the ‘Grand Piano’ sound from the default install. Now there is a whole ‘Piano’ Ableton Live pack, and that seems to offer much more realistic piano sounds.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-06-21 17:05:00 +0000 +0000'>June 21, 2015</span>&nbsp;·&nbsp;2 min</footer>
   <a class="entry-link" aria-label="post link to Instruments That I Use" href="https://davidcraddock.net/2015/06/21/instruments-that-i-use/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Modular Progress
+    <h2 class="entry-hint-parent">Modular Progress
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>Specs
+  <div class="entry-content">
+    <p>Specs
 I have finished filling the top half of my Eurorack case, see above. Here is a list of modules:
-Dual VCA - A-132-3 Buffered Multiples - Intellij Buff Mult VCO #1 - A-110-1 VCO VCO #2 - A-110-1 VCO Low Pass Filter - A-120 Multiples #1 - A-180-1 Multiples #2 - A-180-1 Quantizer - A-156 Dual Quantizer Envelope Generator - A-140 ADSR Noise Generator/Random - A-118 Quad LFO - A-143-3 Quad LFO Next Moves:...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>June 21, 2015</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
+Dual VCA - A-132-3 Buffered Multiples - Intellij Buff Mult VCO #1 - A-110-1 VCO VCO #2 - A-110-1 VCO Low Pass Filter - A-120 Multiples #1 - A-180-1 Multiples #2 - A-180-1 Quantizer - A-156 Dual Quantizer Envelope Generator - A-140 ADSR Noise Generator/Random - A-118 Quad LFO - A-143-3 Quad LFO Next Moves:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-06-21 16:18:11 +0000 +0000'>June 21, 2015</span>&nbsp;·&nbsp;2 min</footer>
   <a class="entry-link" aria-label="post link to Modular Progress" href="https://davidcraddock.net/2015/06/21/eurorack-progress/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Modular Synthesizers
+    <h2 class="entry-hint-parent">Modular Synthesizers
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>I am putting together a small modular synthesiser setup. Modular synthesizers are synthesizers composed of small individual modules, which are wired up to create a circuit for producing sound. They were very popular in the 1970s, with big bands such as Emmerson, Lake and Palmer, Kraftwerk and Jean Michael Jarre all owning big modular setups:
-Modular synthesisers have had a resurgence in recent years with modern versions becoming available. One producer of modular synthesiser modules is Doepfer, a German company who’s modular synthesizer standard ‘Eurorack’ has become very popular recently....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>January 30, 2015</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>3 min</span></span>
-</footer>
+  <div class="entry-content">
+    <p>I am putting together a small modular synthesiser setup. Modular synthesizers are synthesizers composed of small individual modules, which are wired up to create a circuit for producing sound. They were very popular in the 1970s, with big bands such as Emmerson, Lake and Palmer, Kraftwerk and Jean Michael Jarre all owning big modular setups:
+Modular synthesisers have had a resurgence in recent years with modern versions becoming available. One producer of modular synthesiser modules is Doepfer, a German company who’s modular synthesizer standard ‘Eurorack’ has become very popular recently. I have decided to build a small Eurorack modular, here it is so far:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-01-30 00:15:11 +0000 GMT'>January 30, 2015</span>&nbsp;·&nbsp;3 min</footer>
   <a class="entry-link" aria-label="post link to Modular Synthesizers" href="https://davidcraddock.net/2015/01/30/modular-synthesizers/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Goals for the Year 2015
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>NOTE: I have an update on my progress as of 9/1/2015 here
-Motivated by my good friend CheerUpLove.com’s reflective style of blogging, and Ian Forrester’s many interesting posts, I thought it would be interesting to post something a bit more personal and less technical on this blog.
-Now that 2015 is upon us, I am going to take some time to publicly outline my goals for the year, so I can hold myself more accountable to them, and so I can look back on them this time next year....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>January 17, 2015</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>3 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Goals for the Year 2015" href="https://davidcraddock.net/2015/01/17/goals-for-the-year-2015/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="prev" href="https://davidcraddock.net/posts/page/8/">« Prev Page</a>
-    <a class="next" href="https://davidcraddock.net/posts/page/10/">Next Page »</a>
+    <a class="prev" href="https://davidcraddock.net/posts/page/8/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="https://davidcraddock.net/posts/page/10/">Next&nbsp;&nbsp;»
+    </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-  <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span><span style="display: inline-block; margin-left: 1em;">
-    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>
-  </span>
-  <span style="display: inline-block; margin-left: 1em;">
-    Powered by
-    <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-    <a href="https://github.com/reorx/hugo-PaperModX/" rel="noopener" target="_blank">PaperModX</a>
-  </span>
+        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-    <path d="M12 6H0l6-6z" />
-  </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
 </a>
 
 <script>
-  (function() {
-     
-    const disableThemeToggle = '1' == '1';
-    if (disableThemeToggle) {
-      return;
-    }
-
-    let button = document.getElementById("theme-toggle")
-    
-    button.removeEventListener('click', toggleThemeListener)
-    
-    button.addEventListener('click', toggleThemeListener)
-  })();
-</script>
-
-<script>
-  (function () {
     let menu = document.getElementById('menu')
     if (menu) {
-      menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-      menu.onscroll = function () {
-        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-      }
-    }
-
-    const disableSmoothScroll = '' == '1';
-    const enableInstantClick = '1' == '1';
-    
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || disableSmoothScroll || enableInstantClick) {
-      return;
-    }
-    
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        var id = this.getAttribute("href").substr(1);
-        document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-          behavior: "smooth"
-        });
-        if (id === "top") {
-          history.replaceState(null, null, " ");
-        } else {
-          history.pushState(null, null, `#${id}`);
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
-      });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
     });
-  })();
+
 </script>
 <script>
-  var mybutton = document.getElementById("top-link");
-  window.onscroll = function () {
-    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-      mybutton.style.visibility = "visible";
-      mybutton.style.opacity = "1";
-    } else {
-      mybutton.style.visibility = "hidden";
-      mybutton.style.opacity = "0";
-    }
-  };
-</script>
-<script>
-  if (window.scrollListeners) {
-    
-    for (const listener of scrollListeners) {
-      window.removeEventListener('scroll', listener)
-    }
-  }
-  window.scrollListeners = []
-</script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
 
-
-
-<script src="/js/medium-zoom.min.js" data-no-instant
-></script>
-<script src="/js/instantclick.min.js" data-no-instant
-></script>
-<script data-no-instant>
-  
-  
-  
-  
-  
-  
-  InstantClick.init();
 </script>
 </body>
 

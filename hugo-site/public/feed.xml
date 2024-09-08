@@ -4,11 +4,6 @@
     <title>DavidCraddock.net</title>
     <link>https://davidcraddock.net/</link>
     <description>Recent content on DavidCraddock.net</description>
-    <image>
-      <title>DavidCraddock.net</title>
-      <url>https://davidcraddock.net/cover.png</url>
-      <link>https://davidcraddock.net/cover.png</link>
-    </image>
     <generator>Hugo -- 0.134.1</generator>
     <language>en</language>
     <lastBuildDate>Sat, 24 Aug 2024 03:42:48 +0000</lastBuildDate>
@@ -30,7 +25,8 @@
       <link>https://davidcraddock.net/2024/08/02/mid-2024-update/</link>
       <pubDate>Fri, 02 Aug 2024 23:15:41 +0100</pubDate>
        <guid isPermaLink="false">http://www.davidcraddock.net/mid-2024-update.md</guid> 
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/hugo-uploads/2024/8/3/biketrailer.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/hugo-uploads/2024/8/3/biketrailer.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;Every year I&amp;rsquo;ve been doing these &amp;lsquo;retrospectives&amp;rsquo;, usually once per year but sometimes a couple of times per year.&lt;/p&gt;
 &lt;p&gt;Things have changed quite significantly since &lt;a href=&#34;https://davidcraddock.net/2023/11/25/retrospective-for-2023/&#34;&gt;the last retrospective&lt;/a&gt;, and I was in a pensive mood, so I thought I would write a retrospective for half the year.&lt;/p&gt;
 &lt;p&gt;I finally found a job, with CGI, early in the year, and started in March 2023. Unfortunately, for reasons I&amp;rsquo;m contractually obliged not to get into, it wasn&amp;rsquo;t long before I was looking for work again. I resigned from CGI at the end of June.&lt;/p&gt;</description>
@@ -50,7 +46,8 @@
       <link>https://davidcraddock.net/my-bike/</link>
       <pubDate>Sun, 09 Jun 2024 22:34:52 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?page_id=4801</guid> 
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2024/06/himiway.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2024/06/himiway.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2024/06/himiway.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2024/06/himiway.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Decided not to mention the security aspects of my setup on a public page, but trust me, there are many!&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Himiway Zebra Electric Mountain Bike 2023 Version (road legal, top electric-assisted speed 15mph, max. pull 400lbs)&lt;/li&gt;
@@ -90,7 +87,8 @@
       <link>https://davidcraddock.net/2024/04/25/video-routing-for-dave-cave-studio/</link>
       <pubDate>Thu, 25 Apr 2024 04:55:52 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?p=4694</guid> 
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2024/04/studio-video-routing.drawio.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2024/04/studio-video-routing.drawio.png&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2024/04/studio-video-routing.drawio.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2024/04/studio-video-routing.drawio.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Here is a quick diagram I mocked up to detail exactly how video routing works in the studio.&lt;/p&gt;</description>
     </item>
     <item>
@@ -98,7 +96,8 @@
       <link>https://davidcraddock.net/2024/04/23/4683/</link>
       <pubDate>Tue, 23 Apr 2024 22:54:59 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?p=4683</guid> 
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/hugo-uploads/2024/9/7/thinking.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/hugo-uploads/2024/9/7/thinking.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;If you&amp;rsquo;re currently in high school in the UK and want to be a GOOD and EMPLOYED software engineer.. this is my advice.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Start programming on personal projects right away, and keep it up during your entire working career. Always have something going on in the background.&lt;/li&gt;
@@ -114,11 +113,16 @@
       <link>https://davidcraddock.net/my-mobile-laptop-setup/</link>
       <pubDate>Sun, 04 Feb 2024 02:48:13 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?page_id=4413</guid> 
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/hugo-uploads/2024/8/3/mobilesetup1.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;
-&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/hugo-uploads/2024/8/3/mobilesetup2.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;
-&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/hugo-uploads/2024/8/3/mobilesetup3.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;
-&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/hugo-uploads/2024/8/3/mobilesetup4.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;
-&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/hugo-uploads/2024/8/3/mobilesetup5.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/hugo-uploads/2024/8/3/mobilesetup1.jpg&#34; alt=&#34;&#34;  /&gt;
+
+&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/hugo-uploads/2024/8/3/mobilesetup2.jpg&#34; alt=&#34;&#34;  /&gt;
+
+&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/hugo-uploads/2024/8/3/mobilesetup3.jpg&#34; alt=&#34;&#34;  /&gt;
+
+&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/hugo-uploads/2024/8/3/mobilesetup4.jpg&#34; alt=&#34;&#34;  /&gt;
+
+&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/hugo-uploads/2024/8/3/mobilesetup5.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;I use this setup, along with &lt;a href=&#34;https://davidcraddock.net/my-bike/&#34;&gt;my bike&lt;/a&gt; to work from wherever I want.&lt;/p&gt;
 &lt;p&gt;It does kind of turn heads, and I&amp;rsquo;m aware it may look a little &amp;lsquo;over the top&amp;rsquo; - but it&amp;rsquo;s a very useful setup for me, keeps me healthy, and fits all my requirements.&lt;/p&gt;</description>
     </item>
@@ -156,7 +160,8 @@
 &lt;li&gt;We use ZeroTier as a VPN so that everything useful is accessible outside the home.&lt;/li&gt;
 &lt;li&gt;We run a Plex server so that all music and video content is accessible outside the home, which is shared with friends.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2024/05/network.drawio2.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2024/05/network.drawio2.png&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2024/05/network.drawio2.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2024/05/network.drawio2.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Retrospective for 2023</title>
@@ -180,7 +185,8 @@
 &lt;ul&gt;
 &lt;li&gt;There has been a worldwide downturn for software jobs, just as I had to take some time off my career due to work reasons. This downturn is probably comparable to the 2008/9 downturn in software jobs around the financial crisis. This is definitely bad news for everyone in software.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/e.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/e.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/e.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/e.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Latest Remote Guitar Lesson Setup</title>
@@ -218,10 +224,14 @@
       &gt;&lt;/iframe&gt;
     &lt;/div&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/12/20231216_180047.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/12/20231216_180047.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;
-&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/12/20231216_180059.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/12/20231216_180059.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;
-&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/12/20231216_180202_1.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/12/20231216_180202_1.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;
-&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/12/20231216_180225_1.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/12/20231216_180225_1.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/12/20231216_180047.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/12/20231216_180047.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/12/20231216_180059.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/12/20231216_180059.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/12/20231216_180202_1.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/12/20231216_180202_1.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/12/20231216_180225_1.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/12/20231216_180225_1.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Optical Drive Cleaners and Home Entertainment Test Tools</title>
@@ -236,8 +246,10 @@
       <link>https://davidcraddock.net/2023/01/19/books-that-have-changed-the-way-i-see-the-practice-of-software-engineering/</link>
       <pubDate>Thu, 19 Jan 2023 09:12:32 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?p=3531</guid> 
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/01/screenshot-2023-01-19-at-08-57-07-mythical-man-month-the-essays-on-software-engineering-anniversary-edition-amazon.co_.uk-brooks-jr.-frederick-8580001065793-books.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/01/screenshot-2023-01-19-at-08-57-07-mythical-man-month-the-essays-on-software-engineering-anniversary-edition-amazon.co_.uk-brooks-jr.-frederick-8580001065793-books.png&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;strong&gt;The Mythical Man Month and other Essays&lt;/strong&gt; - &lt;em&gt;Fred Brooks&lt;/em&gt; - Read it as part of my university degree. A lot of good sense. I can&amp;rsquo;t believe there are people out there in charge of software projects that haven&amp;rsquo;t read this book, or think it somehow doesn&amp;rsquo;t apply anymore, but unfortunately, it seems quite common. -&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/1904149.The_Mythical_Man_Month_and_Other_Essays_on_Software_Engineering&#34;&gt;[Read reviews on Good Reads]&lt;/a&gt; &lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/01/screenshot-2023-01-19-at-08-58-31-the-cathedral-the-bazaar-amazon.co_.uk-raymond-eric-9780596001087-books.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/01/screenshot-2023-01-19-at-08-58-31-the-cathedral-the-bazaar-amazon.co_.uk-raymond-eric-9780596001087-books.png&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt; &lt;strong&gt;The Cathedral and the Bazaar&lt;/strong&gt; - &lt;em&gt;Eric S Raymound&lt;/em&gt; - One of the first books I read on software development process. Really blew my mind. -&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/01/screenshot-2023-01-19-at-08-57-07-mythical-man-month-the-essays-on-software-engineering-anniversary-edition-amazon.co_.uk-brooks-jr.-frederick-8580001065793-books.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/01/screenshot-2023-01-19-at-08-57-07-mythical-man-month-the-essays-on-software-engineering-anniversary-edition-amazon.co_.uk-brooks-jr.-frederick-8580001065793-books.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;strong&gt;The Mythical Man Month and other Essays&lt;/strong&gt; - &lt;em&gt;Fred Brooks&lt;/em&gt; - Read it as part of my university degree. A lot of good sense. I can&amp;rsquo;t believe there are people out there in charge of software projects that haven&amp;rsquo;t read this book, or think it somehow doesn&amp;rsquo;t apply anymore, but unfortunately, it seems quite common. -&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/1904149.The_Mythical_Man_Month_and_Other_Essays_on_Software_Engineering&#34;&gt;[Read reviews on Good Reads]&lt;/a&gt; &lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/01/screenshot-2023-01-19-at-08-58-31-the-cathedral-the-bazaar-amazon.co_.uk-raymond-eric-9780596001087-books.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/01/screenshot-2023-01-19-at-08-58-31-the-cathedral-the-bazaar-amazon.co_.uk-raymond-eric-9780596001087-books.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt; &lt;strong&gt;The Cathedral and the Bazaar&lt;/strong&gt; - &lt;em&gt;Eric S Raymound&lt;/em&gt; - One of the first books I read on software development process. Really blew my mind. -&lt;/p&gt;</description>
     </item>
     <item>
       <title>My Personal Retrospective on 2022</title>
@@ -267,7 +279,13 @@
       <link>https://davidcraddock.net/my-work-computer/</link>
       <pubDate>Fri, 16 Dec 2022 23:06:40 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?page_id=3423</guid> 
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231107_133613.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231107_133613.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231107_133703.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231107_133703.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231107_133620.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231107_133620.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231106_105031.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231106_105031.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231107_133605.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231107_133605.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231107_133556.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231107_133556.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231107_133613.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231107_133613.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231107_133703.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231107_133703.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231107_133620.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231107_133620.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231106_105031.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231106_105031.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231107_133605.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231107_133605.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231107_133556.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/11/20231107_133556.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This is my work from home setup. I work from home every work day. I use the following equipment:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;HDMI, network cables and and USB hookups for 2 additional laptops if needed&lt;/li&gt;
@@ -303,7 +321,10 @@
 &lt;li&gt;Mini fridge for Pepsi Max cans&lt;/li&gt;
 &lt;li&gt;Logitech Key light for web cam calls&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2022/12/20221217_112627.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/12/20221217_112627.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2022/12/20221217_112620.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/12/20221217_112620.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2022/12/20221217_112635.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/12/20221217_112635.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2022/12/20221217_112627.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/12/20221217_112627.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2022/12/20221217_112620.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/12/20221217_112620.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2022/12/20221217_112635.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/12/20221217_112635.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tips for Working from Home</title>
@@ -352,7 +373,8 @@ actually doing under the hood, especially if you need to troubleshoot what it&am
       <link>https://davidcraddock.net/2022/09/27/current-dj-setup/</link>
       <pubDate>Tue, 27 Sep 2022 02:56:21 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?p=3255</guid> 
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2022/09/wiring-diagram-for-studio.drawio2.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/09/wiring-diagram-for-studio.drawio2.png&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2022/09/wiring-diagram-for-studio.drawio2.png&#34;&gt;Click to view full diagram&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2022/09/wiring-diagram-for-studio.drawio2.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/09/wiring-diagram-for-studio.drawio2.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2022/09/wiring-diagram-for-studio.drawio2.png&#34;&gt;Click to view full diagram&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;hardware&#34;&gt;Hardware&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;2 x Reloop 8000mk2 turntables&lt;/li&gt;
@@ -390,7 +412,8 @@ actually doing under the hood, especially if you need to troubleshoot what it&am
       <pubDate>Thu, 08 Sep 2022 09:43:35 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?p=3219</guid> 
       <description>&lt;p&gt;I had planned a different network toplogy for sure, but this is my current setup and it seems to work well:&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/09/home-network-sept-22.drawio1.png&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/09/home-network-sept-22.drawio1.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;I was not able to implement connection load balancing using the Miktrotik router. It was just too complicated and didn&amp;rsquo;t work reliably enough.&lt;/li&gt;
 &lt;li&gt;My current network is a gigabit network across all areas, so every PC has gigabit cables, switch and so on.&lt;/li&gt;
@@ -443,7 +466,8 @@ as &lt;a href=&#34;https://www.humblebundle.com&#34;&gt;HumbleBundle.com&lt;/a&g
       <link>https://davidcraddock.net/2022/07/28/home-network-design-28-7-22/</link>
       <pubDate>Thu, 28 Jul 2022 00:57:42 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?p=3139</guid> 
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2022/07/untitled-diagram.drawio.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/07/untitled-diagram.drawio.png&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2022/07/untitled-diagram.drawio.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/07/untitled-diagram.drawio.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Now that I actually have the internet connectivity being installed to make use of it, I am getting my home network design a bit more finished.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Components:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -475,7 +499,8 @@ as &lt;a href=&#34;https://www.humblebundle.com&#34;&gt;HumbleBundle.com&lt;/a&g
       <link>https://davidcraddock.net/2022/05/15/home-network-design/</link>
       <pubDate>Sat, 14 May 2022 23:15:20 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?p=3029</guid> 
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/05/screenshot-2022-05-15-at-00-10-35-linkedin-2.png&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/05/screenshot-2022-05-15-at-00-10-35-linkedin-2.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;Did some network design for my home network. This will ensure that my new Virgin Media 1100mbps/50mps speed is fully utilised without any bottlenecks and will futureproof things up to at least 2.5Gbs/speed connections.&lt;/p&gt;
 &lt;p&gt;I should be able to load balance both internet connections to utilise them both simultaniously in the future, but for now I want to be able to get greater than 1000mbit/s speed on a single device otherwise there is not much point in speed increases past 1000mbits. Also there is a 200-300mbits speed increase possible from my existing VM hardware that is not utilised in the current network.&lt;/p&gt;</description>
     </item>
@@ -485,7 +510,8 @@ as &lt;a href=&#34;https://www.humblebundle.com&#34;&gt;HumbleBundle.com&lt;/a&g
       <pubDate>Mon, 02 May 2022 22:11:13 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?p=3000</guid> 
       <description>&lt;p&gt;This is my current DJ setup that I use for Twitch streaming mainly.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/05/djsetup.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/05/djsetup.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;2x Reloop RL-8000mk2 turntables.&lt;/li&gt;
 &lt;li&gt;2x Serato ‘Butter Rug’ Slipmats.&lt;/li&gt;
@@ -529,7 +555,8 @@ as &lt;a href=&#34;https://www.humblebundle.com&#34;&gt;HumbleBundle.com&lt;/a&g
       <link>https://davidcraddock.net/2022/03/03/dj-setup-03-03-2022/</link>
       <pubDate>Thu, 03 Mar 2022 01:19:28 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?p=2933</guid> 
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/03/dj-setup.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/03/dj-setup.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;This is my current DJ setup with the following components:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Decks 1 and 2 - 2x Reloop 8000mk2 Vinyl Turntables with Serato intergration&lt;/li&gt;
@@ -584,7 +611,8 @@ as &lt;a href=&#34;https://www.humblebundle.com&#34;&gt;HumbleBundle.com&lt;/a&g
       <pubDate>Sat, 01 Jan 2022 15:58:05 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?p=2849</guid> 
       <description>&lt;p&gt;Well, 2021 has been a bit of a downer in a number of ways. There has been some upsides though.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/01/eurorack.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2022/01/eurorack.jpg?w=739&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;I spent the first part of 2021 burned out, as in - totally burned out - of my career and really needing a break. This affected my work. It turns out that unknown to me at the time, I had cancer, Hodgkins Lymophoma, and a lot of my lack of energy and generally feeling awful was down to a large tumor that had been growing my chest for some time and was pressing down on my heart and lungs. In June I was admitted to hospital and they diagnosed the cancer. In July I started chemotherapy. Now the good news is that Hodgkins Lymphoma is one of the best cancers to get if you were able to choose, as it has a very high cure rate and very low fatality rate. The chemo as of November&amp;rsquo;s scan seems to be working even better than expected and they were expecting a good outcome. So that is positive. I should hopefully be done with chemo by March 2022.&lt;/li&gt;
 &lt;li&gt;One of the good things about 2021 has been the job that I found in the music industry. It is still doing software engineering, what my career has been based around, but they seem like a very nice bunch of people, and were prepared to support me and keep me on around chemotherapy. I am still employed part-time and that has been a HUGE help financially as you really don&amp;rsquo;t get a lot of money in benefits from the government, even when you have cancer it seems, and my family have had to help me out quite a bit. I have also had some success in the work that I&amp;rsquo;ve been doing - it seems very appreciated which is something I&amp;rsquo;m not really used to!&lt;/li&gt;
@@ -659,7 +687,8 @@ as &lt;a href=&#34;https://www.humblebundle.com&#34;&gt;HumbleBundle.com&lt;/a&g
       <link>https://davidcraddock.net/2021/08/07/my-psp-entertainment-system-for-2021/</link>
       <pubDate>Sat, 07 Aug 2021 19:57:27 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?p=2641</guid> 
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/08/psp.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/08/psp.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;I have recently been in hospital and been diagnosed with a condition that might mean I need to return quite a bit, at least in the short term. When I was in hospital I was struck by the fact that there were very long periods of waiting and it was easy to get very bored and quite dejected just sitting in a hospital bed.&lt;/p&gt;</description>
     </item>
     <item>
@@ -694,7 +723,8 @@ as &lt;a href=&#34;https://www.humblebundle.com&#34;&gt;HumbleBundle.com&lt;/a&g
       <link>https://davidcraddock.net/2021/05/11/lighting-and-camera-setup/</link>
       <pubDate>Tue, 11 May 2021 03:20:16 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?p=2526</guid> 
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/05/studio-lighting-diagram.png&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/05/studio-lighting-diagram.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;h2 id=&#34;light-sources&#34;&gt;Light Sources:&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Phillips Hue Colour Lamp (top right)&lt;/li&gt;
@@ -708,7 +738,8 @@ as &lt;a href=&#34;https://www.humblebundle.com&#34;&gt;HumbleBundle.com&lt;/a&g
 &lt;/ul&gt;
 &lt;h2 id=&#34;dark-music-lighting-settings&#34;&gt;Dark Music Lighting Settings&lt;/h2&gt;
 &lt;p&gt;For Phillips Hue sources I use Hue Sync on my broadcast PC which syncs the lights in time with the music. I will use different palletes depending on the event. For darkwave/dark music style events I will use this pallette:
-&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/05/huelightsync.png&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;</description>
+&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/05/huelightsync.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
     <item>
       <title>Organising Huge Music Libraries for use with Serato DJ Pro</title>
@@ -733,7 +764,8 @@ Rsync&lt;/p&gt;</description>
       <link>https://davidcraddock.net/2021/04/26/resolume-midi-control-in-my-twitch-djing-setup/</link>
       <pubDate>Mon, 26 Apr 2021 18:26:14 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?p=2477</guid> 
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/04/img_20210426_191312.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/04/img_20210426_191312.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;I have retired the Novation SL Zero Mk1 MIDI controller that was causing me a lot of grief when I was running Resolume and Ableton Live at the same time, as its Automap functionality was locking on to the Ableton Live mixer in session view now and then, and so, sometimes, when I thought I was controlling Resolumes visual FX, I was actually changing the volume faders in my DJ mix. Which was bad.&lt;/p&gt;</description>
     </item>
     <item>
@@ -741,7 +773,8 @@ Rsync&lt;/p&gt;</description>
       <link>https://davidcraddock.net/2021/04/08/dj-setup-8-4-21/</link>
       <pubDate>Thu, 08 Apr 2021 03:49:31 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?p=2424</guid> 
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/04/hybridsetup.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/04/hybridsetup.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;I recently found a good price on a Vestax VCM-600 controller. It is a specially made MIDI controller for Ableton Live, with the same build quality as a DJ mixer. It allows for control over 6 channels in the Ableton Live &amp;lsquo;session&amp;rsquo; view, which is arranged similarly to a mixing console. It also adds dozens of MIDI mappable DJ controls such as the traditional Hi, Mid and Lo EQs, a crossfader, a filter control, control over a lot of Ableton FX, and more. It has 6 channel faders + 2 send faders for FX. More info in this video:&lt;/p&gt;</description>
     </item>
     <item>
@@ -750,7 +783,8 @@ Rsync&lt;/p&gt;</description>
       <pubDate>Thu, 04 Mar 2021 19:02:19 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?p=2387</guid> 
       <description>&lt;p&gt;I think, for obvious reasons, 2020 has been a year that no-one could really have expected. With COVID-19 and lockdown, a lot of things have changed, both in my life, in everyone&amp;rsquo;s lives, and in the workplace.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/03/background.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;My online DJing setup&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/03/background.jpg?w=739&#34; alt=&#34;&#34;  /&gt;
+My online DJing setup&lt;/p&gt;
 &lt;h2 id=&#34;things-that-went-well&#34;&gt;Things that went well&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;I changed medication around March 2020 which has resulted in significant weight loss, as expected. The previous medication was making me put on and retain weight even when I was eating very very little. In March 2020 my weight was nearly 136KG and now it has gone down to 125KG in March 2021. I have not been doing more exercise, indeed quite a bit less, as I have been staying indoors most of the time. The weight loss has had a very good effect on my general health and my sleep.&lt;/li&gt;
@@ -758,7 +792,8 @@ Rsync&lt;/p&gt;</description>
 &lt;li&gt;I have taken up DJing over the internet and have turned this into a part-time income. It is so much fun. I used to DJ in clubs in my 20s regularly and I didn’t realise how much I had missed it. It is great to have a way to connect socially with people in lockdown and people really appreciate my DJ sets, which is great.&lt;/li&gt;
 &lt;li&gt;Working from home has been a great change for me. Before the pandemic I wanted to work from home 100% anyway, because I was ending up spending at least 2 hours commuting to and from work, it was costing a lot (because I can’t drive) and it was taking up a lot of time and energy.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/03/wfh.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;My work from home setup&lt;/p&gt;</description>
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/03/wfh.jpg?w=739&#34; alt=&#34;&#34;  /&gt;
+My work from home setup&lt;/p&gt;</description>
     </item>
     <item>
       <title>26/2/2021 DJ Setup with Diagrams</title>
@@ -773,7 +808,8 @@ Rsync&lt;/p&gt;</description>
       <link>https://davidcraddock.net/2021/02/18/dj-books-reviewed/</link>
       <pubDate>Thu, 18 Feb 2021 16:56:59 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?p=2362</guid> 
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/02/frank.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;The classic!&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/02/frank.jpg?w=318&#34; alt=&#34;&#34;  /&gt;
+The classic!&lt;/p&gt;
 &lt;p&gt;Yes! Some people actually write and read BOOKS on DJing. As if YouTube wasn&amp;rsquo;t enough. Well it can be enough.. but YouTube is also a cess pit of rubbish information, and at least a book has a better chance of being properly edited and reviewed. Also reading a book makes you more intellectual. Which is utterly true.&lt;/p&gt;
 &lt;p&gt;So. I have been reading through these DJing books to see if they could teach me something I didn&amp;rsquo;t know about DJing after over 10 years doing it. And there were quite a few interesting techniques and tricks that I learned from these.&lt;/p&gt;</description>
     </item>
@@ -783,9 +819,12 @@ Rsync&lt;/p&gt;</description>
       <pubDate>Sun, 14 Feb 2021 23:57:54 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?p=2342</guid> 
       <description>&lt;ul&gt;
-&lt;li&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/02/setupthree.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/02/setuptwo.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/02/setupone.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/02/setupthree.jpg?w=1024&#34; alt=&#34;&#34;  /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/02/setuptwo.jpg?w=1024&#34; alt=&#34;&#34;  /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/02/setupone.jpg?w=1024&#34; alt=&#34;&#34;  /&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I thought I’d write a bit here about my Twitch DJing setup and some of the hardware and software I’m using. Twitch streaming has become very popular over the lockdown period, and I think people might be interested in how I have configured my stream. Something that seperates my stream from anyone else I&amp;rsquo;ve seen on Twitch is that is that I do live vinyl DJing AND live VJing at the same time on my stream. This is how I achieve it.&lt;/p&gt;</description>
     </item>
@@ -802,10 +841,14 @@ Rsync&lt;/p&gt;</description>
       <pubDate>Fri, 11 Dec 2020 22:03:36 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?p=2288</guid> 
       <description>&lt;ul&gt;
-&lt;li&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2020/12/img_20201211_215515-1.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;The three sections&lt;/li&gt;
-&lt;li&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2020/12/img_20201211_215456.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;Left 9U section&lt;/li&gt;
-&lt;li&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2020/12/img_20201211_215508.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;Right 9U section&lt;/li&gt;
-&lt;li&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2020/12/img_20201211_215550.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;Middle 9U section&lt;/li&gt;
+&lt;li&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2020/12/img_20201211_215515-1.jpg?w=1024&#34; alt=&#34;&#34;  /&gt;
+The three sections&lt;/li&gt;
+&lt;li&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2020/12/img_20201211_215456.jpg?w=576&#34; alt=&#34;&#34;  /&gt;
+Left 9U section&lt;/li&gt;
+&lt;li&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2020/12/img_20201211_215508.jpg?w=576&#34; alt=&#34;&#34;  /&gt;
+Right 9U section&lt;/li&gt;
+&lt;li&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2020/12/img_20201211_215550.jpg?w=576&#34; alt=&#34;&#34;  /&gt;
+Middle 9U section&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;So.. finally my 27U Eurorack modular synthesiser is complete. I have filled up the third - and surely last, as there is no more room in the studio! - case. I started this Eurorack modular in 2015.. so I am glad it is all complete now. I put in a small amount nearly every month for new modules. I am not some &amp;lsquo;rich kid&amp;rsquo; who could afford to buy everything at once - and indeed I think my gradual approach has benefitted the overall modular because it&amp;rsquo;s made me think about what I actually need, and given me time to learn as I go along.&lt;/p&gt;</description>
     </item>
@@ -837,8 +880,9 @@ Rsync&lt;/p&gt;</description>
       <link>https://davidcraddock.net/2020/01/30/studio-setup-in-2020/</link>
       <pubDate>Thu, 30 Jan 2020 14:55:22 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?p=2127</guid> 
-      <description>&lt;p&gt;&lt;a href=&#34;https://www.modulargrid.net/e/racks/view/744839&#34;&gt;
-  &lt;img loading=&#34;lazy&#34; src=&#34;https://cdn.modulargrid.net/img/racks/modulargrid_744839.jpg&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2020/01/img_20200130_1437551.jpg&#34; type=&#34;&#34; alt=&#34;IMG_20200130_143755(1)&#34;  /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.modulargrid.net/e/racks/view/744839&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://cdn.modulargrid.net/img/racks/modulargrid_744839.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2020/01/img_20200130_1437551.jpg&#34; alt=&#34;IMG_20200130_143755(1)&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;I have made some considerable modifications to my modular since my last post. I have a 4-voice polyphony setup now with multiple voice Osc, VCA, Envelope and MIDI-CV modules, allowing me to experiment with polyphony voicing.&lt;/p&gt;
 &lt;p&gt;Elsewhere, I have added an Access Virus C synthesizer to my studio, and now have rack-mounted Behringer Model D and Emu Orbit 9090 synthesizers. I have also upgraded to Ableton 10 and use NI&amp;rsquo;s Komplete suite including Massive X, plus TAL-NO-UX Juno 106 softsynth, Sylenth1 and others.&lt;/p&gt;</description>
     </item>
@@ -869,7 +913,8 @@ Rsync&lt;/p&gt;</description>
       <pubDate>Fri, 16 Jun 2017 17:57:23 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?p=1940</guid> 
       <description>&lt;p&gt;Finally I have finished my Eurorack synthesiser! And I know many people say that &amp;lsquo;Euroracks are never finished&amp;rsquo; but this one absolutely has to be, for financial reasons. I think that I have got to a place where I have every major feature common in most synthesisers, but in a modular instrument format. It is a great place to learn about different synthesis techniques.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2017/06/finished-modular.jpg&#34; type=&#34;&#34; alt=&#34;finished modular&#34;  /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2017/06/finished-modular.jpg&#34; alt=&#34;finished modular&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
     <item>
       <title>Node.js HTTPS server with self-signed certificate creation on openssl 0.9.8zh with node.js 7.10.0</title>
@@ -905,7 +950,8 @@ Rsync&lt;/p&gt;</description>
       <link>https://davidcraddock.net/2017/02/11/studio-setup/</link>
       <pubDate>Sat, 11 Feb 2017 13:25:27 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/?p=1844</guid> 
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2017/02/img_0024.jpg&#34; type=&#34;&#34; alt=&#34;Studio&#34;  /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2017/02/img_0024.jpg&#34; alt=&#34;Studio&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;This is my current studio setup.&lt;/p&gt;
 &lt;p&gt;I have the following gear:&lt;/p&gt;
 &lt;p&gt;Eurorack 9U case
@@ -932,7 +978,8 @@ Samson Patchbay&lt;/p&gt;
       <link>https://davidcraddock.net/2016/12/03/music-workflow-2017/</link>
       <pubDate>Sat, 03 Dec 2016 20:02:18 +0000</pubDate>
        <guid isPermaLink="false">http://www.davidcraddock.net/?p=1779</guid> 
-      <description>&lt;p&gt;In 2017 I want to build a relatively static hardware-based workflow. This is what I&amp;rsquo;ve chosen: &lt;a href=&#34;https://www.ableton.com/en/push/&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2016/12/workflow-setup-2.png&#34; type=&#34;&#34; alt=&#34;workflow-setup&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;In 2017 I want to build a relatively static hardware-based workflow. This is what I&amp;rsquo;ve chosen: &lt;a href=&#34;https://www.ableton.com/en/push/&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2016/12/workflow-setup-2.png&#34; alt=&#34;workflow-setup&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The components are:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Roland A-500PRO keyboard controller&lt;/strong&gt; - &lt;a href=&#34;https://www.roland.com/global/products/a-500pro/&#34;&gt;https://www.roland.com/global/products/a-500pro/&lt;/a&gt;&lt;/li&gt;
@@ -960,8 +1007,8 @@ Samson Patchbay&lt;/p&gt;
       <link>https://davidcraddock.net/2016/09/05/narrative-led-pc-games/</link>
       <pubDate>Mon, 05 Sep 2016 17:22:14 +0000</pubDate>
        <guid isPermaLink="false">http://www.davidcraddock.net/?p=1751</guid> 
-      <description>&lt;p&gt;
-  &lt;img loading=&#34;lazy&#34; src=&#34;http://www.inklestudios.com/press/80days/img/80-days-poster-promo.jpg&#34; alt=&#34;80 days poster&#34;  /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://www.inklestudios.com/press/80days/img/80-days-poster-promo.jpg&#34; alt=&#34;80 days poster&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;When I first started getting into computer roleplaying games in the 90s/00s I remember playing the Infinity Engine games by Bioware and Black Isle, such as Baldur’s Gate 2, the original Fallout games, and of course Planescape: Torment. It was the quality of writing that drew me in and took me to another world, the graphics were just a background setting to that writing.&lt;/p&gt;</description>
     </item>
     <item>
@@ -969,7 +1016,8 @@ Samson Patchbay&lt;/p&gt;
       <link>https://davidcraddock.net/2016/04/16/eurorack-2016/</link>
       <pubDate>Sat, 16 Apr 2016 20:58:13 +0000</pubDate>
        <guid isPermaLink="false">http://www.davidcraddock.net/?p=1737</guid> 
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2016/04/eurorack.png&#34; type=&#34;&#34; alt=&#34;eurorack&#34;  /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2016/04/eurorack.png&#34; alt=&#34;eurorack&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;So.. the problem, as so many people have said, with getting into building a Eurorack modular synthesizer is that it becomes addictive, and you inevitably spend more than you can really afford. That said.. I now have a great fully customised synthesiser for what I want to do :) The layout is:&lt;/p&gt;
 &lt;h3 id=&#34;top-shelf&#34;&gt;Top shelf:&lt;/h3&gt;
 &lt;p&gt;3 oscilators and noise generator in the top left, 4 VCAs and S&amp;amp;H and Ring Mod sections in the mid center, LFOs in the top right.&lt;/p&gt;</description>
@@ -994,7 +1042,8 @@ end
       <link>https://davidcraddock.net/2016/03/26/my-vim-configuration/</link>
       <pubDate>Sat, 26 Mar 2016 04:13:08 +0000</pubDate>
        <guid isPermaLink="false">http://www.davidcraddock.net/?p=1727</guid> 
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2016/03/screen-shot-2016-03-26-at-04-00-46.png&#34; type=&#34;&#34; alt=&#34;Screen Shot 2016-03-26 at 04.00.46&#34;  /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2016/03/screen-shot-2016-03-26-at-04-00-46.png&#34; alt=&#34;Screen Shot 2016-03-26 at 04.00.46&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;I use a heavily customised setup for vIM, the text editor that annoys me the least in ~30 years of using a computer. You can see my exact setup in my dotfiles repo on github, &lt;a href=&#34;https://github.com/wordswords/-&#34;&gt;https://github.com/wordswords/-&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Here are the plugins I use:&lt;/p&gt;
 &lt;ul&gt;
@@ -1031,8 +1080,8 @@ cd ..&lt;/p&gt;</description>
       <link>https://davidcraddock.net/2016/02/02/fish-shell-scripting/</link>
       <pubDate>Tue, 02 Feb 2016 17:28:39 +0000</pubDate>
        <guid isPermaLink="false">http://www.davidcraddock.net/?p=1685</guid> 
-      <description>&lt;p&gt;
-  &lt;img loading=&#34;lazy&#34; src=&#34;http://i.telegraph.co.uk/multimedia/archive/01396/fish_1396516c.jpg&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://i.telegraph.co.uk/multimedia/archive/01396/fish_1396516c.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;A few months ago I switched across from Bash onto the &lt;a href=&#34;http://fishshell.com/&#34;&gt;Fish shell&lt;/a&gt;, on my main development machine. I can&amp;rsquo;t get enough of its fast autosuggestions and its sane scripting language. Compared to Bash it is very fun to use.&lt;/p&gt;
 &lt;p&gt;Today I wrote a script to automate the backup of my development workspace onto a private bitbucket account. Bitbucket is good because it allows unlimited private repositories, but it caps the size of these repos at 2GB max, with some features disabled after 1GB. This means that I want to find out the size of my repo before automatically backing it up. This script does this:&lt;/p&gt;</description>
     </item>
@@ -1065,7 +1114,8 @@ cd ..&lt;/p&gt;</description>
       <pubDate>Mon, 21 Dec 2015 08:37:03 +0000</pubDate>
        <guid isPermaLink="false">http://www.davidcraddock.net/?p=1633</guid> 
       <description>&lt;p&gt;I have made a lot of different upgrades and modifications to my PC, &lt;a href=&#34;http://www.davidcraddock.net/my-computer-setup/&#34;&gt;as you can see here&lt;/a&gt;. Some of the upgrades have made more of a difference than others though. Here is what I think you should be concentrating on, if you&amp;rsquo;re looking to upgrade.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2015/12/upgrades.jpg&#34; type=&#34;&#34; alt=&#34;upgrades&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2015/12/upgrades.jpg&#34; alt=&#34;upgrades&#34;  /&gt;
+&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Solid State Hardisk (SSD)&lt;/strong&gt; - Solid State hard drives use flash memory instead of the moving disk platters of traditional hard disks. It is the same type of storage as your USB stick. This type of storage is a lot faster to access compared to magnetic storage. Upgrading will result in a huge performance increase for most systems if you are changing from a traditional hard disk. Get as big a size as you can afford. If you play computer games or do a lot of media production work, then the added space will be useful. They have reduced in price over the years, the first SSD I bought was £120 for 120GB SSD back in 2012, in 2015 I just bought a 250GB SSD for £50. So it&amp;rsquo;s definitely affordable now.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Large Monitor&lt;/strong&gt; - If you can get a 27&amp;quot;-32&amp;quot; monitor then do so. It has made so much difference to the day to day usage of my PC. I would recommend 1440p if you can. 1440p is half the resolution of 4K. I wouldn&amp;rsquo;t recommend a 4K monitor yet in 2015 as I don&amp;rsquo;t think they have enough software support, and the cost is considerable for a decent screen. If you&amp;rsquo;re a gamer, then you might want to aim for a higher refresh speed, but I&amp;rsquo;d say this should be a secondary consideration to the screen space. Look on &lt;a href=&#34;http://www.tftcentral.co.uk/&#34;&gt;TFTCentral&lt;/a&gt; for reviews and guides to the different screen types available.&lt;/li&gt;
@@ -1129,7 +1179,8 @@ cd ..&lt;/p&gt;</description>
       <link>https://davidcraddock.net/2015/09/28/introversion-extroversion-and-being-a-bbc-software-engineer/</link>
       <pubDate>Mon, 28 Sep 2015 16:22:52 +0000</pubDate>
        <guid isPermaLink="false">http://www.davidcraddock.net/?p=1533</guid> 
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2015/09/introvert.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2015/09/introvert.jpg&#34; type=&#34;&#34; alt=&#34;introvert&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2015/09/introvert.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2015/09/introvert.jpg&#34; alt=&#34;introvert&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Whether you agree with Myers-Briggs personality profiling or not, like fellow BBC&amp;rsquo;er &lt;a href=&#34;http://cubicgarden.com/2015/07/27/being-entp-dyslexic-and-relationships/&#34;&gt;Ian Forrester&lt;/a&gt; I have found them a useful frame of reference from which to discuss my personality, because I see similarities between my perception of me, and the classification.&lt;/p&gt;
 &lt;p&gt;I took the Myers-Briggs personality profiling, and it has labelled me on several occasions an INTP:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1168,7 +1219,8 @@ I – Introversion preferred to extraversion: INTPs tend to be quiet and reserve
       <link>https://davidcraddock.net/2015/09/01/goals-for-the-year-2015-midway-update/</link>
       <pubDate>Tue, 01 Sep 2015 15:33:18 +0000</pubDate>
        <guid isPermaLink="false">http://www.davidcraddock.net/?p=1465</guid> 
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2015/01/windingroad.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2015/01/windingroad.jpg&#34; type=&#34;&#34; alt=&#34;Winding Road&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2015/01/windingroad.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2015/01/windingroad.jpg&#34; alt=&#34;Winding Road&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Now that I am midway through the year, I thought I&amp;rsquo;d revisit &lt;a href=&#34;http://www.davidcraddock.net/?p=1301&amp;amp;preview=true&#34;&gt;the goals I set myself at the start of the year&lt;/a&gt;, to see what has changed.&lt;/p&gt;
 &lt;h3 id=&#34;career-goals&#34;&gt;Career Goals&lt;/h3&gt;
 &lt;ul&gt;
@@ -1202,7 +1254,8 @@ I – Introversion preferred to extraversion: INTPs tend to be quiet and reserve
       <pubDate>Sat, 15 Aug 2015 20:46:21 +0000</pubDate>
        <guid isPermaLink="false">http://www.davidcraddock.net/?p=1456</guid> 
       <description>&lt;p&gt;This requires you to have a subscription to Apple Music and a 3G/4G/wireless data connection, but it is so useful! Using this tip, you can be walking along with your iPhone in your pocket and your Apple earphones in, and then change music just by pressing a button on the earphones remote control and saying &amp;lsquo;Play (your favourite band)&amp;rsquo;.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2015/08/blog-post-image.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2015/08/blog-post-image.png&#34; type=&#34;&#34; alt=&#34;blog post image&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2015/08/blog-post-image.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2015/08/blog-post-image.png&#34; alt=&#34;blog post image&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Modular Progress</title>
@@ -1216,7 +1269,8 @@ I – Introversion preferred to extraversion: INTPs tend to be quiet and reserve
       <link>https://davidcraddock.net/2015/06/21/switching-audio-between-two-soundcards/</link>
       <pubDate>Sun, 21 Jun 2015 17:55:50 +0000</pubDate>
        <guid isPermaLink="false">http://www.davidcraddock.net/?p=1420</guid> 
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2015/06/headphones_accept.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2015/06/headphones_accept.png&#34; type=&#34;&#34; alt=&#34;headphones_accept&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2015/06/headphones_accept.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2015/06/headphones_accept.png&#34; alt=&#34;headphones_accept&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;If you have two soundcards - maybe a normal soundcard for your speakers and maybe a headset with its own audio interface - you will want some way of switching all audio between the two. This is an great little open-source tool to do just that. It works on Mac, and Windows 7 up to 10:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://soundswitch.codeplex.com/&#34;&gt;https://soundswitch.codeplex.com/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
@@ -1310,7 +1364,8 @@ I have an actual electric piano but I don&amp;rsquo;t use the onboard sound engi
       <link>https://davidcraddock.net/2014/09/03/pioneer-ddj-sr-serato-controller-review/</link>
       <pubDate>Wed, 03 Sep 2014 00:17:23 +0000</pubDate>
        <guid isPermaLink="false">http://www.davidcraddock.net/?p=1269</guid> 
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2014/09/dj-controller.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2014/09/dj-controller.jpg&#34; type=&#34;&#34; alt=&#34;dj controller&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2014/09/dj-controller.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2014/09/dj-controller.jpg&#34; alt=&#34;dj controller&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I decided to buy the DDJ-SR controller because it was cheaper than even the cheapest pair of Pioneer CDJs. I’m no stranger to using a laptop and controller, before the DDJ-SR I used my trusty Faderfox DJ2 controller, which is a basic no-frills ‘play buttons, 3 EQs, crossfader and volume faders’ unit.&lt;/p&gt;
 &lt;p&gt;I was considering getting the Native Instruments Traktor S4 DJ controller, which is one of the most popular full-size controllers for Traktor. However, after borrowing one from a friend, I compared the build quality of the DDJ-SR versus the S4, and there was no contest! The Pioneer DDJ-SR has the same buttons and jog wheel as the Pioneer CDJ units, which are rock solid and industry standard. For anyone wanting to use CDJs in the club after using the DDJ-SR at home, you will find the feel very familiar.&lt;/p&gt;</description>
     </item>
@@ -1328,7 +1383,8 @@ I have an actual electric piano but I don&amp;rsquo;t use the onboard sound engi
       <link>https://davidcraddock.net/2014/06/12/a-algorithm-implementation-in-python/</link>
       <pubDate>Thu, 12 Jun 2014 00:24:34 +0000</pubDate>
        <guid isPermaLink="false">http://www.davidcraddock.net/?p=1240</guid> 
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2014/06/pathfinding.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2014/06/pathfinding.jpg&#34; type=&#34;&#34; alt=&#34;pathfinding&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2014/06/pathfinding.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2014/06/pathfinding.jpg&#34; alt=&#34;pathfinding&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Lately I&amp;rsquo;ve had the idea of creating a text-based &lt;a href=&#34;http://en.wikipedia.org/wiki/Roguelike&#34;&gt;Roguelike&lt;/a&gt; in C++. This lead me on to think about the game AI experiments that I worked during my degree in &lt;a href=&#34;http://www.sussex.ac.uk/informatics/&#34;&gt;Computer Science and A.I.&lt;/a&gt;. Essential to game AI is the notion of pathfinding, or finding a path from &amp;lsquo;A&amp;rsquo; to &amp;lsquo;B&amp;rsquo;, past any obstacles that get in the way. One way to do this is to use the A* algorithm. I decided to implement an A* pathfinding algorithm for possible use in a Roguelike later, and chose &lt;a href=&#34;http://en.wikipedia.org/wiki/A*_search_algorithm&#34;&gt;the pseudocode from the Wikipedia example&lt;/a&gt; to implement.&lt;/p&gt;</description>
     </item>
     <item>
@@ -1379,7 +1435,8 @@ I have an actual electric piano but I don&amp;rsquo;t use the onboard sound engi
       <pubDate>Tue, 24 Dec 2013 14:08:48 +0000</pubDate>
        <guid isPermaLink="false">http://www.davidcraddock.net/?p=1173</guid> 
       <description>&lt;p&gt;A good ergonomic chair is a wise investment if you&amp;rsquo;re going to spend a lot of time at your computer. One of the better known ergonomic models is the &lt;a href=&#34;http://www.hermanmiller.com/products/seating/performance-work-chairs/aeron-chairs.html&#34;&gt;Herman Miller Aeron Task Chair&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2013/12/hero_aeron_work_1.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2013/12/hero_aeron_work_1.jpg&#34; type=&#34;&#34; alt=&#34;Picture of Aeron Chair&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2013/12/hero_aeron_work_1.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2013/12/hero_aeron_work_1.jpg&#34; alt=&#34;Picture of Aeron Chair&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;what-other-people-say-about-the-aeron&#34;&gt;What Other People Say About the Aeron&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.codinghorror.com/blog/2008/07/investing-in-a-quality-programming-chair.html&#34;&gt;Jeff Atwood&lt;/a&gt; (from Coding Horror) says:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1399,7 +1456,8 @@ I have an actual electric piano but I don&amp;rsquo;t use the onboard sound engi
       <link>https://davidcraddock.net/2013/11/17/android-debug-bridge-failing-to-detect-emulators-under-osx/</link>
       <pubDate>Sun, 17 Nov 2013 02:21:34 +0000</pubDate>
        <guid isPermaLink="false">http://www.davidcraddock.net/?p=1150</guid> 
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2013/11/android.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2013/11/android.png&#34; type=&#34;&#34; alt=&#34;Android&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2013/11/android.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2013/11/android.png&#34; alt=&#34;Android&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve been working on a project at the BBC where we are using the Android command-line tools from the &lt;a href=&#34;http://developer.android.com/tools/index.html&#34;&gt;Android Developer Tools&lt;/a&gt;, to spin up and terminate series of emulators. I noticed a big problem under OSX where &amp;lsquo;adb devices&amp;rsquo; was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb.&lt;/p&gt;</description>
     </item>
     <item>
@@ -1407,7 +1465,8 @@ I have an actual electric piano but I don&amp;rsquo;t use the onboard sound engi
       <link>https://davidcraddock.net/2013/07/27/thehaiku-machine/</link>
       <pubDate>Sat, 27 Jul 2013 02:29:10 +0000</pubDate>
        <guid isPermaLink="false">http://www.davidcraddock.net/?p=1103</guid> 
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2013/07/550px-write-a-haiku-poem-intro.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2013/07/550px-write-a-haiku-poem-intro.jpg&#34; type=&#34;&#34; alt=&#34;550px-Write-a-Haiku-Poem-Intro&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2013/07/550px-write-a-haiku-poem-intro.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2013/07/550px-write-a-haiku-poem-intro.jpg&#34; alt=&#34;550px-Write-a-Haiku-Poem-Intro&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I found this &lt;a href=&#34;https://github.com/nathanielksmith/prosaic&#34;&gt;awesome cut-up poetry generator&lt;/a&gt;, which takes the text of famous poets and builds structured poetry out of it. The guy that made it even developed the underlying algorithm as a research project. I have put a version of a free Amazon EC2 instance, wrote a little twitter bot in node.js, and wired the poetry generator with the twitter bot, and now I have this: &lt;a href=&#34;https://twitter.com/haikumachine&#34;&gt;https://twitter.com/haikumachine&lt;/a&gt; - a twitter bot that posts a haiku every five minutes, derived from Dylan Thomas&amp;rsquo;s poetry.&lt;/p&gt;</description>
     </item>
     <item>
@@ -1444,7 +1503,8 @@ I have an actual electric piano but I don&amp;rsquo;t use the onboard sound engi
       <link>https://davidcraddock.net/2013/06/11/iterm-for-osx-for-a-colourful-terminal-experience/</link>
       <pubDate>Tue, 11 Jun 2013 16:08:16 +0000</pubDate>
        <guid isPermaLink="false">http://www.davidcraddock.net/?p=1055</guid> 
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2013/06/screen-shot-2013-06-11-at-17-06-36.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2013/06/screen-shot-2013-06-11-at-17-06-36.png&#34; type=&#34;&#34; alt=&#34;Screen Shot 2013-06-11 at 17.06.36&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2013/06/screen-shot-2013-06-11-at-17-06-36.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2013/06/screen-shot-2013-06-11-at-17-06-36.png&#34; alt=&#34;Screen Shot 2013-06-11 at 17.06.36&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;iTerm is much better than the standard OSX terminal client, not least because it has compatiablity with xterm256-color terminal emulation. xterm256-color emulation will give your terminal access to 256 colours instead of the usual 16. Much better, not just for looking pretty, but for distinguishing between different types of data in an editor like VIM or even in Cucumber output (see picture above). It&amp;rsquo;s also free.&lt;/p&gt;</description>
     </item>
     <item>
@@ -1478,7 +1538,8 @@ I have an actual electric piano but I don&amp;rsquo;t use the onboard sound engi
       <link>https://davidcraddock.net/2012/04/12/converting-a-single-m2v-frame-into-jpeg/</link>
       <pubDate>Thu, 12 Apr 2012 15:20:23 +0000</pubDate>
        <guid isPermaLink="false">http://www.davidcraddock.net/?p=976</guid> 
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame. I couldn&amp;rsquo;t find a video player that would open the single frame. So I resorted to the command line version of ffmpeg, which I installed via macports, to convert this single frame to a jpg file to view as normal. This line worked a treat:&lt;/p&gt;</description>
     </item>
     <item>
@@ -1486,7 +1547,8 @@ I have an actual electric piano but I don&amp;rsquo;t use the onboard sound engi
       <link>https://davidcraddock.net/2012/02/11/java-1-6-on-rhel4/</link>
       <pubDate>Sat, 11 Feb 2012 01:36:52 +0000</pubDate>
        <guid isPermaLink="false">http://www.davidcraddock.net/?p=967</guid> 
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2012/02/red-hat-theme-party.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2012/02/red-hat-theme-party.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2012/02/red-hat-theme-party.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2012/02/red-hat-theme-party.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;After I wrote a Java application in JDK 1.6, I was stuck for a while when I realised that the target deployment machine was Red Hat Enterprise Linux 4. RHEL4 does not support Java 1.6 in its default configuration.&lt;/p&gt;
 &lt;p&gt;Luckily I found this article on the CentOS wiki which included instructions on how to install Java 1.6 on CentOS 4. Remembering that RHEL4 and CentOS 4 are almost identical, I tried the method supplied, and it worked. This is the page with the method:&lt;/p&gt;</description>
     </item>
@@ -1502,7 +1564,8 @@ I have an actual electric piano but I don&amp;rsquo;t use the onboard sound engi
       <link>https://davidcraddock.net/2011/09/07/jsoup-method-for-page-scraping/</link>
       <pubDate>Wed, 07 Sep 2011 18:35:17 +0000</pubDate>
        <guid isPermaLink="false">http://www.davidcraddock.net/?p=938</guid> 
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2011/09/soup.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2011/09/soup.jpg&#34; type=&#34;&#34; alt=&#34;Soup bowl&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2011/09/soup.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2011/09/soup.jpg&#34; alt=&#34;Soup bowl&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m currently in the process of writing a web scraper for the forums on &lt;a href=&#34;http://www.gaiaonline.com/forum&#34; title=&#34;Gaia Online&#34;&gt;Gaia Online&lt;/a&gt;. Previously, I used to use Python to develop web scrapers, with the very handy Python library &lt;a href=&#34;http://www.crummy.com/software/BeautifulSoup/&#34; title=&#34;BeautifulSoup&#34;&gt;BeautifulSoup&lt;/a&gt;. Java has an equivalent called JSoup.&lt;/p&gt;
 &lt;p&gt;Here I have written a class which is extended by each class in my project that wants to scrape HTML. This &amp;lsquo;Scraper&amp;rsquo; class deals with the fetching of the HTML and converting it into a JSoup tree to be navigated and have the data picked out of. It advertises itself as a &amp;lsquo;web spider&amp;rsquo; type of web agent and also adds a 0-7 second random wait before fetching the page to make sure it isn&amp;rsquo;t used to overload a web server. It also converts the entire page to ASCII, which may not be the best thing to do for multi-language web pages, but certainly has made the scraping of the English language site Gaia Online much easier.&lt;/p&gt;</description>
     </item>
@@ -1724,7 +1787,8 @@ I have an actual electric piano but I don&amp;rsquo;t use the onboard sound engi
       <link>https://davidcraddock.net/2010/03/20/tip-for-watching-the-completion-of-a-large-file-copy/</link>
       <pubDate>Sat, 20 Mar 2010 22:44:06 +0000</pubDate>
        <guid isPermaLink="false">http://www.davidcraddock.net/?p=695</guid> 
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2010/03/windows-copy.gif&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2010/03/windows-copy.gif&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2010/03/windows-copy.gif&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2010/03/windows-copy.gif&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Forget the wonderful windows progress bar, and imagine I&amp;rsquo;m in the world of command-line Linux, and I want to copy a 484MB file, called VMware-server-2.0.2-203138.i386.tar.gz, from my home directory to a remote server. But I want to figure out how long it&amp;rsquo;s going to take.&lt;/p&gt;
 &lt;p&gt;1. First I can run a &amp;ldquo;du -m&amp;rdquo; command to get the total MB size of the original file:&lt;/p&gt;</description>
     </item>
@@ -1733,7 +1797,8 @@ I have an actual electric piano but I don&amp;rsquo;t use the onboard sound engi
       <link>https://davidcraddock.net/2010/03/20/the-linux-file-structure/</link>
       <pubDate>Sat, 20 Mar 2010 15:19:46 +0000</pubDate>
        <guid isPermaLink="false">http://www.davidcraddock.net/?p=572</guid> 
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2010/03/got-root.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2010/03/got-root.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt; It&amp;rsquo;s helpful to know the basic filesystem on a Linux machine, to better understand where everything is supposed to go, and where you should start looking if you want to find a certain file.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2010/03/got-root.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2010/03/got-root.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt; It&amp;rsquo;s helpful to know the basic filesystem on a Linux machine, to better understand where everything is supposed to go, and where you should start looking if you want to find a certain file.&lt;/p&gt;
 &lt;p&gt;Everything in Linux is stored in the &amp;ldquo;root directory&amp;rdquo;. On a windows machine, that would be equivalent to C:. C: is the main folder where everything is stored. On Linux we call this the &amp;ldquo;root directory&amp;rdquo;, or simply &amp;ldquo;/&amp;rdquo;. To go up to this root directory, type:&lt;/p&gt;</description>
     </item>
     <item>
@@ -2117,7 +2182,8 @@ EndSection&lt;/p&gt;</description>
       <link>https://davidcraddock.net/about-2/</link>
       <pubDate>Mon, 02 Apr 2007 18:16:45 +0000</pubDate>
        <guid isPermaLink="false">https://davidcraddock.net/about-2/</guid> 
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2019/03/11987056_1215312608495109_2648840382010151245_n1.jpg&#34; type=&#34;&#34; alt=&#34;11987056_1215312608495109_2648840382010151245_n(1)&#34;  /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2019/03/11987056_1215312608495109_2648840382010151245_n1.jpg&#34; alt=&#34;11987056_1215312608495109_2648840382010151245_n(1)&#34;  /&gt;
+&lt;/p&gt;
 &lt;p&gt;Hello! I&amp;rsquo;m David Craddock, I live in Manchester, and have worked in IT and software for the past 20 years, currently as a Principal Software Engineer.&lt;/p&gt;</description>
     </item>
     <item>

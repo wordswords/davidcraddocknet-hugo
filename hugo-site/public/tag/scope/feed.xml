@@ -4,21 +4,17 @@
     <title>Scope on DavidCraddock.net</title>
     <link>https://davidcraddock.net/tag/scope/</link>
     <description>Recent content in Scope on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 28 Sep 2015 17:32:15 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/tag/scope/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Sep 2015 17:32:15 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/tag/scope/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Scope in JavaScript</title>
       <link>https://davidcraddock.net/2015/09/28/scope-in-javascript/</link>
       <pubDate>Mon, 28 Sep 2015 17:32:15 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2015/09/28/scope-in-javascript/</guid>
       <description>&lt;p&gt;I am learning JS for work. This is a pretty good summary of the most common scoping rules in JavaScript:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript&#34;&gt;http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript&lt;/a&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>I am learning JS for work. This is a pretty good summary of the most common scoping rules in JavaScript:</p>
-<p><a href="http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript">http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript</a></p>
-]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

@@ -4,14 +4,14 @@
     <title>Udev on DavidCraddock.net</title>
     <link>https://davidcraddock.net/tag/udev/</link>
     <description>Recent content in Udev on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 10 Feb 2014 15:28:45 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/tag/udev/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Feb 2014 15:28:45 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/tag/udev/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setting up Kindlefire HDX for Development under Ubuntu 12.04</title>
       <link>https://davidcraddock.net/2014/02/10/kindlefire-hdx-under-ubuntu-12-04/</link>
       <pubDate>Mon, 10 Feb 2014 15:28:45 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2014/02/10/kindlefire-hdx-under-ubuntu-12-04/</guid>
       <description>&lt;p&gt;I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.&lt;/p&gt;
 &lt;p&gt;First I needed to setup the udev rules:&lt;/p&gt;
@@ -20,26 +20,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;2. Change the permission of this file by executing the following command as root:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;chmod a+r /etc/udev/rules.d/51-android.rules
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
-      <content:encoded><![CDATA[<p>I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.</p>
-<p>First I needed to setup the udev rules:</p>
-<p>1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>SUBSYSTEM==&#34;usb&#34;, ATTRS{idVendor}==&#34;1949&#34;, MODE=&#34;0666&#34;
-</span></span></code></pre></div><p>2. Change the permission of this file by executing the following command as root:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>chmod a+r /etc/udev/rules.d/51-android.rules
-</span></span></code></pre></div><p>3. Reload the rules by executing the following command as root:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>udevadm control <span style="color:#000;font-weight:bold">--</span>reload<span style="color:#000;font-weight:bold">-</span>rules
-</span></span></code></pre></div><p>4. Run these commands to restart adb:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>adb kill-server
-</span></span><span style="display:flex;"><span>adb start-server
-</span></span></code></pre></div><p>5. Now when I run</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>lsusb
-</span></span></code></pre></div><p>I can see the device listed.</p>
-<p>6. Next I needed to enable adb access on the Kindlefire HDX device itself by going to <strong>Settings -&gt; Device -&gt; Enable ADB</strong>.</p>
-<p>7. Finally I could run:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>adb devices
-</span></span></code></pre></div><p>within Ubuntu and have it recognise the Kindlefire HDX.</p>
-]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

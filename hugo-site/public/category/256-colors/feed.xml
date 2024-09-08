@@ -4,14 +4,14 @@
     <title>256-Colors on DavidCraddock.net</title>
     <link>https://davidcraddock.net/category/256-colors/</link>
     <description>Recent content in 256-Colors on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 20 Jun 2013 22:15:52 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/category/256-colors/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Jun 2013 22:15:52 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/category/256-colors/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>256 Color VIM on Crunchbang Waldorf</title>
       <link>https://davidcraddock.net/2013/06/20/256-color-vim-on-crunchbang-waldorf/</link>
       <pubDate>Thu, 20 Jun 2013 22:15:52 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2013/06/20/256-color-vim-on-crunchbang-waldorf/</guid>
       <description>&lt;p&gt;To get 256 colors working within terminator in Crunchbang Waldorf, I had to do the following:&lt;/p&gt;
 &lt;ol&gt;
@@ -28,28 +28,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;set t_AB=^[[48;5;%dm
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;set t_AF=^[[38;5;%dm
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
-      <content:encoded><![CDATA[<p>To get 256 colors working within terminator in Crunchbang Waldorf, I had to do the following:</p>
-<ol>
-<li>
-<p>Add to ~/.bashrc</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> TERM<span style="color:#000;font-weight:bold">=</span>xterm<span style="color:#000;font-weight:bold">-</span><span style="color:#099">256</span>color
-</span></span></code></pre></div></li>
-<li>
-<p>Install a 256 color VIM colorcheme, see <a href="http://www.vim.org/scripts/script.php?script_id=1243">desert256 for example</a>.</p>
-</li>
-<li>
-<p>Add the following to ~/.vimrc:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>set t_Co=256
-</span></span><span style="display:flex;"><span>set t_AB=^[[48;5;%dm
-</span></span><span style="display:flex;"><span>set t_AF=^[[38;5;%dm
-</span></span></code></pre></div><p>&rsquo;t_Co&rsquo; specifies exactly how many colours VIM can use. The other two lines seem to be Debian-specific color code escape sequences.</p>
-</li>
-<li>
-<p>If you want 256 color VIM for your root user when you sudo edit, then edit /usr/share/vim/vimrc and copy across your settings from your local ~/.vimrc and ~/.vim to this global environment.</p>
-</li>
-</ol>
-]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

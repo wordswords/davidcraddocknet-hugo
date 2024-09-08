@@ -4,14 +4,14 @@
     <title>Osx on DavidCraddock.net</title>
     <link>https://davidcraddock.net/tag/osx/</link>
     <description>Recent content in Osx on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 04 Apr 2016 11:50:31 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/tag/osx/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Apr 2016 11:50:31 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/tag/osx/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OSX Fish Functions to open Chrome from the Shell</title>
       <link>https://davidcraddock.net/2016/04/04/osx-fish-functions-to-open-chrome-from-the-shell/</link>
       <pubDate>Mon, 04 Apr 2016 11:50:31 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2016/04/04/osx-fish-functions-to-open-chrome-from-the-shell/</guid>
       <description>&lt;p&gt;These functions are quite handy, and allow you to do things such as copy and paste errors and google for them without having to manually open a browser. You have to enclose arguments to both functions in single quotes, e.g. &amp;lsquo;chrome &amp;lsquo;&lt;a href=&#34;http://www.google.co.uk&#34;&gt;http://www.google.co.uk&lt;/a&gt;&amp;rsquo; and google &amp;lsquo;one two three four&amp;rsquo;. You should add these to your config file at ~/.config/fish/config.fish and make sure Google Chrome is already installed.&lt;/p&gt;
 &lt;p&gt;[code language=&amp;ldquo;bash&amp;rdquo;]
@@ -22,125 +22,59 @@ function google
 /usr/bin/open -a &amp;lsquo;/Applications/Google Chrome.app&amp;rsquo; &amp;ldquo;&lt;a href=&#34;https://www.google.co.uk/search?q=$argv&#34;&gt;https://www.google.co.uk/search?q=$argv&lt;/a&gt;[1]&amp;rdquo;
 end
 [/code]&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>These functions are quite handy, and allow you to do things such as copy and paste errors and google for them without having to manually open a browser. You have to enclose arguments to both functions in single quotes, e.g. &lsquo;chrome &lsquo;<a href="http://www.google.co.uk">http://www.google.co.uk</a>&rsquo; and google &lsquo;one two three four&rsquo;. You should add these to your config file at ~/.config/fish/config.fish and make sure Google Chrome is already installed.</p>
-<p>[code language=&ldquo;bash&rdquo;]
-function chrome
-/usr/bin/open -a &lsquo;/Applications/Google Chrome.app&rsquo; $argv[1:]
-end
-function google
-/usr/bin/open -a &lsquo;/Applications/Google Chrome.app&rsquo; &ldquo;<a href="https://www.google.co.uk/search?q=$argv">https://www.google.co.uk/search?q=$argv</a>[1]&rdquo;
-end
-[/code]</p>
-]]></content:encoded>
     </item>
-    
     <item>
       <title>Switching Audio between two Soundcards</title>
       <link>https://davidcraddock.net/2015/06/21/switching-audio-between-two-soundcards/</link>
       <pubDate>Sun, 21 Jun 2015 17:55:50 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2015/06/21/switching-audio-between-two-soundcards/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2015/06/headphones_accept.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2015/06/headphones_accept.png&#34; type=&#34;&#34; alt=&#34;headphones_accept&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2015/06/headphones_accept.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2015/06/headphones_accept.png&#34; alt=&#34;headphones_accept&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;If you have two soundcards - maybe a normal soundcard for your speakers and maybe a headset with its own audio interface - you will want some way of switching all audio between the two. This is an great little open-source tool to do just that. It works on Mac, and Windows 7 up to 10:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://soundswitch.codeplex.com/&#34;&gt;https://soundswitch.codeplex.com/&lt;/a&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2015/06/headphones_accept.png"><img loading="lazy" src="/wp-content/uploads/2015/06/headphones_accept.png" type="" alt="headphones_accept"  /></a></p>
-<p>If you have two soundcards - maybe a normal soundcard for your speakers and maybe a headset with its own audio interface - you will want some way of switching all audio between the two. This is an great little open-source tool to do just that. It works on Mac, and Windows 7 up to 10:</p>
-<p><a href="https://soundswitch.codeplex.com/">https://soundswitch.codeplex.com/</a></p>
-]]></content:encoded>
     </item>
-    
     <item>
       <title>Android Debug Bridge failing to detect emulators under OSX</title>
       <link>https://davidcraddock.net/2013/11/17/android-debug-bridge-failing-to-detect-emulators-under-osx/</link>
       <pubDate>Sun, 17 Nov 2013 02:21:34 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2013/11/17/android-debug-bridge-failing-to-detect-emulators-under-osx/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2013/11/android.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2013/11/android.png&#34; type=&#34;&#34; alt=&#34;Android&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2013/11/android.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2013/11/android.png&#34; alt=&#34;Android&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve been working on a project at the BBC where we are using the Android command-line tools from the &lt;a href=&#34;http://developer.android.com/tools/index.html&#34;&gt;Android Developer Tools&lt;/a&gt;, to spin up and terminate series of emulators. I noticed a big problem under OSX where &amp;lsquo;adb devices&amp;rsquo; was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2013/11/android.png"><img loading="lazy" src="/wp-content/uploads/2013/11/android.png" type="" alt="Android"  /></a></p>
-<p>I&rsquo;ve been working on a project at the BBC where we are using the Android command-line tools from the <a href="http://developer.android.com/tools/index.html">Android Developer Tools</a>, to spin up and terminate series of emulators. I noticed a big problem under OSX where &lsquo;adb devices&rsquo; was failing to register emulators occasionally when we started them up, without any error message, even though they were loaded and quite clearly running in a window on OSX. This was a real problem for our project because we needed absolute parity between emulator process being launched and subsequently being detected by adb.</p>
-<p>We switched to using adb with emulators in an Ubuntu 12.04 VM running under OSX, and we had no further problems with our setup. Emulators will now be programatically launched and torn down by our monitoring application. We now have an array of emulators which we can deploy to at will, which is very useful.</p>
-<p>I don&rsquo;t know what has caused this problem, my only hunch is that the Android toolkit was probably developed in a very Linux-heavy environment, and so adb on Linux was probably their first testing platform. All I can say is that Linux is much more stable than OSX, even as a VM, for Android emulation.</p>
-]]></content:encoded>
     </item>
-    
     <item>
       <title>Monitoring a Slow Internet Connection in OSX</title>
       <link>https://davidcraddock.net/2013/03/01/monitoring-a-slow-internet-connection-in-osx/</link>
       <pubDate>Fri, 01 Mar 2013 01:28:54 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2013/03/01/monitoring-a-slow-internet-connection-in-osx/</guid>
       <description>&lt;p&gt;I am currently on holiday in Tenerife, and although I really like it here, one thing I do not like is the internet connection we have in our resort. Sometimes networked applications will just hang with no warning and there will be minutes where it&amp;rsquo;s not clear what is going on. Here are some ways you can find a little bit more about what is happening when an application is slow or seems to hang when you have a poor internet connection. Execute the following commands each in a separate terminal window.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>I am currently on holiday in Tenerife, and although I really like it here, one thing I do not like is the internet connection we have in our resort. Sometimes networked applications will just hang with no warning and there will be minutes where it&rsquo;s not clear what is going on. Here are some ways you can find a little bit more about what is happening when an application is slow or seems to hang when you have a poor internet connection. Execute the following commands each in a separate terminal window.</p>
-<h3 id="log-files">Log Files</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>tail <span style="color:#000;font-weight:bold">-</span>f <span style="color:#000;font-weight:bold">/</span><span style="color:#000;font-weight:bold">var</span><span style="color:#000;font-weight:bold">/</span><span style="color:#0086b3">log</span><span style="color:#000;font-weight:bold">/*</span>
-</span></span></code></pre></div><p>This will give you an indication of what is happening in OSX. For example, I was installing the XCode Command Line Utils from within XCode. The installation progress information is severely lacking, it just shows a bar which moves from left to right. However I was able to find out what was happening by tailing the log files in /var/log, which provided me with an updated breakdown of the installer progress. You can exit tail by using Control-C which will return you to the shell.</p>
-<h3 id="constant-ping">Constant Ping</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ping www.google.com
-</span></span></code></pre></div><p>When I have problems with my internet connection, I always keep a ping running in the background in a terminal. The interesting information here is the ICMP RTT time shown as the milliseconds next to the &rsquo;time&rsquo; label, and how many packets were dropped shown by the number of &lsquo;request timeout&rsquo; messages. Google does not mind you pinging it, just like hundreds of thousands of other people do, and so you can keep this up constantly, monitoring problems with your internet connection. When you get &rsquo;no route to host&rsquo; printed, this usually means that your gateway or wireless connection is down, which means you usually have to reestablish a connection manually.</p>
-<h3 id="tcpdump">tcpdump</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo tcpdump en0 -vvv
-</span></span></code></pre></div><p>Do you really want to see what is happening on your computers network connection? Turn the floodgates on then, and use tcpdump. This will output information on each packet that your computer sends out and is received in a slightly Matrix-style torrent of information. If you are downloading something via an application or have a number of active web connections such as AJAX Facebook pages loaded, you would expect to see a lot of traffic. If you don&rsquo;t have a lot of traffic, and you&rsquo;re expecting a lot, then something may be wrong. You can use tcpdump to get a general feel of what data is being passed around, and to what IP address, which you can then look up later for more clarity. You can also use grep and some basic TCP/IP networking knowledge to find out what exactly is happening on the network level.</p>
-<h3 id="network-connection-status-of-each-application">Network Connection Status of Each Application</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo lsof -i tcp
-</span></span></code></pre></div><p>Want to find out information about applications are using your internet connection, and the connection state of each TCP connection? Use lsof. You will be given the name of the application that is using each TCP connection, the IP address to which it is connected to, and the TCP connection state (established is good, time wait can be a problem sign). Run this regularly to check on the connection state of your programs. This won&rsquo;t monitor UDP connections, but should cover your web browsers.</p>
-<p>Hopefully this information will give you a bit more insight into what is actually happening on your OSX machine when your internet connection is being unreliable and you want more information about what is going on. Once you have this information, you can use it to inform actions such as toggling the wireless off and on again to reestablish a connection, reloading webpages that have hung, restarting application downloads, or possibly finding a new hotel or resort with a better internet connection :)</p>
-]]></content:encoded>
     </item>
-    
     <item>
       <title>Converting a single M2V frame into JPEG under OSX</title>
       <link>https://davidcraddock.net/2012/04/12/converting-a-single-m2v-frame-into-jpeg/</link>
       <pubDate>Thu, 12 Apr 2012 15:20:23 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2012/04/12/converting-a-single-m2v-frame-into-jpeg/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame. I couldn&amp;rsquo;t find a video player that would open the single frame. So I resorted to the command line version of ffmpeg, which I installed via macports, to convert this single frame to a jpg file to view as normal. This line worked a treat:&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg"><img loading="lazy" src="/wp-content/uploads/2012/04/stainless_steel_number_plate_frame_square.jpg" type="" alt=""  /></a></p>
-<p>I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame. I couldn&rsquo;t find a video player that would open the single frame. So I resorted to the command line version of ffmpeg, which I installed via macports, to convert this single frame to a jpg file to view as normal. This line worked a treat:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ffmpeg -i north.mpg -ss 00:00:00 -t 00:00:1 -s 1024x768 -r 1 -f mjpeg north.jpg
-</span></span></code></pre></div><p>Where &rsquo;north.mpg&rsquo; was the m2v file, and &rsquo;north.jpg&rsquo; was the output jpeg.</p>
-<p>And this:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>find -name *.mpg -exec ffmpeg -i {} -ss 00:00:00 -t 00:00:1 -s 1024x768 -r 1 -f mjpeg {}.jpg ;
-</span></span></code></pre></div><p>Will go through all the mpg files in the current directory and below, and create their jpeg single frame equivalents, ie: for north.mpg it will create north.mpg.jpg.</p>
-]]></content:encoded>
     </item>
-    
     <item>
       <title>Find large files by using the OSX commandline</title>
       <link>https://davidcraddock.net/2011/02/22/find-large-files-by-using-the-osx-commandline/</link>
       <pubDate>Tue, 22 Feb 2011 00:16:12 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2011/02/22/find-large-files-by-using-the-osx-commandline/</guid>
       <description>&lt;p&gt;To quickly find large files to delete if you have filled your startup disk, enter this command on the OSX terminal:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo find / -size +500000 -print
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will find and print out file paths to files over 500MB. You can then go through them and delete them individually by typing &lt;strong&gt;rm &amp;ldquo;&lt;!-- raw HTML omitted --&gt;&amp;rdquo;&lt;/strong&gt;, although there is no undelete so make sure you know you won&amp;rsquo;t miss them.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>To quickly find large files to delete if you have filled your startup disk, enter this command on the OSX terminal:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo find / -size +500000 -print
-</span></span></code></pre></div><p>This will find and print out file paths to files over 500MB. You can then go through them and delete them individually by typing <strong>rm &ldquo;<!-- raw HTML omitted -->&rdquo;</strong>, although there is no undelete so make sure you know you won&rsquo;t miss them.</p>
-]]></content:encoded>
     </item>
-    
     <item>
       <title>Windows 7 Gaming on my Macbook</title>
       <link>https://davidcraddock.net/2010/07/01/running-windows-7-on-my-macbook/</link>
       <pubDate>Thu, 01 Jul 2010 22:50:25 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2010/07/01/running-windows-7-on-my-macbook/</guid>
       <description>&lt;p&gt;I have a 2006/2007 Core 2 Duo 2.6ghz white macbook, that I use regularly for internet, music, watching films, itunes and integration with my iPhone.&lt;/p&gt;
 &lt;p&gt;I wanted to turn my desktop PC into a &amp;lsquo;work only&amp;rsquo; Ubuntu Linux machine, so that I don&amp;rsquo;t get distracted when I&amp;rsquo;m supposed to be doing something else.&lt;/p&gt;
 &lt;p&gt;But I still have a lot of PC games that I wanted to play on the Macbook, so I decided to try and setup a windows environment to play games on using Bootcamp 2.0 to create a dual-boot OSX/Windows 7 configuration.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>I have a 2006/2007 Core 2 Duo 2.6ghz white macbook, that I use regularly for internet, music, watching films, itunes and integration with my iPhone.</p>
-<p>I wanted to turn my desktop PC into a &lsquo;work only&rsquo; Ubuntu Linux machine, so that I don&rsquo;t get distracted when I&rsquo;m supposed to be doing something else.</p>
-<p>But I still have a lot of PC games that I wanted to play on the Macbook, so I decided to try and setup a windows environment to play games on using Bootcamp 2.0 to create a dual-boot OSX/Windows 7 configuration.</p>
-<p>It turns out it works really well. The Macbook runs Windows 7 64-bit edition fine, and although the integrated graphics card isn&rsquo;t designed to run modern games very well, you can get a good gaming experience from small indie games and the older type of PC RPGs that I tend to play. My macbook got a 3.5 rating on the windows experience index for graphics, which is sufficient for many PC games.</p>
-<p>First you need to partition your macbook&rsquo;s HD using the Bootcamp assistant, in the OSX utilities section. Make sure you have your first OSX installation DVD to hand, the one that came with your Macbook. I chose to split the hard drive into two equally sized partitions. Then just place your W7 DVD in the drive, and Bootcamp takes care of the rest.</p>
-<p>Once W7 is installed, you can access the Bootcamp menu on startup by holding down the option key. This brings up a menu where you can select to boot into OSX or Windows.</p>
-<p>When you start W7 for the first time, you can install the windows driver set for your Macbook that Bootcamp provides you. Insert your OSX installation DVD 1, and run the setup.exe that is located in the Bootcamp folder. This will install native windows drivers for your Macbook hardware.</p>
-<p>The only change I needed to make for my macbook, was to install the latest 64bit Realtek drivers for Vista/Windows 7, which are located <a href="http://www.realtek.com/downloads/downloadsCheck.aspx?Langid=1&amp;PNid=24&amp;PFid=24&amp;Level=4&amp;Conn=3&amp;DownTypeID=3&amp;GetDown=false">on the Realtek website</a>. This will fix any sound problems you might have while playing games.</p>
-<p>Now don&rsquo;t expect to run the latest 3D games, but if you&rsquo;re happy enough with slightly older, classic, indie or retro games, you can get a good gaming experience on Windows 7 from your macbook. It does well with plenty of the indie games available on Value&rsquo;s Steam distribution network.</p>
-]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

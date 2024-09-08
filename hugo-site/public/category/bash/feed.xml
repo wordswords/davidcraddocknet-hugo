@@ -4,83 +4,39 @@
     <title>Bash on DavidCraddock.net</title>
     <link>https://davidcraddock.net/category/bash/</link>
     <description>Recent content in Bash on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Jun 2013 16:08:16 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/category/bash/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jun 2013 16:08:16 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/category/bash/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>iTerm for OSX for a Colourful Terminal Experience</title>
       <link>https://davidcraddock.net/2013/06/11/iterm-for-osx-for-a-colourful-terminal-experience/</link>
       <pubDate>Tue, 11 Jun 2013 16:08:16 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2013/06/11/iterm-for-osx-for-a-colourful-terminal-experience/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2013/06/screen-shot-2013-06-11-at-17-06-36.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2013/06/screen-shot-2013-06-11-at-17-06-36.png&#34; type=&#34;&#34; alt=&#34;Screen Shot 2013-06-11 at 17.06.36&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2013/06/screen-shot-2013-06-11-at-17-06-36.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2013/06/screen-shot-2013-06-11-at-17-06-36.png&#34; alt=&#34;Screen Shot 2013-06-11 at 17.06.36&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;iTerm is much better than the standard OSX terminal client, not least because it has compatiablity with xterm256-color terminal emulation. xterm256-color emulation will give your terminal access to 256 colours instead of the usual 16. Much better, not just for looking pretty, but for distinguishing between different types of data in an editor like VIM or even in Cucumber output (see picture above). It&amp;rsquo;s also free.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2013/06/screen-shot-2013-06-11-at-17-06-36.png"><img loading="lazy" src="/wp-content/uploads/2013/06/screen-shot-2013-06-11-at-17-06-36.png" type="" alt="Screen Shot 2013-06-11 at 17.06.36"  /></a></p>
-<p>iTerm is much better than the standard OSX terminal client, not least because it has compatiablity with xterm256-color terminal emulation. xterm256-color emulation will give your terminal access to 256 colours instead of the usual 16. Much better, not just for looking pretty, but for distinguishing between different types of data in an editor like VIM or even in Cucumber output (see picture above). It&rsquo;s also free.</p>
-<p><a href="http://iterm.sourceforge.net">http://iterm.sourceforge.net</a></p>
-<p>Once installed, you will have to go in to the preferences and set your &lsquo;Report Terminal Type&rsquo; to be &lsquo;xterm256-color&rsquo;. Then things should be more colourful. Then install a 256 color compatible theme in VIM to make use of that extra capacity. You can also edit your prompt and use 256 colour escape sequences, if you wish.</p>
-]]></content:encoded>
     </item>
-    
     <item>
       <title>Tailing a log file and Running an Application at the Same Time</title>
       <link>https://davidcraddock.net/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/</link>
       <pubDate>Tue, 11 Jun 2013 15:55:04 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/</guid>
       <description>&lt;p&gt;A quick tip this, but a useful one. You can tail a log file in the background while running a script in the foreground. So for example, I frequently execute the following commands:&lt;/p&gt;
 &lt;p&gt;1.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tail &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&lt;/span&gt;f &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;var&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#0086b3&#34;&gt;log&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;/&lt;/span&gt;httpd&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;log &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;amp;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;/&lt;/span&gt;etc&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;/&lt;/span&gt;init&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;d&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;/&lt;/span&gt;apache restart
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;2. (The log file will spool onto the terminal as Apache is restarted.)&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>A quick tip this, but a useful one. You can tail a log file in the background while running a script in the foreground. So for example, I frequently execute the following commands:</p>
-<p>1.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>tail <span style="color:#000;font-weight:bold">-</span>f <span style="color:#000;font-weight:bold">/</span><span style="color:#000;font-weight:bold">var</span><span style="color:#000;font-weight:bold">/</span><span style="color:#0086b3">log</span><span style="color:#000;font-weight:bold">/</span>httpd<span style="color:#000;font-weight:bold">.</span>log <span style="color:#000;font-weight:bold">&amp;</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">/</span>etc<span style="color:#000;font-weight:bold">/</span>init<span style="color:#000;font-weight:bold">.</span>d<span style="color:#000;font-weight:bold">/</span>apache restart
-</span></span></code></pre></div><p>2. (The log file will spool onto the terminal as Apache is restarted.)</p>
-<p>3. Once you are finished viewing the log file, foreground the log file process and kill it:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>fg
-</span></span></code></pre></div><p>Then terminate the foregrounded log tail with a control-c.</p>
-<p>With this technique you can run as many commands as you want, and see the real-time effects on your log file, without having to open a new terminal. You will also see your program output interspersed with your log file output, which can be helpful when tracing down particular problems.</p>
-]]></content:encoded>
     </item>
-    
     <item>
       <title>Long Bash History Files are Great.</title>
       <link>https://davidcraddock.net/2010/03/18/long-bash-history-files-are-great/</link>
       <pubDate>Thu, 18 Mar 2010 19:55:51 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2010/03/18/long-bash-history-files-are-great/</guid>
       <description>&lt;p&gt;When I&amp;rsquo;m installing software, or doing some complicated stuff on the linux command line, which nowadays is pretty much all the time, I will sometimes want to remember exactly what I typed.&lt;/p&gt;
 &lt;p&gt;Now the normal /home/david/.bash_history file is usually fine for that. Run this command, for example, and you will see the commands you typed in before you logged out of the server last time you used it:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cat ~/.bash_history
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
-      <content:encoded><![CDATA[<p>When I&rsquo;m installing software, or doing some complicated stuff on the linux command line, which nowadays is pretty much all the time, I will sometimes want to remember exactly what I typed.</p>
-<p>Now the normal /home/david/.bash_history file is usually fine for that. Run this command, for example, and you will see the commands you typed in before you logged out of the server last time you used it:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>cat ~/.bash_history
-</span></span></code></pre></div><p>You can also find out what you typed in this session, ie: since you logged in, by typing this:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>history
-</span></span></code></pre></div><p>This is great, and it&rsquo;s even more useful if you add a grep pipeline, so you can search through the previous commands you typed in for a particular phrase or command, ie:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>history | grep apt-get
-</span></span></code></pre></div><p>However what I really want nowadays is an almost infinite bash_history file, so I can find out not just what I did last week, but two weeks ago, or last month or perhaps last year. Now there are obvious security risks involved with this, and to make sure you don&rsquo;t accidently store mistyped passwords to other systems, or other things, you should probably make sure you never type them in on the command line. This is good practice anyway, and since I use key&rsquo;d sshd logins exclusively nowadays, there is not much chance of me tripping up, typing a password into the terminal, and then forgetting about it. In theory however, using long/infinite bash_history files does mean that if anyone compromised your shell account, they&rsquo;d have any passwords to systems that you mistyped.</p>
-<p>So I&rsquo;m careful with this. You can also clear your history file quite quickly if you do accidently find you&rsquo;ve messed up. Log out, log back in again, and just do this:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>echo  &gt; ~/.bash_history
-</span></span></code></pre></div><p>Then that will delete all the previous logged commands.</p>
-<p>Apart from serving as a major memory aid to complicated install work, and a log for those increasingly complicated chained, piped, one-liners that I&rsquo;m fond of but only really want to have to type once, there are other benefits to keeping a large bash_history file. The main one is that it makes it easy to convert your previous commands into a handy shell script or two, which you can set to run at a specific time of day via cron.. or even make into a system-wide command for other users to use.</p>
-<p>OK so hopefully I&rsquo;ve convinced you that it can be very useful to have a long, persistent, bash_history file. But how do you configure the shell so that it does this for you? The following is the magic customization lines that I use on my personal desktops, laptops, and any other trusted computers that I think are reasonably free from the risk of people hacking in just to retrieve my .bash_history file..:</p>
-<p>/home/david/bash_profile
-`..
-..</p>
-<h2 id="bash-history-db">bash history db</h2>
-<h1 id="heading"></h1>
-<h1 id="increase-the-history-file-size-to-20000-lines">increase the history file size to 20,000 lines</h1>
-<p>export HISTSIZE=20000</p>
-<h1 id="append-all-commands-to-the-history-file-dont-overwrite-it-at-the-start-of-every-new-session">append all commands to the history file, don&rsquo;t overwrite it at the start of every new session</h1>
-<p>shopt -s histappend
-`</p>
-<p>The above will give you an (almost) infinite bash_history file. It will start deleting old commands at 20,000 lines, ie: 20,000 commands. Make sure you have enough disk space for that. My .bash_history file is currently at around 200KB, not a huge file by any means. I&rsquo;d say it will grow to 400-600KB max. If you want to calculate approximatly how much it will use, then in bytes, it&rsquo;s the number of characters in your average linux command x 20,000.</p>
-]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

@@ -10,19 +10,63 @@
 <meta name="description" content="Posts - DavidCraddock.net">
 <meta name="author" content="">
 <link rel="canonical" href="https://davidcraddock.net/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.7da7716a1f2d0725f74c6ae7f8d6adafc43aabe2b366b65bfbf433448e2a2001.css" integrity="sha256-fadxah8tByX3TGrn&#43;Natr8Q6q&#43;KzZrZb&#43;/QzRI4qIAE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://davidcraddock.net/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://davidcraddock.net/favicon-32x32.png">
 <link rel="apple-touch-icon" href="https://davidcraddock.net/apple-touch-icon.png">
+<link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/posts/feed.xml">
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/posts/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-<meta name="twitter:title" content="Posts | DavidCraddock.net" />
-<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
-<meta property="og:title" content="Posts | DavidCraddock.net" />
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+<meta property="og:title" content="Posts" />
 <meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://davidcraddock.net/posts/" />
 
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Posts"/>
+<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK."/>
 
 
 <script type="application/ld+json">
@@ -39,120 +83,22 @@
   ]
 }
 </script>
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary-bg: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list-page {
-                background: var(--theme);
-            }
-
-            .list-page:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list-page:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
-</noscript>
-
 </head>
 
-<body class="list-page type-posts kind-section layout-" id="top"><script data-no-instant>
-function switchTheme(theme) {
-  switch (theme) {
-    case 'light':
-      document.body.classList.remove('dark');
-      break;
-    case 'dark':
-      document.body.classList.add('dark');
-      break;
-    
-    default:
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-      }
-  }
-}
-
-function isDarkTheme() {
-  return document.body.className.includes("dark");
-}
-
-function getPrefTheme() {
-  return localStorage.getItem("pref-theme");
-}
-
-function setPrefTheme(theme) {
-  switchTheme(theme)
-  localStorage.setItem("pref-theme", theme);
-}
-
-const toggleThemeCallbacks = {}
-toggleThemeCallbacks['main'] = (isDark) => {
-  
-  if (isDark) {
-    setPrefTheme('light');
-  } else {
-    setPrefTheme('dark');
-  }
-}
-
-
-
-
-window.addEventListener('toggle-theme', function() {
-  
-  const isDark = isDarkTheme()
-  for (const key in toggleThemeCallbacks) {
-    toggleThemeCallbacks[key](isDark)
-  }
-});
-
-
-function toggleThemeListener() {
-  
-  window.dispatchEvent(new CustomEvent('toggle-theme'));
-}
-
-</script>
+<body class="list" id="top">
 <script>
-  
-  (function() {
-    const defaultTheme = 'auto';
-    const prefTheme = getPrefTheme();
-    const theme = prefTheme ? prefTheme : defaultTheme;
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
 
-    switchTheme(theme);
-  })();
 </script>
 
 <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
-            <span class="logo-switches">
-            </span>
+            <div class="logo-switches">
+            </div>
         </div>
         <ul id="menu">
         </ul>
@@ -161,338 +107,216 @@ function toggleThemeListener() {
 <main class="main"> 
 <header class="page-header"><div class="breadcrumbs"><a href="https://davidcraddock.net/">Home</a></div>
   <h1>
-    Posts</h1><div class="inline-links">
-  
-  
-  <span><a href="https://davidcraddock.net/posts/feed.xml" target="_blank">RSS</a></span></div>
+    Posts
+  </h1>
 </header>
-
-
-<div>
-    <ul>
-        <li><a href="/">Blog Posts</a></li>
-        <li><a href="/music">My Music</a></li>
-        <li><a href="/my-home-network">My Home Network</a></li>
-        <li><a href="/my-gaming-setup">My Gaming Setup</a></li>
-        <li><a href="/my-mobile-laptop-setup">My Mobile Laptop Setup</a></li>
-        <li><a href="/my-work-computer">My Work Computer</a></li>
-    </ul>
-</div>
-
-
-
-
-
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Top 5 Recommended Upgrades for your PC
+    <h2 class="entry-hint-parent">Goals of 2015 Summary
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>I have made a lot of different upgrades and modifications to my PC, as you can see here. Some of the upgrades have made more of a difference than others though. Here is what I think you should be concentrating on, if you’re looking to upgrade.
-Solid State Hardisk (SSD) - Solid State hard drives use flash memory instead of the moving disk platters of traditional hard disks. It is the same type of storage as your USB stick....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>December 21, 2015</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>3 min</span></span>
-</footer>
+  <div class="entry-content">
+    <p>At the start of 2015, I wrote down some goals for 2015. Around half-way through the year, I revisited these goals with some thoughts on how well I’d done. Now 2015 is over, I want to reflect on what has been achieved and what hasn’t.
+I also want to comment on the fact that I am discussing personal things here. A few years ago I was decided that I was going to keep this blog professional and pretty much dry of any thoughts or feelings on my personal life. I have moved away from that though, inspired by blogs such as Iain’s, where personal thoughts and feelings are mixed with technical observations. I would like to think that this isn’t a bad move; after all if potential employers come to look at this 5 years from now, and don’t like what I’ve done here, then I probably don’t want to work for them anyway. There is the argument that blogs should be ’themed’ or targetted towards a particular subject to garner followers, and that too much sharing is possibly a bad thing. However, my current thoughts are that dry techncial info is boring, and I’d rather mix it with other things that are important to me.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2016-01-17 20:38:13 +0000 GMT'>January 17, 2016</span>&nbsp;·&nbsp;5 min</footer>
+  <a class="entry-link" aria-label="post link to Goals of 2015 Summary" href="https://davidcraddock.net/2016/01/17/2015-goals-summary/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Top 5 Recommended Upgrades for your PC
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I have made a lot of different upgrades and modifications to my PC, as you can see here. Some of the upgrades have made more of a difference than others though. Here is what I think you should be concentrating on, if you’re looking to upgrade.
+Solid State Hardisk (SSD) - Solid State hard drives use flash memory instead of the moving disk platters of traditional hard disks. It is the same type of storage as your USB stick. This type of storage is a lot faster to access compared to magnetic storage. Upgrading will result in a huge performance increase for most systems if you are changing from a traditional hard disk. Get as big a size as you can afford. If you play computer games or do a lot of media production work, then the added space will be useful. They have reduced in price over the years, the first SSD I bought was £120 for 120GB SSD back in 2012, in 2015 I just bought a 250GB SSD for £50. So it’s definitely affordable now. Large Monitor - If you can get a 27&#34;-32&#34; monitor then do so. It has made so much difference to the day to day usage of my PC. I would recommend 1440p if you can. 1440p is half the resolution of 4K. I wouldn’t recommend a 4K monitor yet in 2015 as I don’t think they have enough software support, and the cost is considerable for a decent screen. If you’re a gamer, then you might want to aim for a higher refresh speed, but I’d say this should be a secondary consideration to the screen space. Look on TFTCentral for reviews and guides to the different screen types available. Good Soundcard and Surround Sound Speaker System - Headphones are OK, but even a basic surround sound soundcard and speaker system is going to be so much better. I have a Asus Xonar Phoebus Solo which I recommend, it’s a 7.1 surround sound card. I have a cheap £60 set of surround sound speakers, Logitech Z506 Surround Sound Speakers. Surround sound really makes a difference in gaming and movies. I think it’s the seperate subwoofer that has the most effect, so if you are not that convinced by surround sound, you could get a 2.1 (two speakers and a subwoofer) setup for a bit less. Ergonomic Mouse and good mousemat - Chances are, most of the time you’re at your PC, you will be using the mouse. It is therefore really important you have a good mouse that won’t damange your hand after a few years use and is comfortable to use. Modern mice use laser scanners to track the position of the mouse on a flat surface. A higher resolution laser (measured in DPI - dots per inch) means that you can get more accurate tracking. Therefore look for high DPI mice for gaming or fine detail work as well as an ergonomic fit and lots of buttons. I recommend Logitech mice, after having had several Razer mice that didn’t last very long. I would also pick up a steel mousemat, as they never get tangled up in your mouse like the fibre mousemats do. Recent Graphics Card - If you are into gaming or 3D modelling work, you would often prioritise this over any other upgrade. A new graphics card means that your existing games will run faster on higher detail settings, and you can play new games on higher settings with better framerate. I don’t think it matters too much whether you go for Nvidea or AMD as long as you can run the games you want to run. If you are not interested in running the latest games, then perhaps you don’t need this, but you may be missing out in the future. </p>
+  </div>
+  <footer class="entry-footer"><span title='2015-12-21 08:37:03 +0000 GMT'>December 21, 2015</span>&nbsp;·&nbsp;3 min</footer>
   <a class="entry-link" aria-label="post link to Top 5 Recommended Upgrades for your PC" href="https://davidcraddock.net/2015/12/21/top-5-recommended-upgrades-for-your-pc/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Too much Scrolling! - Tips for Dealing with Mouse-Wheel Finger Repetitive Strain Injury
+    <h2 class="entry-hint-parent">Too much Scrolling! - Tips for Dealing with Mouse-Wheel Finger Repetitive Strain Injury
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>Recently I had noticed I’d been having quite bad problems with my fingers based on the fact that I had been scrolling the mouse wheel too much when scrolling through web pages. Here are a number of options you can take if you are in a similar situation as me:
-Change OS’s scrolling speed to its maximum This is the easiest change on most modern OSs, and will result in less scroll movements made by your fingers, because each scroll movement will move the screen down by a full screen height, (equivalent to a page down)....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>December 5, 2015</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
+  <div class="entry-content">
+    <p>Recently I had noticed I’d been having quite bad problems with my fingers based on the fact that I had been scrolling the mouse wheel too much when scrolling through web pages. Here are a number of options you can take if you are in a similar situation as me:
+Change OS’s scrolling speed to its maximum This is the easiest change on most modern OSs, and will result in less scroll movements made by your fingers, because each scroll movement will move the screen down by a full screen height, (equivalent to a page down). This can be a bit annoying though as you lose accuracy when you want to just scroll down a small amount, it takes a bit of getting used to. Also you are still using the same muscles, just not as often.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-12-05 17:32:40 +0000 GMT'>December 5, 2015</span>&nbsp;·&nbsp;2 min</footer>
   <a class="entry-link" aria-label="post link to Too much Scrolling! - Tips for Dealing with Mouse-Wheel Finger Repetitive Strain Injury" href="https://davidcraddock.net/2015/12/05/too-much-scrolling-tips-for-dealing-with-mouse-wheel-finger-repetitive-strain-injury/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Biggest Disappointment Purchases for PC - Razer Tiamat &#43; Lightpack
+    <h2 class="entry-hint-parent">Biggest Disappointment Purchases for PC - Razer Tiamat &#43; Lightpack
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>As you can see, I buy a lot of bits and pieces for my PC. Occasionally though, I buy something that I feel was a disappointment, or not worth the investment. This post is meant to caution against other people making the same mistake.
-Razer Tiamat - 7.1 Surround Sound Gaming Headset, with microphone (http://www.razerzone.com) This was a big dissapointment in a couple of ways. The first, and most obvious in hindsight now I’m actually working on spatial audio for a living at BBC R&amp;D, is that 7....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>November 8, 2015</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
+  <div class="entry-content">
+    <p>As you can see, I buy a lot of bits and pieces for my PC. Occasionally though, I buy something that I feel was a disappointment, or not worth the investment. This post is meant to caution against other people making the same mistake.
+Razer Tiamat - 7.1 Surround Sound Gaming Headset, with microphone (http://www.razerzone.com) This was a big dissapointment in a couple of ways. The first, and most obvious in hindsight now I’m actually working on spatial audio for a living at BBC R&amp;D, is that 7.1 surround sound headsets are a joke. There is no way you can get enough seperation between the different speaker drivers when your ears are so close to the speakers. If you have a soundcard or motherboard that supports surround sound, do yourself a favour and get a surround sound speaker set.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-11-08 19:22:50 +0000 GMT'>November 8, 2015</span>&nbsp;·&nbsp;2 min</footer>
   <a class="entry-link" aria-label="post link to Biggest Disappointment Purchases for PC - Razer Tiamat &#43; Lightpack" href="https://davidcraddock.net/2015/11/08/biggest-disappointment-purchases-for-pc-razer-tiamat-lightpack/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>My Favourite OSX Apps for Development
+    <h2 class="entry-hint-parent">My Favourite OSX Apps for Development
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>I’ve just recently bought a Macbook Pro for myself, after having used a MBP at work for 4 years. I find it to be a really powerful development environment for the development I do, in languages such as Java, PHP, Ruby, Python and JS. Here is what I use day-to-day:
-OSX El Capitan I haven’t found anything not to like about this upgrade. I don’t use a lot of external devices, for which Bruce has found problems with El Capitan’s new restricted driver management for Arduinos and others....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>November 7, 2015</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>3 min</span></span>
-</footer>
+  <div class="entry-content">
+    <p>I’ve just recently bought a Macbook Pro for myself, after having used a MBP at work for 4 years. I find it to be a really powerful development environment for the development I do, in languages such as Java, PHP, Ruby, Python and JS. Here is what I use day-to-day:
+OSX El Capitan I haven’t found anything not to like about this upgrade. I don’t use a lot of external devices, for which Bruce has found problems with El Capitan’s new restricted driver management for Arduinos and others. I like the fact I can use split screen functionality to side-by-side two windows easily, a feature that I very much like in Windows 10 too.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-11-07 12:51:33 +0000 GMT'>November 7, 2015</span>&nbsp;·&nbsp;3 min</footer>
   <a class="entry-link" aria-label="post link to My Favourite OSX Apps for Development" href="https://davidcraddock.net/2015/11/07/favourite-osx-apps-for-development/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Next Big Thing: Voice Control for Home Automation
+    <h2 class="entry-hint-parent">Next Big Thing: Voice Control for Home Automation
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>So, I have totally bought in to the home automation craze that is currently ’the next big thing’ in the technology world in 2015. Apple has released iOS 9 with their HomeKit home automation framework, Google have the Nest series of smart devices, and there are numerous emerging competitors and hundreds of devices out there right now that will network together in your home.
-For the uninitiated, a ‘virtual assistant’ is a cloud-connected voice processing system which you can ’talk’ to....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>October 15, 2015</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>4 min</span></span>
-</footer>
+  <div class="entry-content">
+    <p>So, I have totally bought in to the home automation craze that is currently ’the next big thing’ in the technology world in 2015. Apple has released iOS 9 with their HomeKit home automation framework, Google have the Nest series of smart devices, and there are numerous emerging competitors and hundreds of devices out there right now that will network together in your home.
+For the uninitiated, a ‘virtual assistant’ is a cloud-connected voice processing system which you can ’talk’ to. This is how a voice assistant essentially works:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-10-15 15:28:52 +0000 +0000'>October 15, 2015</span>&nbsp;·&nbsp;4 min</footer>
   <a class="entry-link" aria-label="post link to Next Big Thing: Voice Control for Home Automation" href="https://davidcraddock.net/2015/10/15/voice-control-for-home-automation-having-a-virtual-assitant-in-your-living-room/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>IFTTT.com - Program your Life
+    <h2 class="entry-hint-parent">IFTTT.com - Program your Life
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>If you haven’t seen If This Then That.com then I encourage you to check it out. It has a number of ways of automating your life, and can do things like text message you when you get mentioned on Twitter, up to deactivate your smart alarm when you’re nearing your house. This message will (hopefully) be posted on my Facebook page and my Twitter account, all thanks to IFTTT.com.</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>October 15, 2015</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
+  <div class="entry-content">
+    <p>If you haven’t seen If This Then That.com then I encourage you to check it out. It has a number of ways of automating your life, and can do things like text message you when you get mentioned on Twitter, up to deactivate your smart alarm when you’re nearing your house. This message will (hopefully) be posted on my Facebook page and my Twitter account, all thanks to IFTTT.com.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-10-15 10:17:28 +0000 +0000'>October 15, 2015</span>&nbsp;·&nbsp;1 min</footer>
   <a class="entry-link" aria-label="post link to IFTTT.com - Program your Life" href="https://davidcraddock.net/2015/10/15/ifttt-com-program-your-life/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Scope in JavaScript
+    <h2 class="entry-hint-parent">Scope in JavaScript
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>I am learning JS for work. This is a pretty good summary of the most common scoping rules in JavaScript:
-http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>September 28, 2015</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
+  <div class="entry-content">
+    <p>I am learning JS for work. This is a pretty good summary of the most common scoping rules in JavaScript:
+http://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-09-28 17:32:15 +0000 +0000'>September 28, 2015</span>&nbsp;·&nbsp;1 min</footer>
   <a class="entry-link" aria-label="post link to Scope in JavaScript" href="https://davidcraddock.net/2015/09/28/scope-in-javascript/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Introversion, Extroversion and the BBC Software Engineer
+    <h2 class="entry-hint-parent">Introversion, Extroversion and the BBC Software Engineer
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>Whether you agree with Myers-Briggs personality profiling or not, like fellow BBC’er Ian Forrester I have found them a useful frame of reference from which to discuss my personality, because I see similarities between my perception of me, and the classification.
+  <div class="entry-content">
+    <p> Whether you agree with Myers-Briggs personality profiling or not, like fellow BBC’er Ian Forrester I have found them a useful frame of reference from which to discuss my personality, because I see similarities between my perception of me, and the classification.
 I took the Myers-Briggs personality profiling, and it has labelled me on several occasions an INTP:
-INTPs are marked by a quiet, stoic, modest, and aloof exterior that masks strong creativity and enthusiasm for novel possibilities....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>September 28, 2015</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>5 min</span></span>
-</footer>
+INTPs are marked by a quiet, stoic, modest, and aloof exterior that masks strong creativity and enthusiasm for novel possibilities. Their weaknesses include poor organization, insensitivity to social niceties, and a tendency to get lost in abstractions. Keirsey referred to INTPs as Architects, one of the four types belonging to the temperament he called the Rationals … I – Introversion preferred to extraversion: INTPs tend to be quiet and reserved. They generally prefer interacting with a few close friends rather than a wide circle of acquaintances, and they expend energy in social situations (whereas extraverts gain energy).
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-09-28 16:22:52 +0000 +0000'>September 28, 2015</span>&nbsp;·&nbsp;5 min</footer>
   <a class="entry-link" aria-label="post link to Introversion, Extroversion and the BBC Software Engineer" href="https://davidcraddock.net/2015/09/28/introversion-extroversion-and-being-a-bbc-software-engineer/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Completed Eurorack
+    <h2 class="entry-hint-parent">Completed Eurorack
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>I’ve finished my 6U Eurorack case. It took me 9 months to build, buying a couple of modules a month.
+  <div class="entry-content">
+    <p>I’ve finished my 6U Eurorack case. It took me 9 months to build, buying a couple of modules a month.
 Goals I wanted to make a self-contained dual voice synthesizer that would interface with my 2x Doepfer Dark Energy MK1s and my Microbrute, on a budget. I also wanted to add some random sound generation features.
-I chose to make the synthesizer out of Doepfer modules because they are easy to find cheap second-hand, and also because they are well-engineered....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>September 2, 2015</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>4 min</span></span>
-</footer>
+I chose to make the synthesizer out of Doepfer modules because they are easy to find cheap second-hand, and also because they are well-engineered. (If they’re good enough for Kraftwerk, who am I to complain?)
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-09-02 08:13:17 +0000 +0000'>September 2, 2015</span>&nbsp;·&nbsp;4 min</footer>
   <a class="entry-link" aria-label="post link to Completed Eurorack" href="https://davidcraddock.net/2015/09/02/completed-eurorack/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Things I&#39;d like to Learn More About
-    </h2>
-  </header>
-  <section class="entry-content">
-    
-      <p>Some things I have been meaning to investigate in my own time, but haven’t, because life just gets in the way.
-Maths - It might surprise a few people that, as a software developer, I never took maths to A-level. I picked up a bit of maths in my CS degree, but I never really got a firm grounding in it. This has prevented me from understanding and coding advanced stuff in game development, understanding audio to a decent level, and generally doing things in which I consider the more interesting fields of computing....</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>September 2, 2015</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>1 min</span></span>
-</footer>
-  <a class="entry-link" aria-label="post link to Things I&#39;d like to Learn More About" href="https://davidcraddock.net/2015/09/02/things-id-like-to-learn-more-about/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="prev" href="https://davidcraddock.net/posts/page/7/">« Prev Page</a>
-    <a class="next" href="https://davidcraddock.net/posts/page/9/">Next Page »</a>
+    <a class="prev" href="https://davidcraddock.net/posts/page/7/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="https://davidcraddock.net/posts/page/9/">Next&nbsp;&nbsp;»
+    </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-  <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span><span style="display: inline-block; margin-left: 1em;">
-    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>
-  </span>
-  <span style="display: inline-block; margin-left: 1em;">
-    Powered by
-    <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-    <a href="https://github.com/reorx/hugo-PaperModX/" rel="noopener" target="_blank">PaperModX</a>
-  </span>
+        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-    <path d="M12 6H0l6-6z" />
-  </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
 </a>
 
 <script>
-  (function() {
-     
-    const disableThemeToggle = '1' == '1';
-    if (disableThemeToggle) {
-      return;
-    }
-
-    let button = document.getElementById("theme-toggle")
-    
-    button.removeEventListener('click', toggleThemeListener)
-    
-    button.addEventListener('click', toggleThemeListener)
-  })();
-</script>
-
-<script>
-  (function () {
     let menu = document.getElementById('menu')
     if (menu) {
-      menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-      menu.onscroll = function () {
-        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-      }
-    }
-
-    const disableSmoothScroll = '' == '1';
-    const enableInstantClick = '1' == '1';
-    
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || disableSmoothScroll || enableInstantClick) {
-      return;
-    }
-    
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        var id = this.getAttribute("href").substr(1);
-        document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-          behavior: "smooth"
-        });
-        if (id === "top") {
-          history.replaceState(null, null, " ");
-        } else {
-          history.pushState(null, null, `#${id}`);
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
-      });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
     });
-  })();
+
 </script>
 <script>
-  var mybutton = document.getElementById("top-link");
-  window.onscroll = function () {
-    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-      mybutton.style.visibility = "visible";
-      mybutton.style.opacity = "1";
-    } else {
-      mybutton.style.visibility = "hidden";
-      mybutton.style.opacity = "0";
-    }
-  };
-</script>
-<script>
-  if (window.scrollListeners) {
-    
-    for (const listener of scrollListeners) {
-      window.removeEventListener('scroll', listener)
-    }
-  }
-  window.scrollListeners = []
-</script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
 
-
-
-<script src="/js/medium-zoom.min.js" data-no-instant
-></script>
-<script src="/js/instantclick.min.js" data-no-instant
-></script>
-<script data-no-instant>
-  
-  
-  
-  
-  
-  
-  InstantClick.init();
 </script>
 </body>
 

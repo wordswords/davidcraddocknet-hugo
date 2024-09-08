@@ -4,14 +4,14 @@
     <title>Osx-Differences-From-Linux on DavidCraddock.net</title>
     <link>https://davidcraddock.net/tag/osx-differences-from-linux/</link>
     <description>Recent content in Osx-Differences-From-Linux on DavidCraddock.net</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 19 Mar 2010 23:03:33 +0000</lastBuildDate><atom:link href="https://davidcraddock.net/tag/osx-differences-from-linux/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Mar 2010 23:03:33 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/tag/osx-differences-from-linux/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Useful OSX commands for Linux users</title>
       <link>https://davidcraddock.net/2010/03/19/useful-osx-command-line-commands/</link>
       <pubDate>Fri, 19 Mar 2010 23:03:33 +0000</pubDate>
-      
       <guid>https://davidcraddock.net/2010/03/19/useful-osx-command-line-commands/</guid>
       <description>&lt;p&gt;I wrote this list to remind me, as a newcomer to OSX, how the command line differed from the Linux commandline. I thought I&amp;rsquo;d expand on it, and share it:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;To mount any iso:&lt;/strong&gt;&lt;/p&gt;
@@ -20,27 +20,6 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl http://ftp.heanet.ie/pub/linuxmint.com/stable/8/LinuxMint-8.iso -o linuxmint.iso -C -
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;the -o specifies the output file (required)
 the -C - specifies automatically resuming if possible.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>I wrote this list to remind me, as a newcomer to OSX, how the command line differed from the Linux commandline. I thought I&rsquo;d expand on it, and share it:</p>
-<p><strong>To mount any iso:</strong></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>hdiutil mount sample.iso
-</span></span></code></pre></div><p><strong>To download a file as you would using wget:</strong></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>curl http://ftp.heanet.ie/pub/linuxmint.com/stable/8/LinuxMint-8.iso -o linuxmint.iso -C -
-</span></span></code></pre></div><p>the -o specifies the output file (required)
-the -C - specifies automatically resuming if possible.</p>
-<p><strong>To burn a bootable iso to CD, DVD or USB key:</strong>
-use the &ldquo;diskutil&rdquo; program as described in: <a href="http://forums.macrumors.com/showthread.php?t=598291">http://forums.macrumors.com/showthread.php?t=598291</a> <strong>Monitor disk io utilisation.. poll once per second</strong></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>iostat -c 99999
-</span></span></code></pre></div><p>will run until 99999 seconds have passed.</p>
-<p><strong>Monitor CPU and memory utilisation.. polling per second</strong></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>top
-</span></span></code></pre></div><p>Just like Linux.</p>
-<p><strong>Mount Windows Shares</strong></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>mount -t smbfs //@/
-</span></span></code></pre></div><p>ie:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>mount -t smbfs //davec@SERVER/Dev samba-to-netdev
-</span></span></code></pre></div><p>then it will appear mounted in /Volumes with the mount point name you supplied, ie: /Volumes/samba-to-netdev/.</p>
-]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

@@ -8,23 +8,18 @@
 <title>Retrospectives | DavidCraddock.net</title>
 <meta name="keywords" content="">
 <meta name="description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK.">
-<meta name="author" content="Reorx">
+<meta name="author" content="">
 <link rel="canonical" href="https://davidcraddock.net/category/retrospectives/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.97d99fcdd90c38f6e3343e959a97a0295b30f590730a4ece2347f7f24ad997d1.css" integrity="sha256-l9mfzdkMOPbjND6VmpegKVsw9ZBzCk7OI0f38krZl9E=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7aaab7890777f77be6783ba44643d69bb5eceb46a88fe18fc484f3684fda6a9f.css" integrity="sha256-eqq3iQd393vmeDukRkPWm7Xs60aoj&#43;GPxITzaE/aap8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://davidcraddock.net/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://davidcraddock.net/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://davidcraddock.net/favicon-32x32.png">
 <link rel="apple-touch-icon" href="https://davidcraddock.net/apple-touch-icon.png">
+<link rel="mask-icon" href="https://davidcraddock.net/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://davidcraddock.net/category/retrospectives/feed.xml">
 <link rel="alternate" hreflang="en" href="https://davidcraddock.net/category/retrospectives/">
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Retrospectives | DavidCraddock.net" />
-<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
-<meta property="og:title" content="Retrospectives | DavidCraddock.net" />
-<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://davidcraddock.net/category/retrospectives/" />
-    <meta property="og:image" content="https://davidcraddock.net/cover.png"/>
-
-
 <noscript>
     <style>
         #theme-toggle,
@@ -40,105 +35,55 @@
                 --entry: rgb(46, 46, 51);
                 --primary: rgb(218, 218, 219);
                 --secondary: rgb(155, 156, 157);
-                --tertiary-bg: rgb(65, 66, 68);
+                --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
 
-            .list-page {
+            .list {
                 background: var(--theme);
             }
 
-            .list-page:not(.dark)::-webkit-scrollbar-track {
+            .list:not(.dark)::-webkit-scrollbar-track {
                 background: 0 0;
             }
 
-            .list-page:not(.dark)::-webkit-scrollbar-thumb {
+            .list:not(.dark)::-webkit-scrollbar-thumb {
                 border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+<meta property="og:title" content="Retrospectives" />
+<meta property="og:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://davidcraddock.net/category/retrospectives/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Retrospectives"/>
+<meta name="twitter:description" content="The personal blog of David Craddock, a software engineer based in Manchester, UK."/>
 
 </head>
 
-<body class="list-page type-category kind-term layout-" id="top"><script data-no-instant>
-function switchTheme(theme) {
-  switch (theme) {
-    case 'light':
-      document.body.classList.remove('dark');
-      break;
-    case 'dark':
-      document.body.classList.add('dark');
-      break;
-    
-    default:
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-      }
-  }
-}
-
-function isDarkTheme() {
-  return document.body.className.includes("dark");
-}
-
-function getPrefTheme() {
-  return localStorage.getItem("pref-theme");
-}
-
-function setPrefTheme(theme) {
-  switchTheme(theme)
-  localStorage.setItem("pref-theme", theme);
-}
-
-const toggleThemeCallbacks = {}
-toggleThemeCallbacks['main'] = (isDark) => {
-  
-  if (isDark) {
-    setPrefTheme('light');
-  } else {
-    setPrefTheme('dark');
-  }
-}
-
-
-
-
-window.addEventListener('toggle-theme', function() {
-  
-  const isDark = isDarkTheme()
-  for (const key in toggleThemeCallbacks) {
-    toggleThemeCallbacks[key](isDark)
-  }
-});
-
-
-function toggleThemeListener() {
-  
-  window.dispatchEvent(new CustomEvent('toggle-theme'));
-}
-
-</script>
+<body class="list" id="top">
 <script>
-  
-  (function() {
-    const defaultTheme = 'auto';
-    const prefTheme = getPrefTheme();
-    const theme = prefTheme ? prefTheme : defaultTheme;
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
 
-    switchTheme(theme);
-  })();
 </script>
 
 <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://davidcraddock.net/" accesskey="h" title="DavidCraddock.net (Alt + H)">DavidCraddock.net</a>
-            <span class="logo-switches">
-            </span>
+            <div class="logo-switches">
+            </div>
         </div>
         <ul id="menu">
         </ul>
@@ -147,324 +92,182 @@ function toggleThemeListener() {
 <main class="main"> 
 <header class="page-header"><div class="breadcrumbs"><a href="https://davidcraddock.net/">Home</a>&nbsp;»&nbsp;<a href="https://davidcraddock.net/category/">Category</a></div>
   <h1>
-    category: Retrospectives</h1><div class="inline-links">
-  
-  
-  <span><a href="https://davidcraddock.net/category/retrospectives/feed.xml" target="_blank">RSS</a></span></div>
+    Retrospectives
+  </h1>
 </header>
-  <img src="/me.jpg">
-<div>
-    <ul>
-        <li><a href="/">Blog Posts</a></li>
-        <li><a href="/my-home-network/">Home Network</a></li>
-        <li><a href="/my-gaming-setup/">Gaming Setup</a></li>
-        <li><a href="/my-mobile-laptop-setup/">Mobile Working Setup</a></li>
-        <li><a href="/my-work-computer/">WFH Computer Setup</a></li>
-        <li><a href="/my-bike/">Bike Setup</a></li>
-        <li><a href="/security-research/">Security Research</a></li>
-        <li><a href="https://davidcraddocktutor.com">Software Career Tutoring</a></li>
-        <li><a href="https://davidcraddockaudio.com">Music Industry Portfolio</a></li>
-        <li><a href="https://github.com/wordswords">Github</a></li>
-        <li><a href="https://linkedin.com/in/davidcraddock">LinkedIn</a></li>
-        <li><a href="https://wordswords.github.io/dpc-resume/CV.html">CV/Resume</a></li>
-    </ul>
-</div>
-
-
-
-
-
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>Mid 2024 Retrospective Update
+    <h2 class="entry-hint-parent">Mid 2024 Retrospective Update
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>
-Every year I’ve been doing these ‘retrospectives’, usually once per year but sometimes a couple of times per year.
+  <div class="entry-content">
+    <p> Every year I’ve been doing these ‘retrospectives’, usually once per year but sometimes a couple of times per year.
 Things have changed quite significantly since the last retrospective, and I was in a pensive mood, so I thought I would write a retrospective for half the year.
 I finally found a job, with CGI, early in the year, and started in March 2023. Unfortunately, for reasons I’m contractually obliged not to get into, it wasn’t long before I was looking for work again. I resigned from CGI at the end of June.
 ...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2024-08-02</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>817 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>4 min</span></span>
-</footer>
+  </div>
+  <footer class="entry-footer"><span title='2024-08-02 23:15:41 +0100 BST'>August 2, 2024</span>&nbsp;·&nbsp;4 min</footer>
   <a class="entry-link" aria-label="post link to Mid 2024 Retrospective Update" href="https://davidcraddock.net/2024/08/02/mid-2024-update/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>Retrospective for 2023
+    <h2 class="entry-hint-parent">Retrospective for 2023
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>Every year towards the end of the year, I put together a retrospective of events that have happened over the year - the good, bad and the ugly.
+  <div class="entry-content">
+    <p>Every year towards the end of the year, I put together a retrospective of events that have happened over the year - the good, bad and the ugly.
 The Bad Most of the year was taken up with treatment for relapsed Hodgkins Lymphoma cancer. After the clinical immunotherapy drug trial finished in Feb 2023, cancer was unfortunately still detected, so it did not completely cure it. I had a further (awful) spell in hospital around March/April where my Hickman line became infected and I had a severe mental health episode, probably caused by the strong antibiotics being pumped through my system. Finally I was accepted for a stem cell transplant, and had my transplant on 4th July. We have had to deal with complications of cancer elsewhere in the family, not just my mum’s own cancer treatment being ongoing, but the financial impact of the family having to support both of us, is quite a significant burden. The Good Thankfully, I’m finally in remission for cancer! I have been in remission for 6 months, and if I make it to 2 years, then I am effectively cured. I have a 75% chance of it not coming back within that time, approximately. We got an absolute ton of stuff done on the house, and I have an awesome gaming setup, an awesome DJing setup, an awesome music production setup, an awesome high speed network and server setup, and an awesome WFH setup. All of the goals I set myself of things I wanted to achieve during my downtime having cancer treatment nearly 2 years ago, are more or less finished now. We have decided that we’re moving out of Manchester. We are going to move to Chester, which promises a much, much nicer, quieter, and actually, cheaper place to live now that I am committed to a 100% WFH work life. Things are progressing well with the house sale, and we’ve got a lot of interest so far. I have got fitter and healthier and my posture has got better over the year. I have also managed to reduce the medication I am on, which has helped my health. The Ugly There has been a worldwide downturn for software jobs, just as I had to take some time off my career due to work reasons. This downturn is probably comparable to the 2008/9 downturn in software jobs around the financial crisis. This is definitely bad news for everyone in software. ...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2023-11-25</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>409 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>2 min</span></span>
-</footer>
+  </div>
+  <footer class="entry-footer"><span title='2023-11-25 20:07:59 +0000 GMT'>November 25, 2023</span>&nbsp;·&nbsp;2 min</footer>
   <a class="entry-link" aria-label="post link to Retrospective for 2023" href="https://davidcraddock.net/2023/11/25/retrospective-for-2023/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>My Personal Retrospective on 2022
+    <h2 class="entry-hint-parent">My Personal Retrospective on 2022
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>Every year (when I remember) I do an end-of-year summary to outline what has been going on in my life. I’ve been doing this for a few years now, and it’s a great way to look back on the year and see has happened.
+  <div class="entry-content">
+    <p>Every year (when I remember) I do an end-of-year summary to outline what has been going on in my life. I’ve been doing this for a few years now, and it’s a great way to look back on the year and see has happened.
 The Bad: The main bad news of the year is that, contrary to expectations, my Hodgkins Lymphoma cancer was detected again around April after the initial chemotherapy. So it had come back. The rest of the year has mostly revolved around subsequent treatments to try and reach a long term remission, e.g. cure. I’m not there yet, but there are a lot of treatments still available, and I have hope that my current immunotherapy treatment might be the one that works. It wasn’t just me that was affected, my wife suffered quite a bit on hearing the news, and has only just really taken it all in and come to terms with it. I’m pretty sure that I will be cured eventually, at least for a good 10-20 years or so, it just is a pain having to take time off work and go through sometimes intensive treatment sessions. The economy has not had the greatest of years either, and the cost of living crisis affecting the UK has had an effect on us, and my parents who are the main financial support we have while I am unable to work. The Good: I have found a renewed interest in my career, in software development, and I have spent a lot of my spare time, and part of my downtime for treatment, learning new technical things and just generally finding the enjoyment in technology that I thought I’d permanently lost for so many years. The career opportunities around working from home have been very good considering my illness. There is still, despite a downturn, more than enough work around, and a lot of it is 100% work from home work. I’m no longer worried about being unemployed for any great length of time, presuming I am healthy enough to work from home. I’ve been developing my writing and social media skills, which have been a welcome distraction from the bad stuff going on. I’ve always enjoyed writing, but I would say my writing has particularly improved over the past year. Work on the house We have spent a lot of time, effort and money on working on the house this year. Conny has put in a great deal of amazing work, in particular.
 ...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2022-12-23</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>951 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>5 min</span></span>
-</footer>
+  </div>
+  <footer class="entry-footer"><span title='2022-12-23 23:26:12 +0000 GMT'>December 23, 2022</span>&nbsp;·&nbsp;5 min</footer>
   <a class="entry-link" aria-label="post link to My Personal Retrospective on 2022" href="https://davidcraddock.net/2022/12/23/my-personal-retrospective-on-2022/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>My Story in Tech
+    <h2 class="entry-hint-parent">My Story in Tech
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>I thought I’d write here a bit about how I got into technology and how my career has progressed for those people wanting to get into technology.
+  <div class="entry-content">
+    <p>I thought I’d write here a bit about how I got into technology and how my career has progressed for those people wanting to get into technology.
 I was lucky enough to be born in a supportive home to good parents. My father was an early entrant into the world of computing, and my birth certificate records his profession as a ‘Computer Science Lecturer’, which was very rare at the time. In actuality, I’m fairly sure he taught only at local higher education colleges, but technically that still made him a lecturer. At any rate, he definitely worked in computing at a time when few others did (1982).
 ...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2022-02-13</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>1772 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>9 min</span></span>
-</footer>
+  </div>
+  <footer class="entry-footer"><span title='2022-02-13 08:59:05 +0000 GMT'>February 13, 2022</span>&nbsp;·&nbsp;9 min</footer>
   <a class="entry-link" aria-label="post link to My Story in Tech" href="https://davidcraddock.net/2022/02/13/my-story-in-tech/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>Retrospective on 2021
+    <h2 class="entry-hint-parent">Retrospective on 2021
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>Well, 2021 has been a bit of a downer in a number of ways. There has been some upsides though.
+  <div class="entry-content">
+    <p>Well, 2021 has been a bit of a downer in a number of ways. There has been some upsides though.
 I spent the first part of 2021 burned out, as in - totally burned out - of my career and really needing a break. This affected my work. It turns out that unknown to me at the time, I had cancer, Hodgkins Lymophoma, and a lot of my lack of energy and generally feeling awful was down to a large tumor that had been growing my chest for some time and was pressing down on my heart and lungs. In June I was admitted to hospital and they diagnosed the cancer. In July I started chemotherapy. Now the good news is that Hodgkins Lymphoma is one of the best cancers to get if you were able to choose, as it has a very high cure rate and very low fatality rate. The chemo as of November’s scan seems to be working even better than expected and they were expecting a good outcome. So that is positive. I should hopefully be done with chemo by March 2022. One of the good things about 2021 has been the job that I found in the music industry. It is still doing software engineering, what my career has been based around, but they seem like a very nice bunch of people, and were prepared to support me and keep me on around chemotherapy. I am still employed part-time and that has been a HUGE help financially as you really don’t get a lot of money in benefits from the government, even when you have cancer it seems, and my family have had to help me out quite a bit. I have also had some success in the work that I’ve been doing - it seems very appreciated which is something I’m not really used to! I have continued DJing on Twitch which has been great. I still do my regular Sunday show for 4 hours most Sundays, and it is a lot of fun and I have a bunch of regulars who pop in. I enjoy it a lot. I reached 500 followers and raised a LOT of money via charity streams with other DJs, both as a DJ and also helping as an organiser. In December Conny and I caught the omicron varient of COVID-19 and that was a huge worry at the time because of my low immune system due to chemo and cancer. However we both have beaten it now, I had a short stay in hospital but it wasn’t that bad. NHS staff were very helpful and I think it really helped that I had 3 vaccinations in my system at the time of catching it. In Jan 2021 I took the third of the 10 week university level courses at Point Blank Music School as part of my study of Electronic Music Production. This course was on mixing and mastering. I have learned a lot from it already, although I still haven’t finished it as I was quite busy most of the year. I single-handedly raised £270 from friends and family for a cancer charity for my mother (who also has cancer) during a 12 hour DJ stream on my birthday in 2021. Ironically I had no idea I had cancer myself at the time. I ripped all of CDs to FLAC. Hundreds of CDs. Ripped hundreds of DVDs, PS2 and PS1 games too. Hosted them all on a Plex media server and gave the majority of discs away to charity. I sorted all my physical books, split into different subject bookshelves, alphabeticalised and catalogued in GoodReads.com. I have read more books this year than several previous years. I still have a huge backlog to go through though. I played quite a few more computer games than I have for a while, including beating Cyberpunk 2077 in a no-sleep 28 hour marathon after it was released. (Although that was technically in December 2020 I am going to include it anyway). It was such a great game in my view, amazing storyline and setting. Here’s to 2022!
 ...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2022-01-01</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>687 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>4 min</span></span>
-</footer>
+  </div>
+  <footer class="entry-footer"><span title='2022-01-01 15:58:05 +0000 GMT'>January 1, 2022</span>&nbsp;·&nbsp;4 min</footer>
   <a class="entry-link" aria-label="post link to Retrospective on 2021" href="https://davidcraddock.net/2022/01/01/retrospective-on-2021/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>2020 Retrospective – Wow, what a year!
+    <h2 class="entry-hint-parent">2020 Retrospective – Wow, what a year!
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>I think, for obvious reasons, 2020 has been a year that no-one could really have expected. With COVID-19 and lockdown, a lot of things have changed, both in my life, in everyone’s lives, and in the workplace.
+  <div class="entry-content">
+    <p>I think, for obvious reasons, 2020 has been a year that no-one could really have expected. With COVID-19 and lockdown, a lot of things have changed, both in my life, in everyone’s lives, and in the workplace.
 My online DJing setup
 Things that went well I changed medication around March 2020 which has resulted in significant weight loss, as expected. The previous medication was making me put on and retain weight even when I was eating very very little. In March 2020 my weight was nearly 136KG and now it has gone down to 125KG in March 2021. I have not been doing more exercise, indeed quite a bit less, as I have been staying indoors most of the time. The weight loss has had a very good effect on my general health and my sleep. I am much happier than this time last year. Working corporate jobs I found very very stressful and apart from being financially rewarding, I wasn’t getting much else out of it. My mental and physical health was suffering. My relationship with my wife and friends are much better now because I am less miserable all the time. I have taken up DJing over the internet and have turned this into a part-time income. It is so much fun. I used to DJ in clubs in my 20s regularly and I didn’t realise how much I had missed it. It is great to have a way to connect socially with people in lockdown and people really appreciate my DJ sets, which is great. Working from home has been a great change for me. Before the pandemic I wanted to work from home 100% anyway, because I was ending up spending at least 2 hours commuting to and from work, it was costing a lot (because I can’t drive) and it was taking up a lot of time and energy. My work from home setup
 ...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2021-03-04</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>467 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>3 min</span></span>
-</footer>
+  </div>
+  <footer class="entry-footer"><span title='2021-03-04 19:02:19 +0000 GMT'>March 4, 2021</span>&nbsp;·&nbsp;3 min</footer>
   <a class="entry-link" aria-label="post link to 2020 Retrospective – Wow, what a year!" href="https://davidcraddock.net/2021/03/04/2020-retrospective-wow-what-a-year/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>A Retrospective for Years 2016-19
+    <h2 class="entry-hint-parent">A Retrospective for Years 2016-19
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>I thought I’d update my blog to reflect recent changes in my life, and review what was good and bad about them, as I was doing before.
+  <div class="entry-content">
+    <p>I thought I’d update my blog to reflect recent changes in my life, and review what was good and bad about them, as I was doing before.
 The “Not Awesome”
 My overall health level has got a bit worse over the years. I have had limited success in losing weight. I was going for regular walks nearly every week with a friend of mine, but that has stopped lately. I find it difficult exercising while living in a city, as my favourite activity for excercising is walking, and there are not a huge amount of pleasent walking oppertunities around my area. I have been getting Ubers to parks and walking there. A posssible solution that I am actually considering is moving outside of the city, where there are a lot more pleasent walking oppertunities on my doorstep, and which would hopefully lead to a much more active lifestyle. The “Awesome”
 ...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2019-03-30</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>510 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>3 min</span></span>
-</footer>
+  </div>
+  <footer class="entry-footer"><span title='2019-03-30 23:09:23 +0000 GMT'>March 30, 2019</span>&nbsp;·&nbsp;3 min</footer>
   <a class="entry-link" aria-label="post link to A Retrospective for Years 2016-19" href="https://davidcraddock.net/2019/03/30/a-retrospective-for-years-2016-19/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>2013 Career Retrospective
+    <h2 class="entry-hint-parent">2013 Career Retrospective
     </h2>
   </header>
-  <section class="entry-content">
-    
-      <p>2015 Update: The “Device Hive” project has now been changed to be called ‘Hive CI’ and it is being maintained by a team of developers at the BBC, which I am no longer a part of. It is in the process of being opensourced, see: http://bbc.github.io/hive-ci/
+  <div class="entry-content">
+    <p>2015 Update: The “Device Hive” project has now been changed to be called ‘Hive CI’ and it is being maintained by a team of developers at the BBC, which I am no longer a part of. It is in the process of being opensourced, see: http://bbc.github.io/hive-ci/
 This year has been quite a busy and eventful one for me.
 Connected Red Button At the start of the year, I was working on the Connected Red Button team within the BBC. Connected Red Button is a major ongoing project in the Television and Mobile Platforms department at BBC North. Its aim is to replace the classic Red Button text service (which itself is the successor to Ceefax) with a new updated all-singing all-dancing interactive portal to internet content, available on Smart TVs and modern set top boxes. Currently Connected Red Button is live and accessible by pressing the Red Button on the new Virgin Media TiVo boxes. You can access the latest version of iPlayer, and the BBC News and BBC Sport smart TV apps from within one easy portal.
 ...</p>
-    
-  </section>
-  <footer class="entry-footer"><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
-  <span>2013-11-17</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select: text;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="user-select: text;"></path><polyline points="14 2 14 8 20 8" style="user-select: text;"></polyline><line x1="16" y1="13" x2="8" y2="13" style="user-select: text;"></line><line x1="16" y1="17" x2="8" y2="17" style="user-select: text;"></line><polyline points="10 9 9 9 8 9" style="user-select: text;"></polyline></svg>
-  <span>907 words</span></span><span class="meta-item">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
-  <span>5 min</span></span>
-</footer>
+  </div>
+  <footer class="entry-footer"><span title='2013-11-17 03:40:14 +0000 GMT'>November 17, 2013</span>&nbsp;·&nbsp;5 min</footer>
   <a class="entry-link" aria-label="post link to 2013 Career Retrospective" href="https://davidcraddock.net/2013/11/17/2013-career-retrospective/"></a>
 </article>
     </main>
     
 <footer class="footer">
-  <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span><span style="display: inline-block; margin-left: 1em;">
-    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>
-  </span>
-  <span style="display: inline-block; margin-left: 1em;">
-    Powered by
-    <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-    <a href="https://github.com/reorx/hugo-PaperModX/" rel="noopener" target="_blank">PaperModX</a>
-  </span>
+        <span>&copy; 2024 <a href="https://davidcraddock.net/">DavidCraddock.net</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-    <path d="M12 6H0l6-6z" />
-  </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
 </a>
 
 <script>
-  (function() {
-     
-    const disableThemeToggle = '1' == '1';
-    if (disableThemeToggle) {
-      return;
-    }
-
-    let button = document.getElementById("theme-toggle")
-    
-    button.removeEventListener('click', toggleThemeListener)
-    
-    button.addEventListener('click', toggleThemeListener)
-  })();
-</script>
-
-<script>
-  (function () {
     let menu = document.getElementById('menu')
     if (menu) {
-      menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-      menu.onscroll = function () {
-        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-      }
-    }
-
-    const disableSmoothScroll = '' == '1';
-    const enableInstantClick = '1' == '1';
-    
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || disableSmoothScroll || enableInstantClick) {
-      return;
-    }
-    
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        var id = this.getAttribute("href").substr(1);
-        document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-          behavior: "smooth"
-        });
-        if (id === "top") {
-          history.replaceState(null, null, " ");
-        } else {
-          history.pushState(null, null, `#${id}`);
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
-      });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
     });
-  })();
+
 </script>
 <script>
-  var mybutton = document.getElementById("top-link");
-  window.onscroll = function () {
-    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-      mybutton.style.visibility = "visible";
-      mybutton.style.opacity = "1";
-    } else {
-      mybutton.style.visibility = "hidden";
-      mybutton.style.opacity = "0";
-    }
-  };
-</script>
-<script>
-  if (window.scrollListeners) {
-    
-    for (const listener of scrollListeners) {
-      window.removeEventListener('scroll', listener)
-    }
-  }
-  window.scrollListeners = []
-</script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
 
-
-
-<script src="/js/medium-zoom.min.js" data-no-instant
-></script>
-<script src="/js/instantclick.min.js" data-no-instant
-></script>
-<script data-no-instant>
-  
-  
-  
-  
-  
-  
-  InstantClick.init();
 </script>
 </body>
 
