@@ -3,13 +3,14 @@ date: "2024-02-04T02:48:13+00:00"
 guid: https://davidcraddock.net/?page_id=4413
 title: My Mobile Laptop Setup
 url: /my-mobile-laptop-setup/
-
+image: /hugo-uploads/2024/8/3/mobilesetup2.jpg
+author: David Craddock
 ---
-[![](/hugo-uploads/2024/8/3/mobilesetup1.jpg)](/hugo-uploads/2024/8/3/mobilesetup1.jpg)
-[![](/hugo-uploads/2024/8/3/mobilesetup2.jpg)](/hugo-uploads/2024/8/3/mobilesetup2.jpg)
-[![](/hugo-uploads/2024/8/3/mobilesetup3.jpg)](/hugo-uploads/2024/8/3/mobilesetup3.jpg)
-[![](/hugo-uploads/2024/8/3/mobilesetup4.jpg)](/hugo-uploads/2024/8/3/mobilesetup4.jpg)
-[![](/hugo-uploads/2024/8/3/mobilesetup5.jpg)](/hugo-uploads/2024/8/3/mobilesetup5.jpg)
+![](/hugo-uploads/2024/8/3/mobilesetup1.jpg)
+![](/hugo-uploads/2024/8/3/mobilesetup2.jpg)
+![](/hugo-uploads/2024/8/3/mobilesetup3.jpg)
+![](/hugo-uploads/2024/8/3/mobilesetup4.jpg)
+![](/hugo-uploads/2024/8/3/mobilesetup5.jpg)
 
 I use this setup, along with [my bike](/my-bike/) to work from wherever I want.
 
