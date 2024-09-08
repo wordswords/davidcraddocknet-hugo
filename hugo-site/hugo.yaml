@@ -30,14 +30,8 @@ languages:
       series: series
     menu:
       main:
-        - name: Archive
-          url: archives
-          weight: 5
         - name: Search
           url: search/
-          weight: 10
-        - name: Tags
-          url: tags/
           weight: 10
         - name: HomeLab Network
           url: my-home-network/
