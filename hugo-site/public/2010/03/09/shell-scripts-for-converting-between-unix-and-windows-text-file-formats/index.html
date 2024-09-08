@@ -76,13 +76,13 @@ sed -i -e &rsquo;s/$/r/&rsquo; $1
 `" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2010/03/09/shell-scripts-for-converting-between-unix-and-windows-text-file-formats/" />
-<meta property="og:image" content="https://davidcraddock.net/hugo-uploads/9/8/headshot.png" />
+<meta property="og:image" content="https://davidcraddock.net/hugo-uploads/2024/9/8/headshot.png" />
 <meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-03-09T00:04:40+00:00" />
 <meta property="article:modified_time" content="2010-03-09T00:04:40+00:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://davidcraddock.net/hugo-uploads/9/8/headshot.png" />
+<meta name="twitter:image" content="https://davidcraddock.net/hugo-uploads/2024/9/8/headshot.png" />
 <meta name="twitter:title" content="Shell scripts for converting between Unix and Windows text file formats"/>
 <meta name="twitter:description" content="I&rsquo;ve been using these shell scripts I wrote to convert between unix and windows text file formats. They seem to work well without any problems. If you put them in the /usr/sbin/ directory, they will be accessible on the path of the linux admin account root.
 /usr/sbin/unix2win
@@ -127,7 +127,7 @@ sed -i -e &rsquo;s/$/r/&rsquo; $1
   "articleBody": "I’ve been using these shell scripts I wrote to convert between unix and windows text file formats. They seem to work well without any problems. If you put them in the /usr/sbin/ directory, they will be accessible on the path of the linux admin account root.\n/usr/sbin/unix2win `#!/bin/bash\nConverts a unix text file to a windows text file. usage: unix2win requirements: sed version 4.2 or later, check with sed –version sed -i -e ’s/$/r/’ $1 `\n/usr/sbin/win2unix `#!/bin/bash\nConverts a windows text file to a unix text file. usage: win2unix cat $1 | tr -d ‘15’ | tee $1 \u003e/dev/null `\nI use these scripts with the combination of find and xargs to convert lots of log files into windows format with the following command. However this type of command can be dangerous, so don’t use it if you don’t know what you’re doing: find sync-logs/ -name '*.log' -type f | xargs -n1 unix2win\n",
   "wordCount" : "154",
   "inLanguage": "en",
-  "image": "https://davidcraddock.net/hugo-uploads/9/8/headshot.png","datePublished": "2010-03-09T00:04:40Z",
+  "image": "https://davidcraddock.net/hugo-uploads/2024/9/8/headshot.png","datePublished": "2010-03-09T00:04:40Z",
   "dateModified": "2010-03-09T00:04:40Z",
   "author":{
     "@type": "Person",

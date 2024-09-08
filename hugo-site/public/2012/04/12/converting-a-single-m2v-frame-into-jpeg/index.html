@@ -66,13 +66,13 @@ I needed to view a single frame of a m2v file that had been encoded by our desig
 I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame. I couldn&rsquo;t find a video player that would open the single frame. So I resorted to the command line version of ffmpeg, which I installed via macports, to convert this single frame to a jpg file to view as normal. This line worked a treat:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2012/04/12/converting-a-single-m2v-frame-into-jpeg/" />
-<meta property="og:image" content="https://davidcraddock.net/hugo-uploads/9/8/headshot.png" />
+<meta property="og:image" content="https://davidcraddock.net/hugo-uploads/2024/9/8/headshot.png" />
 <meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2012-04-12T15:20:23+00:00" />
 <meta property="article:modified_time" content="2012-04-12T15:20:23+00:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://davidcraddock.net/hugo-uploads/9/8/headshot.png" />
+<meta name="twitter:image" content="https://davidcraddock.net/hugo-uploads/2024/9/8/headshot.png" />
 <meta name="twitter:title" content="Converting a single M2V frame into JPEG under OSX"/>
 <meta name="twitter:description" content="
 
@@ -112,7 +112,7 @@ I needed to view a single frame of a m2v file that had been encoded by our desig
   "articleBody": " I needed to view a single frame of a m2v file that had been encoded by our designers for playing out on TV. The file name was .mpg but in actuality it was a single .m2v frame renamed to be a .mpg. Windows Media Player classic used to display the frame fine when I opened the file normally, under Windows XP. However now I have switched to a Mac, I have found that Quicktime and VLC refused to display the single frame. I couldn’t find a video player that would open the single frame. So I resorted to the command line version of ffmpeg, which I installed via macports, to convert this single frame to a jpg file to view as normal. This line worked a treat:\nffmpeg -i north.mpg -ss 00:00:00 -t 00:00:1 -s 1024x768 -r 1 -f mjpeg north.jpg Where ’north.mpg’ was the m2v file, and ’north.jpg’ was the output jpeg.\nAnd this:\nfind -name *.mpg -exec ffmpeg -i {} -ss 00:00:00 -t 00:00:1 -s 1024x768 -r 1 -f mjpeg {}.jpg ; Will go through all the mpg files in the current directory and below, and create their jpeg single frame equivalents, ie: for north.mpg it will create north.mpg.jpg.\n",
   "wordCount" : "201",
   "inLanguage": "en",
-  "image": "https://davidcraddock.net/hugo-uploads/9/8/headshot.png","datePublished": "2012-04-12T15:20:23Z",
+  "image": "https://davidcraddock.net/hugo-uploads/2024/9/8/headshot.png","datePublished": "2012-04-12T15:20:23Z",
   "dateModified": "2012-04-12T15:20:23Z",
   "author":{
     "@type": "Person",

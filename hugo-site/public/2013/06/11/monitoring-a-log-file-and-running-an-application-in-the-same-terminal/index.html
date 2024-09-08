@@ -72,13 +72,13 @@ tail -f /var/log/httpd.log &amp;
 3. Once you are finished viewing the log file, foreground the log file process and kill it:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2013/06/11/monitoring-a-log-file-and-running-an-application-in-the-same-terminal/" />
-<meta property="og:image" content="https://davidcraddock.net/hugo-uploads/9/8/headshot.png" />
+<meta property="og:image" content="https://davidcraddock.net/hugo-uploads/2024/9/8/headshot.png" />
 <meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2013-06-11T15:55:04+00:00" />
 <meta property="article:modified_time" content="2013-06-11T15:55:04+00:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://davidcraddock.net/hugo-uploads/9/8/headshot.png" />
+<meta name="twitter:image" content="https://davidcraddock.net/hugo-uploads/2024/9/8/headshot.png" />
 <meta name="twitter:title" content="Tailing a log file and Running an Application at the Same Time"/>
 <meta name="twitter:description" content="A quick tip this, but a useful one. You can tail a log file in the background while running a script in the foreground. So for example, I frequently execute the following commands:
 1.
@@ -121,7 +121,7 @@ tail -f /var/log/httpd.log &amp;
   "articleBody": "A quick tip this, but a useful one. You can tail a log file in the background while running a script in the foreground. So for example, I frequently execute the following commands:\n1.\ntail -f /var/log/httpd.log \u0026 /etc/init.d/apache restart 2. (The log file will spool onto the terminal as Apache is restarted.)\n3. Once you are finished viewing the log file, foreground the log file process and kill it:\nfg Then terminate the foregrounded log tail with a control-c.\nWith this technique you can run as many commands as you want, and see the real-time effects on your log file, without having to open a new terminal. You will also see your program output interspersed with your log file output, which can be helpful when tracing down particular problems.\n",
   "wordCount" : "130",
   "inLanguage": "en",
-  "image": "https://davidcraddock.net/hugo-uploads/9/8/headshot.png","datePublished": "2013-06-11T15:55:04Z",
+  "image": "https://davidcraddock.net/hugo-uploads/2024/9/8/headshot.png","datePublished": "2013-06-11T15:55:04Z",
   "dateModified": "2013-06-11T15:55:04Z",
   "author":{
     "@type": "Person",

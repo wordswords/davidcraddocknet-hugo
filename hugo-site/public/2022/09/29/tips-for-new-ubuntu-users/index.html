@@ -80,13 +80,13 @@ You can get a lot more information on your computers startup and shutdown sequen
 actually doing under the hood, especially if you need to troubleshoot what it&rsquo;s doing. To do this:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2022/09/29/tips-for-new-ubuntu-users/" />
-<meta property="og:image" content="https://davidcraddock.net/hugo-uploads/9/8/headshot.png" />
+<meta property="og:image" content="https://davidcraddock.net/hugo-uploads/2024/9/8/headshot.png" />
 <meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-09-29T00:00:36+00:00" />
 <meta property="article:modified_time" content="2022-09-29T00:00:36+00:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://davidcraddock.net/hugo-uploads/9/8/headshot.png" />
+<meta name="twitter:image" content="https://davidcraddock.net/hugo-uploads/2024/9/8/headshot.png" />
 <meta name="twitter:title" content="Tips for new Ubuntu Users"/>
 <meta name="twitter:description" content="Here are some extra tips if you&rsquo;re just getting started out on Ubuntu.
 
@@ -133,7 +133,7 @@ actually doing under the hood, especially if you need to troubleshoot what it&rs
   "articleBody": "Here are some extra tips if you’re just getting started out on Ubuntu.\nYou don’t have to go through the UI to shut down or reboot your computer. You can do it from the command line. The commands are:\nsudo reboot # to reboot sudo poweroff # to shut down and power off the computer You can get a lot more information on your computers startup and shutdown sequences by removing the default Ubuntu splash screen that obscures this. You should definitely do this if you want to learn more about what your system is actually doing under the hood, especially if you need to troubleshoot what it’s doing. To do this:\nsudo nano /etc/grub/default/grub # find the line where it says GRUB_CMDLINE_LINUX_DEFAULT and remove 'quiet splash' # from this variable. If that leaves the variable empty make sure it is # still set as an empty variable, e.g. GRUB_CMDLINE_LINUX_DEFAULT=\"\" sudo update-grub sudo reboot Now you will see everything that is happening when your system starts up and shuts down, or reboots.\n",
   "wordCount" : "172",
   "inLanguage": "en",
-  "image": "https://davidcraddock.net/hugo-uploads/9/8/headshot.png","datePublished": "2022-09-29T00:00:36Z",
+  "image": "https://davidcraddock.net/hugo-uploads/2024/9/8/headshot.png","datePublished": "2022-09-29T00:00:36Z",
   "dateModified": "2022-09-29T00:00:36Z",
   "author":{
     "@type": "Person",

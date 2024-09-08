@@ -68,13 +68,13 @@ Forget the wonderful windows progress bar, and imagine I&rsquo;m in the world of
 1. First I can run a &ldquo;du -m&rdquo; command to get the total MB size of the original file:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2010/03/20/tip-for-watching-the-completion-of-a-large-file-copy/" />
-<meta property="og:image" content="https://davidcraddock.net/hugo-uploads/9/8/headshot.png" />
+<meta property="og:image" content="https://davidcraddock.net/hugo-uploads/2024/9/8/headshot.png" />
 <meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-03-20T22:44:06+00:00" />
 <meta property="article:modified_time" content="2010-03-20T22:44:06+00:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://davidcraddock.net/hugo-uploads/9/8/headshot.png" />
+<meta name="twitter:image" content="https://davidcraddock.net/hugo-uploads/2024/9/8/headshot.png" />
 <meta name="twitter:title" content="Tip for watching the completion of a large file copy"/>
 <meta name="twitter:description" content="
 
@@ -115,7 +115,7 @@ Forget the wonderful windows progress bar, and imagine I&rsquo;m in the world of
   "articleBody": " Forget the wonderful windows progress bar, and imagine I’m in the world of command-line Linux, and I want to copy a 484MB file, called VMware-server-2.0.2-203138.i386.tar.gz, from my home directory to a remote server. But I want to figure out how long it’s going to take.\n1. First I can run a “du -m” command to get the total MB size of the original file:\ndu -m /home/david/VMware-server-2.0.2-203138.i386.tar.gz I.e: david@believe:~$ du -m VMware-server-2.0.2-203138.i386.tar.gz 484 VMware-server-2.0.2-203138.i386.tar.gz\nNow I know it is approximately 484MB.\n2. Then I run the copy. I’m copying the file from /home/david/ to /opt/remote/myserver, which is a remotely mounted directory on a server somewhere in Canada.\ndavid@believe:~$ cp ./VMware-server-2.0.2-203138.i386.tar.gz /opt/remote/myserver/\nAt this point cp will just hang until it’s finished. There is normally no progress indicator or anything. But I want to figure out how much of the file has been copied, so I can figure out how much is left to copy, and get a rough idea of the progress.\n3. So I SSH into the remote server in Canada, and run this command\ndavid@myserver:~$ watch du -m ./VMware-server-2.0.2-203138.i386.tar.gz\nthe copy command by default seems to be incremental, ie: piece by piece, not all at once. Therefore with the “Watch” command, you can watch the size, in MB, of the new file as it accumulates. The watch command will refresh every 2 seconds, so you’ll be updated as the copy goes on.\nYou can probably invoke a progress meter with the cp command, or use rsync. Rsync is much better for large file copies, and remote file copies. But the advantage of the method above is that you can watch file copies already executed without any special arguments, which I sometimes find very useful when I remember that that file I already started copying isn’t 200MB.. it’s actually 2.5GB.\n",
   "wordCount" : "301",
   "inLanguage": "en",
-  "image": "https://davidcraddock.net/hugo-uploads/9/8/headshot.png","datePublished": "2010-03-20T22:44:06Z",
+  "image": "https://davidcraddock.net/hugo-uploads/2024/9/8/headshot.png","datePublished": "2010-03-20T22:44:06Z",
   "dateModified": "2010-03-20T22:44:06Z",
   "author":{
     "@type": "Person",
