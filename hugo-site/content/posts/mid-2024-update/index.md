@@ -5,10 +5,10 @@ title: Mid 2024 Retrospective Update
 date: "2024-08-02T23:15:41+01:00"
 guid: http://www.davidcraddock.net/mid-2024-update.md
 url: /2024/08/02/mid-2024-update/
-image: images/biketrailer.jpg
+image: biketrailer.jpg
 author: David Craddock
 ---
-![image](images/biketrailer.jpg)
+![image](biketrailer.jpg)
 
 Every year I've been doing these 'retrospectives', usually once per year but sometimes a couple of times per year.
 

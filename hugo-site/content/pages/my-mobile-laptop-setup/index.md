@@ -6,11 +6,11 @@ url: /my-mobile-laptop-setup/
 image: /my-mobile-laptop-setup/mobilesetup1.jpg
 author: David Craddock
 ---
-![image](images/mobilesetup1.jpg)
-![image](images/mobilesetup2.jpg)
-![image](images/mobilesetup3.jpg)
-![image](images/mobilesetup4.jpg)
-![image](images/mobilesetup5.jpg)
+![image](mobilesetup1.jpg)
+![image](mobilesetup2.jpg)
+![image](mobilesetup3.jpg)
+![image](mobilesetup4.jpg)
+![image](mobilesetup5.jpg)
 
 I use this setup, along with [my bike](/my-bike/) to work from wherever I want.
 
