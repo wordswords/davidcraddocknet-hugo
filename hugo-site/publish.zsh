@@ -7,6 +7,6 @@ rm -rf public/*
 snap run hugo
 git add -f .
 git commit -m "Latest hugo publish"
-git push origin master
+git push origin main
 
 
