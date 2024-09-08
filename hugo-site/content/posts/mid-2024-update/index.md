@@ -4,9 +4,9 @@ category:
 title: Mid 2024 Retrospective Update
 date: "2024-08-02T23:15:41+01:00"
 guid: http://www.davidcraddock.net/mid-2024-update.md
-image: images/biketrailer.jpg
 url: /2024/08/02/mid-2024-update/
-
+image: images/biketrailer.jpg
+author: David Craddock
 ---
 ![image](images/biketrailer.jpg)
 
