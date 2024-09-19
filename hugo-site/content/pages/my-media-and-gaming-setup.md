@@ -149,6 +149,7 @@ Currently these are the consoles I have hooked up:
 - **Nintendo Wii (Gamecube compatiable version)** with 2x Wiimote Motion controller and official balance board
 - **Nintendo 64 with 2x official N64 controller, Kaico PAL N64 -> HDMI convertor, expansion pak and memory pak**
 - **Microsoft XBox V1** with Duke controllers
+- **SNK Mini Neo Geo** with 2x official controllers, and mini HDMI to HDMI cable for monitor output
 
 [![](/wp-content/uploads/2023/12/20231223_0927581.jpg)](/wp-content/uploads/2023/12/20231223_0927581.jpg)
 
