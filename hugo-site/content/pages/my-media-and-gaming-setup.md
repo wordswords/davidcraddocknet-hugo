@@ -14,8 +14,6 @@ url: /my-gaming-setup/
 
 ## Media PC
 
-I use this mainly as a general purpose PC, and for streaming on Twitch. I also use it for video editing, adding animations, animated gifs, anything visual etc and audio editing for processing mixcloud uploads. I also use it to rip Blu-rays for my Plex server, and to watch movies and listen to music on as it has my studio EQ calibrated Sonorworks SoundID Reference profiles.
-
 - 12th Gen i7 CPU
 - 32GB DDR4 RAM
 - 1x NVme M.2 SSD 1TB (system)
@@ -23,9 +21,11 @@ I use this mainly as a general purpose PC, and for streaming on Twitch. I also u
 - 1x 500GB SSD
 - 1x 2.5 TB HDD (storage)
 - 3x Logitech C920 Webcams (for streaming)
-- 1x Nvidia 1080 GPU
+- 1x Nvidia 4070 GPU
 - 10Gb/sec fibre card connected to my 10Gb/sec Mikrotik switch
-- 27" 1440p TN LCD monitor with Gsync and 144hz refresh (used as a streaming monitor in the DJ booth)
+- 27" 1440p TN LCD monitor with Gsync and 144hz refresh (second monitor)
+- 19" 1080p IPS LCD monitor (third monitor)
+- 42" 1080p IPS LCD TV (fourth monitor)
 - Nedis HDMI Splitter 2-Port HDMI™ Eingang 2x HDMI 4K@60Hz
 - 2x Libredrive flashed LG-WH16NS40 multi-disk optical drivers for ripping Blu-rays, CDs, DVDs and any optical disk with MakeMKV and games for my Plex server and emulators.
 
@@ -73,7 +73,7 @@ I share this setup between the Media PC and the Gaming Laptop.
 I have a 4K HDR KVM switch and a USB 3.0 KVM switch so I can quickly switch between the two.
 I have a professional music studio setup that I also use for my gaming.
 
-- 32" IPS 75hz adaptive refresh HDR10 1440p monitor
+- 32" IPS 75hz adaptive refresh HDR10 1440p monitor (main monitor for both media PC and gaming laptop)
 - Herman Miller Aeron Chair
 - Phillips Hue Entertainment centre with 5 light sources and Hue Sync
 - Razer Deathadder Essential wired gaming mouse
