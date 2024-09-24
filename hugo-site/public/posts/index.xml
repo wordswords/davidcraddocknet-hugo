@@ -9,11 +9,25 @@
       <url>https://davidcraddock.net/mugshot.png</url>
       <link>https://davidcraddock.net/mugshot.png</link>
     </image>
-    <generator>Hugo -- 0.134.1</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <copyright>David Paul Craddock</copyright>
-    <lastBuildDate>Fri, 02 Aug 2024 23:15:41 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 24 Sep 2024 00:23:00 +0000</lastBuildDate>
     <atom:link href="https://davidcraddock.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Definition of Testing and what a Test Engineer Should Do</title>
+      <link>https://davidcraddock.net/2024/09/24/4683/</link>
+      <pubDate>Tue, 24 Sep 2024 00:23:00 +0000</pubDate>
+      <guid>https://davidcraddock.net/2024/09/24/4683/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;gordon.jpg&#34; alt=&#34;image&#34;  /&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I think that there is a very real problem around the definition of the purpose of a &amp;lsquo;QA&amp;rsquo; or &amp;lsquo;Quality Engineering&amp;rsquo; department and what it is expected to do in an organisation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I have been hired for many &amp;lsquo;QA/QE&amp;rsquo; roles which had vastly different ideas about what the purpose of that role was, what my responsibilities were, how I should communicate with other people, and what I should do day-to-day.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Mid 2024 Retrospective Update</title>
       <link>https://davidcraddock.net/2024/08/02/mid-2024-update/</link>
@@ -533,7 +547,8 @@ as &lt;a href=&#34;https://www.humblebundle.com&#34;&gt;HumbleBundle.com&lt;/a&g
       <guid>https://davidcraddock.net/2021/08/07/my-psp-entertainment-system-for-2021/</guid>
       <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2021/08/psp.jpg&#34; alt=&#34;&#34;  /&gt;
 &lt;/p&gt;
-&lt;p&gt;I have recently been in hospital and been diagnosed with a condition that might mean I need to return quite a bit, at least in the short term. When I was in hospital I was struck by the fact that there were very long periods of waiting and it was easy to get very bored and quite dejected just sitting in a hospital bed.&lt;/p&gt;</description>
+&lt;p&gt;I have recently been in hospital and been diagnosed with a condition that might mean I need to return quite a bit, at least in the short term. When I was in hospital I was struck by the fact that there were very long periods of waiting and it was easy to get very bored and quite dejected just sitting in a hospital bed.&lt;/p&gt;
+&lt;p&gt;Also there is not a lot of room for laptops, tablets and other things – you really don’t get a lot of space by your bed usually to store large items and they are not practical most of the time. Therefore I thought I would hack together some kind of portable entertainment system that I could use to pass the time and to block out some of the hospital negativity if I need to be in hospital again. My DJ headphones Seinhausser HD 2-IIs are actually very useful in a hospital because they are very good at sound isolation and you can remove one of the ear cups so you can lie on your side in a hospital bed and just listen to one earcup without it being uncomfortable, so they were very good to use with the PSP.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Making Twitch DJ Promo Mix Videos</title>
@@ -560,7 +575,10 @@ as &lt;a href=&#34;https://www.humblebundle.com&#34;&gt;HumbleBundle.com&lt;/a&g
 &lt;p&gt;A lot of DJ turntables are based on Technics OEM clones, and so you will need to set the tonearm height, which is the only thing not covered by the above video:&lt;/p&gt;
 &lt;p&gt;[youtube &lt;a href=&#34;https://www.youtube.com/watch?v=SYScinvkrrM&#34;&gt;https://www.youtube.com/watch?v=SYScinvkrrM&lt;/a&gt;]&lt;/p&gt;
 &lt;h2 id=&#34;the-basics&#34;&gt;The Basics&lt;/h2&gt;
-&lt;p&gt;Once you&amp;rsquo;ve setup your turntable:&lt;/p&gt;</description>
+&lt;p&gt;Once you&amp;rsquo;ve setup your turntable:&lt;/p&gt;
+&lt;ol start=&#34;0&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Should go without saying that I always use a velvet dust brush on my records just before I play them. Only takes a couple of seconds when you&amp;rsquo;re used to doing it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Lighting and Camera Setup</title>
@@ -601,7 +619,12 @@ Mixed In Key - &lt;a href=&#34;https://mixedinkey.com&#34;&gt;https://mixedinkey
 Lexicon &lt;a href=&#34;https://www.lexicondj.com/&#34;&gt;https://www.lexicondj.com/&lt;/a&gt; &lt;strong&gt;Backup and sync:&lt;/strong&gt;
 Robocopy - comes free with Windows 10. Documentation: &lt;a href=&#34;https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy&#34;&gt;https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy&lt;/a&gt;
 Google Drive
-Rsync&lt;/p&gt;</description>
+Rsync&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Searching:&lt;/strong&gt;
+Everything Search - &lt;a href=&#34;https://voidtools.com/&#34;&gt;https://voidtools.com/&lt;/a&gt; &lt;strong&gt;Playing:&lt;/strong&gt;
+Winamp
+Serato DJ Pro - &lt;a href=&#34;https://serato.com/dj/pro&#34;&gt;https://serato.com/dj/pro&lt;/a&gt;
+Plex Media Server - &lt;a href=&#34;https://www.plex.tv/&#34;&gt;https://www.plex.tv/&lt;/a&gt; &lt;strong&gt;dbPoweramp CD Ripper&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Resolume MIDI Control in my Twitch DJing Setup</title>
@@ -751,7 +774,8 @@ Middle 9U section&lt;/li&gt;
       <guid>https://davidcraddock.net/2017/06/16/finished-eurorack/</guid>
       <description>&lt;p&gt;Finally I have finished my Eurorack synthesiser! And I know many people say that &amp;lsquo;Euroracks are never finished&amp;rsquo; but this one absolutely has to be, for financial reasons. I think that I have got to a place where I have every major feature common in most synthesisers, but in a modular instrument format. It is a great place to learn about different synthesis techniques.&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2017/06/finished-modular.jpg&#34; alt=&#34;finished modular&#34;  /&gt;
-&lt;/p&gt;</description>
+&lt;/p&gt;
+&lt;p&gt;[gallery ids=&amp;ldquo;1945&amp;rdquo; type=&amp;ldquo;rectangular&amp;rdquo;]&lt;/p&gt;</description>
     </item>
     <item>
       <title>Node.js HTTPS server with self-signed certificate creation on openssl 0.9.8zh with node.js 7.10.0</title>
@@ -846,7 +870,8 @@ Samson Patchbay&lt;/p&gt;
       <guid>https://davidcraddock.net/2016/09/05/narrative-led-pc-games/</guid>
       <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://www.inklestudios.com/press/80days/img/80-days-poster-promo.jpg&#34; alt=&#34;80 days poster&#34;  /&gt;
 &lt;/p&gt;
-&lt;p&gt;When I first started getting into computer roleplaying games in the 90s/00s I remember playing the Infinity Engine games by Bioware and Black Isle, such as Baldur’s Gate 2, the original Fallout games, and of course Planescape: Torment. It was the quality of writing that drew me in and took me to another world, the graphics were just a background setting to that writing.&lt;/p&gt;</description>
+&lt;p&gt;When I first started getting into computer roleplaying games in the 90s/00s I remember playing the Infinity Engine games by Bioware and Black Isle, such as Baldur’s Gate 2, the original Fallout games, and of course Planescape: Torment. It was the quality of writing that drew me in and took me to another world, the graphics were just a background setting to that writing.&lt;/p&gt;
+&lt;p&gt;Somewhere in the 2000s RPGs became more action orientated and prioritised mechanics and visual appeal and combat over branching stories. Nowadays a lot of popular RPGs are those such as Dark Souls, which seem more about combat and atmosphere than anything else. Blockbuster games such as Dragon Age: Inquisition and The Witcher 3 still show that great writing, characterisation and real player choices can still be popular.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Eurorack 2016</title>
@@ -1092,7 +1117,8 @@ I – Introversion preferred to extraversion: INTPs tend to be quiet and reserve
       <guid>https://davidcraddock.net/2015/08/15/use-siri-apple-earphones-and-apple-music-together/</guid>
       <description>&lt;p&gt;This requires you to have a subscription to Apple Music and a 3G/4G/wireless data connection, but it is so useful! Using this tip, you can be walking along with your iPhone in your pocket and your Apple earphones in, and then change music just by pressing a button on the earphones remote control and saying &amp;lsquo;Play (your favourite band)&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2015/08/blog-post-image.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2015/08/blog-post-image.png&#34; alt=&#34;blog post image&#34;  /&gt;
-&lt;/a&gt;&lt;/p&gt;</description>
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;1. Activate Siri and subscribe to Apple Music. I used to subscribe to Spotify so I switched to Apple Music when I realised the advantages of the integration on my phone, and the wider selection of music. You will also need to set Siri to stream music over your cellular network, this can be done in the &amp;lsquo;Music&amp;rsquo; section of iOS settings.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Modular Progress</title>
@@ -1231,7 +1257,9 @@ I have an actual electric piano but I don&amp;rsquo;t use the onboard sound engi
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;SUBSYSTEM==&amp;#34;usb&amp;#34;, ATTRS{idVendor}==&amp;#34;1949&amp;#34;, MODE=&amp;#34;0666&amp;#34;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2. Change the permission of this file by executing the following command as root:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;chmod a+r /etc/udev/rules.d/51-android.rules
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3. Reload the rules by executing the following command as root:&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3. Reload the rules by executing the following command as root:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;udevadm control --reload-rules
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;4. Run these commands to restart adb:&lt;/p&gt;</description>
     </item>
     <item>
       <title>My Computer Build</title>
@@ -1251,7 +1279,23 @@ I have an actual electric piano but I don&amp;rsquo;t use the onboard sound engi
 &lt;li&gt;&lt;a href=&#34;https://davidcraddock.net/2014/01/29/my-computer-build/#optical&#34;&gt;Optical Drive&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://davidcraddock.net/2014/01/29/my-computer-build/#psu&#34;&gt;PSU&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Visual&lt;/p&gt;</description>
+&lt;p&gt;Visual&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://davidcraddock.net/2014/01/29/my-computer-build/#monitor&#34;&gt;Monitor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://davidcraddock.net/2014/01/29/my-computer-build/#backlight&#34;&gt;Backlight&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://davidcraddock.net/2014/01/29/my-computer-build/#gpu&#34;&gt;GPU&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Audio&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://davidcraddock.net/2014/01/29/my-computer-build/#headphones&#34;&gt;Headphones&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://davidcraddock.net/2014/01/29/my-computer-build/#soundcard&#34;&gt;Soundcard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://davidcraddock.net/2014/01/29/my-computer-build/#headset&#34;&gt;Headset&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://davidcraddock.net/2014/01/29/my-computer-build/#speakers&#34;&gt;Speakers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://davidcraddock.net/2014/01/29/my-computer-build/#speakerstands&#34;&gt;Speaker Stands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://davidcraddock.net/2014/01/29/my-computer-build/#mixer&#34;&gt;Mixer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://davidcraddock.net/2014/01/29/my-computer-build/#microphone&#34;&gt;Desktop Microphone&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Peripherals&lt;/p&gt;</description>
     </item>
     <item>
       <title>My Aeron Chair</title>
@@ -1312,7 +1356,10 @@ I have an actual electric piano but I don&amp;rsquo;t use the onboard sound engi
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;set t_Co=256
 set t_AB=^[[48;5;%dm
 set t_AF=^[[38;5;%dm
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;rsquo;t_Co&amp;rsquo; specifies exactly how many colours VIM can use. The other two lines seem to be Debian-specific color code escape sequences.&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;rsquo;t_Co&amp;rsquo; specifies exactly how many colours VIM can use. The other two lines seem to be Debian-specific color code escape sequences.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you want 256 color VIM for your root user when you sudo edit, then edit /usr/share/vim/vimrc and copy across your settings from your local ~/.vimrc and ~/.vim to this global environment.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Subversion 1.7 on Crunchbang Waldorf</title>
@@ -1341,7 +1388,9 @@ set t_AF=^[[38;5;%dm
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;tail -f /var/log/httpd.log &amp;amp;
 /etc/init.d/apache restart
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2. (The log file will spool onto the terminal as Apache is restarted.)&lt;/p&gt;
-&lt;p&gt;3. Once you are finished viewing the log file, foreground the log file process and kill it:&lt;/p&gt;</description>
+&lt;p&gt;3. Once you are finished viewing the log file, foreground the log file process and kill it:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fg
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then terminate the foregrounded log tail with a control-c.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monitoring a Slow Internet Connection in OSX</title>
@@ -1432,7 +1481,15 @@ set t_AF=^[[38;5;%dm
       <guid>https://davidcraddock.net/2011/02/24/a-3-day-weather-forecast-calendar-service/</guid>
       <description>&lt;p&gt;The BBC provide 3 day weather RSS feeds for most locations in the UK. I thought it would be interesting to create a web service to turn the weather feed into calendar feed format, so I could have a constantly updated forecast of the next 3 days of weather mapped on to my iPhone’s calendar. Here it is on my iPhone:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Overview&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The service is separated into five files:&lt;/p&gt;</description>
+&lt;p&gt;The service is separated into five files:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ical.php&lt;/strong&gt; – this contains the class ical which corresponds to a single calendar feed. A method called ‘addevent’ allows you to add new events to the calendar, and a method called ‘returncal’ redirects the resulting calendar file to the browser so people can subscribe to it using their calendar application.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;forecast.php&lt;/strong&gt; – this file contains the class forecast, which has properties for all aspects that we want to record for each day’s forecast, ie: Wind Speed and Humidity. It also contains the forecast set, which is a collection of forecast objects. The set class is serializable, which means each forecast object can be stored in a text file, including the Wind Speed, Humidity and all other things we want to record for each day.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;scrape-weather.php&lt;/strong&gt; – this file contains code that scrapes the weather feed, populates the forecast set with all the weather information for the next 3 days, and stores the result in a file called forecasts.ser.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;forecasts.ser&lt;/strong&gt; – this is all the data for the three day weather forecast, in serialized format. It is automatically deleted and recreated when the scrape-weather.php script is run.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;reader.php&lt;/strong&gt; – this file converts the forecasts.ser file into an iCal calendar, and outputs the iCal formatted result to the calendar application that accesses reader.php page.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It uses two external libraries:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Find large files by using the OSX commandline</title>
@@ -1452,7 +1509,7 @@ set t_AF=^[[38;5;%dm
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;touch /tmp/temp -t 200604141130
 touch /tmp/ntemp -t 200604261630
 find /data/ -cnewer /tmp/temp -and ! -cnewer /tmp/ntemp
-&lt;/code&gt;&lt;/pr</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Writing simple email alerts in PHP with MagpieRSS</title>
@@ -1616,7 +1673,10 @@ def weeknum(num,year):
       <description>&lt;p&gt;&lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2010/03/windows-copy.gif&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2010/03/windows-copy.gif&#34; alt=&#34;&#34;  /&gt;
 &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Forget the wonderful windows progress bar, and imagine I&amp;rsquo;m in the world of command-line Linux, and I want to copy a 484MB file, called VMware-server-2.0.2-203138.i386.tar.gz, from my home directory to a remote server. But I want to figure out how long it&amp;rsquo;s going to take.&lt;/p&gt;
-&lt;p&gt;1. First I can run a &amp;ldquo;du -m&amp;rdquo; command to get the total MB size of the original file:&lt;/p&gt;</description>
+&lt;p&gt;1. First I can run a &amp;ldquo;du -m&amp;rdquo; command to get the total MB size of the original file:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;du -m /home/david/VMware-server-2.0.2-203138.i386.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I.e:
+&lt;code&gt;david@believe:~$ du -m VMware-server-2.0.2-203138.i386.tar.gz 484     VMware-server-2.0.2-203138.i386.tar.gz&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Linux Root Directory, Explained</title>
@@ -1638,7 +1698,9 @@ def weeknum(num,year):
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;To download a file as you would using wget:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;curl http://ftp.heanet.ie/pub/linuxmint.com/stable/8/LinuxMint-8.iso -o linuxmint.iso -C -
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;the -o specifies the output file (required)
-the -C - specifies automatically resuming if possible.&lt;/p&gt;</description>
+the -C - specifies automatically resuming if possible.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;To burn a bootable iso to CD, DVD or USB key:&lt;/strong&gt;
+use the &amp;ldquo;diskutil&amp;rdquo; program as described in: &lt;a href=&#34;http://forums.macrumors.com/showthread.php?t=598291&#34;&gt;http://forums.macrumors.com/showthread.php?t=598291&lt;/a&gt; &lt;strong&gt;Monitor disk io utilisation.. poll once per second&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Long Bash History Files are Great.</title>
@@ -1648,7 +1710,7 @@ the -C - specifies automatically resuming if possible.&lt;/p&gt;</description>
       <description>&lt;p&gt;When I&amp;rsquo;m installing software, or doing some complicated stuff on the linux command line, which nowadays is pretty much all the time, I will sometimes want to remember exactly what I typed.&lt;/p&gt;
 &lt;p&gt;Now the normal /home/david/.bash_history file is usually fine for that. Run this command, for example, and you will see the commands you typed in before you logged out of the server last time you used it:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cat ~/.bash_history
-&lt;/code&gt;&lt;/pr</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can also find out what you typed in this session, ie: since you logged in, by typing this:&lt;/p&gt;</description>
     </item>
     <item>
       <title>My minimal VIM config</title>
@@ -2001,7 +2063,14 @@ Identifier &amp;ldquo;NVIDIA Corporation NV17 [GeForce4 MX 420]&amp;rdquo;
 #Driver &amp;ldquo;nv&amp;rdquo;
 Driver &amp;ldquo;nvidia&amp;rdquo;
 BusID &amp;ldquo;PCI:1:0:0&amp;rdquo;
-EndSection&lt;/p&gt;</description>
+EndSection&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Kill X with control-alt-backspace&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Login again and test if it works by running glxgears and glxinfo on the console&lt;/p&gt;</description>
     </item>
     <item>
       <title>The topic of this blog</title>

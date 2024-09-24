@@ -13,7 +13,9 @@ First I needed to setup the udev rules:
 SUBSYSTEM==&#34;usb&#34;, ATTRS{idVendor}==&#34;1949&#34;, MODE=&#34;0666&#34;
 2. Change the permission of this file by executing the following command as root:
 chmod a&#43;r /etc/udev/rules.d/51-android.rules
-3. Reload the rules by executing the following command as root:">
+3. Reload the rules by executing the following command as root:
+udevadm control --reload-rules
+4. Run these commands to restart adb:">
 <meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2014/02/10/kindlefire-hdx-under-ubuntu-12-04/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
@@ -71,7 +73,9 @@ First I needed to setup the udev rules:
 SUBSYSTEM==&#34;usb&#34;, ATTRS{idVendor}==&#34;1949&#34;, MODE=&#34;0666&#34;
 2. Change the permission of this file by executing the following command as root:
 chmod a&#43;r /etc/udev/rules.d/51-android.rules
-3. Reload the rules by executing the following command as root:" />
+3. Reload the rules by executing the following command as root:
+udevadm control --reload-rules
+4. Run these commands to restart adb:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2014/02/10/kindlefire-hdx-under-ubuntu-12-04/" />
 <meta property="og:image" content="https://davidcraddock.net/mugshot.png" />
@@ -88,7 +92,9 @@ First I needed to setup the udev rules:
 SUBSYSTEM==&#34;usb&#34;, ATTRS{idVendor}==&#34;1949&#34;, MODE=&#34;0666&#34;
 2. Change the permission of this file by executing the following command as root:
 chmod a&#43;r /etc/udev/rules.d/51-android.rules
-3. Reload the rules by executing the following command as root:"/>
+3. Reload the rules by executing the following command as root:
+udevadm control --reload-rules
+4. Run these commands to restart adb:"/>
 
 
 <script type="application/ld+json">
@@ -117,7 +123,7 @@ chmod a&#43;r /etc/udev/rules.d/51-android.rules
   "@type": "BlogPosting",
   "headline": "Setting up Kindlefire HDX for Development under Ubuntu 12.04",
   "name": "Setting up Kindlefire HDX for Development under Ubuntu 12.04",
-  "description": "I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.\nFirst I needed to setup the udev rules:\n1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):\nSUBSYSTEM==\u0026#34;usb\u0026#34;, ATTRS{idVendor}==\u0026#34;1949\u0026#34;, MODE=\u0026#34;0666\u0026#34; 2. Change the permission of this file by executing the following command as root:\nchmod a+r /etc/udev/rules.d/51-android.rules 3. Reload the rules by executing the following command as root:\n",
+  "description": "I wanted to get a Kindlefire HDX running under Ubuntu 12.04 with adb.\nFirst I needed to setup the udev rules:\n1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):\nSUBSYSTEM==\u0026#34;usb\u0026#34;, ATTRS{idVendor}==\u0026#34;1949\u0026#34;, MODE=\u0026#34;0666\u0026#34; 2. Change the permission of this file by executing the following command as root:\nchmod a+r /etc/udev/rules.d/51-android.rules 3. Reload the rules by executing the following command as root:\nudevadm control --reload-rules 4. Run these commands to restart adb:\n",
   "keywords": [
     
   ],

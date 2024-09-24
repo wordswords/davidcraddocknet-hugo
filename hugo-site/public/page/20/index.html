@@ -2,7 +2,7 @@
 <html lang="en" dir="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.134.1"><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.134.3"><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -170,6 +170,19 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">A* Algorithm implementation in Python
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Lately I’ve had the idea of creating a text-based Roguelike in C&#43;&#43;. This lead me on to think about the game AI experiments that I worked during my degree in Computer Science and A.I.. Essential to game AI is the notion of pathfinding, or finding a path from ‘A’ to ‘B’, past any obstacles that get in the way. One way to do this is to use the A* algorithm. I decided to implement an A* pathfinding algorithm for possible use in a Roguelike later, and chose the pseudocode from the Wikipedia example to implement.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2014-06-12 00:24:34 +0000 +0000'>June 12, 2014</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to A* Algorithm implementation in Python" href="https://davidcraddock.net/2014/06/12/a-algorithm-implementation-in-python/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Current Music Setup
     </h2>
   </header>
@@ -194,6 +207,7 @@ First I needed to setup the udev rules:
 1. Edit /etc/udev/rules.d/51-android.rules as root, and add the following line (create this file if it does not exist):
 SUBSYSTEM==&#34;usb&#34;, ATTRS{idVendor}==&#34;1949&#34;, MODE=&#34;0666&#34; 2. Change the permission of this file by executing the following command as root:
 chmod a&#43;r /etc/udev/rules.d/51-android.rules 3. Reload the rules by executing the following command as root:
+udevadm control --reload-rules 4. Run these commands to restart adb:
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2014-02-10 15:28:45 +0000 GMT'>February 10, 2014</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
@@ -210,6 +224,8 @@ chmod a&#43;r /etc/udev/rules.d/51-android.rules 3. Reload the rules by executin
 I use my computer a lot, for work (software development), gaming and music production. I wanted to build a high-end computer setup, as I’ve always lagged behind with upgrades before. So I gradually have been accumulating and swapping bits around to make the setup above.
 Internals
 Case Motherboard CPU CPU Cooler RAM Wireless Card Optical Drive PSU Visual
+Monitor Backlight GPU Audio
+Headphones Soundcard Headset Speakers Speaker Stands Mixer Desktop Microphone Peripherals
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2014-01-29 00:13:12 +0000 GMT'>January 29, 2014</span>&nbsp;·&nbsp;10 min&nbsp;·&nbsp;David Craddock</footer>
@@ -229,21 +245,6 @@ In fact, after browsing chairs for the last few years of my career, I’ve come 
   </div>
   <footer class="entry-footer"><span title='2013-12-24 14:08:48 +0000 GMT'>December 24, 2013</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;David Craddock</footer>
   <a class="entry-link" aria-label="post link to My Aeron Chair" href="https://davidcraddock.net/2013/12/24/aeron-chair/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">2013 Career Retrospective
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>2015 Update: The “Device Hive” project has now been changed to be called ‘Hive CI’ and it is being maintained by a team of developers at the BBC, which I am no longer a part of. It is in the process of being opensourced, see: http://bbc.github.io/hive-ci/
-This year has been quite a busy and eventful one for me.
-Connected Red Button At the start of the year, I was working on the Connected Red Button team within the BBC. Connected Red Button is a major ongoing project in the Television and Mobile Platforms department at BBC North. Its aim is to replace the classic Red Button text service (which itself is the successor to Ceefax) with a new updated all-singing all-dancing interactive portal to internet content, available on Smart TVs and modern set top boxes. Currently Connected Red Button is live and accessible by pressing the Red Button on the new Virgin Media TiVo boxes. You can access the latest version of iPlayer, and the BBC News and BBC Sport smart TV apps from within one easy portal.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2013-11-17 03:40:14 +0000 GMT'>November 17, 2013</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;David Craddock</footer>
-  <a class="entry-link" aria-label="post link to 2013 Career Retrospective" href="https://davidcraddock.net/2013/11/17/2013-career-retrospective/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

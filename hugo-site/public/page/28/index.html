@@ -2,7 +2,7 @@
 <html lang="en" dir="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.134.1"><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.134.3"><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -170,12 +170,27 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">How to remove nano, vim and other editors&#39; backup files out of a directory tree
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Linux command-line editors such as nano and vim often, by default, create backup files with the prefix of “”. I.e, if I created a file called /home/david/myfile, then nano would create a backup in /home/david/myfile. Sometimes it doesn’t delete them either, so you’re left with a bunch of backup files all over the place, especially if you’re editing a lot on a directory tree full of source code.
+Those stray backup files make directory listings confusing, and also add unnecessary weight to the commits on source control systems such as svn, cvs, git.. etc. If you’re working on a programming team with other people, then it causes further problems and confusion, because person A’s editor can accidentally load person B’s backup file.. etc etc. Nightmare.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-03-22 20:49:20 +0000 GMT'>March 22, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to How to remove nano, vim and other editors&#39; backup files out of a directory tree" href="https://davidcraddock.net/2010/03/22/how-to-remove-nano-vim-and-other-editors-backup-files-out-of-a-directory-tree/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Tip for watching the completion of a large file copy
     </h2>
   </header>
   <div class="entry-content">
     <p> Forget the wonderful windows progress bar, and imagine I’m in the world of command-line Linux, and I want to copy a 484MB file, called VMware-server-2.0.2-203138.i386.tar.gz, from my home directory to a remote server. But I want to figure out how long it’s going to take.
 1. First I can run a “du -m” command to get the total MB size of the original file:
+du -m /home/david/VMware-server-2.0.2-203138.i386.tar.gz I.e: david@believe:~$ du -m VMware-server-2.0.2-203138.i386.tar.gz 484 VMware-server-2.0.2-203138.i386.tar.gz
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2010-03-20 22:44:06 +0000 GMT'>March 20, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
@@ -206,6 +221,7 @@ Everything in Linux is stored in the “root directory”. On a windows machine,
 To mount any iso:
 hdiutil mount sample.iso To download a file as you would using wget:
 curl http://ftp.heanet.ie/pub/linuxmint.com/stable/8/LinuxMint-8.iso -o linuxmint.iso -C - the -o specifies the output file (required) the -C - specifies automatically resuming if possible.
+To burn a bootable iso to CD, DVD or USB key: use the “diskutil” program as described in: http://forums.macrumors.com/showthread.php?t=598291 Monitor disk io utilisation.. poll once per second
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2010-03-19 23:03:33 +0000 GMT'>March 19, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
@@ -220,24 +236,11 @@ curl http://ftp.heanet.ie/pub/linuxmint.com/stable/8/LinuxMint-8.iso -o linuxmin
   <div class="entry-content">
     <p>When I’m installing software, or doing some complicated stuff on the linux command line, which nowadays is pretty much all the time, I will sometimes want to remember exactly what I typed.
 Now the normal /home/david/.bash_history file is usually fine for that. Run this command, for example, and you will see the commands you typed in before you logged out of the server last time you used it:
-cat ~/.bash_history ...</p>
+cat ~/.bash_history You can also find out what you typed in this session, ie: since you logged in, by typing this:
+...</p>
   </div>
   <footer class="entry-footer"><span title='2010-03-18 19:55:51 +0000 GMT'>March 18, 2010</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;David Craddock</footer>
   <a class="entry-link" aria-label="post link to Long Bash History Files are Great." href="https://davidcraddock.net/2010/03/18/long-bash-history-files-are-great/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">My minimal VIM config
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>This is the absolute minimum I do when I have to log onto a new server or shell account that I haven’t used before, that I will need to edit text files with.
-First I figure out whether VIM is really installed. A lot of installs, especially those based on ubuntu, ship with VI aliased to VIM, but the VIM install is usually not really VIM at all, and behaves exactly like VI but with some minor bugs fixed. This is not what I want.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-03-18 19:23:07 +0000 GMT'>March 18, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
-  <a class="entry-link" aria-label="post link to My minimal VIM config" href="https://davidcraddock.net/2010/03/18/my-minimal-vim-config/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

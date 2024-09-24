@@ -183,6 +183,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Ivy Bridge 2011 PCs are still useful today
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>In our house, seperate to my main PC (see the tab above) we still have two Ivy Bridge-based PCs:
+Conny’s PC
+i7-3770K 16GB DDR3 RAM Nvidea Radeon 970 Graphics Card 250 GB SSD Windows 10 My wife uses this as her main PC, and plays quite a few games with it. For a CPU and motherboard that I put together in 2011 or so, I am quite amazed it still runs adequetely! It runs the games she wants to play, the most graphically intensive being Deadpool, but it will also cope with Borderlands 2, Skyrim Special Edition, Shadow Warrior 2, and others. She is not interested in the top graphics games, but it runs just fine.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-10-13 18:06:30 +0000 +0000'>October 13, 2020</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Ivy Bridge 2011 PCs are still useful today" href="https://davidcraddock.net/2020/10/13/ivy-bridge-2011-pcs-are-still-useful-today/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Studio Setup in 2020
     </h2>
   </header>
@@ -231,24 +246,11 @@ Monitor – BenQ EX3501R 35″ Ultra WQHD Curved Monitor This monitor is great f
   </header>
   <div class="entry-content">
     <p>Finally I have finished my Eurorack synthesiser! And I know many people say that ‘Euroracks are never finished’ but this one absolutely has to be, for financial reasons. I think that I have got to a place where I have every major feature common in most synthesisers, but in a modular instrument format. It is a great place to learn about different synthesis techniques.
+[gallery ids=“1945” type=“rectangular”]
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2017-06-16 17:57:23 +0000 +0000'>June 16, 2017</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
   <a class="entry-link" aria-label="post link to Finished Eurorack" href="https://davidcraddock.net/2017/06/16/finished-eurorack/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Node.js HTTPS server with self-signed certificate creation on openssl 0.9.8zh with node.js 7.10.0
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I couldn’t find a concise guide to setting this up quickly so thought it was worth a post. To quickly get something working and create a https server using the above versions of openssl and node.js, do the following:
-Generate self-signed server certificate with no password sudo openssl req -x509 -newkey rsa:2048 -keyout ./csr.pem -out server.crt -days 3001 -nodes Use this node.js code to setup a server quickly const https = require(&#39;https&#39;); const fs = require(&#39;fs&#39;); const options = { key: fs.readFileSync(&#39;csr.pem&#39;), cert: fs.readFileSync(&#39;server.crt&#39;) }; https.createServer(options, (req, res) =&gt; { res.writeHead(200); res.end(&#39;hello world\n&#39;); }).listen(8000); Go to https://localhost:8000 and accept the certificate, you should see ‘hello world’
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2017-05-10 13:59:18 +0000 +0000'>May 10, 2017</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
-  <a class="entry-link" aria-label="post link to Node.js HTTPS server with self-signed certificate creation on openssl 0.9.8zh with node.js 7.10.0" href="https://davidcraddock.net/2017/05/10/node-js-https-server-with-self-signed-certificate-creation-on-openssl-0-9-8zh-with-node-js-7-10-0/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

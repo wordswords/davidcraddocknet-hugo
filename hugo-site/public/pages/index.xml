@@ -9,7 +9,7 @@
       <url>https://davidcraddock.net/mugshot.png</url>
       <link>https://davidcraddock.net/mugshot.png</link>
     </image>
-    <generator>Hugo -- 0.134.1</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <copyright>David Paul Craddock</copyright>
     <lastBuildDate>Sat, 24 Aug 2024 03:42:48 +0000</lastBuildDate>
@@ -83,7 +83,23 @@
 &lt;img loading=&#34;lazy&#34; src=&#34;mobilesetup5.jpg&#34; alt=&#34;image&#34;  /&gt;
 &lt;/p&gt;
 &lt;p&gt;I use this setup, along with &lt;a href=&#34;https://davidcraddock.net/my-bike/&#34;&gt;my bike&lt;/a&gt; to work from wherever I want.&lt;/p&gt;
-&lt;p&gt;It does kind of turn heads, and I&amp;rsquo;m aware it may look a little &amp;lsquo;over the top&amp;rsquo; - but it&amp;rsquo;s a very useful setup for me, keeps me healthy, and fits all my requirements.&lt;/p&gt;</description>
+&lt;p&gt;It does kind of turn heads, and I&amp;rsquo;m aware it may look a little &amp;lsquo;over the top&amp;rsquo; - but it&amp;rsquo;s a very useful setup for me, keeps me healthy, and fits all my requirements.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hercules DG400BB Laptop Stand w/ Bag&lt;/strong&gt; - this portable laptop stand is very sturdy and is designed for mobile DJ use. I find it is excellent in all situations, not just DJ use.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lenovo Legion 5i - Intel i7 12th gen CPU, 64GB DDR5 RAM, 4TB 4th gen NVME SSD drives, 3070Ti graphics card, 15&amp;quot; 1440p IPS Dolby Vision HDR screen&lt;/strong&gt; - This is my laptop that I&amp;rsquo;ve put a lot of money into upgrading.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Logitech MK270 Wireless Keyboard and Mouse Combo&lt;/strong&gt; - This is a good mobile keyboard and mouse setup, although it&amp;rsquo;s a bit loud typing, so I&amp;rsquo;m looking to get a quieter keyboard&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Portable Battery charger&lt;/strong&gt; - A good quality external battery charger which will charge and release charge via USB A and USB C ports&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lenovo Legion 17&amp;quot; Armored Backpack II&lt;/strong&gt; - This is an excellent quality padded laptop bag - by far the best laptop carrying case I&amp;rsquo;ve owned. It distributes the weight of my setup properly over my back so I can walk long distances&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sony Xperia 1 V Android mobile&lt;/strong&gt; - This is a top of the line media phone which I&amp;rsquo;ve had for a while now and am very happy with. I often use it as a mobile hotspot for the laptop.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sony MX1000 Mk3 wireless headphones&lt;/strong&gt; - This is a top of the line HDAC/Apt-X HD wireless noise cancelling headphones. They work well with my laptop and my phone.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rock Cloud Portable Camping Table&lt;/strong&gt; - This table will hold up to 25KG which is more than enough for my laptop setup.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LUXJET Portable Folding Stool&lt;/strong&gt; - this telescopic stool is rated up to 180KG and is very compact when folded up.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;750ml vacuum thermos flask&lt;/strong&gt; - This fits in a pocket on the side of my laptop bag, and is usually enough unless it&amp;rsquo;s a very hot day.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pro-plus caffiene pills&lt;/strong&gt; - My lifestyle means I am tired sometimes, and I don&amp;rsquo;t drink tea or coffee, so I always keep some of these in my wallet if I need to walk home, for example.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SanDisk 1TB Extreme Portable SSD, USB-C USB 3.2 Gen 2, External NVMe Solid State Drive&lt;/strong&gt; - This is very useful for transferring large file collections to and from other peoples computers, and is very small for carrying.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fasgear Cat 6 Ethernet Cable, Retractable Network Cable 10Gbps&lt;/strong&gt; - If I ever need to connect to a wired network, I can use this network cable - it takes up very little space.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dell 2010 Inspiron Netbook&lt;/strong&gt; - This is a very small laptop that I use for when I don&amp;rsquo;t want to lug around the huge gaming laptop. It runs a very cut-down version of Linux and my Linux development environment, using the terminal only, and connects via my mobile phone connection to my home server via SSh where I can use the power of the server instead of the tiny netbook CPU.&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>My Homelab</title>
@@ -122,7 +138,25 @@
 &lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/12/20231216_180202_1.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/12/20231216_180202_1.jpg&#34; alt=&#34;&#34;  /&gt;
 &lt;/a&gt;
 &lt;a href=&#34;https://davidcraddock.net/wp-content/uploads/2023/12/20231216_180225_1.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://davidcraddock.net/wp-content/uploads/2023/12/20231216_180225_1.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/a&gt;&lt;/p&gt;</description>
+&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;media-pc&#34;&gt;Media PC&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;12th Gen i7 CPU&lt;/li&gt;
+&lt;li&gt;32GB DDR4 RAM&lt;/li&gt;
+&lt;li&gt;1x NVme M.2 SSD 1TB (system)&lt;/li&gt;
+&lt;li&gt;1x 1TB SSD&lt;/li&gt;
+&lt;li&gt;1x 500GB SSD&lt;/li&gt;
+&lt;li&gt;1x 2.5 TB HDD (storage)&lt;/li&gt;
+&lt;li&gt;3x Logitech C920 Webcams (for streaming)&lt;/li&gt;
+&lt;li&gt;1x Nvidia 4070 GPU&lt;/li&gt;
+&lt;li&gt;10Gb/sec fibre card connected to my 10Gb/sec Mikrotik switch&lt;/li&gt;
+&lt;li&gt;27&amp;quot; 1440p TN LCD monitor with Gsync and 144hz refresh (second monitor)&lt;/li&gt;
+&lt;li&gt;19&amp;quot; 1080p IPS LCD monitor (third monitor)&lt;/li&gt;
+&lt;li&gt;42&amp;quot; 1080p IPS LCD TV (fourth monitor)&lt;/li&gt;
+&lt;li&gt;Nedis HDMI Splitter 2-Port HDMI™ Eingang 2x HDMI 4K@60Hz&lt;/li&gt;
+&lt;li&gt;2x Libredrive flashed LG-WH16NS40 multi-disk optical drivers for ripping Blu-rays, CDs, DVDs and any optical disk with MakeMKV and games for my Plex server and emulators.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Media Software:&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>My Work Computer</title>
@@ -194,7 +228,9 @@
 &lt;p&gt;&lt;a href=&#34;https://socialistsynthesis.bandcamp.com/album/sound-escapes&#34;&gt;Sound Escapes by Socialist Synthesis&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;I have released an EP under the &amp;lsquo;Machines Move Mountains&amp;rsquo; project with Ellis Breen. It is experimental/electronica/downtempo:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://machinesmovemountains.bandcamp.com&#34;&gt;Unfinished Dreams by Machines Move Mountains&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://machinesmovemountains.bandcamp.com&#34;&gt;Unfinished Dreams by Machines Move Mountains&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;I have released some music under the &amp;lsquo;Concrete Spectre&amp;rsquo; project. It is industrial/EBM/techno:&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>

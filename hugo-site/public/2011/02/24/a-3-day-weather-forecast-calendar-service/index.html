@@ -9,7 +9,15 @@
 <meta name="keywords" content="">
 <meta name="description" content="The BBC provide 3 day weather RSS feeds for most locations in the UK. I thought it would be interesting to create a web service to turn the weather feed into calendar feed format, so I could have a constantly updated forecast of the next 3 days of weather mapped on to my iPhone’s calendar. Here it is on my iPhone:
 Overview
-The service is separated into five files:">
+The service is separated into five files:
+
+ical.php – this contains the class ical which corresponds to a single calendar feed. A method called ‘addevent’ allows you to add new events to the calendar, and a method called ‘returncal’ redirects the resulting calendar file to the browser so people can subscribe to it using their calendar application.
+forecast.php – this file contains the class forecast, which has properties for all aspects that we want to record for each day’s forecast, ie: Wind Speed and Humidity. It also contains the forecast set, which is a collection of forecast objects. The set class is serializable, which means each forecast object can be stored in a text file, including the Wind Speed, Humidity and all other things we want to record for each day.
+scrape-weather.php – this file contains code that scrapes the weather feed, populates the forecast set with all the weather information for the next 3 days, and stores the result in a file called forecasts.ser.
+forecasts.ser – this is all the data for the three day weather forecast, in serialized format. It is automatically deleted and recreated when the scrape-weather.php script is run.
+reader.php – this file converts the forecasts.ser file into an iCal calendar, and outputs the iCal formatted result to the calendar application that accesses reader.php page.
+
+It uses two external libraries:">
 <meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2011/02/24/a-3-day-weather-forecast-calendar-service/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
@@ -63,7 +71,15 @@ The service is separated into five files:">
 <meta property="og:title" content="&#39;Weather Forecast&#39; Calendar Service in PHP" />
 <meta property="og:description" content="The BBC provide 3 day weather RSS feeds for most locations in the UK. I thought it would be interesting to create a web service to turn the weather feed into calendar feed format, so I could have a constantly updated forecast of the next 3 days of weather mapped on to my iPhone’s calendar. Here it is on my iPhone:
 Overview
-The service is separated into five files:" />
+The service is separated into five files:
+
+ical.php – this contains the class ical which corresponds to a single calendar feed. A method called ‘addevent’ allows you to add new events to the calendar, and a method called ‘returncal’ redirects the resulting calendar file to the browser so people can subscribe to it using their calendar application.
+forecast.php – this file contains the class forecast, which has properties for all aspects that we want to record for each day’s forecast, ie: Wind Speed and Humidity. It also contains the forecast set, which is a collection of forecast objects. The set class is serializable, which means each forecast object can be stored in a text file, including the Wind Speed, Humidity and all other things we want to record for each day.
+scrape-weather.php – this file contains code that scrapes the weather feed, populates the forecast set with all the weather information for the next 3 days, and stores the result in a file called forecasts.ser.
+forecasts.ser – this is all the data for the three day weather forecast, in serialized format. It is automatically deleted and recreated when the scrape-weather.php script is run.
+reader.php – this file converts the forecasts.ser file into an iCal calendar, and outputs the iCal formatted result to the calendar application that accesses reader.php page.
+
+It uses two external libraries:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2011/02/24/a-3-day-weather-forecast-calendar-service/" />
 <meta property="og:image" content="https://davidcraddock.net/mugshot.png" />
@@ -76,7 +92,15 @@ The service is separated into five files:" />
 <meta name="twitter:title" content="&#39;Weather Forecast&#39; Calendar Service in PHP"/>
 <meta name="twitter:description" content="The BBC provide 3 day weather RSS feeds for most locations in the UK. I thought it would be interesting to create a web service to turn the weather feed into calendar feed format, so I could have a constantly updated forecast of the next 3 days of weather mapped on to my iPhone’s calendar. Here it is on my iPhone:
 Overview
-The service is separated into five files:"/>
+The service is separated into five files:
+
+ical.php – this contains the class ical which corresponds to a single calendar feed. A method called ‘addevent’ allows you to add new events to the calendar, and a method called ‘returncal’ redirects the resulting calendar file to the browser so people can subscribe to it using their calendar application.
+forecast.php – this file contains the class forecast, which has properties for all aspects that we want to record for each day’s forecast, ie: Wind Speed and Humidity. It also contains the forecast set, which is a collection of forecast objects. The set class is serializable, which means each forecast object can be stored in a text file, including the Wind Speed, Humidity and all other things we want to record for each day.
+scrape-weather.php – this file contains code that scrapes the weather feed, populates the forecast set with all the weather information for the next 3 days, and stores the result in a file called forecasts.ser.
+forecasts.ser – this is all the data for the three day weather forecast, in serialized format. It is automatically deleted and recreated when the scrape-weather.php script is run.
+reader.php – this file converts the forecasts.ser file into an iCal calendar, and outputs the iCal formatted result to the calendar application that accesses reader.php page.
+
+It uses two external libraries:"/>
 
 
 <script type="application/ld+json">
@@ -105,7 +129,7 @@ The service is separated into five files:"/>
   "@type": "BlogPosting",
   "headline": "'Weather Forecast' Calendar Service in PHP",
   "name": "\u0027Weather Forecast\u0027 Calendar Service in PHP",
-  "description": "The BBC provide 3 day weather RSS feeds for most locations in the UK. I thought it would be interesting to create a web service to turn the weather feed into calendar feed format, so I could have a constantly updated forecast of the next 3 days of weather mapped on to my iPhone’s calendar. Here it is on my iPhone:\nOverview\nThe service is separated into five files:\n",
+  "description": "The BBC provide 3 day weather RSS feeds for most locations in the UK. I thought it would be interesting to create a web service to turn the weather feed into calendar feed format, so I could have a constantly updated forecast of the next 3 days of weather mapped on to my iPhone’s calendar. Here it is on my iPhone:\nOverview\nThe service is separated into five files:\nical.php – this contains the class ical which corresponds to a single calendar feed. A method called ‘addevent’ allows you to add new events to the calendar, and a method called ‘returncal’ redirects the resulting calendar file to the browser so people can subscribe to it using their calendar application. forecast.php – this file contains the class forecast, which has properties for all aspects that we want to record for each day’s forecast, ie: Wind Speed and Humidity. It also contains the forecast set, which is a collection of forecast objects. The set class is serializable, which means each forecast object can be stored in a text file, including the Wind Speed, Humidity and all other things we want to record for each day. scrape-weather.php – this file contains code that scrapes the weather feed, populates the forecast set with all the weather information for the next 3 days, and stores the result in a file called forecasts.ser. forecasts.ser – this is all the data for the three day weather forecast, in serialized format. It is automatically deleted and recreated when the scrape-weather.php script is run. reader.php – this file converts the forecasts.ser file into an iCal calendar, and outputs the iCal formatted result to the calendar application that accesses reader.php page. It uses two external libraries:\n",
   "keywords": [
     
   ],

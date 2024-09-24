@@ -21,7 +21,10 @@ Add the following to ~/.vimrc:
 set t_Co=256
 set t_AB=^[[48;5;%dm
 set t_AF=^[[38;5;%dm
-&rsquo;t_Co&rsquo; specifies exactly how many colours VIM can use. The other two lines seem to be Debian-specific color code escape sequences.">
+&rsquo;t_Co&rsquo; specifies exactly how many colours VIM can use. The other two lines seem to be Debian-specific color code escape sequences.
+
+
+If you want 256 color VIM for your root user when you sudo edit, then edit /usr/share/vim/vimrc and copy across your settings from your local ~/.vimrc and ~/.vim to this global environment.">
 <meta name="author" content="David Craddock">
 <link rel="canonical" href="https://davidcraddock.net/2013/06/20/256-color-vim-on-crunchbang-waldorf/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
@@ -87,7 +90,10 @@ Add the following to ~/.vimrc:
 set t_Co=256
 set t_AB=^[[48;5;%dm
 set t_AF=^[[38;5;%dm
-&rsquo;t_Co&rsquo; specifies exactly how many colours VIM can use. The other two lines seem to be Debian-specific color code escape sequences." />
+&rsquo;t_Co&rsquo; specifies exactly how many colours VIM can use. The other two lines seem to be Debian-specific color code escape sequences.
+
+
+If you want 256 color VIM for your root user when you sudo edit, then edit /usr/share/vim/vimrc and copy across your settings from your local ~/.vimrc and ~/.vim to this global environment." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://davidcraddock.net/2013/06/20/256-color-vim-on-crunchbang-waldorf/" />
 <meta property="og:image" content="https://davidcraddock.net/mugshot.png" />
@@ -112,7 +118,10 @@ Add the following to ~/.vimrc:
 set t_Co=256
 set t_AB=^[[48;5;%dm
 set t_AF=^[[38;5;%dm
-&rsquo;t_Co&rsquo; specifies exactly how many colours VIM can use. The other two lines seem to be Debian-specific color code escape sequences."/>
+&rsquo;t_Co&rsquo; specifies exactly how many colours VIM can use. The other two lines seem to be Debian-specific color code escape sequences.
+
+
+If you want 256 color VIM for your root user when you sudo edit, then edit /usr/share/vim/vimrc and copy across your settings from your local ~/.vimrc and ~/.vim to this global environment."/>
 
 
 <script type="application/ld+json">
@@ -141,7 +150,7 @@ set t_AF=^[[38;5;%dm
   "@type": "BlogPosting",
   "headline": "256 Color VIM on Crunchbang Waldorf",
   "name": "256 Color VIM on Crunchbang Waldorf",
-  "description": "To get 256 colors working within terminator in Crunchbang Waldorf, I had to do the following:\nAdd to ~/.bashrc\nexport TERM=xterm-256color Install a 256 color VIM colorcheme, see desert256 for example.\nAdd the following to ~/.vimrc:\nset t_Co=256 set t_AB=^[[48;5;%dm set t_AF=^[[38;5;%dm \u0026rsquo;t_Co\u0026rsquo; specifies exactly how many colours VIM can use. The other two lines seem to be Debian-specific color code escape sequences.\n",
+  "description": "To get 256 colors working within terminator in Crunchbang Waldorf, I had to do the following:\nAdd to ~/.bashrc\nexport TERM=xterm-256color Install a 256 color VIM colorcheme, see desert256 for example.\nAdd the following to ~/.vimrc:\nset t_Co=256 set t_AB=^[[48;5;%dm set t_AF=^[[38;5;%dm \u0026rsquo;t_Co\u0026rsquo; specifies exactly how many colours VIM can use. The other two lines seem to be Debian-specific color code escape sequences.\nIf you want 256 color VIM for your root user when you sudo edit, then edit /usr/share/vim/vimrc and copy across your settings from your local ~/.vimrc and ~/.vim to this global environment.\n",
   "keywords": [
     
   ],

@@ -183,6 +183,19 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Scraping Gumtree Property Adverts with Python and BeautifulSoup
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I am moving to Manchester soon, and so I thought I’d get an idea of the housing market there by scraping all the Manchester Gumtree property adverts into a MySQL database. Once in the database, I could do things like find the average monthly price for a 2 bedroom flat in an area, and spot bargains through using standard deviation from the mean on the price through using simple SQL queries via phpMyAdmin.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-05-01 14:07:02 +0000 +0000'>May 1, 2011</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;David Craddock</footer>
+  <a class="entry-link" aria-label="post link to Scraping Gumtree Property Adverts with Python and BeautifulSoup" href="https://davidcraddock.net/2011/05/01/scraping-gumtree-property-adverts-with-python-and-beautifulsoup/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">RESTful Web Services
     </h2>
   </header>
@@ -204,6 +217,7 @@ To implement RESTful web services, you should implement four methods: GET, PUT, 
     <p>The BBC provide 3 day weather RSS feeds for most locations in the UK. I thought it would be interesting to create a web service to turn the weather feed into calendar feed format, so I could have a constantly updated forecast of the next 3 days of weather mapped on to my iPhone’s calendar. Here it is on my iPhone:
 Overview
 The service is separated into five files:
+ical.php – this contains the class ical which corresponds to a single calendar feed. A method called ‘addevent’ allows you to add new events to the calendar, and a method called ‘returncal’ redirects the resulting calendar file to the browser so people can subscribe to it using their calendar application. forecast.php – this file contains the class forecast, which has properties for all aspects that we want to record for each day’s forecast, ie: Wind Speed and Humidity. It also contains the forecast set, which is a collection of forecast objects. The set class is serializable, which means each forecast object can be stored in a text file, including the Wind Speed, Humidity and all other things we want to record for each day. scrape-weather.php – this file contains code that scrapes the weather feed, populates the forecast set with all the weather information for the next 3 days, and stores the result in a file called forecasts.ser. forecasts.ser – this is all the data for the three day weather forecast, in serialized format. It is automatically deleted and recreated when the scrape-weather.php script is run. reader.php – this file converts the forecasts.ser file into an iCal calendar, and outputs the iCal formatted result to the calendar application that accesses reader.php page. It uses two external libraries:
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2011-02-24 19:31:48 +0000 GMT'>February 24, 2011</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;David Craddock</footer>
@@ -218,7 +232,7 @@ The service is separated into five files:
   <div class="entry-content">
     <p>To quickly find large files to delete if you have filled your startup disk, enter this command on the OSX terminal:
 sudo find / -size &#43;500000 -print This will find and print out file paths to files over 500MB. You can then go through them and delete them individually by typing rm “”, although there is no undelete so make sure you know you won’t miss them.
-...</p>
+</p>
   </div>
   <footer class="entry-footer"><span title='2011-02-22 00:16:12 +0000 GMT'>February 22, 2011</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
   <a class="entry-link" aria-label="post link to Find large files by using the OSX commandline" href="https://davidcraddock.net/2011/02/22/find-large-files-by-using-the-osx-commandline/"></a>
@@ -231,23 +245,10 @@ sudo find / -size &#43;500000 -print This will find and print out file paths to 
   </header>
   <div class="entry-content">
     <p>You use the ’touch’ command to create two blank files, with a last modified date that you specify - one with a date of the start of the range you want to specify, and the second with a date at the end of the range you want to specify. Then you reference to those two files in your find command:
-touch /tmp/temp -t 200604141130 touch /tmp/ntemp -t 200604261630 find /data/ -cnewer /tmp/temp -and ! -cnewer /tmp/ntemp ...</p>
+touch /tmp/temp -t 200604141130 touch /tmp/ntemp -t 200604261630 find /data/ -cnewer /tmp/temp -and ! -cnewer /tmp/ntemp </p>
   </div>
   <footer class="entry-footer"><span title='2011-02-16 12:33:44 +0000 GMT'>February 16, 2011</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
   <a class="entry-link" aria-label="post link to Finding files in Linux modified between two dates" href="https://davidcraddock.net/2011/02/16/finding-files-in-linux-modified-between-two-dates/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Writing simple email alerts in PHP with MagpieRSS
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I wrote an email alerter that sends me an email whenever the upcoming temperature may dip below freezing. It uses the Magpie RSS reader to pull down a 3 day weather forecast that is provided for my area in RSS form by the BBC weather site. It then parses this forecast and determines if either today’s or tomorrow’s weather may dip below freezing. If it might, it sends an email to my email address to warn me.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2011-02-12 20:01:13 +0000 GMT'>February 12, 2011</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Craddock</footer>
-  <a class="entry-link" aria-label="post link to Writing simple email alerts in PHP with MagpieRSS" href="https://davidcraddock.net/2011/02/12/writing-simple-email-alerts-in-php-with-magpierss/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
