@@ -1,12 +1,12 @@
-+++
+---
 category:
   - tips
 date: "2024-09-24T00:23:00+00:00"
 guid: https://davidcraddock.net/my-definition-of-testing
 title: My Definition of Testing and what a Test Engineer Should Do
-url: /2024/09/24/4683/
+url: /2024/09/24/4684/
 author: David Craddock
-+++
+---
 
 ![image](gordon.jpg)
 
