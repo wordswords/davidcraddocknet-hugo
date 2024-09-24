@@ -26,8 +26,8 @@ author: David Craddock
 
 * I don't think there is a solution, but perhaps I can describe what *I* think a 'QA/QE' person should do, and hopefully organisations or companies who agree with what I'm saying might actually get in contact and offer me work. Hopefully.
 
-1. [My definition of what 'testing' AKA 'QA/QE' actually is](https://github.com/wordswords/dotfiles/blob/master/notes/TRAININGRECOMMENDATIONS.md)
-2. [My definition of what skills a 'QA/QE' engineer should have](https://github.com/wordswords/dotfiles/blob/master/notes/TESTING.md)
+1. [My definition of what 'testing' AKA 'QA/QE' actually is](https://github.com/wordswords/dotfiles/blob/master/notes/TESTING.md)
+2. [My definition of what skills a 'QA/QE' engineer should have](https://github.com/wordswords/dotfiles/blob/master/notes/TRAININGRECOMMENDATIONS.md)
 
 
 
