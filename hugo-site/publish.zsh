@@ -4,6 +4,7 @@ set -e
 set -x
 
 rm -rf public/*
+sudo chown -R david:users .
 git add -f .
 git commit -m "Latest hugo modification"
 snap run hugo
