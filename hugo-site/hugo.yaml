@@ -51,6 +51,9 @@ languages:
         - name: Security Research
           url: security-research/
           weight: 15
+        - name: vWorkbench
+          url: vworkbench/
+          weight: 15
 
 outputs:
   home:
