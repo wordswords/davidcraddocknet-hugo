@@ -9,7 +9,7 @@ url: /vworkbench/
 
 "vWorkbench" is my own personal Vim9-based development environment and writing environment that I'm trying to 'spin out' into an open source project that is stable enough, reusable enough and well-documented enough to be used by others.
 
-[https://github.com/wordswords/dotfiles.git](https://github.com/wordswords/dotfiles.git) - this is the current version on my development environment that I use as much as possible in both personal and work situations.
+[https://github.com/wordswords/dotfiles.git](https://github.com/wordswords/dotfiles.git) - this is the current version of my development environment that I use as much as possible, both in personal and work situations.
 
 [https://github.com/wordswords/dotfiles/blob/master/README.md](https://github.com/wordswords/dotfiles/blob/master/README.md) - this is the documentation on my development environment, which I absolutely try and keep up to date.
 
