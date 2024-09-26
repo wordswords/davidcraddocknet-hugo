@@ -5,6 +5,7 @@ title: vWorkbench
 url: /vworkbench/
 
 ---
+![image](vworkbench.jpg)
 
 "vWorkbench" is my own personal Vim9-based development environment and writing environment that I'm trying to 'spin out' into an open source project that is stable enough, reusable enough and well-documented enough to be used by others.
 
