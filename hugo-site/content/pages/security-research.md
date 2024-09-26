@@ -6,8 +6,6 @@ url: /security-research/
 
 ---
 
-# Security Research
-
 I am currently familiarising myself with tools to do security research around physical pentesting.
 
 This is in preparation for my research project as part of the MSc Cyber Security masters I'm taking from the University of London via distance learning.
