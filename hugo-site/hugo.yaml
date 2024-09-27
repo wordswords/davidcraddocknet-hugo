@@ -48,6 +48,12 @@ languages:
         - name: Security Research
           url: security-research/
           weight: 15
+        - name: Tutoring
+          url: https://davidcraddocktutor.com
+          weight: 15
+        - name: Media Library
+          url: https://home.davidcraddock.net
+          weight: 15
         - name: vWorkbench
           url: vworkbench/
           weight: 15
@@ -81,9 +87,6 @@ params:
 
   profileMode:
     enabled: false
-    title: PaperMod
-    imageUrl: "#"
-    imageTitle: my image
 
     buttons:
       - name: Archives
@@ -127,7 +130,7 @@ markup:
 
   highlight:
     noClasses: false
-    anchorLineNos: true
+    anchorLineNos: false
     codeFences: true
     guessSyntax: true
     lineNos: true
