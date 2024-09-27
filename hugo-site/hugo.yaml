@@ -48,9 +48,6 @@ languages:
         - name: Security Research
           url: security-research/
           weight: 15
-        - name: Tutoring
-          url: https://davidcraddocktutor.com
-          weight: 15
         - name: Media Library
           url: https://home.davidcraddock.net
           weight: 15
