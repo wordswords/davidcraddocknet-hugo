@@ -113,6 +113,7 @@ These all work with the gaming PC and laptop and connect via USB:
 - PS2 Controller with USB adaptor
 - PS3 Controller with USB cable
 - PS4 Controller with USB cable
+- SNK Neo Geo Mini Controller with USB adaptor x2 - these are extremely well-built controllers!
 
 ### Arcade Sticks
 
@@ -143,12 +144,12 @@ Currently these are the consoles I have hooked up:
 - **Sony PS3** with 1x official PS3 controller
 - **Sony PS4** with 1x official PS4 controller
 - **Nintendo Gamecube** with 2x official Gamecube controllers
-- **XBox 360** with 2x official wired 360 controllers
+- **XBox 360** with 2x official wired 360 controllers and 360 Kinnect
 - **Sega Dreamcast** with 3x official DC controllers, 2x VMUs and 1x third-party memory pack
 - **Sony PSP2000** (TV out)
 - **Nintendo Wii (Gamecube compatiable version)** with 2x Wiimote Motion controller and official balance board
 - **Nintendo 64 with 2x official N64 controller, Kaico PAL N64 -> HDMI convertor, expansion pak and memory pak**
-- **Microsoft XBox V1** with Duke controllers
+- **Microsoft XBox V1** with 2x Duke controllers
 - **SNK Mini Neo Geo** with 2x official controllers, and mini HDMI to HDMI cable for monitor output
 
 [![](/wp-content/uploads/2023/12/20231223_0927581.jpg)](/wp-content/uploads/2023/12/20231223_0927581.jpg)
@@ -157,7 +158,8 @@ Currently these are the consoles I have hooked up:
 
 - I have a customised Sony PSP which I have cracked, and put a 64GB memory card in it. It has a complete set of SNES and Genesis games, as well as several PS One games which the PSP can emulate. I love playing the game 'Wip3out' on it.
 - I have a Nintendo DSi XL which has a cartridge loader meaning I can play any games on it. Currently I mostly only use it for chess games, but aim to use it more.
-- I have a Gameboy Advance SP which I use almost exclusively for the game 'Final Fantasy Tactics'.
+- I have a Gameboy Advance SP which I use almost exclusively for the game 'Final Fantasy Tactics'. I also have 4x cables to connect GBAs to the Nintendo Gamecube for multiplayer games that used this functionality, and a headphone adaptor for the GBA SP.
+- I have an original Gameboy which I use with Tetris.
 
 ## Video Chain
 
