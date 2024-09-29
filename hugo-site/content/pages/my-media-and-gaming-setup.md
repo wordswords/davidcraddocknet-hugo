@@ -32,7 +32,7 @@ url: /my-gaming-setup/
 **Media Software:**
 
 - dbPowerAmp CD Ripper (lifetime licence)
-- MakeMKV for ripping CDs and Blu-rays
+- MakeMKV for ripping CDs and Blu-rays (lifetime licence)
 - AnyDVD HD (lifetime licence) for ripping DVDs and Blu-rays
 - 4K Video Downloader (lifetime licence) for ripping videos from Youtube etc
 - Imagemagik for creating GIFs and command line batch graphics manipulation and conversion
@@ -42,22 +42,23 @@ url: /my-gaming-setup/
 - Aseprite Pixel Graphics and Animated Gif Editor
 - Sonarworks SoundID Reference - speaker and headphones environmental EQ software.
 - Audacity Audio Editor for editing and mastering mixes uploaded to Mixcloud
-- hueDynamic for syncing Phillips Hue lights to the music on my stream
 - Hye Sync (official app) for syncing Phillips Hue lights to movies, games, etc
 - PlexAmp and Plex for streaming audio and video from my Plex server at highest quality
 - VLC for video playback
 - HandBrake for transcoding and compressing video
-- OBS Studio and Streamlabs OBS
+- OBS Studio (open source)
 - Resolume Avenue 7 for visuals for my DJ stream
 - Resolume Wire for creating custom beat-synced visualisations for my stream
 - Paint.net open source graphics program for simple crops and photo editing
 - Aiseesoft Blu-ray Player (lifetime licence) for playing unripped Blu-rays on my PC
 - Bome MIDI Translator Classic (lifetime licence) for translating MIDI events to key presses - useful for complex streaming setups
 - Various free emulation tools for decrypting/anti-DRMing copies of video game console optical disks and getting them in a playable state for use in an emulator
+- Reaper DAW
+- Ableton Live 11 Suite DAW
+- Filebot for renaming and organising media files
+
 
 ## Gaming Laptop
-
-I use this as my DJing laptop, for all audio production, but also the main computer for gaming. It is the most powerful out of my current setup for the latest games.
 
 - Lenovo Legion 5-15IAH 2022
 - i7 12th Gen
@@ -77,7 +78,7 @@ I have a professional music studio setup that I also use for my gaming.
 - Herman Miller Aeron Chair
 - Phillips Hue Entertainment centre with 5 light sources and Hue Sync
 - Razer Deathadder Essential wired gaming mouse
-- Razer BlackWidow V3 Green Tenkeyless Mechanical Switch Gaming Keyboard
+- Topre Realforce UK Keyboard
 - Razer Tarturus Chroma Pro Gaming Keypad
 - Presonus 1824c Studio Sound Interface
 - Beyerdynamic DT 880 Pro Black Edition Headphones
@@ -144,7 +145,7 @@ Currently these are the consoles I have hooked up:
 - **Sony PS3** with 1x official PS3 controller
 - **Sony PS4** with 1x official PS4 controller
 - **Nintendo Gamecube** with 2x official Gamecube controllers
-- **XBox 360** with 2x official wired 360 controllers and 360 Kinnect
+- **XBox 360** with 2x official wired 360 controllers and 360 Kinect
 - **Sega Dreamcast** with 3x official DC controllers, 2x VMUs and 1x third-party memory pack
 - **Sony PSP2000** (TV out)
 - **Nintendo Wii (Gamecube compatiable version)** with 2x Wiimote Motion controller and official balance board
@@ -260,14 +261,3 @@ We have a super minimal setup in our living room which my wife uses heavily. It 
 
 Because it has Google TV, we can use the Plex app to wirelessly stream 4K videos from my Plex server, and it handles 4K videos well, which is not a small feat as the wireless signal is being blasted through a concrete wall :) Netflix and all the other standard services also work well.
 
-## My Games
-
-I collect physical and digital games, both modern and retro. You should able to browse through the games I have, both on PC and console, here: [https://wordswords.github.io/media-library-homepage](https://wordswords.github.io/media-library-homepage)
-
-## Living Room TV Setup
-
-We have a super minimal setup in our living room which my wife uses heavily. It is super minimal because she doesn't like overcomplicated tech stuff :) It consists of:
-
-- Sony BRAVIA 2023 Edition, KD-43X75WL, 43 Inch, LED, Smart TV, 4K HDR, Google TV
-
-Because it has Google TV, we can use the Plex app to wirelessly stream 4K videos from my Plex server, and it handles 4K videos well, which is not a small feat as the wireless signal is being blasted through a concrete wall :) Netflix and all the other standard services also work well.
