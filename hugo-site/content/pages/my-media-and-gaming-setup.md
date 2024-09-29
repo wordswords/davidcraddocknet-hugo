@@ -182,16 +182,18 @@ PC gaming laptop -> 4K capture card * -> PASSTHROUGH -> Monitor (up to 4K)
 ```
 ## Audio Chain
 
+All cables are balanced wherever possible, and go via a balanced patch-bay.
+
 ### INPUT
 
 1.
 ```
-All retro consoles -> 4K capture card -> PASSTHROUGH -> Monitor -> speaker stereo audio jack -> Presonus Studio USB-C 1824 2x line inputs
+All retro consoles -> OSSC -> 4K capture card -> PASSTHROUGH -> Monitor -> speaker stereo audio jack -> Balanced patch-bay -> Presonus Studio USB-C 1824 2x line inputs
 ```
 
 2.
 ```
-All modern (HDMI) consoles -> 4K capture card -> PASSTHROUGH -> Monitor -> speaker stereo audio jack -> Presonus Studio USB-C 1824 2x line inputs
+All modern (HDMI) consoles -> 4K capture card -> PASSTHROUGH -> Monitor -> speaker stereo audio jack -> Balanced patch-bay -> Presonus Studio USB-C 1824 2x line inputs
 ```
 
 3.
@@ -199,11 +201,64 @@ All modern (HDMI) consoles -> 4K capture card -> PASSTHROUGH -> Monitor -> speak
 Rode Procast mic w/ pop shield, mic cage and boom -> Presonus Studio USB-C 1824 1x mic input
 ```
 
+4.
+```
+Eurorack Synth (and any other audio) -> Eurorack Mixer -> Presonus Studio USB-C 1824 4x line inputs
+```
+
+5.
+```
+t.bone MB 88U mic with pop shield and desktop mic stand -> Balanced patch-bay -> Presonus Studio USB-C 1824 1x mic input
+```
+
+6.
+```
+Kimafun Wireless mic -> Balanced patch-bay -> Presonus Studio USB-C 1824 1x mic input
+```
+
+7.
+```
+Hi-fi Record Player -> Record player pre-amp -> Presonus Studio USB-C 1824 2x line input
+```
+
 ### OUTPUT
 
+1.
 ```
-Presonus Studio USB-C 1824 1x mic input -> 2x Genelec 8020D Speakers + 1x Presonus Speaker acting as a subwoofer (with hardware EQ)
+Presonus Studio USB-C 1824 2x main output -> 2x Genelec 8020D Speakers
 ```
+
+2.
+```
+Presonus Studio USB-C 1824 1x mono output -> 1x Presonus Speaker acting as a subwoofer (with hardware EQ filtering mid and highs out)
+```
+
+3.
+```
+Presonus Studio USB-C 1824 1x headphone output -> Beyerdynamic DT 880 Pro Black Edition Headphones
+```
+
+4.
+```
+Presonus Studio USB-C 1824 1x spare headphone output -> Spare/guest headphones
+```
+
+5.
+```
+Presonus Studio USB-C 1824 2x aux output -> Eurorack Mixer -> Eurorack Synth
+```
+
+## My Games
+
+I collect physical and digital games, both modern and retro. You should able to browse through the games I have, both on PC and console, here: [https://wordswords.github.io/media-library-homepage](https://wordswords.github.io/media-library-homepage)
+
+## Living Room TV Setup
+
+We have a super minimal setup in our living room which my wife uses heavily. It is super minimal because she doesn't like overcomplicated tech stuff :) It consists of:
+
+- Sony BRAVIA 2023 Edition, KD-43X75WL, 43 Inch, LED, Smart TV, 4K HDR, Google TV
+
+Because it has Google TV, we can use the Plex app to wirelessly stream 4K videos from my Plex server, and it handles 4K videos well, which is not a small feat as the wireless signal is being blasted through a concrete wall :) Netflix and all the other standard services also work well.
 
 ## My Games
 
