@@ -3,5 +3,5 @@
 set -e
 set -x
 
-snap run hugo server --disableFastRender || echo ''
+hugo server --disableFastRender || echo ''
 
