@@ -7,7 +7,9 @@ url: /my-bike/
 ---
 [![](/wp-content/uploads/2024/06/himiway.jpg)](/wp-content/uploads/2024/06/himiway.jpg)
 
-Decided not to mention the security aspects of my setup on a public page, but trust me, there are many!
+## Bike 1 - Electric Mountain Bike
+
+I use this for mostly getting out of the city and into some nature. It is a long-range bike.
 
 - Himiway Zebra Electric Mountain Bike 2023 Version (road legal, top electric-assisted speed 15mph, max. pull 400lbs)
 - 2x official batteries (40-80 miles on a single charge each)
@@ -39,4 +41,12 @@ Decided not to mention the security aspects of my setup on a public page, but tr
 - Light backpack suitable for cycling
 - Goretex water-resistant high-vis cycle jacket
 - VEVOR Cycle Bike Cargo Trailer
+
+## Bike 2 - City Electric Cargo Bike
+
+My wife and I use this as a bike for getting shopping and a general-purpose car replacement, as well as volunteering.
+
+- Tern 2024 Quick Haul Long D9 Electric Cargo Bike (road legal, top electric-assisted speed 15mph, max. pull 415lbs)
+- Large cargo tray mount
+
 
