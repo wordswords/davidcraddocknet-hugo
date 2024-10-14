@@ -6,7 +6,7 @@ url: /my-home-network/
 
 ---
 
-- I have a fibre to the house 2Gb/sec connection provided by (BRSK)[https://www.brsk.co.uk], who I really recommend.
+- I have a fibre to the house 2Gb/sec connection provided by [BRSK](https://www.brsk.co.uk), who I really recommend.
 - My home network routes at around 2-4gbit/sec between 10gbit/sec DAC fibre connected hosts, and around 2gbit/sec via CAT8 for Thunderbolt 2.5Ggbit/sec laptop network interfaces.
 - We two Ubiquiti wireless APs in a mesh configuration, with seperate SSIDs for 2Ghz, 5Ghz, guest and IOT networks. The guest and IOT networks are isolated from everything else.
 - I use a Mikrotik router which hosts an iperf3 docker container for network testing
@@ -15,7 +15,7 @@ url: /my-home-network/
 - We have a robotic vacuum cleaner which helps Conny around the house. We call it 'Dusterbuster'.
 - Wherever possible, all devices have a wired network connection. Wireless is only used as a last resort, to minimise spectrum interference.
 - We use ZeroTier as a VPN so that everything useful is accessible outside the home.
-- My home server runs about 14 docker containerized services of different types, using docker compose. I self-host my own websites (including this one), and a bunch of other services for my friends and family. See my (media library homepage)[https://home.davidcraddock.net] which is a kind of 'intranet homepage' for my network.
+- My home server runs about 14 docker containerized services of different types, using docker compose. I self-host my own websites (including this one), and a bunch of other services for my friends and family. See my [media library homepage](https://home.davidcraddock.net) which is a kind of 'intranet homepage' for my network.
 
 ![image](fast.jpg)
 
