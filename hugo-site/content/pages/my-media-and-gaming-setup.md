@@ -126,6 +126,10 @@ These all work with the gaming PC and laptop and connect via USB:
 
 - Speedlink SL-650212-BKRD Competition PRO Joystick - Anniversary Edition
 
+### Light gun
+
+- Sinden PC light gun with recoil (Black)
+
 ### HOTAS
 
 - Thrustmaster T16000M Flight Stick
