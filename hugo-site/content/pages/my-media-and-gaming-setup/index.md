@@ -262,46 +262,66 @@ Presonus Studio USB-C 1824 2x aux output -> Eurorack Mixer -> 2 BNC cables -> 2 
 Presonus Studio USB-C 1824 2x aux output -> Eurorack Mixer -> 2 channels for small VU visual volume Level Monitor
 ```
 
-## MIDI Routing Chains
-
-### OUTPUT
-
-```
-1. Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> CV.OCD Polyphonic MIDI to CV Convertor -> Eurorack
-```
-```
-2. Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> Behringer Model D Synth
-```
-```
-3. Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> Emu Orbit 9090 Synth
-```
-```
-4. Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> Lexicon Reverb Unit (for midi clocked effects)
-```
-```
-5. Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> Roland E-4 Vocal Tweaker (for midi-synced pitch effects)
-```
-
-### INPUT
-
-```
-1. Roland A-500 Pro 49 Keyboard Controller -> Presonus Studio USB-C 1824 Midi Input
-```
-
-
 #### PATCH-BAY
 
 This is the patchbay mapping.
 
 Usually I connect one or two of these patchbay sockets to the input 1 and/or 2 on the front of my audio device for recording and streaming.
 
+1.
 ```
-1 - Left HDMI audio output to gaming monitor (used for OSSC retro gaming)
-2 - Right HDMI audio output to gaming monitor (used for OSSC retro gaming)
-3 - R0de Procaster Audio mic with boom via a Roland E-4 Vocal Tweaker
-4 - tbone MB 88u Audio mic with desktop stand, used for as a secondary mic
-5 - Kinafun Wireless trasmitter/reciver for Kinafun wireless mic headset
+Left HDMI audio output to gaming monitor (used for OSSC retro gaming)
 ```
+2.
+```
+Right HDMI audio output to gaming monitor (used for OSSC retro gaming)
+```
+3.
+```
+R0de Procaster Audio mic with boom via a Roland E-4 Vocal Tweaker
+```
+4.
+```
+tbone MB 88u Audio mic with desktop stand, used for as a secondary mic
+```
+5.
+```
+Kinafun Wireless trasmitter/reciver for Kinafun wireless mic headset
+```
+
+## MIDI Routing Chains
+
+### OUTPUT
+
+1.
+```
+Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> CV.OCD Polyphonic MIDI to CV Convertor -> Eurorack
+```
+2.
+```
+Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> Behringer Model D Synth
+```
+3.
+```
+Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> Emu Orbit 9090 Synth
+```
+4.
+```
+Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> Lexicon Reverb Unit (for midi clocked effects)
+```
+5.
+```
+Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> Roland E-4 Vocal Tweaker (for midi-synced pitch effects)
+```
+
+### INPUT
+
+1.
+```
+Roland A-500 Pro 49 Keyboard Controller -> Presonus Studio USB-C 1824 Midi Input
+```
+
+
 
 ## My PC and Console Games
 
