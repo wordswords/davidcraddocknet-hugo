@@ -202,7 +202,7 @@ All modern (HDMI) consoles -> 4K capture card -> PASSTHROUGH -> Monitor -> speak
 
 3.
 ```
-Rode Procast mic w/ pop shield, mic cage and boom -> Presonus Studio USB-C 1824 1x mic input
+Rode Procast mic w/ pop shield, mic cage and boom -> Roland E-4 Vocal Tweaker -> Presonus Studio USB-C 1824 1x mic input
 ```
 
 4.
@@ -251,6 +251,29 @@ Presonus Studio USB-C 1824 1x spare headphone output -> Spare/guest headphones
 ```
 Presonus Studio USB-C 1824 2x aux output -> Eurorack Mixer -> Eurorack Synth
 ```
+
+6.
+```
+Presonus Studio USB-C 1824 2x aux output -> Eurorack Mixer -> 2 BNC cables -> 2 channel inputs of YeaPook ADS1014D Digital Oscilloscope (for plotting waveforms)
+```
+
+7.
+```
+Presonus Studio USB-C 1824 2x aux output -> Eurorack Mixer -> 2 channels for small VU visual volume Level Monitor
+```
+
+
+#### PATCH-BAY
+
+This is the patchbay mapping.
+
+Usually I connect one or two of these patchbay sockets to the input 1 and/or 2 on the front of my audio device for recording and streaming.
+
+1 - Left HDMI audio output to monitor (used for OSSC retro gaming)
+2 - RIGHT HDMI audio output to monitor (used for OSSC retro gaming)
+3 - R0de Procaster Audio mic with boom via a Roland E-4 Vocal Tweaker
+4 - tbone MB 88u Audio mic with desktop stand, used for as a secondary mic
+5 - Kinafun Wireless trasmitter/reciver for Kinafun wireless mic headset
 
 ## My PC and Console Games
 
