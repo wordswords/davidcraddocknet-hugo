@@ -269,11 +269,13 @@ This is the patchbay mapping.
 
 Usually I connect one or two of these patchbay sockets to the input 1 and/or 2 on the front of my audio device for recording and streaming.
 
-1 - Left HDMI audio output to monitor (used for OSSC retro gaming)
-2 - RIGHT HDMI audio output to monitor (used for OSSC retro gaming)
+```
+1 - Left HDMI audio output to gaming monitor (used for OSSC retro gaming)
+2 - Right HDMI audio output to gaming monitor (used for OSSC retro gaming)
 3 - R0de Procaster Audio mic with boom via a Roland E-4 Vocal Tweaker
 4 - tbone MB 88u Audio mic with desktop stand, used for as a secondary mic
 5 - Kinafun Wireless trasmitter/reciver for Kinafun wireless mic headset
+```
 
 ## My PC and Console Games
 
