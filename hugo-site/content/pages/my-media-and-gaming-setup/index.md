@@ -262,6 +262,32 @@ Presonus Studio USB-C 1824 2x aux output -> Eurorack Mixer -> 2 BNC cables -> 2 
 Presonus Studio USB-C 1824 2x aux output -> Eurorack Mixer -> 2 channels for small VU visual volume Level Monitor
 ```
 
+## MIDI Routing Chains
+
+### OUTPUT
+
+```
+1. Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> CV.OCD Polyphonic MIDI to CV Convertor -> Eurorack
+```
+```
+2. Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> Behringer Model D Synth
+```
+```
+3. Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> Emu Orbit 9090 Synth
+```
+```
+4. Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> Lexicon Reverb Unit (for midi clocked effects)
+```
+```
+5. Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> Roland E-4 Vocal Tweaker (for midi-synced pitch effects)
+```
+
+### INPUT
+
+```
+1. Roland A-500 Pro 49 Keyboard Controller -> Presonus Studio USB-C 1824 Midi Input
+```
+
 
 #### PATCH-BAY
 
