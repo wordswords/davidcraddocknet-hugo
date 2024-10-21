@@ -18,9 +18,9 @@ Platform Engineer roles are a type of dev ops role that is 1) In demand 2) Build
 
 The plan is to 'prove' my AWS knowledge by going ahead and sitting the AWS Solution Architect exam, and gaining the certificate.
 
-Then I want to build up my Kubernates knowledge.
+Then I want to build up my Kubernetes knowledge.
 
-Everyone says the path of learning: Linux -> Docker -> Networking -> Kubernates is the way to go, so I'm going to follow that path.
+Everyone says the path of learning: Linux -> Docker -> Networking -> Kubernetes is the way to go, so I'm going to follow that path.
 
 ## Learning Resources
 
