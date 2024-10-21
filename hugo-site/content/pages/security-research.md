@@ -14,15 +14,17 @@ This research is strictly for informational purposes and I don't do anything cri
 
 ## Wardriving and Wifi cracking
 
-I have two Raspberry Pi Zero 2s configured headless with pwnagotchi
+I have two Raspberry Pi Zeros configured headless with pwnagotchi
 
 ## Password cracking
 
 I have a hashmat password cracker setup that utilises my PC with an Nvidea gaming graphics card.
 
-## Evil Wifi AP
+## M5StickC2 running Nemo
 
-I have a small device which I can use as an evil wifi portal. This will deauth a WAP, change its SSID name to that WAP, and capture information from those devices connecting to it.
+I have a M5StickC2 running [https://github.com/n0xa/m5stick-nemo](Nemo firmware) which replicates most of the interesting functionality of the Flipper Zero at a tiny fraction of the price.
+
+I can use it to deauth wifi APs and run captive wifi APs, as well as wifi spam and some pranks around bluetooth and infrared hacking.
 
 ## RFID and Smart Card Security
 
@@ -35,5 +37,9 @@ I am planning on installing Kali Nethunter on my old Sony Xperia 1 III. This wil
 ## Self-hosting Security
 
 I am moving to self-host as much of my digital content as possible, to force myself how to learn to secure things properly.
+
+* As a web server I'm currently using 'SWAG' - [https://hub.docker.com/r/linuxserver/swag](Secure Web Application Gateway), which includes fail2ban, ngnix, certbot and letsencrypt in a secure configuration.
+* I use [https://relay.firefox.com/accounts/profile/](Firefox Relay) to provide an anonymous email alias for countering spam.
+* I use [https://www.cloudflare.com](CloudFlare) heavily for DDOS protection and a lot of other features for my self-hosted domains.
 
 
