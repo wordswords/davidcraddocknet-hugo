@@ -51,7 +51,7 @@ I am moving to self-host as much of my digital content as possible, to force mys
 * I use [Thor AV](https://www.nextron-systems.com/thor/) on the Linux sever to scan weekly the entire server.
 * I use [Geoblocker](https://github.com/friendly-bits/geoblocker-bash) to block all Russian and Chinese IP addresses from accessing my server, this seriously cuts down on botnets.
 * I use a number of automated rootkit detectors and scanners to keep an eye on everything.
-* I use Debian Automated Upgrades to automatically security patch the server, and all my Linux machines, to defend against 0-day exploits.
+* I use [Debian Unattended Upgrades](https://wiki.debian.org/UnattendedUpgrades) to automatically security patch the server, and all my Linux machines, to defend against 0-day exploits.
 * I use [endlessSSH](https://github.com/skeeto/endlessh) to waste computer time of malicious bots that automatically attempt to connect to port 22 of my server.
 
 ### Pi-Hole K8s Cluster
@@ -65,7 +65,5 @@ I use a separate GUEST wifi network which doesn't have access to any other parts
 ### CCTV and Security Cameras
 
 I am building an open-source CCTV system using cheap old Axis cameras that are out of their supported life. Currently I have tried using Shinobi CCTV but I'm not happy with it, and am looking to move to a different system such as ZoneMinder.
-
-
 
 
