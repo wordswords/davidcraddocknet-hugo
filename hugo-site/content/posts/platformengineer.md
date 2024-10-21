@@ -18,6 +18,8 @@ Then I want to build up my Kubernates knowledge.
 
 Everyone says the path of learning: Linux -> Docker -> Networking -> Kubernates is the way to go, so I'm going to follow that path.
 
+I am using [https://cantril.io](https://cantril.io) to learn AWS, and to study for the AWS Solution Architect exam.
+
 Platform Engineer roles are a type of dev ops role that is 1) In demand 2) Builds on my existing knowledge 3) Is obtainable and 4) Offers a lot of 'remote only' work.
 
 Watch this space for more updates soon - I aim to go 100% hardcore on learning what I need to know to secure a first 'Platform Engineer' role.
