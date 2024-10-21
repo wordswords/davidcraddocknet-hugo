@@ -8,6 +8,10 @@ url: /my-gaming-setup/
 {{< youtube w-QOfONKTWs >}}
 ![image](mediasetup.png)
 
+## Gaming Blog
+
+Please visit my separate gaming blog for reviews of games I've played. It's at (https://davidcraddock.games)[https://davidcraddock.games]
+
 ## Media PC
 
 - 12th Gen i7 CPU
