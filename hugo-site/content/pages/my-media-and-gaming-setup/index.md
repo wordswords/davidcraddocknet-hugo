@@ -10,7 +10,7 @@ url: /my-gaming-setup/
 
 ## Gaming Blog
 
-Please visit my separate gaming blog for reviews of games I've played. It's at (https://davidcraddock.games)[https://davidcraddock.games]
+Please visit my separate gaming blog for reviews of games I've played. It's at [https://davidcraddock.games](https://davidcraddock.games)
 
 ## Media PC
 
