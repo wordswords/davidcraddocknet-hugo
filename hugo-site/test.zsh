@@ -3,5 +3,5 @@
 set -e
 set -x
 
-hugo server --disableFastRender || echo ''
+hugo server --config ./hugo.yaml --disableFastRender || echo ''
 
