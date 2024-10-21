@@ -154,8 +154,6 @@ Currently these are the consoles I have hooked up:
 - **Microsoft XBox V1** with 2x Duke controllers
 - **SNK Mini Neo Geo** with 2x official controllers, and mini HDMI to HDMI cable for monitor output
 
-[![](/wp-content/uploads/2023/12/20231223_0927581.jpg)](/wp-content/uploads/2023/12/20231223_0927581.jpg)
-
 ### Portable Retro Games Consoles
 
 - Sony PSP which I have cracked, and put a 64GB memory card in it. It has a complete set of SNES and Genesis games, as well as several PS One games which the PSP can emulate. I love playing the game 'Wip3out' on it.
@@ -326,6 +324,9 @@ Roland A-500 Pro 49 Keyboard Controller -> Presonus Studio USB-C 1824 Midi Input
 ## My PC and Console Games
 
 I collect physical and digital games, both modern and retro. You should able to browse through the games I have, both on PC and console, here: [https://wordswords.github.io/media-library-homepage](https://wordswords.github.io/media-library-homepage)
+
+As of October 2024, these are my Playnite statistics for paid games owned across all PC launchers:
+[image](gamelibrarystats.png)
 
 ## Living Room TV Setup
 
