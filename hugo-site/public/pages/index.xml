@@ -2,292 +2,103 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Pages on DavidCraddock.net</title>
-    <link>http://localhost:1313/pages/</link>
+    <link>https://davidcraddock.net/pages/</link>
     <description>Recent content in Pages on DavidCraddock.net</description>
     <image>
       <title>DavidCraddock.net</title>
-      <url>http://localhost:1313/mugshot.png</url>
-      <link>http://localhost:1313/mugshot.png</link>
+      <url>https://davidcraddock.net/mugshot.png</url>
+      <link>https://davidcraddock.net/mugshot.png</link>
     </image>
-    <generator>Hugo -- 0.136.2</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
     <copyright>David Paul Craddock</copyright>
     <lastBuildDate>Thu, 26 Sep 2024 17:08:52 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://davidcraddock.net/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>vWorkbench</title>
-      <link>http://localhost:1313/vworkbench/</link>
+      <link>https://davidcraddock.net/vworkbench/</link>
       <pubDate>Thu, 26 Sep 2024 17:08:52 +0000</pubDate>
-      <guid>http://localhost:1313/vworkbench/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;vworkbench.jpg&#34; alt=&#34;image&#34;  /&gt;
-&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;vWorkbench&amp;rdquo; is my own personal Vim9-based development environment and writing environment that I&amp;rsquo;m trying to &amp;lsquo;spin out&amp;rsquo; into an open source project that is stable enough, reusable enough and well-documented enough to be used by others.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/wordswords/dotfiles.git&#34;&gt;https://github.com/wordswords/dotfiles.git&lt;/a&gt; - this is the current version of my development environment that I use as much as possible, both in personal and work situations.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/wordswords/dotfiles/blob/master/README.md&#34;&gt;https://github.com/wordswords/dotfiles/blob/master/README.md&lt;/a&gt; - this is the documentation on my development environment, which I absolutely try and keep up to date.&lt;/p&gt;</description>
+      <guid>https://davidcraddock.net/vworkbench/</guid>
+      <description>&amp;ldquo;vWorkbench&amp;rdquo; is my own personal Vim9-based development environment and writing environment that I&amp;rsquo;m trying to &amp;lsquo;spin out&amp;rsquo; into an open source project that is stable enough, reusable enough and well-documented enough to be used by others.
+https://github.com/wordswords/dotfiles.git - this is the current version of my development environment that I use as much as possible, both in personal and work situations.
+https://github.com/wordswords/dotfiles/blob/master/README.md - this is the documentation on my development environment, which I absolutely try and keep up to date.</description>
     </item>
     <item>
       <title>Security Research</title>
-      <link>http://localhost:1313/security-research/</link>
+      <link>https://davidcraddock.net/security-research/</link>
       <pubDate>Sat, 24 Aug 2024 03:42:48 +0000</pubDate>
-      <guid>http://localhost:1313/security-research/</guid>
-      <description>&lt;p&gt;I am currently familiarising myself with tools to do security research around physical pentesting.&lt;/p&gt;
-&lt;p&gt;This is in preparation for my research project as part of the MSc Cyber Security masters I&amp;rsquo;m taking from the University of London via distance learning.&lt;/p&gt;
-&lt;p&gt;This research is strictly for informational purposes and I don&amp;rsquo;t do anything criminal with it.&lt;/p&gt;
-&lt;h2 id=&#34;wardriving-and-wifi-cracking&#34;&gt;Wardriving and Wifi cracking&lt;/h2&gt;
-&lt;p&gt;I have two Raspberry Pi Zero 2s configured headless with pwnagotchi&lt;/p&gt;</description>
+      <guid>https://davidcraddock.net/security-research/</guid>
+      <description>I am currently familiarising myself with tools to do security research around physical pentesting.
+This is in preparation for my research project as part of the MSc Cyber Security masters I&amp;rsquo;m taking from the University of London via distance learning.
+This research is strictly for informational purposes and I don&amp;rsquo;t do anything criminal with it.
+Wardriving and Wifi cracking I have two Raspberry Pi Zero 2s configured headless with pwnagotchi</description>
     </item>
     <item>
       <title>My Bike</title>
-      <link>http://localhost:1313/my-bike/</link>
+      <link>https://davidcraddock.net/my-bike/</link>
       <pubDate>Sun, 09 Jun 2024 22:34:52 +0000</pubDate>
-      <guid>http://localhost:1313/my-bike/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/wp-content/uploads/2024/06/himiway.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2024/06/himiway.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;bike-1---electric-mountain-bike&#34;&gt;Bike 1 - Electric Mountain Bike&lt;/h2&gt;
-&lt;p&gt;I use this for mostly getting out of the city and into some nature. It is a long-range bike.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Himiway Zebra Electric Mountain Bike 2023 Version (road legal, top electric-assisted speed 15mph, max. pull 400lbs)&lt;/li&gt;
-&lt;li&gt;2x official batteries (40-80 miles on a single charge each)&lt;/li&gt;
-&lt;li&gt;2x battery chargers&lt;/li&gt;
-&lt;li&gt;Two spare tires&lt;/li&gt;
-&lt;li&gt;Spare inner tube&lt;/li&gt;
-&lt;li&gt;Electric fat tire pump&lt;/li&gt;
-&lt;li&gt;Metal tire levers&lt;/li&gt;
-&lt;li&gt;Adjustable wrench&lt;/li&gt;
-&lt;li&gt;Chain tool for removing chain links&lt;/li&gt;
-&lt;li&gt;Chain cleaner tool&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;MuckOff&amp;rdquo; bike cleaning kit&lt;/li&gt;
-&lt;li&gt;Small first aid kit&lt;/li&gt;
-&lt;li&gt;Compass&lt;/li&gt;
-&lt;li&gt;Himiway fold-out cycle toolkit&lt;/li&gt;
-&lt;li&gt;Energy bars + nuts&lt;/li&gt;
-&lt;li&gt;2x cycle frame bags&lt;/li&gt;
-&lt;li&gt;2x Rockbros waterproof pannier bags&lt;/li&gt;
-&lt;li&gt;Rockbros Handlebar bag&lt;/li&gt;
-&lt;li&gt;Rockbros Mobile phone holder bag&lt;/li&gt;
-&lt;li&gt;Electric bike horn&lt;/li&gt;
-&lt;li&gt;Bike bell&lt;/li&gt;
-&lt;li&gt;Himiway cycle helmet with front light&lt;/li&gt;
-&lt;li&gt;4x vaccum thermos 750ml flasks for water&lt;/li&gt;
-&lt;li&gt;All-weather MTB grips for handlebar&lt;/li&gt;
-&lt;li&gt;Fingerless MTB gloves for warmer weather&lt;/li&gt;
-&lt;li&gt;Wraparound anti-glare sun glasses for protection against surface dirt etc&lt;/li&gt;
-&lt;li&gt;Wraparound cycle goggles with different visors&lt;/li&gt;
-&lt;li&gt;Light backpack suitable for cycling&lt;/li&gt;
-&lt;li&gt;Goretex water-resistant high-vis cycle jacket&lt;/li&gt;
-&lt;li&gt;VEVOR Cycle Bike Cargo Trailer&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;bike-2---city-electric-cargo-bike&#34;&gt;Bike 2 - City Electric Cargo Bike&lt;/h2&gt;
-&lt;p&gt;My wife and I use this as a bike for getting shopping and a general-purpose car replacement, as well as volunteering.&lt;/p&gt;</description>
+      <guid>https://davidcraddock.net/my-bike/</guid>
+      <description>Bike 1 - Electric Mountain Bike I use this for mostly getting out of the city and into some nature. It is a long-range bike.
+Himiway Zebra Electric Mountain Bike 2023 Version (road legal, top electric-assisted speed 15mph, max. pull 400lbs) 2x official batteries (40-80 miles on a single charge each) 2x battery chargers Two spare tires Spare inner tube Electric fat tire pump Metal tire levers Adjustable wrench Chain tool for removing chain links Chain cleaner tool &amp;ldquo;MuckOff&amp;rdquo; bike cleaning kit Small first aid kit Compass Himiway fold-out cycle toolkit Energy bars + nuts 2x cycle frame bags 2x Rockbros waterproof pannier bags Rockbros Handlebar bag Rockbros Mobile phone holder bag Electric bike horn Bike bell Himiway cycle helmet with front light 4x vaccum thermos 750ml flasks for water All-weather MTB grips for handlebar Fingerless MTB gloves for warmer weather Wraparound anti-glare sun glasses for protection against surface dirt etc Wraparound cycle goggles with different visors Light backpack suitable for cycling Goretex water-resistant high-vis cycle jacket VEVOR Cycle Bike Cargo Trailer Bike 2 - City Electric Cargo Bike My wife and I use this as a bike for getting shopping and a general-purpose car replacement, as well as volunteering.</description>
     </item>
     <item>
       <title>My Mobile Laptop Setup</title>
-      <link>http://localhost:1313/my-mobile-laptop-setup/</link>
+      <link>https://davidcraddock.net/my-mobile-laptop-setup/</link>
       <pubDate>Sun, 04 Feb 2024 02:48:13 +0000</pubDate>
-      <guid>http://localhost:1313/my-mobile-laptop-setup/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;mobilesetup1.jpg&#34; alt=&#34;image&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;mobilesetup2.jpg&#34; alt=&#34;image&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;mobilesetup3.jpg&#34; alt=&#34;image&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;mobilesetup4.jpg&#34; alt=&#34;image&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;mobilesetup5.jpg&#34; alt=&#34;image&#34;  /&gt;
-&lt;/p&gt;
-&lt;p&gt;I use this setup, along with &lt;a href=&#34;http://localhost:1313/my-bike/&#34;&gt;my bike&lt;/a&gt; to work from wherever I want.&lt;/p&gt;
-&lt;p&gt;It does kind of turn heads, and I&amp;rsquo;m aware it may look a little &amp;lsquo;over the top&amp;rsquo; - but it&amp;rsquo;s a very useful setup for me, keeps me healthy, and fits all my requirements.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Hercules DG400BB Laptop Stand w/ Bag&lt;/strong&gt; - this portable laptop stand is very sturdy and is designed for mobile DJ use. I find it is excellent in all situations, not just DJ use.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Lenovo Legion 5i - Intel i7 12th gen CPU, 64GB DDR5 RAM, 4TB 4th gen NVME SSD drives, 3070Ti graphics card, 15&amp;quot; 1440p IPS Dolby Vision HDR screen&lt;/strong&gt; - This is my laptop that I&amp;rsquo;ve put a lot of money into upgrading.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Logitech MK270 Wireless Keyboard and Mouse Combo&lt;/strong&gt; - This is a good mobile keyboard and mouse setup, although it&amp;rsquo;s a bit loud typing, so I&amp;rsquo;m looking to get a quieter keyboard&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Portable Battery charger&lt;/strong&gt; - A good quality external battery charger which will charge and release charge via USB A and USB C ports&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Lenovo Legion 17&amp;quot; Armored Backpack II&lt;/strong&gt; - This is an excellent quality padded laptop bag - by far the best laptop carrying case I&amp;rsquo;ve owned. It distributes the weight of my setup properly over my back so I can walk long distances&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Sony Xperia 1 V Android mobile&lt;/strong&gt; - This is a top of the line media phone which I&amp;rsquo;ve had for a while now and am very happy with. I often use it as a mobile hotspot for the laptop.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Sony MX1000 Mk3 wireless headphones&lt;/strong&gt; - This is a top of the line HDAC/Apt-X HD wireless noise cancelling headphones. They work well with my laptop and my phone.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Rock Cloud Portable Camping Table&lt;/strong&gt; - This table will hold up to 25KG which is more than enough for my laptop setup.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;LUXJET Portable Folding Stool&lt;/strong&gt; - this telescopic stool is rated up to 180KG and is very compact when folded up.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;750ml vacuum thermos flask&lt;/strong&gt; - This fits in a pocket on the side of my laptop bag, and is usually enough unless it&amp;rsquo;s a very hot day.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Pro-plus caffiene pills&lt;/strong&gt; - My lifestyle means I am tired sometimes, and I don&amp;rsquo;t drink tea or coffee, so I always keep some of these in my wallet if I need to walk home, for example.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;SanDisk 1TB Extreme Portable SSD, USB-C USB 3.2 Gen 2, External NVMe Solid State Drive&lt;/strong&gt; - This is very useful for transferring large file collections to and from other peoples computers, and is very small for carrying.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fasgear Cat 6 Ethernet Cable, Retractable Network Cable 10Gbps&lt;/strong&gt; - If I ever need to connect to a wired network, I can use this network cable - it takes up very little space.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Dell 2010 Inspiron Netbook&lt;/strong&gt; - This is a very small laptop that I use for when I don&amp;rsquo;t want to lug around the huge gaming laptop. It runs a very cut-down version of Linux and my Linux development environment, using the terminal only, and connects via my mobile phone connection to my home server via SSh where I can use the power of the server instead of the tiny netbook CPU.&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <guid>https://davidcraddock.net/my-mobile-laptop-setup/</guid>
+      <description>I use this setup, along with my bike to work from wherever I want.
+It does kind of turn heads, and I&amp;rsquo;m aware it may look a little &amp;lsquo;over the top&amp;rsquo; - but it&amp;rsquo;s a very useful setup for me, keeps me healthy, and fits all my requirements.
+Hercules DG400BB Laptop Stand w/ Bag - this portable laptop stand is very sturdy and is designed for mobile DJ use. I find it is excellent in all situations, not just DJ use.</description>
     </item>
     <item>
       <title>My Homelab</title>
-      <link>http://localhost:1313/my-home-network/</link>
+      <link>https://davidcraddock.net/my-home-network/</link>
       <pubDate>Sun, 17 Dec 2023 02:13:39 +0000</pubDate>
-      <guid>http://localhost:1313/my-home-network/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;I have a fibre to the house 2Gb/sec connection provided by &lt;a href=&#34;https://www.brsk.co.uk&#34;&gt;BRSK&lt;/a&gt;, who I really recommend.&lt;/li&gt;
-&lt;li&gt;My home network routes at around 2-4gbit/sec between 10gbit/sec DAC fibre connected hosts, and around 2gbit/sec via CAT8 for Thunderbolt 2.5Ggbit/sec laptop network interfaces.&lt;/li&gt;
-&lt;li&gt;We two Ubiquiti wireless APs in a mesh configuration, with seperate SSIDs for 2Ghz, 5Ghz, guest and IOT networks. The guest and IOT networks are isolated from everything else.&lt;/li&gt;
-&lt;li&gt;I use a Mikrotik router which hosts an iperf3 docker container for network testing&lt;/li&gt;
-&lt;li&gt;I have a Google smart home setup with 2x Google Home Mini speakers, 1x Google Home Hub (1st) gen, 1x Google Doorbell, 1x Google Nest Smoke Alarm, 1x Google Nest Thermostat, and 2x Google Nest Cameras.&lt;/li&gt;
-&lt;li&gt;We have a Phillips Hue light source setup, with 5 Hue lights in the Music Studio/Games room, which I set to strobe to music when I do my DJ sets, and setup as a Hue Entertainment Area when I play games/watch films. I also have Hue lights in the study and my bedroom, with dimmers etc.&lt;/li&gt;
-&lt;li&gt;We have a robotic vacuum cleaner which helps Conny around the house. We call it &amp;lsquo;Dusterbuster&amp;rsquo;.&lt;/li&gt;
-&lt;li&gt;Wherever possible, all devices have a wired network connection. Wireless is only used as a last resort, to minimise spectrum interference.&lt;/li&gt;
-&lt;li&gt;We use ZeroTier as a VPN so that everything useful is accessible outside the home.&lt;/li&gt;
-&lt;li&gt;My home server runs about 14 docker containerized services of different types, using docker compose. I self-host my own websites (including this one), and a bunch of other services for my friends and family. See my &lt;a href=&#34;https://home.davidcraddock.net&#34;&gt;media library homepage&lt;/a&gt; which is a kind of &amp;lsquo;intranet homepage&amp;rsquo; for my network.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;fast.jpg&#34; alt=&#34;image&#34;  /&gt;
-&lt;/p&gt;</description>
+      <guid>https://davidcraddock.net/my-home-network/</guid>
+      <description>I have a fibre to the house 2Gb/sec connection provided by BRSK, who I really recommend. My home network routes at around 2-4gbit/sec between 10gbit/sec DAC fibre connected hosts, and around 2gbit/sec via CAT8 for Thunderbolt 2.5Ggbit/sec laptop network interfaces. We two Ubiquiti wireless APs in a mesh configuration, with seperate SSIDs for 2Ghz, 5Ghz, guest and IOT networks. The guest and IOT networks are isolated from everything else. I use a Mikrotik router which hosts an iperf3 docker container for network testing I have a Google smart home setup with 2x Google Home Mini speakers, 1x Google Home Hub (1st) gen, 1x Google Doorbell, 1x Google Nest Smoke Alarm, 1x Google Nest Thermostat, and 2x Google Nest Cameras.</description>
     </item>
     <item>
       <title>My Media and Gaming Setup</title>
-      <link>http://localhost:1313/my-gaming-setup/</link>
+      <link>https://davidcraddock.net/my-gaming-setup/</link>
       <pubDate>Mon, 26 Jun 2023 19:52:05 +0000</pubDate>
-      <guid>http://localhost:1313/my-gaming-setup/</guid>
-      <description>&lt;p&gt;
-
-    
-    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/w-QOfONKTWs?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
-      &gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;mediasetup.png&#34; alt=&#34;image&#34;  /&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;gaming-blog&#34;&gt;Gaming Blog&lt;/h2&gt;
-&lt;p&gt;Please visit my separate gaming blog for reviews of games I&amp;rsquo;ve played. It&amp;rsquo;s at &lt;a href=&#34;https://davidcraddock.games&#34;&gt;https://davidcraddock.games&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;media-pc&#34;&gt;Media PC&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;12th Gen i7 CPU&lt;/li&gt;
-&lt;li&gt;32GB DDR4 RAM&lt;/li&gt;
-&lt;li&gt;1x NVme M.2 SSD 1TB (system)&lt;/li&gt;
-&lt;li&gt;1x 1TB SSD&lt;/li&gt;
-&lt;li&gt;1x 500GB SSD&lt;/li&gt;
-&lt;li&gt;1x 2.5 TB HDD (storage)&lt;/li&gt;
-&lt;li&gt;3x Logitech C920 Webcams (for streaming)&lt;/li&gt;
-&lt;li&gt;1x Logitech C270 Webcam (for video calls)&lt;/li&gt;
-&lt;li&gt;1x Nvidia 4070 GPU&lt;/li&gt;
-&lt;li&gt;10Gb/sec fibre card connected to my 10Gb/sec Mikrotik switch&lt;/li&gt;
-&lt;li&gt;2x Libredrive flashed LG-WH16NS40 multi-disk optical drivers for ripping Blu-rays, CDs, DVDs and any optical disk with MakeMKV and games for my Plex server and emulators.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;media-pc-software&#34;&gt;Media PC Software&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;dbPowerAmp CD Ripper (lifetime licence)&lt;/li&gt;
-&lt;li&gt;MakeMKV for ripping CDs and Blu-rays (lifetime licence)&lt;/li&gt;
-&lt;li&gt;AnyDVD HD (lifetime licence) for ripping DVDs and Blu-rays&lt;/li&gt;
-&lt;li&gt;4K Video Downloader (lifetime licence) for ripping videos from Youtube etc&lt;/li&gt;
-&lt;li&gt;Imagemagik for creating GIFs and command line batch graphics manipulation and conversion&lt;/li&gt;
-&lt;li&gt;FFMPEG for command line batch video manipulation&lt;/li&gt;
-&lt;li&gt;Movavai Video Editor 2022&lt;/li&gt;
-&lt;li&gt;Sony Vegas 19 Video Editor for more complex video edits&lt;/li&gt;
-&lt;li&gt;Aseprite Pixel Graphics and Animated Gif Editor&lt;/li&gt;
-&lt;li&gt;Sonarworks SoundID Reference - speaker and headphones environmental EQ software.&lt;/li&gt;
-&lt;li&gt;Audacity Audio Editor for editing and mastering mixes uploaded to Mixcloud&lt;/li&gt;
-&lt;li&gt;Hye Sync (official app) for syncing Phillips Hue lights to movies, games, etc&lt;/li&gt;
-&lt;li&gt;PlexAmp and Plex for streaming audio and video from my Plex server at highest quality&lt;/li&gt;
-&lt;li&gt;VLC for video playback&lt;/li&gt;
-&lt;li&gt;HandBrake for transcoding and compressing video&lt;/li&gt;
-&lt;li&gt;OBS Studio (open source)&lt;/li&gt;
-&lt;li&gt;Resolume Avenue 7 for visuals for my DJ stream&lt;/li&gt;
-&lt;li&gt;Resolume Wire for creating custom beat-synced visualisations for my stream&lt;/li&gt;
-&lt;li&gt;Paint.NET open source graphics program for simple crops and photo editing&lt;/li&gt;
-&lt;li&gt;Aiseesoft Blu-ray Player (lifetime licence) for playing unripped Blu-rays on my PC&lt;/li&gt;
-&lt;li&gt;Bome MIDI Translator Classic (lifetime licence) for translating MIDI events to key presses - useful for complex streaming setups&lt;/li&gt;
-&lt;li&gt;Various free emulation tools for decrypting/anti-DRMing copies of video game console optical disks and getting them in a playable state for use in an emulator&lt;/li&gt;
-&lt;li&gt;Reaper DAW (shareware lisence)&lt;/li&gt;
-&lt;li&gt;Ableton Live 11 Suite DAW&lt;/li&gt;
-&lt;li&gt;Filebot for renaming and organising media files&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;gaming-laptop&#34;&gt;Gaming Laptop&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Lenovo Legion 5-15IAH 2022&lt;/li&gt;
-&lt;li&gt;i7 12th Gen&lt;/li&gt;
-&lt;li&gt;64GB DDR5 RAM&lt;/li&gt;
-&lt;li&gt;2x 2TB NVME M.2 4th Gen SSDs&lt;/li&gt;
-&lt;li&gt;Nvidia Laptop 3070TI&lt;/li&gt;
-&lt;li&gt;Cooling Gaming Laptop Pad&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;gaming-setup&#34;&gt;Gaming Setup&lt;/h2&gt;
-&lt;p&gt;I share this setup between the Media PC and the Gaming Laptop.
-I have a 4K HDR KVM switch and a USB 3.0 KVM switch so I can quickly switch between the two.&lt;/p&gt;</description>
+      <guid>https://davidcraddock.net/my-gaming-setup/</guid>
+      <description>Gaming Blog Please visit my separate gaming blog for reviews of games I&amp;rsquo;ve played. It&amp;rsquo;s at https://davidcraddock.games
+Media PC 12th Gen i7 CPU 32GB DDR4 RAM 1x NVme M.2 SSD 1TB (system) 1x 1TB SSD 1x 500GB SSD 1x 2.5 TB HDD (storage) 3x Logitech C920 Webcams (for streaming) 1x Logitech C270 Webcam (for video calls) 1x Nvidia 4070 GPU 10Gb/sec fibre card connected to my 10Gb/sec Mikrotik switch 2x Libredrive flashed LG-WH16NS40 multi-disk optical drivers for ripping Blu-rays, CDs, DVDs and any optical disk with MakeMKV and games for my Plex server and emulators.</description>
     </item>
     <item>
       <title>My Work Computer</title>
-      <link>http://localhost:1313/my-work-computer/</link>
+      <link>https://davidcraddock.net/my-work-computer/</link>
       <pubDate>Fri, 16 Dec 2022 23:06:40 +0000</pubDate>
-      <guid>http://localhost:1313/my-work-computer/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/wp-content/uploads/2023/11/20231107_133613.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2023/11/20231107_133613.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/a&gt;&lt;a href=&#34;http://localhost:1313/wp-content/uploads/2023/11/20231107_133703.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2023/11/20231107_133703.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/a&gt;&lt;a href=&#34;http://localhost:1313/wp-content/uploads/2023/11/20231107_133620.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2023/11/20231107_133620.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/a&gt;&lt;a href=&#34;http://localhost:1313/wp-content/uploads/2023/11/20231106_105031.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2023/11/20231106_105031.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/a&gt;&lt;a href=&#34;http://localhost:1313/wp-content/uploads/2023/11/20231107_133605.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2023/11/20231107_133605.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/a&gt;&lt;a href=&#34;http://localhost:1313/wp-content/uploads/2023/11/20231107_133556.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2023/11/20231107_133556.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This is my work from home setup. I work from home every work day. I use the following equipment:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;HDMI, network cables and and USB hookups for 2 additional laptops if needed&lt;/li&gt;
-&lt;li&gt;HDMI Switcher&lt;/li&gt;
-&lt;li&gt;USB Switcher&lt;/li&gt;
-&lt;li&gt;IKEA Motorized Standing Desk&lt;/li&gt;
-&lt;li&gt;Benq 32&amp;quot; 2560x1440 graphic designers monitor on Amazon Basics extendable desk mount arm&lt;/li&gt;
-&lt;li&gt;Honeywell desk fan&lt;/li&gt;
-&lt;li&gt;Logitech 5.1 surround sound system with 5 speakers and subwoofer&lt;/li&gt;
-&lt;li&gt;Sony WH-1000XM3 Apt-X HD Noise cancelling headphones with an Avantree Oasis Plus Apt-X HD bluetooth transmitter, so I can listen to any of the music devices on noise cancelling headphones&lt;/li&gt;
-&lt;li&gt;Ergonomic book stand for textbooks&lt;/li&gt;
-&lt;li&gt;ThinkStation Xeon workstation/server running the latest Ubuntu&lt;/li&gt;
-&lt;li&gt;Fibreoptic 10Gb/sec DAC cable routed from my ThinkStation server to my personal computer downstairs for fast data transfer&lt;/li&gt;
-&lt;li&gt;KVM switch and full hookup for work laptop&lt;/li&gt;
-&lt;li&gt;Drinks holder&lt;/li&gt;
-&lt;li&gt;Groot from Guardians of the Galaxy Phone holder&lt;/li&gt;
-&lt;li&gt;Johnny Silverhand Plushie from Cyberpunk 2077&lt;/li&gt;
-&lt;li&gt;Pomodoro timer&lt;/li&gt;
-&lt;li&gt;Standing desk mat for easing long standing experiences&lt;/li&gt;
-&lt;li&gt;XL rocker style wooden balance board&lt;/li&gt;
-&lt;li&gt;XL 360 style wooden balance board&lt;/li&gt;
-&lt;li&gt;Fast Anker USB charger&lt;/li&gt;
-&lt;li&gt;Logi USB headset with noise cancelling microphone&lt;/li&gt;
-&lt;li&gt;Kinesis Freestyle 2 ergonomic keyboard&lt;/li&gt;
-&lt;li&gt;Anker vertical mouse&lt;/li&gt;
-&lt;li&gt;Apple Magic Pad 2 that I&amp;rsquo;ve made work with Ubuntu - I use this in preference to the vertical mouse as I&amp;rsquo;ve found it much more comfortable in most cases.&lt;/li&gt;
-&lt;li&gt;LogiTech C920 web cam&lt;/li&gt;
-&lt;li&gt;Colour laser printer&lt;/li&gt;
-&lt;li&gt;Flatbed scanner&lt;/li&gt;
-&lt;li&gt;IKEA MARKKUS chair with the armrests removed as they are not adjustable and therefore not ergonomic&lt;/li&gt;
-&lt;li&gt;1800ml vacuum thermos flask for storing water and keeping it cool (keeps it cool for 24 hours, hot for 12 hours)&lt;/li&gt;
-&lt;li&gt;USB Foot Switch Keyboard Pedal for using with VIM (insert mode/normal mode toggle)&lt;/li&gt;
-&lt;li&gt;Mini fridge for Pepsi Max cans&lt;/li&gt;
-&lt;li&gt;Logitech Key light for web cam calls&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/wp-content/uploads/2022/12/20221217_112627.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2022/12/20221217_112627.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/a&gt;&lt;a href=&#34;http://localhost:1313/wp-content/uploads/2022/12/20221217_112620.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2022/12/20221217_112620.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/a&gt;&lt;a href=&#34;http://localhost:1313/wp-content/uploads/2022/12/20221217_112635.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2022/12/20221217_112635.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/a&gt;&lt;/p&gt;</description>
+      <guid>https://davidcraddock.net/my-work-computer/</guid>
+      <description>This is my work from home setup. I work from home every work day. I use the following equipment:
+HDMI, network cables and and USB hookups for 2 additional laptops if needed HDMI Switcher USB Switcher IKEA Motorized Standing Desk Benq 32&amp;quot; 2560x1440 graphic designers monitor on Amazon Basics extendable desk mount arm Honeywell desk fan Logitech 5.1 surround sound system with 5 speakers and subwoofer Sony WH-1000XM3 Apt-X HD Noise cancelling headphones with an Avantree Oasis Plus Apt-X HD bluetooth transmitter, so I can listen to any of the music devices on noise cancelling headphones Ergonomic book stand for textbooks ThinkStation Xeon workstation/server running the latest Ubuntu Fibreoptic 10Gb/sec DAC cable routed from my ThinkStation server to my personal computer downstairs for fast data transfer KVM switch and full hookup for work laptop Drinks holder Groot from Guardians of the Galaxy Phone holder Johnny Silverhand Plushie from Cyberpunk 2077 Pomodoro timer Standing desk mat for easing long standing experiences XL rocker style wooden balance board XL 360 style wooden balance board Fast Anker USB charger Logi USB headset with noise cancelling microphone Kinesis Freestyle 2 ergonomic keyboard Anker vertical mouse Apple Magic Pad 2 that I&amp;rsquo;ve made work with Ubuntu - I use this in preference to the vertical mouse as I&amp;rsquo;ve found it much more comfortable in most cases.</description>
     </item>
     <item>
       <title>Tutoring</title>
-      <link>http://localhost:1313/tutoring/</link>
+      <link>https://davidcraddock.net/tutoring/</link>
       <pubDate>Mon, 12 Oct 2020 22:42:40 +0000</pubDate>
-      <guid>http://localhost:1313/tutoring/</guid>
-      <description>&lt;p&gt;Please see my &lt;a href=&#34;https://davidcraddocktutor.com&#34;&gt;David Craddock - Tutor&lt;/a&gt; website for more details of tutoring options I can offer.&lt;/p&gt;</description>
+      <guid>https://davidcraddock.net/tutoring/</guid>
+      <description>Please see my David Craddock - Tutor website for more details of tutoring options I can offer.</description>
     </item>
     <item>
       <title>Music</title>
-      <link>http://localhost:1313/music/</link>
+      <link>https://davidcraddock.net/music/</link>
       <pubDate>Sun, 21 Jun 2015 16:46:15 +0000</pubDate>
-      <guid>http://localhost:1313/music/</guid>
-      <description>&lt;p&gt;I create music and DJ in my free time. I have various music projects on the go at any one time.&lt;/p&gt;
-&lt;p&gt;My &amp;lsquo;Socialist Synthesis&amp;rsquo; project is an experimental/electronica/ambient/soundscape project:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://socialistsynthesis.bandcamp.com/album/summer-sun-highway&#34;&gt;Summer Sun Highway by Socialist Synthesis&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://socialistsynthesis.bandcamp.com/album/sound-escapes&#34;&gt;Sound Escapes by Socialist Synthesis&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;I have released an EP under the &amp;lsquo;Machines Move Mountains&amp;rsquo; project with Ellis Breen. It is experimental/electronica/downtempo:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://machinesmovemountains.bandcamp.com&#34;&gt;Unfinished Dreams by Machines Move Mountains&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;I have released some music under the &amp;lsquo;Concrete Spectre&amp;rsquo; project. It is industrial/EBM/techno:&lt;/p&gt;</description>
+      <guid>https://davidcraddock.net/music/</guid>
+      <description>I create music and DJ in my free time. I have various music projects on the go at any one time.
+My &amp;lsquo;Socialist Synthesis&amp;rsquo; project is an experimental/electronica/ambient/soundscape project:
+Summer Sun Highway by Socialist Synthesis
+Sound Escapes by Socialist Synthesis
+I have released an EP under the &amp;lsquo;Machines Move Mountains&amp;rsquo; project with Ellis Breen. It is experimental/electronica/downtempo:
+Unfinished Dreams by Machines Move Mountains
+I have released some music under the &amp;lsquo;Concrete Spectre&amp;rsquo; project.</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about-2/</link>
+      <link>https://davidcraddock.net/about-2/</link>
       <pubDate>Mon, 02 Apr 2007 18:16:45 +0000</pubDate>
-      <guid>http://localhost:1313/about-2/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2019/03/11987056_1215312608495109_2648840382010151245_n1.jpg&#34; alt=&#34;11987056_1215312608495109_2648840382010151245_n(1)&#34;  /&gt;
-&lt;/p&gt;
-&lt;p&gt;Hello! I&amp;rsquo;m David Craddock, I live in Manchester, and have worked in IT and software for the past 20 years, currently as a Principal Software Engineer.&lt;/p&gt;</description>
+      <guid>https://davidcraddock.net/about-2/</guid>
+      <description>Hello! I&amp;rsquo;m David Craddock, I live in Manchester, and have worked in IT and software for the past 20 years, currently as a Principal Software Engineer.</description>
     </item>
   </channel>
 </rss>
