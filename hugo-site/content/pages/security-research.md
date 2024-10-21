@@ -17,25 +17,27 @@ This research is strictly for informational purposes and I don't do anything cri
 
 ### Wardriving and Wifi cracking
 
-I have two Raspberry Pi Zeros configured headless with pwnagotchi
+I have two Raspberry Pi Zeros configured headless with [pwnagotchi](https://pwnagotchi.ai/) to automatically capture wifi handshakes hashes to crack later.
 
 ### Password cracking
 
-I have a hashmat password cracker setup that utilises my PC with an Nvidea gaming graphics card.
+I have a [hashmat](https://hashcat.net/hashcat/) password cracker setup that utilises my PC with an Nvidea gaming graphics card. I can use this to attempt to crack wifi handshake hashes with a dictionary attack.
 
 ### M5StickC2 running Nemo
 
-I have a M5StickC2 running [Nemo firmware](https://github.com/n0xa/m5stick-nemo) which replicates most of the interesting functionality of the Flipper Zero at a tiny fraction of the price.
+I have a [M5StickC2](https://shop.m5stack.com/products/m5stickc-plus2-esp32-mini-iot-development-kit) running [Nemo firmware](https://github.com/n0xa/m5stick-nemo) which replicates most of the interesting functionality of the Flipper Zero at a tiny fraction of the price.
 
 I can use it to deauth wifi APs and run captive wifi APs, as well as wifi spam and some pranks around bluetooth and infrared hacking.
 
+It has also taught me a bit about aurdino programming and deploying firmware to a device.
+
 ### RFID and Smart Card Security
 
-I have a Proxmark3 setup which I'm using to learn about smart card security and smart card cloning. I am still getting used to using this, there is a lot to learn!
+I have a [Proxmark3](https://en.wikipedia.org/wiki/Proxmark3) setup which I'm using to learn about RFIDs, smart card security and smart card cloning. I am still getting used to using this, there is a lot to learn!
 
 ### Kali Nethunter
 
-I am planning on installing Kali Nethunter on my old Sony Xperia 1 III. This will allow me to do more security research on the go.
+I am planning on installing [Kali Nethunter](https://www.kali.org/docs/nethunter/) on my old Sony Xperia 1 III. This will allow me to do more security research on the go.
 
 ## Blue Team
 
@@ -54,11 +56,15 @@ I am moving to self-host as much of my digital content as possible, to force mys
 
 ### Pi-Hole K8s Cluster
 
-I am building a Kubernetes high-availablity cluster using Pi-Hole as a DNS server, so that there will always be Pi-Hole blocking all advertising, hazardous and tracking traffic on the network.
+I am building a Kubernetes high-availability cluster using Pi-Hole as a DNS server, so that there will always be Pi-Hole blocking all advertising, hazardous and tracking traffic on the network.
 
 ### Wireless Network Security
 
-I use a seperate GUEST wifi network which doesn't have access to any other parts of the network, ditto a IOT wifi network to isolate the IOT devices from any mischeif.
+I use a separate GUEST wifi network which doesn't have access to any other parts of the network, ditto a IOT wifi network to isolate the IOT devices from any mischief.
+
+### CCTV and Security Cameras
+
+I am building an open-source CCTV system using cheap old Axis cameras that are out of their supported life. Currently I have tried using Shinobi CCTV but I'm not happy with it, and am looking to move to a different system such as ZoneMinder.
 
 
 
