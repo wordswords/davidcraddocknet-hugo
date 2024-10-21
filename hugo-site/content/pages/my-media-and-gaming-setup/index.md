@@ -95,8 +95,6 @@ I have a 4K HDR KVM switch and a USB 3.0 KVM switch so I can quickly switch betw
 - Action! - Gameplay Recording and Streaming (on Steam) - for recording PC gaming
 - PCMark 10 - for benchmarking hardware upgrades
 
-[![](/wp-content/uploads/2023/09/playnite.png)](/wp-content/uploads/2023/09/playnite.png)
-
 ## My PC Gaming Controllers
 
 ### Joypads
@@ -326,7 +324,8 @@ Roland A-500 Pro 49 Keyboard Controller -> Presonus Studio USB-C 1824 Midi Input
 I collect physical and digital games, both modern and retro. You should able to browse through the games I have, both on PC and console, here: [https://wordswords.github.io/media-library-homepage](https://wordswords.github.io/media-library-homepage)
 
 As of October 2024, these are my Playnite statistics for paid games owned across all PC launchers:
-[image](gamelibrarystats.png)
+
+![image](gamelibrarystats.png)
 
 ## Living Room TV Setup
 
