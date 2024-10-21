@@ -22,7 +22,7 @@ I have a hashmat password cracker setup that utilises my PC with an Nvidea gamin
 
 ## M5StickC2 running Nemo
 
-I have a M5StickC2 running [https://github.com/n0xa/m5stick-nemo](Nemo firmware) which replicates most of the interesting functionality of the Flipper Zero at a tiny fraction of the price.
+I have a M5StickC2 running [Nemo firmware](https://github.com/n0xa/m5stick-nemo) which replicates most of the interesting functionality of the Flipper Zero at a tiny fraction of the price.
 
 I can use it to deauth wifi APs and run captive wifi APs, as well as wifi spam and some pranks around bluetooth and infrared hacking.
 
@@ -38,8 +38,8 @@ I am planning on installing Kali Nethunter on my old Sony Xperia 1 III. This wil
 
 I am moving to self-host as much of my digital content as possible, to force myself how to learn to secure things properly.
 
-* As a web server I'm currently using 'SWAG' - [https://hub.docker.com/r/linuxserver/swag](Secure Web Application Gateway), which includes fail2ban, ngnix, certbot and letsencrypt in a secure configuration.
-* I use [https://relay.firefox.com/accounts/profile/](Firefox Relay) to provide an anonymous email alias for countering spam.
-* I use [https://www.cloudflare.com](CloudFlare) heavily for DDOS protection and a lot of other features for my self-hosted domains.
+* As a web server I'm currently using 'SWAG' - [Secure Web Application Gateway](https://hub.docker.com/r/linuxserver/swag), which includes fail2ban, ngnix, certbot and letsencrypt in a secure configuration.
+* I use [Firefox Relay](https://relay.firefox.com/accounts/profile/) to provide an anonymous email alias for countering spam.
+* I use [CloudFlare](https://www.cloudflare.com) heavily for DDOS protection and a lot of other features for my self-hosted domains.
 
 
