@@ -42,7 +42,7 @@ languages:
         - name: WFH Setup
           url: my-work-computer/
           weight: 15
-        - name: Electric Mountain Bike
+        - name: Electric Bikes
           url: my-bike/
           weight: 15
         - name: Security Research
