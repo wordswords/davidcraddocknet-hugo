@@ -44,7 +44,7 @@ I use this for mostly getting out of the city and into some nature. It is a long
 
 ## Bike 2 - City Electric Cargo Bike
 
-[image](bike.jpg)
+![image](bike.jpg)
 
 My wife and I use this as a bike for getting shopping and a general-purpose car replacement, as well as volunteering.
 
