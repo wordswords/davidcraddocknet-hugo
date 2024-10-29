@@ -8,6 +8,7 @@ url: /life-maintaince
 
 ---
 ![image](cargobike.jpg)
+![image](mediasetup.png)
 
  I have been taking some extended time off work for the past month, to deal with my mum's illness and unfortunate passing away, and because my work situation is so bad it's borderline horrific.
 
