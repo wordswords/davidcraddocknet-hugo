@@ -3,7 +3,7 @@ category:
   - retrospective
 date: "2024-10-29T00:03:36+00:00"
 guid: https://davidcraddock.net/life-maintainace
-title: Life Maintaince
+title: Life Maintenance
 url: /life-maintaince
 
 ---
