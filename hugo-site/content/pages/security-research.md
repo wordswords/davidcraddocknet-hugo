@@ -62,7 +62,7 @@ I am building a Kubernetes high-availability cluster using Pi-Hole as a DNS serv
 
 ### Wireless Network Security
 
-I use a separate GUEST wifi network which doesn't have access to any other parts of the network, ditto a IOT wifi network to isolate the IOT devices from any mischief.
+I use a separate GUEST wifi network which doesn't have access to any other parts of the network, ditto a IOT wifi network to isolate the IOT devices from any mischief. I regularly pentest my own wireless network as a part of my security research.
 
 ### CCTV and Security Cameras
 
