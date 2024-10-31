@@ -63,7 +63,7 @@ A good set of cycling clothes is essential for comfortable all-weather all-year 
 - Heated rechargable motorbike style gloves
 - Shorts with seat padding
 - Leg and arm warmers
-- Rockbros rechargable e-bike helmet helmet with built-in (powerful) LED front light with up and down action so not to blind drivers, and rear light
+- Rockbros rechargable e-bike helmet with built-in (powerful) LED front light with up and down action so not to blind drivers, and rear light
 
 ## Security
 
