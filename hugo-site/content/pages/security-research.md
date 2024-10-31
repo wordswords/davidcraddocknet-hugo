@@ -53,6 +53,7 @@ I am moving to self-host as much of my digital content as possible, to force mys
 * I use [Geoblocker](https://github.com/friendly-bits/geoblocker-bash) to block all Russian and Chinese IP addresses from accessing my server, this seriously cuts down on botnets.
 * I use a number of automated rootkit detectors and scanners to keep an eye on everything.
 * I use [Debian Unattended Upgrades](https://wiki.debian.org/UnattendedUpgrades) to automatically security patch the server, and all my Linux machines, to defend against 0-day exploits.
+* All my Windows machines run Windows 11, are set to automatically download and update in the background, have all the in-built security features turned on, and have Windows Defender enabled.
 * I use [endlessSSH](https://github.com/skeeto/endlessh) to waste computer time of malicious bots that automatically attempt to connect to port 22 of my server.
 * I use [Mikrotik's 'The Dude'](https://mikrotik.com/thedude) with many custom checks, to monitor my network and alert me of any changes that I need to address.
 * I use [ZeroTier](https://www.zerotier.com/) to implement a secure and simple software-defined VPN without exposing any open ports to the world.
