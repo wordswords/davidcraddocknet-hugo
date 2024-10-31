@@ -53,6 +53,8 @@ I am moving to self-host as much of my digital content as possible, to force mys
 * I use a number of automated rootkit detectors and scanners to keep an eye on everything.
 * I use [Debian Unattended Upgrades](https://wiki.debian.org/UnattendedUpgrades) to automatically security patch the server, and all my Linux machines, to defend against 0-day exploits.
 * I use [endlessSSH](https://github.com/skeeto/endlessh) to waste computer time of malicious bots that automatically attempt to connect to port 22 of my server.
+* I use [Mikrotik's 'The Dude'](https://mikrotik.com/thedude) with many custom checks, to monitor my network and alert me of any changes that I need to address.
+* I use [ZeroTier](https://www.zerotier.com/) to implement a secure and simple software-defined VPN without exposing any open ports to the world.
 
 ### Pi-Hole K8s Cluster
 
