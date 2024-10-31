@@ -49,6 +49,8 @@ My wife and I use this as a bike for getting shopping and a general-purpose car 
 - Wireless security tag for the key of the Tern immobilisation lock
 - RAM grip quick release handlebar phone holder
 - Bike bell
+- Several Eurocrates for hauling cargo
+- Lots of cargo ties for securing cargo while hauling
 
 ## Clothes and Gear
 
