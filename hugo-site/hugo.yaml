@@ -97,6 +97,13 @@ params:
     Content: >
       👋 Welcome to my Geocities page! (just kidding). It's my personal <a href="https://gohugo.io/">blog</a> self-hosted on my <a href="/my-home-network/">Linux server</a> in my house. Self-hosting websites has the disadvantage that sometimes they are not available - uptime is not 100%, and search engines don't like that aspect. However I feel it is worth it for the learning experience and the control I have over every aspect of my sites. If you need to contact me at any time, please use: <a href="mailto:3rp2mzocr@mozmail.com">3rp2mzocr@mozmail.com</a>.
 
+      Other facets of my online presence:
+
+      * [DavidCraddockTutor.com](https://DavidCraddockTutor.com) - My software career tutor/freelance tech worker website
+      * [DavidCraddockReads.com](https://DavidCraddockReads.com) - My blog on books I've read
+      * [DavidCraddock.games](https://DavidCraddock.games) - My blog on gaming
+      * [DavidCraddockAudio.com](https://DavidCraddockAudio.com) - My audio and music professional portfiolio
+
       <img loading="lazy" style="object-fit:contain;max-width:100%;max-height:100%;width:127px;height:127px;margin-top:20px;margin-bottom:0px;" src="/mugshot.png" alt="A mugshot of me">
 
   socialIcons:
