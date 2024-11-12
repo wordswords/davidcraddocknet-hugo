@@ -19,8 +19,8 @@ url: /my-home-network/
 
 ![image](fast.jpg)
 
-An outdated but still mostly accurate network diagram:
-[![](/wp-content/uploads/2024/05/network.drawio2.png)](/wp-content/uploads/2024/05/network.drawio2.png)
+Network diagram accurate as of 12-11-24:
+![image](networkdiagram.png)
 
 ### Iperf3 Speed Tests
 
