@@ -1,7 +1,7 @@
 ---
 date: "2020-10-12T22:42:40+00:00"
 guid: https://davidcraddock.net/am-i-busy
-title: Tutoring
+title: Am I Busy?
 url: /am-i-busy
 ---
 
