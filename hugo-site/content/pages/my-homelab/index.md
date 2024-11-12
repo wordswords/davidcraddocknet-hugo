@@ -20,7 +20,7 @@ url: /my-home-network/
 ![image](fast.jpg)
 
 Network diagram accurate as of 12-11-24:
-![image](networkdiagram.png)
+[![image](networkdiagram.png)](https://davidcraddock.net/my-home-network/networkdiagram.png)
 
 ### Iperf3 Speed Tests
 
