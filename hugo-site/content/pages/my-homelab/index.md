@@ -92,3 +92,17 @@ iperf Done.
 iperf Done.
 
 ```
+
+### Server/Linux desktop Hardware
+
+![Image](ghetto.jpg)
+
+- Ivy Bridge 8 Processor Xeon (16 cores total)
+- 20TB of storage space in moving platter disk space
+- 256GB SSD system drive running Kali Linux rolling
+- 32GB DDR3 RAM
+- 10Gbit/sec fibreoptic network card
+- Nvidea 970 GPU (used for transcoding using Plex and encoding using Handbrake, as well as distributed password cracking)
+- Other details are on the [/my-work-computer](WFH setup page)
+
+
