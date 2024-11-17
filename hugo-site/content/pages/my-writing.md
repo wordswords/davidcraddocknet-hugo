@@ -214,10 +214,11 @@ I know that often engineers would prefer that was the case, but it is questionab
 Even in academia and research on the cutting edge technical problems of our time, your people skills will make you much more effective. What makes professors effective? It is the combination of their technical knowledge and research, BUT ALSO their ability to communicate it and teach it. Not to mention the extremely competitive and often nepotistic cut-throat academic arena demands good people skills to succeed in.
 
 It might be possible to progress with bad people skills, but it's going to be 100x as difficult. And overwhelmingly the statistical chances are, if you are reading this, then you are not good enough technically to succeed with bad people skills.
-
 ```
+
 #### 'Training Resources for Software Engineers in Test/QA Engineers'
 
+```
 This is an heavily opinionated guide to what I personally think is important for new SDETs/QA Engineers to learn and know. I have spent 17 years in the software industry, and have experience in nearly all areas of software engineering, including a large number of years as a 'pure' developer, several years experience as an exploratory tester, several years experience in devops, and experience managing testing teams and defining test strategies.
 
 I have seen a huge amount of change in the area of QA, and read up on and considered a lot of the different arguments of what QA engineers should do, including the 'testers shouldn't code', 'developers shouldn't test' movement, the devops movement, waterfall testing, the Agile movement, the BDD and TDD movements, shift-left testing, the rise and then fall of the SDET role, and its resurgence in demand today.
