@@ -9,9 +9,8 @@ I've always liked writing and have been doing it for a long time. I write a lot 
 
 ### Work Essays and Articles
 
-The latest updated versions of these can always be found at: [Github](https://github.com/wordswords/dotfiles/tree/master/notes)
+I'm working on a way to format and structure these properly within Hugo. For now though, the following will have to do.Alternatively, you can always view them in markdown in the Github repository at the link here:
 
-I'm working on a way to format and structure these properly within Hugo. For now though, the following will have to do. You can always view them in markdown in the Github repository at the link here:
 * [Github](https://github.com/wordswords/dotfiles/tree/master/notes)
 
 #### 'How to Get a Job - Supply/Demand Strategy'
