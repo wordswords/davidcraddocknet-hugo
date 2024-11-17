@@ -16,32 +16,28 @@ I am not currently putting as much time into music as I would like anymore, beca
 * * *
 
 This is my professional portfolio for the audio and music industry:
-[DavidCraddockAudio.com](https://DavidCraddockAudio.com)
+* [DavidCraddockAudio.com](https://DavidCraddockAudio.com)
 
 * * *
 
 My 'Socialist Synthesis' project is an experimental/electronica/ambient/soundscape project. I have released several albums under this project:
-
-[Summer Sun Highway by Socialist Synthesis](https://socialistsynthesis.bandcamp.com/album/summer-sun-highway)
-
-[Sound Escapes by Socialist Synthesis](https://socialistsynthesis.bandcamp.com/album/sound-escapes)
+* [Summer Sun Highway by Socialist Synthesis](https://socialistsynthesis.bandcamp.com/album/summer-sun-highway)
+* [Sound Escapes by Socialist Synthesis](https://socialistsynthesis.bandcamp.com/album/sound-escapes)
 
 * * *
 
 I have released an EP under the 'Machines Move Mountains' project with Ellis Breen. It is experimental/electronica/downtempo:
-
-[Unfinished Dreams by Machines Move Mountains](https://machinesmovemountains.bandcamp.com)
+* [Unfinished Dreams by Machines Move Mountains](https://machinesmovemountains.bandcamp.com)
 
 * * *
 
 I have released a few tracks under the 'Concrete Spectre' project. It is industrial/EBM/techno:
-
-[Concrete Spectre Bandcamp](https://concretespectre.bandcamp.com)
+* [Concrete Spectre Bandcamp](https://concretespectre.bandcamp.com)
 
 * * *
 
 Currently I'm not DJing, but I still have the DJ homepage up which has a lot of information on what I used to do:
-[DJ Homepage](https://DJDavidCraddock.com)
+* [DJ Homepage](https://DJDavidCraddock.com)
 
 * * *
 
