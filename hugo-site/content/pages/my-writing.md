@@ -5,11 +5,13 @@ title: My Writing
 url: /my-writing
 ---
 
-I've always liked writing and have been doing it for a long time.
+I've always liked writing and have been doing it for a long time. I write a lot for work, and also have written a lot of creative writing.
 
 ### Work Essays and Articles
 
 The latest updated versions of these can always be found at: [https://github.com/wordswords/dotfiles/tree/master/notes](Github).
+
+I'm working on a way to format these properly within Hugo. For now though, the following will have to do. You can always view them in markdown in the Github repository.
 
 #### 'How to Get a Job - Supply/Demand Strategy'
 
