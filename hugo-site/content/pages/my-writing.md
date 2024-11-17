@@ -14,7 +14,8 @@ The latest updated versions of these can always be found at: [https://github.com
 #### 'How to Get a Job - Supply/Demand Strategy'
 
 <code>
----
+---.
+
 If you want to get a job and get paid, focus on acquiring skills that are 1) in demand and 2) under supply.
 
 Everyone knows JavaScript. So don't spend ages specialising in JavaScript, even if you love the language, because the supply of JavaScript developers is such that it is not a good return on investment.
@@ -31,7 +32,8 @@ This is basic economic supply and demand theory, and is true today as it was whe
 #### 'A Hiring Strategy to Reduce Bias'
 
 <code>
----
+---.
+
 A lot of tech companies will leave vacancies 'open' for hiring for months and months.
 
 Hundreds of people will apply, and go through the application process, only to be turned down and no hire is made.
@@ -58,7 +60,8 @@ Don't kid yourselves.
 #### 'DevTestOps and Jenkins'
 
 <code>
----
+---.
+
 There is a lot involved with automating any complex test automation on Jenkins. It might seem easy at first, but the main problem is that, as the complexity of your Jenkins job grows, so does the difficulty maintaining it.
 
 There are a few tips that have helped me.
@@ -92,7 +95,8 @@ There are a few tips that have helped me.
 #### 'How to hold Meetings - A strategy for remote work'
 
 <code>
----
+---.
+
 Here is how I do meetings.
 
 Do we need a meeting?
@@ -129,7 +133,8 @@ Discussion in the meeting
 #### 'A Test Strategy for Microservices'
 
 <code>
----
+---.
+
 ---
 
 There are two ways to test structured output data from microservices (such as in json or xml), and you should use both:
@@ -153,7 +158,8 @@ Now here is the clever bit - what these test results tell you:
 #### 'Skills Needed to Suitably Excel as a Software Engineer'
 
 <code>
----
+---.
+
 Skills Needed to Sustainably Excel as a Software Engineer
 
 It is my experience that the knowledge and skills you will need as a software engineer who is an individual technical contributor, can be categorised in these areas:
@@ -224,7 +230,8 @@ It might be possible to progress with bad people skills, but it's going to be 10
 #### 'Training Resources for Software Engineers in Test/QA Engineers'
 
 <code>
----
+---.
+
 This is an heavily opinionated guide to what I personally think is important for new SDETs/QA Engineers to learn and know. I have spent 17 years in the software industry, and have experience in nearly all areas of software engineering, including a large number of years as a 'pure' developer, several years experience as an exploratory tester, several years experience in devops, and experience managing testing teams and defining test strategies.
 
 I have seen a huge amount of change in the area of QA, and read up on and considered a lot of the different arguments of what QA engineers should do, including the 'testers shouldn't code', 'developers shouldn't test' movement, the devops movement, waterfall testing, the Agile movement, the BDD and TDD movements, shift-left testing, the rise and then fall of the SDET role, and its resurgence in demand today.
@@ -312,7 +319,8 @@ Exploratory testing
 #### 'On Books and Reading'
 
 <code>
----
+---.
+
 Why Books Are Still Relevant
 
 I spent so much of my childhood and early adulthood reading, before the web became omnipresent, but I got back into reading books - in a serious way - about 5 years ago.
@@ -375,7 +383,8 @@ To paraphrase George R. R. Martin - "That's what I do. I read books, and I know 
 #### 'Snowflakes'
 
 <code>
----
+---.
+
 Silence is a different mind
 In crowds with noise and shouts
 and people
@@ -398,7 +407,8 @@ And nothing's true if all's forgotten.
 #### 'Avalanche'
 
 <code>
----
+---.
+
 Beneath the twin peaks, you were born.
 on a crisp morning when everything was white.
 
@@ -424,7 +434,8 @@ until you were still and silent, as now. And over.
 #### 'Benefit Cheat'
 
 <code>
----
+---.
+
 The truth of the matter is: I didn't read the terms.
 I didn't stop for a second, I had other concerns.
 The truth of the matter is: I never knew her name.
@@ -457,7 +468,8 @@ NO! SOMEBODY HELP ME!
 #### 'Ultava by Smetana'
 
 <code>
----
+---.
+
 Stream
 Slowly Trickling,
 Creeping along,
