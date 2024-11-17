@@ -144,8 +144,6 @@ Discussion in the meeting
 <code>
 ---.
 
----
-
 There are two ways to test structured output data from microservices (such as in json or xml), and you should use both:
 
 * Test 1 - Validate against a schema. This one is easy, plenty of tools to help you do that.
@@ -170,8 +168,6 @@ Now here is the clever bit - what these test results tell you:
 <code>
 ---.
 
-Skills Needed to Sustainably Excel as a Software Engineer
-
 It is my experience that the knowledge and skills you will need as a software engineer who is an individual technical contributor, can be categorised in these areas:
 
 * Personal Efficiency and Productivity
@@ -179,7 +175,7 @@ It is my experience that the knowledge and skills you will need as a software en
 * Business and Domain Knowledge
 * People Skills and Communication Skills
 
-Personal Efficiency and Productivity
+## Personal Efficiency and Productivity
 
 It is a sad fact of software development that, more often than not, you will be judged on your speed of completing development features, not the quality of the code you produce, or the long term effect on the product it will have.
 
@@ -202,7 +198,7 @@ To improve technical efficiency/productivity there are many skills you can impro
 
 Some efficiency skills will also be covered under 'people skills' and 'technical knowledge'. If you have good people skills and good relationships in your organisation, then it is much easier to get things done quicker. If you have great technical knowledge and experience, you will implement things faster and more accurately.
 
-Technical Knowledge
+## Technical Knowledge
 
 Some people would say that the other categories are more important than technical knowledge. It is undoubtedly true that you will encounter many people in your software engineering career who excel at the other categories and are not strong in their technical knowledge. They often occupy the highest ranks in an organisation and are paid the highest.
 
@@ -214,7 +210,7 @@ But it's not all about money or ladder-climbing. I would say, software engineers
 * Personal/toy projects are invaluable in implementing and assimilating the theoretical knowledge that you have read. If you don't have a personal project that you spend your spare time doing, get one now. It is very important to find something that you love that will also teach you a lot about your skill set. Always have a side-project going throughout your career, not focused on making money necessarily, but just having fun developing software and improving your technical skills. Make sure it is fun and keeps on being fun.
 * Try teaching or mentoring as a way to improve your own knowledge and improve your communication and people skills. The best way to become an expert at something is to learn to teach it, because if you strive to do it well, you will become painfully aware of how little you know, and how much there is to know.
 
-Business and Domain Knowledge
+## Business and Domain Knowledge
 
 It is a fact of working for an organisation or business, that the more you understand about the business and its objectives, and the more you contribute to those objectives, the better you will do at that organisation.
 
@@ -226,7 +222,7 @@ I often think that as software engineers, we are often not given access to the m
 
 A lot of engineer types shy away from the business knowledge and are uninterested in developing their knowledge and domain knowledge. They just want to be told what to do. That is fine, but it will reduce the impact you can have on the success of the business, and how people will see you in that particular organisation. It will also reduce the autonomy and freedom you are given.
 
-People and Communication Skills
+## People and Communication Skills
 
 People and communication skills are going to be key to your career and your effectiveness within it. Gone are the days when an anti-social engineer was locked in a basement for years and eventually emerges with a brilliant technical solution that changes the world.
 
@@ -256,7 +252,7 @@ This is not meant to be 'gate-keeping' or scare people away, at all. I want as m
 
 With that said..
 
-Rationale
+## Rationale
 
 I firmly believe that new QA engineers are going to have to learn how to code, and code very well. Gone are the days where they can just be business analysts/QA analysts/exploratory testers. Although they will need that skillset too. It is a very harsh market out there and there are lots to learn.
 
@@ -273,7 +269,7 @@ This is a LOT of information to learn I know, but is why QA Engineers skilled in
 
 The closer you can get to knowing these skillsets, the better off you are in today's demanding market. This document is a collection of resources and advice to help you grow in these areas.
 
-Study Skills and Learning to Learn
+## Study Skills and Learning to Learn
 
 * This guide is assuming that you are coming from a graduate perspective, ideally from a computing subject, ideally from a good university. In your technical career, your success will be defined by the speed you can teach yourself new technical concepts.
 
@@ -283,11 +279,9 @@ Study Skills and Learning to Learn
 
 * But it might not for you. So take some time to figure out what type of learning method works for you. For some people, online text based courses really help. For others, YouTube videos. Some people simply don't really learn very well on their own and should seek a mentor to pair program with. It is very important to learn how you learn best, because although the information you need to know won't change, the style you best absorb it is completely individual to you.
 
-Resources for the Skills Required of a QA Engineer
+## Resources for the Skills Required of a QA Engineer
 
-Fundamental Computing Skill and Software Engineering skills
-
-Prior Training
+### Fundamental Computing Skill and Software Engineering skills
 
 * There are things that a computing degree will teach you that you can definitely learn yourself, in your own time. But you are going to have to learn them one way or another. Things like basic programming, how computers work, concurrency, how databases work, how the web works, technical communication skills including writing and presenting information, the basics of complexity theory etc etc.
 
@@ -298,14 +292,15 @@ Prior Training
 * But of course, any degree, course or bootcamp will not teach you everything. Never assume that. You're going to have to learn a LOT more than that.
 
 
-MIT's "The Missing Semester" Course
+### MIT's "The Missing Semester" Course
 
 * Once you have done your prior training from a course or bootcamp, I really recommend this following course. MIT might be a scary name for some, but this course really is excellent, and contains a LOT of information I really wished I had learned earlier in my career. Take it at your own pace.
 
 There are no time constraints to this course so you can take it in the evenings while working, but there are so many essential skills here that you will have to learn sooner or later, so it might as well be sooner.
 
 https://missing.csail.mit.edu/
-ISTQB 'Fundementals' Course
+
+### ISTQB 'Fundementals' Course
 
 * Although the true usefulness of ISTQB's Fundementals testing course has been debated for a long while, it is worth getting on your CV simply because a lot of job descriptions of QA roles require it.
 
@@ -315,7 +310,7 @@ ISTQB 'Fundementals' Course
 
 * Often employers will consider sending you on this course for professional development, so definitely push for it and go for it if they do, if only for the value of it on your CV/resume.
 
-Exploratory testing
+## Exploratory testing
 
 * Exploratory testing remains a hugely important skill for any QA engineer. The more exploratory testing you do, the better your attention to detail will become, and the better your understanding of where bugs and problems in software development arise from, and how to get a sense of where bugs might be hiding.
 * I would argue that you shouldn't see exploratory testing as just something that you do on the graphical user interface to a product. You should look at the product through any interface that the user of the product uses. So for example, if the product is a C++ compiler, then you should exploratory test using the command line C++ interface.
@@ -333,7 +328,7 @@ Exploratory testing
 <code>
 ---.
 
-Why Books Are Still Relevant
+# Why Books Are Still Relevant
 
 I spent so much of my childhood and early adulthood reading, before the web became omnipresent, but I got back into reading books - in a serious way - about 5 years ago.
 
@@ -369,7 +364,7 @@ If you never went to university, or it has been a while since you did some prope
 
 Personally I recommend the Open University Humanities Study Guide as an excellent and approachable reference to the different styles of reading you can do, and how to make good notes. There is also the Open University STEM Study Guide but I find the Humanities one has better reading and note-taking advice which is applicable to all reading, but it is worth picking both up.
 
-Getting Books for Cheap
+## Getting Books for Cheap
 
 You don't have to buy all your physical books new!! Often you can get a huge discount by buying them second-hand, via Amazon or elsewhere. Some popular books, such as university textbooks and classic literature, can be bought for only £2, and the quality is good! A lot of ebooks can be found online for free. Imagine that kind of value for money, either in entertainment time, or amount learned, occurring anywhere else in this modern world?!
 Bookshops and Libraries
@@ -385,7 +380,7 @@ Finally, I really recommend writing reviews of your books and reading others rev
 
 Goodreads.com is my favourite review site, it's one of the most extensive.
 
-Summary
+## Summary
 
 To paraphrase George R. R. Martin - "That's what I do. I read books, and I know things."
 
