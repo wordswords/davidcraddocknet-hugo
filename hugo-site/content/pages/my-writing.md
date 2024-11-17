@@ -13,7 +13,7 @@ The latest updated versions of these can always be found at: [https://github.com
 
 #### 'How to Get a Job - Supply/Demand Strategy'
 
-```
+<code>
 If you want to get a job and get paid, focus on acquiring skills that are 1) in demand and 2) under supply.
 
 Everyone knows JavaScript. So don't spend ages specialising in JavaScript, even if you love the language, because the supply of JavaScript developers is such that it is not a good return on investment.
@@ -25,11 +25,11 @@ Learn tech skills that people find unpopular or 'uncool' but there is high deman
 Look at skills shortage lists. Look at lists that show the most 'in demand' areas where employers are struggling to find skilled candidates, such as cyber security, machine learning, test automation, devops/MLOps .. and so on.
 
 This is basic economic supply and demand theory, and is true today as it was when I learned it in high school over 20 years ago.
-```
+</code>
 
 #### 'A Hiring Strategy to Reduce Bias'
 
-```
+<code>
 A lot of tech companies will leave vacancies 'open' for hiring for months and months.
 
 Hundreds of people will apply, and go through the application process, only to be turned down and no hire is made.
@@ -51,11 +51,11 @@ And people who are applying are getting frustrated when they're seeing the same 
 Face it, you are looking for something that doesn't exist. You are looking for the mythical 'unicorn' developer, when what you need to do is to simply hire from the very decent candidate pool that you have available already.
 
 Don't kid yourselves.
-```
+</code>
 
 #### 'DevTestOps and Jenkins'
 
-```
+<code>
 There is a lot involved with automating any complex test automation on Jenkins. It might seem easy at first, but the main problem is that, as the complexity of your Jenkins job grows, so does the difficulty maintaining it.
 
 There are a few tips that have helped me.
@@ -84,11 +84,11 @@ There are a few tips that have helped me.
 * Use timers a lot in your bash script. Time every task, using the UNIX time system. This will allow you to try and optimise slow-running tasks. I also recommend you set a time limit target for your Jenkins jobs, so for example, tests run on merge to master through Jenkins only take 10 minutes maximum. You can reduce the number of tests that you run, as well as look to optimise some of the building of your applications, to aid this. Realistically you want to keep the average time of your jobs down as much as possible, not just for your users, but for effective maintenance.
 * Always try and keep the versions of Jenkins, your test automation tool (such as Cypress) and any other major components at the latest stable version. This will ensure that your tests run as quickly as possible and as reliably as possible.
 * If you do all the above, then your Jenkins jobs will be much more maintainable and your time spent maintaining them much less of a headache.
-```
+</code>
 
 #### 'How to hold Meetings - A strategy for remote work'
 
-```
+<code>
 Here is how I do meetings.
 
 Do we need a meeting?
@@ -120,11 +120,11 @@ Discussion in the meeting
 * Avoid going round and round in circles. If two people are having a disagreement and are simply restating points at each other, again and again, ask what other people think about their points, to reach a decision.
 * People should be allowed to get on with other work while listening in to the meeting. They should keep listening so they have an overview of what is happening and that if their opinion is requested, they can give it.
 * If lots of people are tuning out and getting on with other work, it is a sign that the meeting shouldn't have taken place in the first place, or at least those people tuning out shouldn't have been on the invite.
-```
+</code>
 
 #### 'A Test Strategy for Microservices'
 
-```
+<code>
 There are two ways to test structured output data from microservices (such as in json or xml), and you should use both:
 
 * Test 1 - Validate against a schema. This one is easy, plenty of tools to help you do that.
@@ -144,11 +144,11 @@ Now here is the clever bit - what these test results tell you:
 * If Test 1 passes and Test 2 fails - the data bits you are looking for aren't there but there has been no update to the structure of the data. Possibly there is a data problem with the query you're requesting.
 * If Test 1 passes and Test 2 passes - No update, data still there, no problem, all good.
 * If Test 1 fails and Test 2 fails - Likely there has been an update to the service that is feeding you data, AND THEY HAVENT RESPECTED THE BIT YOU CARE ABOUT. Major not good!
-```
+</code>
 
 #### 'Skills Needed to Suitably Excel as a Software Engineer'
 
-```
+<code>
 Skills Needed to Sustainably Excel as a Software Engineer
 
 It is my experience that the knowledge and skills you will need as a software engineer who is an individual technical contributor, can be categorised in these areas:
@@ -214,11 +214,11 @@ I know that often engineers would prefer that was the case, but it is questionab
 Even in academia and research on the cutting edge technical problems of our time, your people skills will make you much more effective. What makes professors effective? It is the combination of their technical knowledge and research, BUT ALSO their ability to communicate it and teach it. Not to mention the extremely competitive and often nepotistic cut-throat academic arena demands good people skills to succeed in.
 
 It might be possible to progress with bad people skills, but it's going to be 100x as difficult. And overwhelmingly the statistical chances are, if you are reading this, then you are not good enough technically to succeed with bad people skills.
-```
+</code>
 
 #### 'Training Resources for Software Engineers in Test/QA Engineers'
 
-```
+<code>
 This is an heavily opinionated guide to what I personally think is important for new SDETs/QA Engineers to learn and know. I have spent 17 years in the software industry, and have experience in nearly all areas of software engineering, including a large number of years as a 'pure' developer, several years experience as an exploratory tester, several years experience in devops, and experience managing testing teams and defining test strategies.
 
 I have seen a huge amount of change in the area of QA, and read up on and considered a lot of the different arguments of what QA engineers should do, including the 'testers shouldn't code', 'developers shouldn't test' movement, the devops movement, waterfall testing, the Agile movement, the BDD and TDD movements, shift-left testing, the rise and then fall of the SDET role, and its resurgence in demand today.
@@ -306,11 +306,11 @@ Exploratory testing
 * The more time you spend exploratory testing and finding bugs, the greater your understanding of the products you work on, becomes. As a QA engineer, you are often expected to be the subject matter expert on the product from a users perspective. The more exploratory testing and hands-on experience interacting with the product you can do, the more that will be the case. And when you have learned numerous products like this, the faster learning new products will become.
 
 * You will find it incredibly difficult trying to design effective automated tests without the knowledge of the product, and without the insight into testing that working in exploratory testing will give you. So there is no way to skip this fundamental skill.
-```
+</code>
 
 #### 'On Books and Reading'
 
-```
+<code>
 Why Books Are Still Relevant
 
 I spent so much of my childhood and early adulthood reading, before the web became omnipresent, but I got back into reading books - in a serious way - about 5 years ago.
@@ -366,13 +366,13 @@ Goodreads.com is my favourite review site, it's one of the most extensive.
 Summary
 
 To paraphrase George R. R. Martin - "That's what I do. I read books, and I know things."
-```
+</code>
 
 ### Poetry
 
 #### 'Snowflakes'
 
-```
+<code>
 Silence is a different mind
 In crowds with noise and shouts
 and people
@@ -390,11 +390,11 @@ In dancing, do you leave yourself?
 And go towards, another person
 Things in beauty are flights in freedom
 And nothing's true if all's forgotten.
-```
+</code>
 
 #### 'Avalanche'
 
-```
+<code>
 Beneath the twin peaks, you were born.
 on a crisp morning when everything was white.
 
@@ -415,11 +415,11 @@ you tripped, then stumbled, and fell all around us.
 
 You never thought what damage you caused
 until you were still and silent, as now. And over.
-```
+</code>
 
 #### 'Benefit Cheat'
 
-```
+<code>
 The truth of the matter is: I didn't read the terms.
 I didn't stop for a second, I had other concerns.
 The truth of the matter is: I never knew her name.
@@ -447,11 +447,11 @@ but I never did anything
 this is not meant to be
 you can't prove anything
 NO! SOMEBODY HELP ME!
-```
+</code>
 
 #### 'Ultava by Smetana'
 
-```
+<code>
 Stream
 Slowly Trickling,
 Creeping along,
@@ -475,7 +475,7 @@ Sea in sight
 A sense of joy . . .
 
 The river is free!
-```
+</code>
 
 
 
