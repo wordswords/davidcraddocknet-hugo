@@ -54,9 +54,11 @@ languages:
         - name: vWorkbench
           url: vworkbench/
           weight: 18
-        - name: Music
-          url: music/
+        - name: My Writing
+          url: my-writing/
           weight: 19
+        - name: My Music
+          url: music/
 
 outputs:
   home:
