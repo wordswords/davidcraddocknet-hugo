@@ -32,28 +32,31 @@ languages:
           weight: 10
         - name: HomeLab Network
           url: my-home-network/
-          weight: 15
+          weight: 11
         - name: Gaming Setup
           url: my-gaming-setup/
-          weight: 15
+          weight: 12
         - name: Mobile Working Setup
           url: my-mobile-laptop-setup/
-          weight: 15
+          weight: 13
         - name: WFH Setup
           url: my-work-computer/
-          weight: 15
+          weight: 14
         - name: Electric Bikes
           url: my-bike/
           weight: 15
         - name: Security Research
           url: security-research/
-          weight: 15
+          weight: 16
         - name: Media Library
           url: https://home.davidcraddock.net
-          weight: 15
+          weight: 17
         - name: vWorkbench
           url: vworkbench/
-          weight: 15
+          weight: 18
+        - name: Music
+          url: music/
+          weight: 19
 
 outputs:
   home:

@@ -6,7 +6,7 @@ url: /my-home-network/
 
 ---
 
-- I have a fibre to the house 2Gb/sec connection provided by [BRSK](https://www.brsk.co.uk), who I really recommend.
+- I have a fibre to the house 2Gb/sec connection provided by [BRSK](https://www.brsk.co.uk), who I really recommend. This means that maximum download speeds are 250 megabytes per second, although often this is throttled at the source level.
 - My home network routes at around 2-4gbit/sec between 10gbit/sec DAC fibre connected hosts, and around 2gbit/sec via CAT8 for Thunderbolt 2.5Ggbit/sec laptop network interfaces.
 - We two Ubiquiti wireless APs in a mesh configuration, with seperate SSIDs for 2Ghz, 5Ghz, guest and IOT networks. The guest and IOT networks are isolated from everything else.
 - I use a Mikrotik router which hosts an iperf3 docker container for network testing
