@@ -54,7 +54,6 @@ And people who are applying are getting frustrated when they're seeing the same 
 
 Face it, you are looking for something that doesn't exist. You are looking for the mythical 'unicorn' developer, when what you need to do is to simply hire from the very decent candidate pool that you have available already.
 
-Don't kid yourselves.
 </code>
 
 #### 'DevTestOps and Jenkins'
@@ -89,7 +88,8 @@ There are a few tips that have helped me.
 * Use replays for your Jenkins jobs wherever possible, and also use your local bash script, where you should be able to re-run certain 'stages' separate to the others.
 * Use timers a lot in your bash script. Time every task, using the UNIX time system. This will allow you to try and optimise slow-running tasks. I also recommend you set a time limit target for your Jenkins jobs, so for example, tests run on merge to master through Jenkins only take 10 minutes maximum. You can reduce the number of tests that you run, as well as look to optimise some of the building of your applications, to aid this. Realistically you want to keep the average time of your jobs down as much as possible, not just for your users, but for effective maintenance.
 * Always try and keep the versions of Jenkins, your test automation tool (such as Cypress) and any other major components at the latest stable version. This will ensure that your tests run as quickly as possible and as reliably as possible.
-* If you do all the above, then your Jenkins jobs will be much more maintainable and your time spent maintaining them much less of a headache.
+
+If you do all the above, then your Jenkins jobs will be much more maintainable and your time spent maintaining them much less of a headache.
 </code>
 
 #### 'How to hold Meetings - A strategy for remote work'
@@ -225,6 +225,7 @@ I know that often engineers would prefer that was the case, but it is questionab
 Even in academia and research on the cutting edge technical problems of our time, your people skills will make you much more effective. What makes professors effective? It is the combination of their technical knowledge and research, BUT ALSO their ability to communicate it and teach it. Not to mention the extremely competitive and often nepotistic cut-throat academic arena demands good people skills to succeed in.
 
 It might be possible to progress with bad people skills, but it's going to be 100x as difficult. And overwhelmingly the statistical chances are, if you are reading this, then you are not good enough technically to succeed with bad people skills.
+
 </code>
 
 #### 'Training Resources for Software Engineers in Test/QA Engineers'
@@ -303,7 +304,6 @@ ISTQB 'Fundementals' Course
 
 * Often employers will consider sending you on this course for professional development, so definitely push for it and go for it if they do, if only for the value of it on your CV/resume.
 
-
 Exploratory testing
 
 * Exploratory testing remains a hugely important skill for any QA engineer. The more exploratory testing you do, the better your attention to detail will become, and the better your understanding of where bugs and problems in software development arise from, and how to get a sense of where bugs might be hiding.
@@ -312,8 +312,8 @@ Exploratory testing
 * You will learn to prioritise areas of the product which offer the highest potential risk to the organisation if bugs were found there. This is called risk-based testing. For example, if you only have a limited amount of time to test a feature, and it includes changes to the payment system which the organisation gets most of its revenue from, and also some UI layout changes, then where should you focus your efforts on? The payment system of course. This is a trivial example, but there will be much more complex situations you will be in too. You are usually given much-less-than-ideal time frames to conduct your exploratory testing, so the general skill of prioritisation is very important.
 * Part of exploratory testing is the skill in writing up the bugs to contain as much useful information as possible to get them prioritised and fixed. This includes being able to replicate them exactly on the different test environments and having a basic understanding of how the code you are testing gets pulled into each release that gets used by the users of your product. Without that understanding you may not produce useful bug reports. The more information you can give the developers to fix bugs quicker, the happier they will be.
 * The more time you spend exploratory testing and finding bugs, the greater your understanding of the products you work on, becomes. As a QA engineer, you are often expected to be the subject matter expert on the product from a users perspective. The more exploratory testing and hands-on experience interacting with the product you can do, the more that will be the case. And when you have learned numerous products like this, the faster learning new products will become.
-
 * You will find it incredibly difficult trying to design effective automated tests without the knowledge of the product, and without the insight into testing that working in exploratory testing will give you. So there is no way to skip this fundamental skill.
+
 </code>
 
 #### 'On Books and Reading'
@@ -382,9 +382,7 @@ To paraphrase George R. R. Martin - "That's what I do. I read books, and I know 
 
 #### 'Snowflakes'
 
-<code>
----.
-
+```
 Silence is a different mind
 In crowds with noise and shouts
 and people
@@ -402,13 +400,11 @@ In dancing, do you leave yourself?
 And go towards, another person
 Things in beauty are flights in freedom
 And nothing's true if all's forgotten.
-</code>
+```
 
 #### 'Avalanche'
 
-<code>
----.
-
+```
 Beneath the twin peaks, you were born.
 on a crisp morning when everything was white.
 
@@ -429,13 +425,11 @@ you tripped, then stumbled, and fell all around us.
 
 You never thought what damage you caused
 until you were still and silent, as now. And over.
-</code>
+```
 
 #### 'Benefit Cheat'
 
-<code>
----.
-
+```
 The truth of the matter is: I didn't read the terms.
 I didn't stop for a second, I had other concerns.
 The truth of the matter is: I never knew her name.
@@ -463,13 +457,11 @@ but I never did anything
 this is not meant to be
 you can't prove anything
 NO! SOMEBODY HELP ME!
-</code>
+```
 
 #### 'Ultava by Smetana'
 
-<code>
----.
-
+```
 Stream
 Slowly Trickling,
 Creeping along,
@@ -493,7 +485,6 @@ Sea in sight
 A sense of joy . . .
 
 The river is free!
-</code>
-
+```
 
 
