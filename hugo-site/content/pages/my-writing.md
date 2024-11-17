@@ -15,9 +15,6 @@ I'm working on a way to format and structure these properly within Hugo. For now
 
 #### 'How to Get a Job - Supply/Demand Strategy'
 
-<code>
----.
-
 If you want to get a job and get paid, focus on acquiring skills that are 1) in demand and 2) under supply.
 
 Everyone knows JavaScript. So don't spend ages specialising in JavaScript, even if you love the language, because the supply of JavaScript developers is such that it is not a good return on investment.
@@ -30,13 +27,7 @@ Look at skills shortage lists. Look at lists that show the most 'in demand' area
 
 This is basic economic supply and demand theory, and is true today as it was when I learned it in high school over 20 years ago.
 
----.
-</code>
-
 #### 'A Hiring Strategy to Reduce Bias'
-
-<code>
----.
 
 A lot of tech companies will leave vacancies 'open' for hiring for months and months.
 
@@ -58,13 +49,7 @@ And people who are applying are getting frustrated when they're seeing the same 
 
 Face it, you are looking for something that doesn't exist. You are looking for the mythical 'unicorn' developer, when what you need to do is to simply hire from the very decent candidate pool that you have available already.
 
----.
-</code>
-
 #### 'DevTestOps and Jenkins'
-
-<code>
----.
 
 There is a lot involved with automating any complex test automation on Jenkins. It might seem easy at first, but the main problem is that, as the complexity of your Jenkins job grows, so does the difficulty maintaining it.
 
@@ -96,25 +81,22 @@ There are a few tips that have helped me.
 
 If you do all the above, then your Jenkins jobs will be much more maintainable and your time spent maintaining them much less of a headache.
 
----.
-</code>
-
 #### 'How to hold Meetings - A strategy for remote work'
-
-<code>
----.
 
 Here is how I do meetings.
 
-Do we need a meeting?
+##### Do we need a meeting?
+
 * Never, ever, have a meeting that can be fully resolved via a Slack conversation or an email.
 
-Before the meeting:
+##### Before the meeting:
+
 * In the meeting invite briefly describe the problem and why it matters so people can decide whether to get involved and how to prioritise it.
 * Set a time where everyone can make it. Never exclude anyone who wants to join.
 * You may need to reach out to particular key people and convince them that the topic needs discussion in the first place, and that they need to be there.
 
-During the meeting:
+##### During the meeting:
+
 * Keep each meeting as brief as possible.
 * Introduce the problem and recap why we are discussing it, and why it matters.
 * Come up with a list of possible solutions to the problem.
@@ -125,7 +107,8 @@ During the meeting:
 * Repeat the action points and who is going to do what before ending the meeting. Often this involves taking notes on what the action points are, and/or creating items that will be project-managed, such as JIRA tickets.
 * End the meeting positively by expressing happiness that the problem is on the way to be resolved, and by thanking everyone there.
 
-Discussion in the meeting
+##### Discussion in the meeting
+
 * Don't feel shy about taking the lead in meetings where there is no obvious other leader.
 * The responsibility of whoever is leading the meeting is to guide the discussion to ultimately a solution of the problem, with action points. If you end a meeting without a solution and action points, you need another meeting. You want to really avoid this.
 * Keep the conversation positive and respectful while not shying away from directly stating your point, even if it is a difficult point.
@@ -136,13 +119,7 @@ Discussion in the meeting
 * People should be allowed to get on with other work while listening in to the meeting. They should keep listening so they have an overview of what is happening and that if their opinion is requested, they can give it.
 * If lots of people are tuning out and getting on with other work, it is a sign that the meeting shouldn't have taken place in the first place, or at least those people tuning out shouldn't have been on the invite.
 
----.
-</code>
-
 #### 'A Test Strategy for Microservices'
-
-<code>
----.
 
 There are two ways to test structured output data from microservices (such as in json or xml), and you should use both:
 
@@ -160,13 +137,7 @@ Now here is the clever bit - what these test results tell you:
 * If Test 1 passes and Test 2 passes - No update, data still there, no problem, all good.
 * If Test 1 fails and Test 2 fails - Likely there has been an update to the service that is feeding you data, AND THEY HAVEN'T RESPECTED THE BIT YOU CARE ABOUT. Major not good!
 
----.
-</code>
-
 #### 'Skills Needed to Suitably Excel as a Software Engineer'
-
-<code>
----.
 
 It is my experience that the knowledge and skills you will need as a software engineer who is an individual technical contributor, can be categorised in these areas:
 
@@ -175,7 +146,7 @@ It is my experience that the knowledge and skills you will need as a software en
 * Business and Domain Knowledge
 * People Skills and Communication Skills
 
-## Personal Efficiency and Productivity
+##### Personal Efficiency and Productivity
 
 It is a sad fact of software development that, more often than not, you will be judged on your speed of completing development features, not the quality of the code you produce, or the long term effect on the product it will have.
 
@@ -198,7 +169,7 @@ To improve technical efficiency/productivity there are many skills you can impro
 
 Some efficiency skills will also be covered under 'people skills' and 'technical knowledge'. If you have good people skills and good relationships in your organisation, then it is much easier to get things done quicker. If you have great technical knowledge and experience, you will implement things faster and more accurately.
 
-## Technical Knowledge
+##### Technical Knowledge
 
 Some people would say that the other categories are more important than technical knowledge. It is undoubtedly true that you will encounter many people in your software engineering career who excel at the other categories and are not strong in their technical knowledge. They often occupy the highest ranks in an organisation and are paid the highest.
 
@@ -210,7 +181,7 @@ But it's not all about money or ladder-climbing. I would say, software engineers
 * Personal/toy projects are invaluable in implementing and assimilating the theoretical knowledge that you have read. If you don't have a personal project that you spend your spare time doing, get one now. It is very important to find something that you love that will also teach you a lot about your skill set. Always have a side-project going throughout your career, not focused on making money necessarily, but just having fun developing software and improving your technical skills. Make sure it is fun and keeps on being fun.
 * Try teaching or mentoring as a way to improve your own knowledge and improve your communication and people skills. The best way to become an expert at something is to learn to teach it, because if you strive to do it well, you will become painfully aware of how little you know, and how much there is to know.
 
-## Business and Domain Knowledge
+##### Business and Domain Knowledge
 
 It is a fact of working for an organisation or business, that the more you understand about the business and its objectives, and the more you contribute to those objectives, the better you will do at that organisation.
 
@@ -222,7 +193,7 @@ I often think that as software engineers, we are often not given access to the m
 
 A lot of engineer types shy away from the business knowledge and are uninterested in developing their knowledge and domain knowledge. They just want to be told what to do. That is fine, but it will reduce the impact you can have on the success of the business, and how people will see you in that particular organisation. It will also reduce the autonomy and freedom you are given.
 
-## People and Communication Skills
+##### People and Communication Skills
 
 People and communication skills are going to be key to your career and your effectiveness within it. Gone are the days when an anti-social engineer was locked in a basement for years and eventually emerges with a brilliant technical solution that changes the world.
 
@@ -232,13 +203,7 @@ Even in academia and research on the cutting edge technical problems of our time
 
 It might be possible to progress with bad people skills, but it's going to be 100x as difficult. And overwhelmingly the statistical chances are, if you are reading this, then you are not good enough technically to succeed with bad people skills.
 
----.
-</code>
-
 #### 'Training Resources for Software Engineers in Test/QA Engineers'
-
-<code>
----.
 
 This is an heavily opinionated guide to what I personally think is important for new SDETs/QA Engineers to learn and know. I have spent 17 years in the software industry, and have experience in nearly all areas of software engineering, including a large number of years as a 'pure' developer, several years experience as an exploratory tester, several years experience in devops, and experience managing testing teams and defining test strategies.
 
@@ -252,7 +217,7 @@ This is not meant to be 'gate-keeping' or scare people away, at all. I want as m
 
 With that said..
 
-## Rationale
+##### Rationale
 
 I firmly believe that new QA engineers are going to have to learn how to code, and code very well. Gone are the days where they can just be business analysts/QA analysts/exploratory testers. Although they will need that skillset too. It is a very harsh market out there and there are lots to learn.
 
@@ -269,7 +234,7 @@ This is a LOT of information to learn I know, but is why QA Engineers skilled in
 
 The closer you can get to knowing these skillsets, the better off you are in today's demanding market. This document is a collection of resources and advice to help you grow in these areas.
 
-## Study Skills and Learning to Learn
+##### Study Skills and Learning to Learn
 
 * This guide is assuming that you are coming from a graduate perspective, ideally from a computing subject, ideally from a good university. In your technical career, your success will be defined by the speed you can teach yourself new technical concepts.
 
@@ -279,9 +244,9 @@ The closer you can get to knowing these skillsets, the better off you are in tod
 
 * But it might not for you. So take some time to figure out what type of learning method works for you. For some people, online text based courses really help. For others, YouTube videos. Some people simply don't really learn very well on their own and should seek a mentor to pair program with. It is very important to learn how you learn best, because although the information you need to know won't change, the style you best absorb it is completely individual to you.
 
-## Resources for the Skills Required of a QA Engineer
+##### Resources for the Skills Required of a QA Engineer
 
-### Fundamental Computing Skill and Software Engineering skills
+###### Fundamental Computing Skill and Software Engineering skills
 
 * There are things that a computing degree will teach you that you can definitely learn yourself, in your own time. But you are going to have to learn them one way or another. Things like basic programming, how computers work, concurrency, how databases work, how the web works, technical communication skills including writing and presenting information, the basics of complexity theory etc etc.
 
@@ -292,7 +257,7 @@ The closer you can get to knowing these skillsets, the better off you are in tod
 * But of course, any degree, course or bootcamp will not teach you everything. Never assume that. You're going to have to learn a LOT more than that.
 
 
-### MIT's "The Missing Semester" Course
+###### MIT's "The Missing Semester" Course
 
 * Once you have done your prior training from a course or bootcamp, I really recommend this following course. MIT might be a scary name for some, but this course really is excellent, and contains a LOT of information I really wished I had learned earlier in my career. Take it at your own pace.
 
@@ -300,7 +265,7 @@ There are no time constraints to this course so you can take it in the evenings 
 
 https://missing.csail.mit.edu/
 
-### ISTQB 'Fundementals' Course
+###### ISTQB 'Fundementals' Course
 
 * Although the true usefulness of ISTQB's Fundementals testing course has been debated for a long while, it is worth getting on your CV simply because a lot of job descriptions of QA roles require it.
 
@@ -310,7 +275,7 @@ https://missing.csail.mit.edu/
 
 * Often employers will consider sending you on this course for professional development, so definitely push for it and go for it if they do, if only for the value of it on your CV/resume.
 
-## Exploratory testing
+###### Exploratory testing
 
 * Exploratory testing remains a hugely important skill for any QA engineer. The more exploratory testing you do, the better your attention to detail will become, and the better your understanding of where bugs and problems in software development arise from, and how to get a sense of where bugs might be hiding.
 * I would argue that you shouldn't see exploratory testing as just something that you do on the graphical user interface to a product. You should look at the product through any interface that the user of the product uses. So for example, if the product is a C++ compiler, then you should exploratory test using the command line C++ interface.
@@ -320,15 +285,9 @@ https://missing.csail.mit.edu/
 * The more time you spend exploratory testing and finding bugs, the greater your understanding of the products you work on, becomes. As a QA engineer, you are often expected to be the subject matter expert on the product from a users perspective. The more exploratory testing and hands-on experience interacting with the product you can do, the more that will be the case. And when you have learned numerous products like this, the faster learning new products will become.
 * You will find it incredibly difficult trying to design effective automated tests without the knowledge of the product, and without the insight into testing that working in exploratory testing will give you. So there is no way to skip this fundamental skill.
 
----.
-</code>
-
 #### 'On Books and Reading'
 
-<code>
----.
-
-# Why Books Are Still Relevant
+#####  Why Books Are Still Relevant
 
 I spent so much of my childhood and early adulthood reading, before the web became omnipresent, but I got back into reading books - in a serious way - about 5 years ago.
 
@@ -354,7 +313,8 @@ Make Notes
 When reading non-fiction (or complex fiction), make notes on books. Underline, highlight, write in the margins, make online notes.. the more notes you make, the better your understanding will be of what you're reading.
 
 My dad who worked as a university lecturer and is officially a 'super smart person', and who has read books voraciously throughout his life, recommends putting an A5 sheet of paper with a handwritten summary of the previous chapter in the book at the end of each chapter. That way you can quickly go back years later and get the understanding that you had when reading the book fresh the first time.
-Read Selectively
+
+##### Read Selectively
 
 With non-fiction you usually don't have to read the WHOLE book to get a good idea of its contents. Remember being in university and given a 20 book reading list for every course? Did anyone expect you to read ALL of those books cover-to-cover? Of course not, that wasn't even possible.
 
@@ -364,7 +324,7 @@ If you never went to university, or it has been a while since you did some prope
 
 Personally I recommend the Open University Humanities Study Guide as an excellent and approachable reference to the different styles of reading you can do, and how to make good notes. There is also the Open University STEM Study Guide but I find the Humanities one has better reading and note-taking advice which is applicable to all reading, but it is worth picking both up.
 
-## Getting Books for Cheap
+##### Getting Books for Cheap
 
 You don't have to buy all your physical books new!! Often you can get a huge discount by buying them second-hand, via Amazon or elsewhere. Some popular books, such as university textbooks and classic literature, can be bought for only £2, and the quality is good! A lot of ebooks can be found online for free. Imagine that kind of value for money, either in entertainment time, or amount learned, occurring anywhere else in this modern world?!
 Bookshops and Libraries
@@ -378,14 +338,9 @@ Write and Read Reviews
 
 Finally, I really recommend writing reviews of your books and reading others reviews, as a way of discovering more books, sharing your experiences, and summarising what you've learned.
 
-Goodreads.com is my favourite review site, it's one of the most extensive.
-
-## Summary
+[Goodreads](Goodreads.com) is my favourite review site, it's one of the most extensive.
 
 To paraphrase George R. R. Martin - "That's what I do. I read books, and I know things."
-
----.
-</code>
 
 ### Poetry
 
