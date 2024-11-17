@@ -29,6 +29,8 @@ Learn tech skills that people find unpopular or 'uncool' but there is high deman
 Look at skills shortage lists. Look at lists that show the most 'in demand' areas where employers are struggling to find skilled candidates, such as cyber security, machine learning, test automation, devops/MLOps .. and so on.
 
 This is basic economic supply and demand theory, and is true today as it was when I learned it in high school over 20 years ago.
+
+---.
 </code>
 
 #### 'A Hiring Strategy to Reduce Bias'
@@ -56,6 +58,7 @@ And people who are applying are getting frustrated when they're seeing the same 
 
 Face it, you are looking for something that doesn't exist. You are looking for the mythical 'unicorn' developer, when what you need to do is to simply hire from the very decent candidate pool that you have available already.
 
+---.
 </code>
 
 #### 'DevTestOps and Jenkins'
@@ -92,6 +95,8 @@ There are a few tips that have helped me.
 * Always try and keep the versions of Jenkins, your test automation tool (such as Cypress) and any other major components at the latest stable version. This will ensure that your tests run as quickly as possible and as reliably as possible.
 
 If you do all the above, then your Jenkins jobs will be much more maintainable and your time spent maintaining them much less of a headache.
+
+---.
 </code>
 
 #### 'How to hold Meetings - A strategy for remote work'
@@ -130,6 +135,8 @@ Discussion in the meeting
 * Avoid going round and round in circles. If two people are having a disagreement and are simply restating points at each other, again and again, ask what other people think about their points, to reach a decision.
 * People should be allowed to get on with other work while listening in to the meeting. They should keep listening so they have an overview of what is happening and that if their opinion is requested, they can give it.
 * If lots of people are tuning out and getting on with other work, it is a sign that the meeting shouldn't have taken place in the first place, or at least those people tuning out shouldn't have been on the invite.
+
+---.
 </code>
 
 #### 'A Test Strategy for Microservices'
@@ -155,6 +162,7 @@ Now here is the clever bit - what these test results tell you:
 * If Test 1 passes and Test 2 passes - No update, data still there, no problem, all good.
 * If Test 1 fails and Test 2 fails - Likely there has been an update to the service that is feeding you data, AND THEY HAVEN'T RESPECTED THE BIT YOU CARE ABOUT. Major not good!
 
+---.
 </code>
 
 #### 'Skills Needed to Suitably Excel as a Software Engineer'
@@ -228,6 +236,7 @@ Even in academia and research on the cutting edge technical problems of our time
 
 It might be possible to progress with bad people skills, but it's going to be 100x as difficult. And overwhelmingly the statistical chances are, if you are reading this, then you are not good enough technically to succeed with bad people skills.
 
+---.
 </code>
 
 #### 'Training Resources for Software Engineers in Test/QA Engineers'
@@ -316,6 +325,7 @@ Exploratory testing
 * The more time you spend exploratory testing and finding bugs, the greater your understanding of the products you work on, becomes. As a QA engineer, you are often expected to be the subject matter expert on the product from a users perspective. The more exploratory testing and hands-on experience interacting with the product you can do, the more that will be the case. And when you have learned numerous products like this, the faster learning new products will become.
 * You will find it incredibly difficult trying to design effective automated tests without the knowledge of the product, and without the insight into testing that working in exploratory testing will give you. So there is no way to skip this fundamental skill.
 
+---.
 </code>
 
 #### 'On Books and Reading'
@@ -378,6 +388,8 @@ Goodreads.com is my favourite review site, it's one of the most extensive.
 Summary
 
 To paraphrase George R. R. Martin - "That's what I do. I read books, and I know things."
+
+---.
 </code>
 
 ### Poetry
