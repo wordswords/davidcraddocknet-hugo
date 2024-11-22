@@ -124,9 +124,10 @@ These all work with the gaming PC and laptop and connect via USB:
 
 - Speedlink SL-650212-BKRD Competition PRO Joystick - Anniversary Edition
 
-### Light gun
+### Light guns
 
 - Sinden PC light gun with recoil (Black)
+- Sinden PC light gun without recoil (Red)
 
 ### HOTAS
 
@@ -321,8 +322,6 @@ Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> Roland E-4 Vocal T
 Roland A-500 Pro 49 Keyboard Controller -> Presonus Studio USB-C 1824 Midi Input
 ```
 
-
-
 ## My PC and Console Games
 
 I collect physical and digital games, both modern and retro. You should able to browse through the games I have, both on PC and console, here: [https://wordswords.github.io/media-library-homepage](https://wordswords.github.io/media-library-homepage)
@@ -330,6 +329,8 @@ I collect physical and digital games, both modern and retro. You should able to 
 As of October 2024, these are my Playnite statistics for paid games owned across all PC launchers:
 
 ![image](gamelibrarystats.png)
+
+I also have an install of ExoDos and ExoWin31 on my media PC, which allows me to play any game ever released on DOS and Windows 3.1.
 
 ## Living Room TV Setup
 
