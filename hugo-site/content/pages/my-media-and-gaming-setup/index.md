@@ -137,9 +137,9 @@ These all work with the gaming PC and laptop and connect via USB:
 
 ## My Retro Games Consoles
 
-I have a Kaico Edition OSSC Open Source Scan Converter 1.6, which upscales all my retro consoles to HDMI. I use cables from [https://retrogamingcables.co.uk/](https://retrogamingcables.co.uk/) with the OSSC, which are highly recommended as they make so much difference in terms of audio and video noise. The right cable can also unlock better sound and graphics quality when combined with the OSSC that was never available before.
+I have a [Kaico Edition OSSC Open Source Scan Converter 1.6](https://kaicolabs.com/product/kaico-edition-open-source-scan-converter-ossc/), which upscales all my retro consoles to HDMI. I use cables from [https://retrogamingcables.co.uk/](https://retrogamingcables.co.uk/) with the OSSC, which are highly recommended as they make so much difference in terms of audio and video noise. The right cable can also unlock better sound and graphics quality when combined with the OSSC than was ever available before.
 
-I also have a Marsellie MClassic HDMI to HDMI hardware-based AI image improver and upscaler which I use for the output of the OSSC.
+I also have a [Marsellie MClassic](https://marseilleinc.com/products/buy-mclassic) HDMI to HDMI hardware-based AI image improver and upscaler which I use for the output of the OSSC.
 
 Currently these are the consoles I have hooked up:
 
@@ -330,7 +330,7 @@ As of October 2024, these are my Playnite statistics for paid games owned across
 
 ![image](gamelibrarystats.png)
 
-I also have an install of ExoDos and ExoWin31 on my media PC, which allows me to play any game ever released on DOS and Windows 3.1.
+I also have an install of [ExoDos](https://www.retro-exo.com/exodos.html) and [ExoWin31](https://www.retro-exo.com/win3x.html) on my media PC, which allows me to play any game ever released on DOS and Windows 3.1.
 
 ## Living Room TV Setup
 
