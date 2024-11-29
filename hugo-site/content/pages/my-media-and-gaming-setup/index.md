@@ -131,9 +131,11 @@ These all work with the gaming PC and laptop and connect via USB:
 
 ### HOTAS
 
-- Thrustmaster T16000M Flight Stick
+I have two Flight Sticks and a throttle. The dual Flight Stick setup is useful for Mechwarrior style games, although I usually use the Flight Stick + Throttle for most games. They are installed on quick-release Hikig desk mounts so they can be easily setup and removed when not in use, to save space.
+
+- 2x Thrustmaster T16000M Flight Stick
 - Thrustmaster TWCS Throttle
-- Hikig HOTAS Mount
+- 3x Hikig HOTAS Mount
 
 ## My Retro Games Consoles
 
