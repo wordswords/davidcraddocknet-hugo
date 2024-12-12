@@ -93,16 +93,24 @@ iperf Done.
 
 ```
 
-### Server/Linux desktop Hardware
+### House Server 'hq.local'
 
-![image](ghetto.jpg)
+- i3 SandyBridge Quad Core Processor
+- Nvidea 970 GPU
+- 8GB DDR3 RAM
+- 120GB SSD System Drive running Kali Linux rolling
+- 20TB of storage across moving platter drives
+- Scan.co.uk AV3 Low Noise Soundproofed Case with lots of room for expansion
+- 450W Low noise PSU
+
+### Linux Workstation 'study.local'
 
 - Ivy Bridge 8 Processor Xeon (16 cores total)
-- 20TB of storage space in moving platter disk space
 - 256GB SSD system drive running Kali Linux rolling
+- 1TB moving platter drive
 - 32GB DDR3 RAM
 - 10Gbit/sec fibreoptic network card
-- Nvidea 970 GPU (used for transcoding using Plex and encoding using Handbrake, as well as distributed password cracking)
+- IBM Lenovo ThinkStation C30 Case and PSU
 - Other details are on the [WFH setup page](/my-work-computer)
 
 
