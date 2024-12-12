@@ -12,7 +12,7 @@ url: /my-gaming-setup/
 
 Please visit my separate gaming blog for reviews of games I've played. It's at [https://davidcraddock.games](https://davidcraddock.games)
 
-## Media PC
+## My Media PC 'studio.local'
 
 - 12th Gen i7 CPU
 - 32GB DDR4 RAM
@@ -23,7 +23,7 @@ Please visit my separate gaming blog for reviews of games I've played. It's at [
 - 3x Logitech C920 Webcams (for streaming)
 - 1x Logitech C270 Webcam (for video calls)
 - 1x Nvidia 4070 GPU
-- 10Gb/sec fibre card connected to my 10Gb/sec Mikrotik switch
+- 10Gb/sec fibre optic network card
 - 2x Libredrive flashed LG-WH16NS40 multi-disk optical drivers for ripping Blu-rays, CDs, DVDs and any optical disk with MakeMKV and games for my Plex server and emulators.
 
 ### Media PC Software
@@ -50,11 +50,11 @@ Please visit my separate gaming blog for reviews of games I've played. It's at [
 - Aiseesoft Blu-ray Player (lifetime licence) for playing unripped Blu-rays on my PC
 - Bome MIDI Translator Classic (lifetime licence) for translating MIDI events to key presses - useful for complex streaming setups
 - Various free emulation tools for decrypting/anti-DRMing copies of video game console optical disks and getting them in a playable state for use in an emulator
-- Reaper DAW (shareware lisence)
+- Reaper DAW (shareware licence)
 - Ableton Live 11 Suite DAW
 - Filebot for renaming and organising media files
 
-## Gaming Laptop
+## My Gaming Laptop 'legion.local'
 
 - Lenovo Legion 5-15IAH 2022
 - i7 12th Gen
@@ -68,15 +68,16 @@ Please visit my separate gaming blog for reviews of games I've played. It's at [
 I share this setup between the Media PC and the Gaming Laptop.
 I have a 4K HDR KVM switch and a USB 3.0 KVM switch so I can quickly switch between the two.
 
-- 32" IPS 75hz adaptive refresh 1440p monitor (main monitor for both media PC and gaming laptop)
+- 32" IPS 75hz adaptive refresh 1440p monitor with HDR (main monitor for both media PC and gaming laptop)
 - Herman Miller Aeron Chair
 - IKEA MARKKUS Chair (guest chair)
 - Phillips Hue Entertainment centre with 5 light sources and Hue Sync
 - Logitech G502X wired gaming mouse
-- Razer Blackwidow v3 TKL wired gaming keyboard
 - Razer Tarturus Chroma Pro Gaming Keypad
-- Topre Realforce UK Keyboard (second keyboard)
-- Verticial mouse (second mouse)
+- Topre Realforce TKL UK Keyboard (main keyboard)
+- Microsoft Wired UK keyboard (second keyboard used for operating while on the music production desk)
+- Vertical mouse (music production mouse)
+- Logitech Wireless keyboard and mouse (third keyboard and mouse used for operating when at the arcade pedestal)
 - Presonus 1824c Studio Sound Interface
 - Beyerdynamic DT 880 Pro Black Edition Headphones
 - Genelec 8020D Music Studio Speakers
@@ -84,7 +85,7 @@ I have a 4K HDR KVM switch and a USB 3.0 KVM switch so I can quickly switch betw
 - Meta Quest 2 VR headset + controllers
 - ClonerAlliance Flint 4KP Plus video capture card with USB-c 3.0L
 - Blackout curtains
-- 27" 1440p TN LCD monitor with Gsync and 144hz refresh (second monitor)
+- 27" 1440p TN LCD monitor with Gsync and 144hz refresh (second monitor) (used in portrait mode)
 - 19" 1080p IPS LCD monitor (third monitor)
 - 42" 1080p IPS LCD TV (fourth monitor)
 
@@ -117,8 +118,8 @@ These all work with the gaming PC and laptop and connect via USB:
 
 ### Arcade Sticks
 
-- Mayflash Arcade Stick F300 Elite
-- Datel Arcade Pro Joystick
+- Mayflash Arcade Stick F300 Elite with Sanwa buttons and stick using 8-way restrictor plate
+- Datel Arcade Pro Joystick using 4-way restrictor plate
 
 ### Retro Digital Joystick
 
@@ -143,10 +144,10 @@ I have a [Kaico Edition OSSC Open Source Scan Converter 1.6](https://kaicolabs.c
 
 I also have a [Marsellie MClassic](https://marseilleinc.com/products/buy-mclassic) HDMI to HDMI hardware-based AI image improver and upscaler which I use for the output of the OSSC.
 
-Currently these are the consoles I have hooked up:
+Currently these are the consoles I have hooked up. They are all 'PAL' unless otherwise specified:
 
-- **Super Nintendo** with 2x official controllers
-- **Sega Megadrive II** with 2x official 3 button controllers, and 2x official 6 button controllers
+- **Super Nintendo** with 2x official controllers and NTSC and J-NTSC cartridge converter
+- **Sega Megadrive II (region unlocked)** with 2x official 3 button controllers, 2x official 6 button controllers and Master System cartridge converter
 - **Sony PS2** with 2x official PS2 controllers, and 1 x official PS1 controller
 - **Sony PS3** with 1x official PS3 controller
 - **Sony PS4** with 1x official PS4 controller
@@ -154,10 +155,10 @@ Currently these are the consoles I have hooked up:
 - **XBox 360** with 2x official wired 360 controllers and 360 Kinect
 - **Sega Dreamcast** with 3x official DC controllers, 2x VMUs and 1x third-party memory pack
 - **Sony PSP2000** (TV out)
-- **Nintendo Wii (Gamecube compatiable version)** with 2x Wiimote Motion controller and official balance board
-- **Nintendo 64 with 2x official N64 controller, Kaico PAL N64 -> HDMI convertor, expansion pak and memory pak**
-- **Microsoft XBox V1** with 2x Duke controllers
-- **SNK Mini Neo Geo** with 2x official controllers, and mini HDMI to HDMI cable for monitor output
+- **Nintendo Wii (Gamecube compatible version)** with 2x Wiimote Motion controller and official balance board
+- **Nintendo 64** with 2x official N64 controller, Kaico PAL N64 -> HDMI convertor, expansion pak and memory pak
+- **Microsoft XBox Original** with 1x Duke controller and 1x third party large controller
+- **SNK Mini Neo Geo International** with 2x official controllers, and mini HDMI to HDMI cable for monitor output
 
 ### Portable Retro Games Consoles
 
