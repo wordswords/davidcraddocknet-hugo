@@ -1,10 +1,11 @@
 ---
 category:
-  - news
+  - tips
 date: "2024-12-12T00:00+00:00"
-guid: https://davidcraddock.net/server-outage-december-2024
+guid: https://davidcraddock.net/?p=4980
 title: Server Outage Dec 2024
-url: /server-outage-december-2024
+url: /2024/12/12/server-outage-december-2024/
+image: oldserver.jpg
 author: David Craddock
 ---
 
