@@ -15,7 +15,6 @@ mainsections: ["posts", "papermod"]
 
 frontmatter:
   date:
-  - :git
   - :fileModTime
   - lastmod
   - date
