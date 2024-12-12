@@ -1,7 +1,7 @@
 ---
 category:
   - tips
-date: "2024-12-12T00:00+00:00"
+date: "2024-12-12TOO:00:00+00:00"
 guid: https://davidcraddock.net/?p=4980
 title: Server Outage Dec 2024
 url: /2024/12/12/server-outage-december-2024-12/
