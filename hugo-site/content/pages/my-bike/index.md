@@ -80,3 +80,8 @@ A good set of cycling clothes is essential for comfortable all-weather all-year 
 * Immobilise security marking kit and RFID tags for both bikes
 * Insurance. Lots of insurance.
 
+## Training
+
+* I have achieved 'Bikeability Level 3' as an adult, verified in December 2024, which is the most widely accepted form of road-ready cycle training and certification. [Link here](https://www.bikeability.org.uk/). Level 3 focuses in cycling safely in heavy traffic. This qualifies me to hire Electric Cargo Bikes.
+* I have studied books and Driving Theory test material to learn how to navigate roads and read road signs, approximately to the level of a driving theory test, although I don't officially hold a driving licence.
+
