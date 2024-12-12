@@ -13,6 +13,12 @@ enableEmoji: true
 pygmentsUseClasses: true
 mainsections: ["posts", "papermod"]
 
+frontmatter:
+  lastmod:
+  - lastmod
+  - :fileModTime
+  - :default
+
 minify:
   disableXML: true
   minifyOutput: true
