@@ -15,11 +15,8 @@ mainsections: ["posts", "papermod"]
 
 frontmatter:
   date:
-  - :fileModTime
-  - lastmod
   - date
-  - publishdate
-  - modified
+  - :fileModTime
 
 minify:
   disableXML: true
