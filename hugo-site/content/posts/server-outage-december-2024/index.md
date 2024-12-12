@@ -1,7 +1,7 @@
 ---
 category:
   - news
-date: "2024-12-12:00:00+00:00"
+date: "2024-12-12T00:00+00:00"
 guid: https://davidcraddock.net/server-outage-december-2024
 title: Server Outage Dec 2024
 url: /server-outage-december-2024
