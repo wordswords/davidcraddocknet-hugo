@@ -1,7 +1,7 @@
 ---
 category:
   - news
-date: "2024-09-24T00:23:00+00:00"
+date: "2024-12-12:23:00+00:00"
 guid: https://davidcraddock.net/server-outage-december-2024
 title: Server Outage Dec 2024
 url: /server-outage-december-2024
@@ -12,7 +12,7 @@ I got into a bit of a situation where I broke the main server.
 
 Instead of replacing it, I decided to wait a few weeks until I had access to a new case, mobo, CPU and PSU so that I could move it into that case, and take advantage of my Nvidea 970 graphics card.
 
-Previously the card WAS in the server, but there was one main problem, see here:
+Previously the card WAS in the server, but there was one main problem, the graphics card wouldn't fit in the case, see here:
 
 ![image](oldserver.jpg)
 
