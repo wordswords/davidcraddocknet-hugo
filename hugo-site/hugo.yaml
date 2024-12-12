@@ -14,10 +14,13 @@ pygmentsUseClasses: true
 mainsections: ["posts", "papermod"]
 
 frontmatter:
-  lastmod:
-  - lastmod
+  date:
+  - :git
   - :fileModTime
-  - :default
+  - lastmod
+  - date
+  - publishdate
+  - modified
 
 minify:
   disableXML: true
