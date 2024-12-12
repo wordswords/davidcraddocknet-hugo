@@ -16,6 +16,7 @@ mainsections: ["posts", "papermod"]
 frontmatter:
   date:
   - date
+  - :git
   - :fileModTime
 
 minify:
@@ -90,6 +91,7 @@ params:
   ShowToc: true
   TocOpen: true # open contents automantically
   comments: true
+  enableGitInfo: true
   images: ["/mugshot.png"]
 
   profileMode:
