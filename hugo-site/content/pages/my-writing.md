@@ -329,7 +329,7 @@ Personally I recommend the Open University Humanities Study Guide as an excellen
 
 You don't have to buy all your physical books new!! Often you can get a huge discount by buying them second-hand, via Amazon or elsewhere. Some popular books, such as university textbooks and classic literature, can be bought for only £2, and the quality is good! A lot of ebooks can be found online for free. Imagine that kind of value for money, either in entertainment time, or amount learned, occurring anywhere else in this modern world?!
 
-###### Bookshops and Libraries
+##### Bookshops and Libraries
 
 I love bookshops and libraries.
 
@@ -337,7 +337,7 @@ Libraries are fast becoming a thing of the past in the UK, sadly, with very old 
 
 Bookshops are just great to soak in the excitement and enthusiasm of new books, particularly fiction, to read books before you buy them, and to sniff that wonderful 'new book' smell without even having to buy a new book!
 
-###### Write and Read Reviews
+##### Write and Read Reviews
 
 Finally, I really recommend writing reviews of your books and reading others reviews, as a way of discovering more books, sharing your experiences, and summarising what you've learned.
 
