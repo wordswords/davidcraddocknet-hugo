@@ -5,7 +5,7 @@ date: "2024-12-22T19:30:59+00:00"
 guid: https://davidcraddock.net/retrospective-for-2024
 title: Retrospective for 2024
 url: /2024/12/22/retrospective-for-2024/
-
+author: David Craddock
 ---
 The year of 2024 comes to an end, and what a year it has been!
 

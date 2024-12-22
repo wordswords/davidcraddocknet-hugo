@@ -1,6 +1,7 @@
 ---
 category:
   - tips
+date: "2024-12-22T17:30:59+00:00"
 guid: https://davidcraddock.net/?p=4985
 title: Remember to use UUIDs
 url: /2024/12/14/remember-to-use-uuids
