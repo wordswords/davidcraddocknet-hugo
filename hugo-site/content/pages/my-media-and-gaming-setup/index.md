@@ -80,6 +80,8 @@ I have a 4K HDR KVM switch and a USB 3.0 KVM switch so I can quickly switch betw
 - Logitech Wireless keyboard and mouse (third keyboard and mouse used for operating when at the arcade pedestal)
 - Presonus 1824c Studio Sound Interface
 - Beyerdynamic DT 880 Pro Black Edition Headphones
+- Avantree Oasis Plus Certified aptX HD Bluetooth 5.0 Transmitter and Reciever
+- Sony WH-1000XM3 Wireless Noise Cancelling Headphones
 - Genelec 8020D Music Studio Speakers
 - Presonus Eris Studio Speaker acting as a subwoofer
 - Meta Quest 2 VR headset + controllers
@@ -185,8 +187,8 @@ All modern (HDMI) consoles -> MClassic -> 4K capture card * -> PASSTHROUGH -> Mo
 ```
 3.
 ```
-PC gaming laptop -> 4K capture card * -> PASSTHROUGH -> Monitor (up to 4K)
-                                    \ -> RECORD -> OBS Studio stream/record (up to 1080p)
+Gaming PC -> Flint 4KP capture card * -> PASSTHROUGH -> Monitor (up to 4K)
+                                       \ -> RECORD -> OBS Studio stream/record (up to 1080p)
 ```
 ### Audio Chain
 
@@ -243,12 +245,12 @@ Presonus Studio USB-C 1824 1x mono output -> 1x Presonus Eris Speaker acting as 
 
 3.
 ```
-Presonus Studio USB-C 1824 1x headphone output -> Beyerdynamic DT 880 Pro Black Edition Headphones
+Presonus Studio USB-C 1824 3-4 headphone output -> Beyerdynamic DT 880 Pro Black Edition Headphones
 ```
 
 4.
 ```
-Presonus Studio USB-C 1824 1x spare headphone output -> Spare/guest headphones
+Presonus Studio USB-C 1824 3-4 headphone output -> Spare headphone output -> Spare/guest headphones
 ```
 
 5.
@@ -265,6 +267,12 @@ Presonus Studio USB-C 1824 2x aux output -> Eurorack Mixer -> 2 BNC cables -> 2 
 ```
 Presonus Studio USB-C 1824 2x aux output -> Eurorack Mixer -> 2 channels for small VU visual volume Level Monitor
 ```
+
+8.
+```
+Presonus Studio USB-C 1824 7-8 aux output -> Avantree Oasis Plus Certified aptX HD Bluetooth 5.0 Transmitter and Reciever -> Sony WH-1000XM3 Wireless Noise Cancelling Headphones
+```
+
 
 #### PATCH-BAY
 
