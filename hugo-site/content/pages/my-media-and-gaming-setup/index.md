@@ -12,7 +12,7 @@ url: /my-gaming-setup/
 
 Please visit my separate gaming blog for reviews of games I've played. It's at [https://davidcraddock.games](https://davidcraddock.games)
 
-## My Media PC 'studio.local'
+## My Media/Gaming PC 'studio.local'
 
 - 12th Gen i7 CPU
 - 32GB DDR4 RAM
@@ -158,9 +158,9 @@ Currently these are the consoles I have hooked up. They are all 'PAL' unless oth
 - **Sega Dreamcast** with 3x official DC controllers, 2x VMUs and 1x third-party memory pack
 - **Sony PSP2000** (TV out)
 - **Nintendo Wii (Gamecube compatible version)** with 2x Wiimote Motion controller and official balance board
-- **Nintendo 64** with 2x official N64 controller, Kaico PAL N64 -> HDMI convertor, expansion pak and memory pak
+- **Nintendo 64** with 2x official N64 controller, Kaico PAL N64 -> HDMI converter (audio output via HDMI), expansion pak and memory pak
 - **Microsoft XBox Original** with 1x Duke controller and 1x third party large controller
-- **SNK Mini Neo Geo International** with 2x official controllers, and mini HDMI to HDMI cable for monitor output
+- **SNK Mini Neo Geo International** with 2x official controllers, and mini HDMI to HDMI cable for monitor output (audio output via HDMI)
 
 ### Portable Retro Games Consoles
 
@@ -282,11 +282,11 @@ Usually I connect one or two of these patchbay sockets to the input 1 and/or 2 o
 
 1.
 ```
-Left HDMI audio output to gaming monitor (used for OSSC retro gaming)
+Left HDMI audio output from gaming monitor (used for OSSC and retro console gaming)
 ```
 2.
 ```
-Right HDMI audio output to gaming monitor (used for OSSC retro gaming)
+Right HDMI audio output from gaming monitor (used for OSSC and retro console gaming)
 ```
 3.
 ```
@@ -300,6 +300,11 @@ tbone MB 88u Audio mic with desktop stand, used for as a secondary mic
 ```
 Kinafun Wireless trasmitter/reciver for Kinafun wireless mic headset
 ```
+6.
+```
+Marshall MG15G Guitar for playing my electric guitar
+```
+
 
 ## MIDI Routing Chains
 
