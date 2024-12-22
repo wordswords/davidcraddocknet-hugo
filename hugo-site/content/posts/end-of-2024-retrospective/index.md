@@ -9,7 +9,7 @@ url: /2024/12/22/retrospective-for-2024/
 ---
 The year of 2024 comes to an end, and what a year it has been!
 
-As I usually do, I post (at least) yearly retrospectives, covering my life in the past year. This is one I posted mid-year 2024, and this 2023s.
+As I usually do, I post (at least) yearly retrospectives, covering my life in the past year. This is one I posted [mid-year 2024](https://davidcraddock.net/2024/08/02/mid-2024-update/), and this is [2023s](https://davidcraddock.net/2023/11/25/retrospective-for-2023/).
 
 It is meant to inform people outside my inner social circle how my life has been going - to give an overview that people who talk to me every day may not have, for example.
 
