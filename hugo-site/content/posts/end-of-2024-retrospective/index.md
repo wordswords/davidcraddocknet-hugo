@@ -15,9 +15,9 @@ It is meant to inform people outside my inner social circle how my life has been
 
 I usually separate the points into 'the Good', 'the Bad' and 'the Ugly'.
 
-### What Has Happened in 2024?
+## What Has Happened in 2024?
 
-## 'The Good'
+### 'The Good'
 
 ![image](thegood.jpg)
 
@@ -37,13 +37,13 @@ I usually separate the points into 'the Good', 'the Bad' and 'the Ugly'.
 
 * After selling all my DJ equipment, I have converted my music studio into a general purpose 'workshop' and have made an [amazing gaming setup](https://davidcraddock.net/my-gaming-setup/) now for my retro consoles, arcade games, and modern PC games. I have wired everything up to Google Home Assistant voice control, so everything is easily configurable and shuts down automatically to save power when it is not in use.
 
-## 'The Bad'
+### 'The Bad'
 
 ![image](thebad.jpg)
 
 * I am currently 'in between' full time jobs. I am looking to transition into the cyber security industry, as I've really had enough of my time in normal software engineering. It has changed so much since I first got into it in the 00s, and the level of appreciation, autonomy and respect that I get for my experience and skill set has much reduced, even though bizarrely, my income has continued to increase! This career change and the necessary time out of work it requires, has put pressure on the family finances, although I have good reason to think this is only temporary.
 
-## 'The Ugly'
+### 'The Ugly'
 
 ![image](theugly.jpg)
 
@@ -51,7 +51,7 @@ I usually separate the points into 'the Good', 'the Bad' and 'the Ugly'.
 
 * We also lost my father-in-law, Conny's dad, a few weeks later, which was a huge shock and very unexpected, to natural causes. Conny has had a lot to deal in these past few months as she was close to my mum as well.
 
-### Summary
+## Summary
 
 There obviously have been some major bad events happening this year, particularly in the final quarter. However, it's important to note that a lot of good stuff has happened too, particularly around mine and Conny's health. I am also glad that I 'moved on' from the DJing stuff I was doing before and replaced it with more healthy hobbies.
 
