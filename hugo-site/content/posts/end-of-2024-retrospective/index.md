@@ -19,7 +19,7 @@ I usually separate the points into 'the Good', 'the Bad' and 'the Ugly'.
 
 ## 'The Good'
 
-![image](the good.jpg)
+![image](thegood.jpg)
 
 * My cancer still shows no sign of coming back. Apparently the likelihood of it returning is now 'within the single percentage figures'. Which, as much as I found my experiences with the NHS and the Christies [link] difficult, is an amazing result for all concerned.
 
@@ -39,13 +39,13 @@ I usually separate the points into 'the Good', 'the Bad' and 'the Ugly'.
 
 ## 'The Bad'
 
-![image](the bad.jpg)
+![image](thebad.jpg)
 
 * I am currently 'in between' full time jobs. I am looking to transition into the cyber security industry, as I've really had enough of my time in normal software engineering. It has changed so much since I first got into it in the 00s, and the level of appreciation, autonomy and respect that I get for my experience and skill set has much reduced, even though bizarrely, my income has continued to increase! This career change and the necessary time out of work it requires, has put pressure on the family finances, although I have good reason to think this is only temporary.
 
 ## 'The Ugly'
 
-![image](the ugly.jpg)
+![image](theugly.jpg)
 
 * My mum unfortunately lost her battle to Multiple Myloma cancer [link] this year, after a heroic struggle of 10 years. This has devastated the family, as she was in a lot of ways - the head of the family, and her driving will-power kept us all in line.  For me she will be remembered for the many things she achieved in life, the kind things she did, and being a personal inspiration for me during my cancer fight.
 
