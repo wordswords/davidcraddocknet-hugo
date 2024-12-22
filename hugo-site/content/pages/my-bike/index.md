@@ -72,16 +72,18 @@ A good set of cycling clothes is essential for comfortable all-weather all-year 
 
 ## Security
 
-* 2x LiteLock X1 Angle-grinder Resistant Bike Locks (Diamond Motorbike Solid Secure Rated)
+* 1x LiteLock X1 Angle-grinder Resistant Bike Locks (Diamond Motorbike Solid Secure Rated)
+* 1x Hiplok DX (Gold Motorbike Solid Secure Rated / Diamond Bicycle Solid Secure Rated)
+* 1x Oxford 'Monster' chain and padlock (Gold Motorbike Solid Secure Rated / Diamond Bicycle Solid Secure Rated)
 * 2x Sheffield Bike stands set in concrete in my garden
 * 2x Oxford ground anchors set in concrete in my garden (Diamond Motorbike Solid Secure Rated)
-* 1x Oxford giant chain and padlock (Gold Motorbike Solid Secure Rated / Diamond Bicycle Solid Secure Rated)
 * CycleRegister security marking kits for both bikes
 * Immobilise security marking kit and RFID tags for both bikes
 * Insurance. Lots of insurance.
 
-## Training
+## Training / Certifications
 
 * I have achieved 'Bikeability Level 3' as an adult, verified in December 2024, which is the most widely accepted form of road-ready cycle training and certification. [Link here](https://www.bikeability.org.uk/). Level 3 focuses in cycling safely in heavy traffic. This qualifies me to hire Electric Cargo Bikes.
 * I have studied books and Driving Theory test material to learn how to navigate roads and read road signs, approximately to the level of a driving theory test, although I don't officially hold a driving licence.
+* I have been DBS checked and have a clean record.
 
