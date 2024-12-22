@@ -302,7 +302,7 @@ Kinafun Wireless trasmitter/reciver for Kinafun wireless mic headset
 ```
 6.
 ```
-Marshall MG15G Guitar for playing my electric guitar
+Marshall MG15G Guitar Amp for playing my electric guitar
 ```
 
 
