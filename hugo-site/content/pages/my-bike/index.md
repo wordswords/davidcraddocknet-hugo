@@ -6,9 +6,12 @@ url: /my-bike/
 
 ---
 
-![image](himiwayzebra.jpg)
+![image](connybikes.png)
+
 
 ## Bike 1 - Electric Mountain Bike
+
+![image](himiwayzebra.jpg)
 
 I use this for mostly getting out of the city and into some nature. It is a long-range bike.
 
