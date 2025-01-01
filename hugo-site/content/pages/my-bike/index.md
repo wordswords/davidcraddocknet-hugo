@@ -5,7 +5,8 @@ title: My Electric Bikes
 url: /my-bike/
 
 ---
-[![](/wp-content/uploads/2024/06/himiway.jpg)](/wp-content/uploads/2024/06/himiway.jpg)
+
+![image](himiwayzebra.jpg)
 
 ## Bike 1 - Electric Mountain Bike
 
