@@ -5,7 +5,8 @@ title: My Work Computer
 url: /my-work-computer/
 
 ---
-[![](/wp-content/uploads/2023/11/20231107_133613.jpg)](/wp-content/uploads/2023/11/20231107_133613.jpg)[![](/wp-content/uploads/2023/11/20231107_133703.jpg)](/wp-content/uploads/2023/11/20231107_133703.jpg)[![](/wp-content/uploads/2023/11/20231107_133620.jpg)](/wp-content/uploads/2023/11/20231107_133620.jpg)[![](/wp-content/uploads/2023/11/20231106_105031.jpg)](/wp-content/uploads/2023/11/20231106_105031.jpg)[![](/wp-content/uploads/2023/11/20231107_133605.jpg)](/wp-content/uploads/2023/11/20231107_133605.jpg)[![](/wp-content/uploads/2023/11/20231107_133556.jpg)](/wp-content/uploads/2023/11/20231107_133556.jpg)
+
+![image](wfhdesk.jpg)
 
 This is my work from home setup. I work from home every work day. I use the following equipment:
 
