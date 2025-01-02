@@ -6,6 +6,8 @@ url: /my-gaming-setup/
 
 ---
 {{< youtube w-QOfONKTWs >}}
+![image](gamingsetup.png)
+
 ![image](mediasetup.png)
 
 ## Gaming Blog
