@@ -42,8 +42,3 @@ This is my work from home setup. I work from home every work day. I use the foll
 - USB Foot Switch Keyboard Pedal for using with VIM (insert mode/normal mode toggle)
 - Mini fridge for Pepsi Max cans
 - Logitech Key light for web cam calls
-
-[![](/wp-content/uploads/2022/12/20221217_112627.jpg)](/wp-content/uploads/2022/12/20221217_112627.jpg)[![](/wp-content/uploads/2022/12/20221217_112620.jpg)](/wp-content/uploads/2022/12/20221217_112620.jpg)[![](/wp-content/uploads/2022/12/20221217_112635.jpg)](/wp-content/uploads/2022/12/20221217_112635.jpg)
-
-I use the following wallpaper which I generated from a prompt with Midjourney:
-[![](/wp-content/uploads/2022/12/art.jpg)](/wp-content/uploads/2022/12/art.jpg)
