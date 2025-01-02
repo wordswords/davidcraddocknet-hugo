@@ -5,16 +5,17 @@ title: My Media and Gaming Setup
 url: /my-gaming-setup/
 
 ---
-{{< youtube w-QOfONKTWs >}}
-![image](gamingsetup.jpg)
 
+{{< youtube w-QOfONKTWs >}}
+
+![image](gamingsetup.jpg)
 ![image](mediasetup.png)
 
 ## Gaming Blog
 
 Please visit my separate gaming blog for reviews of games I've played. It's at [https://davidcraddock.games](https://davidcraddock.games)
 
-## My Media/Gaming PC 'studio.local'
+### My Media/Gaming PC 'studio.local'
 
 * 12th Gen i7 CPU
 * 32GB DDR4 RAM
@@ -56,7 +57,7 @@ Please visit my separate gaming blog for reviews of games I've played. It's at [
 * Ableton Live 11 Suite DAW
 * Filebot for renaming and organising media files
 
-## My Gaming Laptop 'legion.local'
+### My Gaming Laptop 'legion.local'
 
 * Lenovo Legion 5-15IAH 2022
 * i7 12th Gen
@@ -65,7 +66,7 @@ Please visit my separate gaming blog for reviews of games I've played. It's at [
 * Nvidia Laptop 3070TI
 * Cooling Gaming Laptop Pad
 
-## Gaming Setup
+### Gaming Setup
 
 I share this setup between the Media PC and the Gaming Laptop.
 I have a 4K HDR KVM switch and a USB 3.0 KVM switch so I can quickly switch between the two.
@@ -92,7 +93,7 @@ I have a 4K HDR KVM switch and a USB 3.0 KVM switch so I can quickly switch betw
 * 19" 1080p IPS LCD monitor (third monitor)
 * 42" 1080p IPS LCD TV (fourth monitor)
 
-## Gaming Software
+### Gaming PC Software
 
 * Playnite - this brings all my third party launchers together and collates metadata, preview videos and reviews for games I own.
 * Various open source emulators - these plug into Playnite and let me play many different console games on my PC.
@@ -103,9 +104,9 @@ I have a 4K HDR KVM switch and a USB 3.0 KVM switch so I can quickly switch betw
 * Action! - Gameplay Recording and Streaming (on Steam) - for recording PC gaming
 * PCMark 10 - for benchmarking hardware upgrades
 
-## My PC Gaming Controllers
+### My PC Gaming Controllers
 
-### Joypads
+#### Joypads
 
 These all work with the gaming PC and laptop and connect via USB:
 
@@ -119,11 +120,11 @@ These all work with the gaming PC and laptop and connect via USB:
 * SNK Neo Geo Mini Controller with USB adaptor x2 - these are extremely well-built controllers!
 * XBox One Official 'Cyberpunk 2077' Controller
 
-### Retro Digital Joystick
+#### Retro Digital Joystick
 
 * Speedlink SL-650212-BKRD Competition PRO Joystick - Anniversary Edition
 
-### HOTAS
+#### HOTAS
 
 I have two Flight Sticks and a throttle. The dual Flight Stick setup is useful for Mechwarrior style games, although I usually use the Flight Stick + Throttle for most games. They are installed on quick-release Hikig desk mounts so they can be easily setup and removed when not in use, to save space.
 
@@ -131,7 +132,7 @@ I have two Flight Sticks and a throttle. The dual Flight Stick setup is useful f
 * Thrustmaster TWCS Throttle
 * 3x Hikig HOTAS Mount
 
-### Arcade Setup
+#### Arcade Setup
 
 This is located on a 'pedestal' in front of the TV. It consists of the 2 Arcade sticks and 2 lightguns and a wireless keyboard and mouse.
 
@@ -139,18 +140,17 @@ It is connected via the gaming computer via a 4 port USB 2.0 extender over Cat6 
 
 * Logitech Wireless keyboard and mouse (third keyboard and mouse used for operating when at the arcade pedestal)
 
-#### Arcade Sticks
+##### Arcade Sticks
 
 * Mayflash Arcade Stick F300 Elite with Sanwa buttons and stick using 8-way restrictor plate
 * Datel Arcade Pro Joystick using 4-way restrictor plate
 
-### Light guns
+##### Light guns
 
 * Sinden PC light gun with recoil (Black)
 * Sinden PC light gun without recoil (Red)
 
-
-## My Retro Games Consoles
+##### My Retro Games Consoles
 
 I have a [Kaico Edition OSSC Open Source Scan Converter 1.6](https://kaicolabs.com/product/kaico-edition-open-source-scan-converter-ossc/), which upscales all my retro consoles to HDMI. I use cables from [https://retrogamingcables.co.uk/](https://retrogamingcables.co.uk/) with the OSSC, which are highly recommended as they make so much difference in terms of audio and video noise. The right cable can also unlock better sound and graphics quality when combined with the OSSC than was ever available before.
 
@@ -172,16 +172,16 @@ Currently these are the consoles I have hooked up. They are all 'PAL' unless oth
 * **Microsoft XBox Original** with 1x Duke controller and 1x third party large controller
 * **SNK Mini Neo Geo International** with 2x official controllers, and mini HDMI to HDMI cable for monitor output (audio output via HDMI)
 
-### Portable Retro Games Consoles
+##### Portable Retro Games Consoles
 
 * Sony PSP which I have cracked, and put a 64GB memory card in it. It has a complete set of SNES and Genesis games, as well as several PS One games which the PSP can emulate. I love playing the game 'Wip3out' on it.
 * Nintendo DSi XL which has a cartridge loader meaning I can play any games on it. Currently I mostly only use it for chess games, but aim to use it more.
 * Gameboy Advance SP which I use almost exclusively for the game 'Final Fantasy Tactics'. I also have 4x cables to connect GBAs to the Nintendo Gamecube for multiplayer games that used this functionality, and a headphone adaptor for the GBA SP.
 * Original Gameboy which I use with Tetris.
 
-## Audio and Video Chain Setups
+### Audio and Video Chain Setups
 
-### Video Chain
+#### Video Chain
 
 So, my video setup, depending on gaming needs, is:
 
@@ -200,11 +200,11 @@ All modern (HDMI) consoles -> MClassic -> 4K capture card * -> PASSTHROUGH -> Mo
 Gaming PC -> Flint 4KP capture card * -> PASSTHROUGH -> Monitor (up to 4K)
                                        \ -> RECORD -> OBS Studio stream/record (up to 1080p)
 ```
-### Audio Chain
+#### Audio Chain
 
 All cables are balanced wherever possible, and go via a balanced patch-bay.
 
-#### INPUT
+##### INPUT
 
 1.
 ```
@@ -241,7 +241,7 @@ Kimafun Wireless mic -> Balanced patch-bay -> Presonus Studio USB-C 1824 1x mic 
 Hi-fi Record Player -> Record player pre-amp -> Presonus Studio USB-C 1824 2x line input
 ```
 
-#### OUTPUT
+##### OUTPUT
 
 1.
 ```
@@ -284,7 +284,7 @@ Presonus Studio USB-C 1824 7-8 aux output -> Avantree Oasis Plus Certified aptX 
 ```
 
 
-#### PATCH-BAY
+##### PATCH-BAY
 
 This is the patchbay mapping.
 
@@ -316,9 +316,9 @@ Marshall MG15G Guitar Amp for playing my electric guitar
 ```
 
 
-## MIDI Routing Chains
+#### MIDI Routing Chains
 
-### OUTPUT
+##### OUTPUT
 
 1.
 ```
@@ -341,14 +341,14 @@ Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> Lexicon Reverb Uni
 Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> Roland E-4 Vocal Tweaker (for midi-synced pitch effects)
 ```
 
-### INPUT
+##### INPUT
 
 1.
 ```
 Roland A-500 Pro 49 Keyboard Controller -> Presonus Studio USB-C 1824 Midi Input
 ```
 
-## My PC and Console Games
+### My PC and Console Games
 
 I collect physical and digital games, both modern and retro. You should able to browse through the games I have, both on PC and console, here: [https://wordswords.github.io/media-library-homepage](https://wordswords.github.io/media-library-homepage)
 
@@ -358,7 +358,7 @@ As of October 2024, these are my Playnite statistics for paid games owned across
 
 I also have an install of [ExoDos](https://www.retro-exo.com/exodos.html) and [ExoWin31](https://www.retro-exo.com/win3x.html) on my media PC, which allows me to play any game ever released on DOS and Windows 3.1.
 
-## Living Room TV Setup
+### Living Room TV Setup
 
 We have a separate minimal setup in our living room which my wife uses heavily. It is minimal because she doesn't like overcomplicated tech stuff :) It consists of:
 
