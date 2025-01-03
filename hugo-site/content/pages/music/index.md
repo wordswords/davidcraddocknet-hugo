@@ -17,14 +17,19 @@ I am not currently putting as much time into music as I would like any more, bec
 
 ## Albums and EPs Released
 
-My 'Socialist Synthesis' project is an experimental/electronica/ambient/soundscape project. I have released several albums under this project:
+My 'Socialist Synthesis' project is what I release most of my music under, it's an experimental/electronica/ambient/soundscape project.
+
+On Spotify I have released a couple of singles under 'Socialist Synthesis':
+* [Socialist Synthesis on Spotify](https://open.spotify.com/artist/6Q7behQy0nTFTvAuk7J5xT)
+
+I have released an EP under a collaborative Machines Move Mountains' project with Ellis Breen. It is experimental/electronica/downtempo:
+* [Unfinished Dreams by Machines Move Mountains](https://machinesmovemountains.bandcamp.com)
+
+I have released several albums and a few other tracks on Bandcamp under 'Socialist Synthesis':
 * [Summer Sun Highway by Socialist Synthesis](https://socialistsynthesis.bandcamp.com/album/summer-sun-highway)
 * [Sound Escapes by Socialist Synthesis](https://socialistsynthesis.bandcamp.com/album/sound-escapes)
 
-I have released an EP under the 'Machines Move Mountains' project with Ellis Breen. It is experimental/electronica/downtempo:
-* [Unfinished Dreams by Machines Move Mountains](https://machinesmovemountains.bandcamp.com)
-
-I have released a few tracks under the 'Concrete Spectre' project. It is industrial/EBM/techno:
+I have released a few tracks under the 'Concrete Spectre' project, which is is industrial/EBM/techno:
 * [Concrete Spectre Bandcamp](https://concretespectre.bandcamp.com)
 
 ## DJing and Professional Music Industry Portfolio
