@@ -7,13 +7,15 @@ url: /security-research/
 
 ![image](2600.jpg)
 
-I am currently familiarising myself with tools to implement cyber security solutions.
+* I am currently familiarising myself with tools to implement cyber security solutions.
 
-This is in preparation for my research project as part of the MSc Cyber Security masters I'm taking from the University of London via distance learning.
+* This is in preparation for my research project as part of the MSc Cyber Security masters I'm taking from the University of London via distance learning.
 
-This research is strictly for informational purposes and I don't do anything criminal with it.
+* This research is strictly for informational purposes and I don't do anything criminal with it.
 
-I realise some of this information may be seen as 'over-sharing' and is a security risk in itself, but I believe that the benefits of sharing this information outweigh the risks, and that there is no 'security via obscurity'.
+* I realise some of this information may be seen as 'over-sharing' and is a security risk in itself, but I believe that the benefits of sharing this information outweigh the risks, and that there is no 'security via obscurity'.
+
+* Random party fact: I got an anonymous article published in the Autumn 2010 edition of [https://www.2600.com/](2600 magazine), about brand forgery and subverting advertising.
 
 ## Red Team
 
