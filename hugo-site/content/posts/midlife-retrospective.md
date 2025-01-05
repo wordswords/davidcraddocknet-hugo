@@ -1,7 +1,7 @@
 ---
 category:
   - retrospectives
-date: "2025-01-04T18:52:59+00:00"
+date: "2025-01-05T18:52:59+00:00"
 guid: https://davidcraddock.net/a-life-well-lived
 title: A Life Well Lived?
 url: /2025/01/05/a-life-well-lived
