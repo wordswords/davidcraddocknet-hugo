@@ -15,7 +15,7 @@ url: /security-research/
 
 * I realise some of this information may be seen as 'over-sharing' and is a security risk in itself, but I believe that the benefits of sharing this information outweigh the risks, and that there is no 'security via obscurity'.
 
-* Random party fact: I got an anonymous article published in the [Autumn 2010 edition of 2600 magazine](https://www.2600.com/), about brand forgery and subverting advertising.
+* Random party fact: I got an anonymous article published in the [Autumn 2010 edition of 2600 magazine](https://davidcraddock.net/2600.pdf), called 'Editing the Brand' - about brand forgery and subverting advertising.
 
 ## Red Team
 
