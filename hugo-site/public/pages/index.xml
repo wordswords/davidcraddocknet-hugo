@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pages on DavidCraddock.net</title>
+    <link>https://davidcraddock.net/pages/</link>
+    <description>Recent content in Pages on DavidCraddock.net</description>
+    <image>
+      <title>DavidCraddock.net</title>
+      <url>https://davidcraddock.net/mugshot.png</url>
+      <link>https://davidcraddock.net/mugshot.png</link>
+    </image>
+    <generator>Hugo -- 0.131.0</generator>
+    <language>en</language>
+    <copyright>David Paul Craddock</copyright>
+    <lastBuildDate>Thu, 26 Sep 2024 17:08:52 +0000</lastBuildDate>
+    <atom:link href="https://davidcraddock.net/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vWorkbench</title>
+      <link>https://davidcraddock.net/vworkbench/</link>
+      <pubDate>Thu, 26 Sep 2024 17:08:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/vworkbench/</guid>
+      <description>&amp;ldquo;vWorkbench&amp;rdquo; is my own personal Vim9-based development environment and writing environment that I&amp;rsquo;m trying to &amp;lsquo;spin out&amp;rsquo; into an open source project that is stable enough, reusable enough and well-documented enough to be used by others.
+https://github.com/wordswords/vWorkbench.git - this is the current version of my development environment that I use as much as possible, both in personal and work situations.
+https://github.com/wordswords/vWorkbench/blob/master/README.md - this is the documentation on my development environment, which I absolutely try and keep up to date.</description>
+    </item>
+    <item>
+      <title>Security Research</title>
+      <link>https://davidcraddock.net/security-research/</link>
+      <pubDate>Sat, 24 Aug 2024 03:42:48 +0000</pubDate>
+      <guid>https://davidcraddock.net/security-research/</guid>
+      <description>I am currently familiarising myself with tools to implement cyber security solutions.
+This is in preparation for my research project as part of the MSc Cyber Security masters I&amp;rsquo;m taking from the University of London via distance learning.
+This research is strictly for informational purposes and I don&amp;rsquo;t do anything criminal with it.
+I realise some of this information may be seen as &amp;lsquo;over-sharing&amp;rsquo; and is a security risk in itself, but I believe that the benefits of sharing this information outweigh the risks, and that there is no &amp;lsquo;security via obscurity&amp;rsquo;.</description>
+    </item>
+    <item>
+      <title>My Electric Bikes</title>
+      <link>https://davidcraddock.net/my-bike/</link>
+      <pubDate>Sun, 09 Jun 2024 22:34:52 +0000</pubDate>
+      <guid>https://davidcraddock.net/my-bike/</guid>
+      <description>Bike 1 - Electric Mountain Bike I use this for mostly getting out of the city and into some nature. It is a long-range bike.
+Himiway Zebra Electric Mountain Bike 2023 Version (road legal, top electric-assisted speed 15mph, max. pull 400lbs) 2x official batteries (40-80 miles on a single charge each) 2x battery chargers Two spare tires Spare inner tube Electric fat tire pump Metal tire levers Adjustable wrench Chain tool for removing chain links Chain cleaner tool &amp;ldquo;MuckOff&amp;rdquo; bike cleaning kit Small first aid kit Compass Himiway fold-out cycle toolkit Energy bars + nuts 2x cycle frame bags 1x Rockbros waterproof dual pannier bag Rockbros Handlebar bag Rockbros Mobile phone holder bag Hornit Electric bike horn Bike bell 4x vaccum thermos 750ml flasks for water All-weather MTB grips for handlebar RAM grip quick release handlebar phone holder VEVOR Cycle Bike Cargo Trailer with hitch Bike 2 - City Electric Cargo Bike My wife and I use this as a bike for getting shopping and a general-purpose car replacement, as well as volunteering.</description>
+    </item>
+    <item>
+      <title>My Mobile Laptop Setup</title>
+      <link>https://davidcraddock.net/my-mobile-laptop-setup/</link>
+      <pubDate>Sun, 04 Feb 2024 02:48:13 +0000</pubDate>
+      <guid>https://davidcraddock.net/my-mobile-laptop-setup/</guid>
+      <description>I use this setup, along with my bike to work from wherever I want.
+It does kind of turn heads, and I&amp;rsquo;m aware it may look a little &amp;lsquo;over the top&amp;rsquo; - but it&amp;rsquo;s a very useful setup for me, keeps me healthy, and fits all my requirements.
+Hercules DG400BB Laptop Stand w/ Bag - this portable laptop stand is very sturdy and is designed for mobile DJ use. I find it is excellent in all situations, not just DJ use.</description>
+    </item>
+    <item>
+      <title>My Homelab</title>
+      <link>https://davidcraddock.net/my-home-network/</link>
+      <pubDate>Sun, 17 Dec 2023 02:13:39 +0000</pubDate>
+      <guid>https://davidcraddock.net/my-home-network/</guid>
+      <description>I have a fibre to the house 2Gb/sec connection provided by BRSK , who I really recommend. This means that maximum download speeds are 250 megabytes per second, although often this is throttled at the source level. My home network routes at around 2-4gbit/sec between 10gbit/sec DAC fibre connected hosts, and around 2gbit/sec via CAT8 for Thunderbolt 2.5Ggbit/sec laptop network interfaces. We two Ubiquiti wireless APs in a mesh configuration, with seperate SSIDs for 2Ghz, 5Ghz, guest and IOT networks.</description>
+    </item>
+    <item>
+      <title>My Media and Gaming Setup</title>
+      <link>https://davidcraddock.net/my-gaming-setup/</link>
+      <pubDate>Mon, 26 Jun 2023 19:52:05 +0000</pubDate>
+      <guid>https://davidcraddock.net/my-gaming-setup/</guid>
+      <description>Gaming Blog Please visit my separate gaming blog for reviews of games I&amp;rsquo;ve played. It&amp;rsquo;s at https://davidcraddock.games My Media/Gaming PC &amp;lsquo;studio.local&amp;rsquo; 12th Gen i7 CPU 32GB DDR4 RAM 1x NVme M.2 SSD 1TB (system) 1x 1TB SSD 1x 500GB SSD 1x 2.5 TB HDD (storage) 3x Logitech C920 Webcams (for streaming) 1x Logitech C270 Webcam (for video calls) 1x Nvidia 4070 GPU 10Gb/sec fibre optic network card 2x Libredrive flashed LG-WH16NS40 multi-disk optical drivers for ripping Blu-rays, CDs, DVDs and any optical disk with MakeMKV and games for my Plex server and emulators.</description>
+    </item>
+    <item>
+      <title>My Work Computer</title>
+      <link>https://davidcraddock.net/my-work-computer/</link>
+      <pubDate>Fri, 16 Dec 2022 23:06:40 +0000</pubDate>
+      <guid>https://davidcraddock.net/my-work-computer/</guid>
+      <description>This is my work from home setup. I work from home every work day. I use the following equipment:
+Linux Workstation &amp;lsquo;study.local&amp;rsquo; Ivy Bridge 8 Processor Xeon (16 cores total) 256GB SSD system drive running Kali Linux rolling 1TB moving platter drive 32GB DDR3 RAM 10Gbit/sec fibreoptic network card IBM Lenovo ThinkStation C30 Case and PSU Benq 32&amp;quot; 2560x1440 graphic designers monitor on Amazon Basics extendable desk mount arm Equipment shared between the laptops of the companies I work for, and my own workstation Logitech 5.</description>
+    </item>
+    <item>
+      <title>Am I Busy?</title>
+      <link>https://davidcraddock.net/am-i-busy/</link>
+      <pubDate>Mon, 12 Oct 2020 22:42:40 +0000</pubDate>
+      <guid>https://davidcraddock.net/am-i-busy/</guid>
+      <description>This calendar is updated constantly with my availability.
+Please email me at: 3rp2mzocr@mozmail.com to book a time when I&amp;rsquo;m free, after looking at the calendar below.</description>
+    </item>
+    <item>
+      <title>Tutoring</title>
+      <link>https://davidcraddock.net/tutoring/</link>
+      <pubDate>Mon, 12 Oct 2020 22:42:40 +0000</pubDate>
+      <guid>https://davidcraddock.net/tutoring/</guid>
+      <description>Please see my David Craddock - Tutor website for more details of tutoring options I can offer.</description>
+    </item>
+    <item>
+      <title>My Music</title>
+      <link>https://davidcraddock.net/music/</link>
+      <pubDate>Sun, 21 Jun 2015 16:46:15 +0000</pubDate>
+      <guid>https://davidcraddock.net/music/</guid>
+      <description>Audio and music has always been a big part of my life, which I used to actively pursue in the evenings while working in software/IT.
+I have DJ&amp;rsquo;d semi-professionally, with stints in club residencies, mobile DJing and Twitch DJing, for over a decade. I also produced and released several electronica albums. I have done paid freelance work on sound design and studio building. I studied the core parts of a Bachelors degree in Sound Engineering and Music Production, as a distance learning course while I was working full-time, at the excellent Point Blank Music School in London.</description>
+    </item>
+    <item>
+      <title>My Writing</title>
+      <link>https://davidcraddock.net/my-writing/</link>
+      <pubDate>Sun, 21 Jun 2015 16:46:15 +0000</pubDate>
+      <guid>https://davidcraddock.net/my-writing/</guid>
+      <description>I&amp;rsquo;ve always liked writing and have been doing it for a long time. I write a lot for work, and also have written a lot of creative writing.
+Work Essays and Articles I&amp;rsquo;m working on a way to format and structure these properly within Hugo. For now though, the following will have to do.Alternatively, you can always view them in markdown in the Github repository at the link here:</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://davidcraddock.net/about-2/</link>
+      <pubDate>Mon, 02 Apr 2007 18:16:45 +0000</pubDate>
+      <guid>https://davidcraddock.net/about-2/</guid>
+      <description>Hello! I&amp;rsquo;m David Craddock, I live in Manchester, and have worked in IT and software for the past 20 years, currently as a Principal Software Engineer.</description>
+    </item>
+  </channel>
+</rss>
