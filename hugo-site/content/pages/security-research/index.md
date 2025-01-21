@@ -61,6 +61,7 @@ I am moving to self-host as much of my digital content as possible, to force mys
 * I use [Mikrotik's 'The Dude'](https://mikrotik.com/thedude) with many custom checks, to monitor my network and alert me of any changes that I need to address.
 * I use [ZeroTier](https://www.zerotier.com/) to implement a secure and simple software-defined VPN without exposing any open ports to the world.
 * I have my own [Google Workspace](https://workspace.google.com) account and use Google Workspace's advanced security features to secure my email and authentication.
+* I use [NextDNS](https://nextdns.io/) to provide secure DNS resolution for all my devices.
 
 ### Personal Security
 
