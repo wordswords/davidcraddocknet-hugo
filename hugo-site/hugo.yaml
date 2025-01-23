@@ -76,7 +76,7 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "DavidCraddock.net"
   author: David Craddock
-  defaultTheme: dark
+  defaultTheme: auto
   # disableThemeToggle: true
   ShowShareButtons: true
   ShowReadingTime: true
@@ -123,9 +123,6 @@ params:
     - name: github
       title: My Github
       url: "https://github.com/wordswords"
-    - name: linkedin
-      title: My LinkedIn
-      url: "https://www.linkedin.com/in/david-paul-craddock/"
     - name: instagram
       title: My Instagram
       url: "https://instagram.com/djdavidcraddock"
