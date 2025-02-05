@@ -51,7 +51,7 @@ I am moving to self-host as much of my digital content as possible, to force mys
 
 * As a web server I'm currently using 'SWAG' - [Secure Web Application Gateway](https://hub.docker.com/r/linuxserver/swag), which includes fail2ban, ngnix, certbot and letsencrypt in a secure configuration. In combination with building all my externally facing websites using a static site generator such as [Hugo](https://gohugo.io/), I keep the attack surface to a minimum.
 * I use [Firefox Relay](https://relay.firefox.com/accounts/profile/) to provide an anonymous email alias for countering spam.
-* I use [CloudFlare](https://www.cloudflare.com) heavily for DDOS protection and a lot of other security features for my self-hosted domains.
+* I use [CloudFlare](https://www.cloudflare.com) heavily for DDOS protection and a lot of other security features for my self-hosted domains, including DNSSEC for all domains.
 * I use [Thor AV](https://www.nextron-systems.com/thor/) on the Linux sever to scan weekly the entire server.
 * I use [Geoblocker](https://github.com/friendly-bits/geoblocker-bash) to block all Russian and Chinese IP addresses from accessing my server, this seriously cuts down on botnets.
 * I use a number of automated rootkit detectors and scanners to keep an eye on everything.

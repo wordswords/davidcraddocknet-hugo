@@ -99,6 +99,6 @@ iperf Done.
 - Nvidea 970 GPU
 - 8GB DDR3 RAM
 - 120GB SSD System Drive running Kali Linux rolling
-- 20TB of storage across moving platter drives
+- 28TB of storage across moving platter drives
 - Scan.co.uk AV3 Low Noise Soundproofed Case with lots of room for expansion
 - 450W Low noise PSU
