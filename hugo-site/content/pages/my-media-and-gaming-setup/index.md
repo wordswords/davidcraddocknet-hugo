@@ -120,6 +120,10 @@ These all work with the gaming PC and laptop and connect via USB:
 * SNK Neo Geo Mini Controller with USB adaptor x2 - these are extremely well-built controllers!
 * XBox One Official 'Cyberpunk 2077' Controller
 
+#### Steering Wheel and Pedals
+
+* HORI Racing Wheel Overdrive for XBox One and PC (with pedals)
+
 #### Retro Digital Joystick
 
 * Speedlink SL-650212-BKRD Competition PRO Joystick - Anniversary Edition
