@@ -8,17 +8,21 @@ On hq.local, I have two [Calibre](https://calibre-ebook.com/) libraries, one for
 
 ![Comics library on Calibre Web Automated](calibre-library-comics.png)
 
-## Hosting
-
-* They are managed by [Server.io's Calibre docker containerised services](https://docs.linuxserver.io/images/docker-calibre/). They are both running Calibre content server to serve directly to my e-readers. [I also use Calibre Web Automated docker containerised services](https://github.com/crocodilestick/Calibre-Web-Automated) for both libraries.
-* So in total, there are three services hosted, and three ways of accessing each Calibre library, per library - 1) the Calibre application running via a web-based remote desktop client, which I use for serious administration, but only sparingly as it takes up a lot of server resources when connected 2) The Calibre content server accessible on my e-readers and 3) The Calibre Web interface which I use to browse and read the books on computers.
-
 ## Size
 
 There are approximately 80,000 books across both libraries.
 
 * [Ebooks Inventory plus counts](https://home.davidcraddock.net/ebooks-inventory.html)
 * [Comics Inventory plus counts](https://home.davidcraddock.net/comics-inventory.html)
+
+## But.. WHY?!
+
+I use both libraries both for recreational reading, (mostly comics and some written fiction) and research for work, as a tech worker, and as an aspiring 'renaissance man'.
+
+## Hosting
+
+* They are managed by [Server.io's Calibre docker containerised services](https://docs.linuxserver.io/images/docker-calibre/). They are both running Calibre content server to serve directly to my e-readers. [I also use Calibre Web Automated docker containerised services](https://github.com/crocodilestick/Calibre-Web-Automated) for both libraries.
+* So in total, there are three services hosted, and three ways of accessing each Calibre library, per library - 1) the Calibre application running via a web-based remote desktop client, which I use for serious administration, but only sparingly as it takes up a lot of server resources when connected 2) The Calibre content server accessible on my e-readers and 3) The Calibre Web interface which I use to browse and read the books on computers.
 
 ## Sources
 
@@ -30,7 +34,11 @@ There are approximately 80,000 books across both libraries.
 
 Both libraries are accessible via my [ZertoTier VPN](https://www.zerotier.com/). I use the [Moon Reader](https://www.moondownload.com) application on Android devices to access the Calibre content server port, and I use the Calibre content server web interface on my [Kobo H20 E-Reader](https://www.kobo.com/).
 
-I use the books in both for recreational reading, (mostly comics and some written fiction) and research for work.
+## Ingest
+
+* I have two Samba mounts which I use across my network: 'incomingebooks' and 'incomingcomics'. Mostly these are added to by my Windows 11 PCs, which I use most of the time.
+* Any files put in those shares will be automatically picked up my Calibre Web Automated's regular ingest run, and converted to epubs. I then clear down the directory regularly.
+* I used to keep PDFs seperate and manually import them via the Calibre remote desktop via web, but I don't see a disadvantage in converting the PDFs into epubs in the comics/PDFs library.
 
 ## Reading
 
