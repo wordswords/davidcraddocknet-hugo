@@ -32,7 +32,7 @@ I use both libraries both for recreational reading, (mostly comics and some writ
 
 ## Access
 
-Both libraries are accessible via my [ZertoTier VPN](https://www.zerotier.com/). I use the [Moon Reader](https://www.moondownload.com) application on Android devices to access the Calibre content server port, and I use the Calibre content server web interface on my [Kobo H20 E-Reader](https://www.kobo.com/).
+Both libraries are accessible via my [ZeroTier VPN](https://www.zerotier.com/). I use the [Moon Reader](https://www.moondownload.com) application on Android devices to access the Calibre content server port, and I use the Calibre content server web interface on my [Kobo H20 E-Reader](https://www.kobo.com/).
 
 ## Ingest
 
