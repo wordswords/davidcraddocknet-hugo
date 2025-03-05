@@ -24,7 +24,7 @@ There are approximately 80,000 books across both libraries.
 
 * I have built them up primarily from [HumbleBundle.com](https://HumbleBundle.com) book purchases, where the majority of the money goes to charity, and I still get a good set of e-books.
 * I also 'inherited' a large collection of already DRM-stripped fiction books from a friend.
-* Occasionally I use resources such as Anna's Archive to download DRM-stripped books.
+* Occasionally I use resources such as [Anna's Archive](https://annas-archive.org/) to download DRM-stripped books.
 
 ## Access
 
