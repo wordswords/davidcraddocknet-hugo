@@ -36,7 +36,7 @@ Both libraries are accessible via my [ZeroTier VPN](https://www.zerotier.com/). 
 
 ## Ingest
 
-* I have two Samba mounts which I use across my network: 'incomingebooks' and 'incomingcomics'. Mostly these are added to by my Windows 11 PCs, which I use most of the time.
+* I have two [Samba mounts](https://www.samba.org/) which I use across my network: 'incomingebooks' and 'incomingcomics'. I have them mapped to network drive letters on my Windows PCs, which I use most of the time.
 * Any files put in those shares will be automatically picked up my Calibre Web Automated's regular ingest run, and converted to epubs. I then clear down the directory regularly.
 * I used to keep PDFs seperate and manually import them via the Calibre remote desktop via web, but I don't see a disadvantage in converting the PDFs into epubs in the comics/PDFs library.
 
