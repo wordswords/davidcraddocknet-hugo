@@ -4,8 +4,6 @@ date = 2025-03-05T01:12:39Z
 draft = true
 +++
 
-# My Calibre Libraries
-
 On hq.local, I have two [Calibre](https://calibre-ebook.com/) libraries, one for EPUBs, and one for PDFs/comics.
 
 ![Comics library on Calibre Web Automated](calibre-library-comics.png)
