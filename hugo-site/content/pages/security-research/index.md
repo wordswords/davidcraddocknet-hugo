@@ -43,6 +43,10 @@ I have a [Proxmark3](https://en.wikipedia.org/wiki/Proxmark3) setup which I'm us
 
 I am planning on installing [Kali Nethunter](https://www.kali.org/docs/nethunter/) on my old Sony Xperia 1 III. This will allow me to do more security research on the go.
 
+### [Ludus.cloud](https://Ludus.cloud) Virtual Range
+
+I run [Ludus](https://Ludus.cloud) on top of Debian 12 and Proxmox on study.local, which is my Linux workstation. I am using it to build up an virutalised offensive security lab, see this post: [https://xphantom.nl/posts/Offensive-Security-Lab/[(https://xphantom.nl/posts/Offensive-Security-Lab/)
+
 ## Blue Team
 
 ### Self-hosting Security
