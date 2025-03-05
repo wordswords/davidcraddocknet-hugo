@@ -17,7 +17,7 @@ There are approximately 80,000 books across both libraries.
 
 ## But.. WHY?!
 
-I use both libraries both for recreational reading, (mostly comics and some written fiction) and research for work, as a tech worker, and as an aspiring 'renaissance man'.
+I use both libraries both for recreational reading, (mostly comics and some written fiction) and research for work, as a tech worker, and as an aspiring '[renaissance man](https://www.britannica.com/topic/Renaissance-man)'.
 
 ## Hosting
 
