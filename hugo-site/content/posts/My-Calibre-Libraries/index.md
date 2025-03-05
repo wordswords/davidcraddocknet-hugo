@@ -11,7 +11,7 @@ On hq.local, I have two [Calibre](https://calibre-ebook.com/) libraries, one for
 ## Hosting
 
 * They are managed by [Server.io's Calibre docker containerised services](https://docs.linuxserver.io/images/docker-calibre/). They are both running Calibre content server to serve directly to my e-readers. [I also use Calibre Web Automated docker containerised services](https://github.com/crocodilestick/Calibre-Web-Automated) for both libraries.
-* So in total, there are three services hosted, and three ways of accessing each Calibre library, per library - 1) the calibre application running via remote desktop, which I use for serious administration 2) The Calibre content server accessible on my e-readers and 3) The Calibre Web interface which I use to browse and read the books on computers.
+* So in total, there are three services hosted, and three ways of accessing each Calibre library, per library - 1) the Calibre application running via a web-based remote desktop client, which I use for serious administration, but only sparingly as it takes up a lot of server resources when connected 2) The Calibre content server accessible on my e-readers and 3) The Calibre Web interface which I use to browse and read the books on computers.
 
 ## Size
 
