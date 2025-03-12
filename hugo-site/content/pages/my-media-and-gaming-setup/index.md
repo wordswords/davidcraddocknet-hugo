@@ -164,7 +164,7 @@ Currently these are the consoles I have hooked up. They are all 'PAL' unless oth
 
 * **Super Nintendo** with 2x official controllers and NTSC and J-NTSC cartridge converter
 * **Sega Megadrive II (region unlocked)** with 2x official 3 button controllers, 2x official 6 button controllers and Master System cartridge converter
-* **Sony PS2** with 2x official PS2 controllers, and 1 x official PS1 controller, and Red Octane Guitar Hero Gibson SG Wired Guitar PS2 Controller.
+* **Sony PS2** with 2x official PS2 controllers, and 1 x official PS1 controller, and 2x Guitar Hero PS2 Controllers.
 * **Sony PS3** with 1x official PS3 controller
 * **Sony PS4** with 1x official PS4 controller
 * **Nintendo Gamecube** with 2x official Gamecube controllers
