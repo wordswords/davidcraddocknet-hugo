@@ -11,9 +11,9 @@ url: /my-gaming-setup/
 ![image](gamingsetup.jpg)
 ![image](mediasetup.png)
 
-## Gaming Blog
+The setup consists of a media/gaming PC, a gaming laptop, a gaming PC, a music production desk, a retro games console setup, an arcade pedestal setup in front of a TV, and a lot of controllers and games.
 
-Please visit my separate gaming blog for reviews of games I've played. It's at [https://davidcraddock.games](https://davidcraddock.games)
+For a post on how I built my budget arcade emulation pedestal setup, with pictures, see: [this post](https://davidcraddock.games/arcade-setup/)
 
 ### My Media/Gaming PC 'studio.local'
 
@@ -91,7 +91,7 @@ I have a 4K HDR KVM switch and a USB 3.0 KVM switch so I can quickly switch betw
 * Blackout curtains
 * 27" 1440p TN LCD monitor with Gsync and 144hz refresh (second monitor) (used in portrait mode)
 * 19" 1080p IPS LCD monitor (third monitor)
-* 42" 1080p IPS LCD TV (fourth monitor)
+* 40" 1080p IPS LCD TV (fourth monitor)
 
 ### Gaming PC Software
 
