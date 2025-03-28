@@ -6,7 +6,7 @@ draft = true
 
 ![Da Vinci Code](da-vinci-code.jpg)
 
-* Fun party fact: University of London, Royal Holloway was mentioned in Dan Brown's book 'The Da Vinci Code' as the university the Cryptographer heroine studied cryptography at Royal Holloway, in which would have been the [ISG department](https://www.royalholloway.ac.uk/research-and-education/departments-and-schools/information-security/), where I am to be studying!)
+* Fun party fact: University of London, Royal Holloway was mentioned in Dan Brown's book 'The Da Vinci Code' as the university the Cryptographer heroine studied cryptography at Royal Holloway, in which would have been the [ISG department](https://www.royalholloway.ac.uk/research-and-education/departments-and-schools/information-security/), where I am to be studying!) It's a shame the rest of the book is so terrible.
 
 * Finally, after many many years of consideration, deliberation, hesitation, and procrastination, I have started a Masters degree at Royal Holloway, University of London. It is a distance-learning degree, and it is delivered in a part-time format, so it means I can fit it around (some) work.
 
