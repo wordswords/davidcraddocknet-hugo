@@ -10,7 +10,7 @@ draft = true
 
 * Finally, after many many years of consideration, deliberation, hesitation, and procrastination, I have started a Masters degree at Royal Holloway, University of London. It is a distance-learning degree, and it is delivered in a part-time format, so it means I can fit it around (some) work.
 
-![Royal Holloway Pride Crest](royal-holloway-crest.png)
+![Royal Holloway Pride Crest](royalhollowaycrest.png)
 
 * It will take a minimum of 2.5 years, and a maximum of 5 years. Royal Holloway is a world leader in Cyber Security education, and this is a distance learning version of the very first Cyber Security masters degree in the UK, started in 1992!
 
