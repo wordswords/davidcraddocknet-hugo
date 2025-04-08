@@ -4,9 +4,9 @@ date = 2025-04-08T13:45:27+01:00
 draft = true
 +++
 
-* One trick I used to great affect with my previous [Amazon Alexa])(https://www.amazon.co.uk/b?ie=UTF8&node=14100223031) setup, was a central [Google personal calendar](https://calendar.google.com/calendar/u/0/r?pli=1) that was linked to wake up routines - it would, reliably, read out all the events on my calendar on that day. I found that hugely helpful.
+* One trick I used to great affect with my previous [Amazon Alexa](https://www.amazon.co.uk/b?ie=UTF8&node=14100223031) setup, was a central [Google personal calendar](https://calendar.google.com/calendar/u/0/r?pli=1) that was linked to wake up routines - it would, reliably, read out all the events on my calendar on that day. I found that hugely helpful.
 
-* Since moving to [Morgen, the best calendar app I've ever used])(https://www.morgen.so/), and [Google Home assistant](https://store.google.com/gb/product/nest_hub_2nd_gen?hl=en-GB&utm_medium=google_oo&utm_campaign=GS107430&pli=1) instead of Alexa, I've lost that calendar sync function.
+* Since moving to [Morgen, the best calendar app I've ever used](https://www.morgen.so/), and [Google Home assistant](https://store.google.com/gb/product/nest_hub_2nd_gen?hl=en-GB&utm_medium=google_oo&utm_campaign=GS107430&pli=1) instead of Alexa, I've lost that calendar sync function.
 
 * Thankfully, the paid edition of Morgen has a new feature that allows you to create 'workflows' where you can automatically schedule tasks to keep any number of Google Calendars in sync.
 
