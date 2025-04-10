@@ -4,7 +4,7 @@ date = 2025-04-10T13:24:54+01:00
 draft = true
 +++
 
-![Screenshot of my Plex Music Collection](plex-music-collection.png)
+![Screenshot of my Plex Music Collection](musiccollection.png)
 
 ## Introduction
 
