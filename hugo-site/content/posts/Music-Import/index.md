@@ -28,7 +28,7 @@ Either:
 
 * FLAC files get checked with the [FLAC integrity checker](https://github.com/bluemoehre/flac-integrity-script) and any ones that fail to pass the test are deleted. The integrity checker runs on every FLAC file in my collection once every 30 days.
 * MP3 files get checked with [mp3check](https://code.google.com/archive/p/mp3check/) and any data outside of the official MP3 headers are deleted. This removes any spurious information and also saves disk space.
-* Any files and directories not consisting of MP3 or FLAC files, such as covert art image, text file logs, etc, get deleted to save space.
+* Any files and directories not consisting of MP3 or FLAC files, such as cover art image, text file logs, etc, get deleted to save space.
 
 ### Preparation
 
