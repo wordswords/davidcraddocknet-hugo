@@ -172,6 +172,7 @@ Currently these are the consoles I have hooked up. They are all 'PAL' unless oth
 * **Sega Dreamcast** with 3x official DC controllers, 2x VMUs and 1x third-party memory pack
 * **Sony PSP2000** (TV out)
 * **Nintendo Wii (Gamecube compatible version)** with 2x Wiimote Motion controller and official balance board
+* **Nintendo Wii U** with 1x Wii U Gamepad with custom Auora firmware installed
 * **Nintendo 64** with 2x official N64 controller, Kaico PAL N64 -> HDMI converter (audio output via HDMI), expansion pak and memory pak
 * **Microsoft XBox Original** with 1x Duke controller and 1x third party large controller
 * **SNK Mini Neo Geo International** with 2x official controllers, and mini HDMI to HDMI cable for monitor output (audio output via HDMI)
@@ -182,6 +183,7 @@ Currently these are the consoles I have hooked up. They are all 'PAL' unless oth
 * Nintendo DSi XL which has a cartridge loader meaning I can play any games on it. Currently I mostly only use it for chess games, but aim to use it more.
 * Gameboy Advance SP which I use almost exclusively for the game 'Final Fantasy Tactics'. I also have 4x cables to connect GBAs to the Nintendo Gamecube for multiplayer games that used this functionality, and a headphone adaptor for the GBA SP.
 * Original Gameboy which I use with Tetris.
+* Ambernic RG35XXSP handheld emulation device with MuOS firmware running RetroArch with a full set of Neo Geo, SNES, Genesis, Game Gear, Gameboy, Gameboy Advance ROMs.
 
 ### Audio and Video Chain Setups
 
