@@ -179,6 +179,7 @@ Currently these are the consoles I have hooked up. They are all 'PAL' unless oth
 
 ##### Portable Retro Games Consoles
 
+* **Sony PS Vita OLED 1st Gen** with cracked firmware and a 64GB memory card, allowing it to play any game from the store.
 * **Sony PSP** which I have cracked, and put a 64GB memory card in it. It has a complete set of SNES and Genesis games, as well as several PS One games which the PSP can emulate. I love playing the game 'Wip3out' on it.
 * **Nintendo DSi XL** which has a cartridge loader meaning I can play any games on it. Currently I mostly only use it for chess games, but aim to use it more.
 * **Gameboy Advance SP** which I use almost exclusively for the game 'Final Fantasy Tactics'. I also have 4x cables to connect GBAs to the Nintendo Gamecube for multiplayer games that used this functionality, and a headphone adaptor for the GBA SP.
