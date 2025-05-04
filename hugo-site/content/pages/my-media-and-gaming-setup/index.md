@@ -172,7 +172,8 @@ Currently these are the consoles I have hooked up. They are all 'PAL' unless oth
 * **Sega Dreamcast** with 3x official DC controllers, 2x VMUs and 1x third-party memory pack
 * **Sony PSP2000** (TV out)
 * **Nintendo Wii (Gamecube compatible version)** with 2x Wiimote Motion controller and official balance board
-* **Nintendo Wii U** with 1x Wii U Gamepad with custom Auora firmware installed
+* **Nintendo Wii U** with CFW Aroma installed and 1x Wii U Gamepad and 1x Wii U Pro Controller
+* **Nintendo Switch Unpatched V1** with CFW installed, 2x Joycons, Dock and 1x Switch Pro Controller
 * **Nintendo 64** with 2x official N64 controller, Kaico PAL N64 -> HDMI converter (audio output via HDMI), expansion pak and memory pak
 * **Microsoft XBox Original** with 1x Duke controller and 1x third party large controller
 * **SNK Mini Neo Geo International** with 2x official controllers, and mini HDMI to HDMI cable for monitor output (audio output via HDMI)
