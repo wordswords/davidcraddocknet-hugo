@@ -166,7 +166,7 @@ Currently these are the consoles I have hooked up. They are all 'PAL' unless oth
 * **Sega Megadrive II (region unlocked)** with 2x official 3 button controllers, 2x official 6 button controllers and Master System cartridge converter
 * **Sony PS2** with 2x official PS2 controllers, and 1 x official PS1 controller, and 2x Guitar Hero PS2 Controllers.
 * **Sony PS3** with 1x official PS3 controller
-* **Sony PS4** with 1x official PS4 controller
+* **Sony PS4** with 2x official PS4 controllers
 * **Nintendo Gamecube** with 2x official Gamecube controllers
 * **XBox 360** with 2x official wired 360 controllers and 360 Kinect
 * **Sega Dreamcast** with 3x official DC controllers, 2x VMUs and 1x third-party memory pack
@@ -175,7 +175,7 @@ Currently these are the consoles I have hooked up. They are all 'PAL' unless oth
 * **Nintendo Wii U** with CFW Aroma installed and 1x Wii U Gamepad and 1x Wii U Pro Controller
 * **Nintendo Switch Unpatched V1** with CFW installed, 2x Joycons, Dock and 1x Switch Pro Controller
 * **Nintendo 64** with 2x official N64 controller, Kaico PAL N64 -> HDMI converter (audio output via HDMI), expansion pak and memory pak
-* **Microsoft XBox Original** with 1x Duke controller and 1x third party large controller
+* **Microsoft XBox Original** with 2x Duke controllers and 1x third party large controller
 * **SNK Mini Neo Geo International** with 2x official controllers, and mini HDMI to HDMI cable for monitor output (audio output via HDMI)
 
 ##### Portable Retro Games Consoles
