@@ -89,9 +89,9 @@ I have a 4K HDR KVM switch and a USB 3.0 KVM switch so I can quickly switch betw
 * Meta Quest 2 VR headset + controllers
 * ClonerAlliance Flint 4KP Plus video capture card with USB-c 3.0L
 * Blackout curtains
-* 27" 1440p TN LCD monitor with Gsync and 144hz refresh (second monitor) (used in portrait mode)
+* 27" 1440p TN LCD monitor with Gsync and 144hz refresh (second monitor) (used in portrait mode for schmups)
 * 19" 1080p IPS LCD monitor (third monitor)
-* 40" 1080p IPS LCD TV (fourth monitor)
+* 40" 1080p IPS LCD Sony wall-mounted TV (fourth monitor)
 
 ### Gaming PC Software
 
@@ -149,12 +149,14 @@ It is connected via the gaming computer via a 4 port USB 2.0 extender over Cat6 
 * Mayflash Arcade Stick F300 Elite with Sanwa buttons and stick using 8-way restrictor plate
 * Datel Arcade Pro Joystick using 4-way restrictor plate
 
-##### Light guns
+##### Light guns and Pedals
 
 * Sinden PC light gun with recoil (Black)
 * Sinden PC light gun without recoil (Red)
+* 1x iKKEGOL USB Foot Pedal (for duck and cover mechanics with light gun games)
+* 1x cheap unbranded USB Foot pedal (for duck and cover mechanics with light gun games)
 
-##### My Retro Games Consoles
+##### Retro Games Consoles
 
 I have a [Kaico Edition OSSC Open Source Scan Converter 1.6](https://kaicolabs.com/product/kaico-edition-open-source-scan-converter-ossc/), which upscales all my retro consoles to HDMI. I use cables from [https://retrogamingcables.co.uk/](https://retrogamingcables.co.uk/) with the OSSC, which are highly recommended as they make so much difference in terms of audio and video noise. The right cable can also unlock better sound and graphics quality when combined with the OSSC than was ever available before.
 
