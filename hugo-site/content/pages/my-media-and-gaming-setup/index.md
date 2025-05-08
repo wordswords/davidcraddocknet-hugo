@@ -177,7 +177,7 @@ Currently these are the consoles I have hooked up. They are all 'PAL' unless oth
 * **Nintendo Wii U** with CFW Aroma installed and 1x Wii U Gamepad and 1x Wii U Pro Controller
 * **Nintendo Switch Unpatched V1** with CFW installed, 2x Joycons, Dock and 1x Switch Pro Controller
 * **Nintendo 64** with 2x official N64 controller, Kaico PAL N64 -> HDMI converter (audio output via HDMI), expansion pak and memory pak
-* **Microsoft XBox Original** with 2x Duke controllers and 1x third party large controller
+* **Microsoft XBox Original** with 2x Duke controllers
 * **SNK Mini Neo Geo International** with 2x official controllers, and mini HDMI to HDMI cable for monitor output (audio output via HDMI)
 
 ##### Portable Retro Games Consoles
