@@ -233,20 +233,15 @@ Rode Procast mic w/ pop shield, mic cage and boom -> Roland E-4 Vocal Tweaker ->
 
 4.
 ```
-Eurorack Synth (and any other audio) -> Eurorack Mixer -> Presonus Studio USB-C 1824 4x line inputs
+t.bone MB 88U mic with pop shield and desktop mic stand -> Balanced patch-bay -> Presonus Studio USB-C 1824 1x mic input
 ```
 
 5.
 ```
-t.bone MB 88U mic with pop shield and desktop mic stand -> Balanced patch-bay -> Presonus Studio USB-C 1824 1x mic input
-```
-
-6.
-```
 Kimafun Wireless mic -> Balanced patch-bay -> Presonus Studio USB-C 1824 1x mic input
 ```
 
-7.
+6.
 ```
 Hi-fi Record Player -> Record player pre-amp -> Presonus Studio USB-C 1824 2x line input
 ```
@@ -275,20 +270,15 @@ Presonus Studio USB-C 1824 3-4 headphone output -> Spare headphone output -> Spa
 
 5.
 ```
-Presonus Studio USB-C 1824 2x aux output -> Eurorack Mixer -> Eurorack Synth
+Presonus Studio USB-C 1824 2x aux output -> Eurorack Mixer -> 2 BNC cables -> 2 channel inputs of YeaPook ADS1014D Digital Oscilloscope (for plotting waveforms)
 ```
 
 6.
 ```
-Presonus Studio USB-C 1824 2x aux output -> Eurorack Mixer -> 2 BNC cables -> 2 channel inputs of YeaPook ADS1014D Digital Oscilloscope (for plotting waveforms)
-```
-
-7.
-```
 Presonus Studio USB-C 1824 2x aux output -> Eurorack Mixer -> 2 channels for small VU visual volume Level Monitor
 ```
 
-8.
+7.
 ```
 Presonus Studio USB-C 1824 7-8 aux output -> Avantree Oasis Plus Certified aptX HD Bluetooth 5.0 Transmitter and Reciever -> Sony WH-1000XM3 Wireless Noise Cancelling Headphones
 ```
@@ -336,17 +326,13 @@ Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> CV.OCD Polyphonic 
 ```
 2.
 ```
-Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> Behringer Model D Synth
+Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> Emu Orbit 9090 Synth
 ```
 3.
 ```
-Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> Emu Orbit 9090 Synth
-```
-4.
-```
 Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> Lexicon Reverb Unit (for midi clocked effects)
 ```
-5.
+4.
 ```
 Presonus Studio USB-C 1824 Midi Output -> Kenton MIDI Thru -> Roland E-4 Vocal Tweaker (for midi-synced pitch effects)
 ```
@@ -361,10 +347,6 @@ Roland A-500 Pro 49 Keyboard Controller -> Presonus Studio USB-C 1824 Midi Input
 ### My PC and Console Games
 
 I collect physical and digital games, both modern and retro. You should able to browse through the games I have, both on PC and console, here: [https://wordswords.github.io/media-library-homepage](https://wordswords.github.io/media-library-homepage)
-
-As of Jan 2025, these are my Playnite statistics for paid games owned across all PC launchers:
-
-![image](gamelibrarystats.png)
 
 I also have an install of [ExoDos](https://www.retro-exo.com/exodos.html) and [ExoWin31](https://www.retro-exo.com/win3x.html) on my media PC, which allows me to play any game ever released on DOS and Windows 3.1.
 
