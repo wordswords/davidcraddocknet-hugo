@@ -8,7 +8,7 @@ I first started programming in 1998. I have over 20 years commercial experience 
 
 A lot of time in the past 4 years has been taken up with treatment for health problems, from which I am now fully recovered from. During this time I worked extensively on my own personal projects and upskilled myself in my spare time simply because I found it fun.
 
-I am currently studying a masters degree full-time in Cyber Security at a top tier Uni. I hope to work in Cyber Security after this.
+I am currently studying a masters degree full-time in Cyber Security at a [top tier Uni](https://www.royalholloway.ac.uk/research-and-education/departments-and-schools/information-security/). I hope to work in Cyber Security after this.
 
 I don't actually know how working in Cyber Security in a technical role will be like, whether I'll actually get a job at all, or whether I will be passed over in preference of new grads so that the hiring manager doesn't feel intimidated by the person they're managing. Or that they think they can 'mold' them to their own (inexperienced) opinions or whatever.
 
