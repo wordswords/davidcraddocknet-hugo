@@ -347,6 +347,22 @@ Finally, I really recommend writing reviews of your books and reading others rev
 
 To paraphrase George R. R. Martin - "That's what I do. I read books, and I know things."
 
+#### 'Neurodiversity isn't as common as you might think'
+
+I wish there was a legal requirement for you to be diagnosed with a neurodivergence to term yourself 'neurodivergent'.
+
+Because the facts are that it has become a synonym for 'people having an excuse not to cope in harsh modern day society', and this is not what it means.
+
+A lot of time those people who are identifying as neurodivergent are simply unable to cope in the world. Sometimes they are using it as a 'crutch' for not accepting reality and dealing with their own problems. Which is very unhealthy!
+
+The facts are that the truly neurodivergent can sometimes do very well, even sometimes MUCH BETTER than the neurotypical. Because they have been forced to have to learn to. Neurodivergence just means your brain is wired differently, you present yourself differently, and you have to take into account different things than those people who are neurotypical.
+
+
+And yes it can be incredibly disabling in some areas, for some people. But the emphasis should be on being creative and finding ways to 'fit in' to society DESPITE your differences, not using the term as an excuse to 'drop out' of your responsibilities and declare yourself an invalid!
+
+But all that is even assuming you are neurodivergent in the first place. There are a lot of people claiming to be neurodivergent when they are not at all, and just using it as an excuse not to accept failure, and learn from it.
+
+
 ### Poetry
 
 #### 'Snowflakes'
