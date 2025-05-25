@@ -7,6 +7,8 @@ url: /music/
 
 ![image](musicsetup.jpg)
 
+**Currently as of 25/5/25: I am DJing every Friday at around 11pm time on [Heavy Resistance Aberdeen](https://www.twitch.tv/heavyresistanceabz) which is a rock and metal Twitch DJ Stream, with Mark Chalmers and friends.**
+
 Audio and music has always been a big part of my life, which I used to actively pursue in the evenings while working in software/IT.
 
 * I have DJ'd semi-professionally, with stints in club residencies, mobile DJing and Twitch DJing, for over a decade. I also produced and released several electronica albums.
