@@ -179,6 +179,7 @@ Currently these are the consoles I have hooked up. They are all 'PAL' unless oth
 * **Nintendo 64** with 2x official N64 controller, Kaico PAL N64 -> HDMI converter (audio output via HDMI), expansion pak and memory pak
 * **Microsoft XBox Original** with 2x Duke controllers
 * **SNK Mini Neo Geo International** with 2x official controllers, and mini HDMI to HDMI cable for monitor output (audio output via HDMI)
+* **Nintendo NES Mini** with 2x controllers
 
 ##### Portable Retro Games Consoles
 
