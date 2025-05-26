@@ -63,8 +63,8 @@ languages:
         - name: My Writing
           url: my-writing/
           weight: 19
-        - name: My Music
-          url: music/
+        - name: DJing
+          url: https://davidcraddockaudio.com
 
 outputs:
   home:
@@ -114,7 +114,7 @@ params:
       <li>🎓 <a href="https://DavidCraddockTutor.com">DavidCraddockTutor.com</a> - My software career tutor/freelance tech worker website</li>
       <li>📖 <a href="https://DavidCraddockReads.com">DavidCraddockReads.com</a> - My blog on books I've read</li>
       <li>🎮 <a href="https://DavidCraddock.Games">DavidCraddock.Games</a> - My blog on gaming</li>
-      <li>🎵 <a href="https://DavidCraddockAudio.com">DavidCraddockAudio.com</a> - My audio and music professional portfiolio</li>
+      <li>🎵 <a href="https://DavidCraddockAudio.com">DavidCraddockAudio.com</a> - My DJing and music professional portfiolio</li>
       </ul>
       <hr />
       <img loading="lazy" style="object-fit:contain;max-width:100%;max-height:100%;width:127px;height:127px;margin-top:20px;margin-bottom:0px;" src="/mugshot.png" alt="A mugshot of me">
