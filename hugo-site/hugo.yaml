@@ -39,9 +39,6 @@ languages:
         - name: HomeLab
           url: my-home-network/
           weight: 11
-        - name: Gaming
-          url: https://davidcraddock.games
-          weight: 12
         - name: Work from Home Setup
           url: my-work-computer/
           weight: 13
@@ -51,20 +48,24 @@ languages:
         - name: E-Biking
           url: my-bike/
           weight: 15
-        - name: Cyber Security
-          url: security-research/
-          weight: 16
-        - name: Media Collection
-          url: https://home.davidcraddock.net
-          weight: 17
         - name: vWorkbench
           url: vworkbench/
-          weight: 18
+          weight: 16
         - name: Writing
           url: my-writing/
+          weight: 17
+        - name: Cyber Security
+          url: security-research/
+          weight: 18
+        - name: Gaming
+          url: https://davidcraddock.games
           weight: 19
+        - name: Media Collection
+          url: https://home.davidcraddock.net
+          weight: 20
         - name: DJing
           url: https://davidcraddockaudio.com
+          weight: 21
 
 outputs:
   home:
