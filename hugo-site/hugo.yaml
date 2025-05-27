@@ -1,7 +1,7 @@
 baseURL: "https://davidcraddock.net"
 title: DavidCraddock.net
 copyright: "© David Paul Craddock"
-paginate: 5
+Paginator.pagerSize: 5
 theme: PaperMod
 
 enableInlineShortcodes: true
