@@ -108,17 +108,17 @@ params:
     Title: "DavidCraddock.net"
 
     Content: >
-      👋 Welcome to my personal <a href="https://gohugo.io/">blog</a> self-hosted on my <a href="/my-home-network/">Linux server</a> in my home. <br/>
-      Self-hosting websites has the disadvantage that sometimes they are not available - uptime is not 100%, and search engines don't like that aspect. However I feel it is worth it for the learning experience and the control I have over my sites. <br/>
-      If you need to contact me at any time, please <a href="mailto:3rp2mzocr@mozmail.com">use this email relay</a>
+      👋 Welcome to my personal <a href="https://gohugo.io/">blog</a> self-hosted on my <a href="/my-home-network/">Linux server</a> in my home. <br/><br/>
+      Self-hosting websites has the disadvantage that sometimes they are not available - uptime is not 100%, and search engines don't like that aspect. However I feel it is worth it for the learning experience and the control I have over my sites. <br/><br/>
+      If you need to contact me at any time, please <a href="mailto:3rp2mzocr@mozmail.com">use this email address</a>
       <br/><br/>
       Other facets of my online presence:
       <ul>
-      <li>🎓 <a href="https://DavidCraddockTutor.com">DavidCraddockTutor.com</a></li>
-      <li>📖 <a href="https://DavidCraddockReads.com">DavidCraddockReads.com</a></li>
-      <li>🎮 <a href="https://DavidCraddock.Games">DavidCraddock.Games</a></li>
-      <li>🎵 <a href="https://DavidCraddockAudio.com">DavidCraddockAudio.com</a></li>
-      <li>🤸 <a href="https://DJDavidCraddock.com">DJDavidCraddock.com</a></li>
+      * <li>🎓 <a href="https://DavidCraddockTutor.com">DavidCraddockTutor.com</a></li>
+      * <li>📖 <a href="https://DavidCraddockReads.com">DavidCraddockReads.com</a></li>
+      * <li>🎮 <a href="https://DavidCraddock.Games">DavidCraddock.Games</a></li>
+      * <li>🎵 <a href="https://DavidCraddockAudio.com">DavidCraddockAudio.com</a></li>
+      * <li>🤸 <a href="https://DJDavidCraddock.com">DJDavidCraddock.com</a></li>
       </ul>
       <hr />
       <img loading="lazy" style="object-fit:contain;max-width:100%;max-height:100%;width:127px;height:127px;margin-top:20px;margin-bottom:0px;" src="/mugshot.png" alt="A mugshot of me">
