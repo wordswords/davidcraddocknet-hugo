@@ -39,10 +39,10 @@ languages:
         - name: HomeLab
           url: my-home-network/
           weight: 11
-        - name: Work from Home Setup
+        - name: WFH Setup
           url: my-work-computer/
           weight: 13
-        - name: Work from Anywhere Setup
+        - name: WFA Setup
           url: my-mobile-laptop-setup/
           weight: 14
         - name: E-Biking
