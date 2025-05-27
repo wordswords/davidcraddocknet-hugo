@@ -1,7 +1,6 @@
 baseURL: "https://davidcraddock.net"
 title: DavidCraddock.net
 copyright: "© David Paul Craddock"
-Paginator.pagerSize: 5
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -91,6 +90,7 @@ params:
   ShowPageNums: true
   ShowToc: true
   TocOpen: true # open contents automantically
+  pagerSize: 5 # how many posts are listed per page in the list
   comments: true
   enableGitInfo: true
   images: ["/mugshot.png"]
