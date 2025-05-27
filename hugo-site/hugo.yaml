@@ -105,7 +105,6 @@ params:
         url: tags
 
   homeInfoParams:
-    Title: "The Tangled Web of David Craddock"
 
     Content: >
       👋 Welcome to my personal <a href="https://gohugo.io/">blog</a> self-hosted on my <a href="/my-home-network/">Linux server</a> in my home. <br/><br/>
