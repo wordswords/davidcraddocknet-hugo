@@ -12,7 +12,7 @@ Yesterday I asked a GenAI agent about what I could do to reinstate my account an
 
 So I signed up to X.com, and wrote a long and careful message explaining my situation, explaining my mood had been affected at the time by cancer treatment, and asking them to reconsider the ban.
 
-I logged in to X.com and found that I had been sent no reply at all and I was blocked from contacting the LinkedIn help team 😃 😃
+Today I logged in to X.com and found that I had been sent no reply at all and I was blocked from contacting the LinkedIn help team 😃 😃
 
 So yes, that's that. I guess.
 
