@@ -73,6 +73,10 @@ I am moving to self-host as much of my digital content as possible, to force mys
 * I keep my mobile phone locked and constantly up to date with the latest security patches at all times.
 * I use [Mozilla VPN](https://www.mozilla.org/en-GB/products/vpn/) and Mozilla Firefox with security and ad-blocking plugins to ensure my browsing is private and secure.
 
+### Firefox Security
+
+I have gone through the ridiculously excellent 11th Edition of <a href="https://www.goodreads.com/book/show/19824756-open-source-intelligence-techniques">OSINT - Open Source Intelligence Techniques: Resources for Searching and Analysing Information</a>, and built a Firefox configuration around Michaels suggestions. This allows me to leverage OSINT tools while keeping me secure and locking down my internet privacy as much as possible.
+
 ### Pi-Hole K8s Cluster
 
 I am building a Kubernetes high-availability cluster using Pi-Hole as a DNS server, so that there will always be Pi-Hole blocking all advertising, hazardous and tracking traffic on the network.
@@ -80,6 +84,14 @@ I am building a Kubernetes high-availability cluster using Pi-Hole as a DNS serv
 ### Wireless Network Security
 
 I use a separate GUEST wifi network which doesn't have access to any other parts of the network, ditto a IOT wifi network to isolate the IOT devices from any mischief. I regularly pentest my own wireless network as a part of my security research.
+
+I have an <a href="https://www.amazon.co.uk/ALFA-AWUS036ACHM-802-11ac-Range-Adapter/dp/B08SJBV1N3">ALFA</a> AC600 long range wireless adaptor with a directional antenna that I've used to try and harvest PKID packets from my local area in order to capture their password hash and audit their wireless security. For this project, I used Kali Linux and the script <a href="https://github.com/ParrotSec/airgeddon">airgeddon</a> and its tools.
+
+I have used the password cracker hashmat locally with GPU acceleration on both Windows and Linux, although I currently use a distributed volunteer-based password cracking tool to audit passwords.
+
+My analysis is that currently, by far, the best way to hack a network using wireless is use DEAUTH attacks combined with an Evil Twin Wifi hotspot to capture credentials. Unfortunately this is very illegal so I have not really used this method in practice!
+
+High gain directional antennas with DEAUTH floods can also be used to take out wireless devices such as wireless smart home security cameras etc on a temporary basis.
 
 ### CCTV and Security Cameras
 
