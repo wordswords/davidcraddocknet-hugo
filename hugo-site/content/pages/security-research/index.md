@@ -93,6 +93,10 @@ My analysis is that currently, by far, the best way to hack a network using wire
 
 High gain directional antennas with DEAUTH floods can also be used to take out wireless devices such as wireless smart home security cameras etc on a temporary basis.
 
+### CTF/Hack the Box
+
+I have been working with the university of London Worldwide to start up a 'Cyber Security' society with the hope that we can compete with other teams in Hack the Box/CTF competitions. I am very keen to get involved with this kind of activity and have put my name forward for President of the society. I have gone through two rounds of interviews and am just waiting on their final decision.
+
 ### CCTV and Security Cameras
 
 I am building an open-source CCTV system using cheap old Axis cameras that are out of their supported life. Currently I have tried using Shinobi CCTV but I'm not happy with it, and am looking to move to a different system such as ZoneMinder.
