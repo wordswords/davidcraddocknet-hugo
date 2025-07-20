@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on DavidCraddock.net</title>
-    <link>https://davidcraddock.net/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on DavidCraddock.net</description>
     <image>
       <title>DavidCraddock.net</title>
-      <url>https://davidcraddock.net/mugshot.png</url>
-      <link>https://davidcraddock.net/mugshot.png</link>
+      <url>http://localhost:1313/mugshot.png</url>
+      <link>http://localhost:1313/mugshot.png</link>
     </image>
     <generator>Hugo -- 0.147.6</generator>
     <language>en</language>
     <copyright>David Paul Craddock</copyright>
-    <atom:link href="https://davidcraddock.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
