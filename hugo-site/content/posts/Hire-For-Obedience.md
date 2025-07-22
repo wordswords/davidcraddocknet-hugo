@@ -48,5 +48,5 @@ A likely expensive aberration who is hard to keep happy. (From their point of vi
 
 --
 
-From [https://cheekyscientist.com](https://cheekscientist.com)'s free ebook 'Overqualified'.
+From [https://cheekyscientist.com](https://cheekyscientist.com)'s free ebook 'Overqualified'.
 
