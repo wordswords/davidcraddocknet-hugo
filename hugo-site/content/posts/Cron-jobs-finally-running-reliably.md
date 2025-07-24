@@ -15,6 +15,8 @@ For a supposedly lightweight process, there are actually a ton of 'gotchas' whic
 4. Make sure you 'cd' into the working directory AS PART of the cron job before you attempt to use any relative (non absolute) paths. And you should do this instead of specifying absolute paths for large scripts, because of the potential to make mistakes, which will take longer to test!
 5. Use nohup and a Bash 'trap' error logger to log complete runs. Log the WHOLE output of the Bash cron'd script, using STDERR and STDOUT concatenation.
 6. Use screen to run jobs so you can inspect running jobs when you need to.
+7. Use ionice and nice liberally so that you can avoid system lockups due to multiple processing scheduled jobs hogging the system resources!
+8. Turn off 'fcron's 'serial' parameter so that multiple jobs can run at the same time - this is essential if one running job happens to overlap another. Fcron with anaocron syntax will usually figure out the rest.
 
 No wonder Jenkins is so popular!
 
