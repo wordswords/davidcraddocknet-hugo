@@ -23,6 +23,14 @@ url: /security-research/
 
 I have two Raspberry Pi Zeros configured headless with [pwnagotchi](https://pwnagotchi.ai/) to automatically capture wifi handshakes hashes to crack later.
 
+I have an <a href="https://www.amazon.co.uk/ALFA-AWUS036ACHM-802-11ac-Range-Adapter/dp/B08SJBV1N3">ALFA</a> AC600 long range wireless adaptor with a directional antenna that I've used to try and harvest PKID packets from my local area in order to capture their password hash and audit their wireless security. For this project, I used Kali Linux and the script <a href="https://github.com/ParrotSec/airgeddon">airgeddon</a> and its tools.
+
+I have used the password cracker hashmat locally with GPU acceleration on both Windows and Linux, although I currently use a distributed volunteer-based password cracking tool to audit passwords.
+
+My analysis is that currently, by far, the best way to hack a network using wireless is use DEAUTH attacks combined with an Evil Twin Wifi hotspot to capture credentials. Unfortunately this is very illegal so I have not really used this method in practice!
+
+High gain directional antennas with DEAUTH floods can also be used to take out wireless devices such as wireless smart home security cameras etc on a temporary basis.
+
 ### Password cracking
 
 I have a [hashmat](https://hashcat.net/hashcat/) password cracker setup that utilises my PC with an Nvidea gaming graphics card. I can use this to attempt to crack wifi handshake hashes with a dictionary attack.
@@ -43,10 +51,6 @@ I have a [Proxmark3](https://en.wikipedia.org/wiki/Proxmark3) setup which I'm us
 
 I am planning on installing [Kali Nethunter](https://www.kali.org/docs/nethunter/) on my old Sony Xperia 1 III. This will allow me to do more security research on the go.
 
-### [Ludus.cloud](https://Ludus.cloud) Virtual Range
-
-I run [Ludus](https://Ludus.cloud) on top of Debian 12 and Proxmox on study.local, which is my Linux workstation. I am using it to build up an virutalised offensive security lab, see this post: [https://xphantom.nl/posts/Offensive-Security-Lab/](https://xphantom.nl/posts/Offensive-Security-Lab/)
-
 ## Blue Team
 
 ### Self-hosting Security
@@ -59,13 +63,13 @@ I am moving to self-host as much of my digital content as possible, to force mys
 * I use [Thor AV](https://www.nextron-systems.com/thor/) on the Linux sever to scan weekly the entire server.
 * I use [Geoblocker](https://github.com/friendly-bits/geoblocker-bash) to block all Russian and Chinese IP addresses from accessing my server, this seriously cuts down on botnets.
 * I use a number of automated rootkit detectors and scanners to keep an eye on everything.
-* I use [Debian Unattended Upgrades](https://wiki.debian.org/UnattendedUpgrades) to automatically security patch the server, and all my Linux machines, to defend against 0-day exploits.
+* I use an automated scheduled job on my server to upgrade and security patch the server, and all my Linux and Windows machines, and my routers and switches, to defend against 0-day exploits.
 * All my Windows machines run Windows 11, are set to automatically download and update in the background, have all the in-built security features turned on, and have Windows Defender enabled.
 * I use [endlessSSH](https://github.com/skeeto/endlessh) to waste computer time of malicious bots that automatically attempt to connect to port 22 of my server.
-* I use [Mikrotik's 'The Dude'](https://mikrotik.com/thedude) with many custom checks, to monitor my network and alert me of any changes that I need to address.
 * I use [ZeroTier](https://www.zerotier.com/) to implement a secure and simple software-defined VPN without exposing any open ports to the world.
 * I have my own [Google Workspace](https://workspace.google.com) account and use Google Workspace's advanced security features to secure my email and authentication.
 * I use [NextDNS](https://nextdns.io/) to provide secure DNS resolution for all my devices.
+* I use Mikrotik routers and switches and have hardened the security on them through extensive familiarisation and research.
 
 ### Personal Security
 
@@ -77,25 +81,13 @@ I am moving to self-host as much of my digital content as possible, to force mys
 
 I have gone through the ridiculously excellent 11th Edition of <a href="https://www.goodreads.com/book/show/19824756-open-source-intelligence-techniques">OSINT - Open Source Intelligence Techniques: Resources for Searching and Analysing Information</a>, and built a Firefox configuration around Michaels suggestions. This allows me to leverage OSINT tools while keeping me secure and locking down my internet privacy as much as possible.
 
-### Pi-Hole K8s Cluster
-
-I am building a Kubernetes high-availability cluster using Pi-Hole as a DNS server, so that there will always be Pi-Hole blocking all advertising, hazardous and tracking traffic on the network.
-
 ### Wireless Network Security
 
 I use a separate GUEST wifi network which doesn't have access to any other parts of the network, ditto a IOT wifi network to isolate the IOT devices from any mischief. I regularly pentest my own wireless network as a part of my security research.
 
-I have an <a href="https://www.amazon.co.uk/ALFA-AWUS036ACHM-802-11ac-Range-Adapter/dp/B08SJBV1N3">ALFA</a> AC600 long range wireless adaptor with a directional antenna that I've used to try and harvest PKID packets from my local area in order to capture their password hash and audit their wireless security. For this project, I used Kali Linux and the script <a href="https://github.com/ParrotSec/airgeddon">airgeddon</a> and its tools.
-
-I have used the password cracker hashmat locally with GPU acceleration on both Windows and Linux, although I currently use a distributed volunteer-based password cracking tool to audit passwords.
-
-My analysis is that currently, by far, the best way to hack a network using wireless is use DEAUTH attacks combined with an Evil Twin Wifi hotspot to capture credentials. Unfortunately this is very illegal so I have not really used this method in practice!
-
-High gain directional antennas with DEAUTH floods can also be used to take out wireless devices such as wireless smart home security cameras etc on a temporary basis.
-
 ### CTF/Hack the Box
 
-I have been working with the university of London Worldwide to start up a 'Cyber Security' society with the hope that we can compete with other teams in Hack the Box/CTF competitions. I am very keen to get involved with this kind of activity and have put my name forward for President of the society. I have gone through two rounds of interviews and am just waiting on their final decision.
+I have been working with the university of London Worldwide to start up a 'Cyber Security' society with the hope that we can compete with other teams in Hack the Box/CTF competitions. I have been appointed Vice President of this society and we are looking to implement a programme of security events and competitions.
 
 ### CCTV and Security Cameras
 
