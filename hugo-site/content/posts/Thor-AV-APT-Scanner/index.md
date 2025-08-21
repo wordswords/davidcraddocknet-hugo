@@ -4,7 +4,7 @@ date = 2025-08-21T02:29:16+01:00
 draft = true
 +++
 
-![image](thinking.jpg)
+![image](thor.jpg)
 
 I have setup the excellent and free [Thor Lite AV APT (Advanced Persistent Threat) malware scanner](https://www.nextron-systems.com/thor-lite/) running on my server.
 
