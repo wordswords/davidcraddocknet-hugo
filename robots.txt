@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://wordswords.github.io/sitemap.xml
