@@ -31,7 +31,7 @@ jobs:
           hugo-version: '0.149.0' 
 
       - name: Build
-        run: hugo --minify --buildDrafts --config ./hugo-site/hugo.yaml --themesDir ./hugo-site/public/themes/
+        run: hugo --minify --buildDrafts --config $GITHUB_WORKSPACE/hugo-site/hugo.yaml --themesDir $GITHUB_WORKSPACE/hugo-site/themes/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
