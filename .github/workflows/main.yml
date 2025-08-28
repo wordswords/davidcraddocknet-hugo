@@ -1,41 +1,19 @@
-name: GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main
-  workflow_dispatch:
-
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+      - main  # or your default branch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: true
-          fetch-depth: 0
+      - uses: actions/checkout@v3
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.149.0' 
-
-      - name: Build
-        run: hugo --minify --buildDrafts --config $GITHUB_WORKSPACE/hugo-site/hugo.yaml --themesDir $GITHUB_WORKSPACE/hugo-site/themes/
-
-      - name: Deploy to GitHub Pages
+      - name: Deploy subdirectory to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
-        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./hugo-site/public/  # Replace 'subdir' with your subfolder path
+
