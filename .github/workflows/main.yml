@@ -10,13 +10,13 @@ jobs:
       - name: Checkout repository with sparse checkout
         uses: actions/checkout@v4
         with:
-          sparse-checkout: 'tmpcheckouttoberemoved'  # specify the subdirectory to checkout
+          sparse-checkout: 'hugo-site/public'  # specify the subdirectory to checkout
           sparse-checkout-cone-mode: false
 
       - name: Move subdirectory contents to root
         run: |
           shopt -s dotglob
-          mv tmpcheckouttoberemoved/hugo-site/public/* .
+          mv hugo-site/public/* .
           rm -rf subdir
 
       # Further steps like deploy, publish, build etc.
