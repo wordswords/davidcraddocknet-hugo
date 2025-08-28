@@ -16,8 +16,9 @@ jobs:
       - name: Move subdirectory contents to root
         run: |
           shopt -s dotglob
+          rm -f index.html
           mv hugo-site/public/* .
-          rm -rf subdir
+          rm -rf hugo-site
 
       # Further steps like deploy, publish, build etc.
 
