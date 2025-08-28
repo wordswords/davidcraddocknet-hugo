@@ -1,19 +1,24 @@
 name: Deploy to GitHub Pages
-
 on:
   push:
-    branches:
-      - main  # or your default branch
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Deploy subdirectory to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Checkout repository with sparse checkout
+        uses: actions/checkout@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./hugo-site/public/  # Replace 'subdir' with your subfolder path
+          sparse-checkout: 'tmpcheckouttoberemoved'  # specify the subdirectory to checkout
+          sparse-checkout-cone-mode: false
+
+      - name: Move subdirectory contents to root
+        run: |
+          shopt -s dotglob
+          mv tmpcheckouttoberemoved/hugo-site/public/* .
+          rm -rf subdir
+
+      # Further steps like deploy, publish, build etc.
+
 
